@@ -802,12 +802,12 @@
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/otel-container-insights-for-eks/">原文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[EKS on Fargate で Pod のコンテナログを CloudWatch Logs に出力してみた（Built-in Fluent Bit 編） — Amazon EKS | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/eksonfagate-cloudwatchlogs-builtinfluentbit/</link>
-            <guid>6DRQfGNFXuhRJu7SdMt7eI</guid>
+            <title><![CDATA[EKS on Fargate で Pod のメトリクスを取得してみた（ADOT 編) — Amazon EKS | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/eksonfagate-containerinsights-adot/</link>
+            <guid>3QaSGzNX79NZU331MjYMYx</guid>
             <pubDate>Wed, 08 Apr 2026 04:33:48 GMT</pubDate>
-            <description><![CDATA[EKS on Fargate で Pod のコンテナログを CloudWatch Logs に出力してみた（Built-in Fluent Bit 編）]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/eksonfagate-cloudwatchlogs-builtinfluentbit/">原文を読む</a></p>]]></content:encoded>
+            <description><![CDATA[EKS on Fargate で Pod のメトリクスを取得してみた（ADOT 編)]]></description>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/eksonfagate-containerinsights-adot/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
