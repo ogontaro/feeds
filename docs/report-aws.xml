@@ -4,11 +4,22 @@
         <title>AWS レポート — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 11 Sep 2026 23:58:20 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 13 Sep 2026 23:55:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-14]]></title>
+            <link>https://ogontaro.github.io/rss/report/aws/2026-09-14.html</link>
+            <guid>https://ogontaro.github.io/rss/report/aws/2026-09-14.html</guid>
+            <pubDate>Mon, 14 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<h3>[アップデート] Amazon Bedrock Managed Knowledge Baseでドキュメントのアクセス権を調べるAPIが追加されたので試してみた</h3>
+<p>Bedrockのナレッジベースでどのドキュメントが検索対象になっているか（アクセス権）を確認できる新APIの解説です。権限設定のデバッグに直接使える内容なので、ナレッジベースを運用中の人は押さえておく価値があります。
+<a href="https://dev.classmethod.jp/articles/amazon-bedrock-knowledge-base-document-acl-debugging/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Famazon-bedrock-knowledge-base-document-acl-debugging%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS レポート 2026-09-12]]></title>
             <link>https://ogontaro.github.io/rss/report/aws/2026-09-12.html</link>
