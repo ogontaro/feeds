@@ -4,11 +4,43 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Mon, 14 Sep 2026 06:21:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Sep 2026 15:58:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[How Ninth Wave built AI-powered open finance onboarding on Amazon Bedrock — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/</link>
+            <guid>6306dc0dce0a1d4340a5b1693847b5829a3e5c97</guid>
+            <pubDate>Mon, 14 Sep 2026 15:58:57 GMT</pubDate>
+            <description><![CDATA[Learn how Ninth Wave built Compass, a multi-agent AI onboarding assistant on Amazon Bedrock AgentCore that validates bank APIs against Financial Data Exchange (FDX) standards, scores compliance, and compresses open finance onboarding from weeks to minutes while meeting SOC 2 and PCI DSS requirements.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Weekly Roundup: OpenAI GPT-6 Astra on Amazon Bedrock, Amazon Quick desktop GA, Kiro for students, and more (September 14, 2026) — AWS News Blog]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026/</link>
+            <guid>936acd2588551fb9eea86f9b0eaf5f722128dc6e</guid>
+            <pubDate>Mon, 14 Sep 2026 15:56:33 GMT</pubDate>
+            <description><![CDATA[There’s a particular energy to mid-September in New York. Pumpkin spice lattes are flowing, temperatures are dropping, and it’s nearly sweater weather. The city is back at full speed, and so is the AWS launch calendar. This week that energy showed up in a new frontier model on Amazon Bedrock, a desktop app for Amazon […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The generative AI customization spectrum: From prompt engineering to custom models on AWS — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/</link>
+            <guid>8ccc6396f56013db85944a02959776c99f87290a</guid>
+            <pubDate>Mon, 14 Sep 2026 15:47:12 GMT</pubDate>
+            <description><![CDATA[Pick the right generative AI customization approach on AWS with an 8-step decision framework, from prompt engineering and RAG to fine-tuning, continued pre-training, and Amazon Nova Forge. Start simple and escalate only when you must.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Automate replenishment with MMF, Databricks Genie, and Amazon Quick — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/</link>
+            <guid>b9380fe5c5bdd3f3c76704d77744859dccb2c43c</guid>
+            <pubDate>Mon, 14 Sep 2026 15:42:06 GMT</pubDate>
+            <description><![CDATA[Foundation models made catalog-wide demand forecasting easy; the hard part is now acting on the forecast. This post builds a closed detect-decide-act loop on Databricks and Amazon Quick that reconciles demand surges against live supplier availability and places replenishment orders unattended, escalating to a human only when no supplier can cover a surge.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fautomate-replenishment-with-mmf-databricks-genie-and-amazon-quick%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude Code で auto mode を起動時のデフォルトにしたら、対応モデルと非対応モデルで挙動が分かれた — Amazon Bedrock | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/</link>
@@ -776,38 +808,6 @@
             <pubDate>Tue, 30 Jun 2026 21:30:33 GMT</pubDate>
             <description><![CDATA[AWS CloudFormation speeds up infrastructure deployment with Express mode, enabling AI agents and developers to receive deployment confirmation in seconds and iterate faster. Available in all commercial Regions at no additional cost.]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/accelerate-your-infrastructure-deployments-by-up-to-4x-with-aws-cloudformation-express-mode/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faccelerate-your-infrastructure-deployments-by-up-to-4x-with-aws-cloudformation-express-mode%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon EC2 C9g and C9gd instances powered by AWS Graviton5 processors are now available — AWS News Blog]]></title>
-            <link>https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/</link>
-            <guid>d668a838bb33c15b4742302284561effb3be54a0</guid>
-            <pubDate>Tue, 30 Jun 2026 20:56:44 GMT</pubDate>
-            <description><![CDATA[Amazon EC2 C9g and C9gd instances, powered by AWS Graviton5, are now generally available. They deliver up to 25% better compute performance than Graviton4-based instances, 5x larger cache, fastest memory of any processor instances in the cloud, and local NVMe storage options (C9gd).]]></description>
-            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Famazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon EKS のクラスター削除時に発生する Cluster has nodegroups attached の解消方法を教えてください — Amazon EKS | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/tsnote-eks-please-tell-me-how-to-resolve-the-cluster-has-nodegroups-attached-that-occurs-when-deleting-an-amazon-eks-cluster/</link>
-            <guid>7gKUynzh9VUj5Q2lJLuRju</guid>
-            <pubDate>Fri, 26 Jun 2026 01:24:48 GMT</pubDate>
-            <description><![CDATA[Amazon EKS のクラスター削除時に発生する Cluster has nodegroups attached の解消方法を教えてください]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/tsnote-eks-please-tell-me-how-to-resolve-the-cluster-has-nodegroups-attached-that-occurs-when-deleting-an-amazon-eks-cluster/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[【Security Hub修復手順】[EKS.9] EKSノードグループは、サポートされているKubernetesバージョンで実行する必要があります — Amazon EKS | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/securityhub-fsbp-remediation-eks-9/</link>
-            <guid>5Z1wkd5DlFT8sVEhHZirJ</guid>
-            <pubDate>Wed, 24 Jun 2026 01:19:40 GMT</pubDate>
-            <description><![CDATA[【Security Hub修復手順】[EKS.9] EKSノードグループは、サポートされているKubernetesバージョンで実行する必要があります]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/securityhub-fsbp-remediation-eks-9/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[เจาะลึกเบื้องหลัง Amazon EKS: ออกแบบสถาปัตยกรรมเพื่อ Scale และ Performance (AWS Summit Bangkok) — Amazon EKS | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/aws-eks-scale-performance-2026-th/</link>
-            <guid>g98Ij1MaC7U5jkaAtI4pW</guid>
-            <pubDate>Fri, 19 Jun 2026 05:03:30 GMT</pubDate>
-            <description><![CDATA[สรุป session DVT303 จากงาน AWS Summit Bangkok ที่พาไปดูเบื้องหลังการออกแบบ Amazon EKS ตั้งแต่ Control Plane, etcd, Ultra-Scale Clusters ไปจนถึง Provisioned Control Plane พร้อมบทเรียนจริงจากการสเกล EKS กว่า 7 ปีของ Ascend Money (TrueMoney) ทั้งเรื่อง CoreDNS, kube-proxy, Subnet Design และ API Priority & Fairness]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/aws-eks-scale-performance-2026-th/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
