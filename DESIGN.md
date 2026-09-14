@@ -79,7 +79,8 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 3. `claude-code-action`: `.cache/report-<domain>-input.json` と `report-criteria/report-<domain>.md` を読み、
    基準どおりに `.cache/report-<domain>.md` を書く。
 4. `src/report-render.ts <domain>`: md → `docs/report/<domain>/YYYY-MM-DD.html`、
-   ページ一覧から `docs/report-<domain>.xml` を再生成（直近 60 エントリ、HTML は全保持）。
+   保持期間（14 日）より古い HTML を削除し、残ったページ一覧から `docs/report-<domain>.xml` を
+   再生成（直近 60 エントリ）。
 
 ### リリースレポート（`release.yml`, 毎週月 07:30 JST = cron `30 22 * * 0`）
 

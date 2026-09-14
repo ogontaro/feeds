@@ -1,4 +1,4 @@
-import { mkdir, readdir } from "node:fs/promises";
+import { mkdir, readdir, rm } from "node:fs/promises";
 import { Feed as FeedGen } from "feed";
 import { marked } from "marked";
 import { pageShell } from "./lib/html.ts";
@@ -8,6 +8,27 @@ import { jstDateString } from "./lib/urls.ts";
 
 const MAX_FEED_ITEMS = 60;
 const DATE_RE = /^\d{4}-\d{2}-\d{2}\.html$/;
+/** 当日に見られなかった日を含めて遡れる日数。これより古い HTML は容量対策で消す。 */
+const RETENTION_DAYS = 14;
+
+/**
+ * 保持期間より古いレポート HTML を削除する。フィード生成前に呼ぶので、
+ * 残る XML のリンクは必ず実在する HTML を指す。
+ * ファイル名は YYYY-MM-DD.html 固定なので、辞書順比較がそのまま日付比較になる。
+ */
+async function pruneOldReports(dir: string, today: string): Promise<void> {
+  const cutoff = new Date(`${today}T00:00:00Z`);
+  cutoff.setUTCDate(cutoff.getUTCDate() - (RETENTION_DAYS - 1));
+  const cutoffFile = `${cutoff.toISOString().slice(0, 10)}.html`;
+
+  const removed = (await readdir(dir)).filter((f) => DATE_RE.test(f) && f < cutoffFile);
+  for (const file of removed) await rm(`${dir}/${file}`);
+  if (removed.length > 0) {
+    console.log(
+      `pruned ${removed.length} report(s) older than ${cutoffFile}: ${removed.join(", ")}`,
+    );
+  }
+}
 
 async function main() {
   const domain = domainArg();
@@ -31,6 +52,7 @@ async function main() {
     }),
   );
   console.log(`wrote docs/report/${domain}/${date}.html`);
+  await pruneOldReports(reportDir(domain), date);
 
   const files = (await readdir(reportDir(domain)))
     .filter((f) => DATE_RE.test(f))
