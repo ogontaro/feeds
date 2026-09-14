@@ -4,11 +4,19 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Mon, 14 Sep 2026 02:02:28 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Sep 2026 06:21:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Claude Code で auto mode を起動時のデフォルトにしたら、対応モデルと非対応モデルで挙動が分かれた — Amazon Bedrock | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/</link>
+            <guid>1ywNsfZmYYcshCmMHGLa7g</guid>
+            <pubDate>Mon, 14 Sep 2026 06:21:10 GMT</pubDate>
+            <description><![CDATA[Claude Code on Bedrock の auto mode をデフォルトに設定したときの挙動を、対応モデルと非対応モデルで比較しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Amazon Bedrock で Converse API の呼び出しに必要な権限を教えてください — Amazon Bedrock | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/tsnote-bedrock-converse-api-permissions/</link>
@@ -800,14 +808,6 @@
             <pubDate>Fri, 19 Jun 2026 05:03:30 GMT</pubDate>
             <description><![CDATA[สรุป session DVT303 จากงาน AWS Summit Bangkok ที่พาไปดูเบื้องหลังการออกแบบ Amazon EKS ตั้งแต่ Control Plane, etcd, Ultra-Scale Clusters ไปจนถึง Provisioned Control Plane พร้อมบทเรียนจริงจากการสเกล EKS กว่า 7 ปีของ Ascend Money (TrueMoney) ทั้งเรื่อง CoreDNS, kube-proxy, Subnet Design และ API Priority & Fairness]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/aws-eks-scale-performance-2026-th/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[【セッションレポート】生成AI時代の内製サービス開発 京セラロボティックサービス開発のこれまでとこれから #ClassmethodForum — Amazon EKS | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/dafujii-session-report-classmethod-forum-2026-kyocera-robotic-services/</link>
-            <guid>1w6KFepCRXJTQodKO3VyTe</guid>
-            <pubDate>Mon, 01 Jun 2026 03:00:11 GMT</pubDate>
-            <description><![CDATA[【セッションレポート】生成AI時代の内製サービス開発 京セラロボティックサービス開発のこれまでとこれから #ClassmethodForum]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/dafujii-session-report-classmethod-forum-2026-kyocera-robotic-services/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

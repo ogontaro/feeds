@@ -4,11 +4,19 @@
         <title>翻訳フィード: Kubernetes — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Kubernetes 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Fri, 11 Sep 2026 18:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Sep 2026 10:45:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Cilium 1.20: Gateway API ExternalAuth, TCPRoute/UDPRoute, ENI IPAM for IPv6, and more — CNCF Blog]]></title>
+            <link>https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/</link>
+            <guid>https://www.cncf.io/?p=173414</guid>
+            <pubDate>Mon, 14 Sep 2026 10:45:49 GMT</pubDate>
+            <description><![CDATA[Cilium 1.20, the second major open source Cilium release of 2026 after Cilium 1.19, is finally here. Three themes stand out in this release: Thank you to every contributor, reviewer and maintainer who made Cilium 1.20...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F14%2Fcilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes v1.37: Native Histograms Graduates to Beta — Kubernetes Blog]]></title>
             <link>https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/</link>
@@ -777,14 +785,6 @@
             <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[AI coding agents like Claude Code and Codex have become a natural part of the developer workflow. You give them a task and they read your files, run commands, make network requests, and write code, all on your behalf and all with your permissions.]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/introducing-prempti-runtime-security-for-ai-coding-agents-powered-by-falco">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintroducing-prempti-runtime-security-for-ai-coding-agents-powered-by-falco">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes v1.36: Moving Volume Group Snapshots to GA — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/05/08/kubernetes-v1-36-volume-group-snapshot-ga/</link>
-            <guid>https://kubernetes.io/blog/2026/05/08/kubernetes-v1-36-volume-group-snapshot-ga/</guid>
-            <pubDate>Fri, 08 May 2026 18:35:00 GMT</pubDate>
-            <description><![CDATA[Volume group snapshots were introduced as an Alpha feature with the Kubernetes v1.27 release, moved to Beta in v1.32, and to a second Beta in v1.34. We are excited to announce that in the Kubernetes v1.36 release, support for volume group snapshots has reached General Availability (GA). The support for volume group snapshots relies on a set of extension APIs for group snapshots. These APIs allow users to take crash-consistent snapshots for a set of volumes. Behind the scenes, Kubernetes uses a l]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/08/kubernetes-v1-36-volume-group-snapshot-ga/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F08%2Fkubernetes-v1-36-volume-group-snapshot-ga%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
