@@ -14,7 +14,13 @@ export function googleTranslateUrl(articleUrl: string): string {
  * フィード自体ではなく記事 URL のホストで判定する（購読を増やしても保守不要、
  * 既存の永続エントリにも次回書き出しで遡って効く）。
  */
-const JA_SOURCE_HOSTS = ["dev.classmethod.jp", "claude-code-log.com"];
+const JA_SOURCE_HOSTS = [
+  "dev.classmethod.jp",
+  "claude-code-log.com",
+  "zenn.dev",
+  "qiita.com",
+  "note.com",
+];
 
 export function isJapaneseSource(articleUrl: string): boolean {
   let host: string;

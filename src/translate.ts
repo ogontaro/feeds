@@ -3,6 +3,7 @@ import { readDomainFeed, writeDomainFeed } from "./lib/domain-feed.ts";
 import { fetchFeed } from "./lib/feeds.ts";
 import { isDegraded, translateBatch } from "./lib/translate.ts";
 import type { TranslatedEntry } from "./lib/types.ts";
+import { isJapaneseSource } from "./lib/urls.ts";
 
 // --strict: exit non-zero if any domain had zero feeds load (used by translate.yml).
 // Without it (used inside report.yml) a partial failure just refreshes what it can.
@@ -32,8 +33,11 @@ async function main() {
       const novel = entries.filter((e) => !known.has(e.guid));
       if (novel.length === 0) continue;
 
-      const titlesJa = await translateBatch(novel.map((e) => e.title));
-      const descsJa = await translateBatch(novel.map((e) => e.description));
+      // 日本語ソース（DevelopersIO / Zenn / Qiita 等）は原文がそのまま日本語なので翻訳しない。
+      // translateBatch は空文字をエンジンに渡さずそのまま返すため、空文字を渡して素通しさせる。
+      const forTranslation = (s: string, link: string) => (isJapaneseSource(link) ? "" : s);
+      const titlesJa = await translateBatch(novel.map((e) => forTranslation(e.title, e.link)));
+      const descsJa = await translateBatch(novel.map((e) => forTranslation(e.description, e.link)));
       novel.forEach((e, i) => {
         known.add(e.guid);
         fresh.push({
