@@ -4,11 +4,27 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Sun, 13 Sep 2026 15:35:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Sep 2026 02:02:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon Bedrock で Converse API の呼び出しに必要な権限を教えてください — Amazon Bedrock | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/tsnote-bedrock-converse-api-permissions/</link>
+            <guid>3zyyXwTLO1iTKcdzijbgE6</guid>
+            <pubDate>Mon, 14 Sep 2026 02:02:28 GMT</pubDate>
+            <description><![CDATA[Amazon Bedrock の Converse API を使う際、必要な IAM 権限は bedrock:InvokeModel です。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/tsnote-bedrock-converse-api-permissions/">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Bedrock Managed Knowledge Base の S3 ナレッジベースのドキュメントレベル ACL を Amazon Quick から検証してみた - ユーザーごとに機密文書を出し分ける — Amazon Bedrock | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/20260914-amazon-mkb-s3-acl-with-quick/</link>
+            <guid>29mB9rY7UQUjEboTW79FkB</guid>
+            <pubDate>Mon, 14 Sep 2026 02:01:33 GMT</pubDate>
+            <description><![CDATA[Amazon Quickのナレッジソースとして、Amazon Bedrock Managed Knowledge Baseを接続し、ドキュメントレベルのアクセスコントロールリスト（ACL）を試してみました。前回検証したQuick側のACL設定との違いや、Bedrock側でのACL定義・検証の方法をまとめます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260914-amazon-mkb-s3-acl-with-quick/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[アップデート] Amazon Bedrock Managed Knowledge Baseでドキュメントのアクセス権を調べるAPIが追加されたので試してみた — Amazon Bedrock | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/amazon-bedrock-knowledge-base-document-acl-debugging/</link>
@@ -792,22 +808,6 @@
             <pubDate>Mon, 01 Jun 2026 03:00:11 GMT</pubDate>
             <description><![CDATA[【セッションレポート】生成AI時代の内製サービス開発 京セラロボティックサービス開発のこれまでとこれから #ClassmethodForum]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/dafujii-session-report-classmethod-forum-2026-kyocera-robotic-services/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[アップデート] EKS が CloudShell を介したワンクリッククラスターアクセスをサポートしました — Amazon EKS | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/eks-one-click-cluster-access/</link>
-            <guid>5Igk1ekfPptnjN4AmnG6Gg</guid>
-            <pubDate>Mon, 04 May 2026 09:06:35 GMT</pubDate>
-            <description><![CDATA[[アップデート] EKS が CloudShell を介したワンクリッククラスターアクセスをサポートしました]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/eks-one-click-cluster-access/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[アップデート] OTel Container Insights for Amazon EKS を利用できるようになりました — Amazon EKS | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/otel-container-insights-for-eks/</link>
-            <guid>4CSJVHJ7m4IKgaAYvi14Ph</guid>
-            <pubDate>Sat, 18 Apr 2026 15:05:21 GMT</pubDate>
-            <description><![CDATA[[アップデート] OTel Container Insights for Amazon EKS を利用できるようになりました]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/otel-container-insights-for-eks/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
