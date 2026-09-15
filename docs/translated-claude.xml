@@ -4,11 +4,18 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Tue, 15 Sep 2026 08:10:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 11:44:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Claude | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/reona-claude-code-goal-stop-condition/</link>
+            <guid>3ARRiSwxbM3o5Gl1h8u75q</guid>
+            <pubDate>Tue, 15 Sep 2026 11:44:52 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/reona-claude-code-goal-stop-condition/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/20260915-cc-updates-v2-1-272/</link>
@@ -759,14 +766,6 @@
             <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
             <description><![CDATA[プロンプトフッターを改善しました。エディタや /diff での選択範囲がプロンプト入力欄の中に表示されるようになり、フルスクリーンモードでは Remote Control のステータスがフッターではなくヘッダーに表示されます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-b092b59d7ff3">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] 「1Mコンテキストには利用クレジットが必要」というメッセージを、セッションの途中で有効化した利用クレジットはClaude Codeの再起動後に反映される旨を示すように改善した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-6b1dcbe6ea17</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-6b1dcbe6ea17</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[「1Mコンテキストには利用クレジットが必要」というメッセージを、セッションの途中で有効化した利用クレジットはClaude Codeの再起動後に反映される旨を示すように改善した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-6b1dcbe6ea17">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
