@@ -4,11 +4,159 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Tue, 15 Sep 2026 11:44:52 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 20:39:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-37d98f65c350</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-37d98f65c350</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-37d98f65c350">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-f163e0926454</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-f163e0926454</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-f163e0926454">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-2fe35f2302e3</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-2fe35f2302e3</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-2fe35f2302e3">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-3316a901d16f</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-3316a901d16f</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-3316a901d16f">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-d7a3ad4839a5</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-d7a3ad4839a5</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-d7a3ad4839a5">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-c2c67040ff73</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-c2c67040ff73</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-c2c67040ff73">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-bc2b7eaf2e1d</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-bc2b7eaf2e1d</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-bc2b7eaf2e1d">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-8cf3f11ac841</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-8cf3f11ac841</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-8cf3f11ac841">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-783a458bf8dc</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-783a458bf8dc</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-783a458bf8dc">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-167923b230d6</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-167923b230d6</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-167923b230d6">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-d20bc0f523d6</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-d20bc0f523d6</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-d20bc0f523d6">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-0da7cd1020ee</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-0da7cd1020ee</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-0da7cd1020ee">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-7c834904d7d1</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-7c834904d7d1</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-7c834904d7d1">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-e71cd3b501d1</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-e71cd3b501d1</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-e71cd3b501d1">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-1b8deed2c43a</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-1b8deed2c43a</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-1b8deed2c43a">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-ab01979d3d34</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-ab01979d3d34</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-ab01979d3d34">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-5f2ce23273d2</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-5f2ce23273d2</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-5f2ce23273d2">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-b762543aedd4</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-b762543aedd4</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-b762543aedd4">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-c0e7c0743f63</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-c0e7c0743f63</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-c0e7c0743f63">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.273#item-8c079e995992</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.273#item-8c079e995992</guid>
+            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-8c079e995992">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[v2.1.273 — Claude Code releases]]></title>
+            <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.273</link>
+            <guid>https://github.com/anthropics/claude-code/releases/tag/v2.1.273</guid>
+            <pubDate>Tue, 15 Sep 2026 20:23:03 GMT</pubDate>
+            <description><![CDATA[What's changed Added x-claude-code-request-class, x-claude-code-agent-type, x-claude-code-prev-tool-durations, x-claude-code-compaction and x-claude-code-context-compacted request headers for LLM gateways; opt in with CLAUDE_CODE_GATEWAY_HINT_HEADERS=1 Added a notification when an MCP server disconnects mid-session and automatic reconnection gives up, pointing at /mcp Added forking a session started with claude --remote-control or /remote-control from the Claude app; the fork runs as a backgroun]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.273">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.273">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/reona-claude-code-goal-stop-condition/</link>
@@ -598,174 +746,6 @@
             <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
             <description><![CDATA[`/bug` と `/feedback` の説明フィールドで、ターミナルのネイティブカーソルが有効な場合にカーソルが表示されない問題を修正]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-ab34fae274f2">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] `claude remote-control` が提供する Remote Control セッションが、`ListAgents` でセッションのタイトルではなく生成された名前を表示する問題を修正した — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-9fec4723027c</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-9fec4723027c</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`claude remote-control` が提供する Remote Control セッションが、`ListAgents` でセッションのタイトルではなく生成された名前を表示する問題を修正した]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-9fec4723027c">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] ディレクトリ名が2つのドットで始まるプラグインパスを `claude plugin validate` が誤って拒否する問題を修正した。実際にはプラグインローダーはそのようなパスを受け入れる。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-e942e4cba677</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-e942e4cba677</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[ディレクトリ名が2つのドットで始まるプラグインパスを `claude plugin validate` が誤って拒否する問題を修正した。実際にはプラグインローダーはそのようなパスを受け入れる。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-e942e4cba677">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] 検証できないデフォルトの monitors ファイルやルート直下の SKILL.md を、プラグインが黙って読み飛ばす問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-bc5f4fe8c48e</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-bc5f4fe8c48e</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[検証できないデフォルトの monitors ファイルやルート直下の SKILL.md を、プラグインが黙って読み飛ばす問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-bc5f4fe8c48e">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] WebFetch が localhost などドットを含まないホスト名への URL を拒否する際、拒否される理由を説明し、curl の使用を提案するようになった — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-a94dcbd36b22</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-a94dcbd36b22</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[WebFetch が localhost などドットを含まないホスト名への URL を拒否する際、拒否される理由を説明し、curl の使用を提案するようになった]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-a94dcbd36b22">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] `--print` モードで PermissionRequest hooks が発火しない問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-792a49e21c0d</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-792a49e21c0d</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`--print` モードで PermissionRequest hooks が発火しない問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-792a49e21c0d">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] headless モード(-p)実行時に policy-helper の警告が出力されない問題を修正した — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-644d829aee52</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-644d829aee52</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[headless モード(-p)実行時に policy-helper の警告が出力されない問題を修正した]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-644d829aee52">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] ``/resume`` でセッション一覧を表示する際、``/fork`` で作成したバックグラウンドセッションが独自の ``⑂`` fork 名ではなく親セッションの名前で表示される問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-779ade1600ce</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-779ade1600ce</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[``/resume`` でセッション一覧を表示する際、``/fork`` で作成したバックグラウンドセッションが独自の ``⑂`` fork 名ではなく親セッションの名前で表示される問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-779ade1600ce">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] `/remote-control` など claude.ai アカウントを必要とするコマンドで、サインアウト時に「Claude for Enterprise への移行」メッセージの代わりに `/login` を提案するように修正。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-593c076a69c1</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-593c076a69c1</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`/remote-control` など claude.ai アカウントを必要とするコマンドで、サインアウト時に「Claude for Enterprise への移行」メッセージの代わりに `/login` を提案するように修正。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-593c076a69c1">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] `CLAUDE_CODE_SESSIONEND_HOOKS_TIMEOUT_MS` を設定しても、フックごとの `timeout` が未設定の SessionEnd フックが延長されず、1.5 秒後にキャンセルされる問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-5c4911e86b75</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-5c4911e86b75</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`CLAUDE_CODE_SESSIONEND_HOOKS_TIMEOUT_MS` を設定しても、フックごとの `timeout` が未設定の SessionEnd フックが延長されず、1.5 秒後にキャンセルされる問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-5c4911e86b75">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] GitHub アカウントが接続されていない場合に `/autofix-pr` などのクラウドセッションコマンドがリトライや Claude GitHub App のインストールを促す不具合を修正。これらのコマンドは現在、`/web-setup` または Web の接続ページを案内する。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-6ccc2fa57a93</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-6ccc2fa57a93</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[GitHub アカウントが接続されていない場合に `/autofix-pr` などのクラウドセッションコマンドがリトライや Claude GitHub App のインストールを促す不具合を修正。これらのコマンドは現在、`/web-setup` または Web の接続ページを案内する。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-6ccc2fa57a93">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] `/teleport` や `/remote-env` などのクラウドセッションコマンドが、組織のポリシーによって無効化されている場合に 「Unknown command」 ではなくその理由を説明するように修正された。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-20858bebcc50</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-20858bebcc50</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`/teleport` や `/remote-env` などのクラウドセッションコマンドが、組織のポリシーによって無効化されている場合に 「Unknown command」 ではなくその理由を説明するように修正された。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-20858bebcc50">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] ファイルシステム分離が無効のときに実効性のないパス一覧を表示せず、また厳格モードで「コマンドがサンドボックス外で実行されることはない」と主張しないよう、Bashサンドボックスの指示が制約を実態以上に強調する問題を修正した — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-9ed10c6575e5</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-9ed10c6575e5</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[ファイルシステム分離が無効のときに実効性のないパス一覧を表示せず、また厳格モードで「コマンドがサンドボックス外で実行されることはない」と主張しないよう、Bashサンドボックスの指示が制約を実態以上に強調する問題を修正した]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-9ed10c6575e5">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] フルスクリーンモードを改善：プロンプト行の追加や削除（Shift+Enter）が、文字を入力するのと同じ速度で再描画されるようになり、表示中のトランスクリプト全体を再レンダリングしなくなった — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-1d3ce74bd720</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-1d3ce74bd720</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[フルスクリーンモードを改善：プロンプト行の追加や削除（Shift+Enter）が、文字を入力するのと同じ速度で再描画されるようになり、表示中のトランスクリプト全体を再レンダリングしなくなった]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-1d3ce74bd720">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] - `--continue` / `--resume` の改善: SessionStart フックの完了を待たずに会話が即座に表示されるようになり、最初のメッセージでトランスクリプト全体を再読み込みしなくなった — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-ff1a1ac2f427</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-ff1a1ac2f427</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[- `--continue` / `--resume` の改善: SessionStart フックの完了を待たずに会話が即座に表示されるようになり、最初のメッセージでトランスクリプト全体を再読み込みしなくなった]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-ff1a1ac2f427">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] 非表示のツールバッチごとのリマインダーを再描画しないことで、ツールを多用するターン中の応答性が向上しました。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-2534fe0dd783</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-2534fe0dd783</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[非表示のツールバッチごとのリマインダーを再描画しないことで、ツールを多用するターン中の応答性が向上しました。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-2534fe0dd783">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] `.claude/workflows/` スクリプトがあるプロジェクトで起動時間を改善: スクリプトの一覧表示時に各スクリプトを解析しなくなりました — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-8efcb93321a5</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-8efcb93321a5</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`.claude/workflows/` スクリプトがあるプロジェクトで起動時間を改善: スクリプトの一覧表示時に各スクリプトを解析しなくなりました]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-8efcb93321a5">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] autoモードの拒否メッセージを改善しました:Claudeが受け取るメッセージに、動作をブロックしたルールの名前が明示され、ユーザーに確認する前に、より安全な方法を試し、関係のない作業を先に完了するようClaudeに促すようになりました。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-054cc7a0d452</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-054cc7a0d452</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[autoモードの拒否メッセージを改善しました:Claudeが受け取るメッセージに、動作をブロックしたルールの名前が明示され、ユーザーに確認する前に、より安全な方法を試し、関係のない作業を先に完了するようClaudeに促すようになりました。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-054cc7a0d452">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] Claude in Chrome の改善: 長いページの読み取りが、ファイルに保存して読み戻す代わりに、インラインで表示されるようになった。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-973af797b2db</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-973af797b2db</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[Claude in Chrome の改善: 長いページの読み取りが、ファイルに保存して読み戻す代わりに、インラインで表示されるようになった。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-973af797b2db">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] MEMORY.md の切り詰め警告を改善し、切り捨てられた行数と切り捨て開始位置を表示するようにした。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-fa038cb355f9</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-fa038cb355f9</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[MEMORY.md の切り詰め警告を改善し、切り捨てられた行数と切り捨て開始位置を表示するようにした。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-fa038cb355f9">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] アーティファクトのターミナル権限プロンプトを改善しました。askの質問が先頭に表示されるようになりました。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-35c03adead98</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-35c03adead98</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[アーティファクトのターミナル権限プロンプトを改善しました。askの質問が先頭に表示されるようになりました。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-35c03adead98">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] プロンプトフッターを改善しました。エディタや /diff での選択範囲がプロンプト入力欄の中に表示されるようになり、フルスクリーンモードでは Remote Control のステータスがフッターではなくヘッダーに表示されます。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-b092b59d7ff3</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-b092b59d7ff3</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[プロンプトフッターを改善しました。エディタや /diff での選択範囲がプロンプト入力欄の中に表示されるようになり、フルスクリーンモードでは Remote Control のステータスがフッターではなくヘッダーに表示されます。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-b092b59d7ff3">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

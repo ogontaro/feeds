@@ -4,11 +4,19 @@
         <title>翻訳フィード: Kubernetes — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Kubernetes 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Mon, 14 Sep 2026 18:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 16:24:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[What I learned organizing KCD Lima 2026 — CNCF Blog]]></title>
+            <link>https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/</link>
+            <guid>https://www.cncf.io/?p=174852</guid>
+            <pubDate>Tue, 15 Sep 2026 16:24:05 GMT</pubDate>
+            <description><![CDATA[On July 18, 2026, we held the third edition of Kubernetes Community Days Lima at UTEC in Barranco. By now, we have already sent the Transparency Report to the CNCF, thanked our sponsors, and processed the...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F15%2Fwhat-i-learned-organizing-kcd-lima-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes Changed Block Tracking API - Beta Differences — Kubernetes Blog]]></title>
             <link>https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/</link>
@@ -778,14 +786,6 @@
             <pubDate>Wed, 13 May 2026 18:35:00 GMT</pubDate>
             <description><![CDATA[AI/ML and batch workloads introduce unique scheduling challenges that go beyond simple Pod-by-Pod scheduling. In Kubernetes v1.35, we introduced the first tranche of workload-aware scheduling improvements, featuring the foundational Workload API alongside basic gang scheduling support built on a Pod-based framework, and an opportunistic batching feature to efficiently process identical Pods. Kubernetes v1.36 introduces a significant architectural evolution by cleanly separating API concerns: the]]></description>
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/13/kubernetes-v1-36-advancing-workload-aware-scheduling/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F13%2Fkubernetes-v1-36-advancing-workload-aware-scheduling%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes v1.36: PSI Metrics for Kubernetes Graduates to GA — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/05/12/kubernetes-v1-36-psi-metrics-ga/</link>
-            <guid>https://kubernetes.io/blog/2026/05/12/kubernetes-v1-36-psi-metrics-ga/</guid>
-            <pubDate>Tue, 12 May 2026 18:35:00 GMT</pubDate>
-            <description><![CDATA[Since its original implementation in the Linux kernel in 2018, Pressure Stall Information (PSI) has provided users with the high-fidelity signals needed to identify resource saturation before it becomes an outage. Unlike traditional utilization metrics, PSI tells the story of tasks stalled and time lost, all in nicely-packaged percentages of time across the CPU, memory, and I/O. With the recent release of Kubernetes v1.36, users across the ecosystem have a stable, reliable interface to observe r]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/12/kubernetes-v1-36-psi-metrics-ga/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F12%2Fkubernetes-v1-36-psi-metrics-ga%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
