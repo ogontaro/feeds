@@ -4,11 +4,27 @@
         <title>翻訳フィード: Kubernetes — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Kubernetes 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Mon, 14 Sep 2026 10:45:49 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Sep 2026 18:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes Changed Block Tracking API - Beta Differences — Kubernetes Blog]]></title>
+            <link>https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/</guid>
+            <pubDate>Mon, 14 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta. If you aren't yet familiar with changed block tracking for storage in Kubernetes, the Alpha announcement covers the motivation, the three primary components (the CSI SnapshotMetadata gRPC service, the SnapshotMetadataService CRD, and the external-snapshot-metadata sidecar), and a walkthrough of how to use]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fcsi-changed-block-tracking-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Memory QoS Graduates to Beta — Kubernetes Blog]]></title>
+            <link>https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/</guid>
+            <pubDate>Mon, 14 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It was first introduced as Alpha in v1.22, and expanded in v1.36 with tiered memory reservation. This post covers what changed in v1.37, what the Beta promotion means for cluster operators, and how to configure the feature. What changed in v1.37 Memory QoS is Beta and enabl]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fkubernetes-v1-37-memory-qos-graduates-to-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Cilium 1.20: Gateway API ExternalAuth, TCPRoute/UDPRoute, ENI IPAM for IPv6, and more — CNCF Blog]]></title>
             <link>https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/</link>
@@ -770,21 +786,6 @@
             <pubDate>Tue, 12 May 2026 18:35:00 GMT</pubDate>
             <description><![CDATA[Since its original implementation in the Linux kernel in 2018, Pressure Stall Information (PSI) has provided users with the high-fidelity signals needed to identify resource saturation before it becomes an outage. Unlike traditional utilization metrics, PSI tells the story of tasks stalled and time lost, all in nicely-packaged percentages of time across the CPU, memory, and I/O. With the recent release of Kubernetes v1.36, users across the ecosystem have a stable, reliable interface to observe r]]></description>
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/12/kubernetes-v1-36-psi-metrics-ga/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F12%2Fkubernetes-v1-36-psi-metrics-ga%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[CVE-2026-44338: PraisonAI authentication bypass in under 4 hours and the growing trend of rapid exploitation — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/cve-2026-44338-praisonai-authentication-bypass-in-under-4-hours-and-the-growing-trend-of-rapid-exploitation</link>
-            <guid>https://webflow.sysdig.com/blog/cve-2026-44338-praisonai-authentication-bypass-in-under-4-hours-and-the-growing-trend-of-rapid-exploitation</guid>
-            <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/cve-2026-44338-praisonai-authentication-bypass-in-under-4-hours-and-the-growing-trend-of-rapid-exploitation">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fcve-2026-44338-praisonai-authentication-bypass-in-under-4-hours-and-the-growing-trend-of-rapid-exploitation">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Introducing Prempti: Runtime security for AI coding agents, powered by Falco — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/introducing-prempti-runtime-security-for-ai-coding-agents-powered-by-falco</link>
-            <guid>https://webflow.sysdig.com/blog/introducing-prempti-runtime-security-for-ai-coding-agents-powered-by-falco</guid>
-            <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[AI coding agents like Claude Code and Codex have become a natural part of the developer workflow. You give them a task and they read your files, run commands, make network requests, and write code, all on your behalf and all with your permissions.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/introducing-prempti-runtime-security-for-ai-coding-agents-powered-by-falco">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintroducing-prempti-runtime-security-for-ai-coding-agents-powered-by-falco">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

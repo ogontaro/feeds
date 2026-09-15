@@ -4,11 +4,159 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Mon, 14 Sep 2026 06:21:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 14 Sep 2026 22:31:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-bf6c573338ac</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-bf6c573338ac</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-bf6c573338ac">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-7f37cf889eba</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-7f37cf889eba</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-7f37cf889eba">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-38d9a53f9247</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-38d9a53f9247</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-38d9a53f9247">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-d1373da87f87</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-d1373da87f87</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-d1373da87f87">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-17d665085c14</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-17d665085c14</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-17d665085c14">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-8dad31943ea9</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-8dad31943ea9</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-8dad31943ea9">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-8d9b95985497</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-8d9b95985497</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-8d9b95985497">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-cd1cffaab2f3</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-cd1cffaab2f3</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-cd1cffaab2f3">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-1ebed92e526f</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-1ebed92e526f</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-1ebed92e526f">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-4ed134db2015</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-4ed134db2015</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-4ed134db2015">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-62eb22dd9103</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-62eb22dd9103</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-62eb22dd9103">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-a6b575e354a3</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-a6b575e354a3</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-a6b575e354a3">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-1257b8f8cddf</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-1257b8f8cddf</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-1257b8f8cddf">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-d4493d637a05</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-d4493d637a05</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-d4493d637a05">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-e9b4d77d5578</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-e9b4d77d5578</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-e9b4d77d5578">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-e2aae6a0ce58</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-e2aae6a0ce58</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-e2aae6a0ce58">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-a3c11d16b7b3</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-a3c11d16b7b3</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-a3c11d16b7b3">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-55017e04a1a7</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-55017e04a1a7</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-55017e04a1a7">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-fdaa5c92b442</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-fdaa5c92b442</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-fdaa5c92b442">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.271#item-a9694650388c</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.271#item-a9694650388c</guid>
+            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-a9694650388c">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[v2.1.271 — Claude Code releases]]></title>
+            <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.271</link>
+            <guid>https://github.com/anthropics/claude-code/releases/tag/v2.1.271</guid>
+            <pubDate>Mon, 14 Sep 2026 22:12:54 GMT</pubDate>
+            <description><![CDATA[What's changed Added fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it Added mouse support to the /config panel in fullscreen mode: the wheel scrolls the settings list, a click on a setting's value changes it, and the row under the pointer is highlighted Added claude self-hosted-runner --drain-marker-file : when that file exists at a SIGTERM drain, the runner reports its e]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.271">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.271">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude Code で auto mode を起動時のデフォルトにしたら、対応モデルと非対応モデルで挙動が分かれた — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/</link>
@@ -621,174 +769,6 @@
             <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
             <description><![CDATA[Bedrock、Vertex、Foundry のセッションで、会話を通じてツールリストがバイト単位で安定するように変更した(後から接続するツールは書き換えの代わりに遅延読み込みされる)。これによりファーストパーティのセッションと一致する]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-05a12e7371b2">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] タスク管理ツールを提供する対象を Claude 3.x、Opus 4.0〜4.7、Sonnet 4.0〜4.6、Haiku 4.5 に限定する。それ以外のモデルでは CLAUDE_CODE_ENABLE_TODO_TOOLS=1 を設定する必要がある。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-06714718a547</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-06714718a547</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[タスク管理ツールを提供する対象を Claude 3.x、Opus 4.0〜4.7、Sonnet 4.0〜4.6、Haiku 4.5 に限定する。それ以外のモデルでは CLAUDE_CODE_ENABLE_TODO_TOOLS=1 を設定する必要がある。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-06714718a547">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] ターミナルのアーティファクト data-edit 権限プロンプトを、ドキュメント数と誰がアーティファクトを開けるかを表示するカードに変更した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-24df9c07e53c</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-24df9c07e53c</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[ターミナルのアーティファクト data-edit 権限プロンプトを、ドキュメント数と誰がアーティファクトを開けるかを表示するカードに変更した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-24df9c07e53c">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] すべての承認を省略するよう設定されたローカル Cowork セッションの変更: Artifact ツールが、セッションフォルダの外にあるファイルや symlink で到達するファイルを読み込まずに拒否するようになった — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-375f029a4d1b</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-375f029a4d1b</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[すべての承認を省略するよう設定されたローカル Cowork セッションの変更: Artifact ツールが、セッションフォルダの外にあるファイルや symlink で到達するファイルを読み込まずに拒否するようになった]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-375f029a4d1b">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] Artifact ツールの読み取りと更新に対しては、プレーンな `WebFetch` の deny ルールと ask ルールが適用されないように変更。これらをブロックまたは制御するには、`Artifact` ルール(または `WebFetch(domain:claude.ai)`)を使う — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-2b353616b16f</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-2b353616b16f</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[Artifact ツールの読み取りと更新に対しては、プレーンな `WebFetch` の deny ルールと ask ルールが適用されないように変更。これらをブロックまたは制御するには、`Artifact` ルール(または `WebFetch(domain:claude.ai)`)を使う]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-2b353616b16f">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] 「N 個の MCP サーバーが認証を必要としています」という起動時通知を、毎回の起動時に表示する代わりに、サーバーごとに 1 回だけ通知するように変更した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-72e0fbda4584</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-72e0fbda4584</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[「N 個の MCP サーバーが認証を必要としています」という起動時通知を、毎回の起動時に表示する代わりに、サーバーごとに 1 回だけ通知するように変更した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-72e0fbda4584">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] [VSCode] `CLAUDE_CONFIG_DIR` が設定ファイルや `environmentVariables` 設定で指定された場合に、セッション一覧、設定トグル、チャットタブが正しく動作しない問題を修正した — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-7387e4465096</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-7387e4465096</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] `CLAUDE_CONFIG_DIR` が設定ファイルや `environmentVariables` 設定で指定された場合に、セッション一覧、設定トグル、チャットタブが正しく動作しない問題を修正した]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-7387e4465096">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] [VSCode] Fixed an issue where the model pill, model picker, and command menu in open tabs went blank for a few seconds after a login, logout, or account switch. — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-dccbc89c3973</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-dccbc89c3973</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] Fixed an issue where the model pill, model picker, and command menu in open tabs went blank for a few seconds after a login, logout, or account switch.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-dccbc89c3973">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] - [VSCode] プロジェクト設定やローカル設定が ~/.claude/settings.json に記載されたモデルを上書きしている場合に、新規タブや直後に再読み込みされた会話のモードピッカーから Auto が消える問題を修正 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-1c02e567958f</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-1c02e567958f</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[- [VSCode] プロジェクト設定やローカル設定が ~/.claude/settings.json に記載されたモデルを上書きしている場合に、新規タブや直後に再読み込みされた会話のモードピッカーから Auto が消える問題を修正]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-1c02e567958f">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] [VSCode] SessionStart フックが設定されている環境で、ウィンドウのリロード後にセッション名が最後のプロンプトに戻る問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-b19b38adbc52</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-b19b38adbc52</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] SessionStart フックが設定されている環境で、ウィンドウのリロード後にセッション名が最後のプロンプトに戻る問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-b19b38adbc52">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] [VSCode] ウィンドウ内の別タブで Claude が既に起動している場合に、新しいタブの Claude プロセスが起動するまで、フッターのモデルピルと Remote Control ピルが待機してしまう問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-9c5c3d96e49a</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-9c5c3d96e49a</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] ウィンドウ内の別タブで Claude が既に起動している場合に、新しいタブの Claude プロセスが起動するまで、フッターのモデルピルと Remote Control ピルが待機してしまう問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-9c5c3d96e49a">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] [VSCode] セッションタブの起動が設定読み込みの0.5秒以上後に到着した際に、2つ目のClaudeプロセスがフルスタートアップを実行してしまう問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-5e0d16ae9ab7</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-5e0d16ae9ab7</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] セッションタブの起動が設定読み込みの0.5秒以上後に到着した際に、2つ目のClaudeプロセスがフルスタートアップを実行してしまう問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-5e0d16ae9ab7">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] - [VSCode] セッション一覧からのセッション再開で `claudeCode.preferredLocation: — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-3091906bbfcc</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-3091906bbfcc</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[- [VSCode] セッション一覧からのセッション再開で `claudeCode.preferredLocation:]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-3091906bbfcc">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] [VSCode] Windows における問題を修正: WSL がインストールされていないマシンで WSL インストールのプロンプトが表示されなくなり、WSL がインストールされている環境では Windows のファイルに対して IDE 診断が正しく返されるようになった — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-ea40f753a18b</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-ea40f753a18b</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] Windows における問題を修正: WSL がインストールされていないマシンで WSL インストールのプロンプトが表示されなくなり、WSL がインストールされている環境では Windows のファイルに対して IDE 診断が正しく返されるようになった]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-ea40f753a18b">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] [VSCode] settings 経由で `CLAUDE_CONFIG_DIR` が設定されているときに、カスタムスタイルビルダーが CLI が読み取らないフォルダーに User レベルのスタイルを保存する問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-bcb9d8574957</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-bcb9d8574957</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] settings 経由で `CLAUDE_CONFIG_DIR` が設定されているときに、カスタムスタイルビルダーが CLI が読み取らないフォルダーに User レベルのスタイルを保存する問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-bcb9d8574957">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] [VSCode] 常に許可の権限ルールの保存先を左右の矢印キーで変更できるようになった。キーボードやスクリーンリーダーを利用するユーザー向け — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-62c5800094df</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-62c5800094df</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] 常に許可の権限ルールの保存先を左右の矢印キーで変更できるようになった。キーボードやスクリーンリーダーを利用するユーザー向け]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-62c5800094df">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] - [VSCode] 会話内の最新のメッセージにキーボードフォーカスを移動する「Claude Code: Focus last message」コマンドを追加した。キーボード操作ユーザーやスクリーンリーダー利用者のための機能である。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-cd5e4fbfc51b</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-cd5e4fbfc51b</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[- [VSCode] 会話内の最新のメッセージにキーボードフォーカスを移動する「Claude Code: Focus last message」コマンドを追加した。キーボード操作ユーザーやスクリーンリーダー利用者のための機能である。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-cd5e4fbfc51b">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] [VSCode] Manage pluginsダイアログが、再起動なしでインストール・有効化・無効化・アンインストールを開いているセッションに適用するように変更された。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-0427d3179837</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-0427d3179837</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[VSCode] Manage pluginsダイアログが、再起動なしでインストール・有効化・無効化・アンインストールを開いているセッションに適用するように変更された。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-0427d3179837">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] VSCode拡張機能で、アーティファクト関連の一部権限プロンプトから「今後確認しない」選択肢を省略し、ターミナルと挙動を揃えた。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-7942ed376a78</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-7942ed376a78</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[VSCode拡張機能で、アーティファクト関連の一部権限プロンプトから「今後確認しない」選択肢を省略し、ターミナルと挙動を揃えた。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-7942ed376a78">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] [Claude Code on the web] クラウドセッションが約6時間を超えて実行された場合に、永続化されたセッションフォルダへ保存したファイルが通知なく失われる問題を修正した。保存されたファイルは最大1日間保持される。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-d199d8fc8bf4</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-d199d8fc8bf4</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[[Claude Code on the web] クラウドセッションが約6時間を超えて実行された場合に、永続化されたセッションフォルダへ保存したファイルが通知なく失われる問題を修正した。保存されたファイルは最大1日間保持される。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-d199d8fc8bf4">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] 【Claude Code on the web】管理者がモデルの effort レベルに上限を設定している組織で、ルーティンがセッションを再開したときや、effort が未設定のままセッションを開始したときに発生していた「Invalid effort level」エラーを修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-9572d1f03e6c</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-9572d1f03e6c</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[【Claude Code on the web】管理者がモデルの effort レベルに上限を設定している組織で、ルーティンがセッションを再開したときや、effort が未設定のままセッションを開始したときに発生していた「Invalid effort level」エラーを修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-9572d1f03e6c">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Improved] 会話からのルーチン作成を改善:新しいルーチンにコネクタがない場合、Claudeは単に確認するだけでなく、その旨と追加方法を伝える — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-50df5be7f3ea</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-50df5be7f3ea</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[会話からのルーチン作成を改善:新しいルーチンにコネクタがない場合、Claudeは単に確認するだけでなく、その旨と追加方法を伝える]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-50df5be7f3ea">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

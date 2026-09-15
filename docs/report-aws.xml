@@ -4,11 +4,43 @@
         <title>AWS レポート — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 13 Sep 2026 23:55:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 00:24:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-15]]></title>
+            <link>https://ogontaro.github.io/rss/report/aws/2026-09-15.html</link>
+            <guid>https://ogontaro.github.io/rss/report/aws/2026-09-15.html</guid>
+            <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 8 本</h2>
+<h3>Abnormal AI、Amazon Bedrock AgentCore でエージェント型メールセキュリティを大規模展開</h3>
+<p>10億通規模のリアルタイム脅威検知エージェントで AgentCore Code Interpreter を使い捨てのサンドボックスとして使う設計判断が具体的に語られており、本番運用で Code Interpreter を活用する際の実践的な教訓が得られる。
+<a href="https://aws.amazon.com/blogs/machine-learning/abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fabnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock AgentCore、AIエージェント向けのエンドユーザー OAuth 同意フローを追加</h3>
+<p>AgentCore Gateway に同意ポータルとセッションバインディングが加わり、GitHub や Slack など外部サービスへの3-legged OAuth 連携をエージェントに組み込みやすくなった。CloudTrail での監査方法まで解説されており、エージェント基盤の権限設計に直結する内容。
+<a href="https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmanage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>AWS週次まとめ：Amazon Bedrock に OpenAI GPT-6 Astra が登場、Amazon Quick デスクトップ GA など（2026年9月14日）</h3>
+<p>Bedrock に OpenAI の新フロンティアモデル GPT-6 Astra が加わったことが今週最大のトピックで、Claude 以外のモデル選択肢が広がる動きとして押さえておきたい。Quick デスクトップ版 GA など他の発表も一覧できる。
+<a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026%2F">Google 翻訳で全文を読む</a></p>
+<h3>Ninth Wave、Amazon Bedrock でオープンファイナンスのオンボーディングを AI 化</h3>
+<p>銀行APIをFDX標準に照らして検証・コンプライアンススコアリングするマルチエージェント構成を Bedrock AgentCore 上に構築し、数週間かかっていたオンボーディングを数分に短縮した事例。SOC 2 / PCI DSS 要件を満たしながらエージェントを実運用に載せる設計が参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>プロンプトエンジニアリングからカスタムモデルまで：AWS における生成AIカスタマイズの選択指針</h3>
+<p>RAG・ファインチューニング・継続事前学習・Amazon Nova Forge をどう使い分けるかを8段階の意思決定フレームワークとして整理しており、過剰なカスタマイズに走らず段階的に投資判断するための指針として実務に効く内容。
+<a href="https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws%2F">Google 翻訳で全文を読む</a></p>
+<h3>MMF・Databricks Genie・Amazon Quick で需要変動への自動補充を実現</h3>
+<p>需要予測だけでなく、供給元の在庫状況と突き合わせて発注まで自動で完結させる detect-decide-act ループを Databricks と Amazon Quick で構築した事例。人の判断が必要な場面だけエスカレーションする設計は、生成AIの適用範囲を「予測」から「実行」まで広げる際の参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fautomate-replenishment-with-mmf-databricks-genie-and-amazon-quick%2F">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code の auto mode をデフォルト化すると、Bedrock 対応モデルと非対応モデルで挙動が変わる</h3>
+<p>Bedrock 上で Claude Code の auto mode をデフォルトにした際、モデルによって挙動差が出る実例を検証しており、Bedrock 経由で Claude Code を運用しているチームがハマりやすい落とし穴を事前に把握できる。
+<a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-default-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock Managed Knowledge Base の S3 ナレッジベース、ドキュメント単位 ACL を Amazon Quick から検証</h3>
+<p>Bedrock 側でドキュメントレベルのアクセス制御を定義し、Quick 側のACLとどう組み合わさるかを実際に検証しており、ユーザーごとに参照できる機密文書を出し分けたい場合の設計・検証手順がそのまま使える。
+<a href="https://dev.classmethod.jp/articles/20260914-amazon-mkb-s3-acl-with-quick/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260914-amazon-mkb-s3-acl-with-quick%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS レポート 2026-09-14]]></title>
             <link>https://ogontaro.github.io/rss/report/aws/2026-09-14.html</link>
