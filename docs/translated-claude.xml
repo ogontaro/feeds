@@ -4,11 +4,26 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Mon, 14 Sep 2026 22:31:11 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 00:46:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.272#item-ccfc4941961a</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.272#item-ccfc4941961a</guid>
+            <pubDate>Tue, 15 Sep 2026 00:46:35 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.272#item-ccfc4941961a">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[v2.1.272 — Claude Code releases]]></title>
+            <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.272</link>
+            <guid>https://github.com/anthropics/claude-code/releases/tag/v2.1.272</guid>
+            <pubDate>Tue, 15 Sep 2026 00:42:25 GMT</pubDate>
+            <description><![CDATA[What's changed Bug fixes and reliability improvements]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.272">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.272">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
             <link>https://claude-code-log.com/changelog/v2.1.271#item-bf6c573338ac</link>
@@ -753,22 +768,6 @@
             <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
             <description><![CDATA[「/plugin」の改善: プラグインのインストール・有効化・無効化がメニューを閉じた時点で反映されるようになり、その後に「/reload-plugins」を実行する必要がなくなった。]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-e95d7a9d7325">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] Amazon Bedrock、Vertex、Foundry 向けのシステムプロンプトを変更し、環境・モデル・設定の詳細をアタッチメントとして渡すようにしました。これにより、ファーストパーティセッションと同じ構成になります。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-10ffd794fc4b</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-10ffd794fc4b</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock、Vertex、Foundry 向けのシステムプロンプトを変更し、環境・モデル・設定の詳細をアタッチメントとして渡すようにしました。これにより、ファーストパーティセッションと同じ構成になります。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-10ffd794fc4b">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Changed] Bedrock、Vertex、Foundry のセッションで、会話を通じてツールリストがバイト単位で安定するように変更した(後から接続するツールは書き換えの代わりに遅延読み込みされる)。これによりファーストパーティのセッションと一致する — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-05a12e7371b2</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-05a12e7371b2</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[Bedrock、Vertex、Foundry のセッションで、会話を通じてツールリストがバイト単位で安定するように変更した(後から接続するツールは書き換えの代わりに遅延読み込みされる)。これによりファーストパーティのセッションと一致する]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-05a12e7371b2">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
