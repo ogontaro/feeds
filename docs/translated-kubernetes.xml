@@ -4,11 +4,19 @@
         <title>翻訳フィード: Kubernetes — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Kubernetes 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Tue, 15 Sep 2026 16:24:05 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2026 18:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta — Kubernetes Blog]]></title>
+            <link>https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/</guid>
+            <pubDate>Tue, 15 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36, this enhancement builds on Pod-Level Resources by equipping Kubelet's Topology Manager, CPU Manager, and Memory Manager to use Pod-level resource declarations (.spec.resources) directly when making hardware placement decisions. Bringing pod-level resources to node managers Before this feature, obtaining exclusi]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F15%2Fkubernetes-v1-37-pod-level-resource-managers-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[What I learned organizing KCD Lima 2026 — CNCF Blog]]></title>
             <link>https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/</link>
@@ -778,14 +786,6 @@
             <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Sysdig Threat Research Team (TRT) has identified what appears to be the first published case of a threat actor using a NATS server as command-and-control (C2) infrastructure — a technique dubbed “NATS-as-C2.” Discovered during an investigation into exploitation of CVE-2026-33017 in Langflow, the operation used cloud-native messaging infrastructure, including pub/sub orchestration and durable task queues, to coordinate a distributed credential-hunting worker pool targeting AWS and AI credentials.]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/nats-as-c2-inside-a-new-technique-attackers-are-using-to-harvest-cloud-credentials-and-ai-api-keys">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fnats-as-c2-inside-a-new-technique-attackers-are-using-to-harvest-cloud-credentials-and-ai-api-keys">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes v1.36: Advancing Workload-Aware Scheduling — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/05/13/kubernetes-v1-36-advancing-workload-aware-scheduling/</link>
-            <guid>https://kubernetes.io/blog/2026/05/13/kubernetes-v1-36-advancing-workload-aware-scheduling/</guid>
-            <pubDate>Wed, 13 May 2026 18:35:00 GMT</pubDate>
-            <description><![CDATA[AI/ML and batch workloads introduce unique scheduling challenges that go beyond simple Pod-by-Pod scheduling. In Kubernetes v1.35, we introduced the first tranche of workload-aware scheduling improvements, featuring the foundational Workload API alongside basic gang scheduling support built on a Pod-based framework, and an opportunistic batching feature to efficiently process identical Pods. Kubernetes v1.36 introduces a significant architectural evolution by cleanly separating API concerns: the]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/13/kubernetes-v1-36-advancing-workload-aware-scheduling/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F13%2Fkubernetes-v1-36-advancing-workload-aware-scheduling%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

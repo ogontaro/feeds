@@ -4,11 +4,18 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Tue, 15 Sep 2026 16:18:19 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2026 01:00:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Amazon Bedrock | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/Comprehend-VS-AI/</link>
+            <guid>37slHfqwsXJ7zdcvq8lx2Q</guid>
+            <pubDate>Wed, 16 Sep 2026 01:00:10 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/Comprehend-VS-AI/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Optimizing cost and latency with Amazon Bedrock prompt caching — AWS Machine Learning Blog]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/</link>
@@ -800,14 +807,6 @@
             <pubDate>Fri, 17 Jul 2026 01:41:29 GMT</pubDate>
             <description><![CDATA[CloudWatch Application Signals に追加された Dynamic Instrumentation 機能を試してみました。再デプロイなしに本番環境のアプリケーションに対してブレークポイントを設定し、実行時の変数や引数をスナップショットとして取得できる仕組みについて紹介します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/cloudwatch-dynamic-instrumentation/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon SQS turns 20: Two decades of reliable messaging at scale — AWS News Blog]]></title>
-            <link>https://aws.amazon.com/blogs/aws/amazon-sqs-turns-20-two-decades-of-reliable-messaging-at-scale/</link>
-            <guid>4208480ff12de823b05e88106fa2cdbe89cd4c2e</guid>
-            <pubDate>Mon, 13 Jul 2026 18:13:57 GMT</pubDate>
-            <description><![CDATA[On July 13, 2006, we launched Amazon Simple Queue Service (Amazon SQS) as one of the first three services available to customers, alongside Amazon EC2 and Amazon S3. We had learned firsthand that distributed systems need a reliable way to pass messages between components without creating tight dependencies. If one service called another directly and […]]]></description>
-            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/amazon-sqs-turns-20-two-decades-of-reliable-messaging-at-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Famazon-sqs-turns-20-two-decades-of-reliable-messaging-at-scale%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

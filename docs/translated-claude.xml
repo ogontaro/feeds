@@ -4,11 +4,18 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Tue, 15 Sep 2026 20:39:45 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2026 01:00:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Claude | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/Comprehend-VS-AI/</link>
+            <guid>37slHfqwsXJ7zdcvq8lx2Q</guid>
+            <pubDate>Wed, 16 Sep 2026 01:00:10 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/Comprehend-VS-AI/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
             <link>https://claude-code-log.com/changelog/v2.1.273#item-37d98f65c350</link>
@@ -738,14 +745,6 @@
             <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
             <description><![CDATA[現在のタスクのラベルが長い場合にスピナーが複数行に折り返される問題を修正し、ラベルと「Next:」のタスク行が1つの端末行に収まるようにした]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-81cc9b151971">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] `/bug` と `/feedback` の説明フィールドで、ターミナルのネイティブカーソルが有効な場合にカーソルが表示されない問題を修正 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-ab34fae274f2</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-ab34fae274f2</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`/bug` と `/feedback` の説明フィールドで、ターミナルのネイティブカーソルが有効な場合にカーソルが表示されない問題を修正]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-ab34fae274f2">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
