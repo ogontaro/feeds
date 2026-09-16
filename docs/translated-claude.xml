@@ -4,11 +4,25 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Wed, 16 Sep 2026 01:00:10 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2026 09:01:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Claude | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/claude-managed-agent-sandbox-run-on-firecracker/</link>
+            <guid>55EZhjqKKO0RqLaTsjLHzy</guid>
+            <pubDate>Wed, 16 Sep 2026 09:01:05 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/claude-managed-agent-sandbox-run-on-firecracker/">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — Claude | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/20260916-cc-updates-v2-1-273/</link>
+            <guid>45LpA2KR1zj4qfAn8dHQjV</guid>
+            <pubDate>Wed, 16 Sep 2026 04:16:13 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260916-cc-updates-v2-1-273/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/Comprehend-VS-AI/</link>
@@ -729,22 +743,6 @@
             <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
             <description><![CDATA[~/…の再帰処理時にフィールドが欠落する問題を修正しました]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-2d05cac535a9">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] ナビゲーション URL にスキームはあるもののホストをパースできない場合に、Claude in Chrome がホスト「https」の許可を求める問題を修正した。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-967167df13d1</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-967167df13d1</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[ナビゲーション URL にスキームはあるもののホストをパースできない場合に、Claude in Chrome がホスト「https」の許可を求める問題を修正した。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-967167df13d1">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Fixed] 現在のタスクのラベルが長い場合にスピナーが複数行に折り返される問題を修正し、ラベルと「Next:」のタスク行が1つの端末行に収まるようにした — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-81cc9b151971</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-81cc9b151971</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[現在のタスクのラベルが長い場合にスピナーが複数行に折り返される問題を修正し、ラベルと「Next:」のタスク行が1つの端末行に収まるようにした]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-81cc9b151971">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
