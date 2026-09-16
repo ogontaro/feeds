@@ -4,11 +4,26 @@
         <title>翻訳フィード: Kubernetes — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Kubernetes 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Tue, 15 Sep 2026 18:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2026 16:00:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Argo CD v3.6-rc1 is here! — Argo Project]]></title>
+            <link>https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/c0b562dc78d1</guid>
+            <pubDate>Wed, 16 Sep 2026 16:00:25 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-6-rc1-is-here-c0b562dc78d1%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Running OpenBao on Kubernetes with a CloudNativePG PostgreSQL backend — CNCF Blog]]></title>
+            <link>https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/</link>
+            <guid>https://www.cncf.io/?p=174771</guid>
+            <pubDate>Wed, 16 Sep 2026 11:30:00 GMT</pubDate>
+            <description><![CDATA[Managing infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation’s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F16%2Frunning-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta — Kubernetes Blog]]></title>
             <link>https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/</link>
@@ -770,22 +785,6 @@
             <pubDate>Thu, 14 May 2026 18:35:00 GMT</pubDate>
             <description><![CDATA[The .spec.externalIPs field for Service was an early attempt to provide cloud-load-balancer-like functionality for non-cloud clusters. Unfortunately, the API assumes that every user in the cluster is fully trusted, and in any situation where that is not the case, it enables various security exploits, as described in CVE-2020-8554. Since Kubernetes 1.21, the Kubernetes project has recommended that all users disable .spec.externalIPs. To make that easier, Kubernetes also added an admission control]]></description>
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F14%2Fkubernetes-v1-36-deprecation-and-removal-of-service-externalips%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Securing AI in the cloud starts at runtime — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/securing-ai-in-the-cloud-starts-at-runtime</link>
-            <guid>https://webflow.sysdig.com/blog/securing-ai-in-the-cloud-starts-at-runtime</guid>
-            <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[As AI workloads increasingly move into production, containers and Kubernetes are becoming the foundation for where cloud applications run and where risk becomes real. Preventative controls still matter, but they can’t fully account for runtime behavior, zero-days, lateral movement, or how AI-driven systems behave once they are live. This blog explains why securing AI in the cloud requires runtime visibility into what workloads are actually doing.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/securing-ai-in-the-cloud-starts-at-runtime">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fsecuring-ai-in-the-cloud-starts-at-runtime">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[NATS-as-C2: Inside a new technique attackers are using to harvest cloud credentials and AI API keys — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/nats-as-c2-inside-a-new-technique-attackers-are-using-to-harvest-cloud-credentials-and-ai-api-keys</link>
-            <guid>https://webflow.sysdig.com/blog/nats-as-c2-inside-a-new-technique-attackers-are-using-to-harvest-cloud-credentials-and-ai-api-keys</guid>
-            <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[Sysdig Threat Research Team (TRT) has identified what appears to be the first published case of a threat actor using a NATS server as command-and-control (C2) infrastructure — a technique dubbed “NATS-as-C2.” Discovered during an investigation into exploitation of CVE-2026-33017 in Langflow, the operation used cloud-native messaging infrastructure, including pub/sub orchestration and durable task queues, to coordinate a distributed credential-hunting worker pool targeting AWS and AI credentials.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/nats-as-c2-inside-a-new-technique-attackers-are-using-to-harvest-cloud-credentials-and-ai-api-keys">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fnats-as-c2-inside-a-new-technique-attackers-are-using-to-harvest-cloud-credentials-and-ai-api-keys">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
