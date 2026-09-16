@@ -1,7 +1,7 @@
 # rss
 
 Claude / Kubernetes / AWS の情報を日本語で追うための個人用 RSS 基盤。GitHub Actions で更新し、
-GitHub Pages で公開する。設計の詳細は [DESIGN.md](./DESIGN.md)。
+GitHub Pages で公開する。実装の詳細は [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
 **公開先**: <https://ogontaro.github.io/rss/> ／ 一括購読 OPML: `https://ogontaro.github.io/rss/subscriptions.opml`
 
@@ -15,32 +15,23 @@ GitHub Pages で公開する。設計の詳細は [DESIGN.md](./DESIGN.md)。
 
 翻訳フィード・レポートは 3 ドメイン、リリースレポートは aws / kubernetes の 2 ドメイン。計 8 フィード。
 
-## セットアップ
-
-```sh
-mise install      # bun
-bun install
-```
-
-### Secrets（設定済み）
-
-| 名前 | 用途 |
-| --- | --- |
-| `DEEPL_API_KEY` | タイトル・概要の翻訳（DeepL API。Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
-| `CLAUDE_CODE_OAUTH_TOKEN` | レポートのキュレーション。`claude setup-token` で生成、約 1 年有効・自動更新なし。401 で落ちたら再生成 |
-
-### GitHub Pages（設定済み）
-
-Source は **Deploy from a branch** / `main` / `/docs`。ワークフローが `docs/` をコミットすると
-`pages-build-deployment` が自動で走り公開される。
-
 ## フィード管理
 
 `feeds.yaml` が購読リストの正。1 エントリ = `{url, name, domain, kind}`。
 `domain` は claude / kubernetes / aws、`kind` は content（翻訳＋レポート）/ release（週次リリース）。
 公開前提なので、趣味・キー付き URL は入れない。選定基準・関心領域は `report-criteria/<name>.md`。
 
+追加・削除したら次回の定期実行（最短 6 時間後）で反映される。すぐ反映したい場合は
+下記タスクを手動実行する。
+
 ## タスク
+
+普段は GitHub Actions が自動実行する。手動で試したい・すぐ反映したいときに使う。
+
+```sh
+mise install      # bun
+bun install
+```
 
 | コマンド | 内容 |
 | --- | --- |
@@ -51,17 +42,14 @@ Source は **Deploy from a branch** / `main` / `/docs`。ワークフローが `
 | `mise run release:render <domain>` | `.cache/release-<domain>.md` → `docs/release/<domain>/*.html` と `release-<domain>.xml` |
 | `mise run build` | `docs/index.html` / `subscriptions.opml` / assets を再生成 |
 | `mise run serve` | `docs/` をローカルプレビュー |
-| `mise run lint` / `mise run format` | Biome |
 
 翻訳を試すには `DEEPL_API_KEY=... mise run translate`。
 
-## 仕組み
+## Secrets（設定済み）
 
-```
-translate.yml (6h ごと)        全ドメイン翻訳 → build → commit docs/
-report.yml    (毎日 07:00 JST) 翻訳最新化 → ドメインごとに collect → claude-code-action → render → build → commit
-release.yml   (月 07:30 JST)   ドメインごとに collect → claude-code-action → render → build → commit
-```
+| 名前 | 用途 |
+| --- | --- |
+| `DEEPL_API_KEY` | タイトル・概要の翻訳（DeepL API。Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
+| `CLAUDE_CODE_OAUTH_TOKEN` | レポートのキュレーション。`claude setup-token` で生成、約 1 年有効・自動更新なし。401 で落ちたら再生成 |
 
-- 状態は `docs/` の生成物そのもの（`translated-<domain>.xml` の guid 集合、`report/<domain>/YYYY-MM-DD.html` の有無）
-- `translated-*.xml` / `report-*.xml` / `release-*.xml` は **CI でのみ生成する**。ローカル生成物はコミットしない
+ワークフロー・スケジュール・内部構成は [CONTRIBUTING.md](./CONTRIBUTING.md) を参照。

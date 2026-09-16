@@ -1,9 +1,21 @@
-# RSS 運用リポジトリ 設計
+# 実装
 
-## 目的
+普段の使い方は [README.md](./README.md) を参照。ここではパイプラインの内部構成と設計判断を扱う。
 
-Claude / Kubernetes / AWS の情報を日本語で追うための個人用 RSS 基盤。GitHub Actions だけで完結させ、
-生成物を GitHub Pages（`main:/docs`）で公開する。読むのは自分の RSS リーダー（Inoreader など）。
+## 開発環境
+
+```sh
+mise install      # bun
+bun install
+```
+
+```sh
+mise run lint      # Biome
+mise run format    # Biome
+mise run serve     # docs/ をローカルプレビュー
+```
+
+## 設計方針
 
 **機能は混ぜない。** ドメイン（claude / kubernetes / aws）ごとに独立したパイプラインを持ち、
 入力フィード・出力・スケジュール・状態を共有しない。共有するのはコード（処理関数）だけ。
@@ -61,9 +73,13 @@ feeds:
 - そのドメインで **1 フィードも取得できなかった実行は書き換えない**（空フィードで guid 集合を消さない）。
 - `--strict`（`translate.yml` で付与）はどれか 1 ドメインでも取得ゼロなら異常終了。
   `report.yml` から呼ぶときは付けない（取れたぶんだけ更新して先へ進む）。
+- 1 フィードあたりの取り込みは最大 20 件（新しい順）。全履歴を返すミラー・アグリゲータ系
+  フィードでも翻訳枠と DeepL の 1 リクエスト 50 件制限を超えないための上限。
 
 各エントリ: 翻訳タイトル ＋ 末尾にソース名 / 翻訳 description / link は原文 URL /
 content は「原文を読む」＋「Google 翻訳で全文を読む」の 2 リンクのみ（本文は転載しない）。
+原文が日本語のソース（DevelopersIO / Zenn / Qiita / note 等、`src/lib/urls.ts` の
+`JA_SOURCE_HOSTS`）は翻訳自体をスキップし、リンクも「原文を読む」のみにする。
 
 **Google 翻訳リンク**: `https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(記事URL)}`。
 URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`+` が `u=` に入ると HTTP 400）。
@@ -152,8 +168,7 @@ docs/            GitHub Pages 配信対象。ワークフローがコミット
 .github/workflows/  translate.yml  report.yml  release.yml
 ```
 
-mise タスク: `translate` / `report:collect <domain>` / `report:render <domain>` /
-`release:collect <domain>` / `release:render <domain>` / `build` / `serve` / `lint` / `format`。
+mise タスク一覧は README の「タスク」参照。
 
 ## スコープ外
 
