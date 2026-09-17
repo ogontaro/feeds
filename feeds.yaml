@@ -16,10 +16,6 @@ feeds:
     name: Anthropic | DevelopersIO
     domain: claude
     kind: content
-  - url: https://github.com/anthropics/claude-code/releases.atom
-    name: Claude Code releases
-    domain: claude
-    kind: content
   - url: https://claude-code-log.com/rss.xml
     name: CCログ超訳（Claude Code CHANGELOG）
     domain: claude
@@ -68,6 +64,12 @@ feeds:
     name: Amazon EKS | DevelopersIO
     domain: aws
     kind: content
+
+  # ================= claude / release =================
+  - url: https://github.com/anthropics/claude-code/releases.atom
+    name: Claude Code releases
+    domain: claude
+    kind: release
 
   # ================= aws / release =================
   - url: https://github.com/aws/karpenter-provider-aws/releases.atom

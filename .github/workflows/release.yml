@@ -21,6 +21,26 @@ jobs:
       - uses: jdx/mise-action@v2
       - run: bun install --frozen-lockfile
 
+      # ---------------- claude ----------------
+      - id: collect_claude
+        run: |
+          bun run src/release-collect.ts claude
+          echo "n=$(jq length .cache/release-claude-input.json)" >> "$GITHUB_OUTPUT"
+      - name: curate claude releases
+        if: steps.collect_claude.outputs.n != '0'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/release-claude-input.json and
+            ${{ github.workspace }}/report-criteria/release-claude.md. Follow the criteria file:
+            summarize the releases and write to ${{ github.workspace }}/.cache/release-claude.md
+            in the format it specifies. Write only that one file.
+          claude_args: "--allowedTools Read,Write"
+      - name: render claude releases
+        if: steps.collect_claude.outputs.n != '0'
+        run: bun run src/release-render.ts claude
+
       # ---------------- aws ----------------
       - id: collect_aws
         run: |

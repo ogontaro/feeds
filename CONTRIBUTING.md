@@ -26,8 +26,7 @@ mise run serve     # docs/ をローカルプレビュー
 | レポート | `translated-<domain>.xml` の直近 24h | 重要記事を 5〜10 件選定 | `report-<domain>.xml` ＋ `report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `release-<domain>.xml` ＋ `release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
 
-- 翻訳・レポートのドメイン: claude / kubernetes / aws
-- リリースレポートのドメイン: aws / kubernetes
+- 3 パイプラインとも対象は claude / kubernetes / aws の 3 ドメイン
 
 ## 全体構成
 
@@ -100,7 +99,7 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 
 ### リリースレポート（`release.yml`, 毎週月 07:30 JST = cron `30 22 * * 0`）
 
-ドメイン（aws / kubernetes）ごとに:
+ドメイン（claude / kubernetes / aws）ごとに:
 
 1. `src/release-collect.ts <domain>`: `kind: release` の feed から過去 7 日のリリースを取得。
    `project` / `version` / `link` / `notes`（英語原文、4000 字で truncate）を
@@ -149,15 +148,17 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 - `GITHUB_TOKEN` の push で `pages-build-deployment` が自動起動することは検証済み。
 - `claude-code-action` はスケジュール実行に human-actor チェックを適用し、cron を最後に編集した
   ユーザーに実行を帰属させる。通らないとそのレポートが止まり、症状は「ワークフロー失敗」だけ。
-- レポートは 1 日あたり **claude-code-action を最大 3 回**（ドメイン数）、月曜は追加で最大 2 回。
-  CI 利用はサブスクの 5 時間ローリング枠を消費する。
+- レポートは 1 日あたり **claude-code-action を最大 3 回**（ドメイン数）、月曜は追加で最大 3 回
+  （リリースレポートも claude / kubernetes / aws の 3 ドメイン）。CI 利用はサブスクの
+  5 時間ローリング枠を消費する。
 
 ## ディレクトリ構成
 
 ```
 feeds.yaml
 report-criteria/
-  report-claude.md  report-kubernetes.md  report-aws.md  release-aws.md  release-kubernetes.md
+  report-claude.md  report-kubernetes.md  report-aws.md
+  release-claude.md  release-aws.md  release-kubernetes.md
 src/
   lib/           config / feeds取得 / translate / domain-feed(RSS入出力) / html / style / labels / urls / types
   translate.ts

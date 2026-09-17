@@ -11,9 +11,9 @@ GitHub Pages で公開する。実装の詳細は [CONTRIBUTING.md](./CONTRIBUTI
 | --- | --- | --- | --- |
 | 翻訳フィード | 購読フィードの新着タイトル・概要を DeepL で日本語化 | 6 時間ごと | `translated-<domain>.xml` |
 | レポート | 直近 24h の新着から Claude が重要記事を 5〜10 件選定・日本語コメント | 毎日 07:00 JST | `report-<domain>.xml` |
-| リリースレポート | 直近 7 日のツールリリースを Claude が整理（破壊的変更を先頭） | 毎週月 07:30 JST | `release-<domain>.xml`（aws / kubernetes のみ） |
+| リリースレポート | 直近 7 日のツールリリースを Claude が整理（破壊的変更を先頭） | 毎週月 07:30 JST | `release-<domain>.xml` |
 
-翻訳フィード・レポートは 3 ドメイン、リリースレポートは aws / kubernetes の 2 ドメイン。計 8 フィード。
+3 パイプラインとも claude / kubernetes / aws の 3 ドメイン。計 9 フィード。
 
 ## フィード管理
 

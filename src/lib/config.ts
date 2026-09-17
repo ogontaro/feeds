@@ -3,7 +3,7 @@ import { FEEDS_YAML } from "./paths.ts";
 import type { Domain, Feed, FeedsConfig } from "./types.ts";
 
 export const CONTENT_DOMAINS: Domain[] = ["claude", "kubernetes", "aws"];
-export const RELEASE_DOMAINS: Domain[] = ["aws", "kubernetes"];
+export const RELEASE_DOMAINS: Domain[] = ["claude", "kubernetes", "aws"];
 
 const DOMAINS = new Set<string>(["claude", "kubernetes", "aws"]);
 const KINDS = new Set<string>(["content", "release"]);
