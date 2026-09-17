@@ -4,11 +4,27 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 15:53:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 19:20:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AWS Elastic Beanstalk introduces Cluster Mode — AWS News Blog]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/</link>
+            <guid>871c44b03c81444dbf2768f2c7efdf2a156c5808</guid>
+            <pubDate>Thu, 17 Sep 2026 19:20:21 GMT</pubDate>
+            <description><![CDATA[Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-elastic-beanstalk-introduces-cluster-mode%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Reduce time-to-hire for quality candidates with AI-powered Amazon Connect Talent — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/reduce-time-to-hire-for-quality-candidates-with-ai-powered-amazon-connect-talent/</link>
+            <guid>a6559b315a35bac095e4d57dabbff35e09f15496</guid>
+            <pubDate>Thu, 17 Sep 2026 17:55:20 GMT</pubDate>
+            <description><![CDATA[Amazon Connect Talent is an AI hiring solution built for talent acquisition leaders managing scaled hiring. It delivers AI-led interviews, data-driven assessments, and consistent evaluation, helping recruiters identify strong candidates more efficiently while providing applicants with a flexible interview experience. Informed by decades of Amazon's hiring science, Amazon Connect Talent provides transparency for every assessment, interview, and candidate score, enabling recruiters to stay in cont]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/reduce-time-to-hire-for-quality-candidates-with-ai-powered-amazon-connect-talent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Freduce-time-to-hire-for-quality-candidates-with-ai-powered-amazon-connect-talent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Selecting a vector store for Amazon Bedrock Knowledge Bases — AWS Machine Learning Blog]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/selecting-a-vector-store-for-amazon-bedrock-knowledge-bases/</link>
@@ -787,22 +803,6 @@
             <pubDate>Wed, 19 Aug 2026 10:03:33 GMT</pubDate>
             <description><![CDATA[Amazon BedrockでxAIのGrok 4.6が利用可能になりました。本記事ではIAM認証で短期Bearer Tokenを取得し、bedrock-mantleエンドポイント経由でOpenAI互換のChat CompletionsとResponses、および画像入力を試しました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/grok-4-6-amazon-bedrock-mantle-iam/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[In the works: AWS Builder Lofts in Berlin, Hyderabad, and São Paulo — AWS News Blog]]></title>
-            <link>https://aws.amazon.com/blogs/aws/in-the-works-aws-builder-lofts-in-berlin-hyderabad-and-sao-paulo/</link>
-            <guid>5bd92664f8ba6ec61ac2d68e8b4b52a7f2988613</guid>
-            <pubDate>Tue, 18 Aug 2026 13:58:41 GMT</pubDate>
-            <description><![CDATA[Each location will be a permanent community space to offer free workshops, networking events, pitch nights, content creation spaces, collaboration/co-working areas, and event hosting for developers, students, or tech professionals who want to walk through the doors.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/in-the-works-aws-builder-lofts-in-berlin-hyderabad-and-sao-paulo/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fin-the-works-aws-builder-lofts-in-berlin-hyderabad-and-sao-paulo%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[bedrock-runtime で OpenAI GPT-5.6 が使えるようになったので試してみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/bedrock-runtime-openai-gpt56/</link>
-            <guid>2gTk43dTRZDtbMW0b3NXvv</guid>
-            <pubDate>Tue, 18 Aug 2026 05:33:38 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock の bedrock-runtime エンドポイントで OpenAI GPT-5.6 が使えるようになりました。Claude などを利用している Bedrock Runtime 環境でも OpenAI モデルを選択肢に加えられます。Responses / Chat Completions / Converse と、利用時に選べるクロスリージョン推論を確認しました。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-runtime-openai-gpt56/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
