@@ -21,6 +21,20 @@ feeds:
     domain: claude
     kind: content
 
+  # ----- AI 全般（Claude に限らない実務寄りの話題）-----
+  - url: https://developersblog.dmm.com/rss/category/AI
+    name: AI - DMM Developers Blog
+    domain: claude
+    kind: content
+  - url: https://addyosmani.com/rss.xml
+    name: AddyOsmani.com
+    domain: claude
+    kind: content
+  - url: https://blog.3-shake.com/feed.xml
+    name: 3-shake Engineers' Blogs
+    domain: claude
+    kind: content
+
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
     name: Kubernetes Blog
@@ -36,6 +50,10 @@ feeds:
     kind: content
   - url: https://blog.argoproj.io/feed
     name: Argo Project
+    domain: kubernetes
+    kind: content
+  - url: https://backstage.io/blog/rss.xml
+    name: Backstage Blog
     domain: kubernetes
     kind: content
   - url: https://sysdig.com/feed/
@@ -62,6 +80,10 @@ feeds:
     kind: content
   - url: https://dev.classmethod.jp/tags/amazon-eks/feed/
     name: Amazon EKS | DevelopersIO
+    domain: aws
+    kind: content
+  - url: https://docs.aws.amazon.com/eks/latest/userguide/doc-history.rss
+    name: Amazon EKS Document History
     domain: aws
     kind: content
 
