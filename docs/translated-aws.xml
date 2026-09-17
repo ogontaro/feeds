@@ -4,11 +4,18 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 02:41:14 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 09:36:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Amazon EKS | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/fluent-bit-cloudwatch-logs-broken-connection/</link>
+            <guid>2TC19V0mppLJCEpydTRj2L</guid>
+            <pubDate>Thu, 17 Sep 2026 09:36:55 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/fluent-bit-cloudwatch-logs-broken-connection/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Amazon Bedrock | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/tsnote-bedrock-change-inference-profile-playground/</link>
@@ -796,14 +803,6 @@
             <pubDate>Thu, 13 Aug 2026 05:57:48 GMT</pubDate>
             <description><![CDATA[Amazon Bedrock AgentCore Gatewayに追加されたレート制限機能を試してみました！]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/agentcore-gateway-rate-limit/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[Amazon Bedrock] Nova 2 Lite で画像内の認証情報を一括マスクするツールを作り、判定の一部をコードに移してみました — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/bedrock-nova-2-lite-image-credential-masking/</link>
-            <guid>6zLX3ruBlCEl4X0aMHpn1k</guid>
-            <pubDate>Wed, 12 Aug 2026 15:33:17 GMT</pubDate>
-            <description><![CDATA[スクリーンショットに写り込んだアカウントID やアクセスキーなどの認証情報を自動でマスクするローカルCLIツールを実装しました。Amazon Novaで画像を読み取り、正規表現やLLMの判定と組み合わせることで、形式で定義できるものはコードに、文脈判断が必要なものはモデルに役割を分担させた実装の工夫を紹介します。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-nova-2-lite-image-credential-masking/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

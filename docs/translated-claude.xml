@@ -4,11 +4,18 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 00:40:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 04:49:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Claude | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/20260917-cc-updates-v2-1-274/</link>
+            <guid>PNgFNV5AqdZ78ESEB0Gtk</guid>
+            <pubDate>Thu, 17 Sep 2026 04:49:04 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260917-cc-updates-v2-1-274/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
             <link>https://claude-code-log.com/changelog/v2.1.274#item-75c73d5cbbfb</link>
@@ -714,14 +721,6 @@
             <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
             <description><![CDATA[`claude plugin install`、`uninstall`、`update`、`enable`、`disable` に `--json` を追加し、`claude plugin list --json` の各行に `errorDetails` と `noteDetails` を含めるようにした。]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-818ab20fa42d">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] 公開されたアーティファクトに、Claude が各ページに合わせて選んだブラウザタブ用アイコンが追加された。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-232d7c10b06e</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-232d7c10b06e</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[公開されたアーティファクトに、Claude が各ページに合わせて選んだブラウザタブ用アイコンが追加された。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-232d7c10b06e">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
