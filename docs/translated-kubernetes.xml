@@ -4,11 +4,19 @@
         <title>翻訳フィード: Kubernetes — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Kubernetes 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Wed, 16 Sep 2026 16:00:25 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2026 18:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions — Kubernetes Blog]]></title>
+            <link>https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/</link>
+            <guid>https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/</guid>
+            <pubDate>Wed, 16 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohibiting deletion of files across containers or execution of arbitrary binaries from writable volumes, directly in Kubernetes without any complicated circumvention. Linux storage and permission fundamentals Before diving into the new Kubernetes features, let us briefly revi]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F16%2Fkubernetes-v1-37-hardening-container-storage%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Argo CD v3.6-rc1 is here! — Argo Project]]></title>
             <link>https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4</link>
@@ -23,6 +31,22 @@
             <pubDate>Wed, 16 Sep 2026 11:30:00 GMT</pubDate>
             <description><![CDATA[Managing infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation’s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F16%2Frunning-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Closing the cloud security gap with runtime security — Sysdig]]></title>
+            <link>https://webflow.sysdig.com/blog/closing-the-cloud-security-gap-with-runtime-security</link>
+            <guid>https://webflow.sysdig.com/blog/closing-the-cloud-security-gap-with-runtime-security</guid>
+            <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Security posture management isn't enough in 2026. Implement runtime security to enable deep visibility into zero days and other hidden threats. Learn more.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/closing-the-cloud-security-gap-with-runtime-security">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fclosing-the-cloud-security-gap-with-runtime-security">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why runtime security should be a top priority for CISOs — Sysdig]]></title>
+            <link>https://webflow.sysdig.com/blog/why-runtime-security-should-be-a-top-priority-for-cisos</link>
+            <guid>https://webflow.sysdig.com/blog/why-runtime-security-should-be-a-top-priority-for-cisos</guid>
+            <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[By reducing actual, material risks with runtime security, CISOs help their organizations become more resilient and secure.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/why-runtime-security-should-be-a-top-priority-for-cisos">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-runtime-security-should-be-a-top-priority-for-cisos">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta — Kubernetes Blog]]></title>
@@ -761,30 +785,6 @@
             <pubDate>Fri, 15 May 2026 18:35:00 GMT</pubDate>
             <description><![CDATA[This article was originally published with the wrong date. It was later republished, dated the 15th of May 2026. Kubernetes v1.36 introduces a new alpha counter metric route_controller_route_sync_total to the Cloud Controller Manager (CCM) route controller implementation at k8s.io/cloud-provider. This metric increments each time routes are synced with the cloud provider. A/B testing watch-based route reconciliation This metric was added to help operators validate the CloudControllerManagerWatchB]]></description>
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/15/ccm-new-metric-route-sync-total/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F15%2Fccm-new-metric-route-sync-total%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes v1.36: Mixed Version Proxy Graduates to Beta — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/</link>
-            <guid>https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/</guid>
-            <pubDate>Fri, 15 May 2026 18:00:00 GMT</pubDate>
-            <description><![CDATA[Back in Kubernetes 1.28, we introduced the Mixed Version Proxy (MVP) as an Alpha feature (under the feature gate UnknownVersionInteroperabilityProxy) in a previous blog post. The goal was simple but critical: make cluster upgrades safer by ensuring that requests for resources not yet known to an older API server are correctly routed to a newer peer API server, instead of returning an incorrect 404 Not Found. We are excited to announce that the Mixed Version Proxy is moving to Beta in Kubernetes]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F15%2Fkubernetes-1-36-feature-mixed-version-proxy-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Falco turns 10. Congratulations from Sysdig! — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/falco-turns-10-congratulations-from-sysdig</link>
-            <guid>https://webflow.sysdig.com/blog/falco-turns-10-congratulations-from-sysdig</guid>
-            <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[Back when we announced Falco, we couldn’t imagine its impact. Ten years later, the Falco project has evolved into a thriving community supporting a full ecosystem for cloud-native security.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/falco-turns-10-congratulations-from-sysdig">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Ffalco-turns-10-congratulations-from-sysdig">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes v1.36: Deprecation and removal of Service ExternalIPs — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/</link>
-            <guid>https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/</guid>
-            <pubDate>Thu, 14 May 2026 18:35:00 GMT</pubDate>
-            <description><![CDATA[The .spec.externalIPs field for Service was an early attempt to provide cloud-load-balancer-like functionality for non-cloud clusters. Unfortunately, the API assumes that every user in the cluster is fully trusted, and in any situation where that is not the case, it enables various security exploits, as described in CVE-2020-8554. Since Kubernetes 1.21, the Kubernetes project has recommended that all users disable .spec.externalIPs. To make that easier, Kubernetes also added an admission control]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F05%2F14%2Fkubernetes-v1-36-deprecation-and-removal-of-service-externalips%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

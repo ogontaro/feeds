@@ -4,11 +4,34 @@
         <title>AWS レポート — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 16 Sep 2026 00:02:26 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 00:14:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-17]]></title>
+            <link>https://ogontaro.github.io/rss/report/aws/2026-09-17.html</link>
+            <guid>https://ogontaro.github.io/rss/report/aws/2026-09-17.html</guid>
+            <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<h3>Amazon EKS で NVRx を使った耐障害分散トレーニング</h3>
+<p>EKS 上の大規模 GPU 分散学習に NVIDIA 製 NVRx を組み込み、チェックポイント I/O のオーバーラップとジョブ内リスタートで秒単位の障害復旧を実現した事例。H100 を使った 2〜8 ノードのベンチマークで 99% 以上の学習効率を維持しており、EKS で大規模 GPU トレーニング基盤を運用・設計する際の実践的な指針になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/fault-tolerant-distributed-training-on-amazon-eks-using-nvrx/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffault-tolerant-distributed-training-on-amazon-eks-using-nvrx%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock AgentCore によるエージェントのシステムプロンプト最適化</h3>
+<p>AgentCore の最適化機能が本番トレースから設定変更案を自動生成し、昇格前に検証する仕組みを技術的に解説する記事。Single Agent／Sub-Agent 向け Reflector のベンチマーク結果も示されており、Bedrock エージェントを本番運用しつつプロンプトチューニングを自動化したいチームに有用。
+<a href="https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Foptimizing-agent-system-prompts-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>オープンソースのエージェントスキルでヘルスケア/ライフサイエンス領域のAI推論を改善</h3>
+<p>基盤モデルは正しいガイドラインを引用しても適用を誤りがちという課題に対し、11 の HCLS ドメインにまたがる 38 個のオープンソースエージェントスキルを公開。410 プロンプトの評価で 70〜86% の勝率を示しており、ドメイン特化のエージェント設計に応用できる具体的な実装例として参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fimproving-hcls-ai-reasoning-with-open-source-agent-skills%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock Data Automation によるサーバーレス PII redaction パイプライン構築</h3>
+<p>カスタムブループリント、Step Functions、Lambda を組み合わせ、スキャン文書から PII を自動検出・削除する構成を紹介。手書きや劣化した文書でも再現率を高めるトークンマッチングの品質チェックを取り入れており、コンプライアンス要件のあるドキュメント処理基盤を設計する際に参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/build-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation%2F">Google 翻訳で全文を読む</a></p>
+<h3>AWSが「はじめての利用体験」を刷新</h3>
+<p>新規サインアップ時に $100 分の Free Tier クレジット付与、マネージドなプロジェクト環境、チーム/リソース権限の簡素化といったスマートなデフォルトを導入。ワークロードが成長した際も移行なしで高度な機能を段階的に有効化できる設計になっており、オンボーディングフローの変化として押さえておく価値がある。
+<a href="https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-reimagines-the-getting-started-experience%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS レポート 2026-09-16]]></title>
             <link>https://ogontaro.github.io/rss/report/aws/2026-09-16.html</link>

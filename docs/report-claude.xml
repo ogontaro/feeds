@@ -4,11 +4,22 @@
         <title>Claude レポート — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 16 Sep 2026 00:01:31 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 00:12:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-17]]></title>
+            <link>https://ogontaro.github.io/rss/report/claude/2026-09-17.html</link>
+            <guid>https://ogontaro.github.io/rss/report/claude/2026-09-17.html</guid>
+            <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の1本</h2>
+<h3>Claude CoworkとChatが「ひとつのClaude」に統合</h3>
+<p>Cowork（複数タスクを任せるエージェント的モード)と通常のチャットが分かれていた体験が一本化されるという発表です。ちょっとした質問から「正午までに仕上げてほしいレポート」の丸投げまで、同じ入り口でClaudeに任せられるようになる点は、Claude Codeなどエージェント的にClaudeを使う開発者にとって、今後のワークフロー設計を考える上で参考になります。Pro/Maxプランからweb・デスクトップ・モバイルに順次展開されるとのことで、展開スケジュールも押さえておく価値があります。
+<a href="https://simonwillison.net/2026/Sep/16/one-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F16%2Fone-claude%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude レポート 2026-09-16]]></title>
             <link>https://ogontaro.github.io/rss/report/claude/2026-09-16.html</link>
