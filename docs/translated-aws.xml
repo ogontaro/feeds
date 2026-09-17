@@ -4,11 +4,18 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Wed, 16 Sep 2026 21:14:36 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 02:41:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Amazon Bedrock | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/tsnote-bedrock-change-inference-profile-playground/</link>
+            <guid>6CyaY6WgihCt81zRAsykmK</guid>
+            <pubDate>Thu, 17 Sep 2026 02:41:14 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/tsnote-bedrock-change-inference-profile-playground/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Amazon Bedrock | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/claude-code-settings-permissions-deny-verify/</link>
@@ -797,14 +804,6 @@
             <pubDate>Wed, 12 Aug 2026 15:33:17 GMT</pubDate>
             <description><![CDATA[スクリーンショットに写り込んだアカウントID やアクセスキーなどの認証情報を自動でマスクするローカルCLIツールを実装しました。Amazon Novaで画像を読み取り、正規表現やLLMの判定と組み合わせることで、形式で定義できるものはコードに、文脈判断が必要なものはモデルに役割を分担させた実装の工夫を紹介します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-nova-2-lite-image-credential-masking/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS Weekly Roundup: AWS Heroes Summit, Web Search on Amazon Bedrock, Dogwood, Kiro Crew, and more (August 10, 2026) — AWS News Blog]]></title>
-            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-heroes-summit-web-search-on-amazon-bedrock-dogwood-kiro-crew-and-more-august-10-2026/</link>
-            <guid>23fc16a0c48a8aaf8de130ae8e5719b50ba6f960</guid>
-            <pubDate>Mon, 10 Aug 2026 15:45:03 GMT</pubDate>
-            <description><![CDATA[Last week, we brought together AWS Heroes from around the world to connect, collaborate, and celebrate the builders who go above and beyond for the AWS community. The AWS Heroes Summit, an invite-only annual gathering, brings global experts specializing in fields like AI, serverless, and containers together for direct collaboration, technical deep-dives, and feedback sessions […]]]></description>
-            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-heroes-summit-web-search-on-amazon-bedrock-dogwood-kiro-crew-and-more-august-10-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-aws-heroes-summit-web-search-on-amazon-bedrock-dogwood-kiro-crew-and-more-august-10-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
