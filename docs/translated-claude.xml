@@ -4,11 +4,18 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 04:49:04 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 05:03:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Claude Codeの Agent Skills は、ときどき見直したほうがいい — 3-shake Engineers' Blogs]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349</guid>
+            <pubDate>Thu, 17 Sep 2026 05:03:49 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F17%2F140349">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/20260917-cc-updates-v2-1-274/</link>
@@ -194,6 +201,20 @@
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260916-cc-updates-v2-1-273/">原文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Kubernetes祭り #2 OP/ED — 3-shake Engineers' Blogs]]></title>
+            <link>https://speakerdeck.com/bells17/ed-b02a2eb9-ec9e-401f-877c-1f26d195cdcb</link>
+            <guid>https://speakerdeck.com/bells17/ed-b02a2eb9-ec9e-401f-877c-1f26d195cdcb</guid>
+            <pubDate>Wed, 16 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://speakerdeck.com/bells17/ed-b02a2eb9-ec9e-401f-877c-1f26d195cdcb">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fspeakerdeck.com%2Fbells17%2Fed-b02a2eb9-ec9e-401f-877c-1f26d195cdcb">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[おい、エージェントを使って終わらせろ — 3-shake Engineers' Blogs]]></title>
+            <link>https://speakerdeck.com/nwiizo/oi-ejento-o-tsuka-te-owarasero</link>
+            <guid>https://speakerdeck.com/nwiizo/oi-ejento-o-tsuka-te-owarasero</guid>
+            <pubDate>Wed, 16 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://speakerdeck.com/nwiizo/oi-ejento-o-tsuka-te-owarasero">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fspeakerdeck.com%2Fnwiizo%2Foi-ejento-o-tsuka-te-owarasero">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/Comprehend-VS-AI/</link>
             <guid>37slHfqwsXJ7zdcvq8lx2Q</guid>
@@ -363,6 +384,20 @@
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260915-cc-updates-v2-1-272/">原文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[AI時代の「技術的負債」の変質ー概念の終焉と再解釈、エージェントと共に向かう先 — 3-shake Engineers' Blogs]]></title>
+            <link>https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</link>
+            <guid>https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</guid>
+            <pubDate>Tue, 15 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fspeakerdeck.com%2Fnwiizo%2Fai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[本を書きました。本だからできたこと、これからできること — 3-shake Engineers' Blogs]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</guid>
+            <pubDate>Tue, 15 Sep 2026 03:40:54 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F15%2F124054">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
             <link>https://claude-code-log.com/changelog/v2.1.272#item-ccfc4941961a</link>
             <guid>https://claude-code-log.com/changelog/v2.1.272#item-ccfc4941961a</guid>
@@ -526,6 +561,13 @@
             <content:encoded><![CDATA[<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.271">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.271">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[ — 3-shake Engineers' Blogs]]></title>
+            <link>https://zenn.dev/toshikish/articles/3239a9e27649f3</link>
+            <guid>https://zenn.dev/toshikish/articles/3239a9e27649f3</guid>
+            <pubDate>Mon, 14 Sep 2026 09:41:08 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://zenn.dev/toshikish/articles/3239a9e27649f3">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Claude Code で auto mode を起動時のデフォルトにしたら、対応モデルと非対応モデルで挙動が分かれた — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/</link>
             <guid>1ywNsfZmYYcshCmMHGLa7g</guid>
@@ -673,54 +715,6 @@
             <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
             <description><![CDATA[セッションをしばらく実行した後、Bashの読み取り専用gitコマンドが予期せず権限確認を求める問題を修正しました(2.1.269でのリグレッション)]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.270#item-695f1be2fe32">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] Claude apps ゲートウェイに追加:`gateway.yaml` で `pricing:` を設定すると、サインイン済みの Claude Code クライアントは managed settings を通じて同じ料金を受け取り、`/cost` とテレメトリーがスペンドメーターと一致する。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-f148983ddb6c</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-f148983ddb6c</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[Claude apps ゲートウェイに追加:`gateway.yaml` で `pricing:` を設定すると、サインイン済みの Claude Code クライアントは managed settings を通じて同じ料金を受け取り、`/cost` とテレメトリーがスペンドメーターと一致する。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-f148983ddb6c">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] `access_control.allow_cidrs` が空の場合にゲートウェイ起動時に警告を表示し、パブリックアドレスから初めてリクエストを受信した際にも 1 回だけ警告を表示するようになった。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-9c4414671940</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-9c4414671940</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`access_control.allow_cidrs` が空の場合にゲートウェイ起動時に警告を表示し、パブリックアドレスから初めてリクエストを受信した際にも 1 回だけ警告を表示するようになった。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-9c4414671940">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] Claude アプリ用ゲートウェイのホスト名が組織自身のパブリック IPv4 ブロックに解決される場合でも `/login` から利用できるよう、マネージド設定 `gatewayInternalNetworks` が追加された。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-bee5c3efbaaf</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-bee5c3efbaaf</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[Claude アプリ用ゲートウェイのホスト名が組織自身のパブリック IPv4 ブロックに解決される場合でも `/login` から利用できるよう、マネージド設定 `gatewayInternalNetworks` が追加された。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-bee5c3efbaaf">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] `claude self-hosted-runner --remove-session-state`(デフォルトはオフ)を追加。セッション終了時に ` /_sessions/` 配下のセッションごとのディレクトリを削除する — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-b5b801d705c1</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-b5b801d705c1</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`claude self-hosted-runner --remove-session-state`(デフォルトはオフ)を追加。セッション終了時に `/_sessions/` 配下のセッションごとのディレクトリを削除する]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-b5b801d705c1">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] claude auth status --json の出力に configDirectory を追加した — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-cdadb8510091</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-cdadb8510091</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[claude auth status --json の出力に configDirectory を追加した]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-cdadb8510091">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[v2.1.268] [Added] `claude plugin install`、`uninstall`、`update`、`enable`、`disable` に `--json` を追加し、`claude plugin list --json` の各行に `errorDetails` と `noteDetails` を含めるようにした。 — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.268#item-818ab20fa42d</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.268#item-818ab20fa42d</guid>
-            <pubDate>Sat, 12 Sep 2026 21:01:42 GMT</pubDate>
-            <description><![CDATA[`claude plugin install`、`uninstall`、`update`、`enable`、`disable` に `--json` を追加し、`claude plugin list --json` の各行に `errorDetails` と `noteDetails` を含めるようにした。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.268#item-818ab20fa42d">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

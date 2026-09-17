@@ -8,7 +8,8 @@
     <outline type="rss" text="レポート: Kubernetes" title="レポート: Kubernetes" xmlUrl="https://ogontaro.github.io/rss/report-kubernetes.xml"/>
     <outline type="rss" text="翻訳: AWS" title="翻訳: AWS" xmlUrl="https://ogontaro.github.io/rss/translated-aws.xml"/>
     <outline type="rss" text="レポート: AWS" title="レポート: AWS" xmlUrl="https://ogontaro.github.io/rss/report-aws.xml"/>
-    <outline type="rss" text="リリース: AWS" title="リリース: AWS" xmlUrl="https://ogontaro.github.io/rss/release-aws.xml"/>
+    <outline type="rss" text="リリース: Claude" title="リリース: Claude" xmlUrl="https://ogontaro.github.io/rss/release-claude.xml"/>
     <outline type="rss" text="リリース: Kubernetes" title="リリース: Kubernetes" xmlUrl="https://ogontaro.github.io/rss/release-kubernetes.xml"/>
+    <outline type="rss" text="リリース: AWS" title="リリース: AWS" xmlUrl="https://ogontaro.github.io/rss/release-aws.xml"/>
   </body>
 </opml>

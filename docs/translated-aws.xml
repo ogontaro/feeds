@@ -4,11 +4,59 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 09:36:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 15:53:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Selecting a vector store for Amazon Bedrock Knowledge Bases — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/selecting-a-vector-store-for-amazon-bedrock-knowledge-bases/</link>
+            <guid>e129d8e2814c4c6f57fdc5feec60ab4d06f5e04c</guid>
+            <pubDate>Thu, 17 Sep 2026 15:53:13 GMT</pubDate>
+            <description><![CDATA[Choosing the right vector store for your Amazon Bedrock Knowledge Bases RAG application affects performance and cost. This post compares Amazon OpenSearch Service, Amazon Aurora PostgreSQL with pgvector, and Amazon S3 Vectors across three RAG use cases, with benchmarks and a practical selection framework.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/selecting-a-vector-store-for-amazon-bedrock-knowledge-bases/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fselecting-a-vector-store-for-amazon-bedrock-knowledge-bases%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[A serverless, data-driven Git metrics dashboard using Amazon Quick Sight — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/a-serverless-data-driven-git-metrics-dashboard-using-amazon-quick-sight/</link>
+            <guid>4a5ab032fdd1124303a874f7357b60fe1e96aeab</guid>
+            <pubDate>Thu, 17 Sep 2026 15:42:31 GMT</pubDate>
+            <description><![CDATA[Learn how to build a fully serverless pipeline that automatically collects Git metrics from GitHub and GitLab and visualizes them in interactive Amazon Quick Sight dashboards, giving engineering teams near-real-time delivery analytics at low cost.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/a-serverless-data-driven-git-metrics-dashboard-using-amazon-quick-sight/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fa-serverless-data-driven-git-metrics-dashboard-using-amazon-quick-sight%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[A shared agentic platform for Wood Mackenzie, on Amazon Bedrock AgentCore — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/a-shared-agentic-platform-for-wood-mackenzie-on-amazon-bedrock-agentcore/</link>
+            <guid>49c842b44edb1dd5449d9240e495051aa126e2d3</guid>
+            <pubDate>Thu, 17 Sep 2026 15:41:03 GMT</pubDate>
+            <description><![CDATA[Wood Mackenzie built APEX, a shared agentic AI platform on Amazon Bedrock AgentCore so every team can ship production agents without rebuilding runtime, identity, observability, and guardrails from scratch. Learn why they chose AgentCore, how APEX Studio operates it, and where multi-agent systems go next.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/a-shared-agentic-platform-for-wood-mackenzie-on-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fa-shared-agentic-platform-for-wood-mackenzie-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How MRH Trowe enabled secure self-service AI agents in financial services — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/how-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services/</link>
+            <guid>3897ac24762f2462158b7a05b94713494788aa8c</guid>
+            <pubDate>Thu, 17 Sep 2026 15:36:42 GMT</pubDate>
+            <description><![CDATA[Learn how MRH Trowe, one of Germany's leading commercial and industrial insurance brokers, gave about 400 employees secure, self-service access to AI agents in its first month of production - using Strands Agents, Amazon Bedrock AgentCore, and LibreChat to meet the security, data residency, and compliance requirements of the German financial sector.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Implementing defense-in-depth authorization for MCP tools on Amazon Quick — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/implementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick/</link>
+            <guid>6fcd0dc6eafcc2f00a69ff34bf749a0218ac4779</guid>
+            <pubDate>Thu, 17 Sep 2026 15:30:17 GMT</pubDate>
+            <description><![CDATA[Learn how to enforce defense-in-depth authorization for Model Context Protocol (MCP) tools on Amazon Quick. This walkthrough wires Microsoft Entra ID group and claims-based JWTs through an Amazon Bedrock AgentCore Gateway interceptor to apply per-user, per-tool role-based and attribute-based access control, with a server-side check and an immutable audit trail.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/implementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fimplementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Enhancing industrial safety AI with synthetic data on Amazon SageMaker AI — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/enhancing-industrial-safety-ai-with-synthetic-data-on-amazon-sagemaker-ai/</link>
+            <guid>fc05069f32aee4920ba9d97a3cc74706340bfd60</guid>
+            <pubDate>Thu, 17 Sep 2026 15:28:08 GMT</pubDate>
+            <description><![CDATA[Learn how to build a synthetic data augmentation pipeline on Amazon SageMaker AI and Amazon Rekognition that generates photo-realistic, auto-labeled training images for industrial safety AI. This approach improved person detection by up to 160% without manual annotation or hazardous data collection near heavy machinery.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/enhancing-industrial-safety-ai-with-synthetic-data-on-amazon-sagemaker-ai/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fenhancing-industrial-safety-ai-with-synthetic-data-on-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Amazon EKS | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/fluent-bit-cloudwatch-logs-broken-connection/</link>
@@ -517,6 +565,14 @@
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/scp-region-deny-bedrock-global-cross-region-inference-unspecified/">原文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[AWS managed policy updates — Amazon EKS Document History]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#AWS_managed_policy_updates_2026-09-02</guid>
+            <pubDate>Wed, 02 Sep 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added wafv2:ListWebACLs permission in AmazonEKSLoadBalancingPolicy to allow Amazon EKS Auto Mode Controller to list AWS WAF Web ACLs when reconciling Application Load Balancer associations. Added gateway.eks.amazonaws.com.alb/stack, gateway.eks.amazonaws.com.alb/resource, gateway.eks.amazonaws.com.nlb/stack, and gateway.eks.amazonaws.com.nlb/resource tag keys to the resource-tagging allowlist in AmazonEKSLoadBalancingPolicy. This allows Amazon EKS Auto Mode Controller to manage AWS resources for]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Bedrock の Grok 4.6 の課金分類を Cost Explorer で確認してみた — Amazon Bedrock | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/bedrock-grok-4-6-cost-explorer-credit/</link>
             <guid>2xYiMIkUDMgdmsY7vEyxh5</guid>
@@ -637,6 +693,14 @@
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/202608-ec2-code-server-claude-code-bedrock-cloudfront/">原文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Deterministic Argo CD capability endpoint — Amazon EKS Document History]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/working-with-argocd.html#argocd-endpoint-url</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Deterministic_Argo_CD_capability_endpoint_2026-08-24</guid>
+            <pubDate>Mon, 24 Aug 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Documented the format of the EKS Capability for Argo CD endpoint. The endpoint hostname is deterministic, so you can construct it from your capability name, cluster name, AWS account ID, and AWS Region, or retrieve it from the serverUrl field of describe-capability.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/working-with-argocd.html#argocd-endpoint-url">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fworking-with-argocd.html%23argocd-endpoint-url">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[AWS Weekly Roundup: Student Rewards on AWS Builder Center, Local Zone in Las Vegas, and more (August 24, 2026) — AWS News Blog]]></title>
             <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-student-rewards-on-aws-builder-center-local-zone-in-las-vegas-and-more-august-24-2026/</link>
             <guid>2c1999b3f40dcbf5fbc95e907da3c6141bbc8c45</guid>
@@ -739,70 +803,6 @@
             <pubDate>Tue, 18 Aug 2026 05:33:38 GMT</pubDate>
             <description><![CDATA[Amazon Bedrock の bedrock-runtime エンドポイントで OpenAI GPT-5.6 が使えるようになりました。Claude などを利用している Bedrock Runtime 環境でも OpenAI モデルを選択肢に加えられます。Responses / Chat Completions / Converse と、利用時に選べるクロスリージョン推論を確認しました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-runtime-openai-gpt56/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon Bedrock Knowledge Bases のセマンティックチャンキング利用時にどのモデルが使用されるのか教えてください — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/tsnote-bedrock-knowledge-bases-semantic-chunking-model/</link>
-            <guid>1PDmmz7qc2XviMtVp6Viq5</guid>
-            <pubDate>Tue, 18 Aug 2026 03:13:47 GMT</pubDate>
-            <description><![CDATA[Bedrock Knowledge Basesのセマンティックチャンキングで使用される基盤モデルについて、その正体と料金への影響を解説します。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/tsnote-bedrock-knowledge-bases-semantic-chunking-model/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS Weekly Roundup: EC2 application status checks, IAM role manager, OpenAI Daybreak on Bedrock, and more (August 17, 2026) — AWS News Blog]]></title>
-            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-ec2-application-status-checks-iam-role-manager-openai-daybreak-on-bedrock-and-more-august-17-2026/</link>
-            <guid>e0eaa8dc02bf3dada9e373bdf284e82bd4d4e86c</guid>
-            <pubDate>Mon, 17 Aug 2026 16:02:36 GMT</pubDate>
-            <description><![CDATA[Last week, AWS contributors joined the OpenSearch and Valkey communities at Open Source Summit Korea 2026 and MCP DevSummit Seoul 2026 to meet open source developers and contributors. At the four-day event, community leaders and users of these Linux Foundation open source projects gathered to share knowledge, collaborate on solutions, and push the projects forward. […]]]></description>
-            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-ec2-application-status-checks-iam-role-manager-openai-daybreak-on-bedrock-and-more-august-17-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-ec2-application-status-checks-iam-role-manager-openai-daybreak-on-bedrock-and-more-august-17-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS Context Ontology Accelerator（COA）で業務オントロジーを構築してみた - なぜ今オントロジーなのか？ — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/20260817-aws-context-v020/</link>
-            <guid>1evB6iZaezEbxP4ilbpYnr</guid>
-            <pubDate>Mon, 17 Aug 2026 11:12:47 GMT</pubDate>
-            <description><![CDATA[AWS Context Ontology Accelerator は、AI を使ってオントロジーのドラフトを生成し、人のレビュー・承認を経て、エージェントが正確・一貫性があり・監査可能な意思決定を行えるようにするツールです。実際にデプロイして、データから関係を推論し、業務ルールを検証する過程を追体験して、オントロジーとは何かを感じてください。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260817-aws-context-v020/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[RAG を本番運用している当事者が「MCP と LLM の進歩で ETL と従来型 RAG は捨てられる」と語ったトヨタのセッションに参加しました #AWSreInvent — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/reinvent-2025-ind320-toyota-dealer-ai-platform/</link>
-            <guid>5eifFwJpVNSy20yYIKWuVj</guid>
-            <pubDate>Fri, 14 Aug 2026 03:00:28 GMT</pubDate>
-            <description><![CDATA[AWS re:Invent 2025 のセッション「How Toyota Built an AI Platform that Revolutionizes the Dealer Experience (IND320)」をレポートします。作り込んだ RAG 基盤の当事者が「MCP と LLM の進歩で ETL と従来型 RAG はまるごと落とせる」と結論した話です。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/reinvent-2025-ind320-toyota-dealer-ai-platform/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon Connect AIエージェントで Bedrock Knowledge Base の S3 ドキュメントメタデータを使って回答を出し分けてみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/amazon-connect-ai-agent-bedrock-knowledge-base-s3-metadata-filter/</link>
-            <guid>1QNVCRstzLL2qniOnbk04F</guid>
-            <pubDate>Fri, 14 Aug 2026 01:14:54 GMT</pubDate>
-            <description><![CDATA[Amazon Connect AIエージェントと Bedrock Knowledge Base を組み合わせ、S3 メタデータを使ったナレッジのフィルタリングを検証しました。同一の Knowledge Base から会員グレードに応じた回答を出し分ける手法について紹介します。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/amazon-connect-ai-agent-bedrock-knowledge-base-s3-metadata-filter/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon Bedrock Managed Knowledge Base に Amazon Quick から日本語で自然言語問合せしてみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/20260813-amazon-mkb-with-quick/</link>
-            <guid>wxHD28rEzZjjuxRm0Bjy5</guid>
-            <pubDate>Thu, 13 Aug 2026 11:22:45 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock の Managed Knowledge Base を Amazon Quick に接続し、日本語のドキュメントで自然言語問い合わせを試してみました。ベクトルストア不要の RAG 基盤で、複数文書をまたぐ質問にも対応できた実装例を紹介します。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260813-amazon-mkb-with-quick/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ブラウザだけで使えるClaude Code環境をEC2 + code-server + Bedrockで作ってみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/202608-ec2-code-server-claude-code-bedrock/</link>
-            <guid>2cQCp037KYRqJ0oonkENgc</guid>
-            <pubDate>Thu, 13 Aug 2026 09:16:07 GMT</pubDate>
-            <description><![CDATA[EC2上のcode-serverにBedrock経由のClaude Codeを載せ、ブラウザだけで使える開発環境を作りました。認証はIAMロールなので利用者にAPIキーは不要で、研修やハンズオンで配る用途に向いています。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/202608-ec2-code-server-claude-code-bedrock/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AgentCore Gatewayに追加されたレート制限機能を試してみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/agentcore-gateway-rate-limit/</link>
-            <guid>4bpL01jIokttcSLptvqYyg</guid>
-            <pubDate>Thu, 13 Aug 2026 05:57:48 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock AgentCore Gatewayに追加されたレート制限機能を試してみました！]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/agentcore-gateway-rate-limit/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
