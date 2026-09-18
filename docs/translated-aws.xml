@@ -4,11 +4,19 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 19:20:21 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 21:11:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[New low-cost burstable Amazon EC2 T8i instances are generally available — AWS News Blog]]></title>
+            <link>https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/</link>
+            <guid>e54808ff9073a2b426d2baf919a0236eb2f63e40</guid>
+            <pubDate>Thu, 17 Sep 2026 21:11:48 GMT</pubDate>
+            <description><![CDATA[AWS introduces new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 instances.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fnew-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS Elastic Beanstalk introduces Cluster Mode — AWS News Blog]]></title>
             <link>https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/</link>
@@ -795,14 +803,6 @@
             <pubDate>Wed, 19 Aug 2026 14:48:00 GMT</pubDate>
             <description><![CDATA[最新版のGrok Build CLIにAmazon Bedrock（bedrock-mantle）用のカスタムモデルを設定し、AWS認証情報から生成したBearer TokenでGrok 4.6を呼び出してみました。対話モードとヘッドレス実行のいずれでもBedrock経由で動作し、日本語プロンプトには日本語で応答が返りました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/grok-build-cli-amazon-bedrock-grok-46/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon Bedrockで利用可能になったxAIのGrok 4.6をMantleで試してみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/grok-4-6-amazon-bedrock-mantle-iam/</link>
-            <guid>3dzpnFmBP5B4iNkgyt0t2I</guid>
-            <pubDate>Wed, 19 Aug 2026 10:03:33 GMT</pubDate>
-            <description><![CDATA[Amazon BedrockでxAIのGrok 4.6が利用可能になりました。本記事ではIAM認証で短期Bearer Tokenを取得し、bedrock-mantleエンドポイント経由でOpenAI互換のChat CompletionsとResponses、および画像入力を試しました。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/grok-4-6-amazon-bedrock-mantle-iam/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

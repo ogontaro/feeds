@@ -18,6 +18,14 @@
             <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F17%2Fopentelemetry-everywhere-migrating-a-metrics-platform-at-scale%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Getting started with runtime security and Falco — Sysdig]]></title>
+            <link>https://webflow.sysdig.com/blog/intro-runtime-security-falco</link>
+            <guid>https://webflow.sysdig.com/blog/intro-runtime-security-falco</guid>
+            <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover how to get started with Falco to overcome the challenges of implementing runtime security for cloud-native workloads.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/intro-runtime-security-falco">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintro-runtime-security-falco">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions — Kubernetes Blog]]></title>
             <link>https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/</link>
             <guid>https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/</guid>
@@ -777,14 +785,6 @@
             <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[A developer asks an AI coding agent to refactor a microservice. Within seconds, the agent opens source files, executes shell commands, calls external APIs, and modifies cloud configuration. No human approves each step. No security tool monitors what the agent does between receiving the prompt and delivering the result.]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/agentic-ai-tooling-why-runtime-security-is-the-missing-layer">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fagentic-ai-tooling-why-runtime-security-is-the-missing-layer">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[How to create custom cloud security controls faster with headless cloud security — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/how-to-create-custom-cloud-security-controls-faster-with-headless-cloud-security</link>
-            <guid>https://webflow.sysdig.com/blog/how-to-create-custom-cloud-security-controls-faster-with-headless-cloud-security</guid>
-            <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[Modern CSPM platforms like Sysdig help organizations identify cloud risks and misconfigurations, but building and operationalizing custom security controls can still be slow and complex. Creating policies often requires deep expertise in policy-as-code languages like Rego, along with significant manual effort to validate and maintain controls across environments. Sysdig’s headless cloud security approach addresses this challenge by extending security capabilities beyond the UI through APIs, auto]]></description>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/how-to-create-custom-cloud-security-controls-faster-with-headless-cloud-security">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fhow-to-create-custom-cloud-security-controls-faster-with-headless-cloud-security">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

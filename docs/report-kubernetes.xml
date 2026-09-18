@@ -4,11 +4,25 @@
         <title>Kubernetes レポート — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 17 Sep 2026 00:13:25 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 17 Sep 2026 23:58:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-18]]></title>
+            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-18.html</link>
+            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-18.html</guid>
+            <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>OpenTelemetry everywhere: 大規模メトリクス基盤の移行事例</h3>
+<p>自前のStatsD実装（gostatsd）からOpenTelemetryへメトリクスパイプラインを移行した経験談で、CNCFプロジェクトを本番の大規模環境にどう組み込むかという実務判断の参考になる。ホストサイドカーの構成変更や移行時のトレードオフなど、プラットフォームエンジニアリングの設計判断に直結する内容。
+<a href="https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F17%2Fopentelemetry-everywhere-migrating-a-metrics-platform-at-scale%2F">Google 翻訳で全文を読む</a></p>
+<h3>Falcoによるランタイムセキュリティ入門</h3>
+<p>CNCFのランタイムセキュリティプロジェクトFalcoの導入方法を解説する記事で、クラウドネイティブ環境でのセキュリティ監視をこれから整備したいチームにとって取っ掛かりになる。マルチテナンシーやワークロード保護の運用設計を検討する際の一次情報として有用。
+<a href="https://webflow.sysdig.com/blog/intro-runtime-security-falco">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintro-runtime-security-falco">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes レポート 2026-09-17]]></title>
             <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-17.html</link>
