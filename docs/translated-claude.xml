@@ -4,17 +4,38 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Fri, 18 Sep 2026 02:16:57 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Sep 2026 12:08:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Claude | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/</link>
+            <guid>1yCZ7Qchq5zrnXcN3WwJN1</guid>
+            <pubDate>Fri, 18 Sep 2026 12:08:32 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2026-09-18 gotanda.sre Terraformで複数環境作ったり、複数Stateに分割したりそれとTerragrunt / Terraform multi envs and multi states — 3-shake Engineers' Blogs]]></title>
+            <link>https://speakerdeck.com/masasuzu/terraform-multi-envs-and-multi-states</link>
+            <guid>https://speakerdeck.com/masasuzu/terraform-multi-envs-and-multi-states</guid>
+            <pubDate>Fri, 18 Sep 2026 04:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://speakerdeck.com/masasuzu/terraform-multi-envs-and-multi-states">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fspeakerdeck.com%2Fmasasuzu%2Fterraform-multi-envs-and-multi-states">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
             <link>https://claude-code-log.com/changelog/v2.1.276#item-6a290bab517a</link>
             <guid>https://claude-code-log.com/changelog/v2.1.276#item-6a290bab517a</guid>
             <pubDate>Fri, 18 Sep 2026 02:16:57 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.276#item-6a290bab517a">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Codeの Rules と Auto memory は、書きっぱなしにしないほうがいい — 3-shake Engineers' Blogs]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730</guid>
+            <pubDate>Fri, 18 Sep 2026 01:07:30 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F18%2F100730">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
@@ -691,28 +712,6 @@
             <guid>https://claude-code-log.com/changelog/v2.1.271#item-55017e04a1a7</guid>
             <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-55017e04a1a7">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.271#item-fdaa5c92b442</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.271#item-fdaa5c92b442</guid>
-            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-fdaa5c92b442">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.271#item-a9694650388c</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.271#item-a9694650388c</guid>
-            <pubDate>Mon, 14 Sep 2026 22:31:11 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.271#item-a9694650388c">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v2.1.271 — Claude Code releases]]></title>
-            <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.271</link>
-            <guid>https://github.com/anthropics/claude-code/releases/tag/v2.1.271</guid>
-            <pubDate>Mon, 14 Sep 2026 22:12:54 GMT</pubDate>
-            <description><![CDATA[What's changed Added fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it Added mouse support to the /config panel in fullscreen mode: the wheel scrolls the settings list, a click on a setting's value changes it, and the row under the pointer is highlighted Added claude self-hosted-runner --drain-marker-file : when that file exists at a SIGTERM drain, the runner reports its e]]></description>
-            <content:encoded><![CDATA[<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.271">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.271">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

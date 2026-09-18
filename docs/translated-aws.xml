@@ -4,11 +4,50 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 21:11:48 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Sep 2026 15:38:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Migrating multi-model AI agents to Amazon Bedrock AgentCore runtime — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime/</link>
+            <guid>aa8456e8d8a89d6dee5077d18ffb4cde8af31d89</guid>
+            <pubDate>Fri, 18 Sep 2026 15:38:53 GMT</pubDate>
+            <description><![CDATA[Migrate a multi-model healthcare AI agent from self-managed Amazon ECS with AWS Fargate to Amazon Bedrock AgentCore runtime, preserving triple-model orchestration and vector-enhanced knowledge retrieval while reducing infrastructure management. The framework-agnostic pattern applies across healthcare, financial services, and manufacturing.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmigrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The new AgentCore runtime: Elastic, optimized, and consistently fast starts — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/</link>
+            <guid>4445c20377fed08a36ecf07e723f634a75d5d673</guid>
+            <pubDate>Fri, 18 Sep 2026 15:31:34 GMT</pubDate>
+            <description><![CDATA[Today we are announcing the new AgentCore runtime, a capability of Amazon Bedrock AgentCore built for the speed, flexibility, and cost efficiency that production agents demand. It reclaims memory as sessions release it and delivers consistent cold starts regardless of image size or concurrency.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Deploy Hugging Face models on Amazon SageMaker AI with coding agents — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/</link>
+            <guid>65191e6d2a65531f451a23942300a367fbb852d5</guid>
+            <pubDate>Fri, 18 Sep 2026 15:25:23 GMT</pubDate>
+            <description><![CDATA[Deploy production-ready Hugging Face models on Amazon SageMaker AI using six open-source agent skills. Point a coding agent at a model and get back a real-time endpoint with the right serving container, autoscaling, Amazon CloudWatch alarms, and a verified teardown path.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing Amazon SageMaker HyperPod Inference Gateway — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/</link>
+            <guid>f7030591b5a0a92a50f229929b93194a36691b5e</guid>
+            <pubDate>Fri, 18 Sep 2026 13:08:34 GMT</pubDate>
+            <description><![CDATA[Amazon SageMaker HyperPod Inference Gateway is a Kubernetes-native, GPU-aware routing add-on for Amazon EKS. It uses real-time GPU signals to send each inference request to the best-suited pod, cutting first-token latency by up to 82% with no changes to your model servers or client applications.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-amazon-sagemaker-hyperpod-inference-gateway%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — Amazon EKS | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/elastic-beanstalk-cluster-mode-eks-php/</link>
+            <guid>0yeDpa9hBQZ19tO3bJp5M</guid>
+            <pubDate>Fri, 18 Sep 2026 10:50:09 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/elastic-beanstalk-cluster-mode-eks-php/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[New low-cost burstable Amazon EC2 T8i instances are generally available — AWS News Blog]]></title>
             <link>https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/</link>
@@ -763,46 +802,6 @@
             <pubDate>Fri, 21 Aug 2026 18:54:31 GMT</pubDate>
             <description><![CDATA[Amazon Bedrock AgentCore Web Search Toolの検索インデックスに、日本語記事がどの程度収録されているかを、DevelopersIOの記事を対象に調べました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-agentcore-web-search-tool-japanese-query/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS Glue 6.0 now available with 30% lower price and full Apache Iceberg v3 support — AWS News Blog]]></title>
-            <link>https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/</link>
-            <guid>3e7f6047f5812686137b8832bd55b853dd906a34</guid>
-            <pubDate>Fri, 21 Aug 2026 18:53:26 GMT</pubDate>
-            <description><![CDATA[AWS Glue 6.0 is built on a fully modernized runtime, Apache Spark 4.1, Python 3.13, and Scala 2.13, delivering 30% lower pricing than previous AWS Glue versions.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon Bedrock RuntimeのGrok 4.6を AWS CLIで試してみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/grok-46-bedrock-runtime-converse/</link>
-            <guid>1MDNozGd8TYpz9JQHJDxhB</guid>
-            <pubDate>Fri, 21 Aug 2026 14:42:21 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock で利用可能になった Grok 4.6 を、AWS CLI の aws bedrock-runtime converse から IAM 認証だけで呼び出してみました。Bearer Token の発行は不要で、Global と US Geo の推論プロファイルの使い分けも確認します。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/grok-46-bedrock-runtime-converse/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon Bedrock Web Search の external_web_access が有効化されたので、GPT-5.6 Lunaで試してみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/bedrock-web-search-external-web-access/</link>
-            <guid>54aLuUQK59Tsm3sHo85Kgi</guid>
-            <pubDate>Thu, 20 Aug 2026 09:53:11 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock Web Search の external_web_access が有効化されました。従来のようにAWS公式ドメインの情報を返すだけでなく、天気サイトやOSSの公式ドキュメントといったAWS外のサイトまで検索・取得できるのか、そのときのレスポンス（search / open_page と引用URL）に何が入るのかを bedrock-mantle 経由で確認しました]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-web-search-external-web-access/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon Bedrock の呼び出しで AWS Marketplace のエラーが発生するときの対処方法 — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/tsnote-bedrock-marketplace-error-solution/</link>
-            <guid>39rutzCHdWvJd99mTpNU5r</guid>
-            <pubDate>Thu, 20 Aug 2026 02:58:31 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock で Claude モデルを呼び出した際に発生する AWS Marketplace のエラーについて、その原因と対処法を紹介します。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/tsnote-bedrock-marketplace-error-solution/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Grok Build CLIでAmazon Bedrock上のGrok 4.6を試してみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/grok-build-cli-amazon-bedrock-grok-46/</link>
-            <guid>7mF8srRagZIS3PXRPioi5</guid>
-            <pubDate>Wed, 19 Aug 2026 14:48:00 GMT</pubDate>
-            <description><![CDATA[最新版のGrok Build CLIにAmazon Bedrock（bedrock-mantle）用のカスタムモデルを設定し、AWS認証情報から生成したBearer TokenでGrok 4.6を呼び出してみました。対話モードとヘッドレス実行のいずれでもBedrock経由で動作し、日本語プロンプトには日本語で応答が返りました。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/grok-build-cli-amazon-bedrock-grok-46/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
