@@ -4,11 +4,19 @@
         <title>翻訳フィード: Kubernetes — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Kubernetes 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 11:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Every regulatory disclosure rule asks the same question. Each calls it something else — Sysdig]]></title>
+            <link>https://webflow.sysdig.com/blog/every-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else</link>
+            <guid>https://webflow.sysdig.com/blog/every-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else</guid>
+            <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[EU orgs must juggle reporting obligations and timelines for CRA, GDPR, NIS2, and more. But the most important step is judging what needs reporting.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/every-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fevery-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenTelemetry everywhere: Migrating a metrics platform at scale — CNCF Blog]]></title>
             <link>https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/</link>
@@ -777,14 +785,6 @@
             <guid>https://webflow.sysdig.com/blog/introducing-the-runtime-investigations-skill-for-headless-cloud-security</guid>
             <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/introducing-the-runtime-investigations-skill-for-headless-cloud-security">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintroducing-the-runtime-investigations-skill-for-headless-cloud-security">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Agentic AI tooling: Why runtime security is the missing layer — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/agentic-ai-tooling-why-runtime-security-is-the-missing-layer</link>
-            <guid>https://webflow.sysdig.com/blog/agentic-ai-tooling-why-runtime-security-is-the-missing-layer</guid>
-            <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[A developer asks an AI coding agent to refactor a microservice. Within seconds, the agent opens source files, executes shell commands, calls external APIs, and modifies cloud configuration. No human approves each step. No security tool monitors what the agent does between receiving the prompt and delivering the result.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/agentic-ai-tooling-why-runtime-security-is-the-missing-layer">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fagentic-ai-tooling-why-runtime-security-is-the-missing-layer">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

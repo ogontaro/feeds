@@ -4,11 +4,26 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Fri, 18 Sep 2026 15:38:53 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Sep 2026 19:30:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Amazon Bedrock | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/amazon-bedrock-agentcore-runtime-v2-tried/</link>
+            <guid>5Fn3sJAfhuqd3EmqnwMDQE</guid>
+            <pubDate>Fri, 18 Sep 2026 19:30:01 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/amazon-bedrock-agentcore-runtime-v2-tried/">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing Kimi K3 on Amazon Bedrock — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/</link>
+            <guid>1470b50c6e37b81faa5a5f15f79660ea3af81564</guid>
+            <pubDate>Fri, 18 Sep 2026 16:52:01 GMT</pubDate>
+            <description><![CDATA[Kimi K3 from Moonshot AI is now available on Amazon Bedrock, giving you a powerful new open-weight option for coding and knowledge work. It offers native vision, a 1-million-token context window, and explicit prompt caching to reduce latency and input costs.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-kimi-k3-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Migrating multi-model AI agents to Amazon Bedrock AgentCore runtime — AWS Machine Learning Blog]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime/</link>
@@ -786,22 +801,6 @@
             <pubDate>Sat, 22 Aug 2026 05:37:16 GMT</pubDate>
             <description><![CDATA[Amazon Bedrock 上の OpenAI GPT-5.6 Sol の価格改定が発表され、出力トークンの単価が 33.3% 下がりました。7月の Terra / Luna の値下げに続く今回の改定で、GPT-5.6 シリーズすべての価格が見直されたことになります。改定後の価格体系と、Claude 5世代との比較をまとめます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-openai-gpt-56-sol-reduced-pricing/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[Amazon Bedrock] 検査プロンプトを VLM 自身に書かせて外観検査をしてみました 〜欠陥の位置は座標ではなくグリッドのセル名で〜 — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/bedrock-vlm-visual-inspection-generated-prompt/</link>
-            <guid>2RFEznWsjWRiwBRfhWkPBr</guid>
-            <pubDate>Fri, 21 Aug 2026 22:45:49 GMT</pubDate>
-            <description><![CDATA[VLM（Vision Language Model）で外観検査を始める際の課題である「検査キーワードの決定」と「欠陥位置の特定」を、VLM自身に解決させる方法を試してみました。異常・正常サンプルから検査プロンプトを自動生成し、グリッドのセル名で位置を指定することで、迅速なPoC立ち上げと精度向上を実現しています。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-vlm-visual-inspection-generated-prompt/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[東京リージョンで利用可能になったAmazon Bedrock AgentCore Web Search Toolを日本語クエリで試してみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/bedrock-agentcore-web-search-tool-japanese-query/</link>
-            <guid>2ANWyW3HqbZQbUrze4K4oV</guid>
-            <pubDate>Fri, 21 Aug 2026 18:54:31 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock AgentCore Web Search Toolの検索インデックスに、日本語記事がどの程度収録されているかを、DevelopersIOの記事を対象に調べました。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-agentcore-web-search-tool-japanese-query/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
