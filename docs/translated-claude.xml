@@ -4,11 +4,18 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Thu, 17 Sep 2026 22:59:39 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Sep 2026 02:16:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.276#item-6a290bab517a</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.276#item-6a290bab517a</guid>
+            <pubDate>Fri, 18 Sep 2026 02:16:57 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.276#item-6a290bab517a">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
             <link>https://claude-code-log.com/changelog/v2.1.275#item-e6a4eeb9c2aa</link>
@@ -706,13 +713,6 @@
             <pubDate>Mon, 14 Sep 2026 22:12:54 GMT</pubDate>
             <description><![CDATA[What's changed Added fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or /fast typed in the session applies where your organization allows it Added mouse support to the /config panel in fullscreen mode: the wheel scrolls the settings list, a click on a setting's value changes it, and the row under the pointer is highlighted Added claude self-hosted-runner --drain-marker-file : when that file exists at a SIGTERM drain, the runner reports its e]]></description>
             <content:encoded><![CDATA[<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.271">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.271">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — 3-shake Engineers' Blogs]]></title>
-            <link>https://zenn.dev/toshikish/articles/3239a9e27649f3</link>
-            <guid>https://zenn.dev/toshikish/articles/3239a9e27649f3</guid>
-            <pubDate>Mon, 14 Sep 2026 09:41:08 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://zenn.dev/toshikish/articles/3239a9e27649f3">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
