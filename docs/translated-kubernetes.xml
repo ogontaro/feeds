@@ -121,6 +121,14 @@
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F11%2Fkubernetes-v1-37-native-histograms-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[KubeCon + CloudNativeCon North America 2026: Your Week in Salt Lake City — CNCF Blog]]></title>
+            <link>https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/</link>
+            <guid>https://www.cncf.io/?p=174965</guid>
+            <pubDate>Fri, 11 Sep 2026 12:29:33 GMT</pubDate>
+            <description><![CDATA[This November, the cloud native community is heading to Salt Lake City. From November 9–12, 2026, KubeCon + CloudNativeCon North America will bring together adopters and technologists from across open source and cloud native communities for...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F11%2Fkubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Building a reliable cloud native foundation for distributed AI training — CNCF Blog]]></title>
             <link>https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/</link>
             <guid>https://www.cncf.io/?p=174536</guid>
@@ -778,13 +786,6 @@
             <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[In early April, the Sysdig Threat Research Team (TRT) identified a detection flaw in the process for Azure VM password resets and VMAccess naming. This flaw allows attackers to assign any name to Azure VM extensions, giving them the ability to obtain read/write access, change passwords, and persist in the victim environment without being detected. Additionally, the Sysdig TRT found that the telemetry documented by the Azure Threat Matrix for this detection did not fire when the event was trigger]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/the-expendable-extension-name-azure-vmaccess-naming-chaos-password-resets-and-a-detection-gap">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fthe-expendable-extension-name-azure-vmaccess-naming-chaos-password-resets-and-a-detection-gap">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Introducing the Runtime Investigation Skill for headless cloud security — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/introducing-the-runtime-investigations-skill-for-headless-cloud-security</link>
-            <guid>https://webflow.sysdig.com/blog/introducing-the-runtime-investigations-skill-for-headless-cloud-security</guid>
-            <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/introducing-the-runtime-investigations-skill-for-headless-cloud-security">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintroducing-the-runtime-investigations-skill-for-headless-cloud-security">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS レポート 2026-09-19</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header><a href="../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS レポート 2026-09-19</h1>
+<article class="report"><h2>今日の 6 本</h2>
+<h3>Amazon SageMaker HyperPod Inference Gateway 登場</h3>
+<p>EKS 上で動く推論ワークロードに GPU 使用状況を見て賢くルーティングするアドオンで、モデルサーバやクライアントの改修なしに TTFT を最大 82% 削減できるとのこと。EKS × 生成AI 推論基盤の設計を考えている人には直撃の内容。
+<a href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-amazon-sagemaker-hyperpod-inference-gateway%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock に Kimi K3 が追加</h3>
+<p>Moonshot AI 製のオープンウェイトモデルが Bedrock で利用可能になり、ネイティブ Vision・100万トークンのコンテキスト・明示的なプロンプトキャッシュを備える。オープンウェイト勢の選択肢が Bedrock 上でどう広がっているかを追う上で押さえておきたい一報。
+<a href="https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-kimi-k3-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>新しい AgentCore ランタイム、コールドスタートを高速・安定化</h3>
+<p>セッション終了時にメモリを即座に回収し、イメージサイズや同時実行数に関わらず一定のコールドスタート時間を実現する Bedrock AgentCore の新ランタイム。本番運用でエージェントのレイテンシとコストを最適化したいチームには具体的な効き所がある。
+<a href="https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts%2F">Google 翻訳で全文を読む</a></p>
+<h3>マルチモデルAIエージェントを ECS/Fargate から Bedrock AgentCore へ移行</h3>
+<p>医療分野の3モデル・オーケストレーション＋ベクター検索エージェントを自前運用の ECS/Fargate から AgentCore ランタイムに移した実例で、金融・製造業にも応用可能なフレームワーク非依存パターンとして紹介されている。自前運用からのマイグレーションを検討する際の具体的な設計判断の参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmigrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker Inference、2026年の主要アップデートまとめ</h3>
+<p>フルマネージドエンドポイントと HyperPod Inference の両方で今年投入された13件のローンチ（推論レコメンデーション、容量認識型インスタンスプール、階層的KVキャッシュ、Prefill/Decode 分離など）を一気に振り返れる回顧記事。SageMaker で推論基盤を組んでいるなら見落としがないか棚卸しに使える。
+<a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-sagemaker-inference-2026-year-to-date-launches-in-review%2F">Google 翻訳で全文を読む</a></p>
+<h3>コーディングエージェントで Hugging Face モデルを SageMaker AI にデプロイ</h3>
+<p>6つのオープンソースのエージェントスキルを使い、コーディングエージェントにモデルを指定するだけで適切なサービングコンテナ・オートスケーリング・CloudWatch アラーム・検証済みの削除手順までそろったリアルタイムエンドポイントが得られる。エージェント経由のインフラ構築が実運用レベルにどこまで来ているかを見る好例。
+<a href="https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents%2F">Google 翻訳で全文を読む</a></p>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

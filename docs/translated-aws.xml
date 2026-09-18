@@ -4,11 +4,19 @@
         <title>翻訳フィード: AWS — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Fri, 18 Sep 2026 19:30:01 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Sep 2026 20:52:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon SageMaker Inference: 2026 year-to-date launches in review — AWS Machine Learning Blog]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/</link>
+            <guid>2ee3ed6a4b11eb69260daaa48214c0e6564f2a28</guid>
+            <pubDate>Fri, 18 Sep 2026 20:52:14 GMT</pubDate>
+            <description><![CDATA[Amazon SageMaker AI shipped 13 inference launches in year-to-date across two deployment paths: fully managed endpoints and Amazon SageMaker HyperPod Inference. This post reviews each launch, from inference recommendations and capacity-aware instance pools to tiered KV caching and disaggregated prefill and decode.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-sagemaker-inference-2026-year-to-date-launches-in-review%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Amazon Bedrock | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/amazon-bedrock-agentcore-runtime-v2-tried/</link>
@@ -209,6 +217,14 @@
             <guid>37slHfqwsXJ7zdcvq8lx2Q</guid>
             <pubDate>Wed, 16 Sep 2026 01:00:10 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/Comprehend-VS-AI/">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[EKS-optimized AL2023 NVIDIA AMI includes two NVIDIA driver versions — Amazon EKS Document History]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/ml-eks-optimized-ami.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#EKS-optimized_AL2023_NVIDIA_AMI_includes_two_NVIDIA_driver_versions_2026-09-15</guid>
+            <pubDate>Tue, 15 Sep 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[The EKS-optimized AL2023 NVIDIA AMI now bundles two NVIDIA driver versions in a single AMI. Each node automatically selects the appropriate driver for its GPU at boot, enabling support for the g7 instance type without building a custom AMI.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/ml-eks-optimized-ami.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fml-eks-optimized-ami.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Optimizing cost and latency with Amazon Bedrock prompt caching — AWS Machine Learning Blog]]></title>
@@ -785,22 +801,6 @@
             <pubDate>Mon, 24 Aug 2026 16:20:15 GMT</pubDate>
             <description><![CDATA[During my time at AWS, I have always looked for opportunities to work with students. I have delivered over 50 talks at universities across the region, and watching the potential in the room is always a strong motivator. It reminds me of why I do this work, and that the students I meet today may […]]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-student-rewards-on-aws-builder-center-local-zone-in-las-vegas-and-more-august-24-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-student-rewards-on-aws-builder-center-local-zone-in-las-vegas-and-more-august-24-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[【夏休みの自由研究リレー】モデルが分からない状態でBedrockのLLMを当てるクイズを作ってみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/summer-project-2026-bedrock-model-guess-quiz/</link>
-            <guid>5z8zYUR5z8qLXpMKly712w</guid>
-            <pubDate>Mon, 24 Aug 2026 09:30:17 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrockの複数モデルに同じお題を投げて、匿名化した回答から「どのモデルが書いたか」を当てるクイズアプリを作ってみました。遊びながらモデルごとの特徴や価格差を体験できます。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/summer-project-2026-bedrock-model-guess-quiz/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Amazon Bedrock の OpenAI GPT-5.6 Sol が値下げされました — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/bedrock-openai-gpt-56-sol-reduced-pricing/</link>
-            <guid>5FngPn1rtviZ5VKrjC7Ds9</guid>
-            <pubDate>Sat, 22 Aug 2026 05:37:16 GMT</pubDate>
-            <description><![CDATA[Amazon Bedrock 上の OpenAI GPT-5.6 Sol の価格改定が発表され、出力トークンの単価が 33.3% 下がりました。7月の Terra / Luna の値下げに続く今回の改定で、GPT-5.6 シリーズすべての価格が見直されたことになります。改定後の価格体系と、Claude 5世代との比較をまとめます。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-openai-gpt-56-sol-reduced-pricing/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

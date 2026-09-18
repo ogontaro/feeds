@@ -4,11 +4,28 @@
         <title>Claude レポート — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 17 Sep 2026 23:58:10 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 18 Sep 2026 23:58:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-19]]></title>
+            <link>https://ogontaro.github.io/rss/report/claude/2026-09-19.html</link>
+            <guid>https://ogontaro.github.io/rss/report/claude/2026-09-19.html</guid>
+            <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の3本</h2>
+<h3>Claude CodeのRulesとAuto memoryは書きっぱなしにしないほうがいい</h3>
+<p>CLAUDE.mdやAuto memoryは一度書けば安心という機能ではなく、運用し続けることが前提の仕組みだという指摘。ルールやメモリが陳腐化してエージェントの判断を狂わせるケースを踏まえた実務目線の話で、チームでClaude Codeを定着させたいなら押さえておきたい観点。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F18%2F100730">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code v2.1.276 アップデートまとめ（DevelopersIO）</h3>
+<p>Claude Code v2.1.276の更新内容を日本語でまとめて紹介する記事。公式changelogを1件ずつ追うより、変更点を一気に把握したい人に向いている。
+<a href="https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260918-cc-updates-v2-1-276%2F">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code v2.1.277、changelogに多数の変更が集約</h3>
+<p>最新リリースで一度に多くの変更が入ったバージョン。CLIを日常的に使っているなら、しばらく追っていなかった間の差分をまとめて確認しておく価値がある。
+<a href="https://claude-code-log.com/changelog/v2.1.277">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.277">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude レポート 2026-09-18]]></title>
             <link>https://ogontaro.github.io/rss/report/claude/2026-09-18.html</link>
