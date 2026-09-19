@@ -4,11 +4,25 @@
         <title>翻訳フィード: Claude — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Fri, 18 Sep 2026 19:09:17 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 19 Sep 2026 03:12:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.278#item-88506706c503</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.278#item-88506706c503</guid>
+            <pubDate>Sat, 19 Sep 2026 03:12:14 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.278#item-88506706c503">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
+            <link>https://claude-code-log.com/changelog/v2.1.278#item-58b0a894aebe</link>
+            <guid>https://claude-code-log.com/changelog/v2.1.278#item-58b0a894aebe</guid>
+            <pubDate>Sat, 19 Sep 2026 03:12:14 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.278#item-58b0a894aebe">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
             <link>https://claude-code-log.com/changelog/v2.1.277#item-2632a3e60ae2</link>
@@ -697,20 +711,6 @@
             <guid>5L2i5UJhY5sPDtQGXonAIv</guid>
             <pubDate>Tue, 15 Sep 2026 08:10:14 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260915-cc-updates-v2-1-272/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AI時代の「技術的負債」の変質ー概念の終焉と再解釈、エージェントと共に向かう先 — 3-shake Engineers' Blogs]]></title>
-            <link>https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</link>
-            <guid>https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki</guid>
-            <pubDate>Tue, 15 Sep 2026 04:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://speakerdeck.com/nwiizo/ai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fspeakerdeck.com%2Fnwiizo%2Fai-jidai-no-gijutsuteki-fusai-no-henshitsu-gainen-no-shuuen-to-saikaishaku-ejento-totomoni-mukau-saki">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[本を書きました。本だからできたこと、これからできること — 3-shake Engineers' Blogs]]></title>
-            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</link>
-            <guid>https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054</guid>
-            <pubDate>Tue, 15 Sep 2026 03:40:54 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/15/124054">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F15%2F124054">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
