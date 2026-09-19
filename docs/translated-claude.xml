@@ -17,6 +17,13 @@
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260919-cc-updates-v2-1-278/">原文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[ — 3-shake Engineers' Blogs]]></title>
+            <link>https://zenn.dev/satohjohn/articles/gemini-managed-agents-security</link>
+            <guid>https://zenn.dev/satohjohn/articles/gemini-managed-agents-security</guid>
+            <pubDate>Sat, 19 Sep 2026 06:59:04 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://zenn.dev/satohjohn/articles/gemini-managed-agents-security">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
             <link>https://claude-code-log.com/changelog/v2.1.278#item-88506706c503</link>
             <guid>https://claude-code-log.com/changelog/v2.1.278#item-88506706c503</guid>
@@ -29,6 +36,13 @@
             <guid>https://claude-code-log.com/changelog/v2.1.278#item-58b0a894aebe</guid>
             <pubDate>Sat, 19 Sep 2026 03:12:14 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.278#item-58b0a894aebe">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Codexを使うなら、config.tomlとAGENTS.mdを押さえておきたい — 3-shake Engineers' Blogs]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/19/112330</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2026/09/19/112330</guid>
+            <pubDate>Sat, 19 Sep 2026 02:23:30 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/19/112330">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F19%2F112330">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
@@ -696,21 +710,6 @@
             <guid>https://claude-code-log.com/changelog/v2.1.273#item-8c079e995992</guid>
             <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-8c079e995992">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[v2.1.273 — Claude Code releases]]></title>
-            <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.273</link>
-            <guid>https://github.com/anthropics/claude-code/releases/tag/v2.1.273</guid>
-            <pubDate>Tue, 15 Sep 2026 20:23:03 GMT</pubDate>
-            <description><![CDATA[What's changed Added x-claude-code-request-class, x-claude-code-agent-type, x-claude-code-prev-tool-durations, x-claude-code-compaction and x-claude-code-context-compacted request headers for LLM gateways; opt in with CLAUDE_CODE_GATEWAY_HINT_HEADERS=1 Added a notification when an MCP server disconnects mid-session and automatic reconnection gives up, pointing at /mcp Added forking a session started with claude --remote-control or /remote-control from the Claude app; the fork runs as a backgroun]]></description>
-            <content:encoded><![CDATA[<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.273">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.273">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — Claude | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/reona-claude-code-goal-stop-condition/</link>
-            <guid>3ARRiSwxbM3o5Gl1h8u75q</guid>
-            <pubDate>Tue, 15 Sep 2026 11:44:52 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/reona-claude-code-goal-stop-condition/">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
