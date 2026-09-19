@@ -4,11 +4,19 @@
         <title>AWS レポート — ogontaro/rss</title>
         <link>https://ogontaro.github.io/rss/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 18 Sep 2026 23:59:48 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 19 Sep 2026 23:59:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-20]]></title>
+            <link>https://ogontaro.github.io/rss/report/aws/2026-09-20.html</link>
+            <guid>https://ogontaro.github.io/rss/report/aws/2026-09-20.html</guid>
+            <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした。</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS レポート 2026-09-19]]></title>
             <link>https://ogontaro.github.io/rss/report/aws/2026-09-19.html</link>
