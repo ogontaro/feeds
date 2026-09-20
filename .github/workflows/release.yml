@@ -32,10 +32,12 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Read ${{ github.workspace }}/.cache/release-claude-input.json and
-            ${{ github.workspace }}/report-criteria/release-claude.md. Follow the criteria file:
-            summarize the releases and write to ${{ github.workspace }}/.cache/release-claude.md
-            in the format it specifies. Write only that one file.
+            Read ${{ github.workspace }}/.cache/release-claude-input.json,
+            ${{ github.workspace }}/report-criteria/release-claude.md, and the "claude" section of
+            ${{ github.workspace }}/interests.yaml for context on what matters most. Follow the
+            criteria file: summarize the releases and write to
+            ${{ github.workspace }}/.cache/release-claude.md in the format it specifies.
+            Write only that one file.
           claude_args: "--allowedTools Read,Write"
       - name: render claude releases
         if: steps.collect_claude.outputs.n != '0'
@@ -52,10 +54,12 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Read ${{ github.workspace }}/.cache/release-aws-input.json and
-            ${{ github.workspace }}/report-criteria/release-aws.md. Follow the criteria file:
-            summarize the releases and write to ${{ github.workspace }}/.cache/release-aws.md
-            in the format it specifies. Write only that one file.
+            Read ${{ github.workspace }}/.cache/release-aws-input.json,
+            ${{ github.workspace }}/report-criteria/release-aws.md, and the "aws" section of
+            ${{ github.workspace }}/interests.yaml for context on what matters most. Follow the
+            criteria file: summarize the releases and write to
+            ${{ github.workspace }}/.cache/release-aws.md in the format it specifies.
+            Write only that one file.
           claude_args: "--allowedTools Read,Write"
       - name: render aws releases
         if: steps.collect_aws.outputs.n != '0'
@@ -72,10 +76,12 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Read ${{ github.workspace }}/.cache/release-kubernetes-input.json and
-            ${{ github.workspace }}/report-criteria/release-kubernetes.md. Follow the criteria file:
-            summarize the releases and write to ${{ github.workspace }}/.cache/release-kubernetes.md
-            in the format it specifies. Write only that one file.
+            Read ${{ github.workspace }}/.cache/release-kubernetes-input.json,
+            ${{ github.workspace }}/report-criteria/release-kubernetes.md, and the "kubernetes"
+            section of ${{ github.workspace }}/interests.yaml for context on what matters most.
+            Follow the criteria file: summarize the releases and write to
+            ${{ github.workspace }}/.cache/release-kubernetes.md in the format it specifies.
+            Write only that one file.
           claude_args: "--allowedTools Read,Write"
       - name: render kubernetes releases
         if: steps.collect_kubernetes.outputs.n != '0'
