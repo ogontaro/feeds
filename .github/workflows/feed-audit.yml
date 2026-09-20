@@ -26,6 +26,8 @@ jobs:
         run: bun run src/feed-audit-collect.ts
 
       - name: audit feeds with claude
+        id: audit_feeds
+        continue-on-error: true
         uses: anthropics/claude-code-action@v1
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
@@ -52,6 +54,35 @@ jobs:
             4. Write only source.yaml. Edit entries in place and keep existing YAML comments and
                structure intact — do not rewrite the whole file.
           claude_args: "--allowedTools Read,Write,WebSearch --model deepseek-v4.1-flash[1m]"
+
+      - name: audit feeds with claude (qwen fallback)
+        if: steps.audit_feeds.outcome == 'failure'
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/feed-audit-input.json (stale candidates),
+            ${{ github.workspace }}/interests.yaml, and ${{ github.workspace }}/source.yaml.
+
+            1. For each stale candidate that looks genuinely dead or off-topic for its domain's
+               interests, set `enabled: false` on that feed entry in source.yaml (keep the entry,
+               just disable it). Do not disable a feed only because interests.yaml doesn't
+               mention it by name.
+            2. For each domain, use WebSearch with a couple of that domain's `include` keywords
+               from interests.yaml to find 1-2 new candidate RSS/Atom feed URLs not already
+               present in source.yaml. Prefer official blogs, well-known engineering blogs, or
+               topic/tag-scoped feeds — avoid a whole personal blog unless it is already
+               tag-scoped to the topic.
+            3. For each new candidate, fetch the URL and confirm it actually serves RSS/Atom XML
+               before adding it. Append accepted candidates to source.yaml under the right
+               domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`.
+            4. Write only source.yaml. Edit entries in place and keep existing YAML comments and
+               structure intact — do not rewrite the whole file.
+          claude_args: "--allowedTools Read,Write,WebSearch --model qwen3.8-flash[1m]"
 
       - name: validate newly added feeds
         run: bun run src/feed-audit-validate.ts

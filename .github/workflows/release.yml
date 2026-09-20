@@ -27,7 +27,9 @@ jobs:
           bun run src/release-collect.ts claude
           echo "n=$(jq length .cache/release-claude-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate claude releases
+        id: curate_claude
         if: steps.collect_claude.outputs.n != '0'
+        continue-on-error: true
         uses: anthropics/claude-code-action@v1
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
@@ -43,6 +45,23 @@ jobs:
             ${{ github.workspace }}/.cache/release-claude.md in the format it specifies.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
+      - name: curate claude releases (qwen fallback)
+        if: steps.collect_claude.outputs.n != '0' && steps.curate_claude.outcome == 'failure'
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/release-claude-input.json,
+            ${{ github.workspace }}/report-criteria/release-claude.md, and the "claude" section of
+            ${{ github.workspace }}/interests.yaml for context on what matters most. Follow the
+            criteria file: summarize the releases and write to
+            ${{ github.workspace }}/.cache/release-claude.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render claude releases
         if: steps.collect_claude.outputs.n != '0'
         run: bun run src/release-render.ts claude
@@ -53,7 +72,9 @@ jobs:
           bun run src/release-collect.ts aws
           echo "n=$(jq length .cache/release-aws-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate aws releases
+        id: curate_aws
         if: steps.collect_aws.outputs.n != '0'
+        continue-on-error: true
         uses: anthropics/claude-code-action@v1
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
@@ -69,6 +90,23 @@ jobs:
             ${{ github.workspace }}/.cache/release-aws.md in the format it specifies.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
+      - name: curate aws releases (qwen fallback)
+        if: steps.collect_aws.outputs.n != '0' && steps.curate_aws.outcome == 'failure'
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/release-aws-input.json,
+            ${{ github.workspace }}/report-criteria/release-aws.md, and the "aws" section of
+            ${{ github.workspace }}/interests.yaml for context on what matters most. Follow the
+            criteria file: summarize the releases and write to
+            ${{ github.workspace }}/.cache/release-aws.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render aws releases
         if: steps.collect_aws.outputs.n != '0'
         run: bun run src/release-render.ts aws
@@ -79,7 +117,9 @@ jobs:
           bun run src/release-collect.ts kubernetes
           echo "n=$(jq length .cache/release-kubernetes-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate kubernetes releases
+        id: curate_kubernetes
         if: steps.collect_kubernetes.outputs.n != '0'
+        continue-on-error: true
         uses: anthropics/claude-code-action@v1
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
@@ -95,6 +135,23 @@ jobs:
             ${{ github.workspace }}/.cache/release-kubernetes.md in the format it specifies.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
+      - name: curate kubernetes releases (qwen fallback)
+        if: steps.collect_kubernetes.outputs.n != '0' && steps.curate_kubernetes.outcome == 'failure'
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/release-kubernetes-input.json,
+            ${{ github.workspace }}/report-criteria/release-kubernetes.md, and the "kubernetes"
+            section of ${{ github.workspace }}/interests.yaml for context on what matters most.
+            Follow the criteria file: summarize the releases and write to
+            ${{ github.workspace }}/.cache/release-kubernetes.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render kubernetes releases
         if: steps.collect_kubernetes.outputs.n != '0'
         run: bun run src/release-render.ts kubernetes
