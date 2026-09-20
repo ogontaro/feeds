@@ -12,6 +12,10 @@ GitHub Pages で公開する。実装の詳細は [CONTRIBUTING.md](./CONTRIBUTI
 | 翻訳フィード | 購読フィードの新着タイトル・概要を DeepL で日本語化 | 6 時間ごと | `translated-<domain>.xml` |
 | レポート | 直近 24h の新着から Claude が重要記事を 5〜10 件選定・日本語コメント | 毎日 07:00 JST | `report-<domain>.xml` |
 | リリースレポート | 直近 7 日のツールリリースを Claude が整理（破壊的変更を先頭） | 毎週月 07:30 JST | `release-<domain>.xml` |
+| フィード監査 | 不採用フィードの無効化候補検出＋ WebSearch での新規フィード提案。PR 作成→自動マージ | 毎週日 07:00 JST | — |
+| 棚卸しリマインダー | 使用コンポーネントの棚卸しを促す GitHub Issue を自動作成 | 毎月1日 | — |
+| Issue 駆動の要望反映 | Issue に書いた要望を読み取り `source.yaml`/`interests.yaml` に反映。PR 作成→自動マージ | Issue 作成時 | — |
+| Inoreader スター連携 | スター付き記事を取得しフィード監査の採用実績に統合 | 毎週日 06:00 JST | — |
 
 3 パイプラインとも claude / kubernetes / aws の 3 ドメイン。計 9 フィード。
 
@@ -19,10 +23,12 @@ GitHub Pages で公開する。実装の詳細は [CONTRIBUTING.md](./CONTRIBUTI
 
 `source.yaml` が購読リストの正。1 エントリ = `{url, name, domain, kind}`。
 `domain` は claude / kubernetes / aws、`kind` は content（翻訳＋レポート）/ release（週次リリース）。
-公開前提なので、趣味・キー付き URL は入れない。選定基準・関心領域は `report-criteria/<name>.md`。
+公開前提なので、趣味・キー付き URL は入れない。選定基準・関心領域は `report-criteria/<name>.md` と
+`interests.yaml`（ドメインごとの関心キーワード）。
 
-追加・削除したら次回の定期実行（最短 6 時間後）で反映される。すぐ反映したい場合は
-下記タスクを手動実行する。
+追加・削除は基本的に週次のフィード監査（不採用フィードの無効化・新規フィード提案）と
+Issue 駆動の要望反映が自動でやる。すぐ反映したい場合は下記タスクを手動実行するか、
+Issue を作って要望を書く。
 
 ## タスク
 
@@ -50,6 +56,16 @@ bun install
 | 名前 | 用途 |
 | --- | --- |
 | `DEEPL_API_KEY` | タイトル・概要の翻訳（DeepL API。Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
-| `CLAUDE_CODE_OAUTH_TOKEN` | レポートのキュレーション。`claude setup-token` で生成、約 1 年有効・自動更新なし。401 で落ちたら再生成 |
+| `CLAUDE_CODE_OAUTH_TOKEN` | レポート・フィード監査・Issue 対応のキュレーション。`claude setup-token` で生成、約 1 年有効・自動更新なし。401 で落ちたら再生成 |
+
+## Secrets（未設定・任意）
+
+Inoreader スター連携（フィード監査の学習フィードバック）を使う場合のみ必要。
+未設定でもワークフローは失敗せず、スター連携だけスキップされる。
+
+| 名前 | 用途 |
+| --- | --- |
+| `INOREADER_CLIENT_ID` / `INOREADER_CLIENT_SECRET` | Inoreader の OAuth アプリ登録情報 |
+| `INOREADER_REFRESH_TOKEN` | 上記アプリで発行した refresh token |
 
 ワークフロー・スケジュール・内部構成は [CONTRIBUTING.md](./CONTRIBUTING.md) を参照。

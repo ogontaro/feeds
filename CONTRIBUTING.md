@@ -25,8 +25,11 @@ mise run serve     # docs/ をローカルプレビュー
 | 翻訳フィード | 各ドメインの content フィード | 使わない（DeepL のみ） | `translated-<domain>.xml` | 6 時間ごと |
 | レポート | `translated-<domain>.xml` の直近 24h | 重要記事を 5〜10 件選定 | `report-<domain>.xml` ＋ `report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `release-<domain>.xml` ＋ `release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
+| フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
+| Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
 
 - 3 パイプラインとも対象は claude / kubernetes / aws の 3 ドメイン
+- フィード監査・Issue 駆動反映はドメイン非依存（`source.yaml`/`interests.yaml` 全体を扱う）
 
 ## 全体構成
 
@@ -129,6 +132,58 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 4. `src/release-render.ts <domain>`: md → `docs/release/<domain>/YYYY-MM-DD.html`、
    `docs/release-<domain>.xml` を再生成（直近 26 エントリ）。
 
+### フィード出典トラッキング（`adoption-log.ndjson`）
+
+`report-render.ts` / `release-render.ts` が、生成した Markdown に実際に引用された記事の
+リンクを入力 JSON と突き合わせ、採用された `sourceName`（= `source.yaml` の `name`）を
+`{date, domain, sourceName}` の1行 JSON として追記する（追記専用、`.gitignore` 対象外）。
+`source.yaml` 自体を書き換えると YAML コメント・構造が壊れるため、判定用の集計は
+このログ側で行い、`source.yaml` への反映（`enabled: false` 等）はフィード監査が担う。
+
+### フィード監査（`feed-audit.yml`, 毎週日 07:00 JST = cron `0 22 * * 6`）
+
+1. `src/feed-audit-collect.ts`: `adoption-log.ndjson` と `starred-log.ndjson` を集計し、
+   直近 8 週間（56 日）採用実績が無い `content` フィードを無効化候補として
+   `.cache/feed-audit-input.json` に書き出す（`release` フィードは対象外。リリースが
+   無いのは普通のことで「不採用」の根拠にならない）。
+2. `claude-code-action`: 候補・`interests.yaml`・`source.yaml` を読み、無効化候補のうち
+   明確にノイズ・停止していそうなものだけ `enabled: false` にする。あわせて
+   `interests.yaml` の `include` キーワードで WebSearch し、ドメインごとに新規フィード
+   候補を 1〜2件、`addedAt` 付きで `source.yaml` に追加する（既存の YAML コメント・
+   構造は保ったまま編集）。`--allowedTools Read,Write,WebSearch`。
+3. `src/feed-audit-validate.ts`: 今日 `addedAt` が付いた新規エントリだけを対象に、
+   実際に RSS/Atom として取得・パースでき、直近 30 日以内の更新があるかを検証。
+   通らないものは `source.yaml` から削除する（`yaml` パッケージの `parseDocument` で
+   コメント保持したまま部分編集）。
+4. 変更があればブランチを切ってコミット・push、`gh pr create` → `gh pr merge --auto --squash`。
+
+`claude-code-action` は PR の自動作成・自動マージができない設計（人間の最終確認を必須にする
+セキュリティ方針）のため、コミットまでを同アクションが担い、PR 作成とマージはワークフロー内の
+素の `gh` コマンドで行う。
+
+### Issue 駆動の要望反映（`issue-request.yml`, Issue 作成時）
+
+Issue のタイトル・本文を `claude-code-action` に渡し、`source.yaml`/`interests.yaml` への
+変更（フィード追加・無効化、関心キーワードの追加・削除）を判断して直接編集させる。
+要望が不明瞭・無関係なら何も変更しない。変更があればフィード監査と同じ
+検証（`feed-audit-validate.ts`）→ PR 作成 → 自動マージの流れに乗る。
+棚卸しリマインダー（後述）が作る `component-review` ラベル付き Issue はこのワークフローの
+対象から除外する。
+
+### 棚卸しリマインダー（`component-review-reminder.yml`, 毎月1日）
+
+`gh issue create` で「使用コンポーネントの棚卸し」を促す Issue を自動作成するだけ。
+自動検出はしない（自宅クラスタや日常使いのツールをコードから検出する手段が無いため）。
+気づいたら本人が `source.yaml` に反映する運用と組み合わせる。
+
+### Inoreader スター連携（`inoreader-sync.yml`, 毎週日 06:00 JST）
+
+`src/inoreader-starred.ts` が Inoreader の Reader API（OAuth2, refresh token）で
+スター付きアイテムを取得し、`starred-log.ndjson` に追記する。フィード監査の
+採用実績集計にそのまま合流する（スターを付ける＝読まれて評価された、という扱い）。
+`INOREADER_REFRESH_TOKEN` 未設定時は何もせず正常終了する（OAuth アプリ登録は
+手動の一回きりの作業のため、それまでワークフローを失敗させない）。
+
 ### サイト（`src/build.ts`, 各ワークフローの末尾）
 
 - `docs/assets/style.css` を書き出す（単一オーナー）
@@ -155,12 +210,18 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 | `translate.yml` | `0 */6 * * *` ＋ dispatch | 全ドメイン翻訳（`--strict`）→ build → commit |
 | `report.yml` | `0 22 * * *` ＋ dispatch | 翻訳最新化 → ドメインごとに collect / claude-code-action / render → build → commit |
 | `release.yml` | `30 22 * * 0` ＋ dispatch | ドメインごとに collect / claude-code-action / render → build → commit |
+| `feed-audit.yml` | `0 22 * * 6` ＋ dispatch | collect → claude-code-action → validate → PR 作成・自動マージ |
+| `issue-request.yml` | `issues: opened` | claude-code-action → validate → PR 作成・自動マージ |
+| `component-review-reminder.yml` | `0 0 1 * *` ＋ dispatch | 棚卸し Issue を作成 |
+| `inoreader-sync.yml` | `0 21 * * 6` ＋ dispatch | スター取得 → commit |
 
-- 3 ワークフローとも `concurrency: { group: docs-write }` で `docs/` の書き込みを直列化。
+- `docs/` を書き込む5ワークフロー（translate/report/release/feed-audit/inoreader-sync）は
+  全て `concurrency: { group: docs-write }` で直列化。`source.yaml` の同時書き換えを防ぐ。
 - commit ステップは `permissions: contents: write` ＋ `git push "https://x-access-token:${GITHUB_TOKEN}@github.com/..."`。
   `claude-code-action` が git 認証情報を書き換えるため、素の `git push` は認証失敗する。
 - Secrets: `DEEPL_API_KEY` / `CLAUDE_CODE_OAUTH_TOKEN`（`claude setup-token`、約 1 年・自動更新なし、
-  401 で落ちたら手動差し替え）。
+  401 で落ちたら手動差し替え）。`INOREADER_CLIENT_ID` / `INOREADER_CLIENT_SECRET` /
+  `INOREADER_REFRESH_TOKEN` は任意（未設定ならスター連携だけスキップ）。
 
 ### 既知の運用リスク
 
@@ -176,6 +237,8 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 ```
 source.yaml
 interests.yaml
+adoption-log.ndjson    フィード採用実績ログ（追記専用）
+starred-log.ndjson     Inoreader スター記録ログ（追記専用）
 report-criteria/
   report-claude.md  report-kubernetes.md  report-aws.md
   release-claude.md  release-aws.md  release-kubernetes.md
@@ -184,17 +247,22 @@ src/
   translate.ts
   report-collect.ts   report-render.ts
   release-collect.ts  release-render.ts
+  feed-audit-collect.ts  feed-audit-validate.ts
+  inoreader-starred.ts
   build.ts
 docs/            GitHub Pages 配信対象。ワークフローがコミット
-.github/workflows/  translate.yml  report.yml  release.yml
+.github/workflows/
+  translate.yml  report.yml  release.yml
+  feed-audit.yml  issue-request.yml  component-review-reminder.yml  inoreader-sync.yml
 ```
 
 mise タスク一覧は README の「タスク」参照。
 
 ## スコープ外
 
-- Inoreader API 連携、OPML インポート
+- Inoreader 側の購読管理・OPML インポート（ビューアとしてのみ使う。API 連携はスター取得のみ）
+- 動的 Web アプリ化・自前のいいね/既読 UI（GitHub Pages の静的サイトのまま）
 - 記事本文の全文翻訳・転載（タイトルと description のみ、本文は Google 翻訳リンク）
 - SSG（`marked` ＋ テンプレートリテラル ＋ `feed` の最小構成）
-- 状態管理用の DB / 台帳ファイル
+- 状態管理用の DB（`adoption-log.ndjson`/`starred-log.ndjson` の追記ログのみ）
 - 例外処理・リトライの作り込み（失敗は落として通知）
