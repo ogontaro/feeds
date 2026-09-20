@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Kubernetes レポート — ogontaro/rss</title>
-        <link>https://ogontaro.github.io/rss/</link>
+        <title>Kubernetes レポート — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 18 Sep 2026 23:58:33 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Sep 2026 12:27:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
         <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-20]]></title>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-20.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-20.html</guid>
+            <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Kubernetes レポート 2026-09-19]]></title>
-            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-19.html</link>
-            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-19.html</guid>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-19.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-19.html</guid>
             <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Kubernetes レポート 2026-09-18]]></title>
-            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-18.html</link>
-            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-18.html</guid>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-18.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-18.html</guid>
             <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
 <h3>OpenTelemetry everywhere: 大規模メトリクス基盤の移行事例</h3>
@@ -33,8 +41,8 @@
         </item>
         <item>
             <title><![CDATA[Kubernetes レポート 2026-09-17]]></title>
-            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-17.html</link>
-            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-17.html</guid>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-17.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-17.html</guid>
             <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 3 本</h2>
 <h3>Kubernetes v1.37: バインドマウントオプションとEmptyDirパーミッションによるコンテナストレージの強化</h3>
@@ -50,16 +58,16 @@
         </item>
         <item>
             <title><![CDATA[Kubernetes レポート 2026-09-16]]></title>
-            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-16.html</link>
-            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-16.html</guid>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-16.html</guid>
             <pubDate>Wed, 16 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Kubernetes レポート 2026-09-15]]></title>
-            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-15.html</link>
-            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-15.html</guid>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-15.html</guid>
             <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 3 本</h2>
 <h3>Kubernetes の Changed Block Tracking API、Beta 版での変更点</h3>
@@ -76,8 +84,8 @@
         </item>
         <item>
             <title><![CDATA[Kubernetes レポート 2026-09-12]]></title>
-            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-12.html</link>
-            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-12.html</guid>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-12.html</guid>
             <pubDate>Sat, 12 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
 <h3>分散AIトレーニング向けの信頼できるクラウドネイティブ基盤を作る</h3>
@@ -90,8 +98,8 @@
         </item>
         <item>
             <title><![CDATA[Kubernetes レポート 2026-09-11]]></title>
-            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-11.html</link>
-            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-11.html</guid>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-11.html</guid>
             <pubDate>Fri, 11 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 1 本</h2>
 <h3>Kubernetesディザスタリカバリ: 3つの再現可能な障害シナリオから得られる知見</h3>
@@ -101,8 +109,8 @@
         </item>
         <item>
             <title><![CDATA[Kubernetes レポート 2026-09-10]]></title>
-            <link>https://ogontaro.github.io/rss/report/kubernetes/2026-09-10.html</link>
-            <guid>https://ogontaro.github.io/rss/report/kubernetes/2026-09-10.html</guid>
+            <link>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/kubernetes/2026-09-10.html</guid>
             <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 3 本</h2>
 <h3>Kubernetes v1.37: ノードライフサイクル条件（Node Lifecycle Conditions）の導入</h3>

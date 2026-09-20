@@ -4,11 +4,18 @@
         <title>翻訳フィード: Claude — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Sat, 19 Sep 2026 09:06:44 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Sep 2026 03:07:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Codexを使うなら、権限プロファイルとRulesを押さえておきたい — 3-shake Engineers' Blogs]]></title>
+            <link>https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746</link>
+            <guid>https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746</guid>
+            <pubDate>Sun, 20 Sep 2026 03:07:46 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F20%2F120746">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/20260919-cc-updates-v2-1-278/</link>
@@ -43,6 +50,14 @@
             <guid>https://syu-m-5151.hatenablog.com/entry/2026/09/19/112330</guid>
             <pubDate>Sat, 19 Sep 2026 02:23:30 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/19/112330">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F19%2F112330">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Code now reads AGENTS.md if there is no Claude.md — HN — Claude]]></title>
+            <link>https://code.claude.com/docs/en/changelog</link>
+            <guid>https://news.ycombinator.com/item?id=49760187</guid>
+            <pubDate>Fri, 18 Sep 2026 21:00:32 GMT</pubDate>
+            <description><![CDATA[Article URL: https://code.claude.com/docs/en/changelog Comments URL: https://news.ycombinator.com/item?id=49760187 Points: 721 # Comments: 271]]></description>
+            <content:encoded><![CDATA[<p><a href="https://code.claude.com/docs/en/changelog">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fcode.claude.com%2Fdocs%2Fen%2Fchangelog">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
@@ -183,6 +198,14 @@
             <guid>https://claude-code-log.com/changelog/v2.1.277#item-8c85df461f6e</guid>
             <pubDate>Fri, 18 Sep 2026 19:09:17 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.277#item-8c85df461f6e">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Anthropic finally adds AGENTS.md support to Claude Code — HN — Claude]]></title>
+            <link>https://twitter.com/trq212/status/2101009392611278961</link>
+            <guid>https://news.ycombinator.com/item?id=49758250</guid>
+            <pubDate>Fri, 18 Sep 2026 18:26:34 GMT</pubDate>
+            <description><![CDATA[Article URL: https://twitter.com/trq212/status/2101009392611278961 Comments URL: https://news.ycombinator.com/item?id=49758250 Points: 52 # Comments: 10]]></description>
+            <content:encoded><![CDATA[<p><a href="https://twitter.com/trq212/status/2101009392611278961">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftwitter.com%2Ftrq212%2Fstatus%2F2101009392611278961">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
@@ -530,6 +553,14 @@
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/16/one-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F16%2Fone-claude%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Claude Cowork and chat are now one Claude — HN — Claude]]></title>
+            <link>https://claude.com/blog/cowork-is-now-claude</link>
+            <guid>https://news.ycombinator.com/item?id=49729412</guid>
+            <pubDate>Wed, 16 Sep 2026 16:26:25 GMT</pubDate>
+            <description><![CDATA[Article URL: https://claude.com/blog/cowork-is-now-claude Comments URL: https://news.ycombinator.com/item?id=49729412 Points: 233 # Comments: 225]]></description>
+            <content:encoded><![CDATA[<p><a href="https://claude.com/blog/cowork-is-now-claude">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fclaude.com%2Fblog%2Fcowork-is-now-claude">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/claude-code-action-pr/</link>
             <guid>1fjM07YwTgcCkkb2nBDTqf</guid>
@@ -682,34 +713,6 @@
             <guid>https://claude-code-log.com/changelog/v2.1.273#item-ab01979d3d34</guid>
             <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-ab01979d3d34">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-5f2ce23273d2</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-5f2ce23273d2</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-5f2ce23273d2">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-b762543aedd4</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-b762543aedd4</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-b762543aedd4">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-c0e7c0743f63</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-c0e7c0743f63</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-c0e7c0743f63">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-8c079e995992</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-8c079e995992</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-8c079e995992">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
