@@ -226,6 +226,14 @@
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/Comprehend-VS-AI/">原文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[AWS says it can't restore some data from mideast facilities struck by Iran — HN — AWS]]></title>
+            <link>https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d</link>
+            <guid>https://news.ycombinator.com/item?id=49719249</guid>
+            <pubDate>Tue, 15 Sep 2026 21:41:42 GMT</pubDate>
+            <description><![CDATA[https://archive.is/Ay7RJ Comments URL: https://news.ycombinator.com/item?id=49719249 Points: 526 # Comments: 449]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.wsj.com%2Fworld%2Fmiddle-east%2Faws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[EKS-optimized AL2023 NVIDIA AMI includes two NVIDIA driver versions — Amazon EKS Document History]]></title>
             <link>https://docs.aws.amazon.com/eks/latest/userguide/ml-eks-optimized-ami.html</link>
             <guid>https://docs.aws.amazon.com/eks/latest/userguide/#EKS-optimized_AL2023_NVIDIA_AMI_includes_two_NVIDIA_driver_versions_2026-09-15</guid>
@@ -578,6 +586,14 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-didi-built-intelligent-contact-center-qa-with-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-didi-built-intelligent-contact-center-qa-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[I Rewrote My Back End in Go in 72 Hours and Cut My AWS Bill by 94% — HN — AWS]]></title>
+            <link>https://www.bajura.online/2026/09/i-rewrote-my-backend-in-go-in-72-hours.html</link>
+            <guid>https://news.ycombinator.com/item?id=49611641</guid>
+            <pubDate>Tue, 08 Sep 2026 15:20:29 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.bajura.online/2026/09/i-rewrote-my-backend-in-go-in-72-hours.html Comments URL: https://news.ycombinator.com/item?id=49611641 Points: 61 # Comments: 26]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.bajura.online/2026/09/i-rewrote-my-backend-in-go-in-72-hours.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.bajura.online%2F2026%2F09%2Fi-rewrote-my-backend-in-go-in-72-hours.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[AWS Weekly Roundup: Claude Fable 5.1 on AWS, Amazon Linux 2027 preview, AWS Certified AI Business Strategist, and more (September 7, 2026) — AWS News Blog]]></title>
             <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-fable-5-1-on-aws-amazon-linux-2027-preview-aws-certified-ai-business-strategist-and-more-september-7-2026/</link>
             <guid>bd7e863a13091bede2374f2ed4b4748927b1e862</guid>
@@ -754,6 +770,22 @@
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-vlm-visual-inspection-clothespin/">原文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[I used AWS cognito for a startup. I wouldn't do it again — HN — AWS]]></title>
+            <link>https://joshkaramuth.com/blog/aws-cognito-authentication-startup-nightmare/</link>
+            <guid>https://news.ycombinator.com/item?id=49478091</guid>
+            <pubDate>Fri, 28 Aug 2026 13:21:03 GMT</pubDate>
+            <description><![CDATA[Article URL: https://joshkaramuth.com/blog/aws-cognito-authentication-startup-nightmare/ Comments URL: https://news.ycombinator.com/item?id=49478091 Points: 193 # Comments: 132]]></description>
+            <content:encoded><![CDATA[<p><a href="https://joshkaramuth.com/blog/aws-cognito-authentication-startup-nightmare/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fjoshkaramuth.com%2Fblog%2Faws-cognito-authentication-startup-nightmare%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Acquires DuckLabs — HN — AWS]]></title>
+            <link>https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws</link>
+            <guid>https://news.ycombinator.com/item?id=49448321</guid>
+            <pubDate>Wed, 26 Aug 2026 12:59:26 GMT</pubDate>
+            <description><![CDATA[Article URL: https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws Comments URL: https://news.ycombinator.com/item?id=49448321 Points: 1102 # Comments: 316]]></description>
+            <content:encoded><![CDATA[<p><a href="https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fducklabs.com%2Fnews%2F2026%2F08%2F26%2Fducklabs-to-join-aws">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[【Amazon Bedrock】Web Crawler で登録できた URL の一覧をログで確認する方法 — Amazon Bedrock | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/bedrock-knowledge-base-web-crawler-url-log-query/</link>
             <guid>2XLYbpEP322cdo0ngtd27d</guid>
@@ -768,38 +800,6 @@
             <pubDate>Wed, 26 Aug 2026 10:40:34 GMT</pubDate>
             <description><![CDATA[Amazon Bedrock Managed Knowledge Base に Web Crawler でデータソースを登録する手順を、実際の操作画面を交えながらご紹介します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/bedrock-managed-knowledge-base-web/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Happy 20th Birthday, Amazon EC2 — AWS News Blog]]></title>
-            <link>https://aws.amazon.com/blogs/aws/happy-20th-birthday-amazon-ec2/</link>
-            <guid>0d62c0134c150af14fc409516cdf59aff26dc9e1</guid>
-            <pubDate>Tue, 25 Aug 2026 16:11:02 GMT</pubDate>
-            <description><![CDATA[On the 20th Anniversary, we recognize how AWS has continued to push the boundaries of what cloud computing can deliver, building custom silicon for general-purpose and AI workloads and expanding EC2 into new form factors and deployment models that our customers in 2006 could not have imagined.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/happy-20th-birthday-amazon-ec2/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fhappy-20th-birthday-amazon-ec2%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[GitHub Copilot CLIのBYOK機能でBedrock APIからOpus5を使ってみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/github-copilot-cli-byok-bedrock-api-opus5/</link>
-            <guid>1etA62pI4NpRRxb2DQaOA2</guid>
-            <pubDate>Tue, 25 Aug 2026 12:19:30 GMT</pubDate>
-            <description><![CDATA[GitHub Copilot CLIのBYOK機能を使ってAmazon BedrockのClaude Opus5を動かしてみました。APIキーだけで認証できる一方、temperature パラメータの互換性問題をプロキシで解決する必要があった実装方法について紹介します。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/github-copilot-cli-byok-bedrock-api-opus5/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ブラウザだけで使えるClaude Code環境（EC2 + code-server + Bedrock）にCloudFrontを追加して、拡張機能もインストールできるようにしてみた — Amazon Bedrock | DevelopersIO]]></title>
-            <link>https://dev.classmethod.jp/articles/202608-ec2-code-server-claude-code-bedrock-cloudfront/</link>
-            <guid>7dtbmz38KwRVq7mONVCckK</guid>
-            <pubDate>Tue, 25 Aug 2026 06:00:36 GMT</pubDate>
-            <description><![CDATA[前回構築したEC2 + code-server + Bedrock環境の前段にCloudFrontを置き、自己署名証明書によるブラウザ警告と拡張機能のインストール制限を解消しました。証明書エラーに悩まされず拡張機能も使えるようになるので、研修やハンズオンでもそのまま配りやすい環境になります。]]></description>
-            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/202608-ec2-code-server-claude-code-bedrock-cloudfront/">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Deterministic Argo CD capability endpoint — Amazon EKS Document History]]></title>
-            <link>https://docs.aws.amazon.com/eks/latest/userguide/working-with-argocd.html#argocd-endpoint-url</link>
-            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Deterministic_Argo_CD_capability_endpoint_2026-08-24</guid>
-            <pubDate>Mon, 24 Aug 2026 19:00:00 GMT</pubDate>
-            <description><![CDATA[Documented the format of the EKS Capability for Argo CD endpoint. The endpoint hostname is deterministic, so you can construct it from your capability name, cluster name, AWS account ID, and AWS Region, or retrieve it from the serverUrl field of describe-capability.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/working-with-argocd.html#argocd-endpoint-url">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fworking-with-argocd.html%23argocd-endpoint-url">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

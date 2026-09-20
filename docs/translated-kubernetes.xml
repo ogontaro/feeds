@@ -568,11 +568,27 @@
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/kubernetes-1-37-new-security-features">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fkubernetes-1-37-new-security-features">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[How Kubernetes Probes Work — HN — Kubernetes]]></title>
+            <link>https://ngrok.com/blog/probes</link>
+            <guid>https://news.ycombinator.com/item?id=49363665</guid>
+            <pubDate>Wed, 19 Aug 2026 16:25:37 GMT</pubDate>
+            <description><![CDATA[Article URL: https://ngrok.com/blog/probes Comments URL: https://news.ycombinator.com/item?id=49363665 Points: 143 # Comments: 25]]></description>
+            <content:encoded><![CDATA[<p><a href="https://ngrok.com/blog/probes">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fngrok.com%2Fblog%2Fprobes">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Argo Workflows 4.1 — Argo Project]]></title>
             <link>https://blog.argoproj.io/argo-workflows-4-1-first-release-candidate-6d680014278d?source=rss----21be29067291---4</link>
             <guid>https://medium.com/p/6d680014278d</guid>
             <pubDate>Fri, 14 Aug 2026 16:07:38 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-workflows-4-1-first-release-candidate-6d680014278d?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-workflows-4-1-first-release-candidate-6d680014278d%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes on Oxide: How customer needs shaped our integrations — HN — Kubernetes]]></title>
+            <link>https://oxide.computer/blog/kubernetes-on-oxide</link>
+            <guid>https://news.ycombinator.com/item?id=49286485</guid>
+            <pubDate>Thu, 13 Aug 2026 14:26:41 GMT</pubDate>
+            <description><![CDATA[Article URL: https://oxide.computer/blog/kubernetes-on-oxide Comments URL: https://news.ycombinator.com/item?id=49286485 Points: 199 # Comments: 100]]></description>
+            <content:encoded><![CDATA[<p><a href="https://oxide.computer/blog/kubernetes-on-oxide">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Foxide.computer%2Fblog%2Fkubernetes-on-oxide">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Defaulting on tech debt: When the bill comes due, AI is the collector — Sysdig]]></title>
@@ -660,6 +676,22 @@
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F07%2F29%2Fcontroller-runtime-cache-explained%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Open-weight AI is having its Kubernetes moment — HN — Kubernetes]]></title>
+            <link>https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/</link>
+            <guid>https://news.ycombinator.com/item?id=49048034</guid>
+            <pubDate>Sat, 25 Jul 2026 14:49:49 GMT</pubDate>
+            <description><![CDATA[Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 416 # Comments: 323]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftobi.knaup.me%2F2026-07-25-open-weight-ai-is-having-its-kubernetes-moment%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cheap self-hosted Kubernetes on Hetzner cloud (2025) — HN — Kubernetes]]></title>
+            <link>https://blog.qstars.nl/posts/cheap-self-hosted-kubernetes-on-hetzner-cloud/</link>
+            <guid>https://news.ycombinator.com/item?id=48996128</guid>
+            <pubDate>Tue, 21 Jul 2026 18:25:08 GMT</pubDate>
+            <description><![CDATA[Article URL: https://blog.qstars.nl/posts/cheap-self-hosted-kubernetes-on-hetzner-cloud/ Comments URL: https://news.ycombinator.com/item?id=48996128 Points: 70 # Comments: 36]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.qstars.nl/posts/cheap-self-hosted-kubernetes-on-hetzner-cloud/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.qstars.nl%2Fposts%2Fcheap-self-hosted-kubernetes-on-hetzner-cloud%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Four ways AI has fundamentally changed the threat landscape in 2026 — Sysdig]]></title>
             <link>https://webflow.sysdig.com/blog/four-ways-ai-has-fundamentally-changed-the-threat-landscape-in-2026</link>
             <guid>https://webflow.sysdig.com/blog/four-ways-ai-has-fundamentally-changed-the-threat-landscape-in-2026</guid>
@@ -723,6 +755,14 @@
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/07/13/kubernetes-dashboard-to-headlamp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F07%2F13%2Fkubernetes-dashboard-to-headlamp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Rebuilding My Homelab with Compose, Ruby, IPv6, and No Kubernetes — HN — Kubernetes]]></title>
+            <link>https://www.petekeen.net/homelab-resolved/</link>
+            <guid>https://news.ycombinator.com/item?id=48872031</guid>
+            <pubDate>Sat, 11 Jul 2026 13:47:47 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.petekeen.net/homelab-resolved/ Comments URL: https://news.ycombinator.com/item?id=48872031 Points: 55 # Comments: 63]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.petekeen.net/homelab-resolved/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.petekeen.net%2Fhomelab-resolved%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Argo CD 2026 User Survey Results — Argo Project]]></title>
             <link>https://blog.argoproj.io/argo-cd-2026-user-survey-results-dcffc9a8e48e?source=rss----21be29067291---4</link>
             <guid>https://medium.com/p/dcffc9a8e48e</guid>
@@ -745,58 +785,19 @@
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/security-briefing-june-2026">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fsecurity-briefing-june-2026">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Fixing a kubelet memory leak in Kubernetes 1.36 — HN — Kubernetes]]></title>
+            <link>https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak</link>
+            <guid>https://news.ycombinator.com/item?id=48741609</guid>
+            <pubDate>Wed, 01 Jul 2026 02:14:29 GMT</pubDate>
+            <description><![CDATA[Article URL: https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak Comments URL: https://news.ycombinator.com/item?id=48741609 Points: 79 # Comments: 14]]></description>
+            <content:encoded><![CDATA[<p><a href="https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fheyoncall.com%2Fblog%2Ffixing-kubernetes-kubelet-memory-leak">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[JADEPUFFER: Agentic ransomware for automated database extortion — Sysdig]]></title>
             <link>https://webflow.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion</link>
             <guid>https://webflow.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion</guid>
             <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fjadepuffer-agentic-ransomware-for-automated-database-extortion">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Open source maintainership in the age of AI — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/06/26/open-source-maintainership-in-the-age-of-ai/</link>
-            <guid>https://kubernetes.io/blog/2026/06/26/open-source-maintainership-in-the-age-of-ai/</guid>
-            <pubDate>Fri, 26 Jun 2026 18:00:00 GMT</pubDate>
-            <description><![CDATA[AI has really changed the game around software development. More people are leveraging AI than ever to contribute patches to projects they use. To me, this is a good thing as more folks will contribute patches rather than fork or not fix them. The main problem is that AI has made generating code fast but there has been very little improvement in maintaining code bases. In this post, we will highlight the ways the Kubernetes community is adapting to the world of AI assisted coding. The first step]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/06/26/open-source-maintainership-in-the-age-of-ai/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F06%2F26%2Fopen-source-maintainership-in-the-age-of-ai%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Understanding Langflow CVE-2026-55255, and why higher CVSS vulnerabilities aren't always the most exploited — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/understanding-langflow-cve-2026-55255-and-why-higher-cvss-vulnerabilities-arent-always-the-most-exploited</link>
-            <guid>https://webflow.sysdig.com/blog/understanding-langflow-cve-2026-55255-and-why-higher-cvss-vulnerabilities-arent-always-the-most-exploited</guid>
-            <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/understanding-langflow-cve-2026-55255-and-why-higher-cvss-vulnerabilities-arent-always-the-most-exploited">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Funderstanding-langflow-cve-2026-55255-and-why-higher-cvss-vulnerabilities-arent-always-the-most-exploited">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Introducing the Cluster API plugin for Headlamp — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/</link>
-            <guid>https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/</guid>
-            <pubDate>Thu, 25 Jun 2026 22:00:00 GMT</pubDate>
-            <description><![CDATA[Headlamp is an open-source, extensible Kubernetes SIG UI project designed to let you explore, manage, and debug cluster resources directly from a browser. Cluster API (CAPI) is a Kubernetes sub-project that brings declarative, Kubernetes-style APIs to cluster lifecycle management. It lets platform teams provision, upgrade, and manage the lifecycle of Kubernetes clusters using standard Kubernetes objects stored and reconciled in a management cluster. Managing Cluster API resources has historicall]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F06%2F25%2Fheadlamp-cluster-api-plugin%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Inspect Volcano workloads faster with Headlamp — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/06/25/visual-context-volcano-headlamp-plugin/</link>
-            <guid>https://kubernetes.io/blog/2026/06/25/visual-context-volcano-headlamp-plugin/</guid>
-            <pubDate>Thu, 25 Jun 2026 20:00:00 GMT</pubDate>
-            <description><![CDATA[Volcano is a cloud native batch scheduler for Kubernetes, built for high-performance computing, AI/ML, and other batch workloads. Headlamp is an extensible Kubernetes web UI. With its plugin system, Headlamp can surface APIs and workflows beyond the built-in Kubernetes resources. The Volcano plugin brings core Volcano resources into Headlamp so you can inspect workload state, queue behavior, and gang scheduling details in one place. Kubernetes was originally designed around long-running services]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/06/25/visual-context-volcano-headlamp-plugin/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F06%2F25%2Fvisual-context-volcano-headlamp-plugin%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[See your serverless: introducing the Headlamp plugin for Knative — Kubernetes Blog]]></title>
-            <link>https://kubernetes.io/blog/2026/06/25/headlamp-knative-plugin/</link>
-            <guid>https://kubernetes.io/blog/2026/06/25/headlamp-knative-plugin/</guid>
-            <pubDate>Thu, 25 Jun 2026 18:00:00 GMT</pubDate>
-            <description><![CDATA[Headlamp is an open-source, extensible Kubernetes SIG UI project designed to let you explore, manage, and debug cluster resources. Knative brings serverless workloads to Kubernetes, handling traffic routing, autoscaling, and revision management so teams can deploy and iterate without fighting infrastructure. But operating Knative workloads day-to-day can be difficult, there's still a lot of jumping between the kn CLI, kubectl, and the Kubernetes UI to get a full picture of what's running. We bui]]></description>
-            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/06/25/headlamp-knative-plugin/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F06%2F25%2Fheadlamp-knative-plugin%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[FulcrumSec Playbook: Sådan opdager og stopper du gruppen bag Novo Nordisk-bruddet — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/fulcrumsec-playbook-sadan-opdager-og-stopper-du-gruppen-bag-novo-nordisk-bruddet</link>
-            <guid>https://webflow.sysdig.com/blog/fulcrumsec-playbook-sadan-opdager-og-stopper-du-gruppen-bag-novo-nordisk-bruddet</guid>
-            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[The FulcrumSec threat actor group recently claimed to have stolen more than a terabyte of data from global pharmaceutical company Novo Nordisk, the manufacturer of Ozempic and Wegovy. News of the breach is making headlines worldwide, and this isn’t the first time this year they have breached a major organization. However, despite the group’s recent “success,” FulcrumSec’s playbook has shown a few definitive patterns. And where patterns exist, defenders have an opportunity to get ahead.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/fulcrumsec-playbook-sadan-opdager-og-stopper-du-gruppen-bag-novo-nordisk-bruddet">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Ffulcrumsec-playbook-sadan-opdager-og-stopper-du-gruppen-bag-novo-nordisk-bruddet">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
