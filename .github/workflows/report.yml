@@ -37,9 +37,10 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Read ${{ github.workspace }}/.cache/report-claude-input.json and
-            ${{ github.workspace }}/report-criteria/report-claude.md. Follow the criteria file:
-            select the important entries and write the Japanese digest to
+            Read ${{ github.workspace }}/.cache/report-claude-input.json,
+            ${{ github.workspace }}/report-criteria/report-claude.md, and the "claude" section of
+            ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
+            keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-claude.md in the format it specifies.
             Write only that one file.
           claude_args: "--allowedTools Read,Write"
@@ -58,11 +59,12 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Read ${{ github.workspace }}/.cache/report-kubernetes-input.json and
-            ${{ github.workspace }}/report-criteria/report-kubernetes.md. Follow the criteria file:
-            select the important entries and write the Japanese digest to
-            ${{ github.workspace }}/.cache/report-kubernetes.md in the format it specifies.
-            Write only that one file.
+            Read ${{ github.workspace }}/.cache/report-kubernetes-input.json,
+            ${{ github.workspace }}/report-criteria/report-kubernetes.md, and the "kubernetes"
+            section of ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the
+            interests keywords to break ties: select the important entries and write the Japanese
+            digest to ${{ github.workspace }}/.cache/report-kubernetes.md in the format it
+            specifies. Write only that one file.
           claude_args: "--allowedTools Read,Write"
       - name: render kubernetes
         if: steps.collect_kubernetes.outputs.n != '0'
@@ -79,9 +81,10 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Read ${{ github.workspace }}/.cache/report-aws-input.json and
-            ${{ github.workspace }}/report-criteria/report-aws.md. Follow the criteria file:
-            select the important entries and write the Japanese digest to
+            Read ${{ github.workspace }}/.cache/report-aws-input.json,
+            ${{ github.workspace }}/report-criteria/report-aws.md, and the "aws" section of
+            ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
+            keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-aws.md in the format it specifies.
             Write only that one file.
           claude_args: "--allowedTools Read,Write"

@@ -42,9 +42,10 @@ mise run serve     # docs/ をローカルプレビュー
 | 翻訳エンジン | DeepL API（Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
 | AI 呼び出し | `anthropics/claude-code-action@v1`（ワークフローの一ステップ、`--allowedTools Read,Write`） |
 
-## データ: feeds.yaml
+## データ: source.yaml
 
-購読フィードの正。1 エントリ = `{url, name, domain, kind}`。
+購読フィードの正。1 エントリ = `{url, name, domain, kind, enabled?, addedAt?, lastAdoptedAt?}`。
+`addedAt`/`lastAdoptedAt` はフィード監査（後述）が採用実績を追跡するためのメタデータ。
 
 ```yaml
 feeds:
@@ -58,13 +59,31 @@ feeds:
 - OPML 一括インポートは持たない（全部入りになり混ざるため）。フィードは手で管理する
 - aws / content は **EKS 関連と AI/Bedrock 関連を重点**（`report-criteria/report-aws.md`）
 
+## データ: interests.yaml
+
+ドメインごとの関心キーワード。`report-criteria/*.md`（自然言語の選定基準）とは別に、
+フィード選定・週次フィード監査の WebSearch クエリ・レポート選別の入力として使う構造化データ。
+
+```yaml
+interests:
+  claude:
+    include: [Claude, Anthropic, AIエディタ, agents.md]
+    exclude: [仮想通貨, NFT]
+  kubernetes:
+    include: [Platform Engineering, GitOps]
+    exclude: []
+  aws:
+    include: [Bedrock, EKS]
+    exclude: []
+```
+
 ## パイプライン詳細
 
 ### 翻訳フィード（`src/translate.ts`, 6 時間ごと）
 
 ドメインごとに:
 
-1. `feeds.yaml` の `kind: content` かつ当該ドメインを取得。
+1. `source.yaml` の `kind: content` かつ当該ドメインを取得。
 2. 既存 `docs/translated-<domain>.xml` の guid 集合と照合、新規のみ処理。
 3. 新規エントリのタイトルと description を DeepL で日本語化。
 4. 既存に足して公開日時の降順で **直近 100 件**に truncate、`docs/translated-<domain>.xml` を再生成。
@@ -155,7 +174,8 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 ## ディレクトリ構成
 
 ```
-feeds.yaml
+source.yaml
+interests.yaml
 report-criteria/
   report-claude.md  report-kubernetes.md  report-aws.md
   release-claude.md  release-aws.md  release-kubernetes.md

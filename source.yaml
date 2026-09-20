@@ -87,6 +87,26 @@ feeds:
     domain: aws
     kind: content
 
+  # ----- Hacker News（関心キーワード限定。事前フィルタ済み少数ソース）-----
+  - url: https://hnrss.org/newest?q=Claude&points=50
+    name: HN — Claude
+    domain: claude
+    kind: content
+  - url: https://hnrss.org/newest?q=Kubernetes&points=50
+    name: HN — Kubernetes
+    domain: kubernetes
+    kind: content
+  - url: https://hnrss.org/newest?q=AWS&points=50
+    name: HN — AWS
+    domain: aws
+    kind: content
+
+  # ----- GitHub Watch/Star/Fork の横展開 -----
+  - url: https://github.com/ogontaro.atom
+    name: GitHub activity (ogontaro)
+    domain: kubernetes
+    kind: content
+
   # ================= claude / release =================
   - url: https://github.com/anthropics/claude-code/releases.atom
     name: Claude Code releases

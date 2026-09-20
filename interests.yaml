@@ -1,0 +1,50 @@
+# ドメインごとの関心キーワード。フィード選定・週次フィード監査の WebSearch クエリ・
+# レポート選別の入力として使う（report-criteria/*.md の自然言語基準を補う構造化データ）。
+interests:
+  claude:
+    include:
+      - Claude
+      - Anthropic
+      - Claude Code
+      - Claude API
+      - AIエディタ
+      - AI支援開発
+      - agents.md
+      - コーディングエージェント
+    exclude:
+      - 求人
+      - 宣伝
+      - イベント告知
+      - 一般AIニュースの速報のみ
+  kubernetes:
+    include:
+      - Kubernetes
+      - CNCF
+      - GitOps
+      - IaC
+      - Platform Engineering
+      - Argo
+      - Crossplane
+      - Backstage
+      - セキュリティ
+      - マルチテナンシー
+      - スケーリング
+      - コスト最適化
+    exclude:
+      - 求人
+      - 宣伝
+      - イベント告知
+      - 特定クラウドベンダー固有の話
+  aws:
+    include:
+      - Amazon EKS
+      - Karpenter
+      - Amazon Bedrock
+      - SageMaker
+      - 生成AI
+      - クロスリージョン推論
+      - オープンウェイトモデル
+    exclude:
+      - 求人
+      - 宣伝
+      - イベント告知

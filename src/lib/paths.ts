@@ -5,7 +5,8 @@ export const ROOT = join(import.meta.dir, "..", "..");
 export const DOCS = join(ROOT, "docs");
 export const CACHE = join(ROOT, ".cache");
 
-export const FEEDS_YAML = join(ROOT, "feeds.yaml");
+export const SOURCE_YAML = join(ROOT, "source.yaml");
+export const INTERESTS_YAML = join(ROOT, "interests.yaml");
 export const CRITERIA_DIR = join(ROOT, "report-criteria");
 
 export const INDEX_HTML = join(DOCS, "index.html");

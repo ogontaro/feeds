@@ -17,7 +17,7 @@ GitHub Pages で公開する。実装の詳細は [CONTRIBUTING.md](./CONTRIBUTI
 
 ## フィード管理
 
-`feeds.yaml` が購読リストの正。1 エントリ = `{url, name, domain, kind}`。
+`source.yaml` が購読リストの正。1 エントリ = `{url, name, domain, kind}`。
 `domain` は claude / kubernetes / aws、`kind` は content（翻訳＋レポート）/ release（週次リリース）。
 公開前提なので、趣味・キー付き URL は入れない。選定基準・関心領域は `report-criteria/<name>.md`。
 
