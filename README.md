@@ -57,7 +57,8 @@ bun install
 | 名前 | 用途 |
 | --- | --- |
 | `DEEPL_API_KEY` | タイトル・概要の翻訳（DeepL API。Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
-| `CLAUDE_CODE_OAUTH_TOKEN` | レポート・フィード監査・Issue 対応のキュレーション。`claude setup-token` で生成、約 1 年有効・自動更新なし。401 で落ちたら再生成 |
+| `OPENCODE_API_KEY` | レポート・フィード監査・Issue 対応のキュレーション。OpenCode Go（`https://opencode.ai/zen/go`）経由で DeepSeek モデルを使う。`claude-code-action` の `anthropic_api_key`/`ANTHROPIC_CUSTOM_HEADERS` に渡している |
+| `CLAUDE_CODE_OAUTH_TOKEN` | 未使用（切り戻し用に残置）。Anthropic 直接に戻す場合はワークフロー内の `env`/`with` を元に戻して使う |
 
 ## Secrets（未設定・任意）
 

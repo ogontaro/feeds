@@ -43,7 +43,7 @@ mise run serve     # docs/ をローカルプレビュー
 | 公開 | GitHub Pages（deploy from branch, `main:/docs`）。`https://ogontaro.github.io/feeds/` |
 | カスタムドメイン | 使わない |
 | 翻訳エンジン | DeepL API（Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
-| AI 呼び出し | `anthropics/claude-code-action@v1`（ワークフローの一ステップ、`--allowedTools Read,Write`） |
+| AI 呼び出し | `anthropics/claude-code-action@v1`（ワークフローの一ステップ、`--allowedTools Read,Write`）。OpenCode Go（`https://opencode.ai/zen/go`）経由で DeepSeek を使う。各ステップの `env` に `ANTHROPIC_BASE_URL`/`ANTHROPIC_CUSTOM_HEADERS`/`OTEL_RESOURCE_ATTRIBUTES`、`with.anthropic_api_key` に `OPENCODE_API_KEY`、`claude_args` に `--model deepseek-v4.1-flash[1m]` を指定 |
 
 ## データ: source.yaml
 
@@ -170,6 +170,14 @@ Issue のタイトル・本文を `claude-code-action` に渡し、`source.yaml`
 棚卸しリマインダー（後述）が作る `component-review` ラベル付き Issue はこのワークフローの
 対象から除外する。
 
+本リポジトリは public のため誰でも Issue を作成でき、`issues: opened` はそのままだと
+第三者にもトリガーされる。`claude-code-action` 自体に write/admin 権限のない actor では
+処理をスキップする組み込みガード（`checkWritePermissions`）があるが、ジョブの起動自体は
+防げないため、ワークフロー側の `if` にも `github.event.issue.user.login ==
+github.repository_owner` を明示し、リポジトリオーナー以外の Issue ではジョブごと起動しない
+ようにしている（多層防御）。`workflow_dispatch`/`schedule` は GitHub の仕様上そもそも
+write 権限保持者しか実行できない。
+
 ### 棚卸しリマインダー（`component-review-reminder.yml`, 毎月1日）
 
 `gh issue create` で「使用コンポーネントの棚卸し」を促す Issue を自動作成するだけ。
@@ -219,9 +227,10 @@ Issue のタイトル・本文を `claude-code-action` に渡し、`source.yaml`
   全て `concurrency: { group: docs-write }` で直列化。`source.yaml` の同時書き換えを防ぐ。
 - commit ステップは `permissions: contents: write` ＋ `git push "https://x-access-token:${GITHUB_TOKEN}@github.com/..."`。
   `claude-code-action` が git 認証情報を書き換えるため、素の `git push` は認証失敗する。
-- Secrets: `DEEPL_API_KEY` / `CLAUDE_CODE_OAUTH_TOKEN`（`claude setup-token`、約 1 年・自動更新なし、
-  401 で落ちたら手動差し替え）。`INOREADER_CLIENT_ID` / `INOREADER_CLIENT_SECRET` /
-  `INOREADER_REFRESH_TOKEN` は任意（未設定ならスター連携だけスキップ）。
+- Secrets: `DEEPL_API_KEY` / `OPENCODE_API_KEY`（OpenCode Go 経由で DeepSeek を使うための
+  APIキー。`anthropic_api_key`/`ANTHROPIC_CUSTOM_HEADERS` に渡す）。`CLAUDE_CODE_OAUTH_TOKEN`
+  は Anthropic 直接に戻す場合の切り戻し用に残置（現状未使用）。`INOREADER_CLIENT_ID` /
+  `INOREADER_CLIENT_SECRET` / `INOREADER_REFRESH_TOKEN` は任意（未設定ならスター連携だけスキップ）。
 
 ### 既知の運用リスク
 

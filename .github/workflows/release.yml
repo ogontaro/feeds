@@ -29,8 +29,12 @@ jobs:
       - name: curate claude releases
         if: steps.collect_claude.outputs.n != '0'
         uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
             Read ${{ github.workspace }}/.cache/release-claude-input.json,
             ${{ github.workspace }}/report-criteria/release-claude.md, and the "claude" section of
@@ -38,7 +42,7 @@ jobs:
             criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-claude.md in the format it specifies.
             Write only that one file.
-          claude_args: "--allowedTools Read,Write"
+          claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: render claude releases
         if: steps.collect_claude.outputs.n != '0'
         run: bun run src/release-render.ts claude
@@ -51,8 +55,12 @@ jobs:
       - name: curate aws releases
         if: steps.collect_aws.outputs.n != '0'
         uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
             Read ${{ github.workspace }}/.cache/release-aws-input.json,
             ${{ github.workspace }}/report-criteria/release-aws.md, and the "aws" section of
@@ -60,7 +68,7 @@ jobs:
             criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-aws.md in the format it specifies.
             Write only that one file.
-          claude_args: "--allowedTools Read,Write"
+          claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: render aws releases
         if: steps.collect_aws.outputs.n != '0'
         run: bun run src/release-render.ts aws
@@ -73,8 +81,12 @@ jobs:
       - name: curate kubernetes releases
         if: steps.collect_kubernetes.outputs.n != '0'
         uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
             Read ${{ github.workspace }}/.cache/release-kubernetes-input.json,
             ${{ github.workspace }}/report-criteria/release-kubernetes.md, and the "kubernetes"
@@ -82,7 +94,7 @@ jobs:
             Follow the criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-kubernetes.md in the format it specifies.
             Write only that one file.
-          claude_args: "--allowedTools Read,Write"
+          claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: render kubernetes releases
         if: steps.collect_kubernetes.outputs.n != '0'
         run: bun run src/release-render.ts kubernetes

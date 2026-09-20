@@ -27,8 +27,12 @@ jobs:
 
       - name: audit feeds with claude
         uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
             Read ${{ github.workspace }}/.cache/feed-audit-input.json (stale candidates),
             ${{ github.workspace }}/interests.yaml, and ${{ github.workspace }}/source.yaml.
@@ -47,7 +51,7 @@ jobs:
                domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`.
             4. Write only source.yaml. Edit entries in place and keep existing YAML comments and
                structure intact — do not rewrite the whole file.
-          claude_args: "--allowedTools Read,Write,WebSearch"
+          claude_args: "--allowedTools Read,Write,WebSearch --model deepseek-v4.1-flash[1m]"
 
       - name: validate newly added feeds
         run: bun run src/feed-audit-validate.ts

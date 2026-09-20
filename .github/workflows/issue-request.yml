@@ -16,7 +16,9 @@ concurrency:
 
 jobs:
   handle:
-    if: "!contains(github.event.issue.labels.*.name, 'component-review')"
+    if: |
+      !contains(github.event.issue.labels.*.name, 'component-review') &&
+      github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,8 +27,12 @@ jobs:
 
       - name: reflect request with claude
         uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
             An issue was opened requesting a change to this RSS aggregation project.
             Issue title: ${{ github.event.issue.title }}
@@ -41,7 +47,7 @@ jobs:
             If the request is unclear or unrelated to feeds/keywords, do not modify any file.
             Write only source.yaml and/or interests.yaml, editing entries in place and preserving
             existing comments and structure — do not rewrite the whole file.
-          claude_args: "--allowedTools Read,Write,WebFetch"
+          claude_args: "--allowedTools Read,Write,WebFetch --model deepseek-v4.1-flash[1m]"
 
       - name: validate newly added feeds
         run: bun run src/feed-audit-validate.ts
