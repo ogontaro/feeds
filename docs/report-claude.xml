@@ -4,11 +4,22 @@
         <title>Claude レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 20 Sep 2026 12:27:03 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Sep 2026 23:55:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-21]]></title>
+            <link>https://ogontaro.github.io/feeds/report/claude/2026-09-21.html</link>
+            <guid>https://ogontaro.github.io/feeds/report/claude/2026-09-21.html</guid>
+            <pubDate>Mon, 21 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<h3>Codexを使うなら、権限プロファイルとRulesを押さえておきたい</h3>
+<p>コーディングエージェントに「どこまで自律で実行させるか」を決める権限設計は、導入後に一番効いてくる部分でありながら、動かしてから事故で気づきがちな領域です。権限プロファイルと Rules という2つの軸で承認範囲を整理する考え方は、Codex 固有の話にとどまらず、Claude Code の permissions や allowlist をどう絞るかを考えるときの下敷きとしてそのまま使えます。エージェント運用の線引きを見直したいタイミングで読む価値があります。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F20%2F120746">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude レポート 2026-09-20]]></title>
             <link>https://ogontaro.github.io/feeds/report/claude/2026-09-20.html</link>
