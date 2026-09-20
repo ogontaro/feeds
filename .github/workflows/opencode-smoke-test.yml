@@ -1,0 +1,31 @@
+name: opencode-smoke-test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: smoke test claude-code-action via OpenCode Go
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Write the text "opencode-ok" (nothing else) to ${{ github.workspace }}/.cache/opencode-smoke-test.txt.
+            Write only that one file.
+          claude_args: "--allowedTools Write --model deepseek-v4.1-flash[1m]"
+
+      - name: check result
+        run: |
+          test -f .cache/opencode-smoke-test.txt
+          cat .cache/opencode-smoke-test.txt
