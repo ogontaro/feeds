@@ -1,10 +1,23 @@
 import { mkdir, readdir, rm } from "node:fs/promises";
 import { Feed as FeedGen } from "feed";
 import { marked } from "marked";
+import { recordAdoption } from "./lib/config.ts";
 import { pageShell } from "./lib/html.ts";
 import { DOMAIN_LABEL, domainArg } from "./lib/labels.ts";
-import { SITE_URL, reportDir, reportMd, reportXml } from "./lib/paths.ts";
+import { SITE_URL, reportDir, reportInputJson, reportMd, reportXml } from "./lib/paths.ts";
+import type { Domain } from "./lib/types.ts";
 import { jstDateString } from "./lib/urls.ts";
+
+type ReportInputEntry = { link: string; source: string };
+
+/** Which sourceNames actually got quoted in the Claude-written digest. */
+async function adoptedSourceNames(domain: Domain, md: string): Promise<string[]> {
+  const entries: ReportInputEntry[] = await Bun.file(reportInputJson(domain))
+    .json()
+    .catch(() => []);
+  const adopted = entries.filter((e) => md.includes(e.link)).map((e) => e.source);
+  return [...new Set(adopted)];
+}
 
 const MAX_FEED_ITEMS = 60;
 const DATE_RE = /^\d{4}-\d{2}-\d{2}\.html$/;
@@ -85,6 +98,10 @@ async function main() {
 
   await Bun.write(reportXml(domain), feed.rss2());
   console.log(`report-${domain}.xml: ${files.length} items`);
+
+  const adopted = await adoptedSourceNames(domain, md);
+  await recordAdoption(domain, adopted);
+  console.log(`adoption-log.ndjson: recorded ${adopted.length} source(s)`);
 }
 
 main().catch((err) => {

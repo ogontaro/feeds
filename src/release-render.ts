@@ -1,13 +1,26 @@
 import { mkdir, readdir } from "node:fs/promises";
 import { Feed as FeedGen } from "feed";
 import { marked } from "marked";
+import { recordAdoption } from "./lib/config.ts";
 import { pageShell } from "./lib/html.ts";
 import { DOMAIN_LABEL, domainArg } from "./lib/labels.ts";
-import { SITE_URL, releaseDir, releaseMd, releaseXml } from "./lib/paths.ts";
+import { SITE_URL, releaseDir, releaseInputJson, releaseMd, releaseXml } from "./lib/paths.ts";
+import type { Domain } from "./lib/types.ts";
 import { jstDateString } from "./lib/urls.ts";
 
 const MAX_FEED_ITEMS = 26; // ~half a year of weekly reports
 const DATE_RE = /^\d{4}-\d{2}-\d{2}\.html$/;
+
+type ReleaseInputEntry = { link: string; project: string };
+
+/** Which project names (= source.yaml feed names) actually got quoted in the digest. */
+async function adoptedSourceNames(domain: Domain, md: string): Promise<string[]> {
+  const entries: ReleaseInputEntry[] = await Bun.file(releaseInputJson(domain))
+    .json()
+    .catch(() => []);
+  const adopted = entries.filter((e) => md.includes(e.link)).map((e) => e.project);
+  return [...new Set(adopted)];
+}
 
 async function main() {
   const domain = domainArg();
@@ -63,6 +76,10 @@ async function main() {
 
   await Bun.write(releaseXml(domain), feed.rss2());
   console.log(`release-${domain}.xml: ${files.length} items`);
+
+  const adopted = await adoptedSourceNames(domain, md);
+  await recordAdoption(domain, adopted);
+  console.log(`adoption-log.ndjson: recorded ${adopted.length} source(s)`);
 }
 
 main().catch((err) => {

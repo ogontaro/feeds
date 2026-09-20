@@ -7,6 +7,9 @@ export const CACHE = join(ROOT, ".cache");
 
 export const SOURCE_YAML = join(ROOT, "source.yaml");
 export const INTERESTS_YAML = join(ROOT, "interests.yaml");
+export const ADOPTION_LOG = join(ROOT, "adoption-log.ndjson");
+export const STARRED_LOG = join(ROOT, "starred-log.ndjson");
+export const FEED_AUDIT_INPUT_JSON = join(CACHE, "feed-audit-input.json");
 export const CRITERIA_DIR = join(ROOT, "report-criteria");
 
 export const INDEX_HTML = join(DOCS, "index.html");
