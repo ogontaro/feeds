@@ -2,14 +2,14 @@
 <opml version="1.0">
   <head><title>ogontaro / rss</title></head>
   <body>
-    <outline type="rss" text="翻訳: Claude" title="翻訳: Claude" xmlUrl="https://ogontaro.github.io/rss/translated-claude.xml"/>
-    <outline type="rss" text="レポート: Claude" title="レポート: Claude" xmlUrl="https://ogontaro.github.io/rss/report-claude.xml"/>
-    <outline type="rss" text="翻訳: Kubernetes" title="翻訳: Kubernetes" xmlUrl="https://ogontaro.github.io/rss/translated-kubernetes.xml"/>
-    <outline type="rss" text="レポート: Kubernetes" title="レポート: Kubernetes" xmlUrl="https://ogontaro.github.io/rss/report-kubernetes.xml"/>
-    <outline type="rss" text="翻訳: AWS" title="翻訳: AWS" xmlUrl="https://ogontaro.github.io/rss/translated-aws.xml"/>
-    <outline type="rss" text="レポート: AWS" title="レポート: AWS" xmlUrl="https://ogontaro.github.io/rss/report-aws.xml"/>
-    <outline type="rss" text="リリース: Claude" title="リリース: Claude" xmlUrl="https://ogontaro.github.io/rss/release-claude.xml"/>
-    <outline type="rss" text="リリース: Kubernetes" title="リリース: Kubernetes" xmlUrl="https://ogontaro.github.io/rss/release-kubernetes.xml"/>
-    <outline type="rss" text="リリース: AWS" title="リリース: AWS" xmlUrl="https://ogontaro.github.io/rss/release-aws.xml"/>
+    <outline type="rss" text="翻訳: Claude" title="翻訳: Claude" xmlUrl="https://ogontaro.github.io/feeds/translated-claude.xml"/>
+    <outline type="rss" text="レポート: Claude" title="レポート: Claude" xmlUrl="https://ogontaro.github.io/feeds/report-claude.xml"/>
+    <outline type="rss" text="翻訳: Kubernetes" title="翻訳: Kubernetes" xmlUrl="https://ogontaro.github.io/feeds/translated-kubernetes.xml"/>
+    <outline type="rss" text="レポート: Kubernetes" title="レポート: Kubernetes" xmlUrl="https://ogontaro.github.io/feeds/report-kubernetes.xml"/>
+    <outline type="rss" text="翻訳: AWS" title="翻訳: AWS" xmlUrl="https://ogontaro.github.io/feeds/translated-aws.xml"/>
+    <outline type="rss" text="レポート: AWS" title="レポート: AWS" xmlUrl="https://ogontaro.github.io/feeds/report-aws.xml"/>
+    <outline type="rss" text="リリース: Claude" title="リリース: Claude" xmlUrl="https://ogontaro.github.io/feeds/release-claude.xml"/>
+    <outline type="rss" text="リリース: Kubernetes" title="リリース: Kubernetes" xmlUrl="https://ogontaro.github.io/feeds/release-kubernetes.xml"/>
+    <outline type="rss" text="リリース: AWS" title="リリース: AWS" xmlUrl="https://ogontaro.github.io/feeds/release-aws.xml"/>
   </body>
 </opml>

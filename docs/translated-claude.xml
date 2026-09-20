@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>翻訳フィード: Claude — ogontaro/rss</title>
-        <link>https://ogontaro.github.io/rss/</link>
+        <title>翻訳フィード: Claude — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
         <lastBuildDate>Sat, 19 Sep 2026 09:06:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
