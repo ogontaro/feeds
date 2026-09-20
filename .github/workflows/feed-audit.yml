@@ -60,11 +60,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add source.yaml
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          SUMMARY=$(bun run src/feed-audit-summarize.ts)
           BRANCH="feed-audit/$(date +%Y%m%d)"
           git checkout -b "${BRANCH}"
           git commit -m "chore: weekly feed audit"
           git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${BRANCH}"
           PR_URL=$(gh pr create --title "chore: weekly feed audit ($(date +%Y-%m-%d))" \
-            --body "自動生成: 不採用フィードの無効化・新規フィード候補（バリデーション済みのみ）。" \
+            --body "自動生成: フィード監査の結果（バリデーション済みのみ）。
+
+          ${SUMMARY}" \
             --base main --head "${BRANCH}")
           gh pr merge --auto --squash "${PR_URL}"

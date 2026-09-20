@@ -58,11 +58,14 @@ jobs:
               --body "変更内容を自動で判定できなかったため、今回は反映していません。手動で対応してください。"
             exit 0
           fi
+          SUMMARY=$(bun run src/feed-audit-summarize.ts)
           BRANCH="issue-request/${{ github.event.issue.number }}"
           git checkout -b "${BRANCH}"
           git commit -m "chore: reflect issue #${{ github.event.issue.number }} request"
           git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${BRANCH}"
           PR_URL=$(gh pr create --title "chore: reflect issue #${{ github.event.issue.number }}" \
-            --body "Closes #${{ github.event.issue.number }}" \
+            --body "Closes #${{ github.event.issue.number }}
+
+          ${SUMMARY}" \
             --base main --head "${BRANCH}")
           gh pr merge --auto --squash "${PR_URL}"
