@@ -1,0 +1,31 @@
+name: component-review-reminder
+
+on:
+  schedule:
+    - cron: "0 0 1 * *" # 毎月1日 09:00 JST
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --repo "${GITHUB_REPOSITORY}" \
+            --title "使用コンポーネントの棚卸し ($(date +%Y-%m))" \
+            --label "component-review" \
+            --body "$(cat <<'EOF'
+          月次の棚卸しリマインダーです。以下を確認し、変更があれば `source.yaml` に反映してください。
+
+          - 新しく使い始めたツール・サービスはないか（Kubernetes アドオン、AWS サービス、Claude 関連ツール等）
+          - 使わなくなったコンポーネントはないか
+          - よく見ているサイト・ブログで、まだ購読していないものはないか
+
+          反映したら、このIssueをクローズしてください。
+          EOF
+          )"

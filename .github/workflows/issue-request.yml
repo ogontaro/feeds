@@ -1,0 +1,68 @@
+name: issue-request
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: docs-write
+  cancel-in-progress: false
+
+jobs:
+  handle:
+    if: "!contains(github.event.issue.labels.*.name, 'component-review')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - run: bun install --frozen-lockfile
+
+      - name: reflect request with claude
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            An issue was opened requesting a change to this RSS aggregation project.
+            Issue title: ${{ github.event.issue.title }}
+            Issue body: ${{ github.event.issue.body }}
+
+            Read ${{ github.workspace }}/source.yaml and ${{ github.workspace }}/interests.yaml.
+            If the request asks to add/remove a feed, or add/remove interest keywords, apply it:
+            - Adding a feed: fetch the URL to confirm it serves RSS/Atom XML, then append it to
+              source.yaml under the right domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`.
+            - Removing/disabling a feed: set `enabled: false` (do not delete the entry).
+            - Adding/removing interest keywords: edit interests.yaml under the right domain.
+            If the request is unclear or unrelated to feeds/keywords, do not modify any file.
+            Write only source.yaml and/or interests.yaml, editing entries in place and preserving
+            existing comments and structure — do not rewrite the whole file.
+          claude_args: "--allowedTools Read,Write,WebFetch"
+
+      - name: validate newly added feeds
+        run: bun run src/feed-audit-validate.ts
+
+      - name: open and auto-merge PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add source.yaml interests.yaml
+          if git diff --cached --quiet; then
+            gh issue comment "${{ github.event.issue.number }}" \
+              --body "変更内容を自動で判定できなかったため、今回は反映していません。手動で対応してください。"
+            exit 0
+          fi
+          BRANCH="issue-request/${{ github.event.issue.number }}"
+          git checkout -b "${BRANCH}"
+          git commit -m "chore: reflect issue #${{ github.event.issue.number }} request"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${BRANCH}"
+          PR_URL=$(gh pr create --title "chore: reflect issue #${{ github.event.issue.number }}" \
+            --body "Closes #${{ github.event.issue.number }}" \
+            --base main --head "${BRANCH}")
+          gh pr merge --auto --squash "${PR_URL}"
