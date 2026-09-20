@@ -4,11 +4,27 @@
         <title>翻訳フィード: Kubernetes — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Sun, 20 Sep 2026 12:25:38 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Sep 2026 12:52:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ogontaro pushed feeds — GitHub activity (ogontaro)]]></title>
+            <link>https://github.com/ogontaro/feeds/compare/c896bfabbd...7f6907d971</link>
+            <guid>https://github.com/ogontaro/feeds/compare/c896bfabbd...7f6907d971</guid>
+            <pubDate>Sun, 20 Sep 2026 12:52:45 GMT</pubDate>
+            <description><![CDATA[ogontaro pushed to main in ogontaro/feeds · September 20, 2026 12:52 1 commit to main 7f6907d]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/compare/c896bfabbd...7f6907d971">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fcompare%2Fc896bfabbd...7f6907d971">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro pushed feeds — GitHub activity (ogontaro)]]></title>
+            <link>https://github.com/ogontaro/feeds/compare/6570004b27...c896bfabbd</link>
+            <guid>https://github.com/ogontaro/feeds/compare/6570004b27...c896bfabbd</guid>
+            <pubDate>Sun, 20 Sep 2026 12:51:58 GMT</pubDate>
+            <description><![CDATA[ogontaro pushed to main in ogontaro/feeds · September 20, 2026 12:51 1 commit to main c896bfa]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/compare/6570004b27...c896bfabbd">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fcompare%2F6570004b27...c896bfabbd">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ogontaro pushed feeds — GitHub activity (ogontaro)]]></title>
             <link>https://github.com/ogontaro/feeds/compare/fe7416e9fc...f2326e161b</link>
@@ -781,21 +797,6 @@
             <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[The FulcrumSec threat actor group recently claimed to have stolen more than a terabyte of data from global pharmaceutical company Novo Nordisk, the manufacturer of Ozempic and Wegovy. News of the breach is making headlines worldwide, and this isn’t the first time this year they have breached a major organization. However, despite the group’s recent “success,” FulcrumSec’s playbook has shown a few definitive patterns. And where patterns exist, defenders have an opportunity to get ahead.]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/fulcrumsec-playbook-sadan-opdager-og-stopper-du-gruppen-bag-novo-nordisk-bruddet">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Ffulcrumsec-playbook-sadan-opdager-og-stopper-du-gruppen-bag-novo-nordisk-bruddet">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[The FulcrumSec playbook: How to detect and stop the group behind the Novo Nordisk breach — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/the-fulcrumsec-playbook-how-to-detect-and-stop-the-group-behind-the-novo-nordisk-breach</link>
-            <guid>https://webflow.sysdig.com/blog/the-fulcrumsec-playbook-how-to-detect-and-stop-the-group-behind-the-novo-nordisk-breach</guid>
-            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[The FulcrumSec threat actor group recently claimed to have stolen more than a terabyte of data from global pharmaceutical company Novo Nordisk, the manufacturer of Ozempic and Wegovy. News of the breach is making headlines worldwide, and this isn’t the first time this year they have breached a major organization. However, despite the group’s recent “success,” FulcrumSec’s playbook has shown a few definitive patterns. And where patterns exist, defenders have an opportunity to get ahead.]]></description>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/the-fulcrumsec-playbook-how-to-detect-and-stop-the-group-behind-the-novo-nordisk-breach">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fthe-fulcrumsec-playbook-how-to-detect-and-stop-the-group-behind-the-novo-nordisk-breach">Google 翻訳で全文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Build to learn, buy to scale: When to build your own AI SOC (and when to stop) — Sysdig]]></title>
-            <link>https://webflow.sysdig.com/blog/build-to-learn-buy-to-scale-when-to-build-your-own-ai-soc-and-when-to-stop</link>
-            <guid>https://webflow.sysdig.com/blog/build-to-learn-buy-to-scale-when-to-build-your-own-ai-soc-and-when-to-stop</guid>
-            <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/build-to-learn-buy-to-scale-when-to-build-your-own-ai-soc-and-when-to-stop">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fbuild-to-learn-buy-to-scale-when-to-build-your-own-ai-soc-and-when-to-stop">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
