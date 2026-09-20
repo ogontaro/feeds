@@ -8,7 +8,7 @@ const WINDOW_MS = 7 * 24 * 3_600_000;
 const NOTES_MAX = 4000;
 const parser = new Parser({
   timeout: 20_000,
-  headers: { "User-Agent": "ogontaro-rss/1.0 (+https://ogontaro.github.io/rss)" },
+  headers: { "User-Agent": "ogontaro-feeds/1.0 (+https://ogontaro.github.io/feeds)" },
 });
 
 function toText(s: string): string {

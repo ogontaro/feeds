@@ -40,7 +40,7 @@ mise run serve     # docs/ をローカルプレビュー
 | Lint / Format | Biome |
 | パッケージ構成 | 単一パッケージ |
 | 実行基盤 | すべて GitHub Actions。ローカル常用スクリプトは持たない |
-| 公開 | GitHub Pages（deploy from branch, `main:/docs`）。`https://ogontaro.github.io/rss/` |
+| 公開 | GitHub Pages（deploy from branch, `main:/docs`）。`https://ogontaro.github.io/feeds/` |
 | カスタムドメイン | 使わない |
 | 翻訳エンジン | DeepL API（Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
 | AI 呼び出し | `anthropics/claude-code-action@v1`（ワークフローの一ステップ、`--allowedTools Read,Write`） |

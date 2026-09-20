@@ -74,7 +74,7 @@ async function main() {
     .slice(0, MAX_FEED_ITEMS);
 
   const feed = new FeedGen({
-    title: `${label} レポート — ogontaro/rss`,
+    title: `${label} レポート — ogontaro/feeds`,
     description: `${label} 系の新着から重要な記事を Claude が選定した日次レポート`,
     id: `${SITE_URL}/report-${domain}.xml`,
     link: `${SITE_URL}/`,

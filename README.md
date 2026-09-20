@@ -1,10 +1,10 @@
-# rss
+# feeds
 
 Claude / Kubernetes / AWS の情報を日本語で追うための個人用 RSS 基盤。GitHub Actions で更新し、
 GitHub Pages で公開する。機能一覧は [FEATURES.md](./FEATURES.md)、実装の詳細は
 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
-**公開先**: <https://ogontaro.github.io/rss/> ／ 一括購読 OPML: `https://ogontaro.github.io/rss/subscriptions.opml`
+**公開先**: <https://ogontaro.github.io/feeds/> ／ 一括購読 OPML: `https://ogontaro.github.io/feeds/subscriptions.opml`
 
 ドメイン（claude / kubernetes / aws）ごとに独立したパイプライン。機能は混ざらない。
 

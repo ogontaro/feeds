@@ -43,7 +43,7 @@ export async function writeDomainFeed(domain: Domain, entries: TranslatedEntry[]
     .slice(0, MAX_ITEMS);
 
   const feed = new FeedGen({
-    title: `翻訳フィード: ${DOMAIN_LABEL[domain]} — ogontaro/rss`,
+    title: `翻訳フィード: ${DOMAIN_LABEL[domain]} — ogontaro/feeds`,
     description: `${DOMAIN_LABEL[domain]} 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの`,
     id: `${SITE_URL}/translated-${domain}.xml`,
     link: `${SITE_URL}/`,

@@ -17,7 +17,7 @@ export const ASSETS_DIR = join(DOCS, "assets");
 export const OPML = join(DOCS, "subscriptions.opml");
 
 /** Public site base, overridable for local preview. */
-export const SITE_URL = process.env.SITE_URL ?? "https://ogontaro.github.io/rss";
+export const SITE_URL = process.env.SITE_URL ?? "https://ogontaro.github.io/feeds";
 
 export const translatedXml = (d: Domain) => join(DOCS, `translated-${d}.xml`);
 

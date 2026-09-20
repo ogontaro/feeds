@@ -52,7 +52,7 @@ async function main() {
     .slice(0, MAX_FEED_ITEMS);
 
   const feed = new FeedGen({
-    title: `${label} リリースレポート — ogontaro/rss`,
+    title: `${label} リリースレポート — ogontaro/feeds`,
     description: `${label} 系ツールの週次リリースまとめ（Claude が注目リリースを選定）`,
     id: `${SITE_URL}/release-${domain}.xml`,
     link: `${SITE_URL}/`,
