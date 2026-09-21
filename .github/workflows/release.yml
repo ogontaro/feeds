@@ -156,6 +156,51 @@ jobs:
         if: steps.collect_kubernetes.outputs.n != '0'
         run: bun run src/release-render.ts kubernetes
 
+      # ---------------- devtools ----------------
+      - id: collect_devtools
+        run: |
+          bun run src/release-collect.ts devtools
+          echo "n=$(jq length .cache/release-devtools-input.json)" >> "$GITHUB_OUTPUT"
+      - name: curate devtools releases
+        id: curate_devtools
+        if: steps.collect_devtools.outputs.n != '0'
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/release-devtools-input.json,
+            ${{ github.workspace }}/report-criteria/release-devtools.md, and the "devtools"
+            section of ${{ github.workspace }}/interests.yaml for context on what matters most.
+            Follow the criteria file: summarize the releases and write to
+            ${{ github.workspace }}/.cache/release-devtools.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
+      - name: curate devtools releases (qwen fallback)
+        if: steps.collect_devtools.outputs.n != '0' && steps.curate_devtools.outcome == 'failure'
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/release-devtools-input.json,
+            ${{ github.workspace }}/report-criteria/release-devtools.md, and the "devtools"
+            section of ${{ github.workspace }}/interests.yaml for context on what matters most.
+            Follow the criteria file: summarize the releases and write to
+            ${{ github.workspace }}/.cache/release-devtools.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
+      - name: render devtools releases
+        if: steps.collect_devtools.outputs.n != '0'
+        run: bun run src/release-render.ts devtools
+
       - run: bun run src/build.ts
 
       - name: commit docs

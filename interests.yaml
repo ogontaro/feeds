@@ -11,6 +11,8 @@ interests:
       - AI支援開発
       - agents.md
       - コーディングエージェント
+      - opencode
+      - AIコーディングエージェントのサブスク料金
     exclude:
       - 求人
       - 宣伝
@@ -44,6 +46,17 @@ interests:
       - 生成AI
       - クロスリージョン推論
       - オープンウェイトモデル
+    exclude:
+      - 求人
+      - 宣伝
+      - イベント告知
+  devtools:
+    include:
+      - CLIツール
+      - ターミナル
+      - 開発環境
+      - コンテナ開発
+      - バージョンアップ
     exclude:
       - 求人
       - 宣伝

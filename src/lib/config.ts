@@ -4,9 +4,10 @@ import { ADOPTION_LOG, INTERESTS_YAML, SOURCE_YAML } from "./paths.ts";
 import type { Domain, DomainInterests, Feed, FeedsConfig, InterestsConfig } from "./types.ts";
 
 export const CONTENT_DOMAINS: Domain[] = ["claude", "kubernetes", "aws"];
-export const RELEASE_DOMAINS: Domain[] = ["claude", "kubernetes", "aws"];
+// devtools はリリースのみ（購読は手元ツールの GitHub releases で、日次レポート入力は無い）。
+export const RELEASE_DOMAINS: Domain[] = ["claude", "kubernetes", "aws", "devtools"];
 
-const DOMAINS = new Set<string>(["claude", "kubernetes", "aws"]);
+const DOMAINS = new Set<string>(["claude", "kubernetes", "aws", "devtools"]);
 const KINDS = new Set<string>(["content", "release"]);
 
 export async function loadFeeds(): Promise<Feed[]> {

@@ -6,7 +6,7 @@ GitHub Pages で公開する。機能一覧は [FEATURES.md](./FEATURES.md)、�
 
 **公開先**: <https://ogontaro.github.io/feeds/> ／ 一括購読 OPML: `https://ogontaro.github.io/feeds/subscriptions.opml`
 
-ドメイン（claude / kubernetes / aws）ごとに独立したパイプライン。機能は混ざらない。
+ドメイン（claude / kubernetes / aws / devtools）ごとに独立したパイプライン。機能は混ざらない。
 
 | 種別 | 内容 | 頻度 | フィード |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@ GitHub Pages で公開する。機能一覧は [FEATURES.md](./FEATURES.md)、�
 | Inoreader スター連携 | スター付き記事を取得しフィード監査の採用実績に統合 | 毎週日 06:00 JST | — |
 | ワークフロー失敗対応 | いずれかのワークフローが失敗すると Issue を自動作成。続けて原因を診断し、安全な修正があれば PR を作成（自動マージなし、要レビュー） | 失敗時 | — |
 
-3 パイプラインとも claude / kubernetes / aws の 3 ドメイン。計 9 フィード。
+翻訳・レポートは claude / kubernetes / aws の 3 ドメイン、リリースレポートは devtools（手元開発ツールのバージョンアップ）を含む 4 ドメイン。計 10 フィード。
 
 AI呼び出し（キュレーション・フィード監査・Issue対応・ワークフロー修正診断）は OpenCode Go 経由で
 DeepSeek を使用し、失敗時は自動で qwen にフォールバックする。時刻に基づく切り替えは行っていない。
@@ -27,7 +27,8 @@ DeepSeek を使用し、失敗時は自動で qwen にフォールバックす�
 ## フィード管理
 
 `source.yaml` が購読リストの正。1 エントリ = `{url, name, domain, kind}`。
-`domain` は claude / kubernetes / aws、`kind` は content（翻訳＋レポート）/ release（週次リリース）。
+`domain` は claude / kubernetes / aws / devtools、`kind` は content（翻訳＋レポート）/ release（週次リリース）。
+devtools は release のみ。
 公開前提なので、趣味・キー付き URL は入れない。選定基準・関心領域は `report-criteria/<name>.md` と
 `interests.yaml`（ドメインごとの関心キーワード）。
 

@@ -17,7 +17,7 @@ mise run serve     # docs/ をローカルプレビュー
 
 ## 設計方針
 
-**機能は混ぜない。** ドメイン（claude / kubernetes / aws）ごとに独立したパイプラインを持ち、
+**機能は混ぜない。** ドメイン（claude / kubernetes / aws / devtools）ごとに独立したパイプラインを持ち、
 入力フィード・出力・スケジュール・状態を共有しない。共有するのはコード（処理関数）だけ。
 
 | パイプライン | 入力 | Claude | 出力 | 頻度 |
@@ -28,7 +28,7 @@ mise run serve     # docs/ をローカルプレビュー
 | フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
 | Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
 
-- 3 パイプラインとも対象は claude / kubernetes / aws の 3 ドメイン
+- 翻訳・レポートは claude / kubernetes / aws の 3 ドメイン。リリースレポートは devtools を加えた 4 ドメイン
 - フィード監査・Issue 駆動反映はドメイン非依存（`source.yaml`/`interests.yaml` 全体を扱う）
 
 ## 全体構成
@@ -121,7 +121,7 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 
 ### リリースレポート（`release.yml`, 毎週月 07:30 JST = cron `30 22 * * 0`）
 
-ドメイン（claude / kubernetes / aws）ごとに:
+ドメイン（claude / kubernetes / aws / devtools）ごとに:
 
 1. `src/release-collect.ts <domain>`: `kind: release` の feed から過去 7 日のリリースを取得。
    `project` / `version` / `link` / `notes`（英語原文、4000 字で truncate）を
