@@ -53,6 +53,19 @@ feeds:
     domain: claude
     kind: content
 
+  # ----- 新しいコーディングエージェント系ツールの発見源 -----
+  # awesome リストの新規ツール追加が即コミットになる。MCP servers 等の自動化コミットの
+  # commits フィードはノイズが多く意図的に置かず、週次監査の WebSearch 対象に委ねる。
+  - url: https://github.com/hesreallyhim/awesome-claude-code/commits.atom
+    id: awesome-claude-code
+    name: awesome-claude-code updates
+    domain: claude
+    kind: content
+  - url: https://www.qiita.com/tags/claude-code/feed
+    name: Qiita — Claude Code
+    domain: claude
+    kind: content
+
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
     id: kubernetes-blog
