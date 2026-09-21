@@ -102,3 +102,29 @@ jobs:
           ${SUMMARY}" \
             --base main --head "${BRANCH}")
           gh pr merge --auto --squash "${PR_URL}"
+
+  notify-failure:
+    needs: handle
+    if: failure()
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "workflow-failure" --repo "${GITHUB_REPOSITORY}" \
+            --color d73a4a --description "GitHub Actions workflow failure (auto-created)" 2>/dev/null || true
+          gh issue create \
+            --repo "${GITHUB_REPOSITORY}" \
+            --title "workflow failure: ${{ github.workflow }} ($(date +%Y-%m-%d))" \
+            --label "workflow-failure" \
+            --body "$(cat <<EOF
+          ワークフロー \`${{ github.workflow }}\` が失敗しました。
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Trigger: ${{ github.event_name }}
+          - Commit: ${{ github.sha }}
+          - Source issue: #${{ github.event.issue.number }}
+          EOF
+          )"

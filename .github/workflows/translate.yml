@@ -35,3 +35,28 @@ jobs:
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "translate: refresh feeds"
           git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
+
+  notify-failure:
+    needs: translate
+    if: failure()
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "workflow-failure" --repo "${GITHUB_REPOSITORY}" \
+            --color d73a4a --description "GitHub Actions workflow failure (auto-created)" 2>/dev/null || true
+          gh issue create \
+            --repo "${GITHUB_REPOSITORY}" \
+            --title "workflow failure: ${{ github.workflow }} ($(date +%Y-%m-%d))" \
+            --label "workflow-failure" \
+            --body "$(cat <<EOF
+          ワークフロー \`${{ github.workflow }}\` が失敗しました。
+
+          - Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          - Trigger: ${{ github.event_name }}
+          - Commit: ${{ github.sha }}
+          EOF
+          )"
