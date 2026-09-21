@@ -1,24 +1,28 @@
 name: workflow-failure-fix
 
+# GITHUB_TOKENで作成したIssueは新しいワークフロー実行をトリガーしない（GitHub
+# の再帰防止仕様）ため issues:opened は使わず、workflow_run で失敗を直接検知する。
 on:
-  issues:
-    types: [opened]
+  workflow_run:
+    workflows:
+      - translate
+      - report
+      - release
+      - feed-audit
+      - issue-request
+      - inoreader-sync
+      - component-review-reminder
+      - failure-notify-smoke-test # TODO: 検証用。workflow_run発火確認後に削除する
+    types: [completed]
 
 permissions:
   contents: write
   pull-requests: write
-  issues: write
   id-token: write
-
-concurrency:
-  group: docs-write
-  cancel-in-progress: false
 
 jobs:
   fix:
-    if: |
-      contains(github.event.issue.labels.*.name, 'workflow-failure') &&
-      github.event.issue.user.login == 'github-actions[bot]'
+    if: github.event.workflow_run.conclusion == 'failure'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -36,20 +40,23 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
-            A GitHub Actions workflow failed. Issue title: ${{ github.event.issue.title }}
-            Issue body: ${{ github.event.issue.body }}
+            The GitHub Actions workflow "${{ github.event.workflow_run.name }}" failed.
+            Run: ${{ github.event.workflow_run.html_url }}
 
-            The issue body contains a run URL. Extract the run id from it and inspect why the
-            run failed, e.g. `gh run view <run-id> --log-failed`.
+            Inspect why it failed, e.g.
+            `gh run view ${{ github.event.workflow_run.id }} --log-failed`.
 
-            Diagnose the root cause. If you can fix it with a small, safe change to a workflow
-            file under ${{ github.workspace }}/.github/workflows/ or a script under
+            If the failure is a transient upstream/API error (5xx, rate limit, model
+            unavailable, empty model output, network timeout), do NOT change any file — this
+            is not something a code change can fix. Only propose a change when the root cause
+            is in this repository's own code or workflow definitions.
+
+            If you find such a root cause and can fix it with a small, safe change to a
+            workflow file under ${{ github.workspace }}/.github/workflows/ or a script under
             ${{ github.workspace }}/src/, make that change. Do not modify source.yaml or
-            interests.yaml — those are unrelated to workflow failures. If you cannot determine a
-            safe fix, do not change any file; instead run
-            `gh issue comment ${{ github.event.issue.number }} --body "<your findings>"` to leave
-            your diagnosis for a human.
-          claude_args: "--allowedTools Read,Write,Bash(gh run view:*),Bash(gh issue comment:*)"
+            interests.yaml — those are unrelated to workflow failures. If you cannot determine
+            a safe fix, do not change any file.
+          claude_args: "--allowedTools Read,Write,Bash(gh run view:*)"
 
       - name: diagnose and fix with claude (qwen fallback)
         if: steps.diagnose.outcome == 'failure'
@@ -61,20 +68,23 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
-            A GitHub Actions workflow failed. Issue title: ${{ github.event.issue.title }}
-            Issue body: ${{ github.event.issue.body }}
+            The GitHub Actions workflow "${{ github.event.workflow_run.name }}" failed.
+            Run: ${{ github.event.workflow_run.html_url }}
 
-            The issue body contains a run URL. Extract the run id from it and inspect why the
-            run failed, e.g. `gh run view <run-id> --log-failed`.
+            Inspect why it failed, e.g.
+            `gh run view ${{ github.event.workflow_run.id }} --log-failed`.
 
-            Diagnose the root cause. If you can fix it with a small, safe change to a workflow
-            file under ${{ github.workspace }}/.github/workflows/ or a script under
+            If the failure is a transient upstream/API error (5xx, rate limit, model
+            unavailable, empty model output, network timeout), do NOT change any file — this
+            is not something a code change can fix. Only propose a change when the root cause
+            is in this repository's own code or workflow definitions.
+
+            If you find such a root cause and can fix it with a small, safe change to a
+            workflow file under ${{ github.workspace }}/.github/workflows/ or a script under
             ${{ github.workspace }}/src/, make that change. Do not modify source.yaml or
-            interests.yaml — those are unrelated to workflow failures. If you cannot determine a
-            safe fix, do not change any file; instead run
-            `gh issue comment ${{ github.event.issue.number }} --body "<your findings>"` to leave
-            your diagnosis for a human.
-          claude_args: "--allowedTools Read,Write,Bash(gh run view:*),Bash(gh issue comment:*) --model qwen3.8-flash[1m]"
+            interests.yaml — those are unrelated to workflow failures. If you cannot determine
+            a safe fix, do not change any file.
+          claude_args: "--allowedTools Read,Write,Bash(gh run view:*) --model qwen3.8-flash[1m]"
 
       - name: open PR for review (no auto-merge)
         env:
@@ -84,12 +94,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .github/workflows src
           if git diff --cached --quiet; then echo "no fix produced"; exit 0; fi
-          BRANCH="workflow-failure-fix/${{ github.event.issue.number }}"
+          BRANCH="workflow-failure-fix/${{ github.event.workflow_run.id }}"
           git checkout -b "${BRANCH}"
-          git commit -m "fix: address workflow failure from issue #${{ github.event.issue.number }}"
+          git commit -m "fix: address failure in ${{ github.event.workflow_run.name }} workflow"
           git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${BRANCH}"
-          gh pr create --title "fix: workflow failure (issue #${{ github.event.issue.number }})" \
-            --body "Closes #${{ github.event.issue.number }}
+          gh pr create --title "fix: ${{ github.event.workflow_run.name }} workflow failure" \
+            --body "失敗したrun: ${{ github.event.workflow_run.html_url }}
 
           claude-code-action による自動診断・修正案です。**自動マージはしません。内容を確認してからマージしてください。**" \
             --base main --head "${BRANCH}"
