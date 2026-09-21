@@ -192,6 +192,40 @@ write 権限保持者しか実行できない。
 `INOREADER_REFRESH_TOKEN` 未設定時は何もせず正常終了する（OAuth アプリ登録は
 手動の一回きりの作業のため、それまでワークフローを失敗させない）。
 
+### AIモデルのフォールバック（DeepSeek → qwen）
+
+`claude-code-action` を使う全ステップは `continue-on-error: true` を付け、直後に
+`if: steps.<id>.outcome == 'failure'` の qwen フォールバックステップを対にして置いている。
+DeepSeek（OpenCode Go 経由）が不調でも自動で qwen に切り替わる。
+
+時刻ベースの切り替えはしていない。OpenCode Go（`opencode.ai/zen/go`）の混雑時間帯は
+DeepSeek 公式 API の割引時間帯とは別物で確認できないため、検証できない数字を
+ハードコードするより、実際の失敗を検知して切り替える方が確実（`issue-request.yml` の
+ようにトリガー時刻が読めないワークフローでも同じロジックで対応できる）。
+
+### ワークフロー失敗対応（`translate/report/release/feed-audit/issue-request/
+inoreader-sync/component-review-reminder.yml` 末尾の `notify-failure` ジョブ、
+`workflow-failure-fix.yml`）
+
+各ワークフローの末尾に `if: failure()` の `notify-failure` ジョブがあり、本体ジョブが
+失敗すると `workflow-failure` ラベル付きの Issue を自動作成する（本文は run URL・
+ワークフロー名のみ。public リポジトリのためログ全文は貼らない）。
+
+`workflow-failure-fix.yml` は対象7ワークフローの `workflow_run: completed` を
+トリガーに、失敗（`conclusion == 'failure'`）を検知して `gh run view --log-failed` で
+ログを読み、原因が自リポジトリのコード/ワークフロー定義にあれば小さな修正をして
+PR を作成する（**自動マージしない**。既存の自動マージはフィード URL 1 行追加のみで
+`feed-audit-validate.ts` 検証済みだが、ワークフロー/スクリプトの修正は blast radius が
+桁違いのため人間レビュー必須）。一時的な上流障害（5xx・レート制限・モデル不可用等）は
+プロンプトで明示的に「変更しない」よう指示している — でないと自動マージなしでも
+無意味な PR が積み上がる。
+
+`issues: opened` ではなく `workflow_run` を使っているのは、`GITHUB_TOKEN` で作成した
+Issue は新しいワークフロー実行をトリガーしない（GitHub の再帰防止仕様）ため、
+`notify-failure` が作った Issue では `issues: opened` が発火しないと実機検証で判明した
+から。ループ防止は `workflows:` の対象一覧に `workflow-failure-fix` 自身を含めないことで
+担保している。
+
 ### サイト（`src/build.ts`, 各ワークフローの末尾）
 
 - `docs/assets/style.css` を書き出す（単一オーナー）

@@ -12,7 +12,6 @@ on:
       - issue-request
       - inoreader-sync
       - component-review-reminder
-      - failure-notify-smoke-test # TODO: 検証用。workflow_run発火確認後に削除する
     types: [completed]
 
 permissions:
