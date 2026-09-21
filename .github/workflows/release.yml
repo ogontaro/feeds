@@ -24,7 +24,7 @@ jobs:
       # ---------------- claude ----------------
       - id: collect_claude
         run: |
-          bun run src/release-collect.ts claude
+          bun run src/digest/release-collect.ts claude
           echo "n=$(jq length .cache/release-claude-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate claude releases
         id: curate_claude
@@ -64,12 +64,12 @@ jobs:
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render claude releases
         if: steps.collect_claude.outputs.n != '0'
-        run: bun run src/release-render.ts claude
+        run: bun run src/digest/release-render.ts claude
 
       # ---------------- aws ----------------
       - id: collect_aws
         run: |
-          bun run src/release-collect.ts aws
+          bun run src/digest/release-collect.ts aws
           echo "n=$(jq length .cache/release-aws-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate aws releases
         id: curate_aws
@@ -109,12 +109,12 @@ jobs:
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render aws releases
         if: steps.collect_aws.outputs.n != '0'
-        run: bun run src/release-render.ts aws
+        run: bun run src/digest/release-render.ts aws
 
       # ---------------- kubernetes ----------------
       - id: collect_kubernetes
         run: |
-          bun run src/release-collect.ts kubernetes
+          bun run src/digest/release-collect.ts kubernetes
           echo "n=$(jq length .cache/release-kubernetes-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate kubernetes releases
         id: curate_kubernetes
@@ -154,12 +154,12 @@ jobs:
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render kubernetes releases
         if: steps.collect_kubernetes.outputs.n != '0'
-        run: bun run src/release-render.ts kubernetes
+        run: bun run src/digest/release-render.ts kubernetes
 
       # ---------------- devtools ----------------
       - id: collect_devtools
         run: |
-          bun run src/release-collect.ts devtools
+          bun run src/digest/release-collect.ts devtools
           echo "n=$(jq length .cache/release-devtools-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate devtools releases
         id: curate_devtools
@@ -199,9 +199,9 @@ jobs:
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render devtools releases
         if: steps.collect_devtools.outputs.n != '0'
-        run: bun run src/release-render.ts devtools
+        run: bun run src/digest/release-render.ts devtools
 
-      - run: bun run src/build.ts
+      - run: bun run src/site/build.ts
 
       - name: commit docs
         env:

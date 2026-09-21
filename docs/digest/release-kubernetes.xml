@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Kubernetes リリースレポート — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
+        <description>Kubernetes 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
+        <lastBuildDate>Mon, 21 Sep 2026 10:46:39 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes リリースレポート 2026-09-21]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-21.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-21.html</guid>
+            <pubDate>Mon, 21 Sep 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<h3>Argo CD v3.5.3 / v3.4.9（v3.6.0-rc1 も公開）</h3>
+<p><strong>破壊的変更</strong>: なし（3.5.3 / 3.4.9 はパッチ。3.6.0-rc1 は RC のためアップグレードガイドの確認を推奨）
+3.5 系と 3.4 系に同一内容のパッチが同時投入された。KubeVirt の停止中 VirtualMachine と suspended な FlinkDeployment のヘルス判定、Crossplane MR がプロビジョニング中に Healthy と誤判定される問題、sync リトライ時の operationState、UI の SSO リダイレクト 401 ループ、GRPCRoute の古い observedGeneration 参照、GrafanaFolder の negative-polarity 条件など、ヘルスチェックと UI の不具合修正が中心。早めの適用を推奨。
+3.6.0-rc1 では Kyverno・TLSRoute・AWS ACK・CloudNativePG（Backup / Database）・Velero・Tekton・cert-manager・Prometheus Operator・Flink など多数の組み込みヘルスチェックが追加され、ApplicationSet のプログレッシブシンクがメトリクス化・条件として可視化される。Dex のストレージ種別/TLS 最小バージョンの設定外部化、CNPG Cluster の hibernate/rehydrate アクション、削除メッセージのカスタム化も入る。
+<a href="https://github.com/argoproj/argo-cd/releases/tag/v3.5.3">リリースを見る</a></p>
+<h3>Cilium 1.20.2 / 1.19.8 / 1.18.14</h3>
+<p><strong>破壊的変更</strong>: なし（3 系列同時のメンテナンスパッチ）
+map events ダンプ時のエージェントクラッシュ、ENI IPAM のプレフィックス委任でサブネットのプレフィックス枯渇時に新規 IP を割り当てられない問題、使用中プレフィックス IP を個別 IP として解放してしまう問題、ENI の IPv6 ルーティング（ヘルスチェック・ingress・IPSec）、GKE 1.36.2 ノードでの node-init 起動失敗、LocalRedirectPolicy の複数リグレッションなど、ENI/GKE 周りの修正が多い。
+BGP の defaultGateway ピア自動検出が cilium_host 経由の既定ルートを拾ってしまう問題、HTTPRoute ExternalAuth がバックエンド解決失敗時に fail-open になる問題、SNAT ロードバランス通信の ICMP エラーでチェックサム再計算が抜けていた問題、Hubble Relay が終了処理中も動き続ける問題も修正。
+設定面では、これまで受理されながら黙って無視されていた 5 つのオプション（vtep-sync-interval / enable-xt-socket-fallback / eni-delete-on-termination / enableIdentityMark / lb-retry-backoff-max）と Hubble の 4 つの設定ノブが実際に反映されるようになり、Cluster Mesh のサービスバックエンド取り込み時の検証も強化された。
+<a href="https://github.com/cilium/cilium/releases/tag/v1.20.2">リリースを見る</a></p>
+<h3>cert-manager v1.20.4</h3>
+<p><strong>破壊的変更</strong>: なし
+Go 1.26.6 への更新と依存関係の引き上げで、報告済み脆弱性をまとめて修正（golang.org/x/net の CVE-2026-46600、x/crypto の CVE-2026-56852 / 56854、grpc の CVE-2026-84304 / 84445 / 84303、cel-go、go-pkcs12 など）。あわせて ingress-shim がキャッシュ済みの Ingress / Gateway から applyset ラベルを削除してしまうバグも修正。全ユーザーのアップグレードが推奨される。
+x/crypto の SSH 関連 3 件はスキャナが報告し続けるが、cert-manager は SSH 接続を開かず該当関数も呼ばないため 1.20 系では修正されない。クリーンなスキャン結果が必要なら 1.21 へ。
+<a href="https://github.com/cert-manager/cert-manager/releases/tag/v1.20.4">リリースを見る</a></p>
+<h3>Grafana 13.2.2 / 13.1.6 / 13.0.9 / 12.4.11</h3>
+<p><strong>破壊的変更</strong>: なし
+4 つの系列すべてに同時にセキュリティパッチがリリースされた。CVE-2026-15815 / CVE-2026-76154 / CVE-2026-79656 を修正（12.4.11 は CVE-2026-12704 も）。13 系では v2 ダッシュボードインポート時にクエリ変数のリフレッシュ設定が保持されない問題と、プロビジョニングのフルシンク時にフォルダ名変更で UID が衝突する問題も修正。使用中の系列に応じて適用推奨。
+<a href="https://github.com/grafana/grafana/releases/tag/v13.2.2">リリースを見る</a></p>
+<h3>external-dns v0.23.0 / v0.22.0</h3>
+<p><strong>破壊的変更</strong>: あり（アップグレード手順の確認が必須。最悪の場合 DNS レコードが全削除される）
+v0.22.0 でアノテーションのデフォルトプレフィックスが <code>external-dns.kubernetes.io/</code> に変わり、フォールバックがなくなった。既存の <code>external-dns.alpha.kubernetes.io/</code> アノテーションのままだとレコードが全削除されうるため、アノテーションの移行か <code>--annotation-prefix</code> の明示が必要。<code>--policy</code> もデフォルトなしの必須化。Akamai / Plural / Transip の in-tree プロバイダ削除、Pi-hole v5 API 廃止、Gateway API TLSRoute の v1 移行、AWS の A ALIAS 所有権 TXT の <code>a-</code> プレフィックス化も含む。
+v0.23.0 では crd レジストリがソース Namespace に依存しなくなり <code>--crd-registry-namespace</code> の設定が必要。webhook のボディは 32MiB 上限（<code>--webhook-provider-max-body-size</code>）、Gandi プロバイダも削除された。まず <code>--dry-run=true</code> での確認を推奨。
+<a href="https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.23.0">リリースを見る</a></p>
+<h3>Backstage v1.55.0（パッチ: v1.54.8 / v1.50.6）</h3>
+<p><strong>破壊的変更</strong>: あり（カタログ API・Elasticsearch 8 必須化・BUI ルーティング・TechDocs の MkDocs プラグイン許可リスト）
+catalog-backend の非推奨機能が削除された。<code>catalog.enableRelationsCompatibility</code> と互換レイヤ、<code>CodeOwnersProcessor</code> / <code>AnnotateScmSlugEntityProcessor</code>、<code>catalog.stitchingStrategy.mode</code> がなくなり、relations は <code>targetRef</code> のみになる。
+Elasticsearch クライアントが v8 に上がり Elasticsearch 8.19 以上が必須（7.x は非対応）。<code>ElasticSearchClientWrapper</code> の戻り値が <code>body</code> / <code>statusCode</code> / <code>headers</code> / <code>warnings</code> を持つ正規化レスポンスに変わり、生のクライアント型や <code>meta</code> を参照するコードは修正が必要。
+BUI のリンクがホストアプリのルーターを使うようになり、<code>ButtonLink</code> や <code>Link</code> などの render prop が削除された。TechDocs は許可リスト外の MkDocs プラグインを警告つきで除去するため、必要なものは <code>dangerouslyAllowAdditionalPlugins</code> に追加する。段取りを踏んでの移行が必要な更新。パッチ側は MkDocs プラグイン設定と Sentry API 設定の検証改善。
+<a href="https://github.com/backstage/backstage/releases/tag/v1.55.0">リリースを見る</a></p>
+<h3>external-secrets v2.11.0</h3>
+<p><strong>破壊的変更</strong>: なし
+OpenStack Barbican の Application Credentials 認証、Helm チャートの <code>global.imageRegistry</code>、Grafana ダッシュボード用 ConfigMap の Namespace 指定などが追加された。Keepersecurity はレコード欠損時に <code>NoSecretErr</code> を返すようになり、webhook の <code>GetAllSecrets</code> は「未サポート」を返すよう変更。
+Infisical の重複シークレットキー保持オプションは、同一リリース内で revert されている点に注意（#6908 → #6991）。
+<a href="https://github.com/external-secrets/external-secrets/releases/tag/v2.11.0">リリースを見る</a></p>
+<h3>Terraform v1.16.3</h3>
+<p><strong>破壊的変更</strong>: なし
+<code>create_before_destroy</code> と <code>destroy=false</code> の組み合わせの扱い、複数マーク付きの値での関数結果比較とバリデーション、import 時のプロバイダ解決のバグ修正のみ。実務上は適用しておいて問題ない内容。
+<a href="https://github.com/hashicorp/terraform/releases/tag/v1.16.3">リリースを見る</a></p>
+<h3>Loki v3.7.8 / v3.6.17</h3>
+<p><strong>破壊的変更</strong>: なし
+grpc（HIGH）と containerd/v2（MEDIUM）、golang.org/x/net・x/crypto・x/mod のセキュリティ更新のみで、機能変更はない。3.7 系・3.6 系の両方が対象。
+<a href="https://github.com/grafana/loki/releases/tag/v3.7.8">リリースを見る</a></p>
+<h3>Argo Workflows v4.1.4 / v4.0.12</h3>
+<p><strong>破壊的変更</strong>: 記載なし
+4.1 系と 4.0 系のパッチが同時公開されたが、リリースノートはインストール手順のみで変更点の記載がない。内容は追えていないため、必要なら changelog を直接確認する。
+<a href="https://github.com/argoproj/argo-workflows/releases/tag/v4.1.4">リリースを見る</a></p>
+<h3>Longhorn v1.13.0-rc3</h3>
+<p><strong>破壊的変更</strong>: 記載なし
+1.13.0 の RC3 のみが公開されており、リリースノートには変更点の記載がない（署名のみ）。安定版の公開待ち。
+<a href="https://github.com/longhorn/longhorn/releases/tag/v1.13.0-rc3">リリースを見る</a></p>
+<h3>Mimir（mimir-distributed Helm chart 6.3.0-weekly.412）</h3>
+<p><strong>破壊的変更</strong>: なし
+週次の自動 Helm チャートリリースのみで、個別の変更点記載はない。
+<a href="https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.3.0-weekly.412">リリースを見る</a></p>
+<h3>HolmesGPT 0.42.0</h3>
+<p><strong>破壊的変更</strong>: あり（kubernetes-remediation のファイル読み取り許可パスの既定値が変更）
+セキュリティ修正が主眼。kubernetes-remediation MCP の <code>fileReadAllowedPaths</code> の既定が <code>/</code> だったため、自動承認される <code>read_file_from_container</code> 経由で Pod 内の任意ファイル（クラウド資格情報や <code>.env</code>、TLS 鍵など）が読めてしまっていた。既定が限定パス群に狭められ、<code>fileReadRequireCanonicalization</code> で <code>readlink -f</code> 解決を必須にできるようになった。
+ただしチャートが固定するイメージは 1.2.0 のままで、canonicalization と拡張された拒否リストを効かせるには 1.4.0 以降へのイメージ更新が別途必要（1.3.0 には GPU 診断ツールが入る）。あわせて MCP の structuredContent 対応、New Relic ツールセットのタイムアウト設定、<code>namespaceScopedRBAC</code> の Helm 値が追加された。
+<a href="https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0">リリースを見る</a></p>
+<h3>Goldilocks v4.16.2</h3>
+<p><strong>破壊的変更</strong>: なし
+コントローラに <code>/metrics</code> エンドポイントが追加され、<code>vpa-update-mode=InPlace</code> の回帰テストと脆弱性修正が入った小規模リリース。
+<a href="https://github.com/FairwindsOps/goldilocks/releases/tag/v4.16.2">リリースを見る</a></p>
+<h3>kubelet-serving-cert-approver v0.12.1</h3>
+<p><strong>破壊的変更</strong>: なし
+起動直後に API サーバのハンドシェイクが遅い場合に備えて startup probe を追加。残りは依存関係の更新。
+<a href="https://github.com/alex1989hu/kubelet-serving-cert-approver/releases/tag/v0.12.1">リリースを見る</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes リリースレポート 2026-09-14]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-14.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-14.html</guid>
+            <pubDate>Mon, 14 Sep 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<h3>Cilium 1.21.0-pre.2（プレリリース）</h3>
+<p><strong>破壊的変更</strong>: BPF マスカレードがデフォルト有効化。ENI IPAM 利用時は IPv6 マスカレードがデフォルトで無効化され IPv4 と挙動統一
+Gateway API のセッションパーシステンス対応、AWS マネージドプレフィックスリストのポリシー適用、SR-IOV デバイスマネージャなどを追加。pre.1 はリリース作業に失敗したため、pre.0 からの変更をまとめて pre.2 として再公開された。安定版ではないため本番投入は時期尚早。
+<a href="https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.2">リリースを見る</a></p>
+<h3>cert-manager v1.21.2</h3>
+<p><strong>破壊的変更</strong>: Admission Webhook の検証ロジック変更により、必須フィールドを欠くリクエストが従来は許可されていたケースでも拒否されるようになった
+ACME/Vault issuer のエラーレスポンスボディが Status や Event に漏れないよう修正（情報漏えい対策）、HTTP-01 ソルバーのクリーンアップ不具合や証明書更新の閏年バグなどを修正。Go 1.26.8・grpc・crypto を更新しセキュリティ脆弱性にも対応。全ユーザーにアップグレードが推奨されている。
+<a href="https://github.com/cert-manager/cert-manager/releases/tag/v1.21.2">リリースを見る</a></p>
+<h3>Longhorn v1.13.0-rc2</h3>
+<p><strong>破壊的変更</strong>: なし（リリースノートが未公開のため詳細不明）
+バグ修正と依存更新。
+<a href="https://github.com/longhorn/longhorn/releases/tag/v1.13.0-rc2">リリースを見る</a></p>
+<h3>Grafana Mimir 3.1.6 / 3.2.1</h3>
+<p><strong>破壊的変更</strong>: なし
+Go 1.26 系および golang.org/x/crypto、google.golang.org/grpc の更新により複数の CVE に対応したセキュリティ修正リリース。新機能追加はなし。
+<a href="https://github.com/grafana/mimir/releases/tag/mimir-3.2.1">リリースを見る</a></p>
+<h3>Pomerium v0.33.3</h3>
+<p><strong>破壊的変更</strong>: なし
+outbound 接続の再接続時に gRPC 設定反映や MCP の ext_proc databroker アクセスが壊れる不具合を修正。v0.33.2 はビルド失敗により未公開に終わり、同内容の修正を含む v0.33.3 が代わりに公開された。
+<a href="https://github.com/pomerium/pomerium/releases/tag/v0.33.3">リリースを見る</a></p>
+<h3>Terraform v1.16.2 〜 v1.17.0-beta1</h3>
+<p><strong>破壊的変更</strong>: なし（v1.17 系では <code>-policies</code> フラグに <code>-allow-experimental-features</code> が不要になるなどの仕様変更あり）
+v1.17.0-beta1 では provider requirements での変数・ローカル値利用に対応し、差分のあるリソースのみ再取得する <code>-minimal-refresh</code> オプションを追加、Policy 機能が GA に。v1.16.2 はモジュール呼び出しが不正な場合のパニックを修正するバグ修正リリース。
+<a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1">リリースを見る</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes リリースレポート 2026-09-10]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-10.html</guid>
+            <pubDate>Thu, 10 Sep 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<h3>kro v0.9.4</h3>
+<p><strong>破壊的変更</strong>: なし
+CELまわりの機能拡張が中心で、<code>deepMerge()</code>によるネストしたmapの再帰マージ追加や、外部コレクションセレクタでの完全なCEL式サポートが目玉。RGDへの<code>shortNames</code>/<code>categories</code>追加、Helmチャートでのroleアグリゲーションや<code>extraEnv</code>・サービスアカウントautomount設定対応も入った。バグ修正としてCEL評価時のパニック防止、CRDの<code>additionalPrinterColumns</code>変更検知、順序付き削除のサポートなどが含まれる。
+<a href="https://github.com/kubernetes-sigs/kro/releases/tag/v0.9.4">リリースを見る</a></p>
+<h3>Backstage v1.55.0-next.2</h3>
+<p><strong>破壊的変更</strong>: なし
+プレリリース版で、詳細な変更内容は公式チェンジログ（docs/releases）参照とのみ記載。今回の情報からは具体的な変更点は不明。
+<a href="https://github.com/backstage/backstage/releases/tag/v1.55.0-next.2">リリースを見る</a></p>
+<h3>Terraform v1.16.2, v1.17.0-beta1</h3>
+<p><strong>破壊的変更</strong>: なし（ただしephemeralリソース更新時の診断メッセージ表示が変わり、これまで握りつぶされていた警告が出るようになる可能性あり）
+v1.17.0-beta1では、provider requirementsでの変数・ローカル値サポート、変更予定のあるリソースのみを再取得する<code>-minimal-refresh</code>プランオプション、Terraform Policyの正式GA（<code>-allow-experimental-features</code>不要化）が新機能として追加。v1.16.2はモジュール呼び出しが不正な場合のパニックを修正するパッチリリース。
+<a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1">リリースを見る</a></p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

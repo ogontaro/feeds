@@ -10,17 +10,26 @@ export const RELEASE_DOMAINS: Domain[] = ["claude", "kubernetes", "aws", "devtoo
 const DOMAINS = new Set<string>(["claude", "kubernetes", "aws", "devtools"]);
 const KINDS = new Set<string>(["content", "release"]);
 
+import { isJapaneseSource } from "./urls.ts";
+
 export async function loadFeeds(): Promise<Feed[]> {
   const raw = await Bun.file(SOURCE_YAML).text();
   const parsed = parse(raw) as FeedsConfig;
   const feeds = parsed?.feeds ?? [];
   if (feeds.length === 0) throw new Error("source.yaml has no feeds");
+  const seenIds = new Set<string>();
   for (const f of feeds) {
     if (!f.url || !f.name)
       throw new Error(`source.yaml: entry missing url or name: ${JSON.stringify(f)}`);
     if (!DOMAINS.has(f.domain))
       throw new Error(`source.yaml: bad domain "${f.domain}" for ${f.name}`);
     if (!KINDS.has(f.kind)) throw new Error(`source.yaml: bad kind "${f.kind}" for ${f.name}`);
+    if (f.kind === "content" && !isJapaneseSource(f.url)) {
+      if (!f.id || !/^[a-z0-9-]+$/.test(f.id))
+        throw new Error(`source.yaml: foreign content feed "${f.name}" needs slug id [a-z0-9-]`);
+      if (seenIds.has(f.id)) throw new Error(`source.yaml: duplicate feed id "${f.id}"`);
+      seenIds.add(f.id);
+    }
     f.enabled ??= true;
   }
   return feeds;

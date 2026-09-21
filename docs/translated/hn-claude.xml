@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>HN — Claude — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Fri, 18 Sep 2026 21:00:32 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Claude Code now reads AGENTS.md if there is no Claude.md]]></title>
+            <link>https://code.claude.com/docs/en/changelog</link>
+            <guid>https://news.ycombinator.com/item?id=49760187</guid>
+            <pubDate>Fri, 18 Sep 2026 21:00:32 GMT</pubDate>
+            <description><![CDATA[Article URL: https://code.claude.com/docs/en/changelog Comments URL: https://news.ycombinator.com/item?id=49760187 Points: 721 # Comments: 271]]></description>
+            <content:encoded><![CDATA[<p><a href="https://code.claude.com/docs/en/changelog">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fcode.claude.com%2Fdocs%2Fen%2Fchangelog">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Anthropic finally adds AGENTS.md support to Claude Code]]></title>
+            <link>https://twitter.com/trq212/status/2101009392611278961</link>
+            <guid>https://news.ycombinator.com/item?id=49758250</guid>
+            <pubDate>Fri, 18 Sep 2026 18:26:34 GMT</pubDate>
+            <description><![CDATA[Article URL: https://twitter.com/trq212/status/2101009392611278961 Comments URL: https://news.ycombinator.com/item?id=49758250 Points: 52 # Comments: 10]]></description>
+            <content:encoded><![CDATA[<p><a href="https://twitter.com/trq212/status/2101009392611278961">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftwitter.com%2Ftrq212%2Fstatus%2F2101009392611278961">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Cowork and chat are now one Claude]]></title>
+            <link>https://claude.com/blog/cowork-is-now-claude</link>
+            <guid>https://news.ycombinator.com/item?id=49729412</guid>
+            <pubDate>Wed, 16 Sep 2026 16:26:25 GMT</pubDate>
+            <description><![CDATA[Article URL: https://claude.com/blog/cowork-is-now-claude Comments URL: https://news.ycombinator.com/item?id=49729412 Points: 233 # Comments: 225]]></description>
+            <content:encoded><![CDATA[<p><a href="https://claude.com/blog/cowork-is-now-claude">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fclaude.com%2Fblog%2Fcowork-is-now-claude">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

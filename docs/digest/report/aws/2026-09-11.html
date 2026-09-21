@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS レポート 2026-09-11</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS レポート 2026-09-11</h1>
+<article class="report"><h2>今日の 8 本</h2>
+<h3>Amazon SageMaker Inference にプレフィックス認識ルーティングを追加、LLM のレイテンシを大幅削減</h3>
+<p>同じプロンプトプレフィックスを持つリクエストを同一インスタンスに集約し KV キャッシュを温存し続けるルーティング方式で、Llama 3.1 70B の検証では TTFT (P50) を最大77%削減、キャッシュヒット率を25%から80%超に引き上げています。自前でLLM推論基盤を運用している場合、同様の効果がインスタンス追加コストなしで得られる可能性があり、費用対効果の面で一読の価値があります。
+<a href="https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Freduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker HyperPod、モデルキャッシュでコールドスタートを数十分から数秒へ短縮</h3>
+<p>モデルの重みとコンテナイメージを事前にクラスタノードへロードし、ネットワーク経由のダウンロードではなくローカル NVMe から読み込む仕組みで、推論のコールドスタート時間を劇的に短縮します。オートスケールやスポット中断からの復旧が多いワークロードでは体感速度とコストに直結するため、HyperPod 運用者は仕組みと有効化手順を押さえておく価値があります。
+<a href="https://aws.amazon.com/blogs/machine-learning/reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Freduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching%2F">Google 翻訳で全文を読む</a></p>
+<h3>Marengo 3.0 で実現する Amazon Bedrock Knowledge Base の動画・画像検索</h3>
+<p>TwelveLabs の埋め込みモデル Marengo Embed 3.0 が Bedrock Knowledge Bases に統合され、動画・画像・音声を自然言語で検索できるようになりました。テキスト中心だった RAG 基盤をマルチメディアへ拡張する具体的な構築手順が示されており、映像資産を持つプロダクトの検索機能設計を考える際の参考になります。
+<a href="https://aws.amazon.com/blogs/machine-learning/video-and-image-search-in-amazon-bedrock-knowledge-base-using-marengo-3-0/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fvideo-and-image-search-in-amazon-bedrock-knowledge-base-using-marengo-3-0%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Quick Automate で構築する RFI アンケート対応ワークフロー</h3>
+<p>S3 上の複数タブに分かれた RFI 回答書を、自然言語プロンプトで抽出・構造化し、対話しながらワークフローを調整して CSV として書き戻す一連の実装例です。データ抽出パイプラインを数日かけて自作していたようなユースケースを、対話型の自動化でどこまで短縮できるかの具体的な感覚がつかめます。
+<a href="https://aws.amazon.com/blogs/machine-learning/build-an-end-to-end-rfi-questionnaire-workflow-using-amazon-quick-automate/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-an-end-to-end-rfi-questionnaire-workflow-using-amazon-quick-automate%2F">Google 翻訳で全文を読む</a></p>
+<h3>モデルに依存しない LLM ベースの PII 検出手法</h3>
+<p>検出対象のエンティティ定義をコードではなくプロンプト側に持たせることで、再学習なしに新しい PII 種別へ対応できる検出器を Bedrock 上の任意の LLM で構築する手法です。5つの公開コーパスと9つの LLM ベース検出器を上回る精度を示しており、コンプライアンス要件が変わりやすい実務での PII マスキング設計に直接応用できます。
+<a href="https://aws.amazon.com/blogs/machine-learning/model-agnostic-pii-detection-with-llms/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmodel-agnostic-pii-detection-with-llms%2F">Google 翻訳で全文を読む</a></p>
+<h3>マルチターン会話向けのエージェント評価指標「AEM」</h3>
+<p>マルチターンのエージェントは、初期の一つのミスが後続のすべてのターンを汚染するため、単一ターン評価では失敗の原因が見えなくなります。AEM はターン単位で「原因となった失敗」と「そこから連鎖した失敗」を切り分けて計測できる分解可能な指標で、エージェント品質を継続的に監視・改善したいチームには実用的な評価設計の参考になります。
+<a href="https://aws.amazon.com/blogs/machine-learning/agent-evaluation-metric-for-multi-turn-conversations/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fagent-evaluation-metric-for-multi-turn-conversations%2F">Google 翻訳で全文を読む</a></p>
+<h3>AvioBook が Amazon Bedrock AgentCore で実現するフライトターンアラウンド分析</h3>
+<p>Thales グループの AvioBook が、運航データを Bedrock AgentCore で分析し、遅延原因を根拠付きの平易な言葉で航空会社の管理者やディスパッチャーに提示する仕組みをプロトタイプした事例です。AgentCore を実データ・実業務にどう組み込むかの具体的な設計判断が読み取れ、AgentCore 導入を検討する際のケーススタディとして有用です。
+<a href="https://aws.amazon.com/blogs/machine-learning/how-aviobook-uses-generative-ai-to-drive-airline-turnaround-insights/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-aviobook-uses-generative-ai-to-drive-airline-turnaround-insights%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Cognito のユーザーグループに応じて Bedrock Guardrails を動的に切り替える</h3>
+<p>Cognito の認証済みユーザーが属するグループ情報をもとに、適用する Bedrock Guardrails を実行時に切り替える構成の実装検証です。テナントや権限レベルごとに異なるガードレール要件を持つマルチユーザー向け生成 AI アプリケーションを設計する際、すぐに転用できる具体的な構成が示されています。
+<a href="https://dev.classmethod.jp/articles/cognito-group-bedrock-guardrails-routing/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fcognito-group-bedrock-guardrails-routing%2F">Google 翻訳で全文を読む</a></p>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

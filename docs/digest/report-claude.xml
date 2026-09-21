@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Claude レポート — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
+        <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
+        <lastBuildDate>Mon, 21 Sep 2026 10:46:39 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-21]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-21.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-21.html</guid>
+            <pubDate>Mon, 21 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の1本</h2>
+<h3>テスト記事</h3>
+<p>テストコメント。
+<a href="https://dev.classmethod.jp/articles/20260919-cc-updates-v2-1-278/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=test">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-20]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-20.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-20.html</guid>
+            <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<h3>Codexを使うなら、権限プロファイルとRulesを押さえておきたい</h3>
+<p>コーディングエージェントを実務に投入するとき、最初に詰まるのが「どこまで自律実行を許すか」の設計です。権限プロファイルと Rules という2つのレイヤーがどう効くのかを押さえておくと、承認ダイアログを消して速度を上げつつ危険な操作だけを止める、という調整ができるようになります。Claude Code の permissions 設定を運用している人にも、エージェントごとの権限制御の比較材料としてそのまま読めます。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-19]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-19.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-19.html</guid>
+            <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の3本</h2>
+<h3>Claude CodeのRulesとAuto memoryは書きっぱなしにしないほうがいい</h3>
+<p>CLAUDE.mdやAuto memoryは一度書けば安心という機能ではなく、運用し続けることが前提の仕組みだという指摘。ルールやメモリが陳腐化してエージェントの判断を狂わせるケースを踏まえた実務目線の話で、チームでClaude Codeを定着させたいなら押さえておきたい観点。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730">原文を読む</a></p>
+<h3>Claude Code v2.1.276 アップデートまとめ（DevelopersIO）</h3>
+<p>Claude Code v2.1.276の更新内容を日本語でまとめて紹介する記事。公式changelogを1件ずつ追うより、変更点を一気に把握したい人に向いている。
+<a href="https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260918-cc-updates-v2-1-276%2F">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code v2.1.277、changelogに多数の変更が集約</h3>
+<p>最新リリースで一度に多くの変更が入ったバージョン。CLIを日常的に使っているなら、しばらく追っていなかった間の差分をまとめて確認しておく価値がある。
+<a href="https://claude-code-log.com/changelog/v2.1.277">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.277">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-18]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-18.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-18.html</guid>
+            <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>Claude CodeのAgent Skillsは、ときどき見直したほうがいい</h3>
+<p>Agent Skillsは一度作って満足しがちだが、モデルやプロジェクトの状況が変わるとskillの前提が古びて逆に足を引っ張ることがある、という運用上の注意喚起。自分のskill群を棚卸ししたくなる実践的な視点。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349">原文を読む</a></p>
+<h3>Claude Code v2.1.274 リリースノート</h3>
+<p>メモリ逼迫時の可視警告、MCPサーバー接続待ちを制御する<code>CLAUDE_CODE_MCP_STARTUP_WAIT_MS</code>、OpenTelemetryへのeffort属性やmanaged-settings解決イベントの追加など、運用・監視に効く変更がまとまっている。細かいchangelog項目を追うよりこのリリースノートを見た方が全体像を把握しやすい。
+<a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.274">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.274">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-17]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-17.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-17.html</guid>
+            <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の1本</h2>
+<h3>Claude CoworkとChatが「ひとつのClaude」に統合</h3>
+<p>Cowork（複数タスクを任せるエージェント的モード)と通常のチャットが分かれていた体験が一本化されるという発表です。ちょっとした質問から「正午までに仕上げてほしいレポート」の丸投げまで、同じ入り口でClaudeに任せられるようになる点は、Claude Codeなどエージェント的にClaudeを使う開発者にとって、今後のワークフロー設計を考える上で参考になります。Pro/Maxプランからweb・デスクトップ・モバイルに順次展開されるとのことで、展開スケジュールも押さえておく価値があります。
+<a href="https://simonwillison.net/2026/Sep/16/one-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F16%2Fone-claude%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-16.html</guid>
+            <pubDate>Wed, 16 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の1本</h2>
+<h3>Claude Code v2.1.273 リリース — LLMゲートウェイ向けヘッダーとリモートセッションのフォークに対応</h3>
+<p>LLMゲートウェイ経由でClaude Codeを運用しているなら、<code>x-claude-code-request-class</code>などのリクエストヘッダー追加（<code>CLAUDE_CODE_GATEWAY_HINT_HEADERS=1</code>で有効化）はログ分析やルーティングに直結する地味だが効く変更。MCPサーバーが切断して自動再接続もあきらめた際に<code>/mcp</code>を案内する通知や、Claudeアプリから始めたリモートセッションをバックグラウンドでフォークできる機能も、日々の運用・並行作業のワークフローに関わる人は要チェック。</p>
+<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.273">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.273">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-15]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-15.html</guid>
+            <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>Claude Code v2.1.271: リモートセッションの Fast Mode 対応や /config のマウス操作、self-hosted runner のドレイン通知が追加</h3>
+<p>Claude Code Remote（クラウド／セルフホストランナー）で組織設定や <code>/fast</code> に応じて Fast Mode が有効になるようになったほか、<code>/config</code> パネルでのマウス操作対応、<code>--drain-marker-file</code> によるセルフホストランナーの SIGTERM ドレイン検知など、運用面に効く細かな改善がまとまっている。自前でランナーを運用しているチームや Remote セッションを使っているチームは要チェック。
+<a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.271">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.271">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code で auto mode を起動時のデフォルトにしたら、対応モデルと非対応モデルで挙動が分かれた</h3>
+<p>Bedrock 経由で Claude Code の auto mode を起動時デフォルトにした際の挙動を、対応モデル・非対応モデルで比較検証した実践レポート。auto mode の対応状況によって動作差が出る点は、モデル選定や運用設定を検討する際に踏まえておきたい落とし穴。
+<a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-default-bedrock%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-13]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-13.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-13.html</guid>
+            <pubDate>Sun, 13 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>Claude Code に <code>claude plugin eval</code> コマンドが追加、プラグインの自動採点テストが可能に</h3>
+<p>プラグインの eval スイートを Claude Code に対して実行し、採点済みで再現可能な結果を JSON/HTML レポートとして得られるようになった。プラグインの品質を継続的に検証したい開発者にとっては、CI 組み込みや回帰チェックの土台になる地味に大きな追加。
+<a href="https://claude-code-log.com/changelog/v2.1.269#item-fbee90810de9">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.269%23item-fbee90810de9">Google 翻訳で全文を読む</a></p>
+<h3><code>Edit()</code> の deny ルールが Bash の <code>tee</code> 書き込みに効かない不具合を修正</h3>
+<p>これまで <code>Edit()</code> の deny ルールや書き込みパスのチェックが <code>tee</code> 経由のファイル書き込みをすり抜けていた問題が修正され、同時に <code>Bash(tee:*)</code> の allow ルールが作業ディレクトリ外への書き込みをカバーしなくなった。permissions 設定でファイル保護を組んでいる場合、想定より緩い/厳しい挙動になっていないか見直す価値がある。
+<a href="https://claude-code-log.com/changelog/v2.1.269#item-8e852dfe1f19">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.269%23item-8e852dfe1f19">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-12.html</guid>
+            <pubDate>Sat, 12 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>シンボリックリンク越しのパスで permission の deny/confirm ルールが効いていなかった不具合を修正（Claude Code v2.1.268）</h3>
+<p>macOS の <code>/etc</code>・<code>/tmp</code>・<code>/var</code>、Linux の <code>/bin</code> のようにシンボリックリンクになっているディレクトリでは、deny ルールを実体パスで書いても、あるいはシンボリックリンクのパス表記で書いても、Bash コマンドから見ると適用されないケースがあった。意図したサンドボックス制限が実は抜け穴になっていたという話なので、権限設定でパスベースの deny/confirm ルールを運用している人は要チェック。
+<a href="https://claude-code-log.com/changelog/v2.1.268#item-b3613ac888db">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-b3613ac888db">Google 翻訳で全文を読む</a></p>
+<h3>WebFetch が応答を開いたまま完了しないサーバーで無期限にハングする不具合を修正、300秒タイムアウトと環境変数での上書きに対応（Claude Code v2.1.268）</h3>
+<p>これまで WebFetch はサーバーがレスポンスを開始したまま完了させない場合に永久に待ち続けることがあったが、300秒で自動的に失敗するようになり、<code>CLAUDE_CODE_WEBFETCH_DEADLINE_MS</code> で時間を変更（<code>0</code> で無効化）できるようになった。フックやワークフローで WebFetch を組み込んでいると地味に刺さる不具合だったので、自動化を組んでいる人には実務的に効く修正。
+<a href="https://claude-code-log.com/changelog/v2.1.268#item-887656a3e44e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-887656a3e44e">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-11.html</guid>
+            <pubDate>Fri, 11 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>Claude Code v2.1.268: 権限チェックとシークレット漏洩まわりの重要なセキュリティ修正</h3>
+<p>シンボリックリンク経由で deny/確認ルールが素通りする問題、<code>env -C</code> や <code>eval</code> を同じ行に挟むと Read/Edit の deny ルールが効かなくなる問題、git URL や MCP 設定の <code>${VAR}</code> シークレットがエラー表示に漏れる問題などが一挙に修正された。Bash サンドボックスや権限ルールに運用を依存しているなら見逃せない。
+<a href="https://claude-code-log.com/changelog/v2.1.268#item-b3613ac888db">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-b3613ac888db">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code v2.1.268: WebFetch無限ハングや高CPU張り付きなど日常の不具合を解消</h3>
+<p>応答を返さないサーバーに対して WebFetch が無期限にハングしていた問題が修正され、300秒でタイムアウト（<code>CLAUDE_CODE_WEBFETCH_DEADLINE_MS</code> で変更可）するようになった。長時間アイドルなセッションがCPUコアを占有し続ける問題や、autoモードの拒否理由が分かりにくかった点も改善されており、日々の開発体験に直結する。
+<a href="https://claude-code-log.com/changelog/v2.1.268#item-887656a3e44e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-887656a3e44e">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude レポート 2026-09-10]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-10.html</guid>
+            <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<h3>Claude Code v2.1.267 アップデートまとめ — maxEffortLevel 追加とプロンプトキャッシュ関連の一斉修正</h3>
+<p>53件のアップデートのうち、新機能より長時間セッションで気づきにくい不具合の修正が中心という着眼点が実務的で参考になる。著者が実際に <code>maxEffortLevel</code> を試した所感も載っており、上限設定を使うべきか判断する材料になる。
+<a href="https://dev.classmethod.jp/articles/20260910-cc-updates-v2-1-267/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260910-cc-updates-v2-1-267%2F">Google 翻訳で全文を読む</a></p>
+<h3><code>/skill-doctor</code> 追加 — 未使用スキルとそのコンテキストコストを可視化</h3>
+<p>読み込んだまま放置されがちなスキルが、コンテキストをどれだけ消費しているかを可視化し、その場で整理・削除できる機能。スキルを増やしがちなプロジェクトでコンテキスト管理を見直すきっかけになる。
+<a href="https://claude-code-log.com/changelog/v2.1.261#item-e2302600a451">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.261%23item-e2302600a451">Google 翻訳で全文を読む</a></p>
+<h3>サブエージェント向け <code>--append-subagent-system-prompt-file</code> フラグ追加</h3>
+<p>コマンドラインでは渡しきれない長大なシステムプロンプトをファイルから読み込めるようになった。地味だが、複雑なサブエージェントを設計・運用しているチームには効いてくる変更。
+<a href="https://claude-code-log.com/changelog/v2.1.261#item-cb436e3f301f">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.261%23item-cb436e3f301f">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

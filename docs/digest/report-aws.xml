@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AWS レポート — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
+        <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
+        <lastBuildDate>Mon, 21 Sep 2026 10:46:39 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-20]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-20.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-20.html</guid>
+            <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-19]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-19.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-19.html</guid>
+            <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 6 本</h2>
+<h3>Amazon SageMaker HyperPod Inference Gateway 登場</h3>
+<p>EKS 上で動く推論ワークロードに GPU 使用状況を見て賢くルーティングするアドオンで、モデルサーバやクライアントの改修なしに TTFT を最大 82% 削減できるとのこと。EKS × 生成AI 推論基盤の設計を考えている人には直撃の内容。
+<a href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-amazon-sagemaker-hyperpod-inference-gateway%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock に Kimi K3 が追加</h3>
+<p>Moonshot AI 製のオープンウェイトモデルが Bedrock で利用可能になり、ネイティブ Vision・100万トークンのコンテキスト・明示的なプロンプトキャッシュを備える。オープンウェイト勢の選択肢が Bedrock 上でどう広がっているかを追う上で押さえておきたい一報。
+<a href="https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-kimi-k3-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>新しい AgentCore ランタイム、コールドスタートを高速・安定化</h3>
+<p>セッション終了時にメモリを即座に回収し、イメージサイズや同時実行数に関わらず一定のコールドスタート時間を実現する Bedrock AgentCore の新ランタイム。本番運用でエージェントのレイテンシとコストを最適化したいチームには具体的な効き所がある。
+<a href="https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts%2F">Google 翻訳で全文を読む</a></p>
+<h3>マルチモデルAIエージェントを ECS/Fargate から Bedrock AgentCore へ移行</h3>
+<p>医療分野の3モデル・オーケストレーション＋ベクター検索エージェントを自前運用の ECS/Fargate から AgentCore ランタイムに移した実例で、金融・製造業にも応用可能なフレームワーク非依存パターンとして紹介されている。自前運用からのマイグレーションを検討する際の具体的な設計判断の参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmigrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker Inference、2026年の主要アップデートまとめ</h3>
+<p>フルマネージドエンドポイントと HyperPod Inference の両方で今年投入された13件のローンチ（推論レコメンデーション、容量認識型インスタンスプール、階層的KVキャッシュ、Prefill/Decode 分離など）を一気に振り返れる回顧記事。SageMaker で推論基盤を組んでいるなら見落としがないか棚卸しに使える。
+<a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-sagemaker-inference-2026-year-to-date-launches-in-review%2F">Google 翻訳で全文を読む</a></p>
+<h3>コーディングエージェントで Hugging Face モデルを SageMaker AI にデプロイ</h3>
+<p>6つのオープンソースのエージェントスキルを使い、コーディングエージェントにモデルを指定するだけで適切なサービングコンテナ・オートスケーリング・CloudWatch アラーム・検証済みの削除手順までそろったリアルタイムエンドポイントが得られる。エージェント経由のインフラ構築が実運用レベルにどこまで来ているかを見る好例。
+<a href="https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-18]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-18.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-18.html</guid>
+            <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 9 本</h2>
+<h3>Fluent BitとCloudWatch Logs間の接続切れ問題への対処</h3>
+<p>EKSなどのログ収集でFluent Bitを使う構成では、CloudWatch Logsへの出力コネクションが切れてログが欠損することがある。切り分け方や対応の勘所がまとまっており、同様の事象に備えておきたい運用担当者に参考になる。
+<a href="https://dev.classmethod.jp/articles/fluent-bit-cloudwatch-logs-broken-connection/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Ffluent-bit-cloudwatch-logs-broken-connection%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock Knowledge Bases 向けベクトルストアの選び方</h3>
+<p>OpenSearch Service、Aurora PostgreSQL(pgvector)、S3 Vectorsの3つを実際のRAGユースケースでベンチマーク比較しており、「とりあえずOpenSearch」で決めがちな設計判断を見直す材料になる。コストとパフォーマンスの両面から選定基準を提示している点が実務で使いやすい。
+<a href="https://aws.amazon.com/blogs/machine-learning/selecting-a-vector-store-for-amazon-bedrock-knowledge-bases/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fselecting-a-vector-store-for-amazon-bedrock-knowledge-bases%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Quick上のMCPツールに多層防御の認可を実装する</h3>
+<p>Microsoft Entra IDのグループ／クレームベースJWTをBedrock AgentCore Gatewayのインターセプターに接続し、ユーザー×ツール単位のRBAC/ABACと監査ログを実現する構成を解説している。エージェントに権限を持たせる際のセキュリティ設計として、他のMCP実装にも応用できる考え方が示されている。
+<a href="https://aws.amazon.com/blogs/machine-learning/implementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fimplementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick%2F">Google 翻訳で全文を読む</a></p>
+<h3>Wood MackenzieがAmazon Bedrock AgentCoreで構築した共通エージェント基盤「APEX」</h3>
+<p>各チームがランタイム・ID管理・可観測性・ガードレールを個別に作り込まずにエージェントを本番投入できるよう、共通プラットフォームとして構築した事例。AgentCoreを選んだ理由や運用体制（APEX Studio）まで語られており、社内向けエージェント基盤を検討する際の設計参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/a-shared-agentic-platform-for-wood-mackenzie-on-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fa-shared-agentic-platform-for-wood-mackenzie-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>MRH TroweがStrands AgentsとBedrock AgentCoreで実現したセキュアなセルフサービスAIエージェント</h3>
+<p>ドイツの金融規制下でセキュリティ・データ所在・コンプライアンス要件を満たしながら、約400名の従業員に運用開始1か月でセルフサービスのAIエージェント環境を提供した事例。Strands Agents、Bedrock AgentCore、LibreChatの組み合わせは、規制業種でのエージェント導入を検討するチームに具体的な構成イメージを与えてくれる。
+<a href="https://aws.amazon.com/blogs/machine-learning/how-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-mrh-trowe-enabled-secure-self-service-ai-agents-in-financial-services%2F">Google 翻訳で全文を読む</a></p>
+<h3>Bedrockのプレイグラウンドで推論プロファイルを変更する</h3>
+<p>推論プロファイル(inference profile)の切り替え操作をプレイグラウンド上で試した際の手順・挙動をまとめたノート。クロスリージョン推論など、プロファイル運用でつまずきやすい細かな疑問を解消するのに役立つ。
+<a href="https://dev.classmethod.jp/articles/tsnote-bedrock-change-inference-profile-playground/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Ftsnote-bedrock-change-inference-profile-playground%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker AIで合成データを使い産業安全AIを強化する</h3>
+<p>重機周辺での危険なデータ収集や手動アノテーションなしに、フォトリアルな自動ラベル付き学習画像をSageMaker AIとRekognitionで生成するパイプラインを紹介している。人物検知精度を最大160%改善したという結果は、データ収集が難しい安全監視系AIを作る際の有力な選択肢になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/enhancing-industrial-safety-ai-with-synthetic-data-on-amazon-sagemaker-ai/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fenhancing-industrial-safety-ai-with-synthetic-data-on-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
+<h3>低コストのバースト可能インスタンス Amazon EC2 T8iが一般提供開始</h3>
+<p>第6世代Intel Xeon(Granite Rapids)ベースの新型バースタブルインスタンスで、T3世代比で最大30%の価格性能向上を謳う。低頻度負荷のワークロードでコスト最適化を検討する際に、まず比較対象に入れておきたい選択肢。
+<a href="https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fnew-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available%2F">Google 翻訳で全文を読む</a></p>
+<h3>AWS Elastic BeanstalkにCluster Modeが登場</h3>
+<p>コンテナイメージやソースコードを渡すだけで、コンピュートのプロビジョニングや運用をElastic Beanstalk側が肩代わりしてくれる新モード。インフラ管理の手間を減らしたい既存Beanstalkユーザーにとって、移行を検討する価値がある。
+<a href="https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-elastic-beanstalk-introduces-cluster-mode%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-17]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-17.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-17.html</guid>
+            <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<h3>Amazon EKS で NVRx を使った耐障害分散トレーニング</h3>
+<p>EKS 上の大規模 GPU 分散学習に NVIDIA 製 NVRx を組み込み、チェックポイント I/O のオーバーラップとジョブ内リスタートで秒単位の障害復旧を実現した事例。H100 を使った 2〜8 ノードのベンチマークで 99% 以上の学習効率を維持しており、EKS で大規模 GPU トレーニング基盤を運用・設計する際の実践的な指針になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/fault-tolerant-distributed-training-on-amazon-eks-using-nvrx/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffault-tolerant-distributed-training-on-amazon-eks-using-nvrx%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock AgentCore によるエージェントのシステムプロンプト最適化</h3>
+<p>AgentCore の最適化機能が本番トレースから設定変更案を自動生成し、昇格前に検証する仕組みを技術的に解説する記事。Single Agent／Sub-Agent 向け Reflector のベンチマーク結果も示されており、Bedrock エージェントを本番運用しつつプロンプトチューニングを自動化したいチームに有用。
+<a href="https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Foptimizing-agent-system-prompts-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>オープンソースのエージェントスキルでヘルスケア/ライフサイエンス領域のAI推論を改善</h3>
+<p>基盤モデルは正しいガイドラインを引用しても適用を誤りがちという課題に対し、11 の HCLS ドメインにまたがる 38 個のオープンソースエージェントスキルを公開。410 プロンプトの評価で 70〜86% の勝率を示しており、ドメイン特化のエージェント設計に応用できる具体的な実装例として参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fimproving-hcls-ai-reasoning-with-open-source-agent-skills%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock Data Automation によるサーバーレス PII redaction パイプライン構築</h3>
+<p>カスタムブループリント、Step Functions、Lambda を組み合わせ、スキャン文書から PII を自動検出・削除する構成を紹介。手書きや劣化した文書でも再現率を高めるトークンマッチングの品質チェックを取り入れており、コンプライアンス要件のあるドキュメント処理基盤を設計する際に参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/build-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation%2F">Google 翻訳で全文を読む</a></p>
+<h3>AWSが「はじめての利用体験」を刷新</h3>
+<p>新規サインアップ時に $100 分の Free Tier クレジット付与、マネージドなプロジェクト環境、チーム/リソース権限の簡素化といったスマートなデフォルトを導入。ワークロードが成長した際も移行なしで高度な機能を段階的に有効化できる設計になっており、オンボーディングフローの変化として押さえておく価値がある。
+<a href="https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-reimagines-the-getting-started-experience%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-16.html</guid>
+            <pubDate>Wed, 16 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<h3>Amazon Bedrock のプロンプトキャッシュでコストとレイテンシを最適化</h3>
+<p>プロンプトキャッシュは同じコンテキストを繰り返し送る場面で入力トークン費用を最大90%削減できる機能で、Converse API を使った6つの実装パターン（メッセージ内容、システムプロンプト、ツール定義、混在TTL、テナント分離、LangChain連携）を具体的に示している点が実務にそのまま使える。Bedrock を使ったチャットボットやエージェントのコスト最適化を検討している人には設計の参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Foptimizing-cost-and-latency-with-amazon-bedrock-prompt-caching%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker サーバーレスモデルカスタマイズで商品タグ付けAIを構築</h3>
+<p>Qwen3-8B を教師ありファインチューニング（SFT）と検証可能な報酬による強化学習（RLVR）でカスタマイズし、非同期推論で低コストに運用する構成を紹介しており、大量の商品カタログを扱うEC事業者にとって現実的な生成AI活用の実例になっている。SageMaker のサーバーレスモデルカスタマイズという比較的新しい機能の使い方を学べる点も価値がある。
+<a href="https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker AI トレーニングジョブにインスタンス優先リスト機能が追加</h3>
+<p>最大5種類のインスタンスタイプを優先順位付きで指定し、空き容量がある最初のタイプで自動起動できるようになったことで、手動のリトライループや容量監視スクリプトが不要になる。GPU インスタンスの確保に苦労している機械学習チームにとって、運用負荷を直接下げる実用的なアップデート。
+<a href="https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fannouncing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-15]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-15.html</guid>
+            <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 8 本</h2>
+<h3>Abnormal AI、Amazon Bedrock AgentCore でエージェント型メールセキュリティを大規模展開</h3>
+<p>10億通規模のリアルタイム脅威検知エージェントで AgentCore Code Interpreter を使い捨てのサンドボックスとして使う設計判断が具体的に語られており、本番運用で Code Interpreter を活用する際の実践的な教訓が得られる。
+<a href="https://aws.amazon.com/blogs/machine-learning/abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fabnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock AgentCore、AIエージェント向けのエンドユーザー OAuth 同意フローを追加</h3>
+<p>AgentCore Gateway に同意ポータルとセッションバインディングが加わり、GitHub や Slack など外部サービスへの3-legged OAuth 連携をエージェントに組み込みやすくなった。CloudTrail での監査方法まで解説されており、エージェント基盤の権限設計に直結する内容。
+<a href="https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmanage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>AWS週次まとめ：Amazon Bedrock に OpenAI GPT-6 Astra が登場、Amazon Quick デスクトップ GA など（2026年9月14日）</h3>
+<p>Bedrock に OpenAI の新フロンティアモデル GPT-6 Astra が加わったことが今週最大のトピックで、Claude 以外のモデル選択肢が広がる動きとして押さえておきたい。Quick デスクトップ版 GA など他の発表も一覧できる。
+<a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026%2F">Google 翻訳で全文を読む</a></p>
+<h3>Ninth Wave、Amazon Bedrock でオープンファイナンスのオンボーディングを AI 化</h3>
+<p>銀行APIをFDX標準に照らして検証・コンプライアンススコアリングするマルチエージェント構成を Bedrock AgentCore 上に構築し、数週間かかっていたオンボーディングを数分に短縮した事例。SOC 2 / PCI DSS 要件を満たしながらエージェントを実運用に載せる設計が参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>プロンプトエンジニアリングからカスタムモデルまで：AWS における生成AIカスタマイズの選択指針</h3>
+<p>RAG・ファインチューニング・継続事前学習・Amazon Nova Forge をどう使い分けるかを8段階の意思決定フレームワークとして整理しており、過剰なカスタマイズに走らず段階的に投資判断するための指針として実務に効く内容。
+<a href="https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws%2F">Google 翻訳で全文を読む</a></p>
+<h3>MMF・Databricks Genie・Amazon Quick で需要変動への自動補充を実現</h3>
+<p>需要予測だけでなく、供給元の在庫状況と突き合わせて発注まで自動で完結させる detect-decide-act ループを Databricks と Amazon Quick で構築した事例。人の判断が必要な場面だけエスカレーションする設計は、生成AIの適用範囲を「予測」から「実行」まで広げる際の参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fautomate-replenishment-with-mmf-databricks-genie-and-amazon-quick%2F">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code の auto mode をデフォルト化すると、Bedrock 対応モデルと非対応モデルで挙動が変わる</h3>
+<p>Bedrock 上で Claude Code の auto mode をデフォルトにした際、モデルによって挙動差が出る実例を検証しており、Bedrock 経由で Claude Code を運用しているチームがハマりやすい落とし穴を事前に把握できる。
+<a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-default-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock Managed Knowledge Base の S3 ナレッジベース、ドキュメント単位 ACL を Amazon Quick から検証</h3>
+<p>Bedrock 側でドキュメントレベルのアクセス制御を定義し、Quick 側のACLとどう組み合わさるかを実際に検証しており、ユーザーごとに参照できる機密文書を出し分けたい場合の設計・検証手順がそのまま使える。
+<a href="https://dev.classmethod.jp/articles/20260914-amazon-mkb-s3-acl-with-quick/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260914-amazon-mkb-s3-acl-with-quick%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-14]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-14.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-14.html</guid>
+            <pubDate>Mon, 14 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<h3>[アップデート] Amazon Bedrock Managed Knowledge Baseでドキュメントのアクセス権を調べるAPIが追加されたので試してみた</h3>
+<p>Bedrockのナレッジベースでどのドキュメントが検索対象になっているか（アクセス権）を確認できる新APIの解説です。権限設定のデバッグに直接使える内容なので、ナレッジベースを運用中の人は押さえておく価値があります。
+<a href="https://dev.classmethod.jp/articles/amazon-bedrock-knowledge-base-document-acl-debugging/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Famazon-bedrock-knowledge-base-document-acl-debugging%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-12.html</guid>
+            <pubDate>Sat, 12 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の3本</h2>
+<h3>AWS DevOps AgentとAgentCore Evaluationsで本番エージェントのライフサイクルを監視する</h3>
+<p>マルチエージェントシステムの障害は従来型の監視ツールでは見逃しやすく、継続的な品質スコアリングと自律的なインフラ調査を組み合わせた二層監視の設計は、本番でエージェントを運用するうえで参考になる考え方。4エージェント構成の航空券予約システムを題材に、実際にどこまで自動診断できるかを示している点が実務的。
+<a href="https://aws.amazon.com/blogs/machine-learning/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmonitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations%2F">Google 翻訳で全文を読む</a></p>
+<h3>トークン単価だけでは測れない、Amazon Bedrock上のOpenAIモデルの選び方</h3>
+<p>「100万トークンあたりの価格」でモデルを比較しがちだが、本番ワークロードで本当に効くのは正解1件あたりのコストやエージェントの実行経路全体のコストだという指摘は、モデル選定の物差しを見直すきっかけになる。公開されたOSSベンチマークハーネスを使えば、自社のユースケースで同様の評価を再現できる点も実用的。
+<a href="https://aws.amazon.com/blogs/machine-learning/beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-for-your-workload/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbeyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-for-your-workload%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock AgentCoreでインタラクティブなMCP Appsを構築する</h3>
+<p>MCP Appsはホストに依存しない標準規格であり、同じサーバー実装だけでChatGPTやClaudeなど複数のAIホスト上で同一のリッチなUI体験を提供できるという点が興味深い。AgentCore上でHTMLウィジェット付きMCPサーバーを構築・デプロイする具体的な手順が示されており、対話型のAIアプリを検討している開発者に実践的な出発点となる。
+<a href="https://aws.amazon.com/blogs/machine-learning/build-interactive-mcp-apps-using-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-interactive-mcp-apps-using-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-11.html</guid>
+            <pubDate>Fri, 11 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 8 本</h2>
+<h3>Amazon SageMaker Inference にプレフィックス認識ルーティングを追加、LLM のレイテンシを大幅削減</h3>
+<p>同じプロンプトプレフィックスを持つリクエストを同一インスタンスに集約し KV キャッシュを温存し続けるルーティング方式で、Llama 3.1 70B の検証では TTFT (P50) を最大77%削減、キャッシュヒット率を25%から80%超に引き上げています。自前でLLM推論基盤を運用している場合、同様の効果がインスタンス追加コストなしで得られる可能性があり、費用対効果の面で一読の価値があります。
+<a href="https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Freduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker HyperPod、モデルキャッシュでコールドスタートを数十分から数秒へ短縮</h3>
+<p>モデルの重みとコンテナイメージを事前にクラスタノードへロードし、ネットワーク経由のダウンロードではなくローカル NVMe から読み込む仕組みで、推論のコールドスタート時間を劇的に短縮します。オートスケールやスポット中断からの復旧が多いワークロードでは体感速度とコストに直結するため、HyperPod 運用者は仕組みと有効化手順を押さえておく価値があります。
+<a href="https://aws.amazon.com/blogs/machine-learning/reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Freduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching%2F">Google 翻訳で全文を読む</a></p>
+<h3>Marengo 3.0 で実現する Amazon Bedrock Knowledge Base の動画・画像検索</h3>
+<p>TwelveLabs の埋め込みモデル Marengo Embed 3.0 が Bedrock Knowledge Bases に統合され、動画・画像・音声を自然言語で検索できるようになりました。テキスト中心だった RAG 基盤をマルチメディアへ拡張する具体的な構築手順が示されており、映像資産を持つプロダクトの検索機能設計を考える際の参考になります。
+<a href="https://aws.amazon.com/blogs/machine-learning/video-and-image-search-in-amazon-bedrock-knowledge-base-using-marengo-3-0/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fvideo-and-image-search-in-amazon-bedrock-knowledge-base-using-marengo-3-0%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Quick Automate で構築する RFI アンケート対応ワークフロー</h3>
+<p>S3 上の複数タブに分かれた RFI 回答書を、自然言語プロンプトで抽出・構造化し、対話しながらワークフローを調整して CSV として書き戻す一連の実装例です。データ抽出パイプラインを数日かけて自作していたようなユースケースを、対話型の自動化でどこまで短縮できるかの具体的な感覚がつかめます。
+<a href="https://aws.amazon.com/blogs/machine-learning/build-an-end-to-end-rfi-questionnaire-workflow-using-amazon-quick-automate/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-an-end-to-end-rfi-questionnaire-workflow-using-amazon-quick-automate%2F">Google 翻訳で全文を読む</a></p>
+<h3>モデルに依存しない LLM ベースの PII 検出手法</h3>
+<p>検出対象のエンティティ定義をコードではなくプロンプト側に持たせることで、再学習なしに新しい PII 種別へ対応できる検出器を Bedrock 上の任意の LLM で構築する手法です。5つの公開コーパスと9つの LLM ベース検出器を上回る精度を示しており、コンプライアンス要件が変わりやすい実務での PII マスキング設計に直接応用できます。
+<a href="https://aws.amazon.com/blogs/machine-learning/model-agnostic-pii-detection-with-llms/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmodel-agnostic-pii-detection-with-llms%2F">Google 翻訳で全文を読む</a></p>
+<h3>マルチターン会話向けのエージェント評価指標「AEM」</h3>
+<p>マルチターンのエージェントは、初期の一つのミスが後続のすべてのターンを汚染するため、単一ターン評価では失敗の原因が見えなくなります。AEM はターン単位で「原因となった失敗」と「そこから連鎖した失敗」を切り分けて計測できる分解可能な指標で、エージェント品質を継続的に監視・改善したいチームには実用的な評価設計の参考になります。
+<a href="https://aws.amazon.com/blogs/machine-learning/agent-evaluation-metric-for-multi-turn-conversations/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fagent-evaluation-metric-for-multi-turn-conversations%2F">Google 翻訳で全文を読む</a></p>
+<h3>AvioBook が Amazon Bedrock AgentCore で実現するフライトターンアラウンド分析</h3>
+<p>Thales グループの AvioBook が、運航データを Bedrock AgentCore で分析し、遅延原因を根拠付きの平易な言葉で航空会社の管理者やディスパッチャーに提示する仕組みをプロトタイプした事例です。AgentCore を実データ・実業務にどう組み込むかの具体的な設計判断が読み取れ、AgentCore 導入を検討する際のケーススタディとして有用です。
+<a href="https://aws.amazon.com/blogs/machine-learning/how-aviobook-uses-generative-ai-to-drive-airline-turnaround-insights/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-aviobook-uses-generative-ai-to-drive-airline-turnaround-insights%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Cognito のユーザーグループに応じて Bedrock Guardrails を動的に切り替える</h3>
+<p>Cognito の認証済みユーザーが属するグループ情報をもとに、適用する Bedrock Guardrails を実行時に切り替える構成の実装検証です。テナントや権限レベルごとに異なるガードレール要件を持つマルチユーザー向け生成 AI アプリケーションを設計する際、すぐに転用できる具体的な構成が示されています。
+<a href="https://dev.classmethod.jp/articles/cognito-group-bedrock-guardrails-routing/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fcognito-group-bedrock-guardrails-routing%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS レポート 2026-09-10]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-10.html</guid>
+            <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 6 本</h2>
+<h3>ICYMI: 2026年8月にAIビルダー向けにリリースされた新機能まとめ</h3>
+<p>Bedrock・Bedrock AgentCore・Strands まわりの1か月分のアップデートを一気に把握できる棚卸し記事。OpenAI モデルの100万トークンコンテキスト、クロスリージョン推論、最大14日間動作するエージェント、Strands Robots など個別記事を追いきれなかった人には特に有用。
+<a href="https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-august-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ficymi-what-landed-for-ai-builders-in-august-2026%2F">Google 翻訳で全文を読む</a></p>
+<h3>Heurist FinanceがAmazon Bedrock AgentCoreで構築したAIネイティブな投資分析ワークベンチ</h3>
+<p>AgentCore の Payments・Identity・Memory・Code Interpreter・Observability を組み合わせた実運用事例で、少人数チームでも監査可能なエージェント基盤を組めることを示している。実際のプロダクションアーキテクチャの参考としてそのまま応用しやすい。
+<a href="https://aws.amazon.com/blogs/machine-learning/how-heurist-finance-built-an-ai-native-investment-workbench-on-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-heurist-finance-built-an-ai-native-investment-workbench-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker HyperPodとvLLMでQwen3.8-2.4T-A95Bをデプロイする</h3>
+<p>2.4兆パラメータのオープンウェイトモデルを NVFP4 量子化・投機的デコーディング付きで動かす手順を解説しており、超大規模モデルを自前で運用する際のクラスタ構成やコスト設計の勘所がわかる。
+<a href="https://aws.amazon.com/blogs/machine-learning/deploying-qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperpod-with-vllm/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploying-qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperpod-with-vllm%2F">Google 翻訳で全文を読む</a></p>
+<h3>Ray Serve Deep Learning ContainersでTorchServeワークロードを簡素化・サポートする</h3>
+<p>メンテナンス終了した TorchServe からの移行先として、EKS 上で動く検証済みの Ray Serve DLC を紹介。GPU 推論スタックを自前運用しているチームには移行判断の材料として重要。
+<a href="https://aws.amazon.com/blogs/machine-learning/simplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fsimplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock 経由の Claude Code で auto mode を試したら、モデルによって出たり出なかったりした</h3>
+<p>Bedrock 経由で Claude Code を運用している人には見逃せない、モデルごとの機能差の実地検証。ドキュメントだけでは分からない挙動差を確認できる点が有用。
+<a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code を Amazon Bedrock 経由で使う環境を作る（WSL + aws-vault + 国内リージョン）</h3>
+<p>Claude Enterprise と Bedrock 経由の Claude Code を同一 WSL 環境で切り替えられるようにする実践的なセットアップ手順。aws-vault や国内リージョン指定など、社内利用でそのまま流用できる構成が具体的に示されている。
+<a href="https://dev.classmethod.jp/articles/claude-code-bedrock-jp-region/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-bedrock-jp-region%2F">Google 翻訳で全文を読む</a>
+</content></p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

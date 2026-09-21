@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Latent Space — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Latent Space の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Sat, 19 Sep 2026 05:48:28 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[[AINews] Here are 6 Clones of Jev in 2 days]]></title>
+            <link>https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in</link>
+            <guid>https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in</guid>
+            <pubDate>Sat, 19 Sep 2026 05:48:28 GMT</pubDate>
+            <description><![CDATA[Imitation is the sincerest form of Flattery]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-here-are-6-clones-of-jev-in">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] not much happened today]]></title>
+            <link>https://www.latent.space/p/ainews-not-much-happened-today-612</link>
+            <guid>https://www.latent.space/p/ainews-not-much-happened-today-612</guid>
+            <pubDate>Fri, 18 Sep 2026 06:28:43 GMT</pubDate>
+            <description><![CDATA[a quiet day]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-not-much-happened-today-612">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-not-much-happened-today-612">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Reality Checks on AI News (Yegge shuts down Gas Town, Databricks’ +60% Astra cost)]]></title>
+            <link>https://www.latent.space/p/ainews-reality-checks-on-ai-news</link>
+            <guid>https://www.latent.space/p/ainews-reality-checks-on-ai-news</guid>
+            <pubDate>Thu, 17 Sep 2026 07:28:25 GMT</pubDate>
+            <description><![CDATA[A dash of cold water keeps the foomers away.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-reality-checks-on-ai-news">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-reality-checks-on-ai-news">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Underwriting Superintelligence: Backing Agents you can Sue — Rune Kvist, AIUC]]></title>
+            <link>https://www.latent.space/p/aiuc</link>
+            <guid>https://www.latent.space/p/aiuc</guid>
+            <pubDate>Wed, 16 Sep 2026 18:07:45 GMT</pubDate>
+            <description><![CDATA[We sit down with AIUC’s CEO on their Series A!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/aiuc">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Faiuc">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Jev: a “System One Model” that only decides/classifies/routes/scores — >100x faster, >200x cheaper than small frontier LLMs]]></title>
+            <link>https://www.latent.space/p/ainews-jev-a-system-one-model-that</link>
+            <guid>https://www.latent.space/p/ainews-jev-a-system-one-model-that</guid>
+            <pubDate>Wed, 16 Sep 2026 11:09:53 GMT</pubDate>
+            <description><![CDATA[congrats to TypeSafe!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-jev-a-system-one-model-that">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-jev-a-system-one-model-that">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

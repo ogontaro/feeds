@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head><title>ogontaro / rss</title></head>
+  <body>
+    <outline text="日次レポート" title="日次レポート">
+      <outline type="rss" text="Claude レポート" title="Claude レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-claude.xml"/>
+      <outline type="rss" text="Kubernetes レポート" title="Kubernetes レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-kubernetes.xml"/>
+      <outline type="rss" text="AWS レポート" title="AWS レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-aws.xml"/>
+    </outline>
+    <outline text="週次リリース" title="週次リリース">
+      <outline type="rss" text="Claude リリース" title="Claude リリース" xmlUrl="https://ogontaro.github.io/feeds/digest/release-claude.xml"/>
+      <outline type="rss" text="Kubernetes リリース" title="Kubernetes リリース" xmlUrl="https://ogontaro.github.io/feeds/digest/release-kubernetes.xml"/>
+      <outline type="rss" text="AWS リリース" title="AWS リリース" xmlUrl="https://ogontaro.github.io/feeds/digest/release-aws.xml"/>
+    </outline>
+  </body>
+</opml>

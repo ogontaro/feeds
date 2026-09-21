@@ -23,5 +23,7 @@ li { margin: .3rem 0; }
 .report p { margin: .3rem 0 1.2rem; }
 .card { border: 1px solid var(--line); border-radius: 8px; padding: .2rem 1rem 1rem; margin: 1rem 0; }
 .card h3 { font-size: 1.1rem; margin: 1rem 0 0; }
+.muted { color: var(--muted); font-size: .85rem; font-weight: 400; }
+main > p.muted { margin-top: -1.2rem; }
 .card ul { padding-left: 1.1rem; }
 footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }

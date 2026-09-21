@@ -4,6 +4,11 @@ export type Kind = "content" | "release";
 export type Feed = {
   url: string;
   name: string;
+  /**
+   * 翻訳フィードのファイル識別子(translated/<id>.xml)。
+   * 海外サイトの content フィードは必須。日本語サイトと release フィードは不要。
+   */
+  id?: string;
   domain: Domain;
   kind: Kind;
   enabled?: boolean;
@@ -36,12 +41,11 @@ export type SourceEntry = {
   sourceName: string;
 };
 
-/** An entry after translation, as persisted in translated-<domain>.xml. */
+/** An entry after translation, as persisted in translated/<id>.xml (one site per feed). */
 export type TranslatedEntry = {
   guid: string;
   link: string;
   titleJa: string;
   descriptionJa: string;
   pubDate: Date;
-  sourceName: string;
 };

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Argo Project — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Argo Project の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Wed, 16 Sep 2026 16:00:25 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Argo CD v3.6-rc1 is here!]]></title>
+            <link>https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/c0b562dc78d1</guid>
+            <pubDate>Wed, 16 Sep 2026 16:00:25 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-6-rc1-is-here-c0b562dc78d1%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

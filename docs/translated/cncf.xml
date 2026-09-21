@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>CNCF Blog — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>CNCF Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Thu, 17 Sep 2026 11:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[OpenTelemetry everywhere: Migrating a metrics platform at scale]]></title>
+            <link>https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/</link>
+            <guid>https://www.cncf.io/?p=174542</guid>
+            <pubDate>Thu, 17 Sep 2026 11:00:00 GMT</pubDate>
+            <description><![CDATA[Why we did this at all For most of the last decade our metrics pipeline ran on gostatsd, the open-source StatsD implementation we maintain. It primarily did two jobs: as sidecar on every host and the...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F17%2Fopentelemetry-everywhere-migrating-a-metrics-platform-at-scale%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Running OpenBao on Kubernetes with a CloudNativePG PostgreSQL backend]]></title>
+            <link>https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/</link>
+            <guid>https://www.cncf.io/?p=174771</guid>
+            <pubDate>Wed, 16 Sep 2026 11:30:00 GMT</pubDate>
+            <description><![CDATA[Managing infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation’s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F16%2Frunning-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[What I learned organizing KCD Lima 2026]]></title>
+            <link>https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/</link>
+            <guid>https://www.cncf.io/?p=174852</guid>
+            <pubDate>Tue, 15 Sep 2026 16:24:05 GMT</pubDate>
+            <description><![CDATA[On July 18, 2026, we held the third edition of Kubernetes Community Days Lima at UTEC in Barranco. By now, we have already sent the Transparency Report to the CNCF, thanked our sponsors, and processed the...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F15%2Fwhat-i-learned-organizing-kcd-lima-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cilium 1.20: Gateway API ExternalAuth, TCPRoute/UDPRoute, ENI IPAM for IPv6, and more]]></title>
+            <link>https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/</link>
+            <guid>https://www.cncf.io/?p=173414</guid>
+            <pubDate>Mon, 14 Sep 2026 10:45:49 GMT</pubDate>
+            <description><![CDATA[Cilium 1.20, the second major open source Cilium release of 2026 after Cilium 1.19, is finally here. Three themes stand out in this release: Thank you to every contributor, reviewer and maintainer who made Cilium 1.20...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F14%2Fcilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[KubeCon + CloudNativeCon North America 2026: Your Week in Salt Lake City]]></title>
+            <link>https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/</link>
+            <guid>https://www.cncf.io/?p=174965</guid>
+            <pubDate>Fri, 11 Sep 2026 12:29:33 GMT</pubDate>
+            <description><![CDATA[This November, the cloud native community is heading to Salt Lake City. From November 9–12, 2026, KubeCon + CloudNativeCon North America will bring together adopters and technologists from across open source and cloud native communities for...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F11%2Fkubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Building a reliable cloud native foundation for distributed AI training]]></title>
+            <link>https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/</link>
+            <guid>https://www.cncf.io/?p=174536</guid>
+            <pubDate>Fri, 11 Sep 2026 11:00:00 GMT</pubDate>
+            <description><![CDATA[AI workloads are changing what platform teams need from infrastructure. Provisioning GPUs and standing up a cluster no longer makes a platform “AI-ready.” Once training spans more than one node, the bottlenecks show up in places...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F11%2Fbuilding-a-reliable-cloud-native-foundation-for-distributed-ai-training%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes disaster recovery: Guidance from three reproducible failure scenarios]]></title>
+            <link>https://www.cncf.io/blog/2026/09/10/kubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios/</link>
+            <guid>https://www.cncf.io/?p=174488</guid>
+            <pubDate>Thu, 10 Sep 2026 11:37:00 GMT</pubDate>
+            <description><![CDATA[Scope This document describes three failure scenarios that separate having backups from being able to recover, and the guidance that follows from each. Every scenario is reproducible on a laptop from the lab repository above, and...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/10/kubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F10%2Fkubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Whose GPUs are these, anyway? Secure, self-service metrics for multi-tenant Kubernetes]]></title>
+            <link>https://www.cncf.io/blog/2026/09/09/whose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes/</link>
+            <guid>https://www.cncf.io/?p=174478</guid>
+            <pubDate>Wed, 09 Sep 2026 11:27:00 GMT</pubDate>
+            <description><![CDATA[The question that stopped the meeting It was a routine cost review. The slide showed the month’s GPU spend, the biggest line on the whole infrastructure bill, and someone asked a five-word question: “Are we using...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/09/whose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F09%2Fwhose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How cloud native goes AI native]]></title>
+            <link>https://www.cncf.io/blog/2026/09/09/how-cloud-native-goes-ai-native/</link>
+            <guid>https://www.cncf.io/?p=174533</guid>
+            <pubDate>Wed, 09 Sep 2026 08:13:23 GMT</pubDate>
+            <description><![CDATA[“A sales guy writing code” used to be the lead-up to a joke. But now no one’s laughing. Designers used to sit meekly waiting for the high priests of code to make their designs real. Now...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/09/how-cloud-native-goes-ai-native/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F09%2Fhow-cloud-native-goes-ai-native%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes access via an identity provider: Public client, not confidential]]></title>
+            <link>https://www.cncf.io/blog/2026/09/08/kubernetes-access-via-an-identity-provider-public-client-not-confidential/</link>
+            <guid>https://www.cncf.io/?p=174217</guid>
+            <pubDate>Tue, 08 Sep 2026 11:30:00 GMT</pubDate>
+            <description><![CDATA[Access control belongs on the same day-zero checklist as networking and storage. On most on-prem clusters, it never makes the list. The Identity Gap Managed cloud Kubernetes ships IAM or SSO integration out of the box....]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/08/kubernetes-access-via-an-identity-provider-public-client-not-confidential/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F08%2Fkubernetes-access-via-an-identity-provider-public-client-not-confidential%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Distributed tracing for CI pipelines without touching a single workflow file]]></title>
+            <link>https://www.cncf.io/blog/2026/09/08/distributed-tracing-for-ci-pipelines-without-touching-a-single-workflow-file/</link>
+            <guid>https://www.cncf.io/?p=174357</guid>
+            <pubDate>Tue, 08 Sep 2026 11:00:00 GMT</pubDate>
+            <description><![CDATA[You’ve probably felt this one: GitHub Actions usage creeps up across your org, and your actual visibility into it doesn’t keep pace. Which workflows are slow? Which are flaky? How long are jobs sitting queued for...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/08/distributed-tracing-for-ci-pipelines-without-touching-a-single-workflow-file/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F08%2Fdistributed-tracing-for-ci-pipelines-without-touching-a-single-workflow-file%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Handling vulnerability reports: Recipe card]]></title>
+            <link>https://www.cncf.io/blog/2026/09/07/handling-vulnerability-reports-recipe-card/</link>
+            <guid>https://www.cncf.io/?p=174136</guid>
+            <pubDate>Mon, 07 Sep 2026 11:30:00 GMT</pubDate>
+            <description><![CDATA[Recipe Handling Vulnerability Reports Target audience (the chef) This recipe is aimed at small and medium non-security focused projects. Maintainers of a high-risk security sensitive project, you probably need a more sophisticated approach (check out https://alpha-omega.dev/) Scope...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/07/handling-vulnerability-reports-recipe-card/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F07%2Fhandling-vulnerability-reports-recipe-card%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes isn’t new, but AI makes It scary again]]></title>
+            <link>https://www.cncf.io/blog/2026/09/04/kubernetes-isnt-new-but-ai-makes-it-scary-again/</link>
+            <guid>https://www.cncf.io/?p=174210</guid>
+            <pubDate>Fri, 04 Sep 2026 11:00:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes isn’t brand new anymore. Yet, for many teams, adopting it still feels intimidating. Even if you’ve watched Kubernetes become the default foundation for production software and AI workloads, it can still feel like a big...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/04/kubernetes-isnt-new-but-ai-makes-it-scary-again/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F04%2Fkubernetes-isnt-new-but-ai-makes-it-scary-again%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CPU + GPU: Why AI platform engineering is a heterogeneous infrastructure problem]]></title>
+            <link>https://www.cncf.io/blog/2026/09/04/cpu-gpu-why-ai-platform-engineering-is-a-heterogeneous-infrastructure-problem/</link>
+            <guid>https://www.cncf.io/?p=173482</guid>
+            <pubDate>Fri, 04 Sep 2026 11:00:00 GMT</pubDate>
+            <description><![CDATA[AI infrastructure conversations often start with GPUs. Accelerators provide much of the compute behind model training and inference, so the focus is understandable. But a production AI workload rarely starts and ends on a GPU. Data...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/04/cpu-gpu-why-ai-platform-engineering-is-a-heterogeneous-infrastructure-problem/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F04%2Fcpu-gpu-why-ai-platform-engineering-is-a-heterogeneous-infrastructure-problem%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Join OSPOlogy + OSPO Summit China 2026 in Shanghai]]></title>
+            <link>https://www.cncf.io/blog/2026/09/03/join-ospology-ospo-summit-china-2026-in-shanghai/</link>
+            <guid>https://www.cncf.io/?p=174207</guid>
+            <pubDate>Thu, 03 Sep 2026 12:32:33 GMT</pubDate>
+            <description><![CDATA[There’s still time to join OSPOlogy + OSPO Summit China 2026, taking place on September 7, 2026, in Shanghai, China as part of KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China. This event will...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/03/join-ospology-ospo-summit-china-2026-in-shanghai/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F03%2Fjoin-ospology-ospo-summit-china-2026-in-shanghai%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Migrating a critical Kubernetes deployment from the default namespace without any downtime]]></title>
+            <link>https://www.cncf.io/blog/2026/09/03/migrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime/</link>
+            <guid>https://www.cncf.io/?p=174128</guid>
+            <pubDate>Thu, 03 Sep 2026 11:00:00 GMT</pubDate>
+            <description><![CDATA[Somewhere in your cluster there’s probably a deployment sitting in the default namespace that everyone knows shouldn’t be there. Nobody put it there maliciously, it just happened, early on, before anyone had opinions about namespace hygiene,...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/03/migrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F03%2Fmigrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Metal3 meets KubeVirtBMC: Provisioning KubeVirt VMs like bare metal]]></title>
+            <link>https://www.cncf.io/blog/2026/09/02/metal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal/</link>
+            <guid>https://www.cncf.io/?p=173563</guid>
+            <pubDate>Wed, 02 Sep 2026 11:31:00 GMT</pubDate>
+            <description><![CDATA[In the previous post , we introduced KubeVirtBMC and showed how it provides virtual BMC endpoints for KubeVirt VMs. We tested it with raw IPMI and Redfish commands. That was fun, but the real power of...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/02/metal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F02%2Fmetal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

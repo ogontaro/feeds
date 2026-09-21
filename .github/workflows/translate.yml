@@ -20,10 +20,10 @@ jobs:
       - uses: jdx/mise-action@v2
       - run: bun install --frozen-lockfile
 
-      - run: bun run src/translate.ts --strict
+      - run: bun run src/translate/run.ts --strict
         env:
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
-      - run: bun run src/build.ts
+      - run: bun run src/site/build.ts
 
       - name: commit docs
         env:

@@ -22,14 +22,14 @@ jobs:
       - run: bun install --frozen-lockfile
 
       - name: refresh translated feeds
-        run: bun run src/translate.ts
+        run: bun run src/translate/run.ts
         env:
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
 
       # ---------------- claude ----------------
       - id: collect_claude
         run: |
-          bun run src/report-collect.ts claude
+          bun run src/digest/report-collect.ts claude
           echo "n=$(jq length .cache/report-claude-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate claude
         id: curate_claude
@@ -69,12 +69,12 @@ jobs:
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render claude
         if: steps.collect_claude.outputs.n != '0'
-        run: bun run src/report-render.ts claude
+        run: bun run src/digest/report-render.ts claude
 
       # ---------------- kubernetes ----------------
       - id: collect_kubernetes
         run: |
-          bun run src/report-collect.ts kubernetes
+          bun run src/digest/report-collect.ts kubernetes
           echo "n=$(jq length .cache/report-kubernetes-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate kubernetes
         id: curate_kubernetes
@@ -114,12 +114,12 @@ jobs:
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render kubernetes
         if: steps.collect_kubernetes.outputs.n != '0'
-        run: bun run src/report-render.ts kubernetes
+        run: bun run src/digest/report-render.ts kubernetes
 
       # ---------------- aws ----------------
       - id: collect_aws
         run: |
-          bun run src/report-collect.ts aws
+          bun run src/digest/report-collect.ts aws
           echo "n=$(jq length .cache/report-aws-input.json)" >> "$GITHUB_OUTPUT"
       - name: curate aws
         id: curate_aws
@@ -159,9 +159,9 @@ jobs:
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render aws
         if: steps.collect_aws.outputs.n != '0'
-        run: bun run src/report-render.ts aws
+        run: bun run src/digest/report-render.ts aws
 
-      - run: bun run src/build.ts
+      - run: bun run src/site/build.ts
 
       - name: commit docs
         env:

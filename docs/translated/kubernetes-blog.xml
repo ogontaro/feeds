@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Kubernetes Blog — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Kubernetes Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Wed, 16 Sep 2026 18:30:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions]]></title>
+            <link>https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/</link>
+            <guid>https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/</guid>
+            <pubDate>Wed, 16 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohibiting deletion of files across containers or execution of arbitrary binaries from writable volumes, directly in Kubernetes without any complicated circumvention. Linux storage and permission fundamentals Before diving into the new Kubernetes features, let us briefly revi]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F16%2Fkubernetes-v1-37-hardening-container-storage%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta]]></title>
+            <link>https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/</guid>
+            <pubDate>Tue, 15 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36, this enhancement builds on Pod-Level Resources by equipping Kubelet's Topology Manager, CPU Manager, and Memory Manager to use Pod-level resource declarations (.spec.resources) directly when making hardware placement decisions. Bringing pod-level resources to node managers Before this feature, obtaining exclusi]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F15%2Fkubernetes-v1-37-pod-level-resource-managers-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes Changed Block Tracking API - Beta Differences]]></title>
+            <link>https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/</guid>
+            <pubDate>Mon, 14 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta. If you aren't yet familiar with changed block tracking for storage in Kubernetes, the Alpha announcement covers the motivation, the three primary components (the CSI SnapshotMetadata gRPC service, the SnapshotMetadataService CRD, and the external-snapshot-metadata sidecar), and a walkthrough of how to use]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fcsi-changed-block-tracking-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Memory QoS Graduates to Beta]]></title>
+            <link>https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/</guid>
+            <pubDate>Mon, 14 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It was first introduced as Alpha in v1.22, and expanded in v1.36 with tiered memory reservation. This post covers what changed in v1.37, what the Beta promotion means for cluster operators, and how to configure the feature. What changed in v1.37 Memory QoS is Beta and enabl]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fkubernetes-v1-37-memory-qos-graduates-to-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Native Histograms Graduates to Beta]]></title>
+            <link>https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/</guid>
+            <pubDate>Fri, 11 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-5808) bring high-resolution, low-cardinality observability to Kubernetes metrics. By adopting Prometheus Native Histograms, Kubernetes components now expose latency and duration metrics with far greater accuracy while significantly reducing telemetry storage and scraping ov]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F11%2Fkubernetes-v1-37-native-histograms-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)]]></title>
+            <link>https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/</link>
+            <guid>https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/</guid>
+            <pubDate>Thu, 10 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, application developers and cluster operators gained the powerful ability to dynamically adjust CPU and memory allocations of running containers without incurring disruptive restarts or application downtime. However, in-place resizing introduced a unique resource scheduling gap]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F10%2Fkubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Introducing Node Lifecycle Conditions]]></title>
+            <link>https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/</link>
+            <guid>https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/</guid>
+            <pubDate>Wed, 09 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned way to say that a Node is draining, undergoing maintenance, or undergoing Graceful Node Shutdown. Kubernetes v1.37 introduces five well-known Node conditions that provide that description: DrainInProgress Drained MaintenancePlanned MaintenanceInProgress GracefulNodeShutd]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F09%2Fkubernetes-v1-37-node-lifecycle-conditions%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Advancing Workload-Aware Scheduling]]></title>
+            <link>https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/</link>
+            <guid>https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/</guid>
+            <pubDate>Tue, 08 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milestone in the Workload-Aware Scheduling (WAS) journey. In this release, the core Workload and PodGroup APIs—enabling gang scheduling—along with Workload-Aware Preemption (WAP) and shared DRA ResourceClaims for PodGroups, all graduate to Beta, solidifying their role in the K]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F08%2Fkubernetes-v1-37-advancing-workload-aware-scheduling%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta]]></title>
+            <link>https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/</guid>
+            <pubDate>Fri, 04 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host, using a Linux user namespace. This technique is also known as rootless mode. The work started as an experiment in 2018, and was merged into Kubernetes v1.22 (2021) as an alpha feature (Kubernetes Enhancement Proposal KEP-2033). This feature should not be confused with u]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F04%2Fkubernetes-v1-37-rootless-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: DRA Updates]]></title>
+            <link>https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/</link>
+            <guid>https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/</guid>
+            <pubDate>Thu, 03 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases. Several more features graduate to Beta or GA. A fresh batch of alpha features rounds out the release. I'll dive into what's new for DRA in Kubernetes 1.37! What's stable in 1.37 DRA Extended Resource support has graduated to GA. This is the mechanism that lets DRA driv]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F03%2Fkubernetes-v1-37-dra-updates%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler]]></title>
+            <link>https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/</link>
+            <guid>https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/</guid>
+            <pubDate>Wed, 02 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external metric can now scale a workload to zero replicas, then bring it back when the metric changes. Before v1.37, you needed an add-on or external component, or you had to enable the Alpha feature gate, to scale from zero. It is now part of core Kubernetes. Scaling to zero rem]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F02%2Fkubernetes-v1-37-hpa-scale-to-zero-beta%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads]]></title>
+            <link>https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/</link>
+            <guid>https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/</guid>
+            <pubDate>Tue, 01 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable. The cost of large reads The API server serves most list and watch requests from its in-memory watch cache. Populating that cache requires reading a resource's full state from etcd, at startup and on every re-initialization. For a resource with many objects, or large on]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F01%2Fkubernetes-v1-37-etcd-range-stream%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Storage Version Migration Enabled by Default]]></title>
+            <link>https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/</link>
+            <guid>https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/</guid>
+            <pubDate>Mon, 31 Aug 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API (storagemigration.k8s.io/v1) and control plane controller are now fully stable and enabled by default across all v1.37 Kubernetes clusters. The problem with stale storage versions In Kubernetes, stored API resources are written using a specific storage version (schema representation). The way Kub]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F08%2F31%2Fkubernetes-v1-37-storage-version-migration-ga%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles]]></title>
+            <link>https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/</link>
+            <guid>https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/</guid>
+            <pubDate>Fri, 28 Aug 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Pod Certificate / Cluster Trust Bundles Blog Post Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other important feature of Kubernetes is production identity — how your workload can authenticate to other systems in order to do its job. Up until now, the primary production identity mechanism built into Kubernetes has been se]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F08%2F28%2Fkubernetes-v1-37-pod-certificates-and-cluster-trust-bundles%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Metrics API graduates to stable]]></title>
+            <link>https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/</link>
+            <guid>https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/</guid>
+            <pubDate>Thu, 27 Aug 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes v1.37 promotes the metrics.k8s.io API to stable (v1). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster operators and application developers, this graduation means that the API now has the stability guarantees associated with a Kubernetes stable API. The v1 API has the same resource types and fields as v1beta1; this is an API-version graduation, not a change to the metrics t]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F08%2F27%2Fkubernetes-v1-37-metrics-api-ga%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Garhwal]]></title>
+            <link>https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/</link>
+            <guid>https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/</guid>
+            <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent delivery of high-quality releases underscores the strength of our development cycle and the vibrant support from our community. This release consists of 67 enhancements. Of those enhancements, 16 have graduated to Stable, 23 have graduated to Beta, 27 are entering Alpha, and 1]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F08%2F26%2Fkubernetes-v1-37-release%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

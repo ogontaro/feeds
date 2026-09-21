@@ -21,5 +21,5 @@ external-secrets / KEDA / Pomerium / Terraform 等）。
 ### <プロジェクト名> <バージョン（範囲）>
 **破壊的変更**: <あれば。なければ「なし」>
 <2〜4行の日本語要約。移行の要否と注目機能。>
-[リリースを見る](<link>)
+[リリースを見る](<link>) / [Google 翻訳で読む](https://translate.google.com/translate?sl=auto&tl=ja&u=<URLエンコードした link>)
 ```

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>The New Stack — Platform Engineering — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>The New Stack — Platform Engineering の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Sat, 19 Sep 2026 14:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[One engineer shipped 2,000 PRs a month to production. Verification is the key.]]></title>
+            <link>https://thenewstack.io/agentic-verification-distributed-systems/</link>
+            <guid>https://thenewstack.io/?p=22837267</guid>
+            <pubDate>Sat, 19 Sep 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[Lauren Tan, an engineer on the Grok team at SpaceXAI, who previously worked at Cursor and Meta, recently published a The post One engineer shipped 2,000 PRs a month to production. Verification is the key. appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/agentic-verification-distributed-systems/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fagentic-verification-distributed-systems%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes can run AI inference. But can it count the real cost?]]></title>
+            <link>https://thenewstack.io/kubernetes-ai-inference-costs/</link>
+            <guid>https://thenewstack.io/?p=22837309</guid>
+            <pubDate>Fri, 18 Sep 2026 15:53:21 GMT</pubDate>
+            <description><![CDATA[Welcome to another edition of Road to KubeCon, where we’re tracking the Kubernetes and cloud-native ecosystem on the way into The post Kubernetes can run AI inference. But can it count the real cost? appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/kubernetes-ai-inference-costs/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-ai-inference-costs%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How buildpacks help enterprises finally operate container security controls at scale]]></title>
+            <link>https://thenewstack.io/buildpacks-container-security-scale/</link>
+            <guid>https://thenewstack.io/?p=22837251</guid>
+            <pubDate>Fri, 18 Sep 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[Container security controls often fail less because organizations lack standards, scanners, or best practices, and more. After all, every service The post How buildpacks help enterprises finally operate container security controls at scale appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/buildpacks-container-security-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fbuildpacks-container-security-scale%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How to attach an owner to every cloud resource you find]]></title>
+            <link>https://thenewstack.io/attach-owner-cloud-resources/</link>
+            <guid>https://thenewstack.io/?p=22836777</guid>
+            <pubDate>Tue, 15 Sep 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[The engineer who knew why that cloud instance existed has left the company. The instance is still running, the bill The post How to attach an owner to every cloud resource you find appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/attach-owner-cloud-resources/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fattach-owner-cloud-resources%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The AI-native SDLC won’t be one process]]></title>
+            <link>https://thenewstack.io/spec-driven-sdlc-gates/</link>
+            <guid>https://thenewstack.io/?p=22836558</guid>
+            <pubDate>Sat, 12 Sep 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[Anthropic recently published its AI-Native SDLC Playbook. Its central claim is that “code is no longer the bottleneck.” When agents The post The AI-native SDLC won’t be one process appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/spec-driven-sdlc-gates/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fspec-driven-sdlc-gates%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Red Hat AI 3.5 tackles the GPU queue that can stall AI pilots]]></title>
+            <link>https://thenewstack.io/red-hat-ai-multitenancy/</link>
+            <guid>https://thenewstack.io/?p=22836130</guid>
+            <pubDate>Thu, 10 Sep 2026 17:01:36 GMT</pubDate>
+            <description><![CDATA[Red Hat released Red Hat AI 3.5 this week, a move designed to let software engineering teams run AI with The post Red Hat AI 3.5 tackles the GPU queue that can stall AI pilots appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/red-hat-ai-multitenancy/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fred-hat-ai-multitenancy%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[After nine years as HashiCorp CEO, Dave McJannet now wants to “unblock” enterprise AI agents]]></title>
+            <link>https://thenewstack.io/hashicorp-mcjannet-dome-agents/</link>
+            <guid>https://thenewstack.io/?p=22835974</guid>
+            <pubDate>Tue, 08 Sep 2026 12:59:00 GMT</pubDate>
+            <description><![CDATA[Ask a traditional enterprise application for a customer address or today’s revenue figures and, broadly speaking, it follows a predictable The post After nine years as HashiCorp CEO, Dave McJannet now wants to “unblock” enterprise AI agents appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/hashicorp-mcjannet-dome-agents/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fhashicorp-mcjannet-dome-agents%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Your agent context needs a development lifecycle]]></title>
+            <link>https://thenewstack.io/agent-context-development-lifecycle/</link>
+            <guid>https://thenewstack.io/?p=22835055</guid>
+            <pubDate>Mon, 31 Aug 2026 13:00:00 GMT</pubDate>
+            <description><![CDATA[Skills, agent configurations, prompt instructions, and rules files. These artifacts now determine what your coding agents produce. They shape every The post Your agent context needs a development lifecycle appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/agent-context-development-lifecycle/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fagent-context-development-lifecycle%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The 3 roles AI agents play in your developer platform]]></title>
+            <link>https://thenewstack.io/ai-agent-platform-roles/</link>
+            <guid>https://thenewstack.io/?p=22835002</guid>
+            <pubDate>Sat, 29 Aug 2026 13:00:00 GMT</pubDate>
+            <description><![CDATA[Engineering organizations are trying to deliver as fast as technology allows, bringing agentic AI into their developer platforms and working The post The 3 roles AI agents play in your developer platform appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/ai-agent-platform-roles/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fai-agent-platform-roles%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Microsoft just released Agent Lightning v1.0. Here’s why it matters for platform engineers.]]></title>
+            <link>https://thenewstack.io/microsoft-agent-lightning-harness/</link>
+            <guid>https://thenewstack.io/?p=22834448</guid>
+            <pubDate>Wed, 26 Aug 2026 12:30:00 GMT</pubDate>
+            <description><![CDATA[Agentic reinforcement learning has been suffering from a disconnect, an uncoupling, and a misarticulation. The polarity arises from how a The post Microsoft just released Agent Lightning v1.0. Here’s why it matters for platform engineers. appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/microsoft-agent-lightning-harness/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fmicrosoft-agent-lightning-harness%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The open mainframe: the keystone of the end-to-end digital enterprise]]></title>
+            <link>https://thenewstack.io/open-mainframe-keystone-enterprise/</link>
+            <guid>https://thenewstack.io/?p=22834210</guid>
+            <pubDate>Sat, 22 Aug 2026 17:00:00 GMT</pubDate>
+            <description><![CDATA[In the first article in this series, I discussed how the Open Mainframe Project (OMP) and its open-source framework, Zowe, The post The open mainframe: the keystone of the end-to-end digital enterprise appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/open-mainframe-keystone-enterprise/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopen-mainframe-keystone-enterprise%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How to build smarter OpenSearch alerts: Join our live conversation]]></title>
+            <link>https://thenewstack.io/opensearch-ppl-unified-alerting/</link>
+            <guid>https://thenewstack.io/?p=22833880</guid>
+            <pubDate>Thu, 20 Aug 2026 17:40:44 GMT</pubDate>
+            <description><![CDATA[OpenSearch is a top-level open-source project under the Linux Foundation, backed by Amazon Web Services and other prominent players. The The post How to build smarter OpenSearch alerts: Join our live conversation appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/opensearch-ppl-unified-alerting/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopensearch-ppl-unified-alerting%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

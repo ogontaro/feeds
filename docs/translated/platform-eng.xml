@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Platform Engineering Blog — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Platform Engineering Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Fri, 18 Sep 2026 09:40:27 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[The 4 levels of agentic software development]]></title>
+            <link>https://platformengineering.org/blog/the-4-levels-of-agentic-software-development</link>
+            <guid>https://platformengineering.org/blog/the-4-levels-of-agentic-software-development</guid>
+            <pubDate>Fri, 18 Sep 2026 09:40:27 GMT</pubDate>
+            <description><![CDATA[Discover the four levels of agentic software development. Learn how evolving your platform from human-in-the-loop to autonomous systems drives up to 30% throughput gains]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/the-4-levels-of-agentic-software-development">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fthe-4-levels-of-agentic-software-development">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Infrastructure identity for platform engineers]]></title>
+            <link>https://platformengineering.org/blog/infrastructure-identity-for-platform-engineers</link>
+            <guid>https://platformengineering.org/blog/infrastructure-identity-for-platform-engineers</guid>
+            <pubDate>Mon, 14 Sep 2026 18:53:54 GMT</pubDate>
+            <description><![CDATA[Discover how platform engineers can eliminate static secrets and embed Zero Trust into their IDP using short-lived, cryptographic infrastructure identities.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/infrastructure-identity-for-platform-engineers">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Finfrastructure-identity-for-platform-engineers">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How platform engineering 2.0 mitigates AI security and compliance risks]]></title>
+            <link>https://platformengineering.org/blog/how-platform-engineering-2-0-mitigates-ai-security-and-compliance-risks</link>
+            <guid>https://platformengineering.org/blog/how-platform-engineering-2-0-mitigates-ai-security-and-compliance-risks</guid>
+            <pubDate>Mon, 14 Sep 2026 18:53:54 GMT</pubDate>
+            <description><![CDATA[Discover how the shift from Platform Engineering 1.0 to 2.0 addresses critical AI security and compliance challenges. Learn how native model governance and workload isolation establish a scalable, secure foundation for integrating AI agents and LLMs into production workflows.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/how-platform-engineering-2-0-mitigates-ai-security-and-compliance-risks">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fhow-platform-engineering-2-0-mitigates-ai-security-and-compliance-risks">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[What is platform engineering?]]></title>
+            <link>https://platformengineering.org/blog/what-is-platform-engineering</link>
+            <guid>https://platformengineering.org/blog/what-is-platform-engineering</guid>
+            <pubDate>Mon, 14 Sep 2026 18:53:54 GMT</pubDate>
+            <description><![CDATA[Platform engineering is the method and discipline of designing and building platforms that enable self-service capabilities for teams, and increasingly AI agents, to automate the recurring aspects of knowledge work.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/what-is-platform-engineering">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhat-is-platform-engineering">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[9 things to consider before choosing an IaC platform in 2026]]></title>
+            <link>https://platformengineering.org/blog/9-things-to-consider-before-choosing-an-iac-platform-in-2026</link>
+            <guid>https://platformengineering.org/blog/9-things-to-consider-before-choosing-an-iac-platform-in-2026</guid>
+            <pubDate>Wed, 02 Sep 2026 12:12:35 GMT</pubDate>
+            <description><![CDATA[IaC platform evaluation in 2026: nine things to test, from execution and dependency handling to policy enforcement, support quality and AI workflows.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/9-things-to-consider-before-choosing-an-iac-platform-in-2026">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2F9-things-to-consider-before-choosing-an-iac-platform-in-2026">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[What is a Minimum Viable Platform (MVP)?]]></title>
+            <link>https://platformengineering.org/blog/what-is-a-minimum-viable-platform-mvp</link>
+            <guid>https://platformengineering.org/blog/what-is-a-minimum-viable-platform-mvp</guid>
+            <pubDate>Wed, 02 Sep 2026 12:12:35 GMT</pubDate>
+            <description><![CDATA[Unlock success in platform engineering: Avoid common pitfalls, embrace MVP approach, and win stakeholder support for a transformative platform initiative.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/what-is-a-minimum-viable-platform-mvp">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhat-is-a-minimum-viable-platform-mvp">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

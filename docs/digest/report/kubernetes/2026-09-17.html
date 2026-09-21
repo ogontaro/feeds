@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes レポート 2026-09-17</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes レポート 2026-09-17</h1>
+<article class="report"><h2>今日の 3 本</h2>
+<h3>Kubernetes v1.37: バインドマウントオプションとEmptyDirパーミッションによるコンテナストレージの強化</h3>
+<p>emptyDirのパーミッションモード指定とbind mountオプションという、地味だが実運用で刺さるストレージセキュリティ機能がv1.37で入った。複数コンテナ間でのファイル削除禁止や、書き込み可能ボリュームからの任意バイナリ実行禁止といった、これまで回避策でしか実現できなかったポリシーをKubernetesネイティブに強制できるようになる点が、マルチテナント環境やセキュリティ要件の厳しい基盤の設計者にとって重要。
+<a href="https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F16%2Fkubernetes-v1-37-hardening-container-storage%2F">Google 翻訳で全文を読む</a></p>
+<h3>Argo CD v3.6-rc1 がリリース</h3>
+<p>GitOpsのデファクトツールであるArgo CDの次期メジャーバージョンのリリース候補が公開された。多くの組織のデプロイ基盤に直結するため、正式リリース前に変更点を把握し検証環境で先行確認しておく価値がある。
+<a href="https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-6-rc1-is-here-c0b562dc78d1%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>
+<h3>CloudNativePG PostgreSQL バックエンドでOpenBaoをKubernetes上に構築する</h3>
+<p>シークレット管理基盤には自己修復性とベンダーロックインの回避が求められるが、HashiCorp VaultのオープンソースフォークであるOpenBaoとCloudNativePGを組み合わせることでそれを実現する構成を紹介している。特定クラウドに依存しないシークレット管理をKubernetesネイティブに設計したいプラットフォームチームにとって具体的な参考になる。
+<a href="https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F16%2Frunning-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend%2F">Google 翻訳で全文を読む</a></p>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

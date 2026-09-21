@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Kubernetes レポート — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
+        <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
+        <lastBuildDate>Mon, 21 Sep 2026 10:46:39 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-21]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-21.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-21.html</guid>
+            <pubDate>Mon, 21 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-20]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-20.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-20.html</guid>
+            <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-19]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-19.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-19.html</guid>
+            <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-18]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-18.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-18.html</guid>
+            <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>OpenTelemetry everywhere: 大規模メトリクス基盤の移行事例</h3>
+<p>自前のStatsD実装（gostatsd）からOpenTelemetryへメトリクスパイプラインを移行した経験談で、CNCFプロジェクトを本番の大規模環境にどう組み込むかという実務判断の参考になる。ホストサイドカーの構成変更や移行時のトレードオフなど、プラットフォームエンジニアリングの設計判断に直結する内容。
+<a href="https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F17%2Fopentelemetry-everywhere-migrating-a-metrics-platform-at-scale%2F">Google 翻訳で全文を読む</a></p>
+<h3>Falcoによるランタイムセキュリティ入門</h3>
+<p>CNCFのランタイムセキュリティプロジェクトFalcoの導入方法を解説する記事で、クラウドネイティブ環境でのセキュリティ監視をこれから整備したいチームにとって取っ掛かりになる。マルチテナンシーやワークロード保護の運用設計を検討する際の一次情報として有用。
+<a href="https://webflow.sysdig.com/blog/intro-runtime-security-falco">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintro-runtime-security-falco">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-17]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-17.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-17.html</guid>
+            <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<h3>Kubernetes v1.37: バインドマウントオプションとEmptyDirパーミッションによるコンテナストレージの強化</h3>
+<p>emptyDirのパーミッションモード指定とbind mountオプションという、地味だが実運用で刺さるストレージセキュリティ機能がv1.37で入った。複数コンテナ間でのファイル削除禁止や、書き込み可能ボリュームからの任意バイナリ実行禁止といった、これまで回避策でしか実現できなかったポリシーをKubernetesネイティブに強制できるようになる点が、マルチテナント環境やセキュリティ要件の厳しい基盤の設計者にとって重要。
+<a href="https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F16%2Fkubernetes-v1-37-hardening-container-storage%2F">Google 翻訳で全文を読む</a></p>
+<h3>Argo CD v3.6-rc1 がリリース</h3>
+<p>GitOpsのデファクトツールであるArgo CDの次期メジャーバージョンのリリース候補が公開された。多くの組織のデプロイ基盤に直結するため、正式リリース前に変更点を把握し検証環境で先行確認しておく価値がある。
+<a href="https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-6-rc1-is-here-c0b562dc78d1%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>
+<h3>CloudNativePG PostgreSQL バックエンドでOpenBaoをKubernetes上に構築する</h3>
+<p>シークレット管理基盤には自己修復性とベンダーロックインの回避が求められるが、HashiCorp VaultのオープンソースフォークであるOpenBaoとCloudNativePGを組み合わせることでそれを実現する構成を紹介している。特定クラウドに依存しないシークレット管理をKubernetesネイティブに設計したいプラットフォームチームにとって具体的な参考になる。
+<a href="https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F16%2Frunning-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-16.html</guid>
+            <pubDate>Wed, 16 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-15]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-15.html</guid>
+            <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<h3>Kubernetes の Changed Block Tracking API、Beta 版での変更点</h3>
+<p>バックアップ・スナップショット関連のCSI拡張機能がAlphaからBetaに昇格し、SnapshotMetadataService CRDやサイドカーの仕様が固まりつつある。バックアップ製品を自前実装・評価している運用者は、Alpha版との差分を把握しておくと移行判断がしやすくなる。
+<a href="https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fcsi-changed-block-tracking-beta%2F">Google 翻訳で全文を読む</a></p>
+<h3>Kubernetes v1.37: Memory QoS が Beta に昇格しデフォルト有効化</h3>
+<p>cgroup v2環境でのメモリ制御がBetaとなりデフォルトオンになるため、既存クラスタのアップグレード時に挙動が変わる可能性がある。ノードのメモリ管理・OOM挙動はコストとワークロード安定性に直結するため、運用者は事前に設定オプションを確認しておく価値がある。
+<a href="https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fkubernetes-v1-37-memory-qos-graduates-to-beta%2F">Google 翻訳で全文を読む</a></p>
+<h3>Cilium 1.20 リリース: Gateway API ExternalAuth、TCPRoute/UDPRoute、IPv6向けENI IPAM など</h3>
+<p>CNCFの主要CNIであるCiliumの大型メジャーリリースで、Gateway APIの認証連携やL4ルーティングの拡張、IPv6環境でのIPAM改善が含まれる。マルチテナンシーやネットワークポリシー設計を見直す際の参照先として押さえておきたい内容。
+<a href="https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F14%2Fcilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more%2F">Google 翻訳で全文を読む</a>
+</content></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-12.html</guid>
+            <pubDate>Sat, 12 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>分散AIトレーニング向けの信頼できるクラウドネイティブ基盤を作る</h3>
+<p>GPUを並べてクラスタを立てるだけでは「AI-ready」なプラットフォームにはならない、という指摘から始まる一本。マルチノード学習特有のボトルネック（ネットワーク、スケジューリング、耐障害性など）がどこに現れ、プラットフォームチームが何を設計すべきかを扱っており、AI基盤を任されているインフラ/プラットフォームエンジニアの設計判断に直結する内容です。</p>
+<p><a href="https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F11%2Fbuilding-a-reliable-cloud-native-foundation-for-distributed-ai-training%2F">Google 翻訳で全文を読む</a></p>
+<h3>AIなしで人力速攻突破：marimo CVE-2026-39987の手作りエクスプロイト解説</h3>
+<p>Sysdig TRTが、AI支援なしで一から手組みしたPythonツールだけでmarimoの脆弱性を突き、クラウドの踏み台ホストを侵害するまでの過程を具体的に解説しています。CVE単体の説明にとどまらず攻撃者視点での実際の突破手順が追えるため、クラウドネイティブ環境のセキュリティ対策やインシデント対応を考える上で参考になります。</p>
+<p><a href="https://webflow.sysdig.com/blog/machine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fmachine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-11.html</guid>
+            <pubDate>Fri, 11 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<h3>Kubernetesディザスタリカバリ: 3つの再現可能な障害シナリオから得られる知見</h3>
+<p>「バックアップを取っている」と「実際に復旧できる」は別物であることを、ラボで再現可能な3つの障害シナリオを通じて具体的に示している点が実務的です。手元で再現して検証できる構成になっているため、自組織のDR計画やRunbookの妥当性をチェックする材料としてそのまま使えます。
+<a href="https://www.cncf.io/blog/2026/09/10/kubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F10%2Fkubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes レポート 2026-09-10]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-10.html</guid>
+            <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<h3>Kubernetes v1.37: ノードライフサイクル条件（Node Lifecycle Conditions）の導入</h3>
+<p>v1.37でDrainInProgress・MaintenancePlanned・GracefulNodeShutdownなど5つの標準ノード条件が定義され、これまでクラウドベンダー独自の仕組みに頼っていたノードメンテナンスの表現がKubernetes本体で統一される。ノードドレインや計画メンテナンスの自動化・監視を設計している人には見逃せない変更。
+<a href="https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F09%2Fkubernetes-v1-37-node-lifecycle-conditions%2F">Google 翻訳で全文を読む</a></p>
+<h3>GPUは誰のもの？マルチテナントKubernetesにおけるセキュアなセルフサービスメトリクス</h3>
+<p>AI基盤で必ずぶつかるGPUコストの部門・テナント別可視化という課題を、テナント分離を崩さずセルフサービスで解決する設計を紹介している。マルチテナンシーとコスト最適化の両方に関わる実務者にとって参照価値が高い。
+<a href="https://www.cncf.io/blog/2026/09/09/whose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F09%2Fwhose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes%2F">Google 翻訳で全文を読む</a></p>
+<h3>クラウドネイティブがAIネイティブになるということ</h3>
+<p>生成AIでコードを書く主体がエンジニア以外にも広がる中、クラウドネイティブなプラットフォームやツールチェーンがどう変わっていくべきかを論じる視点記事。プラットフォームエンジニアリングの中長期的な方向性を考える材料になる。
+<a href="https://www.cncf.io/blog/2026/09/09/how-cloud-native-goes-ai-native/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F09%2Fhow-cloud-native-goes-ai-native%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

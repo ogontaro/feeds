@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Sysdig — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Sysdig の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Fri, 18 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Every regulatory disclosure rule asks the same question. Each calls it something else]]></title>
+            <link>https://webflow.sysdig.com/blog/every-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else</link>
+            <guid>https://webflow.sysdig.com/blog/every-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else</guid>
+            <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[EU orgs must juggle reporting obligations and timelines for CRA, GDPR, NIS2, and more. But the most important step is judging what needs reporting.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/every-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fevery-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Getting started with runtime security and Falco]]></title>
+            <link>https://webflow.sysdig.com/blog/intro-runtime-security-falco</link>
+            <guid>https://webflow.sysdig.com/blog/intro-runtime-security-falco</guid>
+            <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover how to get started with Falco to overcome the challenges of implementing runtime security for cloud-native workloads.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/intro-runtime-security-falco">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintro-runtime-security-falco">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Closing the cloud security gap with runtime security]]></title>
+            <link>https://webflow.sysdig.com/blog/closing-the-cloud-security-gap-with-runtime-security</link>
+            <guid>https://webflow.sysdig.com/blog/closing-the-cloud-security-gap-with-runtime-security</guid>
+            <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Security posture management isn't enough in 2026. Implement runtime security to enable deep visibility into zero days and other hidden threats. Learn more.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/closing-the-cloud-security-gap-with-runtime-security">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fclosing-the-cloud-security-gap-with-runtime-security">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why runtime security should be a top priority for CISOs]]></title>
+            <link>https://webflow.sysdig.com/blog/why-runtime-security-should-be-a-top-priority-for-cisos</link>
+            <guid>https://webflow.sysdig.com/blog/why-runtime-security-should-be-a-top-priority-for-cisos</guid>
+            <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[By reducing actual, material risks with runtime security, CISOs help their organizations become more resilient and secure.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/why-runtime-security-should-be-a-top-priority-for-cisos">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-runtime-security-should-be-a-top-priority-for-cisos">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Machine speed, hold the AI: Hand-rolled marimo CVE-2026-39987 exploit]]></title>
+            <link>https://webflow.sysdig.com/blog/machine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit</link>
+            <guid>https://webflow.sysdig.com/blog/machine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit</guid>
+            <pubDate>Fri, 11 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sysdig TRT details a hand-rolled attack against marimo's CVE-2026-39987 without AI, building custom Python tools to breach a cloud bastion host.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/machine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fmachine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How runtime insights helps with container security]]></title>
+            <link>https://webflow.sysdig.com/blog/how-runtime-insights-help-with-container-security</link>
+            <guid>https://webflow.sysdig.com/blog/how-runtime-insights-help-with-container-security</guid>
+            <pubDate>Tue, 08 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Runtime insights offers key visibility and intelligence to help detect real risk, cut through noise, and secure containerized applications.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/how-runtime-insights-help-with-container-security">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fhow-runtime-insights-help-with-container-security">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Runtime is the real defense, not just posture]]></title>
+            <link>https://webflow.sysdig.com/blog/runtime-is-the-real-defense-not-just-posture</link>
+            <guid>https://webflow.sysdig.com/blog/runtime-is-the-real-defense-not-just-posture</guid>
+            <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Instead of trying to build a forward-looking defense with backward-facing tools, it's time to flip the script: Start with runtime security.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/runtime-is-the-real-defense-not-just-posture">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fruntime-is-the-real-defense-not-just-posture">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cloud security and the power of runtime insights]]></title>
+            <link>https://webflow.sysdig.com/blog/cloud-security-and-the-power-of-runtime-insights</link>
+            <guid>https://webflow.sysdig.com/blog/cloud-security-and-the-power-of-runtime-insights</guid>
+            <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[As organizations move to the cloud, the adoption of a CNAPP with runtime insights becomes a pivotal strategy for securing cloud environments.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/cloud-security-and-the-power-of-runtime-insights">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fcloud-security-and-the-power-of-runtime-insights">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Security briefing: August 2026]]></title>
+            <link>https://webflow.sysdig.com/blog/security-briefing-august-2026</link>
+            <guid>https://webflow.sysdig.com/blog/security-briefing-august-2026</guid>
+            <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/security-briefing-august-2026">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fsecurity-briefing-august-2026">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Defending the battlefield: Stateful detections for an agentic threat landscape]]></title>
+            <link>https://webflow.sysdig.com/blog/defending-the-battlefield-stateful-detections-for-an-agentic-threat-landscape</link>
+            <guid>https://webflow.sysdig.com/blog/defending-the-battlefield-stateful-detections-for-an-agentic-threat-landscape</guid>
+            <pubDate>Mon, 31 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Defenses built for human speed won’t hold against AI-driven threats. That’s why stateful detections are becoming an essential tool for runtime security.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/defending-the-battlefield-stateful-detections-for-an-agentic-threat-landscape">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fdefending-the-battlefield-stateful-detections-for-an-agentic-threat-landscape">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes 1.37 - New security features]]></title>
+            <link>https://webflow.sysdig.com/blog/kubernetes-1-37-new-security-features</link>
+            <guid>https://webflow.sysdig.com/blog/kubernetes-1-37-new-security-features</guid>
+            <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Here are the security implications of Kubernetes 1.37, including new security features to mount volumes, authentication by default on webhooks, and more.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/kubernetes-1-37-new-security-features">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fkubernetes-1-37-new-security-features">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

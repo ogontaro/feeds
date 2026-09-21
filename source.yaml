@@ -5,6 +5,7 @@
 feeds:
   # ================= claude / content =================
   - url: https://simonwillison.net/tags/claude.atom
+    id: simon-claude
     name: Simon Willison — Claude
     domain: claude
     kind: content
@@ -27,6 +28,7 @@ feeds:
     domain: claude
     kind: content
   - url: https://addyosmani.com/rss.xml
+    id: addyosmani
     name: AddyOsmani.com
     domain: claude
     kind: content
@@ -37,10 +39,12 @@ feeds:
 
   # ----- AI業界のトレンド・考え方（製品公式ブログでは拾えない話題）-----
   - url: https://latent.space/feed
+    id: latent-space
     name: Latent Space
     domain: claude
     kind: content
   - url: https://importai.substack.com/feed
+    id: importai
     name: Import AI
     domain: claude
     kind: content
@@ -51,50 +55,61 @@ feeds:
 
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
+    id: kubernetes-blog
     name: Kubernetes Blog
     domain: kubernetes
     kind: content
   - url: https://www.cncf.io/blog/feed/
+    id: cncf
     name: CNCF Blog
     domain: kubernetes
     kind: content
   - url: https://blog.crossplane.io/rss/
+    id: crossplane
     name: The Crossplane Blog
     domain: kubernetes
     kind: content
   - url: https://blog.argoproj.io/feed
+    id: argo-project
     name: Argo Project
     domain: kubernetes
     kind: content
   - url: https://backstage.io/blog/rss.xml
+    id: backstage
     name: Backstage Blog
     domain: kubernetes
     kind: content
   - url: https://sysdig.com/feed/
+    id: sysdig
     name: Sysdig
     domain: kubernetes
     kind: content
   - url: https://www.hashicorp.com/blog/products/terraform/feed.xml
+    id: terraform-blog
     name: HashiCorp Blog - Terraform
     domain: kubernetes
     kind: content
 
   # ----- Platform Engineering トレンド -----
   - url: https://platformengineering.org/blog/rss.xml
+    id: platform-eng
     name: Platform Engineering Blog
     domain: kubernetes
     kind: content
   - url: https://thenewstack.io/platform-engineering/feed
+    id: newstack-pe
     name: The New Stack — Platform Engineering
     domain: kubernetes
     kind: content
 
   # ================= aws / content（EKS・AI/Bedrock を重点）=================
   - url: https://aws.amazon.com/blogs/aws/feed/
+    id: aws-news
     name: AWS News Blog
     domain: aws
     kind: content
   - url: https://aws.amazon.com/blogs/machine-learning/feed/
+    id: aws-ml
     name: AWS Machine Learning Blog
     domain: aws
     kind: content
@@ -107,26 +122,31 @@ feeds:
     domain: aws
     kind: content
   - url: https://docs.aws.amazon.com/eks/latest/userguide/doc-history.rss
+    id: eks-docs
     name: Amazon EKS Document History
     domain: aws
     kind: content
 
   # ----- Hacker News（関心キーワード限定。事前フィルタ済み少数ソース）-----
   - url: https://hnrss.org/newest?q=Claude&points=50
+    id: hn-claude
     name: HN — Claude
     domain: claude
     kind: content
   - url: https://hnrss.org/newest?q=Kubernetes&points=50
+    id: hn-kubernetes
     name: HN — Kubernetes
     domain: kubernetes
     kind: content
   - url: https://hnrss.org/newest?q=AWS&points=50
+    id: hn-aws
     name: HN — AWS
     domain: aws
     kind: content
 
   # ----- GitHub Watch/Star/Fork の横展開 -----
   - url: https://github.com/ogontaro.atom
+    id: gh-activity
     name: GitHub activity (ogontaro)
     domain: kubernetes
     kind: content

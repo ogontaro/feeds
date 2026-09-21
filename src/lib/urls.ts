@@ -22,6 +22,9 @@ const JA_SOURCE_HOSTS = [
   "note.com",
   "hatenablog.com",
   "hateblo.jp",
+  "developersblog.dmm.com",
+  "blog.3-shake.com",
+  "ainow.ai",
 ];
 
 export function isJapaneseSource(articleUrl: string): boolean {
@@ -33,6 +36,12 @@ export function isJapaneseSource(articleUrl: string): boolean {
   }
   return JA_SOURCE_HOSTS.some((h) => host === h || host.endsWith(`.${h}`));
 }
+
+/** 翻訳配信の対象か。日本語サイトは翻訳フィードを作らない。 */
+export const needsTranslation = (feedUrl: string): boolean => !isJapaneseSource(feedUrl);
+
+/** UTF-8 BOM。charset なしで配信されるファイル(.opml)のブラウザ表示化け対策に付ける。 */
+export const UTF8_BOM = "\uFEFF";
 
 export function escapeHtml(s: string): string {
   return s
