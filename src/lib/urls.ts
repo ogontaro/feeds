@@ -20,6 +20,8 @@ const JA_SOURCE_HOSTS = [
   "zenn.dev",
   "qiita.com",
   "note.com",
+  "hatenablog.com",
+  "hateblo.jp",
 ];
 
 export function isJapaneseSource(articleUrl: string): boolean {

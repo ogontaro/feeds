@@ -4,7 +4,7 @@
         <title>Claude レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 20 Sep 2026 23:55:18 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Sep 2026 04:21:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -14,10 +14,10 @@
             <link>https://ogontaro.github.io/feeds/report/claude/2026-09-21.html</link>
             <guid>https://ogontaro.github.io/feeds/report/claude/2026-09-21.html</guid>
             <pubDate>Mon, 21 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<h3>Codexを使うなら、権限プロファイルとRulesを押さえておきたい</h3>
-<p>コーディングエージェントに「どこまで自律で実行させるか」を決める権限設計は、導入後に一番効いてくる部分でありながら、動かしてから事故で気づきがちな領域です。権限プロファイルと Rules という2つの軸で承認範囲を整理する考え方は、Codex 固有の話にとどまらず、Claude Code の permissions や allowlist をどう絞るかを考えるときの下敷きとしてそのまま使えます。エージェント運用の線引きを見直したいタイミングで読む価値があります。
-<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F20%2F120746">Google 翻訳で全文を読む</a></p>
+            <content:encoded><![CDATA[<h2>今日の1本</h2>
+<h3>テスト記事</h3>
+<p>テストコメント。
+<a href="https://dev.classmethod.jp/articles/20260919-cc-updates-v2-1-278/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=test">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -28,7 +28,7 @@
             <content:encoded><![CDATA[<h2>今日の 1 本</h2>
 <h3>Codexを使うなら、権限プロファイルとRulesを押さえておきたい</h3>
 <p>コーディングエージェントを実務に投入するとき、最初に詰まるのが「どこまで自律実行を許すか」の設計です。権限プロファイルと Rules という2つのレイヤーがどう効くのかを押さえておくと、承認ダイアログを消して速度を上げつつ危険な操作だけを止める、という調整ができるようになります。Claude Code の permissions 設定を運用している人にも、エージェントごとの権限制御の比較材料としてそのまま読めます。
-<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F20%2F120746">Google 翻訳で全文を読む</a></p>
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -39,7 +39,7 @@
             <content:encoded><![CDATA[<h2>今日の3本</h2>
 <h3>Claude CodeのRulesとAuto memoryは書きっぱなしにしないほうがいい</h3>
 <p>CLAUDE.mdやAuto memoryは一度書けば安心という機能ではなく、運用し続けることが前提の仕組みだという指摘。ルールやメモリが陳腐化してエージェントの判断を狂わせるケースを踏まえた実務目線の話で、チームでClaude Codeを定着させたいなら押さえておきたい観点。
-<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F18%2F100730">Google 翻訳で全文を読む</a></p>
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730">原文を読む</a></p>
 <h3>Claude Code v2.1.276 アップデートまとめ（DevelopersIO）</h3>
 <p>Claude Code v2.1.276の更新内容を日本語でまとめて紹介する記事。公式changelogを1件ずつ追うより、変更点を一気に把握したい人に向いている。
 <a href="https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260918-cc-updates-v2-1-276%2F">Google 翻訳で全文を読む</a></p>
@@ -56,7 +56,7 @@
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
 <h3>Claude CodeのAgent Skillsは、ときどき見直したほうがいい</h3>
 <p>Agent Skillsは一度作って満足しがちだが、モデルやプロジェクトの状況が変わるとskillの前提が古びて逆に足を引っ張ることがある、という運用上の注意喚起。自分のskill群を棚卸ししたくなる実践的な視点。
-<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F17%2F140349">Google 翻訳で全文を読む</a></p>
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349">原文を読む</a></p>
 <h3>Claude Code v2.1.274 リリースノート</h3>
 <p>メモリ逼迫時の可視警告、MCPサーバー接続待ちを制御する<code>CLAUDE_CODE_MCP_STARTUP_WAIT_MS</code>、OpenTelemetryへのeffort属性やmanaged-settings解決イベントの追加など、運用・監視に効く変更がまとまっている。細かいchangelog項目を追うよりこのリリースノートを見た方が全体像を把握しやすい。
 <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.274">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.274">Google 翻訳で全文を読む</a></p>
