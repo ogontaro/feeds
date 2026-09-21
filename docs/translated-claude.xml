@@ -4,11 +4,18 @@
         <title>翻訳フィード: Claude — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の購読フィードの新着エントリのタイトルと概要を日本語化したもの</description>
-        <lastBuildDate>Sun, 20 Sep 2026 03:07:46 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Sep 2026 13:46:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ — Claude | DevelopersIO]]></title>
+            <link>https://dev.classmethod.jp/articles/sliding-with-claude-cowork-and-slack/</link>
+            <guid>5mwIg2bvlTtiz4v02TKyKd</guid>
+            <pubDate>Sun, 20 Sep 2026 13:46:53 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/sliding-with-claude-cowork-and-slack/">原文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Codexを使うなら、権限プロファイルとRulesを押さえておきたい — 3-shake Engineers' Blogs]]></title>
             <link>https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746</link>
@@ -29,6 +36,14 @@
             <guid>https://zenn.dev/satohjohn/articles/gemini-managed-agents-security</guid>
             <pubDate>Sat, 19 Sep 2026 06:59:04 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://zenn.dev/satohjohn/articles/gemini-managed-agents-security">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Here are 6 Clones of Jev in 2 days — Latent Space]]></title>
+            <link>https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in</link>
+            <guid>https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in</guid>
+            <pubDate>Sat, 19 Sep 2026 05:48:28 GMT</pubDate>
+            <description><![CDATA[Imitation is the sincerest form of Flattery]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-here-are-6-clones-of-jev-in">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
@@ -208,11 +223,27 @@
             <content:encoded><![CDATA[<p><a href="https://twitter.com/trq212/status/2101009392611278961">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftwitter.com%2Ftrq212%2Fstatus%2F2101009392611278961">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[AIエージェントが難しい理由と難易度を下げる導入ステップを解説 — AINOW]]></title>
+            <link>https://ainow.ai/2026/09/19/278372/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ai%25e3%2582%25a8%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25a7%25e3%2583%25b3%25e3%2583%2588%25e3%2581%258c%25e9%259b%25a3%25e3%2581%2597%25e3%2581%2584%25e7%2590%2586%25e7%2594%25b1%25e3%2581%25a8%25e9%259b%25a3%25e6%2598%2593%25e5%25ba%25a6%25e3%2582%2592%25e4%25b8%258b%25e3%2581%2592%25e3%2582%258b%25e5%25b0%258e%25e5%2585%25a5</link>
+            <guid>https://ainow.ai/?p=278372</guid>
+            <pubDate>Fri, 18 Sep 2026 16:49:39 GMT</pubDate>
+            <description><![CDATA[AIエージェントの検証を始めたものの、半年経っても本番導入に進めず、難しいと感じている方は少なくないでしょう。 AIエージェントが難しいのは技術が未熟だからではなく、難しさが導入・開発・運用の3段階に分かれていて、自社が... The post AIエージェントが難しい理由と難易度を下げる導入ステップを解説 first appeared on AI専門ニュースメディア AINOW.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://ainow.ai/2026/09/19/278372/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ai%25e3%2582%25a8%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25a7%25e3%2583%25b3%25e3%2583%2588%25e3%2581%258c%25e9%259b%25a3%25e3%2581%2597%25e3%2581%2584%25e7%2590%2586%25e7%2594%25b1%25e3%2581%25a8%25e9%259b%25a3%25e6%2598%2593%25e5%25ba%25a6%25e3%2582%2592%25e4%25b8%258b%25e3%2581%2592%25e3%2582%258b%25e5%25b0%258e%25e5%2585%25a5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fainow.ai%2F2026%2F09%2F19%2F278372%2F%3Futm_source%3Drss%26utm_medium%3Drss%26utm_campaign%3Dai%2525e3%252582%2525a8%2525e3%252583%2525bc%2525e3%252582%2525b8%2525e3%252582%2525a7%2525e3%252583%2525b3%2525e3%252583%252588%2525e3%252581%25258c%2525e9%25259b%2525a3%2525e3%252581%252597%2525e3%252581%252584%2525e7%252590%252586%2525e7%252594%2525b1%2525e3%252581%2525a8%2525e9%25259b%2525a3%2525e6%252598%252593%2525e5%2525ba%2525a6%2525e3%252582%252592%2525e4%2525b8%25258b%2525e3%252581%252592%2525e3%252582%25258b%2525e5%2525b0%25258e%2525e5%252585%2525a5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
             <link>https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/</link>
             <guid>1yCZ7Qchq5zrnXcN3WwJN1</guid>
             <pubDate>Fri, 18 Sep 2026 12:08:32 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] not much happened today — Latent Space]]></title>
+            <link>https://www.latent.space/p/ainews-not-much-happened-today-612</link>
+            <guid>https://www.latent.space/p/ainews-not-much-happened-today-612</guid>
+            <pubDate>Fri, 18 Sep 2026 06:28:43 GMT</pubDate>
+            <description><![CDATA[a quiet day]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-not-much-happened-today-612">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-not-much-happened-today-612">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[2026-09-18 gotanda.sre Terraformで複数環境作ったり、複数Stateに分割したりそれとTerragrunt / Terraform multi envs and multi states — 3-shake Engineers' Blogs]]></title>
@@ -374,6 +405,22 @@
             <guid>https://claude-code-log.com/changelog/v2.1.275#item-32d516aa78f6</guid>
             <pubDate>Thu, 17 Sep 2026 22:59:39 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.275#item-32d516aa78f6">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AIエージェントで自動化できる事務作業10選！判断基準と導入手順を解説 — AINOW]]></title>
+            <link>https://ainow.ai/2026/09/18/278369/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ai%25e3%2582%25a8%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25a7%25e3%2583%25b3%25e3%2583%2588%25e3%2581%25a7%25e8%2587%25aa%25e5%258b%2595%25e5%258c%2596%25e3%2581%25a7%25e3%2581%258d%25e3%2582%258b%25e4%25ba%258b%25e5%258b%2599%25e4%25bd%259c%25e6%25a5%25ad10%25e9%2581%25b8%25ef%25bc%2581%25e5%2588%25a4%25e6%2596%25ad</link>
+            <guid>https://ainow.ai/?p=278369</guid>
+            <pubDate>Thu, 17 Sep 2026 20:58:11 GMT</pubDate>
+            <description><![CDATA[月末になると請求書の仕訳入力や勤怠の不備チェックに部署総出で追われ、人を増やす以外の解決策が見つからないという状況に陥っていないでしょうか。 AIエージェントは、目的を与えると手順の組み立てから実行までを自ら進めるAIで... The post AIエージェントで自動化できる事務作業10選！判断基準と導入手順を解説 first appeared on AI専門ニュースメディア AINOW.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://ainow.ai/2026/09/18/278369/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ai%25e3%2582%25a8%25e3%2583%25bc%25e3%2582%25b8%25e3%2582%25a7%25e3%2583%25b3%25e3%2583%2588%25e3%2581%25a7%25e8%2587%25aa%25e5%258b%2595%25e5%258c%2596%25e3%2581%25a7%25e3%2581%258d%25e3%2582%258b%25e4%25ba%258b%25e5%258b%2599%25e4%25bd%259c%25e6%25a5%25ad10%25e9%2581%25b8%25ef%25bc%2581%25e5%2588%25a4%25e6%2596%25ad">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fainow.ai%2F2026%2F09%2F18%2F278369%2F%3Futm_source%3Drss%26utm_medium%3Drss%26utm_campaign%3Dai%2525e3%252582%2525a8%2525e3%252583%2525bc%2525e3%252582%2525b8%2525e3%252582%2525a7%2525e3%252583%2525b3%2525e3%252583%252588%2525e3%252581%2525a7%2525e8%252587%2525aa%2525e5%25258b%252595%2525e5%25258c%252596%2525e3%252581%2525a7%2525e3%252581%25258d%2525e3%252582%25258b%2525e4%2525ba%25258b%2525e5%25258b%252599%2525e4%2525bd%25259c%2525e6%2525a5%2525ad10%2525e9%252581%2525b8%2525ef%2525bc%252581%2525e5%252588%2525a4%2525e6%252596%2525ad">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Reality Checks on AI News (Yegge shuts down Gas Town, Databricks’ +60% Astra cost) — Latent Space]]></title>
+            <link>https://www.latent.space/p/ainews-reality-checks-on-ai-news</link>
+            <guid>https://www.latent.space/p/ainews-reality-checks-on-ai-news</guid>
+            <pubDate>Thu, 17 Sep 2026 07:28:25 GMT</pubDate>
+            <description><![CDATA[A dash of cold water keeps the foomers away.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-reality-checks-on-ai-news">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-reality-checks-on-ai-news">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Claude Codeの Agent Skills は、ときどき見直したほうがいい — 3-shake Engineers' Blogs]]></title>
@@ -553,6 +600,14 @@
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/16/one-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F16%2Fone-claude%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Underwriting Superintelligence: Backing Agents you can Sue — Rune Kvist, AIUC — Latent Space]]></title>
+            <link>https://www.latent.space/p/aiuc</link>
+            <guid>https://www.latent.space/p/aiuc</guid>
+            <pubDate>Wed, 16 Sep 2026 18:07:45 GMT</pubDate>
+            <description><![CDATA[We sit down with AIUC’s CEO on their Series A!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/aiuc">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Faiuc">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Claude Cowork and chat are now one Claude — HN — Claude]]></title>
             <link>https://claude.com/blog/cowork-is-now-claude</link>
             <guid>https://news.ycombinator.com/item?id=49729412</guid>
@@ -566,6 +621,14 @@
             <guid>1fjM07YwTgcCkkb2nBDTqf</guid>
             <pubDate>Wed, 16 Sep 2026 15:04:49 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://dev.classmethod.jp/articles/claude-code-action-pr/">原文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Jev: a “System One Model” that only decides/classifies/routes/scores — >100x faster, >200x cheaper than small frontier LLMs — Latent Space]]></title>
+            <link>https://www.latent.space/p/ainews-jev-a-system-one-model-that</link>
+            <guid>https://www.latent.space/p/ainews-jev-a-system-one-model-that</guid>
+            <pubDate>Wed, 16 Sep 2026 11:09:53 GMT</pubDate>
+            <description><![CDATA[congrats to TypeSafe!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-jev-a-system-one-model-that">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-jev-a-system-one-model-that">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[ — Claude | DevelopersIO]]></title>
@@ -657,62 +720,6 @@
             <guid>https://claude-code-log.com/changelog/v2.1.273#item-8cf3f11ac841</guid>
             <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-8cf3f11ac841">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-783a458bf8dc</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-783a458bf8dc</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-783a458bf8dc">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-167923b230d6</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-167923b230d6</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-167923b230d6">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-d20bc0f523d6</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-d20bc0f523d6</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-d20bc0f523d6">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-0da7cd1020ee</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-0da7cd1020ee</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-0da7cd1020ee">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-7c834904d7d1</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-7c834904d7d1</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-7c834904d7d1">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-e71cd3b501d1</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-e71cd3b501d1</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-e71cd3b501d1">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-1b8deed2c43a</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-1b8deed2c43a</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-1b8deed2c43a">原文を読む</a></p>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ — CCログ超訳（Claude Code CHANGELOG）]]></title>
-            <link>https://claude-code-log.com/changelog/v2.1.273#item-ab01979d3d34</link>
-            <guid>https://claude-code-log.com/changelog/v2.1.273#item-ab01979d3d34</guid>
-            <pubDate>Tue, 15 Sep 2026 20:39:45 GMT</pubDate>
-            <content:encoded><![CDATA[<p><a href="https://claude-code-log.com/changelog/v2.1.273#item-ab01979d3d34">原文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>
