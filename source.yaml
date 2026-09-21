@@ -35,6 +35,20 @@ feeds:
     domain: claude
     kind: content
 
+  # ----- AI業界のトレンド・考え方（製品公式ブログでは拾えない話題）-----
+  - url: https://latent.space/feed
+    name: Latent Space
+    domain: claude
+    kind: content
+  - url: https://importai.substack.com/feed
+    name: Import AI
+    domain: claude
+    kind: content
+  - url: https://ainow.ai/feed/
+    name: AINOW
+    domain: claude
+    kind: content
+
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
     name: Kubernetes Blog
@@ -62,6 +76,16 @@ feeds:
     kind: content
   - url: https://www.hashicorp.com/blog/products/terraform/feed.xml
     name: HashiCorp Blog - Terraform
+    domain: kubernetes
+    kind: content
+
+  # ----- Platform Engineering トレンド -----
+  - url: https://platformengineering.org/blog/rss.xml
+    name: Platform Engineering Blog
+    domain: kubernetes
+    kind: content
+  - url: https://thenewstack.io/platform-engineering/feed
+    name: The New Stack — Platform Engineering
     domain: kubernetes
     kind: content
 
