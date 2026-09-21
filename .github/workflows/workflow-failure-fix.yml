@@ -1,0 +1,95 @@
+name: workflow-failure-fix
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: docs-write
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    if: |
+      contains(github.event.issue.labels.*.name, 'workflow-failure') &&
+      github.event.issue.user.login == 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - run: bun install --frozen-lockfile
+
+      - name: diagnose and fix with claude
+        id: diagnose
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            A GitHub Actions workflow failed. Issue title: ${{ github.event.issue.title }}
+            Issue body: ${{ github.event.issue.body }}
+
+            The issue body contains a run URL. Extract the run id from it and inspect why the
+            run failed, e.g. `gh run view <run-id> --log-failed`.
+
+            Diagnose the root cause. If you can fix it with a small, safe change to a workflow
+            file under ${{ github.workspace }}/.github/workflows/ or a script under
+            ${{ github.workspace }}/src/, make that change. Do not modify source.yaml or
+            interests.yaml — those are unrelated to workflow failures. If you cannot determine a
+            safe fix, do not change any file; instead run
+            `gh issue comment ${{ github.event.issue.number }} --body "<your findings>"` to leave
+            your diagnosis for a human.
+          claude_args: "--allowedTools Read,Write,Bash(gh run view:*),Bash(gh issue comment:*)"
+
+      - name: diagnose and fix with claude (qwen fallback)
+        if: steps.diagnose.outcome == 'failure'
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            A GitHub Actions workflow failed. Issue title: ${{ github.event.issue.title }}
+            Issue body: ${{ github.event.issue.body }}
+
+            The issue body contains a run URL. Extract the run id from it and inspect why the
+            run failed, e.g. `gh run view <run-id> --log-failed`.
+
+            Diagnose the root cause. If you can fix it with a small, safe change to a workflow
+            file under ${{ github.workspace }}/.github/workflows/ or a script under
+            ${{ github.workspace }}/src/, make that change. Do not modify source.yaml or
+            interests.yaml — those are unrelated to workflow failures. If you cannot determine a
+            safe fix, do not change any file; instead run
+            `gh issue comment ${{ github.event.issue.number }} --body "<your findings>"` to leave
+            your diagnosis for a human.
+          claude_args: "--allowedTools Read,Write,Bash(gh run view:*),Bash(gh issue comment:*) --model qwen3.8-flash[1m]"
+
+      - name: open PR for review (no auto-merge)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/workflows src
+          if git diff --cached --quiet; then echo "no fix produced"; exit 0; fi
+          BRANCH="workflow-failure-fix/${{ github.event.issue.number }}"
+          git checkout -b "${BRANCH}"
+          git commit -m "fix: address workflow failure from issue #${{ github.event.issue.number }}"
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${BRANCH}"
+          gh pr create --title "fix: workflow failure (issue #${{ github.event.issue.number }})" \
+            --body "Closes #${{ github.event.issue.number }}
+
+          claude-code-action による自動診断・修正案です。**自動マージはしません。内容を確認してからマージしてください。**" \
+            --base main --head "${BRANCH}"
