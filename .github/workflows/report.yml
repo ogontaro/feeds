@@ -39,7 +39,7 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
           ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
-          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
@@ -56,7 +56,7 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
           ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
-          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
@@ -84,7 +84,7 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
           ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
-          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
@@ -101,7 +101,7 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
           ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
-          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
@@ -129,7 +129,7 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
           ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
-          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
@@ -146,7 +146,7 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
           ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
-          OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
           prompt: |
