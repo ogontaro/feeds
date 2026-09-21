@@ -3,9 +3,9 @@
   <head><title>ogontaro / rss</title></head>
   <body>
     <outline text="日次レポート" title="日次レポート">
-      <outline type="rss" text="Claude レポート" title="Claude レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-claude.xml"/>
-      <outline type="rss" text="Kubernetes レポート" title="Kubernetes レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-kubernetes.xml"/>
-      <outline type="rss" text="AWS レポート" title="AWS レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-aws.xml"/>
+      <outline type="rss" text="Claude 日次レポート" title="Claude 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-claude.xml"/>
+      <outline type="rss" text="Kubernetes 日次レポート" title="Kubernetes 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-kubernetes.xml"/>
+      <outline type="rss" text="AWS 日次レポート" title="AWS 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-aws.xml"/>
     </outline>
     <outline text="週次リリース" title="週次リリース">
       <outline type="rss" text="Claude リリース" title="Claude リリース" xmlUrl="https://ogontaro.github.io/feeds/digest/release-claude.xml"/>

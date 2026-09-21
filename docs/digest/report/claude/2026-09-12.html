@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Claude レポート 2026-09-12</title>
+<title>Claude 日次レポート 2026-09-12</title>
 <link rel="stylesheet" href="../../../assets/style.css">
 </head>
 <body>
 <header><a href="../../../">ogontaro / rss</a></header>
 <main>
-<h1>Claude レポート 2026-09-12</h1>
+<h1>Claude 日次レポート 2026-09-12</h1>
 <article class="report"><h2>今日の 2 本</h2>
 <h3>シンボリックリンク越しのパスで permission の deny/confirm ルールが効いていなかった不具合を修正（Claude Code v2.1.268）</h3>
 <p>macOS の <code>/etc</code>・<code>/tmp</code>・<code>/var</code>、Linux の <code>/bin</code> のようにシンボリックリンクになっているディレクトリでは、deny ルールを実体パスで書いても、あるいはシンボリックリンクのパス表記で書いても、Bash コマンドから見ると適用されないケースがあった。意図したサンドボックス制限が実は抜け穴になっていたという話なので、権限設定でパスベースの deny/confirm ルールを運用している人は要チェック。

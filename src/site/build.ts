@@ -178,7 +178,10 @@ ${releaseCards}`;
   const reportFiles = await existingFiles(
     CONTENT_DOMAINS.map(
       (d) =>
-        [`${DOMAIN_LABEL[d]} レポート`, `${DIGEST_URL_PREFIX}/report-${d}.xml`] as [string, string],
+        [`${DOMAIN_LABEL[d]} 日次レポート`, `${DIGEST_URL_PREFIX}/report-${d}.xml`] as [
+          string,
+          string,
+        ],
     ),
   );
   if (reportFiles.length > 0) digestFolders.push(["日次レポート", reportFiles]);

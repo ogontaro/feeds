@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kubernetes レポート 2026-09-17</title>
+<title>Kubernetes 日次レポート 2026-09-17</title>
 <link rel="stylesheet" href="../../../assets/style.css">
 </head>
 <body>
 <header><a href="../../../">ogontaro / rss</a></header>
 <main>
-<h1>Kubernetes レポート 2026-09-17</h1>
+<h1>Kubernetes 日次レポート 2026-09-17</h1>
 <article class="report"><h2>今日の 3 本</h2>
 <h3>Kubernetes v1.37: バインドマウントオプションとEmptyDirパーミッションによるコンテナストレージの強化</h3>
 <p>emptyDirのパーミッションモード指定とbind mountオプションという、地味だが実運用で刺さるストレージセキュリティ機能がv1.37で入った。複数コンテナ間でのファイル削除禁止や、書き込み可能ボリュームからの任意バイナリ実行禁止といった、これまで回避策でしか実現できなかったポリシーをKubernetesネイティブに強制できるようになる点が、マルチテナント環境やセキュリティ要件の厳しい基盤の設計者にとって重要。

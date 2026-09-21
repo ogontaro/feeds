@@ -67,8 +67,8 @@ async function main() {
     await Bun.write(
       `${dir}/${date}.html`,
       pageShell({
-        title: `${label} レポート ${date}`,
-        body: `<h1>${label} レポート ${date}</h1>\n<article class="report">${bodyHtml}</article>`,
+        title: `${label} 日次レポート ${date}`,
+        body: `<h1>${label} 日次レポート ${date}</h1>\n<article class="report">${bodyHtml}</article>`,
         depth: 3,
       }),
     );
@@ -83,7 +83,7 @@ async function main() {
     .slice(0, MAX_FEED_ITEMS);
 
   const feed = new FeedGen({
-    title: `${label} レポート — ogontaro/feeds`,
+    title: `${label} 日次レポート — ogontaro/feeds`,
     description: `${label} 系の新着から重要な記事を Claude が選定した日次レポート`,
     id: `${SITE_URL}/digest/report-${domain}.xml`,
     link: `${SITE_URL}/`,
@@ -97,7 +97,7 @@ async function main() {
     const html = await Bun.file(`${dir}/${file}`).text();
     const m = html.match(/<article class="report">([\s\S]*?)<\/article>/);
     feed.addItem({
-      title: `${label} レポート ${d}`,
+      title: `${label} 日次レポート ${d}`,
       id: `${SITE_URL}/digest/report/${domain}/${file}`,
       link: `${SITE_URL}/digest/report/${domain}/${file}`,
       date: new Date(`${d}T22:00:00Z`),
