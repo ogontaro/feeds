@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Claude リリースレポート — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
+        <description>Claude 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
+        <lastBuildDate>Mon, 21 Sep 2026 00:25:44 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude リリースレポート 2026-09-21]]></title>
+            <link>https://ogontaro.github.io/feeds/release/claude/2026-09-21.html</link>
+            <guid>https://ogontaro.github.io/feeds/release/claude/2026-09-21.html</guid>
+            <pubDate>Mon, 21 Sep 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<h3>Claude Code v2.1.271〜v2.1.278</h3>
+<p><strong>破壊的変更</strong>: v2.1.278 で auto モードの分類器がサーバーサイド既定に変更（Claude API / Enterprise、および Bedrock / Vertex / Foundry / 各種ゲートウェイ）。分類器自体のオーバーヘッドは課金されないが、課金対象のフォールバックに切り替わると警告が出るため、コスト管理上は要確認。Bedrock / Vertex / Foundry / ゲートウェイでは <code>CLAUDE_CODE_AUTO_MODE_SERVER=0</code> でオプトアウト可能（<a href="https://code.claude.com/docs/en/auto-mode-classifier-billing">課金ドキュメント</a>）。また v2.1.273 は 2.1.268 の「権限チェッカーが解析できない Bash 行に Read/Edit の拒否ルールを適用する」変更をリバートし、<code>time -p make build</code> のようなコマンドが再び確認プロンプト対象に戻る。加えて v2.1.275 で発生したプロキシ／ゲートウェイ環境の全リクエスト 400 エラー（<code>advisor_20260301</code>）は v2.1.276 で修正済みのため、該当環境は 2.1.276 以降へ更新が必要。</p>
+<ul>
+<li><strong>新機能</strong>: CLAUDE.md が無いプロジェクトで <strong>AGENTS.md</strong> を読む対応（Bedrock / Vertex / Foundry は未対応）、claude.ai アカウントで有効化したスキル・プラグインの端末セッションへの同期、送信キー（ctrl+enter / ctrl+x ctrl+s）によるキュー中メッセージの一括送信、Remote セッション（クラウド／セルフホストランナー）での fast モード、<code>/config</code> のマウス操作、auto モード＋サンドボックスでの per-command <code>allowed_domains</code>、サブエージェントの <code>omitClaudeMd</code>。</li>
+<li><strong>ゲートウェイ／エンタープライズ</strong>: ゲートウェイ サインイン時のアカウント確認と <code>/status</code> 表示、upstream への静的 <code>headers</code> 指定、egress が転送プロキシのみの構成向け <code>CLAUDE_GATEWAY_PROXY_IS_EGRESS_BOUNDARY=1</code>、LLM ゲートウェイ向けリクエストヘッダ（<code>CLAUDE_CODE_GATEWAY_HINT_HEADERS=1</code>）、<code>claude_code.llm_request</code> スパンへの <code>effort</code> 属性や managed-settings 解決イベントなど OTel の拡充。</li>
+<li><strong>主な修正</strong>: クラッシュ・ハング系が多数修正（<code>~/.claude.json</code> の不正値による起動クラッシュ、壊れたトランスクリプトでの <code>--resume</code> 失敗、メモリ逼迫時の Read ハング、Edit が <code>\uXXXX</code> を誤解釈する問題、Grep/Glob がリソース枯渇時に「該当なし」と誤報告する問題、MCP のタイムアウト／再接続失敗）。v2.1.272 は「バグ修正と信頼性向上」のみの内容。</li>
+</ul>
+<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.278">リリースを見る</a></p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

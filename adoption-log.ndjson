@@ -1,2 +1,19 @@
 {"date":"2026-09-20","domain":"claude","sourceName":"3-shake Engineers' Blogs"}
 {"date":"2026-09-20","domain":"claude","sourceName":"3-shake Engineers' Blogs"}
+{"date":"2026-09-21","domain":"claude","sourceName":"Claude Code releases"}
+{"date":"2026-09-21","domain":"aws","sourceName":"terraform-aws-eks"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Argo CD"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Argo Workflows"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Backstage"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Terraform"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"cert-manager"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Cilium"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"external-dns"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"external-secrets"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Goldilocks"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Grafana"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"HolmesGPT"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"kubelet-serving-cert-approver"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Loki"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Longhorn"}
+{"date":"2026-09-21","domain":"kubernetes","sourceName":"Mimir"}

@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-    <channel>
-        <title>Kubernetes リリースレポート — ogontaro/feeds</title>
-        <link>https://ogontaro.github.io/feeds/</link>
-        <description>Kubernetes 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 21 Sep 2026 00:27:26 GMT</lastBuildDate>
-        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-        <generator>https://github.com/jpmonette/feed</generator>
-        <language>ja</language>
-        <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
-        <item>
-            <title><![CDATA[Kubernetes リリースレポート 2026-09-21]]></title>
-            <link>https://ogontaro.github.io/feeds/release/kubernetes/2026-09-21.html</link>
-            <guid>https://ogontaro.github.io/feeds/release/kubernetes/2026-09-21.html</guid>
-            <pubDate>Mon, 21 Sep 2026 22:30:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes リリースレポート 2026-09-21</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header><a href="../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes リリースレポート 2026-09-21</h1>
+<article class="report"><h2>今週のリリース</h2>
 <h3>Argo CD v3.5.3 / v3.4.9（v3.6.0-rc1 も公開）</h3>
 <p><strong>破壊的変更</strong>: なし（3.5.3 / 3.4.9 はパッチ。3.6.0-rc1 は RC のためアップグレードガイドの確認を推奨）
 3.5 系と 3.4 系に同一内容のパッチが同時投入された。KubeVirt の停止中 VirtualMachine と suspended な FlinkDeployment のヘルス判定、Crossplane MR がプロビジョニング中に Healthy と誤判定される問題、sync リトライ時の operationState、UI の SSO リダイレクト 401 ループ、GRPCRoute の古い observedGeneration 参照、GrafanaFolder の negative-polarity 条件など、ヘルスチェックと UI の不具合修正が中心。早めの適用を推奨。
@@ -84,59 +80,8 @@ grpc（HIGH）と containerd/v2（MEDIUM）、golang.org/x/net・x/crypto・x/mo
 <p><strong>破壊的変更</strong>: なし
 起動直後に API サーバのハンドシェイクが遅い場合に備えて startup probe を追加。残りは依存関係の更新。
 <a href="https://github.com/alex1989hu/kubelet-serving-cert-approver/releases/tag/v0.12.1">リリースを見る</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes リリースレポート 2026-09-14]]></title>
-            <link>https://ogontaro.github.io/feeds/release/kubernetes/2026-09-14.html</link>
-            <guid>https://ogontaro.github.io/feeds/release/kubernetes/2026-09-14.html</guid>
-            <pubDate>Mon, 14 Sep 2026 22:30:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今週のリリース</h2>
-<h3>Cilium 1.21.0-pre.2（プレリリース）</h3>
-<p><strong>破壊的変更</strong>: BPF マスカレードがデフォルト有効化。ENI IPAM 利用時は IPv6 マスカレードがデフォルトで無効化され IPv4 と挙動統一
-Gateway API のセッションパーシステンス対応、AWS マネージドプレフィックスリストのポリシー適用、SR-IOV デバイスマネージャなどを追加。pre.1 はリリース作業に失敗したため、pre.0 からの変更をまとめて pre.2 として再公開された。安定版ではないため本番投入は時期尚早。
-<a href="https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.2">リリースを見る</a></p>
-<h3>cert-manager v1.21.2</h3>
-<p><strong>破壊的変更</strong>: Admission Webhook の検証ロジック変更により、必須フィールドを欠くリクエストが従来は許可されていたケースでも拒否されるようになった
-ACME/Vault issuer のエラーレスポンスボディが Status や Event に漏れないよう修正（情報漏えい対策）、HTTP-01 ソルバーのクリーンアップ不具合や証明書更新の閏年バグなどを修正。Go 1.26.8・grpc・crypto を更新しセキュリティ脆弱性にも対応。全ユーザーにアップグレードが推奨されている。
-<a href="https://github.com/cert-manager/cert-manager/releases/tag/v1.21.2">リリースを見る</a></p>
-<h3>Longhorn v1.13.0-rc2</h3>
-<p><strong>破壊的変更</strong>: なし（リリースノートが未公開のため詳細不明）
-バグ修正と依存更新。
-<a href="https://github.com/longhorn/longhorn/releases/tag/v1.13.0-rc2">リリースを見る</a></p>
-<h3>Grafana Mimir 3.1.6 / 3.2.1</h3>
-<p><strong>破壊的変更</strong>: なし
-Go 1.26 系および golang.org/x/crypto、google.golang.org/grpc の更新により複数の CVE に対応したセキュリティ修正リリース。新機能追加はなし。
-<a href="https://github.com/grafana/mimir/releases/tag/mimir-3.2.1">リリースを見る</a></p>
-<h3>Pomerium v0.33.3</h3>
-<p><strong>破壊的変更</strong>: なし
-outbound 接続の再接続時に gRPC 設定反映や MCP の ext_proc databroker アクセスが壊れる不具合を修正。v0.33.2 はビルド失敗により未公開に終わり、同内容の修正を含む v0.33.3 が代わりに公開された。
-<a href="https://github.com/pomerium/pomerium/releases/tag/v0.33.3">リリースを見る</a></p>
-<h3>Terraform v1.16.2 〜 v1.17.0-beta1</h3>
-<p><strong>破壊的変更</strong>: なし（v1.17 系では <code>-policies</code> フラグに <code>-allow-experimental-features</code> が不要になるなどの仕様変更あり）
-v1.17.0-beta1 では provider requirements での変数・ローカル値利用に対応し、差分のあるリソースのみ再取得する <code>-minimal-refresh</code> オプションを追加、Policy 機能が GA に。v1.16.2 はモジュール呼び出しが不正な場合のパニックを修正するバグ修正リリース。
-<a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1">リリースを見る</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes リリースレポート 2026-09-10]]></title>
-            <link>https://ogontaro.github.io/feeds/release/kubernetes/2026-09-10.html</link>
-            <guid>https://ogontaro.github.io/feeds/release/kubernetes/2026-09-10.html</guid>
-            <pubDate>Thu, 10 Sep 2026 22:30:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今週のリリース</h2>
-<h3>kro v0.9.4</h3>
-<p><strong>破壊的変更</strong>: なし
-CELまわりの機能拡張が中心で、<code>deepMerge()</code>によるネストしたmapの再帰マージ追加や、外部コレクションセレクタでの完全なCEL式サポートが目玉。RGDへの<code>shortNames</code>/<code>categories</code>追加、Helmチャートでのroleアグリゲーションや<code>extraEnv</code>・サービスアカウントautomount設定対応も入った。バグ修正としてCEL評価時のパニック防止、CRDの<code>additionalPrinterColumns</code>変更検知、順序付き削除のサポートなどが含まれる。
-<a href="https://github.com/kubernetes-sigs/kro/releases/tag/v0.9.4">リリースを見る</a></p>
-<h3>Backstage v1.55.0-next.2</h3>
-<p><strong>破壊的変更</strong>: なし
-プレリリース版で、詳細な変更内容は公式チェンジログ（docs/releases）参照とのみ記載。今回の情報からは具体的な変更点は不明。
-<a href="https://github.com/backstage/backstage/releases/tag/v1.55.0-next.2">リリースを見る</a></p>
-<h3>Terraform v1.16.2, v1.17.0-beta1</h3>
-<p><strong>破壊的変更</strong>: なし（ただしephemeralリソース更新時の診断メッセージ表示が変わり、これまで握りつぶされていた警告が出るようになる可能性あり）
-v1.17.0-beta1では、provider requirementsでの変数・ローカル値サポート、変更予定のあるリソースのみを再取得する<code>-minimal-refresh</code>プランオプション、Terraform Policyの正式GA（<code>-allow-experimental-features</code>不要化）が新機能として追加。v1.16.2はモジュール呼び出しが不正な場合のパニックを修正するパッチリリース。
-<a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1">リリースを見る</a></p>
-]]></content:encoded>
-        </item>
-    </channel>
-</rss>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
