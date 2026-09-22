@@ -4,11 +4,22 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 21 Sep 2026 12:00:11 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 00:39:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-09-22]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-22.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-22.html</guid>
+            <pubDate>Tue, 22 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<h3>Kubernetes v1.37: PersistentVolumeClaim の最終使用時刻を追跡できるようになる(ベータ昇格)</h3>
+<p>これまで「この PVC、まだ使われているのか?」を判断するには、Pod のボリューム参照を自前で突き合わせるツールを書くしかなかった。v1.37 で <code>PersistentVolumeClaimUnusedSinceTime</code> がベータに昇格し(デフォルト有効)、PVC protection controller が各 PVC に <code>Unused</code> 条件を付けるようになるため、放置された永続ボリュームの検出が標準機能だけで完結する。クラウドのブロックストレージ課金が効いてくる環境では、コスト最適化の一次スクリーニングとしてそのまま使える。ただし条件が示すのは「現在どの実行中 Pod からも参照されていないか」であり、過去のアクセス頻度ではない点は押さえておきたい — 削除判断の材料にはなるが、それ自体が削除の根拠になるわけではない。</p>
+<p><a href="https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F21%2Fkubernetes-v1-37-pvc-last-used-time%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-09-21]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-21.html</link>

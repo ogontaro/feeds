@@ -4,11 +4,19 @@
         <title>Kubernetes Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Kubernetes Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 16 Sep 2026 18:30:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Sep 2026 18:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)]]></title>
+            <link>https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/</link>
+            <guid>https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/</guid>
+            <pubDate>Mon, 21 Sep 2026 18:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling you whether any running pod currently references it — no custom tooling or cross-referencing required. For the API definition of PVC conditions, see the PersistentVolumeClaim API reference. Read on to learn how the Unused condition works and how to use it. Why track PVC ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F21%2Fkubernetes-v1-37-pvc-last-used-time%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions]]></title>
             <link>https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/</link>
@@ -136,6 +144,30 @@
             <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent delivery of high-quality releases underscores the strength of our development cycle and the vibrant support from our community. This release consists of 67 enhancements. Of those enhancements, 16 have graduated to Stable, 23 have graduated to Beta, 27 are entering Alpha, and 1]]></description>
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F08%2F26%2Fkubernetes-v1-37-release%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To]]></title>
+            <link>https://kubernetes.io/blog/2026/08/11/how-to-pretty-print-kubernetes-yaml-as-kyaml/</link>
+            <guid>https://kubernetes.io/blog/2026/08/11/how-to-pretty-print-kubernetes-yaml-as-kyaml/</guid>
+            <pubDate>Tue, 11 Aug 2026 18:00:00 GMT</pubDate>
+            <description><![CDATA[YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot of choices, and not all of them are equally good for writing Kubernetes manifests. Some features make files harder to read, some are easy to misuse and others can lead to surprising behavior. The interesting part is that Kubernetes doesn't actually need most of those fe]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/08/11/how-to-pretty-print-kubernetes-yaml-as-kyaml/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F08%2F11%2Fhow-to-pretty-print-kubernetes-yaml-as-kyaml%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard]]></title>
+            <link>https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/</link>
+            <guid>https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/</guid>
+            <pubDate>Mon, 03 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[The Kubernetes SIG Network community is thrilled to share the release of Gateway API v1.6.0, which was released on June 30th of this year! Gateway API has become the standard for modern, role-oriented, and expressive service networking in Kubernetes. In previous releases, Gateway API established a production-grade foundation for HTTP and TLS layer 7 traffic. With version 1.6.0, Gateway API takes a major step forward by expanding standard layer 4 protocol routing and introducing cleaner API bound]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F08%2F03%2Fgateway-api-v1-6-release%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes v1.37 Sneak Peek]]></title>
+            <link>https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/</link>
+            <guid>https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/</guid>
+            <pubDate>Fri, 31 Jul 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[As we get closer to the release date for Kubernetes v1.37, the project develops and matures, features may be deprecated, removed, or replaced with better ones for the project's overall health. This blog outlines some of the planned changes for the Kubernetes v1.37 release that the release team feels you should be aware of for the continued maintenance of your Kubernetes environment and keeping up to date with the latest changes. The information below reflects the current status of the v1.37 rele]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F07%2F31%2Fkubernetes-v1-37-sneak-peek%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

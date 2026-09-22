@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AddyOsmani.com — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>AddyOsmani.com の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Mon, 14 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Brownfield Agentic Engineering]]></title>
+            <link>https://addyosmani.com/blog/brownfield-agentic-engineering/</link>
+            <guid>https://addyosmani.com/blog/brownfield-agentic-engineering/</guid>
+            <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[What it takes to run agents in a codebase older than the team]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/brownfield-agentic-engineering/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fbrownfield-agentic-engineering%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Agentic Skill Decay]]></title>
+            <link>https://addyosmani.com/blog/agentic-skill-decay/</link>
+            <guid>https://addyosmani.com/blog/agentic-skill-decay/</guid>
+            <pubDate>Mon, 31 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Agents can finish the task without teaching you anything. Building expertise now has to be deliberate.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/agentic-skill-decay/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fagentic-skill-decay%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Audit your Agent files]]></title>
+            <link>https://addyosmani.com/blog/audit-your-agent-files/</link>
+            <guid>https://addyosmani.com/blog/audit-your-agent-files/</guid>
+            <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[A practical guide to auditing what your coding agent still needs.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/audit-your-agent-files/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Faudit-your-agent-files%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Human judgment doesn't leave the software factory. It relocates.]]></title>
+            <link>https://addyosmani.com/blog/human-judgment-doesnt-leave-the-software/</link>
+            <guid>https://addyosmani.com/blog/human-judgment-doesnt-leave-the-software/</guid>
+            <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[A field guide to building a software factory that still has an owner.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/human-judgment-doesnt-leave-the-software/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fhuman-judgment-doesnt-leave-the-software%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Practical Loop Engineering]]></title>
+            <link>https://addyosmani.com/blog/practical-loop-engineering/</link>
+            <guid>https://addyosmani.com/blog/practical-loop-engineering/</guid>
+            <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Goals, loops, and the discipline of not delegating your judgment]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/practical-loop-engineering/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fpractical-loop-engineering%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Agentic Code Quality]]></title>
+            <link>https://addyosmani.com/blog/agentic-code-quality/</link>
+            <guid>https://addyosmani.com/blog/agentic-code-quality/</guid>
+            <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Quality now depends on the constraints you set around your agents.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/agentic-code-quality/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fagentic-code-quality%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Software Factories, Light and Dark]]></title>
+            <link>https://addyosmani.com/blog/software-factories/</link>
+            <guid>https://addyosmani.com/blog/software-factories/</guid>
+            <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[A software factory is harnessing loops at scale - the system that builds your software instead of you. You can run the loop with humans in it (light factory) or you can ignore the humans (dark factory) and let those agents scope, build and ship code, without anyone really reading the details. But if people stop reading, they'll stop understanding your software. Your hardest job now is knowing which checks to build and how much autonomy to delegate.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/software-factories/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fsoftware-factories%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Own the Outer Loop]]></title>
+            <link>https://addyosmani.com/blog/own-the-outer-loop/</link>
+            <guid>https://addyosmani.com/blog/own-the-outer-loop/</guid>
+            <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Engineers need to own the outer loop, the accountability for these systems. A written version of my AI Engineer World's Fair 2026 closing keynote: quality, verdict, and answerability, the three hidden costs of delegation, and building software factories you can stand behind.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/own-the-outer-loop/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fown-the-outer-loop%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Earning taste and judgment]]></title>
+            <link>https://addyosmani.com/blog/earning-judgment/</link>
+            <guid>https://addyosmani.com/blog/earning-judgment/</guid>
+            <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Taste used to be a byproduct of the reps. Agents took the reps. So if you're junior you now have to go get the taste and judgment on purpose. A builder's look at the weakening entry level, the two debts we now owe, and concrete ways to build judgment when the machine writes the code.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/earning-judgment/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fearning-judgment%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The Agent-Era Career]]></title>
+            <link>https://addyosmani.com/blog/career-advice-age-of-agents/</link>
+            <guid>https://addyosmani.com/blog/career-advice-age-of-agents/</guid>
+            <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[AI gets good at anything with an answer key. Your career is everything that doesn't have one.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://addyosmani.com/blog/career-advice-age-of-agents/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faddyosmani.com%2Fblog%2Fcareer-advice-age-of-agents%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -57,5 +57,116 @@
             <description><![CDATA[Unlock success in platform engineering: Avoid common pitfalls, embrace MVP approach, and win stakeholder support for a transformative platform initiative.]]></description>
             <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/what-is-a-minimum-viable-platform-mvp">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhat-is-a-minimum-viable-platform-mvp">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
+        <item>
+            <title><![CDATA[Platform engineering needs to evolve. These 5 forces prove it.]]></title>
+            <link>https://platformengineering.org/blog/platform-engineering-needs-to-evolve-these-5-forces-prove-it</link>
+            <guid>https://platformengineering.org/blog/platform-engineering-needs-to-evolve-these-5-forces-prove-it</guid>
+            <pubDate>Fri, 14 Aug 2026 06:43:34 GMT</pubDate>
+            <description><![CDATA[Platform engineering has hit near-universal adoption, but five forces are pushing platforms past their limits. Here is each one and what your platform must do.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/platform-engineering-needs-to-evolve-these-5-forces-prove-it">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fplatform-engineering-needs-to-evolve-these-5-forces-prove-it">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Platforms are sitting on buried knowledge. Your agents are forcing you to dig it up]]></title>
+            <link>https://platformengineering.org/blog/platforms-are-sitting-on-buried-knowledge-for-agents</link>
+            <guid>https://platformengineering.org/blog/platforms-are-sitting-on-buried-knowledge-for-agents</guid>
+            <pubDate>Tue, 28 Jul 2026 10:29:36 GMT</pubDate>
+            <description><![CDATA[The trust problem with AI agents is actually a platform engineering problem. Here's why platform teams are the only ones who can solve it.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/platforms-are-sitting-on-buried-knowledge-for-agents">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fplatforms-are-sitting-on-buried-knowledge-for-agents">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[From pilot to production: The platform team's playbook for scaling AI coding agents in regulated industries]]></title>
+            <link>https://platformengineering.org/blog/platform-teams-playbook-for-scaling-ai-coding-agents-in-regulated-industries</link>
+            <guid>https://platformengineering.org/blog/platform-teams-playbook-for-scaling-ai-coding-agents-in-regulated-industries</guid>
+            <pubDate>Fri, 24 Jul 2026 11:13:47 GMT</pubDate>
+            <description><![CDATA[Scaling AI coding agents in regulated industries requires more than just successful pilots; it demands robust governance and production-ready infrastructure. Discover how platform teams can bridge the gap between experimentation and compliance by implementing observability, structured context engineering, and ephemeral workspace patterns to ensure safe, scalable AI adoption.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/platform-teams-playbook-for-scaling-ai-coding-agents-in-regulated-industries">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fplatform-teams-playbook-for-scaling-ai-coding-agents-in-regulated-industries">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why putting a pane of glass on a pile of sh*t doesn’t solve your problem]]></title>
+            <link>https://platformengineering.org/blog/why-putting-a-pane-of-glass-on-a-pile-of-shit-doesnt-solve-your-problem</link>
+            <guid>https://platformengineering.org/blog/why-putting-a-pane-of-glass-on-a-pile-of-shit-doesnt-solve-your-problem</guid>
+            <pubDate>Thu, 23 Jul 2026 08:16:12 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/why-putting-a-pane-of-glass-on-a-pile-of-shit-doesnt-solve-your-problem">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhy-putting-a-pane-of-glass-on-a-pile-of-shit-doesnt-solve-your-problem">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[What does a platform product manager do?]]></title>
+            <link>https://platformengineering.org/blog/what-does-a-platform-product-manager-do</link>
+            <guid>https://platformengineering.org/blog/what-does-a-platform-product-manager-do</guid>
+            <pubDate>Thu, 23 Jul 2026 08:14:05 GMT</pubDate>
+            <description><![CDATA[Platform Product Managers drive internal developer platform strategy, bridging technical capabilities and developer needs through research, roadmaps, and stakeholder management.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/what-does-a-platform-product-manager-do">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhat-does-a-platform-product-manager-do">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Golden cage syndrome: Why 80% of Internal Developer Platforms fail]]></title>
+            <link>https://platformengineering.org/blog/golden-cage-syndrome-why-internal-developer-platforms-fail</link>
+            <guid>https://platformengineering.org/blog/golden-cage-syndrome-why-internal-developer-platforms-fail</guid>
+            <pubDate>Thu, 23 Jul 2026 08:09:23 GMT</pubDate>
+            <description><![CDATA[Learn the three fatal mistakes of building and IDP and how to succeed with a Platform as a Product (PaaP) mindset]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/golden-cage-syndrome-why-internal-developer-platforms-fail">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fgolden-cage-syndrome-why-internal-developer-platforms-fail">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why platform engineering will eat the world]]></title>
+            <link>https://platformengineering.org/blog/why-platform-engineering-will-eat-the-world</link>
+            <guid>https://platformengineering.org/blog/why-platform-engineering-will-eat-the-world</guid>
+            <pubDate>Thu, 23 Jul 2026 08:08:12 GMT</pubDate>
+            <description><![CDATA[Platform engineering is transforming software development, streamlining operations, and redefining roles. Embrace the shift or risk becoming obsolete.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/why-platform-engineering-will-eat-the-world">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhy-platform-engineering-will-eat-the-world">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[PlatformCon 2026 wrap-up: No AI at scale without platform engineering]]></title>
+            <link>https://platformengineering.org/blog/platformcon-2026-wrap-up-no-ai-at-scale-without-platform-engineering</link>
+            <guid>https://platformengineering.org/blog/platformcon-2026-wrap-up-no-ai-at-scale-without-platform-engineering</guid>
+            <pubDate>Thu, 23 Jul 2026 05:40:01 GMT</pubDate>
+            <description><![CDATA[PlatformCon 2026 wrapped with a verdict: no AI at scale without platform engineering. Key takeaways from 250+ talks and live events in London and NYC.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/platformcon-2026-wrap-up-no-ai-at-scale-without-platform-engineering">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fplatformcon-2026-wrap-up-no-ai-at-scale-without-platform-engineering">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The future of AI-native Is open source]]></title>
+            <link>https://platformengineering.org/blog/the-future-of-ai-native-is-open-source</link>
+            <guid>https://platformengineering.org/blog/the-future-of-ai-native-is-open-source</guid>
+            <pubDate>Thu, 23 Jul 2026 05:40:01 GMT</pubDate>
+            <description><![CDATA[Chip vendors like NVIDIA and AMD are open sourcing the software that runs their AI hardware. Here is why that shift is a platform engineering decision.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/the-future-of-ai-native-is-open-source">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fthe-future-of-ai-native-is-open-source">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Three hidden GKE optimization opportunities unlocked by Google Cloud VM modernization]]></title>
+            <link>https://platformengineering.org/blog/three-hidden-gke-optimization-opportunities-unlocked-by-google-cloud-vm-modernization</link>
+            <guid>https://platformengineering.org/blog/three-hidden-gke-optimization-opportunities-unlocked-by-google-cloud-vm-modernization</guid>
+            <pubDate>Thu, 23 Jul 2026 05:40:01 GMT</pubDate>
+            <description><![CDATA[Unlock hidden GKE optimizations by modernizing your Google Cloud VM infrastructure. Discover how switching to N4 instances and leveraging Hyperdisk storage pools can boost performance, increase storage efficiency, and reduce your total cost of ownership]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/three-hidden-gke-optimization-opportunities-unlocked-by-google-cloud-vm-modernization">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fthree-hidden-gke-optimization-opportunities-unlocked-by-google-cloud-vm-modernization">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing Platform Engineering 2.0: An evolution for the AI era]]></title>
+            <link>https://platformengineering.org/blog/introducing-platform-engineering-2-0-an-evolution-for-the-ai-era</link>
+            <guid>https://platformengineering.org/blog/introducing-platform-engineering-2-0-an-evolution-for-the-ai-era</guid>
+            <pubDate>Thu, 23 Jul 2026 05:40:01 GMT</pubDate>
+            <description><![CDATA[Platform Engineering 2.0 is an evolution, not a reset: the five forces reshaping platforms for the AI era, plus a first look at the five pillars]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/introducing-platform-engineering-2-0-an-evolution-for-the-ai-era">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fintroducing-platform-engineering-2-0-an-evolution-for-the-ai-era">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Key rotations and other nightmares: Why we built Aperture]]></title>
+            <link>https://platformengineering.org/blog/key-rotations-and-other-nightmares-why-we-built-aperture</link>
+            <guid>https://platformengineering.org/blog/key-rotations-and-other-nightmares-why-we-built-aperture</guid>
+            <pubDate>Thu, 23 Jul 2026 05:40:01 GMT</pubDate>
+            <description><![CDATA[AI key sprawl is an architecture problem, not just a security one. Discover how Aperture by Tailscale secures AI workflows with centralized, identity-based access.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/key-rotations-and-other-nightmares-why-we-built-aperture">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fkey-rotations-and-other-nightmares-why-we-built-aperture">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Privilege separation and the validation loop: The two controls that make AI agents safe in regulated industries]]></title>
+            <link>https://platformengineering.org/blog/privilege-separation-and-the-validation-loop-the-two-controls-that-make-ai-agents-safe-in-regulated-industries</link>
+            <guid>https://platformengineering.org/blog/privilege-separation-and-the-validation-loop-the-two-controls-that-make-ai-agents-safe-in-regulated-industries</guid>
+            <pubDate>Thu, 23 Jul 2026 05:40:01 GMT</pubDate>
+            <description><![CDATA[How platform teams can safely deploy AI agents in regulated industries. Unifying privilege separation and the validation loop creates a single governance system that satisfies security and compliance]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/privilege-separation-and-the-validation-loop-the-two-controls-that-make-ai-agents-safe-in-regulated-industries">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fprivilege-separation-and-the-validation-loop-the-two-controls-that-make-ai-agents-safe-in-regulated-industries">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why we built Platform Engineering Consulting (PEC)]]></title>
+            <link>https://platformengineering.org/blog/why-we-built-platform-engineering-consulting-pec</link>
+            <guid>https://platformengineering.org/blog/why-we-built-platform-engineering-consulting-pec</guid>
+            <pubDate>Thu, 23 Jul 2026 05:40:01 GMT</pubDate>
+            <description><![CDATA[PlatformEngineering.org introduces Platform Engineering Consulting (PEC), its consulting and advisory wing. Leverage our decades of experience to overcome the five common platform engineering mistakes and successfully navigate the agentic shift and AI mandates]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/why-we-built-platform-engineering-consulting-pec">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhy-we-built-platform-engineering-consulting-pec">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
     </channel>
 </rss>

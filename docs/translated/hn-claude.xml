@@ -4,11 +4,19 @@
         <title>HN — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 18 Sep 2026 21:00:32 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Sep 2026 14:30:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[The Claude Delusion]]></title>
+            <link>https://pluralistic.net/2026/09/21/sunsetting/</link>
+            <guid>https://news.ycombinator.com/item?id=49787765</guid>
+            <pubDate>Mon, 21 Sep 2026 14:30:24 GMT</pubDate>
+            <description><![CDATA[Article URL: https://pluralistic.net/2026/09/21/sunsetting/ Comments URL: https://news.ycombinator.com/item?id=49787765 Points: 88 # Comments: 153]]></description>
+            <content:encoded><![CDATA[<p><a href="https://pluralistic.net/2026/09/21/sunsetting/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fpluralistic.net%2F2026%2F09%2F21%2Fsunsetting%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude Code now reads AGENTS.md if there is no Claude.md]]></title>
             <link>https://code.claude.com/docs/en/changelog</link>
@@ -32,6 +40,134 @@
             <pubDate>Wed, 16 Sep 2026 16:26:25 GMT</pubDate>
             <description><![CDATA[Article URL: https://claude.com/blog/cowork-is-now-claude Comments URL: https://news.ycombinator.com/item?id=49729412 Points: 233 # Comments: 225]]></description>
             <content:encoded><![CDATA[<p><a href="https://claude.com/blog/cowork-is-now-claude">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fclaude.com%2Fblog%2Fcowork-is-now-claude">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude is a Contrarian]]></title>
+            <link>https://medium.com/@rdsubhas/claude-is-a-contrarian-dbce4de5cada</link>
+            <guid>https://news.ycombinator.com/item?id=49699373</guid>
+            <pubDate>Mon, 14 Sep 2026 16:14:24 GMT</pubDate>
+            <description><![CDATA[Article URL: https://medium.com/@rdsubhas/claude-is-a-contrarian-dbce4de5cada Comments URL: https://news.ycombinator.com/item?id=49699373 Points: 133 # Comments: 153]]></description>
+            <content:encoded><![CDATA[<p><a href="https://medium.com/@rdsubhas/claude-is-a-contrarian-dbce4de5cada">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fmedium.com%2F%40rdsubhas%2Fclaude-is-a-contrarian-dbce4de5cada">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows]]></title>
+            <link>https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/</link>
+            <guid>https://news.ycombinator.com/item?id=49695409</guid>
+            <pubDate>Mon, 14 Sep 2026 12:01:32 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/ Comments URL: https://news.ycombinator.com/item?id=49695409 Points: 227 # Comments: 162]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.macrumors.com%2F2026%2F09%2F14%2Fsiri-can-be-swapped-out-for-chatgpt-claude%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Houthis used Claude Code to develop missile guidance software: Anthropic]]></title>
+            <link>https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo</link>
+            <guid>https://news.ycombinator.com/item?id=49684266</guid>
+            <pubDate>Sun, 13 Sep 2026 14:15:40 GMT</pubDate>
+            <description><![CDATA[Article URL: https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo Comments URL: https://news.ycombinator.com/item?id=49684266 Points: 103 # Comments: 92]]></description>
+            <content:encoded><![CDATA[<p><a href="https://clashreport.com/world/articles/houthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fclashreport.com%2Fworld%2Farticles%2Fhouthis-used-claude-code-to-develop-missile-guidance-software-anthropic-s52mnx4pwpo">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Moonshot serves Claude instead of Kimi and collects exchanges for model training]]></title>
+            <link>https://twitter.com/DavidAgranovich/status/2098168522862215449</link>
+            <guid>https://news.ycombinator.com/item?id=49656698</guid>
+            <pubDate>Fri, 11 Sep 2026 11:36:24 GMT</pubDate>
+            <description><![CDATA[https://xcancel.com/DavidAgranovich/status/20981685228622154... Comments URL: https://news.ycombinator.com/item?id=49656698 Points: 67 # Comments: 70]]></description>
+            <content:encoded><![CDATA[<p><a href="https://twitter.com/DavidAgranovich/status/2098168522862215449">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftwitter.com%2FDavidAgranovich%2Fstatus%2F2098168522862215449">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude is only available to people over 18 years]]></title>
+            <link>https://support.claude.com/en/articles/15171100-age-assurance-on-claude</link>
+            <guid>https://news.ycombinator.com/item?id=49656225</guid>
+            <pubDate>Fri, 11 Sep 2026 10:48:00 GMT</pubDate>
+            <description><![CDATA[Article URL: https://support.claude.com/en/articles/15171100-age-assurance-on-claude Comments URL: https://news.ycombinator.com/item?id=49656225 Points: 674 # Comments: 670]]></description>
+            <content:encoded><![CDATA[<p><a href="https://support.claude.com/en/articles/15171100-age-assurance-on-claude">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsupport.claude.com%2Fen%2Farticles%2F15171100-age-assurance-on-claude">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace]]></title>
+            <link>https://aprilnea.me/en/blog/reverse-engineering-claude-code-antspace</link>
+            <guid>https://news.ycombinator.com/item?id=49653311</guid>
+            <pubDate>Fri, 11 Sep 2026 03:45:42 GMT</pubDate>
+            <description><![CDATA[Article URL: https://aprilnea.me/en/blog/reverse-engineering-claude-code-antspace Comments URL: https://news.ycombinator.com/item?id=49653311 Points: 109 # Comments: 23]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aprilnea.me/en/blog/reverse-engineering-claude-code-antspace">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faprilnea.me%2Fen%2Fblog%2Freverse-engineering-claude-code-antspace">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: Self-hosted company OS, Claude Code and Codex agents in departments]]></title>
+            <link>https://github.com/OtoDock/oto-dock</link>
+            <guid>https://news.ycombinator.com/item?id=49630606</guid>
+            <pubDate>Wed, 09 Sep 2026 17:57:55 GMT</pubDate>
+            <description><![CDATA[Hi HN, I am Dimitris. This is a company OS that I built and use to run my business and anyone can install it and self host it for free. Think of it as Claude Code, Cowork and the cloud sessions in one self hosted application. It is a Multi-tenant application by design where many people can collaborate on the company agents with 4 different modes of collaboration, and it runs with your Anthropic or OpenAi subscription or even with local models. Every agent can run on Claude Code or Codex CLI runn]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/OtoDock/oto-dock">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2FOtoDock%2Foto-dock">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude, change the “Add to Cart” button to blue]]></title>
+            <link>https://opusfived.dev/</link>
+            <guid>https://news.ycombinator.com/item?id=49623754</guid>
+            <pubDate>Wed, 09 Sep 2026 09:39:46 GMT</pubDate>
+            <description><![CDATA[Article URL: https://opusfived.dev/ Comments URL: https://news.ycombinator.com/item?id=49623754 Points: 1212 # Comments: 453]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opusfived.dev/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopusfived.dev%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The VMs Powering Mobile Agents (Instinct, Claude Code)]]></title>
+            <link>https://rohanadwankar.github.io/posts/platforms.html</link>
+            <guid>https://news.ycombinator.com/item?id=49605644</guid>
+            <pubDate>Tue, 08 Sep 2026 04:36:26 GMT</pubDate>
+            <description><![CDATA[Article URL: https://rohanadwankar.github.io/posts/platforms.html Comments URL: https://news.ycombinator.com/item?id=49605644 Points: 78 # Comments: 29]]></description>
+            <content:encoded><![CDATA[<p><a href="https://rohanadwankar.github.io/posts/platforms.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Frohanadwankar.github.io%2Fposts%2Fplatforms.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Coop – Isolated VM Environments for Running Claude Code and Codex]]></title>
+            <link>https://github.com/trailofbits/coop</link>
+            <guid>https://news.ycombinator.com/item?id=49593842</guid>
+            <pubDate>Mon, 07 Sep 2026 04:18:28 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/trailofbits/coop Comments URL: https://news.ycombinator.com/item?id=49593842 Points: 71 # Comments: 17]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/trailofbits/coop">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Ftrailofbits%2Fcoop">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude's new system prompt doesn't want to reproduce song lyrics]]></title>
+            <link>https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/</link>
+            <guid>https://news.ycombinator.com/item?id=49575143</guid>
+            <pubDate>Sat, 05 Sep 2026 10:32:09 GMT</pubDate>
+            <description><![CDATA[Article URL: https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/ Comments URL: https://news.ycombinator.com/item?id=49575143 Points: 69 # Comments: 126]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F2%2Fclaudes-new-system-prompt%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Portal by Spotify cut my Claude Code token usage by 90%]]></title>
+            <link>https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90</link>
+            <guid>https://news.ycombinator.com/item?id=49571465</guid>
+            <pubDate>Fri, 04 Sep 2026 23:38:50 GMT</pubDate>
+            <description><![CDATA[Article URL: https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90 Comments URL: https://news.ycombinator.com/item?id=49571465 Points: 278 # Comments: 178]]></description>
+            <content:encoded><![CDATA[<p><a href="https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fengineering.atspotify.com%2F2026%2F9%2Fportal-by-spotify-cut-my-claude-code-token-usage-by-90">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Which tools do Claude, Codex and Cursor choose? We measured 17k runs to find out]]></title>
+            <link>https://armature.tech/blog/which-tools-coding-agents-install</link>
+            <guid>https://news.ycombinator.com/item?id=49557206</guid>
+            <pubDate>Thu, 03 Sep 2026 21:20:34 GMT</pubDate>
+            <description><![CDATA[Article URL: https://armature.tech/blog/which-tools-coding-agents-install Comments URL: https://news.ycombinator.com/item?id=49557206 Points: 300 # Comments: 153]]></description>
+            <content:encoded><![CDATA[<p><a href="https://armature.tech/blog/which-tools-coding-agents-install">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Farmature.tech%2Fblog%2Fwhich-tools-coding-agents-install">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ChatGPT, Claude, and Grok Are Down]]></title>
+            <link>https://www.macrumors.com/2026/09/03/chatgpt-claude-and-grok-are-down/</link>
+            <guid>https://news.ycombinator.com/item?id=49551658</guid>
+            <pubDate>Thu, 03 Sep 2026 15:30:10 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.macrumors.com/2026/09/03/chatgpt-claude-and-grok-are-down/ Comments URL: https://news.ycombinator.com/item?id=49551658 Points: 76 # Comments: 1]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.macrumors.com/2026/09/03/chatgpt-claude-and-grok-are-down/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.macrumors.com%2F2026%2F09%2F03%2Fchatgpt-claude-and-grok-are-down%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ask HN: Why were OpenAI, Claude, and Grok simultaneously down?]]></title>
+            <link>https://news.ycombinator.com/item?id=49551096</link>
+            <guid>https://news.ycombinator.com/item?id=49551096</guid>
+            <pubDate>Thu, 03 Sep 2026 15:07:01 GMT</pubDate>
+            <description><![CDATA[https://status.openai.com https://status.claude.com https://status.x.ai ChatGPT outage – Resolved - https://news.ycombinator.com/item?id=49550614 (315 comments) Claude outage – Resolved - https://news.ycombinator.com/item?id=49549676 (146 comments) Grok outage - https://news.ycombinator.com/item?id=49551589 (142 comments) Comments URL: https://news.ycombinator.com/item?id=49551096 Points: 404 # Comments: 705]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=49551096">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D49551096">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude outage – Resolved]]></title>
+            <link>https://status.claude.com/incidents/461yvfrzpwtt</link>
+            <guid>https://news.ycombinator.com/item?id=49549676</guid>
+            <pubDate>Thu, 03 Sep 2026 13:29:12 GMT</pubDate>
+            <description><![CDATA[Article URL: https://status.claude.com/incidents/461yvfrzpwtt Comments URL: https://news.ycombinator.com/item?id=49549676 Points: 205 # Comments: 151]]></description>
+            <content:encoded><![CDATA[<p><a href="https://status.claude.com/incidents/461yvfrzpwtt">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fstatus.claude.com%2Fincidents%2F461yvfrzpwtt">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

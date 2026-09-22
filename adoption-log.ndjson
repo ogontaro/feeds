@@ -17,3 +17,10 @@
 {"date":"2026-09-21","domain":"kubernetes","sourceName":"Loki"}
 {"date":"2026-09-21","domain":"kubernetes","sourceName":"Longhorn"}
 {"date":"2026-09-21","domain":"kubernetes","sourceName":"Mimir"}
+{"date":"2026-09-22","domain":"claude","sourceName":"HN — Claude"}
+{"date":"2026-09-22","domain":"claude","sourceName":"CCログ超訳（Claude Code CHANGELOG）"}
+{"date":"2026-09-22","domain":"claude","sourceName":"3-shake Engineers' Blogs"}
+{"date":"2026-09-22","domain":"kubernetes","sourceName":"Kubernetes Blog"}
+{"date":"2026-09-22","domain":"aws","sourceName":"Amazon EKS Document History"}
+{"date":"2026-09-22","domain":"aws","sourceName":"AWS Machine Learning Blog"}
+{"date":"2026-09-22","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}

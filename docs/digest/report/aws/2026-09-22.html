@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-09-22</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-09-22</h1>
+<article class="report"><h2>今日の 7 本</h2>
+<h3>xAI の Grok 4.6 が Amazon Bedrock で利用可能に</h3>
+<p>フロンティアモデルの選択肢がまた一つ増えた。注目すべきは性能そのものより対応範囲で、500K トークンのコンテキスト、4 段階の推論エフォート、そして bedrock-mantle と bedrock-runtime の両エンドポイントに加えて <strong>クロスリージョン推論</strong> と Converse API に対応している点。長距離エージェントを組む際、リージョン跨ぎのクォータとレイテンシを既存の Bedrock 設計のまま扱えるかどうかは、モデル選定と同じくらい効いてくる。可用性とスロットリングの設計を見直す材料として読む価値がある。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fxais-grok-4-6-is-now-available-in-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock で一般提供になった Moonshot AI の Kimi K3 を試してみた</h3>
+<p>オープンウェイト系のモデルが Bedrock の一般提供に載ったことで、閉域・統制下のワークロードでも選択肢に入る。この記事の価値は GA 発表の紹介ではなく、Converse API・OpenAI 互換 API・明示的プロンプトキャッシュという複数の呼び出し経路を実際に叩いて挙動を並べている点にある。既存の OpenAI 互換クライアントをそのまま流用できるのか、キャッシュを効かせるにはどの経路を選ぶべきか、といった移行判断の下調べとしてそのまま使える。</p>
+<p><a href="https://dev.classmethod.jp/articles/moonshot-ai-kimi-k3-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fmoonshot-ai-kimi-k3-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>EKS 最適化 Windows Server 2025 AMI で CimFS スナップショッタがサポートに</h3>
+<p>Windows コンテナの弱点はイメージサイズとコールドプル時間で、CimFS (Composite Image File System) containerd スナップショッタはそこに直接効く。Kubernetes 1.35 以降が対象でデフォルト無効のオプトイン、という点が実務上は重要 — 既存の Windows ノードグループは何もしなければ挙動が変わらないので、検証環境でレイヤ共有の効果を測ってから本番に広げられる。Windows ワークロードを EKS で動かしていてスケールアウト時のプル待ちに悩んでいるなら、まず試す価値のある変更。</p>
+<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-windows-ami.html#windows-cimfs-snapshotter">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Feks-optimized-windows-ami.html%23windows-cimfs-snapshotter">Google 翻訳で全文を読む</a></p>
+<h3>Benchling はどう Amazon Bedrock AgentCore でマルチテナント AI エージェントを保護したか</h3>
+<p>信頼できない AI 生成コードを、数千のテナントにまたがって実行する — エージェント基盤を作るなら必ず突き当たる問題に対する、かなり具体的な防御設計の事例。AgentCore Code Interpreter の VPC モードに、Route 53 Resolver DNS Firewall と VPC エンドポイントポリシーを重ね、<strong>DNS 経由のデータ持ち出しまで塞いでいる</strong>のがポイント。多層防御を「どこで何を止めるか」の層別に整理しており、AgentCore を使わない構成でもサンドボックス分離のチェックリストとして流用できる。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/how-benchling-secured-multi-tenant-ai-agents-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-benchling-secured-multi-tenant-ai-agents-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>【TypeSafe】Jev で OCR 済みの書類をページごとに種別判定できるか試してみた</h3>
+<p>書類分類の精度を上げるのに、モデルを大きくするでもプロンプトを凝るでもなく「直前のページを文脈として渡す」だけで 20 ページ中 20 ページ正解した、というのがこの記事の勘所。タイトルが無いページや誤読に対する頑健性も見ており、ページ列を扱う実装ならではの知見になっている。確率値を確認フローに回せる点も含め、OCR 後処理を組む人は人のレビューと組み合わせた現実的なチェック設計の参考にできる。</p>
+<p><a href="https://dev.classmethod.jp/articles/typesafe-jev-doc-type-classification/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Ftypesafe-jev-doc-type-classification%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker AI で Positron を動かすデータサイエンスワークフロー</h3>
+<p>R と Python が混在するデータサイエンスの現場では、Athena での探索・R での特徴量検証・XGBoost の学習・リアルタイムエンドポイントへのデプロイ・Quarto でのレポートが別々の環境に散らばりがち。それを 1 つの統制された SageMaker Studio Space に収める、という構成を示している。個々のツールの紹介ではなく、ガバナンスを効かせたまま IDE を持ち込む際の接続点の作り方が本題で、統制と開発体験のどちらかを諦めていた環境には参考になる。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/run-positron-on-amazon-sagemaker-ai-for-data-science-workflows/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Frun-positron-on-amazon-sagemaker-ai-for-data-science-workflows%2F">Google 翻訳で全文を読む</a></p>
+<h3>BMW グループが 14,000 のクラウドアカウントをまたいでコスト異常を検出する方法</h3>
+<p>14,000 アカウントという規模で、ダッシュボードを眺める受動的な運用から日次の自動アラートに移行した設計の話。Prophet による予測と Step Functions を組み合わせたサーバーレスパイプラインで、全アカウントを回して月およそ 50 ドルに収めているというコスト感覚が具体的で、FinOps 基盤を内製するか買うかの判断材料になる。アカウント数が増えても線形に膨らみにくい構成の作り方として、マルチアカウント運用の担当者に効く。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/how-bmw-group-detects-cost-anomalies-across-14000-cloud-accounts/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-bmw-group-detects-cost-anomalies-across-14000-cloud-accounts%2F">Google 翻訳で全文を読む</a></p>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

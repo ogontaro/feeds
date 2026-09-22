@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-09-22</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-09-22</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<h3>Claude Codeの Agent view とセッション間通信は使ったほうがいい</h3>
+<p>Claude Code を複数タスクで並行して走らせると、どのセッションが何をしているかが見えなくなり、成果の受け渡しも口頭ベースになりがちです。Agent view とセッション間通信はその2点を仕組みで解消する機能で、この記事は実際に使った上での使いどころと注意点をまとめています。サブエージェントに仕事を分ける設計を考えているなら、任せ方と結果の回収方法の型としてそのまま参考になります。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258">原文を読む</a></p>
+<h3>Claude Code v2.1.277: CLAUDE.md が無ければ AGENTS.md を読むように</h3>
+<p>CLAUDE.md を持たないプロジェクトでは、Claude Code が代わりに AGENTS.md を読み込むようになりました。Codex など他のコーディングエージェントと指示ファイルを共有していたり、AGENTS.md を正として運用しているチームにとっては、既存の資産がそのまま効くようになる変更です。読み込ませる内容は /config の「Project instructions」から確認・差し替えできます(Bedrock、Vertex、Foundry ではまだ利用不可)。
+<a href="https://claude-code-log.com/changelog/v2.1.277#item-2632a3e60ae2">原文を読む</a></p>
+<h3>Claude Code v2.1.278: auto mode の分類器がサーバー側デフォルトに(課金の前提が変わる)</h3>
+<p>auto mode の分類器が、Claude API / Enterprise および Bedrock・Vertex・Foundry・ゲートウェイ経由でデフォルトでサーバー側実行になりました。分類器のオーバーヘッドには課金されないため、auto mode を常用しているチームはコスト見積もりの前提が変わります。課金対象へのフォールバック時には警告が出るほか、/status の <code>Auto mode server</code> 行で自分のセッションがどちらで動いているか分かるので、まずそこを確認しておくのが確実です。
+<a href="https://claude-code-log.com/changelog/v2.1.278#item-88506706c503">原文を読む</a></p>
+<h3>Claude Code v2.1.277 の信頼性修正 — claude -p のハング、Grep/Glob の誤報告など</h3>
+<p>ヘッドレス実行や Agent SDK を CI・自動化に組み込んでいる人に効く修正がまとまっています。内部エラー後に <code>claude -p</code> や SDK のセッションが結果を返さず無言でハングしていたのが、エラーを報告して終了コード 1 で終わるようになり、Grep/Glob も資源不足で検索を開始できなかったときに「一致なし」と偽らずエラーを返すようになりました。どちらも「失敗を成功と誤認する」種類の不具合で、パイプラインの信頼性に直結します。Write や Edit のエラー処理、古いビルドにログアウトさせられる問題なども直っています。
+<a href="https://claude-code-log.com/changelog/v2.1.277#item-d567c65d9c0a">原文を読む</a></p>
+<h3>The Claude Delusion — Claude をめぐる言説を批判的に読む</h3>
+<p>Claude(および AI 全般)をめぐる言説を批判的に論じた記事で、HN では 150 件近いコメントが付いています。技術解説ではないので日々の実装に直接効く話ではありませんが、ツールの能力評価とそれを取り巻く期待値・ビジネス前提を自分が混ぜて判断していないかを点検する材料になります。コメント欄の賛否も含めて眺めると、実務で AI に寄せている前提を一度疑うきっかけになります。
+<a href="https://pluralistic.net/2026/09/21/sunsetting/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fpluralistic.net%2F2026%2F09%2F21%2Fsunsetting%2F">Google 翻訳で全文を読む</a></p>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

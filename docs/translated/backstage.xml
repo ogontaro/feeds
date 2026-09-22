@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Backstage Blog — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Backstage Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Mon, 20 Apr 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Backstage in Amsterdam: Highlights from BackstageCon and KubeCon + CloudNativeCon Europe 2026]]></title>
+            <link>https://backstage.io/blog/2026/04/20/backstagecon-kubecon-26-amsterdam</link>
+            <guid>https://backstage.io/blog/2026/04/20/backstagecon-kubecon-26-amsterdam</guid>
+            <pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Backstage in Amsterdam: Highlights from BackstageCon and KubeCon + CloudNativeCon Europe 2026]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2026/04/20/backstagecon-kubecon-26-amsterdam">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2026%2F04%2F20%2Fbackstagecon-kubecon-26-amsterdam">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Get a jump on ContribFest with the new web app]]></title>
+            <link>https://backstage.io/blog/2026/02/25/get-a-jump-on-contribfest</link>
+            <guid>https://backstage.io/blog/2026/02/25/get-a-jump-on-contribfest</guid>
+            <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Get a jump on ContribFest with the new web app]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2026/02/25/get-a-jump-on-contribfest">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2026%2F02%2F25%2Fget-a-jump-on-contribfest">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Backstage Wrapped 2025: Celebrating a mature framework with modern foundations]]></title>
+            <link>https://backstage.io/blog/2025/12/30/backstage-wrapped-2025</link>
+            <guid>https://backstage.io/blog/2025/12/30/backstage-wrapped-2025</guid>
+            <pubDate>Tue, 30 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Let's blast into the New Year with a quick look back at all the big hits — backend, frontend, AI, UI, and more! See how today's Backstage is ready to build the future of developer experience.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2025/12/30/backstage-wrapped-2025">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2025%2F12%2F30%2Fbackstage-wrapped-2025">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Backstage in Atlanta: Highlights from BackstageCon and KubeCon + CloudNativeCon North America 2025]]></title>
+            <link>https://backstage.io/blog/2025/11/25/backstagecon-kubecon-25-atlanta</link>
+            <guid>https://backstage.io/blog/2025/11/25/backstagecon-kubecon-25-atlanta</guid>
+            <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Backstage in Atlanta: Highlights from BackstageCon and KubeCon + CloudNativeCon North America 2025]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2025/11/25/backstagecon-kubecon-25-atlanta">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2025%2F11%2F25%2Fbackstagecon-kubecon-25-atlanta">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Get ready for Backstage ContribFest at KubeCon!]]></title>
+            <link>https://backstage.io/blog/2025/10/15/backstage-contribfest-kubecon-guide</link>
+            <guid>https://backstage.io/blog/2025/10/15/backstage-contribfest-kubecon-guide</guid>
+            <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Get ready for Backstage ContribFest at KubeCon!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2025/10/15/backstage-contribfest-kubecon-guide">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2025%2F10%2F15%2Fbackstage-contribfest-kubecon-guide">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Migrating legacy services to a modern developer portal: A technical guide to Backstage integration]]></title>
+            <link>https://backstage.io/blog/2025/08/08/migrating-legacy-services-to-a-modern-developer-portal</link>
+            <guid>https://backstage.io/blog/2025/08/08/migrating-legacy-services-to-a-modern-developer-portal</guid>
+            <pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[TL;DR: As part of our efforts to streamline service management and improve developer experience, our engineering org migrated from a legacy service catalogue to the Backstage Software Catalog. In this post, I'll share what we learned from that journey --- including how to build an automated script to migrate services from an existing internal service catalogue to a modern internal developer portal (IDP) like Backstage. I'll also outline strategies to help drive adoption across your organization,]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2025/08/08/migrating-legacy-services-to-a-modern-developer-portal">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2025%2F08%2F08%2Fmigrating-legacy-services-to-a-modern-developer-portal">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[From Zero to Maintainer: My Open Source Journey with Backstage]]></title>
+            <link>https://backstage.io/blog/2025/05/12/from-zero-to-maintainer-my-opensource-journey-with-backstage</link>
+            <guid>https://backstage.io/blog/2025/05/12/from-zero-to-maintainer-my-opensource-journey-with-backstage</guid>
+            <pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[My path to becoming a maintainer in the Backstage project wasn’t paved with years of prior open source experience. As a student interning at Red Hat, I started with a relatively fresh perspective. This is the story of that journey – how I navigated the complexities of Backstage, with the support of its community, allowing me to grow and learn, and how open source can empower anyone to do the same. Whether you’re new to open source or a seasoned developer, I believe you’ll find something valuable]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2025/05/12/from-zero-to-maintainer-my-opensource-journey-with-backstage">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2025%2F05%2F12%2Ffrom-zero-to-maintainer-my-opensource-journey-with-backstage">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Backstage in London: Highlights from BackstageCon and KubeCon + CloudNativeCon Europe 2025]]></title>
+            <link>https://backstage.io/blog/2025/04/29/backstagecon-kubecon-25-london</link>
+            <guid>https://backstage.io/blog/2025/04/29/backstagecon-kubecon-25-london</guid>
+            <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Highlights from BackstageCon and KubeCon + CloudNativeCon Europe 2025, including scenes from London and links to recordings of all the Backstage sessions.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2025/04/29/backstagecon-kubecon-25-london">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2025%2F04%2F29%2Fbackstagecon-kubecon-25-london">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Backstage Wrapped 2024: The year's Top 5 milestones and highlights]]></title>
+            <link>https://backstage.io/blog/2024/12/18/backstage-wrapped-2024</link>
+            <guid>https://backstage.io/blog/2024/12/18/backstage-wrapped-2024</guid>
+            <pubDate>Wed, 18 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Bowie the Backstage Beaver in an astronaut outfit riding a firecracker surrounded by fireworks exploding with stats: 210+ open source plugins, 1.6k contributors, 60k total contributions]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2024/12/18/backstage-wrapped-2024">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2024%2F12%2F18%2Fbackstage-wrapped-2024">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The 2024 Backstage Security Audit]]></title>
+            <link>https://backstage.io/blog/2024/12/17/backstage-security-audit-2024</link>
+            <guid>https://backstage.io/blog/2024/12/17/backstage-security-audit-2024</guid>
+            <pubDate>Tue, 17 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[TL;DR Backstage’s security posture remains strong! Today, we’re releasing the report from the second independent security audit of the Backstage project.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2024/12/17/backstage-security-audit-2024">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2024%2F12%2F17%2Fbackstage-security-audit-2024">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Backstage in Salt Lake City: Highlights from BackstageCon and KubeCon + CloudNativeCon North America 2024]]></title>
+            <link>https://backstage.io/blog/2024/12/09/kubecon-slc-24</link>
+            <guid>https://backstage.io/blog/2024/12/09/kubecon-slc-24</guid>
+            <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Beaver in front of snowcapped mountains peeking over a banner that reads BackstageCon and KubeCon + CloudNativeCon North America 2024, Salt Lake City]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2024/12/09/kubecon-slc-24">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2024%2F12%2F09%2Fkubecon-slc-24">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Adopter Spotlight: Level-up developer experience with observability and security in context]]></title>
+            <link>https://backstage.io/blog/2024/09/24/dynatrace-adopter-spotlight</link>
+            <guid>https://backstage.io/blog/2024/09/24/dynatrace-adopter-spotlight</guid>
+            <pubDate>Tue, 24 Sep 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[TL;DR]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2024/09/24/dynatrace-adopter-spotlight">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2024%2F09%2F24%2Fdynatrace-adopter-spotlight">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[1,186 days with Backstage: A journey through the eyes of a developer]]></title>
+            <link>https://backstage.io/blog/2024/06/27/backstage-engineer-journey</link>
+            <guid>https://backstage.io/blog/2024/06/27/backstage-engineer-journey</guid>
+            <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[TL;DR There is no shortage of content that discusses the benefits that Backstage brings to organizations (and if you want to read more on that, you can just click here, here, or here). But I want to share what it did for me, a developer here at Spotify. And not just what it did, but how I’ve used Backstage to help me achieve goals at each stage of my journey at Spotify — from my first day as a brand new employee to today, my 1,186th day as a contributor.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2024/06/27/backstage-engineer-journey">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2024%2F06%2F27%2Fbackstage-engineer-journey">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing the Backstage Community Plugins Repository]]></title>
+            <link>https://backstage.io/blog/2024/04/19/community-plugins</link>
+            <guid>https://backstage.io/blog/2024/04/19/community-plugins</guid>
+            <pubDate>Fri, 19 Apr 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[tl;dr: We've set up the new community plugins repository, and have migrated most of the packages in the plugins directory of the main Backstage repository to their new home!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2024/04/19/community-plugins">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2024%2F04%2F19%2Fcommunity-plugins">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Backstage in Paris: Wrapping up BackstageCon and KubeCon + CloudNativeCon Europe 2024]]></title>
+            <link>https://backstage.io/blog/2024/03/27/backstagecon-kubecon-24</link>
+            <guid>https://backstage.io/blog/2024/03/27/backstagecon-kubecon-24</guid>
+            <pubDate>Wed, 27 Mar 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[tl;dr: And with that the first BackstageCon Europe comes to an end! The City of Light was good to Backstage with many great conversations at both BackstageCon and KubeCon + CloudNativeCon Europe 2024. If you weren't able to join, the CNCF has a great playlist of all the BackstageCon talks ready to go on YouTube. Check out some of the highlights below — then grab your popcorn and settle in!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2024/03/27/backstagecon-kubecon-24">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2024%2F03%2F27%2Fbackstagecon-kubecon-24">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE-2024-26150: Keeping Backstage safe and secure]]></title>
+            <link>https://backstage.io/blog/2024/02/28/security-notice</link>
+            <guid>https://backstage.io/blog/2024/02/28/security-notice</guid>
+            <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[TL;DR: For the Backstage maintainers, ensuring that the project is secure for every adopter and end user is one of our top priorities.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2024/02/28/security-notice">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2024%2F02%2F28%2Fsecurity-notice">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Wrap up: BackstageCon ‘23, KubeCon + Cloud Native NA]]></title>
+            <link>https://backstage.io/blog/2023/11/15/backstagecon-kubecon-23</link>
+            <guid>https://backstage.io/blog/2023/11/15/backstagecon-kubecon-23</guid>
+            <pubDate>Wed, 15 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[BackstageCon ‘23, KubeCon + Cloud Native NA]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2023/11/15/backstagecon-kubecon-23">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2023%2F11%2F15%2Fbackstagecon-kubecon-23">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Adopter Spotlight: How Chicago Trading Company saved 18 months of developer effort with Backstage]]></title>
+            <link>https://backstage.io/blog/2023/09/29/chicago-traiding-company-adopter-spotlight</link>
+            <guid>https://backstage.io/blog/2023/09/29/chicago-traiding-company-adopter-spotlight</guid>
+            <pubDate>Fri, 29 Sep 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[backstage header]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2023/09/29/chicago-traiding-company-adopter-spotlight">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2023%2F09%2F29%2Fchicago-traiding-company-adopter-spotlight">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Expedia Group shares Backstage proof of value metrics 2.0]]></title>
+            <link>https://backstage.io/blog/2023/08/17/expedia-proof-of-value-metrics-2</link>
+            <guid>https://backstage.io/blog/2023/08/17/expedia-proof-of-value-metrics-2</guid>
+            <pubDate>Thu, 17 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[backstage header]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2023/08/17/expedia-proof-of-value-metrics-2">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2023%2F08%2F17%2Fexpedia-proof-of-value-metrics-2">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Five common traits of successful Backstage adopters]]></title>
+            <link>https://backstage.io/blog/2023/07/28/frontside-adopter-post</link>
+            <guid>https://backstage.io/blog/2023/07/28/frontside-adopter-post</guid>
+            <pubDate>Fri, 28 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[backstage header]]></description>
+            <content:encoded><![CDATA[<p><a href="https://backstage.io/blog/2023/07/28/frontside-adopter-post">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbackstage.io%2Fblog%2F2023%2F07%2F28%2Ffrontside-adopter-post">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -4,11 +4,19 @@
         <title>AWS News Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS News Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Thu, 17 Sep 2026 21:11:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Sep 2026 16:11:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/</link>
+            <guid>efef7c6cb4883104326929e4006dcf8d1349cb2d</guid>
+            <pubDate>Mon, 21 Sep 2026 16:11:24 GMT</pubDate>
+            <description><![CDATA[Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through trending articles and checking […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[New low-cost burstable Amazon EC2 T8i instances are generally available]]></title>
             <link>https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/</link>
@@ -72,6 +80,94 @@
             <pubDate>Mon, 31 Aug 2026 14:45:25 GMT</pubDate>
             <description><![CDATA[The news that interested me the most last week was the DuckLabs acquisition. AWS has signed a definitive agreement to acquire DuckLabs, the Amsterdam-based company behind DuckDB, the popular open source analytical database that runs in-process and executes SQL directly against files like Parquet, CSV, and JSON. DuckDB stays open source under its independent foundation […]]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-welcome-ducklabs-to-the-team-agentic-resource-discovery-ard-and-more-august-31-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-welcome-ducklabs-to-the-team-agentic-resource-discovery-ard-and-more-august-31-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Happy 20th Birthday, Amazon EC2]]></title>
+            <link>https://aws.amazon.com/blogs/aws/happy-20th-birthday-amazon-ec2/</link>
+            <guid>0d62c0134c150af14fc409516cdf59aff26dc9e1</guid>
+            <pubDate>Tue, 25 Aug 2026 16:11:02 GMT</pubDate>
+            <description><![CDATA[On the 20th Anniversary, we recognize how AWS has continued to push the boundaries of what cloud computing can deliver, building custom silicon for general-purpose and AI workloads and expanding EC2 into new form factors and deployment models that our customers in 2006 could not have imagined.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/happy-20th-birthday-amazon-ec2/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fhappy-20th-birthday-amazon-ec2%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Weekly Roundup: Student Rewards on AWS Builder Center, Local Zone in Las Vegas, and more (August 24, 2026)]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-student-rewards-on-aws-builder-center-local-zone-in-las-vegas-and-more-august-24-2026/</link>
+            <guid>2c1999b3f40dcbf5fbc95e907da3c6141bbc8c45</guid>
+            <pubDate>Mon, 24 Aug 2026 16:20:15 GMT</pubDate>
+            <description><![CDATA[During my time at AWS, I have always looked for opportunities to work with students. I have delivered over 50 talks at universities across the region, and watching the potential in the room is always a strong motivator. It reminds me of why I do this work, and that the students I meet today may […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-student-rewards-on-aws-builder-center-local-zone-in-las-vegas-and-more-august-24-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-student-rewards-on-aws-builder-center-local-zone-in-las-vegas-and-more-august-24-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Glue 6.0 now available with 30% lower price and full Apache Iceberg v3 support]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/</link>
+            <guid>3e7f6047f5812686137b8832bd55b853dd906a34</guid>
+            <pubDate>Fri, 21 Aug 2026 18:53:26 GMT</pubDate>
+            <description><![CDATA[AWS Glue 6.0 is built on a fully modernized runtime, Apache Spark 4.1, Python 3.13, and Scala 2.13, delivering 30% lower pricing than previous AWS Glue versions.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-glue-6-0-now-available-with-30-lower-price-and-full-apache-iceberg-v3-support%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[In the works: AWS Builder Lofts in Berlin, Hyderabad, and São Paulo]]></title>
+            <link>https://aws.amazon.com/blogs/aws/in-the-works-aws-builder-lofts-in-berlin-hyderabad-and-sao-paulo/</link>
+            <guid>5bd92664f8ba6ec61ac2d68e8b4b52a7f2988613</guid>
+            <pubDate>Tue, 18 Aug 2026 13:58:41 GMT</pubDate>
+            <description><![CDATA[Each location will be a permanent community space to offer free workshops, networking events, pitch nights, content creation spaces, collaboration/co-working areas, and event hosting for developers, students, or tech professionals who want to walk through the doors.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/in-the-works-aws-builder-lofts-in-berlin-hyderabad-and-sao-paulo/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fin-the-works-aws-builder-lofts-in-berlin-hyderabad-and-sao-paulo%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Weekly Roundup: EC2 application status checks, IAM role manager, OpenAI Daybreak on Bedrock, and more (August 17, 2026)]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-ec2-application-status-checks-iam-role-manager-openai-daybreak-on-bedrock-and-more-august-17-2026/</link>
+            <guid>e0eaa8dc02bf3dada9e373bdf284e82bd4d4e86c</guid>
+            <pubDate>Mon, 17 Aug 2026 16:02:36 GMT</pubDate>
+            <description><![CDATA[Last week, AWS contributors joined the OpenSearch and Valkey communities at Open Source Summit Korea 2026 and MCP DevSummit Seoul 2026 to meet open source developers and contributors. At the four-day event, community leaders and users of these Linux Foundation open source projects gathered to share knowledge, collaborate on solutions, and push the projects forward. […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-ec2-application-status-checks-iam-role-manager-openai-daybreak-on-bedrock-and-more-august-17-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-ec2-application-status-checks-iam-role-manager-openai-daybreak-on-bedrock-and-more-august-17-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Weekly Roundup: AWS Heroes Summit, Web Search on Amazon Bedrock, Dogwood, Kiro Crew, and more (August 10, 2026)]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-heroes-summit-web-search-on-amazon-bedrock-dogwood-kiro-crew-and-more-august-10-2026/</link>
+            <guid>23fc16a0c48a8aaf8de130ae8e5719b50ba6f960</guid>
+            <pubDate>Mon, 10 Aug 2026 15:45:03 GMT</pubDate>
+            <description><![CDATA[Last week, we brought together AWS Heroes from around the world to connect, collaborate, and celebrate the builders who go above and beyond for the AWS community. The AWS Heroes Summit, an invite-only annual gathering, brings global experts specializing in fields like AI, serverless, and containers together for direct collaboration, technical deep-dives, and feedback sessions […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-heroes-summit-web-search-on-amazon-bedrock-dogwood-kiro-crew-and-more-august-10-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-aws-heroes-summit-web-search-on-amazon-bedrock-dogwood-kiro-crew-and-more-august-10-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Runtime instances: persistent compute for production AI agents on Amazon Bedrock AgentCore]]></title>
+            <link>https://aws.amazon.com/blogs/aws/runtime-instances-persistent-compute-for-production-ai-agents-on-amazon-bedrock-agentcore/</link>
+            <guid>7bc89749c1b638955cb1927019d33a1150693c0f</guid>
+            <pubDate>Thu, 06 Aug 2026 22:58:00 GMT</pubDate>
+            <description><![CDATA[Announcing runtime instances in Amazon Bedrock AgentCore—persistent, managed EC2 infrastructure for production AI agents with multi-agent collaboration, GPU support, and sessions lasting up to 14 days.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/runtime-instances-persistent-compute-for-production-ai-agents-on-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fruntime-instances-persistent-compute-for-production-ai-agents-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon DynamoDB now supports real-time vector search at any scale]]></title>
+            <link>https://aws.amazon.com/blogs/aws/amazon-dynamodb-now-supports-real-time-vector-search-at-any-scale/</link>
+            <guid>13572f01241ca7108f49e50344decc868ddde5d7</guid>
+            <pubDate>Wed, 05 Aug 2026 14:45:10 GMT</pubDate>
+            <description><![CDATA[DynamoDB now supports native vector search with single-digit millisecond latency at 99%+ recall. It is designed for any scale, even trillions of vectors and requires zero infrastructure management.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/amazon-dynamodb-now-supports-real-time-vector-search-at-any-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Famazon-dynamodb-now-supports-real-time-vector-search-at-any-scale%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Weekly Roundup: Price reduction of GPT models in Bedrock, CloudWatch managed collectors for Prometheus metrics, and more (August 3, 2026)]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-price-reduction-of-gpt-models-in-bedrock-cloudwatch-managed-collectors-for-prometheus-metrics-and-more-august-3-2026/</link>
+            <guid>b0d8b064b69ed668c9ddbe686c1284b90aaefbe3</guid>
+            <pubDate>Mon, 03 Aug 2026 16:12:30 GMT</pubDate>
+            <description><![CDATA[Last week I had the joy of participating in Amazon’s “Bring Your Kids to Work Day” with my 7 year old son. We commuted together into the New York City office, his first real rush hour train ride, and spent the day exploring how Amazon uses AI, machine learning, and robotics to deliver packages to […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-price-reduction-of-gpt-models-in-bedrock-cloudwatch-managed-collectors-for-prometheus-metrics-and-more-august-3-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-price-reduction-of-gpt-models-in-bedrock-cloudwatch-managed-collectors-for-prometheus-metrics-and-more-august-3-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Weekly Roundup: Local Zone in Athens, Claude Opus 5 on AWS, Lambda durable execution for .NET, and more (July 27, 2026)]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-july-27-2026/</link>
+            <guid>77c18d2b47b8dea484a97205ea56792640d7b37a</guid>
+            <pubDate>Mon, 27 Jul 2026 14:54:41 GMT</pubDate>
+            <description><![CDATA[Last week I had the privilege of spending three days in São Paulo with technical builders from across Latin America, brought together for a regional tech event full of deep-dive sessions, hands-on workshops, and conversations with customers and partners. What struck me most wasn’t any single session, it was the energy of a technical community […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-july-27-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-july-27-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Weekly Roundup: One-click Lambda setup prompt, OpenAI GPT-5.6 models on Bedrock, and more (July 20, 2026)]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-one-click-lambda-setup-prompt-openai-gpt-5-6-models-on-bedrock-and-more-july-20-2026/</link>
+            <guid>27dde8580d688a55e51f9a85a22645896b60028e</guid>
+            <pubDate>Mon, 20 Jul 2026 16:37:34 GMT</pubDate>
+            <description><![CDATA[Last week, my team visited Seoul to meet AWS Korea User Group (AWSKRUG) leaders. AWSKRUG is the largest cloud developer community in Korea, with 20 meetup groups organized by topic and area that collectively host over 100 events each year, primarily in Seoul. My team regularly visits countries across the Asia-Pacific region, listens to feedback […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-one-click-lambda-setup-prompt-openai-gpt-5-6-models-on-bedrock-and-more-july-20-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-one-click-lambda-setup-prompt-openai-gpt-5-6-models-on-bedrock-and-more-july-20-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

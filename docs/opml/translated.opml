@@ -4,19 +4,24 @@
   <body>
     <outline text="AI" title="AI">
       <outline type="rss" text="Simon Willison — Claude" title="Simon Willison — Claude" xmlUrl="https://ogontaro.github.io/feeds/translated/simon-claude.xml"/>
+      <outline type="rss" text="AddyOsmani.com" title="AddyOsmani.com" xmlUrl="https://ogontaro.github.io/feeds/translated/addyosmani.xml"/>
       <outline type="rss" text="Latent Space" title="Latent Space" xmlUrl="https://ogontaro.github.io/feeds/translated/latent-space.xml"/>
+      <outline type="rss" text="awesome-claude-code updates" title="awesome-claude-code updates" xmlUrl="https://ogontaro.github.io/feeds/translated/awesome-claude-code.xml"/>
       <outline type="rss" text="HN — Claude" title="HN — Claude" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-claude.xml"/>
     </outline>
     <outline text="プラットフォーム" title="プラットフォーム">
       <outline type="rss" text="Kubernetes Blog" title="Kubernetes Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/kubernetes-blog.xml"/>
       <outline type="rss" text="CNCF Blog" title="CNCF Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/cncf.xml"/>
+      <outline type="rss" text="The Crossplane Blog" title="The Crossplane Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/crossplane.xml"/>
       <outline type="rss" text="Argo Project" title="Argo Project" xmlUrl="https://ogontaro.github.io/feeds/translated/argo-project.xml"/>
+      <outline type="rss" text="Backstage Blog" title="Backstage Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/backstage.xml"/>
       <outline type="rss" text="Sysdig" title="Sysdig" xmlUrl="https://ogontaro.github.io/feeds/translated/sysdig.xml"/>
       <outline type="rss" text="Platform Engineering Blog" title="Platform Engineering Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/platform-eng.xml"/>
       <outline type="rss" text="The New Stack — Platform Engineering" title="The New Stack — Platform Engineering" xmlUrl="https://ogontaro.github.io/feeds/translated/newstack-pe.xml"/>
       <outline type="rss" text="AWS News Blog" title="AWS News Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/aws-news.xml"/>
       <outline type="rss" text="AWS Machine Learning Blog" title="AWS Machine Learning Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/aws-ml.xml"/>
       <outline type="rss" text="Amazon EKS Document History" title="Amazon EKS Document History" xmlUrl="https://ogontaro.github.io/feeds/translated/eks-docs.xml"/>
+      <outline type="rss" text="HN — Kubernetes" title="HN — Kubernetes" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-kubernetes.xml"/>
       <outline type="rss" text="HN — AWS" title="HN — AWS" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-aws.xml"/>
       <outline type="rss" text="GitHub activity (ogontaro)" title="GitHub activity (ogontaro)" xmlUrl="https://ogontaro.github.io/feeds/translated/gh-activity.xml"/>
     </outline>

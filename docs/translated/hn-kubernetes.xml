@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>HN — Kubernetes — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>HN — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Wed, 19 Aug 2026 16:25:37 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[How Kubernetes Probes Work]]></title>
+            <link>https://ngrok.com/blog/probes</link>
+            <guid>https://news.ycombinator.com/item?id=49363665</guid>
+            <pubDate>Wed, 19 Aug 2026 16:25:37 GMT</pubDate>
+            <description><![CDATA[Article URL: https://ngrok.com/blog/probes Comments URL: https://news.ycombinator.com/item?id=49363665 Points: 143 # Comments: 25]]></description>
+            <content:encoded><![CDATA[<p><a href="https://ngrok.com/blog/probes">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fngrok.com%2Fblog%2Fprobes">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes on Oxide: How customer needs shaped our integrations]]></title>
+            <link>https://oxide.computer/blog/kubernetes-on-oxide</link>
+            <guid>https://news.ycombinator.com/item?id=49286485</guid>
+            <pubDate>Thu, 13 Aug 2026 14:26:41 GMT</pubDate>
+            <description><![CDATA[Article URL: https://oxide.computer/blog/kubernetes-on-oxide Comments URL: https://news.ycombinator.com/item?id=49286485 Points: 199 # Comments: 100]]></description>
+            <content:encoded><![CDATA[<p><a href="https://oxide.computer/blog/kubernetes-on-oxide">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Foxide.computer%2Fblog%2Fkubernetes-on-oxide">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Open-weight AI is having its Kubernetes moment]]></title>
+            <link>https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/</link>
+            <guid>https://news.ycombinator.com/item?id=49048034</guid>
+            <pubDate>Sat, 25 Jul 2026 14:49:49 GMT</pubDate>
+            <description><![CDATA[Article URL: https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/ Comments URL: https://news.ycombinator.com/item?id=49048034 Points: 416 # Comments: 323]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftobi.knaup.me%2F2026-07-25-open-weight-ai-is-having-its-kubernetes-moment%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cheap self-hosted Kubernetes on Hetzner cloud (2025)]]></title>
+            <link>https://blog.qstars.nl/posts/cheap-self-hosted-kubernetes-on-hetzner-cloud/</link>
+            <guid>https://news.ycombinator.com/item?id=48996128</guid>
+            <pubDate>Tue, 21 Jul 2026 18:25:08 GMT</pubDate>
+            <description><![CDATA[Article URL: https://blog.qstars.nl/posts/cheap-self-hosted-kubernetes-on-hetzner-cloud/ Comments URL: https://news.ycombinator.com/item?id=48996128 Points: 70 # Comments: 36]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.qstars.nl/posts/cheap-self-hosted-kubernetes-on-hetzner-cloud/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.qstars.nl%2Fposts%2Fcheap-self-hosted-kubernetes-on-hetzner-cloud%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Rebuilding My Homelab with Compose, Ruby, IPv6, and No Kubernetes]]></title>
+            <link>https://www.petekeen.net/homelab-resolved/</link>
+            <guid>https://news.ycombinator.com/item?id=48872031</guid>
+            <pubDate>Sat, 11 Jul 2026 13:47:47 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.petekeen.net/homelab-resolved/ Comments URL: https://news.ycombinator.com/item?id=48872031 Points: 55 # Comments: 63]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.petekeen.net/homelab-resolved/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.petekeen.net%2Fhomelab-resolved%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Fixing a kubelet memory leak in Kubernetes 1.36]]></title>
+            <link>https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak</link>
+            <guid>https://news.ycombinator.com/item?id=48741609</guid>
+            <pubDate>Wed, 01 Jul 2026 02:14:29 GMT</pubDate>
+            <description><![CDATA[Article URL: https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak Comments URL: https://news.ycombinator.com/item?id=48741609 Points: 79 # Comments: 14]]></description>
+            <content:encoded><![CDATA[<p><a href="https://heyoncall.com/blog/fixing-kubernetes-kubelet-memory-leak">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fheyoncall.com%2Fblog%2Ffixing-kubernetes-kubelet-memory-leak">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[I ported Kubernetes to the browser]]></title>
+            <link>https://ngrok.com/blog/i-ported-kubernetes-to-the-browser</link>
+            <guid>https://news.ycombinator.com/item?id=48738985</guid>
+            <pubDate>Tue, 30 Jun 2026 20:48:36 GMT</pubDate>
+            <description><![CDATA[https://github.com/ngrok/webernetes https://webernetes-demo.ngrok.app/ Comments URL: https://news.ycombinator.com/item?id=48738985 Points: 335 # Comments: 103]]></description>
+            <content:encoded><![CDATA[<p><a href="https://ngrok.com/blog/i-ported-kubernetes-to-the-browser">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fngrok.com%2Fblog%2Fi-ported-kubernetes-to-the-browser">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Zero-Downtime Deployments with Docker Compose – No Kubernetes Required]]></title>
+            <link>https://statusdude.com/blog/zero-downtime-docker-compose</link>
+            <guid>https://news.ycombinator.com/item?id=48665130</guid>
+            <pubDate>Wed, 24 Jun 2026 20:20:33 GMT</pubDate>
+            <description><![CDATA[Article URL: https://statusdude.com/blog/zero-downtime-docker-compose Comments URL: https://news.ycombinator.com/item?id=48665130 Points: 90 # Comments: 75]]></description>
+            <content:encoded><![CDATA[<p><a href="https://statusdude.com/blog/zero-downtime-docker-compose">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fstatusdude.com%2Fblog%2Fzero-downtime-docker-compose">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[What job interviews taught me about Kubernetes]]></title>
+            <link>https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/</link>
+            <guid>https://news.ycombinator.com/item?id=48546428</guid>
+            <pubDate>Mon, 15 Jun 2026 20:12:37 GMT</pubDate>
+            <description><![CDATA[Article URL: https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/ Comments URL: https://news.ycombinator.com/item?id=48546428 Points: 273 # Comments: 224]]></description>
+            <content:encoded><![CDATA[<p><a href="https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnotnotp.com%2Fnotes%2Fwhat-job-interviews-taught-me-about-kubernetes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[K3k: Kubernetes in Kubernetes]]></title>
+            <link>https://github.com/rancher/k3k</link>
+            <guid>https://news.ycombinator.com/item?id=47983176</guid>
+            <pubDate>Sat, 02 May 2026 04:00:42 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/rancher/k3k Comments URL: https://news.ycombinator.com/item?id=47983176 Points: 114 # Comments: 52]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/rancher/k3k">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Francher%2Fk3k">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Our agent found a bug with WireGuard in Google Kubernetes Engine]]></title>
+            <link>https://lovable.dev/blog/hunting-networking-bugs-in-kubernetes</link>
+            <guid>https://news.ycombinator.com/item?id=47972367</guid>
+            <pubDate>Fri, 01 May 2026 08:14:07 GMT</pubDate>
+            <description><![CDATA[Article URL: https://lovable.dev/blog/hunting-networking-bugs-in-kubernetes Comments URL: https://news.ycombinator.com/item?id=47972367 Points: 68 # Comments: 36]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lovable.dev/blog/hunting-networking-bugs-in-kubernetes">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flovable.dev%2Fblog%2Fhunting-networking-bugs-in-kubernetes">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Dear friend, you have built a Kubernetes (2024)]]></title>
+            <link>https://www.macchaffee.com/blog/2024/you-have-built-a-kubernetes/</link>
+            <guid>https://news.ycombinator.com/item?id=47885012</guid>
+            <pubDate>Fri, 24 Apr 2026 03:07:45 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.macchaffee.com/blog/2024/you-have-built-a-kubernetes/ Comments URL: https://news.ycombinator.com/item?id=47885012 Points: 143 # Comments: 175]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.macchaffee.com/blog/2024/you-have-built-a-kubernetes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.macchaffee.com%2Fblog%2F2024%2Fyou-have-built-a-kubernetes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: Klaw.sh – Kubernetes for AI agents]]></title>
+            <link>https://github.com/klawsh/klaw.sh</link>
+            <guid>https://news.ycombinator.com/item?id=47025478</guid>
+            <pubDate>Sun, 15 Feb 2026 17:22:59 GMT</pubDate>
+            <description><![CDATA[Hi everyone, I run a generative AI infra company, unified API for 600+ models. Our team started deploying AI agents for our marketing and lead gen ops: content, engagement, analytics across multiple X accounts. OpenClaw worked fine for single agents. But at ~14 agents across 6 accounts, the problem shifted from "how do I build agents" to "how do I manage them." Deployment, monitoring, team isolation, figuring out which agent broke what at 3am. Classic orchestration problem. So I built klaw, mode]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/klawsh/klaw.sh">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fklawsh%2Fklaw.sh">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: Kappal – CLI to Run Docker Compose YML on Kubernetes for Local Dev]]></title>
+            <link>https://github.com/sandys/kappal</link>
+            <guid>https://news.ycombinator.com/item?id=46896105</guid>
+            <pubDate>Thu, 05 Feb 2026 05:41:31 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/sandys/kappal Comments URL: https://news.ycombinator.com/item?id=46896105 Points: 50 # Comments: 31]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/sandys/kappal">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fsandys%2Fkappal">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes Remote Code Execution via Nodes/Proxy Get Permission]]></title>
+            <link>https://grahamhelton.com/blog/nodes-proxy-rce</link>
+            <guid>https://news.ycombinator.com/item?id=46766140</guid>
+            <pubDate>Mon, 26 Jan 2026 14:36:12 GMT</pubDate>
+            <description><![CDATA[Article URL: https://grahamhelton.com/blog/nodes-proxy-rce Comments URL: https://news.ycombinator.com/item?id=46766140 Points: 55 # Comments: 4]]></description>
+            <content:encoded><![CDATA[<p><a href="https://grahamhelton.com/blog/nodes-proxy-rce">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgrahamhelton.com%2Fblog%2Fnodes-proxy-rce">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Luxury Yacht is a desktop app for managing Kubernetes clusters]]></title>
+            <link>https://github.com/luxury-yacht/app</link>
+            <guid>https://news.ycombinator.com/item?id=46619391</guid>
+            <pubDate>Wed, 14 Jan 2026 17:49:38 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/luxury-yacht/app Comments URL: https://news.ycombinator.com/item?id=46619391 Points: 83 # Comments: 39]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/luxury-yacht/app">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fluxury-yacht%2Fapp">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes egress control with squid proxy]]></title>
+            <link>https://interlaye.red/kubernetes_002degress_002dsquid.html</link>
+            <guid>https://news.ycombinator.com/item?id=46419659</guid>
+            <pubDate>Mon, 29 Dec 2025 11:33:46 GMT</pubDate>
+            <description><![CDATA[Article URL: https://interlaye.red/kubernetes_002degress_002dsquid.html Comments URL: https://news.ycombinator.com/item?id=46419659 Points: 82 # Comments: 37]]></description>
+            <content:encoded><![CDATA[<p><a href="https://interlaye.red/kubernetes_002degress_002dsquid.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Finterlaye.red%2Fkubernetes_002degress_002dsquid.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How I think about Kubernetes]]></title>
+            <link>https://garnaudov.com/writings/how-i-think-about-kubernetes/</link>
+            <guid>https://news.ycombinator.com/item?id=46396043</guid>
+            <pubDate>Fri, 26 Dec 2025 20:44:28 GMT</pubDate>
+            <description><![CDATA[Article URL: https://garnaudov.com/writings/how-i-think-about-kubernetes/ Comments URL: https://news.ycombinator.com/item?id=46396043 Points: 92 # Comments: 67]]></description>
+            <content:encoded><![CDATA[<p><a href="https://garnaudov.com/writings/how-i-think-about-kubernetes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgarnaudov.com%2Fwritings%2Fhow-i-think-about-kubernetes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[What on earth is Kubernetes? (a beginners intro)]]></title>
+            <link>https://kylejeong.com/blog/what-is-kubernetes</link>
+            <guid>https://news.ycombinator.com/item?id=46395491</guid>
+            <pubDate>Fri, 26 Dec 2025 19:50:02 GMT</pubDate>
+            <description><![CDATA[Article URL: https://kylejeong.com/blog/what-is-kubernetes Comments URL: https://news.ycombinator.com/item?id=46395491 Points: 75 # Comments: 2]]></description>
+            <content:encoded><![CDATA[<p><a href="https://kylejeong.com/blog/what-is-kubernetes">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkylejeong.com%2Fblog%2Fwhat-is-kubernetes">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Building the largest known Kubernetes cluster]]></title>
+            <link>https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/</link>
+            <guid>https://news.ycombinator.com/item?id=46006891</guid>
+            <pubDate>Fri, 21 Nov 2025 17:56:50 GMT</pubDate>
+            <description><![CDATA[Article URL: https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/ Comments URL: https://news.ycombinator.com/item?id=46006891 Points: 159 # Comments: 90]]></description>
+            <content:encoded><![CDATA[<p><a href="https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fcloud.google.com%2Fblog%2Fproducts%2Fcontainers-kubernetes%2Fhow-we-built-a-130000-node-gke-cluster%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

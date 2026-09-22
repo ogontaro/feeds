@@ -17,5 +17,157 @@
             <description><![CDATA[Claude Cowork and chat are now one Claude In hopefully good news for anyone who, like me, was increasingly confused at Cowork v.s. Claude v.s. Claude Code: Starting today, Claude Cowork and chat are merging into one Claude. Bring a quick question, or hand over a report due at noon, and Claude takes it from there, even after you’ve closed your laptop. [...] This is rolling out to Pro and Max plans first, in the Claude app on web, desktop, and mobile over the coming weeks to existing and new users]]></description>
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/16/one-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F16%2Fone-claude%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
+        <item>
+            <title><![CDATA[Quoting Boris Cherny]]></title>
+            <link>https://simonwillison.net/2026/Sep/11/boris-cherny/</link>
+            <guid>https://simonwillison.net/2026/Sep/11/boris-cherny/</guid>
+            <pubDate>Fri, 11 Sep 2026 17:47:11 GMT</pubDate>
+            <description><![CDATA[Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on. Without these, you can end up with a mess that is hard to maintain down the line. &mdash; Boris Cherny Tags: claude , ai , claude-code , l]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/11/boris-cherny/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F11%2Fboris-cherny%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Video compressor]]></title>
+            <link>https://simonwillison.net/2026/Sep/7/video-compressor/</link>
+            <guid>https://simonwillison.net/2026/Sep/7/video-compressor/</guid>
+            <pubDate>Mon, 07 Sep 2026 18:29:07 GMT</pubDate>
+            <description><![CDATA[Tool: Video compressor I recorded a short demo video of my Equal Earth animation on my phone and wanted to publish an optimized version of that video (using FFMPEG) on my blog, so I had Claude Fable 5.1 in Claude Code for web build me this tool using the WebAssembly build of FFMPEG. Tags: ffmpeg , video , webassembly , claude , claude-code , claude-mythos-fable]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/7/video-compressor/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F7%2Fvideo-compressor%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[llm-anthropic 0.28]]></title>
+            <link>https://simonwillison.net/2026/Sep/2/llm-anthropic/</link>
+            <guid>https://simonwillison.net/2026/Sep/2/llm-anthropic/</guid>
+            <pubDate>Wed, 02 Sep 2026 17:59:32 GMT</pubDate>
+            <description><![CDATA[Release: llm-anthropic 0.28 Claude Fable 5.1 , reasoning traces are now displayed by default for models that support them, plus a new llm_anthropic.ClaudeRefusal exception for when Claude throws a refusal. Tags: llm , anthropic , claude , claude-mythos-fable]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/2/llm-anthropic/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F2%2Fllm-anthropic%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude's new system prompt really doesn't want to reproduce song lyrics]]></title>
+            <link>https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/</link>
+            <guid>https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/</guid>
+            <pubDate>Wed, 02 Sep 2026 14:16:42 GMT</pubDate>
+            <description><![CDATA[Anthropic publish the system prompts for their Claude consumer applications ( Claude.ai and the Claude mobile apps - sadly not for Claude Cowork or Claude Code). I love that they do this, and that they share not just the current prompts but historic changes to their prompts as well. They used to keep all of the prompts on a single page, but when I checked today I noticed they had re-arranged those prompts into an index page and then a page per model - here's the page for Haiku 4.5 for example, w]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F2%2Fclaudes-new-system-prompt%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Quoting Rick Brewster]]></title>
+            <link>https://simonwillison.net/2026/Sep/2/rick-brewster/</link>
+            <guid>https://simonwillison.net/2026/Sep/2/rick-brewster/</guid>
+            <pubDate>Wed, 02 Sep 2026 05:50:57 GMT</pubDate>
+            <description><![CDATA[Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't just "disable" the use of Direct2D. So, instead, Paint.NET now has an internal, from-scratch, clean-room reverse-engineered rewrite of Direct2D that it uses on WINE (triggered by using /wine ). It lives in PaintDotNet.Windows.Direct2D1.Managed.dll . This was written by our good friend Claude , without whom this would NOT have been possible and ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/2/rick-brewster/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F2%2Frick-brewster%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Fable 5.1 made me a really nice animated pelican]]></title>
+            <link>https://simonwillison.net/2026/Sep/1/claude-fable-5-1/</link>
+            <guid>https://simonwillison.net/2026/Sep/1/claude-fable-5-1/</guid>
+            <pubDate>Tue, 01 Sep 2026 23:57:28 GMT</pubDate>
+            <description><![CDATA[Today is Claude Fable (and Mythos) 5.1 day . Anthropic say that Fable 5.1 "sets a new standard for coding, knowledge work, and long-running problem-solving tasks". Their announcement spends a notable amount of time on scientific research, boasting of a 52.6% score on the brand new Terminal-Bench-Science 0.1 benchmark (first announced on August 27th ), up from 24.7% for Fable 5, 29.0% for Opus 5 and 22.4% for GPT-5.6 Sol. Other benchmarks show slightly improved scores, but none as impressive as t]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/1/claude-fable-5-1/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F1%2Fclaude-fable-5-1%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Breaking Claude Code Opus 5 Auto Mode]]></title>
+            <link>https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/</link>
+            <guid>https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/</guid>
+            <pubDate>Thu, 27 Aug 2026 22:50:25 GMT</pubDate>
+            <description><![CDATA[Breaking Claude Code Opus 5 Auto Mode Anthropic are putting a great deal of faith in Claude Code's auto mode for protecting their coding agent users against prompt injection attacks. They recently made that the default and have made bold claims about its effectiveness. Johann Rehberger is one of the most credible prompt injection researchers active today. He found an attack against auto mode which he claims works 80% of the time, by tricking Claude Code into downloading and uncompressing a zip a]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F27%2Fbreaking-claude-code-opus-5-auto-mode%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[llm-anthropic 0.27]]></title>
+            <link>https://simonwillison.net/2026/Aug/24/llm-anthropic/</link>
+            <guid>https://simonwillison.net/2026/Aug/24/llm-anthropic/</guid>
+            <pubDate>Mon, 24 Aug 2026 16:27:04 GMT</pubDate>
+            <description><![CDATA[Release: llm-anthropic 0.27 This release of the Anthropic plugin for LLM mainly provides compatibility with the recently released anthropic v1.0.0 Python library, which switches from httpx to httpx2 . OpenAI made the same change in their v3.0.0 release two weeks ago. Anthropic provide this migration guide for upgrading to 1.0, so I prompted Fable 5 in Claude Code with: Upgrade to anthropic&gt;=1 - read https://raw.githubusercontent.com/anthropics/anthropic-sdk-python/refs/heads/main/MIGRATION.md]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/24/llm-anthropic/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F24%2Fllm-anthropic%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Anthropic’s best AI model struggles to attract users as cheaper tools thrive]]></title>
+            <link>https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/</link>
+            <guid>https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/</guid>
+            <pubDate>Sun, 23 Aug 2026 20:24:52 GMT</pubDate>
+            <description><![CDATA[Anthropic’s best AI model struggles to attract users as cheaper tools thrive A few interesting numbers in this FT story gathered from "people with knowledge of the matter": Anthropic's "annualized revenue" for July is up to $65bn - it was $47bn in May, and I collected more historic numbers here . Anthropic expect Q3 to be profitable according to the same model they used to declare Q2 profitable. "It also told investors that it had 6,000 customers that spend $100,000 annually or more." As for Ope]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F23%2Fanthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Quoting Drew Breunig]]></title>
+            <link>https://simonwillison.net/2026/Aug/23/drew-breunig/</link>
+            <guid>https://simonwillison.net/2026/Aug/23/drew-breunig/</guid>
+            <pubDate>Sun, 23 Aug 2026 19:55:30 GMT</pubDate>
+            <description><![CDATA[Prior to Fable, it felt silly to waste too much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over most of your problems. But then Fable landed. It was (and still is!) incredible . But the cost was so high and Opus was good enough (as was 5.6, K3, and even GLM) for most of the code we needed. So we started to think about what work went where. &mdash; Drew Breunig , Fable &amp; The End of the Free Lunch Tags: drew-breu]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/23/drew-breunig/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F23%2Fdrew-breunig%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Quoting Claude Opus 5 system prompt]]></title>
+            <link>https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/</link>
+            <guid>https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/</guid>
+            <pubDate>Sun, 09 Aug 2026 23:31:39 GMT</pubDate>
+            <description><![CDATA[Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026 (Anthropic's statement: https://www.anthropic.com/news/fable-mythos-access ). These events are after Claude's training-data cutoff, so Claude knows about them only from this notice. If asked, Claude confirms]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F9%2Fclaude-opus-5-system-prompt%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[One-shotting a Raccoon Heist game using Claude Fable 5]]></title>
+            <link>https://simonwillison.net/2026/Aug/5/raccoon-heist/</link>
+            <guid>https://simonwillison.net/2026/Aug/5/raccoon-heist/</guid>
+            <pubDate>Wed, 05 Aug 2026 19:42:38 GMT</pubDate>
+            <description><![CDATA[Back in 2022 I tweeted screenshots of a game concept generated by GPT-3 and some concept "art" created using DALL-E. Today, on the fourth anniversary of that tweet, I decided to see if Claude Fable 5 (running in Claude Code for web ) could build the entire game from the content of that tweet. It did a pretty good job of it! You can play the game here . Here's the GitHub repo , and a short video demo: Your browser does not support HTML5 video. How I built this This is the August 5th, 2022 tweet :]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/5/raccoon-heist/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F5%2Fraccoon-heist%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[llm-anthropic 0.26]]></title>
+            <link>https://simonwillison.net/2026/Aug/4/llm-anthropic/</link>
+            <guid>https://simonwillison.net/2026/Aug/4/llm-anthropic/</guid>
+            <pubDate>Tue, 04 Aug 2026 22:00:58 GMT</pubDate>
+            <description><![CDATA[Release: llm-anthropic 0.26 Includes new features enabled by LLM 0.32 : New models: claude-fable-5 , claude-sonnet-5 , and claude-opus-5 . #75 , #76 Added server-side tools for WebSearch , WebFetch , CodeExecution , and AnthropicMCP , available through LLM's -T interface or Python tools= . The previous -o web_search* options have been removed in favor of -T WebSearch . #79 Upgraded to llm&gt;=0.32 . Reasoning, tool calls, tool results, and server-side tool results now stream as typed events. Rea]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/4/llm-anthropic/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F4%2Fllm-anthropic%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Quoting Matthew Green]]></title>
+            <link>https://simonwillison.net/2026/Jul/29/matthew-green/</link>
+            <guid>https://simonwillison.net/2026/Jul/29/matthew-green/</guid>
+            <pubDate>Wed, 29 Jul 2026 18:18:15 GMT</pubDate>
+            <description><![CDATA[Right now we’re in the midst of a historic transition from traditional public-key algorithms based on EC-based cryptography and RSA, moving over to new post-quantum algorithms based on novel problems. This is why there are so many standards like HAWK being considered. If there was ever a perfect time for a massive new public cryptanalysis capability to come on line, we’re in it. So unless AIs succeed in undermining all of our hard problems altogether (or we live in Impagliazzo’s Minicrypt ) then]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Jul/29/matthew-green/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FJul%2F29%2Fmatthew-green%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Adding a custom MCP server to Claude and ChatGPT]]></title>
+            <link>https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/</link>
+            <guid>https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/</guid>
+            <pubDate>Wed, 29 Jul 2026 00:13:18 GMT</pubDate>
+            <description><![CDATA[TIL: Adding a custom MCP server to Claude and ChatGPT Connecting a custom MCP server to Claude and ChatGPT's standard chat interfaces is possible, but can take quite a few steps. Tags: ai , generative-ai , chatgpt , llms , claude , model-context-protocol]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FJul%2F29%2Fmcp-in-claude-and-chatgpt%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Discovering cryptographic weaknesses with Claude]]></title>
+            <link>https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/</link>
+            <guid>https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/</guid>
+            <pubDate>Tue, 28 Jul 2026 22:45:37 GMT</pubDate>
+            <description><![CDATA[Discovering cryptographic weaknesses with Claude The best part of this article (here's the repo ) about how Anthropic researchers used Claude Mythos to find mathematical flaws in both HAWK and a weaker version of AES ("neither of these results has a practical impact on today’s computer systems") is the prompts that they shared, spelling mistakes included: the models tend to think it is impossible to solve so they don't try they need a good amount of prompting. why not do aes-128 r7? the whole po]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FJul%2F28%2Fdiscovering-cryptographic-weaknesses-with-claude%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Quoting Boris Cherny]]></title>
+            <link>https://simonwillison.net/2026/Jul/25/boris-cherny/</link>
+            <guid>https://simonwillison.net/2026/Jul/25/boris-cherny/</guid>
+            <pubDate>Sat, 25 Jul 2026 00:42:59 GMT</pubDate>
+            <description><![CDATA[More than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but across PI evals and red teaming, Opus 5 is very hard to prompt inject successfully. &mdash; Boris Cherny , here's that System Card section , page 73 Tags: prompt-injection , anthropic , claude , generative-ai , ai , llms , boris-cherny]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Jul/25/boris-cherny/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FJul%2F25%2Fboris-cherny%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing Claude Opus 5]]></title>
+            <link>https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/</link>
+            <guid>https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/</guid>
+            <pubDate>Fri, 24 Jul 2026 23:48:50 GMT</pubDate>
+            <description><![CDATA[Introducing Claude Opus 5 I've been offline kayaking with sea otters for much of today so I haven't had a chance to put Anthropic's new model Claude Opus 5 through its paces yet. The buzz is positive, and Anthropic's description of it as a "thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price" sounds promising. It's currently leading the Artificial Analysis leaderboard , in front of even Fable 5. It's priced the same as Opus 4.8, and co]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FJul%2F24%2Fintroducing-claude-opus-5%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude make Fable 5 permanent]]></title>
+            <link>https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/</link>
+            <guid>https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/</guid>
+            <pubDate>Sat, 18 Jul 2026 06:00:13 GMT</pubDate>
+            <description><![CDATA[Claude make Fable 5 permanent An update from the @claudeai account on Twitter: Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% of limits. Pro and Team Standard users will continue to have access to Fable via usage credits, and will receive a one-time $100 credit. As I was saying last week , the competition from GPT-5.6 Sol (and maybe to a lesser extent Kimi 3 ) made untenable Anthropic's plan to remove Fable 5 from their subscription accounts and make]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FJul%2F18%2Fclaude-make-fable-5-permanent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
     </channel>
 </rss>

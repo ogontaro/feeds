@@ -96,5 +96,74 @@
             <description><![CDATA[Here are the security implications of Kubernetes 1.37, including new security features to mount volumes, authentication by default on webhooks, and more.]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/kubernetes-1-37-new-security-features">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fkubernetes-1-37-new-security-features">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
+        <item>
+            <title><![CDATA[Defaulting on tech debt: When the bill comes due, AI is the collector]]></title>
+            <link>https://webflow.sysdig.com/blog/defaulting-on-tech-debt-when-the-bill-comes-due-ai-is-the-collector</link>
+            <guid>https://webflow.sysdig.com/blog/defaulting-on-tech-debt-when-the-bill-comes-due-ai-is-the-collector</guid>
+            <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/defaulting-on-tech-debt-when-the-bill-comes-due-ai-is-the-collector">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fdefaulting-on-tech-debt-when-the-bill-comes-due-ai-is-the-collector">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vulnerability response in the AI-discovery era: A four-part plan]]></title>
+            <link>https://webflow.sysdig.com/blog/vulnerability-response-in-the-ai-discovery-era</link>
+            <guid>https://webflow.sysdig.com/blog/vulnerability-response-in-the-ai-discovery-era</guid>
+            <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/vulnerability-response-in-the-ai-discovery-era">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fvulnerability-response-in-the-ai-discovery-era">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Security briefing: July 2026]]></title>
+            <link>https://webflow.sysdig.com/blog/security-briefing-july-2026</link>
+            <guid>https://webflow.sysdig.com/blog/security-briefing-july-2026</guid>
+            <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/security-briefing-july-2026">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fsecurity-briefing-july-2026">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Agentic vulnerability management, end to end: 2,731 findings, one approved fix]]></title>
+            <link>https://webflow.sysdig.com/blog/agentic-vulnerability-management-end-to-end-2-731-findings-one-approved-fix</link>
+            <guid>https://webflow.sysdig.com/blog/agentic-vulnerability-management-end-to-end-2-731-findings-one-approved-fix</guid>
+            <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[AI agents took a 119,443-finding backlog, traced 2,731 SLA breaches to one base-image fix, and opened a real Jira ticket. A human clicked Approve. That click is the whole autonomy debate, settled in one UI element.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/agentic-vulnerability-management-end-to-end-2-731-findings-one-approved-fix">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fagentic-vulnerability-management-end-to-end-2-731-findings-one-approved-fix">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing Sysdig Secure AI: Your expert AI security team]]></title>
+            <link>https://webflow.sysdig.com/blog/introducing-sysdig-secure-ai</link>
+            <guid>https://webflow.sysdig.com/blog/introducing-sysdig-secure-ai</guid>
+            <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sysdig Secure AI puts expert AI agents to work investigating, prioritizing, and acting on cloud security risk in real time, grounded in Sysdig's runtime intelligence. Teams choose how to use it across Agentic AI, Headless Cloud Security, and the GenAI Assistant, as security shifts from human-speed operators to machine-speed orchestration.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/introducing-sysdig-secure-ai">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintroducing-sysdig-secure-ai">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing the Runtime Remediation Skill for headless cloud security]]></title>
+            <link>https://webflow.sysdig.com/blog/introducing-the-runtime-remediation-skill-for-headless-cloud-security</link>
+            <guid>https://webflow.sysdig.com/blog/introducing-the-runtime-remediation-skill-for-headless-cloud-security</guid>
+            <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Runtime Remediation Skill turns a runtime alert into a safe, auditable response: real blast radius, ordered actions, confirmation on every destructive step, and a respawn watch, all with the analyst in control.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/introducing-the-runtime-remediation-skill-for-headless-cloud-security">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintroducing-the-runtime-remediation-skill-for-headless-cloud-security">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing the SysQL Skill: Ask your security graph anything.]]></title>
+            <link>https://webflow.sysdig.com/blog/introducing-the-sysql-skill-ask-your-security-graph-anything</link>
+            <guid>https://webflow.sysdig.com/blog/introducing-the-sysql-skill-ask-your-security-graph-anything</guid>
+            <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[The SysQL Skill brings Sysdig's security graph into Claude Code, so you can ask any question in plain language and get back a validated query, real blast-radius data, and a prioritized fix decision. No query language, no console, no waiting on a report. Just a fix, all in one conversation.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/introducing-the-sysql-skill-ask-your-security-graph-anything">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintroducing-the-sysql-skill-ask-your-security-graph-anything">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Four ways AI has fundamentally changed the threat landscape in 2026]]></title>
+            <link>https://webflow.sysdig.com/blog/four-ways-ai-has-fundamentally-changed-the-threat-landscape-in-2026</link>
+            <guid>https://webflow.sysdig.com/blog/four-ways-ai-has-fundamentally-changed-the-threat-landscape-in-2026</guid>
+            <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sysdig TRT documents four ways agentic AI is reshaping the threat landscape — from autonomous attackers to AI infrastructure as prime target.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/four-ways-ai-has-fundamentally-changed-the-threat-landscape-in-2026">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Ffour-ways-ai-has-fundamentally-changed-the-threat-landscape-in-2026">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[JADEPUFFER evolves: The agentic threat actor deploys ransomware built to destroy AI models]]></title>
+            <link>https://webflow.sysdig.com/blog/jadepuffer-evolves-the-agentic-threat-actor-deploys-ransomware-built-to-destroy-ai-models</link>
+            <guid>https://webflow.sysdig.com/blog/jadepuffer-evolves-the-agentic-threat-actor-deploys-ransomware-built-to-destroy-ai-models</guid>
+            <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[JADEPUFFER, the agentic threat actor documented by the Sysdig Threat Research Team, is now using ransomware to destroy trained AI models.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/jadepuffer-evolves-the-agentic-threat-actor-deploys-ransomware-built-to-destroy-ai-models">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fjadepuffer-evolves-the-agentic-threat-actor-deploys-ransomware-built-to-destroy-ai-models">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
     </channel>
 </rss>

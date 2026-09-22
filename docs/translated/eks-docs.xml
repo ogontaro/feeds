@@ -4,11 +4,19 @@
         <title>Amazon EKS Document History — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Amazon EKS Document History の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 15 Sep 2026 19:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Sep 2026 19:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[CimFS snapshotter support on EKS-optimized Windows Server 2025 AMIs]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-windows-ami.html#windows-cimfs-snapshotter</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#CimFS_snapshotter_support_on_EKS-optimized_Windows_Server_2025_AMIs_2026-09-21</guid>
+            <pubDate>Mon, 21 Sep 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[The Amazon EKS-optimized Windows Server 2025 AMIs now support the opt-in Composite Image File System (CimFS) containerd snapshotter. This feature can reduce cold image pull times for large Windows container images. CimFS is available for Kubernetes version 1.35 and later and is turned off by default.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-windows-ami.html#windows-cimfs-snapshotter">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Feks-optimized-windows-ami.html%23windows-cimfs-snapshotter">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[EKS-optimized AL2023 NVIDIA AMI includes two NVIDIA driver versions]]></title>
             <link>https://docs.aws.amazon.com/eks/latest/userguide/ml-eks-optimized-ami.html</link>
@@ -23,6 +31,126 @@
             <guid>https://docs.aws.amazon.com/eks/latest/userguide/#AWS_managed_policy_updates_2026-09-02</guid>
             <pubDate>Wed, 02 Sep 2026 19:00:00 GMT</pubDate>
             <description><![CDATA[Added wafv2:ListWebACLs permission in AmazonEKSLoadBalancingPolicy to allow Amazon EKS Auto Mode Controller to list AWS WAF Web ACLs when reconciling Application Load Balancer associations. Added gateway.eks.amazonaws.com.alb/stack, gateway.eks.amazonaws.com.alb/resource, gateway.eks.amazonaws.com.nlb/stack, and gateway.eks.amazonaws.com.nlb/resource tag keys to the resource-tagging allowlist in AmazonEKSLoadBalancingPolicy. This allows Amazon EKS Auto Mode Controller to manage AWS resources for]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Deterministic Argo CD capability endpoint]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/working-with-argocd.html#argocd-endpoint-url</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Deterministic_Argo_CD_capability_endpoint_2026-08-24</guid>
+            <pubDate>Mon, 24 Aug 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Documented the format of the EKS Capability for Argo CD endpoint. The endpoint hostname is deterministic, so you can construct it from your capability name, cluster name, AWS account ID, and AWS Region, or retrieve it from the serverUrl field of describe-capability.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/working-with-argocd.html#argocd-endpoint-url">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fworking-with-argocd.html%23argocd-endpoint-url">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS PrivateLink for the cluster OIDC endpoint]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/vpc-interface-endpoints.html#oidc-vpc-interface-endpoints</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#AWS_PrivateLink_for_the_cluster_OIDC_endpoint_2026-07-28</guid>
+            <pubDate>Tue, 28 Jul 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon EKS now supports AWS PrivateLink for the cluster OIDC discovery/JWKS endpoint (com.amazonaws.region-code.oidc-eks), letting you reach the endpoint used by IAM roles for service accounts (IRSA) privately from your VPC without internet egress.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/vpc-interface-endpoints.html#oidc-vpc-interface-endpoints">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fvpc-interface-endpoints.html%23oidc-vpc-interface-endpoints">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[EFA support for static capacity in EKS Auto Mode]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/create-node-class.html#static-network-interfaces</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#EFA_support_for_static_capacity_in_EKS_Auto_Mode_2026-07-21</guid>
+            <pubDate>Tue, 21 Jul 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added support for configuring EFA network interfaces on EKS Auto Mode NodeClass resources. You can now statically define network interfaces at instance launch for high-performance distributed training and inference workloads.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/create-node-class.html#static-network-interfaces">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fcreate-node-class.html%23static-network-interfaces">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Service-linked role update]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Service-linked_role_update_2026-06-26</guid>
+            <pubDate>Fri, 26 Jun 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added AmazonEKSPodIdentityPolicy to the list of access policies in AmazonEKSServiceRolePolicy that the service-linked role can associate and dissociate from cluster access entries. With this addition, Amazon EKS can manage pod identity credentials for workloads running on EKS clusters.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Control plane egress routing]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/control-plane-egress.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Control_plane_egress_routing_2026-06-18</guid>
+            <pubDate>Thu, 18 Jun 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added support for customer-routed control plane egress (controlPlaneEgressMode=CUSTOMER_ROUTED), letting you manage the network path from the cluster control plane to resources in your VPC.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/control-plane-egress.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fcontrol-plane-egress.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Service linked role update]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Service_linked_role_update_2026-06-15</guid>
+            <pubDate>Mon, 15 Jun 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added elasticloadbalancing:SetRulePriorities permission in AmazonEKSLoadBalancingPolicy to allow Amazon EKS Auto Mode Controller to set priorities of the specified listener rules for ALB. Added ec2:DescribeIpamPools permission in AmazonEKSLoadBalancingPolicy to describe ipam pool]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes version 1.36]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions-standard.html#kubernetes-1-36</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Kubernetes_version_1.36_2026-06-02</guid>
+            <pubDate>Tue, 02 Jun 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added Kubernetes version 1.36 to Amazon EKS.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions-standard.html#kubernetes-1-36">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fkubernetes-versions-standard.html%23kubernetes-1-36">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS managed policy updates]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#AWS_managed_policy_updates_2026-05-28</guid>
+            <pubDate>Thu, 28 May 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Updated AmazonEBSCSIDriverEKSClusterScopedPolicy to authorize ec2:AttachVolume and ec2:DetachVolume on instances tagged with the eks:eks-cluster-name tag, in addition to the existing eks:cluster-name and ebs.csi.aws.com/cluster-name tags. This adds compatibility with controllers that follow the EKS controller tagging standard, including open source Karpenter and Amazon EKS Auto Mode.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS managed policy updates]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#AWS_managed_policy_updates_2026-05-18</guid>
+            <pubDate>Mon, 18 May 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added permissions to AmazonEKSComputePolicy to allow Amazon EKS Auto Mode to launch instances from Interruptible Capacity Reservations in your account.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS managed policy updates]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#AWS_managed_policy_updates_2026-05-12</guid>
+            <pubDate>Tue, 12 May 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added a new AWS managed policy: AmazonEKSBlockStoragePolicyV2]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Service linked role update]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Service_linked_role_update_2026-04-27</guid>
+            <pubDate>Mon, 27 Apr 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added elasticloadbalancing:DescribeLoadBalancers permission in AmazonEKSLoadBalancingPolicy to allow Amazon EKS Auto Mode Controller to describe LoadBalancer]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes version 1.32 for local clusters on AWS Outposts]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/eks-outposts-platform-versions.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Kubernetes_version_1.32_for_local_clusters_on_AWS_Outposts_2026-04-23</guid>
+            <pubDate>Thu, 23 Apr 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added Kubernetes version 1.32 support for local Amazon EKS clusters on AWS Outposts.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-outposts-platform-versions.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Feks-outposts-platform-versions.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Service linked role update]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#Service_linked_role_update_2026-04-20</guid>
+            <pubDate>Mon, 20 Apr 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added elasticloadbalancing:DescribeCapacityReservation permission in AmazonEKSLoadBalancingPolicy to allow Amazon EKS Auto Mode Controller to describe LoadBalancer capacity units]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS managed policy updates]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#AWS_managed_policy_updates_2026-04-17</guid>
+            <pubDate>Fri, 17 Apr 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Added permissions to AmazonEKSComputePolicy to allow Amazon EKS Auto Mode to launch instances into the EC2 Placement Groups in your account.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New AWS managed policy]]></title>
+            <link>https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html</link>
+            <guid>https://docs.aws.amazon.com/eks/latest/userguide/#New_AWS_managed_policy_2026-04-16</guid>
+            <pubDate>Thu, 16 Apr 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Introduced AmazonEBSCSIDriverPolicyV2 and AmazonEBSCSIDriverEKSClusterScopedPolicy as more restrictive alternatives to AmazonEBSCSIDriverPolicy. AmazonEBSCSIDriverPolicyV2 scopes the EBS CSI driver to volumes and snapshots tagged with ebs.csi.aws.com/cluster set to true. AmazonEBSCSIDriverEKSClusterScopedPolicy scopes the driver to volumes and snapshots belonging to a specific EKS cluster using the ebs.csi.aws.com/cluster-name tag.]]></description>
             <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>

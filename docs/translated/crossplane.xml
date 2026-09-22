@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>The Crossplane Blog — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>The Crossplane Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Tue, 23 Jun 2026 15:08:59 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Building Modelplane on Crossplane]]></title>
+            <link>https://blog.crossplane.io/building-modelplane/</link>
+            <guid>6a3a5af344548c0bc51c6384</guid>
+            <pubDate>Tue, 23 Jun 2026 15:08:59 GMT</pubDate>
+            <description><![CDATA[I've worked on Crossplane for almost eight years, since the v0.1 release. In that time I've watched a lot of people use it to put cloud infrastructure behind an API. For the last few months I've been using it to put a particular,]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/building-modelplane/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fbuilding-modelplane%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Is your control plane ready for Crossplane v2?]]></title>
+            <link>https://blog.crossplane.io/v2-upgrade-check/</link>
+            <guid>6a2331cf44548c0bc51c634b</guid>
+            <pubDate>Fri, 05 Jun 2026 21:34:40 GMT</pubDate>
+            <description><![CDATA[Holding off on upgrading to Crossplane v2? Use the new upgrade check command to see if your control plane is ready to smoothly upgrade to v2 today.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/v2-upgrade-check/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fv2-upgrade-check%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing function-kro: YAML+CEL Composition Meets Crossplane]]></title>
+            <link>https://blog.crossplane.io/function-kro-yaml-cel/</link>
+            <guid>69bbc990b8260204c5e3dcb8</guid>
+            <pubDate>Thu, 19 Mar 2026 10:59:28 GMT</pubDate>
+            <description><![CDATA[The combination of YAML+CEL provides a simple experience to define Kubernetes resources. We're excited to announce function-kro that makes kro's YAML+CEL syntax available as another option to join Crossplane's already expansive menu of supported languages.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/function-kro-yaml-cel/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Ffunction-kro-yaml-cel%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Meet Crossplane in Amsterdam for KubeCon EU 2026!]]></title>
+            <link>https://blog.crossplane.io/meet-crossplane-in-amsterdam-for-kubecon-eu-2026/</link>
+            <guid>69b9dfdab8260204c5e3dc4b</guid>
+            <pubDate>Wed, 18 Mar 2026 17:19:16 GMT</pubDate>
+            <description><![CDATA[KubeCon EU is back in Amsterdam, and so are we — with end-user stories from financial institutions and global tech companies, from API-driven infrastructure to self-healing platforms.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/meet-crossplane-in-amsterdam-for-kubecon-eu-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fmeet-crossplane-in-amsterdam-for-kubecon-eu-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Crossplane v2.2 — More Capable, More Reliable, More Observable]]></title>
+            <link>https://blog.crossplane.io/crossplane-v2-2-more-capable-more-reliable-more-observable/</link>
+            <guid>69b971fab8260204c5e3dbfa</guid>
+            <pubDate>Tue, 17 Mar 2026 15:30:00 GMT</pubDate>
+            <description><![CDATA[We are excited to announce that Crossplane v2.2.0 has been released and is now available for installation into your control planes.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/crossplane-v2-2-more-capable-more-reliable-more-observable/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fcrossplane-v2-2-more-capable-more-reliable-more-observable%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Crossplane & AI: The Case for API-First Infrastructure]]></title>
+            <link>https://blog.crossplane.io/crossplane-ai-the-case-for-api-first-infrastructure/</link>
+            <guid>699df170b8260204c5e3dbb3</guid>
+            <pubDate>Wed, 25 Feb 2026 13:20:00 GMT</pubDate>
+            <description><![CDATA[AI has accelerated coding, but the real bottleneck starts after git push. Infrastructure and operations still rely on fragmented, human workflows. To enable AI agents, platforms must be API-first and declarative, offering a consistent, machine-readable control plane for automation at scale.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/crossplane-ai-the-case-for-api-first-infrastructure/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fcrossplane-ai-the-case-for-api-first-infrastructure%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Announcing Crossplane’s CNCF Graduation]]></title>
+            <link>https://blog.crossplane.io/crossplane-cncf-graduation/</link>
+            <guid>690cc5555ee20a04a1afbe67</guid>
+            <pubDate>Thu, 06 Nov 2025 17:06:55 GMT</pubDate>
+            <description><![CDATA[We are absolutely thrilled today to announce the graduation of Crossplane within the CNCF!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/crossplane-cncf-graduation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fcrossplane-cncf-graduation%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Announcing Crossplane 2.0]]></title>
+            <link>https://blog.crossplane.io/announcing-crossplane-2-0/</link>
+            <guid>689c190d5ee20a04a1afbe3d</guid>
+            <pubDate>Wed, 13 Aug 2025 04:51:00 GMT</pubDate>
+            <description><![CDATA[After seven years building Crossplane, we're excited to announce Crossplane 2.0. This release extends beyond infrastructure to support applications as first-class citizens, enabling platform teams to offer unified APIs that manage apps and infrastructure together.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/announcing-crossplane-2-0/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fannouncing-crossplane-2-0%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Introducing function-python]]></title>
+            <link>https://blog.crossplane.io/introducing-function-python/</link>
+            <guid>67e363ac5ee20a04a1afbdee</guid>
+            <pubDate>Wed, 26 Mar 2025 02:26:53 GMT</pubDate>
+            <description><![CDATA[We are excited to announce the first release of Function Python, a powerful new tool that enables you to write Crossplane compositions using Python. This release opens up new possibilities for platform engineers and developers who prefer Python's simplicity and readability when configuring Crossplane. Function Python was developed]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/introducing-function-python/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fintroducing-function-python%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Strengthening Crossplane's Community-Driven Ecosystem]]></title>
+            <link>https://blog.crossplane.io/community-ecosystem/</link>
+            <guid>67bde49e5ee20a04a1afbdc0</guid>
+            <pubDate>Tue, 25 Feb 2025 18:51:37 GMT</pubDate>
+            <description><![CDATA[Today, we're excited to announce key updates for the Crossplane community aimed at fostering the growth of community-contributed Crossplane extensions (providers and functions) while reinforcing our commitment to vendor neutrality—just like all CNCF projects.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/community-ecosystem/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fcommunity-ecosystem%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Crossplane v2: A More Intuitive Way to Manage Applications]]></title>
+            <link>https://blog.crossplane.io/announcing-crossplane-v2-proposal/</link>
+            <guid>679c16545ee20a04a1afbd74</guid>
+            <pubDate>Fri, 31 Jan 2025 00:36:19 GMT</pubDate>
+            <description><![CDATA[Crossplane v2 introduces a more intuitive, namespaced-first approach to managing both applications and infrastructure, making it easier to compose Kubernetes resources without unnecessary complexity. With backward compatibility and an opt-in migration path, these changes improve usability while preserving Crossplane’s core strengths in platform engineering and declarative infrastructure management.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/announcing-crossplane-v2-proposal/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fannouncing-crossplane-v2-proposal%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[My Experience as a Mentee in the LFX Mentorship Program with Crossplane]]></title>
+            <link>https://blog.crossplane.io/lfx-mentorship-2024/</link>
+            <guid>67053db05c38b879aa9d6841</guid>
+            <pubDate>Tue, 08 Oct 2024 15:48:07 GMT</pubDate>
+            <description><![CDATA[As someone passionate about open-source software, being a mentee in the LFX Mentorship Program, backed by the Linux Foundation, has been one of the most enriching experiences of my career]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/lfx-mentorship-2024/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Flfx-mentorship-2024%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Crossplane v1.16 - a Community Driven Success]]></title>
+            <link>https://blog.crossplane.io/crossplane-v1-16/</link>
+            <guid>66454ea05c38b879aa9d6801</guid>
+            <pubDate>Thu, 16 May 2024 01:22:09 GMT</pubDate>
+            <description><![CDATA[We are excited to announce today that Crossplane v1.16.0 has been released and is now available for installation into your control planes. This latest release of Crossplane focused on maturing a number of key areas of functionality across the project, as Crossplane continues to become more capable, more]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/crossplane-v1-16/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fcrossplane-v1-16%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Go deeper with control planes at Level Up with Crossplane, presented by Upbound]]></title>
+            <link>https://blog.crossplane.io/go-deeper-with-control-planes-at-level-up-with-crossplane-presented-by-upbound/</link>
+            <guid>6629346c5c38b879aa9d67c7</guid>
+            <pubDate>Thu, 25 Apr 2024 15:59:01 GMT</pubDate>
+            <description><![CDATA[Inspired by Control Plane Day and Crossplane Day, Level Up with Crossplane, presented by Upbound, is a new event series for the community of engineers interested in getting hands-on with Crossplane control planes. Register for the live May 7 event.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/go-deeper-with-control-planes-at-level-up-with-crossplane-presented-by-upbound/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fgo-deeper-with-control-planes-at-level-up-with-crossplane-presented-by-upbound%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[KubeCon Europe 2024: Watch these 8+ Crossplane-y talks]]></title>
+            <link>https://blog.crossplane.io/kubecon-europe-2024-watch-these-8-crossplane-y-talks/</link>
+            <guid>66205d425c38b879aa9d6713</guid>
+            <pubDate>Thu, 18 Apr 2024 17:29:59 GMT</pubDate>
+            <description><![CDATA[What’s the latest with the Crossplane cloud native control plane framework? Catch these Crossplane community talks from KubeCon/CloudNativeCon Europe.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.crossplane.io/kubecon-europe-2024-watch-these-8-crossplane-y-talks/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.crossplane.io%2Fkubecon-europe-2024-watch-these-8-crossplane-y-talks%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

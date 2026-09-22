@@ -4,11 +4,19 @@
         <title>Latent Space — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Latent Space の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 19 Sep 2026 05:48:28 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Sep 2026 22:13:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI]]></title>
+            <link>https://www.latent.space/p/jev</link>
+            <guid>https://www.latent.space/p/jev</guid>
+            <pubDate>Mon, 21 Sep 2026 22:13:49 GMT</pubDate>
+            <description><![CDATA[The definitive Jev podcast with its lead creator.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/jev">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fjev">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[AINews] Here are 6 Clones of Jev in 2 days]]></title>
             <link>https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in</link>
@@ -48,6 +56,118 @@
             <pubDate>Wed, 16 Sep 2026 11:09:53 GMT</pubDate>
             <description><![CDATA[congrats to TypeSafe!]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-jev-a-system-one-model-that">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-jev-a-system-one-model-that">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Can Skills Learned in Games Transfer to Real-World Work?]]></title>
+            <link>https://www.latent.space/p/good-start-labs</link>
+            <guid>https://www.latent.space/p/good-start-labs</guid>
+            <pubDate>Tue, 15 Sep 2026 20:11:54 GMT</pubDate>
+            <description><![CDATA[Good Start Labs trained an AI on a railroad game — and one version improved at financial research. The difference was the training design.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/good-start-labs">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fgood-start-labs">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] AEF-1 standard emerges for Third Party Evaluators, as Xai, OpenAI, and Anthropic all cosign]]></title>
+            <link>https://www.latent.space/p/ainews-aef-1-standard-emerges-for</link>
+            <guid>https://www.latent.space/p/ainews-aef-1-standard-emerges-for</guid>
+            <pubDate>Tue, 15 Sep 2026 04:50:36 GMT</pubDate>
+            <description><![CDATA[Pacing gathers pace.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-aef-1-standard-emerges-for">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-aef-1-standard-emerges-for">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Humanity’s Last Invention — Richard Socher of Recursive]]></title>
+            <link>https://www.latent.space/p/recursive</link>
+            <guid>https://www.latent.space/p/recursive</guid>
+            <pubDate>Mon, 14 Sep 2026 16:04:16 GMT</pubDate>
+            <description><![CDATA[Richard Socher is an NLP OG and CEO of You.com, who has now spun out an even more ambitious startup focused on RSI — already worth $5B!]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/recursive">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Frecursive">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The Rise of the Forward Deployed Engineer — and How To Do the Job Right]]></title>
+            <link>https://www.latent.space/p/forward-deployed-engineer-best-practices</link>
+            <guid>https://www.latent.space/p/forward-deployed-engineer-best-practices</guid>
+            <pubDate>Sat, 12 Sep 2026 15:01:19 GMT</pubDate>
+            <description><![CDATA[Before co-founding Kepler, Vinoo Ganesh led Spark at Palantir and built Project Frontline — a pioneering program for Forward Deployed Engineers. He takes us through the best practices of FDEs.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/forward-deployed-engineer-best-practices">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fforward-deployed-engineer-best-practices">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] DeepSeek v4.1-Flash: 763B-P8B-D16B novel causal Encoder–Decoder architecture with vision marks the Return of the Whale]]></title>
+            <link>https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b</link>
+            <guid>https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b</guid>
+            <pubDate>Sat, 12 Sep 2026 05:56:05 GMT</pubDate>
+            <description><![CDATA[We agree with Sebastian: this should have been DeepSeek v5]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-deepseek-v41-flash-763b-p8b">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] not much happened today]]></title>
+            <link>https://www.latent.space/p/ainews-not-much-happened-today-d3b</link>
+            <guid>https://www.latent.space/p/ainews-not-much-happened-today-d3b</guid>
+            <pubDate>Thu, 10 Sep 2026 03:33:12 GMT</pubDate>
+            <description><![CDATA[a quiet day]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-not-much-happened-today-d3b">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-not-much-happened-today-d3b">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] OpenAI reports Navier-Stokes singularity find in 88 hours using Astra-next, roughly 10,000 agents and 130B tokens (>$40M), a contender for second ever Millennium Prize awarded]]></title>
+            <link>https://www.latent.space/p/ainews-openai-reports-navier-stokes</link>
+            <guid>https://www.latent.space/p/ainews-openai-reports-navier-stokes</guid>
+            <pubDate>Wed, 09 Sep 2026 05:04:51 GMT</pubDate>
+            <description><![CDATA[Overshadowing Cognition's $48B Series E, Mistral's $24B Series D, Meta's Muse agent, and GPT Image 2.5. The most jam packed, feel the AGI day in the history of AI.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-openai-reports-navier-stokes">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-openai-reports-navier-stokes">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The Frontier AEO Tracker: What Astra Chooses (and every other frontier model, and what you can do about it)]]></title>
+            <link>https://www.latent.space/p/aeo</link>
+            <guid>https://www.latent.space/p/aeo</guid>
+            <pubDate>Mon, 07 Sep 2026 21:32:37 GMT</pubDate>
+            <description><![CDATA[Our first Astra project dives into AEO trends, a top asked topic from founders and DX leaders we talk to.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/aeo">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Faeo">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot]]></title>
+            <link>https://www.latent.space/p/grok-bot</link>
+            <guid>https://www.latent.space/p/grok-bot</guid>
+            <pubDate>Sat, 05 Sep 2026 15:01:02 GMT</pubDate>
+            <description><![CDATA[SpaceXAI’s Grok Bot has the same level of programming power as OpenClaw, but it’s programmable at a different level of abstraction.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/grok-bot">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fgrok-bot">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Collusion.wiki: A second undisclosed OpenAI agent swarm incident...]]></title>
+            <link>https://www.latent.space/p/ainews-collusionwiki-a-second-undisclosed</link>
+            <guid>https://www.latent.space/p/ainews-collusionwiki-a-second-undisclosed</guid>
+            <pubDate>Sat, 05 Sep 2026 04:32:00 GMT</pubDate>
+            <description><![CDATA[AI News for 9/2/2026-9/3/2026.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-collusionwiki-a-second-undisclosed">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-collusionwiki-a-second-undisclosed">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] GPT-6 Astra: OpenAI’s biggest LLM launch of all time]]></title>
+            <link>https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest</link>
+            <guid>https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest</guid>
+            <pubDate>Fri, 04 Sep 2026 05:18:11 GMT</pubDate>
+            <description><![CDATA[new SOTA computer use and coding, 2.5x pricier per token, but WAY cheaper per task, less monitorable. overall, a very successful launch of OpenAI’s new frontier model class.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-gpt-6-astra-openais-biggest">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour]]></title>
+            <link>https://www.latent.space/p/astra</link>
+            <guid>https://www.latent.space/p/astra</guid>
+            <pubDate>Thu, 03 Sep 2026 21:09:41 GMT</pubDate>
+            <description><![CDATA[We spent 20B+ tokens of GPT-6 Astra to explore everything. Here’s our learnings.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/astra">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fastra">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Muse Spark 1.3 matches GPT-5.6-Sol, confirming Meta Superintelligence as the newest Frontier Lab, >90% discount for training]]></title>
+            <link>https://www.latent.space/p/ainews-muse-spark-13-matches-gpt</link>
+            <guid>https://www.latent.space/p/ainews-muse-spark-13-matches-gpt</guid>
+            <pubDate>Thu, 03 Sep 2026 04:38:33 GMT</pubDate>
+            <description><![CDATA[an epic comeback story for Meta]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-muse-spark-13-matches-gpt">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-muse-spark-13-matches-gpt">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Claude Fable/Mythos 5.1: new SOTA model, 75% cache price cut but 70% more output tokens]]></title>
+            <link>https://www.latent.space/p/ainews-claude-fablemythos-51-new</link>
+            <guid>https://www.latent.space/p/ainews-claude-fablemythos-51-new</guid>
+            <pubDate>Wed, 02 Sep 2026 07:46:08 GMT</pubDate>
+            <description><![CDATA[Queue the usual rush of model launches...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-claude-fablemythos-51-new">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-claude-fablemythos-51-new">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

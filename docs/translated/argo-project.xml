@@ -16,5 +16,68 @@
             <pubDate>Wed, 16 Sep 2026 16:00:25 GMT</pubDate>
             <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-6-rc1-is-here-c0b562dc78d1%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
+        <item>
+            <title><![CDATA[Argo Workflows 4.1]]></title>
+            <link>https://blog.argoproj.io/argo-workflows-4-1-first-release-candidate-6d680014278d?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/6d680014278d</guid>
+            <pubDate>Fri, 14 Aug 2026 16:07:38 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-workflows-4-1-first-release-candidate-6d680014278d?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-workflows-4-1-first-release-candidate-6d680014278d%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Argo Rollouts 1.10 Release Candidate]]></title>
+            <link>https://blog.argoproj.io/argo-rollouts-1-10-release-candidate-24c9edc69abe?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/24c9edc69abe</guid>
+            <pubDate>Thu, 16 Jul 2026 16:10:43 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-rollouts-1-10-release-candidate-24c9edc69abe?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-rollouts-1-10-release-candidate-24c9edc69abe%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Argo CD 2026 User Survey Results]]></title>
+            <link>https://blog.argoproj.io/argo-cd-2026-user-survey-results-dcffc9a8e48e?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/dcffc9a8e48e</guid>
+            <pubDate>Thu, 09 Jul 2026 13:56:28 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-cd-2026-user-survey-results-dcffc9a8e48e?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-2026-user-survey-results-dcffc9a8e48e%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Argo CD v3.5 Release Candidate]]></title>
+            <link>https://blog.argoproj.io/argo-cd-v3-5-release-candidate-02b1fbf7b419?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/02b1fbf7b419</guid>
+            <pubDate>Tue, 16 Jun 2026 16:54:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-cd-v3-5-release-candidate-02b1fbf7b419?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-5-release-candidate-02b1fbf7b419%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Exposing ApplicationSets Beyond YAML: Argo CD’s ApplicationSet UI]]></title>
+            <link>https://blog.argoproj.io/exposing-applicationsets-beyond-yaml-argo-cds-applicationset-ui-a7a45f3054d2?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/a7a45f3054d2</guid>
+            <pubDate>Tue, 09 Jun 2026 15:14:18 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/exposing-applicationsets-beyond-yaml-argo-cds-applicationset-ui-a7a45f3054d2?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fexposing-applicationsets-beyond-yaml-argo-cds-applicationset-ui-a7a45f3054d2%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Header based routing with Argo Rollouts and the Gateway API]]></title>
+            <link>https://blog.argoproj.io/header-based-routing-with-argo-rollouts-and-the-gateway-api-777f9a1f614d?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/777f9a1f614d</guid>
+            <pubDate>Tue, 02 Jun 2026 13:01:03 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/header-based-routing-with-argo-rollouts-and-the-gateway-api-777f9a1f614d?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fheader-based-routing-with-argo-rollouts-and-the-gateway-api-777f9a1f614d%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Argo CD v3.4 Release Candidate]]></title>
+            <link>https://blog.argoproj.io/argo-cd-v3-4-release-candidate-2702b8af68d4?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/2702b8af68d4</guid>
+            <pubDate>Tue, 17 Mar 2026 20:19:52 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-cd-v3-4-release-candidate-2702b8af68d4?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-4-release-candidate-2702b8af68d4%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Argo-Workflows 4.0]]></title>
+            <link>https://blog.argoproj.io/argo-workflows-4-0-rc2-70def0d672ef?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/70def0d672ef</guid>
+            <pubDate>Mon, 09 Feb 2026 18:28:06 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-workflows-4-0-rc2-70def0d672ef?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-workflows-4-0-rc2-70def0d672ef%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Argo CD 3.3 Release Candidate]]></title>
+            <link>https://blog.argoproj.io/argo-cd-3-3-release-candidate-00e99f7b7daa?source=rss----21be29067291---4</link>
+            <guid>https://medium.com/p/00e99f7b7daa</guid>
+            <pubDate>Mon, 15 Dec 2025 18:56:22 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://blog.argoproj.io/argo-cd-3-3-release-candidate-00e99f7b7daa?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-3-3-release-candidate-00e99f7b7daa%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
     </channel>
 </rss>

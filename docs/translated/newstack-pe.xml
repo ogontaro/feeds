@@ -105,5 +105,69 @@
             <description><![CDATA[OpenSearch is a top-level open-source project under the Linux Foundation, backed by Amazon Web Services and other prominent players. The The post How to build smarter OpenSearch alerts: Join our live conversation appeared first on The New Stack.]]></description>
             <content:encoded><![CDATA[<p><a href="https://thenewstack.io/opensearch-ppl-unified-alerting/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopensearch-ppl-unified-alerting%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
+        <item>
+            <title><![CDATA[AWS deprecated this EKS auth method. 81% of clusters still run it.]]></title>
+            <link>https://thenewstack.io/kubernetes-fleet-security-management/</link>
+            <guid>https://thenewstack.io/?p=22833909</guid>
+            <pubDate>Wed, 19 Aug 2026 18:59:54 GMT</pubDate>
+            <description><![CDATA[The migration to Kubernetes and cloud native infrastructure has been one of the defining IT trends of the past decade. The post AWS deprecated this EKS auth method. 81% of clusters still run it. appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/kubernetes-fleet-security-management/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-fleet-security-management%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Per-developer environments were the goal. Agents moved the goalposts.]]></title>
+            <link>https://thenewstack.io/new-tenant-is-change/</link>
+            <guid>https://thenewstack.io/?p=22833551</guid>
+            <pubDate>Sat, 15 Aug 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[Multi-tenancy has moved in one direction for 60 years: the tenant keeps getting smaller. Mainframe time-sharing carved a single machine The post Per-developer environments were the goal. Agents moved the goalposts. appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/new-tenant-is-change/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fnew-tenant-is-change%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Platform Engineering ROI: What it costs to build your own platform]]></title>
+            <link>https://thenewstack.io/real-cost-diy-platform/</link>
+            <guid>https://thenewstack.io/?p=22833061</guid>
+            <pubDate>Sun, 09 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[What it actually costs to build your own internal developer platform over five years, and why most “we’ll just build The post Platform Engineering ROI: What it costs to build your own platform appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/real-cost-diy-platform/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Freal-cost-diy-platform%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why your KubeVirt VMs can’t move between clusters — and how EVPN fixes it]]></title>
+            <link>https://thenewstack.io/kubevirt-evpn-vm-migration/</link>
+            <guid>https://thenewstack.io/?p=22832995</guid>
+            <pubDate>Sat, 08 Aug 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[Your team has moved VMs to Kubernetes with KubeVirt. The workloads are running. The team is gaining confidence. Then someone The post Why your KubeVirt VMs can’t move between clusters — and how EVPN fixes it appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/kubevirt-evpn-vm-migration/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fkubevirt-evpn-vm-migration%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Coinbase, Shopify and Ramp all built their own coding agents. All three still pay Anthropic.]]></title>
+            <link>https://thenewstack.io/enterprise-ai-agent-harness/</link>
+            <guid>https://thenewstack.io/?p=22832963</guid>
+            <pubDate>Fri, 07 Aug 2026 18:16:03 GMT</pubDate>
+            <description><![CDATA[Enterprise engineering teams are converging on a common architecture for AI-assisted software development. Coinbase, Shopify, and Ramp have each built The post Coinbase, Shopify and Ramp all built their own coding agents. All three still pay Anthropic. appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/enterprise-ai-agent-harness/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fenterprise-ai-agent-harness%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Say goodbye to K8s GPU pain: How DRA changes everything]]></title>
+            <link>https://thenewstack.io/kubernetes-dra-gpu-scheduling/</link>
+            <guid>https://thenewstack.io/?p=22832812</guid>
+            <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Consider a platform team managing a shared GPU cluster with a mix of B200s, H100s, and recently added B300s. Every The post Say goodbye to K8s GPU pain: How DRA changes everything appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/kubernetes-dra-gpu-scheduling/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-dra-gpu-scheduling%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[“Just rewrite it”: What platform teams really think about modernization]]></title>
+            <link>https://thenewstack.io/nutanix-dual-native-architecture/</link>
+            <guid>https://thenewstack.io/?p=22832865</guid>
+            <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Mergers, acquisitions, and the steady churn of business and technology initiatives are creating something nobody asked for: Duplicate infrastructure and The post “Just rewrite it”: What platform teams really think about modernization appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/nutanix-dual-native-architecture/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fnutanix-dual-native-architecture%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Every software company will become a dev tools company]]></title>
+            <link>https://thenewstack.io/platform-engineering-ai-harness/</link>
+            <guid>https://thenewstack.io/?p=22832729</guid>
+            <pubDate>Wed, 05 Aug 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[If most software will soon be built by machines, the job of software engineers will change: from writing software to The post Every software company will become a dev tools company appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/platform-engineering-ai-harness/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fplatform-engineering-ai-harness%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
     </channel>
 </rss>

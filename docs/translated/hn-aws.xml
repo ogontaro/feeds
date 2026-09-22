@@ -41,5 +41,133 @@
             <description><![CDATA[Article URL: https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws Comments URL: https://news.ycombinator.com/item?id=49448321 Points: 1102 # Comments: 316]]></description>
             <content:encoded><![CDATA[<p><a href="https://ducklabs.com/news/2026/08/26/ducklabs-to-join-aws">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fducklabs.com%2Fnews%2F2026%2F08%2F26%2Fducklabs-to-join-aws">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
+        <item>
+            <title><![CDATA[Codex on AWS bedrock bug causing 10x charges]]></title>
+            <link>https://github.com/openai/codex/issues/37674</link>
+            <guid>https://news.ycombinator.com/item?id=49383326</guid>
+            <pubDate>Fri, 21 Aug 2026 03:17:43 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/openai/codex/issues/37674 Comments URL: https://news.ycombinator.com/item?id=49383326 Points: 148 # Comments: 66]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/openai/codex/issues/37674">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fopenai%2Fcodex%2Fissues%2F37674">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Airbus Takes Flight from AWS]]></title>
+            <link>https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109</link>
+            <guid>https://news.ycombinator.com/item?id=48976682</guid>
+            <pubDate>Mon, 20 Jul 2026 10:12:22 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109 Comments URL: https://news.ycombinator.com/item?id=48976682 Points: 218 # Comments: 169]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.theregister.com%2Fcolumnists%2F2026%2F07%2F20%2Fairbus-takes-flight-from-aws-what-happens-next-is-critical%2F5274109">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ask HN: Any AWS billing issues known? Amazon forecast of 3 billion dollars]]></title>
+            <link>https://news.ycombinator.com/item?id=48945681</link>
+            <guid>https://news.ycombinator.com/item?id=48945681</guid>
+            <pubDate>Fri, 17 Jul 2026 10:45:21 GMT</pubDate>
+            <description><![CDATA[I receive an AWS Budgets alert that my budget is exceeding the alert threshold. Threshold is 5$. Forecasted amount is listed as $3,005,575,870.47. (Yepp, right, that’s 3 billion dollars.) I haven't even used AWS actively in the last year, but AWS console lists the amount as stated above. No feedback from AWS support yet, but the support AI chat bot says: "Die perfekt gleichmäßigen Tageskosten seit dem 1. Juli deuten stark auf einen Abrechnungs- oder Messfehler hin." ("The perfectly consistent da]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=48945681">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D48945681">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Just got an AWS billing alert projecting my monthly cost at $140B]]></title>
+            <link>https://news.ycombinator.com/item?id=48945606</link>
+            <guid>https://news.ycombinator.com/item?id=48945606</guid>
+            <pubDate>Fri, 17 Jul 2026 10:35:06 GMT</pubDate>
+            <description><![CDATA[This has to be a bug. My usual monthly S3 bill is only $2–3. Has anyone else received a strange billing estimate today? https://prnt.sc/UqjcYD3RSQrS Comments URL: https://news.ycombinator.com/item?id=48945606 Points: 90 # Comments: 5]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=48945606">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D48945606">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS: Inaccurate Estimated Billing Data – $1.7 billion]]></title>
+            <link>https://news.ycombinator.com/item?id=48945241</link>
+            <guid>https://news.ycombinator.com/item?id=48945241</guid>
+            <pubDate>Fri, 17 Jul 2026 09:42:05 GMT</pubDate>
+            <description><![CDATA[URL already posted: https://health.aws.amazon.com/health/status I've got an estimated bill for $1.7 BILLION over this month. Normal usage is https://www.reddit.com/r/aws/comments/1uyuaw7/help_my_bill_s... Comments URL: https://news.ycombinator.com/item?id=48945241 Points: 1318 # Comments: 754]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=48945241">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D48945241">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[EU to soon classify AWS and Azure as gatekeepers under DSA]]></title>
+            <link>https://www.heise.de/en/news/Report-EU-to-soon-classify-AWS-and-Azure-as-gatekeepers-under-DSA-11337873.html</link>
+            <guid>https://news.ycombinator.com/item?id=48596622</guid>
+            <pubDate>Fri, 19 Jun 2026 09:28:22 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.heise.de/en/news/Report-EU-to-soon-classify-AWS-and-Azure-as-gatekeepers-under-DSA-11337873.html Comments URL: https://news.ycombinator.com/item?id=48596622 Points: 66 # Comments: 26]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.heise.de/en/news/Report-EU-to-soon-classify-AWS-and-Azure-as-gatekeepers-under-DSA-11337873.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.heise.de%2Fen%2Fnews%2FReport-EU-to-soon-classify-AWS-and-Azure-as-gatekeepers-under-DSA-11337873.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Microsoft turns to AWS as GitHub faces AI capacity crunch]]></title>
+            <link>https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch</link>
+            <guid>https://news.ycombinator.com/item?id=48549918</guid>
+            <pubDate>Tue, 16 Jun 2026 02:47:57 GMT</pubDate>
+            <description><![CDATA[Article URL: https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch Comments URL: https://news.ycombinator.com/item?id=48549918 Points: 154 # Comments: 77]]></description>
+            <content:encoded><![CDATA[<p><a href="https://runtimewire.com/article/microsoft-github-aws-ai-capacity-crunch">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fruntimewire.com%2Farticle%2Fmicrosoft-github-aws-ai-capacity-crunch">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Bedrock to require sharing data with Anthropic for Mythos and future models]]></title>
+            <link>https://news.ycombinator.com/item?id=48473166</link>
+            <guid>https://news.ycombinator.com/item?id=48473166</guid>
+            <pubDate>Wed, 10 Jun 2026 08:21:38 GMT</pubDate>
+            <description><![CDATA[> For Fable 5, Mythos 5, and future models on Bedrock with similar or higher capability levels, Anthropic will require 30-day retention for all traffic on Mythos-class models. Retaining data for a limited period allows Anthropic to detect patterns of misuse that are not visible from a single exchange. Once you opt into data retention, your data will leave AWS’s data and security boundary. From the announcement here: https://aws.amazon.com/blogs/aws/anthropic-claude-fable-5-on... > After 30 days,]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=48473166">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D48473166">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: Mercek – A Desktop IDE for AWS ECS]]></title>
+            <link>https://www.mercek.dev/</link>
+            <guid>https://news.ycombinator.com/item?id=48404732</guid>
+            <pubDate>Thu, 04 Jun 2026 21:15:16 GMT</pubDate>
+            <description><![CDATA[Hey HN I've been using ECS for a while now and found it annoying having to log into the console everytime I use Lens for Kubernetes but couldnt find an equivalent for ECS so i built one! The project is open source as well https://github.com/utibeabasi6/mercek Comments URL: https://news.ycombinator.com/item?id=48404732 Points: 64 # Comments: 31]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.mercek.dev/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.mercek.dev%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAI frontier models and Codex are now available on AWS]]></title>
+            <link>https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/</link>
+            <guid>https://news.ycombinator.com/item?id=48363132</guid>
+            <pubDate>Mon, 01 Jun 2026 21:50:02 GMT</pubDate>
+            <description><![CDATA[Article URL: https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/ Comments URL: https://news.ycombinator.com/item?id=48363132 Points: 370 # Comments: 131]]></description>
+            <content:encoded><![CDATA[<p><a href="https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopenai.com%2Findex%2Fopenai-frontier-models-and-codex-are-now-available-on-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Fired the One Employee Who Gave a Damn]]></title>
+            <link>https://www.seuros.com/blog/aws-fired-the-human-who-made-the-difference/</link>
+            <guid>https://news.ycombinator.com/item?id=48279321</guid>
+            <pubDate>Tue, 26 May 2026 13:08:40 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.seuros.com/blog/aws-fired-the-human-who-made-the-difference/ Comments URL: https://news.ycombinator.com/item?id=48279321 Points: 196 # Comments: 107]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.seuros.com/blog/aws-fired-the-human-who-made-the-difference/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.seuros.com%2Fblog%2Faws-fired-the-human-who-made-the-difference%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[I bypassed AWS API Gateway auth with a trailing slash. Got $12K bounty]]></title>
+            <link>https://theguptalog.blogspot.com/2026/04/i-bypassed-aws-api-gateway-auth-with.html</link>
+            <guid>https://news.ycombinator.com/item?id=48277537</guid>
+            <pubDate>Tue, 26 May 2026 10:08:53 GMT</pubDate>
+            <description><![CDATA[Article URL: https://theguptalog.blogspot.com/2026/04/i-bypassed-aws-api-gateway-auth-with.html Comments URL: https://news.ycombinator.com/item?id=48277537 Points: 87 # Comments: 39]]></description>
+            <content:encoded><![CDATA[<p><a href="https://theguptalog.blogspot.com/2026/04/i-bypassed-aws-api-gateway-auth-with.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftheguptalog.blogspot.com%2F2026%2F04%2Fi-bypassed-aws-api-gateway-auth-with.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CISA Admin Leaked AWS GovCloud Keys on GitHub]]></title>
+            <link>https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/</link>
+            <guid>https://news.ycombinator.com/item?id=48190454</guid>
+            <pubDate>Tue, 19 May 2026 07:45:53 GMT</pubDate>
+            <description><![CDATA[Article URL: https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/ Comments URL: https://news.ycombinator.com/item?id=48190454 Points: 478 # Comments: 182]]></description>
+            <content:encoded><![CDATA[<p><a href="https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkrebsonsecurity.com%2F2026%2F05%2Fcisa-admin-leaked-aws-govcloud-keys-on-github%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Platform on AWS]]></title>
+            <link>https://claude.com/blog/claude-platform-on-aws</link>
+            <guid>https://news.ycombinator.com/item?id=48103042</guid>
+            <pubDate>Tue, 12 May 2026 01:24:29 GMT</pubDate>
+            <description><![CDATA[Article URL: https://claude.com/blog/claude-platform-on-aws Comments URL: https://news.ycombinator.com/item?id=48103042 Points: 227 # Comments: 89]]></description>
+            <content:encoded><![CDATA[<p><a href="https://claude.com/blog/claude-platform-on-aws">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fclaude.com%2Fblog%2Fclaude-platform-on-aws">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[I returned to AWS and was reminded why I left]]></title>
+            <link>http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html</link>
+            <guid>https://news.ycombinator.com/item?id=48073201</guid>
+            <pubDate>Sat, 09 May 2026 08:37:41 GMT</pubDate>
+            <description><![CDATA[Article URL: http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html Comments URL: https://news.ycombinator.com/item?id=48073201 Points: 854 # Comments: 650]]></description>
+            <content:encoded><![CDATA[<p><a href="http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=http%3A%2F%2Ffourlightyears.blogspot.com%2F2026%2F05%2Fi-returned-to-aws-and-was-reminded-hard.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS North Virginia data center outage – resolved]]></title>
+            <link>https://www.cnbc.com/2026/05/08/aws-outage-data-center-fanduel-coinbase.html</link>
+            <guid>https://news.ycombinator.com/item?id=48058197</guid>
+            <pubDate>Fri, 08 May 2026 03:31:58 GMT</pubDate>
+            <description><![CDATA[https://health.aws.amazon.com/health/status?t=2026-05-07 https://www.theregister.com/off-prem/2026/05/08/aws-warns-of... https://www.reuters.com/business/retail-consumer/amazon-clou... Comments URL: https://news.ycombinator.com/item?id=48058197 Points: 267 # Comments: 201]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cnbc.com/2026/05/08/aws-outage-data-center-fanduel-coinbase.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cnbc.com%2F2026%2F05%2F08%2Faws-outage-data-center-fanduel-coinbase.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
     </channel>
 </rss>
