@@ -47,7 +47,8 @@ jobs:
                from interests.yaml to find 1-2 new candidate RSS/Atom feed URLs not already
                present in source.yaml. Prefer official blogs, well-known engineering blogs, or
                topic/tag-scoped feeds — avoid a whole personal blog unless it is already
-               tag-scoped to the topic.
+               tag-scoped to the topic. For `claude`, search GitHub for new tools/MCP servers
+               via path-scoped commits atom (see CONTRIBUTING.md).
             3. For each new candidate, fetch the URL and confirm it actually serves RSS/Atom XML
                before adding it. Append accepted candidates to source.yaml under the right
                domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`. For English (non-Japanese)
@@ -78,7 +79,8 @@ jobs:
                from interests.yaml to find 1-2 new candidate RSS/Atom feed URLs not already
                present in source.yaml. Prefer official blogs, well-known engineering blogs, or
                topic/tag-scoped feeds — avoid a whole personal blog unless it is already
-               tag-scoped to the topic.
+               tag-scoped to the topic. For `claude`, search GitHub for new tools/MCP servers
+               via path-scoped commits atom (see CONTRIBUTING.md).
             3. For each new candidate, fetch the URL and confirm it actually serves RSS/Atom XML
                before adding it. Append accepted candidates to source.yaml under the right
                domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`. For English (non-Japanese)
