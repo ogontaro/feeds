@@ -43,11 +43,14 @@ feeds:
     name: Latent Space
     domain: claude
     kind: content
+  # GitHub Actions のランナー IP から一貫して 403（手元からは 200）。--strict の
+  # translate.yml を毎回落としていたため無効化（issue #3-8）。
   - url: https://importai.substack.com/feed
     id: importai
     name: Import AI
     domain: claude
     kind: content
+    enabled: false
   - url: https://ainow.ai/feed/
     name: AINOW
     domain: claude
@@ -97,11 +100,15 @@ feeds:
     name: Sysdig
     domain: kubernetes
     kind: content
+  # Vercel のボット対策チャレンジ（429 + X-Vercel-Mitigated: challenge）に恒久的に
+  # 阻まれ取得不可（手元の curl でも再現）。--strict の translate.yml を毎回落として
+  # いたため無効化（issue #3-8）。
   - url: https://www.hashicorp.com/blog/products/terraform/feed.xml
     id: terraform-blog
     name: HashiCorp Blog - Terraform
     domain: kubernetes
     kind: content
+    enabled: false
 
   # ----- Platform Engineering トレンド -----
   - url: https://platformengineering.org/blog/rss.xml
