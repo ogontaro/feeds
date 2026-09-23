@@ -11,7 +11,8 @@ type TranslatableFeed = Awaited<ReturnType<typeof loadFeeds>>[number] & { id: st
 
 async function main() {
   const feeds: TranslatableFeed[] = (await loadFeeds()).filter(
-    (f): f is TranslatableFeed => f.kind === "content" && !!f.id && needsTranslation(f.url),
+    (f): f is TranslatableFeed =>
+      f.enabled !== false && f.kind === "content" && !!f.id && needsTranslation(f.url),
   );
   const failed: string[] = [];
 
