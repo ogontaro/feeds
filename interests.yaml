@@ -14,7 +14,10 @@ interests:
       - opencode
       - AIコーディングエージェントのサブスク料金
       - MCPプラグイン
+      - MCPサーバー
+      - Model Context Protocol
       - AIエージェントツール
+      - AIエージェントフレームワーク
     exclude:
       - 求人
       - 宣伝

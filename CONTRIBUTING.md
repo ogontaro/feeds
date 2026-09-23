@@ -71,6 +71,10 @@ feeds:
 - OPML はサービス別に2つ（`opml/digest.opml` / `opml/translated.opml`）。全部入りの1本は
   目的の違うフィードが混ざるので作らない
 - aws / content は **EKS 関連と AI/Bedrock 関連を重点**（`report-criteria/report-aws.md`）
+- claude / content の新規ツール発見源は、記事化されるのを待たず GitHub 上のリポジトリ自体も対象にする
+  （週次フィード監査の WebSearch も同様）。ただし whole-repo の `commits.atom` は bot/CI コミットで
+  ノイズだらけになるため使わない。path 指定の commits atom を使う（実装例は `source.yaml` の
+  `awesome-claude-code` 参照）
 
 ## データ: interests.yaml
 

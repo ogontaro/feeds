@@ -54,9 +54,9 @@ feeds:
     kind: content
 
   # ----- 新しいコーディングエージェント系ツールの発見源 -----
-  # awesome リストの新規ツール追加が即コミットになる。MCP servers 等の自動化コミットの
-  # commits フィードはノイズが多く意図的に置かず、週次監査の WebSearch 対象に委ねる。
-  - url: https://github.com/hesreallyhim/awesome-claude-code/commits.atom
+  # commits.atom（リポジトリ全体）は ticker bot の自動コミットで埋まりノイズだらけなので、
+  # README.md への変更だけに絞った path 指定の commits atom を使う（新規ツール追加のみ拾える）。
+  - url: https://github.com/hesreallyhim/awesome-claude-code/commits/main.atom?path=README.md
     id: awesome-claude-code
     name: awesome-claude-code updates
     domain: claude
@@ -144,6 +144,11 @@ feeds:
   - url: https://hnrss.org/newest?q=Claude&points=50
     id: hn-claude
     name: HN — Claude
+    domain: claude
+    kind: content
+  - url: https://hnrss.org/newest?q=MCP&points=40
+    id: hn-mcp
+    name: HN — MCP
     domain: claude
     kind: content
   - url: https://hnrss.org/newest?q=Kubernetes&points=50
