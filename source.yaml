@@ -158,16 +158,20 @@ feeds:
     name: HN — MCP
     domain: claude
     kind: content
+  # GitHub Actions からのクエリ検索が高確率(直近8回中6回)で502。手元 curl は毎回 200 のため
+  # GH Actions 環境固有の問題。--strict の translate.yml を頻繁に落としていたため無効化。
   - url: https://hnrss.org/newest?q=Kubernetes&points=50
     id: hn-kubernetes
     name: HN — Kubernetes
     domain: kubernetes
     kind: content
+    enabled: false
   - url: https://hnrss.org/newest?q=AWS&points=50
     id: hn-aws
     name: HN — AWS
     domain: aws
     kind: content
+    enabled: false
 
   # ----- GitHub Watch/Star/Fork の横展開 -----
   - url: https://github.com/ogontaro.atom
