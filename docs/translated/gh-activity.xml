@@ -4,11 +4,163 @@
         <title>GitHub activity (ogontaro) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>GitHub activity (ogontaro) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 21 Sep 2026 12:27:37 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 13:17:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ogontaro deleted]]></title>
+            <link>https://github.com/ogontaro/feeds/compare/8681793e83...0000000000</link>
+            <guid>https://github.com/ogontaro/feeds/compare/8681793e83...0000000000</guid>
+            <pubDate>Wed, 23 Sep 2026 13:17:07 GMT</pubDate>
+            <description><![CDATA[ogontaro deleted branch refs/heads/workflow-failure-fix/35814676253 in ogontaro/feeds · September 23, 2026 13:17 ogontaro/feeds Updated Sep 23]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/compare/8681793e83...0000000000">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fcompare%2F8681793e83...0000000000">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro deleted]]></title>
+            <link>https://github.com/ogontaro/feeds/compare/a7dbfa7873...0000000000</link>
+            <guid>https://github.com/ogontaro/feeds/compare/a7dbfa7873...0000000000</guid>
+            <pubDate>Wed, 23 Sep 2026 13:16:59 GMT</pubDate>
+            <description><![CDATA[ogontaro deleted branch refs/heads/workflow-failure-fix/35851145288 in ogontaro/feeds · September 23, 2026 13:16 ogontaro/feeds Updated Sep 23]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/compare/a7dbfa7873...0000000000">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fcompare%2Fa7dbfa7873...0000000000">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro closed a pull request in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/pull/13</link>
+            <guid>https://github.com/ogontaro/feeds/pull/13</guid>
+            <pubDate>Wed, 23 Sep 2026 13:02:07 GMT</pubDate>
+            <description><![CDATA[ogontaro closed ogontaro/feeds#13 · September 23, 2026 06:02 fix: translate/run.ts が source.yaml の enabled:false を無視していたバグを修正 #13 GitHub Actionsのワークフロー失敗を解決するため、フィード取得時にenabled: falseフラグを正しく判定するよう修正しました。 +2 -1]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/pull/13">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fpull%2F13">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro pushed feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/compare/152d347633...b5b9ff8e86</link>
+            <guid>https://github.com/ogontaro/feeds/compare/152d347633...b5b9ff8e86</guid>
+            <pubDate>Wed, 23 Sep 2026 12:45:58 GMT</pubDate>
+            <description><![CDATA[ogontaro pushed to main in ogontaro/feeds · September 23, 2026 12:45 1 commit to main b5b9ff8]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/compare/152d347633...b5b9ff8e86">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fcompare%2F152d347633...b5b9ff8e86">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro closed an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/10</link>
+            <guid>https://github.com/ogontaro/feeds/issues/10</guid>
+            <pubDate>Wed, 23 Sep 2026 11:21:36 GMT</pubDate>
+            <description><![CDATA[ogontaro closed an issue in ogontaro/feeds · September 23, 2026 04:21 workflow failure: translate (2026-09-23) #10]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/10">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F10">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro commented on an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/10#issuecomment-5793912510</link>
+            <guid>https://github.com/ogontaro/feeds/issues/10#issuecomment-5793912510</guid>
+            <pubDate>Wed, 23 Sep 2026 11:21:34 GMT</pubDate>
+            <description><![CDATA[ogontaro commented on ogontaro/feeds#10 · September 23, 2026 04:21 ogontaro commented Sep 23, 2026]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/10#issuecomment-5793912510">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F10%23issuecomment-5793912510">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro closed an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/9</link>
+            <guid>https://github.com/ogontaro/feeds/issues/9</guid>
+            <pubDate>Wed, 23 Sep 2026 11:21:33 GMT</pubDate>
+            <description><![CDATA[ogontaro closed an issue in ogontaro/feeds · September 23, 2026 04:21 workflow failure: translate (2026-09-23) #9]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/9">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F9">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro commented on an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/9#issuecomment-5793912075</link>
+            <guid>https://github.com/ogontaro/feeds/issues/9#issuecomment-5793912075</guid>
+            <pubDate>Wed, 23 Sep 2026 11:21:32 GMT</pubDate>
+            <description><![CDATA[ogontaro commented on ogontaro/feeds#9 · September 23, 2026 04:21 ogontaro commented Sep 23, 2026]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/9#issuecomment-5793912075">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F9%23issuecomment-5793912075">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro pushed feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/compare/3da69f2af6...152d347633</link>
+            <guid>https://github.com/ogontaro/feeds/compare/3da69f2af6...152d347633</guid>
+            <pubDate>Wed, 23 Sep 2026 11:21:25 GMT</pubDate>
+            <description><![CDATA[ogontaro pushed to main in ogontaro/feeds · September 23, 2026 11:21 1 commit to main 152d347]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/compare/3da69f2af6...152d347633">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fcompare%2F3da69f2af6...152d347633">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro closed an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/8</link>
+            <guid>https://github.com/ogontaro/feeds/issues/8</guid>
+            <pubDate>Wed, 23 Sep 2026 01:07:03 GMT</pubDate>
+            <description><![CDATA[ogontaro closed an issue in ogontaro/feeds · September 22, 2026 18:07 workflow failure: translate (2026-09-22) #8]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/8">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F8">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro commented on an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/8#issuecomment-5787207815</link>
+            <guid>https://github.com/ogontaro/feeds/issues/8#issuecomment-5787207815</guid>
+            <pubDate>Wed, 23 Sep 2026 01:07:02 GMT</pubDate>
+            <description><![CDATA[ogontaro commented on ogontaro/feeds#8 · September 22, 2026 18:07 ogontaro commented Sep 23, 2026]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/8#issuecomment-5787207815">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F8%23issuecomment-5787207815">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro closed an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/7</link>
+            <guid>https://github.com/ogontaro/feeds/issues/7</guid>
+            <pubDate>Wed, 23 Sep 2026 01:07:01 GMT</pubDate>
+            <description><![CDATA[ogontaro closed an issue in ogontaro/feeds · September 22, 2026 18:07 workflow failure: translate (2026-09-22) #7]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/7">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F7">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro commented on an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/7#issuecomment-5787207601</link>
+            <guid>https://github.com/ogontaro/feeds/issues/7#issuecomment-5787207601</guid>
+            <pubDate>Wed, 23 Sep 2026 01:07:00 GMT</pubDate>
+            <description><![CDATA[ogontaro commented on ogontaro/feeds#7 · September 22, 2026 18:07 ogontaro commented Sep 23, 2026]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/7#issuecomment-5787207601">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F7%23issuecomment-5787207601">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro closed an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/6</link>
+            <guid>https://github.com/ogontaro/feeds/issues/6</guid>
+            <pubDate>Wed, 23 Sep 2026 01:06:59 GMT</pubDate>
+            <description><![CDATA[ogontaro closed an issue in ogontaro/feeds · September 22, 2026 18:06 workflow failure: translate (2026-09-22) #6]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/6">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F6">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro commented on an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/6#issuecomment-5787207278</link>
+            <guid>https://github.com/ogontaro/feeds/issues/6#issuecomment-5787207278</guid>
+            <pubDate>Wed, 23 Sep 2026 01:06:58 GMT</pubDate>
+            <description><![CDATA[ogontaro commented on ogontaro/feeds#6 · September 22, 2026 18:06 ogontaro commented Sep 23, 2026]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/6#issuecomment-5787207278">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F6%23issuecomment-5787207278">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro closed an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/5</link>
+            <guid>https://github.com/ogontaro/feeds/issues/5</guid>
+            <pubDate>Wed, 23 Sep 2026 01:06:57 GMT</pubDate>
+            <description><![CDATA[ogontaro closed an issue in ogontaro/feeds · September 22, 2026 18:06 workflow failure: translate (2026-09-22) #5]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro commented on an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/5#issuecomment-5787207010</link>
+            <guid>https://github.com/ogontaro/feeds/issues/5#issuecomment-5787207010</guid>
+            <pubDate>Wed, 23 Sep 2026 01:06:56 GMT</pubDate>
+            <description><![CDATA[ogontaro commented on ogontaro/feeds#5 · September 22, 2026 18:06 ogontaro commented Sep 23, 2026]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/5#issuecomment-5787207010">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F5%23issuecomment-5787207010">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro closed an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/4</link>
+            <guid>https://github.com/ogontaro/feeds/issues/4</guid>
+            <pubDate>Wed, 23 Sep 2026 01:06:56 GMT</pubDate>
+            <description><![CDATA[ogontaro closed an issue in ogontaro/feeds · September 22, 2026 18:06 workflow failure: translate (2026-09-21) #4]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro commented on an issue in feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/issues/4#issuecomment-5787206776</link>
+            <guid>https://github.com/ogontaro/feeds/issues/4#issuecomment-5787206776</guid>
+            <pubDate>Wed, 23 Sep 2026 01:06:55 GMT</pubDate>
+            <description><![CDATA[ogontaro commented on ogontaro/feeds#4 · September 22, 2026 18:06 ogontaro commented Sep 23, 2026]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/issues/4#issuecomment-5787206776">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fissues%2F4%23issuecomment-5787206776">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ogontaro pushed feeds]]></title>
             <link>https://github.com/ogontaro/feeds/compare/4e6f08c04a...9fc2c1f156</link>

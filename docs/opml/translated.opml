@@ -8,6 +8,7 @@
       <outline type="rss" text="Latent Space" title="Latent Space" xmlUrl="https://ogontaro.github.io/feeds/translated/latent-space.xml"/>
       <outline type="rss" text="awesome-claude-code updates" title="awesome-claude-code updates" xmlUrl="https://ogontaro.github.io/feeds/translated/awesome-claude-code.xml"/>
       <outline type="rss" text="HN — Claude" title="HN — Claude" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-claude.xml"/>
+      <outline type="rss" text="HN — MCP" title="HN — MCP" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-mcp.xml"/>
     </outline>
     <outline text="プラットフォーム" title="プラットフォーム">
       <outline type="rss" text="Kubernetes Blog" title="Kubernetes Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/kubernetes-blog.xml"/>

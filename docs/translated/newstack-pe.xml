@@ -4,11 +4,19 @@
         <title>The New Stack — Platform Engineering — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — Platform Engineering の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 22 Sep 2026 14:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 13:23:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Vulnerability alert fatigue nearly swamped WHOOP. But its fix still keeps a human in charge.]]></title>
+            <link>https://thenewstack.io/whoop-automated-vulnerability-response-workflow/</link>
+            <guid>https://thenewstack.io/?p=22837545</guid>
+            <pubDate>Wed, 23 Sep 2026 13:23:43 GMT</pubDate>
+            <description><![CDATA[With often hundreds of thousands of alerts a day, many tech organizations are buried in vulnerabilities and worn down by The post Vulnerability alert fatigue nearly swamped WHOOP. But its fix still keeps a human in charge. appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/whoop-automated-vulnerability-response-workflow/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fwhoop-automated-vulnerability-response-workflow%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[The cloud reduced operational complexity. But many teams need someone to own it completely.]]></title>
             <link>https://thenewstack.io/elastic-beanstalk-operational-ownership/</link>

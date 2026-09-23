@@ -4,11 +4,35 @@
         <title>HN — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 22 Sep 2026 16:51:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 19:23:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[How we made claude.ai 3x faster in two weeks]]></title>
+            <link>https://claude.dev/blog/how-we-made-claude-ai-faster/</link>
+            <guid>https://news.ycombinator.com/item?id=49821196</guid>
+            <pubDate>Wed, 23 Sep 2026 19:23:40 GMT</pubDate>
+            <description><![CDATA[Article URL: https://claude.dev/blog/how-we-made-claude-ai-faster/ Comments URL: https://news.ycombinator.com/item?id=49821196 Points: 83 # Comments: 55]]></description>
+            <content:encoded><![CDATA[<p><a href="https://claude.dev/blog/how-we-made-claude-ai-faster/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude discovers a novel enzyme system with CRISPR-like repeats]]></title>
+            <link>https://www.anthropic.com/news/claude-discovers-novel-enzyme-system</link>
+            <guid>https://news.ycombinator.com/item?id=49820134</guid>
+            <pubDate>Wed, 23 Sep 2026 18:06:47 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system Comments URL: https://news.ycombinator.com/item?id=49820134 Points: 272 # Comments: 276]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.anthropic.com%2Fnews%2Fclaude-discovers-novel-enzyme-system">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Code reads AGENTS.md only when telemetry is on [fixed]]]></title>
+            <link>https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/</link>
+            <guid>https://news.ycombinator.com/item?id=49814947</guid>
+            <pubDate>Wed, 23 Sep 2026 12:15:33 GMT</pubDate>
+            <description><![CDATA[Article URL: https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/ Comments URL: https://news.ycombinator.com/item?id=49814947 Points: 421 # Comments: 236]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.szypowi.cz%2Fp%2Fclaude-code-reads-agents.md-only-when-telemetry-is-on%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)]]></title>
             <link>https://artificialanalysis.ai/models/claude-opus-5-5</link>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>HN — MCP — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>HN — MCP の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Sun, 20 Sep 2026 19:44:40 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[MCP was always a bad idea?]]></title>
+            <link>https://maharship.com/blog/why-mcp-was-always-a-bad-idea/</link>
+            <guid>https://news.ycombinator.com/item?id=49779329</guid>
+            <pubDate>Sun, 20 Sep 2026 19:44:40 GMT</pubDate>
+            <description><![CDATA[Article URL: https://maharship.com/blog/why-mcp-was-always-a-bad-idea/ Comments URL: https://news.ycombinator.com/item?id=49779329 Points: 332 # Comments: 330]]></description>
+            <content:encoded><![CDATA[<p><a href="https://maharship.com/blog/why-mcp-was-always-a-bad-idea/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fmaharship.com%2Fblog%2Fwhy-mcp-was-always-a-bad-idea%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ask HN: Who is using MCP in production?]]></title>
+            <link>https://news.ycombinator.com/item?id=49548600</link>
+            <guid>https://news.ycombinator.com/item?id=49548600</guid>
+            <pubDate>Thu, 03 Sep 2026 11:21:18 GMT</pubDate>
+            <description><![CDATA[I’ve been following MCP since it first came out. It got a lot of attention early on, but I haven’t come across many people using it in production. I may simply have missed them. If you’re using MCP in production, what are you using it for? What advantages have you found over a normal API or direct tool integration or just CLI? Comments URL: https://news.ycombinator.com/item?id=49548600 Points: 198 # Comments: 201]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=49548600">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D49548600">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[New MCP Roadmap]]></title>
+            <link>https://blog.modelcontextprotocol.io/posts/mcp-roadmap/</link>
+            <guid>https://news.ycombinator.com/item?id=49399591</guid>
+            <pubDate>Sat, 22 Aug 2026 13:31:34 GMT</pubDate>
+            <description><![CDATA[Article URL: https://blog.modelcontextprotocol.io/posts/mcp-roadmap/ Comments URL: https://news.ycombinator.com/item?id=49399591 Points: 270 # Comments: 161]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.modelcontextprotocol.io/posts/mcp-roadmap/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.modelcontextprotocol.io%2Fposts%2Fmcp-roadmap%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: MCP-stama – An ultra-fast Rust MCP server with no dependencies]]></title>
+            <link>https://github.com/StamManif/mcp-stama</link>
+            <guid>https://news.ycombinator.com/item?id=49292584</guid>
+            <pubDate>Thu, 13 Aug 2026 22:26:25 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/StamManif/mcp-stama Comments URL: https://news.ycombinator.com/item?id=49292584 Points: 73 # Comments: 0]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/StamManif/mcp-stama">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2FStamManif%2Fmcp-stama">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: MCP Memory – Fast Agent Memory Using Google's OKF and SQLite FTS5]]></title>
+            <link>https://github.com/fellowgeek/mcp-memory</link>
+            <guid>https://news.ycombinator.com/item?id=49286073</guid>
+            <pubDate>Thu, 13 Aug 2026 13:57:47 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/fellowgeek/mcp-memory Comments URL: https://news.ycombinator.com/item?id=49286073 Points: 70 # Comments: 36]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/fellowgeek/mcp-memory">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Ffellowgeek%2Fmcp-memory">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: Mcptoon – Token-efficient MCP CLI client]]></title>
+            <link>https://github.com/activeing123/mcptoon</link>
+            <guid>https://news.ycombinator.com/item?id=49253721</guid>
+            <pubDate>Tue, 11 Aug 2026 05:26:58 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/activeing123/mcptoon Comments URL: https://news.ycombinator.com/item?id=49253721 Points: 73 # Comments: 49]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/activeing123/mcptoon">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Factiveing123%2Fmcptoon">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: Product analytics (and evals) for agent sessions on your MCP]]></title>
+            <link>https://armature.tech/</link>
+            <guid>https://news.ycombinator.com/item?id=49157807</guid>
+            <pubDate>Mon, 03 Aug 2026 16:17:59 GMT</pubDate>
+            <description><![CDATA[Hi HN! We’re Theodore and Louis, founders of Armature (YC P26). We reconstruct the entire session behind the MCP tool calls you receive, including what the user asked their agent to do and what the agent thought. You wrap your MCP in 3 lines of code (our SDK is available in Typescript, Python and Go) and start seeing in your dashboard: - All sessions reconstructed: it’s like reading the real conversation the user had inside Claude or ChatGPT! - A ranking of your MCP most popular use cases, built]]></description>
+            <content:encoded><![CDATA[<p><a href="https://armature.tech/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Farmature.tech%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Stateless MCP has recaptured my interest]]></title>
+            <link>https://simonwillison.net/2026/Jul/31/stateless-mcp/</link>
+            <guid>https://news.ycombinator.com/item?id=49131438</guid>
+            <pubDate>Sat, 01 Aug 2026 05:51:36 GMT</pubDate>
+            <description><![CDATA[Article URL: https://simonwillison.net/2026/Jul/31/stateless-mcp/ Comments URL: https://news.ycombinator.com/item?id=49131438 Points: 386 # Comments: 224]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Jul/31/stateless-mcp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FJul%2F31%2Fstateless-mcp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[MCP 2026-07-28 Specification: transport going stateless]]></title>
+            <link>https://blog.modelcontextprotocol.io/posts/2026-07-28/</link>
+            <guid>https://news.ycombinator.com/item?id=49088058</guid>
+            <pubDate>Tue, 28 Jul 2026 18:35:11 GMT</pubDate>
+            <description><![CDATA[Article URL: https://blog.modelcontextprotocol.io/posts/2026-07-28/ Comments URL: https://news.ycombinator.com/item?id=49088058 Points: 127 # Comments: 41]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.modelcontextprotocol.io%2Fposts%2F2026-07-28%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ANSI escape injection in MCP servers: Hidden from humans, visible to AI]]></title>
+            <link>https://brightsec.com/research/detecting-ansi-escape-sequence-injection-in-mcp-servers-with-dast/</link>
+            <guid>https://news.ycombinator.com/item?id=48989006</guid>
+            <pubDate>Tue, 21 Jul 2026 07:01:24 GMT</pubDate>
+            <description><![CDATA[Article URL: https://brightsec.com/research/detecting-ansi-escape-sequence-injection-in-mcp-servers-with-dast/ Comments URL: https://news.ycombinator.com/item?id=48989006 Points: 60 # Comments: 36]]></description>
+            <content:encoded><![CDATA[<p><a href="https://brightsec.com/research/detecting-ansi-escape-sequence-injection-in-mcp-servers-with-dast/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbrightsec.com%2Fresearch%2Fdetecting-ansi-escape-sequence-injection-in-mcp-servers-with-dast%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: Mcpsnoop – Wireshark for MCP (transparent proxy and live TUI)]]></title>
+            <link>https://github.com/kerlenton/mcpsnoop</link>
+            <guid>https://news.ycombinator.com/item?id=48777144</guid>
+            <pubDate>Fri, 03 Jul 2026 16:53:50 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/kerlenton/mcpsnoop Comments URL: https://news.ycombinator.com/item?id=48777144 Points: 64 # Comments: 22]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kerlenton/mcpsnoop">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkerlenton%2Fmcpsnoop">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The Safari MCP server for web developers]]></title>
+            <link>https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/</link>
+            <guid>https://news.ycombinator.com/item?id=48769639</guid>
+            <pubDate>Fri, 03 Jul 2026 01:37:11 GMT</pubDate>
+            <description><![CDATA[Article URL: https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/ Comments URL: https://news.ycombinator.com/item?id=48769639 Points: 272 # Comments: 76]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebkit.org%2Fblog%2F18136%2Fintroducing-the-safari-mcp-server-for-web-developers%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Launch HN: Manufact (YC S25) – MCP Cloud]]></title>
+            <link>https://manufact.com</link>
+            <guid>https://news.ycombinator.com/item?id=48762862</guid>
+            <pubDate>Thu, 02 Jul 2026 15:11:20 GMT</pubDate>
+            <description><![CDATA[Hi HN, we are Pietro and Luigi, cofounders of Manufact (https://manufact.com), a cloud for MCP apps and servers. We used to be called mcp-use, and still build open source SDKs for MCP under that name: https://github.com/mcp-use/mcp-use. We did a Show HN about that last year: https://news.ycombinator.com/item?id=44747229. Today we want to tell you about our cloud product, Manufact, which is to mcp-use as Vercel is to Next.js. Manufact is an MCP vertical cloud designed for dev teams putting MCP Ap]]></description>
+            <content:encoded><![CDATA[<p><a href="https://manufact.com">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fmanufact.com">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Zero-Touch OAuth for MCP]]></title>
+            <link>https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/</link>
+            <guid>https://news.ycombinator.com/item?id=48592163</guid>
+            <pubDate>Thu, 18 Jun 2026 21:54:10 GMT</pubDate>
+            <description><![CDATA[Article URL: https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/ Comments URL: https://news.ycombinator.com/item?id=48592163 Points: 278 # Comments: 103]]></description>
+            <content:encoded><![CDATA[<p><a href="https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fblog.modelcontextprotocol.io%2Fposts%2Fenterprise-managed-auth%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[MCP is dead?]]></title>
+            <link>https://www.quandri.io/engineering-blog/mcp-is-dead</link>
+            <guid>https://news.ycombinator.com/item?id=48330436</guid>
+            <pubDate>Fri, 29 May 2026 22:56:49 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.quandri.io/engineering-blog/mcp-is-dead Comments URL: https://news.ycombinator.com/item?id=48330436 Points: 400 # Comments: 410]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.quandri.io/engineering-blog/mcp-is-dead">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.quandri.io%2Fengineering-blog%2Fmcp-is-dead">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[MCP Hello Page]]></title>
+            <link>https://www.hybridlogic.co.uk/blog/2026/05/mcp-hello-page</link>
+            <guid>https://news.ycombinator.com/item?id=48164294</guid>
+            <pubDate>Sat, 16 May 2026 22:25:33 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.hybridlogic.co.uk/blog/2026/05/mcp-hello-page Comments URL: https://news.ycombinator.com/item?id=48164294 Points: 134 # Comments: 49]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.hybridlogic.co.uk/blog/2026/05/mcp-hello-page">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.hybridlogic.co.uk%2Fblog%2F2026%2F05%2Fmcp-hello-page">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Show HN: Ableton Live MCP]]></title>
+            <link>https://github.com/bschoepke/ableton-live-mcp</link>
+            <guid>https://news.ycombinator.com/item?id=47999656</guid>
+            <pubDate>Sun, 03 May 2026 18:05:28 GMT</pubDate>
+            <description><![CDATA[Ever wanted to control Ableton with just your voice? Me too! I made this MCP server so I could just ask Codex to do anything in Ableton Live for me, while I was nap-trapped by my baby. The chat messages I sent to Codex to make this: in ableton, make a self reflective song, with audio vocals (via macos say) and chip tunes and 80's drum machines. should be a real edm banger i want midi for everything but vocals please, with ableton devices. not prerendered audio for instruments needs some fills an]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/bschoepke/ableton-live-mcp">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fbschoepke%2Fableton-live-mcp">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[A playable DOOM MCP app]]></title>
+            <link>https://chrisnager.com/blog/doom-runs-in-chatgpt-and-claude/</link>
+            <guid>https://news.ycombinator.com/item?id=47939079</guid>
+            <pubDate>Tue, 28 Apr 2026 19:08:47 GMT</pubDate>
+            <description><![CDATA[Article URL: https://chrisnager.com/blog/doom-runs-in-chatgpt-and-claude/ Comments URL: https://news.ycombinator.com/item?id=47939079 Points: 93 # Comments: 31]]></description>
+            <content:encoded><![CDATA[<p><a href="https://chrisnager.com/blog/doom-runs-in-chatgpt-and-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fchrisnager.com%2Fblog%2Fdoom-runs-in-chatgpt-and-claude%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[I still prefer MCP over skills]]></title>
+            <link>https://david.coffee/i-still-prefer-mcp-over-skills/</link>
+            <guid>https://news.ycombinator.com/item?id=47712718</guid>
+            <pubDate>Fri, 10 Apr 2026 02:01:48 GMT</pubDate>
+            <description><![CDATA[Article URL: https://david.coffee/i-still-prefer-mcp-over-skills/ Comments URL: https://news.ycombinator.com/item?id=47712718 Points: 460 # Comments: 375]]></description>
+            <content:encoded><![CDATA[<p><a href="https://david.coffee/i-still-prefer-mcp-over-skills/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdavid.coffee%2Fi-still-prefer-mcp-over-skills%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Apideck CLI – An AI-agent interface with much lower context consumption than MCP]]></title>
+            <link>https://www.apideck.com/blog/mcp-server-eating-context-window-cli-alternative</link>
+            <guid>https://news.ycombinator.com/item?id=47400261</guid>
+            <pubDate>Mon, 16 Mar 2026 15:25:36 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.apideck.com/blog/mcp-server-eating-context-window-cli-alternative Comments URL: https://news.ycombinator.com/item?id=47400261 Points: 137 # Comments: 123]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.apideck.com/blog/mcp-server-eating-context-window-cli-alternative">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.apideck.com%2Fblog%2Fmcp-server-eating-context-window-cli-alternative">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
