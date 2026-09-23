@@ -4,11 +4,19 @@
         <title>Sysdig — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Sysdig の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 18 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Risky identities continue to plague cloud infrastructures]]></title>
+            <link>https://webflow.sysdig.com/blog/risky-identities-continue-to-plague-cloud-infrastructures</link>
+            <guid>https://webflow.sysdig.com/blog/risky-identities-continue-to-plague-cloud-infrastructures</guid>
+            <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Our research finds cloud-native IAM remains one of the most persistently misconfigured and poorly governed areas of security. Here’s what you can do.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/risky-identities-continue-to-plague-cloud-infrastructures">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Frisky-identities-continue-to-plague-cloud-infrastructures">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Every regulatory disclosure rule asks the same question. Each calls it something else]]></title>
             <link>https://webflow.sysdig.com/blog/every-regulatory-disclosure-rule-asks-the-same-question-each-calls-it-something-else</link>

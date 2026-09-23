@@ -4,11 +4,25 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 22 Sep 2026 00:39:45 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 00:06:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-09-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-23.html</guid>
+            <pubDate>Wed, 23 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>SIG Apps の活動紹介 — Deployment / StatefulSet / Job を支える縁の下の力</h3>
+<p>Deployment、StatefulSet、DaemonSet、Job、CronJob という、ほぼ全員が毎日お世話になっている API の面倒を見ているのが SIG Apps。普段は意識しないが、アップグレード時やスケール時に挙動が問題になるのはたいていこの層なので、いま何が論点になっているかを把握しておくと後の設計判断が楽になる。ステートレスな Web サービスからステートフル DB、バッチ、AI ワークロードまで対象が広がっている今の状況を知る導線としても読む価値がある。
+<a href="https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F22%2Fsig-apps-spotlight%2F">Google 翻訳で全文を読む</a></p>
+<h3>CI パイプラインの所要時間を 64% 削減 — 本番で実際に効いた施策</h3>
+<p>Merge Train のパイプライン時間を 64% 削減しつつ、テストカバレッジを 90% 増やし、最も flaky なテストも潰したという一チームの実例。CI は全員が毎日待たされるのに、改善の効き目が数値で語られにくい領域なので、「何から手を付けると効くのか」が実測値付きで並んでいる記事は自チームのボトルネック特定にそのまま流用しやすい。プラットフォーム側の人間として優先順位を決める材料になる。
+<a href="https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fcutting-ci-pipeline-time-by-64-what-actually-works-in-production">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-09-22]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-22.html</link>

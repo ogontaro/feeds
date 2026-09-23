@@ -4,11 +4,46 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 22 Sep 2026 00:40:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 00:07:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-09-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-23.html</guid>
+            <pubDate>Wed, 23 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 9 本</h2>
+<h3>Claude Opus 5.5 が AWS で利用可能に</h3>
+<p>Anthropic の最新 Opus モデルが Amazon Bedrock と Claude Platform on AWS の両方で使えるようになった。エージェント型コーディングや長時間タスクを狙った位置づけで、どのモデルをどのワークロードに割り当てるかの判断材料になる。Opus 5 からの移行を検討しているなら、新機能と実装ガイドをここで先に押さえておきたい。
+<a href="https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fclaude-opus-5-5-is-now-available-on-aws%2F">Google 翻訳で全文を読む</a></p>
+<h3>GPT-6 Sol / GPT-6 Luna が Amazon Bedrock で一般提供開始</h3>
+<p>OpenAI の最新モデルが Bedrock で GA になった。知能寄りの Sol と効率寄りの Luna という2系統が選べるため、品質とコストのトレードオフをモデル選択の側で調整できる。Bedrock 経由で OpenAI モデルを評価しているチームは、対応モデル表と料金の更新が必要になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon CloudWatch Omni 登場 — AI エージェント時代の統合オブザーバビリティ</h3>
+<p>CloudWatch の次世代版で、アプリケーションと AI エージェントを1つの体験に統合し、トポロジの自動検出・自然言語クエリ・DevOps Agent による調査支援を備える。エージェントを本番に載せるときの最大の障害は「何が起きているか見えない」ことなので、その前提が変わりうる発表として押さえておきたい。
+<a href="https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fintroducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications%2F">Google 翻訳で全文を読む</a></p>
+<h3>Strands Evals と Amazon Bedrock AgentCore でスキル付きエージェントを評価する</h3>
+<p>スキル（再利用可能な手順書）をエージェントに持たせても、正しいスキルを選び指示に従ったかは回答の流暢さでは分からない。スキル選択と指示追従をどう測定するかの具体手法が示されており、エージェントの品質保証を設計するときの出発点になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fevaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>[アップデート] Bedrock Managed Knowledge Base のユーザーマネージドセットアップで Confluence をつないでみた</h3>
+<p>Managed Knowledge Base で Confluence 向けのユーザーマネージドセットアップ（3LO）が可能になった。自社の認可境界を保ったまま社内ドキュメントを RAG に載せられるかは導入可否を分ける論点で、実際の接続手順とつまずきどころが日本語で確認できる。
+<a href="https://dev.classmethod.jp/articles/bedrock-managed-kb-confluence-user-managed-setup-3lo/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fbedrock-managed-kb-confluence-user-managed-setup-3lo%2F">Google 翻訳で全文を読む</a></p>
+<h3>Grok 4.6 on Amazon Bedrock で Guardrails を試してみた</h3>
+<p>Bedrock 上の Grok 4.6 に Guardrails を適用し、PII（EMAIL）が入力側・出力側の両方でブロックされることを確認した検証記録。マルチベンダーのモデルを同じガードレールで統制できるかは、モデルを差し替えながら運用する前提そのものの確認になる。
+<a href="https://dev.classmethod.jp/articles/grok-4-6-bedrock-guardrails/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fgrok-4-6-bedrock-guardrails%2F">Google 翻訳で全文を読む</a></p>
+<h3>Amazon SageMaker AI の concurrency sweep で生成 AI エンドポイントを適正化する</h3>
+<p>負荷を段階的に上げてベンチマークする concurrency sweep により、エンドポイントの必要台数をデータに基づいて決められる。CreateAIBenchmarkJob API の使い方まで踏み込んでおり、生成 AI 推論のコスト見積もりを勘ではなく実測に寄せたいときに効く。
+<a href="https://aws.amazon.com/blogs/machine-learning/right-size-generative-ai-endpoints-with-concurrency-sweeps-on-amazon-sagemaker-ai/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fright-size-generative-ai-endpoints-with-concurrency-sweeps-on-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
+<h3>Trane が Amazon Bedrock AgentCore でビル設備の洞察を 60 倍高速化</h3>
+<p>20 分・複数画面かかっていた設備診断を、20 秒の自然言語対話に置き換えた事例。構築は約4週間で、アーキテクチャと主要な設計判断が公開されている。AgentCore で社内業務エージェントを作る際の、現実的な進め方と落としどころの参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/how-trane-gets-building-insights-60x-faster-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-trane-gets-building-insights-60x-faster-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+<h3>Agentforce と AWS で公共部門のインテリジェンスを拡張</h3>
+<p>ボディカメラ映像やスキャン文書のような非構造化データを Bedrock Data Automation で構造化し、MCP 経由で Salesforce Agentforce から自然言語で問い合わせる構成。既存の SaaS フロントエンドに Bedrock の抽出処理を組み込むパターンとして、業種を問わず流用が効く。
+<a href="https://aws.amazon.com/blogs/machine-learning/extending-public-sector-intelligence-with-agentforce-and-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fextending-public-sector-intelligence-with-agentforce-and-aws%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-09-22]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-22.html</link>

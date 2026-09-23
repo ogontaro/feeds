@@ -4,11 +4,35 @@
         <title>HN — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 21 Sep 2026 14:30:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 16:51:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)]]></title>
+            <link>https://artificialanalysis.ai/models/claude-opus-5-5</link>
+            <guid>https://news.ycombinator.com/item?id=49804316</guid>
+            <pubDate>Tue, 22 Sep 2026 16:51:31 GMT</pubDate>
+            <description><![CDATA[Article URL: https://artificialanalysis.ai/models/claude-opus-5-5 Comments URL: https://news.ycombinator.com/item?id=49804316 Points: 219 # Comments: 62]]></description>
+            <content:encoded><![CDATA[<p><a href="https://artificialanalysis.ai/models/claude-opus-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fartificialanalysis.ai%2Fmodels%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Opus 5.5]]></title>
+            <link>https://www.anthropic.com/claude-opus-5-5</link>
+            <guid>https://news.ycombinator.com/item?id=49803892</guid>
+            <pubDate>Tue, 22 Sep 2026 16:29:05 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.anthropic.com/claude-opus-5-5 Comments URL: https://news.ycombinator.com/item?id=49803892 Points: 1118 # Comments: 773]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.anthropic.com/claude-opus-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.anthropic.com%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Opus 5.5]]></title>
+            <link>https://www.anthropic.com/claude-opus-5-5</link>
+            <guid>https://news.ycombinator.com/item?id=49803863</guid>
+            <pubDate>Tue, 22 Sep 2026 16:27:30 GMT</pubDate>
+            <description><![CDATA[https://github.com/anthropics/ClaudeForFoundationModels/comm... Comments URL: https://news.ycombinator.com/item?id=49803863 Points: 273 # Comments: 2]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.anthropic.com/claude-opus-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.anthropic.com%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[The Claude Delusion]]></title>
             <link>https://pluralistic.net/2026/09/21/sunsetting/</link>

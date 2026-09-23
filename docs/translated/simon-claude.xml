@@ -4,11 +4,19 @@
         <title>Simon Willison — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Simon Willison — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 16 Sep 2026 18:09:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 23:46:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war]]></title>
+            <link>https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/</link>
+            <guid>https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/</guid>
+            <pubDate>Tue, 22 Sep 2026 23:46:41 GMT</pubDate>
+            <description><![CDATA[Yesterday was Grok 4.7 ( pelicans ) and MiMo v2.6 Flash/Pro ( more pelicans ). Today Anthropic released Claude Opus 5.5 , and around an hour later OpenAI released GPT-6 Sol and GPT-6 Luna . It's going to take a while to get a good read on all of these new models, but here are my impressions so far. GPT-6 Sol and Luna are half the price of their GPT-5.6 equivalents GPT-5.6 Luna was already my favorite model for building applications against, because it combined excellent performance with being re]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F22%2Fopus-and-sol-and-luna%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude Cowork and chat are now one Claude]]></title>
             <link>https://simonwillison.net/2026/Sep/16/one-claude/</link>
@@ -22,7 +30,7 @@
             <link>https://simonwillison.net/2026/Sep/11/boris-cherny/</link>
             <guid>https://simonwillison.net/2026/Sep/11/boris-cherny/</guid>
             <pubDate>Fri, 11 Sep 2026 17:47:11 GMT</pubDate>
-            <description><![CDATA[Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on. Without these, you can end up with a mess that is hard to maintain down the line. &mdash; Boris Cherny Tags: claude , ai , claude-code , l]]></description>
+            <description><![CDATA[Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on. Without these, you can end up with a mess that is hard to maintain down the line. — Boris Cherny Tags: claude , ai , claude-code , l]]></description>
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/11/boris-cherny/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F11%2Fboris-cherny%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
@@ -54,7 +62,7 @@
             <link>https://simonwillison.net/2026/Sep/2/rick-brewster/</link>
             <guid>https://simonwillison.net/2026/Sep/2/rick-brewster/</guid>
             <pubDate>Wed, 02 Sep 2026 05:50:57 GMT</pubDate>
-            <description><![CDATA[Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't just "disable" the use of Direct2D. So, instead, Paint.NET now has an internal, from-scratch, clean-room reverse-engineered rewrite of Direct2D that it uses on WINE (triggered by using /wine ). It lives in PaintDotNet.Windows.Direct2D1.Managed.dll . This was written by our good friend Claude , without whom this would NOT have been possible and ]]></description>
+            <description><![CDATA[Direct2D has always been the biggest hurdle for Paint.NET on WINE, and it's clear that it will never be completed enough for Paint.NET's use. And I can't just "disable" the use of Direct2D. So, instead, Paint.NET now has an internal, from-scratch, clean-room reverse-engineered rewrite of Direct2D that it uses on WINE (triggered by using /wine ). It lives in PaintDotNet.Windows.Direct2D1.Managed.dll . This was written by our good friend Claude , without whom this would NOT have been possible and]]></description>
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/2/rick-brewster/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F2%2Frick-brewster%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
@@ -78,7 +86,7 @@
             <link>https://simonwillison.net/2026/Aug/24/llm-anthropic/</link>
             <guid>https://simonwillison.net/2026/Aug/24/llm-anthropic/</guid>
             <pubDate>Mon, 24 Aug 2026 16:27:04 GMT</pubDate>
-            <description><![CDATA[Release: llm-anthropic 0.27 This release of the Anthropic plugin for LLM mainly provides compatibility with the recently released anthropic v1.0.0 Python library, which switches from httpx to httpx2 . OpenAI made the same change in their v3.0.0 release two weeks ago. Anthropic provide this migration guide for upgrading to 1.0, so I prompted Fable 5 in Claude Code with: Upgrade to anthropic&gt;=1 - read https://raw.githubusercontent.com/anthropics/anthropic-sdk-python/refs/heads/main/MIGRATION.md]]></description>
+            <description><![CDATA[Release: llm-anthropic 0.27 This release of the Anthropic plugin for LLM mainly provides compatibility with the recently released anthropic v1.0.0 Python library, which switches from httpx to httpx2 . OpenAI made the same change in their v3.0.0 release two weeks ago. Anthropic provide this migration guide for upgrading to 1.0, so I prompted Fable 5 in Claude Code with: Upgrade to anthropic>=1 - read https://raw.githubusercontent.com/anthropics/anthropic-sdk-python/refs/heads/main/MIGRATION.md]]></description>
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/24/llm-anthropic/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F24%2Fllm-anthropic%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
@@ -94,7 +102,7 @@
             <link>https://simonwillison.net/2026/Aug/23/drew-breunig/</link>
             <guid>https://simonwillison.net/2026/Aug/23/drew-breunig/</guid>
             <pubDate>Sun, 23 Aug 2026 19:55:30 GMT</pubDate>
-            <description><![CDATA[Prior to Fable, it felt silly to waste too much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over most of your problems. But then Fable landed. It was (and still is!) incredible . But the cost was so high and Opus was good enough (as was 5.6, K3, and even GLM) for most of the code we needed. So we started to think about what work went where. &mdash; Drew Breunig , Fable &amp; The End of the Free Lunch Tags: drew-breu]]></description>
+            <description><![CDATA[Prior to Fable, it felt silly to waste too much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over most of your problems. But then Fable landed. It was (and still is!) incredible . But the cost was so high and Opus was good enough (as was 5.6, K3, and even GLM) for most of the code we needed. So we started to think about what work went where. — Drew Breunig , Fable & The End of the Free Lunch Tags: drew-breu]]></description>
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/23/drew-breunig/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F23%2Fdrew-breunig%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
@@ -118,7 +126,7 @@
             <link>https://simonwillison.net/2026/Aug/4/llm-anthropic/</link>
             <guid>https://simonwillison.net/2026/Aug/4/llm-anthropic/</guid>
             <pubDate>Tue, 04 Aug 2026 22:00:58 GMT</pubDate>
-            <description><![CDATA[Release: llm-anthropic 0.26 Includes new features enabled by LLM 0.32 : New models: claude-fable-5 , claude-sonnet-5 , and claude-opus-5 . #75 , #76 Added server-side tools for WebSearch , WebFetch , CodeExecution , and AnthropicMCP , available through LLM's -T interface or Python tools= . The previous -o web_search* options have been removed in favor of -T WebSearch . #79 Upgraded to llm&gt;=0.32 . Reasoning, tool calls, tool results, and server-side tool results now stream as typed events. Rea]]></description>
+            <description><![CDATA[Release: llm-anthropic 0.26 Includes new features enabled by LLM 0.32 : New models: claude-fable-5 , claude-sonnet-5 , and claude-opus-5 . #75 , #76 Added server-side tools for WebSearch , WebFetch , CodeExecution , and AnthropicMCP , available through LLM's -T interface or Python tools= . The previous -o web_search* options have been removed in favor of -T WebSearch . #79 Upgraded to llm>=0.32 . Reasoning, tool calls, tool results, and server-side tool results now stream as typed events. Rea]]></description>
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Aug/4/llm-anthropic/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FAug%2F4%2Fllm-anthropic%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
@@ -150,7 +158,7 @@
             <link>https://simonwillison.net/2026/Jul/25/boris-cherny/</link>
             <guid>https://simonwillison.net/2026/Jul/25/boris-cherny/</guid>
             <pubDate>Sat, 25 Jul 2026 00:42:59 GMT</pubDate>
-            <description><![CDATA[More than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but across PI evals and red teaming, Opus 5 is very hard to prompt inject successfully. &mdash; Boris Cherny , here's that System Card section , page 73 Tags: prompt-injection , anthropic , claude , generative-ai , ai , llms , boris-cherny]]></description>
+            <description><![CDATA[More than any of these eval scores, what is most exciting to me is something else: Opus 5 is our least prompt injectable model yet. It is a bit buried in the system card, but across PI evals and red teaming, Opus 5 is very hard to prompt inject successfully. — Boris Cherny , here's that System Card section , page 73 Tags: prompt-injection , anthropic , claude , generative-ai , ai , llms , boris-cherny]]></description>
             <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Jul/25/boris-cherny/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FJul%2F25%2Fboris-cherny%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

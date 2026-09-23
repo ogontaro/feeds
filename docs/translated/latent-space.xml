@@ -4,11 +4,27 @@
         <title>Latent Space — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Latent Space の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 21 Sep 2026 22:13:49 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 21:07:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[🔬 An Oscar, Two Asteroids, and the Algorithm in Your sklearn: John Platt on AI for Science]]></title>
+            <link>https://www.latent.space/p/john-platt</link>
+            <guid>https://www.latent.space/p/john-platt</guid>
+            <pubDate>Tue, 22 Sep 2026 21:07:39 GMT</pubDate>
+            <description><![CDATA[We talked to Google’s Oscar winning “Giganerd” about automating science, solving climate change, and how future generations can contribute to science in the age of superintelligent AI]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/john-platt">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fjohn-platt">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Xiaomi MiMo-V2.6-Pro 1T-A42B: the new top Open Weights model, trained for $3M]]></title>
+            <link>https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b</link>
+            <guid>https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b</guid>
+            <pubDate>Tue, 22 Sep 2026 06:30:56 GMT</pubDate>
+            <description><![CDATA[crowning a new Chinese frontier lab]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-xiaomi-mimo-v26-pro-1t-a42b">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI]]></title>
             <link>https://www.latent.space/p/jev</link>

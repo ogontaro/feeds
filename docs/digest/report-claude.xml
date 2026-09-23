@@ -4,11 +4,40 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 22 Sep 2026 00:39:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 00:05:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-09-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-23.html</guid>
+            <pubDate>Wed, 23 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 7 本</h2>
+<h3>Claude Opus 5.5 — Anthropic が新フラッグシップをリリース</h3>
+<p>Anthropic が Opus 5.5 を発表し、HN では 1,100 ポイント超・773 コメントと当日最大の反応が集まった。モデル更新はプロンプト設計・コスト見積り・モデル選定の前提をまとめて動かすので、まず公式の仕様と価格を自分の目で押さえておきたい。同日に競合の新モデルも出ており、単体ではなく選択肢全体の比較材料として読む価値がある。
+<a href="https://www.anthropic.com/claude-opus-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>
+<h3>Simon Willison の初見 — Opus 5.5、GPT-6 Sol/Luna、そして価格競争</h3>
+<p>新モデルが同日に複数出た日を、実際にアプリを組む立場から整理した一次所見。ベンチマークの数字ではなく「どのモデルがアプリの相手として扱いやすいか」という観点で比較しているため、乗り換えや併用の判断材料として直接使える。発表当日の空気を記録した文章としても残る。
+<a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F22%2Fopus-and-sol-and-luna%2F">Google 翻訳で全文を読む</a></p>
+<h3>Artificial Analysis による Claude Opus 5.5 の性能・価格分析</h3>
+<p>第三者による定量比較で、同条件のスコアとコストを並べて見られる。ベンダーの発表や所感を割り引いて読むための基準になるので、「安いほうで十分か」を判断したいときに最初に開く一枚。HN でも 219 ポイントと議論が立っている。
+<a href="https://artificialanalysis.ai/models/claude-opus-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fartificialanalysis.ai%2Fmodels%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>
+<h3>Amazon Bedrock で利用可能になった Claude Opus 5.5 を試してみた</h3>
+<p>Bedrock の Converse API から実際に呼んだ検証で、JP / Global プロファイルの指定方法、effort レベルによる reasoningContent の有無、Fast mode の非対応、Opus 5 からの料金の変化まで一通りまとまっている。クラウド経由で Claude を使う実装では、モデル ID の差し替えだけで済むのかを判断する材料になる。日本語の実機情報として社内展開の説得にも使いやすい。
+<a href="https://dev.classmethod.jp/articles/bedrock-claude-opus-5-5/">原文を読む</a></p>
+<h3>Claude Code v2.1.280 — Opus 5.5 がデフォルト Opus に</h3>
+<p>Claude Code 側にも <code>claude-opus-5-5</code> が入り、新しいデフォルト Opus モデルになった(1M トークンコンテキスト、1M トークンあたり $4/$20、キャッシュ読み取り $0.20/Mtok)。何もしなくても既定モデルが変わるので、長いコンテキスト前提の使い方とコスト感は一度見直しになる。changelog 項目のうち、まずここだけは押さえておきたい。
+<a href="https://claude-code-log.com/changelog/v2.1.280#item-a04fb491d826">原文を読む</a></p>
+<h3>Claude Code v2.1.280 — 実務に効く修正(シンボリックリンク書き込みの判定と auto mode の再試行)</h3>
+<p>シンボリックリンク経由の書き込みを、作業ツリー内のパス表記ではなく実際の着地点で判定するようになり、承認プロンプトには着地点が表示され、<code>acceptEdits</code> / allow ルール / auto モードは作業ツリー外に着地する書き込みを承認しなくなった。安全側に倒れた重要な変更なので、共有リポジトリで自動承認を使っているなら挙動の変化を把握しておきたい。あわせて、safety check が拒否したアクションを auto mode が繰り返し再試行する問題(リトライはバックオフし、連続 10 回でターン停止)、MCP のツール説明・サーバー指示文に効く 2,048 文字上限を変える <code>CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH</code>、Write 呼び出しの引数名ゆれの許容、モデル切替やフォークサブエージェント再開時のプロンプトキャッシュ破損の修正も入っている。MCP サーバーを自作している人ほど上限緩和が効く。
+<a href="https://claude-code-log.com/changelog/v2.1.280#item-97c0be39bbfe">原文を読む</a></p>
+<h3>Claude Code の Plugins は設定したほうがいい</h3>
+<p>Claude Code の Plugin 機能を入れておくべき理由をまとめた記事。エージェントに何をどこまで渡すかをチーム単位で管理する流れが来ているので、個人の設定で済ませているうちに一度読んでおくと、後からの共有・配布の設計が楽になる。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/22/124945">原文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-09-22]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-22.html</link>

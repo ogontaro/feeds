@@ -4,11 +4,19 @@
         <title>Platform Engineering Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Platform Engineering Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 18 Sep 2026 09:40:27 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 16:01:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Cutting CI pipeline time by 64%: What actually works in production]]></title>
+            <link>https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production</link>
+            <guid>https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production</guid>
+            <pubDate>Tue, 22 Sep 2026 16:01:59 GMT</pubDate>
+            <description><![CDATA[How one team cut Merge Train pipeline time by 64%, while growing test coverage 90% and fixing CI's flakiest tests]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fcutting-ci-pipeline-time-by-64-what-actually-works-in-production">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[The 4 levels of agentic software development]]></title>
             <link>https://platformengineering.org/blog/the-4-levels-of-agentic-software-development</link>

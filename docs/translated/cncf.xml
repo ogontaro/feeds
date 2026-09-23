@@ -4,11 +4,19 @@
         <title>CNCF Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>CNCF Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Thu, 17 Sep 2026 11:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 13:34:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[From attendee badge to speaker badge: My first KubeCon at KubeCon + CloudNativeCon India 2026]]></title>
+            <link>https://www.cncf.io/blog/2026/09/22/from-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026/</link>
+            <guid>https://www.cncf.io/?p=175162</guid>
+            <pubDate>Tue, 22 Sep 2026 13:34:05 GMT</pubDate>
+            <description><![CDATA[There is something surreal about your first KubeCon being one where you walk onto the stage as a speaker. Most people ease into this community by attending a few conferences, lurking in hallway tracks, and working...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/22/from-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F22%2Ffrom-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenTelemetry everywhere: Migrating a metrics platform at scale]]></title>
             <link>https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/</link>

@@ -4,11 +4,19 @@
         <title>The New Stack — Platform Engineering — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — Platform Engineering の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 19 Sep 2026 14:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 22 Sep 2026 14:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[The cloud reduced operational complexity. But many teams need someone to own it completely.]]></title>
+            <link>https://thenewstack.io/elastic-beanstalk-operational-ownership/</link>
+            <guid>https://thenewstack.io/?p=22837518</guid>
+            <pubDate>Tue, 22 Sep 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[For companies running serious production workloads with lean engineering teams, the real test of operational ownership comes at 3 a.m. The post The cloud reduced operational complexity. But many teams need someone to own it completely. appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/elastic-beanstalk-operational-ownership/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Felastic-beanstalk-operational-ownership%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[One engineer shipped 2,000 PRs a month to production. Verification is the key.]]></title>
             <link>https://thenewstack.io/agentic-verification-distributed-systems/</link>
