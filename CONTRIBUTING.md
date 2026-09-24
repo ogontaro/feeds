@@ -224,10 +224,11 @@ inoreader-sync/component-review-reminder.yml` 末尾の `notify-failure` ジョ�
 失敗すると `workflow-failure` ラベル付きの Issue を自動作成する（本文は run URL・
 ワークフロー名のみ。public リポジトリのためログ全文は貼らない）。
 
-`translate.yml` には対で「close resolved failure issues」ステップ（本体ジョブ成功時、
-同一ワークフロー名の `workflow-failure` ラベル付き open Issue を検索してクローズ）があり、
-一過性の失敗で作られた Issue が次回成功時に自動で片付く（AI 判断を挟まない決定的な
-gh CLI 操作のみ）。他の 5 ワークフローへの横展開は未実施。
+`translate/report/release/feed-audit/issue-request/inoreader-sync.yml` の6ワークフローには
+対で「close resolved failure issues」ステップ（本体ジョブ成功時、同一ワークフロー名の
+`workflow-failure` ラベル付き open Issue を検索してクローズ）があり、一過性の失敗で作られた
+Issue が次回成功時に自動で片付く（AI 判断を挟まない決定的な gh CLI 操作のみ）。
+`component-review-reminder.yml`（本業がissue作成）は対象外。
 
 `workflow-failure-fix.yml` は対象7ワークフローの `workflow_run: completed` を
 トリガーに、失敗（`conclusion == 'failure'`）を検知して `gh run view --log-failed` で
