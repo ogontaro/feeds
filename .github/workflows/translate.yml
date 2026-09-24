@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: docs-write
@@ -35,6 +36,18 @@ jobs:
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "translate: refresh feeds"
           git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
+
+      - name: close resolved failure issues
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue list --repo "${GITHUB_REPOSITORY}" --label workflow-failure --state open \
+            --search "\"workflow failure: ${{ github.workflow }}\" in:title" \
+            --json number --jq '.[].number' | while read -r n; do
+            gh issue close "$n" --repo "${GITHUB_REPOSITORY}" \
+              --comment "後続の実行(${{ github.run_id }})が成功したため自動クローズします。"
+          done
 
   notify-failure:
     needs: translate
