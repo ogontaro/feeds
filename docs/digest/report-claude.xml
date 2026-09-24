@@ -4,11 +4,43 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 23 Sep 2026 00:05:59 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 00:17:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-09-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-24.html</guid>
+            <pubDate>Thu, 24 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 8 本</h2>
+<h3>Claude Code v2.1.280 の主要アップデート - Fable 5.1 と GPT-6 Astra 超えの最新モデル Opus 5.5 の登場</h3>
+<p>既定モデルが Opus 5.5 に切り替わり、あわせて料金が 20% 下がるという、コスト前提そのものが動くリリース。既定モデルの変更やキーバインドの挙動変更といった破壊的変更が並んでおり、CI やチームのセットアップで確認すべき点のチェックリストとしてそのまま使える。実際に試した結果が添えられているので、移行の可否を自分の環境で判断する材料になる。
+<a href="https://dev.classmethod.jp/articles/20260923-cc-updates-v2-1-280/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260923-cc-updates-v2-1-280%2F">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code は telemetry を有効にしないと AGENTS.md を読まない [修正済み]</h3>
+<p>421 ポイント・236 コメントが集まった、Claude Code の設定ファイル読み込みに関する不具合の報告。AGENTS.md を置いているのに指示が効かない、という症状の原因切り分けに直結する内容で、同種の「設定が読まれていない」系の相談が来たときの観点として覚えておく価値がある。すでに修正済みだが、修正前のどのバージョンを使っているチームは影響範囲を確認しておきたい。
+<a href="https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.szypowi.cz%2Fp%2Fclaude-code-reads-agents.md-only-when-telemetry-is-on%2F">Google 翻訳で全文を読む</a></p>
+<h3>Claude の「荷重を支える継ぎ目」</h3>
+<p>Claude を組み込んだシステムのどこが構造上の要になるかを論じた考察記事で、HN で 98 ポイント・41 コメントの議論を呼んでいる。モデルや API の前提が変わったときに壊れやすい箇所を事前に見極める視点は、エージェント設計のレビュー観点として持ち帰れる。コメント欄の反論も含めて読むと、設計上のトレードオフの捉え方が立体的になる。
+<a href="https://madradavid.com/claudes-load-bearing-seams/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmadradavid.com%2Fclaudes-load-bearing-seams%2F">Google 翻訳で全文を読む</a></p>
+<h3>どうやって claude.ai を 2 週間で 3 倍高速化したか</h3>
+<p>2 週間で 3 倍という具体的な数字が出ている性能改善の記録で、推測ではなく計測からボトルネックを特定して効果を検証する進め方が読み取れる。自前のサービスや社内ツールの応答速度に悩んでいる場合、同じ順序で当てはめられる。AI 製品特有の待ち時間(ストリーミングやモデル呼び出し)をどう扱ったかという点が実務では一番参考になる。
+<a href="https://claude.dev/blog/how-we-made-claude-ai-faster/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2F">Google 翻訳で全文を読む</a></p>
+<h3>Claude が CRISPR 様の反復配列を持つ新規酵素系を発見</h3>
+<p>Anthropic の発表で、HN でも 272 ポイント・276 コメントと今日いちばん大きい反応を集めている。モデルを研究プロセスの一部として使う事例の現在地が分かるので、探索的なタスクをエージェントにどこまで任せられるかを考える材料になる。専門外でも、AI に仮説生成と検証のどこを担わせたのかという分担の設計に目を通しておく価値がある。
+<a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fnews%2Fclaude-discovers-novel-enzyme-system">Google 翻訳で全文を読む</a></p>
+<h3>[AINews] Claude Opus 5.5 が AINews の新しい既定モデルに - そして全社が料金を 40〜50% 値下げ</h3>
+<p>Opus 5.5 の登場と、業界全体で料金が 40〜50% 下がっている動きをまとめて追える。コーディングエージェントのサブスク料金が同時に動いている局面なので、契約やモデル選定の前提をいつ見直すべきかの判断材料になる。単体のモデル比較ではなく、価格競争の構図として捉えたいときに。
+<a href="https://www.latent.space/p/ainews-claude-opus-55-the-new-default">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-claude-opus-55-the-new-default">Google 翻訳で全文を読む</a></p>
+<h3>Codex を使うなら、Skills と Plugins を押さえておきたい</h3>
+<p>Codex の拡張機構である Skills と Plugins を実践目線で整理した記事。他社のコーディングエージェントが拡張の単位をどう設計しているかを知ると、Claude Code 側の Skills・MCP をどこで使い分けるかの判断が相対化できる。複数のエージェントを併用しているチームほど、用語と責務の対応を揃えるために読んでおきたい。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F23%2F123604">Google 翻訳で全文を読む</a></p>
+<h3>[Amazon Bedrock] VLM に判定を先に書かせるのを止めて、外観検査の検出率を比べてみました</h3>
+<p>出力スキーマのキー順を変えただけで検出率が変わった、という現象を系統的に検証した記録。構造化出力では「何を先に書かせるか」が結果を左右するという話で、Claude の構造化出力や評価セットの設計にそのまま効く。プロンプトやスキーマを直したのに精度が上下する理由を説明できるようになる。
+<a href="https://dev.classmethod.jp/articles/bedrock-vlm-inspection-verdict-order/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fbedrock-vlm-inspection-verdict-order%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-09-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-23.html</link>
@@ -190,23 +222,6 @@
 <h3>Claude Code v2.1.268: WebFetch無限ハングや高CPU張り付きなど日常の不具合を解消</h3>
 <p>応答を返さないサーバーに対して WebFetch が無期限にハングしていた問題が修正され、300秒でタイムアウト（<code>CLAUDE_CODE_WEBFETCH_DEADLINE_MS</code> で変更可）するようになった。長時間アイドルなセッションがCPUコアを占有し続ける問題や、autoモードの拒否理由が分かりにくかった点も改善されており、日々の開発体験に直結する。
 <a href="https://claude-code-log.com/changelog/v2.1.268#item-887656a3e44e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-887656a3e44e">Google 翻訳で全文を読む</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-10]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-10.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-10.html</guid>
-            <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
-<h3>Claude Code v2.1.267 アップデートまとめ — maxEffortLevel 追加とプロンプトキャッシュ関連の一斉修正</h3>
-<p>53件のアップデートのうち、新機能より長時間セッションで気づきにくい不具合の修正が中心という着眼点が実務的で参考になる。著者が実際に <code>maxEffortLevel</code> を試した所感も載っており、上限設定を使うべきか判断する材料になる。
-<a href="https://dev.classmethod.jp/articles/20260910-cc-updates-v2-1-267/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260910-cc-updates-v2-1-267%2F">Google 翻訳で全文を読む</a></p>
-<h3><code>/skill-doctor</code> 追加 — 未使用スキルとそのコンテキストコストを可視化</h3>
-<p>読み込んだまま放置されがちなスキルが、コンテキストをどれだけ消費しているかを可視化し、その場で整理・削除できる機能。スキルを増やしがちなプロジェクトでコンテキスト管理を見直すきっかけになる。
-<a href="https://claude-code-log.com/changelog/v2.1.261#item-e2302600a451">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.261%23item-e2302600a451">Google 翻訳で全文を読む</a></p>
-<h3>サブエージェント向け <code>--append-subagent-system-prompt-file</code> フラグ追加</h3>
-<p>コマンドラインでは渡しきれない長大なシステムプロンプトをファイルから読み込めるようになった。地味だが、複雑なサブエージェントを設計・運用しているチームには効いてくる変更。
-<a href="https://claude-code-log.com/changelog/v2.1.261#item-cb436e3f301f">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.261%23item-cb436e3f301f">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
     </channel>

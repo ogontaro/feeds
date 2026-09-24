@@ -4,11 +4,25 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 23 Sep 2026 00:06:28 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 00:18:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-09-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-24.html</guid>
+            <pubDate>Thu, 24 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>今、私はどの帽子をかぶっているのか — オープンソースの中立性という難問</h3>
+<p>CNCF ブログが、ベンダーが給与を払う maintainer の立場と中立性を正面から扱っている。プラットフォーム選定の実務では「この CNCF プロジェクトは特定ベンダーの都合でロードマップが動かないか」を見極める必要があり、その判断材料として読む価値がある。プロジェクト採用時のデューデリジェンスの観点を、きれいごと抜きで言語化してくれる珍しい一本。
+<a href="https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F23%2Fwhich-hat-am-i-wearing-right-now%2F">Google 翻訳で全文を読む</a></p>
+<h3>脆弱性アラート疲れが WHOOP を圧倒しかけた — それでも人間が最終判断を握る自動化</h3>
+<p>1 日数十万件のアラートという規模で、WHOOP がどうトリアージを自動化しつつ人間の判断を残したかの事例。セキュリティ運用の自動化でよくある失敗は「全部自動でクローズ」に振り切ることだが、ここでは自動化の線引き（どこまで機械に任せ、どこで人を挟むか）が設計として語られている。Platform Engineering として「自動化しすぎない」判断をどう組むかを考える実例になる。
+<a href="https://thenewstack.io/whoop-automated-vulnerability-response-workflow/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fwhoop-automated-vulnerability-response-workflow%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-09-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-23.html</link>
@@ -138,23 +152,6 @@
 <h3>Kubernetesディザスタリカバリ: 3つの再現可能な障害シナリオから得られる知見</h3>
 <p>「バックアップを取っている」と「実際に復旧できる」は別物であることを、ラボで再現可能な3つの障害シナリオを通じて具体的に示している点が実務的です。手元で再現して検証できる構成になっているため、自組織のDR計画やRunbookの妥当性をチェックする材料としてそのまま使えます。
 <a href="https://www.cncf.io/blog/2026/09/10/kubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F10%2Fkubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios%2F">Google 翻訳で全文を読む</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-10]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-10.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-10.html</guid>
-            <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
-<h3>Kubernetes v1.37: ノードライフサイクル条件（Node Lifecycle Conditions）の導入</h3>
-<p>v1.37でDrainInProgress・MaintenancePlanned・GracefulNodeShutdownなど5つの標準ノード条件が定義され、これまでクラウドベンダー独自の仕組みに頼っていたノードメンテナンスの表現がKubernetes本体で統一される。ノードドレインや計画メンテナンスの自動化・監視を設計している人には見逃せない変更。
-<a href="https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F09%2Fkubernetes-v1-37-node-lifecycle-conditions%2F">Google 翻訳で全文を読む</a></p>
-<h3>GPUは誰のもの？マルチテナントKubernetesにおけるセキュアなセルフサービスメトリクス</h3>
-<p>AI基盤で必ずぶつかるGPUコストの部門・テナント別可視化という課題を、テナント分離を崩さずセルフサービスで解決する設計を紹介している。マルチテナンシーとコスト最適化の両方に関わる実務者にとって参照価値が高い。
-<a href="https://www.cncf.io/blog/2026/09/09/whose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F09%2Fwhose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes%2F">Google 翻訳で全文を読む</a></p>
-<h3>クラウドネイティブがAIネイティブになるということ</h3>
-<p>生成AIでコードを書く主体がエンジニア以外にも広がる中、クラウドネイティブなプラットフォームやツールチェーンがどう変わっていくべきかを論じる視点記事。プラットフォームエンジニアリングの中長期的な方向性を考える材料になる。
-<a href="https://www.cncf.io/blog/2026/09/09/how-cloud-native-goes-ai-native/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F09%2Fhow-cloud-native-goes-ai-native%2F">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
     </channel>

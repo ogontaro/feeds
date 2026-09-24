@@ -4,11 +4,31 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 23 Sep 2026 00:07:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 00:18:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-09-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-24.html</guid>
+            <pubDate>Thu, 24 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<h3>オープンウェイトモデルを Amazon Bedrock で AI コーディングエージェントとして使う</h3>
+<p>Bedrock 上のオープンウェイトモデルを、ターミナル型のコーディングエージェント OpenCode に接続する構成を手順レベルで解説している。データを自アカウント内に置いたままタスクごとにモデルを選び分けられるため、コーディングエージェントのサブスク費用とデータ境界の両方が気になるチームにとって、モデル選択と権限設計を見直す材料になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fuse-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>ポータル巡回から即答へ — HEMA の MCP + Amazon Bedrock 活用事例</h3>
+<p>創業100年のオランダ小売 HEMA が、社内 AI アシスタント HAL を Bedrock AgentCore と MCP で構築した事例。クライアント側に AWS 資格情報を置かず Microsoft Entra ID に認証を寄せる設計は、MCP サーバーを社内展開するときの統制の答え合わせとして読める。「開発者が既に使うツールの中で知識を届ける」という目的設定も、内製エージェントのスコープを決める際の参考になる。
+<a href="https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffrom-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>AWS 上に構築するエージェント型の対話的ビデオインテリジェンス</h3>
+<p>Strands Agents SDK の単一エージェントが、実行時に Bedrock・Rekognition・Transcribe をどう呼び分けるかを自分で判断する構成の解説。動画に対する自然言語の問い合わせという分かりやすい題材で、複数サービスを束ねるオーケストレーションをエージェントに委ねる設計パターンの具体例になっている。どのサービスをいつ呼ぶかの判断をどこまでモデルに任せるか、という実務上の勘所がつかめる。
+<a href="https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fagentic-conversational-video-intelligence-built-on-aws%2F">Google 翻訳で全文を読む</a></p>
+<h3>Bedrock の VLM に判定を先に書かせると検出率が落ちる — 出力スキーマのキー順を検証</h3>
+<p>外観検査で前回検出できていた欠陥が消えた原因を追い、出力 JSON のキー順が検出率に効いていることを突き止めた検証記録。モデルもプロンプトも変えずスキーマ設計だけで結果が動くなら、評価のたびに条件を固定する運用が要るという実務上の警告になる。キー順の変更・判定の分離・判断層の比較が系統的に並んでおり、VLM を業務に組み込む前のチェックリストとしてそのまま使える。
+<a href="https://dev.classmethod.jp/articles/bedrock-vlm-inspection-verdict-order/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fbedrock-vlm-inspection-verdict-order%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-09-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-23.html</link>
@@ -272,33 +292,6 @@
 <h3>Amazon Cognito のユーザーグループに応じて Bedrock Guardrails を動的に切り替える</h3>
 <p>Cognito の認証済みユーザーが属するグループ情報をもとに、適用する Bedrock Guardrails を実行時に切り替える構成の実装検証です。テナントや権限レベルごとに異なるガードレール要件を持つマルチユーザー向け生成 AI アプリケーションを設計する際、すぐに転用できる具体的な構成が示されています。
 <a href="https://dev.classmethod.jp/articles/cognito-group-bedrock-guardrails-routing/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fcognito-group-bedrock-guardrails-routing%2F">Google 翻訳で全文を読む</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-10]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-10.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-10.html</guid>
-            <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 6 本</h2>
-<h3>ICYMI: 2026年8月にAIビルダー向けにリリースされた新機能まとめ</h3>
-<p>Bedrock・Bedrock AgentCore・Strands まわりの1か月分のアップデートを一気に把握できる棚卸し記事。OpenAI モデルの100万トークンコンテキスト、クロスリージョン推論、最大14日間動作するエージェント、Strands Robots など個別記事を追いきれなかった人には特に有用。
-<a href="https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-august-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ficymi-what-landed-for-ai-builders-in-august-2026%2F">Google 翻訳で全文を読む</a></p>
-<h3>Heurist FinanceがAmazon Bedrock AgentCoreで構築したAIネイティブな投資分析ワークベンチ</h3>
-<p>AgentCore の Payments・Identity・Memory・Code Interpreter・Observability を組み合わせた実運用事例で、少人数チームでも監査可能なエージェント基盤を組めることを示している。実際のプロダクションアーキテクチャの参考としてそのまま応用しやすい。
-<a href="https://aws.amazon.com/blogs/machine-learning/how-heurist-finance-built-an-ai-native-investment-workbench-on-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-heurist-finance-built-an-ai-native-investment-workbench-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
-<h3>Amazon SageMaker HyperPodとvLLMでQwen3.8-2.4T-A95Bをデプロイする</h3>
-<p>2.4兆パラメータのオープンウェイトモデルを NVFP4 量子化・投機的デコーディング付きで動かす手順を解説しており、超大規模モデルを自前で運用する際のクラスタ構成やコスト設計の勘所がわかる。
-<a href="https://aws.amazon.com/blogs/machine-learning/deploying-qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperpod-with-vllm/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploying-qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperpod-with-vllm%2F">Google 翻訳で全文を読む</a></p>
-<h3>Ray Serve Deep Learning ContainersでTorchServeワークロードを簡素化・サポートする</h3>
-<p>メンテナンス終了した TorchServe からの移行先として、EKS 上で動く検証済みの Ray Serve DLC を紹介。GPU 推論スタックを自前運用しているチームには移行判断の材料として重要。
-<a href="https://aws.amazon.com/blogs/machine-learning/simplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fsimplify-and-support-your-torchserve-workloads-using-ray-serve-deep-learning-containers%2F">Google 翻訳で全文を読む</a></p>
-<h3>Amazon Bedrock 経由の Claude Code で auto mode を試したら、モデルによって出たり出なかったりした</h3>
-<p>Bedrock 経由で Claude Code を運用している人には見逃せない、モデルごとの機能差の実地検証。ドキュメントだけでは分からない挙動差を確認できる点が有用。
-<a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-bedrock%2F">Google 翻訳で全文を読む</a></p>
-<h3>Claude Code を Amazon Bedrock 経由で使う環境を作る（WSL + aws-vault + 国内リージョン）</h3>
-<p>Claude Enterprise と Bedrock 経由の Claude Code を同一 WSL 環境で切り替えられるようにする実践的なセットアップ手順。aws-vault や国内リージョン指定など、社内利用でそのまま流用できる構成が具体的に示されている。
-<a href="https://dev.classmethod.jp/articles/claude-code-bedrock-jp-region/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-bedrock-jp-region%2F">Google 翻訳で全文を読む</a>
-</content></p>
 ]]></content:encoded>
         </item>
     </channel>
