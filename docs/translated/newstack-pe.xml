@@ -4,11 +4,19 @@
         <title>The New Stack — Platform Engineering — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — Platform Engineering の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 23 Sep 2026 13:23:43 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 16:06:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Developers and platform teams both want Kubernetes self-service. They disagree on who owns it.]]></title>
+            <link>https://thenewstack.io/kubernetes-self-service-platform-teams/</link>
+            <guid>https://thenewstack.io/?p=22838049</guid>
+            <pubDate>Thu, 24 Sep 2026 16:06:27 GMT</pubDate>
+            <description><![CDATA[What do developers want? Kubernetes environments when they need them. What do they not want? Those environments after a week The post Developers and platform teams both want Kubernetes self-service. They disagree on who owns it. appeared first on The New Stack.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/kubernetes-self-service-platform-teams/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-self-service-platform-teams%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Vulnerability alert fatigue nearly swamped WHOOP. But its fix still keeps a human in charge.]]></title>
             <link>https://thenewstack.io/whoop-automated-vulnerability-response-workflow/</link>

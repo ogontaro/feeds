@@ -4,11 +4,19 @@
         <title>Latent Space — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Latent Space の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Thu, 24 Sep 2026 08:12:59 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 15:03:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Foundries vs Navigators: Lowering the Cost of Science]]></title>
+            <link>https://www.latent.space/p/foundries-vs-navigators-lowering</link>
+            <guid>https://www.latent.space/p/foundries-vs-navigators-lowering</guid>
+            <pubDate>Thu, 24 Sep 2026 15:03:16 GMT</pubDate>
+            <description><![CDATA[Guest Post: In science, thinking has gotten cheap but doing has not. This asymmetry is reshaping how research companies operate, largely inconspicuously.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/foundries-vs-navigators-lowering">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Ffoundries-vs-navigators-lowering">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[AINews] Meta Connect 2026: Muse glasses, voice, video, and Charm]]></title>
             <link>https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses</link>

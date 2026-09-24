@@ -4,11 +4,19 @@
         <title>Sysdig — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Sysdig の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 22 Sep 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 11:50:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Why are SBOMs failing to stop supply chain attacks?]]></title>
+            <link>https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks</link>
+            <guid>https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks</guid>
+            <pubDate>Thu, 24 Sep 2026 11:50:00 GMT</pubDate>
+            <description><![CDATA[A software bill of materials (SBOM) could prevent most supply chain attacks. Let’s analyze what’s holding back their broader adoption.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-are-sboms-failing-to-stop-supply-chain-attacks">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Risky identities continue to plague cloud infrastructures]]></title>
             <link>https://webflow.sysdig.com/blog/risky-identities-continue-to-plague-cloud-infrastructures</link>

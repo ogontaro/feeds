@@ -4,11 +4,27 @@
         <title>GitHub activity (ogontaro) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>GitHub activity (ogontaro) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Thu, 24 Sep 2026 00:52:17 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 09:14:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ogontaro pushed feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/compare/4b7e251b21...f7b1d96d7b</link>
+            <guid>https://github.com/ogontaro/feeds/compare/4b7e251b21...f7b1d96d7b</guid>
+            <pubDate>Thu, 24 Sep 2026 09:14:27 GMT</pubDate>
+            <description><![CDATA[ogontaro pushed to main in ogontaro/feeds · September 24, 2026 09:14 1 commit to main f7b1d96]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/compare/4b7e251b21...f7b1d96d7b">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fcompare%2F4b7e251b21...f7b1d96d7b">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ogontaro pushed feeds]]></title>
+            <link>https://github.com/ogontaro/feeds/compare/1e5840cc21...81f5570e0a</link>
+            <guid>https://github.com/ogontaro/feeds/compare/1e5840cc21...81f5570e0a</guid>
+            <pubDate>Thu, 24 Sep 2026 09:11:20 GMT</pubDate>
+            <description><![CDATA[ogontaro pushed to main in ogontaro/feeds · September 24, 2026 09:11 1 commit to main 81f5570]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/ogontaro/feeds/compare/1e5840cc21...81f5570e0a">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fogontaro%2Ffeeds%2Fcompare%2F1e5840cc21...81f5570e0a">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ogontaro closed an issue in feeds]]></title>
             <link>https://github.com/ogontaro/feeds/issues/14</link>

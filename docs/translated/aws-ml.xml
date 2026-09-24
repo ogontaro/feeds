@@ -4,11 +4,35 @@
         <title>AWS Machine Learning Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS Machine Learning Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 23 Sep 2026 18:41:09 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 16:20:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Speaker-labeled transcription with WhisperX on SageMaker AI]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/speaker-labeled-transcription-with-whisperx-on-sagemaker-ai/</link>
+            <guid>89ffa52d3ad1a4f1ba4eb44fab5c1bc6ba6dcc60</guid>
+            <pubDate>Thu, 24 Sep 2026 16:20:12 GMT</pubDate>
+            <description><![CDATA[The AWS WhisperX Deep Learning Container packages Whisper, wav2vec2 forced alignment, and speaker diarization into a GPU-ready image. Learn how to deploy it to Amazon SageMaker AI real-time and asynchronous endpoints for word-level, speaker-labeled transcription, plus the production details that matter: the GPU AMI pin, scaling, and cost controls.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/speaker-labeled-transcription-with-whisperx-on-sagemaker-ai/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fspeaker-labeled-transcription-with-whisperx-on-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Build a multi-account AI agent with AgentCore Gateway and MCP]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp/</link>
+            <guid>118aa8ce2394e17dd4cd724e7cebe6d8a6cddefb</guid>
+            <pubDate>Thu, 24 Sep 2026 16:12:47 GMT</pubDate>
+            <description><![CDATA[Build a multi-account architecture that keeps each team's data in its own AWS account while giving AI agents a unified way to query across them. A central platform account runs the agent using Amazon Bedrock AgentCore Gateway and MCP, while line-of-business accounts expose their data as MCP servers with secure cross-account access and fine-grained authorization.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Aderant builds intelligent ticket triage with Amazon Nova]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/aderant-builds-intelligent-ticket-triage-with-amazon-nova/</link>
+            <guid>427cff8805a421ac08f11c5e6f8349509b2ca46f</guid>
+            <pubDate>Thu, 24 Sep 2026 16:06:46 GMT</pubDate>
+            <description><![CDATA[Learn how Aderant built an intelligent ticket triage system on Amazon Nova Lite through Amazon Bedrock, automating context gathering, classification, routing, and knowledge enrichment for its cloud operations team.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/aderant-builds-intelligent-ticket-triage-with-amazon-nova/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Faderant-builds-intelligent-ticket-triage-with-amazon-nova%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[From portal-hopping to instant answers: HEMA’s journey with MCP and Amazon Bedrock]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock/</link>
