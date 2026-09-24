@@ -4,11 +4,19 @@
         <title>Latent Space — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Latent Space の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 23 Sep 2026 13:27:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 08:12:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[[AINews] Meta Connect 2026: Muse glasses, voice, video, and Charm]]></title>
+            <link>https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses</link>
+            <guid>https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses</guid>
+            <pubDate>Thu, 24 Sep 2026 08:12:59 GMT</pubDate>
+            <description><![CDATA[Team Zuck is absolutely on fire.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-meta-connect-2026-muse-glasses">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)]]></title>
             <link>https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric</link>
