@@ -4,11 +4,27 @@
         <title>HN — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 23 Sep 2026 21:31:04 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Sep 2026 18:11:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Yes, Claude can do nine loops]]></title>
+            <link>https://www.anthropic.com/research/yes-claude-can-do-nine-loops</link>
+            <guid>https://news.ycombinator.com/item?id=49848033</guid>
+            <pubDate>Fri, 25 Sep 2026 18:11:48 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.anthropic.com/research/yes-claude-can-do-nine-loops Comments URL: https://news.ycombinator.com/item?id=49848033 Points: 100 # Comments: 49]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.anthropic.com%2Fresearch%2Fyes-claude-can-do-nine-loops">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Jevmem – automatic project memory for Claude Code, built on Jev]]></title>
+            <link>https://github.com/Avinash-jetwani/jevmem</link>
+            <guid>https://news.ycombinator.com/item?id=49846391</guid>
+            <pubDate>Fri, 25 Sep 2026 16:04:04 GMT</pubDate>
+            <description><![CDATA[Article URL: https://github.com/Avinash-jetwani/jevmem Comments URL: https://news.ycombinator.com/item?id=49846391 Points: 59 # Comments: 39]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/Avinash-jetwani/jevmem">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2FAvinash-jetwani%2Fjevmem">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude's Load-Bearing Seams]]></title>
             <link>https://madradavid.com/claudes-load-bearing-seams/</link>
