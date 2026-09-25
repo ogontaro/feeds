@@ -4,11 +4,37 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 24 Sep 2026 00:17:31 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Sep 2026 00:20:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-09-25]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-25.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-25.html</guid>
+            <pubDate>Fri, 25 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 6 本</h2>
+<h3>Claude Code v2.1.281 の主要アップデート — attribution: false の追加と rm -rf の確認強化</h3>
+<p>コミットに Claude のトレーラーを付けない <code>attribution: false</code> が入った回です。危険な rm の確認強化と auto モードの挙動変更も含まれ、いずれも無人実行の前提が変わる変更なので、CI や自動化に Claude Code を組み込んでいるなら先に把握しておきたいところ。記事では実際に <code>attribution: false</code> を試した結果まで書かれており、設定がどう効くかを確認できます。
+<a href="https://dev.classmethod.jp/articles/20260924-cc-updates-v2-1-281/">原文を読む</a></p>
+<h3>Claude Code v2.1.282: セッション再開や作業中のコマンドで拡張思考が失われる問題の修正</h3>
+<p><code>--continue</code> / <code>--resume</code> での再開や、作業中に <code>/model</code>・<code>/rename</code> などの即時実行コマンドを使ったときに、それまでの拡張思考が破棄されてしまう問題がまとめて直りました。長時間セッションや再開を前提にした運用では推論の文脈が静かに落ちる分だけ出力品質が下がるため、症状が分かりにくいタイプの不具合です。要約リクエストが拒否されてコンパクションが失敗したときにフォールバックモデルで再試行する修正も入り、セッションが途中で死ににくくなっています。
+<a href="https://claude-code-log.com/changelog/v2.1.282#item-beda824ed81b">原文を読む</a></p>
+<h3>Claude Code v2.1.282: 権限ルールと設定ロックの効き方を修正 — 統制の穴を塞ぐ</h3>
+<p>パターン途中に <code>:*</code> を含む Bash 権限ルールが設定ファイルでは無視され、<code>--allowedTools</code> でしか効いていなかった問題が修正され、全ソースで機能するようになりました(マッチ方法を説明する起動時の警告も追加)。あわせて真偽値のロックキーに誤った型を書いても無視されないようになり、macOS のシンボリックリンク経由で意図しない CLAUDE.md や rules が読み込まれる問題も塞がっています。権限・統制の設定が「書いたつもりで効いていない」状態は事故に直結するので、managed settings を配っているチームほど挙動を確認しておく価値があります。
+<a href="https://claude-code-log.com/changelog/v2.1.282#item-2d6020e79aaf">原文を読む</a></p>
+<h3>Multica の紹介＋初心者ループエンジニアリング</h3>
+<p>Multica というツールの紹介と、エージェントをループで回す「ループエンジニアリング」の入門を1本にまとめた記事です。単発の指示で終わらせず、結果を見て次の指示を出すサイクルをどう組むかは、コーディングエージェントに仕事を任せる際の基本形になりつつあります。初心者向けに道具立てから説明しているので、ループ運用の考え方を一度整理しておきたいときに向いています。
+<a href="https://qiita.com/gensan0223/items/267936f36aebcbba718f">原文を読む</a></p>
+<h3>AI が作った HTML を Google Workspace で社内限定公開する方法(スキル付き!)</h3>
+<p>Claude Code が作った HTML レポートを、Google Apps Script と clasp を使って社内限定公開まで持っていく仕組みを Agent Skill 化した実例です。外部サービスを叩くスキルをどう作り、レポート生成から公開までを1つの指示で完結させるかの型として参考になります。成果物を社内に配るところまで自動化したいなら、そのまま流用できる部分が多いはずです。
+<a href="https://dev.classmethod.jp/articles/html-service-20260924/">原文を読む</a></p>
+<h3>Codex を使うなら、Worktrees と会話の分岐を押さえておきたい</h3>
+<p>コーディングエージェントに並行して作業させるための、worktree による作業ツリーの分離と会話の分岐の使い方がまとまっています。エージェントが同じ作業ツリーを共有すると衝突や巻き戻しが起きるので、この分離の設計は Claude Code 側でも同じように必要になる話です。ツールは違っても、複数タスクを安全に走らせる際の型として読み替えが効きます。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105">原文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-09-24]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-24.html</link>
@@ -207,20 +233,6 @@
 <a href="https://claude-code-log.com/changelog/v2.1.268#item-b3613ac888db">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-b3613ac888db">Google 翻訳で全文を読む</a></p>
 <h3>WebFetch が応答を開いたまま完了しないサーバーで無期限にハングする不具合を修正、300秒タイムアウトと環境変数での上書きに対応（Claude Code v2.1.268）</h3>
 <p>これまで WebFetch はサーバーがレスポンスを開始したまま完了させない場合に永久に待ち続けることがあったが、300秒で自動的に失敗するようになり、<code>CLAUDE_CODE_WEBFETCH_DEADLINE_MS</code> で時間を変更（<code>0</code> で無効化）できるようになった。フックやワークフローで WebFetch を組み込んでいると地味に刺さる不具合だったので、自動化を組んでいる人には実務的に効く修正。
-<a href="https://claude-code-log.com/changelog/v2.1.268#item-887656a3e44e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-887656a3e44e">Google 翻訳で全文を読む</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-11]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-11.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-11.html</guid>
-            <pubDate>Fri, 11 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<h3>Claude Code v2.1.268: 権限チェックとシークレット漏洩まわりの重要なセキュリティ修正</h3>
-<p>シンボリックリンク経由で deny/確認ルールが素通りする問題、<code>env -C</code> や <code>eval</code> を同じ行に挟むと Read/Edit の deny ルールが効かなくなる問題、git URL や MCP 設定の <code>${VAR}</code> シークレットがエラー表示に漏れる問題などが一挙に修正された。Bash サンドボックスや権限ルールに運用を依存しているなら見逃せない。
-<a href="https://claude-code-log.com/changelog/v2.1.268#item-b3613ac888db">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-b3613ac888db">Google 翻訳で全文を読む</a></p>
-<h3>Claude Code v2.1.268: WebFetch無限ハングや高CPU張り付きなど日常の不具合を解消</h3>
-<p>応答を返さないサーバーに対して WebFetch が無期限にハングしていた問題が修正され、300秒でタイムアウト（<code>CLAUDE_CODE_WEBFETCH_DEADLINE_MS</code> で変更可）するようになった。長時間アイドルなセッションがCPUコアを占有し続ける問題や、autoモードの拒否理由が分かりにくかった点も改善されており、日々の開発体験に直結する。
 <a href="https://claude-code-log.com/changelog/v2.1.268#item-887656a3e44e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-887656a3e44e">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>

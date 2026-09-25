@@ -4,11 +4,25 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 24 Sep 2026 00:18:04 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Sep 2026 00:21:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-09-25]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-25.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-25.html</guid>
+            <pubDate>Fri, 25 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<h3>開発者とプラットフォームチームはどちらも Kubernetes のセルフサービスを望むが、「誰が所有するか」で対立している</h3>
+<p>セルフサービス基盤の設計は「誰が何を所有するか」の線引きを誤ると、環境が野放しに増えて誰も面倒を見なくなる。開発者側の要求とプラットフォーム側の責任範囲がどこで衝突するのかを、実務の運用課題として整理している点が参考になる。プラットフォームエンジニアリングの内製基盤を設計・見直しする立場なら、責任分界の決め方の材料として読む価値がある。
+<a href="https://thenewstack.io/kubernetes-self-service-platform-teams/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-self-service-platform-teams%2F">Google 翻訳で全文を読む</a></p>
+<h3>SBOM はなぜサプライチェーン攻撃を止められないのか</h3>
+<p>SBOM があればサプライチェーン攻撃の多くは防げるはずだ、という前提そのものを問い直す内容で、生成して終わりになりがちな SBOM 運用の実効性を考える材料になる。「作ること」と「実際に脆弱性対応へ繋げること」の間にある運用上の障壁を押さえておくと、自組織の SBOM 戦略が絵に描いた餅になっていないかを点検できる。
+<a href="https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-are-sboms-failing-to-stop-supply-chain-attacks">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-09-24]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-24.html</link>
@@ -141,17 +155,6 @@
 <h3>AIなしで人力速攻突破：marimo CVE-2026-39987の手作りエクスプロイト解説</h3>
 <p>Sysdig TRTが、AI支援なしで一から手組みしたPythonツールだけでmarimoの脆弱性を突き、クラウドの踏み台ホストを侵害するまでの過程を具体的に解説しています。CVE単体の説明にとどまらず攻撃者視点での実際の突破手順が追えるため、クラウドネイティブ環境のセキュリティ対策やインシデント対応を考える上で参考になります。</p>
 <p><a href="https://webflow.sysdig.com/blog/machine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fmachine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit">Google 翻訳で全文を読む</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-11]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-11.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-11.html</guid>
-            <pubDate>Fri, 11 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<h3>Kubernetesディザスタリカバリ: 3つの再現可能な障害シナリオから得られる知見</h3>
-<p>「バックアップを取っている」と「実際に復旧できる」は別物であることを、ラボで再現可能な3つの障害シナリオを通じて具体的に示している点が実務的です。手元で再現して検証できる構成になっているため、自組織のDR計画やRunbookの妥当性をチェックする材料としてそのまま使えます。
-<a href="https://www.cncf.io/blog/2026/09/10/kubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F10%2Fkubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios%2F">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
     </channel>
