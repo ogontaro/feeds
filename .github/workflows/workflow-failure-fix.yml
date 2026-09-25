@@ -18,6 +18,7 @@ permissions:
   contents: write
   pull-requests: write
   id-token: write
+  actions: write
 
 jobs:
   fix:
@@ -86,13 +87,19 @@ jobs:
           claude_args: "--allowedTools Read,Write,Bash(gh run view:*) --model qwen3.8-flash[1m]"
 
       - name: open PR for review (no auto-merge)
+        id: open_pr
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .github/workflows src
-          if git diff --cached --quiet; then echo "no fix produced"; exit 0; fi
+          if git diff --cached --quiet; then
+            echo "no fix produced"
+            echo "fix_produced=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "fix_produced=true" >> "$GITHUB_OUTPUT"
           BRANCH="workflow-failure-fix/${{ github.event.workflow_run.id }}"
           git checkout -b "${BRANCH}"
           git commit -m "fix: address failure in ${{ github.event.workflow_run.name }} workflow"
@@ -102,3 +109,9 @@ jobs:
 
           claude-code-action による自動診断・修正案です。**自動マージはしません。内容を確認してからマージしてください。**" \
             --base main --head "${BRANCH}"
+
+      - name: retry origin workflow (transient failure, scheduled run only)
+        if: steps.open_pr.outputs.fix_produced != 'true' && github.event.workflow_run.event == 'schedule'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run "${{ github.event.workflow_run.name }}.yml" --repo "${GITHUB_REPOSITORY}"

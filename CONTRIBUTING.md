@@ -239,6 +239,16 @@ PR を作成する（**自動マージしない**。既存の自動マージは�
 プロンプトで明示的に「変更しない」よう指示している — でないと自動マージなしでも
 無意味な PR が積み上がる。
 
+コード修正が出なかった（`no fix produced`）場合、かつ元の失敗が `schedule` トリガーの
+実行だった場合のみ、`gh workflow run <name>.yml` で元のワークフローを1回だけ即時再実行する
+（一過性の上流障害を6時間待たずに自己修復させる）。無限ループ防止は再帰防止そのものではなく
+イベント種別のガード: 再実行は `workflow_dispatch` として発火するため、それが再度失敗して
+`workflow-failure-fix` が起動しても `event == 'schedule'` を満たさずリトライは発火しない
+（`GITHUB_TOKEN` からの `workflow_dispatch` が実際に新規runを起動することは
+`_test-a.yml`/`_test-b.yml` による実機検証で確認済み。`push`/`issues:opened` 等の
+自動イベントとは異なり `workflow_dispatch` は再帰防止の対象外）。再実行後も失敗する場合は
+Issue が残り、人間が判断する（現状と同じ）。
+
 `issues: opened` ではなく `workflow_run` を使っているのは、`GITHUB_TOKEN` で作成した
 Issue は新しいワークフロー実行をトリガーしない（GitHub の再帰防止仕様）ため、
 `notify-failure` が作った Issue では `issues: opened` が発火しないと実機検証で判明した
