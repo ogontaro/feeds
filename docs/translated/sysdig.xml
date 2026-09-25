@@ -4,11 +4,19 @@
         <title>Sysdig — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Sysdig の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Thu, 24 Sep 2026 11:50:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AI adoption is a security survival metric]]></title>
+            <link>https://webflow.sysdig.com/blog/ai-adoption-is-a-security-survival-metric</link>
+            <guid>https://webflow.sysdig.com/blog/ai-adoption-is-a-security-survival-metric</guid>
+            <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[AI is moving from experiment to infrastructure. Sysdig research shows more organizations building their own infrastructure, reducing the AI attack surface.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/ai-adoption-is-a-security-survival-metric">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fai-adoption-is-a-security-survival-metric">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Why are SBOMs failing to stop supply chain attacks?]]></title>
             <link>https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks</link>
