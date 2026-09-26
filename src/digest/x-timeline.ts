@@ -6,10 +6,12 @@ import { CACHE, X_TIMELINE_JSON, reportInputJson } from "../lib/paths.ts";
  * X ホームタイムライン(RSSHub `twitter/home_latest` と `twitter/home`)を蓄積し、日次レポートの入力を書き出す。
  * 1 回の取得は 88 件(平日日中は ~8 時間ぶん)しか返らないため、timeline.yml が 3 時間ごとに取得して
  * actions/cache 上の蓄積(.cache/x-timeline.json)にマージし、report.yml が直近 24h を読む。
+ * 「直近」は投稿時刻ではなく初めて取得した時刻(seen)で判定する。おすすめ(home)は数日前の投稿も
+ * 出すため、投稿時刻で切ると一度もレポートに載らない。
  *
  * public リポジトリの公開ログに流れるため、本文・投稿者・URL は出力せず件数だけ出す。
  * RSSHUB_ACCESS_KEY 未設定なら何もせず空の入力を書いて正常終了する。
- * --strict(timeline.yml)は取得失敗で異常終了、なし(report.yml)は蓄積だけでレポートを作る。
+ * 取得できたルートの分は必ず蓄積に書き込み、そのうえで --strict(timeline.yml)なら失敗を異常終了で知らせる。
  */
 
 const RETENTION_MS = 7 * 24 * 3_600_000;
@@ -24,6 +26,8 @@ type Post = {
   text: string;
   links: string[];
   published: string;
+  /** 初めて取得した時刻。24h 窓と 7 日保持の基準。 */
+  seen: string;
 };
 
 const strict = process.argv.includes("--strict");
@@ -66,8 +70,21 @@ function toText(html: string): string {
     .slice(0, MAX_TEXT);
 }
 
+/** RSSHub は cookie 周りで一時的に 503 を返すことがある(再試行で 200)。5xx と通信エラーだけ再試行する。 */
+async function fetchWithRetry(url: string): Promise<Omit<Post, "seen">[]> {
+  for (const waitMs of [30_000, 60_000]) {
+    try {
+      return await fetchTimeline(url);
+    } catch (err) {
+      if (!/HTTP 5\d\d|fetch failed: (?!HTTP)/.test((err as Error).message)) throw err;
+      await Bun.sleep(waitMs);
+    }
+  }
+  return fetchTimeline(url);
+}
+
 /** 取得失敗時もメッセージに URL(アクセスキー)を含めない。 */
-async function fetchTimeline(url: string): Promise<Post[]> {
+async function fetchTimeline(url: string): Promise<Omit<Post, "seen">[]> {
   let res: Response;
   try {
     res = await fetch(url, { signal: AbortSignal.timeout(60_000) });
@@ -112,33 +129,36 @@ async function main() {
   const stored: Post[] = await Bun.file(X_TIMELINE_JSON)
     .json()
     .catch(() => []);
-  const fetched: Post[] = [];
+  const fetched: Omit<Post, "seen">[] = [];
+  const failed: string[] = [];
   for (const route of ROUTES) {
     try {
-      fetched.push(...(await fetchTimeline(`${RSSHUB}/${route}?key=${encodeURIComponent(key)}`)));
+      fetched.push(...(await fetchWithRetry(`${RSSHUB}/${route}?key=${encodeURIComponent(key)}`)));
     } catch (err) {
-      const msg = `${route}: ${(err as Error).message}`;
-      if (strict) throw new Error(msg);
-      console.error(`${msg} — using stored posts only`);
+      console.error(`${route}: ${(err as Error).message}`);
+      failed.push(route);
     }
   }
 
+  const now = Date.now();
   const byGuid = new Map(stored.map((p) => [p.guid, p]));
   const added = new Set(fetched.map((p) => p.guid).filter((g) => !byGuid.has(g))).size;
-  for (const p of fetched) byGuid.set(p.guid, p);
-  const now = Date.now();
+  for (const p of fetched) {
+    byGuid.set(p.guid, { ...p, seen: byGuid.get(p.guid)?.seen ?? new Date(now).toISOString() });
+  }
   const posts = [...byGuid.values()]
-    .filter((p) => now - Date.parse(p.published) < RETENTION_MS)
+    .filter((p) => now - Date.parse(p.seen) < RETENTION_MS)
     .sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
   await Bun.write(X_TIMELINE_JSON, JSON.stringify(posts));
 
   const recent = posts
-    .filter((p) => now - Date.parse(p.published) < WINDOW_MS)
-    .map(({ guid: _, ...p }) => p);
+    .filter((p) => now - Date.parse(p.seen) < WINDOW_MS)
+    .map(({ guid: _, seen: __, ...p }) => p);
   await Bun.write(reportInputJson("x"), JSON.stringify(recent, null, 2));
   console.log(
     `x-timeline: fetched ${fetched.length} (${added} new), stored ${posts.length} (7d), report-x-input.json ${recent.length} (24h)`,
   );
+  if (failed.length > 0 && strict) process.exit(1);
 }
 
 main().catch((err) => {

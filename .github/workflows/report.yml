@@ -176,6 +176,13 @@ jobs:
           echo "n=$(jq length .cache/report-x-input.json)" >> "$GITHUB_OUTPUT"
         env:
           RSSHUB_ACCESS_KEY: ${{ secrets.RSSHUB_ACCESS_KEY }}
+      # この場の取得分も保存する。保存しないと次のポーリングが同じポストを「初めて見た」扱いにし、
+      # 翌日のレポートにも載ってしまう(24h 窓は初回取得時刻で切るため)。
+      - if: always() && hashFiles('.cache/x-timeline.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/x-timeline.json
+          key: x-timeline-${{ github.run_id }}-${{ github.run_attempt }}
       - name: curate x
         id: curate_x
         if: steps.collect_x.outputs.n != '0'

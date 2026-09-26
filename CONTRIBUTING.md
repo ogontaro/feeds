@@ -142,13 +142,15 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 88 件(平日日中は ~8 時間ぶん)しか返らないため、取得と日次レポートを分ける。
 
 1. `timeline.yml`（cron `30 */3 * * *`）: `actions/cache/restore` で蓄積を復元 →
-   `src/digest/x-timeline.ts --strict` が取得して `.cache/x-timeline.json` に guid でマージし直近 7 日に刈り込む →
-   `actions/cache/save`。キャッシュは上書きできないので key は実行ごとに一意
+   `src/digest/x-timeline.ts --strict` が取得して（5xx・通信エラーは 30 秒・60 秒待って再試行）
+   `.cache/x-timeline.json` に guid でマージし、初回取得時刻（`seen`）から 7 日で刈り込む →
+   `actions/cache/save`（一部ルートが失敗して異常終了しても取得できた分は保存。失敗 Issue は開いているものがあれば増やさない）。キャッシュは上書きできないので key は実行ごとに一意
    （`x-timeline-<run_id>-<run_attempt>`）、復元は `restore-keys: x-timeline-` の前方一致で最新を拾う。
 2. `report.yml`: 同じ `path`/`restore-keys` で復元 → `x-timeline.ts`（`--strict` なし。取得に失敗しても
-   蓄積だけで進む）がその時点の取得分も足し、直近 24h を `.cache/report-x-input.json` に書く。
+   蓄積だけで進む）がその時点の取得分も足し、初回取得時刻が直近 24h のものを `.cache/report-x-input.json` に書く。
+   投稿時刻ではなく初回取得時刻で切るのは、おすすめ（`home`）が数日前の投稿も出すため。
    以降は他ドメインと同じ（curate は `report-criteria/report-x.md`、render は `report-render.ts x`）。
-   report.yml は蓄積を保存しない（次の取得で拾い直せる）。
+   report.yml も蓄積を保存する（しないと次の取得が同じポストを初見扱いにし、翌日のレポートにも載る）。
 
 public リポジトリのため、プライバシーは次で担保する。
 
