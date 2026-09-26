@@ -90,83 +90,83 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffrom-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Agentic conversational video intelligence built on AWS]]></title>
+            <title><![CDATA[AWS上に構築されたエージェント型会話型ビデオインテリジェンス]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws/</link>
             <guid>c1a90bbe3003b17df7a04a90397d54eee1db68bd</guid>
             <pubDate>Wed, 23 Sep 2026 18:21:54 GMT</pubDate>
-            <description><![CDATA[Learn how to build a conversational video intelligence solution on AWS using an agentic architecture. A single Strands Agents SDK agent orchestrates Amazon Bedrock, Amazon Rekognition, and Amazon Transcribe at runtime, deciding which service to call so you can ask natural language questions about your videos and get answers in seconds.]]></description>
+            <description><![CDATA[エージェント型アーキテクチャを使用してAWSで会話型ビデオインテリジェンスソリューションを構築する方法を学びます。単一のStrandsエージェントSDKエージェントは、Amazon Bedrock、Amazon Rekognition、Amazon Transcribeを実行時にオーケストレーションし、呼び出すサービスを決定して、ビデオに関する自然言語の質問をして、数秒で回答を得ることができます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fagentic-conversational-video-intelligence-built-on-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Use open weight models as your AI coding agent with Amazon Bedrock]]></title>
+            <title><![CDATA[Amazon BedrockでAIコーディングエージェントとしてオープンウェイトモデルを使用する]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/</link>
             <guid>cced8883b9ee496209b96642a8ac01881e403508</guid>
             <pubDate>Wed, 23 Sep 2026 18:17:44 GMT</pubDate>
-            <description><![CDATA[Pair OpenCode, an open-source terminal-native AI coding agent, with open weight models on Amazon Bedrock to get a secure, flexible, pay-per-use coding assistant. Learn how to configure multi-model workflows, match the right model to each task, and keep your data in your own AWS account with no infrastructure to manage.]]></description>
+            <description><![CDATA[オープンソースのターミナルネイティブAIコーディングエージェントであるOpenCodeとAmazon Bedrockのオープンウェイトモデルを組み合わせて、安全で柔軟なペイパーユースコーディングアシスタントを手に入れましょう。マルチモデルワークフローを構成し、各タスクに適切なモデルを適合させ、インフラストラクチャを管理せずにデータを自分のAWSアカウントに保持する方法を学びます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fuse-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Bring more intelligence to everyday work with GPT-6 Sol and GPT-6 Luna on Amazon Bedrock]]></title>
+            <title><![CDATA[Amazon BedrockのGPT -6 SolとGPT -6 Lunaを使用して、毎日の仕事により多くのインテリジェンスをもたらします]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/</link>
             <guid>f91c4872e4efa50ad6fa1a0161799f318feef3c1</guid>
             <pubDate>Tue, 22 Sep 2026 18:10:22 GMT</pubDate>
-            <description><![CDATA[GPT-6 Sol and GPT-6 Luna are now generally available on Amazon Bedrock, giving you more options to match intelligence and efficiency to each workload.]]></description>
+            <description><![CDATA[GPT -6 SolとGPT -6 LunaがAmazon Bedrockで一般的に利用できるようになり、各ワークロードにインテリジェンスと効率を合わせるためのより多くのオプションが提供されます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Claude Opus 5.5 is now available on AWS]]></title>
+            <title><![CDATA[Claude Opus 5.5がAWSで利用可能になりました]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/</link>
             <guid>2e3d91b641ca237ade2f2527a383a24847fe5ded</guid>
             <pubDate>Tue, 22 Sep 2026 17:28:01 GMT</pubDate>
-            <description><![CDATA[Claude Opus 5.5, Anthropic's most capable Opus model for agentic coding, knowledge work, and long-running tasks, is now available on Amazon Bedrock and Claude Platform on AWS. This post covers what's new in Opus 5.5, practical guidance, and how to start building with the model on Amazon Bedrock.]]></description>
+            <description><![CDATA[エージェントコーディング、ナレッジワーク、長期的なタスクのためのAnthropicの最も有能なOpusモデルであるClaude Opus 5.5が、AWSのAmazon BedrockとClaude Platformで利用できるようになりました。この記事では、Opus 5.5の新機能、実践的なガイダンス、Amazon Bedrockでモデルを使用して構築を開始する方法について説明します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fclaude-opus-5-5-is-now-available-on-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Evaluate skill-equipped agents with Strands Evals and Amazon Bedrock AgentCore]]></title>
+            <title><![CDATA[Strands EvalsとAmazon Bedrock AgentCoreでスキルを備えたエージェントを評価する]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/</link>
             <guid>aa00d9c221ad9292cfbcc5630acd0f904e2648ad</guid>
             <pubDate>Tue, 22 Sep 2026 17:18:13 GMT</pubDate>
-            <description><![CDATA[Skills let you encode domain-specific procedures as reusable, portable instructions for agents, but a fluent answer doesn't prove the agent picked the right skill or followed it. Learn how to measure skill selection and instruction following with Strands Evals and Amazon Bedrock AgentCore Evaluations.]]></description>
+            <description><![CDATA[スキルを使用すると、エージェントのための再利用可能でポータブルな手順としてドメイン固有の手順をエンコードできますが、流暢な回答は、エージェントが適切なスキルを選択したか、それに従ったことを証明するものではありません。Strands EvalsとAmazon Bedrock AgentCore Evaluationsを使用して、スキルの選択と指示を測定する方法を学びます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/evaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fevaluate-skill-equipped-agents-with-strands-evals-and-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[How Reactiv automates mobile commerce 80% faster with Amazon Bedrock AgentCore]]></title>
+            <title><![CDATA[ReactivがAmazon Bedrock AgentCoreを使用してモバイルコマースを80%高速化する方法]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedrock-agentcore/</link>
             <guid>b9998174e9c0e9055ac7cefe40c88652e9606651</guid>
             <pubDate>Tue, 22 Sep 2026 15:46:07 GMT</pubDate>
-            <description><![CDATA[Reactiv used Amazon Bedrock AgentCore to build a multi-agent AI Scheduler that autonomously refreshes Shopify merchants' mobile apps on a schedule, reducing merchant configuration time by 80% and getting to production 33% faster.]]></description>
+            <description><![CDATA[ReactivはAmazon Bedrock AgentCoreを使用して、Shopify加盟店のモバイルアプリをスケジュール通りに自律的に更新するマルチエージェントAIスケジューラを構築し、加盟店の設定時間を80 ％短縮し、本番稼働までの時間を33 ％短縮しました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-reactiv-automates-mobile-commerce-80-faster-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Right-size generative AI endpoints with concurrency sweeps on Amazon SageMaker AI]]></title>
+            <title><![CDATA[Amazon SageMaker AIで並列スイープを使用した適切なサイズのジェネレーティブAIエンドポイント]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/right-size-generative-ai-endpoints-with-concurrency-sweeps-on-amazon-sagemaker-ai/</link>
             <guid>de6c2facc757c64fbd0ea27218c6d35c1221274f</guid>
             <pubDate>Tue, 22 Sep 2026 15:35:53 GMT</pubDate>
-            <description><![CDATA[Concurrency sweeps help you right-size a generative AI endpoint on Amazon SageMaker AI by systematically benchmarking it at increasing load levels. This post walks through deploying a model, running automated concurrency sweeps with the CreateAIBenchmarkJob API, and using the results to make data-driven capacity decisions about fleet size.]]></description>
+            <description><![CDATA[並行性スイープは、負荷レベルを上げることで、Amazon SageMaker AI上のジェネレーティブAIエンドポイントを体系的にベンチマークすることで、適切なサイズに調整するのに役立ちます。この記事では、モデルのデプロイ、CreateAIBenchmarkJob APIを使用した自動並行性スイープの実行、結果を使用してフリートサイズに関するデータ駆動型のキャパシティ決定を行います。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/right-size-generative-ai-endpoints-with-concurrency-sweeps-on-amazon-sagemaker-ai/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fright-size-generative-ai-endpoints-with-concurrency-sweeps-on-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[How Trane gets building insights 60x faster with Amazon Bedrock AgentCore]]></title>
+            <title><![CDATA[Amazon Bedrock AgentCoreを使用して、Traneがインサイトを60倍高速に構築する方法]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/how-trane-gets-building-insights-60x-faster-with-amazon-bedrock-agentcore/</link>
             <guid>dbd3f22e7d336a47137d152cb1d4539976157498</guid>
             <pubDate>Tue, 22 Sep 2026 15:30:34 GMT</pubDate>
-            <description><![CDATA[In about four weeks, Trane Technologies built an AI-powered agentic solution on Amazon Bedrock AgentCore that reduced a 20-minute, multi-screen building diagnostic workflow to a 20-second natural language interaction, a 60x improvement in time-to-insight. This post shares the architectural approach and key design decisions behind the solution.]]></description>
+            <description><![CDATA[約4週間で、Trane TechnologiesはAmazon Bedrock AgentCoreにAI搭載のエージェントソリューションを構築し、20分間のマルチスクリーンビルディング診断ワークフローを20秒の自然言語インタラクションに短縮し、インサイトへの時間を60倍に短縮しました。この記事では、ソリューションの背後にあるアーキテクチャ的アプローチと主要な設計上の意思決定について説明します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-trane-gets-building-insights-60x-faster-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-trane-gets-building-insights-60x-faster-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[How Tata Elxsi detects industrial safety risks in seconds on AWS]]></title>
+            <title><![CDATA[AWSでTata Elxsiが産業安全リスクを数秒で検出する方法]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/how-tata-elxsi-detects-industrial-safety-risks-in-seconds-on-aws/</link>
             <guid>bc39639b8f4e4cc7c356256fa699e460f9a01fa5</guid>
             <pubDate>Tue, 22 Sep 2026 15:19:54 GMT</pubDate>
-            <description><![CDATA[Learn how Tata Elxsi built IRIS, a real-time industrial safety platform on AWS. IRIS filters camera video at the edge, streams metadata through Amazon Kinesis, runs computer vision on Amazon SageMaker AI, and correlates detections into high-confidence alerts, detecting unsafe conditions in seconds instead of minutes.]]></description>
+            <description><![CDATA[Tata ElxsiがAWS上でリアルタイムの産業安全プラットフォームであるIRISをどのように構築したかをご覧ください。IRISはエッジでカメラビデオをフィルタリングし、Amazon Kinesisを介してメタデータをストリーミングし、Amazon SageMaker AIでコンピュータビジョンを実行し、検出を信頼性の高いアラートに関連付けて、数分ではなく数秒で危険な状態を検出します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-tata-elxsi-detects-industrial-safety-risks-in-seconds-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-tata-elxsi-detects-industrial-safety-risks-in-seconds-on-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Extending public sector intelligence with Agentforce and AWS]]></title>
+            <title><![CDATA[AgentforceとAWSで公共部門のインテリジェンスを拡張]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/extending-public-sector-intelligence-with-agentforce-and-aws/</link>
             <guid>5066ec9c015f24d80bf639cd7289221c5f05bc08</guid>
             <pubDate>Tue, 22 Sep 2026 15:17:45 GMT</pubDate>
-            <description><![CDATA[Public sector agencies process large volumes of unstructured evidence, such as body camera footage and scanned documents. This post shows how to combine Amazon Bedrock Data Automation with the Model Context Protocol (MCP) to turn that data into structured insights and surface them through natural language queries in Salesforce Agentforce.]]></description>
+            <description><![CDATA[公的機関は、ボディカメラの映像やスキャンされた文書など、大量の構造化されていない証拠を処理します。この記事では、Amazon Bedrock Data Automationとモデルコンテキストプロトコル（ MCP ）を組み合わせて、そのデータを構造化されたインサイトに変換し、Salesforce Agentforceの自然言語クエリを介して表示する方法について説明します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/extending-public-sector-intelligence-with-agentforce-and-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fextending-public-sector-intelligence-with-agentforce-and-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
