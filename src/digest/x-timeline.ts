@@ -4,7 +4,7 @@ import { CACHE, X_TIMELINE_JSON, reportInputJson } from "../lib/paths.ts";
 
 /**
  * X ホームタイムライン(RSSHub `twitter/home_latest` と `twitter/home`)を蓄積し、日次レポートの入力を書き出す。
- * 1 回の取得は 88 件(平日日中は ~8 時間ぶん)しか返らないため、timeline.yml が定期的に取得して
+ * 1 回の取得は 88 件(平日日中は ~8 時間ぶん)しか返らないため、timeline.yml が 30 分ごとに取得して
  * actions/cache 上の蓄積(.cache/x-timeline.json)にマージし、report.yml が直近 24h を読む。
  * 「直近」は投稿時刻ではなく初めて取得した時刻(seen)で判定する。おすすめ(home)は数日前の投稿も
  * 出すため、投稿時刻で切ると一度もレポートに載らない。
@@ -139,7 +139,7 @@ async function main() {
       fetched.push(...got);
       if (route === "twitter/home_latest" && got.length > 0) {
         // 深さ = 今回の 88 件のうち最も早く初回取得した時刻から今まで。これより長く間隔を空けると取りこぼす。
-        // 取得間隔の決定に使う(ログを集計する)。蓄積と 1 件も重ならなければ既に取りこぼしている。
+        // 取得間隔の余裕の監視用。蓄積と 1 件も重ならなければ既に取りこぼしている。
         const overlap = got.filter((p) => storedSeen.has(p.guid)).length;
         const oldest = Math.min(...got.map((p) => storedSeen.get(p.guid) ?? now));
         console.log(

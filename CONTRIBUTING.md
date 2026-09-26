@@ -30,7 +30,7 @@ mise run serve     # docs/ をローカルプレビュー
 | --- | --- | --- | --- | --- |
 | 翻訳フィード | 海外サイトの content フィード(日本語サイトは対象外) | 使わない（DeepL のみ） | `translated/<id>.xml` ＋ `translated/index.html` | 6 時間ごと |
 | レポート | 翻訳フィードの直近 24h + 日本語サイトは購読元を直接取得 | 重要記事を 5〜10 件選定 | `digest/report-<domain>.xml` ＋ `digest/report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
-| X タイムラインレポート | X ホームタイムラインの蓄積（actions/cache）の直近 24h | 技術的に有益なポストだけ抽出・トピック別に要約 | `digest/report-x.xml` ＋ `digest/report/x/YYYY-MM-DD.html` | 取得は定期(計測中は 15 分ごと)、レポート毎日 07:00 JST |
+| X タイムラインレポート | X ホームタイムラインの蓄積（actions/cache）の直近 24h | 技術的に有益なポストだけ抽出・トピック別に要約 | `digest/report-x.xml` ＋ `digest/report/x/YYYY-MM-DD.html` | 取得 30 分ごと、レポート毎日 07:00 JST |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `digest/release-<domain>.xml` ＋ `digest/release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
 | フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
 | Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
@@ -136,17 +136,17 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
    保持期間（14 日）より古い HTML を削除し、残ったページ一覧から `docs/digest/report-<domain>.xml` を
    再生成（直近 60 エントリ）。
 
-### X タイムラインレポート（`timeline.yml` 定期取得 ＋ `report.yml` の x）
+### X タイムラインレポート（`timeline.yml` 30 分ごと ＋ `report.yml` の x）
 
 入力は自前 RSSHub の `twitter/home_latest`（フォロー中）と `twitter/home`（おすすめ）（ホストは `x-timeline.ts` に直書き、キーは `RSSHUB_ACCESS_KEY`）。home_latest は 1 回の取得で
 88 件(平日日中は ~8 時間ぶん)しか返らないため、取得と日次レポートを分ける。
 
-1. `timeline.yml`（cron。〜2026-10-01 は取得間隔の計測のため 15 分ごと）: `actions/cache/restore` で蓄積を復元 →
+1. `timeline.yml`（cron `5,35 * * * *`）: `actions/cache/restore` で蓄積を復元 →
    `src/digest/x-timeline.ts --strict` が取得して（5xx・通信エラーは 30 秒・60 秒待って再試行）
    `.cache/x-timeline.json` に guid でマージし、初回取得時刻（`seen`）から 7 日で刈り込む →
    `actions/cache/save`（一部ルートが失敗して異常終了しても取得できた分は保存。失敗 Issue は開いているものがあれば増やさない）。
    毎回 `METRIC home_latest total= overlap= depth_h=` をログに出す。`depth_h` は今回の 88 件のうち最も早く
-   初回取得した時刻から今までの時間で、これより長く間隔を空けると取りこぼす。計測期間の最小値から取得間隔を決める。
+   初回取得した時刻から今までの時間で、これより長く間隔を空けると取りこぼす（取得間隔の余裕の監視用）。
    重なりが 0 件なら取りこぼしとして `::warning::` を出す。キャッシュは上書きできないので key は実行ごとに一意
    （`x-timeline-<run_id>-<run_attempt>`）、復元は `restore-keys: x-timeline-` の前方一致で最新を拾う。
 2. `report.yml`: 同じ `path`/`restore-keys` で復元 → `x-timeline.ts`（`--strict` なし。取得に失敗しても
@@ -322,7 +322,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 | `issue-request.yml` | `issues: opened` | claude-code-action → validate → PR 作成・自動マージ |
 | `component-review-reminder.yml` | `0 0 1 * *` ＋ dispatch | 棚卸し Issue を作成 |
 | `inoreader-sync.yml` | `0 21 * * 6` ＋ dispatch | スター取得 → commit |
-| `timeline.yml` | 計測中 `5-59/15 * * * *` ＋ dispatch | X タイムライン取得 → actions/cache に蓄積（docs は書かない。`concurrency: x-timeline`） |
+| `timeline.yml` | `5,35 * * * *` ＋ dispatch | X タイムライン取得 → actions/cache に蓄積（docs は書かない。`concurrency: x-timeline`） |
 
 - `docs/` を書き込む5ワークフロー（translate/report/release/feed-audit/inoreader-sync）は
   全て `concurrency: { group: docs-write }` で直列化。`source.yaml` の同時書き換えを防ぐ。
