@@ -4,11 +4,27 @@
         <title>HN — Front page (300+) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 21:09:27 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 10:55:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Google Playとの別れ：会話が無料になった理由]]></title>
+            <link>https://gultsch.de/posts/breaking-up-with-google-play/</link>
+            <guid>https://news.ycombinator.com/item?id=49855315</guid>
+            <pubDate>Sat, 26 Sep 2026 10:55:56 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://gultsch.de/posts/breaking-up-with-google-play/コメントURL ： https://news.ycombinator.com/item?id=49855315ポイント： 351 #コメント： 136]]></description>
+            <content:encoded><![CDATA[<p><a href="https://gultsch.de/posts/breaking-up-with-google-play/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgultsch.de%2Fposts%2Fbreaking-up-with-google-play%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[陪審員は、Cambridge AnalyticaのケースでFacebookがユーザーを欺いた責任があると判断]]></title>
+            <link>https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/</link>
+            <guid>https://news.ycombinator.com/item?id=49852302</guid>
+            <pubDate>Sat, 26 Sep 2026 01:36:50 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/コメントURL ： https://news.ycombinator.com/item?id=49852302ポイント： 322 #コメント： 85]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cbsnews.com%2Fnews%2Ffacebook-liable-deceiving-users-cambridge-analytica%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenAIエージェントがHugging Faceをどのようにハッキングしたかの詳細を明らかにする]]></title>
             <link>https://swarmtraces.org/</link>

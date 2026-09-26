@@ -170,43 +170,43 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/extending-public-sector-intelligence-with-agentforce-and-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fextending-public-sector-intelligence-with-agentforce-and-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[xAI’s Grok 4.6 is now available in Amazon Bedrock]]></title>
+            <title><![CDATA[xAIのGrok 4.6がAmazon Bedrockで利用可能になりました]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock/</link>
             <guid>56dfeac3bfef33ff7b19f174cf3e455627c66990</guid>
             <pubDate>Mon, 21 Sep 2026 18:30:34 GMT</pubDate>
-            <description><![CDATA[xAI's Grok 4.6 is now available in Amazon Bedrock: a frontier model for long-running agents, coding, and knowledge work, with a 500K token context window and four reasoning effort levels. It runs on both the bedrock-mantle and bedrock-runtime endpoints, with Converse API and cross-Region inference support.]]></description>
+            <description><![CDATA[xAIのGrok 4.6がAmazon Bedrockで利用可能になりました。これは、50万トークンコンテキストウィンドウと4つの推論作業レベルを備えた、長期的なエージェント、コーディング、およびナレッジワークのためのフロンティアモデルです。これは、Converse APIとクロスリージョン推論のサポートを使用して、基盤岩マントルと基盤岩ランタイムのエンドポイントの両方で実行されます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fxais-grok-4-6-is-now-available-in-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[How BMW Group detects cost anomalies across 14,000 cloud accounts]]></title>
+            <title><![CDATA[BMWグループが14,000のクラウドアカウントでコストの異常を検出する方法]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/how-bmw-group-detects-cost-anomalies-across-14000-cloud-accounts/</link>
             <guid>b2786889523b42040f67f3b605d5e4d72111c12e</guid>
             <pubDate>Mon, 21 Sep 2026 16:36:10 GMT</pubDate>
-            <description><![CDATA[BMW Group operates CLEA, a FinOps platform monitoring more than 14,000 cloud accounts. This post shows how BMW added automated daily cost anomaly detection, moving from reactive dashboards to proactive alerts using Prophet forecasting, AWS Step Functions, and a serverless pipeline that processes every account for about $50 per month.]]></description>
+            <description><![CDATA[BMWグループは、14,000以上のクラウドアカウントを監視するFinOpsプラットフォームであるCLEAを運営しています。この記事では、BMWがProphet予測、AWSステップ関数、および毎月約50 $のすべてのアカウントを処理するサーバーレスパイプラインを使用して、リアクティブダッシュボードからプロアクティブなアラートに移行し、自動化された1日あたりのコスト異常検出をどのように追加したかを示します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-bmw-group-detects-cost-anomalies-across-14000-cloud-accounts/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-bmw-group-detects-cost-anomalies-across-14000-cloud-accounts%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Run Positron on Amazon SageMaker AI for data science workflows]]></title>
+            <title><![CDATA[データサイエンスワークフローのためにAmazon SageMaker AIでPositronを実行する]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/run-positron-on-amazon-sagemaker-ai-for-data-science-workflows/</link>
             <guid>3e72f6421874630d0f6484fc3707a6d7794a7bcf</guid>
             <pubDate>Mon, 21 Sep 2026 16:34:21 GMT</pubDate>
-            <description><![CDATA[Positron, Posit's IDE for data science, now runs on Amazon SageMaker AI. This post shows how a data scientist explores an Amazon Athena table, validates features in R, trains an XGBoost model in Python, deploys a real-time SageMaker AI endpoint, and reports results with Quarto, all in one governed SageMaker Studio Space.]]></description>
+            <description><![CDATA[Positron （ Positのデータサイエンス用IDE ）は、現在Amazon SageMaker AI上で動作しています。この記事では、データサイエンティストがAmazon Athenaテーブルを探索し、Rの機能を検証し、PythonでXGBoostモデルをトレーニングし、リアルタイムのSageMaker AIエンドポイントを展開し、Quartoで結果を報告する方法を示します。すべてが1つのSageMaker Studio Spaceで管理されています。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/run-positron-on-amazon-sagemaker-ai-for-data-science-workflows/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Frun-positron-on-amazon-sagemaker-ai-for-data-science-workflows%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[How Benchling secured multi-tenant AI agents with Amazon Bedrock AgentCore]]></title>
+            <title><![CDATA[BenchlingがAmazon Bedrock AgentCoreを使用してマルチテナントAIエージェントを保護する方法]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/how-benchling-secured-multi-tenant-ai-agents-with-amazon-bedrock-agentcore/</link>
             <guid>f12234cf73981f2490e4c489bbcca4d6e19975e0</guid>
             <pubDate>Mon, 21 Sep 2026 16:27:34 GMT</pubDate>
-            <description><![CDATA[Learn how Benchling built a defense-in-depth security architecture to run untrusted, AI agent-generated scientific code across thousands of life sciences tenants using Amazon Bedrock AgentCore Code Interpreter in VPC mode, combined with Amazon Route 53 Resolver DNS Firewall and VPC endpoint policies to block data exfiltration, including through DNS.]]></description>
+            <description><![CDATA[Benchlingが、VPCモードでAmazon Bedrock AgentCore Code Interpreterを使用して、信頼できないAIエージェントが生成した科学コードを何千ものライフサイエンステナントで実行するための詳細なセキュリティアーキテクチャを構築し、Amazon Route 53 Resolver DNS FirewallおよびVPCエンドポイントポリシーと組み合わせて、DNSを介したデータ漏洩をブロックする方法を学びます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-benchling-secured-multi-tenant-ai-agents-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-benchling-secured-multi-tenant-ai-agents-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Reducing medical claims review time with AI on AWS: The EXL Medical IDP solution]]></title>
+            <title><![CDATA[AWS上のAIで医療請求の審査時間を短縮： EXL Medical IDPソリューション]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/reducing-medical-claims-review-time-with-ai-on-aws-the-exl-medical-idp-solution/</link>
             <guid>43a40d8ac294a3b8cb40d4d820e61fb2a2f1dfb6</guid>
             <pubDate>Mon, 21 Sep 2026 16:24:40 GMT</pubDate>
-            <description><![CDATA[EXL built an AI-powered Medical intelligent document processing (IDP) solution on AWS, combining IDP with domain-specific large language models on Amazon SageMaker and Amazon Bedrock to extract, summarize, and query medical records at enterprise scale and cut claims review time from over 100 minutes per case.]]></description>
+            <description><![CDATA[EXLは、AWS上にAI搭載の医療インテリジェント文書処理（ IDP ）ソリューションを構築し、IDPとAmazon SageMakerおよびAmazon Bedrock上のドメイン固有の大規模言語モデルを組み合わせて、エンタープライズ規模で医療記録を抽出、要約、照会し、1件あたり100分以上の請求審査時間を短縮しました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/reducing-medical-claims-review-time-with-ai-on-aws-the-exl-medical-idp-solution/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Freducing-medical-claims-review-time-with-ai-on-aws-the-exl-medical-idp-solution%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

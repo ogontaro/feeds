@@ -4,11 +4,19 @@
         <title>The New Stack — Platform Engineering — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — Platform Engineering の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 16:56:47 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 15:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[オープンソースアプローチによるベンダーロックインの回避：開発者の視点]]></title>
+            <link>https://thenewstack.io/avoiding-vendor-lock-in/</link>
+            <guid>https://thenewstack.io/?p=22838226</guid>
+            <pubDate>Sat, 26 Sep 2026 15:00:00 GMT</pubDate>
+            <description><![CDATA[すべてのインフラストラクチャチームは、逆転が困難な意思決定を行います。ほとんどの場合、それはうまくいきます。時には、The postオープンソースアプローチによるベンダーロックインの回避：開発者の視点が最初にThe New Stackに登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/avoiding-vendor-lock-in/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Favoiding-vendor-lock-in%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenTelemetryとPrometheusはうまくやっています。まだ不足しているものは何ですか？]]></title>
             <link>https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/</link>
