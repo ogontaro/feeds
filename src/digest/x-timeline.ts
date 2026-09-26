@@ -4,7 +4,7 @@ import { CACHE, X_TIMELINE_JSON, reportInputJson } from "../lib/paths.ts";
 
 /**
  * X ホームタイムライン(RSSHub `twitter/home_latest` と `twitter/home`)を蓄積し、日次レポートの入力を書き出す。
- * 1 回の取得は 88 件(平日日中は ~8 時間ぶん)しか返らないため、timeline.yml が 3 時間ごとに取得して
+ * 1 回の取得は 88 件(平日日中は ~8 時間ぶん)しか返らないため、timeline.yml が 2 時間ごとに取得して
  * actions/cache 上の蓄積(.cache/x-timeline.json)にマージし、report.yml が直近 24h を読む。
  * 「直近」は投稿時刻ではなく初めて取得した時刻(seen)で判定する。おすすめ(home)は数日前の投稿も
  * 出すため、投稿時刻で切ると一度もレポートに載らない。
@@ -131,9 +131,18 @@ async function main() {
     .catch(() => []);
   const fetched: Omit<Post, "seen">[] = [];
   const failed: string[] = [];
+  const storedGuids = new Set(stored.map((p) => p.guid));
   for (const route of ROUTES) {
     try {
-      fetched.push(...(await fetchWithRetry(`${RSSHUB}/${route}?key=${encodeURIComponent(key)}`)));
+      const got = await fetchWithRetry(`${RSSHUB}/${route}?key=${encodeURIComponent(key)}`);
+      fetched.push(...got);
+      // 時系列の home_latest が前回の蓄積と 1 件も重ならなければ、その間のポストを取りこぼしている。
+      if (route === "twitter/home_latest" && storedGuids.size > 0) {
+        const overlap = got.filter((p) => storedGuids.has(p.guid)).length;
+        console.log(`${route}: overlap with stored ${overlap}/${got.length}`);
+        if (overlap === 0)
+          console.log(`::warning::${route}: no overlap — posts were likely missed`);
+      }
     } catch (err) {
       console.error(`${route}: ${(err as Error).message}`);
       failed.push(route);
