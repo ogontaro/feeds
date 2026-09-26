@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AWS Containers Blog — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>AWS Containers Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Fri, 25 Sep 2026 21:18:33 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AWS named a Leader in the 2026 Gartner Magic Quadrant for Container Management]]></title>
+            <link>https://aws.amazon.com/blogs/containers/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/</link>
+            <guid>cc76f3563e1afab7622fc3fbc7f15f2d13ecd761</guid>
+            <pubDate>Fri, 25 Sep 2026 21:18:33 GMT</pubDate>
+            <description><![CDATA[Gartner has recognized AWS as a Leader in the 2026 Gartner Magic Quadrant for Container Management for the fourth consecutive year. See what our latest container innovations across Amazon ECS and Amazon EKS mean for customers building and scaling on AWS.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Faws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[One Amazon EKS, many edges: How to choose your edge container strategy on AWS]]></title>
+            <link>https://aws.amazon.com/blogs/containers/one-amazon-eks-many-edges-how-to-choose-your-edge-container-strategy-on-aws/</link>
+            <guid>1b20050a64b6b2d8d0f3ac7b933a9514c30dbcd8</guid>
+            <pubDate>Fri, 25 Sep 2026 15:52:19 GMT</pubDate>
+            <description><![CDATA[Choosing the right edge container strategy across many locations can fragment your fleet into dozens of special cases. This post shows how to avoid that by standardizing on Amazon EKS, then choosing a deployment model per site: gate on connectivity, then match to existing infrastructure, so every edge runs the same Kubernetes standard.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/one-amazon-eks-many-edges-how-to-choose-your-edge-container-strategy-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fone-amazon-eks-many-edges-how-to-choose-your-edge-container-strategy-on-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Building a single-pane NOC dashboard for Amazon EKS with Amazon CloudWatch]]></title>
+            <link>https://aws.amazon.com/blogs/containers/building-a-single-pane-noc-dashboard-for-amazon-eks-with-amazon-cloudwatch/</link>
+            <guid>051c5312916e5eaefb80ec6ce1f81d8c6f72bbc7</guid>
+            <pubDate>Wed, 23 Sep 2026 18:30:21 GMT</pubDate>
+            <description><![CDATA[An incident is the worst moment to discover you cannot trust your Amazon EKS dashboard. This post shows what a trustworthy single-pane NOC for Amazon EKS on Amazon CloudWatch looks like, why each design choice matters, and how to get one running in your account in about 15 minutes.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/building-a-single-pane-noc-dashboard-for-amazon-eks-with-amazon-cloudwatch/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fbuilding-a-single-pane-noc-dashboard-for-amazon-eks-with-amazon-cloudwatch%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The operations gap between deploying an application and running it forever]]></title>
+            <link>https://aws.amazon.com/blogs/containers/the-operations-gap-between-deploying-an-application-and-running-it-forever/</link>
+            <guid>9563f1f5d0ea51832e46cb995479f7907bd300ce</guid>
+            <pubDate>Tue, 22 Sep 2026 20:38:09 GMT</pubDate>
+            <description><![CDATA[This post features the new Cluster Mode deployment model in AWS Elastic Beanstalk that extends the operational promise of the service to containerized application portfolios. You bring your applications as source code, Dockerfiles, or container images, and Elastic Beanstalk takes ongoing operational responsibility for the production environment underneath.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/the-operations-gap-between-deploying-an-application-and-running-it-forever/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fthe-operations-gap-between-deploying-an-application-and-running-it-forever%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Implement per-pod image pull permissions with ECR repository policies on Amazon EKS]]></title>
+            <link>https://aws.amazon.com/blogs/containers/implement-per-pod-image-pull-permissions-with-ecr-repository-policies-on-amazon-eks/</link>
+            <guid>02d922b11c789096ec5caf657acdf6d419c6e12b</guid>
+            <pubDate>Tue, 22 Sep 2026 16:58:07 GMT</pubDate>
+            <description><![CDATA[Learn how to scope Amazon ECR image pull permissions to individual Kubernetes pods on a multi-tenant Amazon EKS cluster using KEP 4412 credential providers and ECR repository deny policies, so teams sharing the same nodes can pull only their own container images.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/implement-per-pod-image-pull-permissions-with-ecr-repository-policies-on-amazon-eks/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fimplement-per-pod-image-pull-permissions-with-ecr-repository-policies-on-amazon-eks%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How Ramp runs GPU AI workloads at scale with ECS Managed Instances]]></title>
+            <link>https://aws.amazon.com/blogs/containers/how-ramp-runs-gpu-ai-workloads-at-scale-with-ecs-managed-instances/</link>
+            <guid>cf8d20ec825db76e7b7da5312481a19349350bf9</guid>
+            <pubDate>Mon, 21 Sep 2026 18:41:27 GMT</pubDate>
+            <description><![CDATA[Ramp runs GPU-powered AI inference continuously on Amazon ECS. This post walks through how Ramp's infrastructure team moved those GPU workloads onto Amazon ECS Managed Instances: the architecture pattern, Terraform implementation, and the lessons learned migrating 50 to 60 EC2 instances.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/how-ramp-runs-gpu-ai-workloads-at-scale-with-ecs-managed-instances/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fhow-ramp-runs-gpu-ai-workloads-at-scale-with-ecs-managed-instances%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Automate proxy injection for Amazon EKS on AWS Fargate using Kyverno]]></title>
+            <link>https://aws.amazon.com/blogs/containers/automate-proxy-injection-for-amazon-eks-on-aws-fargate-using-kyverno/</link>
+            <guid>968969ed3b14e89492b3d1bf427dd6da8df52628</guid>
+            <pubDate>Tue, 01 Sep 2026 15:59:57 GMT</pubDate>
+            <description><![CDATA[Learn how to use a Kyverno mutating admission policy to automatically inject corporate proxy environment variables into Amazon EKS on AWS Fargate pods at admission time, delivering consistent egress compliance without modifying application deployment manifests.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/automate-proxy-injection-for-amazon-eks-on-aws-fargate-using-kyverno/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fautomate-proxy-injection-for-amazon-eks-on-aws-fargate-using-kyverno%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Fast model loading for AI inference on Amazon EKS]]></title>
+            <link>https://aws.amazon.com/blogs/containers/fast-model-loading-for-ai-inference-on-amazon-eks/</link>
+            <guid>c4cfdfe687741de95d37fbf830ef12891b2d58ce</guid>
+            <pubDate>Tue, 01 Sep 2026 15:48:15 GMT</pubDate>
+            <description><![CDATA[When you scale AI inference on Amazon EKS, every new pod must load model weights into GPU memory before serving traffic. We investigated where cold-start time goes and found two configuration-only changes to Run:ai Model Streamer that cut model startup time by 80-93% on subsequent launches, with no code changes.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/fast-model-loading-for-ai-inference-on-amazon-eks/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Ffast-model-loading-for-ai-inference-on-amazon-eks%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Break-glass access for Amazon EKS when federated identity fails]]></title>
+            <link>https://aws.amazon.com/blogs/containers/break-glass-access-for-amazon-eks-when-federated-identity-fails/</link>
+            <guid>61b4fa9e9c1e347febeeeb4f80b9d7a9b63d6699</guid>
+            <pubDate>Wed, 26 Aug 2026 16:20:28 GMT</pubDate>
+            <description><![CDATA[Implementing break-glass access for Amazon EKS clusters removes the circular dependency where a federated identity provider outage locks you out of the clusters you need to reach to fix it. This post supplies a cross-account IAM role with enforced MFA, infrastructure-as-code templates, validation tests, and a post-incident recovery procedure.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/break-glass-access-for-amazon-eks-when-federated-identity-fails/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fbreak-glass-access-for-amazon-eks-when-federated-identity-fails%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Deep dive into Amazon EKS certificate authority rotation]]></title>
+            <link>https://aws.amazon.com/blogs/containers/deep-dive-into-amazon-eks-certificate-authority-rotation/</link>
+            <guid>c1389c924c784cba74d6a1538f526b835589b8bb</guid>
+            <pubDate>Wed, 19 Aug 2026 20:55:49 GMT</pubDate>
+            <description><![CDATA[Amazon EKS now provides a managed, non-disruptive lifecycle for rotating your cluster's certificate authority (CA), with automated safeguards and rollback. This deep dive explains how CA rotation works, what AWS handles versus what you must update, and how to walk through the rotation lifecycle on your own timeline.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/deep-dive-into-amazon-eks-certificate-authority-rotation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fdeep-dive-into-amazon-eks-certificate-authority-rotation%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

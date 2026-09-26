@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AI Devtools Radar — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>AI Devtools Radar の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Sun, 20 Sep 2026 08:10:13 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AI Devtools Radar #10: Neon backend GA, beta billing ends]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-10-neon-backend-ga-beta-billing/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-10-neon-backend-ga-beta-billing/</guid>
+            <pubDate>Sun, 20 Sep 2026 08:10:13 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 28 changes; these are the twelve worth your attention, ranked. That's two more than the typical ten: three separate tools, Langfuse, the Vercel AI SDK, and Weaviate, removed legacy APIs in the same week, and Neon's backend GA landed alongside the pricing change that ends its free beta, so both halves of that story stayed in rather than cutting one. Neon — Neon backend reaches general availability (GA) Neon's backend is now ge]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-10-neon-backend-ga-beta-billing/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-10-neon-backend-ga-beta-billing%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI Devtools Radar #9: Cursor launches Projects]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-9-cursor-launches-projects/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-9-cursor-launches-projects/</guid>
+            <pubDate>Sun, 13 Sep 2026 08:19:23 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window (Sep 7 – Sep 13) and published 25 changes; these are the thirteen worth your attention, ranked. Two of them, Gemini 3.7 Flash's GA and a new anthropic-version header requirement on Claude's admin APIs, sat on hold from earlier reviews and only cleared verification this week. The rest reflects a dense week on its own, including a Cursor feature built for multi-month agent work, a paired Copilot admin control and Copilot deprecation, and Dee]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-9-cursor-launches-projects/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-9-cursor-launches-projects%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI Devtools Radar #8: GitHub Copilot retires four models]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-8-github-copilot-retires-four/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-8-github-copilot-retires-four/</guid>
+            <pubDate>Sun, 06 Sep 2026 08:13:30 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 29 changes; these are the thirteen worth your attention, ranked. That's three more than the typical ten: five of them (Kimi's Moonshot V1 sunset, its new Anthropic API format support, Mistral's OCR 4.1 GA, and two Pinecone pricing changes) were detected right at last week's window boundary and only got reviewed now, on top of a genuinely dense week for pricing and deprecation news on its own — Claude Code's new default Fable ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-8-github-copilot-retires-four/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-8-github-copilot-retires-four%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI Devtools Radar #7: Gemini 3.7 Flash goes GA]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-7-gemini-37-flash-goes-ga/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-7-gemini-37-flash-goes-ga/</guid>
+            <pubDate>Mon, 31 Aug 2026 08:19:55 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 24 changes; these are the twelve worth your attention, ranked. The lead item is a rescue: Gemini 3.7 Flash went GA on August 13, our phantom-diff quarantine for that source rejected it two weeks running, and it enters the issue now that it has been verified against the official changelog. Every item carries before/after evidence on the site; expand it before you take our word. Gemini API — Gemini 3.7 Flash generally available]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-7-gemini-37-flash-goes-ga/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-7-gemini-37-flash-goes-ga%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI Devtools Radar #6: Vercel AI SDK drops Workflow 4 support]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-6-vercel-ai-sdk-drops-workflow/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-6-vercel-ai-sdk-drops-workflow/</guid>
+            <pubDate>Sun, 23 Aug 2026 08:10:51 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 30 changes; these are the twelve worth your attention, ranked. Vercel's Workflow 2.0 breaking change and Langfuse's API v3 deadline are the two you can't just read past; GLM-5.3's launch and a first vision model from DeepSeek round out a busy week for model pricing. Vercel AI SDK — @ai-sdk/workflow drops Workflow 4 support in v2.0.0, requires Workflow 5 (beta) @ai-sdk/workflow's 2.0 release drops Workflow 4 support outright; ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-6-vercel-ai-sdk-drops-workflow/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-6-vercel-ai-sdk-drops-workflow%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI Devtools Radar #5: Anthropic cancels the Claude Sonnet 5 price increase, DeepSeek switches to peak/off-peak pricing today, Neon acquires the Electric team]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-5-anthropic-cancels-the-claude/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-5-anthropic-cancels-the-claude/</guid>
+            <pubDate>Sun, 16 Aug 2026 15:52:26 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 27 changes; these are the thirteen worth your attention, ranked. More than the usual ten, because this window genuinely produced that many changes clearing the bar, from a cancelled Claude Sonnet 5 price increase and a same-day DeepSeek pricing switch to a scope correction on Claude Haiku 3.5's retirement notice. Every item carries before/after evidence on the site; expand it before you take our word. Anthropic API — Sonnet 5]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-5-anthropic-cancels-the-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-5-anthropic-cancels-the-claude%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI Devtools Radar #4: Anthropic retires Claude Opus 4.1, Claude Code fixes a Bash permission bypass, Groq pulls its public price list]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-4-anthropic-retires-claude-opus/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-4-anthropic-retires-claude-opus/</guid>
+            <pubDate>Sun, 09 Aug 2026 15:29:21 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 33 changes; these are the eleven worth your attention, ranked. One more than usual: a Supabase endpoint removal that fell between two issue windows has a September 23 deadline and should not wait another week. Every item carries before/after evidence on the site; expand it before you take our word. Anthropic API — Claude Opus 4.1 retired Anthropic has retired claude-opus-4-1-20250805; every request to it now returns an error,]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-4-anthropic-retires-claude-opus/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-4-anthropic-retires-claude-opus%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI Devtools Radar #3: DeepSeek doubles peak-hour pricing, GitHub Copilot drops two Gemini models, mem0's delete_all() finally deletes everything]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-3-deepseek-doubles-peak-hour/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-3-deepseek-doubles-peak-hour/</guid>
+            <pubDate>Sun, 02 Aug 2026 11:26:20 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 32 changes; these are the ten worth your attention, ranked. Every item carries the before/after evidence the pipeline captured on the web page. DeepSeek API — Peak/off-peak pricing policy coming to DeepSeek API service DeepSeek will charge 2x the regular price during peak hours (9:00–12:00 and 14:00–18:00 Beijing time) once the policy takes effect; no effective date yet. Batch jobs and anything latency-tolerant are worth shif]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-3-deepseek-doubles-peak-hour/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-3-deepseek-doubles-peak-hour%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI Devtools Radar #2: Anthropic sets an Aug 17 Workbench sunset, mem0 closes a tenant-escalation hole, LangChain drops xAI's stop param]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-2-anthropic-sets-an-aug-17/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-2-anthropic-sets-an-aug-17/</guid>
+            <pubDate>Sat, 25 Jul 2026 14:58:51 GMT</pubDate>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window (Jul 20–25) and published 10 changes; these are the seven worth your attention, ranked. Every item carries before/after evidence on the site — expand it before you take our word. 1. Anthropic API — Legacy Workbench sunsets on August 17, 2026 The deadline of the week. The legacy Workbench goes away on August 17, and saved prompts, variables, and evals do not carry over. If anything you care about lives there, export it now, not on the 16th.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-2-anthropic-sets-an-aug-17/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-2-anthropic-sets-an-aug-17%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

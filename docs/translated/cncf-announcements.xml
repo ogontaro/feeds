@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>CNCF Announcements — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>CNCF Announcements の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Tue, 08 Sep 2026 02:06:17 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Cloud Native Computing Foundation Announces Karmada Graduation]]></title>
+            <link>https://www.cncf.io/announcements/2026/09/07/cloud-native-computing-foundation-announces-karmada-graduation/</link>
+            <guid>https://www.cncf.io/?p=174441</guid>
+            <pubDate>Tue, 08 Sep 2026 02:06:17 GMT</pubDate>
+            <description><![CDATA[Multi-cluster, multi-cloud Kubernetes orchestration project reaches production maturity as global enterprises scale AI training and inference across hybrid infrastructure Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 –...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/09/07/cloud-native-computing-foundation-announces-karmada-graduation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F09%2F07%2Fcloud-native-computing-foundation-announces-karmada-graduation%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CNCF Welcomes New Silver Members as Enterprises Scale AI From Training to Inference]]></title>
+            <link>https://www.cncf.io/announcements/2026/09/07/cncf-welcomes-new-silver-members-as-enterprises-scale-ai-from-training-to-inference/</link>
+            <guid>https://www.cncf.io/?p=174438</guid>
+            <pubDate>Tue, 08 Sep 2026 01:58:47 GMT</pubDate>
+            <description><![CDATA[New members including SoftBank Corp. and Crusoe join the cloud native community to help build cost-efficient, sovereign infrastructure SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 – September 8, 2026...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/09/07/cncf-welcomes-new-silver-members-as-enterprises-scale-ai-from-training-to-inference/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F09%2F07%2Fcncf-welcomes-new-silver-members-as-enterprises-scale-ai-from-training-to-inference%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[China Merchants Bank Wins CNCF End User Case Study Contest for Unifying AI Training and Inference on Kubernetes]]></title>
+            <link>https://www.cncf.io/announcements/2026/09/07/china-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes/</link>
+            <guid>https://www.cncf.io/?p=174435</guid>
+            <pubDate>Tue, 08 Sep 2026 01:54:31 GMT</pubDate>
+            <description><![CDATA[New cloud native platform lifted average accelerator compute utilization from 35% to more than 60% and cut inference cost per 1 million tokens by more than 60% Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon +...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/09/07/china-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F09%2F07%2Fchina-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CNCF and SlashData Report Highlights China’s Cloud Native Momentum as AI Moves to Inference]]></title>
+            <link>https://www.cncf.io/announcements/2026/09/07/cncf-and-slashdata-report-highlights-chinas-cloud-native-momentum-as-ai-moves-to-inference/</link>
+            <guid>https://www.cncf.io/?p=174432</guid>
+            <pubDate>Tue, 08 Sep 2026 01:50:55 GMT</pubDate>
+            <description><![CDATA[New research finds China’s IIoT developers (48%) outpace the global average (42%) in cloud native adoption as AI infrastructure matures Key Highlights: SHANGHAI – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China —Sept. 8,...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/09/07/cncf-and-slashdata-report-highlights-chinas-cloud-native-momentum-as-ai-moves-to-inference/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F09%2F07%2Fcncf-and-slashdata-report-highlights-chinas-cloud-native-momentum-as-ai-moves-to-inference%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CNCF Announces Kubeflow’s Graduation, Solidifying a Standard for Cloud Native AI Operations]]></title>
+            <link>https://www.cncf.io/announcements/2026/08/17/cncf-announces-kubeflows-graduation-solidifying-the-standard-for-cloud-native-ai-operations/</link>
+            <guid>https://www.cncf.io/?p=173146</guid>
+            <pubDate>Mon, 17 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Milestone marks widespread enterprise adoption for automating end-to-end AI and machine learning lifecycles on Kubernetes Key Highlights SAN FRANCISCO — August 17, 2026 — The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/08/17/cncf-announces-kubeflows-graduation-solidifying-the-standard-for-cloud-native-ai-operations/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F08%2F17%2Fcncf-announces-kubeflows-graduation-solidifying-the-standard-for-cloud-native-ai-operations%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CNCF Announces Graduation of Cloud Native Buildpacks, Advancing the Standard for Container Builds]]></title>
+            <link>https://www.cncf.io/announcements/2026/08/11/cncf-announces-graduation-of-cloud-native-buildpacks-advancing-the-standard-for-container-builds/</link>
+            <guid>https://www.cncf.io/?p=172613</guid>
+            <pubDate>Tue, 11 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Project reaches broad production adoption for transforming application source code into OCI-compliant container images across cloud environments Key Highlights: SAN FRANCISCO — Aug. 11, 2026 — The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/08/11/cncf-announces-graduation-of-cloud-native-buildpacks-advancing-the-standard-for-container-builds/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F08%2F11%2Fcncf-announces-graduation-of-cloud-native-buildpacks-advancing-the-standard-for-container-builds%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CNCF Reveals KubeCon + CloudNativeCon North America 2026 Schedule, Adds New AI Inference + Agentic Track]]></title>
+            <link>https://www.cncf.io/announcements/2026/08/10/cncf-reveals-kubecon-cloudnativecon-north-america-2026-schedule-adds-new-ai-inference-agentic-track/</link>
+            <guid>https://www.cncf.io/?p=172228</guid>
+            <pubDate>Mon, 10 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Flagship event returns November 9–12 with sessions on production AI, platform engineering and cloud native security Key Highlights SAN FRANCISCO, Aug. 7, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/08/10/cncf-reveals-kubecon-cloudnativecon-north-america-2026-schedule-adds-new-ai-inference-agentic-track/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F08%2F10%2Fcncf-reveals-kubecon-cloudnativecon-north-america-2026-schedule-adds-new-ai-inference-agentic-track%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[K8gb becomes a CNCF incubating project]]></title>
+            <link>https://www.cncf.io/announcements/2026/08/05/k8gb-becomes-a-cncf-incubating-project/</link>
+            <guid>https://www.cncf.io/?p=172020</guid>
+            <pubDate>Wed, 05 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[The CNCF Technical Oversight Committee (TOC) has voted to accept Kubernetes Global Balancer (K8gb) as a CNCF incubating project. About K8gb K8gb is an open source, cloud native Global Server Load Balancing (GSLB) solution designed specifically...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/08/05/k8gb-becomes-a-cncf-incubating-project/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F08%2F05%2Fk8gb-becomes-a-cncf-incubating-project%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Subaru Wins CNCF End User Case Study Contest for Accelerating AI Development with Cloud Native Infrastructure]]></title>
+            <link>https://www.cncf.io/announcements/2026/07/28/subaru-wins-cncf-end-user-case-study-contest-for-accelerating-ai-development-with-cloud-native-infrastructure/</link>
+            <guid>https://www.cncf.io/?p=171386</guid>
+            <pubDate>Wed, 29 Jul 2026 00:30:00 GMT</pubDate>
+            <description><![CDATA[New architecture reduced AI container image pull times by 60x while automating workflows for next-generation driver assistance systems Key Highlights YOKOHAMA – KUBECON + CLOUDNATIVECON JAPAN — July 29, 2026 — The Cloud Native Computing Foundation®...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/07/28/subaru-wins-cncf-end-user-case-study-contest-for-accelerating-ai-development-with-cloud-native-infrastructure/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F07%2F28%2Fsubaru-wins-cncf-end-user-case-study-contest-for-accelerating-ai-development-with-cloud-native-infrastructure%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CNCF and SlashData Report Finds Japan’s Cloud Native Community Reaches Nearly 1 Million Developers]]></title>
+            <link>https://www.cncf.io/announcements/2026/07/28/cncf-and-slashdata-report-finds-japans-cloud-native-community-reaches-nearly-1-million-developers/</link>
+            <guid>https://www.cncf.io/?p=171391</guid>
+            <pubDate>Wed, 29 Jul 2026 00:30:00 GMT</pubDate>
+            <description><![CDATA[New research finds 100,000 of Japan’s AI developers now leverage cloud native technologies Key Highlights: YOKOHAMA – KubeCon + CloudNativeCon Japan —July 29, 2026— The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/announcements/2026/07/28/cncf-and-slashdata-report-finds-japans-cloud-native-community-reaches-nearly-1-million-developers/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fannouncements%2F2026%2F07%2F28%2Fcncf-and-slashdata-report-finds-japans-cloud-native-community-reaches-nearly-1-million-developers%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

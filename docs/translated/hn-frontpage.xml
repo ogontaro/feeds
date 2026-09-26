@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>HN — Front page (300+) — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Fri, 25 Sep 2026 21:09:27 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Revealing the details of how OpenAI agents hacked Hugging Face]]></title>
+            <link>https://swarmtraces.org/</link>
+            <guid>https://news.ycombinator.com/item?id=49849985</guid>
+            <pubDate>Fri, 25 Sep 2026 21:09:27 GMT</pubDate>
+            <description><![CDATA[Article URL: https://swarmtraces.org/ Comments URL: https://news.ycombinator.com/item?id=49849985 Points: 443 # Comments: 273]]></description>
+            <content:encoded><![CDATA[<p><a href="https://swarmtraces.org/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fswarmtraces.org%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ollaya – Ollama for open-source, Jev-style decision models]]></title>
+            <link>https://ollaya.dev/</link>
+            <guid>https://news.ycombinator.com/item?id=49848269</guid>
+            <pubDate>Fri, 25 Sep 2026 18:33:50 GMT</pubDate>
+            <description><![CDATA[Article URL: https://ollaya.dev/ Comments URL: https://news.ycombinator.com/item?id=49848269 Points: 426 # Comments: 114]]></description>
+            <content:encoded><![CDATA[<p><a href="https://ollaya.dev/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Follaya.dev%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[U.S. appeals court upholds designation of Anthropic as supply chain risk]]></title>
+            <link>https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html</link>
+            <guid>https://news.ycombinator.com/item?id=49845977</guid>
+            <pubDate>Fri, 25 Sep 2026 15:29:25 GMT</pubDate>
+            <description><![CDATA[Article URL: https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html Comments URL: https://news.ycombinator.com/item?id=49845977 Points: 438 # Comments: 757]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cnbc.com%2F2026%2F09%2F25%2Fpentagon-anthropic-ai-risk-appeals-court.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

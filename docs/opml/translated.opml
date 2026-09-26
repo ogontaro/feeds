@@ -7,6 +7,9 @@
       <outline type="rss" text="AddyOsmani.com" title="AddyOsmani.com" xmlUrl="https://ogontaro.github.io/feeds/translated/addyosmani.xml"/>
       <outline type="rss" text="Latent Space" title="Latent Space" xmlUrl="https://ogontaro.github.io/feeds/translated/latent-space.xml"/>
       <outline type="rss" text="awesome-claude-code updates" title="awesome-claude-code updates" xmlUrl="https://ogontaro.github.io/feeds/translated/awesome-claude-code.xml"/>
+      <outline type="rss" text="AI Devtools Radar" title="AI Devtools Radar" xmlUrl="https://ogontaro.github.io/feeds/translated/devtools-radar.xml"/>
+      <outline type="rss" text="HN — Front page (300+)" title="HN — Front page (300+)" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-frontpage.xml"/>
+      <outline type="rss" text="Google News — コーディングエージェント新サービス・料金" title="Google News — コーディングエージェント新サービス・料金" xmlUrl="https://ogontaro.github.io/feeds/translated/gnews-coding-agents.xml"/>
       <outline type="rss" text="HN — Claude" title="HN — Claude" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-claude.xml"/>
       <outline type="rss" text="HN — MCP" title="HN — MCP" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-mcp.xml"/>
     </outline>
@@ -19,9 +22,13 @@
       <outline type="rss" text="Sysdig" title="Sysdig" xmlUrl="https://ogontaro.github.io/feeds/translated/sysdig.xml"/>
       <outline type="rss" text="Platform Engineering Blog" title="Platform Engineering Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/platform-eng.xml"/>
       <outline type="rss" text="The New Stack — Platform Engineering" title="The New Stack — Platform Engineering" xmlUrl="https://ogontaro.github.io/feeds/translated/newstack-pe.xml"/>
+      <outline type="rss" text="CNCF Announcements" title="CNCF Announcements" xmlUrl="https://ogontaro.github.io/feeds/translated/cncf-announcements.xml"/>
+      <outline type="rss" text="Last Week in Kubernetes Development" title="Last Week in Kubernetes Development" xmlUrl="https://ogontaro.github.io/feeds/translated/lwkd.xml"/>
+      <outline type="rss" text="Google News — Kubernetes" title="Google News — Kubernetes" xmlUrl="https://ogontaro.github.io/feeds/translated/gnews-kubernetes.xml"/>
       <outline type="rss" text="AWS News Blog" title="AWS News Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/aws-news.xml"/>
       <outline type="rss" text="AWS Machine Learning Blog" title="AWS Machine Learning Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/aws-ml.xml"/>
       <outline type="rss" text="Amazon EKS Document History" title="Amazon EKS Document History" xmlUrl="https://ogontaro.github.io/feeds/translated/eks-docs.xml"/>
+      <outline type="rss" text="AWS Containers Blog" title="AWS Containers Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/aws-containers.xml"/>
       <outline type="rss" text="HN — Kubernetes" title="HN — Kubernetes" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-kubernetes.xml"/>
       <outline type="rss" text="HN — AWS" title="HN — AWS" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-aws.xml"/>
       <outline type="rss" text="GitHub activity (ogontaro)" title="GitHub activity (ogontaro)" xmlUrl="https://ogontaro.github.io/feeds/translated/gh-activity.xml"/>

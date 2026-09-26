@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Google News — Kubernetes — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Sat, 26 Sep 2026 07:29:28 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Google’s Open Agentic Orchestrator Hit #1 on Hacker News. The Real Story Is What’s Running Underneath - forkast.news]]></title>
+            <link>https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdUtNY0ZWeDlEbUhGanZuWU5oZFZHT0RUU2NmWEJSYWxocHBNd1VUVzg4U2RrbmFiVEVGWXJSdXYzMVNLNEF3TjFObTNZWFdlWkpiTkFibmJaWENPYUZFdXVIYnBFOGtHYlhWQ3dWUkNxRmdKZmkyQzdwalh5QW02VGpDbW5iSlZOUy1IeFFnZWVnWktFQWxldGR5bkRzbVJsdEdTZUZ4Zy1TbExjekRzRlZYbnd1WUUxVTNJ?oc=5</link>
+            <guid>CBMiuwFBVV95cUxPdUtNY0ZWeDlEbUhGanZuWU5oZFZHT0RUU2NmWEJSYWxocHBNd1VUVzg4U2RrbmFiVEVGWXJSdXYzMVNLNEF3TjFObTNZWFdlWkpiTkFibmJaWENPYUZFdXVIYnBFOGtHYlhWQ3dWUkNxRmdKZmkyQzdwalh5QW02VGpDbW5iSlZOUy1IeFFnZWVnWktFQWxldGR5bkRzbVJsdEdTZUZ4Zy1TbExjekRzRlZYbnd1WUUxVTNJ</guid>
+            <pubDate>Sat, 26 Sep 2026 07:29:28 GMT</pubDate>
+            <description><![CDATA[Google’s Open Agentic Orchestrator Hit #1 on Hacker News. The Real Story Is What’s Running Underneath forkast.news]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdUtNY0ZWeDlEbUhGanZuWU5oZFZHT0RUU2NmWEJSYWxocHBNd1VUVzg4U2RrbmFiVEVGWXJSdXYzMVNLNEF3TjFObTNZWFdlWkpiTkFibmJaWENPYUZFdXVIYnBFOGtHYlhWQ3dWUkNxRmdKZmkyQzdwalh5QW02VGpDbW5iSlZOUy1IeFFnZWVnWktFQWxldGR5bkRzbVJsdEdTZUZ4Zy1TbExjekRzRlZYbnd1WUUxVTNJ?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMiuwFBVV95cUxPdUtNY0ZWeDlEbUhGanZuWU5oZFZHT0RUU2NmWEJSYWxocHBNd1VUVzg4U2RrbmFiVEVGWXJSdXYzMVNLNEF3TjFObTNZWFdlWkpiTkFibmJaWENPYUZFdXVIYnBFOGtHYlhWQ3dWUkNxRmdKZmkyQzdwalh5QW02VGpDbW5iSlZOUy1IeFFnZWVnWktFQWxldGR5bkRzbVJsdEdTZUZ4Zy1TbExjekRzRlZYbnd1WUUxVTNJ%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubecost Setup: Kubernetes Cost Monitoring [2026] - tech-insider.org]]></title>
+            <link>https://news.google.com/rss/articles/CBMifEFVX3lxTFBBNTR6Q1hYOUZGUmxja2VNT2V2U3VTTll4YndRTWZHZ1FJMnJsNGFsYkRLN3BOSXpfWElKTHJuVklValdfNzhSdG56QjIzMWpSU0FPR3ZXYkpaTlhjYXpSZG1UN3doWVAwV1p1QTd4X09fQVVTMnhUTEU1Q1A?oc=5</link>
+            <guid>CBMifEFVX3lxTFBBNTR6Q1hYOUZGUmxja2VNT2V2U3VTTll4YndRTWZHZ1FJMnJsNGFsYkRLN3BOSXpfWElKTHJuVklValdfNzhSdG56QjIzMWpSU0FPR3ZXYkpaTlhjYXpSZG1UN3doWVAwV1p1QTd4X09fQVVTMnhUTEU1Q1A</guid>
+            <pubDate>Fri, 25 Sep 2026 22:19:47 GMT</pubDate>
+            <description><![CDATA[Kubecost Setup: Kubernetes Cost Monitoring [2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBBNTR6Q1hYOUZGUmxja2VNT2V2U3VTTll4YndRTWZHZ1FJMnJsNGFsYkRLN3BOSXpfWElKTHJuVklValdfNzhSdG56QjIzMWpSU0FPR3ZXYkpaTlhjYXpSZG1UN3doWVAwV1p1QTd4X09fQVVTMnhUTEU1Q1A?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMifEFVX3lxTFBBNTR6Q1hYOUZGUmxja2VNT2V2U3VTTll4YndRTWZHZ1FJMnJsNGFsYkRLN3BOSXpfWElKTHJuVklValdfNzhSdG56QjIzMWpSU0FPR3ZXYkpaTlhjYXpSZG1UN3doWVAwV1p1QTd4X09fQVVTMnhUTEU1Q1A%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Docker vs Podman: 29% vs 41% Overhead [2026] - shattered.io]]></title>
+            <link>https://news.google.com/rss/articles/CBMicEFVX3lxTE5VTWdHN2g5aGY4Ykc3cTFpM3ZsVVQ4dVU2bjY5Z245ZEh2UnFIZmhBalF5SmcweHBCQk1hcHZrT1lobkdTY2VVWFBIXzhpQ3gweE1FSVVwLTdIcExXZ0F4dVNYM1JMZDVHdTUzcDBJek0?oc=5</link>
+            <guid>CBMicEFVX3lxTE5VTWdHN2g5aGY4Ykc3cTFpM3ZsVVQ4dVU2bjY5Z245ZEh2UnFIZmhBalF5SmcweHBCQk1hcHZrT1lobkdTY2VVWFBIXzhpQ3gweE1FSVVwLTdIcExXZ0F4dVNYM1JMZDVHdTUzcDBJek0</guid>
+            <pubDate>Fri, 25 Sep 2026 20:26:59 GMT</pubDate>
+            <description><![CDATA[Docker vs Podman: 29% vs 41% Overhead [2026] shattered.io]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5VTWdHN2g5aGY4Ykc3cTFpM3ZsVVQ4dVU2bjY5Z245ZEh2UnFIZmhBalF5SmcweHBCQk1hcHZrT1lobkdTY2VVWFBIXzhpQ3gweE1FSVVwLTdIcExXZ0F4dVNYM1JMZDVHdTUzcDBJek0?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMicEFVX3lxTE5VTWdHN2g5aGY4Ykc3cTFpM3ZsVVQ4dVU2bjY5Z245ZEh2UnFIZmhBalF5SmcweHBCQk1hcHZrT1lobkdTY2VVWFBIXzhpQ3gweE1FSVVwLTdIcExXZ0F4dVNYM1JMZDVHdTUzcDBJek0%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[QCon AI New York centers agent authorization and production evaluation - news.lavx.hu]]></title>
+            <link>https://news.google.com/rss/articles/CBMioAFBVV95cUxPR3ZDSlBsbnR3STY4UG5OTElWVk5iT011TEdyQllLUHJZZ25BVGZlODVVcXgteTVUM3I5WXhJWmg1MTE0bkpfN0VOd211MDJiaE00d293dDU2NXhYRlNBdDctX2FDMFJ6dmFXcDl3Y2VGSjd1TlJJc1ZyMDJjczlGQ2hhanhhdEJjTV9lTHpoQTlHVkxQRFUwbG44VzNTLWo2?oc=5</link>
+            <guid>CBMioAFBVV95cUxPR3ZDSlBsbnR3STY4UG5OTElWVk5iT011TEdyQllLUHJZZ25BVGZlODVVcXgteTVUM3I5WXhJWmg1MTE0bkpfN0VOd211MDJiaE00d293dDU2NXhYRlNBdDctX2FDMFJ6dmFXcDl3Y2VGSjd1TlJJc1ZyMDJjczlGQ2hhanhhdEJjTV9lTHpoQTlHVkxQRFUwbG44VzNTLWo2</guid>
+            <pubDate>Fri, 25 Sep 2026 12:22:00 GMT</pubDate>
+            <description><![CDATA[QCon AI New York centers agent authorization and production evaluation news.lavx.hu]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPR3ZDSlBsbnR3STY4UG5OTElWVk5iT011TEdyQllLUHJZZ25BVGZlODVVcXgteTVUM3I5WXhJWmg1MTE0bkpfN0VOd211MDJiaE00d293dDU2NXhYRlNBdDctX2FDMFJ6dmFXcDl3Y2VGSjd1TlJJc1ZyMDJjczlGQ2hhanhhdEJjTV9lTHpoQTlHVkxQRFUwbG44VzNTLWo2?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMioAFBVV95cUxPR3ZDSlBsbnR3STY4UG5OTElWVk5iT011TEdyQllLUHJZZ25BVGZlODVVcXgteTVUM3I5WXhJWmg1MTE0bkpfN0VOd211MDJiaE00d293dDU2NXhYRlNBdDctX2FDMFJ6dmFXcDl3Y2VGSjd1TlJJc1ZyMDJjczlGQ2hhanhhdEJjTV9lTHpoQTlHVkxQRFUwbG44VzNTLWo2%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[A Missing Binary Turned a Kubernetes Liveness Probe Into a Restart Loop - Cloud Native Now]]></title>
+            <link>https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcldtUWY5MTJkQ1BhTVAwMjlKQ2o3TGxjN3R5eEtQV0VNNkczLVF5c3lzc1FLYmpMbmpyX2ozM3FiTE9YYnFTYWFHR0RFY3RVa2tyenJnVlNaR1pJN3F0V2NDSmNQZEx5QXVIa2MtcU5tM1VldnNXQlJoOFhrZkZHVG5OdXl0TkpjWTF6OTRtN0hjQWl0R2hXd1R6RTN5WGc2VUhoeWdWNUdiSlhUamVkY0ViZFh5bDc3MkdV?oc=5</link>
+            <guid>CBMiuwFBVV95cUxPcldtUWY5MTJkQ1BhTVAwMjlKQ2o3TGxjN3R5eEtQV0VNNkczLVF5c3lzc1FLYmpMbmpyX2ozM3FiTE9YYnFTYWFHR0RFY3RVa2tyenJnVlNaR1pJN3F0V2NDSmNQZEx5QXVIa2MtcU5tM1VldnNXQlJoOFhrZkZHVG5OdXl0TkpjWTF6OTRtN0hjQWl0R2hXd1R6RTN5WGc2VUhoeWdWNUdiSlhUamVkY0ViZFh5bDc3MkdV</guid>
+            <pubDate>Fri, 25 Sep 2026 10:42:11 GMT</pubDate>
+            <description><![CDATA[A Missing Binary Turned a Kubernetes Liveness Probe Into a Restart Loop Cloud Native Now]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxPcldtUWY5MTJkQ1BhTVAwMjlKQ2o3TGxjN3R5eEtQV0VNNkczLVF5c3lzc1FLYmpMbmpyX2ozM3FiTE9YYnFTYWFHR0RFY3RVa2tyenJnVlNaR1pJN3F0V2NDSmNQZEx5QXVIa2MtcU5tM1VldnNXQlJoOFhrZkZHVG5OdXl0TkpjWTF6OTRtN0hjQWl0R2hXd1R6RTN5WGc2VUhoeWdWNUdiSlhUamVkY0ViZFh5bDc3MkdV?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMiuwFBVV95cUxPcldtUWY5MTJkQ1BhTVAwMjlKQ2o3TGxjN3R5eEtQV0VNNkczLVF5c3lzc1FLYmpMbmpyX2ozM3FiTE9YYnFTYWFHR0RFY3RVa2tyenJnVlNaR1pJN3F0V2NDSmNQZEx5QXVIa2MtcU5tM1VldnNXQlJoOFhrZkZHVG5OdXl0TkpjWTF6OTRtN0hjQWl0R2hXd1R6RTN5WGc2VUhoeWdWNUdiSlhUamVkY0ViZFh5bDc3MkdV%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Why Old Azure DevOps Releases Survive a Pipeline Cutover - DevOps.com]]></title>
+            <link>https://news.google.com/rss/articles/CBMiggFBVV95cUxOc0tlSEpad01saWZ0V29YU1VnbHpYRWRzelgwemJGYmozOEFYYndyYjYtcDJmMGxoN0szX3hHZW92dFZEeXpNWHJfbThDXzZLeXNmdGtGNVdCUkZjOTM0LUVqa25mNnBGMzZUMEVDT194cFNWbWdrYjEyOVNiRXg5elZB?oc=5</link>
+            <guid>CBMiggFBVV95cUxOc0tlSEpad01saWZ0V29YU1VnbHpYRWRzelgwemJGYmozOEFYYndyYjYtcDJmMGxoN0szX3hHZW92dFZEeXpNWHJfbThDXzZLeXNmdGtGNVdCUkZjOTM0LUVqa25mNnBGMzZUMEVDT194cFNWbWdrYjEyOVNiRXg5elZB</guid>
+            <pubDate>Fri, 25 Sep 2026 07:12:37 GMT</pubDate>
+            <description><![CDATA[Why Old Azure DevOps Releases Survive a Pipeline Cutover DevOps.com]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOc0tlSEpad01saWZ0V29YU1VnbHpYRWRzelgwemJGYmozOEFYYndyYjYtcDJmMGxoN0szX3hHZW92dFZEeXpNWHJfbThDXzZLeXNmdGtGNVdCUkZjOTM0LUVqa25mNnBGMzZUMEVDT194cFNWbWdrYjEyOVNiRXg5elZB?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMiggFBVV95cUxOc0tlSEpad01saWZ0V29YU1VnbHpYRWRzelgwemJGYmozOEFYYndyYjYtcDJmMGxoN0szX3hHZW92dFZEeXpNWHJfbThDXzZLeXNmdGtGNVdCUkZjOTM0LUVqa25mNnBGMzZUMEVDT194cFNWbWdrYjEyOVNiRXg5elZB%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Karmada graduates CNCF, enhances multi-cluster Kubernetes for AI workloads - TechGig]]></title>
+            <link>https://news.google.com/rss/articles/CBMizgFBVV95cUxQN0ljWUVWTVVqU3lmR0J4OFNDRVpUVUtLNUFFMkVFcF9xQ2gzSG8wVFpiQlRfTXBtUHB1SEIxeERRc0sxTkE4bWl3ZTJRQXVtMEVuaUxfWk5IcHMxMzJVOWJLajFicmE3aVJPdmlaSGJ1enJqcDIyUzhyNXVvRFl4TDdITUNtTjNTbjlRNkpmekJpY3c2NGNlTlQwaFJJM0hlRGZVcW9WQzRZel9rLTJhaHlTV2s1dkViWEI0dlYydE1NbjVZZ3EwLWN2c1JEd9IBzgFBVV95cUxQN0ljWUVWTVVqU3lmR0J4OFNDRVpUVUtLNUFFMkVFcF9xQ2gzSG8wVFpiQlRfTXBtUHB1SEIxeERRc0sxTkE4bWl3ZTJRQXVtMEVuaUxfWk5IcHMxMzJVOWJLajFicmE3aVJPdmlaSGJ1enJqcDIyUzhyNXVvRFl4TDdITUNtTjNTbjlRNkpmekJpY3c2NGNlTlQwaFJJM0hlRGZVcW9WQzRZel9rLTJhaHlTV2s1dkViWEI0dlYydE1NbjVZZ3EwLWN2c1JEdw?oc=5</link>
+            <guid>CBMizgFBVV95cUxQN0ljWUVWTVVqU3lmR0J4OFNDRVpUVUtLNUFFMkVFcF9xQ2gzSG8wVFpiQlRfTXBtUHB1SEIxeERRc0sxTkE4bWl3ZTJRQXVtMEVuaUxfWk5IcHMxMzJVOWJLajFicmE3aVJPdmlaSGJ1enJqcDIyUzhyNXVvRFl4TDdITUNtTjNTbjlRNkpmekJpY3c2NGNlTlQwaFJJM0hlRGZVcW9WQzRZel9rLTJhaHlTV2s1dkViWEI0dlYydE1NbjVZZ3EwLWN2c1JEd9IBzgFBVV95cUxQN0ljWUVWTVVqU3lmR0J4OFNDRVpUVUtLNUFFMkVFcF9xQ2gzSG8wVFpiQlRfTXBtUHB1SEIxeERRc0sxTkE4bWl3ZTJRQXVtMEVuaUxfWk5IcHMxMzJVOWJLajFicmE3aVJPdmlaSGJ1enJqcDIyUzhyNXVvRFl4TDdITUNtTjNTbjlRNkpmekJpY3c2NGNlTlQwaFJJM0hlRGZVcW9WQzRZel9rLTJhaHlTV2s1dkViWEI0dlYydE1NbjVZZ3EwLWN2c1JEdw</guid>
+            <pubDate>Thu, 24 Sep 2026 23:38:00 GMT</pubDate>
+            <description><![CDATA[Karmada graduates CNCF, enhances multi-cluster Kubernetes for AI workloads TechGig]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQN0ljWUVWTVVqU3lmR0J4OFNDRVpUVUtLNUFFMkVFcF9xQ2gzSG8wVFpiQlRfTXBtUHB1SEIxeERRc0sxTkE4bWl3ZTJRQXVtMEVuaUxfWk5IcHMxMzJVOWJLajFicmE3aVJPdmlaSGJ1enJqcDIyUzhyNXVvRFl4TDdITUNtTjNTbjlRNkpmekJpY3c2NGNlTlQwaFJJM0hlRGZVcW9WQzRZel9rLTJhaHlTV2s1dkViWEI0dlYydE1NbjVZZ3EwLWN2c1JEd9IBzgFBVV95cUxQN0ljWUVWTVVqU3lmR0J4OFNDRVpUVUtLNUFFMkVFcF9xQ2gzSG8wVFpiQlRfTXBtUHB1SEIxeERRc0sxTkE4bWl3ZTJRQXVtMEVuaUxfWk5IcHMxMzJVOWJLajFicmE3aVJPdmlaSGJ1enJqcDIyUzhyNXVvRFl4TDdITUNtTjNTbjlRNkpmekJpY3c2NGNlTlQwaFJJM0hlRGZVcW9WQzRZel9rLTJhaHlTV2s1dkViWEI0dlYydE1NbjVZZ3EwLWN2c1JEdw?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMizgFBVV95cUxQN0ljWUVWTVVqU3lmR0J4OFNDRVpUVUtLNUFFMkVFcF9xQ2gzSG8wVFpiQlRfTXBtUHB1SEIxeERRc0sxTkE4bWl3ZTJRQXVtMEVuaUxfWk5IcHMxMzJVOWJLajFicmE3aVJPdmlaSGJ1enJqcDIyUzhyNXVvRFl4TDdITUNtTjNTbjlRNkpmekJpY3c2NGNlTlQwaFJJM0hlRGZVcW9WQzRZel9rLTJhaHlTV2s1dkViWEI0dlYydE1NbjVZZ3EwLWN2c1JEd9IBzgFBVV95cUxQN0ljWUVWTVVqU3lmR0J4OFNDRVpUVUtLNUFFMkVFcF9xQ2gzSG8wVFpiQlRfTXBtUHB1SEIxeERRc0sxTkE4bWl3ZTJRQXVtMEVuaUxfWk5IcHMxMzJVOWJLajFicmE3aVJPdmlaSGJ1enJqcDIyUzhyNXVvRFl4TDdITUNtTjNTbjlRNkpmekJpY3c2NGNlTlQwaFJJM0hlRGZVcW9WQzRZel9rLTJhaHlTV2s1dkViWEI0dlYydE1NbjVZZ3EwLWN2c1JEdw%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Unryo Uses Agentic AI to Correlate RAN Faults with Kubernetes Infrastructure - The National Law Review]]></title>
+            <link>https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ3k2LUZVZGhjNnBsUk1JM1lyeEZXWXYyOTBnUC1SaDNpbmZnYi0xSXNpdnBLSkNGZWNhYmdyRGVxYk1pQ0VmX2d3Y3IycFFwWVNqVVJPTWt2SldXdUt5THBkMFBneTAtbk5yTUIzQ3ZzQzdfWG5kdDF2cDJ0NDhObjBTNzBhZ0ZCTTJkanVKa3YybUdrNGRlb1M5WlhrcWdJYUlndzg4R0dTUENB?oc=5</link>
+            <guid>CBMirAFBVV95cUxPQ3k2LUZVZGhjNnBsUk1JM1lyeEZXWXYyOTBnUC1SaDNpbmZnYi0xSXNpdnBLSkNGZWNhYmdyRGVxYk1pQ0VmX2d3Y3IycFFwWVNqVVJPTWt2SldXdUt5THBkMFBneTAtbk5yTUIzQ3ZzQzdfWG5kdDF2cDJ0NDhObjBTNzBhZ0ZCTTJkanVKa3YybUdrNGRlb1M5WlhrcWdJYUlndzg4R0dTUENB</guid>
+            <pubDate>Thu, 24 Sep 2026 23:13:05 GMT</pubDate>
+            <description><![CDATA[Unryo Uses Agentic AI to Correlate RAN Faults with Kubernetes Infrastructure The National Law Review]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPQ3k2LUZVZGhjNnBsUk1JM1lyeEZXWXYyOTBnUC1SaDNpbmZnYi0xSXNpdnBLSkNGZWNhYmdyRGVxYk1pQ0VmX2d3Y3IycFFwWVNqVVJPTWt2SldXdUt5THBkMFBneTAtbk5yTUIzQ3ZzQzdfWG5kdDF2cDJ0NDhObjBTNzBhZ0ZCTTJkanVKa3YybUdrNGRlb1M5WlhrcWdJYUlndzg4R0dTUENB?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMirAFBVV95cUxPQ3k2LUZVZGhjNnBsUk1JM1lyeEZXWXYyOTBnUC1SaDNpbmZnYi0xSXNpdnBLSkNGZWNhYmdyRGVxYk1pQ0VmX2d3Y3IycFFwWVNqVVJPTWt2SldXdUt5THBkMFBneTAtbk5yTUIzQ3ZzQzdfWG5kdDF2cDJ0NDhObjBTNzBhZ0ZCTTJkanVKa3YybUdrNGRlb1M5WlhrcWdJYUlndzg4R0dTUENB%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Linux Flaw CVE-2026-80521 Escapes Containers to Root [2026] - tech-insider.org]]></title>
+            <link>https://news.google.com/rss/articles/CBMifkFVX3lxTE9NdExwRTVpMTRCeml4eEcweDhEVnFsOTZYZDdPdFlPbHdmS1F3OWJXeUNXWmFId3Y2dHJ6aEEyejhSWUtkTHBib0piLWpTek54Z3h3Yk5IVkdJa0FfdFdIdWNFSXdONkZXNGlLcGNtZl8zVGJwS2NuZldrb2pqUQ?oc=5</link>
+            <guid>CBMifkFVX3lxTE9NdExwRTVpMTRCeml4eEcweDhEVnFsOTZYZDdPdFlPbHdmS1F3OWJXeUNXWmFId3Y2dHJ6aEEyejhSWUtkTHBib0piLWpTek54Z3h3Yk5IVkdJa0FfdFdIdWNFSXdONkZXNGlLcGNtZl8zVGJwS2NuZldrb2pqUQ</guid>
+            <pubDate>Thu, 24 Sep 2026 23:07:20 GMT</pubDate>
+            <description><![CDATA[Linux Flaw CVE-2026-80521 Escapes Containers to Root [2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE9NdExwRTVpMTRCeml4eEcweDhEVnFsOTZYZDdPdFlPbHdmS1F3OWJXeUNXWmFId3Y2dHJ6aEEyejhSWUtkTHBib0piLWpTek54Z3h3Yk5IVkdJa0FfdFdIdWNFSXdONkZXNGlLcGNtZl8zVGJwS2NuZldrb2pqUQ?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMifkFVX3lxTE9NdExwRTVpMTRCeml4eEcweDhEVnFsOTZYZDdPdFlPbHdmS1F3OWJXeUNXWmFId3Y2dHJ6aEEyejhSWUtkTHBib0piLWpTek54Z3h3Yk5IVkdJa0FfdFdIdWNFSXdONkZXNGlLcGNtZl8zVGJwS2NuZldrb2pqUQ%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Azure AI Foundry Flaw Hits CVSS 10, No Patch Needed [2026] - shattered.io]]></title>
+            <link>https://news.google.com/rss/articles/CBMidkFVX3lxTE54SFRIaGZ3SmFKcDJhT19lc3dmUmV0R0dITHNDQXE4dS02UUhKT0dhcTk4dEFMOWIyRHc3WmlYcFh0eVoxcWpMbDI3V1U1LU01d3JUOTZUNkl1RThOay1XUmhRc1psVUJuRDBkQ2xIc0JhaWE4Znc?oc=5</link>
+            <guid>CBMidkFVX3lxTE54SFRIaGZ3SmFKcDJhT19lc3dmUmV0R0dITHNDQXE4dS02UUhKT0dhcTk4dEFMOWIyRHc3WmlYcFh0eVoxcWpMbDI3V1U1LU01d3JUOTZUNkl1RThOay1XUmhRc1psVUJuRDBkQ2xIc0JhaWE4Znc</guid>
+            <pubDate>Thu, 24 Sep 2026 20:24:24 GMT</pubDate>
+            <description><![CDATA[Azure AI Foundry Flaw Hits CVSS 10, No Patch Needed [2026] shattered.io]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE54SFRIaGZ3SmFKcDJhT19lc3dmUmV0R0dITHNDQXE4dS02UUhKT0dhcTk4dEFMOWIyRHc3WmlYcFh0eVoxcWpMbDI3V1U1LU01d3JUOTZUNkl1RThOay1XUmhRc1psVUJuRDBkQ2xIc0JhaWE4Znc?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMidkFVX3lxTE54SFRIaGZ3SmFKcDJhT19lc3dmUmV0R0dITHNDQXE4dS02UUhKT0dhcTk4dEFMOWIyRHc3WmlYcFh0eVoxcWpMbDI3V1U1LU01d3JUOTZUNkl1RThOay1XUmhRc1psVUJuRDBkQ2xIc0JhaWE4Znc%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[NADRA Announces IT Jobs for Graduates Across Pakistan - TechJuice]]></title>
+            <link>https://news.google.com/rss/articles/CBMihgFBVV95cUxPZmhZbHdtQW13MlYtaFB0Y2xKdVFfQ0V1OXlWR20zZnRKQzh4eE4xY0FWSmp4VmF6cHl5TmJEZHR0R0c2VjlpSGM1NGlJYzM1TVpBc2hyOGU0aDlaMkhUXzRfMFlMVk5yWG92OUZ3bWN5NjlLU1lMcE9fV2NLWmVxTDJSOEdYQQ?oc=5</link>
+            <guid>CBMihgFBVV95cUxPZmhZbHdtQW13MlYtaFB0Y2xKdVFfQ0V1OXlWR20zZnRKQzh4eE4xY0FWSmp4VmF6cHl5TmJEZHR0R0c2VjlpSGM1NGlJYzM1TVpBc2hyOGU0aDlaMkhUXzRfMFlMVk5yWG92OUZ3bWN5NjlLU1lMcE9fV2NLWmVxTDJSOEdYQQ</guid>
+            <pubDate>Thu, 24 Sep 2026 18:26:40 GMT</pubDate>
+            <description><![CDATA[NADRA Announces IT Jobs for Graduates Across Pakistan TechJuice]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPZmhZbHdtQW13MlYtaFB0Y2xKdVFfQ0V1OXlWR20zZnRKQzh4eE4xY0FWSmp4VmF6cHl5TmJEZHR0R0c2VjlpSGM1NGlJYzM1TVpBc2hyOGU0aDlaMkhUXzRfMFlMVk5yWG92OUZ3bWN5NjlLU1lMcE9fV2NLWmVxTDJSOEdYQQ?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMihgFBVV95cUxPZmhZbHdtQW13MlYtaFB0Y2xKdVFfQ0V1OXlWR20zZnRKQzh4eE4xY0FWSmp4VmF6cHl5TmJEZHR0R0c2VjlpSGM1NGlJYzM1TVpBc2hyOGU0aDlaMkhUXzRfMFlMVk5yWG92OUZ3bWN5NjlLU1lMcE9fV2NLWmVxTDJSOEdYQQ%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Oracle Cloud Native Environment 2.4 is Now Available - Oracle Blogs]]></title>
+            <link>https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ1piWXVwMlFycHNaSWUxQWFEdV9US0RGUmpiNmNnYnE2UHAwU1ZVT19PTjVUeG45YUYzOTN3ajFnVXBsTnpaYXNnejVLT010TDEyUzRLNld5OTZWX1luWDNmek1QTUt2d1VRQzVmdGVYenFTWVZ6WFBxdU0zTXFTdUlPTGlfMHo2ZENyRw?oc=5</link>
+            <guid>CBMijAFBVV95cUxQQ1piWXVwMlFycHNaSWUxQWFEdV9US0RGUmpiNmNnYnE2UHAwU1ZVT19PTjVUeG45YUYzOTN3ajFnVXBsTnpaYXNnejVLT010TDEyUzRLNld5OTZWX1luWDNmek1QTUt2d1VRQzVmdGVYenFTWVZ6WFBxdU0zTXFTdUlPTGlfMHo2ZENyRw</guid>
+            <pubDate>Thu, 24 Sep 2026 16:21:23 GMT</pubDate>
+            <description><![CDATA[Oracle Cloud Native Environment 2.4 is Now Available Oracle Blogs]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ1piWXVwMlFycHNaSWUxQWFEdV9US0RGUmpiNmNnYnE2UHAwU1ZVT19PTjVUeG45YUYzOTN3ajFnVXBsTnpaYXNnejVLT010TDEyUzRLNld5OTZWX1luWDNmek1QTUt2d1VRQzVmdGVYenFTWVZ6WFBxdU0zTXFTdUlPTGlfMHo2ZENyRw?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMijAFBVV95cUxQQ1piWXVwMlFycHNaSWUxQWFEdV9US0RGUmpiNmNnYnE2UHAwU1ZVT19PTjVUeG45YUYzOTN3ajFnVXBsTnpaYXNnejVLT010TDEyUzRLNld5OTZWX1luWDNmek1QTUt2d1VRQzVmdGVYenFTWVZ6WFBxdU0zTXFTdUlPTGlfMHo2ZENyRw%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Yeastar Launches NovoOne, an AI-native Multi-tenant Communications Platform for Service Providers - The Malaysian Reserve]]></title>
+            <link>https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYXV3VFduR1JITjBiMVM4bmNqZkpTRU14c2FqNXhvbEJfOE5nNkwwU2pxeHRmUVZvVU05X1VNa2U1c2NJeGlpbUFSZWVLWThSYTlabHNQV1VkUldFVEUtQnVzWW1yQ2taaWI3MFZtMEYyMTFQT2FkbUd3Yk9VNFFuT25ERVl6d3pOSWhfMU9uUGZXUHJMZ3lzZFdkV3Y2Mm9DTlROeXFXM0RmQ1AyT1JFTDVocXRZaTRsVU54NG96dFdyZy1aTHUzWjhoY1NMcXktUHhUY0x2UQ?oc=5</link>
+            <guid>CBMi1wFBVV95cUxPYXV3VFduR1JITjBiMVM4bmNqZkpTRU14c2FqNXhvbEJfOE5nNkwwU2pxeHRmUVZvVU05X1VNa2U1c2NJeGlpbUFSZWVLWThSYTlabHNQV1VkUldFVEUtQnVzWW1yQ2taaWI3MFZtMEYyMTFQT2FkbUd3Yk9VNFFuT25ERVl6d3pOSWhfMU9uUGZXUHJMZ3lzZFdkV3Y2Mm9DTlROeXFXM0RmQ1AyT1JFTDVocXRZaTRsVU54NG96dFdyZy1aTHUzWjhoY1NMcXktUHhUY0x2UQ</guid>
+            <pubDate>Thu, 24 Sep 2026 16:00:18 GMT</pubDate>
+            <description><![CDATA[Yeastar Launches NovoOne, an AI-native Multi-tenant Communications Platform for Service Providers The Malaysian Reserve]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYXV3VFduR1JITjBiMVM4bmNqZkpTRU14c2FqNXhvbEJfOE5nNkwwU2pxeHRmUVZvVU05X1VNa2U1c2NJeGlpbUFSZWVLWThSYTlabHNQV1VkUldFVEUtQnVzWW1yQ2taaWI3MFZtMEYyMTFQT2FkbUd3Yk9VNFFuT25ERVl6d3pOSWhfMU9uUGZXUHJMZ3lzZFdkV3Y2Mm9DTlROeXFXM0RmQ1AyT1JFTDVocXRZaTRsVU54NG96dFdyZy1aTHUzWjhoY1NMcXktUHhUY0x2UQ?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMi1wFBVV95cUxPYXV3VFduR1JITjBiMVM4bmNqZkpTRU14c2FqNXhvbEJfOE5nNkwwU2pxeHRmUVZvVU05X1VNa2U1c2NJeGlpbUFSZWVLWThSYTlabHNQV1VkUldFVEUtQnVzWW1yQ2taaWI3MFZtMEYyMTFQT2FkbUd3Yk9VNFFuT25ERVl6d3pOSWhfMU9uUGZXUHJMZ3lzZFdkV3Y2Mm9DTlROeXFXM0RmQ1AyT1JFTDVocXRZaTRsVU54NG96dFdyZy1aTHUzWjhoY1NMcXktUHhUY0x2UQ%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Docker Commits to Bringing the Sandbox Kit Spec to the CNCF - Linux.com]]></title>
+            <link>https://news.google.com/rss/articles/CBMilgFBVV95cUxOMV9ldThieVM4VVg0elpEb1FiaFk4V1RRMWs4aWQ4UHFaRElscVIwNEpuNmFvSkhlSzBfMlNldDM3XzZvSC0tcDhHOEpSUEtLWEsxMmZaaWViYmRiRFVKLVoyQnJscm5jZmVJMXROUW10RlNVUV9Ib0ZNNmQ4R1BkU055UDJKcXEzZXplcFFlaWJSb3FHc1E?oc=5</link>
+            <guid>CBMilgFBVV95cUxOMV9ldThieVM4VVg0elpEb1FiaFk4V1RRMWs4aWQ4UHFaRElscVIwNEpuNmFvSkhlSzBfMlNldDM3XzZvSC0tcDhHOEpSUEtLWEsxMmZaaWViYmRiRFVKLVoyQnJscm5jZmVJMXROUW10RlNVUV9Ib0ZNNmQ4R1BkU055UDJKcXEzZXplcFFlaWJSb3FHc1E</guid>
+            <pubDate>Thu, 24 Sep 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Docker Commits to Bringing the Sandbox Kit Spec to the CNCF Linux.com]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOMV9ldThieVM4VVg0elpEb1FiaFk4V1RRMWs4aWQ4UHFaRElscVIwNEpuNmFvSkhlSzBfMlNldDM3XzZvSC0tcDhHOEpSUEtLWEsxMmZaaWViYmRiRFVKLVoyQnJscm5jZmVJMXROUW10RlNVUV9Ib0ZNNmQ4R1BkU055UDJKcXEzZXplcFFlaWJSb3FHc1E?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMilgFBVV95cUxOMV9ldThieVM4VVg0elpEb1FiaFk4V1RRMWs4aWQ4UHFaRElscVIwNEpuNmFvSkhlSzBfMlNldDM3XzZvSC0tcDhHOEpSUEtLWEsxMmZaaWViYmRiRFVKLVoyQnJscm5jZmVJMXROUW10RlNVUV9Ib0ZNNmQ4R1BkU055UDJKcXEzZXplcFFlaWJSb3FHc1E%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[NVIDIA’s AI Data Center Controller Ships with Hard-Coded Credentials - CryptoRank]]></title>
+            <link>https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZ29zWlc1LVFnUXdvcUxRQ1E0Ny1EQjdxbUE4TUwzeHpDZUNtMzJ0VDF3MUsxTHNaX3NvcjkzMmUtbVhpX2FJN0gwVUF1NUxKX0V0NXVKWlU1Z21oN0txWEU2YklSbUFPbW1zNlBHRjBfNzBzZUg1aXpNLVM1SWIzT0MtSE5vWkFHQ1A5a3V4eEFPVFF2ZEpralpDcXF5cGhZaVJ6Q043ak8?oc=5</link>
+            <guid>CBMiqAFBVV95cUxPZ29zWlc1LVFnUXdvcUxRQ1E0Ny1EQjdxbUE4TUwzeHpDZUNtMzJ0VDF3MUsxTHNaX3NvcjkzMmUtbVhpX2FJN0gwVUF1NUxKX0V0NXVKWlU1Z21oN0txWEU2YklSbUFPbW1zNlBHRjBfNzBzZUg1aXpNLVM1SWIzT0MtSE5vWkFHQ1A5a3V4eEFPVFF2ZEpralpDcXF5cGhZaVJ6Q043ak8</guid>
+            <pubDate>Thu, 24 Sep 2026 15:26:41 GMT</pubDate>
+            <description><![CDATA[NVIDIA’s AI Data Center Controller Ships with Hard-Coded Credentials CryptoRank]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZ29zWlc1LVFnUXdvcUxRQ1E0Ny1EQjdxbUE4TUwzeHpDZUNtMzJ0VDF3MUsxTHNaX3NvcjkzMmUtbVhpX2FJN0gwVUF1NUxKX0V0NXVKWlU1Z21oN0txWEU2YklSbUFPbW1zNlBHRjBfNzBzZUg1aXpNLVM1SWIzT0MtSE5vWkFHQ1A5a3V4eEFPVFF2ZEpralpDcXF5cGhZaVJ6Q043ak8?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMiqAFBVV95cUxPZ29zWlc1LVFnUXdvcUxRQ1E0Ny1EQjdxbUE4TUwzeHpDZUNtMzJ0VDF3MUsxTHNaX3NvcjkzMmUtbVhpX2FJN0gwVUF1NUxKX0V0NXVKWlU1Z21oN0txWEU2YklSbUFPbW1zNlBHRjBfNzBzZUg1aXpNLVM1SWIzT0MtSE5vWkFHQ1A5a3V4eEFPVFF2ZEpralpDcXF5cGhZaVJ6Q043ak8%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes 1.37 Ships 67 Changes, AU Clouds Delay GA [2026] - tech-insider.org]]></title>
+            <link>https://news.google.com/rss/articles/CBMigAFBVV95cUxQRW05VVNycFFVNUJqM25renhPYUJUbkJ1NmZuQVVXWjk5dGFRR1czTE5RNnZiMXdHTzRMdVpUVHpQMDJob3VQUnNnQVBrdnpOalotVmJReExzLXNJR1ZGUURKUnBabV9qaEg3S3ZOeUwzVzNPYk9WNXJSWVdYdXByVg?oc=5</link>
+            <guid>CBMigAFBVV95cUxQRW05VVNycFFVNUJqM25renhPYUJUbkJ1NmZuQVVXWjk5dGFRR1czTE5RNnZiMXdHTzRMdVpUVHpQMDJob3VQUnNnQVBrdnpOalotVmJReExzLXNJR1ZGUURKUnBabV9qaEg3S3ZOeUwzVzNPYk9WNXJSWVdYdXByVg</guid>
+            <pubDate>Thu, 24 Sep 2026 14:05:01 GMT</pubDate>
+            <description><![CDATA[Kubernetes 1.37 Ships 67 Changes, AU Clouds Delay GA [2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQRW05VVNycFFVNUJqM25renhPYUJUbkJ1NmZuQVVXWjk5dGFRR1czTE5RNnZiMXdHTzRMdVpUVHpQMDJob3VQUnNnQVBrdnpOalotVmJReExzLXNJR1ZGUURKUnBabV9qaEg3S3ZOeUwzVzNPYk9WNXJSWVdYdXByVg?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMigAFBVV95cUxQRW05VVNycFFVNUJqM25renhPYUJUbkJ1NmZuQVVXWjk5dGFRR1czTE5RNnZiMXdHTzRMdVpUVHpQMDJob3VQUnNnQVBrdnpOalotVmJReExzLXNJR1ZGUURKUnBabV9qaEg3S3ZOeUwzVzNPYk9WNXJSWVdYdXByVg%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[NVIDIA’s NodeWright Is Now Open Source After Internal Use - Quantum Zeitgeist]]></title>
+            <link>https://news.google.com/rss/articles/CBMid0FVX3lxTFBJb1Z5U09iMzdsZ2VuRmF1T1FwUlYzdmtXOS1SUTFwOFVOQXAwVlNRYjR1UTc3dC1PTThveENqVVZkTm5ZbFdzSl9XRUt3LU1ZcWc4ei14NFp3ODlTOERKVDBCREdRNlMzZDV4RUhxSEc1eXdFTm1Z?oc=5</link>
+            <guid>CBMid0FVX3lxTFBJb1Z5U09iMzdsZ2VuRmF1T1FwUlYzdmtXOS1SUTFwOFVOQXAwVlNRYjR1UTc3dC1PTThveENqVVZkTm5ZbFdzSl9XRUt3LU1ZcWc4ei14NFp3ODlTOERKVDBCREdRNlMzZDV4RUhxSEc1eXdFTm1Z</guid>
+            <pubDate>Thu, 24 Sep 2026 12:33:15 GMT</pubDate>
+            <description><![CDATA[NVIDIA’s NodeWright Is Now Open Source After Internal Use Quantum Zeitgeist]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBJb1Z5U09iMzdsZ2VuRmF1T1FwUlYzdmtXOS1SUTFwOFVOQXAwVlNRYjR1UTc3dC1PTThveENqVVZkTm5ZbFdzSl9XRUt3LU1ZcWc4ei14NFp3ODlTOERKVDBCREdRNlMzZDV4RUhxSEc1eXdFTm1Z?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMid0FVX3lxTFBJb1Z5U09iMzdsZ2VuRmF1T1FwUlYzdmtXOS1SUTFwOFVOQXAwVlNRYjR1UTc3dC1PTThveENqVVZkTm5ZbFdzSl9XRUt3LU1ZcWc4ei14NFp3ODlTOERKVDBCREdRNlMzZDV4RUhxSEc1eXdFTm1Z%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[NVIDIA Launches NodeWright for Kubernetes Node Management - blockchain.news]]></title>
+            <link>https://news.google.com/rss/articles/CBMidEFVX3lxTE5XRWhGdjl2VHV3SXNmWHNLOW5IRlJJZEZMVnQ5cklzVHBKQ3JjTUNHZW9pVDhtOGtRcEhYMXdHV1ZTQy0tS3gtVlB5bXJrQmtaQ0dYeVRiUDZYWTVsM2VSQkdMNEVtTWRKY21TQjNRbTF3RFFx?oc=5</link>
+            <guid>CBMidEFVX3lxTE5XRWhGdjl2VHV3SXNmWHNLOW5IRlJJZEZMVnQ5cklzVHBKQ3JjTUNHZW9pVDhtOGtRcEhYMXdHV1ZTQy0tS3gtVlB5bXJrQmtaQ0dYeVRiUDZYWTVsM2VSQkdMNEVtTWRKY21TQjNRbTF3RFFx</guid>
+            <pubDate>Thu, 24 Sep 2026 10:59:46 GMT</pubDate>
+            <description><![CDATA[NVIDIA Launches NodeWright for Kubernetes Node Management blockchain.news]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5XRWhGdjl2VHV3SXNmWHNLOW5IRlJJZEZMVnQ5cklzVHBKQ3JjTUNHZW9pVDhtOGtRcEhYMXdHV1ZTQy0tS3gtVlB5bXJrQmtaQ0dYeVRiUDZYWTVsM2VSQkdMNEVtTWRKY21TQjNRbTF3RFFx?oc=5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.google.com%2Frss%2Farticles%2FCBMidEFVX3lxTE5XRWhGdjl2VHV3SXNmWHNLOW5IRlJJZEZMVnQ5cklzVHBKQ3JjTUNHZW9pVDhtOGtRcEhYMXdHV1ZTQy0tS3gtVlB5bXJrQmtaQ0dYeVRiUDZYWTVsM2VSQkdMNEVtTWRKY21TQjNRbTF3RFFx%3Foc%3D5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

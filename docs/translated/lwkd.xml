@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Last Week in Kubernetes Development — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Last Week in Kubernetes Development の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Thu, 24 Sep 2026 19:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Week Ending September 20, 2026]]></title>
+            <link>https://lwkd.info/2026/20260924</link>
+            <guid>https://lwkd.info/2026/20260924</guid>
+            <pubDate>Thu, 24 Sep 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[Developer News Sebastian Florek (@floreks) has moved to SIG UI emeritus, following Kahiro Okina’s appointment as a SIG UI Lead covered in last week’s edition. The Maintainer Summit NA 2026 schedule is now available, with sessions on SIG Node, SIG Apps, SIG Architecture, and Kubernetes localization; the event runs November 8 in Salt Lake City, and a KubeCon + CloudNativeCon NA ticket is required. Election Update This is your last week to vote. The Steering Committee election voting will remain op]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260924">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260924">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending September 13, 2026]]></title>
+            <link>https://lwkd.info/2026/20260918</link>
+            <guid>https://lwkd.info/2026/20260918</guid>
+            <pubDate>Fri, 18 Sep 2026 06:22:00 GMT</pubDate>
+            <description><![CDATA[Developer News Dims has proposed building kubelet as a static binary (CGO_ENABLED=0) to remove the last remaining CGO dependency in Kubernetes binaries; discussion has surfaced concerns about DNS resolution changes, glibc/NSS behavior differences, and userns account lookup. Kahiro Okina (@kahirokunn) has been appointed as a SIG UI Lead following a lazy consensus period; Kahiro has been contributing to Headlamp on multi-cluster UI, plugin ecosystem work, and mentoring. SIG Node has added security]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260918">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260918">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending September 6, 2026]]></title>
+            <link>https://lwkd.info/2026/20260911</link>
+            <guid>https://lwkd.info/2026/20260911</guid>
+            <pubDate>Fri, 11 Sep 2026 01:00:00 GMT</pubDate>
+            <description><![CDATA[Developer News SIG Architecture has completed a review of feature gates on master (v1.38 development) against the feature gates documentation. The review identified overdue feature gates, gates due for removal in v1.38, GA/deprecated gates that are not locked to their default, and several stale alpha/beta gates across SIG Node, API Machinery, Auth, Scheduling, Network, Windows, Storage, Instrumentation, Apps, and Cloud Provider. SIG UI has nominated Kahiro Okina (@kahirokunn) as a new SIG UI Lea]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260911">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260911">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending August 30, 2026]]></title>
+            <link>https://lwkd.info/2026/20260904</link>
+            <guid>https://lwkd.info/2026/20260904</guid>
+            <pubDate>Fri, 04 Sep 2026 01:00:00 GMT</pubDate>
+            <description><![CDATA[Developer News The Maintainer Summit schedule for Kubecon North America is live; it includes two SIG/Subproject meetings and Ask The Kubernetes Steering Committee. The same week, the Kubecon Europe CfP opened. Election Update Voting is now open for the 2026 Kubernetes Steering Committee election. Six candidates are running this year, including Sean McGinnis (stmcginnis), Michael McCune (elmiko), Priyanka Saggu (priyankasaggu11929), Janet Kuo (janetkuo), Kaslin Fields (kaslin), and Jack Francis (]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260904">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260904">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending August 23, 2026]]></title>
+            <link>https://lwkd.info/2026/20260828</link>
+            <guid>https://lwkd.info/2026/20260828</guid>
+            <pubDate>Fri, 28 Aug 2026 18:00:00 GMT</pubDate>
+            <description><![CDATA[Developer News Kubernetes v1.37.0 was released on August 26; see the Release Schedule below for details. SIG Windows has added @jrvaldes as co-chair, with Aravindh Puthiyaparambil moving to emeritus. SIG Node has published a new developer guide for node declared features, documenting how contributors should declare and use node-level feature signals. Election Update Voting for the Kubernetes Steering Committee continues. If you are a Kubernetes Org member, please vote before October 1. Release S]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260828">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260828">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending August 16, 2026]]></title>
+            <link>https://lwkd.info/2026/20260820</link>
+            <guid>https://lwkd.info/2026/20260820</guid>
+            <pubDate>Thu, 20 Aug 2026 22:00:00 GMT</pubDate>
+            <description><![CDATA[Developer News containerd is deprecating the implicit restore-via-CreateContainer codepath introduced by KEP-2008 (Forensic Container Checkpointing) after multiple CVEs; containerd 2.3.4 and 2.2.7 retain it as an experimental opt-in behind enable_experimental_restore_via_create, and containerd 2.4 removes it in favor of the explicit RestorePod API from KEP-5823. SIG ContribEx has added AI notetaker guidance to Kubernetes Zoom meeting guidelines. AI notetaker bots (such as Granola, Otter.ai, Fire]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260820">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260820">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending August 09, 2026]]></title>
+            <link>https://lwkd.info/2026/20260813</link>
+            <guid>https://lwkd.info/2026/20260813</guid>
+            <pubDate>Thu, 13 Aug 2026 22:00:00 GMT</pubDate>
+            <description><![CDATA[Developer News SIG Autoscaling has clarified its subproject donation requirements, formalizing what external projects need to satisfy to be adopted under the SIG. Dims has published a post-Code-Freeze CI recovery writeup showing that contributors across SIGs fixed roughly 27 CI jobs through 60 PRs since July 22, with the sig-release-master-blocking board now green; the full gist lists about 30 open failing-test and flake issues that still need owners. The KubeCon + CloudNativeCon NA 2026 schedul]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260813">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260813">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending August 02, 2026]]></title>
+            <link>https://lwkd.info/2026/20260806</link>
+            <guid>https://lwkd.info/2026/20260806</guid>
+            <pubDate>Thu, 06 Aug 2026 23:45:00 GMT</pubDate>
+            <description><![CDATA[Developer News The Kubernetes Steering Committee held a Q&A session for election candidates at the public Steering meeting on Wednesday, August 5. SIG ContribEx has merged documentation for the Kubernetes social media automation process, formalizing how community posts across project accounts are triaged, drafted, and published. Election Updates Voting for the 2026 Kubernetes Steering Committee election will begin on August 14. Kaslin Fields, Priyanka Saggu and Jack Francis joined the candidate ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260806">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260806">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending July 26, 2026]]></title>
+            <link>https://lwkd.info/2026/20260730</link>
+            <guid>https://lwkd.info/2026/20260730</guid>
+            <pubDate>Thu, 30 Jul 2026 22:00:00 GMT</pubDate>
+            <description><![CDATA[Developer News Kubernetes v1.36.3 has been released, built with Go 1.26.5. This patch release includes fixes for DRA scheduling and allocator bugs, a kubelet memory leak regression introduced in 1.36, server-side apply regressions, kubeadm etcd learner promotion and join resiliency improvements, and reduced kubelet log noise for missing optional container annotations. Kubernetes v1.37.0-beta.0 has been released, built with Go 1.26.5. Highlights include a new Recreate strategy for StatefulSets, C]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260730">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260730">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Week Ending July 19, 2026]]></title>
+            <link>https://lwkd.info/2026/20260723</link>
+            <guid>https://lwkd.info/2026/20260723</guid>
+            <pubDate>Thu, 23 Jul 2026 22:00:00 GMT</pubDate>
+            <description><![CDATA[Developer News Maintainer Summit North America 2026 will take place on November 8 in Salt Lake City ahead of KubeCon + CloudNativeCon North America. Registration is open to Kubernetes and CNCF project maintainers, organization members, and community leaders. Janet Kuo announced her self-nomination for the 2026 Kubernetes Steering Committee election, highlighting her long-standing contributions to Kubernetes, leadership in SIG Apps, and work on AI initiatives including Agent Sandbox and AI Confor]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260723">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260723">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
