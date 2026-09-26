@@ -3,10 +3,8 @@ const MYMEMORY_EMAIL = process.env.MYMEMORY_EMAIL;
 
 type Engine = (texts: string[]) => Promise<string[]>;
 
-/** Thrown for DeepL failures that won't fix themselves this run (quota / auth). */
+/** Thrown for engine failures that won't fix themselves this run (quota / auth). */
 class EngineUnavailable extends Error {}
-
-const passthrough: Engine = async (texts) => texts;
 
 const deepl: Engine = async (texts) => {
   const key = DEEPL_KEY as string;
@@ -29,7 +27,7 @@ const deepl: Engine = async (texts) => {
   return data.translations.map((t) => t.text);
 };
 
-/** MyMemory: one string per GET. Anonymous ~5k words/day, more with an email. */
+/** MyMemory: one string per GET. Anonymous ~5k chars/day, more with an email. */
 const myMemory: Engine = async (texts) => {
   const out: string[] = [];
   for (const text of texts) {
@@ -38,45 +36,57 @@ const myMemory: Engine = async (texts) => {
     u.searchParams.set("langpair", "en|ja");
     if (MYMEMORY_EMAIL) u.searchParams.set("de", MYMEMORY_EMAIL);
     const res = await fetch(u);
+    if (res.status === 429) throw new EngineUnavailable("MyMemory 429: quota finished");
     if (!res.ok) throw new Error(`MyMemory ${res.status}`);
-    const data = (await res.json()) as { responseData: { translatedText: string } };
+    const data = (await res.json()) as {
+      quotaFinished?: boolean;
+      responseStatus: number | string;
+      responseData: { translatedText: string };
+    };
+    // 枠切れでも HTTP 200 で警告文を translatedText に入れて返すため、本文として保存しない。
+    if (data.quotaFinished || Number(data.responseStatus) === 429) {
+      throw new EngineUnavailable(`MyMemory ${data.responseStatus}: quota finished`);
+    }
     out.push(data.responseData.translatedText || text);
   }
   return out;
 };
 
-function pickEngine(): Engine {
-  if (DEEPL_KEY) return deepl;
-  if (process.env.USE_MYMEMORY) return myMemory;
+/** 先頭から使い、枠切れ／認証エラーで次へ落とす。DeepL の月間枠が尽きても MyMemory の日次枠で翻訳を続ける。 */
+function pickEngines(): Engine[] {
+  if (DEEPL_KEY) return [deepl, myMemory];
+  if (process.env.USE_MYMEMORY) return [myMemory];
   console.warn(
     "[translate] no engine configured (DEEPL_API_KEY unset) — passing text through untranslated",
   );
-  return passthrough;
+  return [];
 }
 
-let engine = pickEngine();
+const engines = pickEngines();
 let degraded = false;
+
+/** True while some engine is still usable this run. */
+export const canTranslate = () => engines.length > 0;
 
 /** Translate short EN strings to JA. Order preserved; blank strings skipped. */
 export async function translateBatch(texts: string[]): Promise<string[]> {
   const nonEmpty = texts.map((t, i) => [i, t] as const).filter(([, t]) => t.trim() !== "");
   if (nonEmpty.length === 0) return [...texts];
 
-  let translated: string[];
-  try {
-    translated = await engine(nonEmpty.map(([, t]) => t));
-  } catch (err) {
-    if (err instanceof EngineUnavailable && !degraded) {
-      // Quota/auth failure: publish untranslated for the rest of this run rather than
-      // hard-failing every pipeline. New entries pick up translation once the quota resets.
-      console.warn(`[translate] engine unavailable (${err.message}) — falling back to passthrough`);
-      engine = passthrough;
-      degraded = true;
-      translated = nonEmpty.map(([, t]) => t);
-    } else {
-      throw err;
+  let translated: string[] | undefined;
+  while (!translated && engines.length > 0) {
+    try {
+      translated = await engines[0](nonEmpty.map(([, t]) => t));
+    } catch (err) {
+      if (!(err instanceof EngineUnavailable)) throw err;
+      // Quota/auth failure: try the next engine, and publish untranslated once none is left
+      // rather than hard-failing every pipeline. Untranslated entries are retried later.
+      console.warn(`[translate] engine unavailable (${err.message}) — switching engine`);
+      engines.shift();
+      if (engines.length === 0) degraded = true;
     }
   }
+  translated ??= nonEmpty.map(([, t]) => t);
 
   const result = [...texts];
   nonEmpty.forEach(([idx], k) => {

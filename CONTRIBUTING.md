@@ -48,7 +48,7 @@ mise run serve     # docs/ をローカルプレビュー
 | 実行基盤 | すべて GitHub Actions。ローカル常用スクリプトは持たない |
 | 公開 | GitHub Pages（deploy from branch, `main:/docs`）。`https://ogontaro.github.io/feeds/` |
 | カスタムドメイン | 使わない |
-| 翻訳エンジン | DeepL API（Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
+| 翻訳エンジン | DeepL API（Free キーは末尾 `:fx`）。枠切れ時は MyMemory に切り替え。キー未設定なら未翻訳のまま通す |
 | AI 呼び出し | `anthropics/claude-code-action@v1`（ワークフローの一ステップ、`--allowedTools Read,Write`）。OpenCode Go（`https://opencode.ai/zen/go`）経由で DeepSeek を使う。各ステップの `env` に `ANTHROPIC_BASE_URL`/`ANTHROPIC_CUSTOM_HEADERS`/`OTEL_RESOURCE_ATTRIBUTES`、`with.anthropic_api_key` に `OPENCODE_API_KEY`、`claude_args` に `--model deepseek-v4.1-flash[1m]` を指定 |
 
 ## データ: source.yaml
@@ -102,7 +102,9 @@ interests:
 
 1. `source.yaml` の `kind: content` のうち `needsTranslation`（＝記事 URL が日本語ソースでない）を満たすもの only。日本語サイトは翻訳フィードを作らない。
 2. 既存 `docs/translated/<id>.xml` の guid 集合と照合、新規のみ処理。
-3. 新規エントリのタイトルと description を DeepL で日本語化。
+3. 新規エントリのタイトルと description を DeepL で日本語化。DeepL が枠切れ／認証エラーなら MyMemory（匿名・日次枠）に落とし、
+   それも尽きたら未翻訳で公開する。Google News のリンク（`news.google.com/rss/articles/…`）は元記事 URL に解決する。
+3a. 残った枠で、未翻訳のまま公開した直近 7 日のエントリ（1 フィード 10 件まで）を訳し直し、未解決の Google News リンクも解決し直す。
 4. 既存に足して公開日時の降順で **直近 100 件**に truncate、`docs/translated/<id>.xml` を再生成。
 
 - **1 フィードも取得できなかったサイトは書き換えない**（空フィードで guid 集合を消さない）。

@@ -88,7 +88,7 @@ feeds:
     domain: claude
     kind: content
   # 新しいコーディングエージェント系サービスの発表・料金変更を当日拾う（Meta Muse Code は
-  # HN にも購読中ブログにも出ず、ニュース媒体だけが報じた）。リンクの注意は gnews-kubernetes 参照。
+  # HN にも購読中ブログにも出ず、ニュース媒体だけが報じた）。リンクは gnews-kubernetes と同様に解決する。
   - url: https://news.google.com/rss/search?q=%28%22coding%20agent%22%20OR%20%22AI%20coding%20agent%22%20OR%20%22AI%20coding%20assistant%22%29%20%28launch%20OR%20launches%20OR%20pricing%20OR%20subscription%20OR%20%22per%20month%22%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en
     id: gnews-coding-agents
     name: Google News — コーディングエージェント新サービス・料金
@@ -164,8 +164,7 @@ feeds:
     domain: kubernetes
     kind: content
   # HN では K8s 系が 2 週間で 20pt 超 0 件のため、ニュース検索で話題（卒業・CVE・リリース）を拾う。
-  # ponytail: リンクは news.google.com のリダイレクト URL。ブラウザでは原文に飛ぶが、
-  # Google 翻訳 URL 経由では開けないことがある。問題になれば collect 側で実 URL 解決を足す。
+  # リンク（news.google.com のリダイレクト URL）は translate 時に元記事 URL へ解決する（feeds.ts）。
   - url: https://news.google.com/rss/search?q=%28Kubernetes%20OR%20CNCF%29%20%28launch%20OR%20release%20OR%20graduates%20OR%20vulnerability%20OR%20CVE%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en
     id: gnews-kubernetes
     name: Google News — Kubernetes

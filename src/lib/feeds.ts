@@ -38,6 +38,70 @@ async function parseWithRetry(url: string): Promise<Awaited<ReturnType<typeof pa
   return parser.parseURL(url);
 }
 
+/**
+ * Google News 検索 RSS のリンク(news.google.com/rss/articles/<id>)を元記事 URL に解決する。
+ * そのままでは Google 翻訳 URL 経由で開けないため。記事ページの署名を使って内部 API を引く
+ * 非公開の手順なので、失敗したら元のリンクを返してパイプラインは止めない。
+ */
+export async function resolveGoogleNewsLink(link: string): Promise<string> {
+  const m = link.match(/^https:\/\/news\.google\.com\/rss\/articles\/([^?]+)/);
+  if (!m) return link;
+  const id = m[1];
+  try {
+    const page = await (await fetch(`https://news.google.com/rss/articles/${id}`)).text();
+    const sg = page.match(/data-n-a-sg="([^"]+)"/)?.[1];
+    const ts = page.match(/data-n-a-ts="([^"]+)"/)?.[1];
+    if (!sg || !ts) return link;
+    const req = JSON.stringify([
+      "garturlreq",
+      [
+        [
+          "X",
+          "X",
+          ["X", "X"],
+          null,
+          null,
+          1,
+          1,
+          "US:en",
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          1,
+        ],
+        "X",
+        "X",
+        1,
+        [1, 1, 1],
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        0,
+      ],
+      id,
+      Number(ts),
+      sg,
+    ]);
+    const res = await fetch("https://news.google.com/_/DotsSplashUi/data/batchexecute", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      body: `f.req=${encodeURIComponent(JSON.stringify([[["Fbv4je", req, null, "generic"]]]))}`,
+    });
+    const url = (await res.text()).match(/\\"garturlres\\",\\"(.*?)\\"/)?.[1];
+    return url?.startsWith("http") ? url : link;
+  } catch {
+    return link;
+  }
+}
+
 /** Fetch one source feed and normalize its items. Network/parse errors propagate. */
 export async function fetchFeed(feed: Feed): Promise<SourceEntry[]> {
   const parsed = await parseWithRetry(feed.url);
