@@ -3,12 +3,12 @@ import Parser from "rss-parser";
 import { CACHE, X_TIMELINE_JSON, reportInputJson } from "../lib/paths.ts";
 
 /**
- * X ホームタイムライン(RSSHub `twitter/home_latest`)を蓄積し、日次レポートの入力を書き出す。
+ * X ホームタイムライン(RSSHub `twitter/home_latest` と `twitter/home`)を蓄積し、日次レポートの入力を書き出す。
  * 1 回の取得は 88 件(平日日中は ~8 時間ぶん)しか返らないため、timeline.yml が 3 時間ごとに取得して
  * actions/cache 上の蓄積(.cache/x-timeline.json)にマージし、report.yml が直近 24h を読む。
  *
  * public リポジトリの公開ログに流れるため、本文・投稿者・URL は出力せず件数だけ出す。
- * RSSHUB_TIMELINE_URL(アクセスキー付き URL)未設定なら何もせず空の入力を書いて正常終了する。
+ * RSSHUB_BASE_URL / RSSHUB_ACCESS_KEY のどちらかが未設定なら何もせず空の入力を書いて正常終了する。
  * --strict(timeline.yml)は取得失敗で異常終了、なし(report.yml)は蓄積だけでレポートを作る。
  */
 
@@ -27,6 +27,12 @@ type Post = {
 };
 
 const strict = process.argv.includes("--strict");
+
+/**
+ * home_latest = フォロー中(時系列。取りこぼさないための主系)、home = おすすめ(フォロー外の話題も入る。
+ * 取得ごとに中身が変わり網羅はできない)。ルートを増やすほど cookie 経由の上流アクセスが増える。
+ */
+const ROUTES = ["twitter/home_latest", "twitter/home"];
 
 /** ポスト本文中の外部 URL(画像・動画・X 自身のリンクは除く)。 */
 function externalLinks(html: string): string[] {
@@ -95,26 +101,30 @@ async function fetchTimeline(url: string): Promise<Post[]> {
 
 async function main() {
   await mkdir(CACHE, { recursive: true });
-  const url = process.env.RSSHUB_TIMELINE_URL ?? "";
-  if (!url) {
+  const base = (process.env.RSSHUB_BASE_URL ?? "").replace(/\/+$/, "");
+  const key = process.env.RSSHUB_ACCESS_KEY ?? "";
+  if (!base || !key) {
     await Bun.write(reportInputJson("x"), "[]");
-    console.log("RSSHUB_TIMELINE_URL not set — skip");
+    console.log("RSSHUB_BASE_URL / RSSHUB_ACCESS_KEY not set — skip");
     return;
   }
 
   const stored: Post[] = await Bun.file(X_TIMELINE_JSON)
     .json()
     .catch(() => []);
-  let fetched: Post[] = [];
-  try {
-    fetched = await fetchTimeline(url);
-  } catch (err) {
-    if (strict) throw err;
-    console.error(`${(err as Error).message} — using stored posts only`);
+  const fetched: Post[] = [];
+  for (const route of ROUTES) {
+    try {
+      fetched.push(...(await fetchTimeline(`${base}/${route}?key=${encodeURIComponent(key)}`)));
+    } catch (err) {
+      const msg = `${route}: ${(err as Error).message}`;
+      if (strict) throw new Error(msg);
+      console.error(`${msg} — using stored posts only`);
+    }
   }
 
   const byGuid = new Map(stored.map((p) => [p.guid, p]));
-  const added = fetched.filter((p) => !byGuid.has(p.guid)).length;
+  const added = new Set(fetched.map((p) => p.guid).filter((g) => !byGuid.has(g))).size;
   for (const p of fetched) byGuid.set(p.guid, p);
   const now = Date.now();
   const posts = [...byGuid.values()]

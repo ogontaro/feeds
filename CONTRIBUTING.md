@@ -138,7 +138,7 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 
 ### X タイムラインレポート（`timeline.yml` 3 時間ごと ＋ `report.yml` の x）
 
-入力は自前 RSSHub の `twitter/home_latest`（`RSSHUB_TIMELINE_URL`、アクセスキー込み）。1 回の取得は
+入力は自前 RSSHub の `twitter/home_latest`（フォロー中）と `twitter/home`（おすすめ）（`RSSHUB_BASE_URL` + `RSSHUB_ACCESS_KEY`）。home_latest は 1 回の取得で
 88 件(平日日中は ~8 時間ぶん)しか返らないため、取得と日次レポートを分ける。
 
 1. `timeline.yml`（cron `30 */3 * * *`）: `actions/cache/restore` で蓄積を復元 →
@@ -156,12 +156,12 @@ public リポジトリのため、プライバシーは次で担保する。
 - スクリプトのログは件数のみ。取得エラーはステータスコードだけ出す（RSSHub のエラーページには認証トークンの
   一部が載るため、本文・ヘッダ・URL は出さない。失敗ログは workflow-failure-fix が PR/Issue に転記しうる）
 - 投稿者は URL 上のハンドルだけ持つ（表示名は保存しない）。`adoption-log.ndjson` には記録しない
-- `RSSHUB_TIMELINE_URL` は collect ステップの `env` にだけ渡す（claude-code-action には渡らない）
+- `RSSHUB_BASE_URL` / `RSSHUB_ACCESS_KEY` は collect ステップの `env` にだけ渡す（claude-code-action には渡らない）
 - キャッシュを読めるのはこのリポジトリのワークフローだけ。`pull_request` / `pull_request_target` トリガーの
   ワークフローを追加するとフォーク PR からキャッシュを読まれうるので追加しない
 - claude-code-action はデバッグログ有効で再実行するとツール出力（入力のポスト）をログに出す。x の失敗を
   デバッグログ付きで再実行しない
-- `RSSHUB_TIMELINE_URL` 未設定時はスクリプトが空の入力を書いて正常終了し、保存・レポートともスキップ
+- `RSSHUB_BASE_URL` / `RSSHUB_ACCESS_KEY` 未設定時はスクリプトが空の入力を書いて正常終了し、保存・レポートともスキップ
 
 ### リリースレポート（`release.yml`, 毎週月 07:30 JST = cron `30 22 * * 0`）
 
@@ -327,7 +327,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
   APIキー。`anthropic_api_key`/`ANTHROPIC_CUSTOM_HEADERS` に渡す）。`CLAUDE_CODE_OAUTH_TOKEN`
   は Anthropic 直接に戻す場合の切り戻し用に残置（現状未使用）。`INOREADER_CLIENT_ID` /
   `INOREADER_CLIENT_SECRET` / `INOREADER_REFRESH_TOKEN` は任意（未設定ならスター連携だけスキップ）。
-  `RSSHUB_TIMELINE_URL` は任意（未設定なら X タイムラインの取得・レポートだけスキップ）。
+  `RSSHUB_BASE_URL` / `RSSHUB_ACCESS_KEY` は任意（未設定なら X タイムラインの取得・レポートだけスキップ）。
 
 ### 既知の運用リスク
 

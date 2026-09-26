@@ -82,7 +82,8 @@ X タイムラインレポートを使う場合のみ必要。未設定なら取
 
 | 名前 | 用途 |
 | --- | --- |
-| `RSSHUB_TIMELINE_URL` | 自前 RSSHub のホームタイムライン URL（アクセスキー込み）。形式: `https://<RSSHubのホスト>/twitter/home_latest/<ユーザー名>?key=<ACCESS_KEY>` |
+| `RSSHUB_BASE_URL` | 自前 RSSHub のベース URL。形式: `https://<RSSHubのホスト>`（末尾スラッシュなし） |
+| `RSSHUB_ACCESS_KEY` | RSSHub に設定した `ACCESS_KEY`。`?key=` で渡す |
 
 公開されるのは技術的なポストの要約とポストへのリンクだけで、タイムラインの生データはリポジトリにもログにも残らない。
 ただし鍵アカウントをフォローしている場合、そのポストも要約対象になりうる点に注意。
