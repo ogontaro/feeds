@@ -1,12 +1,13 @@
 name: timeline
 
-# X ホームタイムラインは 1 回の取得で 88 件(平日日中は ~8 時間ぶん)しか返らないため、2 時間ごとに取得して
+# X ホームタイムラインは 1 回の取得で 88 件(平日日中は ~8 時間ぶん)しか返らないため、定期的に取得して
 # actions/cache に直近 7 日ぶんを蓄積する(report.yml の x レポートが読む)。
 # public リポジトリなので蓄積はコミットせず、ログにも件数しか出さない。
 on:
   schedule:
-    # 1 回遅延・失敗しても取りこぼさない間隔。毎時にすると cookie 経由の上流アクセスが増えアカウントロックの恐れ。
-    - cron: "30 */2 * * *" # translate(0 */6)と30分ずらす
+    # 計測期間中(〜2026-10-01)は 15 分ごと。各回の METRIC 行(home_latest の深さ)を集計して、
+    # 取りこぼさない最長の間隔を決めてから戻す。translate(0 */6)とは分をずらす。
+    - cron: "5-59/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -68,7 +69,7 @@ jobs:
         run: |
           gh label create "workflow-failure" --repo "${GITHUB_REPOSITORY}" \
             --color d73a4a --description "GitHub Actions workflow failure (auto-created)" 2>/dev/null || true
-          # cookie 切れ等で 2 時間ごとに失敗し続けても Issue を量産しない。
+          # cookie 切れ等で失敗し続けても Issue を量産しない。
           open=$(gh issue list --repo "${GITHUB_REPOSITORY}" --label workflow-failure --state open \
             --search "\"workflow failure: ${{ github.workflow }}\" in:title" --json number --jq length)
           [ "$open" != "0" ] && exit 0

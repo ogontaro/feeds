@@ -4,7 +4,7 @@ import { CACHE, X_TIMELINE_JSON, reportInputJson } from "../lib/paths.ts";
 
 /**
  * X ホームタイムライン(RSSHub `twitter/home_latest` と `twitter/home`)を蓄積し、日次レポートの入力を書き出す。
- * 1 回の取得は 88 件(平日日中は ~8 時間ぶん)しか返らないため、timeline.yml が 2 時間ごとに取得して
+ * 1 回の取得は 88 件(平日日中は ~8 時間ぶん)しか返らないため、timeline.yml が定期的に取得して
  * actions/cache 上の蓄積(.cache/x-timeline.json)にマージし、report.yml が直近 24h を読む。
  * 「直近」は投稿時刻ではなく初めて取得した時刻(seen)で判定する。おすすめ(home)は数日前の投稿も
  * 出すため、投稿時刻で切ると一度もレポートに載らない。
@@ -131,16 +131,21 @@ async function main() {
     .catch(() => []);
   const fetched: Omit<Post, "seen">[] = [];
   const failed: string[] = [];
-  const storedGuids = new Set(stored.map((p) => p.guid));
+  const now = Date.now();
+  const storedSeen = new Map(stored.map((p) => [p.guid, Date.parse(p.seen)]));
   for (const route of ROUTES) {
     try {
       const got = await fetchWithRetry(`${RSSHUB}/${route}?key=${encodeURIComponent(key)}`);
       fetched.push(...got);
-      // 時系列の home_latest が前回の蓄積と 1 件も重ならなければ、その間のポストを取りこぼしている。
-      if (route === "twitter/home_latest" && storedGuids.size > 0) {
-        const overlap = got.filter((p) => storedGuids.has(p.guid)).length;
-        console.log(`${route}: overlap with stored ${overlap}/${got.length}`);
-        if (overlap === 0)
+      if (route === "twitter/home_latest" && got.length > 0) {
+        // 深さ = 今回の 88 件のうち最も早く初回取得した時刻から今まで。これより長く間隔を空けると取りこぼす。
+        // 取得間隔の決定に使う(ログを集計する)。蓄積と 1 件も重ならなければ既に取りこぼしている。
+        const overlap = got.filter((p) => storedSeen.has(p.guid)).length;
+        const oldest = Math.min(...got.map((p) => storedSeen.get(p.guid) ?? now));
+        console.log(
+          `METRIC home_latest total=${got.length} overlap=${overlap} depth_h=${((now - oldest) / 3_600_000).toFixed(2)}`,
+        );
+        if (storedSeen.size > 0 && overlap === 0)
           console.log(`::warning::${route}: no overlap — posts were likely missed`);
       }
     } catch (err) {
@@ -149,7 +154,6 @@ async function main() {
     }
   }
 
-  const now = Date.now();
   const byGuid = new Map(stored.map((p) => [p.guid, p]));
   const added = new Set(fetched.map((p) => p.guid).filter((g) => !byGuid.has(g))).size;
   for (const p of fetched) {
