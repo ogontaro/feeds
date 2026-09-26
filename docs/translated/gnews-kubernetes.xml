@@ -4,11 +4,19 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 07:29:28 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 17:28:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ランタイム： AIエージェントを抑制するためのOktaの入札- thestack.technology]]></title>
+            <link>https://www.thestack.technology/runtime-oktas-bid-to-keep-ai-agents-in-check/</link>
+            <guid>CBMigwFBVV95cUxPSTBtNVNUc3c4d2ZmZDJfbHdQMVNxYm5PaVhqUE91Wi15VGtZN2FrVFFINncxMVhLRnR1bUJQUVhIV0xIRnFvOHpLVUUyazVaOXoxYUFzZ3FNdFctM1JTaHVobUxNVHFWSFMtbHNPdjhiaGgtTi04S3JlUVZPNFJkTEUtYw</guid>
+            <pubDate>Sat, 26 Sep 2026 17:28:10 GMT</pubDate>
+            <description><![CDATA[ランタイム： AIエージェントをチェックするためのOktaの入札thestack.technology]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.thestack.technology/runtime-oktas-bid-to-keep-ai-agents-in-check/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.thestack.technology%2Fruntime-oktas-bid-to-keep-ai-agents-in-check%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GoogleのOpen Agentic OrchestratorがHacker Newsで1位を獲得。本当のストーリーは、その下を走っているものです- forkast.news]]></title>
             <link>https://forkast.news/googles-open-agentic-orchestrator-hit-1-on-hacker-news-the-real-story-is-whats-running-underneath/</link>
@@ -16,6 +24,14 @@
             <pubDate>Sat, 26 Sep 2026 07:29:28 GMT</pubDate>
             <description><![CDATA[GoogleのOpen Agentic OrchestratorがHacker Newsで1位を獲得。The Real Story Is What's Running Underneath forkast.news]]></description>
             <content:encoded><![CDATA[<p><a href="https://forkast.news/googles-open-agentic-orchestrator-hit-1-on-hacker-news-the-real-story-is-whats-running-underneath/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fforkast.news%2Fgoogles-open-agentic-orchestrator-hit-1-on-hacker-news-the-real-story-is-whats-running-underneath%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetryとPrometheusの相互運用性がクラウドネイティブチーム向けに向上- TechGig]]></title>
+            <link>https://techgig.com/amp/news/cloud-infrastructure/opentelemetry-and-prometheus-interoperability-improves-for-cloud-native-teams/134495108</link>
+            <guid>CBMi0wFBVV95cUxPT3ptUVpmSnNrYktONnlhSzY3VEp1N2pqYTltMWs1ck5uWUhhd0twU3RnMFBIWnB5QmtJTFRvcEY2emZSd216RGhZU25rZUlGSGVJWEpueHhnbXdSN21jcmQyY1dMQy1SeHd4VkkzVzlsdFVLaXpfcnlQdEZEZmU5T0hzd2ZCVnZWMXgyLUJTZE95bVlXRDZZQmdPYU5RV0xJZEc2Tk0zamloclYxMmdOanFWREVTX3VDRkQ2Q0dSa1NFQnFUcEo2U2FrUWY1eXFBdzdj0gHTAUFVX3lxTE9Pem1RWmZKc2tiS042eWFLNjdUSnU3amphOW0xazVyTm5ZSGF3S3BTdGcwUEhacHlCa0lMVG9wRjZ6ZlJ3bXpEaFlTbmtlSUZIZUlYSm54eGdtd1I3bWNyZDJjV0xDLVJ4d3hWSTNXOWx0VUtpel9yeVB0RkRmZTlPSHN3ZkJWdlYxeDItQlNkT3ltWVdENllCZ09hTlFXTElkRzZOTTNqaWhyVjEyZ05qcVZERVNfdUNGRDZDR1JrU0VCcVRwSjZTYWtRZjV5cUF3N2M</guid>
+            <pubDate>Fri, 25 Sep 2026 23:10:09 GMT</pubDate>
+            <description><![CDATA[OpenTelemetryとPrometheusの相互運用性は、クラウドネイティブチームTechGigのために改善されます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://techgig.com/amp/news/cloud-infrastructure/opentelemetry-and-prometheus-interoperability-improves-for-cloud-native-teams/134495108">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftechgig.com%2Famp%2Fnews%2Fcloud-infrastructure%2Fopentelemetry-and-prometheus-interoperability-improves-for-cloud-native-teams%2F134495108">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Kubecostの設定： Kubernetesコスト監視[2026] - tech-insider.org]]></title>

@@ -4,11 +4,19 @@
         <title>HN — Front page (300+) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 10:55:56 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 16:12:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[私はあのバイラルジャイアンツクリップのママです。ご主人のことをお話ししましょう]]></title>
+            <link>https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip</link>
+            <guid>https://news.ycombinator.com/item?id=49857899</guid>
+            <pubDate>Sat, 26 Sep 2026 16:12:18 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clipコメントURL ： https://news.ycombinator.com/item?id=49857899ポイント： 344 #コメント： 141]]></description>
+            <content:encoded><![CDATA[<p><a href="https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthemomoftheyear.substack.com%2Fp%2Fim-the-mom-in-that-viral-giants-clip">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Google Playとの別れ：会話が無料になった理由]]></title>
             <link>https://gultsch.de/posts/breaking-up-with-google-play/</link>
@@ -16,6 +24,14 @@
             <pubDate>Sat, 26 Sep 2026 10:55:56 GMT</pubDate>
             <description><![CDATA[記事URL ： https://gultsch.de/posts/breaking-up-with-google-play/コメントURL ： https://news.ycombinator.com/item?id=49855315ポイント： 351 #コメント： 136]]></description>
             <content:encoded><![CDATA[<p><a href="https://gultsch.de/posts/breaking-up-with-google-play/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgultsch.de%2Fposts%2Fbreaking-up-with-google-play%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[もっと多くの数学者が必要になるでしょう]]></title>
+            <link>https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/</link>
+            <guid>https://news.ycombinator.com/item?id=49852717</guid>
+            <pubDate>Sat, 26 Sep 2026 02:46:54 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/コメントURL ： https://news.ycombinator.com/item?id=49852717ポイント： 324 #コメント： 428]]></description>
+            <content:encoded><![CDATA[<p><a href="https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fterrytao.wordpress.com%2F2026%2F09%2F24%2Fwere-gonna-need-a-lot-more-mathematicians%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[陪審員は、Cambridge AnalyticaのケースでFacebookがユーザーを欺いた責任があると判断]]></title>

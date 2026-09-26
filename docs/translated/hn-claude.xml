@@ -4,11 +4,19 @@
         <title>HN — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 18:11:48 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 15:34:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[HNを表示：チェスゲームを分析するためのクロードコードのスキル]]></title>
+            <link>https://github.com/brumar/chess-postmortem-skills</link>
+            <guid>https://news.ycombinator.com/item?id=49857528</guid>
+            <pubDate>Sat, 26 Sep 2026 15:34:53 GMT</pubDate>
+            <description><![CDATA[HN様、こんにちは。これは実験として始まりました。PGN表記の代わりにビジョンを使用する場合、クロードはチェスを適切にプレイできますか？どういうわけかできる。次の実験は、クロード+ストックフィッシュがゲームを説明できるかどうかを調べることだった。どういうわけか、それもできます。数回のセッションの後、私はライブオーディオノート（またはテキスト）と「最後のリッチェスゲームを分析する」などの曖昧な指示を取り、ゲームのコメントビデオを提供するシステムを持っていました。結果は完璧ではなく、配達に時間がかかります（ 1時間程度）。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/brumar/chess-postmortem-skills">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fbrumar%2Fchess-postmortem-skills">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[はい、クロードは9つのループを行うことができます]]></title>
             <link>https://www.anthropic.com/research/yes-claude-can-do-nine-loops</link>
