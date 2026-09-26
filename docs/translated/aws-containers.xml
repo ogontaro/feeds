@@ -10,51 +10,51 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[AWS named a Leader in the 2026 Gartner Magic Quadrant for Container Management]]></title>
+            <title><![CDATA[AWSが2026年ガートナー・マジック・クアドラントのコンテナ管理部門でリーダーに選出]]></title>
             <link>https://aws.amazon.com/blogs/containers/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/</link>
             <guid>cc76f3563e1afab7622fc3fbc7f15f2d13ecd761</guid>
             <pubDate>Fri, 25 Sep 2026 21:18:33 GMT</pubDate>
-            <description><![CDATA[Gartner has recognized AWS as a Leader in the 2026 Gartner Magic Quadrant for Container Management for the fourth consecutive year. See what our latest container innovations across Amazon ECS and Amazon EKS mean for customers building and scaling on AWS.]]></description>
+            <description><![CDATA[Gartnerは、4年連続で2026年のGartnerコンテナ管理マジッククアドラントでAWSをリーダーとして認識しています。Amazon ECSとAmazon EKSの最新のコンテナイノベーションが、AWS上でのお客様の構築とスケーリングにどのような意味を持つかをご覧ください。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Faws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[One Amazon EKS, many edges: How to choose your edge container strategy on AWS]]></title>
+            <title><![CDATA[1つのAmazon EKS、多くのエッジ： AWSでエッジコンテナ戦略を選択する方法]]></title>
             <link>https://aws.amazon.com/blogs/containers/one-amazon-eks-many-edges-how-to-choose-your-edge-container-strategy-on-aws/</link>
             <guid>1b20050a64b6b2d8d0f3ac7b933a9514c30dbcd8</guid>
             <pubDate>Fri, 25 Sep 2026 15:52:19 GMT</pubDate>
-            <description><![CDATA[Choosing the right edge container strategy across many locations can fragment your fleet into dozens of special cases. This post shows how to avoid that by standardizing on Amazon EKS, then choosing a deployment model per site: gate on connectivity, then match to existing infrastructure, so every edge runs the same Kubernetes standard.]]></description>
+            <description><![CDATA[多くの場所で適切なエッジコンテナ戦略を選択すると、フリートを数十の特別なケースに分割することができます。この記事では、Amazon EKSで標準化し、サイトごとに展開モデルを選択することで、これを回避する方法を説明します。接続上のゲート、既存のインフラストラクチャとのマッチングにより、すべてのエッジが同じKubernetes標準を実行します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/one-amazon-eks-many-edges-how-to-choose-your-edge-container-strategy-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fone-amazon-eks-many-edges-how-to-choose-your-edge-container-strategy-on-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Building a single-pane NOC dashboard for Amazon EKS with Amazon CloudWatch]]></title>
+            <title><![CDATA[Amazon CloudWatchを使用したAmazon EKSのシングルペインNOCダッシュボードの構築]]></title>
             <link>https://aws.amazon.com/blogs/containers/building-a-single-pane-noc-dashboard-for-amazon-eks-with-amazon-cloudwatch/</link>
             <guid>051c5312916e5eaefb80ec6ce1f81d8c6f72bbc7</guid>
             <pubDate>Wed, 23 Sep 2026 18:30:21 GMT</pubDate>
-            <description><![CDATA[An incident is the worst moment to discover you cannot trust your Amazon EKS dashboard. This post shows what a trustworthy single-pane NOC for Amazon EKS on Amazon CloudWatch looks like, why each design choice matters, and how to get one running in your account in about 15 minutes.]]></description>
+            <description><![CDATA[インシデントは、Amazon EKSダッシュボードを信頼できないことに気づく最悪の瞬間です。この記事では、Amazon CloudWatch上のAmazon EKSの信頼できるシングルウィンドウNOCがどのように見えるか、各デザインの選択肢が重要な理由、および約15分でアカウントで1つを実行する方法について説明します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/building-a-single-pane-noc-dashboard-for-amazon-eks-with-amazon-cloudwatch/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fbuilding-a-single-pane-noc-dashboard-for-amazon-eks-with-amazon-cloudwatch%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[The operations gap between deploying an application and running it forever]]></title>
+            <title><![CDATA[アプリケーションのデプロイと永続的な実行との間の運用ギャップ]]></title>
             <link>https://aws.amazon.com/blogs/containers/the-operations-gap-between-deploying-an-application-and-running-it-forever/</link>
             <guid>9563f1f5d0ea51832e46cb995479f7907bd300ce</guid>
             <pubDate>Tue, 22 Sep 2026 20:38:09 GMT</pubDate>
-            <description><![CDATA[This post features the new Cluster Mode deployment model in AWS Elastic Beanstalk that extends the operational promise of the service to containerized application portfolios. You bring your applications as source code, Dockerfiles, or container images, and Elastic Beanstalk takes ongoing operational responsibility for the production environment underneath.]]></description>
+            <description><![CDATA[この投稿では、AWS Elastic Beanstalkの新しいクラスタモード展開モデルを紹介し、サービスの運用上の約束をコンテナ化されたアプリケーションポートフォリオに拡張します。ソースコード、Dockerfile、またはコンテナイメージとしてアプリケーションを持ち込み、Elastic Beanstalkはその下の運用環境に対する継続的な運用責任を負います。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/the-operations-gap-between-deploying-an-application-and-running-it-forever/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fthe-operations-gap-between-deploying-an-application-and-running-it-forever%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Implement per-pod image pull permissions with ECR repository policies on Amazon EKS]]></title>
+            <title><![CDATA[Amazon EKSでECRリポジトリポリシーを使用して、ポッドごとのイメージプル権限を実装する]]></title>
             <link>https://aws.amazon.com/blogs/containers/implement-per-pod-image-pull-permissions-with-ecr-repository-policies-on-amazon-eks/</link>
             <guid>02d922b11c789096ec5caf657acdf6d419c6e12b</guid>
             <pubDate>Tue, 22 Sep 2026 16:58:07 GMT</pubDate>
-            <description><![CDATA[Learn how to scope Amazon ECR image pull permissions to individual Kubernetes pods on a multi-tenant Amazon EKS cluster using KEP 4412 credential providers and ECR repository deny policies, so teams sharing the same nodes can pull only their own container images.]]></description>
+            <description><![CDATA[KEP 4412認証情報プロバイダーとECRリポジトリ拒否ポリシーを使用して、マルチテナントAmazon EKSクラスター上の個々のKubernetesポッドにAmazon ECRイメージプル権限を適用する方法を説明します。これにより、同じノードを共有するチームは独自のコンテナイメージのみをプルできます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/implement-per-pod-image-pull-permissions-with-ecr-repository-policies-on-amazon-eks/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fimplement-per-pod-image-pull-permissions-with-ecr-repository-policies-on-amazon-eks%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[How Ramp runs GPU AI workloads at scale with ECS Managed Instances]]></title>
+            <title><![CDATA[RampがECSマネージドインスタンスを使用してGPU AIワークロードを大規模に実行する方法]]></title>
             <link>https://aws.amazon.com/blogs/containers/how-ramp-runs-gpu-ai-workloads-at-scale-with-ecs-managed-instances/</link>
             <guid>cf8d20ec825db76e7b7da5312481a19349350bf9</guid>
             <pubDate>Mon, 21 Sep 2026 18:41:27 GMT</pubDate>
-            <description><![CDATA[Ramp runs GPU-powered AI inference continuously on Amazon ECS. This post walks through how Ramp's infrastructure team moved those GPU workloads onto Amazon ECS Managed Instances: the architecture pattern, Terraform implementation, and the lessons learned migrating 50 to 60 EC2 instances.]]></description>
+            <description><![CDATA[RAMPは、Amazon ECSで継続的にGPU搭載のAI推論を実行します。この記事では、RampのインフラストラクチャチームがこれらのGPUワークロードをAmazon ECS Managed Instancesに移行した方法について説明します。アーキテクチャパターン、Terraformの実装、および50から60のEC 2インスタンスを移行する際の教訓です。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/how-ramp-runs-gpu-ai-workloads-at-scale-with-ecs-managed-instances/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fhow-ramp-runs-gpu-ai-workloads-at-scale-with-ecs-managed-instances%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

@@ -10,35 +10,35 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[Security Slam 2026 – Fall edition]]></title>
+            <title><![CDATA[Security Slam 2026 –秋版]]></title>
             <link>https://www.cncf.io/blog/2026/09/25/security-slam-2026-fall-edition/</link>
             <guid>https://www.cncf.io/?p=175202</guid>
             <pubDate>Fri, 25 Sep 2026 11:00:00 GMT</pubDate>
-            <description><![CDATA[Security Slam 2026 – Fall Edition is a 30-day virtual event from October 5 through November 6, 2026. What Is the Security Slam? The Open Source Security Foundation (OpenSSF) is partnering with the Cloud Native Computing...]]></description>
+            <description><![CDATA[Security Slam 2026 – Fall Editionは、2026年10月5日から11月6日までの30日間のバーチャルイベントです。セキュリティスラムとは何ですか？オープンソースセキュリティ財団（ OpenSSF ）は、クラウドネイティブコンピューティングと提携しています...]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/25/security-slam-2026-fall-edition/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F25%2Fsecurity-slam-2026-fall-edition%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Observability Day: Where the community comes together at KubeCon + CloudNativeCon North America 2026]]></title>
+            <title><![CDATA[オブザーバビリティデー： KubeCon + CloudNativeCon North America 2026でコミュニティが集まる場所]]></title>
             <link>https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/</link>
             <guid>https://www.cncf.io/?p=175219</guid>
             <pubDate>Thu, 24 Sep 2026 12:22:50 GMT</pubDate>
-            <description><![CDATA[Observability Day returns to KubeCon + CloudNativeCon North America on November 9, 2026, in Salt Lake City, Utah, bringing together maintainers, operators, and end users from across the CNCF observability community. Observability has reached an important...]]></description>
+            <description><![CDATA[オブザーバビリティデーは、2026年11月9日にユタ州ソルトレイクシティで開催されるKubeCon + CloudNativeCon North Americaに戻り、CNCFオブザーバビリティコミュニティ全体のメンテナンス担当者、オペレーター、エンドユーザーが集まります。観測可能性が重要になってきました...]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F24%2Fobservability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Which hat am I wearing right now?]]></title>
+            <title><![CDATA[私は今どの帽子をかぶっていますか？]]></title>
             <link>https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/</link>
             <guid>https://www.cncf.io/?p=175170</guid>
             <pubDate>Wed, 23 Sep 2026 14:47:15 GMT</pubDate>
-            <description><![CDATA[Neutrality is quietly the hardest part of open source. It gets tricky the moment someone pays your salary — and staying honest about it takes more effort than anyone admits. Here’s something we don’t say out...]]></description>
+            <description><![CDATA[中立性は、静かにオープンソースの最も難しい部分です。誰かがあなたの給料を支払うと、それは難しくなります。正直に言うと、誰もが認めるよりも多くの努力が必要です。ここで言わないことがあります...]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F23%2Fwhich-hat-am-i-wearing-right-now%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[From attendee badge to speaker badge: My first KubeCon at KubeCon + CloudNativeCon India 2026]]></title>
+            <title><![CDATA[参加者バッジからスピーカーバッジへ： KubeCon + CloudNativeCon India 2026での私の最初のKubeCon]]></title>
             <link>https://www.cncf.io/blog/2026/09/22/from-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026/</link>
             <guid>https://www.cncf.io/?p=175162</guid>
             <pubDate>Tue, 22 Sep 2026 13:34:05 GMT</pubDate>
-            <description><![CDATA[There is something surreal about your first KubeCon being one where you walk onto the stage as a speaker. Most people ease into this community by attending a few conferences, lurking in hallway tracks, and working...]]></description>
+            <description><![CDATA[あなたの最初のKubeConが、スピーカーとしてステージに上がるものであることには、何か超現実的なことがあります。ほとんどの人は、いくつかの会議に参加したり、廊下の線路に潜んだり、仕事をしたりすることで、このコミュニティにやさしくなります...]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/22/from-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F22%2Ffrom-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

@@ -10,35 +10,35 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications]]></title>
+            <title><![CDATA[エンタープライズ規模のイベント駆動型アプリケーション向けのAmazon EventBridgeの拡張カスタムイベントバスのご紹介]]></title>
             <link>https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/</link>
             <guid>219ec8af489642b8d1376bf298af0a210a58f33c</guid>
             <pubDate>Thu, 24 Sep 2026 20:58:46 GMT</pubDate>
-            <description><![CDATA[Amazon EventBridge announces an enhanced custom event bus for organizations scaling event-driven applications across teams and accounts. Deploy a single event bus shared across all AWS accounts in your organization, with ordering guarantees, a simplified Subscriber resource, and improved economics at scale.]]></description>
+            <description><![CDATA[Amazon EventBridgeは、チームやアカウント間でイベント駆動型アプリケーションを拡張する組織向けの拡張されたカスタムイベントバスを発表しました。注文保証、簡素化されたサブスクライバーリソース、大規模な経済性の向上を備えた、組織内のすべてのAWSアカウントで共有される単一のイベントバスを展開します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fintroducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Introducing Amazon CloudWatch Omni: collaborative AI-powered observability for your applications]]></title>
+            <title><![CDATA[Amazon CloudWatch Omniのご紹介：コラボレーションAIを活用したアプリケーションの観測性]]></title>
             <link>https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/</link>
             <guid>4fedaed1301f65781a8d0cf0c10d6af080cb9c4c</guid>
             <pubDate>Tue, 22 Sep 2026 22:23:14 GMT</pubDate>
-            <description><![CDATA[Amazon CloudWatch Omni is the next evolution of CloudWatch — unified observability that brings your applications and AI agents into one reimagined experience, with auto-discovered topology, natural language queries, and AI-guided investigation powered by AWS DevOps Agent.]]></description>
+            <description><![CDATA[Amazon CloudWatch Omniは、CloudWatchの次なる進化です。AWS DevOps Agentを搭載した自動検出トポロジ、自然言語クエリ、AIガイド付き調査により、アプリケーションとAIエージェントを1つの再想像されたエクスペリエンスに統合します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fintroducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Introducing Amazon CloudWatch Omni: AI-powered observability for generative AI and agentic workloads]]></title>
+            <title><![CDATA[Amazon CloudWatch Omniのご紹介：ジェネレーティブAIとエージェントワークロードのためのAI搭載の観測可能性]]></title>
             <link>https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/</link>
             <guid>3f3cdf7764c9ed9c135b98890bec5b260beeb5ae</guid>
             <pubDate>Tue, 22 Sep 2026 22:21:13 GMT</pubDate>
-            <description><![CDATA[Learn how Amazon CloudWatch Omni delivers AI-powered observability purpose-built for generative AI and agentic workloads. Trace, evaluate, and experiment with AI agents across any framework—directly from your IDE or a standalone web experience—using open standards and built-in evaluators for quality, correctness, and coherence.]]></description>
+            <description><![CDATA[Amazon CloudWatch Omniが、ジェネレーティブAIとエージェントワークロード専用に構築されたAI搭載の観測可能性をどのように提供するかをご覧ください。IDEまたはスタンドアロンのWebエクスペリエンスから直接、あらゆるフレームワークにわたってAIエージェントを追跡、評価、および実験します。オープンスタンダードと組み込みの評価ツールを使用して、品質、正確性、および一貫性を確保します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fintroducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)]]></title>
+            <title><![CDATA[AWS Weekly Roundup ： AWS Builder Centerモバイルアプリ、Amazon Connect Talent GA、Amazon Corretto 27など（ 2026年9月21日）]]></title>
             <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/</link>
             <guid>efef7c6cb4883104326929e4006dcf8d1349cb2d</guid>
             <pubDate>Mon, 21 Sep 2026 16:11:24 GMT</pubDate>
-            <description><![CDATA[Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through trending articles and checking […]]]></description>
+            <description><![CDATA[オランダに住んでいて、私はかなりの時間を電車で過ごしています。そこでは通常、ビルダーコミュニティが書いていることに追いついています。これまでは、ノートパソコンを開いたり、携帯電話のブラウザタブを見たりすることでした。今週は、トレンド記事をスクロールして[…]をチェックしました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

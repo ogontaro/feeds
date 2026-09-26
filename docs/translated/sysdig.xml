@@ -10,27 +10,27 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[AI adoption is a security survival metric]]></title>
+            <title><![CDATA[AIの採用はセキュリティのサバイバル指標です]]></title>
             <link>https://webflow.sysdig.com/blog/ai-adoption-is-a-security-survival-metric</link>
             <guid>https://webflow.sysdig.com/blog/ai-adoption-is-a-security-survival-metric</guid>
             <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[AI is moving from experiment to infrastructure. Sysdig research shows more organizations building their own infrastructure, reducing the AI attack surface.]]></description>
+            <description><![CDATA[AIは実験からインフラへと移行しています。Sysdigの調査によると、より多くの組織が独自のインフラストラクチャを構築し、AI攻撃面を低減していることが示されてい]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/ai-adoption-is-a-security-survival-metric">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fai-adoption-is-a-security-survival-metric">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Why are SBOMs failing to stop supply chain attacks?]]></title>
+            <title><![CDATA[SBOMがサプライチェーン攻撃を阻止できないのはなぜですか？]]></title>
             <link>https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks</link>
             <guid>https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks</guid>
             <pubDate>Thu, 24 Sep 2026 11:50:00 GMT</pubDate>
-            <description><![CDATA[A software bill of materials (SBOM) could prevent most supply chain attacks. Let’s analyze what’s holding back their broader adoption.]]></description>
+            <description><![CDATA[ソフトウェア部品表（ SBOM ）は、ほとんどのサプライチェーン攻撃を防ぐことができます。より幅広い採用を妨げているものを分析してみましょう。]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-are-sboms-failing-to-stop-supply-chain-attacks">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Risky identities continue to plague cloud infrastructures]]></title>
+            <title><![CDATA[リスクのあるアイデンティティがクラウドインフラストラクチャを苦しめ続けている]]></title>
             <link>https://webflow.sysdig.com/blog/risky-identities-continue-to-plague-cloud-infrastructures</link>
             <guid>https://webflow.sysdig.com/blog/risky-identities-continue-to-plague-cloud-infrastructures</guid>
             <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[Our research finds cloud-native IAM remains one of the most persistently misconfigured and poorly governed areas of security. Here’s what you can do.]]></description>
+            <description><![CDATA[私たちの調査によると、クラウドネイティブIAMは、依然として最も永続的に誤設定され、管理が不十分なセキュリティ分野の1つであることがわかりました。できることは次のとおりです。]]></description>
             <content:encoded><![CDATA[<p><a href="https://webflow.sysdig.com/blog/risky-identities-continue-to-plague-cloud-infrastructures">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Frisky-identities-continue-to-plague-cloud-infrastructures">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

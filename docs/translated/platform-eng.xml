@@ -10,11 +10,11 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[Cutting CI pipeline time by 64%: What actually works in production]]></title>
+            <title><![CDATA[CIパイプライン時間を64 ％短縮：本番環境で実際に機能するもの]]></title>
             <link>https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production</link>
             <guid>https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production</guid>
             <pubDate>Tue, 22 Sep 2026 16:01:59 GMT</pubDate>
-            <description><![CDATA[How one team cut Merge Train pipeline time by 64%, while growing test coverage 90% and fixing CI's flakiest tests]]></description>
+            <description><![CDATA[1つのチームが、テストカバレッジを90 ％拡大し、CIの最も脆弱なテストを修正しながら、Merge Trainパイプライン時間を64 ％短縮した方法]]></description>
             <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fcutting-ci-pipeline-time-by-64-what-actually-works-in-production">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

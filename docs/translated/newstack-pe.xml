@@ -10,43 +10,43 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[OpenTelemetry and Prometheus are getting along. What’s still missing?]]></title>
+            <title><![CDATA[OpenTelemetryとPrometheusはうまくやっています。まだ不足しているものは何ですか？]]></title>
             <link>https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/</link>
             <guid>https://thenewstack.io/?p=22838155</guid>
             <pubDate>Fri, 25 Sep 2026 16:56:47 GMT</pubDate>
-            <description><![CDATA[Welcome to another edition of Road to KubeCon, where we’re tracking the major movements in the Kubernetes and cloud native The post OpenTelemetry and Prometheus are getting along. What’s still missing? appeared first on The New Stack.]]></description>
+            <description><![CDATA[KubeConへの道の別のエディションへようこそ。ここでは、Kubernetesとクラウドネイティブの主要な動きを追跡していますOpenTelemetryとPrometheusがうまくいっています。まだ不足しているものは何ですか？新しいスタックで最初に登場しました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopentelemetry-prometheus-observability-interoperability%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Developers and platform teams both want Kubernetes self-service. They disagree on who owns it.]]></title>
+            <title><![CDATA[開発者もプラットフォームチームも、Kubernetesのセルフサービスを望んでいます。彼らは誰がそれを所有しているかについて意見が分かれています。]]></title>
             <link>https://thenewstack.io/kubernetes-self-service-platform-teams/</link>
             <guid>https://thenewstack.io/?p=22838049</guid>
             <pubDate>Thu, 24 Sep 2026 16:06:27 GMT</pubDate>
-            <description><![CDATA[What do developers want? Kubernetes environments when they need them. What do they not want? Those environments after a week The post Developers and platform teams both want Kubernetes self-service. They disagree on who owns it. appeared first on The New Stack.]]></description>
+            <description><![CDATA[開発者は何を望んでいますか？必要なときにKubernetes環境。彼らは何を望んでいないのでしょうか？ 1週間後のこれらの環境POST開発者とプラットフォームチームの両方がKubernetesセルフサービスを望んでいます。彼らは誰がそれを所有しているかについて意見が一致していません。最初に登場したのはThe New Stackです。]]></description>
             <content:encoded><![CDATA[<p><a href="https://thenewstack.io/kubernetes-self-service-platform-teams/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-self-service-platform-teams%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Vulnerability alert fatigue nearly swamped WHOOP. But its fix still keeps a human in charge.]]></title>
+            <title><![CDATA[脆弱性アラートの疲れがほぼ詰まってしまいました。しかし、その修正は依然として人間の責任を維持しています。]]></title>
             <link>https://thenewstack.io/whoop-automated-vulnerability-response-workflow/</link>
             <guid>https://thenewstack.io/?p=22837545</guid>
             <pubDate>Wed, 23 Sep 2026 13:23:43 GMT</pubDate>
-            <description><![CDATA[With often hundreds of thousands of alerts a day, many tech organizations are buried in vulnerabilities and worn down by The post Vulnerability alert fatigue nearly swamped WHOOP. But its fix still keeps a human in charge. appeared first on The New Stack.]]></description>
+            <description><![CDATA[多くの場合、1日に何十万ものアラートが発生しているため、多くのテクノロジー組織は脆弱性に埋もれており、脆弱性アラート後の疲労に疲れ果てています。しかし、その修正は依然として人間を管理しています。は最初にThe New Stackに登場しました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://thenewstack.io/whoop-automated-vulnerability-response-workflow/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fwhoop-automated-vulnerability-response-workflow%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[The cloud reduced operational complexity. But many teams need someone to own it completely.]]></title>
+            <title><![CDATA[クラウドにより、運用の複雑さが軽減されました。しかし、多くのチームはそれを完全に所有するために誰かを必要としています。]]></title>
             <link>https://thenewstack.io/elastic-beanstalk-operational-ownership/</link>
             <guid>https://thenewstack.io/?p=22837518</guid>
             <pubDate>Tue, 22 Sep 2026 14:00:00 GMT</pubDate>
-            <description><![CDATA[For companies running serious production workloads with lean engineering teams, the real test of operational ownership comes at 3 a.m. The post The cloud reduced operational complexity. But many teams need someone to own it completely. appeared first on The New Stack.]]></description>
+            <description><![CDATA[リーンエンジニアリングチームで本格的な本番ワークロードを実行している企業の場合、運用責任の真のテストは午前3時に行われます。クラウドは運用の複雑さを軽減しました。しかし、多くのチームはそれを完全に所有するために誰かを必要としています。最初に登場したのはThe New Stackです。]]></description>
             <content:encoded><![CDATA[<p><a href="https://thenewstack.io/elastic-beanstalk-operational-ownership/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Felastic-beanstalk-operational-ownership%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[One engineer shipped 2,000 PRs a month to production. Verification is the key.]]></title>
+            <title><![CDATA[1人のエンジニアが月に2,000件のPRを生産に出荷しました。確認が鍵です。]]></title>
             <link>https://thenewstack.io/agentic-verification-distributed-systems/</link>
             <guid>https://thenewstack.io/?p=22837267</guid>
             <pubDate>Sat, 19 Sep 2026 14:00:00 GMT</pubDate>
-            <description><![CDATA[Lauren Tan, an engineer on the Grok team at SpaceXAI, who previously worked at Cursor and Meta, recently published a The post One engineer shipped 2,000 PRs a month to production. Verification is the key. appeared first on The New Stack.]]></description>
+            <description><![CDATA[以前はCursorとMetaで働いていたSpaceXAIのGrokチームのエンジニアであるLauren Tan氏は、最近、The post Oneのエンジニアが月に2,000件のPRを生産に出荷したことを発表しました。検証が鍵です。がNew Stackで最初に登場しました。]]></description>
             <content:encoded><![CDATA[<p><a href="https://thenewstack.io/agentic-verification-distributed-systems/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fagentic-verification-distributed-systems%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

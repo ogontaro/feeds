@@ -10,28 +10,36 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[Revealing the details of how OpenAI agents hacked Hugging Face]]></title>
+            <title><![CDATA[OpenAIエージェントがHugging Faceをどのようにハッキングしたかの詳細を明らかにする]]></title>
             <link>https://swarmtraces.org/</link>
             <guid>https://news.ycombinator.com/item?id=49849985</guid>
             <pubDate>Fri, 25 Sep 2026 21:09:27 GMT</pubDate>
-            <description><![CDATA[Article URL: https://swarmtraces.org/ Comments URL: https://news.ycombinator.com/item?id=49849985 Points: 443 # Comments: 273]]></description>
+            <description><![CDATA[記事URL ： https://swarmtraces.org/コメントURL ： https://news.ycombinator.com/item?id=49849985ポイント： 443 #コメント： 273]]></description>
             <content:encoded><![CDATA[<p><a href="https://swarmtraces.org/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fswarmtraces.org%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Ollaya – Ollama for open-source, Jev-style decision models]]></title>
+            <title><![CDATA[Ollaya -オープンソース、Jevスタイルの意思決定モデルのためのOllama]]></title>
             <link>https://ollaya.dev/</link>
             <guid>https://news.ycombinator.com/item?id=49848269</guid>
             <pubDate>Fri, 25 Sep 2026 18:33:50 GMT</pubDate>
-            <description><![CDATA[Article URL: https://ollaya.dev/ Comments URL: https://news.ycombinator.com/item?id=49848269 Points: 426 # Comments: 114]]></description>
+            <description><![CDATA[記事URL ： https://ollaya.dev/コメントURL ： https://news.ycombinator.com/item?id=49848269ポイント： 426 #コメント： 114]]></description>
             <content:encoded><![CDATA[<p><a href="https://ollaya.dev/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Follaya.dev%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[U.S. appeals court upholds designation of Anthropic as supply chain risk]]></title>
+            <title><![CDATA[米国の控訴裁判所は、Anthropicをサプライチェーンリスクとして指定することを支持]]></title>
             <link>https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html</link>
             <guid>https://news.ycombinator.com/item?id=49845977</guid>
             <pubDate>Fri, 25 Sep 2026 15:29:25 GMT</pubDate>
-            <description><![CDATA[Article URL: https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html Comments URL: https://news.ycombinator.com/item?id=49845977 Points: 438 # Comments: 757]]></description>
+            <description><![CDATA[記事URL ： https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.htmlコメントURL ： https://news.ycombinator.com/item?id=49845977ポイント： 438 #コメント： 757]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cnbc.com%2F2026%2F09%2F25%2Fpentagon-anthropic-ai-risk-appeals-court.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[プランモードが切れています]]></title>
+            <link>https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html</link>
+            <guid>https://news.ycombinator.com/item?id=49840054</guid>
+            <pubDate>Fri, 25 Sep 2026 03:59:11 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://www.aymannadeem.com/artificial/intelligence、/developer/tools/2026/09/24/plan-mode-is-dead.htmlコメントURL ： https://news.ycombinator.com/item?id=49840054ポイント： 301 #コメント： 282]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.aymannadeem.com/artificial/intelligence,/developer/tools/2026/09/24/plan-mode-is-dead.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.aymannadeem.com%2Fartificial%2Fintelligence%2C%2Fdeveloper%2Ftools%2F2026%2F09%2F24%2Fplan-mode-is-dead.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>
 </rss>

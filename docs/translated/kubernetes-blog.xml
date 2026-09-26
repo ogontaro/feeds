@@ -10,19 +10,19 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[Spotlight on SIG Apps]]></title>
+            <title><![CDATA[SIGアプリにスポットライトを当てる]]></title>
             <link>https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/</link>
             <guid>https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/</guid>
             <pubDate>Tue, 22 Sep 2026 18:00:00 GMT</pubDate>
-            <description><![CDATA[As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processing, AI workloads, and platform services. At the same time, they must remain reliable during upgrades, scaling events, and infrastructure failures. Every Kubernetes user relies on SIG Apps, whether they realize it or not. Deployments, StatefulSets, DaemonSets, Jobs, and C]]></description>
+            <description><![CDATA[Kubernetesの採用が拡大するにつれて、会話はコンテナの実行を超えて、ますます複雑化するアプリケーションライフサイクルの管理にシフトしました。最新のプラットフォームは、ステートレスWebサービス、ステートフルデータベース、バッチ処理、AIワークロード、およびプラットフォームサービスをサポートしています。同時に、アップグレード、スケーリングイベント、インフラストラクチャの障害時にも信頼性を維持する必要があります。すべてのKubernetesユーザーは、認識しているかどうかにかかわらず、SIGアプリに依存しています。Deployments、StatefulSets、DaemonSets、Jobs、およびC]]></description>
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F22%2Fsig-apps-spotlight%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)]]></title>
+            <title><![CDATA[Kubernetes v 1.37 ： PersistentVolumeClaimが最後に使用されたときの追跡（ベータ版）]]></title>
             <link>https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/</link>
             <guid>https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/</guid>
             <pubDate>Mon, 21 Sep 2026 18:30:00 GMT</pubDate>
-            <description><![CDATA[Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling you whether any running pod currently references it — no custom tooling or cross-referencing required. For the API definition of PVC conditions, see the PersistentVolumeClaim API reference. Read on to learn how the Unused condition works and how to use it. Why track PVC]]></description>
+            <description><![CDATA[Kubernetes v 1.37は、PersistentVolumeClaimUnusedSinceTime機能ゲートをベータ版（デフォルトで有効）にプロモートします。この機能を使用すると、PersistentVolumeClaim （ PVC ）保護コントローラは、各PVCに未使用の条件を追加し、実行中のポッドが現在それを参照しているかどうかを示します。カスタムツーリングやクロスレファレンスは必要ありません。PVC条件のAPI定義については、PersistentVolumeClaim APIリファレンスを参照してください。未使用の状態がどのように機能し、どのように使用するかを学ぶために続きを読んでください。PVCを追跡する理由]]></description>
             <content:encoded><![CDATA[<p><a href="https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F21%2Fkubernetes-v1-37-pvc-last-used-time%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

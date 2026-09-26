@@ -10,11 +10,11 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[CimFS snapshotter support on EKS-optimized Windows Server 2025 AMIs]]></title>
+            <title><![CDATA[EKSに最適化されたWindows Server 2025 AMIでのCimFSスナップショッターのサポート]]></title>
             <link>https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-windows-ami.html#windows-cimfs-snapshotter</link>
             <guid>https://docs.aws.amazon.com/eks/latest/userguide/#CimFS_snapshotter_support_on_EKS-optimized_Windows_Server_2025_AMIs_2026-09-21</guid>
             <pubDate>Mon, 21 Sep 2026 19:00:00 GMT</pubDate>
-            <description><![CDATA[The Amazon EKS-optimized Windows Server 2025 AMIs now support the opt-in Composite Image File System (CimFS) containerd snapshotter. This feature can reduce cold image pull times for large Windows container images. CimFS is available for Kubernetes version 1.35 and later and is turned off by default.]]></description>
+            <description><![CDATA[Amazon EKSに最適化されたWindows Server 2025 AMIは、オプトインコンポジットイメージファイルシステム（ CimFS ）コンテナスナップショッターをサポートするようになりました。この機能により、大きなWindowsコンテナイメージのコールドイメージのプル時間を短縮できます。CimFSはKubernetesバージョン1.35以降で利用でき、デフォルトでオフになっています。]]></description>
             <content:encoded><![CDATA[<p><a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-windows-ami.html#windows-cimfs-snapshotter">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Feks-optimized-windows-ami.html%23windows-cimfs-snapshotter">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

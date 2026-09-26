@@ -10,11 +10,11 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[AI Devtools Radar #10: Neon backend GA, beta billing ends]]></title>
+            <title><![CDATA[AI Devtoolsレーダー＃ 10 ：ネオンバックエンドGA、ベータ課金終了]]></title>
             <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-10-neon-backend-ga-beta-billing/</link>
             <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-10-neon-backend-ga-beta-billing/</guid>
             <pubDate>Sun, 20 Sep 2026 08:10:13 GMT</pubDate>
-            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 28 changes; these are the twelve worth your attention, ranked. That's two more than the typical ten: three separate tools, Langfuse, the Vercel AI SDK, and Weaviate, removed legacy APIs in the same week, and Neon's backend GA landed alongside the pricing change that ends its free beta, so both halves of that story stayed in rather than cutting one. Neon — Neon backend reaches general availability (GA) Neon's backend is now ge]]></description>
+            <description><![CDATA[レーダーはこのウィンドウで32のツールにわたって63のソースを監視し、28の変更を公開しました。これらはあなたが注目する価値のある12です。Langfuse、Vercel AI SDK、Weaviateの3つの別々のツールが同じ週にレガシーAPIを削除し、NeonのバックエンドGAが無料ベータ版を終了する価格変更と並行して登場したため、ストーリーの両方の半分が1つをカットするのではなく、そのまま残りました。Neon — Neonバックエンドが一般提供(GA)に到達Neonのバックエンドがgeになりました]]></description>
             <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-10-neon-backend-ga-beta-billing/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-10-neon-backend-ga-beta-billing%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
@@ -30,7 +30,7 @@
             <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-8-github-copilot-retires-four/</link>
             <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-8-github-copilot-retires-four/</guid>
             <pubDate>Sun, 06 Sep 2026 08:13:30 GMT</pubDate>
-            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 29 changes; these are the thirteen worth your attention, ranked. That's three more than the typical ten: five of them (Kimi's Moonshot V1 sunset, its new Anthropic API format support, Mistral's OCR 4.1 GA, and two Pinecone pricing changes) were detected right at last week's window boundary and only got reviewed now, on top of a genuinely dense week for pricing and deprecation news on its own — Claude Code's new default Fable ]]></description>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 29 changes; these are the thirteen worth your attention, ranked. That's three more than the typical ten: five of them (Kimi's Moonshot V1 sunset, its new Anthropic API format support, Mistral's OCR 4.1 GA, and two Pinecone pricing changes) were detected right at last week's window boundary and only got reviewed now, on top of a genuinely dense week for pricing and deprecation news on its own — Claude Code's new default Fable]]></description>
             <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-8-github-copilot-retires-four/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-8-github-copilot-retires-four%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
@@ -46,7 +46,7 @@
             <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-6-vercel-ai-sdk-drops-workflow/</link>
             <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-6-vercel-ai-sdk-drops-workflow/</guid>
             <pubDate>Sun, 23 Aug 2026 08:10:51 GMT</pubDate>
-            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 30 changes; these are the twelve worth your attention, ranked. Vercel's Workflow 2.0 breaking change and Langfuse's API v3 deadline are the two you can't just read past; GLM-5.3's launch and a first vision model from DeepSeek round out a busy week for model pricing. Vercel AI SDK — @ai-sdk/workflow drops Workflow 4 support in v2.0.0, requires Workflow 5 (beta) @ai-sdk/workflow's 2.0 release drops Workflow 4 support outright; ]]></description>
+            <description><![CDATA[The radar watched 63 sources across 32 tools this window and published 30 changes; these are the twelve worth your attention, ranked. Vercel's Workflow 2.0 breaking change and Langfuse's API v3 deadline are the two you can't just read past; GLM-5.3's launch and a first vision model from DeepSeek round out a busy week for model pricing. Vercel AI SDK — @ai-sdk/workflow drops Workflow 4 support in v2.0.0, requires Workflow 5 (beta) @ai-sdk/workflow's 2.0 release drops Workflow 4 support outright;]]></description>
             <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-6-vercel-ai-sdk-drops-workflow/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-6-vercel-ai-sdk-drops-workflow%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
