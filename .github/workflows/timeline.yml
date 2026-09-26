@@ -21,7 +21,7 @@ jobs:
   poll:
     runs-on: ubuntu-latest
     env:
-      HAS_TIMELINE: ${{ secrets.RSSHUB_BASE_URL != '' && secrets.RSSHUB_ACCESS_KEY != '' }}
+      HAS_TIMELINE: ${{ secrets.RSSHUB_ACCESS_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
@@ -34,10 +34,9 @@ jobs:
           key: x-timeline-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: x-timeline-
 
-      # RSSHUB_BASE_URL / RSSHUB_ACCESS_KEY 未設定ならスクリプトが何もせず正常終了する。
+      # RSSHUB_ACCESS_KEY 未設定ならスクリプトが何もせず正常終了する。
       - run: bun run src/digest/x-timeline.ts --strict
         env:
-          RSSHUB_BASE_URL: ${{ secrets.RSSHUB_BASE_URL }}
           RSSHUB_ACCESS_KEY: ${{ secrets.RSSHUB_ACCESS_KEY }}
 
       - if: env.HAS_TIMELINE == 'true'

@@ -8,7 +8,7 @@ import { CACHE, X_TIMELINE_JSON, reportInputJson } from "../lib/paths.ts";
  * actions/cache 上の蓄積(.cache/x-timeline.json)にマージし、report.yml が直近 24h を読む。
  *
  * public リポジトリの公開ログに流れるため、本文・投稿者・URL は出力せず件数だけ出す。
- * RSSHUB_BASE_URL / RSSHUB_ACCESS_KEY のどちらかが未設定なら何もせず空の入力を書いて正常終了する。
+ * RSSHUB_ACCESS_KEY 未設定なら何もせず空の入力を書いて正常終了する。
  * --strict(timeline.yml)は取得失敗で異常終了、なし(report.yml)は蓄積だけでレポートを作る。
  */
 
@@ -32,6 +32,7 @@ const strict = process.argv.includes("--strict");
  * home_latest = フォロー中(時系列。取りこぼさないための主系)、home = おすすめ(フォロー外の話題も入る。
  * 取得ごとに中身が変わり網羅はできない)。ルートを増やすほど cookie 経由の上流アクセスが増える。
  */
+const RSSHUB = "https://rsshub.lab.ogontaro.com";
 const ROUTES = ["twitter/home_latest", "twitter/home"];
 
 /** ポスト本文中の外部 URL(画像・動画・X 自身のリンクは除く)。 */
@@ -101,11 +102,10 @@ async function fetchTimeline(url: string): Promise<Post[]> {
 
 async function main() {
   await mkdir(CACHE, { recursive: true });
-  const base = (process.env.RSSHUB_BASE_URL ?? "").replace(/\/+$/, "");
   const key = process.env.RSSHUB_ACCESS_KEY ?? "";
-  if (!base || !key) {
+  if (!key) {
     await Bun.write(reportInputJson("x"), "[]");
-    console.log("RSSHUB_BASE_URL / RSSHUB_ACCESS_KEY not set — skip");
+    console.log("RSSHUB_ACCESS_KEY not set — skip");
     return;
   }
 
@@ -115,7 +115,7 @@ async function main() {
   const fetched: Post[] = [];
   for (const route of ROUTES) {
     try {
-      fetched.push(...(await fetchTimeline(`${base}/${route}?key=${encodeURIComponent(key)}`)));
+      fetched.push(...(await fetchTimeline(`${RSSHUB}/${route}?key=${encodeURIComponent(key)}`)));
     } catch (err) {
       const msg = `${route}: ${(err as Error).message}`;
       if (strict) throw new Error(msg);

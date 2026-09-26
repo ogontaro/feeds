@@ -175,7 +175,6 @@ jobs:
           bun run src/digest/x-timeline.ts
           echo "n=$(jq length .cache/report-x-input.json)" >> "$GITHUB_OUTPUT"
         env:
-          RSSHUB_BASE_URL: ${{ secrets.RSSHUB_BASE_URL }}
           RSSHUB_ACCESS_KEY: ${{ secrets.RSSHUB_ACCESS_KEY }}
       - name: curate x
         id: curate_x
