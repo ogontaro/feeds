@@ -59,13 +59,44 @@ feeds:
   # ----- 新しいコーディングエージェント系ツールの発見源 -----
   # commits.atom（リポジトリ全体）は ticker bot の自動コミットで埋まりノイズだらけなので、
   # README.md への変更だけに絞った path 指定の commits atom を使う（新規ツール追加のみ拾える）。
+  # ただし ticker bot が README.md 自体を毎回書き換えるため ticker コミットしか流れず、
+  # 採用実績ゼロ。発見源は AI Devtools Radar / はてブ検索で代替し無効化。
   - url: https://github.com/hesreallyhim/awesome-claude-code/commits/main.atom?path=README.md
     id: awesome-claude-code
     name: awesome-claude-code updates
     domain: claude
     kind: content
-  - url: https://www.qiita.com/tags/claude-code/feed
+    enabled: false
+  # タグ claude-code は 2026-09-07 以降更新が止まっている。活きているのは claudecode タグ。
+  - url: https://qiita.com/tags/claudecode/feed
     name: Qiita — Claude Code
+    domain: claude
+    kind: content
+  # AI コーディングツールの新機能・料金変更の週刊まとめ。
+  - url: https://buttondown.com/devtoolsradar/rss
+    id: devtools-radar
+    name: AI Devtools Radar
+    domain: claude
+    kind: content
+
+  # ----- トレンド（しきい値で事前フィルタ済み）-----
+  # しきい値を超えてからフィードに載るため、元記事の pubDate で切る 24h 窓に入る量は少ない。
+  # --strict の translate.yml は 502 1 件で落ちる（hn-kubernetes/hn-aws の前例）。続くなら無効化。
+  - url: https://hnrss.org/frontpage?points=300
+    id: hn-frontpage
+    name: HN — Front page (300+)
+    domain: claude
+    kind: content
+  # 新しいコーディングエージェント系サービスの発表・料金変更を当日拾う（Meta Muse Code は
+  # HN にも購読中ブログにも出ず、ニュース媒体だけが報じた）。リンクの注意は gnews-kubernetes 参照。
+  - url: https://news.google.com/rss/search?q=%28%22coding%20agent%22%20OR%20%22AI%20coding%20agent%22%20OR%20%22AI%20coding%20assistant%22%29%20%28launch%20OR%20launches%20OR%20pricing%20OR%20subscription%20OR%20%22per%20month%22%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en
+    id: gnews-coding-agents
+    name: Google News — コーディングエージェント新サービス・料金
+    domain: claude
+    kind: content
+  # 日本語なので翻訳フィードは作らない（urls.ts の JA_SOURCE_HOSTS に b.hatena.ne.jp）。
+  - url: https://b.hatena.ne.jp/q/Claude%20Code?mode=rss&users=50&sort=recent
+    name: はてなブックマーク — Claude Code (50users+)
     domain: claude
     kind: content
 
@@ -121,6 +152,25 @@ feeds:
     name: The New Stack — Platform Engineering
     domain: kubernetes
     kind: content
+  # CNCF の Graduation 等の発表（CNCF Blog とは別フィード）。
+  - url: https://www.cncf.io/announcements/feed/
+    id: cncf-announcements
+    name: CNCF Announcements
+    domain: kubernetes
+    kind: content
+  - url: https://lwkd.info/feed.xml
+    id: lwkd
+    name: Last Week in Kubernetes Development
+    domain: kubernetes
+    kind: content
+  # HN では K8s 系が 2 週間で 20pt 超 0 件のため、ニュース検索で話題（卒業・CVE・リリース）を拾う。
+  # ponytail: リンクは news.google.com のリダイレクト URL。ブラウザでは原文に飛ぶが、
+  # Google 翻訳 URL 経由では開けないことがある。問題になれば collect 側で実 URL 解決を足す。
+  - url: https://news.google.com/rss/search?q=%28Kubernetes%20OR%20CNCF%29%20%28launch%20OR%20release%20OR%20graduates%20OR%20vulnerability%20OR%20CVE%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en
+    id: gnews-kubernetes
+    name: Google News — Kubernetes
+    domain: kubernetes
+    kind: content
 
   # ================= aws / content（EKS・AI/Bedrock を重点）=================
   - url: https://aws.amazon.com/blogs/aws/feed/
@@ -144,6 +194,12 @@ feeds:
   - url: https://docs.aws.amazon.com/eks/latest/userguide/doc-history.rss
     id: eks-docs
     name: Amazon EKS Document History
+    domain: aws
+    kind: content
+  # EKS 系の入力（DIO + Doc History）が 0.2 件/日しかないのを埋める。
+  - url: https://aws.amazon.com/blogs/containers/feed/
+    id: aws-containers
+    name: AWS Containers Blog
     domain: aws
     kind: content
 
@@ -174,11 +230,13 @@ feeds:
     enabled: false
 
   # ----- GitHub Watch/Star/Fork の横展開 -----
+  # 実際の中身は自分の push/issue 操作で採用実績ゼロ。バースト時 16〜19 件/日で DeepL を浪費するため無効化。
   - url: https://github.com/ogontaro.atom
     id: gh-activity
     name: GitHub activity (ogontaro)
     domain: kubernetes
     kind: content
+    enabled: false
 
   # ================= claude / release =================
   - url: https://github.com/anthropics/claude-code/releases.atom

@@ -8,6 +8,8 @@ import { needsTranslation } from "../lib/urls.ts";
 
 const WINDOW_MS = 24 * 3_600_000;
 const MAX_ENTRIES = 50; // bound the Claude prompt; digest-style feeds can flood a day
+// 多弁なフィード（CCログは毎日 ~20 件が同一時刻で入る）が低頻度の公式ソースを押し出さないように。
+const MAX_PER_SOURCE = 8;
 
 const parser = new Parser();
 
@@ -72,8 +74,14 @@ async function main() {
 
   const withinWindow = all.filter((c) => c.pubDate.getTime() >= cutoff);
   const afterExclude = withinWindow.filter((c) => !isExcluded(c));
+  const perSource = new Map<string, number>();
   const recent = afterExclude
     .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime())
+    .filter((c) => {
+      const n = (perSource.get(c.source) ?? 0) + 1;
+      perSource.set(c.source, n);
+      return n <= MAX_PER_SOURCE;
+    })
     .slice(0, MAX_ENTRIES)
     .map((c) => ({
       title: c.title,

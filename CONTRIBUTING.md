@@ -74,7 +74,7 @@ feeds:
 - claude / content の新規ツール発見源は、記事化されるのを待たず GitHub 上のリポジトリ自体も対象にする
   （週次フィード監査の WebSearch も同様）。ただし whole-repo の `commits.atom` は bot/CI コミットで
   ノイズだらけになるため使わない。path 指定の commits atom を使う（実装例は `source.yaml` の
-  `awesome-claude-code` 参照）
+  `awesome-claude-code` 参照）。README.md 自体を bot が更新するリポジトリは path 指定でも除けないので対象外
 
 ## データ: interests.yaml
 
@@ -124,7 +124,7 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 ワークフロー単体で完結させる。以降ドメインごとに:
 
 1. `src/digest/report-collect.ts <domain>`: 当該ドメインの content フィードのうち海外サイトは `translated/<id>.xml` を読み、日本語サイトは購読元を直接取得。`pubDate` が過去 24h の
-   エントリを新しい順に **最大 50 件**、`.cache/report-<domain>-input.json` に書き出す。
+   エントリを新しい順に **1 ソース最大 8 件・全体で最大 50 件**、`.cache/report-<domain>-input.json` に書き出す。
 2. 入力が 0 件ならそのドメインはスキップ（`if:` ガード）。
 3. `claude-code-action`: `.cache/report-<domain>-input.json` と `report-criteria/report-<domain>.md` を読み、
    基準どおりに `.cache/report-<domain>.md` を書く。

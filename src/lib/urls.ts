@@ -17,6 +17,7 @@ export function googleTranslateUrl(articleUrl: string): string {
 const JA_SOURCE_HOSTS = [
   "dev.classmethod.jp",
   "claude-code-log.com",
+  "b.hatena.ne.jp",
   "zenn.dev",
   "qiita.com",
   "note.com",
