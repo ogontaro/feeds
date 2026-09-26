@@ -21,9 +21,25 @@ function stripHtml(s: string): string {
     .trim();
 }
 
+/**
+ * hnrss 等は GitHub Actions から断続的に 502 を返し、1 件でも落ちると --strict の translate.yml が
+ * 失敗する。5xx だけ間隔を空けて再試行する（4xx・パースエラーは即失敗のまま）。
+ */
+async function parseWithRetry(url: string): Promise<Awaited<ReturnType<typeof parser.parseURL>>> {
+  for (const waitMs of [5_000, 15_000]) {
+    try {
+      return await parser.parseURL(url);
+    } catch (err) {
+      if (!/Status code 5\d\d/.test((err as Error).message)) throw err;
+      await Bun.sleep(waitMs);
+    }
+  }
+  return parser.parseURL(url);
+}
+
 /** Fetch one source feed and normalize its items. Network/parse errors propagate. */
 export async function fetchFeed(feed: Feed): Promise<SourceEntry[]> {
-  const parsed = await parser.parseURL(feed.url);
+  const parsed = await parseWithRetry(feed.url);
   const entries: SourceEntry[] = [];
   for (const item of parsed.items) {
     const link = (item.link ?? "").trim();
