@@ -153,7 +153,8 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 public リポジトリのため、プライバシーは次で担保する。
 
 - 生のタイムラインはコミットしない（`.cache/` のみ・gitignore）。公開されるのは基準で選んだ技術ポストの要約だけ
-- スクリプトのログは件数のみ。取得エラーも URL を含めずステータスだけ出す
+- スクリプトのログは件数のみ。取得エラーはステータスコードだけ出す（RSSHub のエラーページには認証トークンの
+  一部が載るため、本文・ヘッダ・URL は出さない。失敗ログは workflow-failure-fix が PR/Issue に転記しうる）
 - 投稿者は URL 上のハンドルだけ持つ（表示名は保存しない）。`adoption-log.ndjson` には記録しない
 - `RSSHUB_TIMELINE_URL` は collect ステップの `env` にだけ渡す（claude-code-action には渡らない）
 - キャッシュを読めるのはこのリポジトリのワークフローだけ。`pull_request` / `pull_request_target` トリガーの
