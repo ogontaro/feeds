@@ -24,14 +24,14 @@ function stripHtml(s: string): string {
 /**
  * hnrss 等は GitHub Actions から断続的に 502 を返し、1 件でも落ちると --strict の translate.yml が
  * 失敗する。hnrss は検索結果の生成に 30 秒前後かかり、生成後はキャッシュから即返るため、
- * 5xx だけ生成完了を待てる間隔を空けて再試行する（4xx・パースエラーは即失敗のまま）。
+ * 5xx とタイムアウトだけ生成完了を待てる間隔を空けて再試行する（4xx・パースエラーは即失敗のまま）。
  */
 async function parseWithRetry(url: string): Promise<Awaited<ReturnType<typeof parser.parseURL>>> {
   for (const waitMs of [30_000, 60_000]) {
     try {
       return await parser.parseURL(url);
     } catch (err) {
-      if (!/Status code 5\d\d/.test((err as Error).message)) throw err;
+      if (!/Status code 5\d\d|timed out/.test((err as Error).message)) throw err;
       await Bun.sleep(waitMs);
     }
   }
