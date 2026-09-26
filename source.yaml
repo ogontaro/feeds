@@ -99,6 +99,22 @@ feeds:
     name: はてなブックマーク — Claude Code (50users+)
     domain: claude
     kind: content
+  # 競合コーディングエージェント(Codex)の日本語コミュニティの反応を拾う（HN・公式ブログでは拾えない）。
+  - url: https://b.hatena.ne.jp/q/Codex?mode=rss&users=50&sort=recent
+    name: はてなブックマーク — Codex (50users+)
+    domain: claude
+    kind: content
+  # ローカルLLM関連の日本語コミュニティの話題を拾う。
+  - url: https://b.hatena.ne.jp/q/%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%ABLLM?mode=rss&users=50&sort=recent
+    name: はてなブックマーク — ローカルLLM (50users+)
+    domain: claude
+    kind: content
+  # 競合コーディングエージェント(GitHub Copilot)の新機能・料金変更を追う。
+  - url: https://github.blog/changelog/label/copilot/feed/
+    id: gh-changelog-copilot
+    name: GitHub Changelog — Copilot
+    domain: claude
+    kind: content
 
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
@@ -168,6 +184,26 @@ feeds:
   - url: https://news.google.com/rss/search?q=%28Kubernetes%20OR%20CNCF%29%20%28launch%20OR%20release%20OR%20graduates%20OR%20vulnerability%20OR%20CVE%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en
     id: gnews-kubernetes
     name: Google News — Kubernetes
+    domain: kubernetes
+    kind: content
+
+  # ----- セキュリティ・サプライチェーン -----
+  # Kubernetes 本体の CVE を公式フィードから直接追う（gnews-kubernetes は関心語に合致した話題のみ拾う網）。
+  - url: https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml
+    id: k8s-cve
+    name: Kubernetes Official CVE Feed
+    domain: kubernetes
+    kind: content
+  # サプライチェーンセキュリティ（依存関係・ビルド供給網）の動向を追う。
+  - url: https://github.blog/security/supply-chain-security/feed/
+    id: github-supply-chain
+    name: GitHub Blog — Supply chain security
+    domain: kubernetes
+    kind: content
+  # オブザーバビリティ（OpenTelemetry）の動向を追う。既存フィードには observability 系ソースがない。
+  - url: https://opentelemetry.io/blog/index.xml
+    id: opentelemetry
+    name: OpenTelemetry Blog
     domain: kubernetes
     kind: content
 
