@@ -30,11 +30,13 @@ mise run serve     # docs/ をローカルプレビュー
 | --- | --- | --- | --- | --- |
 | 翻訳フィード | 海外サイトの content フィード(日本語サイトは対象外) | 使わない（DeepL のみ） | `translated/<id>.xml` ＋ `translated/index.html` | 6 時間ごと |
 | レポート | 翻訳フィードの直近 24h + 日本語サイトは購読元を直接取得 | 重要記事を 5〜10 件選定 | `digest/report-<domain>.xml` ＋ `digest/report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
+| X タイムラインレポート | X ホームタイムラインの蓄積（actions/cache）の直近 24h | 技術的に有益なポストだけ抽出・トピック別に要約 | `digest/report-x.xml` ＋ `digest/report/x/YYYY-MM-DD.html` | 取得 3 時間ごと、レポート毎日 07:00 JST |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `digest/release-<domain>.xml` ＋ `digest/release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
 | フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
 | Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
 
-- レポートは claude / kubernetes / aws の 3 ドメイン。リリースレポートは devtools を加えた 4 ドメイン
+- レポートは claude / kubernetes / aws の 3 ドメイン＋ x。リリースレポートは devtools を加えた 4 ドメイン
+- x は `source.yaml` のフィードを持たない（`REPORT_DOMAINS` にだけ入り、`source.yaml` の domain には書けない）
 - フィード監査・Issue 駆動反映はドメイン非依存（`source.yaml`/`interests.yaml` 全体を扱う）
 
 ## 全体構成
@@ -134,6 +136,32 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
    保持期間（14 日）より古い HTML を削除し、残ったページ一覧から `docs/digest/report-<domain>.xml` を
    再生成（直近 60 エントリ）。
 
+### X タイムラインレポート（`timeline.yml` 3 時間ごと ＋ `report.yml` の x）
+
+入力は自前 RSSHub の `twitter/home_latest`（`RSSHUB_TIMELINE_URL`、アクセスキー込み）。1 回の取得は
+88 件(平日日中は ~8 時間ぶん)しか返らないため、取得と日次レポートを分ける。
+
+1. `timeline.yml`（cron `30 */3 * * *`）: `actions/cache/restore` で蓄積を復元 →
+   `src/digest/x-timeline.ts --strict` が取得して `.cache/x-timeline.json` に guid でマージし直近 7 日に刈り込む →
+   `actions/cache/save`。キャッシュは上書きできないので key は実行ごとに一意
+   （`x-timeline-<run_id>-<run_attempt>`）、復元は `restore-keys: x-timeline-` の前方一致で最新を拾う。
+2. `report.yml`: 同じ `path`/`restore-keys` で復元 → `x-timeline.ts`（`--strict` なし。取得に失敗しても
+   蓄積だけで進む）がその時点の取得分も足し、直近 24h を `.cache/report-x-input.json` に書く。
+   以降は他ドメインと同じ（curate は `report-criteria/report-x.md`、render は `report-render.ts x`）。
+   report.yml は蓄積を保存しない（次の取得で拾い直せる）。
+
+public リポジトリのため、プライバシーは次で担保する。
+
+- 生のタイムラインはコミットしない（`.cache/` のみ・gitignore）。公開されるのは基準で選んだ技術ポストの要約だけ
+- スクリプトのログは件数のみ。取得エラーも URL を含めずステータスだけ出す
+- 投稿者は URL 上のハンドルだけ持つ（表示名は保存しない）。`adoption-log.ndjson` には記録しない
+- `RSSHUB_TIMELINE_URL` は collect ステップの `env` にだけ渡す（claude-code-action には渡らない）
+- キャッシュを読めるのはこのリポジトリのワークフローだけ。`pull_request` / `pull_request_target` トリガーの
+  ワークフローを追加するとフォーク PR からキャッシュを読まれうるので追加しない
+- claude-code-action はデバッグログ有効で再実行するとツール出力（入力のポスト）をログに出す。x の失敗を
+  デバッグログ付きで再実行しない
+- `RSSHUB_TIMELINE_URL` 未設定時はスクリプトが空の入力を書いて正常終了し、保存・レポートともスキップ
+
 ### リリースレポート（`release.yml`, 毎週月 07:30 JST = cron `30 22 * * 0`）
 
 ドメイン（claude / kubernetes / aws / devtools）ごとに:
@@ -219,20 +247,20 @@ DeepSeek 公式 API の割引時間帯とは別物で確認できないため、
 ようにトリガー時刻が読めないワークフローでも同じロジックで対応できる）。
 
 ### ワークフロー失敗対応（`translate/report/release/feed-audit/issue-request/
-inoreader-sync/component-review-reminder.yml` 末尾の `notify-failure` ジョブ、
+inoreader-sync/timeline/component-review-reminder.yml` 末尾の `notify-failure` ジョブ、
 `workflow-failure-fix.yml`）
 
 各ワークフローの末尾に `if: failure()` の `notify-failure` ジョブがあり、本体ジョブが
 失敗すると `workflow-failure` ラベル付きの Issue を自動作成する（本文は run URL・
 ワークフロー名のみ。public リポジトリのためログ全文は貼らない）。
 
-`translate/report/release/feed-audit/issue-request/inoreader-sync.yml` の6ワークフローには
+`translate/report/release/feed-audit/issue-request/inoreader-sync/timeline.yml` の7ワークフローには
 対で「close resolved failure issues」ステップ（本体ジョブ成功時、同一ワークフロー名の
 `workflow-failure` ラベル付き open Issue を検索してクローズ）があり、一過性の失敗で作られた
 Issue が次回成功時に自動で片付く（AI 判断を挟まない決定的な gh CLI 操作のみ）。
 `component-review-reminder.yml`（本業がissue作成）は対象外。
 
-`workflow-failure-fix.yml` は対象7ワークフローの `workflow_run: completed` を
+`workflow-failure-fix.yml` は対象7ワークフロー（timeline は対象外。次の取得が 3 時間後に来るため）の `workflow_run: completed` を
 トリガーに、失敗（`conclusion == 'failure'`）を検知して `gh run view --log-failed` で
 ログを読み、原因が自リポジトリのコード/ワークフロー定義にあれば小さな修正をして
 PR を作成する（**自動マージしない**。既存の自動マージはフィード URL 1 行追加のみで
@@ -266,7 +294,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 
 ## 状態管理
 
-専用ストアを持たない。生成物そのものを状態とする。
+専用ストアを持たない。生成物そのものを状態とする（例外: X タイムラインの蓄積は actions/cache 上の `.cache/x-timeline.json`。コミットしない）。
 
 - 翻訳: 既存 `translated/<id>.xml` の guid 集合に無いものだけ処理。
 - レポート / リリース: `digest/report|release/<domain>/YYYY-MM-DD.html` が既にあればその日はスキップ。
@@ -288,6 +316,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 | `issue-request.yml` | `issues: opened` | claude-code-action → validate → PR 作成・自動マージ |
 | `component-review-reminder.yml` | `0 0 1 * *` ＋ dispatch | 棚卸し Issue を作成 |
 | `inoreader-sync.yml` | `0 21 * * 6` ＋ dispatch | スター取得 → commit |
+| `timeline.yml` | `30 */3 * * *` ＋ dispatch | X タイムライン取得 → actions/cache に蓄積（docs は書かない。`concurrency: x-timeline`） |
 
 - `docs/` を書き込む5ワークフロー（translate/report/release/feed-audit/inoreader-sync）は
   全て `concurrency: { group: docs-write }` で直列化。`source.yaml` の同時書き換えを防ぐ。
@@ -297,13 +326,14 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
   APIキー。`anthropic_api_key`/`ANTHROPIC_CUSTOM_HEADERS` に渡す）。`CLAUDE_CODE_OAUTH_TOKEN`
   は Anthropic 直接に戻す場合の切り戻し用に残置（現状未使用）。`INOREADER_CLIENT_ID` /
   `INOREADER_CLIENT_SECRET` / `INOREADER_REFRESH_TOKEN` は任意（未設定ならスター連携だけスキップ）。
+  `RSSHUB_TIMELINE_URL` は任意（未設定なら X タイムラインの取得・レポートだけスキップ）。
 
 ### 既知の運用リスク
 
 - `GITHUB_TOKEN` の push で `pages-build-deployment` が自動起動することは検証済み。
 - `claude-code-action` はスケジュール実行に human-actor チェックを適用し、cron を最後に編集した
   ユーザーに実行を帰属させる。通らないとそのレポートが止まり、症状は「ワークフロー失敗」だけ。
-- レポートは 1 日あたり **claude-code-action を最大 3 回**（ドメイン数）、月曜は release.yml で
+- レポートは 1 日あたり **claude-code-action を最大 4 回**（ドメイン数＋ x）、月曜は release.yml で
   追加で最大 4 回（claude / kubernetes / aws / devtools）。CI 利用はサブスクの
   5 時間ローリング枠を消費する。
 
@@ -315,19 +345,19 @@ interests.yaml
 adoption-log.ndjson    フィード採用実績ログ（追記専用）
 starred-log.ndjson     Inoreader スター記録ログ（追記専用）
 report-criteria/
-  report-claude.md  report-kubernetes.md  report-aws.md
+  report-claude.md  report-kubernetes.md  report-aws.md  report-x.md
   release-claude.md  release-aws.md  release-kubernetes.md  release-devtools.md
 src/
   lib/           config / feeds取得 / html / style / labels / urls / types / paths（低レベル共有）
   translate/     サービスB: run.ts（サイト別翻訳生成）engine.ts（DeepL）store.ts（translated/<id>.xml 入出力）
-  digest/        サービスA: report-collect / report-render / release-collect / release-render
+  digest/        サービスA: report-collect / report-render / release-collect / release-render / x-timeline
   site/          build.ts（index.html + translated/index.html + opml/ 生成）
   feed-audit-collect.ts  feed-audit-validate.ts  feed-audit-summarize.ts
   inoreader-starred.ts
 docs/            GitHub Pages 配信対象。ワークフローがコミット
 .github/workflows/
   translate.yml  report.yml  release.yml
-  feed-audit.yml  issue-request.yml  component-review-reminder.yml  inoreader-sync.yml
+  feed-audit.yml  issue-request.yml  component-review-reminder.yml  inoreader-sync.yml  timeline.yml
 ```
 
 mise タスク一覧は README の「タスク」参照。
@@ -338,5 +368,5 @@ mise タスク一覧は README の「タスク」参照。
 - 動的 Web アプリ化・自前のいいね/既読 UI（GitHub Pages の静的サイトのまま）
 - 記事本文の全文翻訳・転載（タイトルと description のみ、本文は Google 翻訳リンク）
 - SSG（`marked` ＋ テンプレートリテラル ＋ `feed` の最小構成）
-- 状態管理用の DB（`adoption-log.ndjson`/`starred-log.ndjson` の追記ログのみ）
+- 状態管理用の DB（`adoption-log.ndjson`/`starred-log.ndjson` の追記ログと、X タイムライン蓄積の actions/cache のみ）
 - 例外処理・リトライの作り込み（失敗は落として通知）

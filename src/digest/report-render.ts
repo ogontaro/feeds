@@ -108,7 +108,8 @@ async function main() {
   await Bun.write(reportXml(domain), feed.rss2());
   console.log(`report-${domain}.xml: ${files.length} items`);
 
-  if (!refresh && md) {
+  // x の入力はフィードではなく個人アカウントのポスト。公開の採用ログに投稿者を残さない。
+  if (!refresh && md && domain !== "x") {
     const adopted = await adoptedSourceNames(domain, md);
     await recordAdoption(domain, adopted);
     console.log(`adoption-log.ndjson: recorded ${adopted.length} source(s)`);

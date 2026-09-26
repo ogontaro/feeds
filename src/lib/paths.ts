@@ -38,3 +38,6 @@ export const reportInputJson = (d: Domain) => join(CACHE, `report-${d}-input.jso
 export const reportMd = (d: Domain) => join(CACHE, `report-${d}.md`);
 export const releaseInputJson = (d: Domain) => join(CACHE, `release-${d}-input.json`);
 export const releaseMd = (d: Domain) => join(CACHE, `release-${d}.md`);
+
+/** X タイムラインの蓄積(直近 7 日)。actions/cache で実行間を引き継ぐ。リポジトリには置かない。 */
+export const X_TIMELINE_JSON = join(CACHE, "x-timeline.json");

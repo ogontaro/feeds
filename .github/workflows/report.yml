@@ -162,6 +162,58 @@ jobs:
         if: steps.collect_aws.outputs.n != '0'
         run: bun run src/digest/report-render.ts aws
 
+      # ---------------- x ----------------
+      # timeline.yml が蓄積した X タイムライン(actions/cache)に今の取得分を足し、直近 24h を読む。
+      # 蓄積はコミットしない(.cache/ は gitignore、commit は docs/ と採用ログだけ)。
+      - uses: actions/cache/restore@v4
+        with:
+          path: .cache/x-timeline.json
+          key: x-timeline-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: x-timeline-
+      - id: collect_x
+        run: |
+          bun run src/digest/x-timeline.ts
+          echo "n=$(jq length .cache/report-x-input.json)" >> "$GITHUB_OUTPUT"
+        env:
+          RSSHUB_TIMELINE_URL: ${{ secrets.RSSHUB_TIMELINE_URL }}
+      - name: curate x
+        id: curate_x
+        if: steps.collect_x.outputs.n != '0'
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/report-x-input.json and
+            ${{ github.workspace }}/report-criteria/report-x.md. Follow the criteria file strictly:
+            keep only engineering-relevant posts, group them into topics, and write the Japanese
+            digest to ${{ github.workspace }}/.cache/report-x.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
+      - name: curate x (qwen fallback)
+        if: steps.collect_x.outputs.n != '0' && steps.curate_x.outcome == 'failure'
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          prompt: |
+            Read ${{ github.workspace }}/.cache/report-x-input.json and
+            ${{ github.workspace }}/report-criteria/report-x.md. Follow the criteria file strictly:
+            keep only engineering-relevant posts, group them into topics, and write the Japanese
+            digest to ${{ github.workspace }}/.cache/report-x.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
+      - name: render x
+        if: steps.collect_x.outputs.n != '0'
+        run: bun run src/digest/report-render.ts x
+
       - run: bun run src/site/build.ts
 
       - name: commit docs

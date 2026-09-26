@@ -14,13 +14,14 @@ GitHub Pages で公開する。機能一覧は [FEATURES.md](./FEATURES.md)、�
 | 翻訳フィード | 海外サイトの新着タイトル・概要を DeepL で日本語化(日本語サイトは作らない) | 6 時間ごと | `translated/<site-id>.xml` |
 | レポート | 直近 24h の新着から Claude が重要記事を 5〜10 件選定・日本語コメント | 毎日 07:00 JST | `digest/report-<domain>.xml` |
 | リリースレポート | 直近 7 日のツールリリースを Claude が整理（破壊的変更を先頭） | 毎週月 07:30 JST | `digest/release-<domain>.xml` |
+| X タイムラインレポート | X のホームタイムライン直近 24h から技術的に有益なポストだけを抽出・トピック別に要約 | 毎日 07:00 JST | `digest/report-x.xml` |
 | フィード監査 | 不採用フィードの無効化候補検出＋ WebSearch での新規フィード提案。PR 作成→自動マージ | 毎週日 07:00 JST | — |
 | 棚卸しリマインダー | 使用コンポーネントの棚卸しを促す GitHub Issue を自動作成 | 毎月1日 | — |
 | Issue 駆動の要望反映 | Issue に書いた要望を読み取り `source.yaml`/`interests.yaml` に反映。PR 作成→自動マージ | Issue 作成時 | — |
 | Inoreader スター連携 | スター付き記事を取得しフィード監査の採用実績に統合 | 毎週日 06:00 JST | — |
 | ワークフロー失敗対応 | いずれかのワークフローが失敗すると Issue を自動作成。続けて原因を診断し、安全な修正があれば PR を作成（自動マージなし、要レビュー） | 失敗時 | — |
 
-デイジェストは claude / kubernetes / aws の 3 ドメイン（+ devtools のリリース）、翻訳配信は海外サイトの数だけフィードが出る。
+デイジェストは claude / kubernetes / aws の 3 ドメイン（+ devtools のリリース、X タイムライン）、翻訳配信は海外サイトの数だけフィードが出る。
 
 AI呼び出し（キュレーション・フィード監査・Issue対応・ワークフロー修正診断）は OpenCode Go 経由で
 DeepSeek を使用し、失敗時は自動で qwen にフォールバックする。時刻に基づく切り替えは行っていない。
@@ -76,5 +77,14 @@ Inoreader スター連携（フィード監査の学習フィードバック）�
 | --- | --- |
 | `INOREADER_CLIENT_ID` / `INOREADER_CLIENT_SECRET` | Inoreader の OAuth アプリ登録情報 |
 | `INOREADER_REFRESH_TOKEN` | 上記アプリで発行した refresh token |
+
+X タイムラインレポートを使う場合のみ必要。未設定なら取得・レポートともスキップされる。
+
+| 名前 | 用途 |
+| --- | --- |
+| `RSSHUB_TIMELINE_URL` | 自前 RSSHub のホームタイムライン URL（アクセスキー込み）。形式: `https://<RSSHubのホスト>/twitter/home_latest/<ユーザー名>?key=<ACCESS_KEY>` |
+
+公開されるのは技術的なポストの要約とポストへのリンクだけで、タイムラインの生データはリポジトリにもログにも残らない。
+ただし鍵アカウントをフォローしている場合、そのポストも要約対象になりうる点に注意。
 
 ワークフロー・スケジュール・内部構成は [CONTRIBUTING.md](./CONTRIBUTING.md) を参照。

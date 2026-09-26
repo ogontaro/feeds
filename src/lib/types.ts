@@ -1,4 +1,4 @@
-export type Domain = "claude" | "kubernetes" | "aws" | "devtools";
+export type Domain = "claude" | "kubernetes" | "aws" | "devtools" | "x";
 export type Kind = "content" | "release";
 
 export type Feed = {

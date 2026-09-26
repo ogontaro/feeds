@@ -1,5 +1,5 @@
 import { mkdir, readdir } from "node:fs/promises";
-import { CONTENT_DOMAINS, RELEASE_DOMAINS, loadFeeds } from "../lib/config.ts";
+import { RELEASE_DOMAINS, REPORT_DOMAINS, loadFeeds } from "../lib/config.ts";
 import { pageShell } from "../lib/html.ts";
 import { DOMAIN_CATEGORY, DOMAIN_LABEL } from "../lib/labels.ts";
 import {
@@ -155,10 +155,10 @@ ${siteRows}`;
   await Bun.write(TRANSLATED_OPML, UTF8_BOM + opmlBody(translatedFolders));
 
   // --- サービスA: digest(レポート+リリース) ---
-  for (const d of CONTENT_DOMAINS) await writeArchive("report", d);
+  for (const d of REPORT_DOMAINS) await writeArchive("report", d);
   for (const d of RELEASE_DOMAINS) await writeArchive("release", d);
 
-  const reportCards = (await Promise.all(CONTENT_DOMAINS.map((d) => digestCard(d, "report")))).join(
+  const reportCards = (await Promise.all(REPORT_DOMAINS.map((d) => digestCard(d, "report")))).join(
     "\n",
   );
   const releaseCards = (
@@ -180,7 +180,7 @@ ${releaseCards}
 
   const digestFolders: [string, [string, string][]][] = [];
   const reportFiles = await existingFiles(
-    CONTENT_DOMAINS.map(
+    REPORT_DOMAINS.map(
       (d) =>
         [`${DOMAIN_LABEL[d]} 日次レポート`, `${DIGEST_URL_PREFIX}/report-${d}.xml`] as [
           string,
