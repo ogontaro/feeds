@@ -10,6 +10,7 @@
       <outline type="rss" text="AI Devtools Radar" title="AI Devtools Radar" xmlUrl="https://ogontaro.github.io/feeds/translated/devtools-radar.xml"/>
       <outline type="rss" text="HN — Front page (300+)" title="HN — Front page (300+)" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-frontpage.xml"/>
       <outline type="rss" text="Google News — コーディングエージェント新サービス・料金" title="Google News — コーディングエージェント新サービス・料金" xmlUrl="https://ogontaro.github.io/feeds/translated/gnews-coding-agents.xml"/>
+      <outline type="rss" text="GitHub Changelog — Copilot" title="GitHub Changelog — Copilot" xmlUrl="https://ogontaro.github.io/feeds/translated/gh-changelog-copilot.xml"/>
       <outline type="rss" text="HN — Claude" title="HN — Claude" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-claude.xml"/>
       <outline type="rss" text="HN — MCP" title="HN — MCP" xmlUrl="https://ogontaro.github.io/feeds/translated/hn-mcp.xml"/>
     </outline>
@@ -25,6 +26,9 @@
       <outline type="rss" text="CNCF Announcements" title="CNCF Announcements" xmlUrl="https://ogontaro.github.io/feeds/translated/cncf-announcements.xml"/>
       <outline type="rss" text="Last Week in Kubernetes Development" title="Last Week in Kubernetes Development" xmlUrl="https://ogontaro.github.io/feeds/translated/lwkd.xml"/>
       <outline type="rss" text="Google News — Kubernetes" title="Google News — Kubernetes" xmlUrl="https://ogontaro.github.io/feeds/translated/gnews-kubernetes.xml"/>
+      <outline type="rss" text="Kubernetes Official CVE Feed" title="Kubernetes Official CVE Feed" xmlUrl="https://ogontaro.github.io/feeds/translated/k8s-cve.xml"/>
+      <outline type="rss" text="GitHub Blog — Supply chain security" title="GitHub Blog — Supply chain security" xmlUrl="https://ogontaro.github.io/feeds/translated/github-supply-chain.xml"/>
+      <outline type="rss" text="OpenTelemetry Blog" title="OpenTelemetry Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/opentelemetry.xml"/>
       <outline type="rss" text="AWS News Blog" title="AWS News Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/aws-news.xml"/>
       <outline type="rss" text="AWS Machine Learning Blog" title="AWS Machine Learning Blog" xmlUrl="https://ogontaro.github.io/feeds/translated/aws-ml.xml"/>
       <outline type="rss" text="Amazon EKS Document History" title="Amazon EKS Document History" xmlUrl="https://ogontaro.github.io/feeds/translated/eks-docs.xml"/>

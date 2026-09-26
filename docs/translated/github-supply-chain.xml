@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>GitHub Blog — Supply chain security — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>GitHub Blog — Supply chain security の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Thu, 13 Aug 2026 16:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AI時代のセキュリティについて50のオープンソースプロジェクトが教えてくれたこと]]></title>
+            <link>https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/</link>
+            <guid>https://github.blog/?p=98152</guid>
+            <pubDate>Thu, 13 Aug 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[GitHubセキュアオープンソースファンドのセッション4で、オープンソースプロジェクトがAI支援ワークフロー、メンテナの専門知識、GitHubセキュリティツール、専門家のガイダンス、およびプロジェクトセキュリティを向上させるための資金をどのように組み合わせたかをご覧ください。AI時代のセキュリティについて学んだ50のオープンソースプロジェクトの記事は、GitHubブログに最初に掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fopen-source%2Fmaintainers%2Fwhat-50-open-source-projects-taught-us-about-security-in-the-ai-era%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Npmを超えてマルウェアアドバイザリーを活用した方法]]></title>
+            <link>https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/</link>
+            <guid>https://github.blog/?p=97978</guid>
+            <pubDate>Thu, 06 Aug 2026 16:51:12 GMT</pubDate>
+            <description><![CDATA[GitHubマルウェアアドバイザリーはnpmで停止しなくなりました。ここでは、OpenSSFの悪意のあるパッケージデータをアドバイザリーデータベースに配線した方法と、パイプラインの被害妄想を構築した理由を説明します。npmを超えてマルウェアアドバイザリーをどのように取ったかの投稿は、GitHubブログに最初に掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fsupply-chain-security%2Fhow-we-took-malware-advisories-beyond-npm%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Tame Dependabot ：アップデートをグループ化し、ケイデンスを遅くし、セキュリティを高速に保ちます]]></title>
+            <link>https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/</link>
+            <guid>https://github.blog/?p=97770</guid>
+            <pubDate>Wed, 29 Jul 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Dependabotは依存関係を最新の状態に保ちますが、デフォルトはプルリクエストでリポジトリを溢れさせる可能性があります。ここでは、アップデートをグループ化し、頻度を遅くし、セキュリティ修正を迅速に維持して、Microsoftオープンソースプロジェクトのノイズを削減する方法を説明します。投稿Tame Dependabot ：更新をグループ化し、ケイデンスを遅くし、セキュリティを高速に保つGitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fsupply-chain-security%2Ftame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[NpmとGitHubへのサプライチェーン攻撃の中断アクション]]></title>
+            <link>https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/</link>
+            <guid>https://github.blog/?p=97755</guid>
+            <pubDate>Tue, 28 Jul 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[サプライチェーン攻撃技術を混乱させ、その影響を制限するために、過去数か月にわたってnpmとGitHub Actionsに出荷された変更をご覧ください。npmとGitHub Actionsに対するDisruptingサプライチェーン攻撃の投稿は、GitHubブログに最初に掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fsupply-chain-security%2Fdisrupting-supply-chain-attacks-on-npm-and-github-actions%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[クールダウンの理由：バージョンアップを発行する前にDependabotが待機する理由]]></title>
+            <link>https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/</link>
+            <guid>https://github.blog/?p=97619</guid>
+            <pubDate>Thu, 23 Jul 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[新しいデフォルトの3日間のクールダウンは、バージョンアップのプルリクエストを遅らせるため、メンテナンス担当者やセキュリティ研究者は、コードに入る前にリリースの調査結果に対処できます。The case for a coldown: Why Dependabot now waits before issuing version updatesが最初にThe GitHub Blogに掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fsupply-chain-security%2Fthe-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[すべてのGitHubメンテナーが今週有効にすべき6つのセキュリティ設定]]></title>
+            <link>https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/</link>
+            <guid>https://github.blog/?p=97204</guid>
+            <pubDate>Wed, 01 Jul 2026 15:59:29 GMT</pubDate>
+            <description><![CDATA[これらの6つの無料設定は、プロジェクトをハッキング不可能にするものではありません。何もありません。彼らがやることは、簡単なドアを閉めることです。これをオンにすると、以前よりもプロジェクトを攻撃するのが非常に難しくなります。すべてのGitHubメンテナーが今週有効にする必要があるPOST 6セキュリティ設定は、GitHubブログで最初に表示されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2F6-security-settings-every-github-maintainer-should-enable-this-week%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[アドバイザリーデータベースの内部と脆弱性の量が記録を破ったときに何が起こるか]]></title>
+            <link>https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/</link>
+            <guid>https://github.blog/?p=97150</guid>
+            <pubDate>Mon, 29 Jun 2026 16:10:20 GMT</pubDate>
+            <description><![CDATA[GitHubアドバイザリーデータベースは、これまで以上に多くの脆弱性レポートを処理しています。ピーク料金を引き起こしている要因、Uberがどのように対応しているか、コミュニティがどのように支援できるかをご紹介します。アドバイザリーデータベース内の投稿と脆弱性ボリュームが記録を破ったときに何が起こるかは、GitHubブログに最初に掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fsupply-chain-security%2Finside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitHub全体のオープンソースサプライチェーンの保護]]></title>
+            <link>https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/</link>
+            <guid>https://github.blog/?p=94975</guid>
+            <pubDate>Wed, 01 Apr 2026 19:20:12 GMT</pubDate>
+            <description><![CDATA[オープンソースに対する最近の攻撃は、秘密を漏洩することに焦点を当てています。ここでは、今日実行できる予防措置と、GitHubが取り組んでいるセキュリティ機能について説明します。GitHub全体のオープンソースサプライチェーンを保護するという投稿は、GitHubブログに最初に掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fsupply-chain-security%2Fsecuring-the-open-source-supply-chain-across-github%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[オープンソース脆弱性のトレンドの1年： CVE、アドバイザリー、マルウェア]]></title>
+            <link>https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/</link>
+            <guid>https://github.blog/?p=94767</guid>
+            <pubDate>Thu, 26 Mar 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[レビューされたアドバイザリーは4年ぶりの低水準に達し、マルウェアのアドバイザリーは急増し、CNAの公開も増加しました。ここでは、変更点とトリアージと対応の意味について説明します。オープンソースの脆弱性トレンドの1年： CVE、アドバイザリー、マルウェアの投稿は、GitHubブログに最初に掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fsupply-chain-security%2Fa-year-of-open-source-vulnerability-trends-cves-advisories-and-malware%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[オープンソースを形作り、共に未来を確保する人々への投資]]></title>
+            <link>https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/</link>
+            <guid>https://github.blog/?p=94538</guid>
+            <pubDate>Tue, 17 Mar 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[GitHubがオープンソースセキュリティファンディングメンテナにどのように投資し、Alpha - Omegaと提携し、アクセスを拡大して負担を軽減し、ソフトウェアサプライチェーンを強化しているかをご覧ください。オープンソースを形作り、未来を共に守る人々に投資するという投稿は、GitHubブログに最初に掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/security/supply-chain-security/investing-in-the-people-shaping-open-source-and-securing-the-future-together/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fsupply-chain-security%2Finvesting-in-the-people-shaping-open-source-and-securing-the-future-together%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

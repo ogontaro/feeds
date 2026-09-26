@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>OpenTelemetry Blog — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>OpenTelemetry Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Fri, 25 Sep 2026 11:24:23 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[OpenTelemetry計測エコシステムの探索]]></title>
+            <link>https://opentelemetry.io/blog/2026/exploring-instrumentation-ecosystem/</link>
+            <guid>https://opentelemetry.io/blog/2026/exploring-instrumentation-ecosystem/</guid>
+            <pubDate>Fri, 25 Sep 2026 11:24:23 GMT</pubDate>
+            <description><![CDATA[OpenTelemetry has a lot of pieces: APIs, SDKs, a protocol, semantic conventions, instrumentation, and tools like the Collector. The APIs and protocol define how telemetry is created and exchanged, while instrumentation is what actually observes what happens inside an application and turns it into telemetry. Semantic conventions give the people writing that instrumentation a shared way to describe what they’re observing. The beauty of this approach is that completely separate authors can instrume]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/exploring-instrumentation-ecosystem/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fexploring-instrumentation-ecosystem%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2026年のPrometheusとOpenTelemetryの相互運用性：調査結果]]></title>
+            <link>https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/</link>
+            <guid>https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/</guid>
+            <pubDate>Tue, 22 Sep 2026 15:06:22 GMT</pubDate>
+            <description><![CDATA[We ran a survey asking users of OpenTelemetry and Prometheus how they collect, process, and store metrics. The goal was to understand, with real usage data rather than assumptions, how far the ecosystem has moved and whether the interoperability still causes friction. Key takeaways Interoperability has measurably improved since our 2024 survey: the average ease-of-use rating rose from 3.1 to 3.6, the equivalent of one in two respondents rating a whole category higher, and the share of respondent]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fotel-prometheus-interoperability%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2026年OpenTelemetryガバナンス委員会選挙の発表]]></title>
+            <link>https://opentelemetry.io/blog/2026/gc-elections/</link>
+            <guid>https://opentelemetry.io/blog/2026/gc-elections/</guid>
+            <pubDate>Mon, 21 Sep 2026 17:09:33 GMT</pubDate>
+            <description><![CDATA[The OpenTelemetry project is excited to announce the 2026 OpenTelemetry Governance Committee (GC) election. Nominations are due by 16 October 2026 23:59 AoE. The list of eligible candidates will be shared on 19 October 2026. Voting will take place between 26 October 2026 12:00 UTC and 28 October 2026 end of day AoE (29 October 2026 11:59 UTC), and the final election results will be announced 30 October 2026. Vote! If you are a member of standing in the OpenTelemetry community, we invite you to p]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/gc-elections/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fgc-elections%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OTLPとPrometheusを使用した.NETメトリクスのデュアルエクスポート]]></title>
+            <link>https://opentelemetry.io/blog/2026/dual-dotnet-metrics-export-with-otlp-and-prometheus/</link>
+            <guid>https://opentelemetry.io/blog/2026/dual-dotnet-metrics-export-with-otlp-and-prometheus/</guid>
+            <pubDate>Fri, 18 Sep 2026 12:07:36 GMT</pubDate>
+            <description><![CDATA[Many applications export their metrics directly to Prometheus. If you’re unfamiliar with Prometheus, in a nutshell it’s a time-series database for storing metrics, like counters and histograms. Applications that store their metrics in Prometheus typically use a popular Prometheus client as part of the integration. Now that OpenTelemetry is a graduated CNCF project, many companies are now increasingly looking to move to OpenTelemetry to add more signals beyond metrics to their observability archi]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/dual-dotnet-metrics-export-with-otlp-and-prometheus/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fdual-dotnet-metrics-export-with-otlp-and-prometheus%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes属性プロセッサがv1.0.0マイルストーンに到達]]></title>
+            <link>https://opentelemetry.io/blog/2026/k8s-attributes-processor-v1/</link>
+            <guid>https://opentelemetry.io/blog/2026/k8s-attributes-processor-v1/</guid>
+            <pubDate>Wed, 16 Sep 2026 04:59:27 GMT</pubDate>
+            <description><![CDATA[The Kubernetes attributes processor, which enriches your telemetry with Kubernetes metadata, has officially moved to v1.0.0! You can try it out on your custom distro, and it is also available as part of the latest opentelemetry-collector-contrib and opentelemetry-collector-k8s distro releases. Being v1.0.0 means the component is now verified to fulfill the ‘stable’ stability criteria including requirements around testing, benchmarking, documentation and telemetry stability. It also ensures you c]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/k8s-attributes-processor-v1/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fk8s-attributes-processor-v1%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[環境変数のコンテキスト伝播の安定化にご協力ください]]></title>
+            <link>https://opentelemetry.io/blog/2026/environment-variable-context-propagation/</link>
+            <guid>https://opentelemetry.io/blog/2026/environment-variable-context-propagation/</guid>
+            <pubDate>Fri, 11 Sep 2026 11:01:22 GMT</pubDate>
+            <description><![CDATA[A trace does not always cross a network boundary. A workflow runner starts a shell, the shell launches a build tool, and the build tool starts test processes. Batch and data-processing systems create similar chains of child processes. Without a shared way to pass trace information across these boundaries, spans from each process can end up in separate traces. If context propagation is new to you, it is the mechanism that carries information from one service or process to the next. For tracing, t]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/environment-variable-context-propagation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fenvironment-variable-context-propagation%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetry Go Logs APIとSDKがリリース候補ステータスに到達]]></title>
+            <link>https://opentelemetry.io/blog/2026/go-logs-api-sdk-rc/</link>
+            <guid>https://opentelemetry.io/blog/2026/go-logs-api-sdk-rc/</guid>
+            <pubDate>Mon, 31 Aug 2026 15:40:58 GMT</pubDate>
+            <description><![CDATA[OpenTelemetry Go v1.47.0-rc.1 is here. This release promotes the Logs API and SDK to release candidate (RC), the final stage before we provide stable v1 compatibility guarantees. We believe the design is ready, and now we need the community to test it in real applications and integrations before those guarantees take effect. What is included in the release candidate? The RC covers these two modules: go.opentelemetry.io/otel/log go.opentelemetry.io/otel/sdk/log These modules move from v0.22.0, wi]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/go-logs-api-sdk-rc/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fgo-logs-api-sdk-rc%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetryエンティティイベントで何ができますか？]]></title>
+            <link>https://opentelemetry.io/blog/2026/consuming-opentelemetry-entity-events/</link>
+            <guid>https://opentelemetry.io/blog/2026/consuming-opentelemetry-entity-events/</guid>
+            <pubDate>Fri, 14 Aug 2026 07:10:08 GMT</pubDate>
+            <description><![CDATA[Metrics, logs, and traces tell you how your systems behave. They are much quieter about what actually exists: which hosts, interfaces, switches, services, and volumes are out there right now, and, crucially, how that picture changed over the last hour, day, or quarter. That living inventory has stayed a blind spot in the open observability stack. OpenTelemetry’s entity events, coming out of the Entities SIG and described in the Entity Data Model, are the piece that starts to close it. Entity eve]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/consuming-opentelemetry-entity-events/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fconsuming-opentelemetry-entity-events%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetryのメトリックカーディナリティ制限：実用的なガイド]]></title>
+            <link>https://opentelemetry.io/blog/2026/cardinality-limits-in-opentelemetry/</link>
+            <guid>https://opentelemetry.io/blog/2026/cardinality-limits-in-opentelemetry/</guid>
+            <pubDate>Thu, 06 Aug 2026 07:43:47 GMT</pubDate>
+            <description><![CDATA[OpenTelemetry metrics are designed to be safe to use in production. One part of that safety is the cardinality limit in the metrics SDK. The limit protects your process from unbounded memory growth when a metric receives too many unique attribute combinations. That protection is useful, but it has a consequence many users do not expect: when a metric stream overflows, the total value remains correct, while queries that filter or group by attributes can undercount. This can affect dashboards, ser]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/cardinality-limits-in-opentelemetry/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fcardinality-limits-in-opentelemetry%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OTelのデモを壊しました]]></title>
+            <link>https://opentelemetry.io/blog/2026/we-broke-the-demo/</link>
+            <guid>https://opentelemetry.io/blog/2026/we-broke-the-demo/</guid>
+            <pubDate>Tue, 28 Jul 2026 10:15:19 GMT</pubDate>
+            <description><![CDATA[If you’ve been running the Demo for some time, you may have seen a couple of structural changes lately, and you may even have gotten mad about things not working as expected. We feel your pain and we totally understand it. Unfortunately there was no better way to change things without breaking the existing flow. Some of what you knew is gone. New services were added. Attribute names have changed. If you had dashboards with custom metrics, everything is broken now.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/we-broke-the-demo/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fwe-broke-the-demo%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetry @ KubeCon + CloudNativeCon Japan 2026]]></title>
+            <link>https://opentelemetry.io/blog/2026/kubecon-japan/</link>
+            <guid>https://opentelemetry.io/blog/2026/kubecon-japan/</guid>
+            <pubDate>Thu, 23 Jul 2026 17:40:46 GMT</pubDate>
+            <description><![CDATA[KubeCon + CloudNativeCon Japan takes place July 28-30, 2026, in Yokohama, Japan. Register today to join us! Here are all the OpenTelemetry-related sessions, up to date at the time of writing. Session details can change, so confirm dates and times in the official schedule. Community Day Japan Community Day is on Tuesday, July 28, ahead of the main conference. It’s a great way to engage with fellow attendees and with members of local meetup communities, special interest groups, and subgroups withi]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/kubecon-japan/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fkubecon-japan%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Linuxホストでの1コマンドOpenTelemetryのセットアップ]]></title>
+            <link>https://opentelemetry.io/blog/2026/packaging-first-repo/</link>
+            <guid>https://opentelemetry.io/blog/2026/packaging-first-repo/</guid>
+            <pubDate>Thu, 23 Jul 2026 16:51:56 GMT</pubDate>
+            <description><![CDATA[OpenTelemetry as system dependency Setting up OpenTelemetry for your applications and systems depends on where those apps and systems run. Some are very automated, especially Kubernetes, thanks to the OpenTelemetry Operator, or AWS Lambda, with the OpenTelemetry Lambda layers. But the countless Java, .NET, Node.js, and Python apps running directly on Linux hosts have had no such automation. Instrumenting those has meant downloading agents by hand and wiring up environment variables yourself. At ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/packaging-first-repo/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fpackaging-first-repo%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetry Go Compile - Time Instrumentationのv 1を発表]]></title>
+            <link>https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/</link>
+            <guid>https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/</guid>
+            <pubDate>Thu, 23 Jul 2026 06:20:13 GMT</pubDate>
+            <description><![CDATA[If you write Java, Python, Node.js, or .NET, you have been able to add OpenTelemetry to an application without editing its code for years: attach an agent at startup and telemetry starts flowing. Go has been the exception. A Go program compiles to a single static binary with no runtime to hook into at startup, so Go developers have had to instrument by hand or reach for an out-of-process eBPF agent.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fgo-compile-time-instrumentation-v1%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ラムダを利用した関数はOTTLにランディングされています]]></title>
+            <link>https://opentelemetry.io/blog/2026/lambda-powered-function-land-in-ottl/</link>
+            <guid>https://opentelemetry.io/blog/2026/lambda-powered-function-land-in-ottl/</guid>
+            <pubDate>Wed, 22 Jul 2026 20:04:49 GMT</pubDate>
+            <description><![CDATA[As telemetry pipelines become more sophisticated, so do the transformations they need to perform: sanitizing sensitive data, normalizing inconsistent schemas, and enforcing attribute contracts. While OTTL provides a rich set of transformation functions, expressing collection operations has required dedicated functions with hardcoded behavior for each new use case. OpenTelemetry Collector Contrib v0.157.0 changes that by introducing lambda expressions to OTTL. Lambdas let users pass inline logic ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/lambda-powered-function-land-in-ottl/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Flambda-powered-function-land-in-ottl%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetry SwiftのCocoaPods廃止通知]]></title>
+            <link>https://opentelemetry.io/blog/2026/otel-swift-cocoapods-deprecation/</link>
+            <guid>https://opentelemetry.io/blog/2026/otel-swift-cocoapods-deprecation/</guid>
+            <pubDate>Mon, 20 Jul 2026 14:05:37 GMT</pubDate>
+            <description><![CDATA[As it was announced via CocoaPods Support Plan and via CocoaPods Spec Repository, CocoaPods is transitioning their project to maintenance mode, and cocoapods trunk is going to be read-only in a few months. The OpenTelemetry Swift maintainers are planning to deprecate CocoaPods support for all the pods published under opentelemetry-swift and opentelemetry-swift-core. Swift Package Manager (SPM) is now the recommended and preferred installation method for all new integrations. We encourage existin]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/otel-swift-cocoapods-deprecation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fotel-swift-cocoapods-deprecation%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetryは卒業しました...次は何ですか？]]></title>
+            <link>https://opentelemetry.io/blog/2026/otel-grad-now-what/</link>
+            <guid>https://opentelemetry.io/blog/2026/otel-grad-now-what/</guid>
+            <pubDate>Wed, 15 Jul 2026 18:59:02 GMT</pubDate>
+            <description><![CDATA[In case you missed it: OpenTelemetry (OTel) has officially achieved CNCF graduated status! It now stands proudly alongside amazing open source projects such as Kubernetes and Prometheus, to name just a few. It’s been a long journey, and we’re very excited… But, now what? To understand where we’re going, it’s important to understand where we came from. History In the not-so-distant past, telemetry signals were not standardized. This meant telemetry formats differed from tool to tool, with each te]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/otel-grad-now-what/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fotel-grad-now-what%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[小さな環境変数の航海]]></title>
+            <link>https://opentelemetry.io/blog/2026/spring-boot-declarative-config/</link>
+            <guid>https://opentelemetry.io/blog/2026/spring-boot-declarative-config/</guid>
+            <pubDate>Tue, 14 Jul 2026 07:47:36 GMT</pubDate>
+            <description><![CDATA[The OpenTelemetry Spring Boot starter gained declarative-configuration support starting in version 2.26.0 — the same YAML schema the Java agent introduced in late 2025, now embedded inside application.yaml. This post traces what one env var, OTEL_SERVICE_NAME=petclinic, does in that new world, and where the seams are. In a hurry? Jump straight to the Spring Boot starter declarative-config docs, paste your application.properties into the interactive converter, or pick your SDK setup in the Ecosys]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/spring-boot-declarative-config/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fspring-boot-declarative-config%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[貢献者募集： DartとFlutterのためのOpenTelemetry]]></title>
+            <link>https://opentelemetry.io/blog/2026/dart-flutter-opentelemetry/</link>
+            <guid>https://opentelemetry.io/blog/2026/dart-flutter-opentelemetry/</guid>
+            <pubDate>Mon, 13 Jul 2026 08:20:00 GMT</pubDate>
+            <description><![CDATA[Why OpenTelemetry for Dart and Flutter? Dart is a full-stack language and the language of Flutter, one of the most popular frameworks for building cross-platform applications. Data shows over 20% of current app store submissions are Flutter apps. Dart is null safe and type safe, compiles to fast binaries, and is increasingly used for backend services as well. Yet Dart remains the last top-15 programming language without an officially maintained OpenTelemetry SDK. Earlier community implementation]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/dart-flutter-opentelemetry/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fdart-flutter-opentelemetry%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenTelemetryをラップしないでください—あなたはおそらく助け以上のものを傷つけています]]></title>
+            <link>https://opentelemetry.io/blog/2026/dont-wrap-opentelemetry/</link>
+            <guid>https://opentelemetry.io/blog/2026/dont-wrap-opentelemetry/</guid>
+            <pubDate>Wed, 24 Jun 2026 08:42:08 GMT</pubDate>
+            <description><![CDATA[There’s a pattern I’ve seen across many teams adopting OpenTelemetry, and it’s well-intentioned every single time. An engineer wants to make things easier for the team. They build a thin abstraction over the OTel API — an IMetric interface, a TelemetryHelper class, a MetricsWrapper module — and ship it as the team’s standard. “Just use this,” they say. “It’s simpler.” The intention is genuine. The outcome is usually not good.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/dont-wrap-opentelemetry/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fdont-wrap-opentelemetry%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenCensusの互換性要件の非推奨化]]></title>
+            <link>https://opentelemetry.io/blog/2026/deprecating-opencensus-compatibility/</link>
+            <guid>https://opentelemetry.io/blog/2026/deprecating-opencensus-compatibility/</guid>
+            <pubDate>Fri, 19 Jun 2026 22:53:47 GMT</pubDate>
+            <description><![CDATA[On June 12, 2026, the OpenTelemetry Specification project merged PR #5138, deprecating OpenCensus compatibility requirements in the specification. This change updates the specification to match where the ecosystem already is: OpenCensus has been archived since July 31, 2023, and the OpenTelemetry shims for OpenCensus have provided a stable migration bridge for more than three years. This is a deprecation of specification requirements, not an immediate removal of compatibility material and not a ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://opentelemetry.io/blog/2026/deprecating-opencensus-compatibility/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fdeprecating-opencensus-compatibility%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

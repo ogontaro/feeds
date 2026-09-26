@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Kubernetes Official CVE Feed — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>Kubernetes Official CVE Feed の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Mon, 14 Sep 2026 16:42:26 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[CVE -2026 -76654]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/142098</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-76654</guid>
+            <pubDate>Mon, 14 Sep 2026 16:42:26 GMT</pubDate>
+            <description><![CDATA[Windowsノードでのサブパスのシンボリックリンクにより、NTLMの強制が許可されます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/142098">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F142098">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -2270]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/142097</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-2270</guid>
+            <pubDate>Mon, 14 Sep 2026 16:42:20 GMT</pubDate>
+            <description><![CDATA[StatefulSetとControllerRevisionの書き込み権限により、クロスネームスペースポッドの作成が可能になります]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/142097">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F142097">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -3865]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/138319</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-3865</guid>
+            <pubDate>Fri, 10 Apr 2026 17:54:42 GMT</pubDate>
+            <description><![CDATA[SubDirを介したSMBパストラバーサル用のCSIドライバは、SMBサーバー上の意図しないディレクトリを削除する可能性があります]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/138319">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F138319">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -4342]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/137893</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-4342</guid>
+            <pubDate>Thu, 19 Mar 2026 14:32:54 GMT</pubDate>
+            <description><![CDATA[ingress - nginxコメントベースのnginx設定インジェクション]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/137893">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F137893">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -3864]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/137797</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-3864</guid>
+            <pubDate>Tue, 17 Mar 2026 05:54:49 GMT</pubDate>
+            <description><![CDATA[SubDirを介したNFSパストラバーサル用のCSIドライバーは、NFSサーバー上の意図しないディレクトリを削除する可能性があります]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/137797">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F137797">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -3288]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/137560</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-3288</guid>
+            <pubDate>Mon, 09 Mar 2026 04:29:33 GMT</pubDate>
+            <description><![CDATA[ingress - nginx rewrite - target nginxコンフィギュレーションインジェクション]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/137560">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F137560">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -15566]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/136789</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-15566</guid>
+            <pubDate>Fri, 06 Feb 2026 02:54:24 GMT</pubDate>
+            <description><![CDATA[ingress - nginx auth - proxy - set - headers nginxコンフィギュレーションインジェクション]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/136789">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F136789">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -24514]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/136680</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-24514</guid>
+            <pubDate>Mon, 02 Feb 2026 03:06:14 GMT</pubDate>
+            <description><![CDATA[ingress - nginx Admission Controllerサービス拒否]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/136680">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F136680">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -24513]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/136679</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-24513</guid>
+            <pubDate>Mon, 02 Feb 2026 03:06:04 GMT</pubDate>
+            <description><![CDATA[ingress - nginx auth - url保護バイパス]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/136679">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F136679">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -24512]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/136678</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-24512</guid>
+            <pubDate>Mon, 02 Feb 2026 03:05:54 GMT</pubDate>
+            <description><![CDATA[ingress-nginx rules.http.paths.path nginxコンフィギュレーションインジェクション]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/136678">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F136678">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -1580]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/136677</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-1580</guid>
+            <pubDate>Mon, 02 Feb 2026 03:05:43 GMT</pubDate>
+            <description><![CDATA[ingress - nginx auth - method nginxコンフィギュレーションインジェクション]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/136677">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F136677">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -14269]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/135798</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-14269</guid>
+            <pubDate>Wed, 17 Dec 2025 19:23:10 GMT</pubDate>
+            <description><![CDATA[ヘルムを有効にしたヘッドランプの資格情報キャッシュ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/135798">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F135798">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -13281]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/135525</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-13281</guid>
+            <pubDate>Sun, 30 Nov 2025 23:08:37 GMT</pubDate>
+            <description><![CDATA[Kube - controller - managerのPortworx半盲SSRF]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/135525">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F135525">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -9708]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/134063</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-9708</guid>
+            <pubDate>Mon, 15 Sep 2025 04:59:12 GMT</pubDate>
+            <description><![CDATA[Kubernetes C #クライアント：カスタムCAモードでの不適切な証明書検証は、中間者攻撃につながる可能性があります]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/134063">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F134063">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -7445]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/133897</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-7445</guid>
+            <pubDate>Thu, 04 Sep 2025 21:40:42 GMT</pubDate>
+            <description><![CDATA[secrets - store - sync - controllerがログにサービスアカウントトークンを開示]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/133897">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F133897">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -5187]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/133471</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-5187</guid>
+            <pubDate>Mon, 11 Aug 2025 16:29:36 GMT</pubDate>
+            <description><![CDATA[ノードは、OwnerReferenceを追加することで自分自身を削除できます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/133471">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F133471">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -7342]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/133115</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-7342</guid>
+            <pubDate>Mon, 21 Jul 2025 23:22:19 GMT</pubDate>
+            <description><![CDATA[Kubernetes Image Builder NutanixまたはOVAプロバイダーで構築されたVMイメージは、ユーザーがオーバーライドしなかった場合、Windowsイメージのデフォルト資格情報を使用します]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/133115">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F133115">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -4563]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/132151</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-4563</guid>
+            <pubDate>Fri, 06 Jun 2025 15:48:26 GMT</pubDate>
+            <description><![CDATA[ノードは動的リソース割り当て許可チェックをバイパスできます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/132151">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F132151">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -1974]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/131009</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-1974</guid>
+            <pubDate>Sun, 23 Mar 2025 17:38:57 GMT</pubDate>
+            <description><![CDATA[ingress - nginxアドミッションコントローラRCEエスカレーション]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/131009">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F131009">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2025 -1098]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/131008</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2025-1098</guid>
+            <pubDate>Sun, 23 Mar 2025 17:38:53 GMT</pubDate>
+            <description><![CDATA[未消毒のミラーアノテーションを介したingress - nginxコントローラー設定インジェクション]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/131008">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F131008">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

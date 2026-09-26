@@ -4,11 +4,27 @@
         <title>Google News — コーディングエージェント新サービス・料金 — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — コーディングエージェント新サービス・料金 の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 12:00:02 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 10:33:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[NVIDIAのSoL - Piシステムは、ハーネスを最適化することでコーディングエージェントトークンの使用量をほぼ半分に削減- the-decoder.com]]></title>
+            <link>https://the-decoder.com/nvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness/</link>
+            <guid>CBMiuAFBVV95cUxNb21BNWMzNWoxMy1aUkFmdnJ3Z2wwUWR2bjdQc2t5NkUtLVJuYzVYR3MyTTdsNFp5aF9PME12MXQ4Zm1USi1TdHI1LW5yLVRRS1lKWldHT0R5UXdneVQxRnZselBaQjRKcms3UEJpOGZENjcxNFFiSUU2WGZfcmNwcURrWVo0bEFxODlyRGEwemJnSGdENjhXXzkwWWt1Ym42VnhxdmNPUmxDODRQV3JHd1NfNk5DdFp4</guid>
+            <pubDate>Sat, 26 Sep 2026 10:33:42 GMT</pubDate>
+            <description><![CDATA[NVIDIAのSoL - Piシステムは、ハーネスthe-decoder.comを最適化することで、コーディングエージェントトークンの使用量をほぼ半分に削減]]></description>
+            <content:encoded><![CDATA[<p><a href="https://the-decoder.com/nvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthe-decoder.com%2Fnvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAIが有料の使用制限をリセットするため、コーデックスの停止は56分間続きます- Pasquale Pillitteri]]></title>
+            <link>https://pasqualepillitteri.it/en/news/18523/codex-outage-56-minutes-openai-resets-limits</link>
+            <guid>CBMikgFBVV95cUxNZ2YzRWRmUUlGWlBMeEdQR1otcjM0Wk9udEpaRDVnVGpGM3BQcVAwdXZYWDVBNk8yYnNKWmxvZXk0ZUJJS1Zsck9GVE1YRkJucmJMWWIzQkVvWHpGRkhzck1VZnRnRjlLZE95SFFIVmdKRWxBVjNJTU9WemxFUlZLWkdXbUlYNC1kWnA5cDQ0MlVlUQ</guid>
+            <pubDate>Fri, 25 Sep 2026 22:03:00 GMT</pubDate>
+            <description><![CDATA[OpenAIが有料使用制限をリセットするため、コーデックスの停止は56分間続きますPasquale Pillitteri]]></description>
+            <content:encoded><![CDATA[<p><a href="https://pasqualepillitteri.it/en/news/18523/codex-outage-56-minutes-openai-resets-limits">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fpasqualepillitteri.it%2Fen%2Fnews%2F18523%2Fcodex-outage-56-minutes-openai-resets-limits">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Microsoftは、Anthropicとの競争を試みているため、ビジネスAIを単一のアプリにパッケージ化- CNBC]]></title>
             <link>https://www.cnbc.com/2026/09/25/microsoft-copilot-ai-coding-anthropic.html</link>
@@ -90,27 +106,27 @@
             <content:encoded><![CDATA[<p><a href="https://www.unite.ai/databricks-introduces-unity-gateway-cli-to-centralize-coding-agent-control/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.unite.ai%2Fdatabricks-introduces-unity-gateway-cli-to-centralize-coding-agent-control%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Casepoint Launches Two AI Agents for Document Review - Law.com]]></title>
+            <title><![CDATA[Casepoint、文書レビュー用の2つのAIエージェントを発表- Law.com]]></title>
             <link>https://www.law.com/legaltechnews/2026/09/24/casepoint-launches-two-ai-agents-for-document-review-/</link>
             <guid>CBMioAFBVV95cUxQYjVQVEFqMkU2a0R0SzBfem55VG4tQmFndnRyMEQwRXVYdFRMNEw2MzJ4YmNwNXZrcm85aldDdXAyYzZfOEpnY3BnTzd4SGVKQVBzQTAtMi1aWE56TjRwVVBOMWZYRWU5VGM5OE1uYUpNeF9UZ1ZzLVdDbWFTeVNRVUtXSE03Y3ozdFRzT1h6aHRmWE53ajc3SXdwNF9vUDBq</guid>
             <pubDate>Thu, 24 Sep 2026 16:57:52 GMT</pubDate>
-            <description><![CDATA[Casepoint Launches Two AI Agents for Document Review Law.com]]></description>
+            <description><![CDATA[Casepoint、ドキュメントレビューのための2つのAIエージェントを立ち上げLaw.com]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.law.com/legaltechnews/2026/09/24/casepoint-launches-two-ai-agents-for-document-review-/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.law.com%2Flegaltechnews%2F2026%2F09%2F24%2Fcasepoint-launches-two-ai-agents-for-document-review-%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Grok 4.7 Costs a Quarter as Much as Claude and GPT-6, and It Shows - Startup Fortune]]></title>
+            <title><![CDATA[Grok 4.7はクロードとGPT -6と同じくらいの四半期の費用がかかり、それが表示されます-スタートアップの幸運]]></title>
             <link>https://startupfortune.com/grok-47-costs-a-quarter-as-much-as-claude-and-gpt-6-and-it-shows/</link>
             <guid>CBMilwFBVV95cUxQRUl5eldKWXBUcGt1dlJfZmEwaWhlWldkTlZicU1xUzdtWllheEI5Z1JQWExSN21wcVhWaUtzWFRBUUFXYUhSanh4NllUZHhKQkN0X0JuSzIxdmkyM3Z0cFZaeUVRUzRGc0VXeEx6V2NnQmdwV240S0ItQkR0d25IWjFhamFEMTVIekZBRmlsa3c1OWUxSlNJ</guid>
             <pubDate>Thu, 24 Sep 2026 13:58:25 GMT</pubDate>
-            <description><![CDATA[Grok 4.7 Costs a Quarter as Much as Claude and GPT-6, and It Shows Startup Fortune]]></description>
+            <description><![CDATA[Grok 4.7はクロードとGPT -6と同じくらいのコストがかかり、スタートアップの幸運を示しています]]></description>
             <content:encoded><![CDATA[<p><a href="https://startupfortune.com/grok-47-costs-a-quarter-as-much-as-claude-and-gpt-6-and-it-shows/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fstartupfortune.com%2Fgrok-47-costs-a-quarter-as-much-as-claude-and-gpt-6-and-it-shows%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[What I’ve Learned About DeepSeek Harness - KDnuggets]]></title>
+            <title><![CDATA[DeepSeekハーネスについて学んだこと- KDnuggets]]></title>
             <link>https://www.kdnuggets.com/what-ive-learned-about-deepseek-harness</link>
             <guid>CBMic0FVX3lxTE5IWUJQb0JiSVd0ME5tajNRWWZRbDJSZzF2Zmk4OU5LTDRzZFFLVTRfU1RLUllGTW1qb29xcU4yT2NKWV9HWk1lajBubS14ZHpMQ1FtVkVKbDEyTHZ4LWpGSTNNNlI4QjJROE80UUJLVW5WQkU</guid>
             <pubDate>Thu, 24 Sep 2026 12:09:59 GMT</pubDate>
-            <description><![CDATA[What I’ve Learned About DeepSeek Harness KDnuggets]]></description>
+            <description><![CDATA[DeepSeekハーネスKDnuggetsについて学んだこと]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.kdnuggets.com/what-ive-learned-about-deepseek-harness">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.kdnuggets.com%2Fwhat-ive-learned-about-deepseek-harness">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>GitHub Changelog — Copilot — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>GitHub Changelog — Copilot の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Fri, 25 Sep 2026 23:24:57 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[エンタープライズ管理設定製品内バリデータ]]></title>
+            <link>https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator</link>
+            <guid>https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator</guid>
+            <pubDate>Fri, 25 Sep 2026 23:24:57 GMT</pubDate>
+            <description><![CDATA[これで、GitHub Copilotのエンタープライズ管理設定に製品内バリデータを使用できるようになりました。バリデータは、不正な形式のJSON、サポートされていない構成、無効なチームマッピング、およびその他のエラーを検出します。POSTエンタープライズ管理設定製品内バリデータは、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-25-enterprise-managed-settings-in-product-validator">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[使用状況メトリクスAPIはプルリクエストレビューステージを追加します]]></title>
+            <link>https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages</link>
+            <guid>https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages</guid>
+            <pubDate>Fri, 25 Sep 2026 21:09:40 GMT</pubDate>
+            <description><![CDATA[エンタープライズおよび組織のリポジトリレベルのCopilot使用状況メトリックレポートは、レビューの各段階でプルリクエストに費やされる時間を細分化します。各リポジトリの1日間の行に新しいPULL_REQUEST_REVIEW_TIMES配列が追加されました... POST使用状況メトリクスAPIは、プルリクエストレビューステージを追加します。GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-25-usage-metrics-api-adds-pull-request-review-stages">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Agentic autofixがCopilotメモリを使用するようになりました]]></title>
+            <link>https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory</link>
+            <guid>https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory</guid>
+            <pubDate>Fri, 25 Sep 2026 17:25:50 GMT</pubDate>
+            <description><![CDATA[Agentic autofixは、これを有効にした顧客にCopilotメモリを使用するようになりました。エージェント型オートフィックスを使用すると、既存のメモリにセキュリティ警告の解決に役立つコンテキストがないかどうかが確認されます。Agentic autofixがCopilot Memoryを使用するようになった投稿は、The GitHub Blogに初めて掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-25-agentic-autofix-now-uses-copilot-memory">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitHub Copilotウィークリーリリース— 9月21日]]></title>
+            <link>https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21</link>
+            <guid>https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21</guid>
+            <pubDate>Fri, 25 Sep 2026 16:42:48 GMT</pubDate>
+            <description><![CDATA[今週のリリースでは、Copilotに新しいモデルが追加され、Copilotアプリのローカルサンドボックスが追加され、Slack、Microsoft Teams、JetBrains、VS CodeのCopilotが更新されました。GitHub Copilot Claude Opus… GitHub Copilotウィークリーリリース— 9月21日の投稿は、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-25-github-copilot-weekly-releases-september-21">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[SlackとMicrosoft Teams向けのGitHub Copilotの更新]]></title>
+            <link>https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams</link>
+            <guid>https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams</guid>
+            <pubDate>Fri, 25 Sep 2026 16:33:42 GMT</pubDate>
+            <description><![CDATA[SlackとMicrosoft TeamsのGitHub Copilotを使用すると、より多くのコンテキスト、より多くのコントロール、会話からGitHubの仕事へのより明確なパスが提供されるようになりました。Slackでファイルを共有しているかどうかにかかわらず… SlackとMicrosoft Teams用のGitHub Copilotのアップデートの投稿は、GitHubブログに最初に掲載されました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[コパイロットビジネスおよびエンタープライズ向けのデフォルトのコパイロット機能の有効化]]></title>
+            <link>https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise</link>
+            <guid>https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise</guid>
+            <pubDate>Fri, 25 Sep 2026 03:13:23 GMT</pubDate>
+            <description><![CDATA[一般的に利用可能なGitHub Copilot機能と、エンタープライズおよび組織のCopilot設定でサポートされているクライアント機能について、新しいグローバルデフォルトポリシーを導入します。これからの28日間、次のことができます。Copilot BusinessとEnterprise向けのPOSTデフォルトのCopilot機能の有効化は、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Copilotコードレビューを要求および構成するその他の方法]]></title>
+            <link>https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews</link>
+            <guid>https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews</guid>
+            <pubDate>Wed, 23 Sep 2026 21:25:58 GMT</pubDate>
+            <description><![CDATA[GitHub Copilotコードレビューでは、拡張されたCopilotプランセットとエンタープライズレベルのデフォルト設定に追加の個人設定が提供されるようになりました。これらの改善が一般的に利用可能になりました。専用の個人的な...投稿Copilotコードレビューをリクエストして構成するその他の方法は、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitHub Copilotアプリのローカルサンドボックス]]></title>
+            <link>https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app</link>
+            <guid>https://github.blog/changelog/2026-09-22-local-sandboxing-in-the-github-copilot-app</guid>
+            <pubDate>Wed, 23 Sep 2026 15:00:57 GMT</pubDate>
+            <description><![CDATA[ローカルサンドボックスは、マシン上のファイル、ネットワークリソース、および資格情報へのアクセスを制限することで、意図しないコマンドの潜在的な影響を軽減します。GitHub Copilotアプリでは、設定します。GitHub Copilotアプリの投稿ローカルサンドボックスは、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-23-local-sandboxing-in-the-github-copilot-app">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitHub CopilotアプリでのOpenTelemetry]]></title>
+            <link>https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app</link>
+            <guid>https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app</guid>
+            <pubDate>Wed, 23 Sep 2026 02:14:54 GMT</pubDate>
+            <description><![CDATA[Copilotエージェントがどのように機能し、モデルやツールと相互作用するかを理解します。GitHub Copilotアプリは、エンタープライズ管理設定を通じてOpenTelemetry （ OTel ）構成をサポートするようになりました。OTelはオープンソースの観測可能性フレームワークです。… GitHub CopilotアプリのOpenTelemetry投稿は、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-22-opentelemetry-in-the-github-copilot-app">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Copilot for JetBrainsの新機能と改善点]]></title>
+            <link>https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains</link>
+            <guid>https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains</guid>
+            <pubDate>Wed, 23 Sep 2026 00:34:18 GMT</pubDate>
+            <description><![CDATA[GitHub Copilot for JetBrains 1.18.0は、AI支援ツールの承認、エージェントの会話のより詳細な制御、組織の共有スキルと指示を提供します。また、コーデックスで計画を確認することもできます...投稿Copilot for JetBrainsの新機能と改善は、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
