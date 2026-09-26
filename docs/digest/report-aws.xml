@@ -4,11 +4,34 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 25 Sep 2026 00:21:41 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 00:27:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-09-26]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-26.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-26.html</guid>
+            <pubDate>Sat, 26 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<h3>Amazon EKS 上の MoE 強化学習を EFA と DeepEP でスケール — 集約スループット 40% 向上</h3>
+<p>大規模な RLHF / GRPO の学習では、ロールアウト（推論側）と学習側の間でエキスパートの重みを絶えず交換するため、ノード間通信がそのままスループットの上限になります。EKS・EFA・S3 を組み合わせて MoE の強化学習を組んだ構成と、集約ロールアウト スループットを 40% 引き上げた実測がまとまっており、EKS 上で分散学習基盤を設計する人にとっては「どの層を詰めると効くのか」の当たりを付けられる内容です。GPU インスタンスの構成やネットワーク設計を見直す前に、まずここで論点を整理しておく価値があります。
+<a href="https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fscaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput%2F">Google 翻訳で全文を読む</a></p>
+<h3>SkyRL によるマルチモーダル RL 学習を SageMaker HyperPod で回す</h3>
+<p>OSS の強化学習フレームワーク SkyRL を使って Qwen3-VL-8B を GRPO で追加学習する手順が、コンテナイメージの作成から SageMaker Studio からの Ray クラスタ起動、ジョブの投入・監視、学習済み LoRA アダプタのホスティングまで一気通貫で書かれています。アルゴリズムの解説ではなく「マネージド基盤の上でどこに何を置くか」という運用手順が主体なので、自前の学習環境を HyperPod に移すときの移行チェックリストとしてそのまま使えます。マルチモーダル + RL という組み合わせの実例がまだ少ないぶん、構成の妥当性を測る比較対象としても読めます。
+<a href="https://aws.amazon.com/blogs/machine-learning/accelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Faccelerate-multimodal-rl-training-with-skyrl-on-amazon-sagemaker-hyperpod%2F">Google 翻訳で全文を読む</a></p>
+<h3>NarrateAI: Amazon Bedrock で本番運用に耐える LLM 品質保証を組む</h3>
+<p>適応的なパイプライン編成、クロスアカウントのマルチモデルフェイルオーバー、ストリーミング応答のリアルタイム評価、複合評価、数値の正確性検証という 5 つの技法で、リアルタイムに流しながら約 99% の数値精度に到達したという実装例です。モデルを差し替えながら止めずに運用するための設計（特にフェイルオーバーと評価の置き場所）は、Bedrock を本番に据えるなら一度は自分で決めなければならない論点で、その答えのたたき台が手に入ります。プロンプトの工夫ではなくアーキテクチャ側で品質を担保する話なので、評価基盤をこれから作るチームほど読む価値があります。
+<a href="https://aws.amazon.com/blogs/machine-learning/narrateai-production-ready-llm-quality-assurance-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fnarrateai-production-ready-llm-quality-assurance-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+<h3>Qwen3-TTS を SageMaker AI のリアルタイムエンドポイントにデプロイする</h3>
+<p>オープンウェイトの音声合成モデル Qwen3-TTS-12Hz-1.7B-Base を SageMaker JumpStart から立ち上げ、短い参照音声でボイスクローンを行うまでの手順です。クロスリンガルでも話者の同一性が保たれるとあり、音声機能を自前で作り込むか既製サービスを使うかの判断材料になります。モデル提供が始まった直後にマネージドなリアルタイム推論の形まで落としてあるので、PoC を最短で回したい場合の出発点として使えます。
+<a href="https://aws.amazon.com/blogs/machine-learning/deploying-real-time-personalized-speech-with-qwen3-tts-on-amazon-sagemaker-ai/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploying-real-time-personalized-speech-with-qwen3-tts-on-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
+<h3>SageMaker HyperPod と Qumulo で学習計算とデータを別リージョンに置く</h3>
+<p>学習の計算資源をあるリージョンに、データセットを別のリージョンに置くという構成を、Cloud Native Qumulo を挟んで成立させた検証結果です。NeuralCache のウォームアップ後にリモートクラスタが同居構成と同等のスループットに達したという数字は、GPU が取れない／データが動かせないという制約下での設計判断に直接効きます。クロスリージョン構成は転送量とレイテンシの見積もりを誤るとそのままコストに跳ねるので、成立条件が明示されている点が実務的です。
+<a href="https://aws.amazon.com/blogs/machine-learning/multi-region-training-with-amazon-sagemaker-hyperpod-and-qumulo/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmulti-region-training-with-amazon-sagemaker-hyperpod-and-qumulo%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-09-25]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-25.html</link>
@@ -266,23 +289,6 @@
 <h3>[アップデート] Amazon Bedrock Managed Knowledge Baseでドキュメントのアクセス権を調べるAPIが追加されたので試してみた</h3>
 <p>Bedrockのナレッジベースでどのドキュメントが検索対象になっているか（アクセス権）を確認できる新APIの解説です。権限設定のデバッグに直接使える内容なので、ナレッジベースを運用中の人は押さえておく価値があります。
 <a href="https://dev.classmethod.jp/articles/amazon-bedrock-knowledge-base-document-acl-debugging/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Famazon-bedrock-knowledge-base-document-acl-debugging%2F">Google 翻訳で全文を読む</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-12]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-12.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-12.html</guid>
-            <pubDate>Sat, 12 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の3本</h2>
-<h3>AWS DevOps AgentとAgentCore Evaluationsで本番エージェントのライフサイクルを監視する</h3>
-<p>マルチエージェントシステムの障害は従来型の監視ツールでは見逃しやすく、継続的な品質スコアリングと自律的なインフラ調査を組み合わせた二層監視の設計は、本番でエージェントを運用するうえで参考になる考え方。4エージェント構成の航空券予約システムを題材に、実際にどこまで自動診断できるかを示している点が実務的。
-<a href="https://aws.amazon.com/blogs/machine-learning/monitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmonitoring-production-agent-lifecycle-with-aws-devops-agent-and-agentcore-evaluations%2F">Google 翻訳で全文を読む</a></p>
-<h3>トークン単価だけでは測れない、Amazon Bedrock上のOpenAIモデルの選び方</h3>
-<p>「100万トークンあたりの価格」でモデルを比較しがちだが、本番ワークロードで本当に効くのは正解1件あたりのコストやエージェントの実行経路全体のコストだという指摘は、モデル選定の物差しを見直すきっかけになる。公開されたOSSベンチマークハーネスを使えば、自社のユースケースで同様の評価を再現できる点も実用的。
-<a href="https://aws.amazon.com/blogs/machine-learning/beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-for-your-workload/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbeyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-for-your-workload%2F">Google 翻訳で全文を読む</a></p>
-<h3>Amazon Bedrock AgentCoreでインタラクティブなMCP Appsを構築する</h3>
-<p>MCP Appsはホストに依存しない標準規格であり、同じサーバー実装だけでChatGPTやClaudeなど複数のAIホスト上で同一のリッチなUI体験を提供できるという点が興味深い。AgentCore上でHTMLウィジェット付きMCPサーバーを構築・デプロイする具体的な手順が示されており、対話型のAIアプリを検討している開発者に実践的な出発点となる。
-<a href="https://aws.amazon.com/blogs/machine-learning/build-interactive-mcp-apps-using-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-interactive-mcp-apps-using-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
     </channel>

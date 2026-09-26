@@ -4,11 +4,22 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 25 Sep 2026 00:21:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 00:26:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-09-26]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-26.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-26.html</guid>
+            <pubDate>Sat, 26 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<h3>OpenTelemetry と Prometheus が歩み寄る。まだ足りないものは何か</h3>
+<p>クラウドネイティブの可観測性を事実上二分してきた CNCF の2大プロジェクトが、どこまで噛み合うようになり、どこがまだ埋まっていないのかを KubeCon 前に整理した記事です。メトリクスを Prometheus、計装とトレースを OpenTelemetry という分担で組んでいる構成では、両者の境界のどこで設計判断を迫られるかがそのまま運用コストとパイプラインの重複に跳ね返るため、自チームの可観測性スタックの前提を見直す材料になります。片方に寄せる/併用するの判断を先送りしているなら、判断材料として読む価値があります。
+<a href="https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopentelemetry-prometheus-observability-interoperability%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-09-25]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-25.html</link>
@@ -141,20 +152,6 @@
 <p>CNCFの主要CNIであるCiliumの大型メジャーリリースで、Gateway APIの認証連携やL4ルーティングの拡張、IPv6環境でのIPAM改善が含まれる。マルチテナンシーやネットワークポリシー設計を見直す際の参照先として押さえておきたい内容。
 <a href="https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F14%2Fcilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more%2F">Google 翻訳で全文を読む</a>
 </content></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-12]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-12.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-12.html</guid>
-            <pubDate>Sat, 12 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<h3>分散AIトレーニング向けの信頼できるクラウドネイティブ基盤を作る</h3>
-<p>GPUを並べてクラスタを立てるだけでは「AI-ready」なプラットフォームにはならない、という指摘から始まる一本。マルチノード学習特有のボトルネック（ネットワーク、スケジューリング、耐障害性など）がどこに現れ、プラットフォームチームが何を設計すべきかを扱っており、AI基盤を任されているインフラ/プラットフォームエンジニアの設計判断に直結する内容です。</p>
-<p><a href="https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F11%2Fbuilding-a-reliable-cloud-native-foundation-for-distributed-ai-training%2F">Google 翻訳で全文を読む</a></p>
-<h3>AIなしで人力速攻突破：marimo CVE-2026-39987の手作りエクスプロイト解説</h3>
-<p>Sysdig TRTが、AI支援なしで一から手組みしたPythonツールだけでmarimoの脆弱性を突き、クラウドの踏み台ホストを侵害するまでの過程を具体的に解説しています。CVE単体の説明にとどまらず攻撃者視点での実際の突破手順が追えるため、クラウドネイティブ環境のセキュリティ対策やインシデント対応を考える上で参考になります。</p>
-<p><a href="https://webflow.sysdig.com/blog/machine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fmachine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
     </channel>

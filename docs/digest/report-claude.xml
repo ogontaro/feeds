@@ -4,11 +4,37 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 25 Sep 2026 00:20:47 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 00:26:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-09-26]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-26.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-26.html</guid>
+            <pubDate>Sat, 26 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 6 本</h2>
+<h3>Claude Code v2.1.283: 古いモデル向けのプロンプトを洗い出す <code>/doctor prompt-audit</code></h3>
+<p>CLAUDE.md・スキル・エージェント・コマンドの定義には、旧世代モデルを前提にした指示（手順の過剰な列挙や強い断定の繰り返し）がそのまま残りがちで、新しいモデルではむしろ足を引っ張ることがあります。それをまとめて監査できるコマンドが入ったので、モデルを上げるたびに手作業で見直していた人ほど棚卸しのコストが下がります。設定ファイルを「書いたときのモデル」に合わせたままにしている自覚があるなら、一度かけてみる価値があります。
+<a href="https://claude-code-log.com/changelog/v2.1.283#item-48a927274821">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.283%23item-48a927274821">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code v2.1.283: 許可モデルの固定と、ゲートウェイ経由の統制・可観測性</h3>
+<p>組織導入で最も調整が要る「使わせるモデルを固定する」が、<code>availableModelsMatch</code> と <code>deniedModels</code> というマネージド設定で表現できるようになりました。前者は名前が指すバージョンだけを許可して新リリースを明示追加までブロックできるので、勝手にモデルが切り替わる事故を防げます。あわせて LLM ゲートウェイ向けの <code>x-claude-code-prompt-id</code> ヘッダ（1 プロンプト分のリクエストをまとめて集計できる）と <code>OTEL_LOG_TOOL_CONTENT</code> による MCP ツール・WebFetch・WebSearch 出力のトレースが入り、ゲートウェイ越しの課金・監査の設計が作り込めるようになりました。
+<a href="https://claude-code-log.com/changelog/v2.1.283#item-fa9486884d69">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.283%23item-fa9486884d69">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code に「プロジェクトの記憶」を自動で持たせる Jevmem</h3>
+<p>Claude Code はセッションをまたぐと前提を失いがちで、毎回同じ説明をし直すのが実務の小さな痛みになっています。Jevmem はそれを自動化しようとする OSS ツールで、HN でも 59 ポイント・39 コメントと一定の注目を集めました（既存の Jev の上に構築されています）。同種のツールは CLAUDE.md や標準のメモリ機能と何が違うのかが導入判断の分かれ目になるので、設計を読んで自分の運用で足りていない部分を補えるか確かめたいところです。
+<a href="https://github.com/Avinash-jetwani/jevmem">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FAvinash-jetwani%2Fjevmem">Google 翻訳で全文を読む</a></p>
+<h3>Anthropic 研究「Yes, Claude can do nine loops」</h3>
+<p>エージェントを何回まで自走させるかは、コスト・レイテンシ・信頼性が同時に動く設計判断で、いまも感覚で決めている現場が多い領域です。そのループ反復を扱った Anthropic の研究記事で、HN でも 100 ポイント・49 コメントの議論が立っています。記事の主張だけでなく、他の現場がどこで止めているかの材料としてコメント欄まで眺めると、自分のエージェント設計の妥当性を測りやすくなります。
+<a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fresearch%2Fyes-claude-can-do-nine-loops">Google 翻訳で全文を読む</a></p>
+<h3>Codex を使うなら、定期タスクを押さえておきたい</h3>
+<p>コーディングエージェントを「必要なときに呼ぶ道具」から「決まった時間に走る仕組み」に変えると、依存関係の更新やテストの巡回のような定常作業をそのまま任せられます。その定期タスクの押さえどころを、実際に使っている立場から整理した記事です。Claude Code 側にも同種の実行基盤があるので、自分の定期実行の組み方と突き合わせる比較材料として読むのが効率的です。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F25%2F102941">Google 翻訳で全文を読む</a></p>
+<h3>OpenRouter の「Seed から Stripe まで」 — モデル調達レイヤの再編を当事者が語る</h3>
+<p>2023 年には「フロンティアのモデルラボは 1〜2 社で足りる」と懐疑されていたのが、いまは数十社になっている——という市場の変化を背景に、OpenRouter がシードから Stripe による買収に至るまでの道のりを、OpenRouter の Alex Atallah と AMP の Anjney Midha が語る回です。ゲートウェイ経由でモデルを調達する構成を採っているなら、料金・可用性・乗り換えコストの前提が誰の手で動くのかを知っておく価値があります。手を動かす話ではないぶん、モデル選定の前提を点検する判断材料として読む記事です。
+<a href="https://www.latent.space/p/openrouter">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fopenrouter">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-09-25]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-25.html</link>
@@ -220,20 +246,6 @@
 <h3><code>Edit()</code> の deny ルールが Bash の <code>tee</code> 書き込みに効かない不具合を修正</h3>
 <p>これまで <code>Edit()</code> の deny ルールや書き込みパスのチェックが <code>tee</code> 経由のファイル書き込みをすり抜けていた問題が修正され、同時に <code>Bash(tee:*)</code> の allow ルールが作業ディレクトリ外への書き込みをカバーしなくなった。permissions 設定でファイル保護を組んでいる場合、想定より緩い/厳しい挙動になっていないか見直す価値がある。
 <a href="https://claude-code-log.com/changelog/v2.1.269#item-8e852dfe1f19">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.269%23item-8e852dfe1f19">Google 翻訳で全文を読む</a></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-12]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-12.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-12.html</guid>
-            <pubDate>Sat, 12 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<h3>シンボリックリンク越しのパスで permission の deny/confirm ルールが効いていなかった不具合を修正（Claude Code v2.1.268）</h3>
-<p>macOS の <code>/etc</code>・<code>/tmp</code>・<code>/var</code>、Linux の <code>/bin</code> のようにシンボリックリンクになっているディレクトリでは、deny ルールを実体パスで書いても、あるいはシンボリックリンクのパス表記で書いても、Bash コマンドから見ると適用されないケースがあった。意図したサンドボックス制限が実は抜け穴になっていたという話なので、権限設定でパスベースの deny/confirm ルールを運用している人は要チェック。
-<a href="https://claude-code-log.com/changelog/v2.1.268#item-b3613ac888db">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-b3613ac888db">Google 翻訳で全文を読む</a></p>
-<h3>WebFetch が応答を開いたまま完了しないサーバーで無期限にハングする不具合を修正、300秒タイムアウトと環境変数での上書きに対応（Claude Code v2.1.268）</h3>
-<p>これまで WebFetch はサーバーがレスポンスを開始したまま完了させない場合に永久に待ち続けることがあったが、300秒で自動的に失敗するようになり、<code>CLAUDE_CODE_WEBFETCH_DEADLINE_MS</code> で時間を変更（<code>0</code> で無効化）できるようになった。フックやワークフローで WebFetch を組み込んでいると地味に刺さる不具合だったので、自動化を組んでいる人には実務的に効く修正。
-<a href="https://claude-code-log.com/changelog/v2.1.268#item-887656a3e44e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.268%23item-887656a3e44e">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
     </channel>

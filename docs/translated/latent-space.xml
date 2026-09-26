@@ -4,11 +4,19 @@
         <title>Latent Space — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Latent Space の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 05:37:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 25 Sep 2026 23:14:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha]]></title>
+            <link>https://www.latent.space/p/openrouter</link>
+            <guid>https://www.latent.space/p/openrouter</guid>
+            <pubDate>Fri, 25 Sep 2026 23:14:41 GMT</pubDate>
+            <description><![CDATA[In 2023 most people doubted that there could be more than 1 or 2 frontier model labs. Now there are dozens.... and Stripe just bought the best known one for $7B.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/openrouter">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fopenrouter">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[AINews] The Future of Latent Space]]></title>
             <link>https://www.latent.space/p/ainews-the-future-of-latent-space</link>
