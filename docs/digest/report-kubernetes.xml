@@ -4,11 +4,22 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 26 Sep 2026 00:26:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 00:21:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-09-27]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-27.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-27.html</guid>
+            <pubDate>Sun, 27 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<h3>オープンソースアプローチによるベンダーロックインの回避：開発者の視点</h3>
+<p>インフラチームが下す決定は後から覆しにくく、多くはうまくいっても、ときに対価を伴う——という前提でロックインを「調達の問題」ではなく「初期の設計判断の積み重ね」として捉え直している点が読みどころです。マネージドサービスと OSS のどちらを土台に置くかを決める場面で、後戻りコストを見積もるための観点整理として使えます。特定ベンダー固有の話ではなく、プラットフォームエンジニアリングの設計判断にそのまま効く内容です。
+<a href="https://thenewstack.io/avoiding-vendor-lock-in/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Favoiding-vendor-lock-in%2F">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-09-26]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-26.html</link>
