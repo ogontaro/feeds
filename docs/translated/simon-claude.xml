@@ -4,11 +4,19 @@
         <title>Simon Willison — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Simon Willison — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 22 Sep 2026 23:46:41 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 23:39:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kākāpō Party]]></title>
+            <link>https://simonwillison.net/2026/Sep/26/kakapo-party/</link>
+            <guid>https://simonwillison.net/2026/Sep/26/kakapo-party/</guid>
+            <pubDate>Sat, 26 Sep 2026 23:39:06 GMT</pubDate>
+            <description><![CDATA[ツール：昨日、私が行ったKākāpō Partyは、WeAreDevelopers World Congress North Americaの閉会の基調講演を行いました。スターモーメントとして、私は2026年の記録破りのカカポ繁殖シーズンに言及して織り込むことにしました。最後のスライドでお祝いしたかったのですが、クロード・オーパス5.5がピクセルアートアニメーションの作成にどれほど優れていたかについて、いくつかの話題を見てきました。そこで、Googleの画像検索から3枚のKakapoの写真を切り上げ、次のプロンプトでクロードにドロップしました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/26/kakapo-party/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F26%2Fkakapo-party%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[クロード・オーパス5.5、GPT -6ソル、GPT -6ルナ、そして新しい価格戦争]]></title>
             <link>https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/</link>

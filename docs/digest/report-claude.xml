@@ -4,47 +4,75 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 27 Sep 2026 04:03:09 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 00:20:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-09-27]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-27.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-27.html</guid>
+            <pubDate>Sun, 27 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（5 本）</h2>
+<h3>CLAUDE.mdを「事件のたびに条文を足す憲法」として運用する 〜プロンプトで守れないルールはテストへ格上げする〜</h3>
+<p>CLAUDE.md を育てる運用自体は定番だが、この記事は「効かなかったルールは文章で念押しせずテストに落とす」という一段先の判断基準を示している。注意書きが増え続けて誰も守らなくなる状態をどう避けるか、個人開発の実例ベースで読める。
+<a href="https://qiita.com/charge0315/items/b86167a53117076abe6b">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fcharge0315%2Fitems%2Fb86167a53117076abe6b">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code v2.1.282〜v2.1.283 の主要アップデート - /doctor prompt-audit の追加と auto mode の既定化</h3>
+<p>変更が細かく並ぶので、まとめ1本で追うのが合理的。目玉の <code>/doctor prompt-audit</code> はプロンプトの古い書き方を機械的に洗い出せるため、既存の CLAUDE.md やスラッシュコマンドの棚卸しにそのまま使える。管理者向けのモデル制限、セキュリティ修正、破壊的変更も併せて確認しておきたい。
+<a href="https://dev.classmethod.jp/articles/20260924-cc-updates-v2-1-283/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260924-cc-updates-v2-1-283%2F">Google 翻訳で全文を読む</a></p>
+<h3>セッションID変数をフックで使う — Claude Code 実行ごとのログ分離</h3>
+<p>無人で <code>claude -p</code> を回すとログが1本に混ざり、障害調査が長引く。フックでセッションIDを拾って出力を分離するのは、自動化を運用に乗せる段で必ず要る小技。17個のジョブを launchd で回している実運用からの説明なので、自分のジョブ構成に置き換えて読める。
+<a href="https://qiita.com/joinclass/items/aa721fa92d729f756f61">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fjoinclass%2Fitems%2Faa721fa92d729f756f61">Google 翻訳で全文を読む</a></p>
+<h3>Claude Code on the web の設定項目を整理する：環境変数・API認証情報・ネットワーク・スクリプト</h3>
+<p>Web 版はローカルと設定の効き方が違い、どこに何を書くとどのセッションに反映されるのかが分かりにくい。環境変数・セットアップスクリプト・ネットワークアクセス・API認証情報という4項目の役割の違いを実際に検証しているので、チームに展開する前の前提整理に使える。
+<a href="https://dev.classmethod.jp/articles/claude-code-cloud-environment-settings/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-cloud-environment-settings%2F">Google 翻訳で全文を読む</a></p>
+<h3>1 日 4 スロットのスケジュール実行で、技術ブログが人手なしで出続ける仕組みの全体像</h3>
+<p>Claude Code のスケジュール実行にどこまで任せ、どこを人手で残すかの線引きが俯瞰できる。単発の時短ネタではなく、投稿・告知・画像生成まで含めたパイプラインとして組む際のタスク分割の仕方が参考になる。
+<a href="https://qiita.com/kai_kou/items/53a2250c4fed2ddf1a0e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fkai_kou%2Fitems%2F53a2250c4fed2ddf1a0e">Google 翻訳で全文を読む</a></p>
+<h2>新ツール・サブスク（3 本）</h2>
+<h3>[アップデート] Agent Toolkit for AWS で AWS Startup Advisor プラグインが利用可能になったので試してみた</h3>
+<p>AWS のソリューションアーキテクト視点のレビューを Claude Code のプラグインとして呼べるようにするもので、MCP プラグインが実務のどこに効くかの具体例になっている。成長段階に応じた構成助言という、これまで人に頼っていた部分をツール側へ寄せる発想が参考になる。
+<a href="https://dev.classmethod.jp/articles/20260927-aws-startup-advisor/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260927-aws-startup-advisor%2F">Google 翻訳で全文を読む</a></p>
+<h3>Show HN: チェス対局を分析する Claude Code スキル</h3>
+<p>局面図を画像として読ませ、Stockfish と組み合わせて解説を生成するスキル。テキスト表記ではなくビジョンでチェスを扱えるかという検証から始まった実験で、「曖昧な指示から定型の成果物を出す」スキルの作り方の実例として読める。出力に1時間程度かかるなど実用面の制約も正直に書かれている。
+<a href="https://github.com/brumar/chess-postmortem-skills">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbrumar%2Fchess-postmortem-skills">Google 翻訳で全文を読む</a></p>
+<h3>Muse Code vs Claude Code vs Cursor：AIコーディングエージェント2026</h3>
+<p>月額サブスク型のコーディングエージェントは選択肢が増えており、新顔 Muse Code を含めた比較は乗り換え検討の入口になる。集約系メディアの記事なので、料金やモデル対応などの事実は各社の一次情報で裏取りしてから判断したい。
+<a href="https://tech-insider.org/muse-code-vs-claude-code-vs-cursor-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Ftech-insider.org%2Fmuse-code-vs-claude-code-vs-cursor-2026%2F">Google 翻訳で全文を読む</a></p>
+<h2>AI 開発トレンド（2 本）</h2>
+<h3>NVIDIAのSoL-Piシステムは、ハーネスを最適化することでコーディングエージェントのトークン使用量をほぼ半分に削減</h3>
+<p>モデルを替えずにハーネス側の作り込みでトークン消費をほぼ半減させたという話で、コストが直接効いてくるコーディングエージェント運用では見逃せない。プロンプトやツール呼び出しの組み方で消費量がどれだけ変わるかの目安として読む価値がある。
+<a href="https://the-decoder.com/nvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthe-decoder.com%2Fnvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness%2F">Google 翻訳で全文を読む</a></p>
+<h3>Codexを使うなら、codex execと構造化出力を押さえておきたい</h3>
+<p>エージェントCLIを非対話で呼び、結果を構造化出力で受け取る形は、<code>claude -p</code> を自動化に組み込むときと同じ設計課題。別ツールの作法を比較材料として読むと、自分のパイプラインの入出力設計を見直すきっかけになる。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/26/103930">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F26%2F103930">Google 翻訳で全文を読む</a></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-09-26]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-26.html</link>
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-26.html</guid>
             <pubDate>Sat, 26 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 6 本</h2>
-<section class="item">
 <h3>Claude Code v2.1.283: 古いモデル向けのプロンプトを洗い出す <code>/doctor prompt-audit</code></h3>
-<p>CLAUDE.md・スキル・エージェント・コマンドの定義には、旧世代モデルを前提にした指示（手順の過剰な列挙や強い断定の繰り返し）がそのまま残りがちで、新しいモデルではむしろ足を引っ張ることがあります。それをまとめて監査できるコマンドが入ったので、モデルを上げるたびに手作業で見直していた人ほど棚卸しのコストが下がります。設定ファイルを「書いたときのモデル」に合わせたままにしている自覚があるなら、一度かけてみる価値があります。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.283#item-48a927274821">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.283%23item-48a927274821">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>CLAUDE.md・スキル・エージェント・コマンドの定義には、旧世代モデルを前提にした指示（手順の過剰な列挙や強い断定の繰り返し）がそのまま残りがちで、新しいモデルではむしろ足を引っ張ることがあります。それをまとめて監査できるコマンドが入ったので、モデルを上げるたびに手作業で見直していた人ほど棚卸しのコストが下がります。設定ファイルを「書いたときのモデル」に合わせたままにしている自覚があるなら、一度かけてみる価値があります。
+<a href="https://claude-code-log.com/changelog/v2.1.283#item-48a927274821">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.283%23item-48a927274821">Google 翻訳で全文を読む</a></p>
 <h3>Claude Code v2.1.283: 許可モデルの固定と、ゲートウェイ経由の統制・可観測性</h3>
-<p>組織導入で最も調整が要る「使わせるモデルを固定する」が、<code>availableModelsMatch</code> と <code>deniedModels</code> というマネージド設定で表現できるようになりました。前者は名前が指すバージョンだけを許可して新リリースを明示追加までブロックできるので、勝手にモデルが切り替わる事故を防げます。あわせて LLM ゲートウェイ向けの <code>x-claude-code-prompt-id</code> ヘッダ（1 プロンプト分のリクエストをまとめて集計できる）と <code>OTEL_LOG_TOOL_CONTENT</code> による MCP ツール・WebFetch・WebSearch 出力のトレースが入り、ゲートウェイ越しの課金・監査の設計が作り込めるようになりました。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.283#item-fa9486884d69">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.283%23item-fa9486884d69">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>組織導入で最も調整が要る「使わせるモデルを固定する」が、<code>availableModelsMatch</code> と <code>deniedModels</code> というマネージド設定で表現できるようになりました。前者は名前が指すバージョンだけを許可して新リリースを明示追加までブロックできるので、勝手にモデルが切り替わる事故を防げます。あわせて LLM ゲートウェイ向けの <code>x-claude-code-prompt-id</code> ヘッダ（1 プロンプト分のリクエストをまとめて集計できる）と <code>OTEL_LOG_TOOL_CONTENT</code> による MCP ツール・WebFetch・WebSearch 出力のトレースが入り、ゲートウェイ越しの課金・監査の設計が作り込めるようになりました。
+<a href="https://claude-code-log.com/changelog/v2.1.283#item-fa9486884d69">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.283%23item-fa9486884d69">Google 翻訳で全文を読む</a></p>
 <h3>Claude Code に「プロジェクトの記憶」を自動で持たせる Jevmem</h3>
-<p>Claude Code はセッションをまたぐと前提を失いがちで、毎回同じ説明をし直すのが実務の小さな痛みになっています。Jevmem はそれを自動化しようとする OSS ツールで、HN でも 59 ポイント・39 コメントと一定の注目を集めました（既存の Jev の上に構築されています）。同種のツールは CLAUDE.md や標準のメモリ機能と何が違うのかが導入判断の分かれ目になるので、設計を読んで自分の運用で足りていない部分を補えるか確かめたいところです。</p>
-<p class="links"><a href="https://github.com/Avinash-jetwani/jevmem">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FAvinash-jetwani%2Fjevmem">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>Claude Code はセッションをまたぐと前提を失いがちで、毎回同じ説明をし直すのが実務の小さな痛みになっています。Jevmem はそれを自動化しようとする OSS ツールで、HN でも 59 ポイント・39 コメントと一定の注目を集めました（既存の Jev の上に構築されています）。同種のツールは CLAUDE.md や標準のメモリ機能と何が違うのかが導入判断の分かれ目になるので、設計を読んで自分の運用で足りていない部分を補えるか確かめたいところです。
+<a href="https://github.com/Avinash-jetwani/jevmem">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FAvinash-jetwani%2Fjevmem">Google 翻訳で全文を読む</a></p>
 <h3>Anthropic 研究「Yes, Claude can do nine loops」</h3>
-<p>エージェントを何回まで自走させるかは、コスト・レイテンシ・信頼性が同時に動く設計判断で、いまも感覚で決めている現場が多い領域です。そのループ反復を扱った Anthropic の研究記事で、HN でも 100 ポイント・49 コメントの議論が立っています。記事の主張だけでなく、他の現場がどこで止めているかの材料としてコメント欄まで眺めると、自分のエージェント設計の妥当性を測りやすくなります。</p>
-<p class="links"><a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fresearch%2Fyes-claude-can-do-nine-loops">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>エージェントを何回まで自走させるかは、コスト・レイテンシ・信頼性が同時に動く設計判断で、いまも感覚で決めている現場が多い領域です。そのループ反復を扱った Anthropic の研究記事で、HN でも 100 ポイント・49 コメントの議論が立っています。記事の主張だけでなく、他の現場がどこで止めているかの材料としてコメント欄まで眺めると、自分のエージェント設計の妥当性を測りやすくなります。
+<a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fresearch%2Fyes-claude-can-do-nine-loops">Google 翻訳で全文を読む</a></p>
 <h3>Codex を使うなら、定期タスクを押さえておきたい</h3>
-<p>コーディングエージェントを「必要なときに呼ぶ道具」から「決まった時間に走る仕組み」に変えると、依存関係の更新やテストの巡回のような定常作業をそのまま任せられます。その定期タスクの押さえどころを、実際に使っている立場から整理した記事です。Claude Code 側にも同種の実行基盤があるので、自分の定期実行の組み方と突き合わせる比較材料として読むのが効率的です。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F25%2F102941">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>コーディングエージェントを「必要なときに呼ぶ道具」から「決まった時間に走る仕組み」に変えると、依存関係の更新やテストの巡回のような定常作業をそのまま任せられます。その定期タスクの押さえどころを、実際に使っている立場から整理した記事です。Claude Code 側にも同種の実行基盤があるので、自分の定期実行の組み方と突き合わせる比較材料として読むのが効率的です。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/25/102941">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F25%2F102941">Google 翻訳で全文を読む</a></p>
 <h3>OpenRouter の「Seed から Stripe まで」 — モデル調達レイヤの再編を当事者が語る</h3>
-<p>2023 年には「フロンティアのモデルラボは 1〜2 社で足りる」と懐疑されていたのが、いまは数十社になっている——という市場の変化を背景に、OpenRouter がシードから Stripe による買収に至るまでの道のりを、OpenRouter の Alex Atallah と AMP の Anjney Midha が語る回です。ゲートウェイ経由でモデルを調達する構成を採っているなら、料金・可用性・乗り換えコストの前提が誰の手で動くのかを知っておく価値があります。手を動かす話ではないぶん、モデル選定の前提を点検する判断材料として読む記事です。</p>
-<p class="links"><a href="https://www.latent.space/p/openrouter">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fopenrouter">Google 翻訳で全文を読む</a></p>
-</section>
+<p>2023 年には「フロンティアのモデルラボは 1〜2 社で足りる」と懐疑されていたのが、いまは数十社になっている——という市場の変化を背景に、OpenRouter がシードから Stripe による買収に至るまでの道のりを、OpenRouter の Alex Atallah と AMP の Anjney Midha が語る回です。ゲートウェイ経由でモデルを調達する構成を採っているなら、料金・可用性・乗り換えコストの前提が誰の手で動くのかを知っておく価値があります。手を動かす話ではないぶん、モデル選定の前提を点検する判断材料として読む記事です。
+<a href="https://www.latent.space/p/openrouter">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fopenrouter">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -53,36 +81,24 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-25.html</guid>
             <pubDate>Fri, 25 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 6 本</h2>
-<section class="item">
 <h3>Claude Code v2.1.281 の主要アップデート — attribution: false の追加と rm -rf の確認強化</h3>
-<p>コミットに Claude のトレーラーを付けない <code>attribution: false</code> が入った回です。危険な rm の確認強化と auto モードの挙動変更も含まれ、いずれも無人実行の前提が変わる変更なので、CI や自動化に Claude Code を組み込んでいるなら先に把握しておきたいところ。記事では実際に <code>attribution: false</code> を試した結果まで書かれており、設定がどう効くかを確認できます。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20260924-cc-updates-v2-1-281/">原文を読む</a></p>
-</section>
-<section class="item">
+<p>コミットに Claude のトレーラーを付けない <code>attribution: false</code> が入った回です。危険な rm の確認強化と auto モードの挙動変更も含まれ、いずれも無人実行の前提が変わる変更なので、CI や自動化に Claude Code を組み込んでいるなら先に把握しておきたいところ。記事では実際に <code>attribution: false</code> を試した結果まで書かれており、設定がどう効くかを確認できます。
+<a href="https://dev.classmethod.jp/articles/20260924-cc-updates-v2-1-281/">原文を読む</a></p>
 <h3>Claude Code v2.1.282: セッション再開や作業中のコマンドで拡張思考が失われる問題の修正</h3>
-<p><code>--continue</code> / <code>--resume</code> での再開や、作業中に <code>/model</code>・<code>/rename</code> などの即時実行コマンドを使ったときに、それまでの拡張思考が破棄されてしまう問題がまとめて直りました。長時間セッションや再開を前提にした運用では推論の文脈が静かに落ちる分だけ出力品質が下がるため、症状が分かりにくいタイプの不具合です。要約リクエストが拒否されてコンパクションが失敗したときにフォールバックモデルで再試行する修正も入り、セッションが途中で死ににくくなっています。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.282#item-beda824ed81b">原文を読む</a></p>
-</section>
-<section class="item">
+<p><code>--continue</code> / <code>--resume</code> での再開や、作業中に <code>/model</code>・<code>/rename</code> などの即時実行コマンドを使ったときに、それまでの拡張思考が破棄されてしまう問題がまとめて直りました。長時間セッションや再開を前提にした運用では推論の文脈が静かに落ちる分だけ出力品質が下がるため、症状が分かりにくいタイプの不具合です。要約リクエストが拒否されてコンパクションが失敗したときにフォールバックモデルで再試行する修正も入り、セッションが途中で死ににくくなっています。
+<a href="https://claude-code-log.com/changelog/v2.1.282#item-beda824ed81b">原文を読む</a></p>
 <h3>Claude Code v2.1.282: 権限ルールと設定ロックの効き方を修正 — 統制の穴を塞ぐ</h3>
-<p>パターン途中に <code>:*</code> を含む Bash 権限ルールが設定ファイルでは無視され、<code>--allowedTools</code> でしか効いていなかった問題が修正され、全ソースで機能するようになりました(マッチ方法を説明する起動時の警告も追加)。あわせて真偽値のロックキーに誤った型を書いても無視されないようになり、macOS のシンボリックリンク経由で意図しない CLAUDE.md や rules が読み込まれる問題も塞がっています。権限・統制の設定が「書いたつもりで効いていない」状態は事故に直結するので、managed settings を配っているチームほど挙動を確認しておく価値があります。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.282#item-2d6020e79aaf">原文を読む</a></p>
-</section>
-<section class="item">
+<p>パターン途中に <code>:*</code> を含む Bash 権限ルールが設定ファイルでは無視され、<code>--allowedTools</code> でしか効いていなかった問題が修正され、全ソースで機能するようになりました(マッチ方法を説明する起動時の警告も追加)。あわせて真偽値のロックキーに誤った型を書いても無視されないようになり、macOS のシンボリックリンク経由で意図しない CLAUDE.md や rules が読み込まれる問題も塞がっています。権限・統制の設定が「書いたつもりで効いていない」状態は事故に直結するので、managed settings を配っているチームほど挙動を確認しておく価値があります。
+<a href="https://claude-code-log.com/changelog/v2.1.282#item-2d6020e79aaf">原文を読む</a></p>
 <h3>Multica の紹介＋初心者ループエンジニアリング</h3>
-<p>Multica というツールの紹介と、エージェントをループで回す「ループエンジニアリング」の入門を1本にまとめた記事です。単発の指示で終わらせず、結果を見て次の指示を出すサイクルをどう組むかは、コーディングエージェントに仕事を任せる際の基本形になりつつあります。初心者向けに道具立てから説明しているので、ループ運用の考え方を一度整理しておきたいときに向いています。</p>
-<p class="links"><a href="https://qiita.com/gensan0223/items/267936f36aebcbba718f">原文を読む</a></p>
-</section>
-<section class="item">
+<p>Multica というツールの紹介と、エージェントをループで回す「ループエンジニアリング」の入門を1本にまとめた記事です。単発の指示で終わらせず、結果を見て次の指示を出すサイクルをどう組むかは、コーディングエージェントに仕事を任せる際の基本形になりつつあります。初心者向けに道具立てから説明しているので、ループ運用の考え方を一度整理しておきたいときに向いています。
+<a href="https://qiita.com/gensan0223/items/267936f36aebcbba718f">原文を読む</a></p>
 <h3>AI が作った HTML を Google Workspace で社内限定公開する方法(スキル付き!)</h3>
-<p>Claude Code が作った HTML レポートを、Google Apps Script と clasp を使って社内限定公開まで持っていく仕組みを Agent Skill 化した実例です。外部サービスを叩くスキルをどう作り、レポート生成から公開までを1つの指示で完結させるかの型として参考になります。成果物を社内に配るところまで自動化したいなら、そのまま流用できる部分が多いはずです。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/html-service-20260924/">原文を読む</a></p>
-</section>
-<section class="item">
+<p>Claude Code が作った HTML レポートを、Google Apps Script と clasp を使って社内限定公開まで持っていく仕組みを Agent Skill 化した実例です。外部サービスを叩くスキルをどう作り、レポート生成から公開までを1つの指示で完結させるかの型として参考になります。成果物を社内に配るところまで自動化したいなら、そのまま流用できる部分が多いはずです。
+<a href="https://dev.classmethod.jp/articles/html-service-20260924/">原文を読む</a></p>
 <h3>Codex を使うなら、Worktrees と会話の分岐を押さえておきたい</h3>
-<p>コーディングエージェントに並行して作業させるための、worktree による作業ツリーの分離と会話の分岐の使い方がまとまっています。エージェントが同じ作業ツリーを共有すると衝突や巻き戻しが起きるので、この分離の設計は Claude Code 側でも同じように必要になる話です。ツールは違っても、複数タスクを安全に走らせる際の型として読み替えが効きます。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105">原文を読む</a></p>
-</section>
+<p>コーディングエージェントに並行して作業させるための、worktree による作業ツリーの分離と会話の分岐の使い方がまとまっています。エージェントが同じ作業ツリーを共有すると衝突や巻き戻しが起きるので、この分離の設計は Claude Code 側でも同じように必要になる話です。ツールは違っても、複数タスクを安全に走らせる際の型として読み替えが効きます。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105">原文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -91,46 +107,30 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-24.html</guid>
             <pubDate>Thu, 24 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 8 本</h2>
-<section class="item">
 <h3>Claude Code v2.1.280 の主要アップデート - Fable 5.1 と GPT-6 Astra 超えの最新モデル Opus 5.5 の登場</h3>
-<p>既定モデルが Opus 5.5 に切り替わり、あわせて料金が 20% 下がるという、コスト前提そのものが動くリリース。既定モデルの変更やキーバインドの挙動変更といった破壊的変更が並んでおり、CI やチームのセットアップで確認すべき点のチェックリストとしてそのまま使える。実際に試した結果が添えられているので、移行の可否を自分の環境で判断する材料になる。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20260923-cc-updates-v2-1-280/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260923-cc-updates-v2-1-280%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>既定モデルが Opus 5.5 に切り替わり、あわせて料金が 20% 下がるという、コスト前提そのものが動くリリース。既定モデルの変更やキーバインドの挙動変更といった破壊的変更が並んでおり、CI やチームのセットアップで確認すべき点のチェックリストとしてそのまま使える。実際に試した結果が添えられているので、移行の可否を自分の環境で判断する材料になる。
+<a href="https://dev.classmethod.jp/articles/20260923-cc-updates-v2-1-280/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260923-cc-updates-v2-1-280%2F">Google 翻訳で全文を読む</a></p>
 <h3>Claude Code は telemetry を有効にしないと AGENTS.md を読まない [修正済み]</h3>
-<p>421 ポイント・236 コメントが集まった、Claude Code の設定ファイル読み込みに関する不具合の報告。AGENTS.md を置いているのに指示が効かない、という症状の原因切り分けに直結する内容で、同種の「設定が読まれていない」系の相談が来たときの観点として覚えておく価値がある。すでに修正済みだが、修正前のどのバージョンを使っているチームは影響範囲を確認しておきたい。</p>
-<p class="links"><a href="https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.szypowi.cz%2Fp%2Fclaude-code-reads-agents.md-only-when-telemetry-is-on%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>421 ポイント・236 コメントが集まった、Claude Code の設定ファイル読み込みに関する不具合の報告。AGENTS.md を置いているのに指示が効かない、という症状の原因切り分けに直結する内容で、同種の「設定が読まれていない」系の相談が来たときの観点として覚えておく価値がある。すでに修正済みだが、修正前のどのバージョンを使っているチームは影響範囲を確認しておきたい。
+<a href="https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.szypowi.cz%2Fp%2Fclaude-code-reads-agents.md-only-when-telemetry-is-on%2F">Google 翻訳で全文を読む</a></p>
 <h3>Claude の「荷重を支える継ぎ目」</h3>
-<p>Claude を組み込んだシステムのどこが構造上の要になるかを論じた考察記事で、HN で 98 ポイント・41 コメントの議論を呼んでいる。モデルや API の前提が変わったときに壊れやすい箇所を事前に見極める視点は、エージェント設計のレビュー観点として持ち帰れる。コメント欄の反論も含めて読むと、設計上のトレードオフの捉え方が立体的になる。</p>
-<p class="links"><a href="https://madradavid.com/claudes-load-bearing-seams/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmadradavid.com%2Fclaudes-load-bearing-seams%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>Claude を組み込んだシステムのどこが構造上の要になるかを論じた考察記事で、HN で 98 ポイント・41 コメントの議論を呼んでいる。モデルや API の前提が変わったときに壊れやすい箇所を事前に見極める視点は、エージェント設計のレビュー観点として持ち帰れる。コメント欄の反論も含めて読むと、設計上のトレードオフの捉え方が立体的になる。
+<a href="https://madradavid.com/claudes-load-bearing-seams/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmadradavid.com%2Fclaudes-load-bearing-seams%2F">Google 翻訳で全文を読む</a></p>
 <h3>どうやって claude.ai を 2 週間で 3 倍高速化したか</h3>
-<p>2 週間で 3 倍という具体的な数字が出ている性能改善の記録で、推測ではなく計測からボトルネックを特定して効果を検証する進め方が読み取れる。自前のサービスや社内ツールの応答速度に悩んでいる場合、同じ順序で当てはめられる。AI 製品特有の待ち時間(ストリーミングやモデル呼び出し)をどう扱ったかという点が実務では一番参考になる。</p>
-<p class="links"><a href="https://claude.dev/blog/how-we-made-claude-ai-faster/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>2 週間で 3 倍という具体的な数字が出ている性能改善の記録で、推測ではなく計測からボトルネックを特定して効果を検証する進め方が読み取れる。自前のサービスや社内ツールの応答速度に悩んでいる場合、同じ順序で当てはめられる。AI 製品特有の待ち時間(ストリーミングやモデル呼び出し)をどう扱ったかという点が実務では一番参考になる。
+<a href="https://claude.dev/blog/how-we-made-claude-ai-faster/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2F">Google 翻訳で全文を読む</a></p>
 <h3>Claude が CRISPR 様の反復配列を持つ新規酵素系を発見</h3>
-<p>Anthropic の発表で、HN でも 272 ポイント・276 コメントと今日いちばん大きい反応を集めている。モデルを研究プロセスの一部として使う事例の現在地が分かるので、探索的なタスクをエージェントにどこまで任せられるかを考える材料になる。専門外でも、AI に仮説生成と検証のどこを担わせたのかという分担の設計に目を通しておく価値がある。</p>
-<p class="links"><a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fnews%2Fclaude-discovers-novel-enzyme-system">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>Anthropic の発表で、HN でも 272 ポイント・276 コメントと今日いちばん大きい反応を集めている。モデルを研究プロセスの一部として使う事例の現在地が分かるので、探索的なタスクをエージェントにどこまで任せられるかを考える材料になる。専門外でも、AI に仮説生成と検証のどこを担わせたのかという分担の設計に目を通しておく価値がある。
+<a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fnews%2Fclaude-discovers-novel-enzyme-system">Google 翻訳で全文を読む</a></p>
 <h3>[AINews] Claude Opus 5.5 が AINews の新しい既定モデルに - そして全社が料金を 40〜50% 値下げ</h3>
-<p>Opus 5.5 の登場と、業界全体で料金が 40〜50% 下がっている動きをまとめて追える。コーディングエージェントのサブスク料金が同時に動いている局面なので、契約やモデル選定の前提をいつ見直すべきかの判断材料になる。単体のモデル比較ではなく、価格競争の構図として捉えたいときに。</p>
-<p class="links"><a href="https://www.latent.space/p/ainews-claude-opus-55-the-new-default">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-claude-opus-55-the-new-default">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>Opus 5.5 の登場と、業界全体で料金が 40〜50% 下がっている動きをまとめて追える。コーディングエージェントのサブスク料金が同時に動いている局面なので、契約やモデル選定の前提をいつ見直すべきかの判断材料になる。単体のモデル比較ではなく、価格競争の構図として捉えたいときに。
+<a href="https://www.latent.space/p/ainews-claude-opus-55-the-new-default">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-claude-opus-55-the-new-default">Google 翻訳で全文を読む</a></p>
 <h3>Codex を使うなら、Skills と Plugins を押さえておきたい</h3>
-<p>Codex の拡張機構である Skills と Plugins を実践目線で整理した記事。他社のコーディングエージェントが拡張の単位をどう設計しているかを知ると、Claude Code 側の Skills・MCP をどこで使い分けるかの判断が相対化できる。複数のエージェントを併用しているチームほど、用語と責務の対応を揃えるために読んでおきたい。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F23%2F123604">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>Codex の拡張機構である Skills と Plugins を実践目線で整理した記事。他社のコーディングエージェントが拡張の単位をどう設計しているかを知ると、Claude Code 側の Skills・MCP をどこで使い分けるかの判断が相対化できる。複数のエージェントを併用しているチームほど、用語と責務の対応を揃えるために読んでおきたい。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F23%2F123604">Google 翻訳で全文を読む</a></p>
 <h3>[Amazon Bedrock] VLM に判定を先に書かせるのを止めて、外観検査の検出率を比べてみました</h3>
-<p>出力スキーマのキー順を変えただけで検出率が変わった、という現象を系統的に検証した記録。構造化出力では「何を先に書かせるか」が結果を左右するという話で、Claude の構造化出力や評価セットの設計にそのまま効く。プロンプトやスキーマを直したのに精度が上下する理由を説明できるようになる。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-vlm-inspection-verdict-order/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fbedrock-vlm-inspection-verdict-order%2F">Google 翻訳で全文を読む</a></p>
-</section>
+<p>出力スキーマのキー順を変えただけで検出率が変わった、という現象を系統的に検証した記録。構造化出力では「何を先に書かせるか」が結果を左右するという話で、Claude の構造化出力や評価セットの設計にそのまま効く。プロンプトやスキーマを直したのに精度が上下する理由を説明できるようになる。
+<a href="https://dev.classmethod.jp/articles/bedrock-vlm-inspection-verdict-order/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fbedrock-vlm-inspection-verdict-order%2F">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -139,41 +139,27 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-23.html</guid>
             <pubDate>Wed, 23 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 7 本</h2>
-<section class="item">
 <h3>Claude Opus 5.5 — Anthropic が新フラッグシップをリリース</h3>
-<p>Anthropic が Opus 5.5 を発表し、HN では 1,100 ポイント超・773 コメントと当日最大の反応が集まった。モデル更新はプロンプト設計・コスト見積り・モデル選定の前提をまとめて動かすので、まず公式の仕様と価格を自分の目で押さえておきたい。同日に競合の新モデルも出ており、単体ではなく選択肢全体の比較材料として読む価値がある。</p>
-<p class="links"><a href="https://www.anthropic.com/claude-opus-5-5">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>Anthropic が Opus 5.5 を発表し、HN では 1,100 ポイント超・773 コメントと当日最大の反応が集まった。モデル更新はプロンプト設計・コスト見積り・モデル選定の前提をまとめて動かすので、まず公式の仕様と価格を自分の目で押さえておきたい。同日に競合の新モデルも出ており、単体ではなく選択肢全体の比較材料として読む価値がある。
+<a href="https://www.anthropic.com/claude-opus-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>
 <h3>Simon Willison の初見 — Opus 5.5、GPT-6 Sol/Luna、そして価格競争</h3>
-<p>新モデルが同日に複数出た日を、実際にアプリを組む立場から整理した一次所見。ベンチマークの数字ではなく「どのモデルがアプリの相手として扱いやすいか」という観点で比較しているため、乗り換えや併用の判断材料として直接使える。発表当日の空気を記録した文章としても残る。</p>
-<p class="links"><a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F22%2Fopus-and-sol-and-luna%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>新モデルが同日に複数出た日を、実際にアプリを組む立場から整理した一次所見。ベンチマークの数字ではなく「どのモデルがアプリの相手として扱いやすいか」という観点で比較しているため、乗り換えや併用の判断材料として直接使える。発表当日の空気を記録した文章としても残る。
+<a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F22%2Fopus-and-sol-and-luna%2F">Google 翻訳で全文を読む</a></p>
 <h3>Artificial Analysis による Claude Opus 5.5 の性能・価格分析</h3>
-<p>第三者による定量比較で、同条件のスコアとコストを並べて見られる。ベンダーの発表や所感を割り引いて読むための基準になるので、「安いほうで十分か」を判断したいときに最初に開く一枚。HN でも 219 ポイントと議論が立っている。</p>
-<p class="links"><a href="https://artificialanalysis.ai/models/claude-opus-5-5">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fartificialanalysis.ai%2Fmodels%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>第三者による定量比較で、同条件のスコアとコストを並べて見られる。ベンダーの発表や所感を割り引いて読むための基準になるので、「安いほうで十分か」を判断したいときに最初に開く一枚。HN でも 219 ポイントと議論が立っている。
+<a href="https://artificialanalysis.ai/models/claude-opus-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fartificialanalysis.ai%2Fmodels%2Fclaude-opus-5-5">Google 翻訳で全文を読む</a></p>
 <h3>Amazon Bedrock で利用可能になった Claude Opus 5.5 を試してみた</h3>
-<p>Bedrock の Converse API から実際に呼んだ検証で、JP / Global プロファイルの指定方法、effort レベルによる reasoningContent の有無、Fast mode の非対応、Opus 5 からの料金の変化まで一通りまとまっている。クラウド経由で Claude を使う実装では、モデル ID の差し替えだけで済むのかを判断する材料になる。日本語の実機情報として社内展開の説得にも使いやすい。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-claude-opus-5-5/">原文を読む</a></p>
-</section>
-<section class="item">
+<p>Bedrock の Converse API から実際に呼んだ検証で、JP / Global プロファイルの指定方法、effort レベルによる reasoningContent の有無、Fast mode の非対応、Opus 5 からの料金の変化まで一通りまとまっている。クラウド経由で Claude を使う実装では、モデル ID の差し替えだけで済むのかを判断する材料になる。日本語の実機情報として社内展開の説得にも使いやすい。
+<a href="https://dev.classmethod.jp/articles/bedrock-claude-opus-5-5/">原文を読む</a></p>
 <h3>Claude Code v2.1.280 — Opus 5.5 がデフォルト Opus に</h3>
-<p>Claude Code 側にも <code>claude-opus-5-5</code> が入り、新しいデフォルト Opus モデルになった(1M トークンコンテキスト、1M トークンあたり $4/$20、キャッシュ読み取り $0.20/Mtok)。何もしなくても既定モデルが変わるので、長いコンテキスト前提の使い方とコスト感は一度見直しになる。changelog 項目のうち、まずここだけは押さえておきたい。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.280#item-a04fb491d826">原文を読む</a></p>
-</section>
-<section class="item">
+<p>Claude Code 側にも <code>claude-opus-5-5</code> が入り、新しいデフォルト Opus モデルになった(1M トークンコンテキスト、1M トークンあたり $4/$20、キャッシュ読み取り $0.20/Mtok)。何もしなくても既定モデルが変わるので、長いコンテキスト前提の使い方とコスト感は一度見直しになる。changelog 項目のうち、まずここだけは押さえておきたい。
+<a href="https://claude-code-log.com/changelog/v2.1.280#item-a04fb491d826">原文を読む</a></p>
 <h3>Claude Code v2.1.280 — 実務に効く修正(シンボリックリンク書き込みの判定と auto mode の再試行)</h3>
-<p>シンボリックリンク経由の書き込みを、作業ツリー内のパス表記ではなく実際の着地点で判定するようになり、承認プロンプトには着地点が表示され、<code>acceptEdits</code> / allow ルール / auto モードは作業ツリー外に着地する書き込みを承認しなくなった。安全側に倒れた重要な変更なので、共有リポジトリで自動承認を使っているなら挙動の変化を把握しておきたい。あわせて、safety check が拒否したアクションを auto mode が繰り返し再試行する問題(リトライはバックオフし、連続 10 回でターン停止)、MCP のツール説明・サーバー指示文に効く 2,048 文字上限を変える <code>CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH</code>、Write 呼び出しの引数名ゆれの許容、モデル切替やフォークサブエージェント再開時のプロンプトキャッシュ破損の修正も入っている。MCP サーバーを自作している人ほど上限緩和が効く。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.280#item-97c0be39bbfe">原文を読む</a></p>
-</section>
-<section class="item">
+<p>シンボリックリンク経由の書き込みを、作業ツリー内のパス表記ではなく実際の着地点で判定するようになり、承認プロンプトには着地点が表示され、<code>acceptEdits</code> / allow ルール / auto モードは作業ツリー外に着地する書き込みを承認しなくなった。安全側に倒れた重要な変更なので、共有リポジトリで自動承認を使っているなら挙動の変化を把握しておきたい。あわせて、safety check が拒否したアクションを auto mode が繰り返し再試行する問題(リトライはバックオフし、連続 10 回でターン停止)、MCP のツール説明・サーバー指示文に効く 2,048 文字上限を変える <code>CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH</code>、Write 呼び出しの引数名ゆれの許容、モデル切替やフォークサブエージェント再開時のプロンプトキャッシュ破損の修正も入っている。MCP サーバーを自作している人ほど上限緩和が効く。
+<a href="https://claude-code-log.com/changelog/v2.1.280#item-97c0be39bbfe">原文を読む</a></p>
 <h3>Claude Code の Plugins は設定したほうがいい</h3>
-<p>Claude Code の Plugin 機能を入れておくべき理由をまとめた記事。エージェントに何をどこまで渡すかをチーム単位で管理する流れが来ているので、個人の設定で済ませているうちに一度読んでおくと、後からの共有・配布の設計が楽になる。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/22/124945">原文を読む</a></p>
-</section>
+<p>Claude Code の Plugin 機能を入れておくべき理由をまとめた記事。エージェントに何をどこまで渡すかをチーム単位で管理する流れが来ているので、個人の設定で済ませているうちに一度読んでおくと、後からの共有・配布の設計が楽になる。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/22/124945">原文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -182,31 +168,21 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-22.html</guid>
             <pubDate>Tue, 22 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
 <h3>Claude Codeの Agent view とセッション間通信は使ったほうがいい</h3>
-<p>Claude Code を複数タスクで並行して走らせると、どのセッションが何をしているかが見えなくなり、成果の受け渡しも口頭ベースになりがちです。Agent view とセッション間通信はその2点を仕組みで解消する機能で、この記事は実際に使った上での使いどころと注意点をまとめています。サブエージェントに仕事を分ける設計を考えているなら、任せ方と結果の回収方法の型としてそのまま参考になります。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258">原文を読む</a></p>
-</section>
-<section class="item">
+<p>Claude Code を複数タスクで並行して走らせると、どのセッションが何をしているかが見えなくなり、成果の受け渡しも口頭ベースになりがちです。Agent view とセッション間通信はその2点を仕組みで解消する機能で、この記事は実際に使った上での使いどころと注意点をまとめています。サブエージェントに仕事を分ける設計を考えているなら、任せ方と結果の回収方法の型としてそのまま参考になります。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258">原文を読む</a></p>
 <h3>Claude Code v2.1.277: CLAUDE.md が無ければ AGENTS.md を読むように</h3>
-<p>CLAUDE.md を持たないプロジェクトでは、Claude Code が代わりに AGENTS.md を読み込むようになりました。Codex など他のコーディングエージェントと指示ファイルを共有していたり、AGENTS.md を正として運用しているチームにとっては、既存の資産がそのまま効くようになる変更です。読み込ませる内容は /config の「Project instructions」から確認・差し替えできます(Bedrock、Vertex、Foundry ではまだ利用不可)。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.277#item-2632a3e60ae2">原文を読む</a></p>
-</section>
-<section class="item">
+<p>CLAUDE.md を持たないプロジェクトでは、Claude Code が代わりに AGENTS.md を読み込むようになりました。Codex など他のコーディングエージェントと指示ファイルを共有していたり、AGENTS.md を正として運用しているチームにとっては、既存の資産がそのまま効くようになる変更です。読み込ませる内容は /config の「Project instructions」から確認・差し替えできます(Bedrock、Vertex、Foundry ではまだ利用不可)。
+<a href="https://claude-code-log.com/changelog/v2.1.277#item-2632a3e60ae2">原文を読む</a></p>
 <h3>Claude Code v2.1.278: auto mode の分類器がサーバー側デフォルトに(課金の前提が変わる)</h3>
-<p>auto mode の分類器が、Claude API / Enterprise および Bedrock・Vertex・Foundry・ゲートウェイ経由でデフォルトでサーバー側実行になりました。分類器のオーバーヘッドには課金されないため、auto mode を常用しているチームはコスト見積もりの前提が変わります。課金対象へのフォールバック時には警告が出るほか、/status の <code>Auto mode server</code> 行で自分のセッションがどちらで動いているか分かるので、まずそこを確認しておくのが確実です。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.278#item-88506706c503">原文を読む</a></p>
-</section>
-<section class="item">
+<p>auto mode の分類器が、Claude API / Enterprise および Bedrock・Vertex・Foundry・ゲートウェイ経由でデフォルトでサーバー側実行になりました。分類器のオーバーヘッドには課金されないため、auto mode を常用しているチームはコスト見積もりの前提が変わります。課金対象へのフォールバック時には警告が出るほか、/status の <code>Auto mode server</code> 行で自分のセッションがどちらで動いているか分かるので、まずそこを確認しておくのが確実です。
+<a href="https://claude-code-log.com/changelog/v2.1.278#item-88506706c503">原文を読む</a></p>
 <h3>Claude Code v2.1.277 の信頼性修正 — claude -p のハング、Grep/Glob の誤報告など</h3>
-<p>ヘッドレス実行や Agent SDK を CI・自動化に組み込んでいる人に効く修正がまとまっています。内部エラー後に <code>claude -p</code> や SDK のセッションが結果を返さず無言でハングしていたのが、エラーを報告して終了コード 1 で終わるようになり、Grep/Glob も資源不足で検索を開始できなかったときに「一致なし」と偽らずエラーを返すようになりました。どちらも「失敗を成功と誤認する」種類の不具合で、パイプラインの信頼性に直結します。Write や Edit のエラー処理、古いビルドにログアウトさせられる問題なども直っています。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.277#item-d567c65d9c0a">原文を読む</a></p>
-</section>
-<section class="item">
+<p>ヘッドレス実行や Agent SDK を CI・自動化に組み込んでいる人に効く修正がまとまっています。内部エラー後に <code>claude -p</code> や SDK のセッションが結果を返さず無言でハングしていたのが、エラーを報告して終了コード 1 で終わるようになり、Grep/Glob も資源不足で検索を開始できなかったときに「一致なし」と偽らずエラーを返すようになりました。どちらも「失敗を成功と誤認する」種類の不具合で、パイプラインの信頼性に直結します。Write や Edit のエラー処理、古いビルドにログアウトさせられる問題なども直っています。
+<a href="https://claude-code-log.com/changelog/v2.1.277#item-d567c65d9c0a">原文を読む</a></p>
 <h3>The Claude Delusion — Claude をめぐる言説を批判的に読む</h3>
-<p>Claude(および AI 全般)をめぐる言説を批判的に論じた記事で、HN では 150 件近いコメントが付いています。技術解説ではないので日々の実装に直接効く話ではありませんが、ツールの能力評価とそれを取り巻く期待値・ビジネス前提を自分が混ぜて判断していないかを点検する材料になります。コメント欄の賛否も含めて眺めると、実務で AI に寄せている前提を一度疑うきっかけになります。</p>
-<p class="links"><a href="https://pluralistic.net/2026/09/21/sunsetting/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fpluralistic.net%2F2026%2F09%2F21%2Fsunsetting%2F">Google 翻訳で全文を読む</a></p>
-</section>
+<p>Claude(および AI 全般)をめぐる言説を批判的に論じた記事で、HN では 150 件近いコメントが付いています。技術解説ではないので日々の実装に直接効く話ではありませんが、ツールの能力評価とそれを取り巻く期待値・ビジネス前提を自分が混ぜて判断していないかを点検する材料になります。コメント欄の賛否も含めて眺めると、実務で AI に寄せている前提を一度疑うきっかけになります。
+<a href="https://pluralistic.net/2026/09/21/sunsetting/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fpluralistic.net%2F2026%2F09%2F21%2Fsunsetting%2F">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -215,11 +191,9 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-21.html</guid>
             <pubDate>Mon, 21 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の1本</h2>
-<section class="item">
 <h3>テスト記事</h3>
-<p>テストコメント。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20260919-cc-updates-v2-1-278/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=test">Google 翻訳で全文を読む</a></p>
-</section>
+<p>テストコメント。
+<a href="https://dev.classmethod.jp/articles/20260919-cc-updates-v2-1-278/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=test">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -228,11 +202,9 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-20.html</guid>
             <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
 <h3>Codexを使うなら、権限プロファイルとRulesを押さえておきたい</h3>
-<p>コーディングエージェントを実務に投入するとき、最初に詰まるのが「どこまで自律実行を許すか」の設計です。権限プロファイルと Rules という2つのレイヤーがどう効くのかを押さえておくと、承認ダイアログを消して速度を上げつつ危険な操作だけを止める、という調整ができるようになります。Claude Code の permissions 設定を運用している人にも、エージェントごとの権限制御の比較材料としてそのまま読めます。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a></p>
-</section>
+<p>コーディングエージェントを実務に投入するとき、最初に詰まるのが「どこまで自律実行を許すか」の設計です。権限プロファイルと Rules という2つのレイヤーがどう効くのかを押さえておくと、承認ダイアログを消して速度を上げつつ危険な操作だけを止める、という調整ができるようになります。Claude Code の permissions 設定を運用している人にも、エージェントごとの権限制御の比較材料としてそのまま読めます。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -241,21 +213,15 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-19.html</guid>
             <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の3本</h2>
-<section class="item">
 <h3>Claude CodeのRulesとAuto memoryは書きっぱなしにしないほうがいい</h3>
-<p>CLAUDE.mdやAuto memoryは一度書けば安心という機能ではなく、運用し続けることが前提の仕組みだという指摘。ルールやメモリが陳腐化してエージェントの判断を狂わせるケースを踏まえた実務目線の話で、チームでClaude Codeを定着させたいなら押さえておきたい観点。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730">原文を読む</a></p>
-</section>
-<section class="item">
+<p>CLAUDE.mdやAuto memoryは一度書けば安心という機能ではなく、運用し続けることが前提の仕組みだという指摘。ルールやメモリが陳腐化してエージェントの判断を狂わせるケースを踏まえた実務目線の話で、チームでClaude Codeを定着させたいなら押さえておきたい観点。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/18/100730">原文を読む</a></p>
 <h3>Claude Code v2.1.276 アップデートまとめ（DevelopersIO）</h3>
-<p>Claude Code v2.1.276の更新内容を日本語でまとめて紹介する記事。公式changelogを1件ずつ追うより、変更点を一気に把握したい人に向いている。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260918-cc-updates-v2-1-276%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>Claude Code v2.1.276の更新内容を日本語でまとめて紹介する記事。公式changelogを1件ずつ追うより、変更点を一気に把握したい人に向いている。
+<a href="https://dev.classmethod.jp/articles/20260918-cc-updates-v2-1-276/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260918-cc-updates-v2-1-276%2F">Google 翻訳で全文を読む</a></p>
 <h3>Claude Code v2.1.277、changelogに多数の変更が集約</h3>
-<p>最新リリースで一度に多くの変更が入ったバージョン。CLIを日常的に使っているなら、しばらく追っていなかった間の差分をまとめて確認しておく価値がある。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.277">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.277">Google 翻訳で全文を読む</a></p>
-</section>
+<p>最新リリースで一度に多くの変更が入ったバージョン。CLIを日常的に使っているなら、しばらく追っていなかった間の差分をまとめて確認しておく価値がある。
+<a href="https://claude-code-log.com/changelog/v2.1.277">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.277">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -264,16 +230,12 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-18.html</guid>
             <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
 <h3>Claude CodeのAgent Skillsは、ときどき見直したほうがいい</h3>
-<p>Agent Skillsは一度作って満足しがちだが、モデルやプロジェクトの状況が変わるとskillの前提が古びて逆に足を引っ張ることがある、という運用上の注意喚起。自分のskill群を棚卸ししたくなる実践的な視点。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349">原文を読む</a></p>
-</section>
-<section class="item">
+<p>Agent Skillsは一度作って満足しがちだが、モデルやプロジェクトの状況が変わるとskillの前提が古びて逆に足を引っ張ることがある、という運用上の注意喚起。自分のskill群を棚卸ししたくなる実践的な視点。
+<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349">原文を読む</a></p>
 <h3>Claude Code v2.1.274 リリースノート</h3>
-<p>メモリ逼迫時の可視警告、MCPサーバー接続待ちを制御する<code>CLAUDE_CODE_MCP_STARTUP_WAIT_MS</code>、OpenTelemetryへのeffort属性やmanaged-settings解決イベントの追加など、運用・監視に効く変更がまとまっている。細かいchangelog項目を追うよりこのリリースノートを見た方が全体像を把握しやすい。</p>
-<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.274">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.274">Google 翻訳で全文を読む</a></p>
-</section>
+<p>メモリ逼迫時の可視警告、MCPサーバー接続待ちを制御する<code>CLAUDE_CODE_MCP_STARTUP_WAIT_MS</code>、OpenTelemetryへのeffort属性やmanaged-settings解決イベントの追加など、運用・監視に効く変更がまとまっている。細かいchangelog項目を追うよりこのリリースノートを見た方が全体像を把握しやすい。
+<a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.274">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.274">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -282,11 +244,9 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-17.html</guid>
             <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の1本</h2>
-<section class="item">
 <h3>Claude CoworkとChatが「ひとつのClaude」に統合</h3>
-<p>Cowork（複数タスクを任せるエージェント的モード)と通常のチャットが分かれていた体験が一本化されるという発表です。ちょっとした質問から「正午までに仕上げてほしいレポート」の丸投げまで、同じ入り口でClaudeに任せられるようになる点は、Claude Codeなどエージェント的にClaudeを使う開発者にとって、今後のワークフロー設計を考える上で参考になります。Pro/Maxプランからweb・デスクトップ・モバイルに順次展開されるとのことで、展開スケジュールも押さえておく価値があります。</p>
-<p class="links"><a href="https://simonwillison.net/2026/Sep/16/one-claude/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F16%2Fone-claude%2F">Google 翻訳で全文を読む</a></p>
-</section>
+<p>Cowork（複数タスクを任せるエージェント的モード)と通常のチャットが分かれていた体験が一本化されるという発表です。ちょっとした質問から「正午までに仕上げてほしいレポート」の丸投げまで、同じ入り口でClaudeに任せられるようになる点は、Claude Codeなどエージェント的にClaudeを使う開発者にとって、今後のワークフロー設計を考える上で参考になります。Pro/Maxプランからweb・デスクトップ・モバイルに順次展開されるとのことで、展開スケジュールも押さえておく価値があります。
+<a href="https://simonwillison.net/2026/Sep/16/one-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F16%2Fone-claude%2F">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -295,11 +255,9 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-16.html</guid>
             <pubDate>Wed, 16 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の1本</h2>
-<section class="item">
 <h3>Claude Code v2.1.273 リリース — LLMゲートウェイ向けヘッダーとリモートセッションのフォークに対応</h3>
 <p>LLMゲートウェイ経由でClaude Codeを運用しているなら、<code>x-claude-code-request-class</code>などのリクエストヘッダー追加（<code>CLAUDE_CODE_GATEWAY_HINT_HEADERS=1</code>で有効化）はログ分析やルーティングに直結する地味だが効く変更。MCPサーバーが切断して自動再接続もあきらめた際に<code>/mcp</code>を案内する通知や、Claudeアプリから始めたリモートセッションをバックグラウンドでフォークできる機能も、日々の運用・並行作業のワークフローに関わる人は要チェック。</p>
-<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.273">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.273">Google 翻訳で全文を読む</a></p>
-</section>
+<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.273">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.273">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -308,34 +266,12 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-15.html</guid>
             <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
 <h3>Claude Code v2.1.271: リモートセッションの Fast Mode 対応や /config のマウス操作、self-hosted runner のドレイン通知が追加</h3>
-<p>Claude Code Remote（クラウド／セルフホストランナー）で組織設定や <code>/fast</code> に応じて Fast Mode が有効になるようになったほか、<code>/config</code> パネルでのマウス操作対応、<code>--drain-marker-file</code> によるセルフホストランナーの SIGTERM ドレイン検知など、運用面に効く細かな改善がまとまっている。自前でランナーを運用しているチームや Remote セッションを使っているチームは要チェック。</p>
-<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.271">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.271">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
+<p>Claude Code Remote（クラウド／セルフホストランナー）で組織設定や <code>/fast</code> に応じて Fast Mode が有効になるようになったほか、<code>/config</code> パネルでのマウス操作対応、<code>--drain-marker-file</code> によるセルフホストランナーの SIGTERM ドレイン検知など、運用面に効く細かな改善がまとまっている。自前でランナーを運用しているチームや Remote セッションを使っているチームは要チェック。
+<a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.271">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.271">Google 翻訳で全文を読む</a></p>
 <h3>Claude Code で auto mode を起動時のデフォルトにしたら、対応モデルと非対応モデルで挙動が分かれた</h3>
-<p>Bedrock 経由で Claude Code の auto mode を起動時デフォルトにした際の挙動を、対応モデル・非対応モデルで比較検証した実践レポート。auto mode の対応状況によって動作差が出る点は、モデル選定や運用設定を検討する際に踏まえておきたい落とし穴。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-default-bedrock%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-13]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-13.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-13.html</guid>
-            <pubDate>Sun, 13 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>Claude Code に <code>claude plugin eval</code> コマンドが追加、プラグインの自動採点テストが可能に</h3>
-<p>プラグインの eval スイートを Claude Code に対して実行し、採点済みで再現可能な結果を JSON/HTML レポートとして得られるようになった。プラグインの品質を継続的に検証したい開発者にとっては、CI 組み込みや回帰チェックの土台になる地味に大きな追加。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.269#item-fbee90810de9">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.269%23item-fbee90810de9">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3><code>Edit()</code> の deny ルールが Bash の <code>tee</code> 書き込みに効かない不具合を修正</h3>
-<p>これまで <code>Edit()</code> の deny ルールや書き込みパスのチェックが <code>tee</code> 経由のファイル書き込みをすり抜けていた問題が修正され、同時に <code>Bash(tee:*)</code> の allow ルールが作業ディレクトリ外への書き込みをカバーしなくなった。permissions 設定でファイル保護を組んでいる場合、想定より緩い/厳しい挙動になっていないか見直す価値がある。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.269#item-8e852dfe1f19">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.269%23item-8e852dfe1f19">Google 翻訳で全文を読む</a></p>
-</section>
+<p>Bedrock 経由で Claude Code の auto mode を起動時デフォルトにした際の挙動を、対応モデル・非対応モデルで比較検証した実践レポート。auto mode の対応状況によって動作差が出る点は、モデル選定や運用設定を検討する際に踏まえておきたい落とし穴。
+<a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-default-bedrock%2F">Google 翻訳で全文を読む</a></p>
 ]]></content:encoded>
         </item>
     </channel>
