@@ -4,11 +4,27 @@
         <title>HN — Front page (300+) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 17:10:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 06:19:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Authors ’Case v. Microsoft/OpenAIの密封されていないブリーフ]]></title>
+            <link>https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/</link>
+            <guid>https://news.ycombinator.com/item?id=49863864</guid>
+            <pubDate>Sun, 27 Sep 2026 06:19:33 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/コメントURL ： https://news.ycombinator.com/item?id=49863864ポイント： 544 #コメント： 489]]></description>
+            <content:encoded><![CDATA[<p><a href="https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fauthorsguild.org%2Fnews%2Fag-v-openai-top-execs-knew-mass-book-piracy-was-illegal%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[DeepSeek Elastic Compute （ DSec ）]]></title>
+            <link>https://arxiv.org/abs/2609.22978</link>
+            <guid>https://news.ycombinator.com/item?id=49859112</guid>
+            <pubDate>Sat, 26 Sep 2026 18:22:41 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://arxiv.org/abs/2609.22978コメントURL ： https://news.ycombinator.com/item?id=49859112ポイント： 302 #コメント： 95]]></description>
+            <content:encoded><![CDATA[<p><a href="https://arxiv.org/abs/2609.22978">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Farxiv.org%2Fabs%2F2609.22978">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[HNを表示： Reladraw –物を置く場所を決定するダイアグラム言語]]></title>
             <link>https://github.com/reladraw/reladraw</link>
@@ -24,6 +40,14 @@
             <pubDate>Sat, 26 Sep 2026 16:12:18 GMT</pubDate>
             <description><![CDATA[記事URL ： https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clipコメントURL ： https://news.ycombinator.com/item?id=49857899ポイント： 344 #コメント： 141]]></description>
             <content:encoded><![CDATA[<p><a href="https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthemomoftheyear.substack.com%2Fp%2Fim-the-mom-in-that-viral-giants-clip">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Go Concurrency蒸留済み]]></title>
+            <link>https://antonz.org/go-concurrency-distilled/</link>
+            <guid>https://news.ycombinator.com/item?id=49856988</guid>
+            <pubDate>Sat, 26 Sep 2026 14:34:49 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://antonz.org/go-concurrency-distilled/コメントURL ： https://news.ycombinator.com/item?id=49856988ポイント： 314 #コメント： 134]]></description>
+            <content:encoded><![CDATA[<p><a href="https://antonz.org/go-concurrency-distilled/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fantonz.org%2Fgo-concurrency-distilled%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Google Playとの別れ：会話が無料になった理由]]></title>

@@ -4,11 +4,19 @@
         <title>The New Stack — Platform Engineering — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — Platform Engineering の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 15:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 14:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kubernetesでのエージェント型AIの台頭：新しいインフラストラクチャ層の解放]]></title>
+            <link>https://thenewstack.io/agentic-ai-kubernetes-management/</link>
+            <guid>https://thenewstack.io/?p=22838266</guid>
+            <pubDate>Sun, 27 Sep 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[AIは、Kubernetes管理を含むインフラストラクチャや運用に関する期待を変化させています。モデルが使用するデータに近づくと、The post The rise of agentic AI on Kubernetes: unleashing the new infrastructure layerがNew Stackに最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/agentic-ai-kubernetes-management/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fagentic-ai-kubernetes-management%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[オープンソースアプローチによるベンダーロックインの回避：開発者の視点]]></title>
             <link>https://thenewstack.io/avoiding-vendor-lock-in/</link>
