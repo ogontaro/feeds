@@ -11,38 +11,58 @@
 <main>
 <h1>Claude 日次レポート 2026-09-27</h1>
 <article class="report"><h2>Claude / Claude Code（5 本）</h2>
+<section class="item">
 <h3>CLAUDE.mdを「事件のたびに条文を足す憲法」として運用する 〜プロンプトで守れないルールはテストへ格上げする〜</h3>
-<p>CLAUDE.md を育てる運用自体は定番だが、この記事は「効かなかったルールは文章で念押しせずテストに落とす」という一段先の判断基準を示している。注意書きが増え続けて誰も守らなくなる状態をどう避けるか、個人開発の実例ベースで読める。
-<a href="https://qiita.com/charge0315/items/b86167a53117076abe6b">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fcharge0315%2Fitems%2Fb86167a53117076abe6b">Google 翻訳で全文を読む</a></p>
+<p>CLAUDE.md を育てる運用自体は定番だが、この記事は「効かなかったルールは文章で念押しせずテストに落とす」という一段先の判断基準を示している。注意書きが増え続けて誰も守らなくなる状態をどう避けるか、個人開発の実例ベースで読める。</p>
+<p class="links"><a href="https://qiita.com/charge0315/items/b86167a53117076abe6b">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fcharge0315%2Fitems%2Fb86167a53117076abe6b">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Claude Code v2.1.282〜v2.1.283 の主要アップデート - /doctor prompt-audit の追加と auto mode の既定化</h3>
-<p>変更が細かく並ぶので、まとめ1本で追うのが合理的。目玉の <code>/doctor prompt-audit</code> はプロンプトの古い書き方を機械的に洗い出せるため、既存の CLAUDE.md やスラッシュコマンドの棚卸しにそのまま使える。管理者向けのモデル制限、セキュリティ修正、破壊的変更も併せて確認しておきたい。
-<a href="https://dev.classmethod.jp/articles/20260924-cc-updates-v2-1-283/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260924-cc-updates-v2-1-283%2F">Google 翻訳で全文を読む</a></p>
+<p>変更が細かく並ぶので、まとめ1本で追うのが合理的。目玉の <code>/doctor prompt-audit</code> はプロンプトの古い書き方を機械的に洗い出せるため、既存の CLAUDE.md やスラッシュコマンドの棚卸しにそのまま使える。管理者向けのモデル制限、セキュリティ修正、破壊的変更も併せて確認しておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20260924-cc-updates-v2-1-283/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260924-cc-updates-v2-1-283%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>セッションID変数をフックで使う — Claude Code 実行ごとのログ分離</h3>
-<p>無人で <code>claude -p</code> を回すとログが1本に混ざり、障害調査が長引く。フックでセッションIDを拾って出力を分離するのは、自動化を運用に乗せる段で必ず要る小技。17個のジョブを launchd で回している実運用からの説明なので、自分のジョブ構成に置き換えて読める。
-<a href="https://qiita.com/joinclass/items/aa721fa92d729f756f61">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fjoinclass%2Fitems%2Faa721fa92d729f756f61">Google 翻訳で全文を読む</a></p>
+<p>無人で <code>claude -p</code> を回すとログが1本に混ざり、障害調査が長引く。フックでセッションIDを拾って出力を分離するのは、自動化を運用に乗せる段で必ず要る小技。17個のジョブを launchd で回している実運用からの説明なので、自分のジョブ構成に置き換えて読める。</p>
+<p class="links"><a href="https://qiita.com/joinclass/items/aa721fa92d729f756f61">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fjoinclass%2Fitems%2Faa721fa92d729f756f61">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Claude Code on the web の設定項目を整理する：環境変数・API認証情報・ネットワーク・スクリプト</h3>
-<p>Web 版はローカルと設定の効き方が違い、どこに何を書くとどのセッションに反映されるのかが分かりにくい。環境変数・セットアップスクリプト・ネットワークアクセス・API認証情報という4項目の役割の違いを実際に検証しているので、チームに展開する前の前提整理に使える。
-<a href="https://dev.classmethod.jp/articles/claude-code-cloud-environment-settings/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-cloud-environment-settings%2F">Google 翻訳で全文を読む</a></p>
+<p>Web 版はローカルと設定の効き方が違い、どこに何を書くとどのセッションに反映されるのかが分かりにくい。環境変数・セットアップスクリプト・ネットワークアクセス・API認証情報という4項目の役割の違いを実際に検証しているので、チームに展開する前の前提整理に使える。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-cloud-environment-settings/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-cloud-environment-settings%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>1 日 4 スロットのスケジュール実行で、技術ブログが人手なしで出続ける仕組みの全体像</h3>
-<p>Claude Code のスケジュール実行にどこまで任せ、どこを人手で残すかの線引きが俯瞰できる。単発の時短ネタではなく、投稿・告知・画像生成まで含めたパイプラインとして組む際のタスク分割の仕方が参考になる。
-<a href="https://qiita.com/kai_kou/items/53a2250c4fed2ddf1a0e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fkai_kou%2Fitems%2F53a2250c4fed2ddf1a0e">Google 翻訳で全文を読む</a></p>
+<p>Claude Code のスケジュール実行にどこまで任せ、どこを人手で残すかの線引きが俯瞰できる。単発の時短ネタではなく、投稿・告知・画像生成まで含めたパイプラインとして組む際のタスク分割の仕方が参考になる。</p>
+<p class="links"><a href="https://qiita.com/kai_kou/items/53a2250c4fed2ddf1a0e">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fqiita.com%2Fkai_kou%2Fitems%2F53a2250c4fed2ddf1a0e">Google 翻訳で全文を読む</a></p>
+</section>
 <h2>新ツール・サブスク（3 本）</h2>
+<section class="item">
 <h3>[アップデート] Agent Toolkit for AWS で AWS Startup Advisor プラグインが利用可能になったので試してみた</h3>
-<p>AWS のソリューションアーキテクト視点のレビューを Claude Code のプラグインとして呼べるようにするもので、MCP プラグインが実務のどこに効くかの具体例になっている。成長段階に応じた構成助言という、これまで人に頼っていた部分をツール側へ寄せる発想が参考になる。
-<a href="https://dev.classmethod.jp/articles/20260927-aws-startup-advisor/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260927-aws-startup-advisor%2F">Google 翻訳で全文を読む</a></p>
+<p>AWS のソリューションアーキテクト視点のレビューを Claude Code のプラグインとして呼べるようにするもので、MCP プラグインが実務のどこに効くかの具体例になっている。成長段階に応じた構成助言という、これまで人に頼っていた部分をツール側へ寄せる発想が参考になる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20260927-aws-startup-advisor/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260927-aws-startup-advisor%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Show HN: チェス対局を分析する Claude Code スキル</h3>
-<p>局面図を画像として読ませ、Stockfish と組み合わせて解説を生成するスキル。テキスト表記ではなくビジョンでチェスを扱えるかという検証から始まった実験で、「曖昧な指示から定型の成果物を出す」スキルの作り方の実例として読める。出力に1時間程度かかるなど実用面の制約も正直に書かれている。
-<a href="https://github.com/brumar/chess-postmortem-skills">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbrumar%2Fchess-postmortem-skills">Google 翻訳で全文を読む</a></p>
+<p>局面図を画像として読ませ、Stockfish と組み合わせて解説を生成するスキル。テキスト表記ではなくビジョンでチェスを扱えるかという検証から始まった実験で、「曖昧な指示から定型の成果物を出す」スキルの作り方の実例として読める。出力に1時間程度かかるなど実用面の制約も正直に書かれている。</p>
+<p class="links"><a href="https://github.com/brumar/chess-postmortem-skills">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbrumar%2Fchess-postmortem-skills">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Muse Code vs Claude Code vs Cursor：AIコーディングエージェント2026</h3>
-<p>月額サブスク型のコーディングエージェントは選択肢が増えており、新顔 Muse Code を含めた比較は乗り換え検討の入口になる。集約系メディアの記事なので、料金やモデル対応などの事実は各社の一次情報で裏取りしてから判断したい。
-<a href="https://tech-insider.org/muse-code-vs-claude-code-vs-cursor-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Ftech-insider.org%2Fmuse-code-vs-claude-code-vs-cursor-2026%2F">Google 翻訳で全文を読む</a></p>
+<p>月額サブスク型のコーディングエージェントは選択肢が増えており、新顔 Muse Code を含めた比較は乗り換え検討の入口になる。集約系メディアの記事なので、料金やモデル対応などの事実は各社の一次情報で裏取りしてから判断したい。</p>
+<p class="links"><a href="https://tech-insider.org/muse-code-vs-claude-code-vs-cursor-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Ftech-insider.org%2Fmuse-code-vs-claude-code-vs-cursor-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
 <h2>AI 開発トレンド（2 本）</h2>
+<section class="item">
 <h3>NVIDIAのSoL-Piシステムは、ハーネスを最適化することでコーディングエージェントのトークン使用量をほぼ半分に削減</h3>
-<p>モデルを替えずにハーネス側の作り込みでトークン消費をほぼ半減させたという話で、コストが直接効いてくるコーディングエージェント運用では見逃せない。プロンプトやツール呼び出しの組み方で消費量がどれだけ変わるかの目安として読む価値がある。
-<a href="https://the-decoder.com/nvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthe-decoder.com%2Fnvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness%2F">Google 翻訳で全文を読む</a></p>
+<p>モデルを替えずにハーネス側の作り込みでトークン消費をほぼ半減させたという話で、コストが直接効いてくるコーディングエージェント運用では見逃せない。プロンプトやツール呼び出しの組み方で消費量がどれだけ変わるかの目安として読む価値がある。</p>
+<p class="links"><a href="https://the-decoder.com/nvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthe-decoder.com%2Fnvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Codexを使うなら、codex execと構造化出力を押さえておきたい</h3>
-<p>エージェントCLIを非対話で呼び、結果を構造化出力で受け取る形は、<code>claude -p</code> を自動化に組み込むときと同じ設計課題。別ツールの作法を比較材料として読むと、自分のパイプラインの入出力設計を見直すきっかけになる。
-<a href="https://syu-m-5151.hatenablog.com/entry/2026/09/26/103930">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F26%2F103930">Google 翻訳で全文を読む</a></p>
+<p>エージェントCLIを非対話で呼び、結果を構造化出力で受け取る形は、<code>claude -p</code> を自動化に組み込むときと同じ設計課題。別ツールの作法を比較材料として読むと、自分のパイプラインの入出力設計を見直すきっかけになる。</p>
+<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/26/103930">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F26%2F103930">Google 翻訳で全文を読む</a></p>
+</section>
 </article>
 </main>
 <footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>

@@ -4,7 +4,7 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 27 Sep 2026 00:21:26 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 04:13:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,9 +15,11 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-27.html</guid>
             <pubDate>Sun, 27 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
 <h3>オープンソースアプローチによるベンダーロックインの回避：開発者の視点</h3>
-<p>インフラチームが下す決定は後から覆しにくく、多くはうまくいっても、ときに対価を伴う——という前提でロックインを「調達の問題」ではなく「初期の設計判断の積み重ね」として捉え直している点が読みどころです。マネージドサービスと OSS のどちらを土台に置くかを決める場面で、後戻りコストを見積もるための観点整理として使えます。特定ベンダー固有の話ではなく、プラットフォームエンジニアリングの設計判断にそのまま効く内容です。
-<a href="https://thenewstack.io/avoiding-vendor-lock-in/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Favoiding-vendor-lock-in%2F">Google 翻訳で全文を読む</a></p>
+<p>インフラチームが下す決定は後から覆しにくく、多くはうまくいっても、ときに対価を伴う——という前提でロックインを「調達の問題」ではなく「初期の設計判断の積み重ね」として捉え直している点が読みどころです。マネージドサービスと OSS のどちらを土台に置くかを決める場面で、後戻りコストを見積もるための観点整理として使えます。特定ベンダー固有の話ではなく、プラットフォームエンジニアリングの設計判断にそのまま効く内容です。</p>
+<p class="links"><a href="https://thenewstack.io/avoiding-vendor-lock-in/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Favoiding-vendor-lock-in%2F">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
         <item>
@@ -26,9 +28,11 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-26.html</guid>
             <pubDate>Sat, 26 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
 <h3>OpenTelemetry と Prometheus が歩み寄る。まだ足りないものは何か</h3>
-<p>クラウドネイティブの可観測性を事実上二分してきた CNCF の2大プロジェクトが、どこまで噛み合うようになり、どこがまだ埋まっていないのかを KubeCon 前に整理した記事です。メトリクスを Prometheus、計装とトレースを OpenTelemetry という分担で組んでいる構成では、両者の境界のどこで設計判断を迫られるかがそのまま運用コストとパイプラインの重複に跳ね返るため、自チームの可観測性スタックの前提を見直す材料になります。片方に寄せる/併用するの判断を先送りしているなら、判断材料として読む価値があります。
-<a href="https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopentelemetry-prometheus-observability-interoperability%2F">Google 翻訳で全文を読む</a></p>
+<p>クラウドネイティブの可観測性を事実上二分してきた CNCF の2大プロジェクトが、どこまで噛み合うようになり、どこがまだ埋まっていないのかを KubeCon 前に整理した記事です。メトリクスを Prometheus、計装とトレースを OpenTelemetry という分担で組んでいる構成では、両者の境界のどこで設計判断を迫られるかがそのまま運用コストとパイプラインの重複に跳ね返るため、自チームの可観測性スタックの前提を見直す材料になります。片方に寄せる/併用するの判断を先送りしているなら、判断材料として読む価値があります。</p>
+<p class="links"><a href="https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopentelemetry-prometheus-observability-interoperability%2F">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
         <item>
@@ -37,12 +41,16 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-25.html</guid>
             <pubDate>Fri, 25 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
 <h3>開発者とプラットフォームチームはどちらも Kubernetes のセルフサービスを望むが、「誰が所有するか」で対立している</h3>
-<p>セルフサービス基盤の設計は「誰が何を所有するか」の線引きを誤ると、環境が野放しに増えて誰も面倒を見なくなる。開発者側の要求とプラットフォーム側の責任範囲がどこで衝突するのかを、実務の運用課題として整理している点が参考になる。プラットフォームエンジニアリングの内製基盤を設計・見直しする立場なら、責任分界の決め方の材料として読む価値がある。
-<a href="https://thenewstack.io/kubernetes-self-service-platform-teams/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-self-service-platform-teams%2F">Google 翻訳で全文を読む</a></p>
+<p>セルフサービス基盤の設計は「誰が何を所有するか」の線引きを誤ると、環境が野放しに増えて誰も面倒を見なくなる。開発者側の要求とプラットフォーム側の責任範囲がどこで衝突するのかを、実務の運用課題として整理している点が参考になる。プラットフォームエンジニアリングの内製基盤を設計・見直しする立場なら、責任分界の決め方の材料として読む価値がある。</p>
+<p class="links"><a href="https://thenewstack.io/kubernetes-self-service-platform-teams/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-self-service-platform-teams%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>SBOM はなぜサプライチェーン攻撃を止められないのか</h3>
-<p>SBOM があればサプライチェーン攻撃の多くは防げるはずだ、という前提そのものを問い直す内容で、生成して終わりになりがちな SBOM 運用の実効性を考える材料になる。「作ること」と「実際に脆弱性対応へ繋げること」の間にある運用上の障壁を押さえておくと、自組織の SBOM 戦略が絵に描いた餅になっていないかを点検できる。
-<a href="https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-are-sboms-failing-to-stop-supply-chain-attacks">Google 翻訳で全文を読む</a></p>
+<p>SBOM があればサプライチェーン攻撃の多くは防げるはずだ、という前提そのものを問い直す内容で、生成して終わりになりがちな SBOM 運用の実効性を考える材料になる。「作ること」と「実際に脆弱性対応へ繋げること」の間にある運用上の障壁を押さえておくと、自組織の SBOM 戦略が絵に描いた餅になっていないかを点検できる。</p>
+<p class="links"><a href="https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-are-sboms-failing-to-stop-supply-chain-attacks">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
         <item>
@@ -51,12 +59,16 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-24.html</guid>
             <pubDate>Thu, 24 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
 <h3>今、私はどの帽子をかぶっているのか — オープンソースの中立性という難問</h3>
-<p>CNCF ブログが、ベンダーが給与を払う maintainer の立場と中立性を正面から扱っている。プラットフォーム選定の実務では「この CNCF プロジェクトは特定ベンダーの都合でロードマップが動かないか」を見極める必要があり、その判断材料として読む価値がある。プロジェクト採用時のデューデリジェンスの観点を、きれいごと抜きで言語化してくれる珍しい一本。
-<a href="https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F23%2Fwhich-hat-am-i-wearing-right-now%2F">Google 翻訳で全文を読む</a></p>
+<p>CNCF ブログが、ベンダーが給与を払う maintainer の立場と中立性を正面から扱っている。プラットフォーム選定の実務では「この CNCF プロジェクトは特定ベンダーの都合でロードマップが動かないか」を見極める必要があり、その判断材料として読む価値がある。プロジェクト採用時のデューデリジェンスの観点を、きれいごと抜きで言語化してくれる珍しい一本。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F23%2Fwhich-hat-am-i-wearing-right-now%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>脆弱性アラート疲れが WHOOP を圧倒しかけた — それでも人間が最終判断を握る自動化</h3>
-<p>1 日数十万件のアラートという規模で、WHOOP がどうトリアージを自動化しつつ人間の判断を残したかの事例。セキュリティ運用の自動化でよくある失敗は「全部自動でクローズ」に振り切ることだが、ここでは自動化の線引き（どこまで機械に任せ、どこで人を挟むか）が設計として語られている。Platform Engineering として「自動化しすぎない」判断をどう組むかを考える実例になる。
-<a href="https://thenewstack.io/whoop-automated-vulnerability-response-workflow/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fwhoop-automated-vulnerability-response-workflow%2F">Google 翻訳で全文を読む</a></p>
+<p>1 日数十万件のアラートという規模で、WHOOP がどうトリアージを自動化しつつ人間の判断を残したかの事例。セキュリティ運用の自動化でよくある失敗は「全部自動でクローズ」に振り切ることだが、ここでは自動化の線引き（どこまで機械に任せ、どこで人を挟むか）が設計として語られている。Platform Engineering として「自動化しすぎない」判断をどう組むかを考える実例になる。</p>
+<p class="links"><a href="https://thenewstack.io/whoop-automated-vulnerability-response-workflow/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fwhoop-automated-vulnerability-response-workflow%2F">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
         <item>
@@ -65,12 +77,16 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-23.html</guid>
             <pubDate>Wed, 23 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
 <h3>SIG Apps の活動紹介 — Deployment / StatefulSet / Job を支える縁の下の力</h3>
-<p>Deployment、StatefulSet、DaemonSet、Job、CronJob という、ほぼ全員が毎日お世話になっている API の面倒を見ているのが SIG Apps。普段は意識しないが、アップグレード時やスケール時に挙動が問題になるのはたいていこの層なので、いま何が論点になっているかを把握しておくと後の設計判断が楽になる。ステートレスな Web サービスからステートフル DB、バッチ、AI ワークロードまで対象が広がっている今の状況を知る導線としても読む価値がある。
-<a href="https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F22%2Fsig-apps-spotlight%2F">Google 翻訳で全文を読む</a></p>
+<p>Deployment、StatefulSet、DaemonSet、Job、CronJob という、ほぼ全員が毎日お世話になっている API の面倒を見ているのが SIG Apps。普段は意識しないが、アップグレード時やスケール時に挙動が問題になるのはたいていこの層なので、いま何が論点になっているかを把握しておくと後の設計判断が楽になる。ステートレスな Web サービスからステートフル DB、バッチ、AI ワークロードまで対象が広がっている今の状況を知る導線としても読む価値がある。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F22%2Fsig-apps-spotlight%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>CI パイプラインの所要時間を 64% 削減 — 本番で実際に効いた施策</h3>
-<p>Merge Train のパイプライン時間を 64% 削減しつつ、テストカバレッジを 90% 増やし、最も flaky なテストも潰したという一チームの実例。CI は全員が毎日待たされるのに、改善の効き目が数値で語られにくい領域なので、「何から手を付けると効くのか」が実測値付きで並んでいる記事は自チームのボトルネック特定にそのまま流用しやすい。プラットフォーム側の人間として優先順位を決める材料になる。
-<a href="https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fcutting-ci-pipeline-time-by-64-what-actually-works-in-production">Google 翻訳で全文を読む</a></p>
+<p>Merge Train のパイプライン時間を 64% 削減しつつ、テストカバレッジを 90% 増やし、最も flaky なテストも潰したという一チームの実例。CI は全員が毎日待たされるのに、改善の効き目が数値で語られにくい領域なので、「何から手を付けると効くのか」が実測値付きで並んでいる記事は自チームのボトルネック特定にそのまま流用しやすい。プラットフォーム側の人間として優先順位を決める材料になる。</p>
+<p class="links"><a href="https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fcutting-ci-pipeline-time-by-64-what-actually-works-in-production">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
         <item>
@@ -79,9 +95,11 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-22.html</guid>
             <pubDate>Tue, 22 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
 <h3>Kubernetes v1.37: PersistentVolumeClaim の最終使用時刻を追跡できるようになる(ベータ昇格)</h3>
 <p>これまで「この PVC、まだ使われているのか?」を判断するには、Pod のボリューム参照を自前で突き合わせるツールを書くしかなかった。v1.37 で <code>PersistentVolumeClaimUnusedSinceTime</code> がベータに昇格し(デフォルト有効)、PVC protection controller が各 PVC に <code>Unused</code> 条件を付けるようになるため、放置された永続ボリュームの検出が標準機能だけで完結する。クラウドのブロックストレージ課金が効いてくる環境では、コスト最適化の一次スクリーニングとしてそのまま使える。ただし条件が示すのは「現在どの実行中 Pod からも参照されていないか」であり、過去のアクセス頻度ではない点は押さえておきたい — 削除判断の材料にはなるが、それ自体が削除の根拠になるわけではない。</p>
-<p><a href="https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F21%2Fkubernetes-v1-37-pvc-last-used-time%2F">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F21%2Fkubernetes-v1-37-pvc-last-used-time%2F">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
         <item>
@@ -114,12 +132,16 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-18.html</guid>
             <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
 <h3>OpenTelemetry everywhere: 大規模メトリクス基盤の移行事例</h3>
-<p>自前のStatsD実装（gostatsd）からOpenTelemetryへメトリクスパイプラインを移行した経験談で、CNCFプロジェクトを本番の大規模環境にどう組み込むかという実務判断の参考になる。ホストサイドカーの構成変更や移行時のトレードオフなど、プラットフォームエンジニアリングの設計判断に直結する内容。
-<a href="https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F17%2Fopentelemetry-everywhere-migrating-a-metrics-platform-at-scale%2F">Google 翻訳で全文を読む</a></p>
+<p>自前のStatsD実装（gostatsd）からOpenTelemetryへメトリクスパイプラインを移行した経験談で、CNCFプロジェクトを本番の大規模環境にどう組み込むかという実務判断の参考になる。ホストサイドカーの構成変更や移行時のトレードオフなど、プラットフォームエンジニアリングの設計判断に直結する内容。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F17%2Fopentelemetry-everywhere-migrating-a-metrics-platform-at-scale%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Falcoによるランタイムセキュリティ入門</h3>
-<p>CNCFのランタイムセキュリティプロジェクトFalcoの導入方法を解説する記事で、クラウドネイティブ環境でのセキュリティ監視をこれから整備したいチームにとって取っ掛かりになる。マルチテナンシーやワークロード保護の運用設計を検討する際の一次情報として有用。
-<a href="https://webflow.sysdig.com/blog/intro-runtime-security-falco">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintro-runtime-security-falco">Google 翻訳で全文を読む</a></p>
+<p>CNCFのランタイムセキュリティプロジェクトFalcoの導入方法を解説する記事で、クラウドネイティブ環境でのセキュリティ監視をこれから整備したいチームにとって取っ掛かりになる。マルチテナンシーやワークロード保護の運用設計を検討する際の一次情報として有用。</p>
+<p class="links"><a href="https://webflow.sysdig.com/blog/intro-runtime-security-falco">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintro-runtime-security-falco">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
         <item>
@@ -128,15 +150,21 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-17.html</guid>
             <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
 <h3>Kubernetes v1.37: バインドマウントオプションとEmptyDirパーミッションによるコンテナストレージの強化</h3>
-<p>emptyDirのパーミッションモード指定とbind mountオプションという、地味だが実運用で刺さるストレージセキュリティ機能がv1.37で入った。複数コンテナ間でのファイル削除禁止や、書き込み可能ボリュームからの任意バイナリ実行禁止といった、これまで回避策でしか実現できなかったポリシーをKubernetesネイティブに強制できるようになる点が、マルチテナント環境やセキュリティ要件の厳しい基盤の設計者にとって重要。
-<a href="https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F16%2Fkubernetes-v1-37-hardening-container-storage%2F">Google 翻訳で全文を読む</a></p>
+<p>emptyDirのパーミッションモード指定とbind mountオプションという、地味だが実運用で刺さるストレージセキュリティ機能がv1.37で入った。複数コンテナ間でのファイル削除禁止や、書き込み可能ボリュームからの任意バイナリ実行禁止といった、これまで回避策でしか実現できなかったポリシーをKubernetesネイティブに強制できるようになる点が、マルチテナント環境やセキュリティ要件の厳しい基盤の設計者にとって重要。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F16%2Fkubernetes-v1-37-hardening-container-storage%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Argo CD v3.6-rc1 がリリース</h3>
-<p>GitOpsのデファクトツールであるArgo CDの次期メジャーバージョンのリリース候補が公開された。多くの組織のデプロイ基盤に直結するため、正式リリース前に変更点を把握し検証環境で先行確認しておく価値がある。
-<a href="https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-6-rc1-is-here-c0b562dc78d1%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>
+<p>GitOpsのデファクトツールであるArgo CDの次期メジャーバージョンのリリース候補が公開された。多くの組織のデプロイ基盤に直結するため、正式リリース前に変更点を把握し検証環境で先行確認しておく価値がある。</p>
+<p class="links"><a href="https://blog.argoproj.io/argo-cd-v3-6-rc1-is-here-c0b562dc78d1?source=rss----21be29067291---4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.argoproj.io%2Fargo-cd-v3-6-rc1-is-here-c0b562dc78d1%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>CloudNativePG PostgreSQL バックエンドでOpenBaoをKubernetes上に構築する</h3>
-<p>シークレット管理基盤には自己修復性とベンダーロックインの回避が求められるが、HashiCorp VaultのオープンソースフォークであるOpenBaoとCloudNativePGを組み合わせることでそれを実現する構成を紹介している。特定クラウドに依存しないシークレット管理をKubernetesネイティブに設計したいプラットフォームチームにとって具体的な参考になる。
-<a href="https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F16%2Frunning-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend%2F">Google 翻訳で全文を読む</a></p>
+<p>シークレット管理基盤には自己修復性とベンダーロックインの回避が求められるが、HashiCorp VaultのオープンソースフォークであるOpenBaoとCloudNativePGを組み合わせることでそれを実現する構成を紹介している。特定クラウドに依存しないシークレット管理をKubernetesネイティブに設計したいプラットフォームチームにとって具体的な参考になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F16%2Frunning-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend%2F">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
         <item>
@@ -153,16 +181,21 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-15.html</guid>
             <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
 <h3>Kubernetes の Changed Block Tracking API、Beta 版での変更点</h3>
-<p>バックアップ・スナップショット関連のCSI拡張機能がAlphaからBetaに昇格し、SnapshotMetadataService CRDやサイドカーの仕様が固まりつつある。バックアップ製品を自前実装・評価している運用者は、Alpha版との差分を把握しておくと移行判断がしやすくなる。
-<a href="https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fcsi-changed-block-tracking-beta%2F">Google 翻訳で全文を読む</a></p>
+<p>バックアップ・スナップショット関連のCSI拡張機能がAlphaからBetaに昇格し、SnapshotMetadataService CRDやサイドカーの仕様が固まりつつある。バックアップ製品を自前実装・評価している運用者は、Alpha版との差分を把握しておくと移行判断がしやすくなる。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fcsi-changed-block-tracking-beta%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Kubernetes v1.37: Memory QoS が Beta に昇格しデフォルト有効化</h3>
-<p>cgroup v2環境でのメモリ制御がBetaとなりデフォルトオンになるため、既存クラスタのアップグレード時に挙動が変わる可能性がある。ノードのメモリ管理・OOM挙動はコストとワークロード安定性に直結するため、運用者は事前に設定オプションを確認しておく価値がある。
-<a href="https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fkubernetes-v1-37-memory-qos-graduates-to-beta%2F">Google 翻訳で全文を読む</a></p>
+<p>cgroup v2環境でのメモリ制御がBetaとなりデフォルトオンになるため、既存クラスタのアップグレード時に挙動が変わる可能性がある。ノードのメモリ管理・OOM挙動はコストとワークロード安定性に直結するため、運用者は事前に設定オプションを確認しておく価値がある。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fkubernetes-v1-37-memory-qos-graduates-to-beta%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
 <h3>Cilium 1.20 リリース: Gateway API ExternalAuth、TCPRoute/UDPRoute、IPv6向けENI IPAM など</h3>
-<p>CNCFの主要CNIであるCiliumの大型メジャーリリースで、Gateway APIの認証連携やL4ルーティングの拡張、IPv6環境でのIPAM改善が含まれる。マルチテナンシーやネットワークポリシー設計を見直す際の参照先として押さえておきたい内容。
-<a href="https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F14%2Fcilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more%2F">Google 翻訳で全文を読む</a>
-</content></p>
+<p>CNCFの主要CNIであるCiliumの大型メジャーリリースで、Gateway APIの認証連携やL4ルーティングの拡張、IPv6環境でのIPAM改善が含まれる。マルチテナンシーやネットワークポリシー設計を見直す際の参照先として押さえておきたい内容。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F14%2Fcilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more%2F">Google 翻訳で全文を読む</a></p>
+</section>
 ]]></content:encoded>
         </item>
     </channel>
