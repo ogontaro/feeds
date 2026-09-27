@@ -32,10 +32,12 @@ mise run serve     # docs/ をローカルプレビュー
 | レポート | 翻訳フィードの直近 24h + 日本語サイトは購読元を直接取得 + X タイムラインの直近 24h | 見てほしいものだけ最大 5 件選定（X はドメインに合うものだけ混ぜる） | `digest/report-<domain>.xml` ＋ `digest/report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
 | X タイムライン取得 | X ホームタイムライン | 使わない | actions/cache 上の蓄積（レポートの追加入力） | 30 分ごと |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `digest/release-<domain>.xml` ＋ `digest/release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
+| 月次トレンド | 前月の日次レポート・週次リリース＋外部情報源の前月分＋前回のトレンドレポート | 潮流を三角測量で判定し、前月からの変化を書く | `digest/trend.xml` ＋ `digest/trend/YYYY-MM.html` | 毎月2日 07:45 JST |
 | フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
 | Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
 
 - レポートは claude / kubernetes / aws の 3 ドメイン。リリースレポートは devtools を加えた 4 ドメイン
+- 月次トレンドだけはドメイン横断の1本（業界全体の潮流を追う目的のため）
 - X タイムラインは独立したレポート・カテゴリを持たない。各ドメインのレポートが追加入力として読み、そのドメインに合うポストだけを記事と混ぜて載せる
 - フィード監査・Issue 駆動反映はドメイン非依存（`source.yaml`/`interests.yaml` 全体を扱う）
 
@@ -133,7 +135,7 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
 3. `claude-code-action`: `.cache/report-<domain>-input.json` と `report-criteria/report-<domain>.md` を読み、
    基準どおりに `.cache/report-<domain>.md` を書く。
 4. `src/digest/report-render.ts <domain>`: md → `docs/digest/report/<domain>/YYYY-MM-DD.html`、
-   保持期間（14 日）より古い HTML を削除し、残ったページ一覧から `docs/digest/report-<domain>.xml` を
+   保持期間（35 日。月次トレンドが前月ぶんを読むため）より古い HTML を削除し、残ったページ一覧から `docs/digest/report-<domain>.xml` を
    再生成（直近 60 エントリ）。
 
 ### X タイムライン（`timeline.yml` 30 分ごと ＋ `report.yml` の追加入力）
@@ -181,6 +183,26 @@ public リポジトリのため、プライバシーは次で担保する。
    プロジェクト単位・破壊的変更を先頭にした日本語ダイジェストを `.cache/release-<domain>.md` に書く。
 4. `src/digest/release-render.ts <domain>`: md → `docs/digest/release/<domain>/YYYY-MM-DD.html`、
    `docs/digest/release-<domain>.xml` を再生成（直近 26 エントリ）。
+
+### 月次トレンド（`trend.yml`, 毎月2日 07:45 JST = cron `45 22 1 * *`）
+
+SRE から Platform Engineering / IDP が出てきたような、概念・呼称の出現と定着を月単位で追う。
+ドメイン横断の1本。
+
+1. `src/digest/trend-collect.ts [YYYY-MM]`: 対象月（省略時は JST の前月）について次を `.cache/trend-input.md` に書き出す（JSON だと本文が 1 行に潰れ、Read ツールが長い行を切り詰めるため Markdown）。
+   `docs/digest/trend/<月>.html` が既にあれば何も書かずに終わり、以降はスキップする。
+   - 当月の日次レポート・週次リリースの本文（`<article>` をテキスト化）
+   - スクリプト内 `SOURCES` の外部フィード（Thoughtworks / Martin Fowler / Stack Overflow / JetBrains /
+     CNCF / Linux Foundation / PlatformEngineering.org / GitHub / Pragmatic Engineer / Publickey / CodeZine）の当月分。
+     各ソースに三角測量の種別の目安（定量調査・専門家判定・実活動データ・ニュース）を付ける。数えるかは記事の中身で判定
+   - 前回のトレンドレポート（前月からの変化を書くため）
+2. `claude-code-action`: 入力と `report-criteria/trend.md` を読み `.cache/trend.md` を書く。
+   採否の段階付け（Adopt / Trial 等）はしない。利用者の環境を知らない AI には根拠のある判断ができないため。
+3. `src/digest/trend-render.ts`: md → `docs/digest/trend/YYYY-MM.html`、`docs/digest/trend.xml` を再生成（直近 24 エントリ）。
+
+- 外部情報源は WebSearch ではなく RSS で取る。AI 呼び出しが OpenCode Go 経由のため WebSearch が動作保証がなく検出困難なため。
+  取得件数が少ないソースがあるため、潮流は複数月で判定する前提にしている
+- ドメインを持たないので `adoption-log.ndjson` には記録しない
 
 ### フィード出典トラッキング（`adoption-log.ndjson`）
 
@@ -253,7 +275,7 @@ DeepSeek 公式 API の割引時間帯とは別物で確認できないため、
 ハードコードするより、実際の失敗を検知して切り替える方が確実（`issue-request.yml` の
 ようにトリガー時刻が読めないワークフローでも同じロジックで対応できる）。
 
-### ワークフロー失敗対応（`translate/report/release/feed-audit/issue-request/
+### ワークフロー失敗対応（`translate/report/release/trend/feed-audit/issue-request/
 inoreader-sync/timeline/component-review-reminder.yml` 末尾の `notify-failure` ジョブ、
 `workflow-failure-fix.yml`）
 
@@ -261,13 +283,13 @@ inoreader-sync/timeline/component-review-reminder.yml` 末尾の `notify-failure
 失敗すると `workflow-failure` ラベル付きの Issue を自動作成する（本文は run URL・
 ワークフロー名のみ。public リポジトリのためログ全文は貼らない）。
 
-`translate/report/release/feed-audit/issue-request/inoreader-sync/timeline.yml` の7ワークフローには
+`translate/report/release/trend/feed-audit/issue-request/inoreader-sync/timeline.yml` の8ワークフローには
 対で「close resolved failure issues」ステップ（本体ジョブ成功時、同一ワークフロー名の
 `workflow-failure` ラベル付き open Issue を検索してクローズ）があり、一過性の失敗で作られた
 Issue が次回成功時に自動で片付く（AI 判断を挟まない決定的な gh CLI 操作のみ）。
 `component-review-reminder.yml`（本業がissue作成）は対象外。
 
-`workflow-failure-fix.yml` は対象7ワークフロー（timeline は対象外。次の取得ですぐ回復するため）の `workflow_run: completed` を
+`workflow-failure-fix.yml` は対象8ワークフロー（timeline は対象外。次の取得ですぐ回復するため）の `workflow_run: completed` を
 トリガーに、失敗（`conclusion == 'failure'`）を検知して `gh run view --log-failed` で
 ログを読み、原因が自リポジトリのコード/ワークフロー定義にあれば小さな修正をして
 PR を作成する（**自動マージしない**。既存の自動マージはフィード URL 1 行追加のみで
@@ -296,7 +318,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 
 - `docs/assets/style.css` を書き出す（単一オーナー）
 - サービスB: `docs/translated/index.html`（海外サイト一覧）と `docs/opml/translated.opml` を生成
-- サービスA: `docs/index.html`（日次/週次レポート、ドメイン別に最新+過去一覧+購読リンク）と `docs/opml/digest.opml`、各ドメインの `docs/digest/report|release/<domain>/index.html`（過去一覧）を生成
+- サービスA: `docs/index.html`（日次/週次/月次レポート、ドメイン別に最新+過去一覧+購読リンク）と `docs/opml/digest.opml`、各ドメインの `docs/digest/report|release/<domain>/index.html` と `docs/digest/trend/index.html`（過去一覧）を生成
 - 実在しないフィードファイル（初回 CI 前の devtools 等）は OPML・購読リンクから除外
 
 ## 状態管理
@@ -305,7 +327,8 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 
 - 翻訳: 既存 `translated/<id>.xml` の guid 集合に無いものだけ処理。
 - レポート / リリース: `digest/report|release/<domain>/YYYY-MM-DD.html` が既にあればその日はスキップ。
-- 各フィードは件数上限で truncate（翻訳 100 / レポート 60 / リリース 26）。
+- 月次トレンド: `digest/trend/YYYY-MM.html` が既にあればその月はスキップ。前月との差分の材料は前回のトレンド HTML そのもの。
+- 各フィードは件数上限で truncate（翻訳 100 / レポート 60 / リリース 26 / トレンド 24）。
 
 > `translated/<id>.xml` / `digest/report-*.xml` / `digest/release-*.xml` は **CI でのみ生成する**。ローカル生成物を
 > コミットしない。guid は永続で、翻訳エンジン未設定のパススルー実行でもエントリは「翻訳済み」として
@@ -319,13 +342,14 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 | `translate.yml` | `0 */6 * * *` ＋ dispatch | 海外サイトのサイト別翻訳（`--strict`）→ build → commit |
 | `report.yml` | `0 22 * * *` ＋ dispatch | 翻訳最新化 → ドメインごとに collect / claude-code-action / render → build → commit |
 | `release.yml` | `30 22 * * 0` ＋ dispatch | ドメインごとに collect / claude-code-action / render → build → commit |
+| `trend.yml` | `45 22 1 * *` ＋ dispatch（`month` 入力で対象月を指定可） | collect / claude-code-action / render → build → commit |
 | `feed-audit.yml` | `0 22 * * 6` ＋ dispatch | collect → claude-code-action → validate → PR 作成・自動マージ |
 | `issue-request.yml` | `issues: opened` | claude-code-action → validate → PR 作成・自動マージ |
 | `component-review-reminder.yml` | `0 0 1 * *` ＋ dispatch | 棚卸し Issue を作成 |
 | `inoreader-sync.yml` | `0 21 * * 6` ＋ dispatch | スター取得 → commit |
 | `timeline.yml` | `5,35 * * * *` ＋ dispatch | X タイムライン取得 → actions/cache に蓄積（docs は書かない。`concurrency: x-timeline`） |
 
-- `docs/` を書き込む5ワークフロー（translate/report/release/feed-audit/inoreader-sync）は
+- `docs/` を書き込む6ワークフロー（translate/report/release/trend/feed-audit/inoreader-sync）は
   全て `concurrency: { group: docs-write }` で直列化。`source.yaml` の同時書き換えを防ぐ。
 - commit ステップは `permissions: contents: write` ＋ `git push "https://x-access-token:${GITHUB_TOKEN}@github.com/..."`。
   `claude-code-action` が git 認証情報を書き換えるため、素の `git push` は認証失敗する。
@@ -341,7 +365,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 - `claude-code-action` はスケジュール実行に human-actor チェックを適用し、cron を最後に編集した
   ユーザーに実行を帰属させる。通らないとそのレポートが止まり、症状は「ワークフロー失敗」だけ。
 - レポートは 1 日あたり **claude-code-action を最大 3 回**（ドメイン数）、月曜は release.yml で
-  追加で最大 4 回（claude / kubernetes / aws / devtools）。CI 利用はサブスクの
+  追加で最大 4 回（claude / kubernetes / aws / devtools）、毎月2日は trend.yml で 1 回。CI 利用はサブスクの
   5 時間ローリング枠を消費する。
 
 ## ディレクトリ構成
@@ -354,16 +378,17 @@ starred-log.ndjson     Inoreader スター記録ログ（追記専用）
 report-criteria/
   report-claude.md  report-kubernetes.md  report-aws.md  x-posts.md（X ポストの共通の扱い）
   release-claude.md  release-aws.md  release-kubernetes.md  release-devtools.md
+  trend.md（月次トレンドの判定基準）
 src/
   lib/           config / feeds取得 / html / style / labels / urls / types / paths（低レベル共有）
   translate/     サービスB: run.ts（サイト別翻訳生成）engine.ts（DeepL）store.ts（translated/<id>.xml 入出力）
-  digest/        サービスA: report-collect / report-render / release-collect / release-render / x-timeline
+  digest/        サービスA: report-collect / report-render / release-collect / release-render / trend-collect / trend-render / x-timeline
   site/          build.ts（index.html + translated/index.html + opml/ 生成）
   feed-audit-collect.ts  feed-audit-validate.ts  feed-audit-summarize.ts
   inoreader-starred.ts
 docs/            GitHub Pages 配信対象。ワークフローがコミット
 .github/workflows/
-  translate.yml  report.yml  release.yml
+  translate.yml  report.yml  release.yml  trend.yml
   feed-audit.yml  issue-request.yml  component-review-reminder.yml  inoreader-sync.yml  timeline.yml
 ```
 

@@ -7,7 +7,9 @@
 - **翻訳配信(B)** … 海外サイト新着の全量・日本語化ストリーム。選定もコメントも付けない。
   **1サイト=1フィード**(`docs/translated/<id>.xml`)。日本語サイト(DevelopersIO / Zenn / はてな等)は翻訳フィードを作らない
 - **デイジェスト(A)** … Claude が選定・整理する日次レポート+週次リリース。**ドメイン単位**
-  (`docs/digest/report-<domain>.xml` / `release-<domain>.xml`)
+  (`docs/digest/report-<domain>.xml` / `release-<domain>.xml`)。
+  例外は月次トレンド(`docs/digest/trend.xml`)だけで、ドメイン横断の1本。
+  月次トレンドは業界全体の潮流（新概念の出現・定着）を追う目的のため、ドメインで分けない
 - ページ・実装(`src/translate/` と `src/digest/`)・購読ファイル(OPML はサービス別に2つ、
   全部入り1本は作らない)まで分離する。依存は一方向のみ: A が B の出力を入力に読む
 - A の成果物で海外リンクを提示するときは必ず三点セット(日本語の概要 + 原文 + Google 翻訳 URL)
