@@ -4,11 +4,19 @@
         <title>HN — Front page (300+) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 16:12:18 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 17:10:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[HNを表示： Reladraw –物を置く場所を決定するダイアグラム言語]]></title>
+            <link>https://github.com/reladraw/reladraw</link>
+            <guid>https://news.ycombinator.com/item?id=49858513</guid>
+            <pubDate>Sat, 26 Sep 2026 17:10:40 GMT</pubDate>
+            <description><![CDATA[理解したり、計画を立てたりするのに役立つダイアグラムを作成するのが大好きです。ただし、オプションには（ A ） MermaidやGraphvizなどの自動配置言語（ダイアグラムの外観を決定することはできません）、または（ B ） Draw.ioなどのソフトウェアがあります。これらは強力ですが、非常に時間がかかります（エージェントが操作するのは非効率です）。ダイアグラム言語でダイアグラムを定義できるだけでなく、ダイアグラムの外観を高度に制御できるという、両方のメリットを享受したかったのです。私もこれがうまくいくようにしたかったw]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/reladraw/reladraw">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Freladraw%2Freladraw">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[私はあのバイラルジャイアンツクリップのママです。ご主人のことをお話ししましょう]]></title>
             <link>https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip</link>
@@ -72,6 +80,22 @@
             <pubDate>Fri, 25 Sep 2026 15:29:25 GMT</pubDate>
             <description><![CDATA[記事URL ： https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.htmlコメントURL ： https://news.ycombinator.com/item?id=49845977ポイント： 438 #コメント： 757]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cnbc.com%2F2026%2F09%2F25%2Fpentagon-anthropic-ai-risk-appeals-court.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ASMLは、2026年にヨーロッパで「全く何も販売していない」と述べています]]></title>
+            <link>https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand</link>
+            <guid>https://news.ycombinator.com/item?id=49844663</guid>
+            <pubDate>Fri, 25 Sep 2026 13:49:06 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demandコメントURL ： https://news.ycombinator.com/item?id=49844663ポイント： 300 #コメント： 665]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.tomshardware.com/tech-industry/semiconductors/asml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.tomshardware.com%2Ftech-industry%2Fsemiconductors%2Fasml-says-its-sells-absolutely-nothing-in-europe-calls-on-eu-to-help-create-demand">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ジョージズムは機能しますか？ 5年後]]></title>
+            <link>https://www.astralcodexten.com/p/does-georgism-work-five-years-later</link>
+            <guid>https://news.ycombinator.com/item?id=49844657</guid>
+            <pubDate>Fri, 25 Sep 2026 13:48:38 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://www.astralcodexten.com/p/does-georgism-work-five-years-laterコメントURL ： https://news.ycombinator.com/item?id=49844657ポイント： 360 #コメント： 259]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.astralcodexten.com/p/does-georgism-work-five-years-later">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.astralcodexten.com%2Fp%2Fdoes-georgism-work-five-years-later">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[パイプパイプ： SponsorBlockを実装したNewPipeハードフォーク]]></title>
