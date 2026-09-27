@@ -34,20 +34,36 @@ li { margin: .3rem 0; }
 main > p.muted { margin-top: -.6rem; }
 .muted { color: var(--muted); font-size: .85rem; font-weight: 400; }
 
-/* 日次レポート/週次リリース本文(Claude生成markdown由来なのでラッパーdivは無い前提) */
+/* 日次レポート/週次リリース本文。記事(### 単位)は html.ts の digestArticle が section.item に包む */
 .report h2 { margin-top: 1.8rem; }
-.report h3 {
-  font-size: 1.05rem; margin: 0; padding: 1.4rem 0 .4rem;
-  border-top: 1px solid var(--line);
+.report .item {
+  border: 1px solid var(--line); border-radius: 10px; background: var(--bg-elevated);
+  padding: 1rem 1.1rem; margin: 0 0 1rem;
 }
-.report h2 + h3 { border-top: none; padding-top: 0; }
-.report p { margin: 0 0 1.6rem; }
-.report p a {
+.report .item h3 { font-size: 1.08rem; line-height: 1.5; margin: 0 0 .6rem; }
+.report .item p, .report .item ul { margin: 0 0 .8rem; }
+.report .item > :last-child { margin-bottom: 0; }
+.report .item ul { font-size: .92rem; }
+.report .links { display: flex; flex-wrap: wrap; gap: .5rem; }
+.report .links a {
+  display: inline-block; padding: .4rem .9rem;
+  border-radius: 999px; background: var(--accent-soft); border: 1px solid var(--line);
+  font-size: .88rem; line-height: 1.4; font-weight: 600; text-decoration: none; color: var(--accent);
+}
+.report .links a:hover { border-color: var(--accent); }
+@media (max-width: 480px) {
+  .report .item { padding: .9rem; }
+  .report .links a { flex: 1 1 auto; text-align: center; }
+}
+/* カード化以前に生成済みのページ用(section.item が無く h3 が article 直下)。旧ページが保持期間で消えたら削除してよい */
+.report > h3 { font-size: 1.05rem; margin: 0; padding: 1.4rem 0 .4rem; border-top: 1px solid var(--line); }
+.report > h2 + h3 { border-top: none; padding-top: 0; }
+.report > h3 ~ p { margin: 0 0 1.6rem; }
+.report > h3 ~ p a {
   display: inline-block; margin: .3rem .3rem 0 0; padding: .2rem .7rem;
   border-radius: 999px; background: var(--accent-soft); border: 1px solid var(--line);
   font-size: .85rem; text-decoration: none; color: var(--accent);
 }
-.report p a:hover { border-color: var(--accent); }
 
 /* トップページのドメインカード */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .9rem; margin: 1rem 0 2rem; }

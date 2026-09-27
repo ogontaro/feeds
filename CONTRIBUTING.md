@@ -29,14 +29,14 @@ mise run serve     # docs/ をローカルプレビュー
 | パイプライン | 入力 | Claude | 出力 | 頻度 |
 | --- | --- | --- | --- | --- |
 | 翻訳フィード | 海外サイトの content フィード(日本語サイトは対象外) | 使わない（DeepL のみ） | `translated/<id>.xml` ＋ `translated/index.html` | 6 時間ごと |
-| レポート | 翻訳フィードの直近 24h + 日本語サイトは購読元を直接取得 | 重要記事を 5〜10 件選定 | `digest/report-<domain>.xml` ＋ `digest/report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
-| X タイムラインレポート | X ホームタイムラインの蓄積（actions/cache）の直近 24h | 技術的に有益なポストだけ抽出・トピック別に要約 | `digest/report-x.xml` ＋ `digest/report/x/YYYY-MM-DD.html` | 取得 30 分ごと、レポート毎日 07:00 JST |
+| レポート | 翻訳フィードの直近 24h + 日本語サイトは購読元を直接取得 + X タイムラインの直近 24h | 見てほしいものだけ最大 5 件選定（X はドメインに合うものだけ混ぜる） | `digest/report-<domain>.xml` ＋ `digest/report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
+| X タイムライン取得 | X ホームタイムライン | 使わない | actions/cache 上の蓄積（レポートの追加入力） | 30 分ごと |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `digest/release-<domain>.xml` ＋ `digest/release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
 | フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
 | Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
 
-- レポートは claude / kubernetes / aws の 3 ドメイン＋ x。リリースレポートは devtools を加えた 4 ドメイン
-- x は `source.yaml` のフィードを持たない（`REPORT_DOMAINS` にだけ入り、`source.yaml` の domain には書けない）
+- レポートは claude / kubernetes / aws の 3 ドメイン。リリースレポートは devtools を加えた 4 ドメイン
+- X タイムラインは独立したレポート・カテゴリを持たない。各ドメインのレポートが追加入力として読み、そのドメインに合うポストだけを記事と混ぜて載せる
 - フィード監査・Issue 駆動反映はドメイン非依存（`source.yaml`/`interests.yaml` 全体を扱う）
 
 ## 全体構成
@@ -136,7 +136,7 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
    保持期間（14 日）より古い HTML を削除し、残ったページ一覧から `docs/digest/report-<domain>.xml` を
    再生成（直近 60 エントリ）。
 
-### X タイムラインレポート（`timeline.yml` 30 分ごと ＋ `report.yml` の x）
+### X タイムライン（`timeline.yml` 30 分ごと ＋ `report.yml` の追加入力）
 
 入力は自前 RSSHub の `twitter/home_latest`（フォロー中）と `twitter/home`（おすすめ）（ホストは `x-timeline.ts` に直書き、キーは `RSSHUB_ACCESS_KEY`）。home_latest は 1 回の取得で
 88 件(平日日中は ~8 時間ぶん)しか返らないため、取得と日次レポートを分ける。
@@ -150,9 +150,10 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
    重なりが 0 件なら取りこぼしとして `::warning::` を出す。キャッシュは上書きできないので key は実行ごとに一意
    （`x-timeline-<run_id>-<run_attempt>`）、復元は `restore-keys: x-timeline-` の前方一致で最新を拾う。
 2. `report.yml`: 同じ `path`/`restore-keys` で復元 → `x-timeline.ts`（`--strict` なし。取得に失敗しても
-   蓄積だけで進む）がその時点の取得分も足し、初回取得時刻が直近 24h のものを `.cache/report-x-input.json` に書く。
+   蓄積だけで進む）がその時点の取得分も足し、初回取得時刻が直近 24h のものを `.cache/x-recent.json` に書く。
    投稿時刻ではなく初回取得時刻で切るのは、おすすめ（`home`）が数日前の投稿も出すため。
-   以降は他ドメインと同じ（curate は `report-criteria/report-x.md`、render は `report-render.ts x`）。
+   各ドメインの curate がドメインの入力と一緒にこれを読み、`report-criteria/x-posts.md`（X 共通の扱い）と
+   ドメインの選定基準に従って、そのドメインに合うポストだけを採る。記事が 0 件でもポストがあれば curate を走らせる。
    report.yml も蓄積を保存する（しないと次の取得が同じポストを初見扱いにし、翌日のレポートにも載る）。
 
 public リポジトリのため、プライバシーは次で担保する。
@@ -160,13 +161,13 @@ public リポジトリのため、プライバシーは次で担保する。
 - 生のタイムラインはコミットしない（`.cache/` のみ・gitignore）。公開されるのは基準で選んだ技術ポストの要約だけ
 - スクリプトのログは件数のみ。取得エラーはステータスコードだけ出す（RSSHub のエラーページには認証トークンの
   一部が載るため、本文・ヘッダ・URL は出さない。失敗ログは workflow-failure-fix が PR/Issue に転記しうる）
-- 投稿者は URL 上のハンドルだけ持つ（表示名は保存しない）。`adoption-log.ndjson` には記録しない
+- 投稿者は URL 上のハンドルだけ持つ（表示名は保存しない）。`adoption-log.ndjson` には記録しない（採用ログはドメイン入力だけを見るので X のポストは入らない）
 - `RSSHUB_ACCESS_KEY` は collect ステップの `env` にだけ渡す（claude-code-action には渡らない）
 - キャッシュを読めるのはこのリポジトリのワークフローだけ。`pull_request` / `pull_request_target` トリガーの
   ワークフローを追加するとフォーク PR からキャッシュを読まれうるので追加しない
-- claude-code-action はデバッグログ有効で再実行するとツール出力（入力のポスト）をログに出す。x の失敗を
+- claude-code-action はデバッグログ有効で再実行するとツール出力（入力のポスト）をログに出す。report.yml の失敗を
   デバッグログ付きで再実行しない
-- `RSSHUB_ACCESS_KEY` 未設定時はスクリプトが空の入力を書いて正常終了し、保存・レポートともスキップ
+- `RSSHUB_ACCESS_KEY` 未設定時はスクリプトが空の入力を書いて正常終了し、レポートは記事だけで作る
 
 ### リリースレポート（`release.yml`, 毎週月 07:30 JST = cron `30 22 * * 0`）
 
@@ -332,14 +333,14 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
   APIキー。`anthropic_api_key`/`ANTHROPIC_CUSTOM_HEADERS` に渡す）。`CLAUDE_CODE_OAUTH_TOKEN`
   は Anthropic 直接に戻す場合の切り戻し用に残置（現状未使用）。`INOREADER_CLIENT_ID` /
   `INOREADER_CLIENT_SECRET` / `INOREADER_REFRESH_TOKEN` は任意（未設定ならスター連携だけスキップ）。
-  `RSSHUB_ACCESS_KEY` は任意（未設定なら X タイムラインの取得・レポートだけスキップ）。
+  `RSSHUB_ACCESS_KEY` は任意（未設定なら X タイムラインの取得だけスキップ）。
 
 ### 既知の運用リスク
 
 - `GITHUB_TOKEN` の push で `pages-build-deployment` が自動起動することは検証済み。
 - `claude-code-action` はスケジュール実行に human-actor チェックを適用し、cron を最後に編集した
   ユーザーに実行を帰属させる。通らないとそのレポートが止まり、症状は「ワークフロー失敗」だけ。
-- レポートは 1 日あたり **claude-code-action を最大 4 回**（ドメイン数＋ x）、月曜は release.yml で
+- レポートは 1 日あたり **claude-code-action を最大 3 回**（ドメイン数）、月曜は release.yml で
   追加で最大 4 回（claude / kubernetes / aws / devtools）。CI 利用はサブスクの
   5 時間ローリング枠を消費する。
 
@@ -351,7 +352,7 @@ interests.yaml
 adoption-log.ndjson    フィード採用実績ログ（追記専用）
 starred-log.ndjson     Inoreader スター記録ログ（追記専用）
 report-criteria/
-  report-claude.md  report-kubernetes.md  report-aws.md  report-x.md
+  report-claude.md  report-kubernetes.md  report-aws.md  x-posts.md（X ポストの共通の扱い）
   release-claude.md  release-aws.md  release-kubernetes.md  release-devtools.md
 src/
   lib/           config / feeds取得 / html / style / labels / urls / types / paths（低レベル共有）

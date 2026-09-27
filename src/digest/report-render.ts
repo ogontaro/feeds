@@ -1,8 +1,7 @@
 import { mkdir, readdir, rm } from "node:fs/promises";
 import { Feed as FeedGen } from "feed";
-import { marked } from "marked";
 import { recordAdoption } from "../lib/config.ts";
-import { pageShell } from "../lib/html.ts";
+import { digestArticle, pageShell } from "../lib/html.ts";
 import { DOMAIN_LABEL, domainArg } from "../lib/labels.ts";
 import { SITE_URL, reportDir, reportInputJson, reportMd, reportXml } from "../lib/paths.ts";
 import type { Domain } from "../lib/types.ts";
@@ -62,13 +61,13 @@ async function main() {
     if (!md) throw new Error(`${reportMd(domain)} is empty — the Claude step produced nothing`);
 
     const date = jstDateString();
-    const bodyHtml = await marked.parse(md);
+    const article = await digestArticle(md);
     await mkdir(dir, { recursive: true });
     await Bun.write(
       `${dir}/${date}.html`,
       pageShell({
         title: `${label} 日次レポート ${date}`,
-        body: `<h1>${label} 日次レポート ${date}</h1>\n<article class="report">${bodyHtml}</article>`,
+        body: `<h1>${label} 日次レポート ${date}</h1>\n${article}`,
         depth: 3,
       }),
     );
@@ -108,8 +107,8 @@ async function main() {
   await Bun.write(reportXml(domain), feed.rss2());
   console.log(`report-${domain}.xml: ${files.length} items`);
 
-  // x の入力はフィードではなく個人アカウントのポスト。公開の採用ログに投稿者を残さない。
-  if (!refresh && md && domain !== "x") {
+  // 採用ログはドメイン入力(フィード)だけを見る。X のポストは別ファイルなので投稿者は公開ログに残らない。
+  if (!refresh && md) {
     const adopted = await adoptedSourceNames(domain, md);
     await recordAdoption(domain, adopted);
     console.log(`adoption-log.ndjson: recorded ${adopted.length} source(s)`);

@@ -1,8 +1,7 @@
 import { mkdir, readdir } from "node:fs/promises";
 import { Feed as FeedGen } from "feed";
-import { marked } from "marked";
 import { recordAdoption } from "../lib/config.ts";
-import { pageShell } from "../lib/html.ts";
+import { digestArticle, pageShell } from "../lib/html.ts";
 import { DOMAIN_LABEL, domainArg } from "../lib/labels.ts";
 import { SITE_URL, releaseDir, releaseInputJson, releaseMd, releaseXml } from "../lib/paths.ts";
 import type { Domain } from "../lib/types.ts";
@@ -40,13 +39,13 @@ async function main() {
     if (!md) throw new Error(`${releaseMd(domain)} is empty — the Claude step produced nothing`);
 
     const date = jstDateString(); // the Monday the workflow runs
-    const bodyHtml = await marked.parse(md);
+    const article = await digestArticle(md);
     await mkdir(dir, { recursive: true });
     await Bun.write(
       `${dir}/${date}.html`,
       pageShell({
         title: `${label} リリースレポート ${date}`,
-        body: `<h1>${label} リリースレポート ${date}</h1>\n<article class="report">${bodyHtml}</article>`,
+        body: `<h1>${label} リリースレポート ${date}</h1>\n${article}`,
         depth: 3,
       }),
     );

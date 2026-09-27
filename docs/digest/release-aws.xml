@@ -4,7 +4,7 @@
         <title>AWS リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 21 Sep 2026 10:46:39 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 04:03:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
@@ -15,10 +15,11 @@
             <guid>https://ogontaro.github.io/feeds/digest/release/aws/2026-09-21.html</guid>
             <pubDate>Mon, 21 Sep 2026 22:30:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
 <h3>terraform-aws-eks v21.25.1</h3>
-<p><strong>破壊的変更</strong>: なし
-ドキュメント更新のみ。既知の Terraform/OpenTofu の制約を README に追記した内容で、モジュールの挙動やリソース定義に変更はない。アップグレード対応は不要。
-<a href="https://github.com/terraform-aws-modules/terraform-aws-eks/releases/tag/v21.25.1">リリースを見る</a></p>
+<p><strong>破壊的変更</strong>: なし<br>ドキュメント更新のみ。既知の Terraform/OpenTofu の制約を README に追記した内容で、モジュールの挙動やリソース定義に変更はない。アップグレード対応は不要。</p>
+<p class="links"><a href="https://github.com/terraform-aws-modules/terraform-aws-eks/releases/tag/v21.25.1">リリースを見る</a></p>
+</section>
 ]]></content:encoded>
         </item>
     </channel>

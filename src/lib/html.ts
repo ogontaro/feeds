@@ -1,4 +1,34 @@
+import { Marked } from "marked";
 import { escapeHtml } from "./urls.ts";
+
+/** 段落末尾(改行の後)、または段落全体がリンクだけの行。 */
+const LINK_ROW_RE = /^(?:([\s\S]*?)<br>\s*)?((?:<a [^>]*>[^<]*<\/a>(?:\s*\/\s*)?)+)\s*$/;
+
+// breaks: Claude はコメントとリンク行を改行1つで続けて書くので、soft break を <br> にする。
+const digestMarked = new Marked({
+  breaks: true,
+  renderer: {
+    paragraph(text) {
+      const m = text.match(LINK_ROW_RE);
+      if (!m) return `<p>${text}</p>\n`;
+      const links = m[2].replace(/<\/a>\s*\/\s*/g, "</a> ");
+      return `${m[1] ? `<p>${m[1]}</p>\n` : ""}<p class="links">${links.trim()}</p>\n`;
+    },
+  },
+});
+
+/**
+ * 日次レポート/週次リリースの本文。`### 記事` から次の見出しまでを1枚のカードにまとめる。
+ * フィード生成が `<article class="report">` の中身を切り出すので、ラッパーはこの形のまま保つ。
+ */
+export async function digestArticle(md: string): Promise<string> {
+  const html = await digestMarked.parse(md);
+  const carded = html.replace(
+    /<h3[\s\S]*?(?=<h[23][\s>]|$)/g,
+    (s) => `<section class="item">\n${s.trim()}\n</section>\n`,
+  );
+  return `<article class="report">${carded}</article>`;
+}
 
 /**
  * Shared page shell. `depth` is how many directories below docs/ the page lives:

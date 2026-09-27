@@ -6,9 +6,8 @@ import type { Domain, DomainInterests, Feed, FeedsConfig, InterestsConfig } from
 export const CONTENT_DOMAINS: Domain[] = ["claude", "kubernetes", "aws"];
 // devtools はリリースのみ（購読は手元ツールの GitHub releases で、日次レポート入力は無い）。
 export const RELEASE_DOMAINS: Domain[] = ["claude", "kubernetes", "aws", "devtools"];
-// x は source.yaml のフィードを持たず、X タイムラインの蓄積(src/digest/x-timeline.ts)が入力。
-// source.yaml で指定できないよう、下の DOMAINS には入れない。
-export const REPORT_DOMAINS: Domain[] = [...CONTENT_DOMAINS, "x"];
+// 日次レポートは content ドメイン単位。X タイムラインは独立したレポートを持たず、各ドメインの追加入力になる。
+export const REPORT_DOMAINS: Domain[] = CONTENT_DOMAINS;
 
 const DOMAINS = new Set<string>(["claude", "kubernetes", "aws", "devtools"]);
 const KINDS = new Set<string>(["content", "release"]);

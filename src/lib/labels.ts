@@ -5,7 +5,6 @@ export const DOMAIN_LABEL: Record<Domain, string> = {
   kubernetes: "Kubernetes",
   aws: "AWS",
   devtools: "開発ツール",
-  x: "X タイムライン",
 };
 
 /** インデックスと OPML のフォルダ分けに使うカテゴリ。 */
@@ -14,7 +13,6 @@ export const DOMAIN_CATEGORY: Record<Domain, string> = {
   kubernetes: "プラットフォーム",
   aws: "プラットフォーム",
   devtools: "開発ツール",
-  x: "SNS",
 };
 
 /** Parse and validate a domain passed as a CLI arg. */

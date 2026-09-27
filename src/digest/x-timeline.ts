@@ -1,6 +1,6 @@
 import { mkdir } from "node:fs/promises";
 import Parser from "rss-parser";
-import { CACHE, X_TIMELINE_JSON, reportInputJson } from "../lib/paths.ts";
+import { CACHE, X_RECENT_JSON, X_TIMELINE_JSON } from "../lib/paths.ts";
 
 /**
  * X ホームタイムライン(RSSHub `twitter/home_latest` と `twitter/home`)を蓄積し、日次レポートの入力を書き出す。
@@ -121,7 +121,7 @@ async function main() {
   await mkdir(CACHE, { recursive: true });
   const key = process.env.RSSHUB_ACCESS_KEY ?? "";
   if (!key) {
-    await Bun.write(reportInputJson("x"), "[]");
+    await Bun.write(X_RECENT_JSON, "[]");
     console.log("RSSHUB_ACCESS_KEY not set — skip");
     return;
   }
@@ -167,9 +167,9 @@ async function main() {
   const recent = posts
     .filter((p) => now - Date.parse(p.seen) < WINDOW_MS)
     .map(({ guid: _, seen: __, ...p }) => p);
-  await Bun.write(reportInputJson("x"), JSON.stringify(recent, null, 2));
+  await Bun.write(X_RECENT_JSON, JSON.stringify(recent, null, 2));
   console.log(
-    `x-timeline: fetched ${fetched.length} (${added} new), stored ${posts.length} (7d), report-x-input.json ${recent.length} (24h)`,
+    `x-timeline: fetched ${fetched.length} (${added} new), stored ${posts.length} (7d), x-recent.json ${recent.length} (24h)`,
   );
   if (failed.length > 0 && strict) process.exit(1);
 }

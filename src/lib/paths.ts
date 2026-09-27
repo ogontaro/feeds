@@ -41,3 +41,5 @@ export const releaseMd = (d: Domain) => join(CACHE, `release-${d}.md`);
 
 /** X タイムラインの蓄積(直近 7 日)。actions/cache で実行間を引き継ぐ。リポジトリには置かない。 */
 export const X_TIMELINE_JSON = join(CACHE, "x-timeline.json");
+/** X タイムラインのうち初回取得が直近 24h のポスト。各ドメインの日次レポートが追加入力として読む。 */
+export const X_RECENT_JSON = join(CACHE, "x-recent.json");
