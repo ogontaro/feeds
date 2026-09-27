@@ -4,11 +4,19 @@
         <title>HN — Front page (300+) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sun, 27 Sep 2026 06:19:33 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 14:45:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ユーザーデータのケア： NeoVimによりVimの元に戻すファイルが削除されました]]></title>
+            <link>https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/</link>
+            <guid>https://news.ycombinator.com/item?id=49867067</guid>
+            <pubDate>Sun, 27 Sep 2026 14:45:07 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/コメントURL ： https://news.ycombinator.com/item?id=49867067ポイント： 317 #コメント： 277]]></description>
+            <content:encoded><![CDATA[<p><a href="https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Funsung.aresluna.org%2Fthey-had-no-concept-of-a-duty-of-care-to-their-users%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Authors ’Case v. Microsoft/OpenAIの密封されていないブリーフ]]></title>
             <link>https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal/</link>
@@ -64,6 +72,14 @@
             <pubDate>Sat, 26 Sep 2026 09:13:41 GMT</pubDate>
             <description><![CDATA[記事URL ： https://lexontech.org/fifteen-years-later-the-apple-cards-origin-storyコメントURL ： https://news.ycombinator.com/item?id=49854693ポイント： 332 #コメント： 85]]></description>
             <content:encoded><![CDATA[<p><a href="https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flexontech.org%2Ffifteen-years-later-the-apple-cards-origin-story">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[フリップドットで流体をフリップする]]></title>
+            <link>https://mitxela.com/projects/flipflip</link>
+            <guid>https://news.ycombinator.com/item?id=49854219</guid>
+            <pubDate>Sat, 26 Sep 2026 07:50:24 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://mitxela.com/projects/flipflipコメントURL ： https://news.ycombinator.com/item?id=49854219ポイント： 328 #コメント： 22]]></description>
+            <content:encoded><![CDATA[<p><a href="https://mitxela.com/projects/flipflip">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fmitxela.com%2Fprojects%2Fflipflip">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[もっと多くの数学者が必要になるでしょう]]></title>
