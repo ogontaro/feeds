@@ -4,11 +4,19 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 17:28:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Sep 2026 22:53:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[External Secrets Operator vs Sealed Secrets vs Vault - tech-insider.org]]></title>
+            <link>https://tech-insider.org/external-secrets-operator-vs-sealed-secrets-vs-vault-2026/</link>
+            <guid>CBMiiwFBVV95cUxPX2huel92aTRBTU9Ib0hCdV9vNXI0Rndaa291cnpOVzdScU5VUG1TMy1wZkd3a0M0ZElTendxd09ob3I0RzNYcW5iV2t0OENDQU4xX21GeElvbDdueVY0NFFNNUMyYmZLZDBPUDlyNTY3anVpVFduSm1NeTlSOWtXR3NpWnc1SFpNSzV3</guid>
+            <pubDate>Sat, 26 Sep 2026 22:53:25 GMT</pubDate>
+            <description><![CDATA[External Secrets Operator vs Sealed Secrets vs Vault tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tech-insider.org/external-secrets-operator-vs-sealed-secrets-vs-vault-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftech-insider.org%2Fexternal-secrets-operator-vs-sealed-secrets-vs-vault-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ランタイム： AIエージェントを抑制するためのOktaの入札- thestack.technology]]></title>
             <link>https://www.thestack.technology/runtime-oktas-bid-to-keep-ai-agents-in-check/</link>
