@@ -68,3 +68,25 @@
 {"date":"2026-09-28","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
 {"date":"2026-09-28","domain":"kubernetes","sourceName":"The New Stack — Platform Engineering"}
 {"date":"2026-09-28","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
+{"date":"2026-09-28","domain":"claude","sourceName":"Claude Code releases"}
+{"date":"2026-09-28","domain":"aws","sourceName":"terraform-aws-eks"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"kro"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Backstage"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Terraform"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"CloudNativePG"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"external-secrets"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Grafana Alloy"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"KEDA"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Longhorn"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Mimir"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Reloader"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Tailscale (operator)"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Istio"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Velero"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"mise"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"Devbox"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"uv"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"Node.js"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"tmux"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"Neovim"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"Yazi"}
