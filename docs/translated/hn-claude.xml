@@ -4,11 +4,19 @@
         <title>HN — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 15:34:53 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 07:33:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[クロード・オーパスの魅力5.5]]></title>
+            <link>https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5</link>
+            <guid>https://news.ycombinator.com/item?id=49874728</guid>
+            <pubDate>Mon, 28 Sep 2026 07:33:29 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5コメントURL ： https://news.ycombinator.com/item?id=49874728ポイント： 150 #コメント： 150]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatform.claude.com%2Fdocs%2Fen%2Fbuild-with-claude%2Fprompt-engineering%2Fprompting-claude-opus-5-5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[HNを表示：チェスゲームを分析するためのクロードコードのスキル]]></title>
             <link>https://github.com/brumar/chess-postmortem-skills</link>

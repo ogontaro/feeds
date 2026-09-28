@@ -4,11 +4,35 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sun, 27 Sep 2026 20:22:28 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 08:59:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AI支援カーネルの欠陥がコンテナのセキュリティ境界をテスト- news.lavx.hu]]></title>
+            <link>https://news.lavx.hu/article/ai-assisted-kernel-flaws-test-the-security-boundary-of-containers</link>
+            <guid>CBMimgFBVV95cUxQVVZHNlVPYndFdG4xS3BKNm9MQ2RtUDF3UjFzZmE2Y1M1YWtNUUpYTE1CeG9wT18zYVNEZFpWZVloLUtRRE85MHFmYmhndU1teWdBY2FrSUZpUnZLYTZMUzFmcVBIRGpPNlJMM2hqRnhSdDd3NE9kUnB5NEwxZGpSc0R4VDg5RjhOOEtGTmRCdWF3ODBwUEVmSjJn</guid>
+            <pubDate>Mon, 28 Sep 2026 08:59:01 GMT</pubDate>
+            <description><![CDATA[AI支援カーネルの欠陥は、コンテナのセキュリティ境界をテストしますnews.lavx.hu]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.lavx.hu/article/ai-assisted-kernel-flaws-test-the-security-boundary-of-containers">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fai-assisted-kernel-flaws-test-the-security-boundary-of-containers">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes上の専用ゲームサーバー： 13のステップ[2026] - tech-insider.org]]></title>
+            <link>https://tech-insider.org/dedicated-game-server-kubernetes-agones-setup-2026/</link>
+            <guid>CBMiggFBVV95cUxPMmI5b3lWdjhCbVVyaU95aGRvUThMLVVYOVhVVFB2Z0VpVFJoSVJQUVhLa05EM1hURXY4ekpITXV0M2JsblBjMXRxY3BieXRVTmFpRHhRbkd5bmdTcS1nZU9WZmNtd3hReG1VNldYdlpHa2ZJbUZLQUlxX1cyWHJlVE9n</guid>
+            <pubDate>Mon, 28 Sep 2026 06:55:49 GMT</pubDate>
+            <description><![CDATA[Kubernetesの専用ゲームサーバー： 13のステップ[2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tech-insider.org/dedicated-game-server-kubernetes-agones-setup-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftech-insider.org%2Fdedicated-game-server-kubernetes-agones-setup-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Yeastar、サービスプロバイダー向けのAIネイティブマルチテナント通信プラットフォームであるNovoOneを発表- ANTARA News]]></title>
+            <link>https://en.antaranews.com/amp/news/433235/yeastar-launches-novoone-an-ai-native-multi-tenant-communications-platform-for-service-providers</link>
+            <guid>CBMi1AFBVV95cUxOUTZSdm14VFdZWTUzYWhMUGMxR2ZwVk45UTVrMy1nbWlTb1lOX2E3X25UbjBDNDhqS0NHYlhhTldwRDhRY2U0ZmNzRDY1MW54OFRhNUY0LURVV1NfN0RHQV9zdVRzQjVuSDZVTjJHWTkydWg5cEJXeGhob2l4TkNTeTlmaXNiNUwxeWYtYkNsUk1zdk1pYzhJVE43VmFybUJzNWVkZGNrdXBWZkMtVnhtM2FVTzVrdWl6NnNpallaVGx2UzRCdXJZZVJLMVl2LUFsOVl3WdIB1AFBVV95cUxOUTZSdm14VFdZWTUzYWhMUGMxR2ZwVk45UTVrMy1nbWlTb1lOX2E3X25UbjBDNDhqS0NHYlhhTldwRDhRY2U0ZmNzRDY1MW54OFRhNUY0LURVV1NfN0RHQV9zdVRzQjVuSDZVTjJHWTkydWg5cEJXeGhob2l4TkNTeTlmaXNiNUwxeWYtYkNsUk1zdk1pYzhJVE43VmFybUJzNWVkZGNrdXBWZkMtVnhtM2FVTzVrdWl6NnNpallaVGx2UzRCdXJZZVJLMVl2LUFsOVl3WQ</guid>
+            <pubDate>Mon, 28 Sep 2026 06:55:15 GMT</pubDate>
+            <description><![CDATA[Yeastar、サービスプロバイダー向けのAIネイティブマルチテナント通信プラットフォームであるNovoOneを発表ANTARA News]]></description>
+            <content:encoded><![CDATA[<p><a href="https://en.antaranews.com/amp/news/433235/yeastar-launches-novoone-an-ai-native-multi-tenant-communications-platform-for-service-providers">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fen.antaranews.com%2Famp%2Fnews%2F433235%2Fyeastar-launches-novoone-an-ai-native-multi-tenant-communications-platform-for-service-providers">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[CVE -2026 -80521 ： UbuntuカーネルのバグがCVSS 7.8にヒット[2026] - shattered.io]]></title>
             <link>https://shattered.io/cve-2026-80521-ubuntu-kernel-container-escape-2026/</link>
