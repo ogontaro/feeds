@@ -33,7 +33,7 @@ mise run serve     # docs/ をローカルプレビュー
 | X タイムライン取得 | X ホームタイムライン | 使わない | actions/cache 上の蓄積（レポートの追加入力） | 30 分ごと |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `digest/release-<domain>.xml` ＋ `digest/release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
 | フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
-| Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
+| Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | `feed-request` ラベル付与時 |
 
 - レポートは claude / kubernetes / aws の 3 ドメイン。リリースレポートは devtools を加えた 4 ドメイン
 - X タイムラインは独立したレポート・カテゴリを持たない。各ドメインのレポートが追加入力として読み、そのドメインに合うポストだけを記事と混ぜて載せる
@@ -211,20 +211,26 @@ public リポジトリのため、プライバシーは次で担保する。
 セキュリティ方針）のため、コミットまでを同アクションが担い、PR 作成とマージはワークフロー内の
 素の `gh` コマンドで行う。
 
-### Issue 駆動の要望反映（`issue-request.yml`, Issue 作成時）
+### Issue 駆動の要望反映（`issue-request.yml`, `feed-request` ラベル付与時）
 
 Issue のタイトル・本文を `claude-code-action` に渡し、`source.yaml`/`interests.yaml` への
 変更（フィード追加・無効化、関心キーワードの追加・削除）を判断して直接編集させる。
 要望が不明瞭・無関係なら何も変更しない。変更があればフィード監査と同じ
 検証（`feed-audit-validate.ts`）→ PR 作成 → 自動マージの流れに乗る。
-棚卸しリマインダー（後述）が作る `component-review` ラベル付き Issue はこのワークフローの
-対象から除外する。
+起動は **`feed-request` ラベルによるオプトイン**（`issues: labeled` でラベル名を判定）。
+リポジトリを個人のタスク管理にも使うため、`issues: opened` で全 Issue を拾うと無関係な Issue
+でも Claude が起動していた。要望 Issue は `.github/ISSUE_TEMPLATE/feed-request.md` から作る
+（ラベルが自動付与される）か、既存 Issue に後からラベルを付ける。ラベル付きで作成した場合も
+GitHub は `labeled` を発火するため `opened` は購読しない（二重起動防止）。`component-review`
+等の他ラベルの Issue は対象外になる。スキップ run が `docs-write` の待機 run を置き換えないよう、
+`concurrency` はジョブ単位に付ける。
 
 本リポジトリは public のため誰でも Issue を作成でき、`issues: opened` はそのままだと
 第三者にもトリガーされる。`claude-code-action` 自体に write/admin 権限のない actor では
 処理をスキップする組み込みガード（`checkWritePermissions`）があるが、ジョブの起動自体は
 防げないため、ワークフロー側の `if` にも `github.event.issue.user.login ==
-github.repository_owner` を明示し、リポジトリオーナー以外の Issue ではジョブごと起動しない
+github.repository_owner`（作成者）と `github.event.sender.login`（ラベル付与者）の両方を
+明示し、リポジトリオーナー以外の Issue ではジョブごと起動しない
 ようにしている（多層防御）。`workflow_dispatch`/`schedule` は GitHub の仕様上そもそも
 write 権限保持者しか実行できない。
 
@@ -320,7 +326,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 | `report.yml` | `0 22 * * *` ＋ dispatch | 翻訳最新化 → ドメインごとに collect / claude-code-action / render → build → commit |
 | `release.yml` | `30 22 * * 0` ＋ dispatch | ドメインごとに collect / claude-code-action / render → build → commit |
 | `feed-audit.yml` | `0 22 * * 6` ＋ dispatch | collect → claude-code-action → validate → PR 作成・自動マージ |
-| `issue-request.yml` | `issues: opened` | claude-code-action → validate → PR 作成・自動マージ |
+| `issue-request.yml` | `issues: labeled`（`feed-request`） | claude-code-action → validate → PR 作成・自動マージ |
 | `component-review-reminder.yml` | `0 0 1 * *` ＋ dispatch | 棚卸し Issue を作成 |
 | `inoreader-sync.yml` | `0 21 * * 6` ＋ dispatch | スター取得 → commit |
 | `timeline.yml` | `5,35 * * * *` ＋ dispatch | X タイムライン取得 → actions/cache に蓄積（docs は書かない。`concurrency: x-timeline`） |

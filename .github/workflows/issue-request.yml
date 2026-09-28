@@ -1,8 +1,11 @@
 name: issue-request
 
+# 要望 Issue であることを `feed-request` ラベルで明示したときだけ起動する(オプトイン)。
+# ラベル付きで作成した場合も GitHub は labeled を発火するため、opened は購読しない
+# (両方購読すると同一 Issue で二重起動する)。
 on:
   issues:
-    types: [opened]
+    types: [labeled]
 
 permissions:
   contents: write
@@ -10,16 +13,19 @@ permissions:
   issues: write
   id-token: write
 
-concurrency:
-  group: docs-write
-  cancel-in-progress: false
-
 jobs:
   handle:
     if: |
-      !contains(github.event.issue.labels.*.name, 'component-review') &&
-      github.event.issue.user.login == github.repository_owner
+      github.event.label.name == 'feed-request' &&
+      github.event.issue.state == 'open' &&
+      github.event.issue.user.login == github.repository_owner &&
+      github.event.sender.login == github.repository_owner
     runs-on: ubuntu-latest
+    # 対象外ラベルでスキップされる run が docs-write の待機中 run を置き換えないよう、
+    # concurrency はワークフローではなくジョブに付ける。
+    concurrency:
+      group: docs-write
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
