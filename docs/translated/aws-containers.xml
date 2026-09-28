@@ -4,11 +4,19 @@
         <title>AWS Containers Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS Containers Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 21:18:33 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 16:01:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kubernetesデスケジューラーを使用してAmazon EKSのPod配布ドリフトを修正する]]></title>
+            <link>https://aws.amazon.com/blogs/containers/fix-pod-distribution-drift-in-amazon-eks-with-the-kubernetes-descheduler/</link>
+            <guid>397b28af588a2daa76ca2314f721251e8347e4a4</guid>
+            <pubDate>Mon, 28 Sep 2026 16:01:43 GMT</pubDate>
+            <description><![CDATA[3つのアベイラビリティゾーンにまたがるワークロードは、必ずしも広がったままであるとは限りません。この記事では、ノードの可用性ギャップの後にソフトトポロジースプレッド制約がドリフトする理由を説明し、コストを測定し、Kubernetesのデスケジューラーが、ダウンタイムやハード制約を強制することなく、Amazon EKSのPod配信をどのように復元するかを示します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/fix-pod-distribution-drift-in-amazon-eks-with-the-kubernetes-descheduler/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Ffix-pod-distribution-drift-in-amazon-eks-with-the-kubernetes-descheduler%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWSが2026年ガートナー・マジック・クアドラントのコンテナ管理部門でリーダーに選出]]></title>
             <link>https://aws.amazon.com/blogs/containers/aws-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/</link>

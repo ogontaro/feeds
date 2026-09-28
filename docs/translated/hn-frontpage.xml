@@ -4,11 +4,35 @@
         <title>HN — Front page (300+) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 02:05:13 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 17:58:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ソネット5.5]]></title>
+            <link>https://www.anthropic.com/claude-sonnet-5-5</link>
+            <guid>https://news.ycombinator.com/item?id=49881850</guid>
+            <pubDate>Mon, 28 Sep 2026 17:58:11 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://www.anthropic.com/claude-sonnet-5-5コメントURL ： https://news.ycombinator.com/item?id=49881850ポイント： 505 #コメント： 341]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.anthropic.com/claude-sonnet-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.anthropic.com%2Fclaude-sonnet-5-5">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[海賊船の海賊]]></title>
+            <link>https://mubi.com/en/notebook/posts/pirating-the-pirates</link>
+            <guid>https://news.ycombinator.com/item?id=49880036</guid>
+            <pubDate>Mon, 28 Sep 2026 15:54:15 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://mubi.com/en/notebook/posts/pirating-the-piratesコメントURL ： https://news.ycombinator.com/item?id=49880036ポイント： 360 #コメント： 184]]></description>
+            <content:encoded><![CDATA[<p><a href="https://mubi.com/en/notebook/posts/pirating-the-pirates">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fmubi.com%2Fen%2Fnotebook%2Fposts%2Fpirating-the-pirates">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[MongoDBのCEOがMetaへの入社を辞任]]></title>
+            <link>https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/</link>
+            <guid>https://news.ycombinator.com/item?id=49879000</guid>
+            <pubDate>Mon, 28 Sep 2026 14:54:21 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/コメントURL ： https://news.ycombinator.com/item?id=49879000ポイント： 308 #コメント： 252]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.reuters.com%2Ftechnology%2Fmongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[NVIDIA株10億ドル未払い]]></title>
             <link>https://colo.to/nvidia-stock-narrative.html</link>

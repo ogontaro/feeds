@@ -4,11 +4,19 @@
         <title>Simon Willison — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Simon Willison — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 23:39:06 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 22:07:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[クロードのソネット5.5]]></title>
+            <link>https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/</link>
+            <guid>https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/</guid>
+            <pubDate>Mon, 28 Sep 2026 22:07:38 GMT</pubDate>
+            <description><![CDATA[今日、AnthropicのClaude Sonnet 5.5新しいソネットモデル。「30 ％以上速く動作し、ほとんどの作業で最大30 ％のコスト削減」と言われています。Sonnet 5と同じ価格ですが、すべてのベンチマークでそれを上回っているようで、実行するのも安価でなければなりません。ここに自転車に乗っているペリカンがいます。ソネット5.5は、Opus 5.5と同じバグに苦しんでいました。トークンがなくなり、SVGを生成できなくなる前に、128,000トークン（ $ 1.28のコスト）をペリカンが考えた「最大」の思考努力。これがペリカンです]]></description>
+            <content:encoded><![CDATA[<p><a href="https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F28%2Fclaude-sonnet-5-5%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kākāpō Party]]></title>
             <link>https://simonwillison.net/2026/Sep/26/kakapo-party/</link>

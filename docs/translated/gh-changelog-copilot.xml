@@ -4,11 +4,19 @@
         <title>GitHub Changelog — Copilot — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>GitHub Changelog — Copilot の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 23:24:57 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 18:03:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[GitHub CopilotのClaude Sonnet 5.5]]></title>
+            <link>https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot</link>
+            <guid>https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot</guid>
+            <pubDate>Mon, 28 Sep 2026 18:03:57 GMT</pubDate>
+            <description><![CDATA[Anthropicの最新ソネットモデルであるClaude Sonnet 5.5が、GitHub Copilotで一般公開されました。機能の構築やバグの修正など、日々の作業の範囲を広げるように設計されています。私たちの初期の… GitHub CopilotのClaude Sonnet 5.5の投稿は、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-28-claude-sonnet-5-5-in-github-copilot">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[エンタープライズ管理設定製品内バリデータ]]></title>
             <link>https://github.blog/changelog/2026-09-25-enterprise-managed-settings-in-product-validator</link>

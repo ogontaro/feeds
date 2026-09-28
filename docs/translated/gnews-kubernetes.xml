@@ -4,11 +4,51 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 08:59:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 18:17:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[重大なKyvernoの欠陥により、Kubernetesテナントがクラスタ管理者アクセスを取得できる可能性があります- systemtek.co.uk]]></title>
+            <link>https://www.systemtek.co.uk/2026/09/critical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access/</link>
+            <guid>CBMixAFBVV95cUxPMHNBaDcySElma0xFbXJuWThOWGxPQ0tKdEZNeE53NFYzdG5yNlF4MUlhOFJTWVgtOTVVVUdQdWlTVk52Q2ROUHE3MVBXVS1TNUpodWhZd2VITXZQQXV0Y010Ri0wTmVQZHJ6SlpUaHBqNWJ1cGlsamNWWnNRaEtMZ2pkUkxnMEs1aW94UklpMHZ0Z2luUjNIZTBOcFRpenhJOVFjZE55eTdRV3hpM0QyY3IwcnFjSjR5SHhkMXg4WHhGUE5J</guid>
+            <pubDate>Mon, 28 Sep 2026 18:17:00 GMT</pubDate>
+            <description><![CDATA[重大なKyvernoの欠陥により、Kubernetesテナントがクラスタ管理者アクセスsystemtek.co.ukを取得できる可能性があります]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.systemtek.co.uk/2026/09/critical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.systemtek.co.uk%2F2026%2F09%2Fcritical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[脅威の概要： NetScaler Zero Days CVE -2026 -88771およびCVE -2026 -88772が悪用されました-ユニット42]]></title>
+            <link>https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited</link>
+            <guid>CBMic0FVX3lxTE9XNDFNeDBxU3FoV3kydkdKS3RhRlZfZ04yemhOQWNKblNuS3pHb3FyWkM0aVB3OF9FaEk5N29kOVB2dkpvb3dRdDlmb290UHNXYU9qUFVoRGU2akVhczduUWhfQkNHM3A4N2h0OWdRSFNqNGM</guid>
+            <pubDate>Mon, 28 Sep 2026 15:08:41 GMT</pubDate>
+            <description><![CDATA[脅威の概要： NetScaler Zero Days CVE -2026 -88771およびCVE -2026 -88772ワイルドユニットで悪用42]]></description>
+            <content:encoded><![CDATA[<p><a href="https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Funit42.paloaltonetworks.com%2Fnetscaler-zero-days-exploited">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ビジネスニュース- LatestLY]]></title>
+            <link>https://www.latestly.com/agency-news/business-news-esds-unveils-swaraj-sethu-a-unified-platform-bringing-the-enterprise-devsecops-lifecycle-together-7624372.html</link>
+            <guid>CBMi8wFBVV95cUxOY2hXdFNSV1pJVWNNTUZiYktNRVFuTGNiVFFEX1dPaHFNNGM5ZEVYaE11QTY2WmU5amcwWmdELThNVmJEQ2tyZTFlSGdZRkd2ZnZraEREVl9rbk1UNVNfa24yRzZ0OXlDNTIxOFNwV0dfT3g2ODF2ck5jN1EyUUUxMTN1TDJFV2tEdF9ZVzlpVGNTY2tKaXBpZVNpakJSekNOUDhCbmk0dG55c2RaanpJZ3AzVjFEN1E1Y2IxbGNKMzdZUHdoZ09rZklncHlYejlTZUVVZldsdExwSlIwbE50UXc0MzZ3V3ZwRTF2RkJBbm9GT1HSAfgBQVVfeXFMT2tUMjQyX3JyMkQ4RFFUWlpHQXNHaDFWbWRiOG0wVl8wT1ktOW9QX083SWI0VGQ1V0lVb0IzblBGTFNqTGswbVd4blJFNWFHZ3BJQ1ktM1hvOXJfcXNuQUkzSm1EZVVOU3J5eGJSc2ZRazA5dmR0YmtiU3JhRDl6SWNPZzh0dGNCaDhVN1NyVnRQMlJnczZ0RGZrUkN2YlRmdEp1aHJ4YWpfUmlHM3JPNHl2eHZrRVdwc3Rpb2xoSHBGLWVsRElraThzQWpNeElEZmpXdEQySXNUbDFETEZtbFE0dHlNZDJIbVBiMFJ5UXAxUVRKN2NHNGQ</guid>
+            <pubDate>Mon, 28 Sep 2026 14:28:24 GMT</pubDate>
+            <description><![CDATA[ビジネスニュースLatestLY]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latestly.com/agency-news/business-news-esds-unveils-swaraj-sethu-a-unified-platform-bringing-the-enterprise-devsecops-lifecycle-together-7624372.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latestly.com%2Fagency-news%2Fbusiness-news-esds-unveils-swaraj-sethu-a-unified-platform-bringing-the-enterprise-devsecops-lifecycle-together-7624372.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAI Agent Swarmがハグする顔をハッキングするために100万近くのURLを使用- gbhackers.com]]></title>
+            <link>https://gbhackers.com/openai-agent-swarm-used-nearly-1-million-urls-to-hack-hugging-face/amp/</link>
+            <guid>CBMimAFBVV95cUxNeUxGOWpHUXNyNXVIMVdxV2wyN2ZCYnBQbG9YcklyVDFEQTZ1Mjg5WjdxUFNveUlfUHE3bDk1RHdoS3NPZ0NMSzRiX3E2bVdiTy10ckRNbGtwcjNCNktBTE9JR2pwbmJCMWZkbjFDMGFIT0hWa0R1SkFiaG13X1kxM0Z5c09TdEJBQTdLOHAzcnRiSlc0SW5Ic9IBmAFBVV95cUxNeUxGOWpHUXNyNXVIMVdxV2wyN2ZCYnBQbG9YcklyVDFEQTZ1Mjg5WjdxUFNveUlfUHE3bDk1RHdoS3NPZ0NMSzRiX3E2bVdiTy10ckRNbGtwcjNCNktBTE9JR2pwbmJCMWZkbjFDMGFIT0hWa0R1SkFiaG13X1kxM0Z5c09TdEJBQTdLOHAzcnRiSlc0SW5Icw</guid>
+            <pubDate>Mon, 28 Sep 2026 12:55:08 GMT</pubDate>
+            <description><![CDATA[OpenAIエージェントスワームがハグ顔のハッキングに100万近くのURLを使用gbhackers.com]]></description>
+            <content:encoded><![CDATA[<p><a href="https://gbhackers.com/openai-agent-swarm-used-nearly-1-million-urls-to-hack-hugging-face/amp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgbhackers.com%2Fopenai-agent-swarm-used-nearly-1-million-urls-to-hack-hugging-face%2Famp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[JADEPUFFER ：侵害されたサービスプリンシパルを使用したAzureへの攻撃- SecNews.gr]]></title>
+            <link>https://www.secnews.gr/en/736473/jadepuffer-epithesi-azure-service-principals/</link>
+            <guid>CBMihAFBVV95cUxQSUJzbUZoLW5VQ281aEJyeXowQVZfcld5Ul9tVDU0THhHSkdWSnFuc2lycFVlSG90VWw0MGNUaEdJc0Z2ME1qVUEtMEVST1BzTkpDeFJwVlF6SFQwMTNTWGk3dFY4enZMamZOMUdXSGNZamJmNjFvNGNZd1NtT0dCaFdLZDc</guid>
+            <pubDate>Mon, 28 Sep 2026 12:47:00 GMT</pubDate>
+            <description><![CDATA[JADEPUFFER ：侵害されたサービスプリンシパルを使用したAzureへの攻撃SecNews.gr]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.secnews.gr/en/736473/jadepuffer-epithesi-azure-service-principals/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.secnews.gr%2Fen%2F736473%2Fjadepuffer-epithesi-azure-service-principals%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AI支援カーネルの欠陥がコンテナのセキュリティ境界をテスト- news.lavx.hu]]></title>
             <link>https://news.lavx.hu/article/ai-assisted-kernel-flaws-test-the-security-boundary-of-containers</link>
@@ -32,6 +72,14 @@
             <pubDate>Mon, 28 Sep 2026 06:55:15 GMT</pubDate>
             <description><![CDATA[Yeastar、サービスプロバイダー向けのAIネイティブマルチテナント通信プラットフォームであるNovoOneを発表ANTARA News]]></description>
             <content:encoded><![CDATA[<p><a href="https://en.antaranews.com/amp/news/433235/yeastar-launches-novoone-an-ai-native-multi-tenant-communications-platform-for-service-providers">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fen.antaranews.com%2Famp%2Fnews%2F433235%2Fyeastar-launches-novoone-an-ai-native-multi-tenant-communications-platform-for-service-providers">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -101065 ： Obotの重大な欠陥によりDockerがチェックされない- SecNews.gr]]></title>
+            <link>https://www.secnews.gr/en/736328/cve-2026-101065-docker-bot/</link>
+            <guid>CBMibEFVX3lxTE1GUzYwUUFSYUNvb3Z6SGJRY1k0dGVtdUZ3YmtfcDZ6bW1FZWRJN3BadzRzUVZ3ZmY5ODFKRG9PeFRaUkE0cEdvY0dTTGtFTC1iRmxGU1R2OXFpV0tjbGNOT2VlSXRvWTQtU0RGeA</guid>
+            <pubDate>Sun, 27 Sep 2026 22:14:23 GMT</pubDate>
+            <description><![CDATA[CVE -2026 -101065 ： Obotの重大な欠陥により、DockerはSecNews.grのチェックを外されます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.secnews.gr/en/736328/cve-2026-101065-docker-bot/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.secnews.gr%2Fen%2F736328%2Fcve-2026-101065-docker-bot%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CVE -2026 -80521 ： UbuntuカーネルのバグがCVSS 7.8にヒット[2026] - shattered.io]]></title>
