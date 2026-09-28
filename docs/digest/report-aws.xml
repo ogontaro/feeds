@@ -4,11 +4,24 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 27 Sep 2026 04:13:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 00:25:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-09-28]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-28.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-28.html</guid>
+            <pubDate>Mon, 28 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Strands Agentsに「Strands harness」が追加されました！</h3>
+<p>AWS のエージェント SDK「Strands Agents」に、新しく「Strands harness」が追加された。従来の SDK と何が違うのかを実際に触って確かめた内容で、Bedrock を前提にエージェントを組んでいるなら、どちらを使うかの判断材料になる。新機能の追加は実装の選択肢が増える変更なので、追っておく価値がある。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/strands-harness-vs-agent/">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-09-26]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-26.html</link>
@@ -399,19 +412,6 @@
 <h3>Amazon Bedrock Managed Knowledge Base の S3 ナレッジベース、ドキュメント単位 ACL を Amazon Quick から検証</h3>
 <p>Bedrock 側でドキュメントレベルのアクセス制御を定義し、Quick 側のACLとどう組み合わさるかを実際に検証しており、ユーザーごとに参照できる機密文書を出し分けたい場合の設計・検証手順がそのまま使える。</p>
 <p class="links"><a href="https://dev.classmethod.jp/articles/20260914-amazon-mkb-s3-acl-with-quick/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260914-amazon-mkb-s3-acl-with-quick%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-14]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-14.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-14.html</guid>
-            <pubDate>Mon, 14 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>[アップデート] Amazon Bedrock Managed Knowledge Baseでドキュメントのアクセス権を調べるAPIが追加されたので試してみた</h3>
-<p>Bedrockのナレッジベースでどのドキュメントが検索対象になっているか（アクセス権）を確認できる新APIの解説です。権限設定のデバッグに直接使える内容なので、ナレッジベースを運用中の人は押さえておく価値があります。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/amazon-bedrock-knowledge-base-document-acl-debugging/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Famazon-bedrock-knowledge-base-document-acl-debugging%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

@@ -4,11 +4,27 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sun, 27 Sep 2026 08:11:43 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 20:22:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[CVE -2026 -80521 ： UbuntuカーネルのバグがCVSS 7.8にヒット[2026] - shattered.io]]></title>
+            <link>https://shattered.io/cve-2026-80521-ubuntu-kernel-container-escape-2026/</link>
+            <guid>CBMifEFVX3lxTFBhOHZEbW9QOThPVG9NYU9NdWN1TXZYX3dvWVhfUnBWazhfclZJQUk0YnBZNVE3bXN6eU5oQW5NUlZJQ0NQX3VhY1lZbjVOUW50T1ZfTks2bjZseG01YUx4Z3F0TmFmb0psSzdvSkNhODlzVXdVSHU4NExSeFA</guid>
+            <pubDate>Sun, 27 Sep 2026 20:22:28 GMT</pubDate>
+            <description><![CDATA[CVE -2026 -80521 ： UbuntuカーネルのバグがCVSS 7.8にヒット[2026] shattered.io]]></description>
+            <content:encoded><![CDATA[<p><a href="https://shattered.io/cve-2026-80521-ubuntu-kernel-container-escape-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fshattered.io%2Fcve-2026-80521-ubuntu-kernel-container-escape-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Karmada卒業生CNCF ： 5,700スター、38プロジェクト[2026] - tech-insider.org]]></title>
+            <link>https://tech-insider.org/au/karmada-cncf-graduation-multicloud-kubernetes-2026/</link>
+            <guid>CBMihgFBVV95cUxQM0RiYW12M3Jra20wTDZIQk9vNS00TFBJZERHSDBRaTVQamc2UEk0QWM2Ym8zWHlZWUZvb1RaNnoySDUzMG9HQ0ItaENqOG02dkdNUjJ0UnVCa1dVemUwRkswOGFmMDAxM21BY2p1OWQwV3B1RXYxaW9iZTJEdFJsZWQyMTdlQQ</guid>
+            <pubDate>Sun, 27 Sep 2026 14:16:32 GMT</pubDate>
+            <description><![CDATA[Karmada卒業生CNCF ： 5,700スター、38プロジェクト[2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tech-insider.org/au/karmada-cncf-graduation-multicloud-kubernetes-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftech-insider.org%2Fau%2Fkarmada-cncf-graduation-multicloud-kubernetes-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 1.37はGPUをゼロに拡張し、コストを削減[2026] - shattered.io]]></title>
             <link>https://shattered.io/kubernetes-1-37-scale-to-zero-gpu-cost-2026/</link>

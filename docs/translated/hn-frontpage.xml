@@ -4,11 +4,27 @@
         <title>HN — Front page (300+) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sun, 27 Sep 2026 14:45:07 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 20:12:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Googleはいつそれほど奇妙になったのでしょうか？]]></title>
+            <link>https://sancho.bearblog.dev/google-weird/</link>
+            <guid>https://news.ycombinator.com/item?id=49870367</guid>
+            <pubDate>Sun, 27 Sep 2026 20:12:54 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://sancho.bearblog.dev/google-weird/コメントURL ： https://news.ycombinator.com/item?id=49870367ポイント： 625 #コメント： 339]]></description>
+            <content:encoded><![CDATA[<p><a href="https://sancho.bearblog.dev/google-weird/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsancho.bearblog.dev%2Fgoogle-weird%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[エンバー-1]]></title>
+            <link>https://fireworks.ai/blog/ember-1</link>
+            <guid>https://news.ycombinator.com/item?id=49868830</guid>
+            <pubDate>Sun, 27 Sep 2026 17:31:53 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://fireworks.ai/blog/ember-1コメントURL ： https://news.ycombinator.com/item?id=49868830ポイント： 315 #コメント： 168]]></description>
+            <content:encoded><![CDATA[<p><a href="https://fireworks.ai/blog/ember-1">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ffireworks.ai%2Fblog%2Fember-1">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ユーザーデータのケア： NeoVimによりVimの元に戻すファイルが削除されました]]></title>
             <link>https://unsung.aresluna.org/they-had-no-concept-of-a-duty-of-care-to-their-users/</link>

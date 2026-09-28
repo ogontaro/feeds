@@ -4,11 +4,60 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 27 Sep 2026 04:13:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 00:23:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-09-28]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-28.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-28.html</guid>
+            <pubDate>Mon, 28 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>AIデバッグはなぜ収束しないのか — P2がいつまでも消えない理由</h3>
+<p>Codex などのAIコーディングエージェントで「レビュー → 修正 → 再レビュー」を回すと、優先度 P2 の指摘がいつまでも消えない。この収束しないデバッグループの構造を整理し、再指摘を防ぐプロンプトの書き方まで踏み込んだ記事。エージェントにレビューを任せているチームほど、先に読んでおく価値がある。</p>
+<p class="links"><a href="https://note.com/npaka/n/n557fb948c3cf">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/catnose99/status/2103664703398666610">@catnose99 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude.ai を2週間で約3倍高速化した事例 — Slack常駐のClaudeに最大150スレッドを並行で任せる</h3>
+<p>Claude.ai の待ち時間を2週間で約3倍短縮した取り組みの記録。Slack に常駐する Claude（Claude Tag、Opus 5.5 相当の社内研究用モデル）へ作業を1チャンネルに集約し、遅い箇所ごとにスレッドを立てて最大150本以上を並行実行、2週間で3,000件以上の変更を入れてユーザーに影響する不具合や切り戻しはゼロだったという。ラボで1回実行すれば結果が決まるKPIを先に用意してデプロイを待たずに最適化を回させ、人間は目標設定・トレードオフ判断・承認に徹する、という長時間エージェント運用の設計が具体的で参考になる。</p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2104140825928298541">@npaka123 のポスト</a></li>
+<li><a href="https://claude.dev/blog/how-we-made-claude-ai-faster/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2F">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code の Effort はタスクごとに切り替える — 常に Max ではいけない理由</h3>
+<p>Claude Code の Effort（思考量）を常に High/Max で回すのではなく、タスクごとに切り替えるべきだという整理。Effort を上げると単純に「賢くなる」のではなく、自分で検証したりテストしたり別解を試したりする量が増えるという指摘が要点で、Low=アイデア出し・ラフ作成・軽微な修正、Medium=通常の開発・新機能実装、High=バグ修正・レビュー・検証、Max=難しい問題をほぼ自律的に最後まで解かせる、という対応づけが示されている。仕様をClaudeにインタビューさせる→Low/Mediumで実装→人間が確認→Highで検証、という流れも含め、待ち時間と利用量に直結する日々の使い方の判断材料になる。</p>
+<ul>
+<li><a href="https://x.com/masahirochaen/status/2104330743233343810">@masahirochaen のポスト</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>whiteboard — 図からコードへ辿れる、設計意図の可視化ツール</h3>
+<p>AIがコードを書く前提になると、「設計の意図をどう可視化し、レビューするか」が切実な課題になる。その課題に正面から答えるツールとして紹介されているのが whiteboard で、シーケンス図などの図からコードへ直接ジャンプできる点が特徴。生成されたコードの理解とレビューに時間を取られているチームに向く。</p>
+<ul>
+<li><a href="https://x.com/_syoryu89/status/2104070326401540179">@_syoryu89 のポスト</a></li>
+<li><a href="https://github.com/devdotfast/whiteboard">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fdevdotfast%2Fwhiteboard">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>メルカリの高速プロトタイピング基盤「Arca」— Claude Code 入り環境をガードレール付きで配る</h3>
+<p>メルカリが社内の高速プロトタイピング基盤「Arca」の設計を公開している。PdMやデザイナーでもエージェントに指示すればアプリを作れるよう、永続Volume付きの環境・Claude Code等のエージェント・AGENTS.md/Skillsの事前配置・社内標準Stackまでを会社側が用意し、そのうえでGKE Sandbox（gVisor）に閉じ込め、LLMはLiteLLM経由、マシン単位の予算上限まで持たせる。1,029人がアクセスし346人がArcaでアプリを作成、631台のマシンが作られたという実績と、「AIエージェントを使うな」と制限するのではなく壊しても会社まで壊れない遊び場を先に作るという考え方が、導入を検討するチームの参考になる。</p>
+<ul>
+<li><a href="https://x.com/connect24h/status/2104076376181805140">@connect24h のポスト</a></li>
+<li><a href="https://speakerdeck.com/ryotarai/niokeru-ai-jidai-no-kousoku-kiban-arca">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-09-27]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-27.html</link>

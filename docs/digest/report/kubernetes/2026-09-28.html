@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-09-28</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-09-28</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Karmada卒業生CNCF ： 5,700スター、38プロジェクト[2026] - tech-insider.org</h3>
+<p>マルチクラウド／マルチクラスタ向けの Karmada が CNCF を卒業した。卒業は「本番運用に耐える成熟度」に対する CNCF の公式な評価であり、複数クラスタ構成を検討しているなら採用判断の材料として押さえておきたい。5,700 スター・38 プロジェクトという数字は、周辺エコシステムが既に一定の厚みを持っていることの裏付けになる。</p>
+<p class="links"><a href="https://tech-insider.org/au/karmada-cncf-graduation-multicloud-kubernetes-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Ftech-insider.org%2Fau%2Fkarmada-cncf-graduation-multicloud-kubernetes-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes 1.37はGPUをゼロに拡張し、コストを削減[2026] - shattered.io</h3>
+<p>Kubernetes 1.37 で GPU のゼロスケールが扱えるようになったという話題。GPU ノードはアイドル時もコストを食い続けるため、「使っていないときは 0 に落とす」が効くかどうかはクラスタ設計とコスト最適化の両方に直結する。GPU を載せたクラスタを運用しているなら、バージョン差し替えの判断材料として見ておく価値がある。</p>
+<p class="links"><a href="https://shattered.io/kubernetes-1-37-scale-to-zero-gpu-cost-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fshattered.io%2Fkubernetes-1-37-scale-to-zero-gpu-cost-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CVE -2026 -80521 ： UbuntuカーネルのバグがCVSS 7.8にヒット[2026] - shattered.io</h3>
+<p>Ubuntu カーネルのバグが CVSS 7.8 の脆弱性として報告され、コンテナエスケープにつながるという内容。ノードのカーネルはコンテナ分離の土台そのものなので、クラスタを運用していれば影響範囲と修正版カーネルの提供状況を確認しておきたい。CVSS 7.8 は高危険度側であり、ノードのローリング更新を計画する根拠になる。</p>
+<p class="links"><a href="https://shattered.io/cve-2026-80521-ubuntu-kernel-container-escape-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fshattered.io%2Fcve-2026-80521-ubuntu-kernel-container-escape-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetesでのエージェント型AIの台頭：新しいインフラストラクチャ層の解放</h3>
+<p>AI がインフラ管理そのものに関わるようになり、Kubernetes の上に新しい層が生まれつつあるという整理。エージェントを動かす側と、エージェントに運用させる側の両方が同じクラスタ上に載る前提で、何をプラットフォームが引き受けるべきかを考える材料になる。モデルをデータの近くに置くという論点は、GPU を持つクラスタの設計にも効いてくる。</p>
+<p class="links"><a href="https://thenewstack.io/agentic-ai-kubernetes-management/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fagentic-ai-kubernetes-management%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>メルカリの高速プロトタイピング基盤「Arca」— エージェントをGKE Sandboxに閉じ込める設計</h3>
+<p>メルカリの社内 AI 基盤「Arca」は、永続 Volume 付きの環境に Agent と AGENTS.md / Skills を最初から用意し、通信と Credential は基盤側で制御して GKE Sandbox（gVisor）に閉じ込め、LLM は LiteLLM 経由でマシン単位の予算上限まで持たせるという構成。1,029 人がアクセスし 346 人がアプリを作成、631 台のマシンが作られた実績は、ルールで制限するのではなく「壊しても会社まで壊れない遊び場」を先に用意するという Platform Engineering の進め方を裏付けている。エージェントに自律的にコマンドを叩かせる前提で、どこを基盤側に寄せるかの設計判断が具体的に読める。</p>
+<ul>
+<li><a href="https://x.com/connect24h/status/2104076376181805140">@connect24h のポスト</a></li>
+<li><a href="https://speakerdeck.com/ryotarai/niokeru-ai-jidai-no-kousoku-kiban-arca">リンク先を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

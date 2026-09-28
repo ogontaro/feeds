@@ -4,11 +4,19 @@
         <title>Google News — コーディングエージェント新サービス・料金 — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — コーディングエージェント新サービス・料金 の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sun, 27 Sep 2026 05:57:51 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 20:55:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[MiniMaxは、価格タグなしで新しいコーディングモデルをエージェントツールに組み込む- Startup Fortune]]></title>
+            <link>https://startupfortune.com/minimax-slips-a-new-coding-model-into-its-agent-tool-without-a-price-tag/</link>
+            <guid>CBMiogFBVV95cUxQaXNIT0dhVWt0V3k5QmgtUXczMFdhTmdDS21sWmo4Sk5UNmxCODZMZFdQRlY5SXlidEZjc2JPNDM2V09zR0M0Y3V2Um1ubll0V3lMOF9pbE1fMzRkYVo5Qy1jYUhsbzZReWNZTW12V3kyQ05mZ2c5WXNveUZWQzBHcm04emcteTFWV1hac19fSHNmNUlpNVZTOGVmV0NGYi1sRWc</guid>
+            <pubDate>Sun, 27 Sep 2026 20:55:10 GMT</pubDate>
+            <description><![CDATA[MiniMaxは、価格タグなしで新しいコーディングモデルをエージェントツールに組み込むStartup Fortune]]></description>
+            <content:encoded><![CDATA[<p><a href="https://startupfortune.com/minimax-slips-a-new-coding-model-into-its-agent-tool-without-a-price-tag/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fstartupfortune.com%2Fminimax-slips-a-new-coding-model-into-its-agent-tool-without-a-price-tag%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[企業向けAIコーディングエージェント： IP補償、データレジデンシー、500席コスト比較- MarkTechPost]]></title>
             <link>https://www.marktechpost.com/2026/09/26/ai-coding-agents-for-enterprise-ip-indemnity-data-residency-and-500-seat-cost-compared/</link>
