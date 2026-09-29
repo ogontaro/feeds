@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-09-29</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-09-29</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock で Claude Sonnet 5.5 が利用可能に</h3>
+<p>Bedrock のモデルラインナップに Claude Sonnet 5.5 が加わり、Sonnet 5 比で30%以上の高速化と最大30%のコスト削減が謳われています。Bedrock 上の単価自体は Sonnet 5 と同額なので、既存の呼び出しを置き換えるだけでトークン効率とレイテンシの恩恵を受けられる点が実務的です。DevelopersIO の検証記事では東京リージョンから Converse API で呼び出した結果がまとまっており、リージョン展開の状況もあわせて確認できます。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-claude-sonnet-5-5-on-aws%2F">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-claude-sonnet-5-5/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock に xAI の Grok 4.7 が登場</h3>
+<p>xAI のフロンティアモデル Grok 4.7 が Amazon Bedrock で利用可能になりました。50万トークンのコンテキストウィンドウと4段階の設定可能な推論レベルを備え、Responses API・Chat Completions・Converse API から呼び出せます。コーディングや長時間のエージェント用途を想定したモデルで、マルチモデル前提で設計しているチームの選択肢が広がります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fgrok-4-7-is-now-available-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes Descheduler で Amazon EKS の Pod 配置ドリフトを修正する</h3>
+<p>AZ をまたいで配置したワークロードが、ノードの可用性変動のあとにソフトなトポロジースプレッド制約から外れたまま戻らない「配置ドリフト」を扱った記事です。原因の整理に加えてコスト面の影響を測定し、ハード制約の強制やダウンタイムなしで Descheduler により偏りを戻す手順を示しています。ノード障害後のリバランスを運用でどう扱うかを決める材料になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/fix-pod-distribution-drift-in-amazon-eks-with-the-kubernetes-descheduler/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Ffix-pod-distribution-drift-in-amazon-eks-with-the-kubernetes-descheduler%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker AI の vLLM-Omni コンテナでリアルタイム音声アプリを構築する</h3>
+<p>SageMaker AI 上で vLLM-Omni ディープラーニングコンテナを使い、Qwen3-TTS を展開して双方向の永続接続で生成音声をストリーミングするチュートリアルです。マネージドな推論基盤でストリーミング系の生成 AI を動かすときの、コンテナとエンドポイントの組み立て方が具体的に分かります。同じシリーズのパート2では画像・動画生成を非同期推論で扱っており、生成メディア基盤の設計パターンとして並べて読めます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS ウィークリーラウンドアップ:GPT-6 Sol / Luna と Bedrock の Claude Opus 5.5 など</h3>
+<p>Amazon Bedrock に GPT-6 Sol・Luna や Claude Opus 5.5 が相次いで投入された1週間のまとめです。モデルの優劣ではなく「このコスト・このレイテンシでどのモデルをこの工程に当てるか」という選定軸で整理されており、個別の発表を追いきれていない人でも短時間で状況を掴めます。Strands のハーネスなど周辺ツールの動きも同時に確認できます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

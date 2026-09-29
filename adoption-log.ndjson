@@ -64,3 +64,37 @@
 {"date":"2026-09-27","domain":"claude","sourceName":"Anthropic | DevelopersIO"}
 {"date":"2026-09-27","domain":"claude","sourceName":"3-shake Engineers' Blogs"}
 {"date":"2026-09-27","domain":"kubernetes","sourceName":"The New Stack — Platform Engineering"}
+{"date":"2026-09-28","domain":"claude","sourceName":"はてなブックマーク — Codex (50users+)"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"The New Stack — Platform Engineering"}
+{"date":"2026-09-28","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
+{"date":"2026-09-28","domain":"claude","sourceName":"Claude Code releases"}
+{"date":"2026-09-28","domain":"aws","sourceName":"terraform-aws-eks"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"kro"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Backstage"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Terraform"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"CloudNativePG"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"external-secrets"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Grafana Alloy"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"KEDA"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Longhorn"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Mimir"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Reloader"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Tailscale (operator)"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Istio"}
+{"date":"2026-09-28","domain":"kubernetes","sourceName":"Velero"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"mise"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"Devbox"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"uv"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"Node.js"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"tmux"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"Neovim"}
+{"date":"2026-09-28","domain":"devtools","sourceName":"Yazi"}
+{"date":"2026-09-29","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-09-29","domain":"claude","sourceName":"Google News — コーディングエージェント新サービス・料金"}
+{"date":"2026-09-29","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
+{"date":"2026-09-29","domain":"kubernetes","sourceName":"Platform Engineering Blog"}
+{"date":"2026-09-29","domain":"aws","sourceName":"AWS Machine Learning Blog"}
+{"date":"2026-09-29","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
+{"date":"2026-09-29","domain":"aws","sourceName":"AWS News Blog"}
+{"date":"2026-09-29","domain":"aws","sourceName":"AWS Containers Blog"}

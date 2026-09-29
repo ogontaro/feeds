@@ -4,11 +4,59 @@
         <title>AWS Machine Learning Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS Machine Learning Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 16:29:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 22:13:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Grok 4.7がAmazon Bedrockで利用可能になりました]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/</link>
+            <guid>9a90cb3d7623d517b6c268aadcd85bbf56a68dde</guid>
+            <pubDate>Mon, 28 Sep 2026 22:13:16 GMT</pubDate>
+            <description><![CDATA[xAIのGrok 4.7がAmazon Bedrockで利用可能になりました。これは、コーディング、長期的なエージェント、およびナレッジワークのためのフロンティアモデルです。50万トークンコンテキストウィンドウと4つの設定可能な推論作業レベルを提供し、レスポンス、チャット完了、Converse APIを介して到達できます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fgrok-4-7-is-now-available-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWSでのClaude Sonnet 5.5のご紹介]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/</link>
+            <guid>cfc2607374dece7ff26f26b3922adbbb2e24f173</guid>
+            <pubDate>Mon, 28 Sep 2026 18:57:13 GMT</pubDate>
+            <description><![CDATA[Claude Sonnet 5.5がAWSのAmazon BedrockとClaude Platformで利用可能になりました。これは、集中的なコーディングとナレッジワークのための、よりスマートで効率的なSonnetモデルであり、1つのタスクあたりのコストをより速く抑えます。この記事では、新機能、ソネットの選び方、はじめ方について説明します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-claude-sonnet-5-5-on-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[SageMaker AIでvLLM - Omniを使用してリアルタイムの音声アプリケーションを構築–パート1]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1/</link>
+            <guid>be959add1e3f236c1c0a04b0919aa38f042b4622</guid>
+            <pubDate>Mon, 28 Sep 2026 16:15:46 GMT</pubDate>
+            <description><![CDATA[AWS vLLM - Omniディープラーニングコンテナを使用してAmazon SageMaker AIにテキスト読み上げモデルを展開し、永続的な双方向接続を介して生成された音声をストリーミングします。このパート1チュートリアルでは、Qwen 3 - TTSを展開し、Gradioアプリケーションを介して音声をストリーミングします。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[SageMaker AIでvLLM - Omniを使用して画像とビデオを生成する–パート2]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/generate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2/</link>
+            <guid>aec2d25cc981395a6fa5ae4a221b4e0ba14ccbf2</guid>
+            <pubDate>Mon, 28 Sep 2026 16:15:17 GMT</pubDate>
+            <description><![CDATA[Amazon SageMaker AI上の1つのAWS vLLM - Omniディープラーニングコンテナから2つのジェネレーティブメディアモデルを展開します。リアルタイム推論を介してFLUX.2-kleinで画像を生成し、非同期推論を介してWan2.1-VACEでビデオにアニメーション化し、Amazon S 3からMP 4を取得します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/generate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fgenerate-images-and-video-with-vllm-omni-on-sagemaker-ai-part-2%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Nova Actを使用した合成モニタリングの実装]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/implementing-synthetic-monitoring-using-amazon-nova-act/</link>
+            <guid>6122eefc7690836dc43c93a6f5a9bd795f679f12</guid>
+            <pubDate>Mon, 28 Sep 2026 15:56:32 GMT</pubDate>
+            <description><![CDATA[Amazon Nova ActとAmazon Bedrock AgentCoreを使用した合成モニタリングに対するエージェント主導のアプローチを学びます。この記事では、完全なサンプル実装を使用して、脆弱なUIスクリプトを超えて移行する、回復力のある管理されたユーザージャーニー検証のアーキテクチャとパターンについて説明します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/implementing-synthetic-monitoring-using-amazon-nova-act/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fimplementing-synthetic-monitoring-using-amazon-nova-act%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[アカウント間でのAmazon Textractアダプターのライフサイクル管理の自動化]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/automating-amazon-textract-adapter-lifecycle-management-across-accounts/</link>
+            <guid>6a0480f8e638c21372a1b84d4da4d77dc7deb8dc</guid>
+            <pubDate>Mon, 28 Sep 2026 15:49:04 GMT</pubDate>
+            <description><![CDATA[本番用のAmazon Textractカスタムクエリアダプターを運用する方法について説明します。AWS CloudFormationとTerraformを使用したコードとしてのインフラストラクチャ、クロスアカウントアダプタープロモーションプロセス、複数のフォームバージョンの事前分類ルーティングパターン、VPCエンドポイント、暗号化、最小権限IAMなどの本番セキュリティコントロール。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/automating-amazon-textract-adapter-lifecycle-management-across-accounts/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fautomating-amazon-textract-adapter-lifecycle-management-across-accounts%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[EFAとDeepEPを使用してAmazon EKSでMOE強化学習を拡張し、スループットを40 ％向上]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/scaling-moe-reinforcement-learning-on-amazon-eks-with-efa-and-deepep-with-40-more-throughput/</link>

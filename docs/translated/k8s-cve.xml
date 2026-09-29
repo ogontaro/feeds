@@ -26,6 +26,14 @@
             <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/142097">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F142097">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[CVE -2026 -19444]]></title>
+            <link>https://github.com/kubernetes/kubernetes/issues/141294</link>
+            <guid>https://www.cve.org/cverecord?id=CVE-2026-19444</guid>
+            <pubDate>Mon, 10 Aug 2026 14:49:49 GMT</pubDate>
+            <description><![CDATA[windows上のkubectl cpパストラバーサルは、任意のファイル書き込みを可能にします]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/kubernetes/kubernetes/issues/141294">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F141294">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[CVE -2026 -3865]]></title>
             <link>https://github.com/kubernetes/kubernetes/issues/138319</link>
             <guid>https://www.cve.org/cverecord?id=CVE-2026-3865</guid>

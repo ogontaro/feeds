@@ -4,11 +4,19 @@
         <title>AWS News Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS News Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Thu, 24 Sep 2026 20:58:46 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 16:14:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AWSウィークリーラウンドアップ： GPT -6 SolとLuna、Amazon BedrockのClaude Opus 5.5、Strandsハーネスなど（ 2026年9月28日）]]></title>
+            <link>https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/</link>
+            <guid>bd4f16a7bf860913e1106ba3aa40014256a857e5</guid>
+            <pubDate>Mon, 28 Sep 2026 16:14:54 GMT</pubDate>
+            <description><![CDATA[先週定義されたテーマが1つあれば、それは選択です。フロンティアモデルは到来し続けており、興味深い質問はもはや「それはどれくらい賢いか？」ではなく、「このコストで、このレイテンシで、どのモデルがこのステップに適合するか？「それはまさに過去数日間にAmazon Bedrockに着陸したものです。GPT -6 SolとGPT -6 […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[エンタープライズ規模のイベント駆動型アプリケーション向けのAmazon EventBridgeの拡張カスタムイベントバスのご紹介]]></title>
             <link>https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/</link>

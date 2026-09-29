@@ -4,11 +4,58 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 27 Sep 2026 04:13:21 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 01:37:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-09-29]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-29.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-29.html</guid>
+            <pubDate>Tue, 29 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock で Claude Sonnet 5.5 が利用可能に</h3>
+<p>Bedrock のモデルラインナップに Claude Sonnet 5.5 が加わり、Sonnet 5 比で30%以上の高速化と最大30%のコスト削減が謳われています。Bedrock 上の単価自体は Sonnet 5 と同額なので、既存の呼び出しを置き換えるだけでトークン効率とレイテンシの恩恵を受けられる点が実務的です。DevelopersIO の検証記事では東京リージョンから Converse API で呼び出した結果がまとまっており、リージョン展開の状況もあわせて確認できます。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-claude-sonnet-5-5-on-aws%2F">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-claude-sonnet-5-5/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock に xAI の Grok 4.7 が登場</h3>
+<p>xAI のフロンティアモデル Grok 4.7 が Amazon Bedrock で利用可能になりました。50万トークンのコンテキストウィンドウと4段階の設定可能な推論レベルを備え、Responses API・Chat Completions・Converse API から呼び出せます。コーディングや長時間のエージェント用途を想定したモデルで、マルチモデル前提で設計しているチームの選択肢が広がります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fgrok-4-7-is-now-available-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes Descheduler で Amazon EKS の Pod 配置ドリフトを修正する</h3>
+<p>AZ をまたいで配置したワークロードが、ノードの可用性変動のあとにソフトなトポロジースプレッド制約から外れたまま戻らない「配置ドリフト」を扱った記事です。原因の整理に加えてコスト面の影響を測定し、ハード制約の強制やダウンタイムなしで Descheduler により偏りを戻す手順を示しています。ノード障害後のリバランスを運用でどう扱うかを決める材料になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/fix-pod-distribution-drift-in-amazon-eks-with-the-kubernetes-descheduler/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Ffix-pod-distribution-drift-in-amazon-eks-with-the-kubernetes-descheduler%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker AI の vLLM-Omni コンテナでリアルタイム音声アプリを構築する</h3>
+<p>SageMaker AI 上で vLLM-Omni ディープラーニングコンテナを使い、Qwen3-TTS を展開して双方向の永続接続で生成音声をストリーミングするチュートリアルです。マネージドな推論基盤でストリーミング系の生成 AI を動かすときの、コンテナとエンドポイントの組み立て方が具体的に分かります。同じシリーズのパート2では画像・動画生成を非同期推論で扱っており、生成メディア基盤の設計パターンとして並べて読めます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-real-time-voice-applications-with-vllm-omni-on-sagemaker-ai-part-1%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS ウィークリーラウンドアップ:GPT-6 Sol / Luna と Bedrock の Claude Opus 5.5 など</h3>
+<p>Amazon Bedrock に GPT-6 Sol・Luna や Claude Opus 5.5 が相次いで投入された1週間のまとめです。モデルの優劣ではなく「このコスト・このレイテンシでどのモデルをこの工程に当てるか」という選定軸で整理されており、個別の発表を追いきれていない人でも短時間で状況を掴めます。Strands のハーネスなど周辺ツールの動きも同時に確認できます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-09-28]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-28.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-28.html</guid>
+            <pubDate>Mon, 28 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Strands Agentsに「Strands harness」が追加されました！</h3>
+<p>AWS のエージェント SDK「Strands Agents」に、新しく「Strands harness」が追加された。従来の SDK と何が違うのかを実際に触って確かめた内容で、Bedrock を前提にエージェントを組んでいるなら、どちらを使うかの判断材料になる。新機能の追加は実装の選択肢が増える変更なので、追っておく価値がある。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/strands-harness-vs-agent/">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-09-26]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-26.html</link>
@@ -351,67 +398,6 @@
 <h3>Amazon SageMaker AI トレーニングジョブにインスタンス優先リスト機能が追加</h3>
 <p>最大5種類のインスタンスタイプを優先順位付きで指定し、空き容量がある最初のタイプで自動起動できるようになったことで、手動のリトライループや容量監視スクリプトが不要になる。GPU インスタンスの確保に苦労している機械学習チームにとって、運用負荷を直接下げる実用的なアップデート。</p>
 <p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fannouncing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-15]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-15.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-15.html</guid>
-            <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 8 本</h2>
-<section class="item">
-<h3>Abnormal AI、Amazon Bedrock AgentCore でエージェント型メールセキュリティを大規模展開</h3>
-<p>10億通規模のリアルタイム脅威検知エージェントで AgentCore Code Interpreter を使い捨てのサンドボックスとして使う設計判断が具体的に語られており、本番運用で Code Interpreter を活用する際の実践的な教訓が得られる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/abnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fabnormal-ai-amazon-bedrock-agentcore-for-agentic-email-security-at-scale%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon Bedrock AgentCore、AIエージェント向けのエンドユーザー OAuth 同意フローを追加</h3>
-<p>AgentCore Gateway に同意ポータルとセッションバインディングが加わり、GitHub や Slack など外部サービスへの3-legged OAuth 連携をエージェントに組み込みやすくなった。CloudTrail での監査方法まで解説されており、エージェント基盤の権限設計に直結する内容。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmanage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AWS週次まとめ：Amazon Bedrock に OpenAI GPT-6 Astra が登場、Amazon Quick デスクトップ GA など（2026年9月14日）</h3>
-<p>Bedrock に OpenAI の新フロンティアモデル GPT-6 Astra が加わったことが今週最大のトピックで、Claude 以外のモデル選択肢が広がる動きとして押さえておきたい。Quick デスクトップ版 GA など他の発表も一覧できる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Ninth Wave、Amazon Bedrock でオープンファイナンスのオンボーディングを AI 化</h3>
-<p>銀行APIをFDX標準に照らして検証・コンプライアンススコアリングするマルチエージェント構成を Bedrock AgentCore 上に構築し、数週間かかっていたオンボーディングを数分に短縮した事例。SOC 2 / PCI DSS 要件を満たしながらエージェントを実運用に載せる設計が参考になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-ninth-wave-built-ai-powered-open-finance-onboarding-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>プロンプトエンジニアリングからカスタムモデルまで：AWS における生成AIカスタマイズの選択指針</h3>
-<p>RAG・ファインチューニング・継続事前学習・Amazon Nova Forge をどう使い分けるかを8段階の意思決定フレームワークとして整理しており、過剰なカスタマイズに走らず段階的に投資判断するための指針として実務に効く内容。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>MMF・Databricks Genie・Amazon Quick で需要変動への自動補充を実現</h3>
-<p>需要予測だけでなく、供給元の在庫状況と突き合わせて発注まで自動で完結させる detect-decide-act ループを Databricks と Amazon Quick で構築した事例。人の判断が必要な場面だけエスカレーションする設計は、生成AIの適用範囲を「予測」から「実行」まで広げる際の参考になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/automate-replenishment-with-mmf-databricks-genie-and-amazon-quick/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fautomate-replenishment-with-mmf-databricks-genie-and-amazon-quick%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code の auto mode をデフォルト化すると、Bedrock 対応モデルと非対応モデルで挙動が変わる</h3>
-<p>Bedrock 上で Claude Code の auto mode をデフォルトにした際、モデルによって挙動差が出る実例を検証しており、Bedrock 経由で Claude Code を運用しているチームがハマりやすい落とし穴を事前に把握できる。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-default-bedrock%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon Bedrock Managed Knowledge Base の S3 ナレッジベース、ドキュメント単位 ACL を Amazon Quick から検証</h3>
-<p>Bedrock 側でドキュメントレベルのアクセス制御を定義し、Quick 側のACLとどう組み合わさるかを実際に検証しており、ユーザーごとに参照できる機密文書を出し分けたい場合の設計・検証手順がそのまま使える。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20260914-amazon-mkb-s3-acl-with-quick/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260914-amazon-mkb-s3-acl-with-quick%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-14]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-14.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-14.html</guid>
-            <pubDate>Mon, 14 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>[アップデート] Amazon Bedrock Managed Knowledge Baseでドキュメントのアクセス権を調べるAPIが追加されたので試してみた</h3>
-<p>Bedrockのナレッジベースでどのドキュメントが検索対象になっているか（アクセス権）を確認できる新APIの解説です。権限設定のデバッグに直接使える内容なので、ナレッジベースを運用中の人は押さえておく価値があります。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/amazon-bedrock-knowledge-base-document-acl-debugging/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Famazon-bedrock-knowledge-base-document-acl-debugging%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

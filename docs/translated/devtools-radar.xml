@@ -4,11 +4,19 @@
         <title>AI Devtools Radar — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AI Devtools Radar の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sun, 20 Sep 2026 08:10:13 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 27 Sep 2026 08:26:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AI Devtoolsレーダー＃ 11 ： Opus 5.5が3つのAPIデフォルトを破る]]></title>
+            <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-11-opus-55-breaks-three-api/</link>
+            <guid>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-11-opus-55-breaks-three-api/</guid>
+            <pubDate>Sun, 27 Sep 2026 08:26:19 GMT</pubDate>
+            <description><![CDATA[レーダーはこのウィンドウで32のツールにわたって63のソースを監視し、32の変更を公開しました。これらはあなたが注目する価値のある12です。Opus 5.5の発売だけで、API契約の破棄から透かし入りの出力まで、3つの別々の結果が発生し、同じ週に3つの無関係な価格変更が行われたため、通常の10件より2件多くなりました。9月26日の収集は、私たちの側のネットワーク障害の後、ほぼすべてのソースで失敗したため、その日に発表されたものが次の問題に表示されます。Anthropi]]></description>
+            <content:encoded><![CDATA[<p><a href="https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-11-opus-55-breaks-three-api/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fbuttondown.com%2Fdevtoolsradar%2Farchive%2Fai-devtools-radar-11-opus-55-breaks-three-api%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AI Devtoolsレーダー＃ 10 ：ネオンバックエンドGA、ベータ課金終了]]></title>
             <link>https://buttondown.com/devtoolsradar/archive/ai-devtools-radar-10-neon-backend-ga-beta-billing/</link>

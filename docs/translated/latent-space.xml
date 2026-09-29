@@ -4,11 +4,35 @@
         <title>Latent Space — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Latent Space の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 25 Sep 2026 23:14:41 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 02:55:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[[AINews] AMD、World Labsを82億$で買収、ロボット工学、デザインなどの疎な再構築問題を解決]]></title>
+            <link>https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b</link>
+            <guid>https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b</guid>
+            <pubDate>Tue, 29 Sep 2026 02:55:27 GMT</pubDate>
+            <description><![CDATA[チームの皆さん、おめでとうございます！]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-amd-buys-world-labs-for-82b">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[AINews] Opus 5.5は説明ビデオが得意です]]></title>
+            <link>https://www.latent.space/p/ainews-opus-55-is-good-at-explainer</link>
+            <guid>https://www.latent.space/p/ainews-opus-55-is-good-at-explainer</guid>
+            <pubDate>Tue, 29 Sep 2026 02:44:29 GMT</pubDate>
+            <description><![CDATA[機能のまれな特徴]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/ainews-opus-55-is-good-at-explainer">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-opus-55-is-good-at-explainer">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[クロード・コードの次の時代— Thariq Shihipar、Anthropic]]></title>
+            <link>https://www.latent.space/p/thariq</link>
+            <guid>https://www.latent.space/p/thariq</guid>
+            <pubDate>Tue, 29 Sep 2026 01:48:18 GMT</pubDate>
+            <description><![CDATA[フロンティアをペーシングしながらOpus/Sonnet 5.5、Mod、プラグイン、プロジェクト、タグを出荷]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latent.space/p/thariq">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latent.space%2Fp%2Fthariq">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenRouter ：シードからストライプまで— OpenRouterのAlex AtallahとAMPのAnjney Midha]]></title>
             <link>https://www.latent.space/p/openrouter</link>

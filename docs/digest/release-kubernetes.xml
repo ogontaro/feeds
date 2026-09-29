@@ -4,11 +4,84 @@
         <title>Kubernetes リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Sun, 27 Sep 2026 04:13:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 01:06:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes リリースレポート 2026-09-28]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-28.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-28.html</guid>
+            <pubDate>Mon, 28 Sep 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>CloudNativePG v1.29.3 / v1.30.1</h3>
+<p><strong>破壊的変更</strong>: なし（ただし 1.29 系は本リリースでサポート終了）<br>セキュリティ修正が中心。拡張機能パスに <code>..</code> を含む絶対パス（例 <code>/a/../../../../etc</code>）が Webhook のバリデーションをすり抜け、実行時にマウントポイントの外へ出られてしまう問題を修正し、admission・メジャーアップグレードジョブ・既存の Cluster スペックで一貫して拒否するようにした。gRPC-Go を v1.83.1 に上げ、CVE-2026-84304（HTTP/2 DATA フレーム断片化によるヒープ枯渇）にも対応している。<br>フェイルオーバー周りの修正も厚く、fencing されたインスタンスが healthy を報告し続けてフェイルオーバーと Pod 再作成が固まる問題、ペンディングのフェイルオーバーが永久に止まる／黙って巻き戻る問題、応答しない旧プライマリの降格待ちを解消。既定の PostgreSQL は 18.6-system-trixie、オペレータ自身のベースイメージも Debian 13 (trixie) になった。<br>1.29.3 は 1.29.x の最終リリースでサポートは終了するため、1.30 系への移行を推奨。</p>
+<p class="links"><a href="https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcloudnative-pg%2Fcloudnative-pg%2Freleases%2Ftag%2Fv1.30.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>KEDA v2.21.0</h3>
+<p><strong>破壊的変更</strong>: あり（サービスアカウントトークンの audience 強制、Azure Pipelines の <code>scaleOnInFlight: true</code> 既定化、Temporal の非推奨設定削除の3件）<br>最重要は CVE-2026-77524 / GHSA-637c-6jxx-4rwm の修正で、サービスアカウントトークンの audience を明示的に強制して TriggerAuthentication の権限昇格を防ぐ。Vault の Kubernetes 認証（operator トークン・既存の projected token・<code>credential.serviceAccountName</code>）や <code>boundServiceAccountToken</code> を使う TriggerAuthentication / ClusterTriggerAuthentication（Metrics API・Prometheus・Loki・Datadog Cluster Agent など）が影響対象なので、アップグレード前に移行ガイドの確認が必要。通常の Vault トークン認証・API キー・OAuth は影響しない。<br>Azure Pipelines スケーラは割当済みの未完了ジョブもキュー長に数える <code>scaleOnInFlight</code> が既定 true になり、Temporal スケーラは <code>buildId</code> / <code>selectAllActive</code> / <code>selectUnversioned</code> を受け付けなくなった（<code>workerDeploymentName</code> / <code>workerDeploymentBuildId</code> へ移行）。新機能として Azure Cosmos DB Change Feed・ClickHouse・GCP Cloud Spanner のスケーラが追加され、外部スケーラが <code>StreamMetricSpec</code> 経由で HPA のターゲットを動的に更新できるようになった。</p>
+<p class="links"><a href="https://github.com/kedacore/keda/releases/tag/v2.21.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkedacore%2Fkeda%2Freleases%2Ftag%2Fv2.21.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Grafana Alloy v1.20.0（helm chart 1.13.0 / v1.20.0-rc.0 を含む）</h3>
+<p><strong>破壊的変更</strong>: あり（OTel コンポーネントの既定値と属性名の変更が多数）<br><code>otelcol.processor.k8sattributes</code> が <code>container.image.tag</code>（文字列）ではなく <code>container.image.tags</code>（リスト）を既定で抽出し、pod / namespace / node の既定属性キーが複数形（<code>k8s.pod.labels.</code>）から単数形（<code>k8s.pod.label.</code>）へ変わる。旧挙動に戻す設定はなく、<code>deployment_name_from_replicaset</code> 引数も削除された。<br><code>otelcol.processor.transform</code> の <code>Base64Decode</code> は削除（<code>Decode(value, &quot;base64&quot;)</code> を使う）、<code>set(target, nil)</code> は実際に nil を設定するようになり、<code>otelcol.receiver.kafka</code> の平文クレデンシャルは SASL/PLAIN に変換される。<code>discovery.hetzner</code> は hcloud ターゲットで <code>__meta_hetzner_datacenter</code> を出力しなくなり、<code>prometheus.exporter.windows</code> は既定の textfile ディレクトリを再び適用する。<br>Grafana スタックをまとめて動かしている場合は、k8sattributes のラベル名変更がダッシュボードやアラートに波及するため、アップグレード前に確認したい。</p>
+<p class="links"><a href="https://github.com/grafana/alloy/releases/tag/v1.20.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Falloy%2Freleases%2Ftag%2Fv1.20.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Terraform v1.17.0-beta2 / v1.16.4</h3>
+<p><strong>破壊的変更</strong>: なし（ただし <code>terraform version</code> の JSON 出力に <code>format_version</code> フィールドが追加。既存ツールは未知フィールドを無視する想定）<br>1.17.0-beta2 では provider 要件で変数と locals が使えるようになり、変更のあるリソースだけをリフレッシュする <code>-minimal-refresh</code> 計画オプションが追加された。Terraform Policy が GA となり、<code>plan</code> / <code>apply</code> / <code>query</code> の <code>-policies</code> フラグが実験ビルドや <code>-allow-experimental-features</code> なしで使える（query ポリシーは list ブロックで発見したリソースを評価し、人間可読または JSON で結果を返す）。<br>安定版 1.16.4 はバグ修正のみで、Terraform Enterprise の旧バージョンでポリシー評価結果の描画に失敗する問題と、Stacks で unknown な count/for_each と deferral が重なったときの誤った deferred エラーを修正している。</p>
+<p class="links"><a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhashicorp%2Fterraform%2Freleases%2Ftag%2Fv1.17.0-beta2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Velero v1.18.3 / v1.18.4-rc.1</h3>
+<p><strong>破壊的変更</strong>: なし（<code>restore.velero.io/must-include-additional-items</code> の追加は既存のリストア／プラグインの既定動作を変えない）<br>1.18.3 は修正と機能追加がまとまって入ったリリース。バックアップのきめ細かいフィルタ（<code>ClusterScopedFilterPolicy</code> / <code>NamespacedFilterPolicy</code>、ラベルセレクタ、PVC の volume mode・access mode マッチ）とリストア側の同機能が追加され、<code>--global-backup-volume-policies-configmap</code> でクラスタ全体のボリュームポリシーを各バックアップにマージできるようになった。<br>不具合修正では、fs-backup のタイムアウト時に PodVolumeBackup のメタデータが失われて全ボリュームがリストア不能になる問題、restore-wait init コンテナが pod レベルの securityContext を無視して runAsUser 1000 にフォールバックし Init:0/1 でデッドロックする問題、同一ストレージ種別の2つのリポジトリで接続が競合する問題などが修正された。<br>1.18.4-rc.1 は RC で、デキュー後にパッチ中に完了したバックアップでキューが恒久的に詰まる問題の修正が入っている。</p>
+<p class="links"><a href="https://github.com/velero-io/velero/releases/tag/v1.18.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fvelero-io%2Fvelero%2Freleases%2Ftag%2Fv1.18.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>kro v0.10.0-rc.0</h3>
+<p><strong>破壊的変更</strong>: v0.10.0 系は Graph エンジンへの統合を含む大規模変更。RC のため本番利用は非推奨<br>KREP-024 の実装で、RGD の合成エンジンが Graph ベースに統一された。Graph API のドキュメント整備と concepts の再構成も同時に入っている。<br>安定性の修正が多く、外部コレクションセレクタの不正入力で fail closed にする変更、patch ノードのフィールド競合を FieldManagerConflict として報告、スキーマ変更時の fail closed、CEL のタイムスタンプ型の保持、再起動なしでの新リソース種別対応、一時的な API 拒否時のコレクションメンバー更新リトライなどが含まれる。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/kro/releases/tag/v0.10.0-rc.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fkro%2Freleases%2Ftag%2Fv0.10.0-rc.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Backstage v1.55.1 / v1.55.2（ほか 1.50.7・1.54.9・1.56.0-next.0）</h3>
+<p><strong>破壊的変更</strong>: なし<br>TechDocs の Markdown 拡張設定を正規化する修正が 1.50.7 / 1.54.9 / 1.55.2 にバックポートされた。1.55.1 では Yarn patch 検証が Yarn CLI パッケージを別途インストールしないと読み込めない問題と、新しいフロントエンドシステムで TechDocs アドオンが描画されない問題を修正。1.56.0-next.0 は次期マイナーのプレリリース。TechDocs を使っているなら 1.55.2 系への更新を推奨。</p>
+<p class="links"><a href="https://github.com/backstage/backstage/releases/tag/v1.55.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbackstage%2Fbackstage%2Freleases%2Ftag%2Fv1.55.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Reloader v2.0.0-beta.1 / helm chart 3.0.0-beta.1</h3>
+<p><strong>破壊的変更</strong>: v2 系はベータ。マルチネームスペース対応や CSI プロバイダの移植など構成変更を含むため、本番導入は非推奨<br>複数ネームスペース対応、CSI プロバイダの v2 移植、<code>reloader.stakater.com/ignore</code> を上書きする <code>--ignore-annotation</code> フラグ、リロード判断 API の公開パッケージ化、ユーザーネームスペース有効化が入った。master との機能パリティ合わせも行われ、対応する Helm chart 3.0.0-beta.1 が同時公開されている。</p>
+<p class="links"><a href="https://github.com/stakater/Reloader/releases/tag/v2.0.0-beta.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstakater%2FReloader%2Freleases%2Ftag%2Fv2.0.0-beta.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Istio 1.31.1 / 1.30.5 / 1.29.8</h3>
+<p><strong>破壊的変更</strong>: なし<br>サポート中 3 系列のパッチリリース。バグ修正と依存更新。</p>
+<p class="links"><a href="https://github.com/istio/istio/releases/tag/1.31.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fistio%2Fistio%2Freleases%2Ftag%2F1.31.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Longhorn v1.13.0-rc4</h3>
+<p><strong>破壊的変更</strong>: なし<br>CRD とマニフェストの更新のみ（次期 1.13.0 に向けた RC）。</p>
+<p class="links"><a href="https://github.com/longhorn/longhorn/releases/tag/v1.13.0-rc4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Flonghorn%2Flonghorn%2Freleases%2Ftag%2Fv1.13.0-rc4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>external-secrets helm-chart 2.11.0</h3>
+<p><strong>破壊的変更</strong>: なし<br>Helm チャートの定期更新。バグ修正と依存更新。</p>
+<p class="links"><a href="https://github.com/external-secrets/external-secrets/releases/tag/helm-chart-2.11.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fexternal-secrets%2Fexternal-secrets%2Freleases%2Ftag%2Fhelm-chart-2.11.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Tailscale（operator）v1.102.5</h3>
+<p><strong>破壊的変更</strong>: なし<br>パッチリリース。詳細な変更点はリリースノートに記載なし。</p>
+<p class="links"><a href="https://github.com/tailscale/tailscale/releases/tag/v1.102.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Ftailscale%2Ftailscale%2Freleases%2Ftag%2Fv1.102.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Mimir mimir-distributed 6.3.0-weekly.413</h3>
+<p><strong>破壊的変更</strong>: なし<br>自動化されたウィークリー Helm チャートリリース。利用者向けの変更点は記載なし。</p>
+<p class="links"><a href="https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.3.0-weekly.413">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Fmimir%2Freleases%2Ftag%2Fmimir-distributed-6.3.0-weekly.413">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes リリースレポート 2026-09-21]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-21.html</link>

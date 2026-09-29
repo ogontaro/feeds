@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>開発ツール リリースレポート — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
+        <description>開発ツール 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
+        <lastBuildDate>Mon, 28 Sep 2026 01:07:15 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[開発ツール リリースレポート 2026-09-28]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-09-28.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/devtools/2026-09-28.html</guid>
+            <pubDate>Mon, 28 Sep 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>mise v2026.9.14 〜 v2026.9.15</h3>
+<p><strong>破壊的変更</strong>: <code>mise tasks validate</code> が usage スペックのパースエラーで <strong>exit 1</strong> するようになった（以前は警告のみで検証は通っていた）。<code>--errors-only</code> でも同様なので、CI で <code>mise tasks validate</code> を回していると新たに落ちる可能性がある。dotfiles の include / exclude パターンが <code>.gitignore</code> 準拠（<code>*</code> と先頭 <code>/</code>）に変わり、rollback が使用中のファイルを消すケースが修正されたが、パターンの書き換えが必要になる場合がある。<code>mise exec</code> は、自動インストール無効時に未インストールの固定ツールが PATH の同名バイナリへフォールバックした際に警告を出すようになった（動作自体は従来どおり）。互換性の注記として、conf.d 内のディレクトリに既存の <code>mise.toml</code> があると、それが設定断片として読み込まれるようになった。<br><strong>追加</strong>: conf.d のフォルダ断片（フォルダ内の <code>mise.toml</code> などをまとめて読み込み、そのフォルダが <code>config_root</code> になる。<code>[bootstrap].config_roots</code> からの移行パス）。dotfiles に GNU Stow 風オプション（<code>dotfiles.relative_symlinks = true</code> で相対リンク化、<code>dot_prefix = true</code> で <code>dot-config</code> → <code>.config</code> に展開）。<strong>vfox プラグインのツールを OCI イメージに同梱</strong>（experimental、プラグインごとに <code>/mise/plugins/&lt;name&gt;/</code> のレイヤーを作る）、vfox プラグインが <code>hooks/mise_install_satisfied.lua</code> で既存インストールを再ダウンロードせず修復できるようになった。ほかに pypi の git サブディレクトリ指定（<code>#subdirectory=</code>）、レジストリの <code>max_version</code>、<code>attestations_since</code> による GitHub attestation 必須化、<code>mise bootstrap packages status</code> での mas アプリ名表示、レジストリ追加（sofka / imessage-exporter / spotify-downloader ほか）。<br><strong>変更</strong>: 公開 GitHub リポジトリのバージョン一覧・リリース検索・attestation 取得がミラー（mise-versions）経由になり、GitHub API のレート制限を消費しなくなった。ミラーは信頼しない前提で、URL が設定したリポジトリ・タグ・アセット名と一致するかを検証し、paranoid モードでは「attestation なし」の応答を GitHub に照会する。404 以外の失敗時は api.github.com にフォールバックして警告を出す。<br><strong>手元環境への影響</strong>: mise と devbox global を併用している場合、dotfiles の rollback 修正と <code>mise tasks validate</code> の厳格化が直接効く。相対シンボリックリンクはホームディレクトリを別パスにマウントしている構成で有効だが、有効化すると次回 apply で既存の絶対リンクが張り替えられる。内部パッケージ（vfox 2026.9.16 / 2026.9.17、mise-util・mise-settings・mise-agent-env 2026.9.1、mise-brew-relocation・mise-brew-metadata 2026.9.0、aqua-registry 2026.9.5）も同週に更新されているが、いずれもビルド番号の更新のみ。</p>
+<p class="links"><a href="https://github.com/jdx/mise/releases/tag/v2026.9.15">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjdx%2Fmise%2Freleases%2Ftag%2Fv2026.9.15">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Devbox 0.18.4</h3>
+<p><strong>破壊的変更</strong>: なし（既定の解決先が変わる点のみ注意）<br><code>devbox.jsonc</code> が設定ファイル名として認識されるようになった。<code>devbox.json</code> は以前からコメントを受け付けていたが、エディタや GitHub の diff が構文エラーとして扱っていた問題が解消される。<code>devbox add</code> / <code>rm</code> は既存のファイル名に書き戻すようになり、<code>devbox.json</code> が勝つのは両方ある場合のみ。<code>devbox search</code> / <code>add</code> / <code>update</code> のパッケージ解決は search.devbox.sh から <strong><a href="http://www.nixsearch.com">www.nixsearch.com</a></strong> に切り替わった。固定バージョンは同じコミット・ストアパスに解決されるが、<code>@latest</code> はより新しい nixpkgs インデックスに解決されるため、<code>@latest</code> を使っている場合は解決結果が変わりうる（<code>DEVBOX_SEARCH_HOST</code> で上書き可）。旧 <code>jetify.com/devbox/docs/...</code> を指していた 404 リンク（<code>devbox generate direnv</code> が生成する <code>.envrc</code> のコメント、VS Code 拡張の WSL 警告を含む）も現行サイトに修正された。</p>
+<p class="links"><a href="https://github.com/jetify-com/devbox/releases/tag/0.18.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjetify-com%2Fdevbox%2Freleases%2Ftag%2F0.18.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>uv 0.12.18 〜 0.12.19</h3>
+<p><strong>破壊的変更</strong>: なし<br>0.12.18 は <strong>GHSA-2cv4-cqwr-gwf7</strong>（Windows での wheel インストール時のパストラバーサル）に対応したセキュリティリリース。他プラットフォームは影響を受けないため、Windows で使っている場合のみ優先度が高い。機能的には <code>uv pip install</code> / <code>uv pip sync</code> に <code>--output-format json</code> と <code>--check</code>（環境を変更せず変更予定だけを報告）が追加され、CI でのドライランや差分確認に使いやすくなった。<code>uv add</code> / <code>remove</code> / <code>version</code> が失敗・中断した際にプロジェクト・スクリプト・ロックファイルを復元する修正も入っている。<br><strong>プレビュー機能</strong>: CPython 3.15 以降で build-backend フックを遅延 import で実行（<code>build-lazy-imports</code>）、未使用の解決設定を uv.lock から省略（<code>resolution-inputs</code>）、<code>uv build --no-build-isolation</code> のビルド要件検証（<code>build-dependency-check</code>、<code>--skip-dependency-check</code> で無効化）。<br><strong>その他の修正</strong>: 直接 URL のメタデータで署名・エンコード済みクエリパラメータを保持し、未変更パッケージの再インストールを回避。<code>===1</code> を <code>1.0.0</code> が満たすと認識して解決時と一致させる。Git チェックアウトの準備マーカーと依存内 <code>.ok</code> ファイルの衝突回避。Python は PyPy 3.11.16 / 3.12.14 を追加し、GraalPy 3.13.0 を build 25.4.4 に更新。</p>
+<p class="links"><a href="https://github.com/astral-sh/uv/releases/tag/0.12.19">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fastral-sh%2Fuv%2Freleases%2Ftag%2F0.12.19">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Node.js v26.10.0 / v22.23.3 (LTS &#39;Jod&#39;)</h3>
+<p><strong>破壊的変更</strong>: なし（v26.10.0 は SEMVER-MINOR のみ、v22.23.3 はパッチ）<br>v26.10.0（Current）の追加機能は <code>crypto.parsePKCS12()</code>、<code>fs.openAsBlobSync()</code>、<code>net.BoundSocket</code> をスレッド／子プロセスへ渡せる仕組み、<code>util.throttle</code> / <code>util.debounce</code>、<code>util.markPromiseAsHandled</code>、<code>perf_hooks</code> の SlidingWindowHistogram と qrde 分析、<code>sqlite</code> で <code>undefined</code> を NULL にバインドする挙動、ffi がマウント済み VFS からライブラリをロードする対応。暗号まわりはプロバイダ経由の鍵処理（PKCS#1 デコード、EVP_KDF、EC グループ名、RSA-PSS 制約）と Hybrid KEM の Web Cryptography 対応が進んだ。<br>v22.23.3（LTS）は依存更新が中心で、npm 10.9.9、OpenSSL 3.5.8、corepack 0.36.0、icu 78.3、Undici 6.28.1、ルート証明書 NSS 3.125、tzdata 2026c を取り込み、node-api が <code>napi_create_typedarray</code> で SharedArrayBuffer を扱えるようになった。ローカルで Node 22 系を使っているなら、OpenSSL とルート証明書の更新のために上げておく価値がある。</p>
+<p class="links"><a href="https://github.com/nodejs/node/releases/tag/v26.10.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fnodejs%2Fnode%2Freleases%2Ftag%2Fv26.10.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>tmux 3.8-rc2</h3>
+<p><strong>破壊的変更</strong>: なし（リリース候補）<br>tmux 3.8 のリリース候補第2版。リリースノート本文はリポジトリの CHANGES と issue を参照する形で、個別の変更点はここには列挙されていない。安定版はまだ 3.7 系のため、常用環境（tmux 設定・Zellij 併用環境）へ入れるのは 3.8 の正式版を待つのが無難。RC で検証したい場合のみ手元の別環境で試す。</p>
+<p class="links"><a href="https://github.com/tmux/tmux/releases/tag/3.8-rc2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Ftmux%2Ftmux%2Freleases%2Ftag%2F3.8-rc2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Neovim (nightly)</h3>
+<p><strong>破壊的変更</strong>: なし<br>開発版プリリリースビルド（<code>v0.13.0-dev-1738+g521eddec7c</code>、LuaJIT 2.1.1788460057）。リリース本文はインストール手順のみで、変更点はビルドごとの changelog / <code>:help news</code> を参照する形式のため、要約に値する記述はない。</p>
+<p class="links"><a href="https://github.com/neovim/neovim/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fneovim%2Fneovim%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Yazi (nightly)</h3>
+<p><strong>破壊的変更</strong>: なし<br>nightly ビルド（commit <code>0ea4c5d</code>）。未リリース分の CHANGELOG を参照する形式で、内容の記載はない。</p>
+<p class="links"><a href="https://github.com/sxyazi/yazi/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsxyazi%2Fyazi%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

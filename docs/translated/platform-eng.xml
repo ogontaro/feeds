@@ -4,11 +4,27 @@
         <title>Platform Engineering Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Platform Engineering Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 22 Sep 2026 16:01:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 09:59:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[プラットフォームエンジニアリングチームを構築する方法]]></title>
+            <link>https://platformengineering.org/blog/how-to-build-your-platform-engineering-team</link>
+            <guid>https://platformengineering.org/blog/how-to-build-your-platform-engineering-team</guid>
+            <pubDate>Mon, 28 Sep 2026 09:59:56 GMT</pubDate>
+            <description><![CDATA[プラットフォームエンジニアリングと内部デベロッパープラットフォームは、テクノロジーの世界を席巻していますが、エージェントにもサービスを提供しなければならないようになった今、プラットフォームチームは実際にはどのように見えますか？見てみましょう。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/how-to-build-your-platform-engineering-team">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fhow-to-build-your-platform-engineering-team">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[プラットフォームチームは最初にトレースを考える必要があります]]></title>
+            <link>https://platformengineering.org/blog/platform-teams-should-think-tracing-first</link>
+            <guid>https://platformengineering.org/blog/platform-teams-should-think-tracing-first</guid>
+            <pubDate>Mon, 28 Sep 2026 09:18:07 GMT</pubDate>
+            <description><![CDATA[複雑なエンジニアリングアーキテクチャ全体で自律型チームとAIコーディングエージェントをサポートするために、プラットフォームチームがトレースに優先順位を付ける必要がある理由をご覧ください。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/platform-teams-should-think-tracing-first">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fplatform-teams-should-think-tracing-first">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[CIパイプライン時間を64 ％短縮：本番環境で実際に機能するもの]]></title>
             <link>https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production</link>

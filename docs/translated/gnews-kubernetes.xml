@@ -4,13 +4,125 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sat, 26 Sep 2026 22:53:25 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 00:17:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[External Secrets Operator vs Sealed Secrets vs Vault - tech-insider.org]]></title>
+            <title><![CDATA[Kolon Benit、Nutanix Kubernetesビジネスを拡大、パートナートレーニングを強化- thelec.net]]></title>
+            <link>https://www.thelec.net/news/articleView.html?idxno\\u003d14140</link>
+            <guid>CBMiZ0FVX3lxTE1Zb2dCSExEaDctSUkyX18wLXBrVGRHUmRaRDR2d0JCUDFkVHN6SFBuTUpFbWpYMEdSVHg1V1Bka01jWURyU2FrdmJIZ0x0NHFsNWxiS0MxWGt1bWxvY1Awa2VTZFN2R00</guid>
+            <pubDate>Tue, 29 Sep 2026 00:17:48 GMT</pubDate>
+            <description><![CDATA[Kolon Benit、Nutanix Kubernetesビジネスを拡大、パートナートレーニングthelec.netを強化]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.thelec.net/news/articleView.html?idxno\\u003d14140">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.thelec.net%2Fnews%2FarticleView.html%3Fidxno%5C%5Cu003d14140">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[重大なKyvernoの欠陥により、Kubernetesテナントがクラスタ管理者アクセスを取得できる可能性があります- systemtek.co.uk]]></title>
+            <link>https://www.systemtek.co.uk/2026/09/critical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access/</link>
+            <guid>CBMixAFBVV95cUxPMHNBaDcySElma0xFbXJuWThOWGxPQ0tKdEZNeE53NFYzdG5yNlF4MUlhOFJTWVgtOTVVVUdQdWlTVk52Q2ROUHE3MVBXVS1TNUpodWhZd2VITXZQQXV0Y010Ri0wTmVQZHJ6SlpUaHBqNWJ1cGlsamNWWnNRaEtMZ2pkUkxnMEs1aW94UklpMHZ0Z2luUjNIZTBOcFRpenhJOVFjZE55eTdRV3hpM0QyY3IwcnFjSjR5SHhkMXg4WHhGUE5J</guid>
+            <pubDate>Mon, 28 Sep 2026 18:17:00 GMT</pubDate>
+            <description><![CDATA[重大なKyvernoの欠陥により、Kubernetesテナントがクラスタ管理者アクセスsystemtek.co.ukを取得できる可能性があります]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.systemtek.co.uk/2026/09/critical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.systemtek.co.uk%2F2026%2F09%2Fcritical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[脅威の概要： NetScaler Zero Days CVE -2026 -88771およびCVE -2026 -88772が悪用されました-ユニット42]]></title>
+            <link>https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited</link>
+            <guid>CBMic0FVX3lxTE9XNDFNeDBxU3FoV3kydkdKS3RhRlZfZ04yemhOQWNKblNuS3pHb3FyWkM0aVB3OF9FaEk5N29kOVB2dkpvb3dRdDlmb290UHNXYU9qUFVoRGU2akVhczduUWhfQkNHM3A4N2h0OWdRSFNqNGM</guid>
+            <pubDate>Mon, 28 Sep 2026 15:08:41 GMT</pubDate>
+            <description><![CDATA[脅威の概要： NetScaler Zero Days CVE -2026 -88771およびCVE -2026 -88772ワイルドユニットで悪用42]]></description>
+            <content:encoded><![CDATA[<p><a href="https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Funit42.paloaltonetworks.com%2Fnetscaler-zero-days-exploited">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ビジネスニュース- LatestLY]]></title>
+            <link>https://www.latestly.com/agency-news/business-news-esds-unveils-swaraj-sethu-a-unified-platform-bringing-the-enterprise-devsecops-lifecycle-together-7624372.html</link>
+            <guid>CBMi8wFBVV95cUxOY2hXdFNSV1pJVWNNTUZiYktNRVFuTGNiVFFEX1dPaHFNNGM5ZEVYaE11QTY2WmU5amcwWmdELThNVmJEQ2tyZTFlSGdZRkd2ZnZraEREVl9rbk1UNVNfa24yRzZ0OXlDNTIxOFNwV0dfT3g2ODF2ck5jN1EyUUUxMTN1TDJFV2tEdF9ZVzlpVGNTY2tKaXBpZVNpakJSekNOUDhCbmk0dG55c2RaanpJZ3AzVjFEN1E1Y2IxbGNKMzdZUHdoZ09rZklncHlYejlTZUVVZldsdExwSlIwbE50UXc0MzZ3V3ZwRTF2RkJBbm9GT1HSAfgBQVVfeXFMT2tUMjQyX3JyMkQ4RFFUWlpHQXNHaDFWbWRiOG0wVl8wT1ktOW9QX083SWI0VGQ1V0lVb0IzblBGTFNqTGswbVd4blJFNWFHZ3BJQ1ktM1hvOXJfcXNuQUkzSm1EZVVOU3J5eGJSc2ZRazA5dmR0YmtiU3JhRDl6SWNPZzh0dGNCaDhVN1NyVnRQMlJnczZ0RGZrUkN2YlRmdEp1aHJ4YWpfUmlHM3JPNHl2eHZrRVdwc3Rpb2xoSHBGLWVsRElraThzQWpNeElEZmpXdEQySXNUbDFETEZtbFE0dHlNZDJIbVBiMFJ5UXAxUVRKN2NHNGQ</guid>
+            <pubDate>Mon, 28 Sep 2026 14:28:24 GMT</pubDate>
+            <description><![CDATA[ビジネスニュースLatestLY]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.latestly.com/agency-news/business-news-esds-unveils-swaraj-sethu-a-unified-platform-bringing-the-enterprise-devsecops-lifecycle-together-7624372.html">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.latestly.com%2Fagency-news%2Fbusiness-news-esds-unveils-swaraj-sethu-a-unified-platform-bringing-the-enterprise-devsecops-lifecycle-together-7624372.html">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAI Agent Swarmがハグする顔をハッキングするために100万近くのURLを使用- gbhackers.com]]></title>
+            <link>https://gbhackers.com/openai-agent-swarm-used-nearly-1-million-urls-to-hack-hugging-face/amp/</link>
+            <guid>CBMimAFBVV95cUxNeUxGOWpHUXNyNXVIMVdxV2wyN2ZCYnBQbG9YcklyVDFEQTZ1Mjg5WjdxUFNveUlfUHE3bDk1RHdoS3NPZ0NMSzRiX3E2bVdiTy10ckRNbGtwcjNCNktBTE9JR2pwbmJCMWZkbjFDMGFIT0hWa0R1SkFiaG13X1kxM0Z5c09TdEJBQTdLOHAzcnRiSlc0SW5Ic9IBmAFBVV95cUxNeUxGOWpHUXNyNXVIMVdxV2wyN2ZCYnBQbG9YcklyVDFEQTZ1Mjg5WjdxUFNveUlfUHE3bDk1RHdoS3NPZ0NMSzRiX3E2bVdiTy10ckRNbGtwcjNCNktBTE9JR2pwbmJCMWZkbjFDMGFIT0hWa0R1SkFiaG13X1kxM0Z5c09TdEJBQTdLOHAzcnRiSlc0SW5Icw</guid>
+            <pubDate>Mon, 28 Sep 2026 12:55:08 GMT</pubDate>
+            <description><![CDATA[OpenAIエージェントスワームがハグ顔のハッキングに100万近くのURLを使用gbhackers.com]]></description>
+            <content:encoded><![CDATA[<p><a href="https://gbhackers.com/openai-agent-swarm-used-nearly-1-million-urls-to-hack-hugging-face/amp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgbhackers.com%2Fopenai-agent-swarm-used-nearly-1-million-urls-to-hack-hugging-face%2Famp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[JADEPUFFER ：侵害されたサービスプリンシパルを使用したAzureへの攻撃- SecNews.gr]]></title>
+            <link>https://www.secnews.gr/en/736473/jadepuffer-epithesi-azure-service-principals/</link>
+            <guid>CBMihAFBVV95cUxQSUJzbUZoLW5VQ281aEJyeXowQVZfcld5Ul9tVDU0THhHSkdWSnFuc2lycFVlSG90VWw0MGNUaEdJc0Z2ME1qVUEtMEVST1BzTkpDeFJwVlF6SFQwMTNTWGk3dFY4enZMamZOMUdXSGNZamJmNjFvNGNZd1NtT0dCaFdLZDc</guid>
+            <pubDate>Mon, 28 Sep 2026 12:47:00 GMT</pubDate>
+            <description><![CDATA[JADEPUFFER ：侵害されたサービスプリンシパルを使用したAzureへの攻撃SecNews.gr]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.secnews.gr/en/736473/jadepuffer-epithesi-azure-service-principals/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.secnews.gr%2Fen%2F736473%2Fjadepuffer-epithesi-azure-service-principals%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI支援カーネルの欠陥がコンテナのセキュリティ境界をテスト- news.lavx.hu]]></title>
+            <link>https://news.lavx.hu/article/ai-assisted-kernel-flaws-test-the-security-boundary-of-containers</link>
+            <guid>CBMimgFBVV95cUxQVVZHNlVPYndFdG4xS3BKNm9MQ2RtUDF3UjFzZmE2Y1M1YWtNUUpYTE1CeG9wT18zYVNEZFpWZVloLUtRRE85MHFmYmhndU1teWdBY2FrSUZpUnZLYTZMUzFmcVBIRGpPNlJMM2hqRnhSdDd3NE9kUnB5NEwxZGpSc0R4VDg5RjhOOEtGTmRCdWF3ODBwUEVmSjJn</guid>
+            <pubDate>Mon, 28 Sep 2026 08:59:01 GMT</pubDate>
+            <description><![CDATA[AI支援カーネルの欠陥は、コンテナのセキュリティ境界をテストしますnews.lavx.hu]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.lavx.hu/article/ai-assisted-kernel-flaws-test-the-security-boundary-of-containers">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fai-assisted-kernel-flaws-test-the-security-boundary-of-containers">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes上の専用ゲームサーバー： 13のステップ[2026] - tech-insider.org]]></title>
+            <link>https://tech-insider.org/dedicated-game-server-kubernetes-agones-setup-2026/</link>
+            <guid>CBMiggFBVV95cUxPMmI5b3lWdjhCbVVyaU95aGRvUThMLVVYOVhVVFB2Z0VpVFJoSVJQUVhLa05EM1hURXY4ekpITXV0M2JsblBjMXRxY3BieXRVTmFpRHhRbkd5bmdTcS1nZU9WZmNtd3hReG1VNldYdlpHa2ZJbUZLQUlxX1cyWHJlVE9n</guid>
+            <pubDate>Mon, 28 Sep 2026 06:55:49 GMT</pubDate>
+            <description><![CDATA[Kubernetesの専用ゲームサーバー： 13のステップ[2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tech-insider.org/dedicated-game-server-kubernetes-agones-setup-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftech-insider.org%2Fdedicated-game-server-kubernetes-agones-setup-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Yeastar、サービスプロバイダー向けのAIネイティブマルチテナント通信プラットフォームであるNovoOneを発表- ANTARA News]]></title>
+            <link>https://en.antaranews.com/amp/news/433235/yeastar-launches-novoone-an-ai-native-multi-tenant-communications-platform-for-service-providers</link>
+            <guid>CBMi1AFBVV95cUxOUTZSdm14VFdZWTUzYWhMUGMxR2ZwVk45UTVrMy1nbWlTb1lOX2E3X25UbjBDNDhqS0NHYlhhTldwRDhRY2U0ZmNzRDY1MW54OFRhNUY0LURVV1NfN0RHQV9zdVRzQjVuSDZVTjJHWTkydWg5cEJXeGhob2l4TkNTeTlmaXNiNUwxeWYtYkNsUk1zdk1pYzhJVE43VmFybUJzNWVkZGNrdXBWZkMtVnhtM2FVTzVrdWl6NnNpallaVGx2UzRCdXJZZVJLMVl2LUFsOVl3WdIB1AFBVV95cUxOUTZSdm14VFdZWTUzYWhMUGMxR2ZwVk45UTVrMy1nbWlTb1lOX2E3X25UbjBDNDhqS0NHYlhhTldwRDhRY2U0ZmNzRDY1MW54OFRhNUY0LURVV1NfN0RHQV9zdVRzQjVuSDZVTjJHWTkydWg5cEJXeGhob2l4TkNTeTlmaXNiNUwxeWYtYkNsUk1zdk1pYzhJVE43VmFybUJzNWVkZGNrdXBWZkMtVnhtM2FVTzVrdWl6NnNpallaVGx2UzRCdXJZZVJLMVl2LUFsOVl3WQ</guid>
+            <pubDate>Mon, 28 Sep 2026 06:55:15 GMT</pubDate>
+            <description><![CDATA[Yeastar、サービスプロバイダー向けのAIネイティブマルチテナント通信プラットフォームであるNovoOneを発表ANTARA News]]></description>
+            <content:encoded><![CDATA[<p><a href="https://en.antaranews.com/amp/news/433235/yeastar-launches-novoone-an-ai-native-multi-tenant-communications-platform-for-service-providers">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fen.antaranews.com%2Famp%2Fnews%2F433235%2Fyeastar-launches-novoone-an-ai-native-multi-tenant-communications-platform-for-service-providers">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -101065 ： Obotの重大な欠陥によりDockerがチェックされない- SecNews.gr]]></title>
+            <link>https://www.secnews.gr/en/736328/cve-2026-101065-docker-bot/</link>
+            <guid>CBMibEFVX3lxTE1GUzYwUUFSYUNvb3Z6SGJRY1k0dGVtdUZ3YmtfcDZ6bW1FZWRJN3BadzRzUVZ3ZmY5ODFKRG9PeFRaUkE0cEdvY0dTTGtFTC1iRmxGU1R2OXFpV0tjbGNOT2VlSXRvWTQtU0RGeA</guid>
+            <pubDate>Sun, 27 Sep 2026 22:14:23 GMT</pubDate>
+            <description><![CDATA[CVE -2026 -101065 ： Obotの重大な欠陥により、DockerはSecNews.grのチェックを外されます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.secnews.gr/en/736328/cve-2026-101065-docker-bot/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.secnews.gr%2Fen%2F736328%2Fcve-2026-101065-docker-bot%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CVE -2026 -80521 ： UbuntuカーネルのバグがCVSS 7.8にヒット[2026] - shattered.io]]></title>
+            <link>https://shattered.io/cve-2026-80521-ubuntu-kernel-container-escape-2026/</link>
+            <guid>CBMifEFVX3lxTFBhOHZEbW9QOThPVG9NYU9NdWN1TXZYX3dvWVhfUnBWazhfclZJQUk0YnBZNVE3bXN6eU5oQW5NUlZJQ0NQX3VhY1lZbjVOUW50T1ZfTks2bjZseG01YUx4Z3F0TmFmb0psSzdvSkNhODlzVXdVSHU4NExSeFA</guid>
+            <pubDate>Sun, 27 Sep 2026 20:22:28 GMT</pubDate>
+            <description><![CDATA[CVE -2026 -80521 ： UbuntuカーネルのバグがCVSS 7.8にヒット[2026] shattered.io]]></description>
+            <content:encoded><![CDATA[<p><a href="https://shattered.io/cve-2026-80521-ubuntu-kernel-container-escape-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fshattered.io%2Fcve-2026-80521-ubuntu-kernel-container-escape-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Karmada卒業生CNCF ： 5,700スター、38プロジェクト[2026] - tech-insider.org]]></title>
+            <link>https://tech-insider.org/au/karmada-cncf-graduation-multicloud-kubernetes-2026/</link>
+            <guid>CBMihgFBVV95cUxQM0RiYW12M3Jra20wTDZIQk9vNS00TFBJZERHSDBRaTVQamc2UEk0QWM2Ym8zWHlZWUZvb1RaNnoySDUzMG9HQ0ItaENqOG02dkdNUjJ0UnVCa1dVemUwRkswOGFmMDAxM21BY2p1OWQwV3B1RXYxaW9iZTJEdFJsZWQyMTdlQQ</guid>
+            <pubDate>Sun, 27 Sep 2026 14:16:32 GMT</pubDate>
+            <description><![CDATA[Karmada卒業生CNCF ： 5,700スター、38プロジェクト[2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tech-insider.org/au/karmada-cncf-graduation-multicloud-kubernetes-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftech-insider.org%2Fau%2Fkarmada-cncf-graduation-multicloud-kubernetes-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Kubernetes 1.37はGPUをゼロに拡張し、コストを削減[2026] - shattered.io]]></title>
+            <link>https://shattered.io/kubernetes-1-37-scale-to-zero-gpu-cost-2026/</link>
+            <guid>CBMic0FVX3lxTE5Bb2lNWHZ0UzJFZFc2V1JFb2trQ3VqS3VkZkFDLW5oLU1HNnhyMWI4MldITmZoaEJ0emdyRTVOU19jT2JOVG1zTngta29OdkpBWUc0cEg5QXEzTlVzM0J2WTVtM1NlanRmV01PdlNMWGRMeTg</guid>
+            <pubDate>Sun, 27 Sep 2026 08:11:43 GMT</pubDate>
+            <description><![CDATA[Kubernetes 1.37はGPUをゼロに拡張し、コストを削減[2026] shattered.io]]></description>
+            <content:encoded><![CDATA[<p><a href="https://shattered.io/kubernetes-1-37-scale-to-zero-gpu-cost-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fshattered.io%2Fkubernetes-1-37-scale-to-zero-gpu-cost-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[HashiCorp Nomad Setup: Deploy a Cluster in 13 Steps [2026] - tech-insider.org]]></title>
+            <link>https://tech-insider.org/hashicorp-nomad-setup-tutorial-2026/</link>
+            <guid>CBMibkFVX3lxTE5fbzVLNzRHVHpmWUZYV3l3cTJTdTFXRFJqTWJIOWhpdnhKazNYMVlDZUhBdEFKdXpqLUp2WWUzWUxIeGlpY0w4YkZ0dkFQbnlhX3VlUDlsdk1xamUtdnpGTmt0dkxoZEhWdFUta3dB</guid>
+            <pubDate>Sun, 27 Sep 2026 07:27:48 GMT</pubDate>
+            <description><![CDATA[HashiCorp Nomadセットアップ： 13ステップでクラスターを展開[2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tech-insider.org/hashicorp-nomad-setup-tutorial-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftech-insider.org%2Fhashicorp-nomad-setup-tutorial-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[外部シークレットオペレーターvs封印されたシークレットvs Vault - tech-insider.org]]></title>
             <link>https://tech-insider.org/external-secrets-operator-vs-sealed-secrets-vs-vault-2026/</link>
             <guid>CBMiiwFBVV95cUxPX2huel92aTRBTU9Ib0hCdV9vNXI0Rndaa291cnpOVzdScU5VUG1TMy1wZkd3a0M0ZElTendxd09ob3I0RzNYcW5iV2t0OENDQU4xX21GeElvbDdueVY0NFFNNUMyYmZLZDBPUDlyNTY3anVpVFduSm1NeTlSOWtXR3NpWnc1SFpNSzV3</guid>
             <pubDate>Sat, 26 Sep 2026 22:53:25 GMT</pubDate>
