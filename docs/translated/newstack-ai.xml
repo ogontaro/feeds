@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>The New Stack — AI — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>The New Stack — AI の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Mon, 28 Sep 2026 18:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Anthropic、クロード・ソネット5.5を発売、Opusに近いパフォーマンスを半額で提供]]></title>
+            <link>https://thenewstack.io/claude-sonnet-55-launch/</link>
+            <guid>https://thenewstack.io/?p=22838329</guid>
+            <pubDate>Mon, 28 Sep 2026 18:00:00 GMT</pubDate>
+            <description><![CDATA[Anthropicは月曜日に、その主力モデルの最新バージョンであり、The post Anthropicの2番目のモデルであるClaude Sonnet 5.5を発売しました。The New Stackで最初に登場したのは、Opusの半分の価格でほぼパフォーマンスを発揮したClaude Sonnet 5.5です。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/claude-sonnet-55-launch/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fclaude-sonnet-55-launch%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[イーロン・マスク氏によると、間もなく宇宙にはほぼすべてのコンピューティングが搭載されるという。Googleは、そのチップがそこで機能するかどうかをまだ調べています。]]></title>
+            <link>https://thenewstack.io/google-suncatcher-tpu-satellite/</link>
+            <guid>https://thenewstack.io/?p=22838196</guid>
+            <pubDate>Mon, 28 Sep 2026 16:22:00 GMT</pubDate>
+            <description><![CDATA[SpaceXとNvidiaは、2027年後半までにスペースに最適化されたVera Rubin AIシステムを軌道に乗せることを計画しているが、GoogleのFAR The post Elon Muskは、まもなく宇宙にはほぼすべてのコンピューティングが格納されると述べている。Googleはまだ、そのチップがそこで動作するかどうかを調べています。最初に登場したのはThe New Stackです。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/google-suncatcher-tpu-satellite/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fgoogle-suncatcher-tpu-satellite%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AnthropicはStainlessを買収し、SDKジェネレーターをシャットダウンしました。代わりにCloudflareオープンソースのForge。]]></title>
+            <link>https://thenewstack.io/cloudflare-forge-anthropic-stainless/</link>
+            <guid>https://thenewstack.io/?p=22838147</guid>
+            <pubDate>Mon, 28 Sep 2026 13:39:58 GMT</pubDate>
+            <description><![CDATA[Cloudflareは、APIの定義を取り、SDK、コマンドラインツール、ドキュメントを自動的に生成するオープンソースツールを発表しました。AnthropicはStainlessを購入し、SDKジェネレータをシャットダウンしました。代わりにCloudflareオープンソースのForge。がNew Stackで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/cloudflare-forge-anthropic-stainless/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fcloudflare-forge-anthropic-stainless%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[NVIDIA、不正なAIエージェントをロックダウンするためのオープンエージェント安全プラットフォームを発表]]></title>
+            <link>https://thenewstack.io/nvidia-openshell-sentry-agents/</link>
+            <guid>https://thenewstack.io/?p=22838296</guid>
+            <pubDate>Mon, 28 Sep 2026 10:00:00 GMT</pubDate>
+            <description><![CDATA[OpenAI、Anthropic、Meta、Googleはすべて、最近、彼らのモデルがテスト環境から抜け出し、Nvidiaが不正なAIエージェントをロックダウンするためのOpen Agent Safety Platformを立ち上げた後、The New Stackに最初に登場したことを明らかにしました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/nvidia-openshell-sentry-agents/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fnvidia-openshell-sentry-agents%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CursorはFiretigerを買収し、1か月後にはPRからプロダクションまでのコード変更を追跡するボットを立ち上げました。]]></title>
+            <link>https://thenewstack.io/cursor-rollouts-firetiger-production/</link>
+            <guid>https://thenewstack.io/?p=22838008</guid>
+            <pubDate>Thu, 24 Sep 2026 12:56:28 GMT</pubDate>
+            <description><![CDATA[豊富なAIコーディングツールとエージェントのおかげで、コードの作成がこれまで以上に簡単になることは誰もが知っています。POST CursorはFiretigerを取得しました。1か月後、同社はPRからプロダクションへのコード変更を追跡するボットを立ち上げた。The New Stackに最初に登場した。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/cursor-rollouts-firetiger-production/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fcursor-rollouts-firetiger-production%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[「印象的なレベルのオープン性」： Xiaomiは、MiMo-V2.6の通常のオープンウェイトプレイブックをはるかに超えています]]></title>
+            <link>https://thenewstack.io/xiaomi-mimo-vs-6-open-source/</link>
+            <guid>https://thenewstack.io/?p=22837838</guid>
+            <pubDate>Wed, 23 Sep 2026 20:00:12 GMT</pubDate>
+            <description><![CDATA[新しいモデルは、強力な独自システムが登場することから、ほぼ毎週のケイデンスで、厚くて速く出てきています。「印象的なレベルのオープン性」： Xiaomiは、MiMo-V2.6の通常のオープンウェイトプレイブックをはるかに超えて、New Stackに最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/xiaomi-mimo-vs-6-open-source/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fxiaomi-mimo-vs-6-open-source%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[「26年の歴史の中で最も重要なステップの1つ」： JetBrainsはエージェント開発に力を入れており、IDEが依然として重要であると賭けています]]></title>
+            <link>https://thenewstack.io/jetbrains-air-agents-ide/</link>
+            <guid>https://thenewstack.io/?p=22837542</guid>
+            <pubDate>Tue, 22 Sep 2026 18:27:37 GMT</pubDate>
+            <description><![CDATA[AIコーディングエージェントがソフトウェア開発作業が行われる場所を変更したことに疑問の余地はほとんどありません。開発者はますます「26年の歴史の中で最も重要なステップの1つ」の投稿から仕事を委任することができます。JetBrainsはエージェント開発に力を入れています。そして、IDEはまだ新しいスタックに最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/jetbrains-air-agents-ide/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fjetbrains-air-agents-ide%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAIがGPT -6 SolとLunaをリリースし、トークン価格を半減]]></title>
+            <link>https://thenewstack.io/openai-gpt-6-sol-luna-release/</link>
+            <guid>https://thenewstack.io/?p=22837555</guid>
+            <pubDate>Tue, 22 Sep 2026 18:00:02 GMT</pubDate>
+            <description><![CDATA[OpenAIは火曜日にGPT -6 SolとLunaをリリースし、OpenAIのラインナップのフラッグシップGPT -6 Astraモデルを補完します。OpenAIのポストがGPT -6 SolとLunaをリリースし、トークン価格を半分に引き下げると、New Stackに最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/openai-gpt-6-sol-luna-release/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopenai-gpt-6-sol-luna-release%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWSは、クロードコードとコーデックスよりも45 ％安いと言われているAIエージェントをオープンソース化しています]]></title>
+            <link>https://thenewstack.io/aws-strands-harness-agent/</link>
+            <guid>https://thenewstack.io/?p=22837417</guid>
+            <pubDate>Mon, 21 Sep 2026 18:30:16 GMT</pubDate>
+            <description><![CDATA[Amazon Web Services （ AWS ）は、開発者に提供するように設計された新しいオープンソースの汎用AIエージェントの蓋を開けています。AWSオープンソース後のAIエージェントは、Claude Codeよりも45 ％安く、CodexがNew Stackで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/aws-strands-harness-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Faws-strands-harness-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AIエージェントが失敗しました。このモデルは問題ではないかもしれません。]]></title>
+            <link>https://thenewstack.io/nvidia-agent-debugging-safe/</link>
+            <guid>https://thenewstack.io/?p=22837405</guid>
+            <pubDate>Sun, 20 Sep 2026 14:04:00 GMT</pubDate>
+            <description><![CDATA[AIエージェントが本番環境に移行するにつれて、リクエストとその結果との間のパスは予測可能性が低下しています。エージェントPOSTあなたのAIエージェントが失敗しました。モデルが問題ではない可能性があります。が最初にThe New Stackに登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/nvidia-agent-debugging-safe/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fnvidia-agent-debugging-safe%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[「休止中のデプロイメントが静かにストレージを消費していた」： Vercelがフリーティアのルールを厳しくした理由]]></title>
+            <link>https://thenewstack.io/vercel-hobby-deployment-retention/</link>
+            <guid>https://thenewstack.io/?p=22837197</guid>
+            <pubDate>Sat, 19 Sep 2026 13:00:00 GMT</pubDate>
+            <description><![CDATA[Vercelは今週、無料のHobbyプランのチームは、「休止中のデプロイメントが静かにストレージを消費していた」という投稿が「The New Stack」に最初に登場したときに、古い保護されていないデプロイメントを即座に削除すると発表しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/vercel-hobby-deployment-retention/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fvercel-hobby-deployment-retention%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[クロードはOpenAIをハッキングできませんでした。その後、アントロピックはオーパス5を出荷した。]]></title>
+            <link>https://thenewstack.io/claude-exploits-openai-forum/</link>
+            <guid>https://thenewstack.io/?p=22837334</guid>
+            <pubDate>Fri, 18 Sep 2026 18:57:14 GMT</pubDate>
+            <description><![CDATA[Hacktron AIの3人のセキュリティ研究者が、広く使用されている画像ライブラリにメモリ破損のバグを発見しました。それを見つけたのは、クロードがOpenAIをハッキングできなかったポストでした。その後、アントロピックが出荷したOpus 5.は、The New Stackで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/claude-exploits-openai-forum/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fclaude-exploits-openai-forum%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[オープンウェイトモデルは、VercelのAIゲートウェイでトークンの大部分を処理できるようになりました。しかし、Anthropicは依然として支出の64 ％を占めています。]]></title>
+            <link>https://thenewstack.io/open-weight-anthropic-spend/</link>
+            <guid>https://thenewstack.io/?p=22837280</guid>
+            <pubDate>Fri, 18 Sep 2026 12:42:58 GMT</pubDate>
+            <description><![CDATA[傾向は明らかです。オープンウェイトモデルは、生産AIの使用からますます大きな影響を受けています。月曜日、The POSTオープンウェイトモデルは、VercelのAIゲートウェイでトークンの大部分を処理するようになりました。しかし、Anthropicはまだ支出の64 ％を占めています。がNew Stackで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/open-weight-anthropic-spend/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopen-weight-anthropic-spend%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GitHubとAnthropicは、Rustの大規模なリライトに独自のエージェントを使用しましたが、プレイブックは非常に異なります]]></title>
+            <link>https://thenewstack.io/github-copilot-anthropic-rust-migration/</link>
+            <guid>https://thenewstack.io/?p=22837089</guid>
+            <pubDate>Thu, 17 Sep 2026 18:06:03 GMT</pubDate>
+            <description><![CDATA[オープンソースプロジェクトや企業がコアを移動するための整然としたキューを形成しているため、Rustは現在の言語のようです。GitHubとAnthropicは、Rustの大規模なリライトに独自のエージェントを使用しましたが、非常に異なるプレイブックが最初にThe New Stackに登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/github-copilot-anthropic-rust-migration/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fgithub-copilot-anthropic-rust-migration%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[重大な脆弱性は、テストデータベースでした。それがトリアージ全体の問題です。]]></title>
+            <link>https://thenewstack.io/vulnerability-prioritization-business-context/</link>
+            <guid>https://thenewstack.io/?p=22836252</guid>
+            <pubDate>Thu, 17 Sep 2026 16:56:00 GMT</pubDate>
+            <description><![CDATA[グローバルなフットプリントを持つ300人のB 2 B企業をテストしているセキュリティ研究者は、POST中に脆弱な認証を持つインターネット公開データベースを発見しました。重大な脆弱性はテストデータベースでした。これがトリアージ全体の問題です。最初に登場したのはThe New Stackです。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/vulnerability-prioritization-business-context/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fvulnerability-prioritization-business-context%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[PerplexityのAIエージェントは、データベースの構築に役立ちました。彼らはそれを実行することを許可されていませんでした。]]></title>
+            <link>https://thenewstack.io/perplexity-cobbledb-ai-database/</link>
+            <guid>https://thenewstack.io/?p=22837059</guid>
+            <pubDate>Wed, 16 Sep 2026 21:51:15 GMT</pubDate>
+            <description><![CDATA[Perplexityは、DynamoDBに多額の費用を払っていると判断し、読み取りパフォーマンスに対する必要な制御を得ていませんでした。そこで、POST PerplexityのAIエージェントはデータベースの構築に役立ちました。彼らはそれを実行することを許可されていませんでした。最初に登場したのはThe New Stackです。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/perplexity-cobbledb-ai-database/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fperplexity-cobbledb-ai-database%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[「誰もがGitHubを置き換える競争に参加している」：エージェントがプルリクエストを廃止したため、ZedはDeltaを起動します]]></title>
+            <link>https://thenewstack.io/zed-delta-github-alternative/</link>
+            <guid>https://thenewstack.io/?p=22836969</guid>
+            <pubDate>Wed, 16 Sep 2026 19:45:30 GMT</pubDate>
+            <description><![CDATA[2026年に開発者団体からコンセンサスが生まれました。人間のために実質的に構築されたプラットフォームであるGitHub「Everyone's in a race to replace GitHub」の投稿： Zedは、エージェントがプルリクエストを廃止したため、Deltaを立ち上げました。最初に登場したのはThe New Stackです。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/zed-delta-github-alternative/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fzed-delta-github-alternative%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI評価者：歴史上最も重要なAIジョブですか？開発者が提案された新しい仕事をどのように埋めるか]]></title>
+            <link>https://thenewstack.io/ai-embedded-evaluator-jobs/</link>
+            <guid>https://thenewstack.io/?p=22836943</guid>
+            <pubDate>Wed, 16 Sep 2026 15:58:41 GMT</pubDate>
+            <description><![CDATA[フロンティアAIモデル開発のペースにより、Anthropicの最高経営責任者（ CEO ）であるDario Amodei氏は先週末、「The post AI evaluator: The most important AI job in history?提案された新しいジョブを開発者がどのように記入するかは、最初にThe New Stackに登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/ai-embedded-evaluator-jobs/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fai-embedded-evaluator-jobs%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAI社長：「コンピューターはあなたに力を与えるためにそこにあるべきです。「だから、AIエージェントのためのソフトウェアのリツーリングはやめてください]]></title>
+            <link>https://thenewstack.io/computer-use-agent-connectors/</link>
+            <guid>https://thenewstack.io/?p=22836933</guid>
+            <pubDate>Tue, 15 Sep 2026 23:41:22 GMT</pubDate>
+            <description><![CDATA[今週のa 16 zショーで、OpenAIの社長兼共同創設者であるグレッグ・ブロックマンは、開発者がOpenAIの後の社長であることを指摘しました。「コンピュータはあなたに力を与えるためにそこにあるべきです。「だから、AIエージェントのためのソフトウェアのリツーリングをやめることは、最初にThe New Stackに登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/computer-use-agent-connectors/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fcomputer-use-agent-connectors%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Metaを使用すると、ClaudeとCodexはMCPを介してWhatsApp Businessを構成できます。しかし、エージェントは自分の身元を知りません。]]></title>
+            <link>https://thenewstack.io/meta-mcp-whatsapp-business-claude/</link>
+            <guid>https://thenewstack.io/?p=22836863</guid>
+            <pubDate>Tue, 15 Sep 2026 22:08:56 GMT</pubDate>
+            <description><![CDATA[2026年にSALTに値するビジネスは、顧客にアプローチするための適切なツールを採用する必要がありますが、MCPを介してClaudeとCodexがWhatsApp Businessを構成できるPOST Metaはほとんどありません。しかし、エージェントは自分自身のアイデンティティを得られません。は最初にThe New Stackに登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/meta-mcp-whatsapp-business-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fmeta-mcp-whatsapp-business-claude%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AWS DevOps Blog — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>AWS DevOps Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Mon, 28 Sep 2026 19:03:40 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[How Property Finder automated incident management with AWS DevOps Agent]]></title>
+            <link>https://aws.amazon.com/blogs/devops/how-property-finder-automated-incident-management-with-aws-devops-agent/</link>
+            <guid>4634947a5fb898c9b3237ba9341bebe5a052bb14</guid>
+            <pubDate>Mon, 28 Sep 2026 19:03:40 GMT</pubDate>
+            <description><![CDATA[Property Finder built end-to-end autonomous incident management with AWS DevOps Agent. The full lifecycle, from alert to root cause analysis, Jira ticket, on-call page, and an auto-remediation pull request, completes in 14 minutes, down from 2 to 3 days for detection alone.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/how-property-finder-automated-incident-management-with-aws-devops-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fhow-property-finder-automated-incident-management-with-aws-devops-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Audit trails for autonomous agents with AWS DevOps Agent]]></title>
+            <link>https://aws.amazon.com/blogs/devops/audit-trails-for-autonomous-agents-with-aws-devops-agent/</link>
+            <guid>03fdc4a21dc4fbf2194058d42205106fe1c03866</guid>
+            <pubDate>Mon, 28 Sep 2026 16:07:26 GMT</pubDate>
+            <description><![CDATA[AWS DevOps Agent investigates production incidents and proposes or applies fixes on your behalf, raising two questions for every operation and security review: what did the agent do, and how do you understand its impact? Learn how to build a durable, low-maintenance audit trail using the agent journal, Amazon EventBridge lifecycle events, and AWS CloudTrail.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/audit-trails-for-autonomous-agents-with-aws-devops-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Faudit-trails-for-autonomous-agents-with-aws-devops-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Investigate DMS migration issues with AWS DevOps Agent]]></title>
+            <link>https://aws.amazon.com/blogs/devops/investigate-dms-migration-issues-with-aws-devops-agent/</link>
+            <guid>16a6f496c37a3f1018658278655f397814baf551</guid>
+            <pubDate>Fri, 04 Sep 2026 18:13:04 GMT</pubDate>
+            <description><![CDATA[Migrating a production database is a high-risk operational event. AWS DMS is a cloud service that migrates relational databases, data warehouses, and other data stores into the AWS Cloud or between environments. It moves the rows reliably, but the failures that page an on-call engineer rarely happen during the data copy. They occur in the […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/investigate-dms-migration-issues-with-aws-devops-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Finvestigate-dms-migration-issues-with-aws-devops-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Automating the Experimentation Lifecycle with Kiro, AWS DevOps Agent, and LaunchDarkly]]></title>
+            <link>https://aws.amazon.com/blogs/devops/automating-the-experimentation-lifecycle-with-kiro-aws-devops-agent-and-launchdarkly/</link>
+            <guid>996888023ff0b012fbbd844fd5a88d6d12bb9394</guid>
+            <pubDate>Thu, 03 Sep 2026 02:11:19 GMT</pubDate>
+            <description><![CDATA[Introduction Continuous improvement depends on experimentation. Teams know that the fastest path to better outcomes is to test changes against real user behavior, measure results, and iterate. In practice, sustaining that cycle is slow and costly because the overhead compounds with each attempt. Three barriers slow teams down: 1. Planning cost — Turning a proposed […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/automating-the-experimentation-lifecycle-with-kiro-aws-devops-agent-and-launchdarkly/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fautomating-the-experimentation-lifecycle-with-kiro-aws-devops-agent-and-launchdarkly%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Automate planned lifecycle upgrades with AWS DevOps Agent and Kiro]]></title>
+            <link>https://aws.amazon.com/blogs/devops/automate-planned-lifecycle-upgrades-with-aws-devops-agent-and-kiro/</link>
+            <guid>8d6f9af64fe9b4181a8447e5fe571564afa45226</guid>
+            <pubDate>Wed, 02 Sep 2026 18:55:52 GMT</pubDate>
+            <description><![CDATA[AWS Health Planned Lifecycle Events signal when a managed service version is nearing end of standard support. Learn how to automate these upgrades end to end with AWS DevOps Agent and Kiro: detect the event, investigate the upgrade path, apply validated code changes, and open a pull request for human review.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/automate-planned-lifecycle-upgrades-with-aws-devops-agent-and-kiro/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fautomate-planned-lifecycle-upgrades-with-aws-devops-agent-and-kiro%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Optimize EKS operations with agents: Reduce MTTR with AWS DevOps Agent and a Kubernetes Operator]]></title>
+            <link>https://aws.amazon.com/blogs/devops/optimize-eks-operations-with-agents-reduce-mttr-with-aws-devops-agent-and-a-kubernetes-operator/</link>
+            <guid>2b45ea17d95acc555231a77520f8920a1ccffd5d</guid>
+            <pubDate>Mon, 31 Aug 2026 09:28:02 GMT</pubDate>
+            <description><![CDATA[Introduction Running workloads on Amazon Elastic Kubernetes Service (Amazon EKS) can involve managing failures like OOMKilled or IP exhaustion. Engineers must repeatedly collect pod logs, trace events, and check node logs—a process that slows at night/weekends, with critical data lost when pods are deleted or nodes become unhealthy. This collection phase is pure overhead on […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/optimize-eks-operations-with-agents-reduce-mttr-with-aws-devops-agent-and-a-kubernetes-operator/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Foptimize-eks-operations-with-agents-reduce-mttr-with-aws-devops-agent-and-a-kubernetes-operator%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Build your own continuous modernization pipeline with AWS Transform custom]]></title>
+            <link>https://aws.amazon.com/blogs/devops/build-your-own-continuous-modernization-pipeline-with-aws-transform-custom/</link>
+            <guid>2536f1eddce4b7bdba42fd5e8288c8d771f72f5e</guid>
+            <pubDate>Fri, 28 Aug 2026 13:27:12 GMT</pubDate>
+            <description><![CDATA[Introduction Development velocity has reached new heights with AI-driven development tools and practices. Organizations are generating code faster than ever before. But that speed carries risk. Researchers Anderson, Parker, and Tan warned in MIT Sloan Management Review, “Legacy systems tend to carry hidden debt; layering AI-generated code on top of them creates additional tangled dependencies.” […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/build-your-own-continuous-modernization-pipeline-with-aws-transform-custom/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fbuild-your-own-continuous-modernization-pipeline-with-aws-transform-custom%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AI-driven software delivery with Kiro, AWS DevOps Agent and Bluebox by Dynatrace]]></title>
+            <link>https://aws.amazon.com/blogs/devops/ai-driven-software-delivery-with-kiro-aws-devops-agent-and-bluebox-by-dynatrace/</link>
+            <guid>ccbfae06085d1b6531a27ed5e892f96ae0b0b038</guid>
+            <pubDate>Wed, 26 Aug 2026 12:59:33 GMT</pubDate>
+            <description><![CDATA[This post was co-written with Michael Stephan, Senior Principal Product Manager, and Christian Kreuzberger, Principal Software Engineer, at Dynatrace. AI-driven software delivery changes how code gets written, but not what production demands of it. A generated change still has to fit the traffic your service receives, the dependencies it calls, and the capacity limits it […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/ai-driven-software-delivery-with-kiro-aws-devops-agent-and-bluebox-by-dynatrace/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fai-driven-software-delivery-with-kiro-aws-devops-agent-and-bluebox-by-dynatrace%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[From clickops to governed IaC: CloudFormation drift detection in practice]]></title>
+            <link>https://aws.amazon.com/blogs/devops/from-clickops-to-governed-iac-cloudformation-drift-detection-in-practice/</link>
+            <guid>d2e716ae0a4bc1c597995eaf786ccf025c87956a</guid>
+            <pubDate>Fri, 21 Aug 2026 10:48:22 GMT</pubDate>
+            <description><![CDATA[AWS environments that have grown organically over time often share a common characteristic: infrastructure provisioned through the AWS Management Console, SDKs, or CLI without corresponding Infrastructure as Code (IaC) templates. This practice is commonly referred to as “ClickOps,” a term describing any infrastructure change made outside of a codified, version-controlled workflow. Whether changes happen through […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/from-clickops-to-governed-iac-cloudformation-drift-detection-in-practice/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Ffrom-clickops-to-governed-iac-cloudformation-drift-detection-in-practice%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Streamline your GitHub journey with AWS CodePipeline and AWS DevOps Agent]]></title>
+            <link>https://aws.amazon.com/blogs/devops/streamline-your-github-journey-with-aws-codepipeline-and-aws-devops-agent/</link>
+            <guid>addf1d101f42c6d3a346728e32433774e621ff6f</guid>
+            <pubDate>Mon, 17 Aug 2026 13:25:12 GMT</pubDate>
+            <description><![CDATA[Introduction When CI/CD deployment failures occur for GitHub hosted applications, AWS DevOps Agent reduces the hours that Development and Site Reliability Engineering (SRE) teams typically spend manually investigating across multiple AWS services, logs, and pipeline stages. This process delays critical deployments and impacts software delivery velocity. This is especially true when teams need to correlate data between GitHub commit histories, AWS CodePipeline execution logs, and Amazon […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/streamline-your-github-journey-with-aws-codepipeline-and-aws-devops-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fstreamline-your-github-journey-with-aws-codepipeline-and-aws-devops-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Extending AWS Transform custom with MCP Servers for End-to-End Code Modernization]]></title>
+            <link>https://aws.amazon.com/blogs/devops/extending-aws-transform-custom-with-mcp-servers-for-end-to-end-code-modernization/</link>
+            <guid>abfd0200f1c92700c06bab9cf0c653f0dd16367d</guid>
+            <pubDate>Wed, 12 Aug 2026 12:55:14 GMT</pubDate>
+            <description><![CDATA[Automating migration pipelines shifts valuable resources toward innovation. In this post, we will help you learn how to extend AWS Transform custom with Model Context Protocol (MCP) server integrations that connect project management, automated testing, and source control. You will discover how turning a code transformation tool into an automated migration pipeline can take you […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/extending-aws-transform-custom-with-mcp-servers-for-end-to-end-code-modernization/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fextending-aws-transform-custom-with-mcp-servers-for-end-to-end-code-modernization%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Automate SageMaker HyperPod incident triage and root-cause-analysis with AWS DevOps Agent]]></title>
+            <link>https://aws.amazon.com/blogs/devops/automate-sagemaker-hyperpod-incident-triage-and-root-cause-analysis-with-aws-devops-agent/</link>
+            <guid>95c115e7de2ba67c6d340657293a99631e58d810</guid>
+            <pubDate>Mon, 10 Aug 2026 11:29:17 GMT</pubDate>
+            <description><![CDATA[Introduction Large-scale machine learning workloads: training, fine-tuning, and inference run on clusters of hundreds to thousands of GPU instances for days or weeks at a stretch. Keeping operational visibility across a fleet of this size is a constant challenge: hardware health events, node lifecycle transitions, capacity fluctuations, and workload-level issues appear in the event stream around […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/automate-sagemaker-hyperpod-incident-triage-and-root-cause-analysis-with-aws-devops-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fautomate-sagemaker-hyperpod-incident-triage-and-root-cause-analysis-with-aws-devops-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Scaling organizational knowledge in Kiro with Amazon Bedrock Knowledge Bases, LangChain, and MCP]]></title>
+            <link>https://aws.amazon.com/blogs/devops/scaling-organizational-knowledge-in-kiro-with-amazon-bedrock-knowledge-bases-langchain-and-mcp/</link>
+            <guid>d72430080ee6535f66b7e2af91c7451e8e39fd86</guid>
+            <pubDate>Mon, 10 Aug 2026 11:24:36 GMT</pubDate>
+            <description><![CDATA[“A pull request comes back with a single comment: “This doesn’t follow our circuit breaker pattern. Check the Architectural Decision Record .” You know the architecture decision record exists somewhere. You open your team’s wiki, search “circuit breaker,” scroll past six irrelevant results, find the document, read through it, switch back to your editor, and fix the […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/scaling-organizational-knowledge-in-kiro-with-amazon-bedrock-knowledge-bases-langchain-and-mcp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fscaling-organizational-knowledge-in-kiro-with-amazon-bedrock-knowledge-bases-langchain-and-mcp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Scaling Autonomous Operations with AWS DevOps Agent and ServiceNow]]></title>
+            <link>https://aws.amazon.com/blogs/devops/scaling-autonomous-operations-with-aws-devops-agent-and-servicenow/</link>
+            <guid>4e801a510d83a3137bf40ed19c189c6d30e1f28c</guid>
+            <pubDate>Thu, 06 Aug 2026 19:55:26 GMT</pubDate>
+            <description><![CDATA[This post is co-written with Govind Menon, Head of MCP Product at ServiceNow. Introduction Enterprise teams managing applications on AWS often rely on ServiceNow as their IT service management (ITSM) system for incident tracking, change management, and configuration management. When incidents occur, engineers must context-switch between AWS, third party observability tools and ServiceNow, manually correlating […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/scaling-autonomous-operations-with-aws-devops-agent-and-servicenow/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fscaling-autonomous-operations-with-aws-devops-agent-and-servicenow%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Accelerate CloudFormation development with the IaC MCP Server]]></title>
+            <link>https://aws.amazon.com/blogs/devops/accelerate-cloudformation-development-with-the-iac-mcp-server/</link>
+            <guid>f235604d45a70c8b2c73f642bda3c007c79e382d</guid>
+            <pubDate>Tue, 04 Aug 2026 14:46:53 GMT</pubDate>
+            <description><![CDATA[Walk through a complete CloudFormation development cycle - authoring, validation, deployment, and troubleshooting - without leaving your AI assistant, using the AWS IaC MCP Server.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/accelerate-cloudformation-development-with-the-iac-mcp-server/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Faccelerate-cloudformation-development-with-the-iac-mcp-server%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Analyze and remediate technical debt autonomously with AWS Transform – continuous modernization]]></title>
+            <link>https://aws.amazon.com/blogs/devops/analyze-and-remediate-technical-debt-autonomously-with-aws-transform-continuous-modernization/</link>
+            <guid>953b5107529ae97cd8b4fa7080ecd32942946a43</guid>
+            <pubDate>Mon, 03 Aug 2026 21:28:32 GMT</pubDate>
+            <description><![CDATA[Introduction In a recent post, my colleague Micah Walter introduced AWS Transform – continuous modernization in public preview. Today, this capability is generally available in regions supported for AWS Transform . Development velocity continues to increase. But velocity without maintenance accumulates technical debt at speed. The faster software scales, the faster technical debt compounds. At […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/analyze-and-remediate-technical-debt-autonomously-with-aws-transform-continuous-modernization/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fanalyze-and-remediate-technical-debt-autonomously-with-aws-transform-continuous-modernization%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How Company 3 Streamlines Studio Image Management with EC2 Image Builder and AWS CDK]]></title>
+            <link>https://aws.amazon.com/blogs/devops/how-company-3-streamlines-studio-image-management-with-ec2-image-builder-and-aws-cdk/</link>
+            <guid>c659528fadff0b6990e5acf854845e987045eaad</guid>
+            <pubDate>Wed, 29 Jul 2026 12:34:47 GMT</pubDate>
+            <description><![CDATA[Guest post in collaboration with Company 3 Director of New Technology, Phil Wortas, and Senior New Technology Engineer, Matthew Galloway Introduction Company 3 provides specialized services for the entertainment industry, including post-production services, visual effects, and color grading for feature films, commercials, and television content. Their teams collaborate globally to Increase workflow efficiency and expand […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/how-company-3-streamlines-studio-image-management-with-ec2-image-builder-and-aws-cdk/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fhow-company-3-streamlines-studio-image-management-with-ec2-image-builder-and-aws-cdk%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Add security context to operational investigations with AWS DevOps Agent and Wiz]]></title>
+            <link>https://aws.amazon.com/blogs/devops/add-security-context-to-operational-investigations-with-aws-devops-agent-and-wiz/</link>
+            <guid>3c81fdbe6d95ba4c20292507c713029596442da2</guid>
+            <pubDate>Wed, 29 Jul 2026 12:33:53 GMT</pubDate>
+            <description><![CDATA[This post was co-authored by Ayelet Harcz (Product Manager), Hen Perez (CTO Architect), and Shani Gafni (Product Manager) at Wiz. When an on-call engineer receives an alert at 2 AM, a CPU spike, a latency anomaly, or an unexpected API error, the first question is whether this is an operational issue or a security incident. […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/add-security-context-to-operational-investigations-with-aws-devops-agent-and-wiz/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fadd-security-context-to-operational-investigations-with-aws-devops-agent-and-wiz%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Automated Incident Remediation with AWS DevOps Agent and Kiro CLI]]></title>
+            <link>https://aws.amazon.com/blogs/devops/automated-incident-remediation-with-aws-devops-agent-and-kiro-cli/</link>
+            <guid>7ed75725f7c177708f37eac5f29ffa103c7fe715</guid>
+            <pubDate>Tue, 14 Jul 2026 13:17:42 GMT</pubDate>
+            <description><![CDATA[Introduction Automated incident remediation – turning investigation findings into deployed fixes without manual toil – is the next frontier for operations teams running distributed workloads on AWS. Today, when an incident fires at 2 AM, the on-call engineer must correlate telemetry across Amazon CloudWatch, deployment pipelines, and application logs, then manually write and deploy a […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/automated-incident-remediation-with-aws-devops-agent-and-kiro-cli/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fautomated-incident-remediation-with-aws-devops-agent-and-kiro-cli%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How CloudFormation express mode accelerates your development cycle]]></title>
+            <link>https://aws.amazon.com/blogs/devops/how-cloudformation-express-mode-accelerates-your-development-cycle/</link>
+            <guid>529685b32729d699bd13475eed3f746e7c5ad531</guid>
+            <pubDate>Thu, 02 Jul 2026 21:06:52 GMT</pubDate>
+            <description><![CDATA[AWS CloudFormation helps you model and provision cloud infrastructure as code using JSON or YAML templates, or through tools like the AWS Cloud Development Kit (CDK) and AWS Serverless Application Model (SAM). Whether you create stacks directly, use change sets for preview, or deploy through CI/CD pipelines and AI agents, the speed of your deployment […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/how-cloudformation-express-mode-accelerates-your-development-cycle/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fhow-cloudformation-express-mode-accelerates-your-development-cycle%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>AWS What's New — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>AWS What's New の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Mon, 28 Sep 2026 21:17:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon EC2 Future-dated Capacity Reservations Now Supports Postponing Start Dates]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date/</link>
+            <guid>ec94627c080e2b5f6686629c1865f2afb763bce1</guid>
+            <pubDate>Mon, 28 Sep 2026 21:17:00 GMT</pubDate>
+            <description><![CDATA[Amazon EC2 Future-dated Capacity Reservations let you secure capacity up to 120 days in advance by specifying the capacity you need, the start date, and a commitment duration. If your plans change before delivery, you can now postpone your start date to match your new timeline. When you postpone your start date, EC2 presents a quote that shows the new start date and the required commitment duration. The commitment duration can increase, depending on when you postpone the start date. After you re]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fec2-fcr-postpone-start-date%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Rekognition Face Liveness now returns Feedback Codes]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/rekognition-liveness-feedback-codes/</link>
+            <guid>607805acf579f21f3d2956d87227da1c35a84be5</guid>
+            <pubDate>Mon, 28 Sep 2026 20:41:00 GMT</pubDate>
+            <description><![CDATA[Amazon Rekognition Face Liveness now returns Feedback Codes that help customers understand why a liveness check received a low score and how users could retry successfully. The codes are returned in the GetFaceLivenessSessionResults API response, and they identify the specific conditions that contributed to the low score, such as poor lighting, face obstruction, closed eyes, or low video quality. Customers can surface these codes to their end users who can then make targeted corrections and retr]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/rekognition-liveness-feedback-codes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Frekognition-liveness-feedback-codes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Grok 4.7 is now available on Amazon Bedrock]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-grok-4-7/</link>
+            <guid>6cea47503efae2004c7fe196819b2a94f5b97d47</guid>
+            <pubDate>Mon, 28 Sep 2026 18:29:00 GMT</pubDate>
+            <description><![CDATA[Amazon Bedrock now supports SpaceXAI Grok 4.7, a frontier model built for coding, agentic tasks, and knowledge work, with US Geo and Global cross-Region inference. Grok 4.7 builds on Grok 4.6 with better mixed-document handling, more dependable repo-scale coding with planning and error recovery, and enhanced browser-use agents for form fills and portal navigation. Get started with Grok 4.7 in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs. For information ab]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-grok-4-7/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-bedrock-grok-4-7%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Sonnet 5.5 now available on AWS]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws/</link>
+            <guid>76817841d340406a63408aaf904002a4f5531889</guid>
+            <pubDate>Mon, 28 Sep 2026 15:00:00 GMT</pubDate>
+            <description><![CDATA[AWS now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet that delivers a clear leap forward on coding and knowledge work with at a lower cost per task for most work at faster speed. Claude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It's stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same sess]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fclaude-sonnet-5-5-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Claude Sonnet 5.5 now available on AWS GovCloud (US)]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws-govcloud-us/</link>
+            <guid>b2f55a5020da0f7599dd1fe8b9deef2d51198fc4</guid>
+            <pubDate>Mon, 28 Sep 2026 15:00:00 GMT</pubDate>
+            <description><![CDATA[AWS GovCloud (US) now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet that delivers a clear leap forward on coding and knowledge work with at a lower cost per task for most work ag faster speed. Claude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It's stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws-govcloud-us/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fclaude-sonnet-5-5-aws-govcloud-us%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Corretto September 2026 Patch Updates]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-sept-2026-updates/</link>
+            <guid>25d0e22190430dd5300fe6d3ace177413a921234</guid>
+            <pubDate>Mon, 28 Sep 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[On September 25, 2026, Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK: Corretto 25.0.4.10.1, 21.0.12.11.1, 17.0.20.12.1, and 11.0.32.12.1 are now available for download. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. This patch includes the latest tzdata 2026d updates. Visit Corretto home page to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11,]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-sept-2026-updates/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-corretto-sept-2026-updates%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon DocumentDB (with MongoDB compatibility) adds support for 5 MongoDB aggregation stages and change stream capabilities in version 8.0.2]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-8-0-2/</link>
+            <guid>9ba2dd03910c903c1f03d5a3cc7330f17b8d1414</guid>
+            <pubDate>Mon, 28 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes, 5 new aggregation stages, and change stream enhancements starting from minor version 8.0.2. This release expands MongoDB API compatibility and improves query performance, making it easier to migrate MongoDB workloads to Amazon DocumentDB without application code changes. Key new capabilities in version 8.0.2 include: - Retryable Writes — insert, update, and delete operations automatically retry on transient network err]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-8-0-2/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-documentdb-8-0-2%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-retryable-writes/</link>
+            <guid>4b2a493c01b179746693a387ee84b77538899ed4</guid>
+            <pubDate>Mon, 28 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[For developers building MongoDB-compatible applications, retryable writes improve application resilience during transient errors such as network interruptions or primary failovers. Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes starting with engine version 8.0.2, eliminating the need for additional code changes when enabling this capability. With retryable writes, the MongoDB driver automatically retries certain write operations one time if a transient error occurs.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-retryable-writes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-documentdb-retryable-writes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Backup adds logically air-gapped vault support for Amazon FSx for NetApp ONTAP]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-backup-air-gapped-vault-fsx-ontap/</link>
+            <guid>04932bfef0f2df82006b0eba84b98a801108ed60</guid>
+            <pubDate>Mon, 28 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[AWS Backup logically air-gapped vault now supports Amazon FSx for NetApp ONTAP. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event. You can now protect your Amazon FSx for NetApp ONTAP volumes in logically air-gapped vaults. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using ]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-backup-air-gapped-vault-fsx-ontap/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-backup-air-gapped-vault-fsx-ontap%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Transcribe adds customer-managed KMS keys for custom resources]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe/</link>
+            <guid>b66fff87abcc3034fd55c924ba3a56f8ba0edd01</guid>
+            <pubDate>Fri, 25 Sep 2026 19:19:00 GMT</pubDate>
+            <description><![CDATA[Amazon Transcribe now lets you encrypt your custom vocabularies, custom vocabulary filters, and custom language models at rest with a customer-managed AWS KMS key that you own and control. Previously, these custom resources were always encrypted with an AWS owned key. Now you can supply your own symmetric AWS KMS key when you create or update these resources, so the artifacts Transcribe stores on your behalf are encrypted under a key in your account. If you do not provide a key, your resources c]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-transcribe%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon EC2 M8i and M8i-flex instances are now available in additional regions]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ec2-m8i-m8i-flex-thf/</link>
+            <guid>c808f2540b7f85d076de47e61f7aa8359e3c625a</guid>
+            <pubDate>Fri, 25 Sep 2026 18:40:00 GMT</pubDate>
+            <description><![CDATA[Starting today, Amazon EC2 M8i and M8i-flex instances are now available in the AWS European Sovereign Cloud (Germany) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and M8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up t]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ec2-m8i-m8i-flex-thf/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-ec2-m8i-m8i-flex-thf%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon EC2 R8i and R8i-flex instances are now available in additional regions]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-r8i-r8i-flex-thf/</link>
+            <guid>04dcf919133658edef298a49f6defccb81b02bdd</guid>
+            <pubDate>Fri, 25 Sep 2026 18:37:00 GMT</pubDate>
+            <description><![CDATA[Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the AWS European Sovereign Cloud (Germany) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based i]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-r8i-r8i-flex-thf/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fec2-r8i-r8i-flex-thf%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon EC2 C8i and C8i-flex instances are now available in additional regions]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/c8i-c8i-flex-thf-september-2026/</link>
+            <guid>e67227fcc955df9493d3b5d59a544ba788c39e55</guid>
+            <pubDate>Fri, 25 Sep 2026 18:09:00 GMT</pubDate>
+            <description><![CDATA[Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i and C8i-flex instances are available in the AWS European Sovereign Cloud (Germany) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. These C8i and C8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/c8i-c8i-flex-thf-september-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fc8i-c8i-flex-thf-september-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS IAM outbound identity federation now supports interface VPC endpoints for OIDC discovery]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-sts-vpc-oidc/</link>
+            <guid>7d2e74a72634bbbcd9e7868dd62e992dac0aaf41</guid>
+            <pubDate>Fri, 25 Sep 2026 17:54:00 GMT</pubDate>
+            <description><![CDATA[AWS Identity and Access Management (IAM) outbound identity federation now supports Amazon Virtual Private Cloud (VPC) endpoints for the OpenID Connect (OIDC) discovery APIs. You can now access the OIDC discovery metadata and JSON Web Key Set (JWKS) verification key endpoints from within your VPC using AWS PrivateLink, without requiring traffic to traverse the public internet. IAM outbound identity federation eliminates the need to use long-lived credentials when your AWS workloads access externa]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-sts-vpc-oidc/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-sts-vpc-oidc%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS DataSync launches a monitoring dashboard for tracking task executions across your account]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/datasync-monitoring-dashboard</link>
+            <guid>db1e59031ade8983550192b3ca98799d24a54b23</guid>
+            <pubDate>Fri, 25 Sep 2026 15:24:00 GMT</pubDate>
+            <description><![CDATA[AWS DataSync now provides a monitoring dashboard in the DataSync console that gives you visibility into your data transfers across your account. For each task execution, you can see its status, data and file transfer rates, duration, and the total data and files transferred. You can filter executions by status, task, task mode, execution ID, or start time to focus on a specific set of runs. The dashboard summarizes the filtered results, including the number of successful and failed executions, a]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/datasync-monitoring-dashboard">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fdatasync-monitoring-dashboard">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Elastic Disaster Recovery now supports AWS Graviton-based source servers]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/elastic-disaster-recovery-graviton/</link>
+            <guid>e15da02f45884c84d8d8b2706b1704f199fa0abf</guid>
+            <pubDate>Fri, 25 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[AWS Elastic Disaster Recovery (AWS DRS) now supports disaster recovery for AWS Graviton-based (arm64) source servers. You can now protect and recover your Graviton workloads with the same simple, reliable DRS experience you already use for x86 workloads. As more workloads move to Graviton for its price-performance benefits, they need the same disaster recovery coverage as the rest of your environment. DRS now automatically detects arm64 source servers and recovers them onto Graviton instances, p]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/elastic-disaster-recovery-graviton/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Felastic-disaster-recovery-graviton%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS End User Messaging and Amazon SES now offer AI agent skills for the AWS MCP Server]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-messaging-ses-ai-skills-mcp-server/</link>
+            <guid>1bf06c1af0e8bd0d3e604495a485c8c9d6a063cc</guid>
+            <pubDate>Fri, 25 Sep 2026 07:00:00 GMT</pubDate>
+            <description><![CDATA[AWS End User Messaging and Amazon SES now publish AI agent skills for the AWS MCP Server, enabling developers to build and send messages by asking their AI coding agent in plain language. Previously, developers had to navigate multiple documentation pages and management console screens to complete messaging tasks. Now, each skill provides your agent with step-by-step, validated guidance for tasks like verifying sending identities, building branded Rich Communication Services (RCS) agents, and se]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-messaging-ses-ai-skills-mcp-server/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-messaging-ses-ai-skills-mcp-server%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS End User Messaging now supports voice calling on WhatsApp]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-voice-calling-whatsapp</link>
+            <guid>7246f998c020f697092e24acf2f2120c7f92f230</guid>
+            <pubDate>Fri, 25 Sep 2026 07:00:00 GMT</pubDate>
+            <description><![CDATA[AWS End User Messaging now lets businesses place and receive voice calls with their customers directly inside WhatsApp, using the same verified business identity they already use for messaging. With WhatsApp voice calling, a conversation can move seamlessly from a chat thread to a voice call without switching to a separate channel or application, so context is never lost and customers stay in the message thread where the conversation started. Voice calling works in both directions. Customers can]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-voice-calling-whatsapp">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-end-user-messaging-voice-calling-whatsapp">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Billing and Cost Management now provides billing context for your account through a new API]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-billing-and-cost-management-billing-context-api/</link>
+            <guid>20573e23dd89521520341cf822043c7f4721fc72</guid>
+            <pubDate>Fri, 25 Sep 2026 00:58:00 GMT</pubDate>
+            <description><![CDATA[AWS Billing and Cost Management now offers the ListBillingViewSegments API, which returns the billing context of your account over a time period you specify. You can use the API to retrieve information about how your accounts are positioned in the billing hierarchy, such as management accounts, member accounts, or billing group primary accounts. You can also identify which accounts managed your billing relationship and the rate settings, either billable or pro forma, applied to your cost data. T]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-billing-and-cost-management-billing-context-api/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-billing-and-cost-management-billing-context-api%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon EventBridge relaunches event buses for enterprise scale]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/eventbridge-relaunches-custom-event-buses/</link>
+            <guid>3e432e746bb48d177d948ddfe103bf87d14ced21</guid>
+            <pubDate>Thu, 24 Sep 2026 21:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon EventBridge relaunches event buses with a new enhanced Custom event bus that lets you build event-driven applications that decouple teams and can scale with your organization. Create a custom event bus, share it across accounts, and now teams can publish and consume events with strict ordering, open event formats, built-in retention, and support for advanced event transformations. The EventBridge Custom event bus is a serverless event broker that enables you to create scalable event-drive]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/eventbridge-relaunches-custom-event-buses/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Feventbridge-relaunches-custom-event-buses%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>

@@ -4,11 +4,35 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 00:17:48 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 10:02:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[OperTraitors: How Kubernetes Operators Betray Your Security Posture - Unit 42]]></title>
+            <link>https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/</link>
+            <guid>CBMifkFVX3lxTE9nUXBiRVhWR3ZTZ3o1WG40MnBHcUZod0tvdlc5T09mcjRBQ05qMEw0SEVLcGRlSG1UMW44RXZyOVUwMFdYMkhFUzhucUVTUFp1Q0loRWVha2dVV3daZkR3eHQzdnpfc3pMMlIyS1I0NHFtWE9IWTc5aUJHdVZMUQ</guid>
+            <pubDate>Tue, 29 Sep 2026 10:02:49 GMT</pubDate>
+            <description><![CDATA[OperTraitors: How Kubernetes Operators Betray Your Security Posture Unit 42]]></description>
+            <content:encoded><![CDATA[<p><a href="https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Funit42.paloaltonetworks.com%2Fagentic-ai-kubernetes-operator-risks%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[GKE Agentic Migration Targets AWS’s 28% Cloud Lead [2026] - shattered.io]]></title>
+            <link>https://shattered.io/gke-agentic-migration-aws-cloud-lead-2026/</link>
+            <guid>CBMicEFVX3lxTFB1czEzOXdueDdFbWQ1Z3lwUG5lSDNQX1VobV90dWlXX0I5NlMzNi0zU3VPUVBoa3hlLXRxM0VQT1VSWHQtM1RkaVZtSk50X3N2X29SOGZzUDh6OFlzaGF3NUxkdjh5LXFWdGxQWGJkOE0</guid>
+            <pubDate>Tue, 29 Sep 2026 08:17:50 GMT</pubDate>
+            <description><![CDATA[GKE Agentic Migration Targets AWS’s 28% Cloud Lead [2026] shattered.io]]></description>
+            <content:encoded><![CDATA[<p><a href="https://shattered.io/gke-agentic-migration-aws-cloud-lead-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fshattered.io%2Fgke-agentic-migration-aws-cloud-lead-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[SimplyBlock provides simpler OpenShift disaster recovery - The Register]]></title>
+            <link>https://www.theregister.com/container-storage/2026/09/29/simplyblock-provides-simpler-openshift-disaster-recovery/5299494</link>
+            <guid>CBMivgFBVV95cUxQQjJlOTVrcGw5SmduZkxzWW9ieFNmMHFueW5wS2N2WVhLbEI2N0ZLcDJTWGRzR0hPUEV4eElkT3RBOWg1X1QxOWpxOVBablZqTTBlQmdIVWpzRXV6VV9FSG42WXdoNGhOMTBBWmI1QlVZZGZLTTBla2tRX0k3M1VJUmRQNUt4TGthNUZSWHl2MnAtNl9ia0ZLOENGMU5BSjdfaGQ2SEFpNmc2blhjcU5KWDZKT3M1ZFczX2t0V25B</guid>
+            <pubDate>Tue, 29 Sep 2026 07:00:00 GMT</pubDate>
+            <description><![CDATA[SimplyBlock provides simpler OpenShift disaster recovery The Register]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.theregister.com/container-storage/2026/09/29/simplyblock-provides-simpler-openshift-disaster-recovery/5299494">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.theregister.com%2Fcontainer-storage%2F2026%2F09%2F29%2Fsimplyblock-provides-simpler-openshift-disaster-recovery%2F5299494">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kolon Benit、Nutanix Kubernetesビジネスを拡大、パートナートレーニングを強化- thelec.net]]></title>
             <link>https://www.thelec.net/news/articleView.html?idxno\\u003d14140</link>
@@ -16,6 +40,22 @@
             <pubDate>Tue, 29 Sep 2026 00:17:48 GMT</pubDate>
             <description><![CDATA[Kolon Benit、Nutanix Kubernetesビジネスを拡大、パートナートレーニングthelec.netを強化]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.thelec.net/news/articleView.html?idxno\\u003d14140">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.thelec.net%2Fnews%2FarticleView.html%3Fidxno%5C%5Cu003d14140">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[HashiCorp Consul Setup: 12 Steps, Free CE [2026] - tech-insider.org]]></title>
+            <link>https://tech-insider.org/how-to-set-up-hashicorp-consul-service-mesh-2026/</link>
+            <guid>CBMif0FVX3lxTE1YVl95bzhvUFlRQ3JTM2wzLVk3cElYNUR4OWtGMXBVMkJsR25sQ3BCZDFoVmtDYi1YZEdaeWhVa3Y3b21fRmN6UC1zdmtkSFRQMElFNEtMN3M5YjBIYV9wZjMxQmR4MzhnWkRGZmk4Z3RBWWJnRmt4d3JPMksyeFE</guid>
+            <pubDate>Mon, 28 Sep 2026 22:40:59 GMT</pubDate>
+            <description><![CDATA[HashiCorp Consul Setup: 12 Steps, Free CE [2026] tech-insider.org]]></description>
+            <content:encoded><![CDATA[<p><a href="https://tech-insider.org/how-to-set-up-hashicorp-consul-service-mesh-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftech-insider.org%2Fhow-to-set-up-hashicorp-consul-service-mesh-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Michael Rainesh: "Modernization changes what the product can do, not just where the code lives." - Bisinfotech]]></title>
+            <link>https://www.bisinfotech.com/michael-rainesh-modernization-changes-what-the-product-can-do-not-just-where-the-code-lives/</link>
+            <guid>CBMivAFBVV95cUxQTjFxVG04cmVuV3B3UzhPLTl1VHJLZmdidWNYc0NPSVlvTTFPRzRzTXdLN0ppejVGQVJRVkNhdmJSMGtjQ3NJRjNsSjhKQzY0d0xhbTN5RmgtU2lNM096ZmtwbWZ3QXpvanA0Zmxrcm4zM2VtR1ZSeFdKWHkxN3dESUphajc1OW0tQXc5VUtIb2F5WUVsellRejNJSjZuQW0tVFV0UndhLXQ1ME9EX1BzRkxoRFJXbEwteFJWMQ</guid>
+            <pubDate>Mon, 28 Sep 2026 19:38:17 GMT</pubDate>
+            <description><![CDATA[Michael Rainesh: "Modernization changes what the product can do, not just where the code lives." Bisinfotech]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.bisinfotech.com/michael-rainesh-modernization-changes-what-the-product-can-do-not-just-where-the-code-lives/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.bisinfotech.com%2Fmichael-rainesh-modernization-changes-what-the-product-can-do-not-just-where-the-code-lives%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[重大なKyvernoの欠陥により、Kubernetesテナントがクラスタ管理者アクセスを取得できる可能性があります- systemtek.co.uk]]></title>

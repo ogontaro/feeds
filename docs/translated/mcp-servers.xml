@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>MCP servers (official) updates — 翻訳</title>
+        <link>https://ogontaro.github.io/feeds/translated/</link>
+        <description>MCP servers (official) updates の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
+        <lastBuildDate>Mon, 31 Aug 2026 16:22:36 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[docs (brave - search):公式の@ brave/brave - search - mcp - serverを指します…]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/579c3903f30044eb702a599a74b3ae77588e722e</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/579c3903f30044eb702a599a74b3ae77588e722e</guid>
+            <pubDate>Mon, 31 Aug 2026 16:22:36 GMT</pubDate>
+            <description><![CDATA[docs (brave - search):公式@ brave/brave - search - mcp - serverパッケージを指す(# 4714) # 4694の修正]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/579c3903f30044eb702a599a74b3ae77588e722e">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F579c3903f30044eb702a599a74b3ae77588e722e">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[docs: OIDC発行と再試行プロセスを文書化するRELEASING.mdを追加]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/1c0fdc3063b2d393436b224b6ab08d80cdea1db3</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/1c0fdc3063b2d393436b224b6ab08d80cdea1db3</guid>
+            <pubDate>Sat, 04 Jul 2026 20:08:50 GMT</pubDate>
+            <description><![CDATA[docs: add RELEASING.md OIDC発行と再試行プロセスの文書化パッケージの発行方法（ release.yml +リリース環境、npmとPyPIでの信頼できる発行、レジストリトークンなし、出所）、リリース実行の機能、失敗した発行レグからの回復方法（再実行--ウィンドウ内で失敗、または次のリリースに乗る）について説明します。他のメンテナドキュメントと一緒にルートREADMEからリンクされています。共著者： Claude Fable 5 Claude - Session: https://claude.ai/code/session_01AViME1R9ES2UXT1uQD]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/1c0fdc3063b2d393436b224b6ab08d80cdea1db3">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F1c0fdc3063b2d393436b224b6ab08d80cdea1db3">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[フレームワークとリソースのリストを別のmdファイルに移動して作成します…]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/9bade64fce0f0c995c2d3e1a36467043d05e1c82</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/9bade64fce0f0c995c2d3e1a36467043d05e1c82</guid>
+            <pubDate>Sat, 30 May 2026 16:44:47 GMT</pubDate>
+            <description><![CDATA[フレームワークとリソースのリストを別のmdファイルに移動して、READMEをより読みやすく軽量にする(# 4255) *フレームワークとリソースをREADMEから移動する* ReadmeからAdditionalへのバックリンクを追加する]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/9bade64fce0f0c995c2d3e1a36467043d05e1c82">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F9bade64fce0f0c995c2d3e1a36467043d05e1c82">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ShionEria/fix/issue -3460 - windows - npx - docsからのマージプルリクエスト# 3659]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/4503e2d12b799448cd05f789dd40f9643a8d1a6c</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/4503e2d12b799448cd05f789dd40f9643a8d1a6c</guid>
+            <pubDate>Fri, 17 Apr 2026 22:59:54 GMT</pubDate>
+            <description><![CDATA[ShionEria/fix/issue -3460 - windows - npx - docs docsからのマージプルリクエスト# 3659 ： Windows npxラッパーの例を追加]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/4503e2d12b799448cd05f789dd40f9643a8d1a6c">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F4503e2d12b799448cd05f789dd40f9643a8d1a6c">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[docs: MCPレジストリを優先してサードパーティのサーバーリストを廃止]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/5914f61340afd6490004fdd6ccdad0a7e9ee814f</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/5914f61340afd6490004fdd6ccdad0a7e9ee814f</guid>
+            <pubDate>Tue, 14 Apr 2026 15:05:23 GMT</pubDate>
+            <description><![CDATA[docs ： MCPレジストリを優先してサードパーティサーバーリストを廃止サードパーティサーバーセクション（公式インテグレーション+コミュニティサーバー）は、https://registry.modelcontextprotocol.io/のMCPレジストリに置き換えられました。READMEはすでに非推奨ノートを運び、CONTRIBUTING.mdは新しい追加を凍結しました。これにより、リストが削除され、CONTRIBUTING.mdが更新されて新しい状態が記述され、readme - pr - checkワークフローのボットコメントが更新されます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/5914f61340afd6490004fdd6ccdad0a7e9ee814f">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F5914f61340afd6490004fdd6ccdad0a7e9ee814f">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[docs: Windows npxラッパーの例を追加]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/e21dbea731f2ccddcd48525cf9a1e1e405fee12f</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/e21dbea731f2ccddcd48525cf9a1e1e405fee12f</guid>
+            <pubDate>Sat, 21 Mar 2026 04:10:32 GMT</pubDate>
+            <description><![CDATA[docs: Windows npxラッパーの例を追加]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/e21dbea731f2ccddcd48525cf9a1e1e405fee12f">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2Fe21dbea731f2ccddcd48525cf9a1e1e405fee12f">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[README.mdを更新する]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/599b170e9d750326c069ae87fd5991b099fb964a</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/599b170e9d750326c069ae87fd5991b099fb964a</guid>
+            <pubDate>Wed, 25 Feb 2026 01:32:52 GMT</pubDate>
+            <description><![CDATA[README.mdを更新する]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/599b170e9d750326c069ae87fd5991b099fb964a">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F599b170e9d750326c069ae87fd5991b099fb964a">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[公式インテグレーションリストにfigmaを追加(# 3363)]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/0e0697902816a7bcc92a5577cedae3d1f5302f01</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/0e0697902816a7bcc92a5577cedae3d1f5302f01</guid>
+            <pubDate>Tue, 24 Feb 2026 17:35:23 GMT</pubDate>
+            <description><![CDATA[公式インテグレーションリストにfigmaを追加(# 3363)]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/0e0697902816a7bcc92a5577cedae3d1f5302f01">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F0e0697902816a7bcc92a5577cedae3d1f5302f01">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Modelcontextprotocol/chore/apache-2.0-lからのマージプルリクエスト# 3206…]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/760829a778bdf2204e42bc929ddd3b8264b29e99</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/760829a778bdf2204e42bc929ddd3b8264b29e99</guid>
+            <pubDate>Wed, 04 Feb 2026 13:00:33 GMT</pubDate>
+            <description><![CDATA[Modelcontextprotocol/chore/apache-2.0-license choreからのマージプルリクエスト# 3206 ：新しい貢献のためにApache 2.0へのライセンスを更新する]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/760829a778bdf2204e42bc929ddd3b8264b29e99">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F760829a778bdf2204e42bc929ddd3b8264b29e99">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[サーバーのセキュリティ要件を更新する]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/80397a9d3b0799e818a3591a0b99416d060ef330</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/80397a9d3b0799e818a3591a0b99416d060ef330</guid>
+            <pubDate>Tue, 27 Jan 2026 04:39:39 GMT</pubDate>
+            <description><![CDATA[サーバーのセキュリティ要件を更新します。@ jenn - newtonと話し合ったセキュリティ要件についての注意]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/80397a9d3b0799e818a3591a0b99416d060ef330">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F80397a9d3b0799e818a3591a0b99416d060ef330">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[chore ：新しい貢献のためにApache 2.0へのライセンスを更新する]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/6b36e3c22311faed9bd570547d0d90718846fc20</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/6b36e3c22311faed9bd570547d0d90718846fc20</guid>
+            <pubDate>Mon, 12 Jan 2026 22:50:22 GMT</pubDate>
+            <description><![CDATA[chore ：新しい貢献のためにApache 2.0へのライセンスを更新する]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/6b36e3c22311faed9bd570547d0d90718846fc20">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F6b36e3c22311faed9bd570547d0d90718846fc20">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[DeanMauro/patch -2からのマージプルリクエスト# 3124]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/d9c45477cd6ff4d3456c138498dca984c8697f43</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/d9c45477cd6ff4d3456c138498dca984c8697f43</guid>
+            <pubDate>Wed, 17 Dec 2025 01:20:48 GMT</pubDate>
+            <description><![CDATA[DeanMauro/patch -2からのマージプルリクエスト# 3124 READMEのトレードエージェントエントリの更新]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/d9c45477cd6ff4d3456c138498dca984c8697f43">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2Fd9c45477cd6ff4d3456c138498dca984c8697f43">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[README.md既存のMoorchehサーバーを更新(# 3105)]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/1432d0515635f9ae9667262fbbd192afd57b15a6</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/1432d0515635f9ae9667262fbbd192afd57b15a6</guid>
+            <pubDate>Tue, 16 Dec 2025 21:54:47 GMT</pubDate>
+            <description><![CDATA[README.md既存のMoorchehサーバーを更新(# 3105) * README.md既存のMoorchehサーバーを更新*更新の説明]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/1432d0515635f9ae9667262fbbd192afd57b15a6">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F1432d0515635f9ae9667262fbbd192afd57b15a6">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[取引エージェントを更新してREADMEで交換する]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/9a437181d9e5406d9c16b2f8ac74d5d5e93dfd72</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/9a437181d9e5406d9c16b2f8ac74d5d5e93dfd72</guid>
+            <pubDate>Mon, 15 Dec 2025 03:31:17 GMT</pubDate>
+            <description><![CDATA[トレードエージェントを更新してREADMEトレードエージェントをトレードエージェントに変更しました。一致するようにエントリを更新しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/9a437181d9e5406d9c16b2f8ac74d5d5e93dfd72">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F9a437181d9e5406d9c16b2f8ac74d5d5e93dfd72">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[README.md (# 3116)のPrismaリンクを更新する]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/f909dfab90fcdc8f3ba11ed81e6503a3a1f4f4c4</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/f909dfab90fcdc8f3ba11ed81e6503a3a1f4f4c4</guid>
+            <pubDate>Thu, 11 Dec 2025 14:01:03 GMT</pubDate>
+            <description><![CDATA[README.md (# 3116)のPrismaリンクを更新する]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/f909dfab90fcdc8f3ba11ed81e6503a3a1f4f4c4">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2Ff909dfab90fcdc8f3ba11ed81e6503a3a1f4f4c4">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[README (# 3114)のConductorエントリのsvgロケーションを修正]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/7a9546e98c1881fb09990f327c0f6250b1494eb6</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/7a9546e98c1881fb09990f327c0f6250b1494eb6</guid>
+            <pubDate>Thu, 11 Dec 2025 13:59:32 GMT</pubDate>
+            <description><![CDATA[READMEのConductorエントリのsvgロケーションを修正(# 3114) Orkesロゴのパブリックホスティングが変更されたため、この更新が必要になりました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/7a9546e98c1881fb09990f327c0f6250b1494eb6">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F7a9546e98c1881fb09990f327c0f6250b1494eb6">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[READMEのバイナンスMCPサーバーのリンクを修正(# 3104)]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/0040740b0db09246dc22b0cd54931f6b1d529110</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/0040740b0db09246dc22b0cd54931f6b1d529110</guid>
+            <pubDate>Thu, 11 Dec 2025 13:58:04 GMT</pubDate>
+            <description><![CDATA[READMEのバイナンスMCPサーバーのリンクを修正(# 3104)]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/0040740b0db09246dc22b0cd54931f6b1d529110">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F0040740b0db09246dc22b0cd54931f6b1d529110">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Infobip MCPサーバーリンクを修正(# 3103)]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/215730f1b0110ff32655abb2537a1f942b7cf86d</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/215730f1b0110ff32655abb2537a1f942b7cf86d</guid>
+            <pubDate>Thu, 11 Dec 2025 13:57:26 GMT</pubDate>
+            <description><![CDATA[Infobip MCPサーバーリンクを修正(# 3103)]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/215730f1b0110ff32655abb2537a1f942b7cf86d">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2F215730f1b0110ff32655abb2537a1f942b7cf86d">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[READMEからOpenfortプロジェクトを削除(# 3098)]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/bd48cee3f40bd82b971fc89164848f529b5cec28</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/bd48cee3f40bd82b971fc89164848f529b5cec28</guid>
+            <pubDate>Thu, 11 Dec 2025 13:56:25 GMT</pubDate>
+            <description><![CDATA[READMEからOpenfortプロジェクトを削除(# 3098)プロジェクトのリストからOpenfortエントリを削除しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/bd48cee3f40bd82b971fc89164848f529b5cec28">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2Fbd48cee3f40bd82b971fc89164848f529b5cec28">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[役に立たないツールキットmcpサーバーを追加(# 3071)]]></title>
+            <link>https://github.com/modelcontextprotocol/servers/commit/d1d6a123c6d1480ed75298b5c2458168fddb1970</link>
+            <guid>https://github.com/modelcontextprotocol/servers/commit/d1d6a123c6d1480ed75298b5c2458168fddb1970</guid>
+            <pubDate>Thu, 27 Nov 2025 10:01:03 GMT</pubDate>
+            <description><![CDATA[役に立たないツールキットmcpサーバーを追加(# 3071) *役に立たないツールキットmcpサーバーを追加*コミュニティグループから公式グループへのポジション移動の変更*公式グループからコミュニティグループへのツールキットの移動公式グループからコミュニティグループへのツールキットの移動]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/modelcontextprotocol/servers/commit/d1d6a123c6d1480ed75298b5c2458168fddb1970">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Fmodelcontextprotocol%2Fservers%2Fcommit%2Fd1d6a123c6d1480ed75298b5c2458168fddb1970">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
