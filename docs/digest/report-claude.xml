@@ -4,11 +4,50 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 28 Sep 2026 00:23:39 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 01:35:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-09-29]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-29.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-29.html</guid>
+            <pubDate>Tue, 29 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Claude Sonnet 5.5 の登場と Opus 5.5 との使い分け</h3>
+<p>Sonnet 5 と同じ料金のまま 30% 以上速く、同じ作業に必要なトークンも減るため実質の単価は最大 30% 下がる、というのが Sonnet 5.5 の位置づけです。この記事は料金と速度の数字を突き合わせたうえで、範囲がはっきりした日常タスクは Sonnet 5.5、複雑で自由度の高い判断は Opus 5.5 という使い分けを提案しています。日々のパイプラインの既定モデルをどう置き換えるかを決める材料になります。</p>
+<p><a href="https://qiita.com/hisashi-ito/items/e814569771d00675e19d">記事を読む</a></p>
+<p class="links"><a href="https://x.com/ClaudeDevs/status/2104687805876367793">ClaudeDevs のポスト（原文）</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2104687805876367793">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Claude で eval を設計し、eval を指標に改善を回すための指針</h3>
+<p>アプリの評価（eval）の設計を Claude に手伝わせ、その eval を指標に改善を反復する（hillclimb）ための指針が Anthropic から出ています。Claude Code から使える Skill と eval 設計の勘所がまとまっており、「入れた変更が本当に効いたのかをどう測るか」を決めきれないままエージェントに開発させているチームに効きます。</p>
+<p><a href="https://x.com/ClaudeDevs/status/2104676099083190435">ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2104676099083190435">Google 翻訳で読む</a></p>
+<p class="links"><a href="https://claude.dev/blog/automating-eval-design-and-hillclimbing/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fautomating-eval-design-and-hillclimbing%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>AI コードレビュー Skill「code-review-skills」の設計と検証方法</h3>
+<p>Codex / Claude Code 向けのコードレビュー Skill を公開した本人による、設計と検証の解説です。スタイルの好みや根拠のない推測による指摘を避け、具体的な根拠と発生条件を示すように設計したうえで、その振る舞いをどう確かめているかまで書かれています。AI レビューの出力をどう信頼できる形に寄せるかを考える参考になります。</p>
+<p><a href="https://qiita.com/akkie76/items/f08ac38fd81aa19ae832">記事を読む</a></p>
+<p class="links"><a href="https://x.com/akkiee76/status/2104409511515893895">akkiee76 のポスト</a></p>
+</section>
+<section class="item">
+<h3>エージェント設定を 1 フォルダに集約する agent-scripts が公開</h3>
+<p>OpenClaw の作者 Peter Steinberger が、自分のエージェント設定一式を OSS として公開しました。1 つの AGENTS.md を <code>~/.claude/CLAUDE.md</code> と <code>~/.codex/AGENTS.md</code> にシンボリックリンクし、69 個の Skill も 1 か所から両方のエージェントへ同期する構成で、ルールを一度直せば全プロジェクトに反映されます。Claude Code と Codex を併用している人が自前の設定を作る際の雛形になります。</p>
+<p><a href="https://x.com/undefinedKi/status/2104656567505211685">undefinedKi のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FundefinedKi%2Fstatus%2F2104656567505211685">Google 翻訳で読む</a></p>
+<p class="links"><a href="https://github.com/steipete/agent-scripts">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsteipete%2Fagent-scripts">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>opencode の欠陥で、悪意のある Web サイトから開発者マシンでのコード実行が可能に</h3>
+<p>コーディングエージェント opencode の欠陥により、悪意のある Web サイトが開発者のマシンでコードを実行できるようになる、という指摘です。コーディングエージェントはローカルのシェルとファイルへの広い権限を持つため、利用しているツールの更新状況を確認するきっかけになります。</p>
+<p class="links"><a href="https://cybersecuritynews.com/opencode-ai-coding-agent-flaw/amp/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fopencode-ai-coding-agent-flaw%2Famp%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-09-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-28.html</link>
@@ -408,24 +447,6 @@
 <h3>Claude Code v2.1.273 リリース — LLMゲートウェイ向けヘッダーとリモートセッションのフォークに対応</h3>
 <p>LLMゲートウェイ経由でClaude Codeを運用しているなら、<code>x-claude-code-request-class</code>などのリクエストヘッダー追加（<code>CLAUDE_CODE_GATEWAY_HINT_HEADERS=1</code>で有効化）はログ分析やルーティングに直結する地味だが効く変更。MCPサーバーが切断して自動再接続もあきらめた際に<code>/mcp</code>を案内する通知や、Claudeアプリから始めたリモートセッションをバックグラウンドでフォークできる機能も、日々の運用・並行作業のワークフローに関わる人は要チェック。</p>
 <p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.273">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.273">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-15]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-15.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-15.html</guid>
-            <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>Claude Code v2.1.271: リモートセッションの Fast Mode 対応や /config のマウス操作、self-hosted runner のドレイン通知が追加</h3>
-<p>Claude Code Remote（クラウド／セルフホストランナー）で組織設定や <code>/fast</code> に応じて Fast Mode が有効になるようになったほか、<code>/config</code> パネルでのマウス操作対応、<code>--drain-marker-file</code> によるセルフホストランナーの SIGTERM ドレイン検知など、運用面に効く細かな改善がまとまっている。自前でランナーを運用しているチームや Remote セッションを使っているチームは要チェック。</p>
-<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.271">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.271">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code で auto mode を起動時のデフォルトにしたら、対応モデルと非対応モデルで挙動が分かれた</h3>
-<p>Bedrock 経由で Claude Code の auto mode を起動時デフォルトにした際の挙動を、対応モデル・非対応モデルで比較検証した実践レポート。auto mode の対応状況によって動作差が出る点は、モデル選定や運用設定を検討する際に踏まえておきたい落とし穴。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-auto-mode-default-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fclaude-code-auto-mode-default-bedrock%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

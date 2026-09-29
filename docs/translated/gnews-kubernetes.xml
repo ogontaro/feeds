@@ -4,11 +4,19 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 18:17:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 00:17:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Kolon Benit、Nutanix Kubernetesビジネスを拡大、パートナートレーニングを強化- thelec.net]]></title>
+            <link>https://www.thelec.net/news/articleView.html?idxno\\u003d14140</link>
+            <guid>CBMiZ0FVX3lxTE1Zb2dCSExEaDctSUkyX18wLXBrVGRHUmRaRDR2d0JCUDFkVHN6SFBuTUpFbWpYMEdSVHg1V1Bka01jWURyU2FrdmJIZ0x0NHFsNWxiS0MxWGt1bWxvY1Awa2VTZFN2R00</guid>
+            <pubDate>Tue, 29 Sep 2026 00:17:48 GMT</pubDate>
+            <description><![CDATA[Kolon Benit、Nutanix Kubernetesビジネスを拡大、パートナートレーニングthelec.netを強化]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.thelec.net/news/articleView.html?idxno\\u003d14140">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.thelec.net%2Fnews%2FarticleView.html%3Fidxno%5C%5Cu003d14140">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[重大なKyvernoの欠陥により、Kubernetesテナントがクラスタ管理者アクセスを取得できる可能性があります- systemtek.co.uk]]></title>
             <link>https://www.systemtek.co.uk/2026/09/critical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access/</link>

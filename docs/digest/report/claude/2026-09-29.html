@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-09-29</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-09-29</h1>
+<article class="report"><h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Claude Sonnet 5.5 の登場と Opus 5.5 との使い分け</h3>
+<p>Sonnet 5 と同じ料金のまま 30% 以上速く、同じ作業に必要なトークンも減るため実質の単価は最大 30% 下がる、というのが Sonnet 5.5 の位置づけです。この記事は料金と速度の数字を突き合わせたうえで、範囲がはっきりした日常タスクは Sonnet 5.5、複雑で自由度の高い判断は Opus 5.5 という使い分けを提案しています。日々のパイプラインの既定モデルをどう置き換えるかを決める材料になります。</p>
+<p><a href="https://qiita.com/hisashi-ito/items/e814569771d00675e19d">記事を読む</a></p>
+<p class="links"><a href="https://x.com/ClaudeDevs/status/2104687805876367793">ClaudeDevs のポスト（原文）</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2104687805876367793">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Claude で eval を設計し、eval を指標に改善を回すための指針</h3>
+<p>アプリの評価（eval）の設計を Claude に手伝わせ、その eval を指標に改善を反復する（hillclimb）ための指針が Anthropic から出ています。Claude Code から使える Skill と eval 設計の勘所がまとまっており、「入れた変更が本当に効いたのかをどう測るか」を決めきれないままエージェントに開発させているチームに効きます。</p>
+<p><a href="https://x.com/ClaudeDevs/status/2104676099083190435">ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2104676099083190435">Google 翻訳で読む</a></p>
+<p class="links"><a href="https://claude.dev/blog/automating-eval-design-and-hillclimbing/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fautomating-eval-design-and-hillclimbing%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>AI コードレビュー Skill「code-review-skills」の設計と検証方法</h3>
+<p>Codex / Claude Code 向けのコードレビュー Skill を公開した本人による、設計と検証の解説です。スタイルの好みや根拠のない推測による指摘を避け、具体的な根拠と発生条件を示すように設計したうえで、その振る舞いをどう確かめているかまで書かれています。AI レビューの出力をどう信頼できる形に寄せるかを考える参考になります。</p>
+<p><a href="https://qiita.com/akkie76/items/f08ac38fd81aa19ae832">記事を読む</a></p>
+<p class="links"><a href="https://x.com/akkiee76/status/2104409511515893895">akkiee76 のポスト</a></p>
+</section>
+<section class="item">
+<h3>エージェント設定を 1 フォルダに集約する agent-scripts が公開</h3>
+<p>OpenClaw の作者 Peter Steinberger が、自分のエージェント設定一式を OSS として公開しました。1 つの AGENTS.md を <code>~/.claude/CLAUDE.md</code> と <code>~/.codex/AGENTS.md</code> にシンボリックリンクし、69 個の Skill も 1 か所から両方のエージェントへ同期する構成で、ルールを一度直せば全プロジェクトに反映されます。Claude Code と Codex を併用している人が自前の設定を作る際の雛形になります。</p>
+<p><a href="https://x.com/undefinedKi/status/2104656567505211685">undefinedKi のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FundefinedKi%2Fstatus%2F2104656567505211685">Google 翻訳で読む</a></p>
+<p class="links"><a href="https://github.com/steipete/agent-scripts">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsteipete%2Fagent-scripts">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>opencode の欠陥で、悪意のある Web サイトから開発者マシンでのコード実行が可能に</h3>
+<p>コーディングエージェント opencode の欠陥により、悪意のある Web サイトが開発者のマシンでコードを実行できるようになる、という指摘です。コーディングエージェントはローカルのシェルとファイルへの広い権限を持つため、利用しているツールの更新状況を確認するきっかけになります。</p>
+<p class="links"><a href="https://cybersecuritynews.com/opencode-ai-coding-agent-flaw/amp/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fopencode-ai-coding-agent-flaw%2Famp%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

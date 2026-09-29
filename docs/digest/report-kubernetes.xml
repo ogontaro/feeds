@@ -4,11 +4,34 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 28 Sep 2026 00:24:44 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 01:36:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-09-29]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-29.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-29.html</guid>
+            <pubDate>Tue, 29 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>Kyverno の重大な脆弱性、Kubernetes テナントがクラスタ管理者アクセスを取得できる恐れ</h3>
+<p>Kyverno は CNCF のポリシーエンジンで、マルチテナントクラスタの分離をこれに委ねている構成も少なくありません。テナント側からクラスタ管理者権限に到達しうるという話だけに、ポリシーで守れているつもりの境界が実際に効いているかを点検する材料になります。</p>
+<p class="links"><a href="https://www.systemtek.co.uk/2026/09/critical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.systemtek.co.uk%2F2026%2F09%2Fcritical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>プラットフォームエンジニアリングチームの作り方</h3>
+<p>内部デベロッパープラットフォームが普及した今、プラットフォームチームの作り方そのものが設計対象になっています。利用者としての開発チームに加えてコーディングエージェントにもサービスを提供する前提で、チームの役割と構成をどう組み直すかという論点は、これからチームを立ち上げる側の判断材料になります。</p>
+<p class="links"><a href="https://platformengineering.org/blog/how-to-build-your-platform-engineering-team">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fhow-to-build-your-platform-engineering-team">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>プラットフォームチームはまずトレーシングから考えるべき</h3>
+<p>自律したチームと AI コーディングエージェントが同じ基盤を使うようになると、問題の切り分けはこれまで以上に難しくなります。メトリクスやログより先にトレーシングへ投資すべきだという主張は、プラットフォームの可観測性に何を優先するかを決める際の判断基準として読めます。</p>
+<p class="links"><a href="https://platformengineering.org/blog/platform-teams-should-think-tracing-first">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fplatform-teams-should-think-tracing-first">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-09-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-28.html</link>
@@ -209,29 +232,6 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-16.html</guid>
             <pubDate>Wed, 16 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-15]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-15.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-15.html</guid>
-            <pubDate>Tue, 15 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
-<section class="item">
-<h3>Kubernetes の Changed Block Tracking API、Beta 版での変更点</h3>
-<p>バックアップ・スナップショット関連のCSI拡張機能がAlphaからBetaに昇格し、SnapshotMetadataService CRDやサイドカーの仕様が固まりつつある。バックアップ製品を自前実装・評価している運用者は、Alpha版との差分を把握しておくと移行判断がしやすくなる。</p>
-<p class="links"><a href="https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fcsi-changed-block-tracking-beta%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Kubernetes v1.37: Memory QoS が Beta に昇格しデフォルト有効化</h3>
-<p>cgroup v2環境でのメモリ制御がBetaとなりデフォルトオンになるため、既存クラスタのアップグレード時に挙動が変わる可能性がある。ノードのメモリ管理・OOM挙動はコストとワークロード安定性に直結するため、運用者は事前に設定オプションを確認しておく価値がある。</p>
-<p class="links"><a href="https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F14%2Fkubernetes-v1-37-memory-qos-graduates-to-beta%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Cilium 1.20 リリース: Gateway API ExternalAuth、TCPRoute/UDPRoute、IPv6向けENI IPAM など</h3>
-<p>CNCFの主要CNIであるCiliumの大型メジャーリリースで、Gateway APIの認証連携やL4ルーティングの拡張、IPv6環境でのIPAM改善が含まれる。マルチテナンシーやネットワークポリシー設計を見直す際の参照先として押さえておきたい内容。</p>
-<p class="links"><a href="https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F14%2Fcilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more%2F">Google 翻訳で全文を読む</a></p>
-</section>
 ]]></content:encoded>
         </item>
     </channel>
