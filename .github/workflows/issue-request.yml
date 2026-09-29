@@ -101,7 +101,7 @@ jobs:
 
           ${SUMMARY}" \
             --base main --head "${BRANCH}")
-          gh pr merge --auto --squash "${PR_URL}"
+          gh pr merge --squash "${PR_URL}"
 
       - name: close resolved failure issues
         if: success()
