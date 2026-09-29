@@ -73,8 +73,8 @@ jobs:
             ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
             keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-claude.md in the format it specifies.
-            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
-            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            Also read ${{ github.workspace }}/landscape.yaml (the technology landscape) and the "landscape" section of
+            ${{ github.workspace }}/interests.yaml (the reader's focus areas and the landscape items they follow) as background: use it to say why an entry matters to the reader, but never drop or
             down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
@@ -95,8 +95,8 @@ jobs:
             ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
             keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-claude.md in the format it specifies.
-            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
-            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            Also read ${{ github.workspace }}/landscape.yaml (the technology landscape) and the "landscape" section of
+            ${{ github.workspace }}/interests.yaml (the reader's focus areas and the landscape items they follow) as background: use it to say why an entry matters to the reader, but never drop or
             down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
@@ -129,8 +129,8 @@ jobs:
             interests keywords to break ties: select the important entries and write the Japanese
             digest to ${{ github.workspace }}/.cache/report-kubernetes.md in the format it
             specifies. Write only that one file.
-            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
-            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            Also read ${{ github.workspace }}/landscape.yaml (the technology landscape) and the "landscape" section of
+            ${{ github.workspace }}/interests.yaml (the reader's focus areas and the landscape items they follow) as background: use it to say why an entry matters to the reader, but never drop or
             down-rank an entry just because it is not on the landscape — new things matter most.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: curate kubernetes (qwen fallback)
@@ -151,8 +151,8 @@ jobs:
             interests keywords to break ties: select the important entries and write the Japanese
             digest to ${{ github.workspace }}/.cache/report-kubernetes.md in the format it
             specifies. Write only that one file.
-            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
-            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            Also read ${{ github.workspace }}/landscape.yaml (the technology landscape) and the "landscape" section of
+            ${{ github.workspace }}/interests.yaml (the reader's focus areas and the landscape items they follow) as background: use it to say why an entry matters to the reader, but never drop or
             down-rank an entry just because it is not on the landscape — new things matter most.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render kubernetes
@@ -183,8 +183,8 @@ jobs:
             ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
             keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-aws.md in the format it specifies.
-            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
-            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            Also read ${{ github.workspace }}/landscape.yaml (the technology landscape) and the "landscape" section of
+            ${{ github.workspace }}/interests.yaml (the reader's focus areas and the landscape items they follow) as background: use it to say why an entry matters to the reader, but never drop or
             down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
@@ -205,8 +205,8 @@ jobs:
             ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
             keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-aws.md in the format it specifies.
-            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
-            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            Also read ${{ github.workspace }}/landscape.yaml (the technology landscape) and the "landscape" section of
+            ${{ github.workspace }}/interests.yaml (the reader's focus areas and the landscape items they follow) as background: use it to say why an entry matters to the reader, but never drop or
             down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"

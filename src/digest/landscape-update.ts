@@ -1,5 +1,5 @@
 import { parse, parseDocument } from "yaml";
-import { INTERESTS, type LandscapeItem, QUADRANTS, RINGS, type Trend } from "../lib/landscape.ts";
+import { type LandscapeItem, QUADRANTS, RINGS, type Trend } from "../lib/landscape.ts";
 import { LANDSCAPE_UPDATE_YAML, LANDSCAPE_YAML, TREND_INPUT_MD } from "../lib/paths.ts";
 
 /** AI が書く更新案(report-criteria/landscape.md の出力フォーマット)。 */
@@ -8,7 +8,8 @@ export type LandscapeUpdate = {
     name: string;
     quadrant: string;
     ring: string;
-    interest: string;
+    /** 新規項目では必須。既存項目は省略すると前回の値を引き継ぐ */
+    summary?: string;
     reason: string;
     /** 今月の月次トレンドで取り上げられたか */
     cited: boolean;
@@ -74,16 +75,17 @@ export function mergeLandscape(
     seen.add(name);
     assertEnum(u.quadrant, QUADRANTS, "quadrant", name);
     assertEnum(u.ring, RINGS, "ring", name);
-    assertEnum(u.interest, INTERESTS, "interest", name);
     if (!u.reason?.trim()) throw new Error(`${name}: reason is empty`);
 
     const p = prevByName.get(name);
+    const summary = u.summary?.trim() || p?.summary;
+    if (!summary) throw new Error(`${name}: summary is empty`);
     const lastCited = u.cited ? month : (p?.lastCited ?? null);
     out.push({
       name,
       quadrant: u.quadrant as LandscapeItem["quadrant"],
       ring: u.ring as LandscapeItem["ring"],
-      interest: u.interest as LandscapeItem["interest"],
+      summary,
       reason: u.reason.trim(),
       since: p?.since ?? month,
       lastCited,
@@ -111,7 +113,7 @@ async function main() {
   const update = parse(await Bun.file(LANDSCAPE_UPDATE_YAML).text()) as LandscapeUpdate;
   const items = mergeLandscape(prev, update, month);
 
-  // focus(本人が書く関心領域)とファイル先頭のコメントには触らない
+  // ファイル先頭のコメントには触らない(興味は interests.yaml の持ち物で、ここでは扱わない)
   doc.set("updated", month);
   doc.set("changes", update.changes ?? []);
   doc.set("items", items);

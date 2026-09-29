@@ -82,18 +82,21 @@ feeds:
 
 ## データ: landscape.yaml
 
-技術ランドスケープ（`docs/digest/landscape.html` の正）です。業界の潮流と、利用者の関心・利用状況を 1 つにまとめます。
+技術ランドスケープの**全量**（`docs/digest/landscape.html` と `landscape/<項目>.html` の正）です。業界の潮流と、利用者の利用状況をまとめます。利用者の興味はここに持たず、`interests.yaml` の `landscape` 節が正です（AI が書くファイルに人の意図を混ぜないためです）。
 日次・週次・月次レポートの AI ステップが参考資料として読みます（関連を説明するためだけに使い、載っていない記事を落としません）。
 
-- `focus`: 分野（`ai` / `platform` / `practice` / `ops`）ごとの関心領域です。**本人が書きます**。AI・スクリプトは書き換えません
-- `items`: `{name, quadrant, ring, interest, reason, since, lastCited, trend}`。月次トレンドの実行時に更新されます（手で直してもよいです）。
+- `items`: `{name, summary, quadrant, ring, reason, since, lastCited, trend}`。`summary` は技術そのものの 1 文説明で、詳細ページに出ます。月次トレンドの実行時に更新されます（手で直してもよいです）。
   判定基準は `report-criteria/landscape.md` です
 - `trend` はスクリプトが計算します: 前回に無ければ new、今月の月次トレンドで言及されれば up、衰退の指摘か 6 か月言及なしで down、それ以外は stable
 
 ## データ: interests.yaml
 
-ドメインごとの関心キーワードです。`report-criteria/*.md`（自然言語の選定基準）とは別に、
-フィード選定・週次フィード監査の WebSearch クエリ・レポート選別の入力として使う構造化データです。
+**本人が保守する興味リスト**です（AI・スクリプトは `landscape` 節を書き換えません）。2 つの節があります。
+
+- `interests`: ドメインごとの関心キーワード。`report-criteria/*.md`（自然言語の選定基準）とは別に、
+  フィード選定・週次フィード監査の WebSearch クエリ・レポート選別の入力として使う構造化データです
+- `landscape`: 分野（`ai` / `platform` / `practice` / `ops`）ごとの `focus`（関心領域の文章）と `items`（`landscape.yaml` の項目名と完全一致）。
+  ページ生成時に全量と突き合わせて「興味あり」を強調します。全量にない名前はページに「全量にまだない興味」と出て、次回の月次更新で AI が追加を検討します
 
 ```yaml
 interests:
@@ -106,6 +109,11 @@ interests:
   aws:
     include: [Bedrock, EKS]
     exclude: []
+
+landscape:
+  platform:
+    focus: 自宅 Kubernetes を GitOps で運用する
+    items: [GitOps, IaC]
 ```
 
 ## パイプライン詳細
@@ -213,7 +221,7 @@ SRE から Platform Engineering / IDP が出てきたような、概念・呼称
 4. `claude-code-action`: `landscape.yaml`・`.cache/trend.md`・`source.yaml`・`interests.yaml` と
    `report-criteria/landscape.md` を読み、更新案を `.cache/landscape-update.yaml` に書きます（`landscape.yaml` は直接書かせません）。
 5. `src/digest/landscape-update.ts`: 更新案を検証（値の種類・重複・空の根拠は異常終了）して `landscape.yaml` にマージします。
-   `focus` とコメントは保持し、AI が書き漏らした既存項目は消さずに残します（外すのは `removed` に理由付きで挙げたものだけです）。
+   ファイル先頭のコメントは保持し、AI が書き漏らした既存項目は消さずに残します（外すのは `removed` に理由付きで挙げたものだけです）。
    `trend`（new / up / stable / down）・`since`・`lastCited` はここで計算します。ページは build.ts が生成します。
 
 - 外部情報源は WebSearch ではなく RSS で取ります。AI 呼び出しが OpenCode Go 経由のため WebSearch が動作保証がなく検出困難なためです。
@@ -389,7 +397,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 ```
 source.yaml
 interests.yaml
-landscape.yaml         技術ランドスケープ（関心領域＋項目。月次で AI が更新）
+landscape.yaml         技術ランドスケープの全量（月次で AI が更新）。興味は interests.yaml の landscape 節
 adoption-log.ndjson    フィード採用実績ログ（追記専用）
 starred-log.ndjson     Inoreader スター記録ログ（追記専用）
 report-criteria/

@@ -1,5 +1,7 @@
-# ドメインごとの関心キーワード。フィード選定・週次フィード監査の WebSearch クエリ・
-# レポート選別の入力として使う（report-criteria/*.md の自然言語基準を補う構造化データ）。
+# 自分の興味リスト(人が保守する)。2 つの節がある。
+# - interests: ドメインごとの関心キーワード。フィード選定・週次フィード監査の WebSearch クエリ・
+#   レポート選別の入力として使う（report-criteria/*.md の自然言語基準を補う構造化データ）
+# - landscape: 全量(landscape.yaml)のどこに関心があるか。技術ランドスケープのページで「興味あり」を示す
 interests:
   claude:
     include:
@@ -66,3 +68,40 @@ interests:
       - 求人
       - 宣伝
       - イベント告知
+
+# --- 興味リスト(全量 landscape.yaml のどこに関心があるか) ---
+# 人が保守する。AI・スクリプトは書き換えない。時代で興味が変わるので、月次の棚卸し Issue で見直す。
+# キーは landscape.yaml の quadrant(ai / platform / practice / ops)。世界(全量)に合わせて選ぶ。
+#   focus: その分野で何に関心があるかを自分の言葉で
+#   items: 関心のある項目。landscape.yaml の name と完全一致させる(載っていなければページに「全量に未掲載」と出て、次回の月次更新で AI が追加を検討する)
+landscape:
+  ai:
+    focus: Claude Code を中心にしたコーディングエージェントの実運用。月額10ドル前後のサブスク型エージェントサービスは出たらすぐ知りたい
+    items:
+      - コーディングエージェント
+      - MCP
+      - AGENTS.md による指示ファイルの共通化
+      - エージェントの権限境界とサンドボックス
+      - 複数エージェントの並行実行と協調
+      - AI SRE
+  platform:
+    focus: 自宅 Kubernetes(Talos Linux)を GitOps と Backstage で、Platform Engineering として運用する
+    items:
+      - GitOps
+      - Platform Engineering / IDP
+      - Platform Engineering 2.0(AI エージェントも利用者に含む基盤)
+      - IaC
+      - Kubernetes API によるリソース合成
+  practice:
+    focus: AI 支援開発での開発フロー(指示ファイル・仕様・レビュー)の組み立て方
+    items:
+      - 開発環境の宣言化
+      - Spec-Driven Development
+      - AI 時代のコードレビューの再定義
+  ops:
+    focus: 可観測性・コスト最適化・ゼロトラストで、自宅クラスタを安全かつ安く回す
+    items:
+      - 可観測性の統合(OpenTelemetry / LGTM)
+      - ゼロトラストアクセス
+      - イベント駆動オートスケール
+      - リソース要求の適正化

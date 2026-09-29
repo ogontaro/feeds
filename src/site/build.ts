@@ -207,7 +207,7 @@ ${releaseCards}
 <p class="muted">業界全体の潮流(新しい概念・呼称の出現と定着)を前月のレポートと外部調査から Claude が三角測量で判定し、前月からの変化とあわせてまとめる。毎月2日 07:45 JST。</p>
 ${await trendSection()}
 <h2>技術ランドスケープ</h2>
-<p class="muted">業界の潮流と自分の関心・利用状況を 1 枚のレーダー図にした全体像。月次トレンドのたびに更新し、各レポートの参考資料にもしている。</p>
+<p class="muted">業界の全体像を領域ごとの表にし、自分の興味（interests.yaml で管理）を強調して示す。項目ごとに詳細ページがある。月次トレンドのたびに更新し、各レポートの参考資料にもしている。</p>
 ${(await writeLandscapePage()) ? `<p><a href="${DIGEST_URL_PREFIX}/landscape.html">技術ランドスケープを見る</a></p>` : "<p>まだありません</p>"}`;
   await Bun.write(INDEX_HTML, pageShell({ title: "ogontaro / rss", body }));
 

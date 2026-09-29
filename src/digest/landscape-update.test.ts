@@ -4,9 +4,9 @@ import { type LandscapeUpdate, mergeLandscape } from "./landscape-update.ts";
 
 const base: LandscapeItem = {
   name: "GitOps",
+  summary: "Git で宣言した状態に同期する運用",
   quadrant: "platform",
   ring: "adopt",
-  interest: "high",
   reason: "Argo CD",
   since: "2026-03",
   lastCited: "2026-03",
@@ -14,9 +14,9 @@ const base: LandscapeItem = {
 };
 const item = (over: Partial<LandscapeUpdate["items"][number]> = {}) => ({
   name: "GitOps",
+  summary: "Git で宣言した状態に同期する運用",
   quadrant: "platform",
   ring: "adopt",
-  interest: "high",
   reason: "Argo CD",
   cited: false,
   declining: false,
@@ -61,4 +61,11 @@ test("invalid values fail loudly", () => {
   expect(() => mergeLandscape([], { items: [item({ ring: "adpot" })] }, "2026-09")).toThrow();
   expect(() => mergeLandscape([], { items: [item(), item()] }, "2026-09")).toThrow();
   expect(() => mergeLandscape([], { items: [item({ reason: " " })] }, "2026-09")).toThrow();
+});
+
+test("summary: new items need one, existing items inherit it", () => {
+  const { summary: _, ...noSummary } = item();
+  expect(() => mergeLandscape([], { items: [noSummary] }, "2026-09")).toThrow();
+  const out = mergeLandscape([base], { items: [noSummary] }, "2026-09");
+  expect(out[0].summary).toBe(base.summary);
 });

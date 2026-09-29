@@ -47,6 +47,8 @@ jobs:
               source.yaml under the right domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`.
             - Removing/disabling a feed: set `enabled: false` (do not delete the entry).
             - Adding/removing interest keywords: edit interests.yaml under the right domain.
+            - Adding/removing a landscape interest (a technology the reader follows): edit the "landscape" section of
+              interests.yaml under the right quadrant; items must match a name in landscape.yaml exactly.
             If the request is unclear or unrelated to feeds/keywords, do not modify any file.
             Write only source.yaml and/or interests.yaml, editing entries in place and preserving
             existing comments and structure — do not rewrite the whole file.
@@ -73,6 +75,8 @@ jobs:
               source.yaml under the right domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`.
             - Removing/disabling a feed: set `enabled: false` (do not delete the entry).
             - Adding/removing interest keywords: edit interests.yaml under the right domain.
+            - Adding/removing a landscape interest (a technology the reader follows): edit the "landscape" section of
+              interests.yaml under the right quadrant; items must match a name in landscape.yaml exactly.
             If the request is unclear or unrelated to feeds/keywords, do not modify any file.
             Write only source.yaml and/or interests.yaml, editing entries in place and preserving
             existing comments and structure — do not rewrite the whole file.
