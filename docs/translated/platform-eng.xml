@@ -4,11 +4,19 @@
         <title>Platform Engineering Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Platform Engineering Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 09:59:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 13:42:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[プラットフォームへの投資を正当化する方法]]></title>
+            <link>https://platformengineering.org/blog/how-to-justify-investment-in-a-platform</link>
+            <guid>https://platformengineering.org/blog/how-to-justify-investment-in-a-platform</guid>
+            <pubDate>Tue, 29 Sep 2026 13:42:44 GMT</pubDate>
+            <description><![CDATA[社内エンジニアリングプラットフォームのビジネスケースを構築し、CFOを説得し、技術的な選択ではなく戦略的な割り当ての決定としてフレーム化することで資本を確保する方法を学びます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://platformengineering.org/blog/how-to-justify-investment-in-a-platform">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fhow-to-justify-investment-in-a-platform">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[プラットフォームエンジニアリングチームを構築する方法]]></title>
             <link>https://platformengineering.org/blog/how-to-build-your-platform-engineering-team</link>

@@ -4,11 +4,19 @@
         <title>GitHub Changelog — Copilot — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>GitHub Changelog — Copilot の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 18:03:57 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 17:02:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[GitHub CopilotのGPT-6.1 SOL]]></title>
+            <link>https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot</link>
+            <guid>https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot</guid>
+            <pubDate>Tue, 29 Sep 2026 17:02:27 GMT</pubDate>
+            <description><![CDATA[OpenAIの最新モデルであるGPT-6.1 SOLが一般公開され、GitHub Copilotで展開されています。強力なマルチステップを備えたエージェントコーディングとターミナルワークフローに使用できます... GitHub Copilotの投稿GPT-6.1 SOLは、GitHubブログで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-09-29-gpt-6-1-sol-in-github-copilot">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[GitHub CopilotのClaude Sonnet 5.5]]></title>
             <link>https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot</link>

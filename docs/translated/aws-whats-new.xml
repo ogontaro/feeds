@@ -4,13 +4,61 @@
         <title>AWS What's New — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS What's New の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 21:17:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 20:17:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[Amazon EC2 Future-dated Capacity Reservations Now Supports Postponing Start Dates]]></title>
+            <title><![CDATA[OpenAI GPT-6.1 SolがAmazon Bedrockで一般公開されました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-1-sol-on-amazon-bedrock/</link>
+            <guid>298a9382db09f04c8db646f84d681b16a1596934</guid>
+            <pubDate>Tue, 29 Sep 2026 20:17:00 GMT</pubDate>
+            <description><![CDATA[本日、AWSはOpenAIのGPT-6.1 SOLをAmazon Bedrockで一般提供することを発表しました。GPT-6 SOLへのアップグレードであるGPT-6.1 SOLは、エージェントコーディング、コンピューター使用、プロフェッショナルな作業において非常に強力なパフォーマンスを提供します。OpenAIによると、GPT -6 Astraはコストの約5分の1で、要求の厳しい評価を超えてGPT -6 Astraにアプローチし、開発者に能力のあるエージェントを大規模に構築して実行するためのより多くの余地を提供します。Amazon Bedrock推論エンジンは、パフォーマンス、セキュリティ、信頼性を]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-1-sol-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fopenai-gpt-6-1-sol-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Connect Customerにより、ビジネスユーザーはより多くの参照データを管理してコンタクトセンターの構成をリアルタイムで調整できるようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-manage-data-tables/</link>
+            <guid>bf6d1a31d2ed99a6651dc2db56aa571c348cc2a9</guid>
+            <pubDate>Tue, 29 Sep 2026 17:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon Connect Customerを使用すると、管理者はコンタクトセンターの構成を推進するより多くのリファレンスデータを保存できるようになりました。管理者は、データテーブルを使用して、営業時間、エスカレーションルール、AIエージェントプロンプト、連絡先フローを推進するキュー割り当てなどの構成を定義するために、テーブルごとに最大20,000個の値を保持できるようになりました。管理者は、テーブルをエクスポートしたり、何百ものレコードを編集したり、Connect Customerインスタンス間でテーブルを移動したり、外部SYSTから参照データを読み込んだりすることもできます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-manage-data-tables/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-connect-manage-data-tables%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon RDS for PostgreSQLが拡張サポートのマイナーバージョン13.23-rds.20260514、12.22-rds.20260514、11.22-rds.20260514を発表]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-postgresql-extended-support/</link>
+            <guid>169e30856c9e46495abbd2a7bef2cbb48ff4610c</guid>
+            <pubDate>Tue, 29 Sep 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon Relational Database Service (RDS) for PostgreSQLは、Amazon RDS Extended Supportマイナーバージョン13.23-rds.20260514、12.22-rds.20260514、および11.22-rds.20260514を発表します。Amazon RDS Extended Supportは、重大な共通の脆弱性とエクスポージャー（ CVE ）、およびメジャーバージョンの標準サポート終了日以降のバグに対して最大3年間の追加の修正を提供し、新しいメジャーバージョンにアップグレードするためのより多くの時間を提供します。Amazon RDS Blue/Green Deploymentsを使用してデータベースをアップグレードできます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-postgresql-extended-support/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-rds-postgresql-extended-support%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon AuroraがPostgreSQL 18.6、17.11、16.15、15.19、14.24をサポート]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24/</link>
+            <guid>4fefdb3a052ba605dccc913b178a03b492c4d69d</guid>
+            <pubDate>Tue, 29 Sep 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon Aurora PostgreSQL - Compatible Editionは、PostgreSQLコミュニティからのバグ修正とAurora固有の機能拡張を含むPostgreSQLバージョン18.6、17.11、16.15、15.19、および14.24をサポートするようになりました。リリースノートに詳述されているように、これらの改善の恩恵を受け、一般的な脆弱性とエクスポージャー（ CVE ）に対処するために、最新のマイナーバージョンにアップグレードすることをお勧めします。ロールアウトポリシーをアップグレードして、フェーズごとに複数のアップグレードを調整し、アップグレード前に優先度の低い環境で検証します]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Systems ManagerがAWS Resource Access Managerを介したドキュメントの共有をサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/systems-manager-sharing-documents-ram/</link>
+            <guid>91037fb2ffd29f0ec2b47997ca9c25599c6e5e48</guid>
+            <pubDate>Tue, 29 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[AWS Systems Managerを使用すると、AWSリソースアクセスマネージャー（ AWS RAM ）を使用して、AWS組織全体または特定の組織ユニット（ OU ）とシステムマネージャードキュメント（ SSMドキュメント）を共有できるようになりました。これまでは、書類を公開するか、個々のアカウントIDのリストでのみ共有することができました。ドキュメントを組織またはOUと簡単に共有できるようになりました。Systems Managerは、アカウントが組織またはOUに追加または削除されると、その共有を自動的に最新の状態に保ちます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/systems-manager-sharing-documents-ram/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fsystems-manager-sharing-documents-ram%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Route 53 Resolver DNS FirewallによるPalo Alto Networks Advanced DNS Securityのサポートが一般公開されました(GA)]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/route-53-dns-firewall-panw-dns-security-generally-available</link>
+            <guid>400c800f1b43ba70aa1203f739c5488d83d07790</guid>
+            <pubDate>Tue, 29 Sep 2026 01:03:00 GMT</pubDate>
+            <description><![CDATA[​​Amazon Route 53リゾルバーDNSファイアウォールによるパロアルトネットワークス（ PANW ）の高度なDNSセキュリティのサポートは、32のAWSリージョンで一般的に利用できるようになりました。これにより、セキュリティチームは、別々のファイアウォールを展開したり、VPC構成を変更したりすることなく、PANWの高度なDNSセキュリティルールを使用して、悪意のあるDNSトラフィックを検出し、VPCから直接ブロックすることができます。AWS Summit New York Cityでプレビューされたこの機能により、セキュリティ管理者はDNS脅威保護（コマンドと制御、マルウェア、]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/route-53-dns-firewall-panw-dns-security-generally-available">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Froute-53-dns-firewall-panw-dns-security-generally-available">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon EC 2の将来のキャパシティ予約が開始日の延期をサポート]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date/</link>
             <guid>ec94627c080e2b5f6686629c1865f2afb763bce1</guid>
             <pubDate>Mon, 28 Sep 2026 21:17:00 GMT</pubDate>
@@ -18,7 +66,7 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fec2-fcr-postpone-start-date%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon Rekognition Face Liveness now returns Feedback Codes]]></title>
+            <title><![CDATA[Amazon Rekognition Face Livenessがフィードバックコードを返すようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/rekognition-liveness-feedback-codes/</link>
             <guid>607805acf579f21f3d2956d87227da1c35a84be5</guid>
             <pubDate>Mon, 28 Sep 2026 20:41:00 GMT</pubDate>
@@ -26,7 +74,7 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/rekognition-liveness-feedback-codes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Frekognition-liveness-feedback-codes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Grok 4.7 is now available on Amazon Bedrock]]></title>
+            <title><![CDATA[Grok 4.7がAmazon Bedrockで利用可能になりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-grok-4-7/</link>
             <guid>6cea47503efae2004c7fe196819b2a94f5b97d47</guid>
             <pubDate>Mon, 28 Sep 2026 18:29:00 GMT</pubDate>
@@ -34,7 +82,7 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-grok-4-7/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-bedrock-grok-4-7%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Claude Sonnet 5.5 now available on AWS]]></title>
+            <title><![CDATA[Claude Sonnet 5.5がAWSで利用可能になりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws/</link>
             <guid>76817841d340406a63408aaf904002a4f5531889</guid>
             <pubDate>Mon, 28 Sep 2026 15:00:00 GMT</pubDate>
@@ -42,7 +90,7 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fclaude-sonnet-5-5-aws%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Claude Sonnet 5.5 now available on AWS GovCloud (US)]]></title>
+            <title><![CDATA[Claude Sonnet 5.5がAWS GovCloud （米国）で利用可能になりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws-govcloud-us/</link>
             <guid>b2f55a5020da0f7599dd1fe8b9deef2d51198fc4</guid>
             <pubDate>Mon, 28 Sep 2026 15:00:00 GMT</pubDate>
@@ -50,7 +98,7 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws-govcloud-us/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fclaude-sonnet-5-5-aws-govcloud-us%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon Corretto September 2026 Patch Updates]]></title>
+            <title><![CDATA[Amazon Corretto 2026年9月のパッチアップデート]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-sept-2026-updates/</link>
             <guid>25d0e22190430dd5300fe6d3ace177413a921234</guid>
             <pubDate>Mon, 28 Sep 2026 14:00:00 GMT</pubDate>
@@ -58,7 +106,15 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-sept-2026-updates/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-corretto-sept-2026-updates%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon DocumentDB (with MongoDB compatibility) adds support for 5 MongoDB aggregation stages and change stream capabilities in version 8.0.2]]></title>
+            <title><![CDATA[Amazon SageMaker Unified Studioが、Amazon DocumentDBのIceberg REST Catalog接続とIAM認証という2つの新しい接続機能をサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/sagemaker-iceberg-rest-iam-documentdb/</link>
+            <guid>dd6d31318ea0df0edf4cbd4934782bc0946c004f</guid>
+            <pubDate>Mon, 28 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon SageMaker Unified Studioは、(1)外部Apache Icebergカタログ用のIceberg REST Catalog (IRC)接続、および(2) Amazon DocumentDB用のIAM認証という2つの新しい接続機能をサポートするようになりました。これらを組み合わせることで、データチームはより広範な管理されたデータソースに接続し、プロジェクト間で認証情報のない認証を使用できるようになります。氷山RESTカタログ接続。SageMaker Unified StudioがIceberg REST Catalog （ IRC ）接続をサポートし、顧客が外部Apachに接続できるようになりました]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/sagemaker-iceberg-rest-iam-documentdb/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fsagemaker-iceberg-rest-iam-documentdb%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon DocumentDB （ MongoDBとの互換性あり）は、バージョン8.0.2で5つのMongoDBアグリゲーションステージと変更ストリーム機能のサポートを追加しました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-8-0-2/</link>
             <guid>9ba2dd03910c903c1f03d5a3cc7330f17b8d1414</guid>
             <pubDate>Mon, 28 Sep 2026 08:00:00 GMT</pubDate>
@@ -66,7 +122,7 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-8-0-2/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-documentdb-8-0-2%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes]]></title>
+            <title><![CDATA[Amazon DocumentDB （ MongoDBとの互換性あり）が再試行可能な書き込みをサポートするようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-retryable-writes/</link>
             <guid>4b2a493c01b179746693a387ee84b77538899ed4</guid>
             <pubDate>Mon, 28 Sep 2026 08:00:00 GMT</pubDate>
@@ -74,15 +130,15 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-retryable-writes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-documentdb-retryable-writes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[AWS Backup adds logically air-gapped vault support for Amazon FSx for NetApp ONTAP]]></title>
+            <title><![CDATA[AWS Backupは、NetApp ONTAP用Amazon FSxの論理的にエアギャップされたヴォールトサポートを追加]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-backup-air-gapped-vault-fsx-ontap/</link>
             <guid>04932bfef0f2df82006b0eba84b98a801108ed60</guid>
             <pubDate>Mon, 28 Sep 2026 08:00:00 GMT</pubDate>
-            <description><![CDATA[AWS Backup logically air-gapped vault now supports Amazon FSx for NetApp ONTAP. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event. You can now protect your Amazon FSx for NetApp ONTAP volumes in logically air-gapped vaults. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using ]]></description>
+            <description><![CDATA[AWS Backup logically air-gapped vault now supports Amazon FSx for NetApp ONTAP. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event. You can now protect your Amazon FSx for NetApp ONTAP volumes in logically air-gapped vaults. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-backup-air-gapped-vault-fsx-ontap/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-backup-air-gapped-vault-fsx-ontap%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon Transcribe adds customer-managed KMS keys for custom resources]]></title>
+            <title><![CDATA[Amazon Transcribeがカスタムリソース用に顧客管理のKMSキーを追加]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe/</link>
             <guid>b66fff87abcc3034fd55c924ba3a56f8ba0edd01</guid>
             <pubDate>Fri, 25 Sep 2026 19:19:00 GMT</pubDate>

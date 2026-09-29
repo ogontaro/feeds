@@ -4,11 +4,19 @@
         <title>The New Stack — Platform Engineering — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — Platform Engineering の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sun, 27 Sep 2026 14:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 14:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[誰かの最終日前にリソースの所有権を再割り当てする方法]]></title>
+            <link>https://thenewstack.io/reassign-cloud-resource-ownership/</link>
+            <guid>https://thenewstack.io/?p=22838560</guid>
+            <pubDate>Tue, 29 Sep 2026 14:00:00 GMT</pubDate>
+            <description><![CDATA[この記事の目的は、リソースの所有権が古くなった瞬間にそれをキャッチするための戦略を提供することです。投稿誰かの最終日が新しいスタックに最初に表示される前にリソースの所有権を再割り当てする方法。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/reassign-cloud-resource-ownership/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Freassign-cloud-resource-ownership%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetesでのエージェント型AIの台頭：新しいインフラストラクチャ層の解放]]></title>
             <link>https://thenewstack.io/agentic-ai-kubernetes-management/</link>

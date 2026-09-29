@@ -4,11 +4,35 @@
         <title>AWS Compute Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS Compute Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 22:38:57 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 17:14:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Implementing customer managed keys for AWS Lambda durable functions with Terraform]]></title>
+            <link>https://aws.amazon.com/blogs/compute/implementing-customer-managed-keys-for-aws-lambda-durable-functions-with-terraform/</link>
+            <guid>db91eabc9cfca26ee3fbbed72ac7160e425845ca</guid>
+            <pubDate>Tue, 29 Sep 2026 17:14:00 GMT</pubDate>
+            <description><![CDATA[Lambda durable functions checkpoint execution state to durable storage, and for regulated payment workloads that data is sensitive. This post shows how to configure a customer managed key in AWS KMS to encrypt durable execution data, define a least-privilege key policy, and verify encryption through AWS CloudTrail, all deployed with Terraform.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/compute/implementing-customer-managed-keys-for-aws-lambda-durable-functions-with-terraform/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fimplementing-customer-managed-keys-for-aws-lambda-durable-functions-with-terraform%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Simplify AMI discovery with Amazon EC2 and SSM Parameter Store]]></title>
+            <link>https://aws.amazon.com/blogs/compute/simplify-ami-discovery-with-amazon-ec2-and-ssm-parameter-store/</link>
+            <guid>a24666aa6abc73d7f0d54d34b2ea4d898192c856</guid>
+            <pubDate>Tue, 29 Sep 2026 16:14:17 GMT</pubDate>
+            <description><![CDATA[Managing Amazon EC2 AMIs at scale means constantly mapping AMI IDs to their AWS Systems Manager parameter paths by hand. A recent enhancement to the DescribeImages API returns the associated SSM parameter directly. This post shows how to use it across the AWS CLI, AWS CloudFormation, Terraform, and Auto Scaling launch templates.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/compute/simplify-ami-discovery-with-amazon-ec2-and-ssm-parameter-store/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fsimplify-ami-discovery-with-amazon-ec2-and-ssm-parameter-store%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Frozen package management for air-gapped RHEL-family AMIs]]></title>
+            <link>https://aws.amazon.com/blogs/compute/frozen-package-management-for-air-gapped-rhel-family-amis/</link>
+            <guid>34d380583160feea2d919a68f65541555032776f</guid>
+            <pubDate>Tue, 29 Sep 2026 15:55:07 GMT</pubDate>
+            <description><![CDATA[Learn a serverless, two-account pattern for running regulated, air-gapped RHEL-family fleets on AWS. It separates connected package ingestion from the air-gapped workload, adds explicit human approval for package changes, and keeps EC2 Image Builder AMIs and Patch Manager on one frozen Amazon S3 repository snapshot.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/compute/frozen-package-management-for-air-gapped-rhel-family-amis/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Ffrozen-package-management-for-air-gapped-rhel-family-amis%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Building event-driven applications at scale with Amazon EventBridge]]></title>
             <link>https://aws.amazon.com/blogs/compute/building-event-driven-applications-at-scale-with-amazon-eventbridge/</link>

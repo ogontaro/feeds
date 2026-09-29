@@ -4,11 +4,19 @@
         <title>HN — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 07:33:29 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 14:25:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Claude partial outage]]></title>
+            <link>https://status.claude.com/incidents/4xvtc2gnq73l</link>
+            <guid>https://news.ycombinator.com/item?id=49893876</guid>
+            <pubDate>Tue, 29 Sep 2026 14:25:41 GMT</pubDate>
+            <description><![CDATA[Article URL: https://status.claude.com/incidents/4xvtc2gnq73l Comments URL: https://news.ycombinator.com/item?id=49893876 Points: 168 # Comments: 143]]></description>
+            <content:encoded><![CDATA[<p><a href="https://status.claude.com/incidents/4xvtc2gnq73l">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fstatus.claude.com%2Fincidents%2F4xvtc2gnq73l">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[クロード・オーパスの魅力5.5]]></title>
             <link>https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5</link>

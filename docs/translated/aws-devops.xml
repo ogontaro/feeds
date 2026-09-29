@@ -4,11 +4,27 @@
         <title>AWS DevOps Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS DevOps Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 19:03:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 16:02:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Building a Slack-powered AI development agent with Kiro CLI and headless authentication]]></title>
+            <link>https://aws.amazon.com/blogs/devops/building-a-slack-powered-ai-development-agent-with-kiro-cli-and-headless-authentication/</link>
+            <guid>8e93916645d049b889da3f9cdfafd3d6e56c913b</guid>
+            <pubDate>Tue, 29 Sep 2026 16:02:43 GMT</pubDate>
+            <description><![CDATA[Every code review discussion, incident response thread, and standup happens in Slack. But when an engineer needs to analyze a service or debug a failing test, they leave Slack, open a terminal, navigate to the repository, run commands, and paste the output back. That round trip takes 30 seconds for someone who knows exactly where […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/building-a-slack-powered-ai-development-agent-with-kiro-cli-and-headless-authentication/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fbuilding-a-slack-powered-ai-development-agent-with-kiro-cli-and-headless-authentication%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Accelerating development workflows with Kiro CLI as a Pre-Commit and Git Hook Agent]]></title>
+            <link>https://aws.amazon.com/blogs/devops/accelerating-development-workflows-with-kiro-cli-as-a-pre-commit-and-git-hook-agent/</link>
+            <guid>5e554ed6b55c73e2e06aeb8340c12adaaad3ceac</guid>
+            <pubDate>Tue, 29 Sep 2026 15:59:26 GMT</pubDate>
+            <description><![CDATA[Code review feedback is most valuable when it arrives early. A security vulnerability caught in a pull request saves hours. The same vulnerability caught in production costs days. But what if you could catch it before the code even leaves the developer’s machine – at the time of git commit? Git hooks run automatically at […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/accelerating-development-workflows-with-kiro-cli-as-a-pre-commit-and-git-hook-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Faccelerating-development-workflows-with-kiro-cli-as-a-pre-commit-and-git-hook-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[How Property Finder automated incident management with AWS DevOps Agent]]></title>
             <link>https://aws.amazon.com/blogs/devops/how-property-finder-automated-incident-management-with-aws-devops-agent/</link>

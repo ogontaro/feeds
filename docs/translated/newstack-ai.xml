@@ -4,11 +4,51 @@
         <title>The New Stack — AI — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — AI の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 18:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 19:38:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Featherlessがピザを配達するのに戦車は必要ないと言っている理由]]></title>
+            <link>https://thenewstack.io/featherless-simple-jev-classifier/</link>
+            <guid>https://thenewstack.io/?p=22838571</guid>
+            <pubDate>Tue, 29 Sep 2026 19:38:59 GMT</pubDate>
+            <description><![CDATA[各タスクに最も適したモデルのサイズ、形状、スケールについての議論は、すぐにはなくなりません。「Why Featherless」の記事「Why Featherless」では、ピザの配達に戦車は必要ないと書かれています。この記事は、「The New Stack」で最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/featherless-simple-jev-classifier/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Ffeatherless-simple-jev-classifier%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAIは、「ChatGPTでサインイン」をサードパーティの開発者ツールでサブスクリプションを使用する方法にします]]></title>
+            <link>https://thenewstack.io/sign-in-with-chatgpt/</link>
+            <guid>https://thenewstack.io/?p=22838568</guid>
+            <pubDate>Tue, 29 Sep 2026 17:31:05 GMT</pubDate>
+            <description><![CDATA[OpenAIは、ChatGPTサブスクライバーがサードパーティのAI内で手当をより簡単に使用し、コーディングできるようにすることを発表しました。OpenAIの投稿では、「ChatGPTでサインイン」がサードパーティの開発者ツールでサブスクリプションを使用する方法になります。新しいスタックで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/sign-in-with-chatgpt/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fsign-in-with-chatgpt%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAIの新しいGPT-6.1 Solが自社のAstraフラッグシップを弱体化]]></title>
+            <link>https://thenewstack.io/openai-gpt-6-1-sol/</link>
+            <guid>https://thenewstack.io/?p=22838570</guid>
+            <pubDate>Tue, 29 Sep 2026 17:15:00 GMT</pubDate>
+            <description><![CDATA[OpenAIは火曜日、GPT -6 Solの発売からわずか1週間後に、主力モデルの最新バージョンであるGPT-6.1 Solを発売した。OpenAIの新しいGPT-6.1ソルは、新しいスタックに最初に登場した独自のAstraフラッグシップを下回っています。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/openai-gpt-6-1-sol/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopenai-gpt-6-1-sol%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAIは、Luna上に構築されたDecision APIでTypeSafeのJevに応答します]]></title>
+            <link>https://thenewstack.io/openai-decision-api-luna/</link>
+            <guid>https://thenewstack.io/?p=22838581</guid>
+            <pubDate>Tue, 29 Sep 2026 17:15:00 GMT</pubDate>
+            <description><![CDATA[TypeSafeのJEVの急激な台頭に伴い、意思決定モデルは信じられないほど人気が高まっているため、OpenAIがOpenAIのポストであることは驚くべきことではありません。OpenAIは、Luna上に構築されたDecision APIを使用してTypeSafeのJEVに応答し、New Stackに最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/openai-decision-api-luna/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopenai-decision-api-luna%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAIは$ 200プランの手当を半分にし、$ 500プランを立ち上げます]]></title>
+            <link>https://thenewstack.io/openai-halves-200-plan/</link>
+            <guid>https://thenewstack.io/?p=22838590</guid>
+            <pubDate>Tue, 29 Sep 2026 17:15:00 GMT</pubDate>
+            <description><![CDATA[火曜日、OpenAIは月額500ドルの新しいProプランを発表し、加入者に同社のThe post OpenAIは200ドルのプラン手当を半分にし、500ドルのプランを開始すると、New Stackで最初に登場した。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/openai-halves-200-plan/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopenai-halves-200-plan%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Anthropic、クロード・ソネット5.5を発売、Opusに近いパフォーマンスを半額で提供]]></title>
             <link>https://thenewstack.io/claude-sonnet-55-launch/</link>

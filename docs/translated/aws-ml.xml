@@ -4,11 +4,51 @@
         <title>AWS Machine Learning Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS Machine Learning Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 22:13:16 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 19:34:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon BedrockのGPT-6.1 Solを使用して、日常業務に近いAstraインテリジェンスをもたらします]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/bring-near-astra-intelligence-to-everyday-work-with-gpt-6-1-sol-on-amazon-bedrock/</link>
+            <guid>66c26dd8eb3c8cf25a769df1c1979dc7b8a86fa5</guid>
+            <pubDate>Tue, 29 Sep 2026 19:34:14 GMT</pubDate>
+            <description><![CDATA[GPT-6.1 SolがAmazon Bedrockで一般的に利用できるようになり、コーディング、コンピューターの使用、頻繁に実行されるプロフェッショナルなワークロードに、より強力な推論をもたらします。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/bring-near-astra-intelligence-to-everyday-work-with-gpt-6-1-sol-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbring-near-astra-intelligence-to-everyday-work-with-gpt-6-1-sol-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Quickの迅速なエンジニアリングの基礎]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/prompt-engineering-fundamentals-for-amazon-quick/</link>
+            <guid>956105521adc5a0776213d7b56dbfe5e72bac1c2</guid>
+            <pubDate>Tue, 29 Sep 2026 16:27:57 GMT</pubDate>
+            <description><![CDATA[Amazon Quickのプロンプトエンジニアリングは、AIを搭載した機能があなたの要求にどの程度正確に対応するかを形作ります。2部構成のシリーズのパート1では、Amazon Quick全体で一貫した高品質の結果を得るための基本原則と再利用可能なフレームワーク（特異性、コンテキスト設定、数ショットの例、およびCRISPEフレームワーク）について説明します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/prompt-engineering-fundamentals-for-amazon-quick/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fprompt-engineering-fundamentals-for-amazon-quick%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[クイックコンポーネントによるプロンプトエンジニアリング：パターンと落とし穴]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/prompt-engineering-by-quick-component-patterns-and-pitfalls/</link>
+            <guid>85610690682b8b1fa3e1af451a034eda90d65cfa</guid>
+            <pubDate>Tue, 29 Sep 2026 16:27:33 GMT</pubDate>
+            <description><![CDATA[Amazonクイックプロンプトエンジニアリングシリーズのパート2は、コンポーネントごとに構成されています。Amazonクイックリサーチ、クイックフロー、クイックサイト、チャットエージェント、アクションインテグレーションから最高の結果を得るためのプロンプトパターンと、回避すべき一般的な落とし穴をご紹介します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/prompt-engineering-by-quick-component-patterns-and-pitfalls/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fprompt-engineering-by-quick-component-patterns-and-pitfalls%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon QuickとAmazon Bedrock AgentCoreを使用したAIを活用した契約インテリジェンスプラットフォームの構築]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/building-an-ai-powered-contract-intelligence-platform-with-amazon-quick-and-amazon-bedrock-agentcore/</link>
+            <guid>479e7dbfafc38939d38af9cc3a27e5f2d32dc044</guid>
+            <pubDate>Tue, 29 Sep 2026 16:14:24 GMT</pubDate>
+            <description><![CDATA[何百ものベンダー契約からデータを手動で抽出することはスケーラブルではなく、RAGチャットツールはポートフォリオ全体の質問に対応できません。この投稿では、AWS上のコントラクトインテリジェンスプラットフォームを共有します。このプラットフォームでは、AIエージェントを使用してコントラクトフィールドを抽出および検証し、Amazon Quickアナリティクスを介して集約された単一契約の質問に回答します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/building-an-ai-powered-contract-intelligence-platform-with-amazon-quick-and-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-an-ai-powered-contract-intelligence-platform-with-amazon-quick-and-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[コンデナストがAmazon Bedrockでマルチモーダルビデオを発見する方法]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/how-conde-nast-built-multimodal-video-discovery-with-amazon-bedrock/</link>
+            <guid>c8a9d3a3948ee260503419fe425f5000daf39358</guid>
+            <pubDate>Tue, 29 Sep 2026 15:55:17 GMT</pubDate>
+            <description><![CDATA[Condé Nastの編集チームは、タイトルと説明のみを使用して、1つのタスクあたり平均250分を費やし、140,000以上のビデオライブラリを検索しました。AWS Generative AI Innovation Centerと協力して、Amazon BedrockとAmazon OpenSearch Serviceでマルチモーダルビデオ検出ソリューションを構築し、検出時間を2分未満に短縮しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/how-conde-nast-built-multimodal-video-discovery-with-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-conde-nast-built-multimodal-video-discovery-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Grok 4.7がAmazon Bedrockで利用可能になりました]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/</link>
