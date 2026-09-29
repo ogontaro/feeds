@@ -113,7 +113,7 @@ jobs:
           git add source.yaml
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           SUMMARY=$(bun run src/feed-audit-summarize.ts)
-          BRANCH="feed-audit/$(date +%Y%m%d)"
+          BRANCH="feed-audit/$(date +%Y%m%d)-${GITHUB_RUN_ID}"
           git checkout -b "${BRANCH}"
           git commit -m "chore: weekly feed audit"
           git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${BRANCH}"
@@ -122,7 +122,7 @@ jobs:
 
           ${SUMMARY}" \
             --base main --head "${BRANCH}")
-          gh pr merge --squash "${PR_URL}"
+          gh pr merge --squash --delete-branch "${PR_URL}"
 
       - name: close resolved failure issues
         if: success()
