@@ -130,6 +130,23 @@ feeds:
     domain: claude
     kind: content
     addedAt: "2026-09-27"
+  # 同じ狙い（コーディングエージェント系の新機能・料金変更を当日拾う）で、開発ツール・クラウド
+  # ネイティブ領域に強い媒体の AI 面を直接購読する。thenewstack.io は platform-engineering 面を
+  # 購読中で取得実績がある。
+  - url: https://thenewstack.io/ai/feed/
+    id: newstack-ai
+    name: The New Stack — AI
+    domain: claude
+    kind: content
+    addedAt: "2026-09-29"
+  # 新しい MCP サーバー・公式統合の発見源。公式リポジトリの README は PR で追記される運用
+  # （readme-pr-check.yml があり ticker bot の自動更新はない）ため、path 指定の commits atom が効く。
+  - url: https://github.com/modelcontextprotocol/servers/commits/main.atom?path=README.md
+    id: mcp-servers
+    name: MCP servers (official) updates
+    domain: claude
+    kind: content
+    addedAt: "2026-09-29"
 
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
@@ -142,11 +159,14 @@ feeds:
     name: CNCF Blog
     domain: kubernetes
     kind: content
+  # 2026-06-23（Building Modelplane on Crossplane）を最後に新着が止まっている。直近8週間は新着ゼロ・
+  # 採用実績ゼロのため無効化（backstage と同じ扱い）。ブログが再開したら enabled を戻す。
   - url: https://blog.crossplane.io/rss/
     id: crossplane
     name: The Crossplane Blog
     domain: kubernetes
     kind: content
+    enabled: false
   - url: https://blog.argoproj.io/feed
     id: argo-project
     name: Argo Project
@@ -270,6 +290,24 @@ feeds:
     domain: aws
     kind: content
     addedAt: "2026-09-27"
+  # EKS まわりの IaC・CI/CD・運用手順の解説（aws-containers が扱わない Terraform / CDK /
+  # パイプライン系を補う。interest: IaC は kubernetes 側だが、EKS の実装はこちらに出る）。
+  - url: https://aws.amazon.com/blogs/devops/feed/
+    id: aws-devops
+    name: AWS DevOps Blog
+    domain: aws
+    kind: content
+    addedAt: "2026-09-29"
+
+  # ================= devtools / content =================
+  # devtools は release のみだったが、開発環境・コンテナ開発の一次情報（Docker Desktop / Engine の
+  # 新機能・運用）を content でも追う（interests.yaml の「コンテナ開発」「開発環境」）。
+  - url: https://www.docker.com/blog/feed/
+    id: docker-blog
+    name: Docker Blog
+    domain: devtools
+    kind: content
+    addedAt: "2026-09-29"
 
   # ----- Hacker News（関心キーワード限定。事前フィルタ済み少数ソース）-----
   - url: https://hnrss.org/newest?q=Claude&points=50
