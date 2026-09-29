@@ -51,10 +51,13 @@ feeds:
     domain: claude
     kind: content
     enabled: false
+  # 一般AIニュースの自動集約メディア（interests.yaml の claude exclude「一般AIニュースの速報のみ」に
+  # 該当）。直近8週間の採用実績ゼロのため無効化。
   - url: https://ainow.ai/feed/
     name: AINOW
     domain: claude
     kind: content
+    enabled: false
 
   # ----- 新しいコーディングエージェント系ツールの発見源 -----
   # commits.atom（リポジトリ全体）は ticker bot の自動コミットで埋まりノイズだらけなので、
@@ -82,11 +85,14 @@ feeds:
   # ----- トレンド（しきい値で事前フィルタ済み）-----
   # しきい値を超えてからフィードに載るため、元記事の pubDate で切る 24h 窓に入る量は少ない。
   # --strict の translate.yml は 502 1 件で落ちる（hn-kubernetes/hn-aws の前例）。続くなら無効化。
+  # 直近8週間の採用実績もゼロ。購読中の HN はトピック限定（hn-claude / hn-mcp）で足り、キーワード
+  # 無しの frontpage は claude の関心外（一般テック・雑談）が大半を占めるため無効化。
   - url: https://hnrss.org/frontpage?points=300
     id: hn-frontpage
     name: HN — Front page (300+)
     domain: claude
     kind: content
+    enabled: false
   # 新しいコーディングエージェント系サービスの発表・料金変更を当日拾う（Meta Muse Code は
   # HN にも購読中ブログにも出ず、ニュース媒体だけが報じた）。リンクは gnews-kubernetes と同様に解決する。
   - url: https://news.google.com/rss/search?q=%28%22coding%20agent%22%20OR%20%22AI%20coding%20agent%22%20OR%20%22AI%20coding%20assistant%22%29%20%28launch%20OR%20launches%20OR%20pricing%20OR%20subscription%20OR%20%22per%20month%22%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en
@@ -115,6 +121,15 @@ feeds:
     name: GitHub Changelog — Copilot
     domain: claude
     kind: content
+  # コーディングエージェント系サービスの新規発表・料金変更を報じる業界媒体。gnews-coding-agents は
+  # 見出しのキーワード検索の網なので、開発ツール・エンタープライズ技術に強い媒体の AI/ML 面を直接購読する
+  # （2026-09 の Meta Muse Code GA と $5/月 の料金体系は購読中フィードに一切出ず、報道媒体だけが報じた）。
+  - url: https://www.theregister.com/software/ai_ml/headlines.atom
+    id: theregister-ai
+    name: The Register — AI/ML
+    domain: claude
+    kind: content
+    addedAt: "2026-09-27"
 
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
@@ -137,11 +152,14 @@ feeds:
     name: Argo Project
     domain: kubernetes
     kind: content
+  # 2026-04-20 を最後に更新が止まっている（直近8週間は新着ゼロ・採用実績ゼロ。KubeCon EU 2026 の
+  # 回顧記事が最終）。プロジェクトのリリースは backstage/backstage の release フィードで別途追っている。
   - url: https://backstage.io/blog/rss.xml
     id: backstage
     name: Backstage Blog
     domain: kubernetes
     kind: content
+    enabled: false
   - url: https://sysdig.com/feed/
     id: sysdig
     name: Sysdig
@@ -237,6 +255,21 @@ feeds:
     name: AWS Containers Blog
     domain: aws
     kind: content
+  # EKS / Bedrock を含む新機能の告知一次情報（ブログ記事化より速く、Feature 単位で出る。
+  # interest: Amazon EKS / Amazon Bedrock / クロスリージョン推論）。量が多いのでレポート側で絞る。
+  - url: https://aws.amazon.com/about-aws/whats-new/recent/feed/
+    id: aws-whats-new
+    name: AWS What's New
+    domain: aws
+    kind: content
+    addedAt: "2026-09-27"
+  # コンピュート全般（EKS・コンテナ・Lambda）の設計／運用の解説。aws-containers より一段広い。
+  - url: https://aws.amazon.com/blogs/compute/feed/
+    id: aws-compute
+    name: AWS Compute Blog
+    domain: aws
+    kind: content
+    addedAt: "2026-09-27"
 
   # ----- Hacker News（関心キーワード限定。事前フィルタ済み少数ソース）-----
   - url: https://hnrss.org/newest?q=Claude&points=50
@@ -530,3 +563,15 @@ feeds:
     name: Docker Engine (moby)
     domain: devtools
     kind: release
+  # このリポジトリ自身の運用で使っているツール（ワークフローの gh、mise run lint の Biome）。
+  # どちらもバージョンアップで CI の挙動が変わるため週次リリースレポートで追う。
+  - url: https://github.com/cli/cli/releases.atom
+    name: GitHub CLI (gh)
+    domain: devtools
+    kind: release
+    addedAt: "2026-09-27"
+  - url: https://github.com/biomejs/biome/releases.atom
+    name: Biome
+    domain: devtools
+    kind: release
+    addedAt: "2026-09-27"
