@@ -4,11 +4,27 @@
         <title>HN — Front page (300+) — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Front page (300+) の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 17:58:11 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 28 Sep 2026 20:23:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Jeff – Jev互換の0.8B意思決定モデル、自宅でトレーニング、約30ミリ秒]]></title>
+            <link>https://github.com/firelex/jeff</link>
+            <guid>https://news.ycombinator.com/item?id=49883844</guid>
+            <pubDate>Mon, 28 Sep 2026 20:23:36 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://github.com/firelex/jeffコメントURL ： https://news.ycombinator.com/item?id=49883844ポイント： 368 #コメント： 145]]></description>
+            <content:encoded><![CDATA[<p><a href="https://github.com/firelex/jeff">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgithub.com%2Ffirelex%2Fjeff">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AIラボを調査する時が来ました]]></title>
+            <link>https://calnewport.com/its-time-to-investigate-the-ai-labs/</link>
+            <guid>https://news.ycombinator.com/item?id=49883471</guid>
+            <pubDate>Mon, 28 Sep 2026 19:53:35 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://calnewport.com/its-time-to-investigate-the-ai-labs/コメントURL ： https://news.ycombinator.com/item?id=49883471ポイント： 357 #コメント： 135]]></description>
+            <content:encoded><![CDATA[<p><a href="https://calnewport.com/its-time-to-investigate-the-ai-labs/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fcalnewport.com%2Fits-time-to-investigate-the-ai-labs%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ソネット5.5]]></title>
             <link>https://www.anthropic.com/claude-sonnet-5-5</link>
@@ -24,6 +40,22 @@
             <pubDate>Mon, 28 Sep 2026 15:54:15 GMT</pubDate>
             <description><![CDATA[記事URL ： https://mubi.com/en/notebook/posts/pirating-the-piratesコメントURL ： https://news.ycombinator.com/item?id=49880036ポイント： 360 #コメント： 184]]></description>
             <content:encoded><![CDATA[<p><a href="https://mubi.com/en/notebook/posts/pirating-the-pirates">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fmubi.com%2Fen%2Fnotebook%2Fposts%2Fpirating-the-pirates">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[子供たちは、トラフィックの少ないNPR Spotifyのコメントを秘密のグループチャットに変えました]]></title>
+            <link>https://www.thisamericanlife.org/897/transcript</link>
+            <guid>https://news.ycombinator.com/item?id=49879697</guid>
+            <pubDate>Mon, 28 Sep 2026 15:35:09 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://www.thisamericanlife.org/897/transcriptコメントURL ： https://news.ycombinator.com/item?id=49879697ポイント： 331 #コメント： 194]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.thisamericanlife.org/897/transcript">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.thisamericanlife.org%2F897%2Ftranscript">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[更新されたGoogleマップは、ラファの街の破壊を示しています]]></title>
+            <link>https://twitter.com/AliAbunimah/status/2103890594137309425</link>
+            <guid>https://news.ycombinator.com/item?id=49879645</guid>
+            <pubDate>Mon, 28 Sep 2026 15:32:18 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://twitter.com/AliAbunimah/status/2103890594137309425コメントURL ： https://news.ycombinator.com/item?id=49879645ポイント： 310 #コメント： 172]]></description>
+            <content:encoded><![CDATA[<p><a href="https://twitter.com/AliAbunimah/status/2103890594137309425">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftwitter.com%2FAliAbunimah%2Fstatus%2F2103890594137309425">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[MongoDBのCEOがMetaへの入社を辞任]]></title>
