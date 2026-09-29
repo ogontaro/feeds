@@ -35,6 +35,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             An issue was opened requesting a change to this RSS aggregation project.
             Issue title: ${{ github.event.issue.title }}
@@ -60,6 +61,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             An issue was opened requesting a change to this RSS aggregation project.
             Issue title: ${{ github.event.issue.title }}

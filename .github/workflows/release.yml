@@ -38,6 +38,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/release-claude-input.json,
             ${{ github.workspace }}/report-criteria/release-claude.md, and the "claude" section of
@@ -58,6 +59,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/release-claude-input.json,
             ${{ github.workspace }}/report-criteria/release-claude.md, and the "claude" section of
@@ -89,6 +91,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/release-aws-input.json,
             ${{ github.workspace }}/report-criteria/release-aws.md, and the "aws" section of
@@ -109,6 +112,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/release-aws-input.json,
             ${{ github.workspace }}/report-criteria/release-aws.md, and the "aws" section of
@@ -140,6 +144,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/release-kubernetes-input.json,
             ${{ github.workspace }}/report-criteria/release-kubernetes.md, and the "kubernetes"
@@ -160,6 +165,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/release-kubernetes-input.json,
             ${{ github.workspace }}/report-criteria/release-kubernetes.md, and the "kubernetes"
@@ -191,6 +197,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/release-devtools-input.json,
             ${{ github.workspace }}/report-criteria/release-devtools.md, and the "devtools"
@@ -211,6 +218,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/release-devtools-input.json,
             ${{ github.workspace }}/report-criteria/release-devtools.md, and the "devtools"

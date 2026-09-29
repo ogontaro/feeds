@@ -36,6 +36,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/feed-audit-input.json (stale candidates),
             ${{ github.workspace }}/interests.yaml, and ${{ github.workspace }}/source.yaml.
@@ -72,6 +73,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.source=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/feed-audit-input.json (stale candidates),
             ${{ github.workspace }}/interests.yaml, and ${{ github.workspace }}/source.yaml.

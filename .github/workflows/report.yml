@@ -65,6 +65,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/report-claude-input.json,
             ${{ github.workspace }}/.cache/x-recent.json, ${{ github.workspace }}/report-criteria/x-posts.md,
@@ -86,6 +87,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/report-claude-input.json,
             ${{ github.workspace }}/.cache/x-recent.json, ${{ github.workspace }}/report-criteria/x-posts.md,
@@ -118,6 +120,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/report-kubernetes-input.json,
             ${{ github.workspace }}/.cache/x-recent.json, ${{ github.workspace }}/report-criteria/x-posts.md,
@@ -139,6 +142,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/report-kubernetes-input.json,
             ${{ github.workspace }}/.cache/x-recent.json, ${{ github.workspace }}/report-criteria/x-posts.md,
@@ -171,6 +175,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/report-aws-input.json,
             ${{ github.workspace }}/.cache/x-recent.json, ${{ github.workspace }}/report-criteria/x-posts.md,
@@ -192,6 +197,7 @@ jobs:
           OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
         with:
           anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
           prompt: |
             Read ${{ github.workspace }}/.cache/report-aws-input.json,
             ${{ github.workspace }}/.cache/x-recent.json, ${{ github.workspace }}/report-criteria/x-posts.md,
