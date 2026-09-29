@@ -72,6 +72,9 @@ jobs:
             ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
             keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-claude.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: curate claude (qwen fallback)
@@ -90,6 +93,9 @@ jobs:
             ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
             keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-claude.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render claude
@@ -120,6 +126,9 @@ jobs:
             interests keywords to break ties: select the important entries and write the Japanese
             digest to ${{ github.workspace }}/.cache/report-kubernetes.md in the format it
             specifies. Write only that one file.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: curate kubernetes (qwen fallback)
         if: (steps.collect_kubernetes.outputs.n != '0' || steps.collect_x.outputs.n != '0') && steps.curate_kubernetes.outcome == 'failure'
@@ -138,6 +147,9 @@ jobs:
             interests keywords to break ties: select the important entries and write the Japanese
             digest to ${{ github.workspace }}/.cache/report-kubernetes.md in the format it
             specifies. Write only that one file.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render kubernetes
         if: steps.collect_kubernetes.outputs.n != '0' || steps.collect_x.outputs.n != '0'
@@ -166,6 +178,9 @@ jobs:
             ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
             keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-aws.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: curate aws (qwen fallback)
@@ -184,6 +199,9 @@ jobs:
             ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
             keywords to break ties: select the important entries and write the Japanese digest to
             ${{ github.workspace }}/.cache/report-aws.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render aws

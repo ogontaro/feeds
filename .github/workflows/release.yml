@@ -44,6 +44,9 @@ jobs:
             ${{ github.workspace }}/interests.yaml for context on what matters most. Follow the
             criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-claude.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: curate claude releases (qwen fallback)
@@ -61,6 +64,9 @@ jobs:
             ${{ github.workspace }}/interests.yaml for context on what matters most. Follow the
             criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-claude.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render claude releases
@@ -89,6 +95,9 @@ jobs:
             ${{ github.workspace }}/interests.yaml for context on what matters most. Follow the
             criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-aws.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: curate aws releases (qwen fallback)
@@ -106,6 +115,9 @@ jobs:
             ${{ github.workspace }}/interests.yaml for context on what matters most. Follow the
             criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-aws.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render aws releases
@@ -134,6 +146,9 @@ jobs:
             section of ${{ github.workspace }}/interests.yaml for context on what matters most.
             Follow the criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-kubernetes.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: curate kubernetes releases (qwen fallback)
@@ -151,6 +166,9 @@ jobs:
             section of ${{ github.workspace }}/interests.yaml for context on what matters most.
             Follow the criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-kubernetes.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render kubernetes releases
@@ -179,6 +197,9 @@ jobs:
             section of ${{ github.workspace }}/interests.yaml for context on what matters most.
             Follow the criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-devtools.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
       - name: curate devtools releases (qwen fallback)
@@ -196,6 +217,9 @@ jobs:
             section of ${{ github.workspace }}/interests.yaml for context on what matters most.
             Follow the criteria file: summarize the releases and write to
             ${{ github.workspace }}/.cache/release-devtools.md in the format it specifies.
+            Also read ${{ github.workspace }}/landscape.yaml (the reader's technology landscape and focus
+            areas) as background: use it to say why an entry matters to the reader, but never drop or
+            down-rank an entry just because it is not on the landscape — new things matter most.
             Write only that one file.
           claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
       - name: render devtools releases

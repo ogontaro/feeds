@@ -1,89 +1,49 @@
 # feeds
 
-個人用 RSS 基盤。GitHub Actions で更新し、
-GitHub Pages で公開する。機能一覧は [FEATURES.md](./FEATURES.md)、実装の詳細は
-[CONTRIBUTING.md](./CONTRIBUTING.md)。
+自分用の技術情報収集サイト。追っている海外サイトの新着を日本語で拾い読みしつつ、Claude が選んだものだけを
+日次・週次・月次のレポートで読む。すべて GitHub Actions が自動で更新し、GitHub Pages で公開している。
 
-**公開先**: <https://ogontaro.github.io/feeds/> ／ 一括購読: `opml/digest.opml`(デイジェスト) と `opml/translated.opml`(翻訳)
+**公開先**: <https://ogontaro.github.io/feeds/>
 
-2サービス構成。**デイジェスト**(日次レポート+週次リリース、ドメイン単位で Claude が選定・整理)と
-**翻訳配信**(海外サイト別の全量ストリーム、選定なし)は目的が違うため原則混ぜない。
+機能ごとの「なぜあるか」は [FEATURES.md](./FEATURES.md)、設定・実装は [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
-| 種別 | 内容 | 頻度 | フィード |
-| --- | --- | --- | --- |
-| 翻訳フィード | 海外サイトの新着タイトル・概要を DeepL で日本語化(日本語サイトは作らない) | 6 時間ごと | `translated/<site-id>.xml` |
-| レポート | 直近 24h の新着と X タイムラインから、Claude が見てほしいものだけ(最大 5 件)を選定・日本語コメント | 毎日 07:00 JST | `digest/report-<domain>.xml` |
-| リリースレポート | 直近 7 日のツールリリースを Claude が整理（破壊的変更を先頭） | 毎週月 07:30 JST | `digest/release-<domain>.xml` |
-| フィード監査 | 不採用フィードの無効化候補検出＋ WebSearch での新規フィード提案。PR 作成→自動マージ | 毎週日 07:00 JST | — |
-| 棚卸しリマインダー | 使用コンポーネントの棚卸しを促す GitHub Issue を自動作成 | 毎月1日 | — |
-| Issue 駆動の要望反映 | Issue に書いた要望を読み取り `source.yaml`/`interests.yaml` に反映。PR 作成→自動マージ | Issue 作成時 | — |
-| Inoreader スター連携 | スター付き記事を取得しフィード監査の採用実績に統合 | 毎週日 06:00 JST | — |
-| ワークフロー失敗対応 | いずれかのワークフローが失敗すると Issue を自動作成。続けて原因を診断し、安全な修正があれば PR を作成（自動マージなし、要レビュー） | 失敗時 | — |
+## できること
 
-デイジェストは claude / kubernetes / aws の 3 ドメイン（+ devtools のリリース）、翻訳配信は海外サイトの数だけフィードが出る。
+時刻はすべて日本時間。目的の違う 2 つのサービスに分かれている。**翻訳フィード**は全部を拾い読みするため、**デイジェスト**は選ばれたものを読むため。
 
-AI呼び出し（キュレーション・フィード監査・Issue対応・ワークフロー修正診断）は OpenCode Go 経由で
-DeepSeek を使用し、失敗時は自動で qwen にフォールバックする。時刻に基づく切り替えは行っていない。
+### デイジェスト（Claude が選んで整理する）
 
-## フィード管理
+| 機能 | 内容 | 更新 |
+| --- | --- | --- |
+| 日次レポート | 前日の新着と X のタイムラインから、読む価値のある記事を最大 5 本選んで日本語でコメントする。claude / kubernetes / aws の分野ごとに 1 本 | 毎日 07:00 |
+| 週次リリース | 使っているツールの 1 週間分のリリースを、破壊的変更を先頭にして整理する。上の 3 分野と devtools（手元の開発ツール）ごと | 毎週月曜 07:30 |
+| 月次トレンド | 前月のレポートと外部の調査・専門家の記事から、業界の潮流（新しい概念が現れて定着していく流れ）をまとめる。分野を横断した 1 本 | 毎月 2 日 07:45 |
+| 技術ランドスケープ | 自分の関心領域と、追っている技術の位置づけ（Adopt / Trial / Assess / Hold）をレーダー図で一望するページ。月次トレンドのたびに更新する | 毎月 2 日 |
 
-`source.yaml` が購読リストの正。1 エントリ = `{url, name, domain, kind}`。
-`domain` は claude / kubernetes / aws / devtools、`kind` は content（翻訳＋レポート）/ release（週次リリース）。
-devtools は release のみ。海外サイトの content エントリは `id`（[a-z0-9-] のスラッグ）が必須で、
-`translated/<id>.xml` のファイル名になる（日本語サイトは翻訳フィードを作らないので不要）。
-公開前提なので、趣味・キー付き URL は入れない。選定基準・関心領域は `report-criteria/<name>.md` と
-`interests.yaml`（ドメインごとの関心キーワード）。
+海外記事には、日本語の概要・原文・Google 翻訳のリンクが必ず付く。
+技術ランドスケープは各レポートの参考資料にもなり、「自分の環境にとってなぜ重要か」をコメントに反映させている。
 
-追加・削除は基本的に週次のフィード監査（不採用フィードの無効化・新規フィード提案）と
-Issue 駆動の要望反映が自動でやる。すぐ反映したい場合は下記タスクを手動実行するか、
-Issue を作って要望を書く。
+### 翻訳フィード（全部を日本語で拾い読みする）
 
-## タスク
+海外サイトの新着を、タイトルと概要だけ日本語にしてそのまま流す。選定もコメントもしない。
+1 サイトにつき 1 フィードで、日本語のサイトには作らない。6 時間ごとに更新。
 
-普段は GitHub Actions が自動実行する。手動で試したい・すぐ反映したいときに使う。
+### 購読のしかた
 
-```sh
-mise install      # bun
-bun install
-```
+RSS リーダーには OPML でまとめて登録できる（サービスごとに分けてある）。
 
-| コマンド | 内容 |
-| --- | --- |
-| `mise run translate` | 海外サイトの content フィードを取得・翻訳し `translated/<id>.xml` をサイト別に再生成 |
-| `mise run report:collect <domain>` | 直近 24h を `.cache/report-<domain>-input.json` へ（翻訳済み+日本語サイトをマージ）|
-| `mise run report:render <domain>` | `.cache/report-<domain>.md` → `docs/digest/report/<domain>/*.html` と `digest/report-<domain>.xml` |
-| `mise run release:collect <domain>` | 直近 7 日のリリースを `.cache/release-<domain>-input.json` へ |
-| `mise run release:render <domain>` | `.cache/release-<domain>.md` → `docs/digest/release/<domain>/*.html` と `digest/release-<domain>.xml` |
-| `mise run build` | `docs/index.html`(A) / `docs/translated/`(B) / `docs/opml/` / assets を再生成 |
-| `mise run serve` | `docs/` をローカルプレビュー |
+- デイジェスト: `opml/digest.opml`
+- 翻訳フィード: `opml/translated.opml`
 
-翻訳を試すには `DEEPL_API_KEY=... mise run translate`。
+## 運用
 
-## Secrets（設定済み）
+ほとんど自動で回る。やることは次のとおり。
 
-| 名前 | 用途 |
-| --- | --- |
-| `DEEPL_API_KEY` | タイトル・概要の翻訳（DeepL API。Free キーは末尾 `:fx`）。未設定なら未翻訳のまま通す |
-| `OPENCODE_API_KEY` | レポート・フィード監査・Issue 対応のキュレーション。OpenCode Go（`https://opencode.ai/zen/go`）経由で DeepSeek モデルを使う。`claude-code-action` の `anthropic_api_key`/`ANTHROPIC_CUSTOM_HEADERS` に渡している |
-| `CLAUDE_CODE_OAUTH_TOKEN` | 未使用（切り戻し用に残置）。Anthropic 直接に戻す場合はワークフロー内の `env`/`with` を元に戻して使う |
+- **要望は Issue に書く**: 「このサイトを追加して」「このキーワードを関心に入れて」などを書くと、自動で反映される
+- **関心領域を書く**: `landscape.yaml` の `focus` に、分野ごとの関心を自分の言葉で書く。
+  技術ランドスケープのページと、各レポートの選び方に反映される
+- **気になった記事にスターを付ける**（Inoreader）: 読まれなかったフィードの見直しに使われる
+- **失敗の修正 PR をレビューする**: ワークフローが失敗すると Issue と修正 PR が自動で作られる。PR は自動ではマージされない
+- **棚卸し Issue に答える**（毎月 1 日）: 新しく使い始めたツールがあれば購読リストに足す
 
-## Secrets（未設定・任意）
-
-Inoreader スター連携（フィード監査の学習フィードバック）を使う場合のみ必要。
-未設定でもワークフローは失敗せず、スター連携だけスキップされる。
-
-| 名前 | 用途 |
-| --- | --- |
-| `INOREADER_CLIENT_ID` / `INOREADER_CLIENT_SECRET` | Inoreader の OAuth アプリ登録情報 |
-| `INOREADER_REFRESH_TOKEN` | 上記アプリで発行した refresh token |
-
-X タイムラインをレポートの入力に使う場合のみ必要。未設定なら X の取得だけスキップされる。
-
-| 名前 | 用途 |
-| --- | --- |
-| `RSSHUB_ACCESS_KEY` | RSSHub に設定した `ACCESS_KEY`。`?key=` で渡す |
-
-公開されるのは技術的なポストの要約とポストへのリンクだけで、タイムラインの生データはリポジトリにもログにも残らない。
-ただし鍵アカウントをフォローしている場合、そのポストも要約対象になりうる点に注意。
-
-ワークフロー・スケジュール・内部構成は [CONTRIBUTING.md](./CONTRIBUTING.md) を参照。
+購読フィードの見直し（毎週日曜）など、それ以外は自動で動いている。

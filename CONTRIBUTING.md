@@ -80,7 +80,18 @@ feeds:
   ノイズだらけになるため使わない。path 指定の commits atom を使う（実装例は `source.yaml` の
   `awesome-claude-code` 参照）。README.md 自体を bot が更新するリポジトリは path 指定でも除けないので対象外
 
+## データ: landscape.yaml
+
+技術ランドスケープ（`docs/digest/landscape.html` の正）。業界の潮流と、利用者の関心・利用状況を 1 つにまとめる。
+日次・週次・月次レポートの AI ステップが参考資料として読む（関連を説明するためだけに使い、載っていない記事を落とさない）。
+
+- `focus`: 分野（`ai` / `platform` / `practice` / `ops`）ごとの関心領域。**本人が書く**。AI・スクリプトは書き換えない
+- `items`: `{name, quadrant, ring, interest, reason, since, lastCited, trend}`。月次トレンドの実行時に更新される（手で直してもよい）。
+  判定基準は `report-criteria/landscape.md`
+- `trend` はスクリプトが計算する: 前回に無ければ new、今月の月次トレンドで言及されれば up、衰退の指摘か 6 か月言及なしで down、それ以外は stable
+
 ## データ: interests.yaml
+landscape.yaml         技術ランドスケープ（関心領域＋項目。月次で AI が更新）
 
 ドメインごとの関心キーワード。`report-criteria/*.md`（自然言語の選定基準）とは別に、
 フィード選定・週次フィード監査の WebSearch クエリ・レポート選別の入力として使う構造化データ。
@@ -158,6 +169,7 @@ URL 全体を `encodeURIComponent`。生成前にスペースを除去（`%20`/`
    ドメインの選定基準に従って、そのドメインに合うポストだけを採る。記事が 0 件でもポストがあれば curate を走らせる。
    report.yml も蓄積を保存する（しないと次の取得が同じポストを初見扱いにし、翌日のレポートにも載る）。
 
+公開されるのは選ばれた技術的なポストの要約とリンクだけ。ただし鍵アカウントをフォローしていると、そのポストも要約の対象になりうる。
 public リポジトリのため、プライバシーは次で担保する。
 
 - 生のタイムラインはコミットしない（`.cache/` のみ・gitignore）。公開されるのは基準で選んだ技術ポストの要約だけ
@@ -197,8 +209,13 @@ SRE から Platform Engineering / IDP が出てきたような、概念・呼称
      各ソースに三角測量の種別の目安（定量調査・専門家判定・実活動データ・ニュース）を付ける。数えるかは記事の中身で判定
    - 前回のトレンドレポート（前月からの変化を書くため）
 2. `claude-code-action`: 入力と `report-criteria/trend.md` を読み `.cache/trend.md` を書く。
-   採否の段階付け（Adopt / Trial 等）はしない。利用者の環境を知らない AI には根拠のある判断ができないため。
+   採否の段階付けはトレンドレポートに混ぜず、技術ランドスケープ（手順 4〜5）で扱う。
 3. `src/digest/trend-render.ts`: md → `docs/digest/trend/YYYY-MM.html`、`docs/digest/trend.xml` を再生成（直近 24 エントリ）。
+4. `claude-code-action`: `landscape.yaml`・`.cache/trend.md`・`source.yaml`・`interests.yaml` と
+   `report-criteria/landscape.md` を読み、更新案を `.cache/landscape-update.yaml` に書く（`landscape.yaml` は直接書かせない）。
+5. `src/digest/landscape-update.ts`: 更新案を検証（値の種類・重複・空の根拠は異常終了）して `landscape.yaml` にマージする。
+   `focus` とコメントは保持し、AI が書き漏らした既存項目は消さずに残す（外すのは `removed` に理由付きで挙げたものだけ）。
+   `trend`（new / up / stable / down）・`since`・`lastCited` はここで計算する。ページは build.ts が生成する。
 
 - 外部情報源は WebSearch ではなく RSS で取る。AI 呼び出しが OpenCode Go 経由のため WebSearch が動作保証がなく検出困難なため。
   取得件数が少ないソースがあるため、潮流は複数月で判定する前提にしている
@@ -318,7 +335,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 
 - `docs/assets/style.css` を書き出す（単一オーナー）
 - サービスB: `docs/translated/index.html`（海外サイト一覧）と `docs/opml/translated.opml` を生成
-- サービスA: `docs/index.html`（日次/週次/月次レポート、ドメイン別に最新+過去一覧+購読リンク）と `docs/opml/digest.opml`、各ドメインの `docs/digest/report|release/<domain>/index.html` と `docs/digest/trend/index.html`（過去一覧）を生成
+- サービスA: `docs/index.html`（日次/週次/月次レポート、ドメイン別に最新+過去一覧+購読リンク）と `docs/opml/digest.opml`、各ドメインの `docs/digest/report|release/<domain>/index.html` と `docs/digest/trend/index.html`（過去一覧）、`landscape.yaml` から `docs/digest/landscape.html`（レーダー図）を生成
 - 実在しないフィードファイル（初回 CI 前の devtools 等）は OPML・購読リンクから除外
 
 ## 状態管理
@@ -327,7 +344,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 
 - 翻訳: 既存 `translated/<id>.xml` の guid 集合に無いものだけ処理。
 - レポート / リリース: `digest/report|release/<domain>/YYYY-MM-DD.html` が既にあればその日はスキップ。
-- 月次トレンド: `digest/trend/YYYY-MM.html` が既にあればその月はスキップ。前月との差分の材料は前回のトレンド HTML そのもの。
+- 月次トレンド: `digest/trend/YYYY-MM.html` が既にあればその月はスキップ。前月との差分の材料は前回のトレンド HTML。
 - 各フィードは件数上限で truncate（翻訳 100 / レポート 60 / リリース 26 / トレンド 24）。
 
 > `translated/<id>.xml` / `digest/report-*.xml` / `digest/release-*.xml` は **CI でのみ生成する**。ローカル生成物を
@@ -342,7 +359,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 | `translate.yml` | `0 */6 * * *` ＋ dispatch | 海外サイトのサイト別翻訳（`--strict`）→ build → commit |
 | `report.yml` | `0 22 * * *` ＋ dispatch | 翻訳最新化 → ドメインごとに collect / claude-code-action / render → build → commit |
 | `release.yml` | `30 22 * * 0` ＋ dispatch | ドメインごとに collect / claude-code-action / render → build → commit |
-| `trend.yml` | `45 22 1 * *` ＋ dispatch（`month` 入力で対象月を指定可） | collect / claude-code-action / render → build → commit |
+| `trend.yml` | `45 22 1 * *` ＋ dispatch（`month` 入力で対象月を指定可） | collect / claude-code-action / render → ランドスケープ更新案 / マージ → build → commit |
 | `feed-audit.yml` | `0 22 * * 6` ＋ dispatch | collect → claude-code-action → validate → PR 作成・自動マージ |
 | `issue-request.yml` | `issues: opened` | claude-code-action → validate → PR 作成・自動マージ |
 | `component-review-reminder.yml` | `0 0 1 * *` ＋ dispatch | 棚卸し Issue を作成 |
@@ -365,7 +382,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 - `claude-code-action` はスケジュール実行に human-actor チェックを適用し、cron を最後に編集した
   ユーザーに実行を帰属させる。通らないとそのレポートが止まり、症状は「ワークフロー失敗」だけ。
 - レポートは 1 日あたり **claude-code-action を最大 3 回**（ドメイン数）、月曜は release.yml で
-  追加で最大 4 回（claude / kubernetes / aws / devtools）、毎月2日は trend.yml で 1 回。CI 利用はサブスクの
+  追加で最大 4 回（claude / kubernetes / aws / devtools）、毎月2日は trend.yml で 2 回（トレンド・ランドスケープ）。CI 利用はサブスクの
   5 時間ローリング枠を消費する。
 
 ## ディレクトリ構成
@@ -378,12 +395,12 @@ starred-log.ndjson     Inoreader スター記録ログ（追記専用）
 report-criteria/
   report-claude.md  report-kubernetes.md  report-aws.md  x-posts.md（X ポストの共通の扱い）
   release-claude.md  release-aws.md  release-kubernetes.md  release-devtools.md
-  trend.md（月次トレンドの判定基準）
+  trend.md（月次トレンドの判定基準）  landscape.md（技術ランドスケープの更新基準）
 src/
   lib/           config / feeds取得 / html / style / labels / urls / types / paths（低レベル共有）
   translate/     サービスB: run.ts（サイト別翻訳生成）engine.ts（DeepL）store.ts（translated/<id>.xml 入出力）
-  digest/        サービスA: report-collect / report-render / release-collect / release-render / trend-collect / trend-render / x-timeline
-  site/          build.ts（index.html + translated/index.html + opml/ 生成）
+  digest/        サービスA: report-collect / report-render / release-collect / release-render / trend-collect / trend-render / landscape-update / x-timeline
+  site/          build.ts（index.html + translated/index.html + opml/ 生成）landscape.ts（技術ランドスケープのページ）
   feed-audit-collect.ts  feed-audit-validate.ts  feed-audit-summarize.ts
   inoreader-starred.ts
 docs/            GitHub Pages 配信対象。ワークフローがコミット
@@ -392,7 +409,8 @@ docs/            GitHub Pages 配信対象。ワークフローがコミット
   feed-audit.yml  issue-request.yml  component-review-reminder.yml  inoreader-sync.yml  timeline.yml
 ```
 
-mise タスク一覧は README の「タスク」参照。
+各スクリプトは `bun run src/<パス>.ts [引数]` で単体実行できる（例: `bun run src/digest/report-collect.ts claude`）。
+翻訳を試すには `DEEPL_API_KEY=... bun run src/translate/run.ts`。
 
 ## スコープ外
 

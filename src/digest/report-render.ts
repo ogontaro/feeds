@@ -24,8 +24,8 @@ async function adoptedSourceNames(domain: Domain, md: string): Promise<string[]>
 
 const MAX_FEED_ITEMS = 60;
 const DATE_RE = /^\d{4}-\d{2}-\d{2}\.html$/;
-/** 当日に見られなかった日を含めて遡れる日数。これより古い HTML は容量対策で消す。 */
-const RETENTION_DAYS = 14;
+/** 当日に見られなかった日を含めて遡れる日数。月次トレンドが前月ぶんを読むので 1 か月強。これより古い HTML は容量対策で消す。 */
+const RETENTION_DAYS = 35;
 
 /**
  * 保持期間より古いレポート HTML を削除する。フィード生成前に呼ぶので、

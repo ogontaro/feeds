@@ -1,0 +1,214 @@
+# 技術ランドスケープ(docs/digest/landscape.html の正)。日次・週次・月次レポートの参考資料にもなる。
+# - focus: 分野ごとの自分の関心領域。本人が書く(AI は書き換えない)
+# - items: 月次トレンドの実行時に AI が更新案を出し、src/digest/landscape-update.ts が検証してマージする。手で直してもよい
+#   quadrant: ai | platform | practice | ops / ring: adopt | trial | assess | hold / interest: high | low
+#   since・lastCited・trend はスクリプトが計算する(trend: new | up | stable | down)
+updated: 2026-09
+focus:
+  # 下書き。自分の言葉で書き直してください
+  ai: Claude Code を中心にしたコーディングエージェントの実運用。月額10ドル前後のサブスク型エージェントサービスは出たらすぐ知りたい
+  platform: 自宅 Kubernetes(Talos Linux)を GitOps と Backstage で、Platform Engineering として運用する
+  practice: AI 支援開発での開発フロー(指示ファイル・仕様・レビュー)の組み立て方
+  ops: 可観測性・コスト最適化・ゼロトラストで、自宅クラスタを安全かつ安く回す
+changes: []
+items:
+  - name: コーディングエージェント
+    quadrant: ai
+    ring: adopt
+    interest: high
+    reason: Claude Code を常用し、opencode(OpenCode Go)を CI の AI 呼び出しに使っている
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: MCP
+    quadrant: ai
+    ring: adopt
+    interest: high
+    reason: Claude Code から MCP サーバーを使っている(interests.yaml の MCPサーバー)
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: AGENTS.md による指示ファイルの共通化
+    quadrant: ai
+    ring: assess
+    interest: high
+    reason: Claude Code は CLAUDE.md が無いときの代替として読むだけで中心ツールではない(2026-09 の月次トレンドでシグナル)
+    since: 2026-09
+    lastCited: 2026-09
+    trend: new
+  - name: エージェントの権限境界とサンドボックス
+    quadrant: ai
+    ring: trial
+    interest: high
+    reason: Claude Code の auto モード+サンドボックス、HolmesGPT の読み取りパス制限(2026-09 の月次トレンドでトレンド判定)
+    since: 2026-09
+    lastCited: 2026-09
+    trend: new
+  - name: 複数エージェントの並行実行と協調
+    quadrant: ai
+    ring: trial
+    interest: high
+    reason: Claude Code のサブエージェント(2026-09 の月次トレンドでトレンド判定)
+    since: 2026-09
+    lastCited: 2026-09
+    trend: new
+  - name: AI SRE
+    quadrant: ai
+    ring: adopt
+    interest: high
+    reason: HolmesGPT を自宅クラスタで使っている
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: LLM ゲートウェイ
+    quadrant: ai
+    ring: assess
+    interest: low
+    reason: Claude Code がゲートウェイ向けヘッダーに対応したが、ゲートウェイ自体は使っていない(2026-09 の月次トレンドでシグナル)
+    since: 2026-09
+    lastCited: 2026-09
+    trend: new
+  - name: GitOps
+    quadrant: platform
+    ring: adopt
+    interest: high
+    reason: Argo CD で自宅クラスタを同期している
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: Platform Engineering / IDP
+    quadrant: platform
+    ring: adopt
+    interest: high
+    reason: Backstage を開発者ポータルとして運用している
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: Platform Engineering 2.0(AI エージェントも利用者に含む基盤)
+    quadrant: platform
+    ring: assess
+    interest: high
+    reason: Backstage の延長にあるが、2026-09 の月次トレンドではまだシグナル(補強のみ)
+    since: 2026-09
+    lastCited: 2026-09
+    trend: new
+  - name: IaC
+    quadrant: platform
+    ring: adopt
+    interest: high
+    reason: Terraform で AWS(EKS)を管理している
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: Kubernetes API によるリソース合成
+    quadrant: platform
+    ring: adopt
+    interest: high
+    reason: kro を使っている(interests.yaml の Crossplane)
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: サービスメッシュ
+    quadrant: platform
+    ring: adopt
+    interest: low
+    reason: Istio を使っている
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: eBPF ネットワーキング
+    quadrant: platform
+    ring: adopt
+    interest: low
+    reason: Cilium を CNI に使っている
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: イミュータブル OS
+    quadrant: platform
+    ring: adopt
+    interest: low
+    reason: Talos Linux で自宅クラスタを組んでいる
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: Kubernetes 上のステートフル運用
+    quadrant: platform
+    ring: adopt
+    interest: low
+    reason: CloudNativePG と Longhorn で DB・ストレージを動かしている
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: 開発環境の宣言化
+    quadrant: practice
+    ring: adopt
+    interest: high
+    reason: mise と Devbox でツールのバージョンを固定している
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: Spec-Driven Development
+    quadrant: practice
+    ring: assess
+    interest: high
+    reason: Claude Code は使っているが、仕様駆動の専用ツールは使っていない(interests.yaml の AI支援開発)
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: AI 時代のコードレビューの再定義
+    quadrant: practice
+    ring: assess
+    interest: high
+    reason: Martin Fowler のサイトの論考のみ(2026-09 の月次トレンドでシグナル)
+    since: 2026-09
+    lastCited: 2026-09
+    trend: new
+  - name: 可観測性の統合(OpenTelemetry / LGTM)
+    quadrant: ops
+    ring: adopt
+    interest: high
+    reason: Grafana Alloy・Loki・Mimir・Grafana で収集から可視化まで組んでいる
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: ゼロトラストアクセス
+    quadrant: ops
+    ring: adopt
+    interest: high
+    reason: Pomerium と Tailscale で自宅クラスタへのアクセスを制御している
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: イベント駆動オートスケール
+    quadrant: ops
+    ring: adopt
+    interest: high
+    reason: KEDA を使っている(interests.yaml のスケーリング)
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: リソース要求の適正化
+    quadrant: ops
+    ring: adopt
+    interest: high
+    reason: Goldilocks で VPA の推奨値を見ている(2026-09 の月次トレンドの計算資源の無駄削減、interests.yaml のコスト最適化)
+    since: 2026-09
+    lastCited: 2026-09
+    trend: new
+  - name: シークレットの外部管理
+    quadrant: ops
+    ring: adopt
+    interest: low
+    reason: external-secrets を使っている
+    since: 2026-09
+    lastCited: null
+    trend: stable
+  - name: バックアップと DR
+    quadrant: ops
+    ring: adopt
+    interest: low
+    reason: Velero でクラスタをバックアップしている
+    since: 2026-09
+    lastCited: null
+    trend: stable

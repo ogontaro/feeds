@@ -12,12 +12,15 @@ import {
   SITE_URL,
   TRANSLATED_DIR,
   TRANSLATED_OPML,
+  TREND_DIR,
+  TREND_XML,
   releaseDir,
   reportDir,
 } from "../lib/paths.ts";
 import { STYLE_CSS } from "../lib/style.ts";
 import type { Domain } from "../lib/types.ts";
 import { UTF8_BOM, escapeHtml } from "../lib/urls.ts";
+import { writeLandscapePage } from "./landscape.ts";
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}\.html$/;
 
@@ -82,6 +85,30 @@ async function digestCard(d: Domain, kind: "report" | "release"): Promise<string
 }
 
 const DIGEST_URL_PREFIX = "digest";
+
+/** 月次トレンド(ドメイン横断の1本): 過去一覧ページを書き、トップ用のリストを返す。 */
+async function trendSection(): Promise<string> {
+  const months = (await readdir(TREND_DIR).catch(() => []))
+    .filter((f) => /^\d{4}-\d{2}\.html$/.test(f))
+    .map((f) => f.replace(".html", ""))
+    .sort()
+    .reverse();
+  if (months.length === 0) return "<p>まだありません</p>";
+  const title = "月次トレンドレポート 過去の一覧";
+  const items = months.map((m) => `<li><a href="${m}.html">${m}</a></li>`).join("\n");
+  await Bun.write(
+    `${TREND_DIR}/index.html`,
+    pageShell({ title, body: `<h1>${title}</h1>\n<ul>\n${items}\n</ul>`, depth: 2 }),
+  );
+  const lines = [
+    `<li>最新: <a href="${DIGEST_URL_PREFIX}/trend/${months[0]}.html">${months[0]}</a></li>`,
+    `<li><a href="${DIGEST_URL_PREFIX}/trend/">過去の一覧（${months.length} 本）</a></li>`,
+  ];
+  if (await Bun.file(TREND_XML).exists()) {
+    lines.push(`<li>購読: <a href="${DIGEST_URL_PREFIX}/trend.xml">trend.xml</a></li>`);
+  }
+  return `<ul>\n${lines.join("\n")}\n</ul>`;
+}
 
 function opmlBody(entries: [string, [string, string][]][]): string {
   const outlines = entries
@@ -175,7 +202,13 @@ ${reportCards}
 <p class="muted">使っているツールの過去1週間の GitHub releases を Claude が整理(破壊的変更を先頭)。毎週月 07:30 JST。</p>
 <div class="cards">
 ${releaseCards}
-</div>`;
+</div>
+<h2>月次トレンド</h2>
+<p class="muted">業界全体の潮流(新しい概念・呼称の出現と定着)を前月のレポートと外部調査から Claude が三角測量で判定し、前月からの変化とあわせてまとめる。毎月2日 07:45 JST。</p>
+${await trendSection()}
+<h2>技術ランドスケープ</h2>
+<p class="muted">業界の潮流と自分の関心・利用状況を 1 枚のレーダー図にした全体像。月次トレンドのたびに更新し、各レポートの参考資料にもしている。</p>
+${(await writeLandscapePage()) ? `<p><a href="${DIGEST_URL_PREFIX}/landscape.html">技術ランドスケープを見る</a></p>` : "<p>まだありません</p>"}`;
   await Bun.write(INDEX_HTML, pageShell({ title: "ogontaro / rss", body }));
 
   const digestFolders: [string, [string, string][]][] = [];
@@ -199,10 +232,12 @@ ${releaseCards}
     ),
   );
   if (releaseFiles.length > 0) digestFolders.push(["週次リリース", releaseFiles]);
+  const trendFiles = await existingFiles([["月次トレンド", `${DIGEST_URL_PREFIX}/trend.xml`]]);
+  if (trendFiles.length > 0) digestFolders.push(["月次トレンド", trendFiles]);
   await Bun.write(DIGEST_OPML, UTF8_BOM + opmlBody(digestFolders));
 
   console.log(
-    `site: index.html + translated/ (${translated.length}) + opml/ (digest ${reportFiles.length + releaseFiles.length})`,
+    `site: index.html + translated/ (${translated.length}) + opml/ (digest ${reportFiles.length + releaseFiles.length + trendFiles.length})`,
   );
 }
 
