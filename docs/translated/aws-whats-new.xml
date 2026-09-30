@@ -74,6 +74,14 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Amazon Bedrock、Claudeモデルの販売をインド、韓国、シンガポールに拡大]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-in-sk/</link>
+            <guid>07b95ba4e96c52b34ba6ffdc68aced90797cf9fd</guid>
+            <pubDate>Tue, 29 Sep 2026 15:41:00 GMT</pubDate>
+            <description><![CDATA[AnthropicのClaude Opus 5、Claude Sonnet 5、Claude Haiku 4.5がインドのAmazon Bedrock、韓国のClaude Opus 5、Claude Sonnet 5、シンガポールのClaude Sonnet 5で利用可能になったことをお知らせします。金融サービス、ヘルスケア、公共部門を含む特定の地域内のデータを処理する必要がある顧客は、推論を国内で維持しながら、これらのモデルを大規模に使用できるようになりました。インドでは、地域のエンドポイントは地理的cを介して提供されます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-in-sk/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fclaude-region-expansion-in-sk%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[AWS TransformがAmazon MSKのApache Kafka移行評価をサポートするようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-msk-migration-assessment-with-aws-transform</link>
             <guid>d3e2862e88eaaaa64b13f1dfcaf2374ca2746133</guid>

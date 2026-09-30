@@ -4,11 +4,27 @@
         <title>AWS Machine Learning Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS Machine Learning Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 19:34:14 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 01:13:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon Bedrockがクロードモデルの利用可能性をインドの国内推論に拡大]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/</link>
+            <guid>5ee89c1b26308404d27592d483f282630a0d18d9</guid>
+            <pubDate>Wed, 30 Sep 2026 01:13:14 GMT</pubDate>
+            <description><![CDATA[AnthropicのClaude Opus 5、Claude Sonnet 5、およびClaude Haiku 4.5は、Amazon Bedrock地理的クロスリージョン推論を介してインドで利用できるようになりました。インド地域内のデータ処理中にこれらのモデルにアクセスし、Amazon BedrockコンソールまたはMessages、InvokeModel、Converse APIから開始できます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ソウルとシンガポールでの地域内推論のためのAmazon BedrockでのAnthropicモデルの導入]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore/</link>
+            <guid>6e28f69c4f4137454e595f46fee566a1249a74da</guid>
+            <pubDate>Wed, 30 Sep 2026 01:13:12 GMT</pubDate>
+            <description><![CDATA[Amazon Bedrockは現在、ソウルではAnthropicのClaude Opus 5とClaude Sonnet 5を地域内推論で、シンガポールではClaude Sonnet 5をサポートしています。韓国またはシンガポールに現地のデータ処理要件がある場合は、これらのAnthropicモデルを大規模に使用できるようになりました。推論は、呼び出した地域内で完全に処理されます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Amazon BedrockのGPT-6.1 Solを使用して、日常業務に近いAstraインテリジェンスをもたらします]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/bring-near-astra-intelligence-to-everyday-work-with-gpt-6-1-sol-on-amazon-bedrock/</link>
