@@ -4,11 +4,19 @@
         <title>HN — MCP — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — MCP の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Sun, 20 Sep 2026 19:44:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 09:55:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Pi.dev ：あなたはMCPを言わなかった]]></title>
+            <link>https://earendil.com/posts/you-said-no-mcp/</link>
+            <guid>https://news.ycombinator.com/item?id=49906637</guid>
+            <pubDate>Wed, 30 Sep 2026 09:55:23 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://earendil.com/posts/you-said-no-mcp/コメントURL ： https://news.ycombinator.com/item?id=49906637ポイント： 151 #コメント： 63]]></description>
+            <content:encoded><![CDATA[<p><a href="https://earendil.com/posts/you-said-no-mcp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fearendil.com%2Fposts%2Fyou-said-no-mcp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[MCPは常に悪い考えでしたか？]]></title>
             <link>https://maharship.com/blog/why-mcp-was-always-a-bad-idea/</link>

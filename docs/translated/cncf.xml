@@ -4,11 +4,19 @@
         <title>CNCF Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>CNCF Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 11:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 11:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[40秒から10秒未満： Kubernetes上のOpenTelemetry、Apache Kafka、Apache Flinkでのインシデント検出の再構築]]></title>
+            <link>https://www.cncf.io/blog/2026/09/30/from-40-seconds-to-under-10-rebuilding-incident-detection-on-opentelemetry-apache-kafka-and-apache-flink-on-kubernetes/</link>
+            <guid>https://www.cncf.io/?p=175251</guid>
+            <pubDate>Wed, 30 Sep 2026 11:00:00 GMT</pubDate>
+            <description><![CDATA[大きなインシデントが発生した後、どのSaaS企業も同じ不快な疑問を抱いています。誰が最初に気づいたのか、モニタリングなのか、それとも顧客なのか？長い間、私たちの正直な答えは「依存する」でした。この記事では、どのように小さな...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/30/from-40-seconds-to-under-10-rebuilding-incident-detection-on-opentelemetry-apache-kafka-and-apache-flink-on-kubernetes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F30%2Ffrom-40-seconds-to-under-10-rebuilding-incident-detection-on-opentelemetry-apache-kafka-and-apache-flink-on-kubernetes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[クラウドネイティブエージェントハーネスのケース]]></title>
             <link>https://www.cncf.io/blog/2026/09/28/the-case-for-a-cloud-native-agent-harness/</link>

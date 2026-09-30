@@ -4,11 +4,19 @@
         <title>The New Stack — AI — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — AI の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 19:38:59 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 10:36:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[「エージェントのためのKubernetesと考えてください」： OpenClawはNvidiaとRed Hatを搭載した企業に登場します]]></title>
+            <link>https://thenewstack.io/openclaw-enterprise-kubernetes-agents/</link>
+            <guid>https://thenewstack.io/?p=22838849</guid>
+            <pubDate>Wed, 30 Sep 2026 10:36:01 GMT</pubDate>
+            <description><![CDATA[OpenClawは、1年足らず前にバイラルな週末プロジェクトとして登場して以来、長い道のりを歩んできました。作成した投稿「エージェントのためのKubernetesと考えてください」： NvidiaとRed Hatが搭載されたOpenClawは、The New Stackで最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/openclaw-enterprise-kubernetes-agents/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fopenclaw-enterprise-kubernetes-agents%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Featherlessがピザを配達するのに戦車は必要ないと言っている理由]]></title>
             <link>https://thenewstack.io/featherless-simple-jev-classifier/</link>
