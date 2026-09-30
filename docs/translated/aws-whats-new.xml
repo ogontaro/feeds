@@ -4,11 +4,83 @@
         <title>AWS What's New — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS What's New の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 16:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 20:16:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AWS CLIは、AWSエージェントツールキットの一括スキルアップデートとバージョンチェックをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cli-agent-toolkit-update-skill/</link>
+            <guid>287b587d1a07526ce8e38e5a0c40b7c9a0d0d635</guid>
+            <pubDate>Wed, 30 Sep 2026 20:16:00 GMT</pubDate>
+            <description><![CDATA[本日、AWSはAgent Toolkit for AWSのAWS Command Line Interface （ CLI ）コマンドを2つの新しい機能に拡張し、エージェントのスキルを最新の状態に保ちやすくしました。顧客は、aws agent - toolkit check - skill - updatesを実行して、インストールされているすべてのスキルをレジストリで利用可能な最新バージョンと比較し、aws agent - toolkit update - skill -- allを使用して、1つのコマンドですべての古いスキルを更新できるようになりました。AWS用エージェントツールキットは、AWS MCPサーバーで構成されています（これは]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cli-agent-toolkit-update-skill/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-cli-agent-toolkit-update-skill%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon S 3 Vectorsは、フィルタリングされた検索で最大5倍高いリコールのためのメタデータプリフィルタリングを導入]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/s3-vectors-introduces-metadata-pre-filtering/</link>
+            <guid>f831037cc4a1b7d485467fc7bf978fad69784f87</guid>
+            <pubDate>Wed, 30 Sep 2026 20:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon S 3 Vectorsは、類似性検索を実行する前にメタデータフィルタを評価するプリフィルタリングをサポートし、フィルタが選択されている場合に最大5倍の一致ベクトルを返します。S 3ベクターには、パスやURLなどの値をフィルタリングするための接頭辞一致演算子（ $ startsWith ）も追加されています。これらの改善を組み合わせることで、フィルタリング時に検索拡張生成（ RAG ）、エージェント、およびセマンティック検索アプリケーションにより完全な結果が得られるため、アプリケーションはより関連性の高い応答を返します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/s3-vectors-introduces-metadata-pre-filtering/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fs3-vectors-introduces-metadata-pre-filtering%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Managed GrafanaがGrafana 13.2ワークスペースの作成をサポート]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-managed-grafana-now-supports-creating-grafana-13-2-workspaces</link>
+            <guid>d5c96827f747c18902b2ce5cc67f1bc6daefb3de</guid>
+            <pubDate>Wed, 30 Sep 2026 19:30:00 GMT</pubDate>
+            <description><![CDATA[Amazon Managed Grafanaは、Grafanaバージョン13.2で新しいワークスペースを作成できるようになりました。このリリースでは、オープンソースのGrafanaバージョン13.0から13.2までの機能が提供されます。これには、ダッシュボード用のGit Sync、動的ダッシュボード、Amazon CloudWatchデータソースプラグインでのPromQLクエリのサポートが含まれます。Git Syncを使用すると、ワークスペースをGitリポジトリにリンクしてダッシュボードをコードとして扱うことができ、ダッシュボードの変更を追跡、レビュー、および復元するためのバージョン管理を有効にできます。動的なダッシュボードは、]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-managed-grafana-now-supports-creating-grafana-13-2-workspaces">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-managed-grafana-now-supports-creating-grafana-13-2-workspaces">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAI GPT -6 AstraがAmazon BedrockでUltraFastモードをサポート]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-ultrafast-on-amazon-bedrock/</link>
+            <guid>cab3a2b5bb41c3346f0691aeacd16861ccf06558</guid>
+            <pubDate>Wed, 30 Sep 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[本日、AWSはAmazon BedrockのOpenAIからGPT -6 AstraのUltraFastモードを利用できることを発表しました。Ultrafastは、スピードが最も重要なワークロード向けに構築されたGPT -6 Astraのプレミアムスピードティアです。OpenAIによると、UltrafastはAPIで最大6倍高速な推論を提供し、1秒あたり最大300トークンを提供します。Amazon Bedrock推論エンジンは、本番ワークロードに必要なパフォーマンス、セキュリティ、および信頼性を提供します。GPT -6 Astra Ultrafastは、待ち時間の影響を受けやすいアプリケーションに使用します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-ultrafast-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fopenai-gpt-6-astra-ultrafast-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Auroraサーバーレスは、エージェント型AIやその他のバースト型ワークロードをサポートするために、より迅速に拡張できるようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/08/aurora-serverless-instant-16-acu-scaling/</link>
+            <guid>091f4dc41cf8dce76c3ee8a8869805ca9de8fbfd</guid>
+            <pubDate>Wed, 30 Sep 2026 17:50:00 GMT</pubDate>
+            <description><![CDATA[Amazon Auroraサーバーレスは、さらに大きなステップで拡張できるようになりました。1秒以内に現在の容量に最大16 ACUを追加し、ワークロードの増加に応じて最大256 ACUまで拡張し続けます。このリリースにより、ワークロードはより迅速に拡張され、必要なキャパシティに到達します。ワークロードが完了すると、Auroraサーバーレスは自動的にゼロにスケールダウンするため、使用した分だけを支払うことができます。これにより、エージェントAIアプリケーションに特に適しています。通常、アクティビティのバーストがあり、長時間アイドル状態です。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aurora-serverless-instant-16-acu-scaling/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F08%2Faurora-serverless-instant-16-acu-scaling%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon AuroraとRDSがAMDベースのR 8 aインスタンスをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-rds-amd-r8a/</link>
+            <guid>3748a83ae4599e2287fd8d91ffe1024bcb88eb20</guid>
+            <pubDate>Wed, 30 Sep 2026 17:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon AuroraとAmazon RDSは、第5世代AMD EPYCプロセッサを搭載したR 8 aデータベースインスタンスをサポートするようになり、データベースワークロードで利用できる選択肢が広がりました。R 8 aデータベースインスタンスの各vCPUは、物理CPUコアに対応し、コアごとに一貫したパフォーマンスを提供します。I/O要件が高いワークロードの場合、R 8 aインスタンスは最大75 Gbpsのネットワーク帯域幅と60 GbpsのAmazon EBS帯域幅を提供します。すべてのR 8 aインスタンスは、第6世代を使用してAWS Nitroシステム上に構築されています]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-rds-amd-r8a/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faurora-rds-amd-r8a%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon RDSがAMDベースのM 8 aインスタンスをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-rds-amd-m8a/</link>
+            <guid>f4c627ab8da30b4712890070c7fbc8fdbbce07ce</guid>
+            <pubDate>Wed, 30 Sep 2026 17:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon RDS for PostgreSQL、MySQL、およびMariaDBは、第5世代AMD EPYCプロセッサを搭載したM 8 aデータベースインスタンスをサポートするようになり、データベースワークロードで利用できる選択肢が広がりました。M 8 aデータベースインスタンスの各vCPUは物理CPUコアに対応し、コアごとに一貫したパフォーマンスを提供します。I/O要件が高いワークロードの場合、M 8 aインスタンスは最大75 Gbpsのネットワーク帯域幅と60 GbpsのAmazon EBS帯域幅を提供します。すべてのインスタンスは、siを使用してAWS Nitroシステム上に構築されています]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-rds-amd-m8a/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faurora-rds-amd-m8a%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Aurora PostgreSQLがApache IcebergとParquetデータのクエリをサポート]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-postgresql-query-apache-iceberg-and-parquet/</link>
+            <guid>8fcd34bc692eb07e9ae2dd4a42ddd3aa1ba57922</guid>
+            <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[今日から、既存のPostgreSQLアプリケーションとツールを使用して、Apache IcebergとParquet形式のデータレイクに格納されているデータと一緒に運用データを直接クエリできます。抽出、変換、読み込み（ ETL ）パイプラインやデータの重複はありません。アプリケーションは、より多くの情報に基づいた意思決定を行い、ビジネスプロセスを自動化するために、多くの場合Apache IcebergおよびParquet形式で保存されているデータレイクからのデータへのアクセスをますます必要としています。アクセスするには、通常、データをコピーするパイプラインが必要です。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-postgresql-query-apache-iceberg-and-parquet/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faurora-postgresql-query-apache-iceberg-and-parquet%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon RDS for MySQLは、Amazon RDSデータベースプレビュー環境でMySQL 26.7をサポートしています]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/rds-mysql-26-7-preview-environment/</link>
+            <guid>2de4f95e8c4be1c2db805296e2e79c101d38dd9a</guid>
+            <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[本日より、Amazon RDS for MySQL 26.7がAmazon RDSデータベースプレビュー環境で利用可能になり、Amazon RDS for MySQLでのMySQL 26.7のプレリリースを評価できるようになります。MySQL 26.7は、新しいYY.M （ Year.Month ）カレンダーバージョニングモデルを採用した最初のイノベーションリリースです。これには、バグ修正、セキュリティパッチ、およびテストワークロードの適用スループットとバックログ回復を改善するモジュラーレプリケーションアプリケーションであるChange Stream Applierなどの新機能が含まれます。詳細については、を参照してください。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/rds-mysql-26-7-preview-environment/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Frds-mysql-26-7-preview-environment%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[CloudTrailイベントカバレッジでAWSデータプレーンオペレーションの盲点を発見]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cloudtrail-event-coverage/</link>
@@ -16,6 +88,62 @@
             <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
             <description><![CDATA[AWS CloudTrailは、新しいコンソールエクスペリエンスであるイベントカバレッジを導入し、顧客にアカウントおよび組織レベルでのデータプレーンオペレーションカバレッジを可視化します。これで、環境内でデータイベントロギングが有効になっているAWSサービスとリソースタイプと、有効になっていないAWSサービスとリソースタイプを確認できます。これにより、組織内のアカウントを手動でスキャンすることなく、ログポスチャのギャップをすばやく特定できます。データイベントを使用すると、AWSサービスでのデータプレーンの操作を追跡できます。例：]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cloudtrail-event-coverage/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-cloudtrail-event-coverage%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[パートナーの収益測定により、リソースのタグ付けにマルチパートナーのサポートが追加されます]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/partner-revenue-measurement-multi-partner-resource-tagging</link>
+            <guid>930c1e52995524646686c2b949c25c2cb41d4581</guid>
+            <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
+            <description><![CDATA[パートナー収益測定（ PRM ）は、パートナーソリューションによって推進されるAWS消費の測定を提供します。今日、PRMはリソースタグ付けにマルチパートナーサポートを追加し、複数のAWSパートナーが同じAWSリソースの収益アトリビューションを受け取れるようにしています。以前は、リソースには1つのパートナータグaws - apn - idのみが含まれていたため、複数のパートナーが同じワークロードに貢献した場合、1つのパートナーのみがアトリビューションを受け取りました。この更新により、各パートナーは新しいキーを使用して貢献したリソースにタグを付けます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/partner-revenue-measurement-multi-partner-resource-tagging">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fpartner-revenue-measurement-multi-partner-resource-tagging">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWSアカウントが電話番号の認証をサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-accounts-phone-number-verification/</link>
+            <guid>37acd1fd08a55ca1a7b95e157272ad19e9f5108a</guid>
+            <pubDate>Wed, 30 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[AWSアカウントは、主な連絡先電話番号の電話番号検証をサポートするようになりました。以前は、AWSアカウントの連絡先情報の電話番号は形式について検証されていましたが、帯域外メカニズムを通じて検証されることはありませんでした。お客様はSMSのワンタイムパスコード(OTP)を使用して電話番号を認証できるようになりました。電話番号を確認するために、お客様はAWS Management Consoleを介して、または6桁のOTPを送信する新しいSendPhoneNumberVerification APIを介してプログラムで確認を開始します。入力後]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-accounts-phone-number-verification/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-accounts-phone-number-verification%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Transfer FamilyがSFTPコネクタのクォータを最大1,000まで自動的に承認するようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-transfer-family-sftp-connector-quota-1000/</link>
+            <guid>7424b270e42c0d3e2f5abad33aa87847e45b53df</guid>
+            <pubDate>Wed, 30 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[AWS Transfer Familyは、各AWSリージョンのAWSアカウントごとにSFTPコネクタクォータを最大1,000コネクタに増やすリクエストを自動的に承認します。ファイル転送のニーズが高まるにつれて、手動承認を待たずにコネクタを追加できます。デフォルトのクォータは、各AWSリージョンのAWSアカウントごとに100個のSFTPコネクタのままであり、AWSサービスクォータコンソールで引き続き増加を要求します。以前は、すべてのクォータの増加には手動での承認が必要でした。自動承認はコネックに適用されます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-transfer-family-sftp-connector-quota-1000/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-transfer-family-sftp-connector-quota-1000%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS IAM Identity Center Identity Store APIは、リソースIDに加えてリソースARNを受け入れるようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/iam-identity-center-apis-arns/</link>
+            <guid>2b509c734320c1fdd83455eac03928957fcad003</guid>
+            <pubDate>Wed, 30 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[AWS IAM Identity CenterのIdentity Store APIは、APIが以前にリソースIDを受け入れた場所で、ユーザー、グループ、グループメンバーシップ、またはIDストアのAmazonリソース名（ ARN ）を受け入れるようになりました。ARNのサポートは付加的であり、既存の統合は変更されずに機能し続けます。Identity Store API上に構築する場合は、IAMポリシー評価、CloudTrailイベント、またはクロスサービス統合などのリソースARNをすでに保持している可能性があります。以前は、ARNをリソースにストリップダウンする必要がありました]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/iam-identity-center-apis-arns/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fiam-identity-center-apis-arns%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWSマーケットプレイスは、使用量ベースのメータリング統合のためのAIエージェントスキルを開始します]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/marketplace-ai-agent-metering/</link>
+            <guid>957e598e3d6b759fc5d84d7e9a9ee59b845aeb8a</guid>
+            <pubDate>Wed, 30 Sep 2026 05:00:00 GMT</pubDate>
+            <description><![CDATA[AWSは、AWSマーケットプレイスメータリングエージェントスキルの一般提供を発表しました。これは、売り手がAIコーディングアシスタント内から使用ベース（従量課金）のSaaSメータリング統合を構築、展開、検証するのに役立つAIガイド付きのエクスペリエンスです。このスキルは、製品タイプ、価格設定モデル、使用状況を収集し、正しいメータリングAPIを推奨し、統合コードとカスタマイズされたAWS CloudFormationスタックテーラーを生成するなど、完全な統合の過程をセラーにガイドします。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/marketplace-ai-agent-metering/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fmarketplace-ai-agent-metering%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon S 3テーブルがすべてのApache Iceberg V 3データタイプをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-s3-tables-iceberg-v3-data-types</link>
+            <guid>f6c29c8db0db9f18bb68e0455038a85e657191d1</guid>
+            <pubDate>Wed, 30 Sep 2026 04:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon S 3テーブルは、Apache Icebergバージョン3 （ V 3 ）仕様で定義されているように、列のデフォルト値とともに、ジオメトリ、地理、不明、ナノ秒のタイムスタンプデータ型のサポートを追加します。これで、地理空間座標とナノ秒精度のイベント時間を文字列や整数でエンコードする代わりに、ネイティブに保存できるようになりました。これにより、ストレージの効率とパフォーマンスを向上させながら、データアーキテクチャを簡素化できます。このローンチにより、S 3テーブルはV 3で導入されたすべてのデータタイプをサポートし、]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-s3-tables-iceberg-v3-data-types">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-s3-tables-iceberg-v3-data-types">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Deadline Cloudがジョブテンプレートの式をサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/08/aws-deadline-cloud-expressions-job-templates/</link>
+            <guid>14a552f972d0b28c0a488f8095eccf27b9845aa0</guid>
+            <pubDate>Tue, 29 Sep 2026 21:55:00 GMT</pubDate>
+            <description><![CDATA[AWS Deadline Cloudは、ジョブテンプレートで柔軟な式と豊富なパラメータタイプをサポートするようになり、既存の本番パイプラインにサービスを適合させるためのよりクリーンで強力な方法を顧客に提供します。Deadline Cloudは、チームがビジュアルエフェクト、アニメーション、製品設計、シミュレーション、ゲームのためにクラウドでコンピューティング集約型のワークロードを実行するのに役立つ、完全に管理されたサービスです。顧客は、ジョブテンプレートでパイプラインロジックを直接表現できるようになりました。これには、arithmetic、conditionaなどの式が含まれます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-deadline-cloud-expressions-job-templates/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F08%2Faws-deadline-cloud-expressions-job-templates%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[OpenAIを搭載したAmazon Bedrock Managed Agentsがプレビューで利用できるようになりました]]></title>
@@ -32,6 +160,14 @@
             <pubDate>Tue, 29 Sep 2026 21:00:23 GMT</pubDate>
             <description><![CDATA[Amazon RDSは、RDSスナップショットの完全なスナップショットサイズを表示するようになりました。この機能拡張により、お客様は新しいフィールド「FullSnapshotSizeInBytes」を使用して、DescribeDBSnapshots APIを介してプログラムで完全なスナップショットサイズを取得できるようになりました。また、「フルスナップショットサイズ」列を使用して、コンソールでこれを表示することもできます。Amazon RDSスナップショットはインクリメンタルです。これは、時間の経過とともにボリュームの複数のスナップショットを取得する場合、各スナップショットは参照を維持しながら新しいブロックまたは変更されたブロックのみを保存することを意味します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-full-snapshot-size-available/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-rds-full-snapshot-size-available%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Deadline CloudがLinuxサービス管理フリートでECSコンテナをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/08/aws-deadline-cloud-ecs-containers-linux-smf/</link>
+            <guid>92c2150a68ac914c0aa9998df4ff0b736ce1b0c2</guid>
+            <pubDate>Tue, 29 Sep 2026 20:18:00 GMT</pubDate>
+            <description><![CDATA[AWS Deadline Cloudは、Linuxベースのサービス管理フリートでAmazon Elastic Container Service （ ECS ）からDockerコンテナを使用したジョブの実行をサポートするようになりました。Deadline Cloudは、チームがビジュアルエフェクト、アニメーション、製品設計、シミュレーション、ゲームのためにクラウドでコンピューティング集約型のワークロードを実行するのに役立つ、完全に管理されたサービスです。コンテナはDeadline Cloudのフリートとキューに統合されているため、顧客のジョブテンプレートにコンテナコマンドや画像参照を含める必要はありません。つまり、]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-deadline-cloud-ecs-containers-linux-smf/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F08%2Faws-deadline-cloud-ecs-containers-linux-smf%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[OpenAI GPT-6.1 SolがAmazon Bedrockで一般公開されました]]></title>

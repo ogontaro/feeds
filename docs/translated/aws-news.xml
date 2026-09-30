@@ -4,11 +4,19 @@
         <title>AWS News Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS News Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 17:22:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 20:03:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon S 3 Vectorsは、フィルタリングされた検索のリコール率を高めるためにメタデータの事前フィルタリングをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches/</link>
+            <guid>e76e8a63de9311bd1dde4b12497cc264c4918389</guid>
+            <pubDate>Wed, 30 Sep 2026 20:03:34 GMT</pubDate>
+            <description><![CDATA[Amazon S 3 Vectorsはメタデータの事前フィルタリングをサポートし、フィルタリングされた検索で最大5倍のリコールを実現します。フィルタは類似性検索の前に評価されるため、スコープ付きクエリはより関連性の高い結果を返します。RAG、エージェントアプリ、ドキュメント検索に最適です。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Famazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Amazon Aurora PostgreSQLが、データレイク内のApache IcebergとParquetデータの直接クエリをサポートするようになりました]]></title>
             <link>https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/</link>

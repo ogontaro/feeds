@@ -4,11 +4,19 @@
         <title>AWS DevOps Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS DevOps Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 15:43:51 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 19:45:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AWS AppConfig実験による実稼働実験の実行]]></title>
+            <link>https://aws.amazon.com/blogs/devops/running-production-experiments-with-aws-appconfig-experimentation/</link>
+            <guid>ed59dc9dd34c1f878d9e75a497cf5da4572378db</guid>
+            <pubDate>Wed, 30 Sep 2026 19:45:35 GMT</pubDate>
+            <description><![CDATA[再設計されたチェックアウトボタンは、売り上げを伸ばすことを目的としています。より長いライブキャッシュ時間（ TTL ）は、バックエンドの負荷を削減することを意味します。しかし、実際の生産トラフィックに対して変化をテストするまで、決定は直感に帰着し、証拠ではなく、誰が最も難しく議論するかにかかっています。AWS AppConfigの実験では、代わりにデータ駆動型の呼び出しを行うことができます。A/B […]]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/running-production-experiments-with-aws-appconfig-experimentation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Frunning-production-experiments-with-aws-appconfig-experimentation%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[KIROによるAS/400ビジネスルール抽出の加速：ステップバイステップガイド]]></title>
             <link>https://aws.amazon.com/blogs/devops/accelerating-as-400-business-rule-extraction-with-kiro-step-by-step-guide/</link>

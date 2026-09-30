@@ -4,11 +4,35 @@
         <title>The New Stack — AI — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — AI の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 14:46:32 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 20:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ジェミニ4アルゴンが登場：素晴らしい、まだ手に入らない]]></title>
+            <link>https://thenewstack.io/google-gemini-4-argon/</link>
+            <guid>https://thenewstack.io/?p=22838948</guid>
+            <pubDate>Wed, 30 Sep 2026 20:00:00 GMT</pubDate>
+            <description><![CDATA[Googleは水曜日に、待望のフラッグシップモデルであるGemini 4 Argonを発表しました。Gemini 4 Argonはここにあります。素晴らしいので、まだNew Stackに最初に登場することはできません。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/google-gemini-4-argon/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fgoogle-gemini-4-argon%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Cohereの高速クエリモデルは、テストの検索品質をほとんど低下させません]]></title>
+            <link>https://thenewstack.io/cohere-embed-pro-fast/</link>
+            <guid>https://thenewstack.io/?p=22838929</guid>
+            <pubDate>Wed, 30 Sep 2026 18:41:53 GMT</pubDate>
+            <description><![CDATA[Cohereは水曜日にEmbed 5をリリースし、チームにEmbed 5 Proを使用してデータをインデックス化し、クエリするオプションを提供しました。Cohereの高速クエリモデルは、テストの検索品質をほとんど低下させません。最初に登場したのはThe New Stackです。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/cohere-embed-pro-fast/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fcohere-embed-pro-fast%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CloudBeesは、AIファーストのピボットにコミットしました。エンタープライズDevOpsチームにとって重要な理由は次のとおりです]]></title>
+            <link>https://thenewstack.io/cloudbees-ceo-ai-transformation/</link>
+            <guid>https://thenewstack.io/?p=22838917</guid>
+            <pubDate>Wed, 30 Sep 2026 18:08:49 GMT</pubDate>
+            <description><![CDATA[CloudBeesの新CEO、Mo Plassnigが今年初めに就任したとき、彼の取締役会は彼に委任状を手渡した。CloudBeesはAIファーストのピボットにコミットしたばかりだ。エンタープライズDevOpsチームにとって重要なのは、New Stackに最初に登場した理由です。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/cloudbees-ceo-ai-transformation/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fcloudbees-ceo-ai-transformation%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Microsoft Fabricは、AIエージェントがビジネスの仕組みを学ぶ場所です]]></title>
             <link>https://thenewstack.io/microsoft-fabric-agent-context/</link>

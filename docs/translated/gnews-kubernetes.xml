@@ -4,11 +4,19 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 13:07:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 19:10:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[6時間で9,000 GPUを拡張： Lumaのドリームマシンローンチの内側-ディールルーム]]></title>
+            <link>https://app.dealroom.co/news/note/scaling-9-000-gpus-in-six-hours-inside-luma-s-dream-machine-launch</link>
+            <guid>CBMiogFBVV95cUxPWF8xNUVYcTBuM2VjUGxjeXkzazlZdVpOZGQ1c3pLbXZtSEFlbFZsS3Eya2RqaWZzRS1nMVZDZ1JLUHd0N0o4MTYyVmJTWjdsa2pnclIxUGlrbXVmOFBzNmFNVmZxTWptT1ZfOTZqclFTcXMxN05RTHItTGxYcUpOcmlXWldZNGtHbC00RXRDWUV4WEkydWlVTWdXSHlWdy1ROUE</guid>
+            <pubDate>Wed, 30 Sep 2026 19:10:34 GMT</pubDate>
+            <description><![CDATA[6時間で9,000 GPUを拡張： Lumaのドリームマシンローンチディールームの内部]]></description>
+            <content:encoded><![CDATA[<p><a href="https://app.dealroom.co/news/note/scaling-9-000-gpus-in-six-hours-inside-luma-s-dream-machine-launch">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fapp.dealroom.co%2Fnews%2Fnote%2Fscaling-9-000-gpus-in-six-hours-inside-luma-s-dream-machine-launch">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[攻撃者は、ソースコードを超えてサプライチェーンへの侵入を拡大するために開発者の資格情報を標的としています- gbhackers.com]]></title>
             <link>https://gbhackers.com/supply-chain-intrusions/</link>
@@ -16,6 +24,14 @@
             <pubDate>Wed, 30 Sep 2026 13:07:30 GMT</pubDate>
             <description><![CDATA[攻撃者は、ソースコードを超えてサプライチェーンへの侵入を拡大するために開発者の資格情報を標的としていますgbhackers.com]]></description>
             <content:encoded><![CDATA[<p><a href="https://gbhackers.com/supply-chain-intrusions/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgbhackers.com%2Fsupply-chain-intrusions%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ennoble CareがCoreWeaveを選択し、自宅ベースのケアネットワーク全体でAI推論を強化-ナスダック]]></title>
+            <link>https://www.nasdaq.com/press-release/ennoble-care-selects-coreweave-power-ai-inference-across-its-home-based-care-network</link>
+            <guid>CBMivgFBVV95cUxOODdJVmo4anB3cGtuc28tWmlxSWNRR19pQm5YUWRSLTR0VTZ3VzBibUN1bTJSb3F3a21OWFpwdENwQ1RMVWlIaE0wSDV0ejdYbnV5TDJuak5TN0NLY2VOTWFCdUprSUg2ZlZfVWZGNDhVMnNadnJuQTAxbm5kd201dUVXdEtWeENMTWFZMkNWY2J3Z0FHbkFSdHlfMTF5V2RjNHBDS0tuaWZ4VjdVZUNDQnIwWVlHM1pacC15Y1R3</guid>
+            <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
+            <description><![CDATA[Ennoble CareがCoreWeaveを選択し、在宅介護ネットワーク全体でAI推論を推進]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.nasdaq.com/press-release/ennoble-care-selects-coreweave-power-ai-inference-across-its-home-based-care-network">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.nasdaq.com%2Fpress-release%2Fennoble-care-selects-coreweave-power-ai-inference-across-its-home-based-care-network">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Ennoble Care、在宅医療ネットワーク全体でAI推論を強化するためにCoreWeaveを選択-ビジネスワイヤ]]></title>

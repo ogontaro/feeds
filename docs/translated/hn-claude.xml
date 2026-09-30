@@ -4,11 +4,19 @@
         <title>HN — Claude — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>HN — Claude の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 14:25:41 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 17:32:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[クロードは言う]]></title>
+            <link>https://ohhfishal.net/Posts/claude</link>
+            <guid>https://news.ycombinator.com/item?id=49911928</guid>
+            <pubDate>Wed, 30 Sep 2026 17:32:06 GMT</pubDate>
+            <description><![CDATA[記事URL ： https://ohhfishal.net/Posts/claudeコメントURL ： https://news.ycombinator.com/item?id=49911928ポイント： 66 #コメント： 27]]></description>
+            <content:encoded><![CDATA[<p><a href="https://ohhfishal.net/Posts/claude">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fohhfishal.net%2FPosts%2Fclaude">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[クロードの部分的な機能停止]]></title>
             <link>https://status.claude.com/incidents/4xvtc2gnq73l</link>
