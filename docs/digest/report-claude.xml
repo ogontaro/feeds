@@ -4,11 +4,61 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 29 Sep 2026 01:35:20 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 01:12:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-09-30]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-30.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-30.html</guid>
+            <pubDate>Wed, 30 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.284 の主要アップデート - Sonnet 5.5 登場 と auto mode 既定化の全プラン拡大</h3>
+<p>Sonnet 5.5 が Claude Code に追加され、権限モード未設定時に auto mode が既定になる変更が全プランへ広がった。記事は <code>/claude-api migrate</code> で実際に Sonnet 5.5 向けへ移行した結果まで含んでいるので、モデルを切り替えると何が変わり何に気をつけるべきかを、自分の作業に当てはめながら読める。auto mode が既定になる点は、エージェントに何を許可するかの設計を見直すきっかけになる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20260929-cc-updates-v2-1-284/">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2104676966872068225">@npaka123 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fnpaka123%2Fstatus%2F2104676966872068225">Google 翻訳で読む</a></li>
+<li><a href="https://www.anthropic.com/claude-sonnet-5-5">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fclaude-sonnet-5-5">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/oikon48/status/2104716844146008508">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>クロード・コードの次の時代 — Thariq Shihipar、Anthropic</h3>
+<p>Anthropic の Thariq Shihipar が、Opus / Sonnet 5.5 に続けて Mod・プラグイン・プロジェクト・タグを出荷しながら、フロンティアの投入ペースをどう律速するかを語っている。日々のアップデートが何を狙ったものか追いきれなくなりがちなので、Claude Code がどの方向へ伸びようとしているのかを一度引いて見ておく価値がある。</p>
+<p class="links"><a href="https://www.latent.space/p/thariq">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fthariq">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>OpenAI DevDay 2026: 常時稼働エージェント「dots」と Codex のクラウド実行環境</h3>
+<p>OpenAI が DevDay で、独自のクラウド計算機を持ち 24 時間動き続けるエージェント「dots」を発表した。接続したアプリのバグ報告や機能要望の整理から、Codex でビルド・テストして PR を返すところまで任せられ、Pro プランに含まれ使用量も消費しない。あわせて Codex のクラウド実行環境と CLI の刷新も出ており、コーディングエージェントの主戦場が手元のターミナルから「クラウドで常時動く」側へ移りつつあることが分かる。</p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2104996312005636454">@npaka123 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fnpaka123%2Fstatus%2F2104996312005636454">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/oikon48/status/2105095913119334612">@oikon48 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Foikon48%2Fstatus%2F2105095913119334612">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/npaka123/status/2105043909475004810">@npaka123 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fnpaka123%2Fstatus%2F2105043909475004810">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/nukonuko/status/2104985394005872768">@nukonuko のポスト</a></li>
+<li><a href="https://zenn.dev/schroneko/articles/openai-devday-2026">リンク先を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>OpenAI、月額 500 ドルの Pro プランを開始し 200 ドルプランの使用枠を半減</h3>
+<p>コーディングエージェントのサブスクは「いくらで何がどれだけ使えるか」が争点になっており、OpenAI は 500 ドルの Pro を新設する一方、200 ドルプランは実質の使用枠が半分になった。同じ 200 ドルでも Claude Max は月およそ 9,000 ドル相当の Opus 使用量に匹敵するという計測が共有されており、料金表の数字だけでは判断できないことが分かる。ChatGPT のサブスク枠を Devin など他社ツールで使えるようにする動きも始まっており、枠の持ち込み合戦が次の論点になりそうだ。</p>
+<p class="links"><a href="https://thenewstack.io/openai-halves-200-plan/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopenai-halves-200-plan%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2104757888053022924">@oikon48 のポスト</a></li>
+<li><a href="https://x.com/oikon48/status/2105095455524933869">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>155項目をAIエージェントに並列で直させる前に決めること。監査プロンプト集 v1.0.0 の設計判断</h3>
+<p>自作の監査プロンプト集 v1.0.0 で 155 項目・12 ファイルの修正を、並列に走らせた AI エージェントに任せたときの設計判断がまとまっている。並列にすれば片付くわけではなく、任せる前に何を決めておく必要があるのかが具体的に書かれているので、複数エージェントを並行で走らせる運用を始める前に読むと手戻りを減らせる。</p>
+<p class="links"><a href="https://qiita.com/ishizakahiroshi/items/d370b3ccc18d8e423f71">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-09-29]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-29.html</link>

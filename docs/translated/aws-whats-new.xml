@@ -4,11 +4,27 @@
         <title>AWS What's New — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS What's New の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 20:17:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 21:10:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[OpenAIを搭載したAmazon Bedrock Managed Agentsがプレビューで利用できるようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/</link>
+            <guid>99aadd4a09e4b02f87fd104b5246dbf38faf3249</guid>
+            <pubDate>Tue, 29 Sep 2026 21:10:00 GMT</pubDate>
+            <description><![CDATA[AWSとOpenAIによって共同開発されたBedrock Managed Agents （ BMA ）は、AWSネイティブでAWSリソースと統合されるように設計されたOpenAIのエージェントAPIのカスタマイズされたバージョン上に構築されています。すでに使用しているID、権限、ガバナンスコントロールを使用して、完全にAWS内で実行されるOpenAIモデルに最適化されたエージェントを構築できるようになりました。BMAは、モデルが状態を保持し、ツールを選択して使用し、コードを実行し、複数のステップと意思決定にわたって作業を調整する方法を管理します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fbedrock-managed-agents-preview%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon RDSがコンソールとAPIに完全なスナップショットサイズ情報を追加]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-full-snapshot-size-available/</link>
+            <guid>bb710668f341e87a706e52ab6b054d6fb2c40f01</guid>
+            <pubDate>Tue, 29 Sep 2026 21:00:23 GMT</pubDate>
+            <description><![CDATA[Amazon RDSは、RDSスナップショットの完全なスナップショットサイズを表示するようになりました。この機能拡張により、お客様は新しいフィールド「FullSnapshotSizeInBytes」を使用して、DescribeDBSnapshots APIを介してプログラムで完全なスナップショットサイズを取得できるようになりました。また、「フルスナップショットサイズ」列を使用して、コンソールでこれを表示することもできます。Amazon RDSスナップショットはインクリメンタルです。これは、時間の経過とともにボリュームの複数のスナップショットを取得する場合、各スナップショットは参照を維持しながら新しいブロックまたは変更されたブロックのみを保存することを意味します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-full-snapshot-size-available/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-rds-full-snapshot-size-available%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenAI GPT-6.1 SolがAmazon Bedrockで一般公開されました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-1-sol-on-amazon-bedrock/</link>
@@ -18,12 +34,28 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-1-sol-on-amazon-bedrock/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fopenai-gpt-6-1-sol-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Amazon WorkSpaces Applicationsが統一されたグラフィックスイメージを導入]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-applications-unified-graphics-images/</link>
+            <guid>46a069fea9af381dcc41485c15285d02bfd36371</guid>
+            <pubDate>Tue, 29 Sep 2026 17:00:00 GMT</pubDate>
+            <description><![CDATA[本日、Amazon WorkSpaces Applicationsは、G 4 dn、G 5、G 6、G 7など、サポートされているすべてのグラフィックスインスタンスファミリーで機能する単一のイメージタイプである統合グラフィックスイメージを発表しました。以前は、各グラフィック生成には独自の専用イメージが必要でした。これで、お客様は1つのイメージを使用して、サポートされているグラフィックスインスタンスファミリーでフリートを作成および管理できるようになりました。統合されたグラフィックスイメージは、画像管理を簡素化し、利用可能になった新しい世代のGPUを簡単に採用できるようにします。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-applications-unified-graphics-images/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-workspaces-applications-unified-graphics-images%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Amazon Connect Customerにより、ビジネスユーザーはより多くの参照データを管理してコンタクトセンターの構成をリアルタイムで調整できるようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-manage-data-tables/</link>
             <guid>bf6d1a31d2ed99a6651dc2db56aa571c348cc2a9</guid>
             <pubDate>Tue, 29 Sep 2026 17:00:00 GMT</pubDate>
             <description><![CDATA[Amazon Connect Customerを使用すると、管理者はコンタクトセンターの構成を推進するより多くのリファレンスデータを保存できるようになりました。管理者は、データテーブルを使用して、営業時間、エスカレーションルール、AIエージェントプロンプト、連絡先フローを推進するキュー割り当てなどの構成を定義するために、テーブルごとに最大20,000個の値を保持できるようになりました。管理者は、テーブルをエクスポートしたり、何百ものレコードを編集したり、Connect Customerインスタンス間でテーブルを移動したり、外部SYSTから参照データを読み込んだりすることもできます]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-manage-data-tables/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-connect-manage-data-tables%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWSサービス可用性の更新]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-service-availability/</link>
+            <guid>0fcb85ad0562df36e6005332909dbe6cfe6e8fa5</guid>
+            <pubDate>Tue, 29 Sep 2026 16:21:00 GMT</pubDate>
+            <description><![CDATA[以下のAWSサービスと機能に対する可用性の変更をお知らせします。メンテナンスに移行するサービスメンテナンスに移行するサービスは、2026年10月29日以降、新規のお客様にはご利用いただけなくなります。すでにこれらのサービスや機能をご利用のお客様は、引き続きご利用いただけます。AWSは、これらのサービスと機能を引き続き運用し、サポートします。お客様には、製品ページとドキュメントの変更について学んでいただくことをお勧めします。・Amazon Chime SDK SIPメディアアプリケーション・AMA]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-service-availability/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-service-availability%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Amazon RDS for PostgreSQLが拡張サポートのマイナーバージョン13.23-rds.20260514、12.22-rds.20260514、11.22-rds.20260514を発表]]></title>
@@ -42,12 +74,44 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[AWS TransformがAmazon MSKのApache Kafka移行評価をサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-msk-migration-assessment-with-aws-transform</link>
+            <guid>d3e2862e88eaaaa64b13f1dfcaf2374ca2746133</guid>
+            <pubDate>Tue, 29 Sep 2026 15:00:00 GMT</pubDate>
+            <description><![CDATA[AWS Transformエージェント移行評価を使用して、オンプレミスのApache KafkaクラスターからAmazon Managed Streaming for Apache Kafka (Amazon MSK)への移行を評価できるようになりました。AWS Transformの移行評価では、エージェントAIを使用してワークロードを分析し、最適なAWSサービスを推奨し、価格設定オプションと実用的な次のステップを含む総所有コスト（ TCO ）ビジネスケースを生成します。すべて数分で、自然言語のチャットまたはAWS Transform MCPサーバーを使用します。Apache Kafkの場合]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-msk-migration-assessment-with-aws-transform">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-msk-migration-assessment-with-aws-transform">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS DataSyncが共有VPCをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-datasync-shared-vpcs/</link>
+            <guid>de37f5aa91a275e36c1020dcacfbd9b8a529f398</guid>
+            <pubDate>Tue, 29 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[AWS DataSyncが共有仮想プライベートクラウド（ VPC ）をサポートするようになりました。AWS Resource Access Manager (RAM)を使用して、AWSアカウント間で共有されているサブネットを使用してDataSyncエージェントを作成し、転送タスクを実行できます。これにより、アカウントごとに1つではなく、中央アカウントで管理されている共有サブネットとVPCエンドポイントを介して非公開でデータを転送できます。以前はネットワークを一元化していたお客様は、AWS PrivateLを介して個人的に接続されているすべてのアカウントに個別のDataSync VPCエンドポイントを作成する必要がありました]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-datasync-shared-vpcs/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-datasync-shared-vpcs%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[AWS Transferファミリーは、Webアプリで複数のファイルとフォルダをダウンロードできるようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/transfer-family-web-apps-download-multiple-files-folders</link>
+            <guid>65a51f15a798bc66019b85f2c49cc663a55215a3</guid>
+            <pubDate>Tue, 29 Sep 2026 08:00:00 GMT</pubDate>
+            <description><![CDATA[AWS Transfer Familyを使用すると、Webアプリユーザーは複数のファイルとフォルダを一度にダウンロードできるようになりました。エンドユーザーは、ファイルとフォルダの任意の組み合わせを選択し、単一のアクションでそれらを一緒にダウンロードできます。ダウンロードはZIPアーカイブとして配信され、解凍時に元のフォルダ構造が保持されます。開始するには、場所内のファイルとフォルダーを選択し、アクションメニューから[ダウンロード]を選択します。以前は、エンドユーザーは一度に1つのファイルしかダウンロードできず、フォルダーをダウンロードできませんでした]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/transfer-family-web-apps-download-multiple-files-folders">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Ftransfer-family-web-apps-download-multiple-files-folders">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[AWS Systems ManagerがAWS Resource Access Managerを介したドキュメントの共有をサポートするようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/systems-manager-sharing-documents-ram/</link>
             <guid>91037fb2ffd29f0ec2b47997ca9c25599c6e5e48</guid>
             <pubDate>Tue, 29 Sep 2026 08:00:00 GMT</pubDate>
             <description><![CDATA[AWS Systems Managerを使用すると、AWSリソースアクセスマネージャー（ AWS RAM ）を使用して、AWS組織全体または特定の組織ユニット（ OU ）とシステムマネージャードキュメント（ SSMドキュメント）を共有できるようになりました。これまでは、書類を公開するか、個々のアカウントIDのリストでのみ共有することができました。ドキュメントを組織またはOUと簡単に共有できるようになりました。Systems Managerは、アカウントが組織またはOUに追加または削除されると、その共有を自動的に最新の状態に保ちます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/systems-manager-sharing-documents-ram/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fsystems-manager-sharing-documents-ram%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon ElastiCache Serverless for Valkeyがパブリックエンドポイントをサポート]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-elasticache-serverless-public-endpoints/</link>
+            <guid>7c4ce40856249a1339583e90a814e5017eccb0ad</guid>
+            <pubDate>Tue, 29 Sep 2026 07:00:00 GMT</pubDate>
+            <description><![CDATA[Amazon ElastiCache Serverless for Valkeyがパブリックエンドポイントをサポートするようになり、VPN、要塞ホスト、またはSSHトンネルを設定することなく、ノートパソコン、サーバーレス機能、またはAWS外で実行されているアプリケーションから直接キャッシュに接続できるようになりました。パブリックエンドポイントを使用すると、ElastiCache Serverlessは、VPCを構成せず、インフラストラクチャをプロビジョニングすることなく、インターネット経由で到達可能な完全に管理されたキャッシュを提供し、1分以内に作成できます。素早くプロトタイプを作成し、接続するために使用します]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-elasticache-serverless-public-endpoints/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-elasticache-serverless-public-endpoints%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Amazon Route 53 Resolver DNS FirewallによるPalo Alto Networks Advanced DNS Securityのサポートが一般公開されました(GA)]]></title>
@@ -146,83 +210,83 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-transcribe%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon EC2 M8i and M8i-flex instances are now available in additional regions]]></title>
+            <title><![CDATA[Amazon EC 2 M 8 iおよびM 8 i - flexインスタンスが追加リージョンで利用可能になりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ec2-m8i-m8i-flex-thf/</link>
             <guid>c808f2540b7f85d076de47e61f7aa8359e3c625a</guid>
             <pubDate>Fri, 25 Sep 2026 18:40:00 GMT</pubDate>
-            <description><![CDATA[Starting today, Amazon EC2 M8i and M8i-flex instances are now available in the AWS European Sovereign Cloud (Germany) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and M8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up t]]></description>
+            <description><![CDATA[本日より、Amazon EC 2 M 8 iおよびM 8 i - flexインスタンスがAWS European Sovereign Cloud （ドイツ）リージョンで利用可能になりました。これらのインスタンスは、AWSでのみ利用可能なカスタムIntel Xeon 6プロセッサを搭載しており、クラウド内の同等のIntelプロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。M 8 iおよびM 8 i - flexインスタンスは、前世代のIntelベースのインスタンスと比較して、最大15 ％のコストパフォーマンスと2.5倍のメモリ帯域幅を提供します。彼らはtを提供します]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ec2-m8i-m8i-flex-thf/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-ec2-m8i-m8i-flex-thf%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon EC2 R8i and R8i-flex instances are now available in additional regions]]></title>
+            <title><![CDATA[Amazon EC 2 R 8 iおよびR 8 i - flexインスタンスが追加の地域で利用可能になりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-r8i-r8i-flex-thf/</link>
             <guid>04dcf919133658edef298a49f6defccb81b02bdd</guid>
             <pubDate>Fri, 25 Sep 2026 18:37:00 GMT</pubDate>
-            <description><![CDATA[Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the AWS European Sovereign Cloud (Germany) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based i]]></description>
+            <description><![CDATA[本日より、Amazon Elastic Compute Cloud （ Amazon EC 2 ） R 8 iおよびR 8 i - flexインスタンスがAWS European Sovereign Cloud （ドイツ）リージョンで利用可能になります。これらのインスタンスは、AWSでのみ利用可能なカスタムIntel Xeon 6プロセッサを搭載しており、クラウド内の同等のIntelプロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。R 8 iおよびR 8 i - flexインスタンスは、前世代のIntelベースのiと比較して、最大15 ％のコストパフォーマンスと2.5倍のメモリ帯域幅を提供します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-r8i-r8i-flex-thf/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fec2-r8i-r8i-flex-thf%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon EC2 C8i and C8i-flex instances are now available in additional regions]]></title>
+            <title><![CDATA[Amazon EC 2 C 8 iおよびC 8 i - flexインスタンスが追加の地域で利用可能になりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/c8i-c8i-flex-thf-september-2026/</link>
             <guid>e67227fcc955df9493d3b5d59a544ba788c39e55</guid>
             <pubDate>Fri, 25 Sep 2026 18:09:00 GMT</pubDate>
-            <description><![CDATA[Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i and C8i-flex instances are available in the AWS European Sovereign Cloud (Germany) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. These C8i and C8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based]]></description>
+            <description><![CDATA[本日より、Amazon Elastic Compute Cloud （ Amazon EC 2 ） C 8 iおよびC 8 i - flexインスタンスがAWS European Sovereign Cloud （ドイツ）リージョンで利用可能になります。これらのインスタンスは、AWSでのみ利用可能なカスタムIntel Xeon 6プロセッサを搭載しており、クラウド内の同等のIntelプロセッサの中で最高のパフォーマンスと最速のメモリ帯域幅を提供します。これらのC 8 iおよびC 8 i - flexインスタンスは、前世代のIntelベースと比較して最大15 ％のコストパフォーマンスと2.5倍のメモリ帯域幅を提供します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/c8i-c8i-flex-thf-september-2026/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fc8i-c8i-flex-thf-september-2026%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[AWS IAM outbound identity federation now supports interface VPC endpoints for OIDC discovery]]></title>
+            <title><![CDATA[AWS IAMアウトバウンドアイデンティティフェデレーションが、OIDC検出のためのインターフェースVPCエンドポイントをサポートするようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-sts-vpc-oidc/</link>
             <guid>7d2e74a72634bbbcd9e7868dd62e992dac0aaf41</guid>
             <pubDate>Fri, 25 Sep 2026 17:54:00 GMT</pubDate>
-            <description><![CDATA[AWS Identity and Access Management (IAM) outbound identity federation now supports Amazon Virtual Private Cloud (VPC) endpoints for the OpenID Connect (OIDC) discovery APIs. You can now access the OIDC discovery metadata and JSON Web Key Set (JWKS) verification key endpoints from within your VPC using AWS PrivateLink, without requiring traffic to traverse the public internet. IAM outbound identity federation eliminates the need to use long-lived credentials when your AWS workloads access externa]]></description>
+            <description><![CDATA[AWS Identity and Access Management (IAM)アウトバウンドアイデンティティフェデレーションは、OpenID Connect (OIDC)検出APIのAmazon Virtual Private Cloud (VPC)エンドポイントをサポートするようになりました。AWS PrivateLinkを使用して、VPC内からOIDC検出メタデータとJSON Web Key Set （ JWKS ）検証キーエンドポイントにアクセスできるようになりました。トラフィックがパブリックインターネットを通過する必要はありません。IAMアウトバウンドアイデンティティフェデレーションにより、AWSワークロードが外部にアクセスするときに長期の資格情報を使用する必要がなくなります]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-sts-vpc-oidc/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-sts-vpc-oidc%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[AWS DataSync launches a monitoring dashboard for tracking task executions across your account]]></title>
+            <title><![CDATA[AWS DataSyncは、アカウント全体でタスクの実行を追跡するための監視ダッシュボードを起動します]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/datasync-monitoring-dashboard</link>
             <guid>db1e59031ade8983550192b3ca98799d24a54b23</guid>
             <pubDate>Fri, 25 Sep 2026 15:24:00 GMT</pubDate>
-            <description><![CDATA[AWS DataSync now provides a monitoring dashboard in the DataSync console that gives you visibility into your data transfers across your account. For each task execution, you can see its status, data and file transfer rates, duration, and the total data and files transferred. You can filter executions by status, task, task mode, execution ID, or start time to focus on a specific set of runs. The dashboard summarizes the filtered results, including the number of successful and failed executions, a]]></description>
+            <description><![CDATA[AWS DataSyncは、DataSyncコンソールに監視ダッシュボードを提供し、アカウント間のデータ転送を可視化できるようになりました。タスクの実行ごとに、そのステータス、データとファイルの転送速度、期間、および転送されたデータとファイルの合計を確認できます。実行をステータス、タスク、タスクモード、実行ID、または開始時間でフィルタリングして、特定の一連の実行に焦点を当てることができます。ダッシュボードは、成功した実行と失敗した実行の数を含む、フィルタリングされた結果を要約します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/datasync-monitoring-dashboard">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fdatasync-monitoring-dashboard">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[AWS Elastic Disaster Recovery now supports AWS Graviton-based source servers]]></title>
+            <title><![CDATA[AWS Elastic Disaster RecoveryがAWS Gravitonベースのソースサーバーをサポートするようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/elastic-disaster-recovery-graviton/</link>
             <guid>e15da02f45884c84d8d8b2706b1704f199fa0abf</guid>
             <pubDate>Fri, 25 Sep 2026 08:00:00 GMT</pubDate>
-            <description><![CDATA[AWS Elastic Disaster Recovery (AWS DRS) now supports disaster recovery for AWS Graviton-based (arm64) source servers. You can now protect and recover your Graviton workloads with the same simple, reliable DRS experience you already use for x86 workloads. As more workloads move to Graviton for its price-performance benefits, they need the same disaster recovery coverage as the rest of your environment. DRS now automatically detects arm64 source servers and recovers them onto Graviton instances, p]]></description>
+            <description><![CDATA[AWS Elastic Disaster Recovery （ AWS DRS ）は、AWS Gravitonベース（ arm 64 ）ソースサーバーの災害復旧をサポートするようになりました。すでにx 86ワークロードに使用しているのと同じシンプルで信頼性の高いDRSエクスペリエンスで、Gravitonワークロードを保護およびリカバリできるようになりました。より多くのワークロードがコストパフォーマンスのメリットのためにGravitonに移行するにつれて、環境の他の部分と同じディザスタリカバリカバリを必要とします。DRSは現在、arm 64ソースサーバーを自動的に検出し、Gravitonインスタンスにリカバリします。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/elastic-disaster-recovery-graviton/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Felastic-disaster-recovery-graviton%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[AWS End User Messaging and Amazon SES now offer AI agent skills for the AWS MCP Server]]></title>
+            <title><![CDATA[AWSエンドユーザーメッセージングとAmazon SESがAWS MCPサーバーのAIエージェントスキルを提供]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-messaging-ses-ai-skills-mcp-server/</link>
             <guid>1bf06c1af0e8bd0d3e604495a485c8c9d6a063cc</guid>
             <pubDate>Fri, 25 Sep 2026 07:00:00 GMT</pubDate>
-            <description><![CDATA[AWS End User Messaging and Amazon SES now publish AI agent skills for the AWS MCP Server, enabling developers to build and send messages by asking their AI coding agent in plain language. Previously, developers had to navigate multiple documentation pages and management console screens to complete messaging tasks. Now, each skill provides your agent with step-by-step, validated guidance for tasks like verifying sending identities, building branded Rich Communication Services (RCS) agents, and se]]></description>
+            <description><![CDATA[AWSエンドユーザーメッセージングとAmazon SESは、AWS MCPサーバーのAIエージェントスキルを公開するようになりました。これにより、開発者はAIコーディングエージェントにわかりやすい言語でメッセージを作成して送信することができます。以前は、開発者はメッセージングタスクを完了するために、複数のドキュメントページと管理コンソール画面をナビゲートする必要がありました。各スキルは、エージェントに、送信IDの確認、ブランド化されたリッチコミュニケーションサービス（ RCS ）エージェントの構築、]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-messaging-ses-ai-skills-mcp-server/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-messaging-ses-ai-skills-mcp-server%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[AWS End User Messaging now supports voice calling on WhatsApp]]></title>
+            <title><![CDATA[AWSエンドユーザーメッセージングがWhatsAppでの音声通話をサポートするようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-voice-calling-whatsapp</link>
             <guid>7246f998c020f697092e24acf2f2120c7f92f230</guid>
             <pubDate>Fri, 25 Sep 2026 07:00:00 GMT</pubDate>
-            <description><![CDATA[AWS End User Messaging now lets businesses place and receive voice calls with their customers directly inside WhatsApp, using the same verified business identity they already use for messaging. With WhatsApp voice calling, a conversation can move seamlessly from a chat thread to a voice call without switching to a separate channel or application, so context is never lost and customers stay in the message thread where the conversation started. Voice calling works in both directions. Customers can]]></description>
+            <description><![CDATA[AWSエンドユーザーメッセージングにより、企業はすでにメッセージングに使用しているのと同じ検証済みのビジネスIDを使用して、WhatsApp内で直接顧客と音声通話を発信および受信できるようになりました。WhatsAppの音声通話を使用すると、別のチャネルやアプリケーションに切り替えることなく、会話をチャットスレッドから音声通話にシームレスに移動できるため、コンテキストが失われることはなく、会話が開始されたメッセージスレッドに顧客がとどまることもありません。音声通話は両方向に機能します。お客様は]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-voice-calling-whatsapp">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-end-user-messaging-voice-calling-whatsapp">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[AWS Billing and Cost Management now provides billing context for your account through a new API]]></title>
+            <title><![CDATA[AWS Billing and Cost Managementは、新しいAPIを介してアカウントの請求コンテキストを提供するようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-billing-and-cost-management-billing-context-api/</link>
             <guid>20573e23dd89521520341cf822043c7f4721fc72</guid>
             <pubDate>Fri, 25 Sep 2026 00:58:00 GMT</pubDate>
-            <description><![CDATA[AWS Billing and Cost Management now offers the ListBillingViewSegments API, which returns the billing context of your account over a time period you specify. You can use the API to retrieve information about how your accounts are positioned in the billing hierarchy, such as management accounts, member accounts, or billing group primary accounts. You can also identify which accounts managed your billing relationship and the rate settings, either billable or pro forma, applied to your cost data. T]]></description>
+            <description><![CDATA[AWS Billing and Cost Managementは、ListBillingViewSegments APIを提供するようになりました。これは、指定した期間にわたってアカウントの請求コンテキストを返します。APIを使用して、管理アカウント、メンバーアカウント、請求グループのプライマリアカウントなど、アカウントが請求階層でどのように配置されているかに関する情報を取得できます。請求関係を管理しているアカウントと、コストデータに適用される請求可能または見積もりの料金設定を特定することもできます。T]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-billing-and-cost-management-billing-context-api/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-billing-and-cost-management-billing-context-api%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Amazon EventBridge relaunches event buses for enterprise scale]]></title>
+            <title><![CDATA[Amazon EventBridge、エンタープライズ規模のイベントバスを再開]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/eventbridge-relaunches-custom-event-buses/</link>
             <guid>3e432e746bb48d177d948ddfe103bf87d14ced21</guid>
             <pubDate>Thu, 24 Sep 2026 21:00:00 GMT</pubDate>
-            <description><![CDATA[Amazon EventBridge relaunches event buses with a new enhanced Custom event bus that lets you build event-driven applications that decouple teams and can scale with your organization. Create a custom event bus, share it across accounts, and now teams can publish and consume events with strict ordering, open event formats, built-in retention, and support for advanced event transformations. The EventBridge Custom event bus is a serverless event broker that enables you to create scalable event-drive]]></description>
+            <description><![CDATA[Amazon EventBridgeは、新しい拡張されたカスタムイベントバスでイベントバスを再起動します。これにより、チームを分離し、組織に合わせて拡張できるイベント駆動型アプリケーションを構築できます。カスタムイベントバスを作成し、アカウント間で共有することで、厳密な順序、オープンなイベントフォーマット、組み込みの保持、高度なイベント変換のサポートにより、チームはイベントを公開して利用できるようになりました。EventBridgeカスタムイベントバスは、スケーラブルなイベントドライブを作成できるサーバーレスイベントブローカーです。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/eventbridge-relaunches-custom-event-buses/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Feventbridge-relaunches-custom-event-buses%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
     </channel>

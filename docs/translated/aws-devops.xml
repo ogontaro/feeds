@@ -10,35 +10,35 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[Building a Slack-powered AI development agent with Kiro CLI and headless authentication]]></title>
+            <title><![CDATA[KIRO CLIとヘッドレス認証を使用したSlack搭載のAI開発エージェントの構築]]></title>
             <link>https://aws.amazon.com/blogs/devops/building-a-slack-powered-ai-development-agent-with-kiro-cli-and-headless-authentication/</link>
             <guid>8e93916645d049b889da3f9cdfafd3d6e56c913b</guid>
             <pubDate>Tue, 29 Sep 2026 16:02:43 GMT</pubDate>
-            <description><![CDATA[Every code review discussion, incident response thread, and standup happens in Slack. But when an engineer needs to analyze a service or debug a failing test, they leave Slack, open a terminal, navigate to the repository, run commands, and paste the output back. That round trip takes 30 seconds for someone who knows exactly where […]]]></description>
+            <description><![CDATA[コードレビューのディスカッション、インシデント対応スレッド、スタンドアップはすべてSlackで行われます。しかし、エンジニアがサービスを分析したり、失敗したテストをデバッグしたりする必要がある場合は、Slackを離れてターミナルを開き、リポジトリに移動してコマンドを実行し、出力を貼り付けます。その往復は、正確な場所を知っている人にとっては30秒かかります[…]]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/building-a-slack-powered-ai-development-agent-with-kiro-cli-and-headless-authentication/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fbuilding-a-slack-powered-ai-development-agent-with-kiro-cli-and-headless-authentication%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Accelerating development workflows with Kiro CLI as a Pre-Commit and Git Hook Agent]]></title>
+            <title><![CDATA[Pre - CommitおよびGit HookエージェントとしてのKiro CLIを使用した開発ワークフローの高速化]]></title>
             <link>https://aws.amazon.com/blogs/devops/accelerating-development-workflows-with-kiro-cli-as-a-pre-commit-and-git-hook-agent/</link>
             <guid>5e554ed6b55c73e2e06aeb8340c12adaaad3ceac</guid>
             <pubDate>Tue, 29 Sep 2026 15:59:26 GMT</pubDate>
-            <description><![CDATA[Code review feedback is most valuable when it arrives early. A security vulnerability caught in a pull request saves hours. The same vulnerability caught in production costs days. But what if you could catch it before the code even leaves the developer’s machine – at the time of git commit? Git hooks run automatically at […]]]></description>
+            <description><![CDATA[コードレビューのフィードバックは、早めに到着したときに最も価値があります。プルリクエストに含まれるセキュリティの脆弱性により、時間が節約されます。生産コストに数日かかったのと同じ脆弱性。しかし、コードが開発者のマシンを離れる前に、gitコミット時にそれをキャッチできたらどうでしょうか？ Gitフックは[…]で自動的に実行されます]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/accelerating-development-workflows-with-kiro-cli-as-a-pre-commit-and-git-hook-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Faccelerating-development-workflows-with-kiro-cli-as-a-pre-commit-and-git-hook-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[How Property Finder automated incident management with AWS DevOps Agent]]></title>
+            <title><![CDATA[AWS DevOps Agentを使用したProperty Finderによるインシデント管理の自動化方法]]></title>
             <link>https://aws.amazon.com/blogs/devops/how-property-finder-automated-incident-management-with-aws-devops-agent/</link>
             <guid>4634947a5fb898c9b3237ba9341bebe5a052bb14</guid>
             <pubDate>Mon, 28 Sep 2026 19:03:40 GMT</pubDate>
-            <description><![CDATA[Property Finder built end-to-end autonomous incident management with AWS DevOps Agent. The full lifecycle, from alert to root cause analysis, Jira ticket, on-call page, and an auto-remediation pull request, completes in 14 minutes, down from 2 to 3 days for detection alone.]]></description>
+            <description><![CDATA[Property Finderは、AWS DevOps Agentを使用してエンドツーエンドの自律インシデント管理を構築しました。アラートから根本原因分析、JIRAチケット、オンコールページ、自動修復のプルリクエストまでの完全なライフサイクルは14分で完了し、検出だけで2日から3日に短縮されます。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/how-property-finder-automated-incident-management-with-aws-devops-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fhow-property-finder-automated-incident-management-with-aws-devops-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Audit trails for autonomous agents with AWS DevOps Agent]]></title>
+            <title><![CDATA[AWS DevOps Agentを使用した自律型エージェントの監査証跡]]></title>
             <link>https://aws.amazon.com/blogs/devops/audit-trails-for-autonomous-agents-with-aws-devops-agent/</link>
             <guid>03fdc4a21dc4fbf2194058d42205106fe1c03866</guid>
             <pubDate>Mon, 28 Sep 2026 16:07:26 GMT</pubDate>
-            <description><![CDATA[AWS DevOps Agent investigates production incidents and proposes or applies fixes on your behalf, raising two questions for every operation and security review: what did the agent do, and how do you understand its impact? Learn how to build a durable, low-maintenance audit trail using the agent journal, Amazon EventBridge lifecycle events, and AWS CloudTrail.]]></description>
+            <description><![CDATA[AWS DevOpsエージェントは、運用インシデントを調査し、お客様に代わって修正を提案または適用し、すべての運用とセキュリティレビューに2つの質問を提起します。エージェントが何をしたのか、その影響をどのように理解していますか？エージェントジャーナル、Amazon EventBridgeライフサイクルイベント、AWS CloudTrailを使用して、耐久性のある低メンテナンスの監査証跡を構築する方法について説明します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/audit-trails-for-autonomous-agents-with-aws-devops-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Faudit-trails-for-autonomous-agents-with-aws-devops-agent%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

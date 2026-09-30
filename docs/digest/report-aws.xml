@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 29 Sep 2026 01:37:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 01:14:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-09-30]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-30.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-30.html</guid>
+            <pubDate>Wed, 30 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>OpenAI を搭載した Amazon Bedrock Managed Agents がプレビュー開始</h3>
+<p>AWS と OpenAI が共同開発した Bedrock ネイティブのエージェント基盤で、すでに使っている ID・権限・ガバナンスをそのまま流用し、AWS 内だけで動く OpenAI モデル上のエージェントを組める。状態の保持、ツールの選択と実行、コード実行、複数ステップにわたる作業の調整までを基盤側が引き受けるため、エージェントの権限境界や実行の隔離を自前で作り込むべきかどうかの判断材料になる。エージェントを基盤の利用者として扱う構成を考えるうえで、プレビューの段階で触っておく価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fbedrock-managed-agents-preview%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenAI GPT-6.1 Sol が Amazon Bedrock で一般提供</h3>
+<p>GPT-6 Sol の後継が Bedrock で一般提供になり、エージェント的なコーディングやコンピューター操作、繰り返し実行されるプロフェッショナル業務で強い推論を出すとされる。Bedrock の推論エンジン経由でそのまま使えるので、エージェント用途で載せるモデルの比較対象がまた一つ増えたことになる。同日に AWS の ML ブログでも解説が出ており、既存の構成を置き換えるかを判断する材料が揃っている。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-1-sol-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fopenai-gpt-6-1-sol-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock の Grok 4.7 を AWS CLI から試す</h3>
+<p>Bedrock Runtime で Grok 4.7 が呼べるようになり、Grok 4.6 からは model-id を差し替えるだけで移行できる。Converse API を IAM 認証だけで叩け、Structured outputs と reasoning effort も指定できるので、Bedrock をモデルの共通窓口として使っているなら選択肢が広がる。日本語の記事なので、試す手順をそのまま追える。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/grok-47-bedrock-runtime/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>コンデナストが Amazon Bedrock でマルチモーダル動画検索を構築</h3>
+<p>14 万本を超える動画ライブラリを、タイトルと説明だけを頼りに 1 件あたり平均 250 分かけて探していたのを、Bedrock と OpenSearch のマルチモーダル検索で 2 分未満に短縮した事例。テキスト以外の資産を RAG で扱うとき、検索対象をどう作り、効果をどこで測るかの現実的なラインが見える。社内の動画・画像ナレッジ検索を設計するときの参考になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-conde-nast-built-multimodal-video-discovery-with-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-conde-nast-built-multimodal-video-discovery-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Quick と Bedrock AgentCore で契約インテリジェンス基盤を構築</h3>
+<p>数百のベンダー契約から項目を抽出・検証するエージェントを Bedrock AgentCore で組み、集約した問いには Amazon Quick の分析で答える構成。1 件ずつの RAG チャットでは答えられない「ポートフォリオ全体への問い」を、どこでどう分担させるかの設計例になっている。エージェントに何をどこまで任せるかを決めるときの材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-an-ai-powered-contract-intelligence-platform-with-amazon-quick-and-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-an-ai-powered-contract-intelligence-platform-with-amazon-quick-and-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-09-29]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-29.html</link>

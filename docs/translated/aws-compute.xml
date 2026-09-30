@@ -10,43 +10,43 @@
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
         <item>
-            <title><![CDATA[Implementing customer managed keys for AWS Lambda durable functions with Terraform]]></title>
+            <title><![CDATA[Terraformを使用したAWS Lambda耐久機能の顧客管理キーの実装]]></title>
             <link>https://aws.amazon.com/blogs/compute/implementing-customer-managed-keys-for-aws-lambda-durable-functions-with-terraform/</link>
             <guid>db91eabc9cfca26ee3fbbed72ac7160e425845ca</guid>
             <pubDate>Tue, 29 Sep 2026 17:14:00 GMT</pubDate>
-            <description><![CDATA[Lambda durable functions checkpoint execution state to durable storage, and for regulated payment workloads that data is sensitive. This post shows how to configure a customer managed key in AWS KMS to encrypt durable execution data, define a least-privilege key policy, and verify encryption through AWS CloudTrail, all deployed with Terraform.]]></description>
+            <description><![CDATA[耐久性のあるストレージへのラムダ耐久性のある機能チェックポイントの実行状態、および規制された支払いワークロードの場合、データは機密性があります。この記事では、AWS KMSで顧客管理キーを構成して、耐久性のある実行データを暗号化し、最小特権キーポリシーを定義し、AWS CloudTrailを介して暗号化を検証する方法を説明します。これらはすべてTerraformで展開されています。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/compute/implementing-customer-managed-keys-for-aws-lambda-durable-functions-with-terraform/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fimplementing-customer-managed-keys-for-aws-lambda-durable-functions-with-terraform%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Simplify AMI discovery with Amazon EC2 and SSM Parameter Store]]></title>
+            <title><![CDATA[Amazon EC 2とSSMパラメータストアでAMI検出を簡素化]]></title>
             <link>https://aws.amazon.com/blogs/compute/simplify-ami-discovery-with-amazon-ec2-and-ssm-parameter-store/</link>
             <guid>a24666aa6abc73d7f0d54d34b2ea4d898192c856</guid>
             <pubDate>Tue, 29 Sep 2026 16:14:17 GMT</pubDate>
-            <description><![CDATA[Managing Amazon EC2 AMIs at scale means constantly mapping AMI IDs to their AWS Systems Manager parameter paths by hand. A recent enhancement to the DescribeImages API returns the associated SSM parameter directly. This post shows how to use it across the AWS CLI, AWS CloudFormation, Terraform, and Auto Scaling launch templates.]]></description>
+            <description><![CDATA[Amazon EC 2 AMIを大規模に管理するには、AMI IDをAWS Systems Managerパラメータパスに手動で常にマッピングする必要があります。DescribeImages APIの最近の拡張は、関連付けられたSSMパラメーターを直接返します。この記事では、AWS CLI、AWS CloudFormation、Terraform、Auto Scalingの起動テンプレートで使用する方法を説明します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/compute/simplify-ami-discovery-with-amazon-ec2-and-ssm-parameter-store/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fsimplify-ami-discovery-with-amazon-ec2-and-ssm-parameter-store%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Frozen package management for air-gapped RHEL-family AMIs]]></title>
+            <title><![CDATA[エアギャップされたRHELファミリーAMIのための凍結パッケージ管理]]></title>
             <link>https://aws.amazon.com/blogs/compute/frozen-package-management-for-air-gapped-rhel-family-amis/</link>
             <guid>34d380583160feea2d919a68f65541555032776f</guid>
             <pubDate>Tue, 29 Sep 2026 15:55:07 GMT</pubDate>
-            <description><![CDATA[Learn a serverless, two-account pattern for running regulated, air-gapped RHEL-family fleets on AWS. It separates connected package ingestion from the air-gapped workload, adds explicit human approval for package changes, and keeps EC2 Image Builder AMIs and Patch Manager on one frozen Amazon S3 repository snapshot.]]></description>
+            <description><![CDATA[AWS上で規制されたエアギャップのRHELファミリーフリートを実行するためのサーバーレスの2つのアカウントパターンを学びます。接続されたパッケージの取り込みをエアギャップされたワークロードから分離し、パッケージの変更に対する明示的な人間の承認を追加し、EC 2イメージビルダーAMIとパッチマネージャーを1つの凍結されたAmazon S 3リポジトリスナップショットに保持します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/compute/frozen-package-management-for-air-gapped-rhel-family-amis/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Ffrozen-package-management-for-air-gapped-rhel-family-amis%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Building event-driven applications at scale with Amazon EventBridge]]></title>
+            <title><![CDATA[Amazon EventBridgeでイベント駆動型アプリケーションを大規模に構築]]></title>
             <link>https://aws.amazon.com/blogs/compute/building-event-driven-applications-at-scale-with-amazon-eventbridge/</link>
             <guid>752597509722bb2a043058e1df06ec9ac2c7e4cd</guid>
             <pubDate>Mon, 28 Sep 2026 22:38:57 GMT</pubDate>
-            <description><![CDATA[Amazon EventBridge relaunched the Custom event bus so a platform team can share one governed bus across the organization while application teams publish and subscribe from their own accounts. See how retention, ordering, open formats, transformation, and direct target delivery change what one bus can carry.]]></description>
+            <description><![CDATA[Amazon EventBridgeはカスタムイベントバスを再開しました。これにより、プラットフォームチームは組織全体で1つのガバナンスバスを共有し、アプリケーションチームは自分のアカウントからパブリッシュとサブスクライブを行うことができます。リテンション、注文、オープンフォーマット、トランスフォーメーション、直接的なターゲットデリバリーが、1台のバスが運ぶことができるものをどのように変更するかをご覧ください。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/compute/building-event-driven-applications-at-scale-with-amazon-eventbridge/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fbuilding-event-driven-applications-at-scale-with-amazon-eventbridge%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Improving Lambda function latency with scalable network bandwidth]]></title>
+            <title><![CDATA[スケーラブルなネットワーク帯域幅でラムダ関数のレイテンシを改善]]></title>
             <link>https://aws.amazon.com/blogs/compute/improving-lambda-function-latency-with-scalable-network-bandwidth/</link>
             <guid>716ba562f3f1d920bd3aa3997c7f825fd79c5e7f</guid>
             <pubDate>Mon, 28 Sep 2026 21:17:09 GMT</pubDate>
-            <description><![CDATA[AWS Lambda now supports scalable network bandwidth for functions with 2,048 MB of memory or more running outside a VPC. Sustained throughput scales from 625 Mbps up to 3,000 Mbps at 10,240 MB, reducing execution times and per-invocation costs for latency-sensitive data processing workloads.]]></description>
+            <description><![CDATA[AWS Lambdaは、VPCの外部で2,048 MB以上のメモリが実行されている機能に対して、スケーラブルなネットワーク帯域幅をサポートするようになりました。10,240 MBで625 Mbpsから3,000 Mbpsまでの持続的なスループット拡張により、レイテンシに敏感なデータ処理ワークロードの実行時間と呼び出し単位のコストを削減します。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/compute/improving-lambda-function-latency-with-scalable-network-bandwidth/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fimproving-lambda-function-latency-with-scalable-network-bandwidth%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>

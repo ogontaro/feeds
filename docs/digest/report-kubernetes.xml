@@ -4,11 +4,45 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 29 Sep 2026 01:36:28 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 01:13:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-09-30]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-30.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-30.html</guid>
+            <pubDate>Wed, 30 Sep 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>Kubernetes Operator が「内側からの攻撃面」になる — Unit 42 の OperTraitors 分析</h3>
+<p>Operator はクラスタの自動化を担う一方で、強い権限と外部から届く入力を同時に抱えるため、乗っ取られると防御を内側から無効化しうる。Unit 42 は、こうした Operator 経由でセキュリティ姿勢が崩れる経路を、エージェント型 AI を使う Operator のリスクまで含めて整理している。エージェントを基盤の利用者として扱うなら、Operator にどこまでの権限を渡すかは設計判断として避けて通れない。</p>
+<p class="links"><a href="https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Funit42.paloaltonetworks.com%2Fagentic-ai-kubernetes-operator-risks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Grafana のデータソースプラグインが本体リポジトリから分離へ</h3>
+<p>Grafana 本体のリポジトリで一緒に管理されていた各種データソースプラグインを、個別リポジトリへ切り出す作業が進行中。目的は本体とは独立したリリースサイクルにすることで、セキュリティ修正などを本体のリリースを待たずに届けられるようにすること。Grafana を可観測性の入口として使っている構成では、プラグインの更新が本体アップグレードから切り離される意味は小さくない。</p>
+<ul>
+<li><a href="https://x.com/kahirokunn/status/2104925419841708365">@kahirokunn のポスト</a></li>
+<li><a href="https://medium.com/grafana-labs/how-and-why-were-bringing-data-sources-out-of-the-grafana-monolith-775f58eaebc3">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmedium.com%2Fgrafana-labs%2Fhow-and-why-were-bringing-data-sources-out-of-the-grafana-monolith-775f58eaebc3">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>リソースの所有権を、担当者の最終日より前に引き継ぐ</h3>
+<p>人が抜けた後に残る「持ち主のいないリソース」は、コストの無駄とセキュリティの穴の両方になる。記事は、所有権が古くなった瞬間にそれを検知するための戦略を示しており、退職や異動のたびに手作業で棚卸しする運用からの脱却が主題になっている。オーナー情報をどこに持たせて鮮度をどう保つかは、カタログを運用する側の設計判断に直結する。</p>
+<p class="links"><a href="https://thenewstack.io/reassign-cloud-resource-ownership/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Freassign-cloud-resource-ownership%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Fluentd の LTS パッケージ v6.0.5、複数の脆弱性を修正</h3>
+<p>LTS 版の Fluent Package v6.0.5 がリリースされ、Fluentd v1.19.3 以降に報告された複数の脆弱性が修正された(同梱の Fluentd は v1.19.4)。ログ収集は Kubernetes では事実上すべてのノードに置かれる基盤なので、影響範囲は広い。該当バージョンを使っているなら更新対象になる。</p>
+<ul>
+<li><a href="https://x.com/watson1978/status/2104814680665682254">@watson1978 のポスト</a></li>
+<li><a href="https://www.clear-code.com/blog/2026/9/29/fluent-package-v6.0.5.html">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-09-29]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-29.html</link>
