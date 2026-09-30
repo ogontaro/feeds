@@ -4,11 +4,27 @@
         <title>AWS Containers Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS Containers Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Mon, 28 Sep 2026 16:01:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 15:34:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon Bedrock AgentCoreを使用したAI搭載のEKS移行評価]]></title>
+            <link>https://aws.amazon.com/blogs/containers/ai-powered-eks-migration-assessment-with-amazon-bedrock-agentcore/</link>
+            <guid>12a58a7a068f094b49047ce87c62a07a3fe26476</guid>
+            <pubDate>Wed, 30 Sep 2026 15:34:19 GMT</pubDate>
+            <description><![CDATA[Amazon Bedrock AgentCoreとStrands Agents SDKを使用してAI搭載の移行評価エージェントを構築する方法について説明します。エージェントは、アプリケーションのソースコードとコンテナアーティファクトを読み取り、Amazon EKS移行の準備状況をスコアリングし、重大度でブロッカーを識別し、ターゲットアーキテクチャの推奨事項を含む実行可能な移行計画を生成します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/ai-powered-eks-migration-assessment-with-amazon-bedrock-agentcore/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fai-powered-eks-migration-assessment-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[アテナヘルスがAmazon EKSハイブリッドノードでヘルスケアワークロードをモダナイズした方法]]></title>
+            <link>https://aws.amazon.com/blogs/containers/how-athenahealth-modernized-healthcare-workloads-with-amazon-eks-hybrid-nodes/</link>
+            <guid>0403ab09acbce05441f2753bca869284bf973f25</guid>
+            <pubDate>Wed, 30 Sep 2026 15:16:52 GMT</pubDate>
+            <description><![CDATA[AthenahealthがAmazon EKSハイブリッドノードを使用して、レイテンシの影響を受けやすいオンプレミスのヘルスケアワークロードをモダナイズし、応答時間を半分に短縮し、ハードウェアと運用コストを50 ％削減し、HITRUSTとデータレジデンシー要件を満たしながら、データセンターとクラウド全体で単一のKubernetes運用モデルを維持する方法を学びます。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/containers/how-athenahealth-modernized-healthcare-workloads-with-amazon-eks-hybrid-nodes/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fhow-athenahealth-modernized-healthcare-workloads-with-amazon-eks-hybrid-nodes%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetesデスケジューラーを使用してAmazon EKSのPod配布ドリフトを修正する]]></title>
             <link>https://aws.amazon.com/blogs/containers/fix-pod-distribution-drift-in-amazon-eks-with-the-kubernetes-descheduler/</link>

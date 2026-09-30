@@ -4,11 +4,19 @@
         <title>AWS What's New — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS What's New の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 21:10:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 16:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[CloudTrailイベントカバレッジでAWSデータプレーンオペレーションの盲点を発見]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cloudtrail-event-coverage/</link>
+            <guid>d14cb60e00d45c92db1d8567596546c7d029c846</guid>
+            <pubDate>Wed, 30 Sep 2026 16:00:00 GMT</pubDate>
+            <description><![CDATA[AWS CloudTrailは、新しいコンソールエクスペリエンスであるイベントカバレッジを導入し、顧客にアカウントおよび組織レベルでのデータプレーンオペレーションカバレッジを可視化します。これで、環境内でデータイベントロギングが有効になっているAWSサービスとリソースタイプと、有効になっていないAWSサービスとリソースタイプを確認できます。これにより、組織内のアカウントを手動でスキャンすることなく、ログポスチャのギャップをすばやく特定できます。データイベントを使用すると、AWSサービスでのデータプレーンの操作を追跡できます。例：]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cloudtrail-event-coverage/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-cloudtrail-event-coverage%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[OpenAIを搭載したAmazon Bedrock Managed Agentsがプレビューで利用できるようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/</link>

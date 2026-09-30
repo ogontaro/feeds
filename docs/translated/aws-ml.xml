@@ -4,11 +4,27 @@
         <title>AWS Machine Learning Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS Machine Learning Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 01:13:14 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 15:37:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon Bedrockナレッジベースを使用した自然言語でのクレームのクエリ]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/query-claims-in-natural-language-with-amazon-bedrock-knowledge-bases/</link>
+            <guid>6f62e0665479ef5d4ffddb480328d07ce719281b</guid>
+            <pubDate>Wed, 30 Sep 2026 15:37:15 GMT</pubDate>
+            <description><![CDATA[この技術的なハウツーは、Amazon Bedrockナレッジベース上に会話型クレームアシスタントを構築し、自然言語の質問に引用で回答します。Amazon S 3からのクレームドキュメントの取り込み、AgenticRetrieveStream APIによるクエリ、マルチターンフォローアップ、メタデータフィルタ、コンテキストアースガードレールについて説明します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/query-claims-in-natural-language-with-amazon-bedrock-knowledge-bases/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fquery-claims-in-natural-language-with-amazon-bedrock-knowledge-bases%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Bedrock AgentCoreランタイムインスタンスでマルチエージェント音楽制作パイプラインを構築する]]></title>
+            <link>https://aws.amazon.com/blogs/machine-learning/build-a-multi-agent-music-production-pipeline-on-amazon-bedrock-agentcore-runtime-instances/</link>
+            <guid>37f0383beadfcb1c0bb959bcb5b53ec408457b0c</guid>
+            <pubDate>Wed, 30 Sep 2026 15:21:57 GMT</pubDate>
+            <description><![CDATA[Amazon Bedrock AgentCore Runtime Instancesは、マルチエージェントワークフローを提供します。AWSは、GPU、永続的なボリューム、および複数日のセッションを備えたEC 2インフラストラクチャを管理します。この記事では、エージェントが1つのGPUインスタンス上にコロケーションし、ファイルシステムを共有し、互いに手作業で完成したトラックを生成する3エージェント音楽制作パイプラインを展開します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/machine-learning/build-a-multi-agent-music-production-pipeline-on-amazon-bedrock-agentcore-runtime-instances/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-multi-agent-music-production-pipeline-on-amazon-bedrock-agentcore-runtime-instances%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Amazon Bedrockがクロードモデルの利用可能性をインドの国内推論に拡大]]></title>
             <link>https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/</link>

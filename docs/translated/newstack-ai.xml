@@ -4,11 +4,19 @@
         <title>The New Stack — AI — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The New Stack — AI の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 10:36:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 14:46:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Microsoft Fabricは、AIエージェントがビジネスの仕組みを学ぶ場所です]]></title>
+            <link>https://thenewstack.io/microsoft-fabric-agent-context/</link>
+            <guid>https://thenewstack.io/?p=22838865</guid>
+            <pubDate>Wed, 30 Sep 2026 14:46:32 GMT</pubDate>
+            <description><![CDATA[マイクロソフトは、統合されたデータプラットフォームであるFabricを、企業エージェントが企業の仕組みを学ぶ場所に変えています。Microsoft Fabricは、AIエージェントがビジネスの仕組みを学ぶ場所であるかどうかが、New Stackに最初に登場しました。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://thenewstack.io/microsoft-fabric-agent-context/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fthenewstack.io%2Fmicrosoft-fabric-agent-context%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[「エージェントのためのKubernetesと考えてください」： OpenClawはNvidiaとRed Hatを搭載した企業に登場します]]></title>
             <link>https://thenewstack.io/openclaw-enterprise-kubernetes-agents/</link>

@@ -4,11 +4,19 @@
         <title>CNCF Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>CNCF Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 11:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 15:24:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ArgoCon North America 2026 ： ArgoコミュニティがCD 4.0に期待すること]]></title>
+            <link>https://www.cncf.io/blog/2026/09/30/argocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0/</link>
+            <guid>https://www.cncf.io/?p=175502</guid>
+            <pubDate>Wed, 30 Sep 2026 15:24:47 GMT</pubDate>
+            <description><![CDATA[Argoプロジェクト全体の作業は加速しており、採用が増え、新しいユースケースが生まれ、コミュニティ全体に貢献するメンテナが増えています。コミュニティはまた、Argo CD 4.0のビジョンプロセスを開始しており、ArgoConを機会にしています...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/09/30/argocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F30%2Fargocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[40秒から10秒未満： Kubernetes上のOpenTelemetry、Apache Kafka、Apache Flinkでのインシデント検出の再構築]]></title>
             <link>https://www.cncf.io/blog/2026/09/30/from-40-seconds-to-under-10-rebuilding-incident-detection-on-opentelemetry-apache-kafka-and-apache-flink-on-kubernetes/</link>

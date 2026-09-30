@@ -4,11 +4,19 @@
         <title>AWS DevOps Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS DevOps Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Tue, 29 Sep 2026 16:02:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 15:43:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[KIROによるAS/400ビジネスルール抽出の加速：ステップバイステップガイド]]></title>
+            <link>https://aws.amazon.com/blogs/devops/accelerating-as-400-business-rule-extraction-with-kiro-step-by-step-guide/</link>
+            <guid>56714770e08a0366e6a4171cb49d429eda278e26</guid>
+            <pubDate>Wed, 30 Sep 2026 15:43:51 GMT</pubDate>
+            <description><![CDATA[AS/400ビジネスルールの抽出には、数か月の手作業が必要なくなりました。このガイドでは、エージェント型のAIを活用した開発環境であるKIROを使用して、AS/400 RPGおよびCOBOLプログラムからビジネスルールを抽出し、技術仕様を生成し、数か月ではなく数日でモダナイゼーションに対応したドキュメントを作成する方法を説明します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/devops/accelerating-as-400-business-rule-extraction-with-kiro-step-by-step-guide/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Faccelerating-as-400-business-rule-extraction-with-kiro-step-by-step-guide%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[KIRO CLIとヘッドレス認証を使用したSlack搭載のAI開発エージェントの構築]]></title>
             <link>https://aws.amazon.com/blogs/devops/building-a-slack-powered-ai-development-agent-with-kiro-cli-and-headless-authentication/</link>

@@ -4,11 +4,35 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 09:49:50 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 13:07:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[攻撃者は、ソースコードを超えてサプライチェーンへの侵入を拡大するために開発者の資格情報を標的としています- gbhackers.com]]></title>
+            <link>https://gbhackers.com/supply-chain-intrusions/</link>
+            <guid>CBMiWkFVX3lxTFBLQzZJRG9USC1SU0t0c3ZFLVNUbVd5OGZLbENjSThYUXNyUzYtX0NIcHhoRGotdmlPWUxqS2FYLXZnUlFzUzU2V2FuSFIzbF9CMmJaRmZWZHZtUdIBX0FVX3lxTE5kdEgxODNqR2JHMmdMRkFmTFEyQk0xQUN4aS1oaTlGNTA0a0d0VTFQV3JjZG1BRkxoZm1kcFY0eFpvZ3F3ZElXOG80aVdtUkZPaGRVNndLaV9kWTJicjVz</guid>
+            <pubDate>Wed, 30 Sep 2026 13:07:30 GMT</pubDate>
+            <description><![CDATA[攻撃者は、ソースコードを超えてサプライチェーンへの侵入を拡大するために開発者の資格情報を標的としていますgbhackers.com]]></description>
+            <content:encoded><![CDATA[<p><a href="https://gbhackers.com/supply-chain-intrusions/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgbhackers.com%2Fsupply-chain-intrusions%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ennoble Care、在宅医療ネットワーク全体でAI推論を強化するためにCoreWeaveを選択-ビジネスワイヤ]]></title>
+            <link>https://www.businesswire.com/news/home/20260930542844/en/Ennoble-Care-Selects-CoreWeave-to-Power-AI-Inference-Across-Its-Home-Based-Care-Network</link>
+            <guid>CBMi3AFBVV95cUxORHZ2Z3lqVnRUaDhRdVV3VDV6VVZUeTlYMXozVmlFT3pWVVB1SUx0enZ6UEowMkFtSENCU1lqU0dvUG5MOW9IMVNmdjlPWlcyMWhQMEE2T256VTc3RDdLTEhmQVlJNEJjNnhBOXRTSGU5WEVrWWdYamxuNW5KdlhnV0xnTjczVEw3S0hPUm5femFiM05jbmZ0aXBsbEVVSVdBLUFUZHVkM2h3bGRnVFRCZjNEWnMzV2U2NVA3czNFUmJaR25RbW8xT1lTNXNlMTFzTzgxLWxWQWdOTXpP</guid>
+            <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
+            <description><![CDATA[Ennoble Care、在宅医療ネットワーク全体でAI推論を強化するためにCoreWeaveを選択]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.businesswire.com/news/home/20260930542844/en/Ennoble-Care-Selects-CoreWeave-to-Power-AI-Inference-Across-Its-Home-Based-Care-Network">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.businesswire.com%2Fnews%2Fhome%2F20260930542844%2Fen%2FEnnoble-Care-Selects-CoreWeave-to-Power-AI-Inference-Across-Its-Home-Based-Care-Network">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[ハッカーが1つの侵害されたアカウントをAzure DevOpsとKubernetesへのアクセスに変える- CyberSecurityNews]]></title>
+            <link>https://cybersecuritynews.com/hackers-turn-one-compromised-account/amp/</link>
+            <guid>CBMie0FVX3lxTFBxRFlBVWlha3lpc1dXOVE2RVVrUmRyd0tCRGxrWWw1VEdYd1FoRENUSzdPZHZob1RZQVRucTJrSXFaN3g0eVVzWHNXN2FrdmdZanJoWldUTF9sYnVSVFc4TFBNM3JyeE1LcndFNzRZS2NzRzd2V01ONGZTY9IBe0FVX3lxTFBxRFlBVWlha3lpc1dXOVE2RVVrUmRyd0tCRGxrWWw1VEdYd1FoRENUSzdPZHZob1RZQVRucTJrSXFaN3g0eVVzWHNXN2FrdmdZanJoWldUTF9sYnVSVFc4TFBNM3JyeE1LcndFNzRZS2NzRzd2V01ONGZTYw</guid>
+            <pubDate>Wed, 30 Sep 2026 11:15:54 GMT</pubDate>
+            <description><![CDATA[ハッカーが1つの侵害されたアカウントをAzure DevOpsとKubernetes CyberSecurityNewsへのアクセスに変える]]></description>
+            <content:encoded><![CDATA[<p><a href="https://cybersecuritynews.com/hackers-turn-one-compromised-account/amp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fcybersecuritynews.com%2Fhackers-turn-one-compromised-account%2Famp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[RSA、AIエージェントとMCPサーバーを保護するエージェントIDプラットフォームを発表- CyberSecurityNews]]></title>
             <link>https://cybersecuritynews.com/rsa-agent-id/amp/</link>
@@ -24,6 +48,14 @@
             <pubDate>Wed, 30 Sep 2026 09:47:32 GMT</pubDate>
             <description><![CDATA[ハッカーがCitrix NetScaler Zero - Dayを悪用してルートアクセスを取得し、Webシェルを展開するgbhackers.com]]></description>
             <content:encoded><![CDATA[<p><a href="https://gbhackers.com/hackers-exploit-citrix-netscaler-zero-day/amp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgbhackers.com%2Fhackers-exploit-citrix-netscaler-zero-day%2Famp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[攻撃者はPaperCut RCEチェーンを使用してトークンを盗み、ドメインコントローラーにアクセスします- gbhackers.com]]></title>
+            <link>https://gbhackers.com/papercut-rce-chain/amp/</link>
+            <guid>CBMiWEFVX3lxTE5XSTVjZC1GTUV5LUREc2xqX3hlNmhzTk9uWXZ1eGVHWHplSlhFUUh6M1NjcFF0SzVrelJyU2d6OVJpT0M4WjFlTWtMa2ZyNXFCck1zaVNFdUbSAVhBVV95cUxOV0k1Y2QtRk1FeS1ERHNsal94ZTZoc05Pbll2dXhlR1h6ZUpYRVFIejNTY3BRdEs1a3pSclNnejlSaU9DOFoxZU1rTGtmcjVxQnJNc2lTRXVG</guid>
+            <pubDate>Wed, 30 Sep 2026 09:33:17 GMT</pubDate>
+            <description><![CDATA[攻撃者はPaperCut RCEチェーンを使用してトークンを盗み、ドメインコントローラーgbhackers.comにアクセスします]]></description>
+            <content:encoded><![CDATA[<p><a href="https://gbhackers.com/papercut-rce-chain/amp/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgbhackers.com%2Fpapercut-rce-chain%2Famp%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[RATHat Androidマルウェアは、Gemini AIを使用して、通常のアプリの権限外で電話を制御します- CyberSecurityNews]]></title>

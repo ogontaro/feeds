@@ -4,11 +4,19 @@
         <title>The Register — AI/ML — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>The Register — AI/ML の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Fri, 18 Sep 2026 14:25:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 16:03:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Google MeetコールにAIアバターを送信して、同僚にあなたがどれだけ気にかけているかを示しましょう]]></title>
+            <link>https://www.theregister.com/ai-and-ml/2026/09/30/show-colleagues-how-much-you-care-by-sending-an-ai-avatar-to-your-google-meet-call/5300205</link>
+            <guid>https://www.theregister.com/a/5300205</guid>
+            <pubDate>Wed, 30 Sep 2026 16:03:07 GMT</pubDate>
+            <description><![CDATA[MeetTwinsはまだ開発中ですが、より多くの時間を無駄にする電話が単なるメールであることを証明することが目標であれば、それは天才的なアイデアです]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.theregister.com/ai-and-ml/2026/09/30/show-colleagues-how-much-you-care-by-sending-an-ai-avatar-to-your-google-meet-call/5300205">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F09%2F30%2Fshow-colleagues-how-much-you-care-by-sending-an-ai-avatar-to-your-google-meet-call%2F5300205">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[KDEが30歳になり、誰かがAIネイティブのデスクトップ提案を持ってきました]]></title>
             <link>https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282</link>
