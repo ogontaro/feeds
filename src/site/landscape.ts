@@ -1,5 +1,5 @@
 import { mkdir, rm } from "node:fs/promises";
-import { pageShell } from "../lib/html.ts";
+import { escapeHtml, pageShell } from "../lib/html.ts";
 import {
   type Landscape,
   type LandscapeInterests,
@@ -15,7 +15,6 @@ import {
   slugOf,
 } from "../lib/landscape.ts";
 import { DIGEST_DIR, LANDSCAPE_HTML, LANDSCAPE_YAML } from "../lib/paths.ts";
-import { escapeHtml } from "../lib/urls.ts";
 
 /** 項目の詳細ページ置き場。LANDSCAPE_HTML(docs/digest/landscape.html)の隣 */
 const DETAIL_DIR = `${DIGEST_DIR}/landscape`;

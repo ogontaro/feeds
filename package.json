@@ -13,7 +13,6 @@
     "format": "biome check --write ."
   },
   "dependencies": {
-    "fast-xml-parser": "^4.4.1",
     "feed": "^4.2.2",
     "marked": "^12.0.2",
     "rss-parser": "^3.13.0",

@@ -1,16 +1,14 @@
-import { appendFile } from "node:fs/promises";
 import { parse } from "yaml";
-import { ADOPTION_LOG, INTERESTS_YAML, SOURCE_YAML } from "./paths.ts";
-import type { Domain, DomainInterests, Feed, FeedsConfig, InterestsConfig } from "./types.ts";
+import { DOMAIN_LABEL } from "./labels.ts";
+import { INTERESTS_YAML, SOURCE_YAML } from "./paths.ts";
+import type { Domain, DomainInterests, Feed, FeedsConfig, InterestsConfig, Kind } from "./types.ts";
 
-export const CONTENT_DOMAINS: Domain[] = ["claude", "kubernetes", "aws"];
+// 日次レポートは content フィードを持つドメイン単位。X タイムラインは独立したレポートを持たず、各ドメインの追加入力になる。
+export const REPORT_DOMAINS: Domain[] = ["claude", "kubernetes", "aws"];
 // devtools はリリースのみ（購読は手元ツールの GitHub releases で、日次レポート入力は無い）。
 export const RELEASE_DOMAINS: Domain[] = ["claude", "kubernetes", "aws", "devtools"];
-// 日次レポートは content ドメイン単位。X タイムラインは独立したレポートを持たず、各ドメインの追加入力になる。
-export const REPORT_DOMAINS: Domain[] = CONTENT_DOMAINS;
 
-const DOMAINS = new Set<string>(["claude", "kubernetes", "aws", "devtools"]);
-const KINDS = new Set<string>(["content", "release"]);
+const KINDS: Kind[] = ["content", "release"];
 
 export async function loadFeeds(): Promise<Feed[]> {
   const raw = await Bun.file(SOURCE_YAML).text();
@@ -20,9 +18,9 @@ export async function loadFeeds(): Promise<Feed[]> {
   for (const f of feeds) {
     if (!f.url || !f.name)
       throw new Error(`source.yaml: entry missing url or name: ${JSON.stringify(f)}`);
-    if (!DOMAINS.has(f.domain))
+    if (!(f.domain in DOMAIN_LABEL))
       throw new Error(`source.yaml: bad domain "${f.domain}" for ${f.name}`);
-    if (!KINDS.has(f.kind)) throw new Error(`source.yaml: bad kind "${f.kind}" for ${f.name}`);
+    if (!KINDS.includes(f.kind)) throw new Error(`source.yaml: bad kind "${f.kind}" for ${f.name}`);
     f.enabled ??= true;
   }
   return feeds;
@@ -34,18 +32,6 @@ export async function loadInterests(domain: Domain): Promise<DomainInterests> {
   return parsed?.interests?.[domain] ?? { include: [], exclude: [] };
 }
 
-export const contentFeeds = (feeds: Feed[], domain: Domain): Feed[] =>
-  feeds.filter((f) => f.enabled !== false && f.kind === "content" && f.domain === domain);
-
-export const releaseFeeds = (feeds: Feed[], domain: Domain): Feed[] =>
-  feeds.filter((f) => f.enabled !== false && f.kind === "release" && f.domain === domain);
-
-/** Append one adoption record per sourceName actually used in a rendered report/release. */
-export async function recordAdoption(domain: Domain, sourceNames: string[]): Promise<void> {
-  if (sourceNames.length === 0) return;
-  const date = new Date().toISOString().slice(0, 10);
-  const lines = sourceNames.map(
-    (sourceName) => `${JSON.stringify({ date, domain, sourceName })}\n`,
-  );
-  await appendFile(ADOPTION_LOG, lines.join(""));
-}
+/** 有効な購読フィードのうち、ドメインと種別が一致するもの。 */
+export const feedsOf = (feeds: Feed[], domain: Domain, kind: Kind): Feed[] =>
+  feeds.filter((f) => f.enabled !== false && f.kind === kind && f.domain === domain);

@@ -11,7 +11,6 @@ export const LANDSCAPE_YAML = join(ROOT, "landscape.yaml");
 export const ADOPTION_LOG = join(ROOT, "adoption-log.ndjson");
 export const STARRED_LOG = join(ROOT, "starred-log.ndjson");
 export const FEED_AUDIT_INPUT_JSON = join(CACHE, "feed-audit-input.json");
-export const CRITERIA_DIR = join(ROOT, "report-criteria");
 
 export const INDEX_HTML = join(DOCS, "index.html");
 export const ASSETS_DIR = join(DOCS, "assets");
@@ -19,9 +18,7 @@ export const ASSETS_DIR = join(DOCS, "assets");
 /** Public site base, overridable for local preview. */
 export const SITE_URL = process.env.SITE_URL ?? "https://ogontaro.github.io/feeds";
 
-// 翻訳配信: 海外サイトのみ、1サイト=1フィード
-
-// デイジェスト: レポート+リリース、ドメイン単位
+// レポート+リリースはドメイン単位
 export const DIGEST_DIR = join(DOCS, "digest");
 export const reportXml = (d: Domain) => join(DIGEST_DIR, `report-${d}.xml`);
 export const reportDir = (d: Domain) => join(DIGEST_DIR, "report", d);
@@ -33,9 +30,7 @@ export const TREND_DIR = join(DIGEST_DIR, "trend");
 /** 技術ランドスケープ: landscape.yaml から build.ts が生成する、現在の状態だけの1ページ */
 export const LANDSCAPE_HTML = join(DIGEST_DIR, "landscape.html");
 
-// 購読ファイル: 成果物別に翻訳用/デイジェスト用へ分ける
 export const DIGEST_OPML = join(DOCS, "opml", "digest.opml");
-export const OPML_DIR = join(DOCS, "opml");
 
 export const reportInputJson = (d: Domain) => join(CACHE, `report-${d}-input.json`);
 export const reportMd = (d: Domain) => join(CACHE, `report-${d}.md`);

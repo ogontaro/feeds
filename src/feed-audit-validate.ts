@@ -1,13 +1,8 @@
-import Parser from "rss-parser";
 import { parseDocument } from "yaml";
+import { parser } from "./lib/feeds.ts";
 import { SOURCE_YAML } from "./lib/paths.ts";
 
 const RECENT_DAYS = 30;
-const parser = new Parser({
-  timeout: 20_000,
-  headers: { "User-Agent": "ogontaro-feeds/1.0 (+https://ogontaro.github.io/feeds)" },
-});
-
 async function isValid(url: string): Promise<boolean> {
   try {
     const feed = await parser.parseURL(url);

@@ -1,5 +1,12 @@
 import { Marked } from "marked";
-import { escapeHtml } from "./urls.ts";
+
+export function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
 
 /** 段落末尾(改行の後)、または段落全体がリンクだけの行。 */
 const LINK_ROW_RE = /^(?:([\s\S]*?)<br>\s*)?((?:<a [^>]*>[^<]*<\/a>(?:\s*\/\s*)?)+)\s*$/;
@@ -19,7 +26,7 @@ const digestMarked = new Marked({
 
 /**
  * 日次レポート/週次リリースの本文。`### 記事` から次の見出しまでを1枚のカードにまとめる。
- * フィード生成が `<article class="report">` の中身を切り出すので、ラッパーはこの形のまま保つ。
+ * `articleBody` が `<article class="report">` の中身を切り出すので、ラッパーはこの形のまま保つ。
  */
 export async function digestArticle(md: string): Promise<string> {
   const html = await digestMarked.parse(md);
@@ -30,9 +37,13 @@ export async function digestArticle(md: string): Promise<string> {
   return `<article class="report">${carded}</article>`;
 }
 
+/** `digestArticle` が書いたページからレポート本文(ラッパーの中身)を取り出す。 */
+export const articleBody = (html: string): string =>
+  html.match(/<article class="report">([\s\S]*?)<\/article>/)?.[1] ?? html;
+
 /**
  * Shared page shell. `depth` is how many directories below docs/ the page lives:
- * 0 for docs/index.html, 2 for docs/report/<domain>/<date>.html.
+ * 0 for docs/index.html, 3 for docs/digest/report/<domain>/<date>.html.
  */
 export function pageShell(opts: { title: string; body: string; depth?: number }): string {
   const base = opts.depth ? "../".repeat(opts.depth).replace(/\/$/, "") : ".";
@@ -49,7 +60,7 @@ export function pageShell(opts: { title: string; body: string; depth?: number })
 <main>
 ${opts.body}
 </main>
-<footer>タイトル・概要は機械翻訳です。記事本文の著作権は各原著者に帰属します。</footer>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
 </body>
 </html>
 `;

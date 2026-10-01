@@ -1,26 +1,6 @@
 [tools]
 bun = "1.3"
 
-[tasks."report:collect"]
-description = "Collect a domain's last 24h into .cache/report-<domain>-input.json (arg: domain)"
-run = "bun run src/report-collect.ts"
-
-[tasks."report:render"]
-description = "Render .cache/report-<domain>.md into docs/report/<domain>/*.html + report-<domain>.xml (arg: domain)"
-run = "bun run src/report-render.ts"
-
-[tasks."release:collect"]
-description = "Collect a domain's last 7d of releases into .cache/release-<domain>-input.json (arg: domain)"
-run = "bun run src/release-collect.ts"
-
-[tasks."release:render"]
-description = "Render .cache/release-<domain>.md into docs/release/<domain>/*.html + release-<domain>.xml (arg: domain)"
-run = "bun run src/release-render.ts"
-
-[tasks.build]
-description = "Regenerate docs/index.html, subscriptions.opml and assets"
-run = "bun run src/build.ts"
-
 [tasks.serve]
 description = "Preview docs/ locally on :3000"
 run = "bunx serve docs"

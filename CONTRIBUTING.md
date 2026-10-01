@@ -111,9 +111,10 @@ landscape:
 
 ### Google 翻訳リンク
 
-海外記事のリンクには `src/lib/urls.ts` の `googleTranslateUrl` で生成した
-`https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(記事URL)}` を添えます。
-URL 全体を `encodeURIComponent` し、生成前にスペースを除去します（`%20`/`+` が `u=` に入ると HTTP 400）。
+海外記事のリンクには `https://translate.google.com/translate?sl=auto&tl=ja&u=<URLエンコードした記事URL>` を添えます。
+生成するのは Claude で、書式は `report-criteria/*.md` が指示します。
+Google News 検索 RSS のリンク（`news.google.com/rss/articles/…`）はこの URL 経由で開けないため、
+`report-collect.ts` が入力を書き出す前に元記事 URL へ解決します（`src/lib/feeds.ts` の `resolveGoogleNewsLink`）。
 
 ### レポート（`report.yml`, 毎日 07:00 JST = cron `0 22 * * *`）
 
@@ -372,7 +373,7 @@ report-criteria/
   release-claude.md  release-aws.md  release-kubernetes.md  release-devtools.md
   trend.md（月次トレンドの判定基準）  landscape.md（技術ランドスケープの更新基準）
 src/
-  lib/           config / feeds取得 / html / style / labels / urls / types / paths（低レベル共有）
+  lib/           config / feeds取得 / digest（ページ・RSS 生成の共通処理）/ html / style / labels / types / paths（低レベル共有）
   digest/        report-collect / report-render / release-collect / release-render / trend-collect / trend-render / landscape-update / x-timeline
   site/          build.ts（index.html + opml/ 生成）landscape.ts（技術ランドスケープのページ）
   feed-audit-collect.ts  feed-audit-validate.ts  feed-audit-summarize.ts

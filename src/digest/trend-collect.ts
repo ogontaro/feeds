@@ -1,8 +1,9 @@
-import { mkdir, readdir } from "node:fs/promises";
-import Parser from "rss-parser";
+import { mkdir } from "node:fs/promises";
 import { RELEASE_DOMAINS, REPORT_DOMAINS } from "../lib/config.ts";
+import { jstDateString, listPages } from "../lib/digest.ts";
+import { parser, toText } from "../lib/feeds.ts";
+import { articleBody } from "../lib/html.ts";
 import { CACHE, TREND_DIR, TREND_INPUT_MD, releaseDir, reportDir } from "../lib/paths.ts";
-import { jstDateString } from "../lib/urls.ts";
 
 /**
  * 業界の潮流を見る外部情報源。種別は三角測量の目安で、数えるかは記事の中身で決める(report-criteria/trend.md)。
@@ -43,20 +44,6 @@ const SOURCES = [
 
 const SUMMARY_MAX = 600;
 const MONTH_RE = /^\d{4}-\d{2}$/;
-const parser = new Parser({
-  timeout: 20_000,
-  headers: { "User-Agent": "ogontaro-feeds/1.0 (+https://ogontaro.github.io/feeds)" },
-});
-
-function toText(s: string): string {
-  return s
-    .replace(/<[^>]*>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/\s+\n/g, "\n")
-    .replace(/[ \t]{2,}/g, " ")
-    .trim();
-}
-
 /** 引数の YYYY-MM、なければ JST の前月(毎月2日に実行する前提)。 */
 function targetMonth(): string {
   const arg = process.argv[2];
@@ -66,10 +53,6 @@ function targetMonth(): string {
   }
   const [y, m] = jstDateString().split("-").map(Number);
   return new Date(Date.UTC(y, m - 2, 1)).toISOString().slice(0, 7);
-}
-
-async function listFiles(dir: string): Promise<string[]> {
-  return readdir(dir).catch(() => []);
 }
 
 /** 当月の日次レポート・週次リリースの本文(<article> の中身をテキスト化)。 */
@@ -82,15 +65,14 @@ async function monthDigests(month: string) {
   for (const [kind, domains, dirOf] of kinds) {
     for (const domain of domains) {
       const dir = dirOf(domain);
-      for (const f of (await listFiles(dir)).filter((f) => f.startsWith(`${month}-`)).sort()) {
-        const html = await Bun.file(`${dir}/${f}`).text();
-        const m = html.match(/<article class="report">([\s\S]*?)<\/article>/);
+      const dates = (await listPages(dir)).filter((d) => d.startsWith(`${month}-`)).reverse();
+      for (const date of dates) {
         // リンクは根拠として引用させるので、タグを剥がす前に Markdown 形式で残す
-        const withLinks = (m ? m[1] : html).replace(
+        const withLinks = articleBody(await Bun.file(`${dir}/${date}.html`).text()).replace(
           /<a [^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g,
           "[$2]($1)",
         );
-        out.push({ kind, domain, date: f.replace(".html", ""), text: toText(withLinks) });
+        out.push({ kind, domain, date, text: toText(withLinks) });
       }
     }
   }
@@ -99,14 +81,9 @@ async function monthDigests(month: string) {
 
 /** 前月までの最新トレンドレポート(前月との差分を書かせるため HTML のまま渡す)。初回は null。 */
 async function previousTrend(month: string): Promise<{ month: string; html: string } | null> {
-  const prev = (await listFiles(TREND_DIR))
-    .filter((f) => MONTH_RE.test(f.replace(".html", "")) && f < `${month}.html`)
-    .sort()
-    .at(-1);
+  const prev = (await listPages(TREND_DIR)).find((m) => m < month);
   if (!prev) return null;
-  const html = await Bun.file(`${TREND_DIR}/${prev}`).text();
-  const m = html.match(/<article class="report">([\s\S]*?)<\/article>/);
-  return { month: prev.replace(".html", ""), html: m ? m[1] : html };
+  return { month: prev, html: articleBody(await Bun.file(`${TREND_DIR}/${prev}.html`).text()) };
 }
 
 async function monthExternal(month: string) {

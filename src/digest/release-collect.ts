@@ -1,29 +1,15 @@
 import { mkdir } from "node:fs/promises";
-import Parser from "rss-parser";
-import { loadFeeds, releaseFeeds } from "../lib/config.ts";
+import { feedsOf, loadFeeds } from "../lib/config.ts";
+import { parser, toText } from "../lib/feeds.ts";
 import { domainArg } from "../lib/labels.ts";
 import { CACHE, releaseInputJson } from "../lib/paths.ts";
 
 const WINDOW_MS = 7 * 24 * 3_600_000;
 const NOTES_MAX = 4000;
-const parser = new Parser({
-  timeout: 20_000,
-  headers: { "User-Agent": "ogontaro-feeds/1.0 (+https://ogontaro.github.io/feeds)" },
-});
-
-function toText(s: string): string {
-  return s
-    .replace(/<[^>]*>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/\s+\n/g, "\n")
-    .replace(/[ \t]{2,}/g, " ")
-    .trim();
-}
-
 async function main() {
   const domain = domainArg();
   const cutoff = Date.now() - WINDOW_MS;
-  const feeds = releaseFeeds(await loadFeeds(), domain);
+  const feeds = feedsOf(await loadFeeds(), domain, "release");
   const items: unknown[] = [];
   let anyFeedOk = false;
 

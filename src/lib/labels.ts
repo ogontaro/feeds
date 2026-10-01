@@ -7,7 +7,7 @@ export const DOMAIN_LABEL: Record<Domain, string> = {
   devtools: "開発ツール",
 };
 
-/** インデックスと OPML のフォルダ分けに使うカテゴリ。 */
+/** トップページのカードに添える分野名。 */
 export const DOMAIN_CATEGORY: Record<Domain, string> = {
   claude: "AI",
   kubernetes: "プラットフォーム",

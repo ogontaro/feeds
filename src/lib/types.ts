@@ -26,12 +26,12 @@ export type InterestsConfig = {
   interests: Record<Domain, DomainInterests>;
 };
 
-/** A normalized entry from a source feed, from a source feed. */
-export type SourceEntry = {
-  guid: string;
+/** A normalized entry from a source feed. */
+export type Entry = {
   link: string;
   title: string;
   description: string;
   pubDate: Date;
-  sourceName: string;
+  /** source.yaml のフィード名。 */
+  source: string;
 };

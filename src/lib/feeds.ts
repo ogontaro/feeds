@@ -1,7 +1,7 @@
 import Parser from "rss-parser";
-import type { Feed, SourceEntry } from "./types.ts";
+import type { Entry, Feed } from "./types.ts";
 
-const parser = new Parser({
+export const parser = new Parser({
   timeout: 20_000,
   headers: { "User-Agent": "ogontaro-feeds/1.0 (+https://ogontaro.github.io/feeds)" },
 });
@@ -13,13 +13,18 @@ const parser = new Parser({
  */
 const MAX_ENTRIES_PER_FEED = 20;
 
-function stripHtml(s: string): string {
+/** HTML をテキストにする。改行は残す(リリースノート・レポート本文向け)。 */
+export function toText(s: string): string {
   return s
     .replace(/<[^>]*>/g, " ")
     .replace(/&nbsp;/g, " ")
-    .replace(/\s+/g, " ")
+    .replace(/\s+\n/g, "\n")
+    .replace(/[ \t]{2,}/g, " ")
     .trim();
 }
+
+/** HTML を 1 行のテキストにする(タイトル・概要向け)。 */
+const toLine = (s: string): string => toText(s).replace(/\s+/g, " ");
 
 /**
  * hnrss 等は GitHub Actions から断続的に 502 を返し、1 件でも落ちると
@@ -40,7 +45,7 @@ async function parseWithRetry(url: string): Promise<Awaited<ReturnType<typeof pa
 
 /**
  * Google News 検索 RSS のリンク(news.google.com/rss/articles/<id>)を元記事 URL に解決する。
- * そのままでは Google 翻訳 URL 経由で開けないため。記事ページの署名を使って内部 API を引く
+ * そのままでは Google 翻訳 URL 経由で開けないため、レポートに渡す前に解決する。記事ページの署名を使って内部 API を引く
  * 非公開の手順なので、失敗したら元のリンクを返してパイプラインは止めない。
  */
 export async function resolveGoogleNewsLink(link: string): Promise<string> {
@@ -103,21 +108,19 @@ export async function resolveGoogleNewsLink(link: string): Promise<string> {
 }
 
 /** Fetch one source feed and normalize its items. Network/parse errors propagate. */
-export async function fetchFeed(feed: Feed): Promise<SourceEntry[]> {
+export async function fetchFeed(feed: Feed): Promise<Entry[]> {
   const parsed = await parseWithRetry(feed.url);
-  const entries: SourceEntry[] = [];
+  const entries: Entry[] = [];
   for (const item of parsed.items) {
     const link = (item.link ?? "").trim();
-    const guid = (item.guid ?? link).trim();
-    if (!guid || !link) continue;
+    if (!link) continue;
     const rawDesc = item.contentSnippet ?? item.summary ?? item.content ?? "";
     entries.push({
-      guid,
       link,
-      title: stripHtml(item.title ?? "(untitled)").slice(0, 300),
-      description: stripHtml(rawDesc).slice(0, 500),
+      title: toLine(item.title ?? "(untitled)").slice(0, 300),
+      description: toLine(rawDesc).slice(0, 500),
       pubDate: item.isoDate ? new Date(item.isoDate) : new Date(),
-      sourceName: feed.name,
+      source: feed.name,
     });
   }
   // 新しい順に揃えてから上限を適用する。全履歴を昇順で返すミラー系フィードでも、
