@@ -4,11 +4,19 @@
         <title>AWS What's New — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS What's New の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 20:16:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 23:59:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon WorkSpacesコアマネージドインスタンスがNVIDIA Blackwell GPUのサポートを追加]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-cmi-g7/</link>
+            <guid>6fe8493e796a016eef0d6ea6e6a2e6edd296aeda</guid>
+            <pubDate>Wed, 30 Sep 2026 23:59:00 GMT</pubDate>
+            <description><![CDATA[Amazon WorkSpaces Core Managed Instancesは、NVIDIA RTX PRO 4500 Blackwell Server Edition GPUとIntel Xeon 6プロセッサを搭載したGraphics G 7インスタンスをサポートするようになりました。G 7インスタンスは、前世代のG 6インスタンスと比較して、グラフィックス集約型ワークロードのパフォーマンスを最大2.1倍向上させます。Graphics G 7を使用すると、CAD/CAM、3 Dレンダリング、科学的可視化、ビデオ編集、AI支援設計ワークフローなどの要求の厳しいプロフェッショナルアプリケーションを、より高い忠実度と]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-cmi-g7/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-workspaces-cmi-g7%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS CLIは、AWSエージェントツールキットの一括スキルアップデートとバージョンチェックをサポートするようになりました]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cli-agent-toolkit-update-skill/</link>
@@ -34,6 +42,14 @@
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-managed-grafana-now-supports-creating-grafana-13-2-workspaces">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Famazon-managed-grafana-now-supports-creating-grafana-13-2-workspaces">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[AWS Parallel Computing Serviceがスケーリングログをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/aws-pcs-scaling-logs/</link>
+            <guid>b2b32f0175ac8c9bdaaf29316b5b01446cb31313</guid>
+            <pubDate>Wed, 30 Sep 2026 19:00:00 GMT</pubDate>
+            <description><![CDATA[AWS Parallel Computing Service （ AWS PCS ）は、AWS PCSがクラスター内のコンピューティングノードグループをどのようにスケーリングするかを記録するスケーリングログをサポートするようになりました。各ログエントリは、インスタンスの起動、ノードの登録、スケールダウン、またはその理由による起動失敗など、1つのコンピューティングノードの1つの状態遷移を記録します。スケーリングログを使用すると、スケーリングの問題をより簡単にトラブルシューティングできます。たとえば、コンピューティングノードグループが目標サイズに達しなかった理由を判断できます。これはキャパシットの起動に失敗しました]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-pcs-scaling-logs/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Faws-pcs-scaling-logs%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[OpenAI GPT -6 AstraがAmazon BedrockでUltraFastモードをサポート]]></title>
             <link>https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-ultrafast-on-amazon-bedrock/</link>
             <guid>cab3a2b5bb41c3346f0691aeacd16861ccf06558</guid>
@@ -48,6 +64,14 @@
             <pubDate>Wed, 30 Sep 2026 17:50:00 GMT</pubDate>
             <description><![CDATA[Amazon Auroraサーバーレスは、さらに大きなステップで拡張できるようになりました。1秒以内に現在の容量に最大16 ACUを追加し、ワークロードの増加に応じて最大256 ACUまで拡張し続けます。このリリースにより、ワークロードはより迅速に拡張され、必要なキャパシティに到達します。ワークロードが完了すると、Auroraサーバーレスは自動的にゼロにスケールダウンするため、使用した分だけを支払うことができます。これにより、エージェントAIアプリケーションに特に適しています。通常、アクティビティのバーストがあり、長時間アイドル状態です。]]></description>
             <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aurora-serverless-instant-16-acu-scaling/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F08%2Faurora-serverless-instant-16-acu-scaling%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Amazon Bedrock、英国（ロンドン）でClaudeモデルの地域内サポートを拡大]]></title>
+            <link>https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-lhr/</link>
+            <guid>9aa146294b2d3b1d59113e15306b4cc0f7f7ad2b</guid>
+            <pubDate>Wed, 30 Sep 2026 17:00:00 GMT</pubDate>
+            <description><![CDATA[英国（ロンドン）地域のAmazon Bedrockで、AnthropicのClaude Opus 5.5とClaude Sonnet 5の地域内サポートを発表できることを嬉しく思います。金融サービス、ヘルスケア、公共部門を含む英国内のデータを処理する必要がある顧客は、推論を国内で維持しながら、これらのモデルを大規模に使用できるようになりました。Amazon Bedrockユーザーガイドのモデル別の地域での利用可能性。Amazon BedrockでClaudeモデルを使い始めるには、Amazon Bedrockコンソールにアクセスしてください。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-lhr/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F09%2Fclaude-region-expansion-lhr%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Amazon AuroraとRDSがAMDベースのR 8 aインスタンスをサポートするようになりました]]></title>

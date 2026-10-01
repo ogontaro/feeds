@@ -4,11 +4,19 @@
         <title>Google News — コーディングエージェント新サービス・料金 — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — コーディングエージェント新サービス・料金 の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 21:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Oct 2026 05:42:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[AIの実際のコストが請求書よりも大きい理由- ITブリーフアジア]]></title>
+            <link>https://itbrief.asia/story/why-ai-s-real-cost-is-bigger-than-the-invoice</link>
+            <guid>CBMifEFVX3lxTE9PWGo5dnR0b2hNYlhtc1dDanBqdEdBbk0zY001bVNMb3Q5RUtLNjVCUVBQYl92SzVGbXdsWUppVEVFTFplM0xaOU5tWWFNR29nWHdxS2VNbS1nUFJ3WWFBalpYRmFXQWE4OTRQdlNvb2R4RlctbXVxa2hjNXU</guid>
+            <pubDate>Thu, 01 Oct 2026 05:42:00 GMT</pubDate>
+            <description><![CDATA[なぜAIの実際のコストは請求書のIT Brief Asiaよりも大きいのか]]></description>
+            <content:encoded><![CDATA[<p><a href="https://itbrief.asia/story/why-ai-s-real-cost-is-bigger-than-the-invoice">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fitbrief.asia%2Fstory%2Fwhy-ai-s-real-cost-is-bigger-than-the-invoice">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[米国政府が人工知能をスーパーインテリジェンスに置き換える- RS Webソリューション]]></title>
             <link>https://www.rswebsols.com/news/us-governments-latest-directive-substitutes-artificial-intelligence-with-super-intelligence-federal-agencies/</link>
@@ -16,6 +24,14 @@
             <pubDate>Wed, 30 Sep 2026 21:00:00 GMT</pubDate>
             <description><![CDATA[米国政府が人工知能をスーパーインテリジェンスRS Webソリューションに置き換える]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.rswebsols.com/news/us-governments-latest-directive-substitutes-artificial-intelligence-with-super-intelligence-federal-agencies/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.rswebsols.com%2Fnews%2Fus-governments-latest-directive-substitutes-artificial-intelligence-with-super-intelligence-federal-agencies%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAI、32のパートナーと市場を立ち上げ、エンタープライズAI戦略の変化を知らせる- news.lavx.hu]]></title>
+            <link>https://news.lavx.hu/article/openai-launches-marketplace-with-32-partners-signaling-shift-in-enterprise-ai-strategy</link>
+            <guid>CBMitgFBVV95cUxPMW5qR2R2amJESnozUWU0di13cG13ejkwRllZMWVfMjZONTZuVVBJSW9kcjhUX3NwdUEyV3lGWU14RE13RGlXRWowbWVCYXNNbHYtX2I1cnJJdnl2alA5Nkw1bHNUa3ZiMDZwVWgzMUxQV1NzRXdJcTFRLXJMVEJ1REZmNjhaU0NxRE14WVpQaVZyTHFkT3VTVGtvRWppc2t4U0h6ei04dUpSSGJVbk9sOW1vUlNSQQ</guid>
+            <pubDate>Wed, 30 Sep 2026 20:35:45 GMT</pubDate>
+            <description><![CDATA[OpenAIは32のパートナーと市場を立ち上げ、エンタープライズAI戦略の変化を知らせるnews.lavx.hu]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.lavx.hu/article/openai-launches-marketplace-with-32-partners-signaling-shift-in-enterprise-ai-strategy">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fopenai-launches-marketplace-with-32-partners-signaling-shift-in-enterprise-ai-strategy">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[GoogleがGemini 4 Argonを開発者の前にサイバーディフェンダーにリリース- news.lavx.hu]]></title>
@@ -34,12 +50,52 @@
             <content:encoded><![CDATA[<p><a href="https://news.lavx.hu/article/infoq-launches-two-ai-certification-cohorts-for-security-and-coding-agent-verification">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Finfoq-launches-two-ai-certification-cohorts-for-security-and-coding-agent-verification">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[MeetTwinsを使用すると、会議をスキップしながらAIアバターがGoogle Meet通話に参加できます- news.lavx.hu]]></title>
+            <link>https://news.lavx.hu/article/meettwins-lets-an-ai-avatar-attend-your-google-meet-calls-while-you-skip-the-meeting</link>
+            <guid>CBMiswFBVV95cUxPVDhTWW93TDA3VkE4cDNIYTJpamVONkluTGdtNDhIWTlja25KUDR5WjM2Q01KakJTcUhXTWtjc0tlbmRyUWVHZnptYjlsdXVqeXJGMzdNR2JiRGJpTXhPNFZiTHdxUm9vOTJ2X3p0VmROTVg5NmlDeTVvbzNSNmk3dkJuZm4yY1MzMFRYVU9CMkhabFU2YzdDTmhDZUZrR2tpMTFWaGFOMjNMbm9CRU43eGxVYw</guid>
+            <pubDate>Wed, 30 Sep 2026 20:17:34 GMT</pubDate>
+            <description><![CDATA[MeetTwinsを使用すると、会議news.lavx.huをスキップしながら、AIアバターがGoogle Meet通話に参加できます]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.lavx.hu/article/meettwins-lets-an-ai-avatar-attend-your-google-meet-calls-while-you-skip-the-meeting">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fmeettwins-lets-an-ai-avatar-attend-your-google-meet-calls-while-you-skip-the-meeting">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[OpenAIのDOTSエージェントは9コアのAMD EPYC VMで実行され、GeekbenchのデータはMeta Museの6倍のマルチコアリードを示しています- news.lavx.hu]]></title>
+            <link>https://news.lavx.hu/article/openai-s-dots-agents-run-on-nine-core-amd-epyc-vms-geekbench-data-shows-sixfold-multi-core-lead-over-meta-muse</link>
+            <guid>CBMi1gFBVV95cUxNdnF3Q1padGhOZm9Lb194ZEc1bUctNGV2V1BmbGQ5U3EzUFZCaE9GdThwenhHRFVIVm5aUVVpTlZ1V2Q1Ujk4ODZtdkZLOENYZ1VYQTM2SXRteXRtU29aeGVCQ3EtOGxKb1V0cmdLUjRaYlYzOUswUFR3U05TQnpydTlVdEFxX2JobHRHVUx4NFE3QmFEUFJUcEJUaEVYSV9rd1Q2NmtsZXN6dWdkbHQ0NjQtMDFKTVIzT3lQcHdCQ0NEanp5YzIxMmVvV3I4ZlRQSlE5di1n</guid>
+            <pubDate>Wed, 30 Sep 2026 20:12:40 GMT</pubDate>
+            <description><![CDATA[OpenAIのDOTSエージェントは9コアのAMD EPYC VM上で実行され、GeekbenchのデータはMeta Muse news.lavx.huよりも6倍のマルチコアのリードを示しています]]></description>
+            <content:encoded><![CDATA[<p><a href="https://news.lavx.hu/article/openai-s-dots-agents-run-on-nine-core-amd-epyc-vms-geekbench-data-shows-sixfold-multi-core-lead-over-meta-muse">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fopenai-s-dots-agents-run-on-nine-core-amd-epyc-vms-geekbench-data-shows-sixfold-multi-core-lead-over-meta-muse">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Meta、OpenAIとAnthropicのライバルにMuse Code AIツールを発表- rswebsols.com]]></title>
+            <link>https://www.rswebsols.com/news/meta-unveils-muse-code-ai-development-tool-to-compete-with-openai-and-anthropic/</link>
+            <guid>CBMisAFBVV95cUxNZVF2ZjRSX21Db3pnNUVuSkVrZ09qV25kYzZZMXlrU2d6QU5TRFQ1SUN0VHlkMkNyVDNBU2E2Mzlqd2xmTHJpODVRUUEwbnRVTDcyNk80bjBPa0JmQ3pISkZyTEtSNW55LXZZNHdfYUJDQk5XOWQyamtPRUdCR3EtX2ZmWnZ3VTlISGwtXzhRYjgzM3ZDd096SXBTOVpTenhRTFFoUXlBb20tSlQtamY0eQ</guid>
+            <pubDate>Wed, 30 Sep 2026 20:00:00 GMT</pubDate>
+            <description><![CDATA[Meta、OpenAIとAnthropic rswebsols.comのライバルにMuse Code AIツールを発表]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.rswebsols.com/news/meta-unveils-muse-code-ai-development-tool-to-compete-with-openai-and-anthropic/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.rswebsols.com%2Fnews%2Fmeta-unveils-muse-code-ai-development-tool-to-compete-with-openai-and-anthropic%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[CognitionのDevinは、すでに多くの創業者が支払っているサブスクリプションをタップできるようになりました- inc.com]]></title>
             <link>https://www.inc.com/aaron-mok/cognitions-devin-can-now-tap-a-subscription-many-founders-already-pay-for/91412660</link>
             <guid>CBMisgFBVV95cUxOZjFITC1YSkFaWnM4VFZlUDMtbDRzSzBoSnJmdzVmcjRRbkhlTVdpVERDSUFaaWtZY0JRMnRpR0ZjQU9DUGF5a1lZR3dFUExINHNkMG5SWmJDRlY2WEhqWURLZXZtM2ZxQjF1UzRwcUVOUHlGd3lKNUVkcENFVGptbDhDSWZHNnJTa013S0pkdUFUSDRhQUJYOUdpbW5sbTZvQVBXZ01STGlHYm1fSDNyaUlB</guid>
             <pubDate>Wed, 30 Sep 2026 18:48:41 GMT</pubDate>
             <description><![CDATA[CognitionのDevinがサブスクリプションをタップできるようになりました多くの創業者がすでにinc.comに支払いをしています]]></description>
             <content:encoded><![CDATA[<p><a href="https://www.inc.com/aaron-mok/cognitions-devin-can-now-tap-a-subscription-many-founders-already-pay-for/91412660">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.inc.com%2Faaron-mok%2Fcognitions-devin-can-now-tap-a-subscription-many-founders-already-pay-for%2F91412660">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[InfoQオンラインコホートがAIセキュリティとコーディングエージェントの検証に対応- infoq.com]]></title>
+            <link>https://www.infoq.com/news/2026/09/onlinecohorts-ai-certifications/</link>
+            <guid>CBMidkFVX3lxTE03WE9JMXBHLWRSNjdZby1tSGQxOW5aOHV5NXhmOU9yeXpleXlyUkRjc2ZZUHJuTEQwN2wyelEzLTNicjdINlNLcHg5czlSODktS2Jxci1QVFJob2FmMTh4andUbTJJVnJ1MmpUWG9sam1qallkNEE</guid>
+            <pubDate>Wed, 30 Sep 2026 17:01:14 GMT</pubDate>
+            <description><![CDATA[InfoQオンラインコホートアドレスAIセキュリティとコーディングエージェント検証infoq.com]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.infoq.com/news/2026/09/onlinecohorts-ai-certifications/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.infoq.com%2Fnews%2F2026%2F09%2Fonlinecohorts-ai-certifications%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CRWVのCEOは、CoreWeaveがNvidia Vera Rubin AIシステムをロールアウトするにつれて「注文を減らすことはない」と述べています- TradingView]]></title>
+            <link>https://es.tradingview.com/news/stocktwits:a314aa040094b:0-crwv-ceo-says-no-reduction-in-orders-as-coreweave-rolls-out-nvidia-vera-rubin-ai-systems/</link>
+            <guid>CBMi4gFBVV95cUxPYV83QUZ0T3U2OG5fS3BjTnVnSW9kZEs4YXMtcm81OElLZ2R6VjY2REVQY1RPYXlEUmhaTEJvcFB4OWVjNExhSjhOR3drZ1RERUgxdkZHRW5DQjF0N3FFR3NIVGdHMXhWVll5ZHcxWE9RQlVvbEQ5czNhVXE3UGdlbUt2NkROeFFmNGJUY2hlUHVZYmo4LVVIMFNYelVnNUhPU0lzQWV4WWJNVmJ0NTczT21qUDVwOW9HdzhYdzltY2UxWm5jOFRNenM5Z0hHODdKakFqcmxESUExdWRCeUdaVm1n</guid>
+            <pubDate>Wed, 30 Sep 2026 14:31:22 GMT</pubDate>
+            <description><![CDATA[CRWVのCEOは、CoreWeaveがNvidia Vera Rubin AI Systems TradingViewをロールアウトするため、「注文を減らすことはない」と述べています]]></description>
+            <content:encoded><![CDATA[<p><a href="https://es.tradingview.com/news/stocktwits:a314aa040094b:0-crwv-ceo-says-no-reduction-in-orders-as-coreweave-rolls-out-nvidia-vera-rubin-ai-systems/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fes.tradingview.com%2Fnews%2Fstocktwits%3Aa314aa040094b%3A0-crwv-ceo-says-no-reduction-in-orders-as-coreweave-rolls-out-nvidia-vera-rubin-ai-systems%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[CRWVのCEOは、CoreWeaveがNvidia Vera Rubin AIシステムをロールアウトするにつれて「注文を減らすことはない」と述べています- TradingView]]></title>

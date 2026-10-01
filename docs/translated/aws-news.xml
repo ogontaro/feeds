@@ -4,11 +4,19 @@
         <title>AWS News Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>AWS News Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 20:03:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 22:10:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[Amazon S 3テーブルがすべてのApache Iceberg V 3データタイプをサポートするようになりました]]></title>
+            <link>https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/</link>
+            <guid>817caa03e06c6ac753e2104bcdd58418a88fea6e</guid>
+            <pubDate>Wed, 30 Sep 2026 22:10:00 GMT</pubDate>
+            <description><![CDATA[Amazon S 3テーブルは、列のデフォルト値、削除ベクトル、および行の系統とともに、Apache Iceberg V 3仕様のすべてのデータ型をサポートするようになりました。既存のV 2テーブルをアップグレードするか、組み込みの圧縮、メンテナンス、およびエンジン互換性を備えた新しいV 3テーブルを作成します。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-support-all-apache-iceberg-v3-data-types/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Famazon-s3-tables-now-support-all-apache-iceberg-v3-data-types%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Amazon S 3 Vectorsは、フィルタリングされた検索のリコール率を高めるためにメタデータの事前フィルタリングをサポートするようになりました]]></title>
             <link>https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches/</link>

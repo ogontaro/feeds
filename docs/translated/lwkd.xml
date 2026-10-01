@@ -4,11 +4,19 @@
         <title>Last Week in Kubernetes Development — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Last Week in Kubernetes Development の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Thu, 24 Sep 2026 19:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Sep 2026 23:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[2026年9月27日までの週]]></title>
+            <link>https://lwkd.info/2026/20260930</link>
+            <guid>https://lwkd.info/2026/20260930</guid>
+            <pubDate>Wed, 30 Sep 2026 23:00:00 GMT</pubDate>
+            <description><![CDATA[開発者ニュース2つのセキュリティアドバイザリが9月24日に公開されました。CVE -2026 -2270 （定格Medium、5.9 ）は、StatefulSetおよびControllerRevisionオブジェクトに対して名前空間スコープの書き込み権限を持つユーザーがクロスネームスペースポッドを作成できるようにするStatefulSetコントローラーでの混乱した代理攻撃について説明しています。CVE -2026 -76654 （定格Medium、5.8 ）は、ポッドのサブパスが攻撃者が制御するUNCネットワーク共有へのシンボリックリンクである場合のWindowsノードでのNTLM強制の脆弱性について説明しています。両方とも修正されています。]]></description>
+            <content:encoded><![CDATA[<p><a href="https://lwkd.info/2026/20260930">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Flwkd.info%2F2026%2F20260930">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2026年9月20日までの週]]></title>
             <link>https://lwkd.info/2026/20260924</link>
