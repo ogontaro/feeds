@@ -17,19 +17,15 @@ mise run serve     # docs/ をローカルプレビュー
 
 ## 設計方針
 
-**翻訳配信とデイジェストは混ぜません。** ニーズが違います。翻訳は海外サイトの新着をそのまま日本語で
-拾い読みする全量ストリームです(選定・コメントなし、1サイト=1フィード)。デイジェストは Claude が
-選定・整理するレポート/リリースです(ドメイン単位)。デイジェストは翻訳の出力を入力に読みますが、
-逆方向の依存も成果物の共有もしません。
+**成果物は Claude が選定・整理するデイジェスト(レポート/リリース/トレンド)だけです**(ドメイン単位)。
+海外サイトの全量翻訳配信は廃止しました。海外記事は原文＋Google 翻訳 URL で読みます。
 
 **ドメインごとに状態を共有しません。** 入力フィード・出力・スケジュールを分けます。共有するのは
-`src/lib/`(パス・URL・翻訳エンジン等の低レベル関数)だけです。実装はサービス別にディレクトリを分けています:
-`src/translate/`(B)、`src/digest/`(A)、`src/site/`(両者のページ・OPML 生成)。
+`src/lib/`(パス・URL等の低レベル関数)だけです。実装は `src/digest/`(パイプライン)と `src/site/`(ページ・OPML 生成)に分けています。
 
 | パイプライン | 入力 | Claude | 出力 | 頻度 |
 | --- | --- | --- | --- | --- |
-| 翻訳フィード | 海外サイトの content フィード(日本語サイトは対象外) | 使わない（DeepL のみ） | `translated/<id>.xml` ＋ `translated/index.html` | 6 時間ごと |
-| レポート | 翻訳フィードの直近 24h + 日本語サイトは購読元を直接取得 + X タイムラインの直近 24h | 見てほしいものだけ最大 5 件選定（X はドメインに合うものだけ混ぜる） | `digest/report-<domain>.xml` ＋ `digest/report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
+| レポート | content フィード(購読元を直接取得)の直近 24h + X タイムラインの直近 24h | 見てほしいものだけ最大 5 件選定（X はドメインに合うものだけ混ぜる） | `digest/report-<domain>.xml` ＋ `digest/report/<domain>/YYYY-MM-DD.html` | 毎日 07:00 JST |
 | X タイムライン取得 | X ホームタイムライン | 使わない | actions/cache 上の蓄積（レポートの追加入力） | 30 分ごと |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `digest/release-<domain>.xml` ＋ `digest/release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
 | 月次トレンド | 前月の日次レポート・週次リリース＋外部情報源の前月分＋前回のトレンドレポート | 潮流を三角測量で判定し、前月からの変化を書きます | `digest/trend.xml` ＋ `digest/trend/YYYY-MM.html` | 毎月2日 07:45 JST |
@@ -52,28 +48,23 @@ mise run serve     # docs/ をローカルプレビュー
 | 実行基盤 | すべて GitHub Actions です。ローカル常用スクリプトは持ちません |
 | 公開 | GitHub Pages（deploy from branch, `main:/docs`）。`https://ogontaro.github.io/feeds/` |
 | カスタムドメイン | 使わない |
-| 翻訳エンジン | DeepL API（Free キーは末尾 `:fx`）。枠切れ時は MyMemory に切り替えます。キー未設定なら未翻訳のまま通します |
 | AI 呼び出し | `anthropics/claude-code-action@v1`（ワークフローの一ステップ、`--allowedTools Read,Write`）。OpenCode Go（`https://opencode.ai/zen/go`）経由で DeepSeek を使います。各ステップの `env` に `ANTHROPIC_BASE_URL`/`ANTHROPIC_CUSTOM_HEADERS`/`OTEL_RESOURCE_ATTRIBUTES`、`with.anthropic_api_key` に `OPENCODE_API_KEY`、`claude_args` に `--model deepseek-v4.1-flash[1m]` を指定します |
 
 ## データ: source.yaml
 
-購読フィードの正です。1 エントリ = `{url, name, domain, kind, id?, enabled?, addedAt?, lastAdoptedAt?}`。
+購読フィードの正です。1 エントリ = `{url, name, domain, kind, enabled?, addedAt?, lastAdoptedAt?}`。
 `addedAt`/`lastAdoptedAt` はフィード監査（後述）が採用実績を追跡するためのメタデータです。
-`id` は翻訳フィードのファイル識別子（[a-z0-9-]）です。海外サイトの content エントリは必須で、
-日本語サイトと release は不要です（`needsTranslation` 判定で自動的に使い分けられます）。
 
 ```yaml
 feeds:
   - url: https://example.com/feed.xml
     name: Example
-    id: example           # 海外サイトの content のみ必須 → translated/example.xml
     domain: claude        # claude | kubernetes | aws | devtools
-    kind: content         # content（翻訳＋レポート）| release（週次リリースレポート）
+    kind: content         # content（日次レポート）| release（週次リリースレポート）
 ```
 
 - 公開前提です。趣味・個人性の強いフィード、キーや userId を URL に含むフィードは入れません
-- OPML はサービス別に2つです（`opml/digest.opml` / `opml/translated.opml`）。全部入りの1本は
-  目的の違うフィードが混ざるので作りません
+- OPML は `opml/digest.opml` のみです。
 - aws / content は **EKS 関連と AI/Bedrock 関連を重点**です（`report-criteria/report-aws.md`）
 - claude / content の新規ツール発見源は、記事化されるのを待たず GitHub 上のリポジトリ自体も対象にします
   （週次フィード監査の WebSearch も同様です）。ただし whole-repo の `commits.atom` は bot/CI コミットで
@@ -118,36 +109,17 @@ landscape:
 
 ## パイプライン詳細
 
-### 翻訳フィード（`src/translate/run.ts`, 6 時間ごと）
+### Google 翻訳リンク
 
-海外サイトの content フィードごとに（1サイト=1フィード）:
-
-1. `source.yaml` の `kind: content` のうち `needsTranslation`（＝記事 URL が日本語ソースでない）を満たすもの only です。日本語サイトは翻訳フィードを作りません。
-2. 既存 `docs/translated/<id>.xml` の guid 集合と照合し、新規のみ処理します。
-3. 新規エントリのタイトルと description を DeepL で日本語化します。DeepL が枠切れ／認証エラーなら MyMemory（匿名・日次枠）に落とし、
-   それも尽きたら未翻訳で公開します。Google News のリンク（`news.google.com/rss/articles/…`）は元記事 URL に解決します。
-3a. 残った枠で、未翻訳のまま公開した直近 7 日のエントリ（1 フィード 10 件まで）を訳し直し、未解決の Google News リンクも解決し直します。
-4. 既存に足して公開日時の降順で **直近 100 件**に truncate し、`docs/translated/<id>.xml` を再生成します。
-
-- **1 フィードも取得できなかったサイトは書き換えません**（空フィードで guid 集合を消しません）。
-- `--strict`（`translate.yml` で付与）はどれか 1 サイトでも取得ゼロなら異常終了します。
-  `report.yml` から呼ぶときは付けません（取れたぶんだけ更新して先へ進みます）。
-- 1 フィードあたりの取り込みは最大 20 件です（新しい順）。全履歴を返すミラー・アグリゲータ系
-  フィードでも翻訳枠と DeepL の 1 リクエスト 50 件制限を超えないための上限です。
-
-各エントリ: 翻訳タイトル ＋ 翻訳 description / link は原文 URL /
-content は「原文を読む」＋（海外記事のみ）「Google 翻訳で全文を読む」の 2 リンクです。本文・選定コメントは転載しません。
-記事 URL が日本語ソース（`src/lib/urls.ts` の `JA_SOURCE_HOSTS`、はてな / Zenn 等）のものは翻訳自体をスキップします。
-
-**Google 翻訳リンク**: `https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(記事URL)}`。
-URL 全体を `encodeURIComponent` します。生成前にスペースを除去します（`%20`/`+` が `u=` に入ると HTTP 400）。
+海外記事のリンクには `src/lib/urls.ts` の `googleTranslateUrl` で生成した
+`https://translate.google.com/translate?sl=auto&tl=ja&u=${encodeURIComponent(記事URL)}` を添えます。
+URL 全体を `encodeURIComponent` し、生成前にスペースを除去します（`%20`/`+` が `u=` に入ると HTTP 400）。
 
 ### レポート（`report.yml`, 毎日 07:00 JST = cron `0 22 * * *`）
 
-先頭で `src/translate/run.ts`（`--strict` なし）を実行して翻訳フィードを最新化 →
-ワークフロー単体で完結させます。以降ドメインごとに:
+ワークフロー単体で完結させます。ドメインごとに:
 
-1. `src/digest/report-collect.ts <domain>`: 当該ドメインの content フィードのうち海外サイトは `translated/<id>.xml` を読み、日本語サイトは購読元を直接取得します。`pubDate` が過去 24h の
+1. `src/digest/report-collect.ts <domain>`: 当該ドメインの content フィードを購読元から直接取得します。`pubDate` が過去 24h の
    エントリを新しい順に **1 ソース最大 8 件・全体で最大 50 件**、`.cache/report-<domain>-input.json` に書き出します。
 2. 入力が 0 件ならそのドメインはスキップします（`if:` ガード）。
 3. `claude-code-action`: `.cache/report-<domain>-input.json` と `report-criteria/report-<domain>.md` を読み、
@@ -196,7 +168,7 @@ public リポジトリのため、プライバシーは次で担保します。
 
 1. `src/digest/release-collect.ts <domain>`: `kind: release` の feed から過去 7 日のリリースを取得します。
    `project` / `version` / `link` / `notes`（英語原文、4000 字で truncate）を
-   `.cache/release-<domain>-input.json` に書き出します。翻訳サービスは通しません。
+   `.cache/release-<domain>-input.json` に書き出します。
 2. 0 件ならスキップします。
 3. `claude-code-action`: 入力と `report-criteria/release-<domain>.md` を読み、
    プロジェクト単位・破壊的変更を先頭にした日本語ダイジェストを `.cache/release-<domain>.md` に書きます。
@@ -299,7 +271,7 @@ DeepSeek 公式 API の割引時間帯とは別物で確認できないため、
 ハードコードするより、実際の失敗を検知して切り替える方が確実です（`issue-request.yml` の
 ようにトリガー時刻が読めないワークフローでも同じロジックで対応できます）。
 
-### ワークフロー失敗対応（`translate/report/release/trend/feed-audit/issue-request/
+### ワークフロー失敗対応（`report/release/trend/feed-audit/issue-request/
 inoreader-sync/timeline/component-review-reminder.yml` 末尾の `notify-failure` ジョブ、
 `workflow-failure-fix.yml`）
 
@@ -307,7 +279,7 @@ inoreader-sync/timeline/component-review-reminder.yml` 末尾の `notify-failure
 失敗すると `workflow-failure` ラベル付きの Issue を自動作成します（本文は run URL・
 ワークフロー名のみです。public リポジトリのためログ全文は貼りません）。
 
-`translate/report/release/trend/feed-audit/issue-request/inoreader-sync/timeline.yml` の8ワークフローには
+`report/release/trend/feed-audit/issue-request/inoreader-sync/timeline.yml` の7ワークフローには
 対で「close resolved failure issues」ステップ（本体ジョブ成功時、同一ワークフロー名の
 `workflow-failure` ラベル付き open Issue を検索してクローズ）があり、一過性の失敗で作られた
 Issue が次回成功時に自動で片付きます（AI 判断を挟まない決定的な gh CLI 操作のみです）。
@@ -341,30 +313,25 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 ### サイト（`src/site/build.ts`, 各ワークフローの末尾）
 
 - `docs/assets/style.css` を書き出します（単一オーナー）
-- サービスB: `docs/translated/index.html`（海外サイト一覧）と `docs/opml/translated.opml` を生成します
-- サービスA: `docs/index.html`（日次/週次/月次レポート、ドメイン別に最新+過去一覧+購読リンク）と `docs/opml/digest.opml`、各ドメインの `docs/digest/report|release/<domain>/index.html` と `docs/digest/trend/index.html`（過去一覧）、`landscape.yaml` から `docs/digest/landscape.html`（レーダー図）を生成します
+- `docs/index.html`（日次/週次/月次レポート、ドメイン別に最新+過去一覧+購読リンク）と `docs/opml/digest.opml`、各ドメインの `docs/digest/report|release/<domain>/index.html` と `docs/digest/trend/index.html`（過去一覧）、`landscape.yaml` から `docs/digest/landscape.html`（レーダー図）を生成します
 - 実在しないフィードファイル（初回 CI 前の devtools 等）は OPML・購読リンクから除外します
 
 ## 状態管理
 
 専用ストアを持ちません。生成物そのものを状態とします（例外: X タイムラインの蓄積は actions/cache 上の `.cache/x-timeline.json`。コミットしません）。
 
-- 翻訳: 既存 `translated/<id>.xml` の guid 集合に無いものだけ処理します。
 - レポート / リリース: `digest/report|release/<domain>/YYYY-MM-DD.html` が既にあればその日はスキップします。
 - 月次トレンド: `digest/trend/YYYY-MM.html` が既にあればその月はスキップします。前月との差分の材料は前回のトレンド HTML です。
-- 各フィードは件数上限で truncate します（翻訳 100 / レポート 60 / リリース 26 / トレンド 24）。
+- 各フィードは件数上限で truncate します（レポート 60 / リリース 26 / トレンド 24）。
 
-> `translated/<id>.xml` / `digest/report-*.xml` / `digest/release-*.xml` は **CI でのみ生成します**。ローカル生成物を
-> コミットしません。guid は永続で、翻訳エンジン未設定のパススルー実行でもエントリは「翻訳済み」として
-> guid 集合に入り、本番でも再翻訳されません。初期コミットに含めるのは `docs/index.html` /
-> `docs/translated/index.html` / `docs/assets/` / `docs/opml/` だけです。
+> `digest/report-*.xml` / `digest/release-*.xml` は **CI でのみ生成します**。ローカル生成物を
+> コミットしません。初期コミットに含めるのは `docs/index.html` / `docs/assets/` / `docs/opml/` だけです。
 
 ## GitHub Actions
 
 | ファイル | トリガー | 内容 |
 | --- | --- | --- |
-| `translate.yml` | `0 */6 * * *` ＋ dispatch | 海外サイトのサイト別翻訳（`--strict`）→ build → commit |
-| `report.yml` | `0 22 * * *` ＋ dispatch | 翻訳最新化 → ドメインごとに collect / claude-code-action / render → build → commit |
+| `report.yml` | `0 22 * * *` ＋ dispatch | ドメインごとに collect / claude-code-action / render → build → commit |
 | `release.yml` | `30 22 * * 0` ＋ dispatch | ドメインごとに collect / claude-code-action / render → build → commit |
 | `trend.yml` | `45 22 1 * *` ＋ dispatch（`month` 入力で対象月を指定可） | collect / claude-code-action / render → ランドスケープ更新案 / マージ → build → commit |
 | `feed-audit.yml` | `0 22 * * 6` ＋ dispatch | collect → claude-code-action → validate → PR 作成・自動マージ |
@@ -373,11 +340,11 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 | `inoreader-sync.yml` | `0 21 * * 6` ＋ dispatch | スター取得 → commit |
 | `timeline.yml` | `5,35 * * * *` ＋ dispatch | X タイムライン取得 → actions/cache に蓄積（docs は書きません。`concurrency: x-timeline`） |
 
-- `docs/` を書き込む6ワークフロー（translate/report/release/trend/feed-audit/inoreader-sync）は
+- `docs/` を書き込む5ワークフロー（report/release/trend/feed-audit/inoreader-sync）は
   全て `concurrency: { group: docs-write }` で直列化しています。`source.yaml` の同時書き換えを防ぎます。
 - commit ステップは `permissions: contents: write` ＋ `git push "https://x-access-token:${GITHUB_TOKEN}@github.com/..."`。
   `claude-code-action` が git 認証情報を書き換えるため、素の `git push` は認証失敗します。
-- Secrets: `DEEPL_API_KEY` / `OPENCODE_API_KEY`（OpenCode Go 経由で DeepSeek を使うための
+- Secrets: `OPENCODE_API_KEY`（OpenCode Go 経由で DeepSeek を使うための
   APIキーです。`anthropic_api_key`/`ANTHROPIC_CUSTOM_HEADERS` に渡します）。`CLAUDE_CODE_OAUTH_TOKEN`
   は Anthropic 直接に戻す場合の切り戻し用に残置しています（現状未使用です）。`INOREADER_CLIENT_ID` /
   `INOREADER_CLIENT_SECRET` / `INOREADER_REFRESH_TOKEN` は任意です（未設定ならスター連携だけスキップします）。
@@ -406,19 +373,17 @@ report-criteria/
   trend.md（月次トレンドの判定基準）  landscape.md（技術ランドスケープの更新基準）
 src/
   lib/           config / feeds取得 / html / style / labels / urls / types / paths（低レベル共有）
-  translate/     サービスB: run.ts（サイト別翻訳生成）engine.ts（DeepL）store.ts（translated/<id>.xml 入出力）
-  digest/        サービスA: report-collect / report-render / release-collect / release-render / trend-collect / trend-render / landscape-update / x-timeline
-  site/          build.ts（index.html + translated/index.html + opml/ 生成）landscape.ts（技術ランドスケープのページ）
+  digest/        report-collect / report-render / release-collect / release-render / trend-collect / trend-render / landscape-update / x-timeline
+  site/          build.ts（index.html + opml/ 生成）landscape.ts（技術ランドスケープのページ）
   feed-audit-collect.ts  feed-audit-validate.ts  feed-audit-summarize.ts
   inoreader-starred.ts
 docs/            GitHub Pages 配信対象。ワークフローがコミット
 .github/workflows/
-  translate.yml  report.yml  release.yml  trend.yml
+  report.yml  release.yml  trend.yml
   feed-audit.yml  issue-request.yml  component-review-reminder.yml  inoreader-sync.yml  timeline.yml
 ```
 
 各スクリプトは `bun run src/<パス>.ts [引数]` で単体実行できます（例: `bun run src/digest/report-collect.ts claude`）。
-翻訳を試すには `DEEPL_API_KEY=... bun run src/translate/run.ts`。
 
 ## スコープ外
 

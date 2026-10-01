@@ -1,5 +1,5 @@
 import { mkdir, readdir } from "node:fs/promises";
-import { RELEASE_DOMAINS, REPORT_DOMAINS, loadFeeds } from "../lib/config.ts";
+import { RELEASE_DOMAINS, REPORT_DOMAINS } from "../lib/config.ts";
 import { pageShell } from "../lib/html.ts";
 import { DOMAIN_CATEGORY, DOMAIN_LABEL } from "../lib/labels.ts";
 import {
@@ -10,8 +10,6 @@ import {
   INDEX_HTML,
   OPML_DIR,
   SITE_URL,
-  TRANSLATED_DIR,
-  TRANSLATED_OPML,
   TREND_DIR,
   TREND_XML,
   releaseDir,
@@ -34,18 +32,6 @@ async function listDates(dir: string): Promise<string[]> {
   } catch {
     return [];
   }
-}
-
-/** DOMAIN_CATEGORY の出現順でグループ化する。 */
-function groupByCategory<T>(items: T[], catOf: (t: T) => string): [string, T[]][] {
-  const groups: [string, T[]][] = [];
-  for (const item of items) {
-    const cat = catOf(item);
-    const found = groups.find(([c]) => c === cat);
-    if (found) found[1].push(item);
-    else groups.push([cat, [item]]);
-  }
-  return groups;
 }
 
 /** 日付 HTML を過去一覧ページとして書き出す(digest/report|release/<domain>/index.html)。 */
@@ -146,42 +132,6 @@ async function main() {
   await mkdir(OPML_DIR, { recursive: true });
   await Bun.write(`${ASSETS_DIR}/style.css`, STYLE_CSS);
 
-  const feeds = await loadFeeds();
-  const translated = feeds.filter((f) => f.kind === "content" && f.id);
-
-  // --- サービスB: translated/ サイト別フィード + 一覧ページ ---
-  await mkdir(TRANSLATED_DIR, { recursive: true });
-  const translatedGroups = groupByCategory(translated, (f) => DOMAIN_CATEGORY[f.domain]);
-  const siteRows = translatedGroups
-    .map(([cat, items]) => {
-      const lis = items
-        .map(
-          (f) =>
-            `<li><a href="${f.id}.xml">${escapeHtml(f.name)}</a> <span class="muted">translated/${f.id}.xml</span></li>`,
-        )
-        .join("\n");
-      return `<h2>${escapeHtml(cat)}</h2>\n<ul>\n${lis}\n</ul>`;
-    })
-    .join("\n");
-  const translatedBody = `<h1>翻訳フィード</h1>
-<p>海外サイトの新着をタイトル・概要だけ日本語化した全量ストリーム。6時間ごと更新。記事の選定やコメントは付きません。全文を読むときは各エントリの Google 翻訳リンクから。</p>
-<p>まとめて購読: <a href="../opml/translated.opml">translated.opml</a></p>
-${siteRows}`;
-  await Bun.write(
-    `${TRANSLATED_DIR}/index.html`,
-    pageShell({ title: "翻訳フィード", body: translatedBody, depth: 1 }),
-  );
-  // B の OPML: 実ファイルが存在するサイトのみ(初回 translate 実行前は空になる)。
-  const translatedFolders: [string, [string, string][]][] = [];
-  for (const [cat, items] of translatedGroups) {
-    const files = await existingFiles(
-      items.map((f) => [f.name, `translated/${f.id}.xml`] as [string, string]),
-    );
-    if (files.length > 0) translatedFolders.push([cat, files]);
-  }
-  await Bun.write(TRANSLATED_OPML, UTF8_BOM + opmlBody(translatedFolders));
-
-  // --- サービスA: digest(レポート+リリース) ---
   for (const d of REPORT_DOMAINS) await writeArchive("report", d);
   for (const d of RELEASE_DOMAINS) await writeArchive("release", d);
 
@@ -192,7 +142,7 @@ ${siteRows}`;
     await Promise.all(RELEASE_DOMAINS.map((d) => digestCard(d, "release")))
   ).join("\n");
   const body = `<h1>ogontaro / rss</h1>
-<p>ダイジェスト(読む)と<a href="translated/">翻訳フィード(拾い読み)</a>の2サービス構成。まとめて購読: <a href="opml/digest.opml">digest.opml</a> / <a href="opml/translated.opml">translated.opml</a></p>
+<p>まとめて購読: <a href="opml/digest.opml">digest.opml</a></p>
 <h2>日次レポート</h2>
 <p class="muted">新着と X タイムラインから Claude が見る価値のある記事だけ(最大 5 本)を選んでコメントを付けたダイジェスト。毎日 07:00 JST。海外記事は原文・Google 翻訳リンク付き。</p>
 <div class="cards">
@@ -237,7 +187,7 @@ ${(await writeLandscapePage()) ? `<p><a href="${DIGEST_URL_PREFIX}/landscape.htm
   await Bun.write(DIGEST_OPML, UTF8_BOM + opmlBody(digestFolders));
 
   console.log(
-    `site: index.html + translated/ (${translated.length}) + opml/ (digest ${reportFiles.length + releaseFiles.length + trendFiles.length})`,
+    `site: index.html + opml/ (digest ${reportFiles.length + releaseFiles.length + trendFiles.length})`,
   );
 }
 

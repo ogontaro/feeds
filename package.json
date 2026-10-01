@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "translate": "bun run src/translate/run.ts",
     "report:collect": "bun run src/digest/report-collect.ts",
     "report:render": "bun run src/digest/report-render.ts",
     "release:collect": "bun run src/digest/release-collect.ts",

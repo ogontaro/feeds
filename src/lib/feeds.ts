@@ -9,7 +9,7 @@ const parser = new Parser({
 /**
  * 1 フィードから取り込む最大件数。日次 24h / 週次 7d の窓に対して十分な量。
  * アグリゲータ（HN 検索・日次ダイジェスト）や全履歴を返す終わりのないフィードでも、
- * 初回取り込みが翻訳枠と DeepL の 1 リクエスト 50 件制限を超えないようにする上限。
+ * 初回取り込みが Claude のプロンプトを膨らませないようにする上限。
  */
 const MAX_ENTRIES_PER_FEED = 20;
 
@@ -22,8 +22,8 @@ function stripHtml(s: string): string {
 }
 
 /**
- * hnrss 等は GitHub Actions から断続的に 502 を返し、1 件でも落ちると --strict の translate.yml が
- * 失敗する。hnrss は検索結果の生成に 30 秒前後かかり、生成後はキャッシュから即返るため、
+ * hnrss 等は GitHub Actions から断続的に 502 を返し、1 件でも落ちると
+ * ワークフローが失敗する。hnrss は検索結果の生成に 30 秒前後かかり、生成後はキャッシュから即返るため、
  * 5xx とタイムアウトだけ生成完了を待てる間隔を空けて再試行する（4xx・パースエラーは即失敗のまま）。
  */
 async function parseWithRetry(url: string): Promise<Awaited<ReturnType<typeof parser.parseURL>>> {

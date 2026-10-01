@@ -22,11 +22,6 @@ jobs:
       - uses: jdx/mise-action@v2
       - run: bun install --frozen-lockfile
 
-      - name: refresh translated feeds
-        run: bun run src/translate/run.ts
-        env:
-          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
-
       # ---------------- x ----------------
       # timeline.yml が蓄積した X タイムライン(actions/cache)に今の取得分を足し、直近 24h を各ドメインの追加入力にする。
       # 蓄積はコミットしない(.cache/ は gitignore、commit は docs/ と採用ログだけ)。

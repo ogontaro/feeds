@@ -57,9 +57,7 @@ jobs:
                source.yaml, treat their feeds as candidates.
             3. For each new candidate, fetch the URL and confirm it actually serves RSS/Atom XML
                before adding it. Append accepted candidates to source.yaml under the right
-               domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`. For English (non-Japanese)
-               content feeds, also set a unique slug `id` ([a-z0-9-]+) — it names the translation
-               feed file translated/<id>.xml. No id for Japanese-language sites or release feeds.
+               domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`.
             4. Write only source.yaml. Edit entries in place and keep existing YAML comments and
                structure intact — do not rewrite the whole file.
           claude_args: "--allowedTools Read,Write,WebSearch --model deepseek-v4.1-flash[1m]"
@@ -94,9 +92,7 @@ jobs:
                source.yaml, treat their feeds as candidates.
             3. For each new candidate, fetch the URL and confirm it actually serves RSS/Atom XML
                before adding it. Append accepted candidates to source.yaml under the right
-               domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`. For English (non-Japanese)
-               content feeds, also set a unique slug `id` ([a-z0-9-]+) — it names the translation
-               feed file translated/<id>.xml. No id for Japanese-language sites or release feeds.
+               domain/kind section with `addedAt: "<today, YYYY-MM-DD>"`.
             4. Write only source.yaml. Edit entries in place and keep existing YAML comments and
                structure intact — do not rewrite the whole file.
           claude_args: "--allowedTools Read,Write,WebSearch --model qwen3.8-flash[1m]"

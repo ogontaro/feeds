@@ -6,7 +6,7 @@ name: timeline
 on:
   schedule:
     # 88 件は平日日中で ~8 時間ぶん。30 分ごとなら cron の遅延・欠落が続いても取りこぼさない。
-    - cron: "5,35 * * * *" # translate(0 */6)と分をずらす
+    - cron: "5,35 * * * *"
   workflow_dispatch:
 
 permissions:

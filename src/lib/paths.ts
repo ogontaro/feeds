@@ -20,8 +20,6 @@ export const ASSETS_DIR = join(DOCS, "assets");
 export const SITE_URL = process.env.SITE_URL ?? "https://ogontaro.github.io/feeds";
 
 // 翻訳配信: 海外サイトのみ、1サイト=1フィード
-export const TRANSLATED_DIR = join(DOCS, "translated");
-export const translatedFile = (id: string) => join(TRANSLATED_DIR, `${id}.xml`);
 
 // デイジェスト: レポート+リリース、ドメイン単位
 export const DIGEST_DIR = join(DOCS, "digest");
@@ -36,7 +34,6 @@ export const TREND_DIR = join(DIGEST_DIR, "trend");
 export const LANDSCAPE_HTML = join(DIGEST_DIR, "landscape.html");
 
 // 購読ファイル: 成果物別に翻訳用/デイジェスト用へ分ける
-export const TRANSLATED_OPML = join(DOCS, "opml", "translated.opml");
 export const DIGEST_OPML = join(DOCS, "opml", "digest.opml");
 export const OPML_DIR = join(DOCS, "opml");
 

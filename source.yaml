@@ -5,7 +5,6 @@
 feeds:
   # ================= claude / content =================
   - url: https://simonwillison.net/tags/claude.atom
-    id: simon-claude
     name: Simon Willison — Claude
     domain: claude
     kind: content
@@ -28,7 +27,6 @@ feeds:
     domain: claude
     kind: content
   - url: https://addyosmani.com/rss.xml
-    id: addyosmani
     name: AddyOsmani.com
     domain: claude
     kind: content
@@ -39,14 +37,12 @@ feeds:
 
   # ----- AI業界のトレンド・考え方（製品公式ブログでは拾えない話題）-----
   - url: https://latent.space/feed
-    id: latent-space
     name: Latent Space
     domain: claude
     kind: content
   # GitHub Actions のランナー IP から一貫して 403（手元からは 200）。--strict の
   # translate.yml を毎回落としていたため無効化（issue #3-8）。
   - url: https://importai.substack.com/feed
-    id: importai
     name: Import AI
     domain: claude
     kind: content
@@ -65,7 +61,6 @@ feeds:
   # ただし ticker bot が README.md 自体を毎回書き換えるため ticker コミットしか流れず、
   # 採用実績ゼロ。発見源は AI Devtools Radar / はてブ検索で代替し無効化。
   - url: https://github.com/hesreallyhim/awesome-claude-code/commits/main.atom?path=README.md
-    id: awesome-claude-code
     name: awesome-claude-code updates
     domain: claude
     kind: content
@@ -77,7 +72,6 @@ feeds:
     kind: content
   # AI コーディングツールの新機能・料金変更の週刊まとめ。
   - url: https://buttondown.com/devtoolsradar/rss
-    id: devtools-radar
     name: AI Devtools Radar
     domain: claude
     kind: content
@@ -88,7 +82,6 @@ feeds:
   # 直近8週間の採用実績もゼロ。購読中の HN はトピック限定（hn-claude / hn-mcp）で足り、キーワード
   # 無しの frontpage は claude の関心外（一般テック・雑談）が大半を占めるため無効化。
   - url: https://hnrss.org/frontpage?points=300
-    id: hn-frontpage
     name: HN — Front page (300+)
     domain: claude
     kind: content
@@ -96,7 +89,6 @@ feeds:
   # 新しいコーディングエージェント系サービスの発表・料金変更を当日拾う（Meta Muse Code は
   # HN にも購読中ブログにも出ず、ニュース媒体だけが報じた）。リンクは gnews-kubernetes と同様に解決する。
   - url: https://news.google.com/rss/search?q=%28%22coding%20agent%22%20OR%20%22AI%20coding%20agent%22%20OR%20%22AI%20coding%20assistant%22%29%20%28launch%20OR%20launches%20OR%20pricing%20OR%20subscription%20OR%20%22per%20month%22%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en
-    id: gnews-coding-agents
     name: Google News — コーディングエージェント新サービス・料金
     domain: claude
     kind: content
@@ -117,7 +109,6 @@ feeds:
     kind: content
   # 競合コーディングエージェント(GitHub Copilot)の新機能・料金変更を追う。
   - url: https://github.blog/changelog/label/copilot/feed/
-    id: gh-changelog-copilot
     name: GitHub Changelog — Copilot
     domain: claude
     kind: content
@@ -125,7 +116,6 @@ feeds:
   # 見出しのキーワード検索の網なので、開発ツール・エンタープライズ技術に強い媒体の AI/ML 面を直接購読する
   # （2026-09 の Meta Muse Code GA と $5/月 の料金体系は購読中フィードに一切出ず、報道媒体だけが報じた）。
   - url: https://www.theregister.com/software/ai_ml/headlines.atom
-    id: theregister-ai
     name: The Register — AI/ML
     domain: claude
     kind: content
@@ -134,7 +124,6 @@ feeds:
   # ネイティブ領域に強い媒体の AI 面を直接購読する。thenewstack.io は platform-engineering 面を
   # 購読中で取得実績がある。
   - url: https://thenewstack.io/ai/feed/
-    id: newstack-ai
     name: The New Stack — AI
     domain: claude
     kind: content
@@ -142,7 +131,6 @@ feeds:
   # 新しい MCP サーバー・公式統合の発見源。公式リポジトリの README は PR で追記される運用
   # （readme-pr-check.yml があり ticker bot の自動更新はない）ため、path 指定の commits atom が効く。
   - url: https://github.com/modelcontextprotocol/servers/commits/main.atom?path=README.md
-    id: mcp-servers
     name: MCP servers (official) updates
     domain: claude
     kind: content
@@ -150,38 +138,32 @@ feeds:
 
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
-    id: kubernetes-blog
     name: Kubernetes Blog
     domain: kubernetes
     kind: content
   - url: https://www.cncf.io/blog/feed/
-    id: cncf
     name: CNCF Blog
     domain: kubernetes
     kind: content
   # 2026-06-23（Building Modelplane on Crossplane）を最後に新着が止まっている。直近8週間は新着ゼロ・
   # 採用実績ゼロのため無効化（backstage と同じ扱い）。ブログが再開したら enabled を戻す。
   - url: https://blog.crossplane.io/rss/
-    id: crossplane
     name: The Crossplane Blog
     domain: kubernetes
     kind: content
     enabled: false
   - url: https://blog.argoproj.io/feed
-    id: argo-project
     name: Argo Project
     domain: kubernetes
     kind: content
   # 2026-04-20 を最後に更新が止まっている（直近8週間は新着ゼロ・採用実績ゼロ。KubeCon EU 2026 の
   # 回顧記事が最終）。プロジェクトのリリースは backstage/backstage の release フィードで別途追っている。
   - url: https://backstage.io/blog/rss.xml
-    id: backstage
     name: Backstage Blog
     domain: kubernetes
     kind: content
     enabled: false
   - url: https://sysdig.com/feed/
-    id: sysdig
     name: Sysdig
     domain: kubernetes
     kind: content
@@ -189,7 +171,6 @@ feeds:
   # 阻まれ取得不可（手元の curl でも再現）。--strict の translate.yml を毎回落として
   # いたため無効化（issue #3-8）。
   - url: https://www.hashicorp.com/blog/products/terraform/feed.xml
-    id: terraform-blog
     name: HashiCorp Blog - Terraform
     domain: kubernetes
     kind: content
@@ -197,30 +178,25 @@ feeds:
 
   # ----- Platform Engineering トレンド -----
   - url: https://platformengineering.org/blog/rss.xml
-    id: platform-eng
     name: Platform Engineering Blog
     domain: kubernetes
     kind: content
   - url: https://thenewstack.io/platform-engineering/feed
-    id: newstack-pe
     name: The New Stack — Platform Engineering
     domain: kubernetes
     kind: content
   # CNCF の Graduation 等の発表（CNCF Blog とは別フィード）。
   - url: https://www.cncf.io/announcements/feed/
-    id: cncf-announcements
     name: CNCF Announcements
     domain: kubernetes
     kind: content
   - url: https://lwkd.info/feed.xml
-    id: lwkd
     name: Last Week in Kubernetes Development
     domain: kubernetes
     kind: content
   # HN では K8s 系が 2 週間で 20pt 超 0 件のため、ニュース検索で話題（卒業・CVE・リリース）を拾う。
   # リンク（news.google.com のリダイレクト URL）は translate 時に元記事 URL へ解決する（feeds.ts）。
   - url: https://news.google.com/rss/search?q=%28Kubernetes%20OR%20CNCF%29%20%28launch%20OR%20release%20OR%20graduates%20OR%20vulnerability%20OR%20CVE%29%20when%3A2d&hl=en-US&gl=US&ceid=US:en
-    id: gnews-kubernetes
     name: Google News — Kubernetes
     domain: kubernetes
     kind: content
@@ -228,31 +204,26 @@ feeds:
   # ----- セキュリティ・サプライチェーン -----
   # Kubernetes 本体の CVE を公式フィードから直接追う（gnews-kubernetes は関心語に合致した話題のみ拾う網）。
   - url: https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml
-    id: k8s-cve
     name: Kubernetes Official CVE Feed
     domain: kubernetes
     kind: content
   # サプライチェーンセキュリティ（依存関係・ビルド供給網）の動向を追う。
   - url: https://github.blog/security/supply-chain-security/feed/
-    id: github-supply-chain
     name: GitHub Blog — Supply chain security
     domain: kubernetes
     kind: content
   # オブザーバビリティ（OpenTelemetry）の動向を追う。既存フィードには observability 系ソースがない。
   - url: https://opentelemetry.io/blog/index.xml
-    id: opentelemetry
     name: OpenTelemetry Blog
     domain: kubernetes
     kind: content
 
   # ================= aws / content（EKS・AI/Bedrock を重点）=================
   - url: https://aws.amazon.com/blogs/aws/feed/
-    id: aws-news
     name: AWS News Blog
     domain: aws
     kind: content
   - url: https://aws.amazon.com/blogs/machine-learning/feed/
-    id: aws-ml
     name: AWS Machine Learning Blog
     domain: aws
     kind: content
@@ -265,27 +236,23 @@ feeds:
     domain: aws
     kind: content
   - url: https://docs.aws.amazon.com/eks/latest/userguide/doc-history.rss
-    id: eks-docs
     name: Amazon EKS Document History
     domain: aws
     kind: content
   # EKS 系の入力（DIO + Doc History）が 0.2 件/日しかないのを埋める。
   - url: https://aws.amazon.com/blogs/containers/feed/
-    id: aws-containers
     name: AWS Containers Blog
     domain: aws
     kind: content
   # EKS / Bedrock を含む新機能の告知一次情報（ブログ記事化より速く、Feature 単位で出る。
   # interest: Amazon EKS / Amazon Bedrock / クロスリージョン推論）。量が多いのでレポート側で絞る。
   - url: https://aws.amazon.com/about-aws/whats-new/recent/feed/
-    id: aws-whats-new
     name: AWS What's New
     domain: aws
     kind: content
     addedAt: "2026-09-27"
   # コンピュート全般（EKS・コンテナ・Lambda）の設計／運用の解説。aws-containers より一段広い。
   - url: https://aws.amazon.com/blogs/compute/feed/
-    id: aws-compute
     name: AWS Compute Blog
     domain: aws
     kind: content
@@ -293,7 +260,6 @@ feeds:
   # EKS まわりの IaC・CI/CD・運用手順の解説（aws-containers が扱わない Terraform / CDK /
   # パイプライン系を補う。interest: IaC は kubernetes 側だが、EKS の実装はこちらに出る）。
   - url: https://aws.amazon.com/blogs/devops/feed/
-    id: aws-devops
     name: AWS DevOps Blog
     domain: aws
     kind: content
@@ -303,7 +269,6 @@ feeds:
   # devtools は release のみだったが、開発環境・コンテナ開発の一次情報（Docker Desktop / Engine の
   # 新機能・運用）を content でも追う（interests.yaml の「コンテナ開発」「開発環境」）。
   - url: https://www.docker.com/blog/feed/
-    id: docker-blog
     name: Docker Blog
     domain: devtools
     kind: content
@@ -311,25 +276,21 @@ feeds:
 
   # ----- Hacker News（関心キーワード限定。事前フィルタ済み少数ソース）-----
   - url: https://hnrss.org/newest?q=Claude&points=50
-    id: hn-claude
     name: HN — Claude
     domain: claude
     kind: content
   - url: https://hnrss.org/newest?q=MCP&points=40
-    id: hn-mcp
     name: HN — MCP
     domain: claude
     kind: content
   # GitHub Actions からのクエリ検索が高確率(直近8回中6回)で502。手元 curl は毎回 200 のため
   # GH Actions 環境固有の問題。--strict の translate.yml を頻繁に落としていたため無効化。
   - url: https://hnrss.org/newest?q=Kubernetes&points=50
-    id: hn-kubernetes
     name: HN — Kubernetes
     domain: kubernetes
     kind: content
     enabled: false
   - url: https://hnrss.org/newest?q=AWS&points=50
-    id: hn-aws
     name: HN — AWS
     domain: aws
     kind: content
@@ -338,7 +299,6 @@ feeds:
   # ----- GitHub Watch/Star/Fork の横展開 -----
   # 実際の中身は自分の push/issue 操作で採用実績ゼロ。バースト時 16〜19 件/日で DeepL を浪費するため無効化。
   - url: https://github.com/ogontaro.atom
-    id: gh-activity
     name: GitHub activity (ogontaro)
     domain: kubernetes
     kind: content
@@ -353,6 +313,11 @@ feeds:
     name: opencode releases
     domain: claude
     kind: release
+  - url: https://github.com/stablyai/orca/releases.atom
+    name: Orca releases
+    domain: claude
+    kind: release
+    addedAt: "2026-10-01"
 
   # ================= aws / release =================
   - url: https://github.com/aws/karpenter-provider-aws/releases.atom

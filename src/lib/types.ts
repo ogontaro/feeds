@@ -4,11 +4,6 @@ export type Kind = "content" | "release";
 export type Feed = {
   url: string;
   name: string;
-  /**
-   * 翻訳フィードのファイル識別子(translated/<id>.xml)。
-   * 海外サイトの content フィードは必須。日本語サイトと release フィードは不要。
-   */
-  id?: string;
   domain: Domain;
   kind: Kind;
   enabled?: boolean;
@@ -31,7 +26,7 @@ export type InterestsConfig = {
   interests: Record<Domain, DomainInterests>;
 };
 
-/** A normalized entry from a source feed, before translation. */
+/** A normalized entry from a source feed, from a source feed. */
 export type SourceEntry = {
   guid: string;
   link: string;
@@ -39,13 +34,4 @@ export type SourceEntry = {
   description: string;
   pubDate: Date;
   sourceName: string;
-};
-
-/** An entry after translation, as persisted in translated/<id>.xml (one site per feed). */
-export type TranslatedEntry = {
-  guid: string;
-  link: string;
-  titleJa: string;
-  descriptionJa: string;
-  pubDate: Date;
 };
