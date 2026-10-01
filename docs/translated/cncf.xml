@@ -4,11 +4,19 @@
         <title>CNCF Blog — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>CNCF Blog の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 15:24:47 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Oct 2026 11:30:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[ゲートではなくガードレール：プラットフォームチームのポリシーの再考]]></title>
+            <link>https://www.cncf.io/blog/2026/10/01/guardrails-not-gates-rethinking-policy-in-platform-teams/</link>
+            <guid>https://www.cncf.io/?p=175355</guid>
+            <pubDate>Thu, 01 Oct 2026 11:30:00 GMT</pubDate>
+            <description><![CDATA[Kubernetesで最も人気のあるOPAベースのポリシーツールは、文字通りゲートキーパーと呼ばれています。アドミッションコントローラがブロックされます。ポリシーは拒否されます。Kyvernoの強制設定はvalidationFailureAction: Enforceで、少なくともニュートラルに聞こえますが、説明されている障害モードはまだ...]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.cncf.io/blog/2026/10/01/guardrails-not-gates-rethinking-policy-in-platform-teams/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F01%2Fguardrails-not-gates-rethinking-policy-in-platform-teams%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ArgoCon North America 2026 ： ArgoコミュニティがCD 4.0に期待すること]]></title>
             <link>https://www.cncf.io/blog/2026/09/30/argocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0/</link>

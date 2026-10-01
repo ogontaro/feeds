@@ -4,11 +4,27 @@
         <title>Google News — コーディングエージェント新サービス・料金 — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — コーディングエージェント新サービス・料金 の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Thu, 01 Oct 2026 05:42:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Oct 2026 08:03:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[OpenAI Codex vs Claude Code ：より優れたAIコーディングエージェントはベンチマーク以上のものに依存- techrepublic.com]]></title>
+            <link>https://www.techrepublic.com/article/news-codex-vs-claude-code/</link>
+            <guid>CBMicEFVX3lxTE41cERjbTFyTGZSQ2hpNWVUYTNua2VEYzEzaE53TldTZ1JMcVhhSzJVaTBrc3VFUTlBNnFQTXFNTGVJZWNsVHhsUkR4akd6SU9SODNYMGdFR1hWMFpIbmxpVnJVOUQ3RDZqa2hVRjRGR0M</guid>
+            <pubDate>Thu, 01 Oct 2026 08:03:57 GMT</pubDate>
+            <description><![CDATA[OpenAI Codex vs Claude Code ：より優れたAIコーディングエージェントは、ベンチマーク以上のものに依存していますtechrepublic.com]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.techrepublic.com/article/news-codex-vs-claude-code/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.techrepublic.com%2Farticle%2Fnews-codex-vs-claude-code%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[StackHawk、AIコーディングの欠陥を修正するためにWingmanを立ち上げ- SecurityBrief UK]]></title>
+            <link>https://securitybrief.co.uk/story/stackhawk-launches-wingman-to-fix-flaws-in-ai-coding-ef549c9a-889b-433f-a910-781b5d383b5b</link>
+            <guid>CBMiwAFBVV95cUxPVC1wczFaYktzOWFUcGNwNk9aTlh1Q1BnYlJhYXVSVnRqSGJYT1V4R09nU0FablB0b3Q0dXZnVnhiSmQtV3JZUVVWM3hkRk96dnBwUGNwb1RIcmdwcnBYOHR6Mk4wLTZjeVpKOXUwVTlKNXgtQ05vOTdXWnlSV3Z2MTQ2cGtSRUN0NHd3LTZwMVc0NUFELU5IUXh5N1VseHMzZldtcmh5YjhjR2wwdnc3ckExeXR3MV9ZbVJoVlN2VGQ</guid>
+            <pubDate>Thu, 01 Oct 2026 07:15:00 GMT</pubDate>
+            <description><![CDATA[StackHawkは、AIコーディングSecurityBrief UKの欠陥を修正するためにWingmanを立ち上げました]]></description>
+            <content:encoded><![CDATA[<p><a href="https://securitybrief.co.uk/story/stackhawk-launches-wingman-to-fix-flaws-in-ai-coding-ef549c9a-889b-433f-a910-781b5d383b5b">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fsecuritybrief.co.uk%2Fstory%2Fstackhawk-launches-wingman-to-fix-flaws-in-ai-coding-ef549c9a-889b-433f-a910-781b5d383b5b">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AIの実際のコストが請求書よりも大きい理由- ITブリーフアジア]]></title>
             <link>https://itbrief.asia/story/why-ai-s-real-cost-is-bigger-than-the-invoice</link>
@@ -16,6 +32,14 @@
             <pubDate>Thu, 01 Oct 2026 05:42:00 GMT</pubDate>
             <description><![CDATA[なぜAIの実際のコストは請求書のIT Brief Asiaよりも大きいのか]]></description>
             <content:encoded><![CDATA[<p><a href="https://itbrief.asia/story/why-ai-s-real-cost-is-bigger-than-the-invoice">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fitbrief.asia%2Fstory%2Fwhy-ai-s-real-cost-is-bigger-than-the-invoice">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CloudBeesは、エンタープライズDevOps、CI/CDのためにAIファーストに移行- TechGig]]></title>
+            <link>https://techgig.com/news/ai/cloudbees-pivots-to-ai-first-for-enterprise-devops-ci/cd/134605500</link>
+            <guid>CBMimgFBVV95cUxNQ2JERnM1bVVScU1lLXBZS2FmZHV2bS1nc2VQVm96cTNzMFNEWFBuVEc0TVdHVHlLbURwckNRTnpsZlp1WXZNTElvdERlenlOcDhjN1cyZmpvYUwzdGZlRk1jcW5oM1YwSHZHcXVFcElDZnc5S1BvUnQtdzZfcWNhR1JPYUhMR1RRTjgtMXJ1UldCam1lQnp2V2tR</guid>
+            <pubDate>Thu, 01 Oct 2026 04:52:32 GMT</pubDate>
+            <description><![CDATA[CloudBeesは、エンタープライズDevOps、CI/CD TechGigのためにAIファーストに移行]]></description>
+            <content:encoded><![CDATA[<p><a href="https://techgig.com/news/ai/cloudbees-pivots-to-ai-first-for-enterprise-devops-ci/cd/134605500">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Ftechgig.com%2Fnews%2Fai%2Fcloudbees-pivots-to-ai-first-for-enterprise-devops-ci%2Fcd%2F134605500">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[米国政府が人工知能をスーパーインテリジェンスに置き換える- RS Webソリューション]]></title>

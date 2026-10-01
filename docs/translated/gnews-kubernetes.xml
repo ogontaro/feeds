@@ -4,11 +4,19 @@
         <title>Google News — Kubernetes — 翻訳</title>
         <link>https://ogontaro.github.io/feeds/translated/</link>
         <description>Google News — Kubernetes の新着エントリのタイトルと概要を日本語化したもの。全文は翻訳URLから。</description>
-        <lastBuildDate>Wed, 30 Sep 2026 19:10:34 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Oct 2026 10:00:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。翻訳は機械翻訳です。</copyright>
+        <item>
+            <title><![CDATA[新しいOperTraitorsツールがKubernetesオペレーターの危険な特権昇格パスを明らかに- CyberSecurityNews]]></title>
+            <link>https://cybersecuritynews.com/opertraitors-tool/</link>
+            <guid>CBMiXEFVX3lxTE90bXRieExkTDQ2dEQ1V2IyRDJrX09oX1RMYngyYW1LeDd6dHJnc280SlBZYUFxbngwR1JNMlJlQWF5cDl0QmF5bG9rc3JSdzNwLWgzdFBtOXBibk0x0gFiQVVfeXFMUHhBbTVLajI3d0tNY3BpMkxlbC1MaTZ4N0ltOFN6M1ZaVVZ2aHhNaTJRS251cWRGeDV5QkRVUVVoRTU2Y3FSekVqM2J0ek0wNm40d3pmclJHaGhrXzZpeE53WGc</guid>
+            <pubDate>Thu, 01 Oct 2026 10:00:40 GMT</pubDate>
+            <description><![CDATA[新しいOperTraitorsツールがKubernetesオペレーターのCyberSecurityNewsで危険な特権昇格パスを明らかに]]></description>
+            <content:encoded><![CDATA[<p><a href="https://cybersecuritynews.com/opertraitors-tool/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fcybersecuritynews.com%2Fopertraitors-tool%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[6時間で9,000 GPUを拡張： Lumaのドリームマシンローンチの内側-ディールルーム]]></title>
             <link>https://app.dealroom.co/news/note/scaling-9-000-gpus-in-six-hours-inside-luma-s-dream-machine-launch</link>
@@ -40,6 +48,22 @@
             <pubDate>Wed, 30 Sep 2026 13:07:30 GMT</pubDate>
             <description><![CDATA[攻撃者は、ソースコードを超えてサプライチェーンへの侵入を拡大するために開発者の資格情報を標的としていますgbhackers.com]]></description>
             <content:encoded><![CDATA[<p><a href="https://gbhackers.com/supply-chain-intrusions/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fgbhackers.com%2Fsupply-chain-intrusions%2F">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Ennoble Careが自宅ベースのケアネットワーク全体でAI推論を強化するためにCoreWeaveを選択- Morningstar]]></title>
+            <link>https://www.morningstar.com/news/business-wire/20260930542844/ennoble-care-selects-coreweave-to-power-ai-inference-across-its-home-based-care-network</link>
+            <guid>CBMi4wFBVV95cUxQaDQyUEMxQ1AyRkpsaGpydzFXM0NWUFlqdUNaaGc3bVc4SnlqXzBMMzVKQmh5bEFMckdQdF9aZmU2X2FCbC1haE1XYVNaeG0zUTJ4MUJ0UldWaU1UYUNWTDcwYmN2SWJjOVBHNGVRTHhaSUp1OFJaTF9ldWI4RU1RSG96Ny1GLW81eVpKdlNOVENyMVd3RlVRMGNkSGwydzZTejRaTDZUVkMxYU9NQW1wMmxDWWFpM0c4NmlRc01oV0R3OWhMSmhCd3Q2SzdJUkR6Q181cGxxVlBfMmNpeDN6WXVoNA</guid>
+            <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
+            <description><![CDATA[Ennoble CareがCoreWeaveを選択し、在宅介護ネットワークのMorningstarでAI推論を強化]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.morningstar.com/news/business-wire/20260930542844/ennoble-care-selects-coreweave-to-power-ai-inference-across-its-home-based-care-network">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.morningstar.com%2Fnews%2Fbusiness-wire%2F20260930542844%2Fennoble-care-selects-coreweave-to-power-ai-inference-across-its-home-based-care-network">Google 翻訳で全文を読む</a></p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Diagrid、Sam Yang氏を最高経営責任者に任命-ビジネスワイヤ]]></title>
+            <link>https://www.businesswire.com/news/home/20260930367286/en/Diagrid-Names-Sam-Yang-Chief-Executive-Officer</link>
+            <guid>CBMipgFBVV95cUxNSWVQek5ycmxLcU45TFNUdVNpdnpnYlVqSDE4V25kTUFkMDhqXzhLV2FfQThEbS1nNUJaMWNSLWMzM2prV2FrM3JRcnZmVVpFZFNlbzF1Q2VOWGQ1QkxvbFBSd2duajRMaGM2Y0liSXNkUm5pdFBlV1hZd25ZLVJfODFoaEt0eG5Hd3ItNzVfUG1URmFObXRMNU5ndzBrX1hMaFlvMzF3</guid>
+            <pubDate>Wed, 30 Sep 2026 13:00:00 GMT</pubDate>
+            <description><![CDATA[Diagrid、Sam Yang氏を最高経営責任者（ CEO ）に任命]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.businesswire.com/news/home/20260930367286/en/Diagrid-Names-Sam-Yang-Chief-Executive-Officer">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&amp;tl=ja&amp;u=https%3A%2F%2Fwww.businesswire.com%2Fnews%2Fhome%2F20260930367286%2Fen%2FDiagrid-Names-Sam-Yang-Chief-Executive-Officer">Google 翻訳で全文を読む</a></p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Ennoble CareがCoreWeaveを選択し、自宅ベースのケアネットワーク全体でAI推論を強化-ナスダック]]></title>
