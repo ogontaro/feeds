@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-02</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-02</h1>
+<article class="report"><h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Claude Code に「Mods」— プラグインで挙動・UI を書き換えられるようになった</h3>
+<p>v2.1.287 で Claude Code を改造できる「Mods」が追加され、プラグインがより深い挙動まで変更できるようになった。数行の TypeScript で動作や UI を差し替えられ、Mods はプラグインとして <code>/plugin</code> で配布・導入できる。同じリリースでは、見落としがちな点をサイドエージェントが指摘する組み込み Mod「You should know」も入った。harness 自体を自分のワークフローに合わせて作り変えられるようになった点が大きく、自作 Mod の実例も出始めている。</p>
+<ul>
+<li><a href="https://claude-code-log.com/changelog/v2.1.287#item-75288269b65b">記事を読む</a></li>
+<li><a href="https://x.com/ClaudeDevs/status/2105721434807083061">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2105721434807083061">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/oikon48/status/2105807552005218477">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>MCP サーバーは「インストール時」ではなく「実行の瞬間」に止める</h3>
+<p>AI を組み込んだアプリのセキュリティを AI-BOM と SAST の両面から見てきた連載の一本。MCP サーバーは導入時に審査するだけでは足りず、実行のたびに「何をするか」を評価して止める仕組みが要る、という主張をしている。エージェントに何を許すかという権限境界の設計を考えるための、具体的な材料になる。</p>
+<ul>
+<li><a href="https://qiita.com/SokoP/items/e41dca283cb4fbe1b2f8">記事を読む</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>AI エージェント向けスプレッドシート「D2B」— MCP / API / CLI / SDK で接続、無料で始められる</h3>
+<p>AI が操作した Excel・スプレッドシートの変更履歴や差分をバージョン管理し、前の状態に戻したり、複雑なシートを型付きテーブルとして構造化したり、AI の出力をレビュー・検算できるサービス。ChatGPT / Claude / Claude Code / Codex / Copilot などから MCP・API・CLI・SDK 経由で使え、無料で始められて scale-to-zero とされている。エージェントに表計算を触らせる際の「差分が見えない・戻せない」という課題に正面から答えており、既存の AI ワークフローに差し込む余地が大きい。</p>
+<ul>
+<li><a href="https://x.com/y_matsuwitter/status/2105488397683036220">@y_matsuwitter のポスト</a></li>
+<li><a href="https://d2b.dev/developers">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fd2b.dev%2Fdevelopers">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<h2>AI 開発トレンド（2 本）</h2>
+<section class="item">
+<h3>「意思決定モデル」が各社から出揃ってきた — AWS の Strands Decider、Cloudflare の Clef、そして Jev</h3>
+<p>高価なモデルに考えさせ、安価なモデルに決めさせる——Jev が切り開いた「意思決定モデル」に、AWS がローカルで動く Strands Decider 2B を、Cloudflare が Clef / Clef-flash を投入し、選択肢が一気に増えた。エージェントの分岐・ルーティング・再試行の判断を小型モデルに任せてコストを下げる使い方が現実味を帯びる一方、実際にベンチを取ると遅くて使えなかったという声もあり、向き不向きの見極めがこれからの論点になる。</p>
+<ul>
+<li><a href="https://thenewstack.io/aws-strands-decider-model/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Faws-strands-decider-model%2F">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/mizchi/status/2105715922791256212">@mizchi のポスト</a></li>
+<li><a href="https://x.com/elastic/status/2105693854695395548">@elastic のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Felastic%2Fstatus%2F2105693854695395548">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>GitHub Copilot が computer use でデスクトップアプリを操作できるように</h3>
+<p>GitHub Copilot の CLI と macOS / Windows の Copilot アプリで computer use がパブリックプレビューになった。Copilot が画面を見てデスクトップアプリを操作できるようになり、エージェントの守備範囲がターミナルやエディタの外へ広がる。ブラウザ操作に続いて「PC 全体を触るエージェント」が現実になりつつあり、権限と安全策をどう設計するかが同時に問われる。</p>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-10-01-github-copilot-can-now-interact-with-desktop-apps">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

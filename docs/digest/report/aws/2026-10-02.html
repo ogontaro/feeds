@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-02</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-02</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>AWS Well-Architected Agent がプレビュー公開</h3>
+<p>AWS Trusted Advisor と Well-Architected Tool の次世代版にあたる AI サービスがプレビューになった。環境を解析し、コスト・セキュリティ・性能・信頼性の改善案をビジネス目標に沿って優先順位付きで提示し、アプリのトポロジやメトリクスと突き合わせたうえで Terraform や CDK のテンプレートまで読む点が新しい。Terraform で AWS を管理しているなら、レビューと点検の入口をどこまで任せられるかの判断材料になる。</p>
+<p><a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fannouncing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview%2F">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-well-architected-agent/">原文を読む(AWS What&#39;s New)</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-well-architected-agent%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon EKS が Kubernetes 1.37 に対応</h3>
+<p>EKS で Kubernetes 1.37 が使えるようになった。クラスタのバージョン更新計画の前提が変わるので、Karpenter や各種アドオン、周辺ツールの 1.37 対応状況を先に確認しておきたい。EKS を Terraform や GitOps で管理している場合、対応表の更新タイミングを決める材料になる。</p>
+<p class="links"><a href="https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions-standard.html#kubernetes-1-37">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fkubernetes-versions-standard.html%23kubernetes-1-37">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock AgentCore でアンビエントエージェントを構築する</h3>
+<p>チャットのプロンプト待ちではなく、S3 へのアップロードやスケジュール、アラートといったイベントを起点に動く「アンビエントエージェント」を AgentCore 上に組む実装例。SQS・Lambda・DynamoDB を組み合わせ、ask_human ツールとレビュー用のジョブ画面で人間の確認を挟む構成になっており、エージェントを常時動かす運用に置くときの権限境界と承認フローの設計を考える土台になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>NVIDIA NeMo Agent Toolkit と Amazon S3 Vectors でエージェントのメモリを作る</h3>
+<p>EKS 上に展開した NVIDIA NeMo Agent Toolkit のメモリ層として Amazon S3 Vectors を独自プロバイダとして組み込む実装例。ベクトルストアを別サービスとして立てずに S3 上へ永続メモリを持てるので、自前の Kubernetes クラスタでエージェントに記憶を持たせるときのコストと運用の選択肢が増える。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS 上の Claude Platform をマルチ環境で使うためのアクセス設計</h3>
+<p>1 つのサブスクリプションから、AWS ワークロードはクロスアカウントの SigV4、開発者はワークスペース単位の API キー、外部環境は OIDC フェデレーション、と環境ごとに認証方式を使い分ける構成の解説。AI サービス専用アカウントに閉じ込めて分離する考え方で、Claude を複数チーム・複数環境へ広げるときの、鍵を配らずに済ませる権限設計の叩き台になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/implementing-multi-environment-access-for-claude-platform-on-aws/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fimplementing-multi-environment-access-for-claude-platform-on-aws%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

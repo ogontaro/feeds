@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-02</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-02</h1>
+<article class="report"><h2>今日の 4 本</h2>
+<section class="item">
+<h3>ゲートではなくガードレール: プラットフォームチームのポリシーを再考する</h3>
+<p>Gatekeeper や Kyverno の <code>Enforce</code> は「拒否する」ゲートとして設計されがちだが、それをガードレールに作り替えるという設計論。プラットフォームチームがポリシーをどこに置けば開発者の自走を止めずに統制できるか、という IDP を運用する立場に直結する論点を扱っている。Backstage でポータルを出し GitOps でクラスタを同期している構成にとって、ポリシーを「止める仕組み」ではなく「安全に進める仕組み」として設計し直す材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/01/guardrails-not-gates-rethinking-policy-in-platform-teams/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F01%2Fguardrails-not-gates-rethinking-policy-in-platform-teams%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OperTraitors: Kubernetes Operator の危険な権限昇格経路を暴く新ツール</h3>
+<p>Kubernetes Operator は広い RBAC を握りがちで、侵害されると権限昇格の踏み台になりうる。その経路を検出する OperTraitors が公開されたという話で、Operator を自作・運用しているなら自分のクラスタの権限設計を見直すきっかけになる。CloudNativePG や Crossplane のように Operator を常用している構成では、マルチテナンシーを考えるうえでも一度は確認しておきたい。</p>
+<p class="links"><a href="https://cybersecuritynews.com/opertraitors-tool/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fopertraitors-tool%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>動いている Kubernetes クラスタにも所有権の空白は残る</h3>
+<p>クラスタが動いていても「誰がそれを所有するか」が曖昧なままだと、変更・障害・コストの判断が止まる。プロビジョニングはできても運営の責任分界が決まっていない、というプラットフォームあるあるを突いた論考。IDP を「作って終わり」にしないための運用設計として読む価値がある。</p>
+<p class="links"><a href="https://thenewstack.io/kubernetes-operations-ownership-governance/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-operations-ownership-governance%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>kagent で Kubernetes 運用を考える(CNCJ の登壇資料)</h3>
+<p>kagent を使って Kubernetes の運用をどう考えるかを整理した、日本のクラウドネイティブコミュニティの登壇資料。AI に障害調査や一次対応を担わせる運用に関心があるなら、HolmesGPT を AI SRE として使っている自宅クラスタに同じ発想を持ち込めるか、実運用目線で比較する材料になる。</p>
+<ul>
+<li><a href="https://x.com/amsy810/status/2105667065545920841">@amsy810 のポスト</a></li>
+<li><a href="https://speakerdeck.com/oracle4engineer/kagent-de-kubernetes-unyou-o-kangaeru">リンク先を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
