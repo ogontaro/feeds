@@ -13,5 +13,8 @@
       <outline type="rss" text="AWS リリース" title="AWS リリース" xmlUrl="https://ogontaro.github.io/feeds/digest/release-aws.xml"/>
       <outline type="rss" text="開発ツール リリース" title="開発ツール リリース" xmlUrl="https://ogontaro.github.io/feeds/digest/release-devtools.xml"/>
     </outline>
+    <outline text="月次トレンド" title="月次トレンド">
+      <outline type="rss" text="月次トレンド" title="月次トレンド" xmlUrl="https://ogontaro.github.io/feeds/digest/trend.xml"/>
+    </outline>
   </body>
 </opml>

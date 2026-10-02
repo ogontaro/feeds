@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>月次トレンドレポート 2026-09</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header><a href="../../">ogontaro / rss</a></header>
+<main>
+<h1>月次トレンドレポート 2026-09</h1>
+<article class="report"><h2>今月の潮流</h2>
+<section class="item">
+<h3>エージェントの権限境界とサンドボックス</h3>
+<p><strong>判定</strong>: トレンド（実活動データ＋専門家判定）<br>9月は、コーディングエージェントにどこまで自律実行を許すかの設計が、ツール側の既定値と実装の両方で動いた月だった。Claude Code は auto モードが既定になり、シンボリックリンク経由の書き込みを作業ツリーの「着地点」で判定して auto / acceptEdits がツリー外へ出る書き込みを承認しないようにし、危険な rm の確認を強化、availableModelsMatch / deniedModels で使わせるモデルを固定できるようにした。同じ月に HolmesGPT はファイル読み取り許可パスの既定を / から限定パス群へ狭め、KEDA はサービスアカウントトークンの audience を強制して権限昇格を塞いでおり、自動化に渡す権限を最小化する変更が複数ツールで同時に起きた。Martin Fowler のサイトでは、エージェントを「壊れても被害が閉じる」形にせず careless に接続する危険が論じられている。auto モード既定化は、自宅クラスタで Claude Code を回すうえでも設定を見直す契機になる。</p>
+<ul>
+<li>Claude Code v2.1.280 の権限・サンドボックス修正（シンボリックリンク書き込みの着地点判定、auto モードの再試行抑制）: <a href="https://claude-code-log.com/changelog/v2.1.280#item-97c0be39bbfe">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.280%23item-97c0be39bbfe">Google 翻訳で読む</a></li>
+<li>Claude Code v2.1.282 の権限ルールと設定ロックの修正（書いたつもりで効いていない統制を塞ぐ）: <a href="https://claude-code-log.com/changelog/v2.1.282#item-2d6020e79aaf">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.282%23item-2d6020e79aaf">Google 翻訳で読む</a></li>
+<li>HolmesGPT 0.42.0（読み取り許可パスの既定を限定し、Pod 内の任意ファイル読み取りを塞ぐ）: <a href="https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FHolmesGPT%2Fholmesgpt%2Freleases%2Ftag%2F0.42.0">Google 翻訳で読む</a></li>
+<li>Martin Fowler Fragments 2026-09-24（エージェントを危険な形で接続するリスク）: <a href="https://martinfowler.com/fragments/2026-09-24.html">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmartinfowler.com%2Ffragments%2F2026-09-24.html">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>複数エージェントの並行実行と協調</h3>
+<p><strong>判定</strong>: トレンド（実活動データ＋専門家判定）<br>複数のエージェントに仕事を分けて同時に走らせる運用が、機能と知見の両面で立ち上がった月。Claude Code はセッションの fork、Agent view、セッション間通信を揃え、どのセッションが何をしているかと成果の受け渡しを仕組みで扱えるようにした。Anthropic はループ反復を扱った研究を出し、並列で大量の修正を任せる前に何を決めておくかという実践知も共有されている。Martin Fowler のサイトでは、完全にエージェント任せで進めた実験の途中で、エージェントが git リポジトリ内に blackboard 型の協調機構を自発的に作り上げた例が報告された。任せ方と結果の回収の型を先に決めることが、並行実行を実務に乗せる前提になりつつある。</p>
+<ul>
+<li>Claude Code の Agent view とセッション間通信の使いどころ（日本語）: <a href="https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258">原文</a></li>
+<li>Anthropic 研究「Yes, Claude can do nine loops」（エージェントを何回まで自走させるか）: <a href="https://www.anthropic.com/research/yes-claude-can-do-nine-loops">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fresearch%2Fyes-claude-can-do-nine-loops">Google 翻訳で読む</a></li>
+<li>Martin Fowler「An Accidental Blackboard」（エージェントが git 内に協調機構を作った実験）: <a href="https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmartinfowler.com%2Farticles%2Fexploring-gen-ai%2Fan-accidental-blackboard.html">Google 翻訳で読む</a></li>
+<li>155項目をAIエージェントに並列で直させる前に決めること（日本語）: <a href="https://qiita.com/ishizakahiroshi/items/d370b3ccc18d8e423f71">原文</a></li>
+<li>Claude.ai を2週間で約3倍高速化（Slack 常駐で最大150スレッドを並行実行）: <a href="https://claude.dev/blog/how-we-made-claude-ai-faster/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2F">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>計算資源の無駄削減（リソース要求の適正化）</h3>
+<p><strong>判定</strong>: トレンド（定量調査＋実活動データ）<br>コスト最適化の関心が「使った分を安くする」から「使っていない分を無くす」へ寄った月。GitHub と Yale の共同調査は 1,000 人超の開発者に聞き、無駄な計算を減らすツール・計測・実践的な指針への需要が強いことを示した。Kubernetes 1.37 では PVC の最終使用時刻がベータに昇格して標準機能になり、放置された永続ボリュームの検出に自前ツールを書く必要がなくなったほか、GPU をゼロにスケールさせる話も出ている。モデルを替えずハーネス側の作り込みでコーディングエージェントのトークン消費をほぼ半減させたという報告もあり、見直しの対象はクラスタ側とエージェント側の両方に広がっている。VPA / Goldilocks で requests/limits を適正化している運用の延長線上に、エージェントのトークン効率という新しい軸が加わった形になる。</p>
+<ul>
+<li>GitHub 開発者調査（1,000 人超、無駄な計算の削減への需要）: <a href="https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fnews-insights%2Fresearch%2Fdevelopers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need%2F">Google 翻訳で読む</a></li>
+<li>Kubernetes v1.37: PVC の最終使用時刻を追跡（ベータ昇格）: <a href="https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F21%2Fkubernetes-v1-37-pvc-last-used-time%2F">Google 翻訳で読む</a></li>
+<li>Goldilocks v4.16.2（VPA 推奨値に基づく requests/limits の適正化）: <a href="https://github.com/FairwindsOps/goldilocks/releases/tag/v4.16.2">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FFairwindsOps%2Fgoldilocks%2Freleases%2Ftag%2Fv4.16.2">Google 翻訳で読む</a></li>
+<li>NVIDIA SoL-Pi（ハーネス最適化でコーディングエージェントのトークン使用量をほぼ半減）: <a href="https://the-decoder.com/nvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthe-decoder.com%2Fnvidias-sol-pi-system-cuts-coding-agent-token-usage-nearly-in-half-by-optimizing-the-harness%2F">Google 翻訳で読む</a></li>
+<li>Kubernetes 1.37 で GPU をゼロにスケール（アイドル時のコスト削減）: <a href="https://shattered.io/kubernetes-1-37-scale-to-zero-gpu-cost-2026/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fshattered.io%2Fkubernetes-1-37-scale-to-zero-gpu-cost-2026%2F">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>AGENTS.md による指示ファイルの共通化</h3>
+<p><strong>判定</strong>: シグナル（実活動データ）<br><strong>系譜</strong>: ツール固有の指示ファイル（CLAUDE.md 等） → AGENTS.md による共通化<br>Claude Code が v2.1.277 で、CLAUDE.md が無いプロジェクトでは代わりに AGENTS.md を読むようになった。Codex など他のコーディングエージェントと指示ファイルを共有していたり、AGENTS.md を正として運用しているチームにとっては、既存の資産がそのまま効くようになる変更で、Anthropic 側が AGENTS.md 側へ歩み寄った形になっている。1 つの AGENTS.md を ~/.claude/CLAUDE.md と ~/.codex/AGENTS.md にシンボリックリンクし、69 個の Skill も 1 か所から両方のエージェントへ同期する OSS 構成も公開され、併用時の設定の持ち方が定まりつつある。Bedrock / Vertex / Foundry ではまだ読まれない点は、運用に載せる前に押さえておきたい。</p>
+<ul>
+<li>Claude Code v2.1.277: CLAUDE.md が無ければ AGENTS.md を読むように: <a href="https://claude-code-log.com/changelog/v2.1.277#item-2632a3e60ae2">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.277%23item-2632a3e60ae2">Google 翻訳で読む</a></li>
+<li>Claude Code v2.1.278 リリース（AGENTS.md 対応を含む週次）: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.278">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.278">Google 翻訳で読む</a></li>
+<li>Publickey: Claude Code が AGENTS.md に対応、CLAUDE.md が無い場合に自動読み込み（日本語）: <a href="https://www.publickey1.jp/blog/26/claude_codeagentsmdclaudemd.html">原文</a></li>
+<li>agent-scripts（AGENTS.md と Skill を Claude Code / Codex へ共有する OSS 構成）: <a href="https://github.com/steipete/agent-scripts">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsteipete%2Fagent-scripts">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>LLM ゲートウェイ</h3>
+<p><strong>判定</strong>: シグナル（実活動データ）<br>LLM ゲートウェイ経由でエージェントを運用する前提の統制・可観測性を、Claude Code が一気に足した月。v2.1.273 の x-claude-code-request-class などのリクエストヘッダーに続き、v2.1.283 では availableModelsMatch / deniedModels による許可モデルの固定、x-claude-code-prompt-id による 1 プロンプト分のリクエスト集計、OTEL_LOG_TOOL_CONTENT による MCP ツール・WebFetch・WebSearch 出力のトレースが入った。モデル調達の層では、OpenRouter がシードから Stripe による買収に至るまでを当事者が語り、フロンティアのモデルラボが数十社に増えた市場でゲートウェイ経由の調達が誰の手で動くのかが改めて問われている。ゲートウェイ自体は使っていなくても、モデルを差し替えながら統制する前提は課金・監査の設計に効いてくる。</p>
+<ul>
+<li>Claude Code v2.1.283: 許可モデルの固定とゲートウェイ経由の統制・可観測性: <a href="https://claude-code-log.com/changelog/v2.1.283#item-fa9486884d69">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.283%23item-fa9486884d69">Google 翻訳で読む</a></li>
+<li>Claude Code v2.1.273: LLM ゲートウェイ向けリクエストヘッダー: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.273">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.273">Google 翻訳で読む</a></li>
+<li>OpenRouter の「Seed から Stripe まで」 — モデル調達レイヤの再編を当事者が語る: <a href="https://www.latent.space/p/openrouter">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fopenrouter">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Platform Engineering 2.0（AI エージェントも利用者に含む基盤）</h3>
+<p><strong>判定</strong>: シグナル（補強のみ）<br><strong>系譜</strong>: Platform Engineering / IDP → Platform Engineering 2.0（AI エージェントも利用者に含む基盤）<br>プラットフォームの利用者に人間の開発者だけでなく AI エージェントを含めて、API・権限・ガードレールを設計し直す見方が、9月は具体的な事例として立ち上がった。メルカリの社内基盤「Arca」は、PdM やデザイナーがエージェントに指示すればアプリを作れるよう、AGENTS.md と Skills を事前配置した環境を GKE Sandbox（gVisor）に閉じ込め、LLM は LiteLLM 経由にしてマシン単位の予算上限まで持たせた（1,029 人がアクセスし、346 人がアプリを作成、631 台のマシンが作られた）。「エージェントを使うな」と制限するのではなく、壊しても会社まで壊れない遊び場を先に用意する進め方で、プラットフォームチームの役割自体を見直す論考や、エージェントにもサービスを提供する前提でのチーム構成の論点も同時期に揃っている。エージェントが Operator や基盤側の権限に触れるリスクも整理され始めており、次は「何を基盤が引き受けるか」の線引きが焦点になる。</p>
+<ul>
+<li>プラットフォームエンジニアリングチームの作り方（エージェントにもサービスを提供する前提）: <a href="https://platformengineering.org/blog/how-to-build-your-platform-engineering-team">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fhow-to-build-your-platform-engineering-team">Google 翻訳で読む</a></li>
+<li>プラットフォームチームはまずトレーシングから考えるべき: <a href="https://platformengineering.org/blog/platform-teams-should-think-tracing-first">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fplatform-teams-should-think-tracing-first">Google 翻訳で読む</a></li>
+<li>メルカリの高速プロトタイピング基盤「Arca」— エージェントを GKE Sandbox に閉じ込める設計: <a href="https://speakerdeck.com/ryotarai/niokeru-ai-jidai-no-kousoku-kiban-arca">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fspeakerdeck.com%2Fryotarai%2Fniokeru-ai-jidai-no-kousoku-kiban-arca">Google 翻訳で読む</a></li>
+<li>Kubernetes でのエージェント型 AI の台頭 — 新しいインフラストラクチャ層: <a href="https://thenewstack.io/agentic-ai-kubernetes-management/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fagentic-ai-kubernetes-management%2F">Google 翻訳で読む</a></li>
+<li>Operator が「内側からの攻撃面」になる — Unit 42 の OperTraitors 分析: <a href="https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Funit42.paloaltonetworks.com%2Fagentic-ai-kubernetes-operator-risks%2F">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>AI 時代のコードレビューの再定義</h3>
+<p><strong>判定</strong>: シグナル（専門家判定）<br>AI が生成するコードの量がレビューの処理能力を超え、レビューの目的そのものを問い直す論考が 9月に集中した。Martin Fowler のサイトの記事は「AI がコードレビューを壊したのではなく、そもそもレビューで別の問題を解こうとしていたのではないか」と切り込み、The Pragmatic Engineer はレビューが適応するのか廃れるのかを、Stack Overflow は human-in-the-loop が実際には速度を落としている可能性を扱っている。並列に走らせたエージェントのレビュー指摘が収束しない構造を整理した実践記事や、根拠の薄い指摘を避けるよう設計したレビュー Skill の公開もあり、指摘の出し方と収束のさせ方自体が設計対象になりつつある。</p>
+<ul>
+<li>Martin Fowler「Maybe We Shouldn&#39;t Be Reviewing All This Code」: <a href="https://martinfowler.com/rachels-ramblings/code-review.html">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmartinfowler.com%2Frachels-ramblings%2Fcode-review.html">Google 翻訳で読む</a></li>
+<li>The Pragmatic Engineer「What is happening with code reviews?」: <a href="https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnewsletter.pragmaticengineer.com%2Fp%2Fwhat-is-happening-with-code-reviews">Google 翻訳で読む</a></li>
+<li>Stack Overflow「Is Your &quot;Human-in-the-Loop&quot; Actually Slowing You Down?」: <a href="https://stackoverflow.blog/2026/09/28/is-your-human-in-the-loop-actually-slowing-you-down-here-s-what-we-learned/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstackoverflow.blog%2F2026%2F09%2F28%2Fis-your-human-in-the-loop-actually-slowing-you-down-here-s-what-we-learned%2F">Google 翻訳で読む</a></li>
+<li>AIデバッグはなぜ収束しないのか — P2がいつまでも消えない理由（日本語）: <a href="https://note.com/npaka/n/n557fb948c3cf">原文</a></li>
+<li>AI コードレビュー Skill「code-review-skills」の設計と検証方法（日本語）: <a href="https://qiita.com/akkie76/items/f08ac38fd81aa19ae832">原文</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

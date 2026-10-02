@@ -8,201 +8,201 @@ updated: 2026-09
 changes: []
 items:
   - name: コーディングエージェント
-    summary: ターミナルや IDE でコードの読み書き・実行・テストまで自律的に進める AI ツール(Claude Code、OpenCode など)。
     quadrant: ai
     ring: adopt
+    summary: ターミナルや IDE でコードの読み書き・実行・テストまで自律的に進める AI ツール(Claude Code、OpenCode など)。
     reason: Claude Code を常用し、opencode(OpenCode Go)を CI の AI 呼び出しに使っている
     since: 2026-09
     lastCited: null
     trend: stable
   - name: MCP
-    summary: Model Context Protocol。AI エージェントが外部のツールやデータに接続するための共通プロトコル。
     quadrant: ai
     ring: adopt
+    summary: Model Context Protocol。AI エージェントが外部のツールやデータに接続するための共通プロトコル。
     reason: Claude Code から MCP サーバーを使っている(interests.yaml の MCPサーバー)
     since: 2026-09
     lastCited: null
     trend: stable
   - name: AGENTS.md による指示ファイルの共通化
-    summary: リポジトリ直下の AGENTS.md に、ビルド手順や規約などエージェント向けの指示をツール横断で 1 か所にまとめる慣行。
     quadrant: ai
     ring: assess
-    reason: Claude Code は CLAUDE.md が無いときの代替として読むだけで中心ツールではない(2026-09 の月次トレンドでシグナル)
+    summary: リポジトリ直下の AGENTS.md に、ビルド手順や規約などエージェント向けの指示をツール横断で 1 か所にまとめる慣行。
+    reason: Claude Code は CLAUDE.md が無いときの代替として AGENTS.md を読むが中心ツールではない(月次トレンドの「AGENTS.md による指示ファイルの共通化」でシグナル)
     since: 2026-09
     lastCited: 2026-09
-    trend: new
+    trend: up
   - name: エージェントの権限境界とサンドボックス
+    quadrant: ai
+    ring: trial
     summary: エージェントが実行できる操作や読める範囲を、権限設定や隔離環境で制限して暴走や情報漏洩を防ぐ方式。
-    quadrant: ai
-    ring: trial
-    reason: Claude Code の auto モード+サンドボックス、HolmesGPT の読み取りパス制限(2026-09 の月次トレンドでトレンド判定)
+    reason: Claude Code の auto モード既定化とサンドボックス、HolmesGPT の読み取りパス制限(月次トレンドの「エージェントの権限境界とサンドボックス」でトレンド判定)
     since: 2026-09
     lastCited: 2026-09
-    trend: new
+    trend: up
   - name: 複数エージェントの並行実行と協調
-    summary: 役割の違うエージェント(サブエージェントなど)を並行に動かし、結果を統合して大きな作業を分担する方式。
     quadrant: ai
     ring: trial
-    reason: Claude Code のサブエージェント(2026-09 の月次トレンドでトレンド判定)
+    summary: 役割の違うエージェント(サブエージェントなど)を並行に動かし、結果を統合して大きな作業を分担する方式。
+    reason: Claude Code のサブエージェントとセッション fork(月次トレンドの「複数エージェントの並行実行と協調」でトレンド判定)
     since: 2026-09
     lastCited: 2026-09
-    trend: new
+    trend: up
   - name: AI SRE
-    summary: 障害の調査・原因の切り分け・一次対応を AI エージェントが担う運用(HolmesGPT など)。
     quadrant: ai
     ring: adopt
+    summary: 障害の調査・原因の切り分け・一次対応を AI エージェントが担う運用(HolmesGPT など)。
     reason: HolmesGPT を自宅クラスタで使っている
     since: 2026-09
     lastCited: null
     trend: stable
   - name: LLM ゲートウェイ
-    summary: 複数の LLM プロバイダーへのリクエストを中継し、認証・コスト管理・ルーティング・ログを一元化するプロキシ層。
     quadrant: ai
     ring: assess
-    reason: Claude Code がゲートウェイ向けヘッダーに対応したが、ゲートウェイ自体は使っていない(2026-09 の月次トレンドでシグナル)
+    summary: 複数の LLM プロバイダーへのリクエストを中継し、認証・コスト管理・ルーティング・ログを一元化するプロキシ層。
+    reason: Claude Code がゲートウェイ向けヘッダーと許可モデル固定に対応したが、ゲートウェイ自体は使っていない(月次トレンドの「LLM ゲートウェイ」でシグナル)
     since: 2026-09
     lastCited: 2026-09
-    trend: new
+    trend: up
   - name: GitOps
-    summary: 望ましい状態を Git で宣言し、Argo CD などがクラスタを継続的にその状態へ同期させる運用。
     quadrant: platform
     ring: adopt
+    summary: 望ましい状態を Git で宣言し、Argo CD などがクラスタを継続的にその状態へ同期させる運用。
     reason: Argo CD で自宅クラスタを同期している
     since: 2026-09
     lastCited: null
     trend: stable
   - name: Platform Engineering / IDP
-    summary: 開発者向けの内部開発者プラットフォーム(IDP)をプロダクトとして提供し、基盤をセルフサービスで使えるようにする取り組み。
     quadrant: platform
     ring: adopt
+    summary: 開発者向けの内部開発者プラットフォーム(IDP)をプロダクトとして提供し、基盤をセルフサービスで使えるようにする取り組み。
     reason: Backstage を開発者ポータルとして運用している
     since: 2026-09
     lastCited: null
     trend: stable
   - name: Platform Engineering 2.0(AI エージェントも利用者に含む基盤)
-    summary: 人間の開発者だけでなく AI エージェントも利用者と見なし、基盤の API・権限・ガードレールを設計し直す考え方。
     quadrant: platform
     ring: assess
-    reason: Backstage の延長にあるが、2026-09 の月次トレンドではまだシグナル(補強のみ)
+    summary: 人間の開発者だけでなく AI エージェントも利用者と見なし、基盤の API・権限・ガードレールを設計し直す考え方。
+    reason: Backstage の延長にあるが、月次トレンドの「Platform Engineering 2.0(AI エージェントも利用者に含む基盤)」ではシグナル(補強のみ)
     since: 2026-09
     lastCited: 2026-09
-    trend: new
+    trend: up
   - name: IaC
-    summary: インフラ構成をコードで宣言し、Terraform などでレビュー可能・再現可能に管理する。
     quadrant: platform
     ring: adopt
+    summary: インフラ構成をコードで宣言し、Terraform などでレビュー可能・再現可能に管理する。
     reason: Terraform で AWS(EKS)を管理している
     since: 2026-09
     lastCited: null
     trend: stable
   - name: Kubernetes API によるリソース合成
-    summary: Crossplane や kro で、複数の Kubernetes・クラウドのリソースを 1 つのカスタム API にまとめて提供する方式。
     quadrant: platform
     ring: adopt
+    summary: Crossplane や kro で、複数の Kubernetes・クラウドのリソースを 1 つのカスタム API にまとめて提供する方式。
     reason: kro を使っている(interests.yaml の Crossplane)
     since: 2026-09
     lastCited: null
     trend: stable
   - name: サービスメッシュ
-    summary: サービス間通信の mTLS・ルーティング・可観測性を、アプリを変えずにプロキシ層で提供する基盤(Istio など)。
     quadrant: platform
     ring: adopt
+    summary: サービス間通信の mTLS・ルーティング・可観測性を、アプリを変えずにプロキシ層で提供する基盤(Istio など)。
     reason: Istio を使っている
     since: 2026-09
     lastCited: null
     trend: stable
   - name: eBPF ネットワーキング
-    summary: Linux カーネルの eBPF で、Kubernetes のネットワーク・ポリシー・可観測性を高速に実現する方式(Cilium など)。
     quadrant: platform
     ring: adopt
+    summary: Linux カーネルの eBPF で、Kubernetes のネットワーク・ポリシー・可観測性を高速に実現する方式(Cilium など)。
     reason: Cilium を CNI に使っている
     since: 2026-09
     lastCited: null
     trend: stable
   - name: イミュータブル OS
-    summary: 書き換えないOSイメージを API 経由で管理し、ノードを宣言的に更新する運用(Talos Linux など)。
     quadrant: platform
     ring: adopt
+    summary: 書き換えないOSイメージを API 経由で管理し、ノードを宣言的に更新する運用(Talos Linux など)。
     reason: Talos Linux で自宅クラスタを組んでいる
     since: 2026-09
     lastCited: null
     trend: stable
   - name: Kubernetes 上のステートフル運用
-    summary: DB やストレージを Operator などで Kubernetes 上で動かし、バックアップやフェイルオーバーまで自動化する運用。
     quadrant: platform
     ring: adopt
+    summary: DB やストレージを Operator などで Kubernetes 上で動かし、バックアップやフェイルオーバーまで自動化する運用。
     reason: CloudNativePG と Longhorn で DB・ストレージを動かしている
     since: 2026-09
     lastCited: null
     trend: stable
   - name: 開発環境の宣言化
-    summary: ツールのバージョンや環境を mise・Devbox などの設定ファイルで固定し、誰でも同じ環境を再現できるようにする。
     quadrant: practice
     ring: adopt
+    summary: ツールのバージョンや環境を mise・Devbox などの設定ファイルで固定し、誰でも同じ環境を再現できるようにする。
     reason: mise と Devbox でツールのバージョンを固定している
     since: 2026-09
     lastCited: null
     trend: stable
   - name: Spec-Driven Development
-    summary: 実装の前に仕様を書き、それを AI エージェントへの入力と検証基準にして開発を進める手法。
     quadrant: practice
     ring: assess
+    summary: 実装の前に仕様を書き、それを AI エージェントへの入力と検証基準にして開発を進める手法。
     reason: Claude Code は使っているが、仕様駆動の専用ツールは使っていない(interests.yaml の AI支援開発)
     since: 2026-09
     lastCited: null
     trend: stable
   - name: AI 時代のコードレビューの再定義
-    summary: AI が大量にコードを生成する前提で、レビューの目的・対象・人間の役割を見直す議論。
     quadrant: practice
     ring: assess
-    reason: Martin Fowler のサイトの論考のみ(2026-09 の月次トレンドでシグナル)
+    summary: AI が大量にコードを生成する前提で、レビューの目的・対象・人間の役割を見直す議論。
+    reason: Martin Fowler のサイトの論考のみ(月次トレンドの「AI 時代のコードレビューの再定義」でシグナル)
     since: 2026-09
     lastCited: 2026-09
-    trend: new
+    trend: up
   - name: 可観測性の統合(OpenTelemetry / LGTM)
-    summary: OpenTelemetry で収集し、ログ・メトリクス・トレースを Grafana LGTM スタックなどで一元的に見られるようにする。
     quadrant: ops
     ring: adopt
+    summary: OpenTelemetry で収集し、ログ・メトリクス・トレースを Grafana LGTM スタックなどで一元的に見られるようにする。
     reason: Grafana Alloy・Loki・Mimir・Grafana で収集から可視化まで組んでいる
     since: 2026-09
     lastCited: null
     trend: stable
   - name: ゼロトラストアクセス
-    summary: ネットワークの内外を問わず、都度 ID・デバイスで認証・認可してアクセスさせる方式(Pomerium、Tailscale など)。
     quadrant: ops
     ring: adopt
+    summary: ネットワークの内外を問わず、都度 ID・デバイスで認証・認可してアクセスさせる方式(Pomerium、Tailscale など)。
     reason: Pomerium と Tailscale で自宅クラスタへのアクセスを制御している
     since: 2026-09
     lastCited: null
     trend: stable
   - name: イベント駆動オートスケール
-    summary: キュー長やイベント数などの外部指標でワークロードを増減させる方式(KEDA)。
     quadrant: ops
     ring: adopt
+    summary: キュー長やイベント数などの外部指標でワークロードを増減させる方式(KEDA)。
     reason: KEDA を使っている(interests.yaml のスケーリング)
     since: 2026-09
     lastCited: null
     trend: stable
   - name: リソース要求の適正化
-    summary: Pod の requests/limits を実使用量に合わせて見直し、無駄な計算資源を減らす取り組み(VPA、Goldilocks)。
     quadrant: ops
     ring: adopt
-    reason: Goldilocks で VPA の推奨値を見ている(2026-09 の月次トレンドの計算資源の無駄削減、interests.yaml のコスト最適化)
+    summary: Pod の requests/limits を実使用量に合わせて見直し、無駄な計算資源を減らす取り組み(VPA、Goldilocks)。
+    reason: Goldilocks で VPA の推奨値を見ている(月次トレンドの「計算資源の無駄削減(リソース要求の適正化)」、interests.yaml のコスト最適化)
     since: 2026-09
     lastCited: 2026-09
-    trend: new
+    trend: up
   - name: シークレットの外部管理
-    summary: 秘密情報をクラウドのシークレット管理サービスなどに置き、Kubernetes へは同期・参照だけで渡す方式(external-secrets)。
     quadrant: ops
     ring: adopt
+    summary: 秘密情報をクラウドのシークレット管理サービスなどに置き、Kubernetes へは同期・参照だけで渡す方式(external-secrets)。
     reason: external-secrets を使っている
     since: 2026-09
     lastCited: null
     trend: stable
   - name: バックアップと DR
-    summary: クラスタの状態と永続データを定期的に退避し、障害時に復元できるようにする備え(Velero)。
     quadrant: ops
     ring: adopt
+    summary: クラスタの状態と永続データを定期的に退避し、障害時に復元できるようにする備え(Velero)。
     reason: Velero でクラスタをバックアップしている
     since: 2026-09
     lastCited: null
