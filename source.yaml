@@ -313,6 +313,13 @@ feeds:
     name: opencode releases
     domain: claude
     kind: release
+  # OpenCode Go(サブスク本体)の料金・利用上限・対応モデルの変更を拾う。公式の changelog に RSS はなく、
+  # リリースにも出ないため、Go のドキュメントページに絞った path 指定の commits atom を使う。
+  - url: https://github.com/anomalyco/opencode/commits/dev.atom?path=packages/web/src/content/docs/go.mdx
+    name: OpenCode Go docs updates
+    domain: claude
+    kind: content
+    addedAt: "2026-10-03"
   - url: https://github.com/stablyai/orca/releases.atom
     name: Orca releases
     domain: claude
