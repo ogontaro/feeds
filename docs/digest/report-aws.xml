@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 02 Oct 2026 01:23:55 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Oct 2026 01:03:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-03]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-03.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-03.html</guid>
+            <pubDate>Sat, 03 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon EKS / Amazon EKS Distro が Kubernetes 1.37 に対応</h3>
+<p>EKS のアップグレード計画を立てる起点になる発表。コンソール、eksctl、IaC ツールのいずれからでも 1.37 の新規クラスタ作成と既存クラスタのアップグレードができる。1.37 で入った変更点のうち、どの機能が昇格しどの API が非推奨になったかを確認してから、アドオンとノードの追従を段取りしたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-eks-distro-kubernetes-version-1-37">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS MCP Server が6リージョンに拡大、東京でも利用可能に</h3>
+<p>Agent Toolkit for AWS のマネージド MCP サーバーが、東京・シンガポール・シドニー・アイルランド・ロンドン・オレゴンの6リージョンで使えるようになった。エージェントが AWS API を単一のインターフェースから発見・呼び出せるため、サービスごとの連携を自前で作らずに済む。コーディングエージェントに AWS を操作させる構成を組むとき、これまでネックだったデータの所在とレイテンシの制約が小さくなる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-mcp-server-six-additional-regions">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-mcp-server-six-additional-regions">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Desktop に Amazon Bedrock AgentCore 経由で安全な Web 検索を追加する</h3>
+<p>Bedrock 上の Claude Desktop はモデルの知識カットオフより先を知らない。そこに AgentCore Gateway から Web Search をつなぐ構成を、IAM Identity Center と Cognito による JWT の受信認証まで含めて解説している。MCP ゲートウェイに社外のツールをぶら下げるときの認証と権限の設計例として、そのまま流用できる粒度で書かれている。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fadd-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker AI でマルチターン強化学習により検索エージェントをファインチューニングする</h3>
+<p>小さいモデルに自分のツールと環境を覚えさせ、フロンティアモデル並みの信頼性を低レイテンシ・低コストで得る狙いの記事。マルチターン強化学習で検索エージェントを鍛え、検索品質と信頼性がどれだけ伸びたかを実測値で示している。エージェントの推論を汎用の大型モデルに任せ続けるか、専用に小型化するかを判断する材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS DevOps Agent と OpenSearch をつないだ閉ループのインシデント対応</h3>
+<p>DevOps Agent を MCP 経由で OpenSearch の可観測性データに接続し、深夜に飛んだアラートから自律的に根本原因の調査を回す構成。MCP サーバーの置き場所として、ECS での自己管理・AgentCore・OpenSearch 3.3 以降の内蔵という3つの選択肢を比較しており、アラートのルーティングと FGAC のロール対応まで踏み込んでいる。AI に一次調査を任せる範囲と、そのために可観測性データをどう見せるかを決める際の実務的な指針になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/devops/closed-loop-incident-response-connect-aws-devops-agent-to-opensearch/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fclosed-loop-incident-response-connect-aws-devops-agent-to-opensearch%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-02]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-02.html</link>

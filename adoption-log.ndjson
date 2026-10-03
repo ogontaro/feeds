@@ -118,3 +118,12 @@
 {"date":"2026-10-02","domain":"aws","sourceName":"AWS What's New"}
 {"date":"2026-10-02","domain":"aws","sourceName":"Amazon EKS Document History"}
 {"date":"2026-10-02","domain":"aws","sourceName":"AWS Machine Learning Blog"}
+{"date":"2026-10-03","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-10-03","domain":"claude","sourceName":"GitHub Changelog — Copilot"}
+{"date":"2026-10-03","domain":"claude","sourceName":"Claude | DevelopersIO"}
+{"date":"2026-10-03","domain":"claude","sourceName":"Google News — コーディングエージェント新サービス・料金"}
+{"date":"2026-10-03","domain":"claude","sourceName":"Latent Space"}
+{"date":"2026-10-03","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
+{"date":"2026-10-03","domain":"aws","sourceName":"AWS What's New"}
+{"date":"2026-10-03","domain":"aws","sourceName":"AWS Machine Learning Blog"}
+{"date":"2026-10-03","domain":"aws","sourceName":"AWS DevOps Blog"}

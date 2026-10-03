@@ -4,11 +4,34 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 02 Oct 2026 01:23:06 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 03 Oct 2026 01:02:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-03]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-03.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-03.html</guid>
+            <pubDate>Sat, 03 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>Dell の Container Storage Modules に CVSS 10 の脆弱性、Kubernetes ノードが root 権限を奪われる恐れ</h3>
+<p>Dell の Container Storage Modules（Kubernetes 向けの CSI ドライバ群）に CVSS スコア 10 の脆弱性が 2 件見つかり、認証なしで管理者権限を取得され、Kubernetes ノードの root まで奪われ得ると報じられている。Dell は最大深刻度として早急な適用を呼びかけている。ストレージや CSI のようにノード権限で動く周辺コンポーネントが、クラスタ全体の侵害経路になり得ることを示す事例で、該当ドライバを入れていなくても、DaemonSet 型コンポーネントの権限設計を見直す材料になる。</p>
+<p class="links"><a href="https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthehackernews.com%2F2026%2F10%2Fdell-csm-flaws-enable-unauthenticated.html">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Envoy Gateway 1.9.1 — タイムアウト挙動の変更を差し戻し</h3>
+<p>Envoy Gateway 1.9.1 が、以前のバージョンで入れたタイムアウト挙動の変更を差し戻し、セキュリティ上の問題を修正し、翻訳トレーシングを追加した。挙動の差し戻しは、アップグレードで通信のタイムアウト特性が変わることを意味するので、Gateway API を本番で使っているなら適用前に内容を確認しておきたい。CNCF 側のゲートウェイ実装の動きとして、Ingress からの移行を検討している場合の判断材料にもなる。</p>
+<p class="links"><a href="https://news.lavx.hu/article/envoy-gateway-1-9-1-reverts-timeout-change-fixes-security-gaps-and-adds-translation-tracing">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fenvoy-gateway-1-9-1-reverts-timeout-change-fixes-security-gaps-and-adds-translation-tracing">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Docker の Sandbox Kit 仕様 — AI エージェントの権限を OCI イメージとして配る</h3>
+<p>AI エージェントに許す操作・権限を OCI イメージとしてパッケージして配布する、Docker の「Sandbox Kit」仕様が報じられている。エージェントの権限境界を、すでにコンテナで使い慣れたイメージ配布の仕組みに載せる発想で、エージェントを動かす基盤の権限・サンドボックス設計に直接効く。OCI レジストリという枯れた流通経路を使う点は、プラットフォーム側からエージェントの実行環境を配る際の現実的な選択肢になる。</p>
+<p class="links"><a href="https://news.lavx.hu/article/docker-sandbox-kit-spec-packaging-ai-agent-permissions-as-oci-images">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fdocker-sandbox-kit-spec-packaging-ai-agent-permissions-as-oci-images">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-02]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-02.html</link>

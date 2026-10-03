@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-03</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-03</h1>
+<article class="report"><h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.287 の主要アップデート — Claude Mods の追加とシェル書き込みの安全策強化</h3>
+<p>Claude Code の見た目と挙動をプラグイン経由で書き換えられる「Claude Mods」が入った。CLAUDE.md や hooks では届かなかった内部動作にまで手を入れられるようになり、エージェントの振る舞いを自分の運用に合わせて作り込める。同じ v2.1.287 では、見落としがちな点を指摘する組み込み Mod「You should know」（<code>/plugin enable cc-plugin-you-should-know@builtin</code>）、MCP の URL プロンプト対応（接続できなくなったサーバーは <code>bareElicitationCapability: true</code> を追加）、シェル書き込みの安全策強化も入っているので、更新前に一通り目を通しておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261002-cc-updates-v2-1-287/">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2106118517447876618">ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2106118517447876618">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code Skills 39選【2026年版】── 公式19個＋世界で人気のスキルを日本語で全部まとめた</h3>
+<p>Agent Skills は数が増えすぎて「どれが定番なのか」が分からなくなっている。公式配布の19個と海外で人気のスキルを日本語で一覧化したもので、自分の環境に入れる候補を短時間で棚卸しできる。指示ファイル（CLAUDE.md / AGENTS.md）と並ぶ Claude Code の設定面を、まとめて見直すきっかけになる。</p>
+<p class="links"><a href="https://qiita.com/tasklog/items/af688051f24d5e5db21b">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Pi コーディングエージェントが方針を転換して MCP に対応</h3>
+<p>ミニマルなハーネスを掲げる Pi が、これまで採ってこなかった MCP 対応に舵を切った。同じタイミングで 1.0（Pi Durable）として安定版になり、TypeScript 化も進んでいる。Claude Code 以外のハーネスが MCP に寄ってくる流れは、MCP 前提で組んだ自分のツール構成がどこまで持ち運べるかを考える材料になる。</p>
+<p class="links"><a href="https://www.theregister.com/ai-and-ml/2026/10/02/pi-coding-agent-pulls-a-180-and-adds-mcp-support/5300678">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F10%2F02%2Fpi-coding-agent-pulls-a-180-and-adds-mcp-support%2F5300678">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-pi-10-pi-durable-and-aie-nyc">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（2 本）</h2>
+<section class="item">
+<h3>Agentic Coding とハーネスエンジニアリング —— AI の自走性能を最大化するためのしくみと考え方</h3>
+<p>エージェントの自走力を、モデルではなく「ハーネス」（権限・ツール・指示ファイル・検証の設計）で引き上げるという考え方をまとめた Software Design 連動企画。プロンプトやモデル選びより効く部分がどこかを整理でき、Claude Code の設定をどう組むかの判断基準になる。エージェントの権限境界や複数エージェントの協調を詰めている人ほど、一度通して読む価値がある。</p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2105820567517712438">npaka123 のポスト</a></li>
+<li><a href="https://gihyo.jp/article/2026/10/agentic-coding-and-harness-engineering">記事を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>GitHub Copilot のコードレビューが API 経由で依頼可能に、effort level も指定できるように</h3>
+<p>Copilot のコードレビューを REST / GraphQL API から依頼でき、レビューの手厚さ（effort level）をリクエスト単位で選べるようになった。既定は Balanced。CI にレビューを組み込む、PR の重要度でレビューの深さを変える、といった運用が組みやすくなる。AI レビューを既存のワークフローにどう差し込むかの具体例として参考になる。</p>
+<p class="links"><a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-10-02-copilot-code-review-api-support-and-new-default-effort-level">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
