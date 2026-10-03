@@ -68,6 +68,18 @@ interests:
       - 求人
       - 宣伝
       - イベント告知
+  gadget:
+    include:
+      - Meta Ray-Ban Display
+      - Meta Quest
+      - スマートグラス
+      - XR
+      - Android XR
+      - Apple Vision Pro
+    exclude:
+      - 求人
+      - 宣伝
+      - ゲームの個別タイトル紹介
 
 # --- 興味リスト(全量 landscape.yaml のどこに関心があるか) ---
 # 人が保守する。AI・スクリプトは書き換えない。時代で興味が変わるので、月次の棚卸し Issue で見直す。

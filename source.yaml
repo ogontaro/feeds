@@ -585,3 +585,31 @@ feeds:
     domain: devtools
     kind: release
     addedAt: "2026-09-27"
+
+  # Meta のスマートグラス・Quest と XR 業界全体の新製品・価格・発売地域を追う（gadget ドメイン）。
+  - url: https://www.uploadvr.com/rss/
+    name: UploadVR
+    domain: gadget
+    kind: content
+    addedAt: "2026-10-03"
+  - url: https://www.roadtovr.com/feed/
+    name: Road to VR
+    domain: gadget
+    kind: content
+    addedAt: "2026-10-03"
+  - url: https://mixed-news.com/en/feed/
+    name: MIXED
+    domain: gadget
+    kind: content
+    addedAt: "2026-10-03"
+  - url: https://www.meta.com/blog/rss/
+    name: Meta Quest blog
+    domain: gadget
+    kind: content
+    addedAt: "2026-10-03"
+  # 専門媒体に出る前の報道・リーク・日本展開の発表を、見出し検索の網で拾う（gnews-coding-agents と同じ狙い）。
+  - url: https://news.google.com/rss/search?q=%28%22Meta%22%20%28%22smart%20glasses%22%20OR%20%22Ray-Ban%20Display%22%20OR%20Quest%20OR%20Orion%29%29%20OR%20%22Android%20XR%22%20OR%20%22Vision%20Pro%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en
+    name: Google News — Meta グラス・XR
+    domain: gadget
+    kind: content
+    addedAt: "2026-10-03"

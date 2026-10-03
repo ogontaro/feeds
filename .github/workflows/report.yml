@@ -209,6 +209,55 @@ jobs:
         if: steps.collect_aws.outputs.n != '0' || steps.collect_x.outputs.n != '0'
         run: bun run src/digest/report-render.ts aws
 
+      # ---------------- gadget ----------------
+      - id: collect_gadget
+        run: |
+          bun run src/digest/report-collect.ts gadget
+          echo "n=$(jq length .cache/report-gadget-input.json)" >> "$GITHUB_OUTPUT"
+      - name: curate gadget
+        id: curate_gadget
+        if: steps.collect_gadget.outputs.n != '0' || steps.collect_x.outputs.n != '0'
+        continue-on-error: true
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
+          prompt: |
+            Read ${{ github.workspace }}/.cache/report-gadget-input.json,
+            ${{ github.workspace }}/.cache/x-recent.json, ${{ github.workspace }}/report-criteria/x-posts.md,
+            ${{ github.workspace }}/report-criteria/report-gadget.md, and the "gadget" section of
+            ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
+            keywords to break ties: select the important entries and write the Japanese digest to
+            ${{ github.workspace }}/.cache/report-gadget.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model deepseek-v4.1-flash[1m]"
+      - name: curate gadget (qwen fallback)
+        if: (steps.collect_gadget.outputs.n != '0' || steps.collect_x.outputs.n != '0') && steps.curate_gadget.outcome == 'failure'
+        uses: anthropics/claude-code-action@v1
+        env:
+          ANTHROPIC_BASE_URL: https://opencode.ai/zen/go
+          ANTHROPIC_CUSTOM_HEADERS: "x-api-key: ${{ secrets.OPENCODE_API_KEY }}"
+          OTEL_RESOURCE_ATTRIBUTES: usage.platform=github-actions,usage.api_endpoint=opencode
+        with:
+          anthropic_api_key: ${{ secrets.OPENCODE_API_KEY }}
+          allowed_bots: "*"
+          prompt: |
+            Read ${{ github.workspace }}/.cache/report-gadget-input.json,
+            ${{ github.workspace }}/.cache/x-recent.json, ${{ github.workspace }}/report-criteria/x-posts.md,
+            ${{ github.workspace }}/report-criteria/report-gadget.md, and the "gadget" section of
+            ${{ github.workspace }}/interests.yaml. Follow the criteria file, using the interests
+            keywords to break ties: select the important entries and write the Japanese digest to
+            ${{ github.workspace }}/.cache/report-gadget.md in the format it specifies.
+            Write only that one file.
+          claude_args: "--allowedTools Read,Write --model qwen3.8-flash[1m]"
+      - name: render gadget
+        if: steps.collect_gadget.outputs.n != '0' || steps.collect_x.outputs.n != '0'
+        run: bun run src/digest/report-render.ts gadget
+
       - run: bun run src/site/build.ts
 
       - name: commit docs
