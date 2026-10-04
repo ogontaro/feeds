@@ -9,14 +9,14 @@ export const DOMAIN_LABEL: Record<Domain, string> = {
   gaming: "ゲーム環境",
 };
 
-/** トップページのカードに添える分野名。 */
+/** トップページのカードに添える用途（仕事 / 趣味）。 */
 export const DOMAIN_CATEGORY: Record<Domain, string> = {
-  claude: "AI",
-  kubernetes: "プラットフォーム",
-  aws: "プラットフォーム",
-  devtools: "開発ツール",
-  gadget: "ガジェット",
-  gaming: "ガジェット",
+  claude: "仕事",
+  kubernetes: "仕事",
+  aws: "仕事",
+  devtools: "仕事",
+  gadget: "趣味",
+  gaming: "趣味",
 };
 
 /** Parse and validate a domain passed as a CLI arg. */
