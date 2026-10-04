@@ -4,11 +4,29 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 03 Oct 2026 01:02:23 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 04 Oct 2026 00:26:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-04]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-04.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-04.html</guid>
+            <pubDate>Sun, 04 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Istio 1.31、Agentgateway の waypoint 対応とリリース成果物の Google Cloud からの移転</h3>
+<p>CNCF のサービスメッシュ Istio の新リリース。1.31 では agentgateway の waypoint 対応が入り、アンビエント構成で L7 処理を担う waypoint の実装選択が広がるため、メッシュのアーキテクチャを考えるうえで見ておきたい。あわせてリリース成果物の配布先を Google Cloud から移しており、取得元やミラー・検証の手順を持つ運用ではサプライチェーン面の確認が必要になる。</p>
+<p class="links"><a href="https://news.lavx.hu/article/istio-1-31-adds-agentgateway-waypoints-and-moves-release-artifacts-off-google-cloud">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fistio-1-31-adds-agentgateway-waypoints-and-moves-release-artifacts-off-google-cloud">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Dell のコンテナストレージに重大な脆弱性、未認証で管理者権限を奪取される恐れ</h3>
+<p>Dell のコンテナストレージ製品に、未認証の攻撃者が管理者権限を得られる重大な脆弱性が見つかった。Kubernetes の永続ボリューム層は侵害されるとクラスタ全体に波及するため、Dell のストレージを CSI 経由で使っている環境は影響範囲と修正版を早めに確認したい。ストレージ周りの CVE は優先度を上げて追う価値がある。</p>
+<p class="links"><a href="https://cybersecuritynews.com/critical-dell-container-storage-flaws/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fcritical-dell-container-storage-flaws%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-03]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-03.html</link>
