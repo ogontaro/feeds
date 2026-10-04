@@ -655,3 +655,15 @@ feeds:
     domain: gaming
     kind: content
     addedAt: "2026-10-04"
+  # GameHub(GameSir の Android 向け Windows ゲーム実行アプリ)は公式 RSS が無いため、報道は見出し検索で拾う。
+  - url: https://news.google.com/rss/search?q=%22GameHub%22%20Android%20Windows&hl=en-US&gl=US&ceid=US:en
+    name: Google News — GameHub
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"
+  # 本家はリリースフィードが無いため、更新の動きは OSS フォーク GameHub Lite のリリースで追う。
+  - url: https://github.com/Producdevity/gamehub-lite/releases.atom
+    name: GameHub Lite releases
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"
