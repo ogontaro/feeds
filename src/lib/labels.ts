@@ -6,6 +6,7 @@ export const DOMAIN_LABEL: Record<Domain, string> = {
   aws: "AWS",
   devtools: "開発ツール",
   gadget: "ガジェット",
+  gaming: "ゲーム環境",
 };
 
 /** トップページのカードに添える分野名。 */
@@ -14,7 +15,8 @@ export const DOMAIN_CATEGORY: Record<Domain, string> = {
   kubernetes: "プラットフォーム",
   aws: "プラットフォーム",
   devtools: "開発ツール",
-  gadget: "XR",
+  gadget: "ガジェット",
+  gaming: "ガジェット",
 };
 
 /** Parse and validate a domain passed as a CLI arg. */

@@ -613,3 +613,45 @@ feeds:
     domain: gadget
     kind: content
     addedAt: "2026-10-03"
+
+  # PC ゲームの動作環境（SteamOS ARM 版・クラウドゲーミング・ゲームストリーミング）の更新を追う（gaming ドメイン）。
+  # SteamOS ARM 版(Steam Frame 向け)のベータ更新は、Steam Frame の公式ニュースにリリースノートが出る。
+  - url: https://store.steampowered.com/feeds/news/app/4165890/
+    name: Steam Frame news
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"
+
+  # GeForce NOW のアプリ・サービス更新だけの RSS は無いため、公式ブログのタグ RSS(対応ゲーム追加が大半)から選定側で拾う。
+  - url: https://blogs.nvidia.com/blog/tag/geforce-now/feed/
+    name: NVIDIA Blog — GeForce NOW
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"
+  # ナイトリーがほぼ毎日出るため、選定側で正式版(nightly 無し)だけを拾う。
+  - url: https://github.com/OpenCloudGaming/OpenNOW/releases.atom
+    name: OpenNOW releases
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"
+  - url: https://github.com/LizardByte/Sunshine/releases.atom
+    name: Sunshine releases
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"
+  - url: https://github.com/moonlight-stream/moonlight-qt/releases.atom
+    name: Moonlight PC releases
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"
+  - url: https://github.com/moonlight-stream/moonlight-android/releases.atom
+    name: Moonlight Android releases
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"
+  # 2025-09 以降リリースが止まっている(2026-10 時点)。再開を拾うために購読する。
+  - url: https://github.com/ClassicOldSong/Apollo/releases.atom
+    name: Apollo releases
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-04"

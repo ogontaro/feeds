@@ -32,7 +32,7 @@ mise run serve     # docs/ をローカルプレビュー
 | フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
 | Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
 
-- レポートは claude / kubernetes / aws / gadget の 4 ドメインです。リリースレポートは devtools を加えた 4 ドメインです
+- レポートは claude / kubernetes / aws / gadget / gaming の 5 ドメインです。リリースレポートは devtools を加えた 4 ドメインです
 - 月次トレンドだけはドメイン横断の1本です（業界全体の潮流を追う目的のため）
 - X タイムラインは独立したレポート・カテゴリを持ちません。各ドメインのレポートが追加入力として読み、そのドメインに合うポストだけを記事と混ぜて載せます
 - フィード監査・Issue 駆動反映はドメイン非依存です（`source.yaml`/`interests.yaml` 全体を扱います）
@@ -59,7 +59,7 @@ mise run serve     # docs/ をローカルプレビュー
 feeds:
   - url: https://example.com/feed.xml
     name: Example
-    domain: claude        # claude | kubernetes | aws | devtools | gadget
+    domain: claude        # claude | kubernetes | aws | devtools | gadget | gaming
     kind: content         # content（日次レポート）| release（週次リリースレポート）
 ```
 
@@ -356,7 +356,7 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 - `GITHUB_TOKEN` の push で `pages-build-deployment` が自動起動することは検証済みです。
 - `claude-code-action` はスケジュール実行に human-actor チェックを適用し、cron を最後に編集した
   ユーザーに実行を帰属させます。通らないとそのレポートが止まり、症状は「ワークフロー失敗」だけです。
-- レポートは 1 日あたり **claude-code-action を最大 4 回**（ドメイン数）、月曜は release.yml で
+- レポートは 1 日あたり **claude-code-action を最大 5 回**（ドメイン数）、月曜は release.yml で
   追加で最大 4 回（claude / kubernetes / aws / devtools）、毎月2日は trend.yml で 2 回（トレンド・ランドスケープ）です。CI 利用はサブスクの
   5 時間ローリング枠を消費します。
 
@@ -369,7 +369,7 @@ landscape.yaml         技術ランドスケープの全量（月次で AI が�
 adoption-log.ndjson    フィード採用実績ログ（追記専用）
 starred-log.ndjson     Inoreader スター記録ログ（追記専用）
 report-criteria/
-  report-claude.md  report-kubernetes.md  report-aws.md  report-gadget.md  x-posts.md（X ポストの共通の扱い）
+  report-claude.md  report-kubernetes.md  report-aws.md  report-gadget.md  report-gaming.md  x-posts.md（X ポストの共通の扱い）
   release-claude.md  release-aws.md  release-kubernetes.md  release-devtools.md
   trend.md（月次トレンドの判定基準）  landscape.md（技術ランドスケープの更新基準）
 src/

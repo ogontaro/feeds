@@ -4,7 +4,7 @@ import { INTERESTS_YAML, SOURCE_YAML } from "./paths.ts";
 import type { Domain, DomainInterests, Feed, FeedsConfig, InterestsConfig, Kind } from "./types.ts";
 
 // 日次レポートは content フィードを持つドメイン単位。X タイムラインは独立したレポートを持たず、各ドメインの追加入力になる。
-export const REPORT_DOMAINS: Domain[] = ["claude", "kubernetes", "aws", "gadget"];
+export const REPORT_DOMAINS: Domain[] = ["claude", "kubernetes", "aws", "gadget", "gaming"];
 // devtools はリリースのみ（購読は手元ツールの GitHub releases で、日次レポート入力は無い）。
 export const RELEASE_DOMAINS: Domain[] = ["claude", "kubernetes", "aws", "devtools"];
 
