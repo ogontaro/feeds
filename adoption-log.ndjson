@@ -141,3 +141,32 @@
 {"date":"2026-10-05","domain":"gadget","sourceName":"Google News — Meta グラス・XR"}
 {"date":"2026-10-05","domain":"gaming","sourceName":"Sunshine releases"}
 {"date":"2026-10-05","domain":"gaming","sourceName":"Moonlight PC releases"}
+{"date":"2026-10-05","domain":"claude","sourceName":"Claude Code releases"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Backstage"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Terraform"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"actions-runner-controller (ARC)"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"browserless"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Cilium"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"external-dns"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Grafana"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Grafana Alloy"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Longhorn"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"n8n"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Pomerium"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Reloader"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"SeaweedFS"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Tailscale (operator)"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Kustomize"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Helmfile"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Talos Linux"}
+{"date":"2026-10-05","domain":"kubernetes","sourceName":"Velero"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"mise"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"herdr"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"Tilt"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"uv"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"tmux"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"Neovim"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"Yazi"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"Docker Engine (moby)"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"GitHub CLI (gh)"}
+{"date":"2026-10-05","domain":"devtools","sourceName":"Biome"}

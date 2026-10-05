@@ -4,11 +4,26 @@
         <title>Claude リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 28 Sep 2026 01:04:03 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Oct 2026 01:09:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude リリースレポート 2026-10-05]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/claude/2026-10-05.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/claude/2026-10-05.html</guid>
+            <pubDate>Mon, 05 Oct 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Claude Code releases v2.1.284〜v2.1.289</h3>
+<p><strong>破壊的変更</strong>: Sonnet の既定モデルが <strong>Sonnet 5.5</strong>(<code>claude-sonnet-5-5</code>、1M context・$2/$10 per Mtok・キャッシュ読み $0.20/Mtok)に変わりました。v2.1.287 の MCP URL プロンプト対応(2025-11-25 プロトコル)以降サーバーに接続できなくなった場合は、その MCP 設定に <code>&quot;bareElicitationCapability&quot;: true</code> を追加してください。v2.1.288 の VS Code 向け <code>claude auth status</code> 変更はサインアウトが増える恐れがあり、v2.1.289 で差し戻されています。</p>
+<p>今週の目玉は <strong>Claude Mods</strong>(プラグインがより深い挙動まで変更できるようになった)と、組み込み mod「You should know」(別のエージェントが作業の抜けを監視して指摘。<code>/plugin enable cc-plugin-you-should-know@builtin</code> で有効化、テレメトリ有効なファーストパーティセッション向け)です。<br>権限境界・サンドボックスの修正が集中しており、sandbox auto-allow 下で環境変数展開付きコマンド(<code>TZ=&quot;$HOME&quot; rm -rf build</code>)や変数代入付きコマンドが deny/ask ルールをすり抜ける問題、複合シェルコマンドの deny/ask が mod の承認に上書きされる問題、シンボリックリンク経由で Read deny を回避できる問題、ユーザー製プラグインが組織管理 MCP のサインインツール説明を書き換えられる問題を修正しました。エージェントの権限境界とサンドボックスを常用する立場では、優先して取り込みたい内容です。<br>信頼性面では、応答途中の API タイムアウトを部分応答から継続、compaction 後も「Prompt is too long」が続く問題、<code>--resume</code> が直前のコンテキストや最後の応答を落とす問題を修正。fork サブエージェントが親の権限モードを継承するようになり、<code>agent.spawn</code> や <code>.agent.list()</code> の idle/waiting が加わって、複数エージェントの並行実行と協調が扱いやすくなりました。<br>そのほか、<code>/code-review --max-findings</code>、agents view の名前検索(Ctrl+F)とグループ移動、<code>claude --desktop</code>、<code>allowedProviders</code> による provider 制限、<code>CLAUDE_CODE_DISABLE_WEB_FETCH</code>、<code>claude plugin configure</code>、ゲートウェイの Google Cloud OTLP テレメトリ転送と spend 金額表示が入っています。</p>
+<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.289">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.289">Google 翻訳で読む</a></p>
+<p>他のバージョン: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.288">v2.1.288</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.287">v2.1.287</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.286">v2.1.286</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.285">v2.1.285</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.284">v2.1.284</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude リリースレポート 2026-09-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/claude/2026-09-28.html</link>

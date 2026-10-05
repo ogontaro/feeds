@@ -4,11 +4,109 @@
         <title>Kubernetes リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 28 Sep 2026 01:06:06 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Oct 2026 01:11:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes リリースレポート 2026-10-05]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-10-05.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-10-05.html</guid>
+            <pubDate>Mon, 05 Oct 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Longhorn v1.13.0</h3>
+<p><strong>破壊的変更</strong>: あり。CSI external-provisioner が v6.3.0 になり、<strong>Kubernetes v1.34 以上が必須</strong>。v1.12.0 以前で作った V2 linked-clone ボリュームは detach か delete しかできない(同じソースから作り直せばデータコピーは不要)。V2 の live upgrade は <strong>v1.12.2 からのみ</strong>対応。<br>V2 Data Engine に live upgrade(ボリュームを attach したままアップグレード)と完全イベント駆動の割り込みモードが入り、新規インストールでは CPU 分離が既定で有効になる。ほかにボリュームグループスナップショット、経過時間ベースの保持、トポロジ制約付きレプリカ配置、scheduler extender、大規模クラスタ向けの longhorn-global-manager を追加。注意点として、V2 ボリュームが多いクラスタでの attach 遅延、ARM64 の NVMe ノードディスクで I/O が固まる問題、カーネル v6.17 での UBLK フロントエンドの kernel panic が未解決。</p>
+<p class="links"><a href="https://github.com/longhorn/longhorn/releases/tag/v1.13.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Flonghorn%2Flonghorn%2Freleases%2Ftag%2Fv1.13.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Talos Linux v1.14.2 / v1.13.11</h3>
+<p><strong>破壊的変更</strong>: v1.13.11 で <code>TimeService/TimeCheck</code> API(<code>talosctl time --check</code>)が <code>os:reader</code> ロールから使えなくなる(任意のタイムサーバーを問い合わせられるため)。PTP デバイスパスは構成・API の両方で厳格検証される(<code>/dev</code> 直下、名前が <code>ptp</code> 始まり、PTP キャラクタデバイスであること)。<br>v1.14.2 は kubelet の CPU/メモリマネージャ状態ファイルを kubelet 起動前に検証し、読み込めない状態ファイルを除去する。これまでポリシー変更しか検出できず、<code>reservedSystemCPUs</code> や予約メモリ、CPU/NUMA トポロジの変更で kubelet が起動しなくなっていた問題が解消する。Kubernetes 既定 1.37.1、containerd 2.3.6、macsec モジュール追加。v1.13.11 は LinkStatus に WireGuard 事前共有鍵が露出する問題や、厳格なホスト名/検索ドメイン検証などの修正を含む。</p>
+<p class="links"><a href="https://github.com/siderolabs/talos/releases/tag/v1.14.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsiderolabs%2Ftalos%2Freleases%2Ftag%2Fv1.14.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Cilium 1.21.0-pre.3</h3>
+<p><strong>破壊的変更</strong>: 非推奨だった mutual authentication(<code>auth</code>)が削除される。<code>--fixed-identity-mapping</code> も非推奨化(将来削除)。<strong>プレリリースのため本番導入は不可</strong>。<br>LB IPAM に <code>lbipam.cilium.io/sharing-permit-different-pods</code> が追加され、<code>externalTrafficPolicy=Local</code> で別々の Pod を選ぶ Service 間でも IP を共有できる。Prometheus メトリクスのコンテナポート名を Helm で設定可能になり、独自スクレイプ構成に対応。conntrack GC が datapath の再オープンしたエントリを消して NAT/SNAT を巻き込む問題、ノード再起動時の「No route to host」、agent 停止中に L7 DNS ポリシーが残る問題などを修正。</p>
+<p class="links"><a href="https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcilium%2Fcilium%2Freleases%2Ftag%2Fv1.21.0-pre.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Grafana 13.2.3 / 13.1.7 / 13.0.10 / 12.4.12</h3>
+<p><strong>破壊的変更</strong>: なし(セキュリティ修正)。<br>CVE-2026-13719 / CVE-2026-13720 / CVE-2026-81841(13.0.10 と 12.4.12 は CVE-2026-81842 も)を修正するセキュリティリリース。複数の系列に同時に提供されている。自宅クラスタの Grafana は早めに更新したい。12.4.12 は Unified Storage の名前空間不一致で 500 ではなく 403 を返す修正も含む。</p>
+<p class="links"><a href="https://github.com/grafana/grafana/releases/tag/v13.2.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Fgrafana%2Freleases%2Ftag%2Fv13.2.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Pomerium v0.33.4</h3>
+<p><strong>破壊的変更</strong>: なし。<br>Envoy を v1.38.2 → v1.38.5 に更新し、多数のユニークなダウンストリームクライアントから接続を受ける構成(ボットトラフィックの多いインターネット公開環境など)で性能劣化や DoS につながる脆弱性 GHSA-pj2c-mjp8-p2m9 を修正。ほかにも依存関係の脆弱性を複数修正している。外部公開しているゲートウェイは更新推奨。</p>
+<p class="links"><a href="https://github.com/pomerium/pomerium/releases/tag/v0.33.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fpomerium%2Fpomerium%2Freleases%2Ftag%2Fv0.33.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Kustomize v5.8.2 (api / kyaml / cmd-config v0.21.2)</h3>
+<p><strong>破壊的変更</strong>: なし。<br><code>kustomize edit add configuration</code> と <code>kustomize edit remove component</code> のコマンドが追加された。ビルトインの OpenAPI スキーマはバイナリに埋め込んだプリコンパイル済みバンドルから読む方式に変更(スキーマ自体は引き続き k8s v1.21.2 ベースで、<code>kustomize build</code> の出力は変わらない見込み)。api 側では Secret の <code>stringData</code> を generator merge で保持する修正、CronJob の Image Volume を images transformer が扱う対応、sha256 以外のアルゴリズムのイメージダイジェスト照合、<code>includeVolumeClaimTemplates</code> 時の volumeClaimTemplates へのラベル付与など。kyaml は ValidatingAdmissionPolicy をクラスタスコープとして扱う。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize%2Fv5.8.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fkustomize%2Freleases%2Ftag%2Fkustomize%252Fv5.8.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Helmfile v1.8.1</h3>
+<p><strong>破壊的変更</strong>: なし。<br>vals 処理をスキップする <code>HELMFILE_DISABLE_VALS</code>、リリース単位の <code>continue-on-error</code>、<code>--track-logs-interval</code> フラグを追加。SIGINT/SIGTERM 受信時に kubedog 追跡中の helm サブプロセスをキャンセルし、helm pull 失敗時に部分的に展開されたチャートを削除する修正も入った。Go 1.27.1 へ更新。</p>
+<p class="links"><a href="https://github.com/helmfile/helmfile/releases/tag/v1.8.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhelmfile%2Fhelmfile%2Freleases%2Ftag%2Fv1.8.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Velero v1.18.4</h3>
+<p><strong>破壊的変更</strong>: なし。<br>キューから取り出したバックアップが patch 中に完了するとバックアップキューが恒久的に詰まる問題を修正。バグ修正のみのパッチ。</p>
+<p class="links"><a href="https://github.com/velero-io/velero/releases/tag/v1.18.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fvelero-io%2Fvelero%2Freleases%2Ftag%2Fv1.18.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>external-dns Helm chart 1.23.0</h3>
+<p><strong>破壊的変更</strong>: なし。<br>同梱の ExternalDNS イメージを v0.23.0 に更新しただけのチャート追随リリース。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/external-dns/releases/tag/external-dns-helm-chart-1.23.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fexternal-dns%2Freleases%2Ftag%2Fexternal-dns-helm-chart-1.23.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>actions-runner-controller (ARC) gha-runner-scale-set 0.15.0</h3>
+<p><strong>破壊的変更</strong>: あり。EphemeralRunnerSet / AutoscalingRunnerSet のステータス表示が <code>status</code> フィールドからメトリクスベースに変わり、メトリクスを見ている監視や自動化は確認が必要。ラベル/アノテーションの値はチャート描画時に文字列化・検証される。<br>AutoscalingRunnerSet と EphemeralRunnerSet が 1 対 1 になり、リソースを in-place で更新するようになった。ほかに listener Pod の drift 検出、Actions サービス側から runner scale set が消えた場合の再登録、<code>max-concurrent-reconciles</code> の既定値/コントローラ別フラグ、<code>terminationGracePeriodSeconds</code> の設定化、desired state 参照のキャッシュ導入によるアロケーション削減などを含む大型リリース。</p>
+<p class="links"><a href="https://github.com/actions/actions-runner-controller/releases/tag/gha-runner-scale-set-0.15.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Factions%2Factions-runner-controller%2Freleases%2Ftag%2Fgha-runner-scale-set-0.15.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>SeaweedFS 4.48</h3>
+<p><strong>破壊的変更</strong>: なし(ただし Go 1.26.6 以上が必須になり、脆弱な依存関係を更新)。<br>admin の worker gRPC リスナーをワイルドカードではなく <code>-ip</code> にバインドするセキュリティ修正、S3 の <code>aws:SourceIp</code> 向け trusted-proxy allowlist、Object Lock 権限の分離、filer のシャットダウン時にメタデータストアを閉じる前に経路を統合する修正など。Rust 実装のボリューム側でもロックや Windows まわりの修正が多数入っている。</p>
+<p class="links"><a href="https://github.com/seaweedfs/seaweedfs/releases/tag/4.48">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fseaweedfs%2Fseaweedfs%2Freleases%2Ftag%2F4.48">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Tailscale v1.104.0 (v1.102.5 / v1.105.0-pre)</h3>
+<p><strong>破壊的変更</strong>: なし。<br>v1.104.0 が安定版としてリリース(詳細は公式 changelog を参照)。v1.102.5 はパッチ、v1.105.0-pre は次期版のプレリリース。</p>
+<p class="links"><a href="https://github.com/tailscale/tailscale/releases/tag/v1.104.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Ftailscale%2Ftailscale%2Freleases%2Ftag%2Fv1.104.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Reloader Helm chart v2.2.18 / v3.0.0-beta.2</h3>
+<p><strong>破壊的変更</strong>: なし。<br>チャートで image フィールドを <code>tpl</code> で描画できるようになった。あわせて README に v2 の告知と master の機能凍結(feature freeze)が追加され、v3 系(<code>chart-v3.0.0-beta.2</code>)の開発が進んでいる。</p>
+<p class="links"><a href="https://github.com/stakater/Reloader/releases/tag/chart-v2.2.18">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstakater%2FReloader%2Freleases%2Ftag%2Fchart-v2.2.18">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Backstage v1.55.3 (v1.56.0-next.1)</h3>
+<p><strong>破壊的変更</strong>: なし。<br>v1.55.3 は、ドキュメント化された MkDocs Markdown 拡張の設定を使った場合に TechDocs の生成が壊れる問題を修正するパッチ。v1.56.0-next.1 は次期マイナーのプレリリースで、変更点は changelog 参照。</p>
+<p class="links"><a href="https://github.com/backstage/backstage/releases/tag/v1.55.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbackstage%2Fbackstage%2Freleases%2Ftag%2Fv1.55.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Terraform v1.16.5</h3>
+<p><strong>破壊的変更</strong>: なし。<br>tainted なインスタンス状態が有効な status を伴わない場合のクラッシュと、削除時に resource identity が nil になりうる問題を修正。バグ修正のみのパッチ。</p>
+<p class="links"><a href="https://github.com/hashicorp/terraform/releases/tag/v1.16.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhashicorp%2Fterraform%2Freleases%2Ftag%2Fv1.16.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Grafana Alloy v1.20.1</h3>
+<p><strong>破壊的変更</strong>: なし。<br>Loki 書き込みのバッチサイズ計算にタイムスタンプとストリームラベルの推定を含める修正、<code>loki_write_sent_bytes_total</code> / <code>loki_write_dropped_bytes_total</code> を非圧縮バイト基準にする修正(いずれも backport)。ほかに <code>prometheus.remote_write</code> が未知の WAL レコード種別を許容する修正、cloudflare receiver の <code>max_request_body_size</code> 既定 20MiB 化など。バグ修正のみ。</p>
+<p class="links"><a href="https://github.com/grafana/alloy/releases/tag/v1.20.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Falloy%2Freleases%2Ftag%2Fv1.20.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>n8n 2.42.0 / 2.42.1 / 2.42.2 / 2.41.4–2.41.6 (1.123.83)</h3>
+<p><strong>破壊的変更</strong>: なし。<br>キュー実行で Bull の <code>job.finished()</code> を待たないようにする修正、未処理の promise rejection で task runner が落ちないようにする修正、実行の trace context が不完全でも実行を返す修正など、キュー/実行まわりの不具合修正が中心。2.42.0 では AI Assistant / Agent Builder と MCP 関連の調整・改善が多数入っている。</p>
+<p class="links"><a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fn8n-io%2Fn8n%2Freleases%2Ftag%2Fn8n%25402.42.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>browserless v2.57.0</h3>
+<p><strong>破壊的変更</strong>: なし。<br>全ルートで TOKEN を必須にする <code>STRICT_TOKEN_USE</code> を追加。ブラウザイメージのベースを Ubuntu 26.04 に更新。</p>
+<p class="links"><a href="https://github.com/browserless/browserless/releases/tag/v2.57.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbrowserless%2Fbrowserless%2Freleases%2Ftag%2Fv2.57.0">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes リリースレポート 2026-09-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-09-28.html</link>
