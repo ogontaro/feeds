@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-05</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-05</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Sonnet 5.5 リリース——単価据え置きで実コスト約3割減、Pro プランのデフォルトは Opus に交代</h3>
+<p>2026年9月28日、Anthropic が Claude Sonnet 5.5（モデル ID <code>claude-sonnet-5-5</code>）をリリースしました。単価は Sonnet 5 と同じ $2/$10 per MTok のまま 30% 以上の高速化とタスクあたり最大 30% のコスト減が見込まれるほか、Pro プランのデフォルトモデルが Opus に交代しています。単価が変わらないモデル更新が実コストとプラン構成にどう効くかを日本語で整理した 1 本として、料金計算やプラン選択の判断材料になります。</p>
+<p class="links"><a href="https://qiita.com/sakutto-panda/items/06193ea939863dacbfb2">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>新しく作ったファイルにフォルダの CLAUDE.md が効かなかった問題——2.1.288 で修正、指示の適用タイミングも要確認</h3>
+<p>Claude Code 2.1.288 の changelog に「新規ファイル書き込み時に path-scoped の .claude/rules とネストした CLAUDE.md が読み込まれない」問題の修正が挙がりました。記事は、直った今も「指示はファイルが書いた後に届く」点が残り得ると指摘しており、ディレクトリ単位の規則や指示ファイルを CLAUDE.md で運用している人が、適用のタイミング感度を押さえておく価値があります。</p>
+<p class="links"><a href="https://qiita.com/suwa_nobu/items/5252da854dbebe02cccc">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のセッション記録は既定で30日経過すると自動削除——作業履歴を可視化・蓄積する前に cleanupPeriodDays を確認</h3>
+<p>Claude Code のセッション記録は <code>~/.claude/projects/</code> に平文で保存され、公式ドキュメントでは既定 30 日で自動削除される、という運用上の落とし穴の整理です。残す期間は <code>cleanupPeriodDays</code> 設定で変えられるため、エージェントの作業履歴を後から可視化・分析したい人は設定が前提から消えないうちに確認しておくべきです。</p>
+<ul>
+<li><a href="https://x.com/tokkyo/status/2106569504700731506">@tokkyo のポスト</a></li>
+<li><a href="https://code.claude.com/docs/ja/claude-directory#cleaned-up-automatically">記事を読む</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>OpenCode 2.0 の概要をまとめた解説——コーディングエージェントのバージョンアップ</h3>
+<p>npaka が OpenCode 2.0 の概要を日本語で整理して投稿しました。opencode は Claude Code と並ぶコーディングエージェントとして CI の AI 呼び出しなどにも使う定番ツールのひとつなので、2.0 で何が大きく変わったかを押さえておくと、エージェント運用の乗り換え・併用判断に直結します。</p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2106734039927509451">@npaka123 のポスト</a></li>
+<li><a href="https://note.com/npaka/n/n124579373d23?sub_rt=share_sb">記事を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>「Jev」公開——GitHub の PR レビューで人間が目視すべき重要箇所を絞り出すツール</h3>
+<p><code>egma-ai/jev-code-reviewer</code> は、PR レビュー時に diff を追うだけでなく人間が目視確認すべき重要箇所を優先度付きで特定・抽出する、ローカル CLI＋Chrome 拡張のツールです。OpenAI による自然言語での差分解説も備えます。AI が大量のコードを生成する前提でレビューの対象と役割を組み直す「AI 時代のコードレビュー」の実装事例として、Show HN 的な新規プロジェクト発表になります。</p>
+<ul>
+<li><a href="https://x.com/matsuu/status/2106547641194852440">@matsuu のポスト</a></li>
+<li><a href="https://htn.to/DPB1bEPF2J">記事を読む</a></li>
+<li><a href="https://github.com/egma-ai/jev-code-reviewer">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fegma-ai%2Fjev-code-reviewer">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

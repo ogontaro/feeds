@@ -7,6 +7,7 @@
       <outline type="rss" text="Kubernetes 日次レポート" title="Kubernetes 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-kubernetes.xml"/>
       <outline type="rss" text="AWS 日次レポート" title="AWS 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-aws.xml"/>
       <outline type="rss" text="ガジェット 日次レポート" title="ガジェット 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-gadget.xml"/>
+      <outline type="rss" text="ゲーム環境 日次レポート" title="ゲーム環境 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-gaming.xml"/>
     </outline>
     <outline text="週次リリース" title="週次リリース">
       <outline type="rss" text="Claude リリース" title="Claude リリース" xmlUrl="https://ogontaro.github.io/feeds/digest/release-claude.xml"/>

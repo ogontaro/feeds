@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
+        <link>https://ogontaro.github.io/feeds/</link>
+        <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
+        <lastBuildDate>Mon, 05 Oct 2026 00:37:13 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>ja</language>
+        <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-05]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-05.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-05.html</guid>
+            <pubDate>Mon, 05 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Moonlight PC v6.2.0 リリース</h3>
+<p>ゲームストリーミングのクライアント側である Moonlight PC の v6.2.0 が出た。Windows のインストーラ／ポータブル版、macOS、Snap・Flatpak・AppImage、Raspberry Pi、実験的な RISC-V パッケージ、NVIDIA Jetson と Nintendo Switch（Ubuntu L4T）、Steam Link デバイス向けの配布物が並ぶ。クライアントの版が上がるだけで接続の安定や画質の体感が変わることはあるので、受け側を更新するかの判断材料として見ておきたい。</p>
+<p class="links"><a href="https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmoonlight-stream%2Fmoonlight-qt%2Freleases%2Ftag%2Fv6.2.0">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sunshine v2026.1004.122811 リリース</h3>
+<p>ストリーミングのホスト側である Sunshine の定例リリース。Flatpak でコマンドのプレフィックスが不要になり、Web UI がシングルページアプリケーションに作り替えられ、ペアリングで重複したクライアント証明書を置き換える修正も入っている。自宅で配信元を動かしているなら、更新で何が変わるかを確認しておく価値がある。</p>
+<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1004.122811">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1004.122811">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

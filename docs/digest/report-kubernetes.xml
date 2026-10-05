@@ -4,11 +4,24 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 04 Oct 2026 00:26:51 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Oct 2026 00:35:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-05]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-05.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-05.html</guid>
+            <pubDate>Mon, 05 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Dell の Container Storage Modules (CSM) に重大な脆弱性、Kubernetes 環境が遠隔からの管理者権限奪取の危険に</h3>
+<p>Kubernetes のストレージを担う Dell の Container Storage Modules (CSM) に、遠隔から管理者権限を奪われうる重大な脆弱性。CVE の分析とパッチ適用の指針が 1 本にまとまっている。ストレージ経路の脆弱性は Pod 単体ではなくノードやクラスタ全体の侵害に直結するため、CSM を導入している構成では該当バージョンの確認とパッチ計画への反映を優先したい。</p>
+<p class="links"><a href="https://www.rescana.com/post/critical-dell-container-storage-modules-csm-vulnerabilities-expose-kubernetes-environments-to-remote-admin-compromise-cv">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.rescana.com%2Fpost%2Fcritical-dell-container-storage-modules-csm-vulnerabilities-expose-kubernetes-environments-to-remote-admin-compromise-cv">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-04]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-04.html</link>

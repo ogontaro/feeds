@@ -4,11 +4,44 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 04 Oct 2026 00:28:39 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 05 Oct 2026 00:36:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-05]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-05.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-05.html</guid>
+            <pubDate>Mon, 05 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Meta の新型スマートグラス「Gen 3」レビュー——驚きは少ないが着実な作り</h3>
+<p>Meta のスマートグラスの新世代モデル「Gen 3」を WIRED がレビューしている。評価は「概ね見慣れた出来」で、派手な新機能ではなく完成度を上げてきたタイプの更新として読める。買い替えや初購入を検討している人が、発表資料ではなく実際の使用感から判断するための一次情報になる。</p>
+<p class="links"><a href="https://www.wired.com/review/meta-glasses-gen-3/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.wired.com%2Freview%2Fmeta-glasses-gen-3%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Meta のウェアラブル端末アクセスツールキット 1.0 に React Native 対応の非公式ラッパー——ただし該当機能を使うアプリは公開不可</h3>
+<p>Meta の Wearables Device Access Toolkit 1.0 を React Native から扱えるようにする非公式の Expo モジュールが 10 月 3 日に公開された。一方で Meta 自身の変更履歴は、この 1.0 の実験的機能を使って作ったアプリはまだ公開できないとしている。グラス向けに何か作ろうとしている開発者は、今すぐ使える範囲と製品化できない範囲の境界を押さえておきたい。</p>
+<p class="links"><a href="https://mixed-news.com/en/expo-meta-wearables-dat-1-0-wrapper-experimental-cannot-publish/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmixed-news.com%2Fen%2Fexpo-meta-wearables-dat-1-0-wrapper-experimental-cannot-publish%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>眼鏡チェーン Hans Anders、オランダとベルギーで Meta グラスの販売を停止</h3>
+<p>眼鏡販売チェーンの Hans Anders が、オランダとベルギーで Meta のスマートグラスの販売を停止した。製品そのものの話ではなく欧州の販売チャネル側の動きで、スマートグラスをめぐる小売り・規制の環境がどう動いているかを知る手がかりになる。</p>
+<p class="links"><a href="https://news.az/news/hans-anders-suspends-meta-glasses-sales-in-netherlands-belgium">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.az%2Fnews%2Fhans-anders-suspends-meta-glasses-sales-in-netherlands-belgium">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>QuestLHSync、Steam Frame のカメラで Lighthouse トラッカーを整列——SpaceCalibrator 不要</h3>
+<p>非公式の SteamVR ドライバ QuestLHSync が 10 月 3 日に公開された。ヘッドセット内蔵のカメラでベースステーションのレーザーを捉え、Lighthouse のトラッカーやコントローラを整列させる仕組みで、README は「SpaceCalibrator も頭に付けるトラッカーも不要」と明言している。Lighthouse 資産を持っている人が Steam Frame に移る際の、実運用上の障害を1つ外す話として読める。</p>
+<p class="links"><a href="https://mixed-news.com/en/questlhsync-steam-frame-lighthouse-tracker-alignment/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmixed-news.com%2Fen%2Fquestlhsync-steam-frame-lighthouse-tracker-alignment%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI ウェアラブルの「ブレイクの瞬間」は来なかった——IPO 撤回と評判悪化</h3>
+<p>CNBC が、IPO の撤回や評判を損なう出来事を背景に、AI ウェアラブルが期待されたほど普及の転換点を迎えていないと論じている。特定製品の話ではなくカテゴリ全体の停滞を扱っており、グラス型デバイスの立ち位置を市場の文脈で捉え直す材料になる。</p>
+<p class="links"><a href="https://www.cnbc.com/2026/10/04//ai-wearables-oura-ipo-privacy.html">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cnbc.com%2F2026%2F10%2F04%2F%2Fai-wearables-oura-ipo-privacy.html">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-04]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-04.html</link>
