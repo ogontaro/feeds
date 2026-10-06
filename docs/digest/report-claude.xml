@@ -4,11 +4,55 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 05 Oct 2026 00:34:41 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Oct 2026 02:08:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-06]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-06.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-06.html</guid>
+            <pubDate>Tue, 06 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.289——sandbox の auto-allow 時に Bash の deny ルールが適用されない問題を修正</h3>
+<p>27 件の変更のうちセキュリティ修正が 5 件で、目玉は sandbox の auto-allow 時に Bash の deny ルールが効いていなかった問題の修正。記事では環境変数プレフィックス付きのコマンドが実際に deny で止まるかまで試して確かめている。エージェントに何を実行させないかは deny ルールで守っているつもりになりやすい部分なので、自分のバージョンと挙動を確かめておく価値がある。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261005-cc-updates-v2-1-289/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code の「ルーティン」で開発フローを自動化する設計</h3>
+<p>AI にコードを書かせられるようになると、ボトルネックは人間が同時にさばける承認待ちの課題のほうに移る。issue の選定条件を明確にし、1 回の実行で 1 issue だけ扱い、複数リポジトリを横断してコンテキストを集める、という切り分けの設計が具体的に書かれている。定期実行や常駐エージェントに仕事を渡すときの「渡し方」を考える材料になる。</p>
+<p class="links"><a href="https://tech-blog.rakus.co.jp/entry/20261005/claude-code-routines">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Cowork はローカル VM をやめてクラウド実行へ</h3>
+<p>Cowork の開発者 Felix Rieseberg の説明によると、旧版はクラウドで推論しつつツール呼び出しを手元に配る Anthropic 提供の VM で実行しており、セッションに明示的に追加したデータだけをマップする設計だった。廃止の理由として、ローカル VM のディスク・バッテリー・性能コストと、ノート PC を閉じると作業が止まることが挙げられている。同時期に Claude Projects のクラウドセッションが、承認したローカルフォルダを読み書きできるようにもなっており、Claude がどこで実行し、どこまでローカルに触るかが動いている。自分の使い方でデータがどこを通るかを確認しておきたい。</p>
+<p class="links"><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FOct%2F5%2Ffelix-rieseberg%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2107242053864403253">oikon48 のポスト</a></li>
+<li><a href="https://x.com/trq212/status/2107229483015258493">trq212 のポスト</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>AI エージェントハーネス「OpenCode 2.0」のクイックスタート</h3>
+<p>opencode は CI の AI 呼び出しにも使っているハーネスで、その 2.0 のクイックスタートが公開された。2.0 で何が変わったのか、まずどこから触ればよいのかを知る入口として読める。常用しているツールの major 更新は、差分の当たりを付けてから上げたい。</p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2106953116155543811">npaka123 のポスト</a></li>
+<li><a href="https://note.com/npaka/n/n2771586c2c20">記事を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>JetBrains のコーディングエージェント「Junie Lite」が CLI でも利用可能に</h3>
+<p>Qwen 3.6 27B を JetBrains がホストするクラウドモデルで、小規模なコード変更や実装タスク向け。JetBrains Air に加えて Junie CLI からも使えるようになり、JetBrains Account があれば今は無料で試せる。有料のコーディングエージェントを契約する前に、無料枠でタスクの切り分けや精度を比べておく候補になる。</p>
+<ul>
+<li><a href="https://x.com/jetbrainsjp/status/2106980527224033782">jetbrainsjp のポスト</a></li>
+<li><a href="https://blog.jetbrains.com/ai/2026/10/air-in-ides-eap/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.jetbrains.com%2Fai%2F2026%2F10%2Fair-in-ides-eap%2F">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-05.html</link>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-06</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-06</h1>
+<article class="report"><h2>今日の 2 本</h2>
+<section class="item">
+<h3>Kubelet は inode を監視している。ただし緊急事態になるまで</h3>
+<p>ノードが <code>NodeFilesystemFilesFillingUp</code> でページを上げたのに、ディスク使用率を見ると 83%(103G 使用 / 22G 空き)で「まだ余裕がある」ように見える——という、容量アラートと inode 枯渇の食い違いを追いかける記事。バイト単位の空き容量だけを見ていると inode の枯渇は直前まで見えず、kubelet の inode 監視も「緊急事態」の域に入ってからしか働かない、という監視設計の穴を突いている。自宅クラスタの可観測性をアラート設計まで含めて組んでいるなら、ディスク容量の閾値に何を混ぜるべきかを考える材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/05/kubelet-watches-inodes-just-not-until-its-an-emergency/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F05%2Fkubelet-watches-inodes-just-not-until-its-an-emergency%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Node Swap で Kubernetes ワークロードをスケールさせる</h3>
+<p>ノードで swap を有効にして Kubernetes を動かす機能が General Availability に到達したことを受けた、公式ブログの解説。メモリは CPU より先にノードの限界になる資源で、起動時に大きなメモリを確保したまま次のプロンプトを待って遊んでいる agentic AI 系ワークロードは、その「常駐しているだけのメモリ」でノードに載る Pod 数を頭打ちにする。swap を安全側の逃げ道として設計に組み込めるようになったことで、ノードのサイジングとメモリ要求の見積もり方をどこまで見直せるかが論点になる。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F05%2Fscaling-kubernetes-workloads-with-node-swap%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

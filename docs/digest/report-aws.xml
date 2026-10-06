@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 05 Oct 2026 00:35:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Oct 2026 02:10:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-06]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-06.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-06.html</guid>
+            <pubDate>Tue, 06 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>GLM 5.3(Z.ai)が Amazon Bedrock で一般提供開始</h3>
+<p>Z.ai の旗艦オープンウェイトモデル GLM 5.3(753B パラメータの MoE、トークンあたりアクティブ約 40B)が Bedrock で使えるようになった。GLM 5.2 と同じベースモデルに post-training を積み増した構成で、コーディングと長時間のエージェント作業を狙っている。OpenAI 互換 API でそのまま呼べ、プロンプトキャッシュでコストとレイテンシを抑えられるため、オープンウェイトのコーディングエージェントを Bedrock の統制下で試す際の第一候補になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-glm-5-3-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Opus 5.5 / Sonnet 5.5 が Bedrock の AWS GovCloud リージョンで利用可能に</h3>
+<p>Bedrock の AWS GovCloud (US) リージョンで Claude の最新モデルが提供され、Claude Code と組み合わせた規制対象・ITAR 対象ワークロードでの AI 支援開発が現実的になった。モデルのリージョン展開は「どのモデルをどこで使えるか」が設計と調達の制約に直結するため、データ所在地の要件がある案件ではそのまま判断材料になる。GovCloud という制約下でコーディングエージェントを回すときの具体的な構成例として読める。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/supercharge-regulated-workloads-with-claude-code-and-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fsupercharge-regulated-workloads-with-claude-code-and-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock Managed Agents(OpenAI モデル対応)がパブリックプレビュー</h3>
+<p>OpenAI の Agents API を AWS ネイティブに作り替えた「Bedrock Managed Agents powered by OpenAI」のパブリックプレビューが発表された。エージェントの実行基盤・ID・権限・ガバナンスを AWS 側に置いたまま OpenAI モデルを使えるのが要点で、モデル提供元ごとに統制が分断されない。複数ベンダーのモデルを同じ権限境界で扱う前提が変わるので、エージェント基盤の選定に効いてくる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Batch が Amazon EKS のアクセスエントリ認証に対応</h3>
+<p>Batch のコンピュート環境が、aws-auth ConfigMap ではなく EKS アクセスエントリ経由でクラスタに認証できるようになった。IAM プリンシパルへの権限付与を API 駆動で管理できるので、クラスタ認証のライフサイクル管理が単純化する。EKS のアクセスエントリへ移行中の環境では、Batch が移行の足枷にならないことをここで確認しておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-access-entries/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-batch-access-entries%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker の推論最適化スキル「aws-ai-ml」がコーディングエージェント向けに公開</h3>
+<p>Agent Toolkit for AWS 経由で aws-ai-ml スキルが提供され、Kiro・Claude Code・Codex などのエージェントが SageMaker の推論最適化とベンチマークの知識を持ったうえで、SageMaker Python SDK v3 の実行可能なコードを生成できるようになった。配備構成の比較と推奨をエージェントに任せられるため、推論コストとレイテンシの検討を開発フローの中に組み込みやすい。エージェントに「何を知らせておくか」をスキル単位で足していく流れの一例としても参考になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fnew-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-05.html</link>

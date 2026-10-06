@@ -4,11 +4,29 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 05 Oct 2026 00:35:28 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Oct 2026 02:10:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-06]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-06.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-06.html</guid>
+            <pubDate>Tue, 06 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Kubelet は inode を監視している。ただし緊急事態になるまで</h3>
+<p>ノードが <code>NodeFilesystemFilesFillingUp</code> でページを上げたのに、ディスク使用率を見ると 83%(103G 使用 / 22G 空き)で「まだ余裕がある」ように見える——という、容量アラートと inode 枯渇の食い違いを追いかける記事。バイト単位の空き容量だけを見ていると inode の枯渇は直前まで見えず、kubelet の inode 監視も「緊急事態」の域に入ってからしか働かない、という監視設計の穴を突いている。自宅クラスタの可観測性をアラート設計まで含めて組んでいるなら、ディスク容量の閾値に何を混ぜるべきかを考える材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/05/kubelet-watches-inodes-just-not-until-its-an-emergency/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F05%2Fkubelet-watches-inodes-just-not-until-its-an-emergency%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Node Swap で Kubernetes ワークロードをスケールさせる</h3>
+<p>ノードで swap を有効にして Kubernetes を動かす機能が General Availability に到達したことを受けた、公式ブログの解説。メモリは CPU より先にノードの限界になる資源で、起動時に大きなメモリを確保したまま次のプロンプトを待って遊んでいる agentic AI 系ワークロードは、その「常駐しているだけのメモリ」でノードに載る Pod 数を頭打ちにする。swap を安全側の逃げ道として設計に組み込めるようになったことで、ノードのサイジングとメモリ要求の見積もり方をどこまで見直せるかが論点になる。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F05%2Fscaling-kubernetes-workloads-with-node-swap%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-05.html</link>
