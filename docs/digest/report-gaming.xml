@@ -4,11 +4,29 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 06 Oct 2026 02:12:53 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Oct 2026 01:20:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-07]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-07.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-07.html</guid>
+            <pubDate>Wed, 07 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Steam Frame 向け Steam クライアントが全ユーザーに配信、配信メニューに視聴状況の表示を追加</h3>
+<p>Steam Frame 専用の Steam クライアントが全ユーザー向けに公開された。設定画面が SOC シリアルではなくユーザーに見えるシリアル番号を表示するようになり、Wireless Adapter の手動設定で地域ごとの WiFi チャンネル一覧が正しく出るよう修正、配信メニューには視聴(spectating)状況と停止ボタンが付いた。本体クライアントが全ユーザー配信に移ったことは発売準備が最終段階に入ったサインで、特に配信メニュー周りの UI が固まってきたことを自分の目で確認できる。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/675134162359812101">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F675134162359812101">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Moonlight PC v6.2.0 リリース、RISC-V 版 Debian パッケージが実験的に追加</h3>
+<p>自宅ゲームストリーミングのクライアント側である Moonlight の正式版 v6.2.0 が出た。配布対象は Windows(インストーラ / ポータブル x64・ARM64)、macOS、Snap、Flatpak、AppImage、Raspberry Pi、汎用 ARM 32/64bit Debian、NVIDIA Jetson と Nintendo Switch、Steam Link 機器と広く、今回 RISC-V 向け Debian パッケージが実験的に加わった。クライアントを動かす予定の機器が配布対象に入っているかを確認する材料になる。</p>
+<p class="links"><a href="https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmoonlight-stream%2Fmoonlight-qt%2Freleases%2Ftag%2Fv6.2.0">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-10-06]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-06.html</link>

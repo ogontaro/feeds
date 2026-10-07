@@ -4,11 +4,55 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 06 Oct 2026 02:08:26 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Oct 2026 01:16:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-07]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-07.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-07.html</guid>
+            <pubDate>Wed, 07 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code の Explore サブエージェントが、いつの間にか本体と同じモデルに変わっていた</h3>
+<p>調査を任せる Explore サブエージェントは登場時 Haiku で動いていたが、現在は既定で本体と同じモデルが使われるようになっており、設定で戻すと費用が 21〜35% 減ったという実測記事。サブエージェントのモデルは意識しないと見落とすコスト要因で、ここを確認するだけで日常のトークン消費をそのまま削れるのが大きい。まず自分の設定がどうなっているかを確かめたくなる内容。</p>
+<p class="links"><a href="https://qiita.com/suwa_nobu/items/be41c19295ef0e58e7f2">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>クラウドセッションに向いた 7 つのワークフロー（Claude Code in the Cloud）</h3>
+<p>クラウドセッションはタスクごとに新しい VM 上で Claude Code を走らせるため、複数を同時に開始でき、ノート PC を閉じても処理が続く。@ClaudeDevs がそれに向く 7 つのワークフローと、GitHub 連携を最初から成功させるコツをまとめたフィールドガイドを公開した。並行実行を試すときの勘所がつかめるので、複数エージェントの分担を設計する出発点になる。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2107542087243907506">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2107542087243907506">Google 翻訳で読む</a></li>
+<li><a href="https://claude.dev/blog/claude-code-in-the-cloud">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fclaude-code-in-the-cloud">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Security プラグインで実案件のリポジトリを全走査した実測値</h3>
+<p>実案件のリポジトリ全体を Claude Security プラグインでスキャンし、所要時間・トークン・コスト・検出した脆弱性の検証プロセスまで実測値でまとめた記事。79 分・約 87 ドル・13 件という数字は、AI によるセキュリティ監査を業務フローに入れるか判断するときの費用感の基準になる。指摘をどう検証しているかまで書かれており、レビューを AI にどこまで任せるかを考える材料としても使える。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-security-plugin-full-repository-scan/">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>JetBrains IDE に入るエージェント型体験「JetBrains Air」、EAP 開始</h3>
+<p>JetBrains が、IDE と AI エージェントを組み合わせた新しいエージェント型体験「JetBrains Air」のアーリーアクセスプログラムを開始した。ターミナル中心の Claude Code とは別に、IDE の中でエージェントに何を任せ、何を自分で握るかを試せる選択肢が増えることになる。開発環境ごとにエージェントの分担をどう置くかを比べる材料になる。</p>
+<ul>
+<li><a href="https://x.com/jetbrainsjp/status/2107363478402990132">@jetbrainsjp のポスト</a></li>
+<li><a href="https://blog.jetbrains.com/ja/ai/2026/10/air-in-ides-eap/">リンク先を読む</a></li>
+</ul>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI コードレビューのベンチマークをめぐり、GitHub の自社評価と独立評価が割れる</h3>
+<p>GitHub が 1 億 390 万件の PR を分析して作った AI コードレビュー用のオープンベンチマーク「ReviewBench」（19 言語・219 PR）を公開し、Copilot が自社ベンチマークで首位になった一方、独立系のベンチマークでは違う結果が出たと報じられている。レビューツールの精度を何で測るかという論点は、レビュー工程に AI を入れる判断に直結する。数字をそのまま信じず、指標の作り方と前提を確かめる習慣が要るという示唆が得られる。</p>
+<p class="links"><a href="https://thenewstack.io/github-reviewbench-code-review/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgithub-reviewbench-code-review%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/github/status/2107540144949473754">@github のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fgithub%2Fstatus%2F2107540144949473754">Google 翻訳で読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-06]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-06.html</link>

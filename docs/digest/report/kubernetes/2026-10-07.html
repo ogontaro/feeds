@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-07</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-07</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Kubernetes における cgroup v2 への移行:いま知っておくべきこと</h3>
+<p>ノードのリソース管理の土台が入れ替わりつつある。Kubernetes v1.31 で cgroup v1 の管理はメンテナンスモードに入り、v2 は v1.25 から stable になっている。v2 は単一の統合階層を持つため、ノード設計やリソース配分の前提が変わる。自宅クラスタの OS と Kubernetes バージョンの対応を確かめ、移行計画を立てる起点にしたい公式ブログの一次情報。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F06%2Fkubernetes-cgroups-v2-shift%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Harbor Webhook の SSRF 脆弱性:任意のユーザーがサーバーのクラウド資格情報に到達できる</h3>
+<p>CNCF のコンテナレジストリ Harbor の Webhook に SSRF があり、任意のユーザーがサーバーのクラウド資格情報に到達できるという指摘。レジストリはイメージ供給の要になるため、ここが踏み台になると被害がクラスタ全体に及ぶ。レジストリを外部に晒す構成や、そこに与えているクラウド側の権限の設計を見直す材料になる。</p>
+<p class="links"><a href="https://www.ox.security/blog/harbor-ssrf-vulnerability-cloud-credentials/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.ox.security%2Fblog%2Fharbor-ssrf-vulnerability-cloud-credentials%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>コピーが侵害を意味するとき:kubectl cp が Windows で RCE を可能にする仕組み</h3>
+<p>日常的に使う kubectl cp が、Windows 上ではリモートコード実行につながるという指摘。クラスタ本体ではなく操作端末側の話なので見落とされやすいが、開発端末から本番クラスタを触る構成では影響が直接及ぶ。Windows から kubectl を使うメンバーがいるなら、該当条件と回避策を先に確認しておきたい。</p>
+<p class="links"><a href="https://securityboulevard.com/2026/10/when-copy-means-compromise-how-kubectl-cp-enables-rce-on-windows/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsecurityboulevard.com%2F2026%2F10%2Fwhen-copy-means-compromise-how-kubectl-cp-enables-rce-on-windows%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry、Kubernetes attributes processor を v1.0.0 に昇格</h3>
+<p>Kubernetes の属性をテレメトリに付与する processor が v1.0.0 になり、stable として扱えるようになった。テレメトリに載せる Kubernetes 側の情報の扱いが固まることで、Collector の設定を stable 前提で組めるようになる。OpenTelemetry で可観測性を統合している構成では、Collector の構成を見直す判断材料になる。</p>
+<p class="links"><a href="https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.infoq.com%2Fnews%2F2026%2F10%2Fopentelemetry-kubernetes-observ%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OBI によるゼロコードのトレース・ログ相関</h3>
+<p>OpenTelemetry eBPF Instrumentation(OBI)が、サービスが既に書いているログにトレースコンテキストを後付けできるようになった。SDK の導入もログライブラリの設定もアプリの再ビルドも不要で、障害時に「どのログ行がそのリクエストのものか」を追えるようになる。構造化ログを整えきれていないサービスを抱えているほど効きが大きく、eBPF と OpenTelemetry を既に併用している構成にそのまま乗る。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/obi-trace-log-correlation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fobi-trace-log-correlation%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

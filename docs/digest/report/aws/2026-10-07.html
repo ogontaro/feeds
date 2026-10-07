@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-07</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-07</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Bedrock AgentCore と OpenClaw で、会話をまたいで文脈を蓄える AI アシスタントを作る</h3>
+<p>Amazon Bedrock AgentCore のランタイムで OpenClaw を動かし、AgentCore のメモリで「使い捨てのチャット」をメタデータフィルタで引ける構造化知識に変える実装例。会話ごとに記憶を失う既製アシスタントの弱点を、エージェント側の記憶設計で埋める話で、何をどう保存しどう検索するかという判断が具体的に読める。エージェントに記憶を持たせる構成は自作エージェントにそのまま流用できる論点。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-a-context-aware-ai-assistant-on-agentcore-and-openclaw/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-a-context-aware-ai-assistant-on-agentcore-and-openclaw%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore と Nova Sonic で作る音声トラベルコンシェルジュ</h3>
+<p>リアルタイム音声の Nova Sonic とマネージドなナレッジベースを AgentCore に載せ、航空アプリの座席変更や遅延確認を音声で受ける構成の実装例。エージェントは MCP ツール経由でバックエンドに触り、書き込みの前に必ず確認を挟む作りになっている。音声エージェントを業務システムに繋ぐときの確認フローと権限の切り方は、作り始める前に押さえておきたい部分。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-a-voice-travel-concierge-with-amazon-bedrock-agentcore-managed-knowledge-base-and-nova-sonic/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-voice-travel-concierge-with-amazon-bedrock-agentcore-managed-knowledge-base-and-nova-sonic%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>NGINX Ingress から ALB へ移行するとき、oauth2-proxy の OIDC 認証が静かに壊れる</h3>
+<p>NGINX Ingress Controller の retire に伴い、OpenID Connect 認証を Application Load Balancer 側へ移すと認証が黙って壊れるポイントを扱った記事。oauth2-proxy をリバースプロキシモードで残す案と、ALB ネイティブの OIDC を使う案の 2 通りが示されている。EKS 上のイングレスと認証を移行するときの設計判断に直結する。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/migrating-from-nginx-ingress-to-alb-handling-oauth2-proxy/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fmigrating-from-nginx-ingress-to-alb-handling-oauth2-proxy%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker HyperPod の運用とガバナンスのベストプラクティス</h3>
+<p>SageMaker Unified Studio から HyperPod を運用しつつ、クラスタのガバナンスを保つための設計指針。組織・プロジェクト・クラスタ・ワークロードという層ごとに、インフラの境界設計、アクセス統制、共有キャパシティの割り当てをどう考えるかが整理されている。内製の ML 基盤をプラットフォームとして提供する立場で、そのまま参照できる内容。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/best-practices-for-amazon-sagemaker-hyperpod-administration-and-governance/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbest-practices-for-amazon-sagemaker-hyperpod-administration-and-governance%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Lambda SnapStart がコンテナイメージ関数に対応、起動時間がサブ秒に</h3>
+<p>SnapStart が zip 形式だけでなくコンテナイメージの関数でも使えるようになり、起動時間を数秒からサブ秒まで縮められるようになった。コンテナで動かしている関数でもコールドスタートを消せる選択肢が増え、レイテンシに敏感なワークロードの構成を見直せる。有効化の手順と、新規・既存関数に適用するときの勘所がまとまっている。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/compute/get-started-with-aws-lambda-snapstart-for-container-images/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fget-started-with-aws-lambda-snapstart-for-container-images%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
