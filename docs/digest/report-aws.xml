@@ -4,11 +4,45 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 07 Oct 2026 01:18:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Oct 2026 01:41:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-08]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-08.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-08.html</guid>
+            <pubDate>Thu, 08 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Claude Haiku 5.5 が Amazon Bedrock と Claude Platform on AWS で利用可能に</h3>
+<p>Claude 5.5 系で最速・最安の小型モデルが Bedrock と Claude Platform on AWS に登場し、AWS GovCloud (US) でも同日から提供されている。Haiku 4.5 比で実行コストが約75%減り、最大コンテキストは 200K から 1M トークンに拡張、Haiku として初めて effort の調整もできるようになった。これまでコストを理由に Sonnet 側へ寄せていたサブエージェントの並列実行や大量のツール呼び出しを Haiku に逃がせるようになるので、エージェントを組むときのモデル分担とコストの前提が変わる。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-claude-haiku-5-5-on-aws%2F">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-claude-haiku-5-5/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Quick と Bedrock Knowledge Bases で、RAG の権限チェックをクエリ時に寄せる</h3>
+<p>SharePoint、Google Drive、Confluence のように権限体系が異なるソースをまたいで RAG を組むと、権限情報を事前に取り込む方式はすぐ実態とずれる。この記事は、クエリのたびに権威となるソースへ問い合わせて文書単位の権限を検証する方式を、Amazon Quick と Bedrock Knowledge Bases の構成として説明している。社内文書を扱うエージェントを設計するとき、アクセス制御をどこに置くかを決める材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Frethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS DevOps Agent の調査結果を、検証済みの修正案として自動化する</h3>
+<p>DevOps Agent は調査と報告まではするが、リソースを勝手に変えないよう observe-and-report に留められている。この記事は Lambda Durable Functions と EventBridge、Bedrock を組み合わせ、調査サマリを事前検証済みの修正案に変換して、オンコールが1アクションで承認できる形にする手順を示す。一次対応まで AI に担わせつつ人間の承認を残す、権限境界の引き方の実例として読める。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/automate-remediation-post-aws-devops-agent-investigation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fautomate-remediation-post-aws-devops-agent-investigation%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Cornerstone OnDemand が Bedrock と Strands Agents で DB 診断を 78% 削減</h3>
+<p>Strands Agents と Amazon Bedrock でデータベース運用のマルチエージェント「Orion AI」を作り、3人のチームで診断時間を45分から10分へ短縮した事例。半年間でどういう設計判断を積んだかまで書かれているので、数値だけでなく進め方も持ち帰れる。運用の一次切り分けをエージェントに寄せるときの、規模感と現実的な作り方の参考になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Config が 77 のリソースタイプを追加で記録対象に</h3>
+<p>EC2、S3 Files、Q Business など、AWS Config が 77 のリソースタイプを新たにサポートした。全リソースタイプの記録を有効にしていれば自動で追跡対象に入るので、コンプライアンス判定やドリフト検知の穴が減る。IaC で構成を管理していても、Config のカバレッジは「検知できる範囲」を直接決めるため、記録対象の棚卸しと合わせて確認しておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-config-new-resource-types">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-config-new-resource-types">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-07]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-07.html</link>

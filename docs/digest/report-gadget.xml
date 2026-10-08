@@ -4,11 +4,47 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 07 Oct 2026 01:19:46 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Oct 2026 01:42:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-08]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-08.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-08.html</guid>
+            <pubDate>Thu, 08 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Meta、Ray-Ban Display の「信頼できないコンテンツ」フラグは強制されないと開発者に説明</h3>
+<p>Ray-Ban Display 上のウェブアプリが「このテキストは信頼できない」と Meta AI に伝えるためのフラグについて、Meta 自身のドキュメントが「強制されるセキュリティ境界ではないので、正直に設定するだけで、結果テキストを信頼の根拠にしてはいけない」と書いている。プロンプト注入への防御をプラットフォーム側が保証しないという宣言であり、眼鏡アプリを作る側は自分で守る必要がある。スマートグラスのエージェント機能が、どの層に責任を置いたまま出荷されているのかが分かる点で読む価値がある。</p>
+<p class="links"><a href="https://mixed-news.com/en/meta-ray-ban-display-webmcp-untrusted-content-hint-prompt-injection/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmixed-news.com%2Fen%2Fmeta-ray-ban-display-webmcp-untrusted-content-hint-prompt-injection%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Meta、Quest と VR Glasses 向けの仮想シネマ環境を開発中か — Horizon OS 2.9 の解析から</h3>
+<p>Horizon OS 2.9 のダンプ解析から、Meta が Quest ヘッドセットと今後の VR Glasses 向けに仮想シネマ環境を準備していることがうかがえると報じられている。映像視聴をヘッドセットの主要用途として両系統に共通で載せてくる動きで、次のヘッドセットで何が体験の中心になるのかを先に知れる。発表前の解析に基づく話である点は割り引いて読む必要がある。</p>
+<p class="links"><a href="https://www.uploadvr.com/meta-is-working-on-a-virtual-cinema-environment-for-quest-vr-glasses/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.uploadvr.com%2Fmeta-is-working-on-a-virtual-cinema-environment-for-quest-vr-glasses%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sony、XR 関連の特許43件を Meta に売却 — AR/VR ハードからの撤退を示唆</h3>
+<p>ZDNet Korea の報道として、2026年6月から9月にかけて43件の米国特許が移転し、その中に VR・AR・MR ヘッドセット関連が含まれると報じられている。Meta が XR の知財を集約する一方で Sony がハードウェアから引く構図で、ヘッドセットを作る側の顔ぶれが絞られていく方向を示す。数年後の選択肢とコンテンツ供給がどうなるかを考える材料になる。</p>
+<p class="links"><a href="https://roadtovr.com/sony-sells-xr-headset-patents-meta/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Froadtovr.com%2Fsony-sells-xr-headset-patents-meta%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>XREAL Aura の価格が発表 — Meta の VR グラスより先に、近い価格帯で登場</h3>
+<p>Android XR を搭載する XREAL Aura の価格が明らかになり、Meta の VR グラスに先立って、近い価格帯で出てくると報じられている。実際の価格が確定したことで、この種のグラス型デバイスを「今買うか、Meta の発表を待つか」の比較軸が具体化する。第2の選択肢が価格付きで出そろった点が読む理由になる。</p>
+<p class="links"><a href="https://www.cnet.com/tech/computing/xreal-aura-google-next-android-xr-device-price-release-date/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cnet.com%2Ftech%2Fcomputing%2Fxreal-aura-google-next-android-xr-device-price-release-date%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2107955803781276029">@npaka123 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>ノルウェー、公共の場でのスマートグラスを一時禁止する案を提示</h3>
+<p>ノルウェー政府が、プライバシーを主な理由に、公共の場でのスマートグラス利用を一時的に禁止する方針を示したと報じられている。政府は優先度が高いとする一方、法案として議会の承認が必要で、成立時期も対象範囲も未確定とされている。カメラ付き眼鏡は「どこで使えるか」が価値を大きく左右するため、同種の規制が他国へ広がるかを見る起点として押さえておきたい。</p>
+<p class="links"><a href="https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Froadtovr.com%2Fnorway-proposes-temporary-ban-on-smart-glasses-in-public-places%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-07]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-07.html</link>

@@ -4,11 +4,57 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 07 Oct 2026 01:16:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Oct 2026 01:38:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-08]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-08.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-08.html</guid>
+            <pubDate>Thu, 08 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Haiku 5.5 リリース——Haiku 4.5 から約1年ぶり、100K トークン以下で単価10分の1に</h3>
+<p>Haiku 4.5 から約1年ぶりの更新で、100K トークン以下の入力は100万トークンあたり $0.10/$0.50——Haiku 4.5 の $1/$5 から10分の1になり、Anthropic によれば実行コストは平均で約75%減る。コンテキストは1M トークンに拡張され、Anthropic API と Claude Code の既定 Haiku モデルがこれに入れ替わった。単価が下がるとサブエージェントを大量に並べる設計が現実的になるので、GitHub Copilot でも同日に GA したことを含めて押さえておきたい。</p>
+<p class="links"><a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FOct%2F7%2Fclaude-haiku-5-5%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2107991201186238497">@oikon48 のポスト</a></li>
+<li><a href="https://x.com/github/status/2107934117581189271">@github のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fgithub%2Fstatus%2F2107934117581189271">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.293——コンパクション後の作業やり直しと HTTP MCP のメモリリークを修正</h3>
+<p>56件の変更のうち約7割が修正で、実務的な不具合の解消が中心。目玉は、コンテキスト圧縮の前に行った最後のアクションを圧縮後のものとして扱い、完了済みの作業を取り消したりやり直したりする問題と、HTTP MCP 接続が送信済みリクエストを接続を閉じるまで保持し続けていたメモリリークの2つ。長時間セッションを回すほど効いてくる不具合なので、上げておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261008-cc-updates-v2-1-293/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Max / Team プランに毎月の Claude Platform API クレジットが付く</h3>
+<p>Max 5x に月 $100、Max 20x に月 $200、Team は最大 $500 がプールで付与される。Haiku 5.5 を含む任意のモデルを、自分のコードやサードパーティのハーネスから Claude Platform API 経由で使える。サブスクとは別に API を課金していた構成では実質的な値下げになるので、billing 設定からの申請を忘れないようにしたい。</p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2107993563405643846">@oikon48 のポスト</a></li>
+<li><a href="https://x.com/howdy39/status/2107951706470494641">@howdy39 のポスト</a></li>
+<li><a href="https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsupport.claude.com%2Fen%2Farticles%2F17154008-monthly-api-credits-for-max-and-team-plans">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Kubernetes の作者らが挑む、クラウド側に置くエージェントハーネス（Stacklok）</h3>
+<p>Kubernetes の共同作者である Craig McLuckie と Joe Beda が、エージェントハーネスをデスクトップからクラウドへ移す取り組みを語っている。手元のマシンで動かす前提だったエージェントを、権限を絞った隔離環境で継続的に走らせるという問題設定で、エージェントの権限境界とサンドボックスの設計を考えるときの参考になる。</p>
+<p class="links"><a href="https://www.latent.space/p/stacklok">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fstacklok">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>全 PR の83%を AI レビューだけでマージできるようにした事例</h3>
+<p>AI レビューだけでマージまで通せた割合を83%まで上げた実例。どこを AI に任せ、どこを人間が持つかをフローとして設計した結果なので、AI 時代のコードレビューの再定義を考える材料になる。</p>
+<ul>
+<li><a href="https://x.com/dai___you/status/2107785747604607109">@dai___you のポスト</a></li>
+<li><a href="https://zenn.dev/kauche/articles/e051583461c181">記事を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-07]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-07.html</link>

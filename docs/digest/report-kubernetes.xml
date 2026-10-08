@@ -4,11 +4,34 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 07 Oct 2026 01:17:53 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 08 Oct 2026 01:39:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-08]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-08.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-08.html</guid>
+            <pubDate>Thu, 08 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>Kubernetes 週次まとめ（10/4 週）——kubectl cp の CVE-2026-19444、SIG UI の交代、SIG の動き</h3>
+<p>9月28日に公開された CVE-2026-19444（Windows 版の kubectl cp にパストラバーサルがあり、細工した tar アーカイブで意図した場所の外にファイルを書き込める）をはじめ、SIG UI のリーダー交代（Shu Muto 氏が emeritus へ）、WG Node Identity の Slack チャンネル開設、SIG ContribEx の動きなどがまとまっている。Windows から kubectl を叩く環境では、対象バージョンと修正の入り方を確認する起点になる。上流のリリースと CVE を追う側の一次情報として毎週読める形になっている。</p>
+<p class="links"><a href="https://lwkd.info/2026/20261007">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Flwkd.info%2F2026%2F20261007">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Harbor の Webhook に SSRF——任意のユーザーがサーバーのクラウド資格情報に到達できる</h3>
+<p>CNCF のコンテナレジストリ Harbor の Webhook に SSRF があり、任意のユーザーがサーバーのクラウド資格情報に到達できてしまうという OX Security の調査。レジストリは全クラスタのイメージ取得元であり、Webhook のように「外へリクエストを出す」機能はメタデータエンドポイントや内部 API への足がかりになりやすい。Harbor を自前で運用していなくても、外向きリクエストを許すコンポーネントの権限と到達範囲を見直す材料として効く。</p>
+<p class="links"><a href="https://www.ox.security/blog/harbor-ssrf-vulnerability-cloud-credentials/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.ox.security%2Fblog%2Fharbor-ssrf-vulnerability-cloud-credentials%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Meshery が CNCF の Incubating プロジェクトに</h3>
+<p>CNCF の Technical Oversight Committee が Meshery を incubating プロジェクトとして承認した。Meshery は複数のクラウドネイティブ環境を 1 つの管理プレーンから扱うツールで、航空宇宙・通信・ネットワーク・エンタープライズソフトウェアまで利用が広がっていると説明されている。incubating 昇格はガバナンスと採用の節目で、プラットフォーム層の選択肢として参照される機会が増える。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/07/meshery-becomes-a-cncf-incubating-project/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F07%2Fmeshery-becomes-a-cncf-incubating-project%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-07]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-07.html</link>
