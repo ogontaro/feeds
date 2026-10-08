@@ -97,6 +97,16 @@ feeds:
     name: はてなブックマーク — Claude Code (50users+)
     domain: claude
     kind: content
+  # タイトルに「Claude Code」を含まない AI 開発手法の人気記事を拾う。「AI」単体の検索は一般ニュースが
+  # 大半を占め、MAX_PER_SOURCE で押し出されるため、AI 開発の語に絞る。
+  - url: https://b.hatena.ne.jp/q/AI%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88?mode=rss&users=50&sort=recent
+    name: はてなブックマーク — AIエージェント (50users+)
+    domain: claude
+    kind: content
+  - url: https://b.hatena.ne.jp/q/AI%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0?mode=rss&users=50&sort=recent
+    name: はてなブックマーク — AIコーディング (50users+)
+    domain: claude
+    kind: content
   # 競合コーディングエージェント(Codex)の日本語コミュニティの反応を拾う（HN・公式ブログでは拾えない）。
   - url: https://b.hatena.ne.jp/q/Codex?mode=rss&users=50&sort=recent
     name: はてなブックマーク — Codex (50users+)
