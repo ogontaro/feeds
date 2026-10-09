@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-09</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-09</h1>
+<article class="report"><h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Claude Platform の料金改定 — Sonnet 5.5 のキャッシュ読み取りが半額、Max / Team には毎月の API クレジット</h3>
+<p>Sonnet 5.5 のキャッシュ読み取りが $0.10 / 100万トークンに半減し、エージェント的な回し方でおおむね2割安くなるとのこと（入力 $2 / 出力 $10、Claude Code の利用上限は据え置き）。あわせて Max 5x に月 $100、Max 20x に月 $200、Team は pooled で最大 $500 の Claude Platform API クレジットが毎月付与される。Claude Code の枠とは別に、自作ハーネスや MCP サーバーから API を直接叩いている分の原価が今月から変わるので、自分の使い方でどちらに効くかを先に確認しておきたい。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2108287358374482381">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2108287358374482381">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/oikon48/status/2108072865325339108">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Managed Agents で定期実行の自動化エージェントを組む手順が公開</h3>
+<p>Slack や GitHub をスケジュールで読み、資格情報とメモリを持ったまま更新を投稿するエージェントを、Claude Code のコマンドから立ち上げるやり方が公式ブログで示されている。cron と自前スクリプトで継ぎ接ぎする代わりに、定期実行エージェントの権限と記憶をどう設計するかの実例として読める。新しく Max / Team に付く API クレジットをそのまま充てられる点も、試すときの敷居を下げる。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2108320296323477683">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2108320296323477683">Google 翻訳で読む</a></li>
+<li><a href="https://claude.dev/blog/building-effective-agent-automations/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fbuilding-effective-agent-automations%2F">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code の Explore を Haiku にしておく設定が、2.1.293 で Haiku 5.5 を指すようになり費用が34〜43%減</h3>
+<p><code>.claude/agents/Explore.md</code> に <code>model: haiku</code> と書くだけの設定が、Claude Code 2.1.293 への更新を機に Haiku 5.5 を引くようになり、実測で費用が34〜43%下がったという記録。サブエージェントのモデルを1段落とすだけでどれだけ効くのか、そしてその指定がどこまで継承されるのかを、自分の設定に当てて確かめる価値がある。API 課金なら autocompact の窓を 100k に固定して安い側の帯に留める tips も併せて効く。</p>
+<ul>
+<li><a href="https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea">記事を読む</a></li>
+<li><a href="https://x.com/oikon48/status/2108039100267942145">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>新人が初日に迷うことは、AIも毎回迷う — 暗黙のルールを全部言葉にした実践</h3>
+<p>「AI に毎回同じ説明をしている」「前に注意したことをまたやられる」「任せる範囲を広げたいが危険な操作が不安」という、CLAUDE.md や AGENTS.md を書いている誰もが覚えのある場面を、暗黙のルールの明文化で潰しにいった記録。何を書いておけば任せる範囲を広げられるのか、指示ファイルに落とすべき粒度の実例として読める。</p>
+<ul>
+<li><a href="https://qiita.com/tzp/items/1a264aa185440e79899e">記事を読む</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>APM（Agent Package Manager）で Claude Code と Codex のスキル・エージェント設定を一元管理</h3>
+<p>Microsoft の Agent Package Manager を使い、Claude Code と Codex のスキルやエージェント設定を <code>apm.yml</code> に寄せて自動展開する手順の検証記事。ロックファイルで環境を再現し、audit で改ざんを検知する挙動まで確認しているので、ハーネスが2つ3つに増えたときに「設定はどのリポジトリの何を正とするか」を決める材料になる。</p>
+<ul>
+<li><a href="https://dev.classmethod.jp/articles/apm-claude-code-codex-skill-management/">記事を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

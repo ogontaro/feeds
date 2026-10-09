@@ -4,11 +4,44 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 08 Oct 2026 01:39:58 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Oct 2026 01:50:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-09]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-09.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-09.html</guid>
+            <pubDate>Fri, 09 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>AI エージェントに root を渡さない——「次のシステム状態」を提案させる</h3>
+<p>CNCF のブログが、自律システムにマシンを運用させてよい条件を問い直し、root 権限を渡す代わりに「次に望むシステム状態」を提案させ、適用は既存のパイプラインに任せる設計を説いている。エージェントの出力を実行そのものではなく差分の提案として扱えば、権限の境界をレビューできる場所に置いたまま自動化を進められる。宣言的に状態を適用する Kubernetes や GitOps の流れと噛み合わせやすく、エージェントを基盤の利用者として設計し直す動きの具体例になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/08/dont-give-ai-agents-root-make-them-propose-the-next-system-state/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F08%2Fdont-give-ai-agents-root-make-them-propose-the-next-system-state%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェントが作ったリソースの持ち主は誰か</h3>
+<p>エージェントがクラウド上に VPC やサブネット、DB、ロードバランサーなどを次々と作り、その一部が使われないまま残っていく——という状況で、所有権と寿命を誰が持つのかを扱った記事。作らせた時点で持ち主と片付けの責任を決めておかないと、意図しないリソースが静かに積み上がる。エージェントを基盤の一利用者として扱う設計と、放置リソースによるコスト増の両方に効く論点で、Platform Engineering の延長線上にある。</p>
+<p class="links"><a href="https://thenewstack.io/ai-agent-cloud-ownership/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fai-agent-cloud-ownership%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OTel-Native by Design——どの可観測性スタックにも出力できる製品設計</h3>
+<p>セルフホスト製品や SaaS を作る側に向けて、ログ・トレース・メトリクスを任意の OpenTelemetry 互換バックエンドへ出せるようにしておくべきだ、という設計論。内蔵ダッシュボードや特定ベンダーへの出力だけに閉じ込めると、利用側は自分の観測基盤に集約できず、導入のたびに運用が分断される。集約先を自分で選べるかどうかは、ツールを選ぶときの実務的な判断材料になる。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/otel-native-by-design/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fotel-native-by-design%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>一次基盤とは別の場所にバックアップを置く——IDCF クラウド障害から</h3>
+<p>IDCF クラウドへのランサムウェア攻撃が報じられ、国内組織の不正アクセス・情報漏洩事案も相次いでいる。注目したいのは Movable Type クラウド版が、IDCF クラウドとは異なる IaaS 基盤（Google Cloud）に 7 世代のデイリーバックアップを保管していたという説明で、一次系と同じ場所にしかバックアップを置かない構成の危うさがよく分かる。バックアップ（Velero など）の保管先が一次系と別の障害ドメインになっているかを点検する価値がある。</p>
+<ul>
+<li><a href="https://x.com/ockeghem/status/2108038368953282721">@ockeghem のポスト</a></li>
+<li><a href="https://x.com/ockeghem/status/2108042580529418697">@ockeghem のポスト</a></li>
+<li><a href="https://x.com/jyoshise/status/2107826404369072271">@jyoshise のポスト</a></li>
+<li><a href="https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-08]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-08.html</link>

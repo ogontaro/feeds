@@ -4,11 +4,29 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 08 Oct 2026 01:42:43 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Oct 2026 01:52:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-09]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-09.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-09.html</guid>
+            <pubDate>Fri, 09 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Pimax、リングなしコントローラーを発表 — 2本を連結するとゲームパッドになり、Crystal Pro には同梱されない</h3>
+<p>Pimax が発表した Ringless VR Controllers は、付属のピンで左右を連結すると1台のワイヤレスゲームパッドになり、Windows と Steam で VR の外でも使える。入力デバイス側がヘッドセットから切り離されて単体の商品になった点が新しく、VR 用コントローラーを「PC の入力デバイスとしても使えるか」で選ぶ目が出てくる。同時に発表された Crystal Pro には従来のリング付きコントローラーが同梱されるため、購入を検討する側は新しいコントローラーを別途買う必要があるのかを先に確認しておきたい。</p>
+<p class="links"><a href="https://mixed-news.com/en/pimax-ringless-vr-controllers-gamepad-mode-crystal-pro-ringed/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmixed-news.com%2Fen%2Fpimax-ringless-vr-controllers-gamepad-mode-crystal-pro-ringed%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Meta、VR Glasses は Quest の後継ではないと説明 — Quest は終了しないが後退へ</h3>
+<p>Meta は VR Glasses を、Quest の次期モデルではなく別の市場向けの別製品だと位置づけている。その一方で Meta はゲームから手を引き複数のスタジオを閉鎖しており、Quest は終わらないものの優先度を下げられ、次の章はコンピュートパックを外付けする MR 構成の VR Glasses に置かれると報じられている。Quest 向けのソフトや本体にこれから投資してよいのか、VR Glasses の登場を待つべきかの判断軸が変わる点で読む価値がある。</p>
+<p class="links"><a href="https://roadtovr.com/meta-vr-glasses-future-of-quest/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Froadtovr.com%2Fmeta-vr-glasses-future-of-quest%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-08]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-08.html</link>
