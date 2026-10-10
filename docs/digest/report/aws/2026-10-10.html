@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-10</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-10</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon EKS モニタリング総覧:初期構成から運用まで</h3>
+<p>2026年10月時点の EKS 監視を、ログ・メトリクス・トレース・Kubernetes イベントの4シグナルに分け、CloudWatch・Prometheus・Fluent Bit など各ツールの役割を構成図で整理した総覧。何から揃えるか、アラートが鳴ったときにどこを見るかという運用の順序まで書かれており、EKS の監視設計を見直す起点になる。OpenTelemetry 系で可観測性を統合している構成でも、EKS 固有のシグナルを取りこぼしていないかを確かめる材料として使える。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/eks-monitoring-overview-kr/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Feks-monitoring-overview-kr%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Postman はいかにして 4,000 万人の開発者向け Agent Mode を Amazon Bedrock で動かしているか</h3>
+<p>デモで動くエージェントと、4,000 万人の開発者に対して動かし続けるエージェントは別問題だという前提から、Postman と AWS が Agent Mode の設計パターンを共有している。ツールの乱立をどう抑えるか、スキーマベースの読み取りをどう公開するか、そして本当のボトルネックはコンテキストだという整理は、自前のエージェント基盤を設計するときの判断材料になる。モデル選定よりもツールとコンテキストの設計に効く内容で、複数エージェントを並行に走らせる構成を考える人ほど読む価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Sonnet 5.5 のキャッシュ読み取り価格が半額に改定、Bedrock での削減効果を実測</h3>
+<p>Bedrock 上の Claude Sonnet 5.5 で cache read の単価が半額になったことを受け、長い system プロンプトを繰り返し送る会話を Converse API で再現し、改定前後の費用を実測している。20ターンで約2割下がるという結果で、同じ前提を何度も投げるエージェントや RAG の構成ほど差が開く。プロンプトキャッシュを前提にした設計の費用感を、自分のワークロードに当てはめて確かめられる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-sonnet-5-5-cache-read-price-cut/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Lambda のメタデータエンドポイントで AZ 間レイテンシーを削減する</h3>
+<p>Lambda の実行環境が AZ ID を HTTP で返すようになり、関数自身が自分と同じ AZ を判定できるようになった。同じ AZ にある ElastiCache・RDS・MemoryDB のエンドポイントを選べば、AZ 間レイテンシーとデータ転送コストを同時に下げられ、AZ を意識した耐障害パターンも組み立てられる。コードの構造を変えずに効く、コストとレイテンシーの両方に直結する変更。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/compute/reducing-cross-az-latency-with-the-aws-lambda-metadata-endpoint/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Freducing-cross-az-latency-with-the-aws-lambda-metadata-endpoint%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Sonnet 5.5 と Claude Opus 5.5 が AWS GovCloud (US) の Kiro で利用可能に</h3>
+<p>AWS のエージェント型 IDE / CLI である Kiro で、Claude Sonnet 5.5 と Claude Opus 5.5 が GovCloud (US) リージョンでも使えるようになった。Opus 5.5 はリクエストごとに推論の深さを適応的に決め、Kiro の社内ベンチマークでは Opus 5 比でツール呼び出しが約4割減・トークンが約半分とされ、長時間走るエージェント型コーディングのコストと速度に効く。Claude モデルの提供リージョンが広がる動きとして押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/06/kiro-claude-5-5-aws-govcloud-us/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F06%2Fkiro-claude-5-5-aws-govcloud-us%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

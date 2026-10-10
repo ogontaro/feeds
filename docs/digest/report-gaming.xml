@@ -4,11 +4,28 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 09 Oct 2026 01:53:16 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Oct 2026 01:43:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-10]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-10.html</guid>
+            <pubDate>Sat, 10 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Steam Frame と Steam Machine、10月13日午前10時に国内再入荷</h3>
+<p>KOMODO STATION が、Steam Frame 256GB / 1TB と Steam Machine 512GB（Steam Controller 同梱版を含む）を、10月13日（火）午前10時から日本国内発送で再販売すると告知した。Steam Frame は国内で入手できる機会が限られており、購入を検討しているなら日時と対象構成を押さえておく価値がある。</p>
+<ul>
+<li><a href="https://x.com/KOMODO_Games_JP/status/2108392995804590081">@KOMODO_Games_JP のポスト</a></li>
+<li><a href="https://komodostation.com/product/steam-frame">リンク先を読む</a></li>
+<li><a href="https://komodostation.com/product/steam-machine_jpy/">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-10-09]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-09.html</link>
