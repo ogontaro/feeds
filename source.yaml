@@ -8,6 +8,13 @@ feeds:
     name: Simon Willison — Claude
     domain: claude
     kind: content
+  # 同じブログの AI 支援開発タグ。Claude に限らず、コーディングエージェントの実運用・指示ファイル・
+  # レビュー論の話題を拾う（interests.yaml の「AI支援開発」）。
+  - url: https://simonwillison.net/tags/ai-assisted-programming.atom
+    name: Simon Willison — AI-assisted programming
+    domain: claude
+    kind: content
+    addedAt: "2026-10-11"
   - url: https://dev.classmethod.jp/tags/claude/feed/
     name: Claude | DevelopersIO
     domain: claude
@@ -145,6 +152,13 @@ feeds:
     domain: claude
     kind: content
     addedAt: "2026-09-29"
+  # コミュニティ側の網羅リスト。README への PR で新規サーバーが追記されるため、path 指定の
+  # commits atom で「新しい MCP サーバーの追加」だけを拾う（公式リストに載らないサードパーティ製を補う）。
+  - url: https://github.com/punkpeye/awesome-mcp-servers/commits/main.atom?path=README.md
+    name: awesome-mcp-servers updates
+    domain: claude
+    kind: content
+    addedAt: "2026-10-11"
 
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
@@ -195,11 +209,22 @@ feeds:
     name: The New Stack — Platform Engineering
     domain: kubernetes
     kind: content
+  # 同じ媒体の Kubernetes 面。GitOps・IaC・スケーリング・コスト最適化の実装記事を拾う
+  # （platform-engineering 面が扱わない個別プロジェクトの話題を補う）。
+  - url: https://thenewstack.io/kubernetes/feed
+    name: The New Stack — Kubernetes
+    domain: kubernetes
+    kind: content
+    addedAt: "2026-10-11"
   # CNCF の Graduation 等の発表（CNCF Blog とは別フィード）。
+  # ただし直近8週間の採用実績ゼロ。発表の大半はイベント・会員・スポンサーの告知で、kubernetes の
+  # exclude「イベント告知」「宣伝」に該当する。関心のある Graduation は購読中の CNCF Blog にも出るため、
+  # Announcements 側は無効化する（CNCF Blog は購読を継続）。
   - url: https://www.cncf.io/announcements/feed/
     name: CNCF Announcements
     domain: kubernetes
     kind: content
+    enabled: false
   - url: https://lwkd.info/feed.xml
     name: Last Week in Kubernetes Development
     domain: kubernetes
@@ -274,6 +299,13 @@ feeds:
     domain: aws
     kind: content
     addedAt: "2026-09-29"
+  # 構成パターンと設計判断の解説（What's New や各サービスの blog が出す「機能単位」の告知ではなく、
+  # EKS・コンテナ・生成AI をどう組み合わせるかの一次情報を補う）。
+  - url: https://aws.amazon.com/blogs/architecture/feed/
+    name: AWS Architecture Blog
+    domain: aws
+    kind: content
+    addedAt: "2026-10-11"
 
   # ================= devtools / content =================
   # devtools は release のみだったが、開発環境・コンテナ開発の一次情報（Docker Desktop / Engine の
@@ -283,6 +315,13 @@ feeds:
     domain: devtools
     kind: content
     addedAt: "2026-09-29"
+  # 開発環境そのものの更新（リリースノートとブログが同じフィードに同居する）。直近はエージェント機能
+  # （Agent Host・リモートセッション）が中心で、interests.yaml の「開発環境」「AIエディタ」に当たる。
+  - url: https://code.visualstudio.com/feed.xml
+    name: Visual Studio Code
+    domain: devtools
+    kind: content
+    addedAt: "2026-10-11"
 
   # ----- Hacker News（関心キーワード限定。事前フィルタ済み少数ソース）-----
   - url: https://hnrss.org/newest?q=Claude&points=50
@@ -335,6 +374,13 @@ feeds:
     domain: claude
     kind: release
     addedAt: "2026-10-01"
+  # 競合コーディングエージェント(Codex)側の新機能・料金体系の変更を一次情報から追う
+  # （はてブ検索は日本語コミュニティの反応、こちらはリリースそのもの）。
+  - url: https://github.com/openai/codex/releases.atom
+    name: Codex CLI releases
+    domain: claude
+    kind: release
+    addedAt: "2026-10-11"
 
   # ================= aws / release =================
   - url: https://github.com/aws/karpenter-provider-aws/releases.atom
@@ -375,6 +421,13 @@ feeds:
     name: Terraform
     domain: kubernetes
     kind: release
+  # Crossplane の blog は 2026-06 で更新停止のため無効化済み。プロジェクトの動きはリリースで追う
+  # （interests.yaml の「Crossplane」「Kubernetes API によるリソース合成」）。
+  - url: https://github.com/crossplane/crossplane/releases.atom
+    name: Crossplane
+    domain: kubernetes
+    kind: release
+    addedAt: "2026-10-11"
 
   # ----- 自宅クラスタで使っているアドオン -----
   - url: https://github.com/actions/actions-runner-controller/releases.atom
@@ -617,6 +670,13 @@ feeds:
     domain: gadget
     kind: content
     addedAt: "2026-10-03"
+  # XR 専門ブログの週次まとめ（XR Week Peek）。専門媒体（UploadVR 等）が扱わない業界全体の
+  # 動きを横断して拾う（interests.yaml の「スマートグラス」「Android XR」「XR」）。
+  - url: https://skarredghost.com/feed/
+    name: The Ghost Howls
+    domain: gadget
+    kind: content
+    addedAt: "2026-10-11"
   # 専門媒体に出る前の報道・リーク・日本展開の発表を、見出し検索の網で拾う（gnews-coding-agents と同じ狙い）。
   - url: https://news.google.com/rss/search?q=%28%22Meta%22%20%28%22smart%20glasses%22%20OR%20%22Ray-Ban%20Display%22%20OR%20Quest%20OR%20Orion%29%29%20OR%20%22Android%20XR%22%20OR%20%22Vision%20Pro%22%20when%3A2d&hl=en-US&gl=US&ceid=US:en
     name: Google News — Meta グラス・XR
@@ -631,6 +691,13 @@ feeds:
     domain: gaming
     kind: content
     addedAt: "2026-10-04"
+  # SteamOS 本体（x86 版）のリリースノートは Steam Deck のニュースに出る。Steam Frame 向けの
+  # ARM 版は上の Steam Frame news で追うため、こちらは x86 側の更新を補う。
+  - url: https://store.steampowered.com/feeds/news/app/1675200/
+    name: Steam Deck news (SteamOS)
+    domain: gaming
+    kind: content
+    addedAt: "2026-10-11"
 
   # GeForce NOW のアプリ・サービス更新だけの RSS は無いため、公式ブログのタグ RSS(対応ゲーム追加が大半)から選定側で拾う。
   - url: https://blogs.nvidia.com/blog/tag/geforce-now/feed/
