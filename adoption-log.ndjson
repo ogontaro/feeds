@@ -234,3 +234,8 @@
 {"date":"2026-10-10","domain":"aws","sourceName":"Amazon EKS | DevelopersIO"}
 {"date":"2026-10-10","domain":"gadget","sourceName":"MIXED"}
 {"date":"2026-10-10","domain":"gadget","sourceName":"Road to VR"}
+{"date":"2026-10-11","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-10-11","domain":"claude","sourceName":"Google News — コーディングエージェント新サービス・料金"}
+{"date":"2026-10-11","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
+{"date":"2026-10-11","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
+{"date":"2026-10-11","domain":"gaming","sourceName":"Sunshine releases"}

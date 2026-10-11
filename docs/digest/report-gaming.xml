@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 10 Oct 2026 01:43:58 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Oct 2026 01:08:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-11.html</guid>
+            <pubDate>Sun, 11 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Sunshine v2026.1010.172628 リリース、Web UI の作り替えとペアリング修正</h3>
+<p>自宅ゲームストリーミングのホスト側として使われる Sunshine の新しいビルド。同日に 14:11 と 17:26 の 2 本が出ているが変更履歴の記載は同じで、後者が新しい分を含む。flatpak でコマンドの接頭辞が不要になる変更、Web UI のシングルページアプリケーション化とテスト・カバレッジ追加、ペアリング時に重複したクライアント証明書を置き換える修正が入っており、配信元を上げる前に管理画面まわりの操作が変わる可能性と、ペアリングが通らない不具合の解消を確認しておく価値がある。</p>
+<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1010.172628">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1010.172628">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-10-10]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-10.html</link>

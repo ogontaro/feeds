@@ -4,11 +4,45 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 10 Oct 2026 01:38:01 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Oct 2026 01:05:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-11.html</guid>
+            <pubDate>Sun, 11 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Claude Code に任せる範囲と止める仕組みの設計 — 計画モード・SessionStart フック・/loop・課金前確認の使い分け</h3>
+<p>「全部任せると怖い」「全部確認すると遅い」の間をどう取るかを、計画モード・SessionStart フック・/loop・課金前確認という道具の使い分けとして整理した記事。日本株のスクリーニング端末を Claude Code で組む実例がベースで、作り込んだ「ハーネスの仕様書」が 3 時間で古くなって捨てた、という失敗も書かれている。指示を増やす方向ではなく、止め方と引き際を先に設計するという順序は、エージェントに何を許すかを決めるときの型としてそのまま使える。</p>
+<p class="links"><a href="https://qiita.com/charge0315/items/fcec85cc5250e39bab97">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>本を Claude Code に読ませて自分のリポジトリに再現する — 読む順路・検証済み SHA・改訂の追随</h3>
+<p>外部のまとまった知識をエージェントに読ませ、自分のリポジトリの形に落とし込むときの進め方。読む順路を決めてから渡し、検証済みの SHA で出典の版を固定し、原本が改訂されたら追随する、という手順が書かれている。出典の版を固定して再現性を確保する考え方は、社内文書や仕様書をエージェントに渡す場面にそのまま流用できる。</p>
+<p class="links"><a href="https://qiita.com/kai_kou/items/b0969ef956969c328d08">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>並列で投げた 2 つの Bash コマンドの片方で cd が無視され、96 本すべてを「id: が無い」と誤判定した話</h3>
+<p>記事の事前チェックで <code>grep -L &quot;^id:&quot;</code> を走らせたところ対象 96 本すべてが「id: が見つからない」と出たが、実際には並列で投げた 2 つの Bash コマンドのうち片方の cd が無視されており、その直後の判定が誤っていた、という実例。並列のツール呼び出しでは、こちらが前提にしている状態がそのまま成り立つとは限らない。エージェントの返した結果をそのまま結論にしない、という原則を具体的な失敗で確認できる。</p>
+<p class="links"><a href="https://qiita.com/Hideki_Tamae/items/ad9c876e96b83d7c9bce">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code の GitHub 連携が認証切れするときの切り分けメモ</h3>
+<p>GitHub Issues に実際に報告されている症状のうち、複数人が同じところで踏んでいるものを選び、手元でコマンドを叩いて確認できた範囲だけをまとめた切り分けメモ。認証切れは原因の当たりを付けるまでに時間を持っていかれがちなので、症状から最短で切り分ける手順を持っておく価値がある。日々 GitHub 連携でセッションを回しているなら、一度目を通して手元に置いておきたい。</p>
+<p class="links"><a href="https://qiita.com/homhom44/items/d866772fde1183485dd9">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Devin の利用料を ChatGPT の個人サブスクで支払えるように</h3>
+<p>ChatGPT の個人向けサブスクリプションを持っていれば、その枠で Devin の GPT 利用分を支払えるようになった、と報じられている。コーディングエージェントの課金がモデル提供元のサブスクと統合されていく動きで、複数のエージェントを使い分けるときのコスト設計や、どのプランに寄せるかという判断の前提が変わりつつある。契約を見直す前に押さえておきたい変化。</p>
+<p class="links"><a href="https://startupfortune.com/openai-lets-chatgpt-subscribers-pay-for-devin-usage-with-their-existing-plan/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstartupfortune.com%2Fopenai-lets-chatgpt-subscribers-pay-for-devin-usage-with-their-existing-plan%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-10]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-10.html</link>

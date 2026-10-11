@@ -4,11 +4,24 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 10 Oct 2026 01:41:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Oct 2026 01:06:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-11.html</guid>
+            <pubDate>Sun, 11 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Bedrock の OpenAI モデルでも reasoning summaries が使えるようになったので試してみた</h3>
+<p>Amazon Bedrock 上の OpenAI モデルで reasoning summaries(推論過程の要約)が取得できるようになり、curl と AWS CLI で実際に動作を確認した記事です。推論モデルをエージェントやバッチ処理に組み込むとき、モデルが何を根拠にその結論を出したかを後から追えるかどうかは、出力の検証やプロンプト改善のしやすさに直結します。Bedrock 経由で複数ベンダーのモデルを同じインターフェースから呼ぶ構成では、推論トレースの扱いがモデルごとに揃っていくのかが実務上の分岐点になるため、手元で挙動を確かめておく価値があります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-openai-reasoning-summaries/">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-10]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-10.html</link>

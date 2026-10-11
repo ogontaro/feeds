@@ -4,11 +4,24 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 10 Oct 2026 01:39:57 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 11 Oct 2026 01:05:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-11.html</guid>
+            <pubDate>Sun, 11 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Kubernetes が cgroup v1 を非推奨化、SaaS 各社は新しい分離モデルへ</h3>
+<p>Pod の資源制御と分離の土台である cgroup の世代が入れ替わる、という Kubernetes 本体側の動きを扱っている。ノードが cgroup v1 と v2 のどちらで動いているかは、kubelet やコンテナランタイムの設定次第で、アップグレード前に確かめておかないと足元で分離の前提が変わる。SaaS 側が新しい分離モデルへ移っているという後半は、マルチテナントで資源をどう隔離するかという設計判断に直結するので、自前のクラスタでもマネージドのノードプールでも、次の更新の前提を確認する材料になる。</p>
+<p class="links"><a href="https://www.saasrise.com/news/kubernetes-drops-cgroup-v1-saas-platforms-shift-to-new-isolation-model-d4b94f48-5841-4e38-84d1-c5cc162b2384">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.saasrise.com%2Fnews%2Fkubernetes-drops-cgroup-v1-saas-platforms-shift-to-new-isolation-model-d4b94f48-5841-4e38-84d1-c5cc162b2384">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-10]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-10.html</link>
