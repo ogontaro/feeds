@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-12</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-12</h1>
+<article class="report"><h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Claude Code のサブエージェントを 17 個、無人で回すための設計 — 責務分割とツール権限の絞り方</h3>
+<p>社内の部門をそのままサブエージェントにした 17 個の構成を launchd で無人運用している事例で、責務の切り方とツール権限の絞り方が具体的に踏み込んで書かれている。landscape の「複数エージェントの並行実行と協調」「エージェントの権限境界とサンドボックス」に直結する内容で、サブエージェントに何を任せ、どこまでツールを許すかを決めるときの判断材料になる。</p>
+<p class="links"><a href="https://qiita.com/joinclass/items/78fb590dcbaca1ebf767">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.296 — サブエージェントの autoCompactWindow、Read の allow_large など</h3>
+<p>サブエージェント側がメイン会話より早いタイミングでオートコンパクトできる <code>autoCompactWindow</code>、動的ワークフローが起動するエージェントを 1 モデルに固定する <code>CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL</code>、サイズ制限を超えて 1 回で読める Read の <code>allow_large</code> が入った。管理設定の <code>PreToolUse</code> / <code>PostToolUse</code> フックまわりも直っており、権限フックでツール呼び出しを止めたときにターンごと終わってしまう問題が解消されている。長く回すエージェント構成ほど効いてくる変更なので、まとめて追っておく価値がある。</p>
+<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.296">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code 側に Projects が来た — チャットとまたいで 1 セッションで続ける</h3>
+<p>チャット側にあった Projects が Claude Code 側にも入り、既存の Projects がアップグレードされる形でチャットと Claude Code をまたいで使えるようになった、という報告。タスクごとにセッションを分けずに 1 つの Project で会話を続けられ、人間と実装役のエージェントの間にコーディネーター役が介在して、人間側の癖や実装側で起きた事象をコンテキストとして保持する、という運用像が述べられている。エージェントに何を覚えさせるかの設計を考えているなら、前提が変わりうる変更。</p>
+<ul>
+<li><a href="https://x.com/shimabu_it/status/2108782974552408410">@shimabu_it のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude の Chat と Cowork が同じメモリを共有するようになった</h3>
+<p>Chat で覚えさせた内容がトピックとして保存され、設定画面から書き換え・削除でき、その値が Cowork 側でも使われるまでの流れを Claude Desktop で確認した記事。どういう条件でメモリが共有されるのかまで整理されているので、Claude の複数の面で永続コンテキストをどう持たせるか、いま何が共有されて何が共有されないのかを把握しておきたいときに手早く確認できる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-unified-memory-chat-cowork-topics/">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>GitHub Security Lab の Fuzzing Taskflow — ファジングのループをエージェントに渡す</h3>
+<p>C/C++ のリポジトリを渡すと、エントリポイントの特定、ビルドの解析、ハーネスの作成、AFL++ の実行、カバレッジの読み取り、ユニークなバグごとの脆弱性レポート作成までをエージェントが回す、というツールの紹介。継続的ファジングは「ハーネスを書いてカバレッジを見てクラッシュをトリアージする人」が要ることがボトルネックだったので、その人手のループをエージェントに置き換える、という解く課題がはっきりしている。AI エージェントに実際のコードを書かせて検証まで回す型の一例として読める。</p>
+<ul>
+<li><a href="https://x.com/github/status/2109364666237350135">@github のポスト</a></li>
+<li><a href="https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fapplication-security%2Fai-powered-fuzzing-with-the-github-security-lab-taskflow-agent%2F">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

@@ -239,3 +239,7 @@
 {"date":"2026-10-11","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
 {"date":"2026-10-11","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
 {"date":"2026-10-11","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-10-12","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-10-12","domain":"claude","sourceName":"Claude | DevelopersIO"}
+{"date":"2026-10-12","domain":"claude","sourceName":"Anthropic | DevelopersIO"}
+{"date":"2026-10-12","domain":"gaming","sourceName":"Sunshine releases"}

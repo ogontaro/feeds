@@ -4,11 +4,19 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 11 Oct 2026 01:05:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Oct 2026 01:07:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-12.html</guid>
+            <pubDate>Mon, 12 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-11]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-11.html</link>
