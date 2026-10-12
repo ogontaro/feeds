@@ -4,11 +4,82 @@
         <title>開発ツール リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>開発ツール 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 05 Oct 2026 01:12:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Oct 2026 01:44:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[開発ツール リリースレポート 2026-10-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-10-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/devtools/2026-10-12.html</guid>
+            <pubDate>Mon, 12 Oct 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>mise v2026.10.6〜v2026.10.8</h3>
+<p><strong>破壊的変更</strong>: なし。既定で有効になる挙動が 3 つあります（インストール先の <code>global</code> リンク、プロンプトでのバックグラウンド自動更新、ダウンロードの検証付きキャッシュ）。いずれも無効化する設定はありませんが、既存の <code>mise.toml</code> や lockfile を書き換える必要はありません。</p>
+<p><code>~/.local/share/mise/installs/&lt;tool&gt;/global</code> が常に作られ、<code>mise use -g</code> に追随するようになりました。IDE など mise を経由できないツールに、バージョン切替で変わらないパスを渡せます（global 設定が無いツールではリンクが消えるだけ）。宣言化した環境をエディタから使うときの定番の悩みが消える変更です。<br><code>auto_update</code> がシェルプロンプトでも走るようになりました。<code>mise activate</code> 環境では shim を通らないため更新されなかったのが、<code>hook-env</code> がデタッチしたバックグラウンドプロセスで更新します（プロンプトは待ちません）。<code>tool_update.global_auto</code> で global の全ツールを一括で対象にでき、<code>mise upgrade --global</code> / <code>mise outdated --global</code> はプロジェクトの固定を無視して global / system 設定だけを上げます。ダウンロードは content-addressed な検証付きキャッシュ（<code>$MISE_CACHE_DIR/downloads-cas</code>、既定 2GiB、LRU 削除）に入り、checksum 固定のツールはネットワークに出ずキャッシュをハードリンクするので、CI では <code>~/.cache/mise/downloads-cas</code> をキャッシュする運用に変わります。コーディングエージェントなど自己更新するツールを mise 経由で更新させる &quot;Self-updating tools&quot; のドキュメントも追加されました。<br>10.6 では <code>[vars]</code> に <code>prompt</code> を書くとマシンごとに 1 回だけ聞いて <code>$MISE_STATE_DIR/vars.toml</code>（dotfiles 履歴の外）に保存でき、<code>include</code> がローカルの TOML も読めるようになりました。<code>mise run --affected</code> が未コミットの作業ツリーも数えて experimental が外れ、dotfiles 履歴の修正（<code>mise dot save --re-encrypt</code>、<code>mise dot status</code> の未保存表示）も入っています。vfox / mise-util / mise-settings は同日付の内部パッケージ更新のみです。<br><a href="https://github.com/jdx/mise/releases/tag/v2026.10.8">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjdx%2Fmise%2Freleases%2Ftag%2Fv2026.10.8">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/jdx/mise/releases/tag/v2026.10.7">v2026.10.7</a> / <a href="https://github.com/jdx/mise/releases/tag/v2026.10.6">v2026.10.6</a></p>
+</section>
+<section class="item">
+<h3>uv 0.13.0（ほか 0.12.24）</h3>
+<p><strong>破壊的変更</strong>: 複数あります。既定の安定版 Python が 3.14 から <strong>3.15</strong> に変わり、<code>-c</code> で読み込む constraints ファイルの <code>--require-hashes</code> を尊重するようになったためハッシュ欠落の install は失敗します（オプトアウト不可）。Windows ARM64 では native aarch64 のインタプリタを優先します（<code>UV_PYTHON_ARCH=x86_64</code> で従来動作）。included constraints 内の editable 要件（<code>-e</code>）は pip と同じくエラーになり、Python 3.10 以降では distutils 起動パッチを入れなくなりました（既存 venv は自動では変わらないので作り直しが必要）。requirement ファイルのオプション値は単一パス扱いになり、<code>uv_build</code> に上限を切っている場合は <code>&lt;0.14</code> に緩める必要があります。</p>
+<p>キャッシュの形式も変わるため、アップグレード後に依存の再ダウンロードや再ビルドが起きます（複数バージョンの uv でキャッシュを共有するのは引き続き安全）。ビルドバックエンドの設定に破壊的変更はありません。0.12.24 はバグ修正と性能改善が中心で、<code>uv cache prune</code> が孤立した一時ビルド環境を消すようになり、<code>UV_NO_CACHE=false</code> / <code>UV_OFFLINE=false</code> のように環境変数で設定を上書きできる箇所が増えています。<br><a href="https://github.com/astral-sh/uv/releases/tag/0.13.0">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fastral-sh%2Fuv%2Freleases%2Ftag%2F0.13.0">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/astral-sh/uv/releases/tag/0.12.24">0.12.24</a></p>
+</section>
+<section class="item">
+<h3>Bun v1.4.3</h3>
+<p><strong>破壊的変更</strong>: 明示の宣言はありませんが、Node 互換に寄せる挙動変更が複数あります。<code>(a?.b)(x)</code> は <code>a</code> が null / undefined のとき <code>TypeError</code>、<code>BigInt(&quot;-&quot;)</code> などは <code>SyntaxError</code>、<code>net.Socket#write()</code> は即時失敗時に <code>false</code> を返して <code>socket.errored</code> を立て、<code>util.format(&#39;%s&#39;, Buffer|URL)</code> は <code>toString()</code> を使います。<code>jsx = &quot;solid&quot;</code> はエラーになり、ルート証明書が NSS 3.128 に更新されて Entrust など一部 CA が外れました。</p>
+<p>目玉は組み込みの TypeScript 型チェッカー <code>bun check</code> です。typescript-go 由来で TypeScript 7.0.2 の適合テスト 51,210 件を全通過し、16 コアで <code>tsc</code> より 3〜6.4 倍速くメモリは 2.2〜4.9 倍少ないという結果が出ています（emit も LSP も無く、型チェック専用）。<code>Bun.FetchSession</code> で TLS・プロキシ・keep-alive をグループ単位で持ち回せ、<code>NO_PROXY</code> のワイルドカードや CIDR にも対応しました。<code>Bun.ModuleGraph</code>（実験的）は 1 プロセス内でアプリの複数インスタンスをモジュール状態ごと分離して動かせます（サンドボックスではない点に注意）。セキュリティ面では TLS サーバ検証をハンドシェイク中に実施するようになり、HTTP/2 の stream reset がレート制限されます（CVE-2023-44487 ほか）。<code>--disallow-code-generation-from-strings</code> が実際に <code>eval()</code> を止めるようになったのも、エージェント実行環境の隔離としては効きます。</p>
+<p class="links"><a href="https://github.com/oven-sh/bun/releases/tag/bun-v1.4.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Foven-sh%2Fbun%2Freleases%2Ftag%2Fbun-v1.4.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Docker Engine v29.9.0（ほか client/v0.6.2、v2.0.0-beta.26・.27）</h3>
+<p><strong>破壊的変更</strong>: 明示の宣言はありません。ただし containerd イメージストアで remote snapshotter（nydus / overlaybd / soci / stargz）を使っている場合、<code>docker pull</code> がスナップショッタ側にあるレイヤのダウンロードを省略する lazy-pull が既定で有効になります（<code>lazy-pull</code> デーモン機能で制御可）。</p>
+<p>Go ランタイム 1.26.9 と golang.org/x/net 0.60.0 への更新で、HTTP/2 クライアントによるデーモンのクラッシュ・メモリ枯渇・接続レベルフロー制御の回避・CPU 消費（CVE-2026-97032 / 78659 / 78663 / 78669）と、Windows でデータルート外にディレクトリを作られる問題（CVE-2026-56857）が修正されました。デーモンを上げる価値が高い回です。加えて、remote snapshotter 利用時に必要なレイヤを取りこぼして export / push だけ壊れる不具合、rootless の RootlessKit API ソケットリーク、overlay 暗号化ネットワークの一部トラフィックが平文で出る不具合（受信側が破棄するため片方向に限られる）、ルーティングゲートウェイモードで published port が <code>docker ps</code> に出ない問題が修正されています。BuildKit は v0.34.0、containerd は v2.4.1 に更新。Go SDK の client/v0.6.2 は HTTP upgrade ハンドシェイク中のリクエストキャンセルとデッドラインを修正しています。</p>
+<p class="links"><a href="https://github.com/moby/moby/releases/tag/docker-v29.9.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmoby%2Fmoby%2Freleases%2Ftag%2Fdocker-v29.9.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Node.js v26.11.0・v26.11.1</h3>
+<p><strong>破壊的変更</strong>: <code>node:sqlite</code> の <code>DatabaseSync</code> / <code>StatementSync</code> がリネームされました（SEMVER-MINOR 扱いなので、<code>node:sqlite</code> を使うコードは追随が必要です）。v26.11.1 はドキュメントのリデザインと doc ツール更新を revert したものなので、実質的な変更はありません。</p>
+<p>追加は <code>Buffer.isLatin1</code> / <code>Buffer.stringLength()</code>、<code>http.isValidHeaderName()</code> / <code>isValidHeaderValue()</code>、http2 の <code>connectionWindowSize</code>、<code>perf_hooks</code> の <code>histogram.diff()</code> / <code>snapshot()</code> と 0 の記録対応、<code>process.ref</code> / <code>unref</code> の安定化、プロセス全体のタイムアウトを入れる <code>--process-timeout=N</code> です。Alpine Linux が tier 2 サポートに昇格しました。</p>
+<p class="links"><a href="https://github.com/nodejs/node/releases/tag/v26.11.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fnodejs%2Fnode%2Freleases%2Ftag%2Fv26.11.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>tmux 3.8</h3>
+<p><strong>破壊的変更</strong>: リリースノートに変更点の記載が無く（CHANGES ファイル参照のみ）、破壊的変更の有無を判別できません。上げる前に CHANGES を確認してください。</p>
+<p>フィードには差分が載らないため個別の変更は追えていませんが、同時期の fzf 0.74.5 の修正に「tmux 3.8 以降では zoomed pane の上に <code>--popup</code>（floating pane）を開いても zoom が解除されない」とあり、3.7b では同じ操作で tmux がクラッシュしていました。フローティングペイン周りの挙動が変わっているので、popup 系のキーバインドを組んでいるなら 3.8 で動作を確かめる価値があります。</p>
+<p class="links"><a href="https://github.com/tmux/tmux/releases/tag/3.8">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Ftmux%2Ftmux%2Freleases%2Ftag%2F3.8">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>fzf 0.74.5</h3>
+<p><strong>破壊的変更</strong>: なし。</p>
+<p>セキュリティ修正が 2 件入っています。<code>fzf-tmux</code> が <code>-l50</code> のようなレイアウトサイズを bash の算術式として評価していた問題（任意コマンド実行や tmux フラグ注入が可能、GHSA-w6x2-f5m4-xw82）と、zsh 補完が予測可能な <code>/tmp</code> パスに FIFO を作っていた問題（GHSA-7rj6-7pqx-v7rm）です。ターミナルから気軽に呼ぶツールなので、これは早めに上げる理由になります。機能面では、tmux 3.8 以降で zoomed pane 上の <code>--popup</code> が zoom を解除しなくなったほか、<code>--gap-line</code> が grapheme cluster を切る問題、fzf が解釈しないエスケープシーケンスの残りがクエリに混ざる問題、reload 後の focus イベントが発火しない問題が修正されています。</p>
+<p class="links"><a href="https://github.com/junegunn/fzf/releases/tag/v0.74.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjunegunn%2Ffzf%2Freleases%2Ftag%2Fv0.74.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>lazygit v0.66.0・v0.66.1</h3>
+<p><strong>破壊的変更</strong>: なし。ただし 0.66.0 でステージング操作の UI 自体が変わり、カスタム diff レンダラを使っている場合は新しい OSC プロトコル対応版（delta / diff-so-fancy の最新）への更新が必要です。</p>
+<p>メンテナ交代後で最大のリリースです。独立したステージングパネルが廃止され、メインビュー上で hunk や行を選んで <code>space</code> で stage、<code>d</code> で discard、<code>e</code> でエディタ、<code>n</code> / <code>N</code> でファイル移動、<code>&lt;ctrl-g&gt;</code> でファイル一覧からジャンプ、という操作体系になり、設定した diff レンダラの出力がそのまま使われます。スタックブランチは最上位を push / pull すると残りもまとめて扱えるようになり、diverge が自分の rebase 起因か他人の rebase 起因かを色で見分けられるようになりました。ターミナルの背景色に応じたダーク / ライトテーマの切替と、コミットグラフの描画文字の改善も入っています。0.66.1 はその回帰修正（<code>diff.mnemonic</code> 有効時の hunk ステージ、検索ハイライト、<code>gui.wrapLinesInDiffView</code> オフ時の横スクロールなど）です。<br><a href="https://github.com/jesseduffield/lazygit/releases/tag/v0.66.1">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjesseduffield%2Flazygit%2Freleases%2Ftag%2Fv0.66.1">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/jesseduffield/lazygit/releases/tag/v0.66.0">v0.66.0</a></p>
+</section>
+<section class="item">
+<h3>Neovim 0.12.6</h3>
+<p><strong>破壊的変更</strong>: なし。</p>
+<p>安定版 0.12 系のパッチリリースです。リリースノートはビルド情報と changelog / <code>:help news</code> へのリンクのみで、個別の修正内容はフィードからは追えていません。nightly は 0.13.0-dev（ビルド 1828）で別系統です。</p>
+<p class="links"><a href="https://github.com/neovim/neovim/releases/tag/v0.12.6">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fneovim%2Fneovim%2Freleases%2Ftag%2Fv0.12.6">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Devbox 0.0.0-edge.2026-10-08</h3>
+<p><strong>破壊的変更</strong>: なし。</p>
+<p>edge チャンネルの定例ビルドで、リリースノートに差分の記載はありません。devbox global でバージョンを固定しているなら、この edge に追従する必要はありません。</p>
+<p class="links"><a href="https://github.com/jetify-com/devbox/releases/tag/0.0.0-edge.2026-10-08">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjetify-com%2Fdevbox%2Freleases%2Ftag%2F0.0.0-edge.2026-10-08">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Yazi nightly</h3>
+<p><strong>破壊的変更</strong>: なし。</p>
+<p>nightly ビルド（commit ffb2e78）です。リリースノートはビルド情報のみで、個別の変更は CHANGELOG の Unreleased を追う必要があります。</p>
+<p class="links"><a href="https://github.com/sxyazi/yazi/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsxyazi%2Fyazi%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[開発ツール リリースレポート 2026-10-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-10-05.html</link>

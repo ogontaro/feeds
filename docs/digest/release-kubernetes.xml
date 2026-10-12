@@ -4,11 +4,115 @@
         <title>Kubernetes リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 05 Oct 2026 01:11:27 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Oct 2026 01:40:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes リリースレポート 2026-10-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-10-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-10-12.html</guid>
+            <pubDate>Mon, 12 Oct 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Argo CD v3.3.15・v3.4.10・v3.5.4 / v3.6.0-rc2</h3>
+<p><strong>破壊的変更</strong>: Kustomize で Helm チャートをレンダリングするビルドが <code>helmGlobals.configHome</code> を参照しなくなりました（通常の http / https / oci チャートリポジトリはそのまま動きますが、そのディレクトリから登録した Helm プラグインに依存していたビルドは動きません）。4 MiB を超える OCI マニフェストは拒否されます。3.6 系はアップグレードガイドに server-side diff が既定になる旨が追記されています。</p>
+<p>今週は 3.3 / 3.4 / 3.5 / 3.6 の各ラインに同時にセキュリティ修正が入りました。CRITICAL 4 件はいずれも repo-server を踏み台にできる経路で、Kustomize の remote ref が repo-server 上でコマンドを実行できる問題（GHSA-9v9p-x54c-58gc）、Kustomize の Helm config home 経由のコマンド実行（GHSA-fw5c-w8rc-j7fx）、Jsonnet の import が repo-server のファイルを読める問題（GHSA-m3vr-7329-44ww）、PreDelete / PostDelete フックで AppProject の制約を回避できる問題（CVE-2026-77459）です。HIGH はログイン失敗のレート制限が並行リクエストで回避できる問題（CVE-2025-61560）と、SSH の Git リポジトリでリポジトリプロキシ URL 経由のコマンド注入（CVE-2026-55797）。<br>自宅クラスタの同期を Argo CD に任せているなら、リポジトリの内容が repo-server 上のコード実行に至る経路が塞がれたことになるので、使っているライン（3.5.4 など）へ早めに上げる価値があります。修正では repo-server のヘルスチェックタイムアウトによる CrashLoopBackOff（3.5.4）、manifest-generate-paths のキャッシュミス時の誤検知（3.5.4）、KubeVirt / FlinkDeployment / Crossplane MR / Cluster API Cluster の health 判定（3.3.15）も入っています。<br>機能面はログイン試行時にユーザー名をログに出す変更（3.3〜3.5）と、<code>argocd login</code> で使ったクライアント証明書を保存・再利用する変更（3.6）です。3.6.0-rc2 は RC なので、3.6 系は GA を待つ判断で問題ありません。</p>
+<p><a href="https://github.com/argoproj/argo-cd/releases/tag/v3.5.4">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fargoproj%2Fargo-cd%2Freleases%2Ftag%2Fv3.5.4">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/argoproj/argo-cd/releases/tag/v3.4.10">v3.4.10</a> / <a href="https://github.com/argoproj/argo-cd/releases/tag/v3.3.15">v3.3.15</a> / <a href="https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc2">v3.6.0-rc2</a></p>
+</section>
+<section class="item">
+<h3>dex v2.46.0</h3>
+<p><strong>破壊的変更</strong>: 明示の宣言はありませんが、未知の設定フィールドを拒否するようになり（<code>Disallow unknown config fields</code>）、セッション Cookie が protobuf 化・暗号化されました。効かないキーが設定に残っていると起動しなくなる可能性があるため、アップグレード前に設定を検証してください。Cookie 形式が変わるので既存セッションは再ログインになる見込みです。</p>
+<p>認証基盤をまとめて近代化した大きめのリリースです。2FA（TOTP）と WebAuthn、Kerberos コネクタ、SAML のリフレッシュトークン、OAuth2 の client credentials フロー（opt-in フラグ）、PKCE の設定、ID-JAG（requested_token_type）対応、Cookie 暗号化、OIDC の RP-Initiated logout が入りました。内部では AuthSession を導入してトークン発行を issuer 抽象に移し、リフレッシュトークンのライフサイクルを dex 側が持つようになり、CEL コンパイラによるポリシー評価と gRPC のセッション API も追加されています。Argo CD の SSO に dex を使っているなら、2FA / WebAuthn がそのまま使えるようになるのが実務上の目玉です。</p>
+<p class="links"><a href="https://github.com/dexidp/dex/releases/tag/v2.46.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fdexidp%2Fdex%2Freleases%2Ftag%2Fv2.46.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>external-secrets v2.12.0</h3>
+<p><strong>破壊的変更</strong>: v2.11 系で入っていた imageRegistry の破壊的変更が revert されました（#6996）。チャートで imageRegistry を上書きしている場合は値の解釈が元に戻るので差分を確認してください。あわせて、エラーメッセージ内でテンプレート文字列を評価しない修正とテンプレートからの <code>fail</code> 削除が入っており、テンプレートの挙動が変わります。</p>
+<p>Password ジェネレータに prefix / suffix が付き、Conjur の Cloud Authenticator、チャートの <code>rbac.leaderElection.create</code> トグル、replicas が 2 以上なのに leader election が無効なときの警告が入りました。Secret を書き込む前のバリデーション、Akeyless / AWS ACM で「存在しない」を NoSecretErr として返す修正、Pulumi の PushSecret で environment 定義を保持する修正もあります。シークレットの外部管理を担うコンポーネントなので、テンプレート挙動の変更は適用前に検証しておくのが安全です。</p>
+<p><a href="https://github.com/external-secrets/external-secrets/releases/tag/v2.12.0">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fexternal-secrets%2Fexternal-secrets%2Freleases%2Ftag%2Fv2.12.0">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/external-secrets/external-secrets/releases/tag/helm-chart-2.12.0">helm-chart-2.12.0</a></p>
+</section>
+<section class="item">
+<h3>Loki operator v0.12.0</h3>
+<p><strong>破壊的変更</strong>: storage spec の <code>schemas</code> が必須になりました（#24716）。LokiStack の storage に schemas を書いていないマニフェストは、アップグレード前に追記が必要です。</p>
+<p>Loki operand が 3.7.8 に更新され、保持期間に基づく期限切れスキーマの削除、<code>flush_on_shutdown</code> の有効化、OCP 5.0 の TLS 準拠、ingester の terminationGracePeriodSeconds の 300 秒化、CPU / メモリ使用率のテレメトリ記録ルールが入りました。grpc・x/net・x/text・etcd client・x/crypto のセキュリティ更新も含みます。可観測性の統合（LGTM）でログ基盤を Operator で動かしているなら、スキーマ必須化だけ先に対応しておけば安全に上げられます。</p>
+<p class="links"><a href="https://github.com/grafana/loki/releases/tag/operator%2Fv0.12.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Floki%2Freleases%2Ftag%2Foperator%252Fv0.12.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Mimir 3.2.2・3.1.7</h3>
+<p><strong>破壊的変更</strong>: なし。</p>
+<p>Alertmanager の設定がファイル参照経由でローカルのファイルを読めてしまう問題（CVE-2026-81938）の修正のみです。Alertmanager を有効にしている場合は適用してください。Helm チャートは mimir-distributed 6.2.1（パッチ）と 6.3.0-weekly.415 が出ています。</p>
+<p><a href="https://github.com/grafana/mimir/releases/tag/mimir-3.2.2">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Fmimir%2Freleases%2Ftag%2Fmimir-3.2.2">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/grafana/mimir/releases/tag/mimir-3.1.7">3.1.7</a></p>
+</section>
+<section class="item">
+<h3>Terraform v1.17.0-rc1</h3>
+<p><strong>破壊的変更</strong>: RC なので本番適用は GA 待ちです。<code>terraform version -json</code> の出力に format_version フィールドが追加されたので、未知フィールドを無視しないツールは注意してください。</p>
+<p>provider requirements で variables / locals が使えるようになり、<code>-minimal-refresh</code> で変更が見込まれるリソースだけを更新する計画を選べます（AWS 側の refresh を減らして plan を速く安くする用途）。Terraform Policy が GA になり、plan / apply / query の <code>-policies</code> が実験フラグ不要になりました。query ポリシーは list ブロックで発見したリソースを評価して人間可読 / JSON で結果を返します。test では ephemeral リソースの mock_provider 対応と、cleanup グラフの依存順序の決定化が入っています。IaC で AWS（EKS）を管理しているなら、<code>-minimal-refresh</code> が効くかは GA 後に試す価値があります。</p>
+<p class="links"><a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhashicorp%2Fterraform%2Freleases%2Ftag%2Fv1.17.0-rc1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>HolmesGPT 0.43.0</h3>
+<p><strong>破壊的変更</strong>: kube-lineage と kubectl-run ツールセットが削除されました。これらを前提にした指示・プロンプトは見直しが必要です。あわせて fast mode が既定になり、TodoWrite による計画は opt-in に変わりました。</p>
+<p>会話を named executor（manual / auto）で実行できるようになり、toolset が自分の状態更新間隔を持てるようになりました。厳格な tool call から自由形式オブジェクトのパラメータを外し、narrative の影響範囲の主張を観測された証拠に限定し、HTTP ヘッダー伝播でシェルメタ文字を拒否し、<code>/eval</code> と <code>/list</code> を実リポジトリ権限でゲートするなど、AI SRE としての権限境界とサンドボックスの締め直しが中心です。grpc / x/crypto / Helm 3.22 の CVE 修正と kubernetes-remediation MCP イメージの 1.4.0 更新も含みます。</p>
+<p class="links"><a href="https://github.com/HolmesGPT/holmesgpt/releases/tag/0.43.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FHolmesGPT%2Fholmesgpt%2Freleases%2Ftag%2F0.43.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Open WebUI v0.12.0</h3>
+<p><strong>破壊的変更</strong>: なし。</p>
+<p>Realtime の音声通話が入り、OpenAI Realtime モデルが雑談を担当して本題は選択中のモデル（会話履歴とツールごと）に引き継ぎ、答えを読み上げながら全文をチャットにも表示します。VRM アバターとジェスチャーを音声通話中に出せます。管理者は全ユーザーに TOTP の 2FA を必須にでき（回復コード 10 個、<code>open-webui mfa reset</code> で復旧）、共有チャットは Clone only から Allow replies に切り替えて同じ会話に書き込めるようになりました。モデルには名前付きのコントロール（Thinking の Low / Medium / High が reasoning effort を切り替えるなど）を付けられ、長いツール実行の途中でもコンテキスト圧縮が効くようになっています。</p>
+<p class="links"><a href="https://github.com/open-webui/open-webui/releases/tag/v0.12.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fopen-webui%2Fopen-webui%2Freleases%2Ftag%2Fv0.12.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>homepage v2.5.0</h3>
+<p><strong>破壊的変更</strong>: なし（FileFlows 26.10 の破壊的変更に追随する widget v2 が入っています）。</p>
+<p>feeds（RSS / Atom）ウィジェットと customapi の info ウィジェット、Bookorbit / qui のサービスウィジェットが追加され、ログのサイズ制限とローテーションが入りました。Plex の mono フォントと card / block スタイル、Cloudflare API の変更で接続が落ちる問題への対応、Gitea の件数取得の修正もあります。自宅ダッシュボードにフィードを並べる用途が素直に作れるようになったのが小さな収穫です。</p>
+<p class="links"><a href="https://github.com/gethomepage/homepage/releases/tag/v2.5.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgethomepage%2Fhomepage%2Freleases%2Ftag%2Fv2.5.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>n8n 2.43.3・2.42.6</h3>
+<p><strong>破壊的変更</strong>: 廃止予定ノードを含むワークフローの新規作成・更新がブロックされるようになりました。該当ノードを使っているワークフローは更新できなくなるので、先に置き換えを済ませてください（既存の実行は動きます）。</p>
+<p>変更点はこの 1 点と、Gemini ノードの画像モデル一覧に Nano Banana 2.1 / 2 Lite を追加したことです。2.43.2 / 2.42.5 では self-hosted Assistant の OpenAI 互換モデル（Kimi K3 など）の修正と、builder が成果物を作っている途中に表示する修正が入っています。</p>
+<p><a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.43.3">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fn8n-io%2Fn8n%2Freleases%2Ftag%2Fn8n%25402.43.3">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/n8n-io/n8n/releases/tag/n8n%402.42.6">2.42.6</a></p>
+</section>
+<section class="item">
+<h3>Kustomize v5.8.3（kyaml v0.21.3）</h3>
+<p><strong>破壊的変更</strong>: なし（kustomize 本体に機能変更はありません）。</p>
+<p>v5.8.3 は kyaml / api / cmd-config を v0.21.3 に揃え、kustomize を kubectl に取り込むときに問題になっていた依存と圧縮 blob を排除するのが目的です。kyaml v0.21.3 では openapi スキーマ定義が非圧縮 JSON になり、Go 1.27 に更新されました。Argo CD の repo-server も kustomize を同梱しているので、追従のタイミングで一緒に上がります。</p>
+<p><a href="https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize%2Fv5.8.3">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fkustomize%2Freleases%2Ftag%2Fkustomize%252Fv5.8.3">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/kubernetes-sigs/kustomize/releases/tag/kyaml%2Fv0.21.3">kyaml/v0.21.3</a></p>
+</section>
+<section class="item">
+<h3>Grafana Alloy helm-chart 1.13.1</h3>
+<p><strong>破壊的変更</strong>: なし。</p>
+<p>Helm チャート 1.13.1 が Alloy 1.20.1 を同梱します。ビルドイメージ（build-image/v0.1.36）が Go 1.27 になったのが別タグで出ています。同梱バージョンの追随なので、チャートのバージョンを上げるだけで済みます。</p>
+<p class="links"><a href="https://github.com/grafana/alloy/releases/tag/helm-chart%2F1.13.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Falloy%2Freleases%2Ftag%2Fhelm-chart%252F1.13.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Argo Workflows v4.1.5・v4.0.13</h3>
+<p><strong>破壊的変更</strong>: 記載なし（リリースノートには変更点の記載がなく、アップグレードガイドの確認を促す定型のみです）。</p>
+<p>リリースノートはインストール手順と「ブログ / changelog を見よ」という定型文だけで、内容を読み取れません。パッチ更新として扱い、必要なら upgrading guide とチェンジログを直接確認してください。</p>
+<p><a href="https://github.com/argoproj/argo-workflows/releases/tag/v4.1.5">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fargoproj%2Fargo-workflows%2Freleases%2Ftag%2Fv4.1.5">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/argoproj/argo-workflows/releases/tag/v4.0.13">v4.0.13</a></p>
+</section>
+<section class="item">
+<h3>Backstage v1.56.0-next.2</h3>
+<p><strong>破壊的変更</strong>: 記載なし。</p>
+<p>次期マイナーのプレリリースで、リリースノートは <code>docs/releases/v1.56.0-next.2-changelog.md</code> を指すだけです。IDP として運用しているなら、stable の 1.56.0 が出てから追うのが安全です。</p>
+<p class="links"><a href="https://github.com/backstage/backstage/releases/tag/v1.56.0-next.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbackstage%2Fbackstage%2Freleases%2Ftag%2Fv1.56.0-next.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Tailscale (operator) v1.104.1</h3>
+<p><strong>破壊的変更</strong>: 記載なし。</p>
+<p>リリースノートは tailscale.com/changelog を指すのみで、内容はここからは読み取れません。ゼロトラストの入口なので、変更点は公式 changelog を直接確認してください。</p>
+<p class="links"><a href="https://github.com/tailscale/tailscale/releases/tag/v1.104.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Ftailscale%2Ftailscale%2Freleases%2Ftag%2Fv1.104.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Istio 1.32.0-alpha.0</h3>
+<p><strong>破壊的変更</strong>: 記載なし。</p>
+<p>リリース本文は &quot;Artifacts&quot; のみで、変更点の記載はありません。次期マイナーの最初のアルファなので、サービスメッシュの更新判断は beta / GA のノートが出てからで十分です。</p>
+<p class="links"><a href="https://github.com/istio/istio/releases/tag/1.32.0-alpha.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fistio%2Fistio%2Freleases%2Ftag%2F1.32.0-alpha.0">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes リリースレポート 2026-10-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-10-05.html</link>

@@ -4,11 +4,37 @@
         <title>AWS リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 28 Sep 2026 01:04:29 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Oct 2026 01:38:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS リリースレポート 2026-10-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/aws/2026-10-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/aws/2026-10-12.html</guid>
+            <pubDate>Mon, 12 Oct 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Karpenter (aws) v1.15.0</h3>
+<p><strong>破壊的変更</strong>: ノード修復が既定で新しい repair ディスラプションメソッドに切り替わります。従来のノード修復コントローラの挙動を維持したい場合は <code>--legacy-node-repair</code>（Helm では <code>settings.legacyNodeRepair</code>）で戻せます。また AWS 固有の feature gate が <code>--aws-feature-gates</code> に分離されたので、<code>RebootForRepair</code> など新しいゲートを使う場合は明示的な有効化が必要です。</p>
+<p>今週の中心はノード修復の作り直しです。再起動をノードアクションとして扱えるようになり（<code>CloudProvider.Reboot</code> を <code>ec2:RebootInstances</code> で実装）、容量制約のある NodePool では置換を先に試さず terminate を先に行う terminate-first、原因（reason-aware）に応じた修復ポリシーと上限付き termination grace period、初期化に失敗したノードの修復が入りました。ノード修復は voluntary disruption として扱われ、判断の理由がメトリクスの次元に出ます。<br>コスト最適化とリソース要求の適正化に効く変更も多く、VPA の予測コントローラとストア、<code>PodDeletionCostManagement</code>（feature gate）、Pod のトポロジスプレッド既定対応、インスタンスタイプのボリューム上限を考慮したプロビジョニングが入っています。プロバイダ側では DRA の NVIDIA / EFA ドライバ対応、EC2NodeClass の Nitro Enclaves 対応、<code>maxPodsExpression</code> / <code>kubeReserved</code> / <code>systemReserved</code> の CEL 式対応、セキュリティグループ更新間隔の設定化、メトリクス次元の整理（disruption の判断を command と approval に分離、<code>karpenter_pods_disrupted_total</code> 追加）など。</p>
+<p class="links"><a href="https://github.com/aws/karpenter-provider-aws/releases/tag/v1.15.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Faws%2Fkarpenter-provider-aws%2Freleases%2Ftag%2Fv1.15.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>aws-load-balancer-controller v3.6.0</h3>
+<p><strong>破壊的変更</strong>: コントローラ本体の破壊的変更はありませんが、アップグレード前の CRD 再適用が要求されています（Gateway API の graduation はなく、引き続き Gateway API CRD v1.6.0 に対してビルド）。<code>kubectl apply -k &quot;github.com/aws/eks-charts/stable/aws-load-balancer-controller/crds?ref=master&quot;</code> と Gateway 用 CRD を先に適用してください。</p>
+<p>クロスアカウントの TargetGroupBinding で、IP ターゲットを Pod の実際の Availability Zone で登録できるようになりました（opt-in。既定は従来動作なので、ゾーン単位のルーティングを効かせたいときだけ有効化します）。Ingress には <code>frontend-nlb-status-only</code> アノテーションが入り、ALB の手前に NLB を置く構成で status のホスト名をフロント NLB だけに絞れるため、ExternalDNS のレコード作成が直ります。Gateway API を import して使う側は、Gateway 名・finalizer・コントローラの配線をカスタマイズ可能になり、ReferenceGrant は v1 apiVersion になりました。<br>修正は、名前付き targetPort が複数ある Service での <code>DuplicateTargetGroupName</code>、ReferenceGrant のない cross-namespace TCPRoute が他名前空間の TargetGroupConfiguration finalizer を握ってしまう問題、split-horizon DNS 構成での ACM DNS 検証、セキュリティグループの CIDR 正規化、空文字の WAF ACL、informer の tombstone 処理と WatchList の full LIST フォールバックなど。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Faws-load-balancer-controller%2Freleases%2Ftag%2Fv3.6.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>terraform-aws-eks v21.27.0〜v21.29.0</h3>
+<p><strong>破壊的変更</strong>: なし。すべて追加か opt-in で、既存の適用結果は変わりません（<code>create_placement_group = false</code> + EFA の組み合わせだけは修正の対象）。</p>
+<p>EKS を Terraform で管理しているならそのまま上げられる範囲です。v21.28.0 でマネージドノードグループの warm pool（停止済みの事前起動インスタンスを抱えてスケールアウトを速くする仕組み）に対応し、起動時間とコストのトレードオフをコード側で選べるようになりました。v21.27.0 では <code>kube_controller_manager_config</code> と <code>kube_api_server_config</code> がサポートされ、コントロールプレーンのフラグをモジュール経由で宣言できます。<br>v21.29.0 は Karpenter コントローラの IAM ロール信頼ポリシーに <code>aws:SourceArn</code> 条件を opt-in で足すもので、エージェントやワークロードに渡す権限の境界を狭める方向の変更です。v21.28.1 は EFA 有効時に <code>create_placement_group = false</code> が効かないバグの修正なので、EFA を使う構成では v21.28.1 以降を使ってください。</p>
+<p class="links"><a href="https://github.com/terraform-aws-modules/terraform-aws-eks/releases/tag/v21.29.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fterraform-aws-modules%2Fterraform-aws-eks%2Freleases%2Ftag%2Fv21.29.0">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS リリースレポート 2026-09-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/aws/2026-09-28.html</link>

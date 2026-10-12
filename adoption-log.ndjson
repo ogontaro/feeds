@@ -243,3 +243,37 @@
 {"date":"2026-10-12","domain":"claude","sourceName":"Claude | DevelopersIO"}
 {"date":"2026-10-12","domain":"claude","sourceName":"Anthropic | DevelopersIO"}
 {"date":"2026-10-12","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-10-12","domain":"claude","sourceName":"Claude Code releases"}
+{"date":"2026-10-12","domain":"claude","sourceName":"opencode releases"}
+{"date":"2026-10-12","domain":"claude","sourceName":"Orca releases"}
+{"date":"2026-10-12","domain":"claude","sourceName":"Codex CLI releases"}
+{"date":"2026-10-12","domain":"aws","sourceName":"Karpenter (aws)"}
+{"date":"2026-10-12","domain":"aws","sourceName":"aws-load-balancer-controller"}
+{"date":"2026-10-12","domain":"aws","sourceName":"terraform-aws-eks"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Argo CD"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Argo Workflows"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"dex"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Backstage"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Terraform"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"external-secrets"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Grafana Alloy"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"HolmesGPT"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"homepage"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Loki"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Mimir"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"n8n"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Open WebUI"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Tailscale (operator)"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Kustomize"}
+{"date":"2026-10-12","domain":"kubernetes","sourceName":"Istio"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"mise"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"Devbox"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"Bun"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"uv"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"Node.js"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"tmux"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"Neovim"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"fzf"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"Yazi"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"lazygit"}
+{"date":"2026-10-12","domain":"devtools","sourceName":"Docker Engine (moby)"}

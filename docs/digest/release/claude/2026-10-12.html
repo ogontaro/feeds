@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude リリースレポート 2026-10-12</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude リリースレポート 2026-10-12</h1>
+<article class="report"><h2>今週のリリース</h2>
+<section class="item">
+<h3>Claude Code releases v2.1.290〜v2.1.296</h3>
+<p><strong>破壊的変更</strong>: なし（追加と修正のみ）。ただし v2.1.291 は v2.1.290（クラウドセッションで許可プロンプトへの回答が落ちる）と v2.1.288（終了時に最後のメッセージが失われる）の回帰修正なので、この範囲を使うなら最新まで上げてください。</p>
+<p>5 日間で 7 版。目玉は <strong>Haiku 5.5</strong>（<code>claude-haiku-5-5</code>）が Anthropic API の既定 Haiku モデルになり、1M context で $0.10/$0.50 per Mtok（100K 超のプロンプトは $0.50/$2.50）になったことです。軽い処理やサブエージェントを Haiku に逃がす判断が、値段の面で現実的になりました。<br>権限境界とサンドボックスまわりが厚い週です。コマンド / HTTP フックに <code>onFailure: &quot;block&quot;</code>（起動失敗・タイムアウト・想定外の終了コードでアクションを止める）が入り、マネージド設定の PreToolUse フックが <code>&quot;continue&quot;: false</code> で拒否できるよう修正されました。プロンプト指示型フックが塞ぐべき操作を通していた問題（v2.1.294）も直っています。セキュリティでは、PreToolUse の承認と auto モードがネットワーク（UNC）パスからの読み取りで許可プロンプトを迂回していた問題、macOS / Windows で読み取り中に差し替えたリンクが承認範囲外のファイルを返せる問題、改ざんされた server-managed settings のキャッシュがポリシープラグインを外せる問題、sandbox の read-deny パスがセッション途中で差し替わってもプロジェクト許可が残る問題などを修正しました。<br>複数エージェントの並行実行と協調では、サブエージェントに <code>autoCompactWindow</code>（親より早く自動圧縮）、Agent ツールに <code>effort</code> パラメータ、<code>CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL</code> が入りました。LLM ゲートウェイ向けには、upstream ごとの許可モデル一覧、<code>timeouts.upstream_ttfb_ms</code>、<code>upstream_request_id</code> の監査イベント、<code>forceLoginMethod: &quot;gateway&quot;</code> のユーザー設定対応、context-1m beta を拒否するゲートウェイでの再送が入っています。MCP は切断後の再接続バックオフ（最大 30 秒）と重複ページングカーソルの修正、Read ツールの <code>allow_large</code>、ターミナルに作業状態を出せる OSC 7501（Program Status Protocol）も入りました。</p>
+<p><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.296">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.296">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.295">v2.1.295</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.294">v2.1.294</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.293">v2.1.293</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.292">v2.1.292</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.291">v2.1.291</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.290">v2.1.290</a></p>
+</section>
+<section class="item">
+<h3>opencode releases v1.18.35・v1.19.0 / v2.0.23〜v2.0.26</h3>
+<p><strong>破壊的変更</strong>: v1.19.0 で更新が自動インストールされなくなり、TUI の <code>/update</code> で明示的に実行する形に変わりました。1 系から 2 系へは <code>opencode upgrade --major</code> で移行します。</p>
+<p>1 系は v1.18.35 → v1.19.0。agent が読める stats が正規化リダイレクトと JSON / Markdown 形式に対応し、xAI のツール結果に画像を渡せるようになりました（非対応形式はスキップ）。TUI の更新手順が「自動」から「<code>/update</code> で明示」に変わった点は、CI の AI 呼び出しに opencode を使っている側で手順の見直しが要ります。<br>より大きいのは v2 が dev ブランチへ昇格したことです。<code>github-v1.2.26</code> で v2 のツリーが dev にマージされ、V2 の publish / deploy の向き先が v2 ブランチから dev に切り替わりました。<code>opencode upgrade --major</code> で OpenCode 2 に上がれます。<br>v2.0.23〜v2.0.26 は「release: v2.0.x」だけの定例リリースで、リリースノートからは内容を読み取れません（OpenCode Go 側の料金・上限は別フィードの docs 更新で追うことになります）。</p>
+<p><a href="https://github.com/anomalyco/opencode/releases/tag/v1.19.0">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanomalyco%2Fopencode%2Freleases%2Ftag%2Fv1.19.0">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/anomalyco/opencode/releases/tag/v1.18.35">v1.18.35</a> / <a href="https://github.com/anomalyco/opencode/releases/tag/github-v1.2.26">github-v1.2.26（v2 を dev へ）</a> / <a href="https://github.com/anomalyco/opencode/releases/tag/v2.0.26">v2.0.26</a></p>
+</section>
+<section class="item">
+<h3>Orca releases v1.4.221〜v1.4.224</h3>
+<p><strong>破壊的変更</strong>: 更新すると新しいターミナルバックグラウンドサービスが起動し、既に開いていたターミナルは旧サービスのまま動き続けます（この版の端末関連の修正は、更新後に開いたターミナルにだけ効きます）。Windows の Codex は Orca 管理下のフォルダではなく自分の <code>~/.codex</code> を使うようになり、Orca 内だけで追加した MCP サーバーは再追加が必要です。v1.4.217 以前から直接 v1.4.223 以降へ上げると、以前のネイティブチャットが表示されません（ファイルはディスクに残ります）。v1.4.221 にはセキュリティ修正が含まれ、フォルダを信頼済みにした際に <code>~/.copilot/config.json</code> が同一マシンの他ユーザーから読める状態になる問題（Copilot のログイントークンが入り得る）が直りました。</p>
+<p>自動化（Automations）の実行ごとにエージェントのモデルと effort を指定できるようになりました。Automation エディタの Advanced の「Extra agent arguments」（または <code>--extra-agent-args</code>）に <code>-model haiku --effort high</code> のように書き、Claude / Codex / Grok / CodeBuddy はモデルと effort、Cursor はモデル、OMP はモデルに対応します。各実行は新しいセッションで始まり、他の自動化はホストの既定を保ちます。<br>SSH ホストは Orca 自身のランタイムを配る managed Orca server で動くようになり、ホストの Node のバージョンやビルドツール不足で接続に失敗しなくなりました。ネイティブチャット（実験的）は OpenCode（2.x を含む）・Pi・OMP が構造化チャットで開き、返信の中にグラフ・図・モックアップを描けます。<br>使用量メニューに Claude の usage credits、OpenCode Zen の残高、Codex のクレジットが使用上限と並んで出るようになり、サブスクの残量確認が 1 か所で済みます。ほか、大きい CSV の編集、1 ワークスペースへの複数 PR / MR の紐付け、日本語・中国語・韓国語入力で Enter 確定がフィールド送信を兼ねてしまう問題の修正など。</p>
+<p><a href="https://github.com/stablyai/orca/releases/tag/v1.4.224">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstablyai%2Forca%2Freleases%2Ftag%2Fv1.4.224">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/stablyai/orca/releases/tag/v1.4.223">v1.4.223</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.222">v1.4.222</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.221">v1.4.221</a></p>
+</section>
+<section class="item">
+<h3>Codex CLI releases 0.162.0・0.162.1 / 0.163.0-alpha.1〜alpha.6</h3>
+<p><strong>破壊的変更</strong>: なし（0.163.0 系は alpha）。0.162.1 は、非同期の質問が複数行のときに TUI が落ちる問題と、起動中の background server と CLI 既定の機能設定の差で起動に失敗する問題を修正しています。</p>
+<p>0.162.0 で、信頼したローカルプロジェクトから managed Git worktree を作成・一覧するツールが入りました（worktrees 機能を有効にした場合）。複数のエージェントを並行で走らせて作業を分けるときの土台になる変更です。Command Center でのタスクの pin（<code>p</code>）、<code>/copy</code> でのトランスクリプトのブロック単位のコピー、承認ヘッダーや質問・MCP プロンプト・警告内の URL のクリック対応も入っています。<br>Code Mode には opt-in のランク付きツール検索と、Promise の結果を settle した順に流す JavaScript ヘルパーが入りました。カスタムの Responses 互換プロバイダーでは live web access と remote compaction を設定できます。<br>修正は、CRLF を保つ <code>apply_patch</code>、Linux sandbox の複数 deny ファイル、Windows 10 のドライブレターのファイルアクセス、Retry-After の尊重、Responses / WebSocket の再試行など。Windows 向けに署名済み PowerShell インストーラも公開されました。</p>
+<p><a href="https://github.com/openai/codex/releases/tag/rust-v0.162.0">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fopenai%2Fcodex%2Freleases%2Ftag%2Frust-v0.162.0">Google 翻訳で読む</a><br>他のバージョン: <a href="https://github.com/openai/codex/releases/tag/rust-v0.162.1">0.162.1</a> / <a href="https://github.com/openai/codex/releases/tag/rust-v0.163.0-alpha.6">0.163.0-alpha.6</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
