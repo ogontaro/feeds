@@ -4,11 +4,58 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 12 Oct 2026 01:06:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Oct 2026 02:55:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-13]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-13.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-13.html</guid>
+            <pubDate>Tue, 13 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Anthropicの動的ワークフローがClaudeエージェントをどう協調させるか</h3>
+<p>Anthropic が AI Engineer New York で、Unix や Linux の設計から学んだことを引きながら、開発者を圧倒せずにエージェントへ大きなプロジェクトを扱わせる方法を説明した講演のまとめです。複数エージェントの並行実行と協調は、Claude Code のサブエージェントやワークフローを実運用に載せるうえでの現在の関心そのもので、どう分割しどう統合するかという設計判断の拠り所になります。ツールの機能紹介ではなく「何をエージェントに任せ、どう協調させるか」を考える材料として読む価値があります。</p>
+<p class="links"><a href="https://www.latent.space/p/claude-dynamic-workflows">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fclaude-dynamic-workflows">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Sonnet 5.5 の性能を実測｜5 モデル計 90 回で時間は Opus 5 の 0.35 倍、成功数は差なし</h3>
+<p>Sonnet 5.5・Sonnet 5・Opus 5.5・Opus 5・Fable 5.1 の 5 モデルを effort high に揃え、計 90 回の実測で比較した記事です。Sonnet 5.5 は Opus 5 の 0.35 倍の時間で成功数に差がなかったという結果は、日々のコーディングでどのモデルを既定にするか、上位モデルをどこで使うかという配分の判断に直結します。スペック表ではなく実際のタスクで測った数字なので、モデル選びとコスト感覚を更新する材料になります。</p>
+<p class="links"><a href="https://qiita.com/kenji_harada/items/43f5348563728dea7e12">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>OpenCode 2.0、ターミナル・デスクトップ・Web アプリを単一の共有サービスに載せ替える大改修</h3>
+<p>公開ベータから約 3 か月、OpenCode 2.0 のアーキテクチャがまとめて解説されています。ターミナル・デスクトップ・Web の各アプリを 1 つの共有サービスに統合するという大きく、常用している人ほど影響範囲の広い変更です。同じ発表に対して「v2 でデーモン起動が既定になり機能が増えて使いづらくなったので Pi へ移った」という移行記も出ており、リリース内容と実際の使い勝手の変化を突き合わせて判断できます。</p>
+<p class="links"><a href="https://thenewstack.io/opencode-2-shared-service/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopencode-2-shared-service%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2109744100790648995">@npaka123 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fnpaka123%2Fstatus%2F2109744100790648995">Google 翻訳で読む</a></li>
+<li><a href="https://anoma.ly/notes/opencode-2-0/">リンク先を読む</a></li>
+<li><a href="https://voluntas.ghost.io/migrate-opencode-to-pi/">OpenCode から Pi へ切り替えた</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>1 週間で 15 万スター、AI にリバースエンジニアリングさせる「REA」を調べてみた</h3>
+<p>ソースコード非公開のアプリを AI に解析させ、類似機能を作らせるオープンソースツール REA の解説です。10 月 6 日には 1 万スターに届いていなかったリポジトリが 10 月 13 日には 15 万 8 千スターを超えており、何の課題を解くツールなのかを一度押さえておきたいところです。既存アプリの解析から速度を調整できる小型版の実装までを AI に任せる、という使い方に関心があるなら最初に読む一本です。</p>
+<p class="links"><a href="https://qiita.com/hisashi-ito/items/b2ec2262f0b26489ae38">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2109513777469444403">@npaka123 のポスト</a></li>
+<li><a href="https://www.techno-edge.net/article/2026/10/12/5574.html">リンク先を読む</a></li>
+</ul>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>月間 100 万人のサービスを 6 人＋AI で刷新——Hono 選定とレビュー設計の試行錯誤</h3>
+<p>月間約 100 万人が利用するサービスを 6 人＋AI で刷新した取り組みの資料です。技術選定の理由が「人が書きやすい」から「AI が迷わず、正確に書ける」へ変わったという指摘や、仕様書や skill を増やすほどコードとのずれが生じてコンテキストを削り、代わりに機械的チェックとレビューを増やしたという方針転換は、AI 時代のコードレビューの再定義や Spec-Driven Development を考えている人にそのまま効きます。21 アプリの Hono 統一、ルート定義からの型・バリデーション・OpenAPI 生成と CI での取りこぼし防止、認証・権限の付け忘れを共通関数と Lint で止める、といった具体策まで載っているのが価値です。</p>
+<ul>
+<li><a href="https://x.com/connect24h/status/2109473744947429441">@connect24h のポスト</a></li>
+<li><a href="https://speakerdeck.com/yutobara/gekkan-100-mannin-no-sabisu-sasshin-de-gijutsu-sentei-o-hono-ni-furikita-hanashi-e49c651f-8130-48bb-b6ef-eac3cc9f358a">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-12]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-12.html</link>

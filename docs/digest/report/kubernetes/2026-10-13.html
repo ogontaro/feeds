@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-13</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-13</h1>
+<article class="report"><h2>今日の 3 本</h2>
+<section class="item">
+<h3>Kubernetes 上の GPU は「全部持ち込み」、まず効いてくるのは請求書</h3>
+<p>GPU を Kubernetes で扱うと、ドライバから監視、そしてコストまで自分で揃える前提になりがちだ、という指摘です。ワークロードのリソース可視化のために Grafana ダッシュボードを既に運用している、という読者のような環境を前提に置いており、GPU ノードを足す前後で何を自前で用意すべきか、既存の可観測性とコスト最適化の延長線上で確認できます。CPU のときと同じ感覚で GPU を足すとどこで詰まるのかを先に知っておく価値があります。</p>
+<p class="links"><a href="https://thenewstack.io/gpus-on-kubernetes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgpus-on-kubernetes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Prometheus と OpenTelemetry の相互運用、2026 年調査の結果</h3>
+<p>OpenTelemetry と Prometheus の利用者に、メトリクスをどう収集・処理・保存しているかを尋ねた調査の結果です。相互運用の使い勝手の平均評価が 2024 年調査の 3.1 から 3.6 に上がったという数字は、メトリクスの収集経路を OTel 側に寄せるか Prometheus 側に残すかという判断の材料になります。推測ではなく実利用のデータで「どこまで楽になったか」を示しているので、Grafana 系スタックで可観測性を組んでいるなら、いま構成を動かすべきか据え置くべきかの目安として読めます。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fotel-prometheus-interoperability%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>NVIDIA DCGM Exporter の脆弱性、GPU サーバーをリソース枯渇攻撃に晒す</h3>
+<p>GPU ノードのメトリクス収集に使われる NVIDIA DCGM Exporter の不具合で、GPU サーバーがリソース枯渇攻撃を受けうるという話です。GPU を載せた Kubernetes クラスタでは監視のためにこの exporter が入っていることが多く、該当バージョンと露出範囲の確認を優先したいところです。セキュリティは重視する軸の一つで、GPU を使う構成を増やすほど影響範囲が広がるため、早めに把握しておく価値があります。</p>
+<p class="links"><a href="https://cybersecuritynews.com/nvidia-dcgm-exporter-bug-exposes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fnvidia-dcgm-exporter-bug-exposes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

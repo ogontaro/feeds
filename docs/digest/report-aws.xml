@@ -4,11 +4,48 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 12 Oct 2026 01:08:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Oct 2026 02:57:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-13]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-13.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-13.html</guid>
+            <pubDate>Tue, 13 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>AWS Lambda Web Functions 登場、HTTP フレームワークをそのまま動かす新しいサーバーレス基盤</h3>
+<p>HTTP フレームワークをそのまま動かす新しいサーバーレス実行基盤です。ポートで待ち受けて Express や Hono をアダプタなしで動かせるため、SSR やストリーミング API、AI 推論エンドポイントといった「HTTP サーバーとして書きたい処理」を Lambda に寄せやすくなります。CloudFront のオリジンにもなり、OAC で CloudFront 経由に限定できるので、エッジの TLS 終端とキャッシュを前提にした構成を、いま EKS で動かしているワークロードとどう使い分けるかを早めに押さえておく価値があります。</p>
+<p><a href="https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/">AWS News Blog の発表</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fannouncing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere%2F">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin/">CloudFront のオリジン対応</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Fcloudfront-lambda-web-functions-origin%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/kahirokunn/status/2109837541314842998">kahirokunn のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Amazon Bedrock、OpenAI の GPT モデルを東南アジア・台湾からクロスリージョン推論で利用可能に</h3>
+<p>シンガポール・ジャカルタ・タイ・マレーシア・台北の各リージョンから、OpenAI の GPT モデル（GPT-6 Sol / Luna / Astra）をグローバルなクロスリージョン推論で使うための解説です。Converse API と OpenAI 互換 API の両方、IAM と SCP の権限、クォータのサイジング、ソースリージョンからの推論の監視まで踏み込んでおり、対応リージョンの一覧を追うだけでなく実際の設計に落とせる形になっています。モデルの提供リージョンと自社のデータ所在がずれる構成を検討しているなら、最初に読むべき一本です。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Faccessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon EKS で 1 つの LLM を 2 ノードに分けて推論する、Ray LLM コンテナのマルチノード構成</h3>
+<p>1 つの大きな LLM を 2 つの GPU ノードにまたがって動かし、prefill と decode を別ノードに分けたうえで、1 つの OpenAI 互換エンドポイントにまとめる構成です。推論スタックを同梱した Ray LLM Deep Learning Container が用意されているため、スタックの組み立てではなくデプロイの設定に集中できます。単一ノードの GPU メモリに収まらないモデルを EKS 上で扱うときの現実的な型として、クラスタ設計の選択肢に入れておきたい内容です。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/run-multi-node-inference-workloads-using-ray-llm-deep-learning-containers/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Frun-multi-node-inference-workloads-using-ray-llm-deep-learning-containers%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore の短期メモリが従量課金に、エージェントのコスト設計が変わる</h3>
+<p>AgentCore の短期メモリが、イベント単位の定額から、エージェントが取り込み・検索・保存したデータ量に応じた従量課金に変わります。セッション内の文脈を短期メモリ、セッションをまたぐ知識を長期メモリで持つという構成自体は変わらないので、変わるのは費用の見積もり方です。イベントを頻繁に書き込むエージェントを設計しているなら、料金モデルの前提が入れ替わったことを踏まえて試算を置き直す価値があります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-memory-consumption-based-pricing">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Fagentcore-memory-consumption-based-pricing">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EC2 G7 がフランクフルト・ストックホルムで利用可能に、AI 推論は G6 比最大 4.6 倍</h3>
+<p>NVIDIA RTX PRO 4500 Blackwell Server Edition を積んだ G7 インスタンスが、欧州（フランクフルト）と欧州（ストックホルム）で使えるようになりました。G6 比で AI 推論が最大 4.6 倍、グラフィックスが最大 2.1 倍とされ、GPU を使うデータ分析でも速くなります。EU 側に推論基盤を置く必要がある場合に、どのリージョンでどの GPU を選ぶかという判断材料になります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-g7-european-regions/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-g7-european-regions%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-12]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-12.html</link>
