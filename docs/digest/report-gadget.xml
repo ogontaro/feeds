@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 13 Oct 2026 02:58:45 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Oct 2026 01:03:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-14]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-14.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-14.html</guid>
+            <pubDate>Wed, 14 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Meta、カメラを載せない初の音声特化スマートグラス「Ray-Ban Meta Audio」を発表</h3>
+<p>Meta が、撮影用カメラを備えない音声特化型のスマートグラス「Ray-Ban Meta Audio」を初の音声グラスとして発表した。同じ日に複数メディアが実機のファーストインプレッションを出しており、カメラを外した構成の評価は「カメラなしが正解」から「根本的な課題は解決していない」まで分かれている。Meta のグラス製品が撮影デバイスだけでなく音声デバイスにもラインを広げた節目であり、ラインナップの軸がどこに移るかを判断する起点として読む価値がある。</p>
+<p class="links"><a href="https://www.meta.com/blog/ray-ban-meta-audio-our-first-audio-glasses-are-here/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.meta.com%2Fblog%2Fray-ban-meta-audio-our-first-audio-glasses-are-here%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-13]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-13.html</link>

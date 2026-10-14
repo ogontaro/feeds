@@ -4,11 +4,29 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 13 Oct 2026 03:00:52 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Oct 2026 01:05:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-14]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-14.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-14.html</guid>
+            <pubDate>Wed, 14 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Sunshine v2026.1013.230522 — Flatpak のコマンド接頭辞が不要に、Web UI はシングルページアプリ化</h3>
+<p>自宅ゲームストリーミングの配信側を担う Sunshine の定例リリースで、同日 18:10 の v2026.1013.171040 と変更履歴が同一のため、新しいこちらの1本にまとめた。Flatpak 版でコマンドの接頭辞指定が不要になり、ペアリング時に重複したクライアント証明書が置き換えられない問題も修正されるため、Flatpak で動かしている環境ほど更新の実利がある。Web UI はシングルページアプリケーションに作り替えられてテストとカバレッジが追加され、Boost も CPM 管理で 1.92 に上がっているので、上げる前に管理画面まわりの操作が変わる点を確認しておきたい。</p>
+<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1013.230522">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1013.230522">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Steam クライアントのベータ更新 — Android へのストリーミングの極端な低ビットレートを修正</h3>
+<p>Steam クライアントの Preview/Beta チャンネル向け更新で、Remote Play の不具合修正が中心になっている。一部環境で音声が割れる回帰と、Android 端末へのストリーミングのビットレートが極端に低くなる問題が修正されており、携帯機や Android 端末に配信している環境では該当の症状が改善される見込みなので、安定版に来る前に内容を押さえておく価値がある。DLC のホバー表示が一部の箇所で効かない問題も直っている。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/1675200/view/675134162359815494">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F1675200%2Fview%2F675134162359815494">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-10-13]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-13.html</link>

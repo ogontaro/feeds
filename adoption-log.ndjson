@@ -288,3 +288,14 @@
 {"date":"2026-10-13","domain":"aws","sourceName":"AWS News Blog"}
 {"date":"2026-10-13","domain":"aws","sourceName":"AWS Machine Learning Blog"}
 {"date":"2026-10-13","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-10-14","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-10-14","domain":"claude","sourceName":"はてなブックマーク — AIコーディング (50users+)"}
+{"date":"2026-10-14","domain":"claude","sourceName":"The New Stack — AI"}
+{"date":"2026-10-14","domain":"kubernetes","sourceName":"OpenTelemetry Blog"}
+{"date":"2026-10-14","domain":"kubernetes","sourceName":"The New Stack — Platform Engineering"}
+{"date":"2026-10-14","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
+{"date":"2026-10-14","domain":"aws","sourceName":"AWS Architecture Blog"}
+{"date":"2026-10-14","domain":"aws","sourceName":"AWS Machine Learning Blog"}
+{"date":"2026-10-14","domain":"gadget","sourceName":"Meta Quest blog"}
+{"date":"2026-10-14","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-10-14","domain":"gaming","sourceName":"Steam Deck news (SteamOS)"}

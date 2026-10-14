@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-14</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-14</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Orca Security が Amazon Bedrock で自然言語のセキュリティクエリを実現、クエリコスト 90% 減・レイテンシ 75% 減</h3>
+<p>平文の質問を Sonar クエリに変換するエージェントを Bedrock で作り、多段構成に組み替えたうえで、初版比でクエリコスト 90% 減・入力トークン 93% 減・レイテンシ 75% 減を達成した事例です。モデルを替えるのではなく構成の組み方で桁を変えているので、自然言語インターフェースを Bedrock で作るときの設計の勘所としてそのまま読めます。同じ「LLM に問い合わせ言語を書かせる」形のエージェントは自前でも作りやすいぶん、先に効く構成を知っておく価値があります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fnatural-language-security-queries-at-orca-security-using-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>ShipStation が Bedrock AgentCore で作った Slack 版 AI IT ヘルプデスク、3 か月で問い合わせの 97.5% を解決</h3>
+<p>Slack 上の IT ヘルプデスクエージェント「Deckhand」を AgentCore で作り、整備したナレッジベースからの回答、エラーメッセージのスクリーンショットの読み取り、Jira チケットの起票までを担わせています。最初の 3 か月でチャネルに来た問い合わせの 97.5% を解決し、フィードバックの 96% が好意的だったという数字は、社内問い合わせをエージェントに寄せるときの現実的な到達点になります。エージェントに社内システムの読み書きをどこまで許すかという権限設計の例としても読めます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock の Grok 4.7 で長時間動くエージェントを組み、推論エフォートとコストの釣り合いを測る</h3>
+<p>Bedrock の Grok 4.7 でツール呼び出しをするエージェントを組み、3 種類の推論タスクを 4 段階の推論エフォートで回して、正答率とタスク完了あたりのトークンコストを並べて測っています。どこまで考えさせればコストに見合うかをリクエスト単位で決め、それを本番で監視するための物差しになるので、長時間動くエージェントの予算設計を詰めるときに効きます。「どのモデルを使うか」ではなく「1 リクエストにどれだけ計算を割くか」を設計変数として扱う考え方が持ち帰れます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-long-horizon-agents-with-grok-4-7-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker AI で MoE モデルのカーネルを詰める、H200 でスループット最大 10% 向上</h3>
+<p>融合 Mixture-of-Experts モデル向けに、WGMMA の利用率を上げる Swap-AB、FP8 量子化のための Triton バックエンドのルーティング、Triton の JIT 再コンパイルの排除という 3 つのカーネル最適化を、AWS のエンジニアが具体的に説明しています。合わせて H200 でスループット最大 10% 向上、初回トークンまでの時間が最大 9% 短縮とされています。モデルやインスタンスを替えずに推論単価を下げにいくとき、どこまで掘る余地があるかの目安になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/mixture-of-experts-kernel-engineering-on-amazon-sagemaker-ai/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmixture-of-experts-kernel-engineering-on-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Resilience Hub が EKS ラベルでの対象指定と、AWS Organizations でのポリシー共有に対応</h3>
+<p>Resilience Hub が、サービスの入力ソースに EKS ラベルを使えるようになり、ワークロードの対象範囲を実際のラベル運用に合わせて指定できるようになりました。あわせて依存関係の把握が生成 AI で補われ、レジリエンスポリシーを AWS Organizations で共有できるようになっています。アカウントを分けて EKS を運用している構成でも、DR 要件の適用をそろえやすくなるので、可用性の目標をどう配るかの見直しに使えます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/scope-workloads-and-share-resilience-policies-with-aws-resilience-hub/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fscope-workloads-and-share-resilience-policies-with-aws-resilience-hub%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

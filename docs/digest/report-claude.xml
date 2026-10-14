@@ -4,11 +4,55 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 13 Oct 2026 02:55:02 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Oct 2026 00:58:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-14]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-14.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-14.html</guid>
+            <pubDate>Wed, 14 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Anthropic が Git を離れて自社製のソース管理へ、5 か月でモノレポを完全移行</h3>
+<p>Claude を使った開発で 1 日のマージ数が 5 か月で約 2,500 件から 30,000 件超に増え、人間の規模を前提に組まれた開発インフラそのものがボトルネックになったため、Anthropic が Git を置き換える自社製のソース管理システムを作り、モノレポを完全に移行した経緯がまとまっている（移行先は X 上では「Scion」と呼ばれている）。エージェントが大量にコードを書く前提では、レビュー・マージ・CI の作りがそのまま限界になるという実例で、同じ壁に当たり始めた組織が開発基盤を作り直すときの設計判断の材料になる。</p>
+<p class="links"><a href="https://www.anthropic.com/engineering/redesigning-source-control">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fengineering%2Fredesigning-source-control">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/AnthropicAI/status/2110047081414987957">AnthropicAI のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FAnthropicAI%2Fstatus%2F2110047081414987957">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/oikon48/status/2110059564129538477">oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code の守りのフックは、壊れると黙って通る — 2.1.295 の onFailure: 「block」</h3>
+<p>Claude Code のフックは、コマンドが起動できないなど「そもそも動かない」場合に処理を止めず、黙って通してしまう挙動だったという指摘。2.1.295（2026-10-08）で追加された onFailure: 「block」を使うと、command フックと HTTP フックが起動できないときに止められる。危険なコマンドを拒否する守りのフックを置いているなら、守っているつもりで素通りしている箇所がないか確かめる価値がある。</p>
+<p class="links"><a href="https://qiita.com/suwa_nobu/items/afde8d73a48eb7badb71">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.296 のサブエージェント設定入門、追加された 3 設定の効き方</h3>
+<p>2026 年 10 月 9 日公開の v2.1.296 で加わったサブエージェント関連の 3 つの設定を、コンテキストの膨張・モデルコスト・過負荷エラー（529）に悩む人向けに整理した記事。サブエージェントを並行で走らせていると、どこで何が膨らんでいるのかが見えにくいので、既定の挙動をどこで絞るかを決める材料になる。</p>
+<p class="links"><a href="https://qiita.com/kai_kou/items/314e244a33163709220d">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>Cursor が X Subscription に統合、Claude などサードパーティモデルは API 課金へ</h3>
+<p>X Premium・Grok・Cursor のプランが X Subscription に統合され、Cursor の有料プランは Grok 系と同じ使用量プールを共有する形になった。あわせて Cursor 内のサードパーティモデルは新しいプランでは API 課金に移り、Claude を使うには追加のコストがかかる。コーディングエージェントの月額の体系が組み替わる動きなので、自分の使い方だとどのプランがいくらになるのかを確かめておきたい。</p>
+<p class="links"><a href="https://thenewstack.io/x-subscription-cursor-pricing/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fx-subscription-cursor-pricing%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2109821373770293289">oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>opencode 2.0 が公開</h3>
+<p>CI の AI 呼び出しにも使っている opencode のメジャーアップデート 2.0 が発表され、リリースノートが公開された。日常のワークフローに直接効いてくる更新なので、変更点と移行の要否を確認しておきたい。</p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2109744100790648995">npaka123 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fnpaka123%2Fstatus%2F2109744100790648995">Google 翻訳で読む</a></li>
+<li><a href="https://anoma.ly/notes/opencode-2-0/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fanoma.ly%2Fnotes%2Fopencode-2-0%2F">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-13]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-13.html</link>
