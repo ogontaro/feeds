@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 14 Oct 2026 01:02:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Oct 2026 00:25:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-15]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-15.html</guid>
+            <pubDate>Thu, 15 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Account-level enforcement guardrail で Claude Code on Bedrock のプロンプト攻撃を入力側でブロックできるか検証した</h3>
+<p>ガードレールの紐付け方によって、プロンプト攻撃フィルターの入力側の結果がどう変わるかを実機で確かめた検証記事。settings.json のヘッダー方式では入力側の攻撃が素通りし、Account-level enforcement guardrail で User prompts を Comprehensive にすると入力側でブロックされた、という差が具体的に示されている。Claude Code on Bedrock を使うとき、攻撃を入力段で止めたいのか出力段で止めたいのかで設定の選び方が変わるので、導入前の確認項目としてそのまま使える。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-bedrock-account-level-guardrail-prompt-attack/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock AgentCore で組む自己改善型の文書処理 — テンプレート定義なしで新しい帳票に追随する</h3>
+<p>文書を分類・抽出・検証し、そこから学習して改善していく agentic な帳票処理（IDP）を AgentCore で組む構成の解説。新しい帳票フォーマットが出るたびに人手でテンプレートを足す運用から、エージェント側に追随させる運用へ寄せられる点が要点になっている。帳票処理は「例外が増えるほど定義が膨らむ」のが悩みどころなので、その膨らみ方を設計で変えられるかどうかを判断する材料として読む価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-self-improving-document-processing-using-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-self-improving-document-processing-using-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Tamnoon が Amazon Bedrock でクラウドセキュリティ修復を自動化、90 日で重大な露出を 9 割超削減</h3>
+<p>CNAPP などの検知をエージェントが自ら調査し、安全に修復まで進める Tami を Amazon Bedrock 上に構築した事例。90 日で重大なクラウド露出を 90% 以上減らし、本番障害はゼロだったと報告されている。検知の自動化より踏み込みにくい「修復の自動化」を本番で回すには何を設計しないといけないのか、権限の渡し方を含めて読めるのが価値で、エージェントに書き込み権限を持たせる設計の参照点になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-tamnoon-built-ai-powered-cloud-security-remediation-with-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-tamnoon-built-ai-powered-cloud-security-remediation-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>ARC Region switch に 4 つの新機能 — SSM Run Command、カスタム Lambda へのペイロード、クォータ parity チェック、ターゲットグループ健全性の待機</h3>
+<p>マルチリージョンのフェイルオーバーを手順として実行する Region switch に、Systems Manager Run Command の実行ブロック、カスタムアクション Lambda へのペイロード受け渡し、サービス クォータの一致確認、コンピュートのスケーリング時にターゲットグループの健全性を待つ機能が加わった。これまでランブックや手作業に頼っていた「切り替えの前後でやる細かい作業」をサービス側に寄せられるので、復旧時間の上限を設計で押さえやすくなる。DR 演習の前提が変わる変更なので、手順書を更新する前に押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/region-switch-target-health-ssm-lambda/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Fregion-switch-target-health-ssm-lambda%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>API Gateway の WebSocket API をマルチリージョンで復旧させる設計</h3>
+<p>Route 53 の DNS フェイルオーバー、DynamoDB Global Tables、カナリアのヘルスプローブ、クライアント側の再接続を組み合わせ、リージョン障害時にセッション状態まで復元する設計パターン。WebSocket は接続自体が状態を持つため HTTP API と同じようには切り替わらず、切断後にどう繋ぎ直し、状態をどこに置くかを先に決めておく必要がある。常時接続の API をマルチリージョンで運ぶなら、その前提をここで揃えられる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fmulti-region-disaster-recovery-for-amazon-api-gateway-websocket-apis%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-14]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-14.html</link>

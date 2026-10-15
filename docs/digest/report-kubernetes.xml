@@ -4,11 +4,24 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 14 Oct 2026 00:59:48 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Oct 2026 00:23:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-15]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-15.html</guid>
+            <pubDate>Thu, 15 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Kubernetes は健全なのにリクエストが止まるとき、どこを見るか</h3>
+<p>Grafana や Kubernetes のダッシュボードが健全に見えるのに、リクエストが止まる・遅れる——この「ファントム・スローダウン」で、どこを見ればよいかを扱った記事。クラスタ内の指標が正常でも原因は別の層にあることが多く、切り分けの順序を整理できる点が実務に効く。可観測性を OpenTelemetry / LGTM で組んでいる構成では、いま収集しているシグナルのどこが抜けているかを見直すきっかけになる。</p>
+<p class="links"><a href="https://thenewstack.io/kubernetes-hidden-latency-telemetry/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-hidden-latency-telemetry%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-14]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-14.html</link>

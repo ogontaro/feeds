@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 14 Oct 2026 01:05:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Oct 2026 00:30:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-15]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-15.html</guid>
+            <pubDate>Thu, 15 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Sunshine v2026.1014.194021(Web UI の SPA 化・ペアリング不具合の修正)</h3>
+<p>自宅のゲーム PC から Moonlight 側へ配信する側で使う Sunshine の新版で、Web UI をシングルページアプリケーションに作り替える内部刷新とテスト追加が入った。実運用に効くのは、ペアリング時に重複したクライアント証明書が残る問題の修正と、Flatpak 版でコマンドに接頭辞を付けなくてよくなった点で、Linux ホストをそのまま配信元にしている構成ほど影響が大きい。同日に 2 つのビルドが出ているが内容は同じなので、新しい方だけ挙げる。</p>
+<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1014.194021">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1014.194021">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-10-14]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-14.html</link>

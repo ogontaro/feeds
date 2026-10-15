@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-15</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-15</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Anthropic が git を置き換える自前のソース管理を作り、1 日 3 万マージのモノレポを 5 か月で移行した</h3>
+<p>2026 年 5 月に 1 日あたり約 2,500 件だったマージが 9 月には 30,000 件を超え、人間のスケールを前提にした開発基盤そのものがボトルネックになったため、バージョン管理システムを内製してモノレポを 5 か月で完全に移行した、という記録。エージェントが書くコードの量が桁で変わると、CI やレビューだけでなくソース管理の設計まで作り直しの対象になる、という順序で読める実例になっている。自分のリポジトリがどこから先で詰まるのかを測る物差しとして読む価値がある。</p>
+<ul>
+<li><a href="https://www.anthropic.com/engineering/redesigning-source-control">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fengineering%2Fredesigning-source-control">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/kahirokunn/status/2110229197264462218">@kahirokunn のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fkahirokunn%2Fstatus%2F2110229197264462218">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code デスクトップアプリが、複数セッションを並行で回す操作を強化</h3>
+<p>セッションの起動が速くなり、1 つの作業を複数に分けて任せやすくなり、それぞれが今何をしているかを常に見られるようになった、というデスクトップアプリの更新。複数セッションを並行させるとき、これまではターミナルのタブを行き来しながら状況を組み立てるしかなかったので、見通しの立て方そのものが変わる余地がある。並行実行を日常的に使っているなら、真っ先に触って確かめたい変更。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2110445844675838148">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2110445844675838148">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Platform が OpenTelemetry のトレース送信に対応（パブリックベータ）</h3>
+<p>Messages API・Claude Managed Agents・Claude SDKs から、OpenTelemetry のトレースを任意の可観測性基盤へ直接送れるようになった。所要時間やトークン数、モデル名、ツール名が既定で含まれ、Langfuse や LangSmith は即日対応している。自前で計装を足していた場合は、そのぶんを置き換えられるか、どの属性が既定で乗るかを早めに確かめておく価値がある。</p>
+<ul>
+<li><a href="https://platform.claude.com/docs/en/manage-claude/opentelemetry/api">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatform.claude.com%2Fdocs%2Fen%2Fmanage-claude%2Fopentelemetry%2Fapi">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/oikon48/status/2110422421853581746">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>add-mcp 入門 — 15 種のエージェントに MCP を配れるが、remove は全部消える</h3>
+<p>Claude Code の .mcp.json、Codex の .codex/config.toml、OpenCode の opencode.json と、エージェントごとに書式も置き場所も違う MCP サーバー登録を、1 つの CLI で揃えられるようにするツールの入門。導入は楽になる一方で、削除は全エージェント一括で消えるなど、副作用の届く範囲が見えにくい点まで踏み込んで書かれている。複数のエージェントを併用していて MCP の設定が散らかってきたなら、整理の型をここで掴んでおきたい。</p>
+<p class="links"><a href="https://qiita.com/kai_kou/items/bf094d00a46c639a9bda">記事を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>LLM が書いた計画を Durable Functions で実行すると、トークン 93% 減・レイテンシ 95% 減</h3>
+<p>ツール呼び出しのループを回す代わりに、LLM に計画を立てさせ、その計画を耐久性のあるワークフローとして実行する構成で、トークン数が 93%、レイテンシが 95% 削減できたという報告。各ステップで文脈を積み直さずに済み、途中で落ちても続きから再開できる実行基盤が付いてくるのが要点で、エージェントのコストと不安定さの両方に効く。計画と実行を分ける設計は Claude の Managed Agents でも同じ方向に進んでおり、比べて読むと判断材料になる。</p>
+<ul>
+<li><a href="https://devblogs.microsoft.com/azure-sdk/dynamic-workflows-azure-functions-hosted-skills/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdevblogs.microsoft.com%2Fazure-sdk%2Fdynamic-workflows-azure-functions-hosted-skills%2F">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/chomado/status/2110500253946593560">@chomado のポスト</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
