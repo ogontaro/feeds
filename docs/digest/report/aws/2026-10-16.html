@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-16</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-16</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Meta のオープンウェイトモデル Muse Spark Open が SageMaker JumpStart に追加、自アカウントのエンドポイントに配備できる</h3>
+<p>コーディングとエージェント用途に振った Meta のオープンウェイトモデル(816B 総 / 42B アクティブの MoE、1M トークンのコンテキスト、テキスト・画像・動画・音声のネイティブ入力)が SageMaker JumpStart に加わり、SageMaker Studio か SageMaker Python SDK から自アカウントの SageMaker AI エンドポイントにデプロイして推論を実行できるようになった。閉じた API に寄せずに重みを自前のアカウント内に置いて長時間動くコーディングエージェントを回す、という選択肢が AWS 上で取れるようになるのが実務上の意味で、Bedrock 側でホストされるモデルとの使い分けを考える材料になる。重みは独自の Muse Model License(限定的な商用条件)で提供され、API 事業者から課金する条項への批判も出ているため、採用前に条件の確認が要る。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmetas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2110830640455385490">@npaka123 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fnpaka123%2Fstatus%2F2110830640455385490">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>AWS の「Trust in Depth」— エージェントに自律性を渡しながら制御を残す 5 層の考え方</h3>
+<p>エージェントにもっと仕事を任せたいが、毎回正しく動くとは信じきれないという企業の悩みに対して、AWS が scope / know / bound / observe / prove の 5 層で設計方針を示した。検証できる範囲だけを自律実行させ、人間の判断が要る決定は人間に残すという考え方で、個別機能の話ではなく権限と検証の枠組みとして読める。Bedrock AgentCore などでエージェントを本番に出すときの、権限境界とサンドボックスのチェックリストとしてそのまま使える。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ftrust-in-depth-giving-agents-more-autonomy-without-losing-control%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Lambda Durable Execution SDK for Go が GA、承認ゲート付きの長時間ワークフローをコードで書ける</h3>
+<p>Lambda の durable functions を Go で書くための SDK が GA になった。進捗の記録を自前で実装せずに、多段のインフラ自動化やデプロイのロールアウト、AI モデル呼び出しの途中で人間の承認を待つといった処理を、Go のコードとしてそのまま表現できる。ステップの状態管理を別のワークフローサービスに寄せていた構成の選択肢が増えるので、長時間動く処理の置き場所を見直す契機になる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-go-sdk-support/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-lambda-durable-go-sdk-support%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>DynamoDB Streams が時刻を指定した読み取り開始に対応</h3>
+<p>AT_TIMESTAMP のシャードイテレータにより、指定した時刻以降の最初のレコードからストリームを読み始められるようになった。これまでは保持期間内の最古のレコードか、購読を始めた後の新着しか選べず、障害後の再処理やバックフィルは 24 時間ぶんを最初から流し直すしかなかった。保持ウィンドウ内での復旧手順と、下流の処理を冪等にしておく前提の置き方が変わるアップデートなので、ストリームを起点にした構成を持つなら押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dynamodb-streams-timestamp-processing">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-dynamodb-streams-timestamp-processing">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore Identity の On-Behalf-Of(OBO)トークン交換を実際に試す</h3>
+<p>エージェントが利用者本人の権限を引き継いで外部サービス(Entra ID 連携)にアクセスするための OBO トークン交換を、実際に手を動かして確かめた記録。エージェントに強い固定の資格情報を渡すのではなく、呼び出し元ユーザーの権限で動かすという設計は、社内システムにエージェントを入れるときの権限境界の作り方そのものなので、押さえておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-identity-obo-entra-id/">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

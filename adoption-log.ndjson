@@ -308,3 +308,15 @@
 {"date":"2026-10-15","domain":"gadget","sourceName":"MIXED"}
 {"date":"2026-10-15","domain":"gadget","sourceName":"Google News — Meta グラス・XR"}
 {"date":"2026-10-15","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-10-16","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-10-16","domain":"claude","sourceName":"CCログ超訳（Claude Code CHANGELOG）"}
+{"date":"2026-10-16","domain":"claude","sourceName":"Claude | DevelopersIO"}
+{"date":"2026-10-16","domain":"kubernetes","sourceName":"CNCF Blog"}
+{"date":"2026-10-16","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
+{"date":"2026-10-16","domain":"aws","sourceName":"AWS What's New"}
+{"date":"2026-10-16","domain":"aws","sourceName":"AWS Machine Learning Blog"}
+{"date":"2026-10-16","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
+{"date":"2026-10-16","domain":"gadget","sourceName":"Road to VR"}
+{"date":"2026-10-16","domain":"gaming","sourceName":"Steam Frame news"}
+{"date":"2026-10-16","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-10-16","domain":"gaming","sourceName":"NVIDIA Blog — GeForce NOW"}

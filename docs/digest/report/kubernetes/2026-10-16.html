@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-16</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-16</h1>
+<article class="report"><h2>今日の 4 本</h2>
+<section class="item">
+<h3>NVIDIA が Run:ai をオープンソース化 — 無償で使える範囲と有償の範囲</h3>
+<p>Kubernetes 上で GPU を分割・共有して AI ワークロードを捌くスケジューラ層がオープンソース化され、どこまでが無償でどこからが有償かが整理された。GPU はクラスタ内で最も高価で奪い合いになる資源なので、分割割り当てと公平なキューイングをどの層で担うかはコストに直結する。製品としての導入判断ではなく、自前クラスタに持ち込める OSS の部品として何が残るかの判断材料として読む。</p>
+<p class="links"><a href="https://www.techrepublic.com/article/news-nvidia-runai-open-source-free-paid/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.techrepublic.com%2Farticle%2Fnews-nvidia-runai-open-source-free-paid%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>ベアメタル Kubernetes 基盤「metal-stack」が v1.0.0 に到達</h3>
+<p>物理サーバーをそのまま Kubernetes のノードとしてプロビジョニングする OSS が 1.0.0 に達した。マネージド K8s に寄せず自前のハードウェアでクラスタを組むとき、ノードの供給と入れ替えを宣言的に扱えるかどうかが運用の重さを左右する。Talos Linux のようなイミュータブル OS と同じ層を狙う選択肢なので、1.0.0 を機に一度中身を見ておくと、次のノード更新の判断が変わる。</p>
+<p class="links"><a href="https://osb-alliance.de/news/metal-stack-v1-0-0">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fosb-alliance.de%2Fnews%2Fmetal-stack-v1-0-0">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry に「カーボン」を第一級シグナルとして載せる設計</h3>
+<p>CNCF ブログで、Software Carbon Intensity(SCI)をログ・メトリクス・トレースと同格のシグナルとして OpenTelemetry に組み込む設計が共有された。収集を OTel に寄せている構成では、消費電力や炭素排出は今のところ独自メトリクスでしか拾えず、標準化されれば既存のダッシュボードやアラートの対象にそのまま乗る。リソース要求の適正化をコスト削減だけでなく環境負荷の指標としても説明できるようになる、という点が実務に効く。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/15/carbon-as-a-first-class-signal-bringing-software-carbon-intensity-to-opentelemetry/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F15%2Fcarbon-as-a-first-class-signal-bringing-software-carbon-intensity-to-opentelemetry%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>kubernetes-sigs の Cluster Inventory API が v0.2.0</h3>
+<p>複数クラスタの情報を 1 つの API で扱う kubernetes-sigs の Cluster Inventory API が v0.2.0 になった。ClusterProfile と PlacementDecision の v1alpha2 API が入り、CRD の検証や kubectl の表示、クラスタへのアクセス設定も改善している。「どのワークロードをどのクラスタに置くか」を宣言的に決めるための土台になる部品で、α のうちから動きを追っておくと後で構成を組むときに効く。</p>
+<ul>
+<li><a href="https://x.com/kahirokunn/status/2110634663320653843">@kahirokunn のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fkahirokunn%2Fstatus%2F2110634663320653843">Google 翻訳で読む</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cluster-inventory-api/releases/tag/v0.2.0">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fcluster-inventory-api%2Freleases%2Ftag%2Fv0.2.0">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

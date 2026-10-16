@@ -4,11 +4,39 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 15 Oct 2026 00:30:02 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Oct 2026 00:19:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-16.html</guid>
+            <pubDate>Fri, 16 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>SteamOS 0.5.6 ベータ(Steam Frame 向け):mDNS の汚染解消と .apk の「Steam に追加」対応</h3>
+<p>Steam Frame 向け SteamOS のベータが 0.5.6 に上がった。avahi-daemon が mDNS を公開することで frame-XXXX.local の対応付けが汚染され、シャットダウンが遅れることがある問題が止められ、性能オーバーレイのバッテリー／メモリ表示も改善している。デスクトップモードの右クリック「Steam に追加」で .apk を扱えるようになった点は、Steam 以外のアプリを持ち込む導線が広がる変更で、Steam Frame の使い方を考えるうえで見ておきたい。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/687519694976975601">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F687519694976975601">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Steam Frame の Steam クライアント更新:ワイヤレスアダプターのペアリング改善</h3>
+<p>Steam Frame の Steam クライアントが全ユーザー向けに配信され、Steam Frame Wireless Adapter のペアリング信頼性と、ペアリング後の初回接続の進捗表示が改善した。設定で無効にしているのに起動時に Wi-Fi 省電力が有効になる不具合や、Windows でのアダプターの信頼性も直っている。無線でつなぐ構成ほど効いてくる更新なので、繋がりにくさを感じていたなら真っ先に当てたい。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/687519694976975615">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F687519694976975615">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>GeForce NOW に DLSS 4.5 の画質コントロールが追加</h3>
+<p>GeForce NOW に NVIDIA DLSS 4.5 のコントロールが入り、会員が対応ゲームの見え方と動きをクラウド側で選べるようになった。最新ハードを持っていなくても恩恵を受けられるのがクラウドの利点で、画質とフレームレートのバランスを詰めたい人ほど影響が大きい。同日の発表の残りは Enshrouded の 1.0 移行など個別タイトル寄りの内容なので、サービス面のこの変更だけを拾っておけばよい。</p>
+<p class="links"><a href="https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2Fgeforce-now-thursday-enshrouded-update%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sunshine v2026.1015.174736(Web UI の SPA 化・ペアリング不具合の修正)</h3>
+<p>自宅のゲーム PC から Moonlight 側へ配信する側で使う Sunshine の新ビルド。Web UI のシングルページアプリケーション化とテスト追加という内部刷新に加え、ペアリング時に重複したクライアント証明書が残る問題の修正と、Flatpak 版でコマンドに接頭辞を付けなくてよくなった点が実運用に効く。10/15 に 2 つのビルドが出ているが内容は同一なので、新しい方だけを挙げる。</p>
+<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1015.174736">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1015.174736">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-10-15]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-15.html</link>

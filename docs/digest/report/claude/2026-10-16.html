@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-16</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-16</h1>
+<article class="report"><h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Opus 5.5 fast mode が正式提供に、ウェイトリストも撤廃</h3>
+<p>Claude Platform の fast mode が research preview を終え、順番待ちなしで使えるようになった。同じ Opus 5.5 のまま最大 2.5 倍速く、$8 / $40（100万トークンあたり）で Microsoft Foundry（Azure ホスト）でも提供、Google Cloud は近日対応。Claude Code 側の fast mode は従来どおり extra usage credits を使う点が違うので、速さをどちらで買うかを選ぶ材料になる。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2110825294655562048">ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2110825294655562048">Google 翻訳で読む</a></li>
+<li><a href="https://platform.claude.com/docs/en/build-with-claude/fast-mode">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatform.claude.com%2Fdocs%2Fen%2Fbuild-with-claude%2Ffast-mode">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code の Code Review が Team / Enterprise プランで一般提供</h3>
+<p>Team / Enterprise プランで Code Review が GA になり、管理者がリポジトリごとに Quick / Standard / Deep のレビュー深さを選べるようになった。レビューは速くなり、重要なバグをより拾えるようになったとしている。深さを選べるということは、検出力とコストのバランスをリポジトリ単位で設計できるということで、AI 時代のレビュー運用を詰めるときの判断材料になる。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2110866210573386065">ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2110866210573386065">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code に消させたファイルは /rewind では戻らないことがある</h3>
+<p>Claude が変えたファイルを戻す /rewind が、どこまで戻せるのかをダミーファイル 5 通りの変更 × 15 回で実測した記事。削除されたファイルは戻らず、メニューに「No code changes」と出るかどうかが見分け方になるという。復元できる前提で破壊的な操作を任せる前に、守備範囲を正確に知っておきたい。</p>
+<p class="links"><a href="https://qiita.com/suwa_nobu/items/18c8456c7a594b24a737">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.300 / v2.1.301 — オートモードの判断根拠が OpenTelemetry で見えるようになった</h3>
+<p>v2.1.300 で OpenTelemetry の GenAI 属性が追加され、Claude Platform on AWS の /advisor にも対応した。続く v2.1.301 では tool_decision イベントに classifier_verdict・permission_mode・classifier_category が加わり、自動承認が分類器の判断によるものか権限ルールによるものかを区別して追えるようになっている。エージェントにどこまで権限を渡すかを運用で詰めるとき、判断の内訳を後から検証できるのは大きい。同じリリースでは、未プッシュのコミットを残したまま WorktreeCreate フックのワークツリーを確認なしに削除してしまう問題も修正された。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261015-cc-updates-v2-1-300/">記事を読む</a></p>
+<ul>
+<li><a href="https://claude-code-log.com/changelog/v2.1.301#item-6b1a539ed0ad">v2.1.301 のチェンジログ（該当項目）</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>OpenCode 2.0 でサーバープロセスが常駐し、Ollama に定期アクセスするようになった</h3>
+<p>OpenCode を 2.0 にアップグレードしたところ、サーバープロセスが常駐して Ollama へ定期的にアクセスするようになった、という Antigravity CLI でリポジトリを調査したレポート。コーディングエージェントを CI から呼んでいる場合、常駐プロセスの存在はリソース消費や外部通信の前提を変えるので、上げる前に把握しておきたい。</p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2110660869692772815">npaka123 のポスト</a></li>
+<li><a href="https://zenn.dev/7shi/scraps/f4f945a0daa5c1">リンク先を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

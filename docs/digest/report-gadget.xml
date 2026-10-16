@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 15 Oct 2026 00:28:30 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 16 Oct 2026 00:15:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-16.html</guid>
+            <pubDate>Fri, 16 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>XREAL、ARグラス「XREAL 1 Pro+」を599ドルで発表・即日発売</h3>
+<p>XREAL が AR グラス「XREAL 1 Pro+」を発表し、599 ドルで即日発売した。2025 年初頭に登場したフラッグシップ One Pro のハードウェア更新版で、ディスプレイの明るさと空間表示・装着感を改善した内容になっている。AR グラス各社が相次いで新製品を出す時期だけに、購入検討中の比較対象が 1 つ新しくなった点は押さえておきたい。</p>
+<p class="links"><a href="https://roadtovr.com/xreal-1-pro-plus-release-date-price/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Froadtovr.com%2Fxreal-1-pro-plus-release-date-price%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-15]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-15.html</link>
