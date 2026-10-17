@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-17</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-17</h1>
+<article class="report"><h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Claude Code チームのコードレビュー改革 — AI が書いた 9 割のコードをどう検証するか</h3>
+<p>Claude Code のコードの約 9 割を Claude 自身が書く状況で、6〜9 月にマージ数を 2 倍以上に増やしながらリバート率を 4 割以上下げたレビュー体制の全容。PR 前の検証、並行して走る AI レビューと投票、セキュリティで止める層、リスクに応じた承認人数、マージキューと段階リリースという 7 層で「人間のレビュー時間を最小化」する設計は、自チームのレビュー工程を組み直すときの叩き台になる。「人が全部読む」前提を捨てたうえで人間に何を残すか、という線引きが読みどころ。</p>
+<p class="links"><a href="https://claude.dev/blog/solving-code-review-at-anthropic/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fsolving-code-review-at-anthropic%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://qiita.com/NaokiIshimura/items/0a79a9daf29ae7553f14">日本語の要約を読む</a></li>
+<li><a href="https://x.com/_nogu66/status/2110988110930878874">@_nogu66 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Anthropic の蒸留攻撃対策と preserved thinking — Claude API の会話履歴の扱いが変わる</h3>
+<p>Anthropic が 2026 年 10 月 12 日に公開した蒸留攻撃対策を、ドキュメントと突き合わせて整理した解説。蒸留者が集められるデータを約 90〜99% 減らしたという 3 つの防御に加えて、API 連携側の挙動が変わる preserved thinking の仕様と、遮断されたリクエストへの課金という運用に効く論点まで押さえている。会話履歴を自前で組み立てて Claude API を叩いているなら、thinking の保持と送信の扱いを先に確認しておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/anthropic-distillation-defenses-preserved-thinking/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.302 — アイドルコンパクションを止められるようになった</h3>
+<p>放置したセッションを勝手に圧縮する「アイドルコンパクション」を /config からオフにできるようになり、オフにする方法が圧縮後の通知にも示されるようになった。あわせて、auto mode のクライアント側分類器が使うモデルを <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> で選べるようになり、Read ツールが巨大な画像やデバイスを丸ごとメモリに読み込む問題も 128 MB 上限で塞がれている。長いセッションを離席して戻ると要約に置き換わって文脈を失う、という声に応えた変更なので、常用しているなら設定を確認しておきたい。</p>
+<ul>
+<li><a href="https://claude-code-log.com/changelog/v2.1.302#item-50fcefeec91b">v2.1.302 のチェンジログ（Idle compaction）</a></li>
+<li><a href="https://claude-code-log.com/changelog/v2.1.302#item-cdeae8ea44ff">v2.1.302 のチェンジログ（CLAUDE_CODE_AUTO_MODE_MODEL）</a></li>
+<li><a href="https://x.com/oikon48/status/2111142721490718769">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>AI レビューコメントへの自動対応を CI に載せる設計 — 無限ループしない・壊さない・高くつかない</h3>
+<p>社内業務の約 98% を launchd の定期ジョブと Claude Code の無人実行で回している会社が、AI レビューの指摘に自動で対応させる GitHub Actions をどう設計したかの記録。「無限ループしない・壊さない・高くつかない」を軸に、打ち切り条件や検証の挟み方、コストの抑え方が具体的に書かれていて、エージェントを CI に常駐させるときの事故りどころが分かる。無人実行の割合を増やしたいときの参考になる。</p>
+<p class="links"><a href="https://qiita.com/joinclass/items/965e47660dbd8f0ce394">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Band が複数の AI コーディングエージェントを束ねるデスクトップアプリを公開</h3>
+<p>複数の AI コーディングエージェントを同時に走らせると、進捗や成果物が散らばって、どれが何を触っているのか分からなくなりやすい。Band はそこを開発者向けのデスクトップアプリでまとめて扱おうというツールで、並行実行を前提にした作業場所の作り方として気になる。エージェントを何本も走らせる運用に踏み込んでいるなら、まず何を束ねられるのかを確認しておきたい。</p>
+<p class="links"><a href="https://siliconangle.com/2026/10/16/band-launches-desktop-app-for-developer-collaboration-and-control-of-multiple-ai-coding-agents/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsiliconangle.com%2F2026%2F10%2F16%2Fband-launches-desktop-app-for-developer-collaboration-and-control-of-multiple-ai-coding-agents%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

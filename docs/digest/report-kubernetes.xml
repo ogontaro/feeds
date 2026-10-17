@@ -4,11 +4,29 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 16 Oct 2026 00:12:08 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 Oct 2026 00:15:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-17]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-17.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-17.html</guid>
+            <pubDate>Sat, 17 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Agent-first IDP — 大手とクラウド各社はエージェント向けに基盤をどう作り替えているか</h3>
+<p>Block、Uber、AWS、Azure、Google が、AI エージェントを基盤の利用者に加える前提でプラットフォームをどう作り替えているかと、IDP をエージェント向けの基盤（AEP）へ育てるための 9 つの実践をまとめた記事。Backstage でポータルを出し GitOps でクラスタを同期している立場からは、人間の開発者向けに組んだセルフサービスと権限の設計を、エージェントが叩く前提でどこから作り直すかという問いとして読める。個別の製品紹介ではなく実践の形で並んでいるので、自チームの IDP の次の一歩を決める材料になる。</p>
+<p class="links"><a href="https://platformengineering.org/blog/agent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fagent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>1 つの依頼が約 20 のリクエストになる — Kubernetes はエージェントにどう応えるか</h3>
+<p>エージェントに 1 つ頼むと、その裏で 20 前後のリクエストが発生する。この増え方を前提に、KubeCon 前の動向を追う連載が Kubernetes 側の変化を扱っている。エージェントを動かす側と、エージェントに運用させる側の両方が同じクラスタに載る構成では、リクエスト量・資源の持ち方・スケジューリングの前提がこれまでと変わる。HolmesGPT を AI SRE として自宅クラスタで使っているなら、自分が踏み込もうとしている領域が上流でどう扱われ始めているかを先に押さえておく価値がある。</p>
+<p class="links"><a href="https://thenewstack.io/kagent-kubernetes-ai-agents/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkagent-kubernetes-ai-agents%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-16]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-16.html</link>

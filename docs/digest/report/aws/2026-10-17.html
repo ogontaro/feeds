@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-17</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-17</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Reflection の Beam が SageMaker JumpStart と AWS Trainium で提供開始 — エージェントコーディング向けのオープンウェイトモデル</h3>
+<p>米 Reflection の最初のオープンウェイトモデル Beam が SageMaker JumpStart に追加され、AWS Trainium でも動くようになった。コーディングと長期タスク（long-horizon）を狙ったモデルで、JumpStart のリアルタイムエンドポイントか、HyperPod Inference に SGLang / vLLM を載せる Kubernetes ネイティブな構成かを選べる。重みを選べるモデルを自前のデータとインフラの上でエージェントに使いたいとき、その候補が増えた点が読みどころ。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/01/reflection-beam-on-sagemaker-jumpstart-and-aws-trainium/">SageMaker JumpStart / AWS Trainium での提供開始（What&#39;s New）</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore で組むエージェント評価の 9 段階フレームワーク</h3>
+<p>自律エージェントは「静かに壊れる」— レイテンシは平らなまま回答の品質だけがじわじわ落ちる、という失敗の仕方をする。この記事は AgentCore の上で、最初のコミットから本番運用までライフサイクル全体を 9 段階に分けて評価し、気づきにくい品質劣化を捕まえる枠組みを示している。エージェントを常用・本番投入しているなら、どの段階で何を測るかの設計図としてそのまま流用できる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>NVIDIA Nemotron 3.5 Super VL が SageMaker JumpStart に追加</h3>
+<p>画像・動画・テキストを入力に取り、テキストを生成する Nemotron 3.5 ファミリーの vision-language モデルが SageMaker JumpStart で使えるようになった。文書インテリジェンス、GUI 理解、動画の質問応答、マルチモーダルなエージェント用途を想定したモデルで、AWS 上でマルチモーダルなエージェントを組むときの選択肢が 1 つ増える。画面操作や動画を扱うエージェントを検討しているなら、まず性能とコストの当たりを付けておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/01/nvidia-nemotron-3.5-super-vl-on-sagemaker-jumpstart/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F01%2Fnvidia-nemotron-3.5-super-vl-on-sagemaker-jumpstart%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock の Anthropic Usage Policy が更新（11 月 12 日施行）— 新旧を突き合わせた確認</h3>
+<p>Bedrock で Anthropic のモデルを使う利用者に届く Usage Policy の更新について、新旧の文面を並べて差分を確認した記事。個人への助言・判断に関する High-risk 要件の見直し、機器制御の要件の新設、許可されていない手段による Claude の再販・プロキシの禁止が主な変更点。自前のサービスに Claude を組み込んで提供しているなら、施行前に自社の使い方がどこに当たるかを確認しておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/anthropic-usage-policy-update-bedrock-health/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Transform が Azure→AWS のコード変換に対応 — .NET 移行をエージェントが担う</h3>
+<p>AWS Transform の .NET モダナイゼーションエージェントが、Azure SDK を使ったコードを AWS SDK 相当へ変換する機能が一般提供になった。Azure Functions + Cosmos DB を Lambda + DynamoDB に置き換える、というようにサービス単位で対応付ける。Azure 上の .NET アプリの移行を検討しているなら、人手で書き換える範囲をどこまで機械的に寄せられるかの当たりを付けられる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-transform-azure-to-aws-code-conversion%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

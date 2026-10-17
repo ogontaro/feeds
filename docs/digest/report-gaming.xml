@@ -4,11 +4,34 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 16 Oct 2026 00:19:17 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 Oct 2026 00:20:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-17]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-17.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-17.html</guid>
+            <pubDate>Sat, 17 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>SteamOS 3.9.3 ベータ配信、Steam Machine のスリープ復帰や GPU エラーの修正が入る</h3>
+<p>SteamOS のベータ/プレビューチャンネルに 3.9.3 が入り、安定版 3.8 以降の変更点がまとめて読める形で出た。今回追加された分は Steam Machine まわりが中心で、スリープ復帰後の性能問題や GPU エラーにつながる不具合が修正されている。Valve の新ハードを前提にした調整がベータで進んでいることが分かるので、Steam Machine を自宅環境の候補に入れているなら版の進み方を追っておく価値がある。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/1675200/view/687519694976975287">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F1675200%2Fview%2F687519694976975287">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenNOW 1.0.3 正式リリース、複数アカウント切り替えとプラン別 DLSS 表示が入る</h3>
+<p>GeForce NOW を自前クライアントで扱う OpenNOW の 1.0.3 が正式リリースになった。複数アカウントを同時にサインインさせて起動時に選ぶ機能、NVIDIA の DLSS 対応リストに基づくラベル表示とプラン(メンバーシップ)別の DLSS 対応・上書き、左ドックに移った Ctrl+G ドロワーとクイックトグル、ゲームタイルの情報量増加が入っている。nightly を追いかけなくても実用的な変更がまとまって入る区切りなので、GeForce NOW を自前クライアントで使っているなら更新判断の材料になる。</p>
+<p class="links"><a href="https://github.com/OpenCloudGaming/OpenNOW/releases/tag/v1.0.3">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FOpenCloudGaming%2FOpenNOW%2Freleases%2Ftag%2Fv1.0.3">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenNOW の Decky プラグイン 0.1.0 公開、Steam のゲームモードから直接使えるように</h3>
+<p>OpenNOW を Decky Loader 経由で入れるプラグインが 0.1.0 として公開された。Decky の Developer タブから URL を指定してインストールする形で、Steam のゲームモードから OpenNOW を扱えるようにするもの。ゲームモードに統合されるかどうかは Steam Deck をストリーミング端末として使うときの手数に直結するので、デスクトップモードへ切り替える手間を減らしたい人には効く。</p>
+<p class="links"><a href="https://github.com/OpenCloudGaming/OpenNOW/releases/tag/decky-v0.1.0">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FOpenCloudGaming%2FOpenNOW%2Freleases%2Ftag%2Fdecky-v0.1.0">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-10-16]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-16.html</link>
