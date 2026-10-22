@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-22</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-22</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon EKS 上の AI エージェント向け可観測性パターン</h3>
+<p>エージェントのエンドポイントが HTTP 200 を返していても、なぜ誤ったツールを選んだのか、どこでトークンを使い切ったのか、なぜループしたのかは従来の監視では見えない。この記事は OpenTelemetry を使った分散型・集中型の 2 パターンを、Bifrost・Amazon Bedrock・Langfuse で実際に組み立てて比較している。OpenTelemetry と LGTM スタックで自宅クラスタの可観測性をまとめている立場からは、エージェント特有のスパン設計とシンクの置き方をそのまま流用できるかを見極める材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/observability-patterns-for-ai-agents-on-amazon-eks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fobservability-patterns-for-ai-agents-on-amazon-eks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>[アップデート] Amazon Bedrock Guardrailsのコンテキストグラウンディングチェックに Standard ティアが追加されたので試してみた</h3>
+<p>Bedrock Guardrails のコンテキストグラウンディングチェックに、日本語対応の Standard ティアが加わった。Classic と Standard の違いを整理したうえで、実際に試した結果がまとめられている。RAG の回答が参照文書に基づいているかを日本語で検査したいときに、どちらのティアを選ぶべきかの判断材料として読める。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-guardrails-grounding-standard-tier/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Reflection のオープンウェイトモデル Beam が SageMaker JumpStart と AWS Trainium で利用可能に</h3>
+<p>米国 Reflection の初のオープンウェイトモデル Beam が、SageMaker JumpStart のモデルハブと AWS Trainium で使えるようになった。推論・コーディング・エージェント系のベンチマークで同クラスのオープンウェイトの最前線にあるとされ、重みの検査・改変やファインチューニングも前提にしている。モデルを呼ぶだけでなく自社ドメインに合わせて手を入れたい場合の選択肢として、まず素性を押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/01/reflection-beam-on-sagemaker-jumpstart-and-aws-trainium/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F01%2Freflection-beam-on-sagemaker-jumpstart-and-aws-trainium%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>マルチエージェントシステムの本番運用における 5 つの課題と Deep Insight の解き方</h3>
+<p>マルチエージェントのプロトタイプは数日で作れても本番で壁に当たる、という前提で、オーケストレーション・エージェントごとのモデル選択・安定運用・安全なコード実行・監視という 5 つの課題を定義し、AWS 上のオープンソースのマルチエージェントシステム Deep Insight がそれぞれどう解いているかを示す。複数エージェントの並行実行と協調を実運用に持ち込むときに、どこが先に詰まるのかを整理する枠組みとして使える。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2F5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Step Functions と Amazon Bedrock AgentCore による医療コーディングの自動化</h3>
+<p>決定的なオーケストレーションと、範囲を限定したエージェント推論を組み合わせる設計の事例。安全ブロックリスト、完全一致、そして判断が必要な用語だけを AI エージェントに回すという順で、安い処理から順にエスカレーションし、すべての振り分け判断を監査できるようにしている。エージェントに何を任せ、何を任せないかをコストと監査性の両面から線引きする際の、具体的なパターンとして読める。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fautomate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

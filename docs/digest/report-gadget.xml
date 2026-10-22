@@ -4,11 +4,29 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 17 Oct 2026 00:19:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Oct 2026 04:38:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-22]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-22.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-22.html</guid>
+            <pubDate>Thu, 22 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>OpenXR に「空間コンテナ」が正式批准、複数の XR アプリが同じ空間を共有できるように</h3>
+<p>Khronos Group が、複数の XR アプリで一つの空間を共有する標準仕様「spatial containers」を批准し、Google は Android XR での対応を表明している。これまでアプリは空間を占有するのが前提だったため、これは「アプリの使い方が変わる」類の基盤変更で、マルチタスク前提の XR 体験やアプリ間連携の設計に直結する。Android XR 端末の購入判断というより、今後の XR アプリの作り方・組み合わせ方を左右する仕様として押さえておきたい。</p>
+<p class="links"><a href="https://mixed-news.com/en/openxr-spatial-containers-multiple-xr-apps-android-xr-godot/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmixed-news.com%2Fen%2Fopenxr-spatial-containers-multiple-xr-apps-android-xr-godot%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Meta AI が Quest に英国・豪州・日本など 6 か国で展開</h3>
+<p>Meta AI が Quest ヘッドセットで、英国・オーストラリア・日本・メキシコ・韓国・シンガポールの 6 か国に広がる。日本国内の Quest 利用者にとっては、端末の主要機能が正式に対応するタイミングであり、購入済みのヘッドセットの使い勝手が変わる。記事で対応範囲と日本語環境での実用度を確認しておきたい。</p>
+<p class="links"><a href="https://mixed-news.com/en/meta-ai-quest-uk-australia-japan-mexico-korea-singapore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmixed-news.com%2Fen%2Fmeta-ai-quest-uk-australia-japan-mexico-korea-singapore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-17]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-17.html</link>

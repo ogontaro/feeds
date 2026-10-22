@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-22</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-22</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Duet がリサーチプレビュー公開——自分から動く常時稼働エージェント</h3>
+<p>Anthropic が、Claude が必要なことに自分から気づいて動く常時稼働型エージェントアプリ「Claude Duet」のリサーチプレビューを開始した。依頼した作業を離席中も進め、利用者の代わりに行動する前には確認を取る。Opus 5.5 ベースで 6,000 のコネクタに対応し、現在は米国 Pro/Max 向けのウェイトリスト提供だが、エージェントの権限境界と「能動型」の UX をどう設計するかを考える材料になる。</p>
+<p class="links"><a href="https://claude.com/product/claude-duet">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.com%2Fproduct%2Fclaude-duet">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2113056902150291793">oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.307——safety_event による安全機構の可観測化と API バージョン移行</h3>
+<p>Claude Code v2.1.307 では、パーミッションルール・オートモード・セーフティチェック・フック・サンドボックスがツール呼び出しを停止・確認要求・差し戻しした際に、<code>claude_code.safety_event</code> を OpenTelemetry イベントとして送出するようになった。あわせて <code>/claude-api api-version</code> で Claude API のコードを API バージョン <code>2026-10-21</code> へ移行できる。HTTP MCP ツール呼び出しの二重送信を修正し、再試行を読み取り専用または冪等なツールに限定する変更もあり、エージェント運用の可観測性と安全性を高めたい人に直結する。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261022-cc-updates-v2-1-307/">記事を読む</a> <a href="https://claude-code-log.com/changelog/v2.1.307">変更履歴を読む</a></p>
+</section>
+<section class="item">
+<h3>スマホから2行で Claude Code の窓2つを動かし、6分で報告2件を得た自作ツール</h3>
+<p>iPhone から2行打つと、窓口の AI がほかの Claude Code の窓2つへ仕事を振り、6分24秒で報告が2件返ってきたという試行の記録。窓を並べる自作ツールの作り方と、そこでのつまずきがまとめられている。公式の Remote Control だけでは足りない部分をどう補うか、複数エージェントの並行実行を実運用に組み込む際の具体例として読める。</p>
+<p class="links"><a href="https://qiita.com/Ciel_lab/items/8807f0a5556e2efdfbe5">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Claude Code プラグイン「Superpowers」を個人開発で使い、業務利用の条件を考える</h3>
+<p>Claude Code 向けのプラグイン「Superpowers」を個人開発で使った感想と、業務利用を考えるうえでの考察をまとめた記事。AI エージェントによる開発のためのフレームワークが何を担うのかを押さえたうえで、チームに持ち込む前に何を検討すべきかが分かる。エージェント向けツールの導入判断の材料として読む価値がある。</p>
+<p class="links"><a href="https://qiita.com/ha8960/items/4b54ab7528fce5111e1a">記事を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI がコーディング時間を短縮する一方で、OSS のレビュー受信箱を「粗悪な PR」が埋めている</h3>
+<p>The Register の記事が、AI によるコーディング高速化の副作用として、OSS のレビュー受信箱に「slop」と呼ぶ粗悪な PR が流入している状況を伝えている。メンテナの見積もりでは受信 PR の約4分の1、大規模プロジェクトでは 31% に達するという。AI が当たり前にコードを出す前提で、レビューの目的と人間の役割をどこに置くかを考える材料になる。</p>
+<p class="links"><a href="https://www.theregister.com/ai-and-ml/2026/10/21/ai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap/5304389">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F10%2F21%2Fai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap%2F5304389">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

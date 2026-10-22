@@ -4,11 +4,49 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 17 Oct 2026 00:13:40 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Oct 2026 04:33:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-22]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-22.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-22.html</guid>
+            <pubDate>Thu, 22 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Duet がリサーチプレビュー公開——自分から動く常時稼働エージェント</h3>
+<p>Anthropic が、Claude が必要なことに自分から気づいて動く常時稼働型エージェントアプリ「Claude Duet」のリサーチプレビューを開始した。依頼した作業を離席中も進め、利用者の代わりに行動する前には確認を取る。Opus 5.5 ベースで 6,000 のコネクタに対応し、現在は米国 Pro/Max 向けのウェイトリスト提供だが、エージェントの権限境界と「能動型」の UX をどう設計するかを考える材料になる。</p>
+<p class="links"><a href="https://claude.com/product/claude-duet">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.com%2Fproduct%2Fclaude-duet">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2113056902150291793">oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.307——safety_event による安全機構の可観測化と API バージョン移行</h3>
+<p>Claude Code v2.1.307 では、パーミッションルール・オートモード・セーフティチェック・フック・サンドボックスがツール呼び出しを停止・確認要求・差し戻しした際に、<code>claude_code.safety_event</code> を OpenTelemetry イベントとして送出するようになった。あわせて <code>/claude-api api-version</code> で Claude API のコードを API バージョン <code>2026-10-21</code> へ移行できる。HTTP MCP ツール呼び出しの二重送信を修正し、再試行を読み取り専用または冪等なツールに限定する変更もあり、エージェント運用の可観測性と安全性を高めたい人に直結する。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261022-cc-updates-v2-1-307/">記事を読む</a> <a href="https://claude-code-log.com/changelog/v2.1.307">変更履歴を読む</a></p>
+</section>
+<section class="item">
+<h3>スマホから2行で Claude Code の窓2つを動かし、6分で報告2件を得た自作ツール</h3>
+<p>iPhone から2行打つと、窓口の AI がほかの Claude Code の窓2つへ仕事を振り、6分24秒で報告が2件返ってきたという試行の記録。窓を並べる自作ツールの作り方と、そこでのつまずきがまとめられている。公式の Remote Control だけでは足りない部分をどう補うか、複数エージェントの並行実行を実運用に組み込む際の具体例として読める。</p>
+<p class="links"><a href="https://qiita.com/Ciel_lab/items/8807f0a5556e2efdfbe5">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Claude Code プラグイン「Superpowers」を個人開発で使い、業務利用の条件を考える</h3>
+<p>Claude Code 向けのプラグイン「Superpowers」を個人開発で使った感想と、業務利用を考えるうえでの考察をまとめた記事。AI エージェントによる開発のためのフレームワークが何を担うのかを押さえたうえで、チームに持ち込む前に何を検討すべきかが分かる。エージェント向けツールの導入判断の材料として読む価値がある。</p>
+<p class="links"><a href="https://qiita.com/ha8960/items/4b54ab7528fce5111e1a">記事を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI がコーディング時間を短縮する一方で、OSS のレビュー受信箱を「粗悪な PR」が埋めている</h3>
+<p>The Register の記事が、AI によるコーディング高速化の副作用として、OSS のレビュー受信箱に「slop」と呼ぶ粗悪な PR が流入している状況を伝えている。メンテナの見積もりでは受信 PR の約4分の1、大規模プロジェクトでは 31% に達するという。AI が当たり前にコードを出す前提で、レビューの目的と人間の役割をどこに置くかを考える材料になる。</p>
+<p class="links"><a href="https://www.theregister.com/ai-and-ml/2026/10/21/ai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap/5304389">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F10%2F21%2Fai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap%2F5304389">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-17]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-17.html</link>
@@ -1177,32 +1215,6 @@
 <h3>Claude Code v2.1.274 リリースノート</h3>
 <p>メモリ逼迫時の可視警告、MCPサーバー接続待ちを制御する<code>CLAUDE_CODE_MCP_STARTUP_WAIT_MS</code>、OpenTelemetryへのeffort属性やmanaged-settings解決イベントの追加など、運用・監視に効く変更がまとまっている。細かいchangelog項目を追うよりこのリリースノートを見た方が全体像を把握しやすい。</p>
 <p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.274">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.274">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-17]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-17.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-17.html</guid>
-            <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の1本</h2>
-<section class="item">
-<h3>Claude CoworkとChatが「ひとつのClaude」に統合</h3>
-<p>Cowork（複数タスクを任せるエージェント的モード)と通常のチャットが分かれていた体験が一本化されるという発表です。ちょっとした質問から「正午までに仕上げてほしいレポート」の丸投げまで、同じ入り口でClaudeに任せられるようになる点は、Claude Codeなどエージェント的にClaudeを使う開発者にとって、今後のワークフロー設計を考える上で参考になります。Pro/Maxプランからweb・デスクトップ・モバイルに順次展開されるとのことで、展開スケジュールも押さえておく価値があります。</p>
-<p class="links"><a href="https://simonwillison.net/2026/Sep/16/one-claude/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FSep%2F16%2Fone-claude%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-16]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-16.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-16.html</guid>
-            <pubDate>Wed, 16 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の1本</h2>
-<section class="item">
-<h3>Claude Code v2.1.273 リリース — LLMゲートウェイ向けヘッダーとリモートセッションのフォークに対応</h3>
-<p>LLMゲートウェイ経由でClaude Codeを運用しているなら、<code>x-claude-code-request-class</code>などのリクエストヘッダー追加（<code>CLAUDE_CODE_GATEWAY_HINT_HEADERS=1</code>で有効化）はログ分析やルーティングに直結する地味だが効く変更。MCPサーバーが切断して自動再接続もあきらめた際に<code>/mcp</code>を案内する通知や、Claudeアプリから始めたリモートセッションをバックグラウンドでフォークできる機能も、日々の運用・並行作業のワークフローに関わる人は要チェック。</p>
-<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.273">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.273">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

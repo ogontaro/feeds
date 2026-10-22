@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 17 Oct 2026 00:17:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 22 Oct 2026 04:37:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-22]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-22.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-22.html</guid>
+            <pubDate>Thu, 22 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon EKS 上の AI エージェント向け可観測性パターン</h3>
+<p>エージェントのエンドポイントが HTTP 200 を返していても、なぜ誤ったツールを選んだのか、どこでトークンを使い切ったのか、なぜループしたのかは従来の監視では見えない。この記事は OpenTelemetry を使った分散型・集中型の 2 パターンを、Bifrost・Amazon Bedrock・Langfuse で実際に組み立てて比較している。OpenTelemetry と LGTM スタックで自宅クラスタの可観測性をまとめている立場からは、エージェント特有のスパン設計とシンクの置き方をそのまま流用できるかを見極める材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/observability-patterns-for-ai-agents-on-amazon-eks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fobservability-patterns-for-ai-agents-on-amazon-eks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>[アップデート] Amazon Bedrock Guardrailsのコンテキストグラウンディングチェックに Standard ティアが追加されたので試してみた</h3>
+<p>Bedrock Guardrails のコンテキストグラウンディングチェックに、日本語対応の Standard ティアが加わった。Classic と Standard の違いを整理したうえで、実際に試した結果がまとめられている。RAG の回答が参照文書に基づいているかを日本語で検査したいときに、どちらのティアを選ぶべきかの判断材料として読める。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-guardrails-grounding-standard-tier/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Reflection のオープンウェイトモデル Beam が SageMaker JumpStart と AWS Trainium で利用可能に</h3>
+<p>米国 Reflection の初のオープンウェイトモデル Beam が、SageMaker JumpStart のモデルハブと AWS Trainium で使えるようになった。推論・コーディング・エージェント系のベンチマークで同クラスのオープンウェイトの最前線にあるとされ、重みの検査・改変やファインチューニングも前提にしている。モデルを呼ぶだけでなく自社ドメインに合わせて手を入れたい場合の選択肢として、まず素性を押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/01/reflection-beam-on-sagemaker-jumpstart-and-aws-trainium/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F01%2Freflection-beam-on-sagemaker-jumpstart-and-aws-trainium%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>マルチエージェントシステムの本番運用における 5 つの課題と Deep Insight の解き方</h3>
+<p>マルチエージェントのプロトタイプは数日で作れても本番で壁に当たる、という前提で、オーケストレーション・エージェントごとのモデル選択・安定運用・安全なコード実行・監視という 5 つの課題を定義し、AWS 上のオープンソースのマルチエージェントシステム Deep Insight がそれぞれどう解いているかを示す。複数エージェントの並行実行と協調を実運用に持ち込むときに、どこが先に詰まるのかを整理する枠組みとして使える。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2F5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Step Functions と Amazon Bedrock AgentCore による医療コーディングの自動化</h3>
+<p>決定的なオーケストレーションと、範囲を限定したエージェント推論を組み合わせる設計の事例。安全ブロックリスト、完全一致、そして判断が必要な用語だけを AI エージェントに回すという順で、安い処理から順にエスカレーションし、すべての振り分け判断を監査できるようにしている。エージェントに何を任せ、何を任せないかをコストと監査性の両面から線引きする際の、具体的なパターンとして読める。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fautomate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-17]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-17.html</link>
@@ -820,62 +853,6 @@
 <h3>AWS Elastic BeanstalkにCluster Modeが登場</h3>
 <p>コンテナイメージやソースコードを渡すだけで、コンピュートのプロビジョニングや運用をElastic Beanstalk側が肩代わりしてくれる新モード。インフラ管理の手間を減らしたい既存Beanstalkユーザーにとって、移行を検討する価値がある。</p>
 <p class="links"><a href="https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-elastic-beanstalk-introduces-cluster-mode%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-17]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-17.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-17.html</guid>
-            <pubDate>Thu, 17 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Amazon EKS で NVRx を使った耐障害分散トレーニング</h3>
-<p>EKS 上の大規模 GPU 分散学習に NVIDIA 製 NVRx を組み込み、チェックポイント I/O のオーバーラップとジョブ内リスタートで秒単位の障害復旧を実現した事例。H100 を使った 2〜8 ノードのベンチマークで 99% 以上の学習効率を維持しており、EKS で大規模 GPU トレーニング基盤を運用・設計する際の実践的な指針になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/fault-tolerant-distributed-training-on-amazon-eks-using-nvrx/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffault-tolerant-distributed-training-on-amazon-eks-using-nvrx%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon Bedrock AgentCore によるエージェントのシステムプロンプト最適化</h3>
-<p>AgentCore の最適化機能が本番トレースから設定変更案を自動生成し、昇格前に検証する仕組みを技術的に解説する記事。Single Agent／Sub-Agent 向け Reflector のベンチマーク結果も示されており、Bedrock エージェントを本番運用しつつプロンプトチューニングを自動化したいチームに有用。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Foptimizing-agent-system-prompts-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>オープンソースのエージェントスキルでヘルスケア/ライフサイエンス領域のAI推論を改善</h3>
-<p>基盤モデルは正しいガイドラインを引用しても適用を誤りがちという課題に対し、11 の HCLS ドメインにまたがる 38 個のオープンソースエージェントスキルを公開。410 プロンプトの評価で 70〜86% の勝率を示しており、ドメイン特化のエージェント設計に応用できる具体的な実装例として参考になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fimproving-hcls-ai-reasoning-with-open-source-agent-skills%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon Bedrock Data Automation によるサーバーレス PII redaction パイプライン構築</h3>
-<p>カスタムブループリント、Step Functions、Lambda を組み合わせ、スキャン文書から PII を自動検出・削除する構成を紹介。手書きや劣化した文書でも再現率を高めるトークンマッチングの品質チェックを取り入れており、コンプライアンス要件のあるドキュメント処理基盤を設計する際に参考になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-serverless-pii-redaction-pipeline-with-amazon-bedrock-data-automation%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AWSが「はじめての利用体験」を刷新</h3>
-<p>新規サインアップ時に $100 分の Free Tier クレジット付与、マネージドなプロジェクト環境、チーム/リソース権限の簡素化といったスマートなデフォルトを導入。ワークロードが成長した際も移行なしで高度な機能を段階的に有効化できる設計になっており、オンボーディングフローの変化として押さえておく価値がある。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-reimagines-the-getting-started-experience%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-16]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-16.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-16.html</guid>
-            <pubDate>Wed, 16 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
-<section class="item">
-<h3>Amazon Bedrock のプロンプトキャッシュでコストとレイテンシを最適化</h3>
-<p>プロンプトキャッシュは同じコンテキストを繰り返し送る場面で入力トークン費用を最大90%削減できる機能で、Converse API を使った6つの実装パターン（メッセージ内容、システムプロンプト、ツール定義、混在TTL、テナント分離、LangChain連携）を具体的に示している点が実務にそのまま使える。Bedrock を使ったチャットボットやエージェントのコスト最適化を検討している人には設計の参考になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Foptimizing-cost-and-latency-with-amazon-bedrock-prompt-caching%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon SageMaker サーバーレスモデルカスタマイズで商品タグ付けAIを構築</h3>
-<p>Qwen3-8B を教師ありファインチューニング（SFT）と検証可能な報酬による強化学習（RLVR）でカスタマイズし、非同期推論で低コストに運用する構成を紹介しており、大量の商品カタログを扱うEC事業者にとって現実的な生成AI活用の実例になっている。SageMaker のサーバーレスモデルカスタマイズという比較的新しい機能の使い方を学べる点も価値がある。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon SageMaker AI トレーニングジョブにインスタンス優先リスト機能が追加</h3>
-<p>最大5種類のインスタンスタイプを優先順位付きで指定し、空き容量がある最初のタイプで自動起動できるようになったことで、手動のリトライループや容量監視スクリプトが不要になる。GPU インスタンスの確保に苦労している機械学習チームにとって、運用負荷を直接下げる実用的なアップデート。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fannouncing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

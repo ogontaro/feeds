@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-22</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-22</h1>
+<article class="report"><h2>今日の 3 本</h2>
+<section class="item">
+<h3>認証局 eMudhra の中間 CA 秘密鍵が漏洩、ノードとコンテナイメージの信頼ストア更新が必要</h3>
+<p>インドの認証局 eMudhra が持つ中間 CA 8 枚の秘密鍵が漏洩し、Mozilla は影響を公表、Firefox は 3 時間で該当証明書を遮断した。鍵の一つは 4 桁と推測可能な強度で、偽の HTTPS 証明書を作れる状態だったという。クラスタのノード OS やコンテナイメージが古い信頼ストアを持ったままだとこの CA を信頼し続けるため、ca-certificates の更新とベースイメージの再ビルドが必要かを確認したい。</p>
+<p class="links"><a href="https://blog.talosintelligence.com/compromised-intermediate-certificates/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.talosintelligence.com%2Fcompromised-intermediate-certificates%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/emadurandal_cgj/status/2112915927713116585">@emadurandal_cgj のポスト</a></li>
+<li><a href="https://x.com/npaka123/status/2112882441912459398">@npaka123 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>AI SRE を買う前に、既存のコーディングエージェントに Kubernetes の文脈を与える</h3>
+<p>AI SRE 製品を評価する前に、すでに社内にあるコーディングエージェント（Claude Code、Codex、Cursor など）は Kubernetes クラスタを調査できる、という指摘。足りないのはクラスタのマニフェストや運用手順といった文脈で、それを与えれば既存のエージェントが一次調査を担える。HolmesGPT を使っている読者には、製品導入か自前のエージェント活用かを判断する材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/21/before-you-evaluate-an-ai-sre-give-your-existing-agent-context/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F21%2Fbefore-you-evaluate-an-ai-sre-give-your-existing-agent-context%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>分散推論 OSS「llm-d」が 1.0 に到達、推論コスト 11.5 倍削減を IBM Research が確認</h3>
+<p>Kubernetes 上で分散推論を組み立てる OSS の llm-d が 1.0 に到達し、IBM Research が 11.5 倍の推論コスト削減を確認したと報じられている。GPU を抱えるクラスタのコスト最適化を考えるうえで、推論基盤の選択肢として押さえておきたい。ただしベンチマークの条件は記事で確認が必要で、自前のワークロードにそのまま当てはまるとは限らない。</p>
+<p class="links"><a href="https://www.techtimes.com/articles/329305/20261021/open-source-llm-d-10-hits-production-ibm-research-confirms-115x-ai-inference-cost-drop.htm">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.techtimes.com%2Farticles%2F329305%2F20261021%2Fopen-source-llm-d-10-hits-production-ibm-research-confirms-115x-ai-inference-cost-drop.htm">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
