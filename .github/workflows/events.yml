@@ -18,7 +18,10 @@ jobs:
   events:
     runs-on: ubuntu-latest
     steps:
+      # 直列化で待たされた場合も、開始時点の最新 main から生成する
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: jdx/mise-action@v2
       - run: bun install --frozen-lockfile
 
