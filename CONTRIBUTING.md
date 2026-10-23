@@ -204,6 +204,23 @@ SRE から Platform Engineering / IDP が出てきたような、概念・呼称
   取得件数が少ないソースがあるため、潮流は複数月で判定する前提にしています
 - ドメインを持たないので `adoption-log.ndjson` には記録しません
 
+### 月次イベント（`events.yml`, 毎月2日 07:45 JST = cron `45 22 1 * *`）
+
+国内・海外の主要なテックカンファレンスの開催予定（今後2ヶ月）と CFP 締切をまとめるレポートです。
+
+1. `src/digest/events-collect.ts`: developers.events の公開データ（`all-events.json`）から、今後 60 日に
+   開催されるものと、今後 60 日に CFP が締まるものを `.cache/events-input.{json,md}` に書き出します。
+   国内は全件、海外は主要シリーズ名（KubeCon / Open Source Summit / MCPCon など）と AI・Kubernetes・
+   クラウド系のタグで絞ります。規模のデータが無いため、主要度の判定はシリーズ名で行います。
+2. 0 件ならスキップします。
+3. `claude-code-action`: 入力と `report-criteria/events.md` を読み、国内は全件、海外は主要なもの最大 8 件、
+   CFP は締切が近い順に最大 10 件を `.cache/events.md` に書きます。
+4. `src/digest/events-render.ts`: md → `docs/digest/events/YYYY-MM.html`（YYYY-MM は JST の当月）、
+   `docs/digest/events.xml` を再生成します（直近 12 エントリ）。
+
+- 日程・場所・リンクは入力の値だけを使い、AI に作らせません
+- ドメインを持たないので `adoption-log.ndjson` には記録しません
+
 ### セキュリティアラート（`security.yml`, 3時間ごと = cron `17 */3 * * *`）
 
 新しく公表された脆弱性を、自宅インフラの構成に照らして Claude が判定します。ドメイン横断・**アラート単位**です。

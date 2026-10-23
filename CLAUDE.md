@@ -6,9 +6,9 @@ Claude が選定・整理するデイジェストに一本化している。海�
 
 - **デイジェスト** … Claude が選定・整理する日次レポート+週次リリース。**ドメイン単位**
   (`docs/digest/report-<domain>.xml` / `release-<domain>.xml`)。
-  ドメイン横断の例外は2本だけです。月次トレンド(`docs/digest/trend.xml`)は業界全体の潮流
-  （新概念の出現・定着）を追うため、セキュリティアラート(`docs/digest/security.xml`)は
-  緊急度を3時間ごとに追うため、どちらもドメインで分けません
+  1つのドメインに収まらないテーマは、利用者が明示的に求めたときに限り、ドメイン横断のレポートとして
+  1本にまとめます。現在は月次トレンド(`docs/digest/trend.xml`)、セキュリティアラート
+  (`docs/digest/security.xml`)、月次イベント(`docs/digest/events.xml`)の3本です
 - セキュリティの判定基準と自宅インフラの構成は `report-criteria/security.md` が正。
   公開リポジトリのため、ホスト名・バージョン・鍵は書かない
 - 購読ファイルは `docs/opml/digest.opml` の1本のみ
