@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-23</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-23</h1>
+<article class="report"><h2>今日の 3 本</h2>
+<section class="item">
+<h3>OpenTelemetry、セキュリティ修正のためのバージョニング方針を改定</h3>
+<p>Stable な SDK と Contrib コンポーネントが、公開 API の互換性を守ったまま、マイナー/パッチリリースで挙動を変えるセキュリティ修正を入れられるよう方針が変わった。自宅クラスタの可観測性を OTel で組んでいるなら、今後は「互換性維持のため入らない修正」ではなく「入る修正」を前提に、アップグレード時の差分確認を組み込んでおきたい。Collector や SDK のバージョン追随をどう運用するかを考える材料になる。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/security-versioning-policy/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fsecurity-versioning-policy%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry Collector で AI エージェントのテレメトリーを絞り込む</h3>
+<p>AI コーディングエージェントのテレメトリーは量が膨らみやすく、保存コストと読み解きやすさの両面で扱いにくい。Collector のフィルタと加工で必要なシグナルだけを残す方法は、同じ Collector を LGTM スタックに流している構成にそのまま応用できる。可観測性のコスト最適化を進めたい人に実践的な一本。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/22/filtering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F22%2Ffiltering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>本番で動く AI エージェントの「持ち主」は誰か</h3>
+<p>AI エージェントが本番で失敗したとき、誰がオンコールに就き、どの SLO で守るのかという責任分界が決まっていない、という問題を扱う。エージェントを基盤の利用者として扱う流れの中で、アラート・権限・エスカレーションの設計はプラットフォーム側の仕事になる。Backstage や AI SRE の運用に引き寄せて、導入前に決めておく論点を洗い出すのに使える。</p>
+<p class="links"><a href="https://thenewstack.io/production-ai-agent-ownership/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fproduction-ai-agent-ownership%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

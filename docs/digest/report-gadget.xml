@@ -4,11 +4,29 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 22 Oct 2026 04:38:07 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2026 00:38:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-23.html</guid>
+            <pubDate>Fri, 23 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Meta AI、日本を含む6カ国でQuestヘッドセットに対応</h3>
+<p>Quest 上の Meta AI が英国・オーストラリア・日本など6カ国に広がる。日本でも正式対応となるため、日本語環境でどこまで使えるのかを最初に確認しておきたい。ヘッドセット単体の機能が増える、地域展開としては今回いちばん大きな動き。</p>
+<p class="links"><a href="https://mixed-news.com/en/meta-ai-quest-uk-australia-japan-mexico-korea-singapore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmixed-news.com%2Fen%2Fmeta-ai-quest-uk-australia-japan-mexico-korea-singapore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SteamVR、QuestでUSB経由のPC VRゲーム配信に対応</h3>
+<p>SteamVR 2.18 の安定版で、Steam Link を使った USB 有線接続の PC VR ストリーミングが追加された。無線前提だった Quest の PC VR に有線という選択肢が加わり、遅延や安定性を重視する人には実用面の変化が大きい。ヘッドセット側の Steam Link アプリも最新版にする必要がある点は押さえておきたい。</p>
+<p class="links"><a href="https://mixed-news.com/en/steamvr-quest-usb-steam-link-stable-release/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmixed-news.com%2Fen%2Fsteamvr-quest-usb-steam-link-stable-release%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-22]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-22.html</link>

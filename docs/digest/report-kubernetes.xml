@@ -4,11 +4,34 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 22 Oct 2026 04:36:04 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2026 00:35:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-23.html</guid>
+            <pubDate>Fri, 23 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>OpenTelemetry、セキュリティ修正のためのバージョニング方針を改定</h3>
+<p>Stable な SDK と Contrib コンポーネントが、公開 API の互換性を守ったまま、マイナー/パッチリリースで挙動を変えるセキュリティ修正を入れられるよう方針が変わった。自宅クラスタの可観測性を OTel で組んでいるなら、今後は「互換性維持のため入らない修正」ではなく「入る修正」を前提に、アップグレード時の差分確認を組み込んでおきたい。Collector や SDK のバージョン追随をどう運用するかを考える材料になる。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/security-versioning-policy/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fsecurity-versioning-policy%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry Collector で AI エージェントのテレメトリーを絞り込む</h3>
+<p>AI コーディングエージェントのテレメトリーは量が膨らみやすく、保存コストと読み解きやすさの両面で扱いにくい。Collector のフィルタと加工で必要なシグナルだけを残す方法は、同じ Collector を LGTM スタックに流している構成にそのまま応用できる。可観測性のコスト最適化を進めたい人に実践的な一本。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/22/filtering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F22%2Ffiltering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>本番で動く AI エージェントの「持ち主」は誰か</h3>
+<p>AI エージェントが本番で失敗したとき、誰がオンコールに就き、どの SLO で守るのかという責任分界が決まっていない、という問題を扱う。エージェントを基盤の利用者として扱う流れの中で、アラート・権限・エスカレーションの設計はプラットフォーム側の仕事になる。Backstage や AI SRE の運用に引き寄せて、導入前に決めておく論点を洗い出すのに使える。</p>
+<p class="links"><a href="https://thenewstack.io/production-ai-agent-ownership/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fproduction-ai-agent-ownership%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-22]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-22.html</link>
@@ -593,24 +616,6 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-19.html</guid>
             <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-18]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-18.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-18.html</guid>
-            <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>OpenTelemetry everywhere: 大規模メトリクス基盤の移行事例</h3>
-<p>自前のStatsD実装（gostatsd）からOpenTelemetryへメトリクスパイプラインを移行した経験談で、CNCFプロジェクトを本番の大規模環境にどう組み込むかという実務判断の参考になる。ホストサイドカーの構成変更や移行時のトレードオフなど、プラットフォームエンジニアリングの設計判断に直結する内容。</p>
-<p class="links"><a href="https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F17%2Fopentelemetry-everywhere-migrating-a-metrics-platform-at-scale%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Falcoによるランタイムセキュリティ入門</h3>
-<p>CNCFのランタイムセキュリティプロジェクトFalcoの導入方法を解説する記事で、クラウドネイティブ環境でのセキュリティ監視をこれから整備したいチームにとって取っ掛かりになる。マルチテナンシーやワークロード保護の運用設計を検討する際の一次情報として有用。</p>
-<p class="links"><a href="https://webflow.sysdig.com/blog/intro-runtime-security-falco">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fintro-runtime-security-falco">Google 翻訳で全文を読む</a></p>
-</section>
 ]]></content:encoded>
         </item>
     </channel>

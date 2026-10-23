@@ -4,11 +4,51 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 22 Oct 2026 04:33:59 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2026 00:33:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-23.html</guid>
+            <pubDate>Fri, 23 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude の web／デスクトップ／モバイルで auto mode が既定に</h3>
+<p>来週から、Pro・Max・Team プランの Claude web／デスクトップ／モバイルのセッションは auto mode で動くのが既定になる。各ステップの承認を求める代わりに自動チェックが危険な操作をブロックし、手動にはいつでも戻せる。Claude Code では 8 月から既定で、危険なコマンドの 89% を検出したのに対し手動承認は 14% だったという比較は、エージェントにどこまで権限を渡すかを考える材料になる。</p>
+<ul>
+<li><a href="https://x.com/claudeai/status/2113360845409583307">@claudeai のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fclaudeai%2Fstatus%2F2113360845409583307">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.309、サンドボックスと権限チェックの抜け穴をまとめて修正</h3>
+<p>v2.1.309 は、サンドボックス化した Bash の実行前にシェルの起動ファイルがサンドボックス外で走る問題や、<code>--mcp-config</code> で渡した MCP 設定ファイルをサンドボックス内のコマンドや自動承認された編集が書き換えられる問題を修正した。denyWrite の symlink 経由の迂回や、<code>Edit(path)</code> の deny を Bash リダイレクトですり抜けられる問題も含まれる。サンドボックスを前提に Claude Code を回しているなら、更新を優先したい。</p>
+<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.309#item-50a7c4fff46f">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>launchd で 33 個の Claude Code ジョブを回す plist・ログ設計</h3>
+<p>合同会社ジョインクラスが、朝のダイジェスト、部門ごとのタスク実行、記事の公開、売上取得までを Mac 1 台の launchd に任せ、33 個の Claude Code ジョブを運用している。実際に回して分かった plist とログの設計を具体的に共有しており、常駐させず定期実行するエージェント運用の型として参考になる。ジョブを増やすほど効いてくる命名やログの置き方の判断を、作り込む前に知れる。</p>
+<p class="links"><a href="https://qiita.com/joinclass/items/5558c5fc23788c4c082a">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Vercel Labs、組み込み前提の Zig 製コーディングエージェント「fx」をオープンソース化</h3>
+<p>Vercel Labs が、組み込み用途を想定した Zig 製のコーディングエージェント fx をオープンソース化した。IDE や CI、自社プロダクトの中にエージェントを組み込む選択肢が増えることで、外部のエージェントサービスに依存しにくい構成を検討しやすくなる。新しいコーディングエージェントが何を解こうとしているのか、組み込み先をどこに想定しているのかを見ておきたい。</p>
+<p class="links"><a href="https://www.infoq.com/news/2026/10/vercel-zig-fx-agent/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.infoq.com%2Fnews%2F2026%2F10%2Fvercel-zig-fx-agent%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>LayerX が内製 Background Agent「haro」の設計と活用事例を公開</h3>
+<p>LayerX が、内製の Background Agent「haro」をなぜ作ったのか、その開発背景と活用事例を公開した。大規模 monorepo での並列開発や自社の開発環境との連携を狙い、チームによっては開発の 8 割が haro 経由、直近の脆弱性調査にも使われているという。自前のエージェント基盤をどこまで内製するか、並列実行と既存ツール連携をどう設計するかを考える参考になる。</p>
+<ul>
+<li><a href="https://x.com/y_matsuwitter/status/2113186344302202948">@y_matsuwitter のポスト</a></li>
+<li><a href="https://tech.layerx.co.jp/entry/why-we-built-our-background-agent">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-22]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-22.html</link>
@@ -1197,24 +1237,6 @@
 <h3>Claude Code v2.1.277、changelogに多数の変更が集約</h3>
 <p>最新リリースで一度に多くの変更が入ったバージョン。CLIを日常的に使っているなら、しばらく追っていなかった間の差分をまとめて確認しておく価値がある。</p>
 <p class="links"><a href="https://claude-code-log.com/changelog/v2.1.277">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.277">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-18]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-18.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-18.html</guid>
-            <pubDate>Fri, 18 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>Claude CodeのAgent Skillsは、ときどき見直したほうがいい</h3>
-<p>Agent Skillsは一度作って満足しがちだが、モデルやプロジェクトの状況が変わるとskillの前提が古びて逆に足を引っ張ることがある、という運用上の注意喚起。自分のskill群を棚卸ししたくなる実践的な視点。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/17/140349">原文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code v2.1.274 リリースノート</h3>
-<p>メモリ逼迫時の可視警告、MCPサーバー接続待ちを制御する<code>CLAUDE_CODE_MCP_STARTUP_WAIT_MS</code>、OpenTelemetryへのeffort属性やmanaged-settings解決イベントの追加など、運用・監視に効く変更がまとまっている。細かいchangelog項目を追うよりこのリリースノートを見た方が全体像を把握しやすい。</p>
-<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.274">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.274">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

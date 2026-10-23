@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-23</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-23</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>AWS Continuum for code vulnerabilities が一般提供開始</h3>
+<p>コードの脆弱性を AI で発見・検証・優先付けし、レビュー可能な修正 PR まで出す新サービスが GA になった。AWS 環境のリソース構成・IAM の関係・ネットワーク到達性からコンテキストグラフを作り、実際にビジネスリスクのある所見に絞り込む点が、検出件数だけを積み上げる従来のスキャナとの違いになる。所見のトリアージと修正の往復に追われているチームほど、どこまで自動化に渡せるかの判断材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Faws-continuum-for-code-vulnerabilities-is-now-generally-available%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker AI、GPU を管理せずに独自の学習ループを書ける training session API を公開</h3>
+<p>SFT・DPO・強化学習といったポストトレーニングのループを自分の Python スクリプトで書いたまま、GPU の割り当て・分散実行・障害復旧・チェックポイント保存は SageMaker AI に任せられるようになった。ファインチューニングは内製したいがクラスタ運用は持ちたくない、というときに責任分界をどこで引くかの選択肢になる。GRPO ループを GSM8K で回す実装まで踏み込んでいるので、採用前に実際の書き味を確かめられる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fwrite-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker AI、Muse Glimmer・Qwen3.8・Ministral 3 のサーバーレスモデルカスタマイズに対応</h3>
+<p>Muse Glimmer、Qwen3.8 27B、Ministral 3（3B/8B/14B）を、SageMaker AI のサーバーレスモデルカスタマイズでドメイン適応できるようになった。SFT・DPO・RFT に加えて LoRA とフルファインチューニングを選べるため、自前で GPU を抱えずにモデルを育てる選択肢が増える。どのモデルをどの手法で適応させるかを比べる起点として、対応表を押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-sagemaker-muse-qwen-ministral/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-sagemaker-muse-qwen-ministral%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock Guardrails のコンテキストグラウンディングチェックに日本語対応の Standard ティアが追加</h3>
+<p>Bedrock Guardrails のグラウンディングチェックに Standard ティアが加わり、日本語にも対応した。RAG の回答が参照文書に基づいているかを審査するこの機能を、日本語の社内文書を引く構成でも同じ仕組みで使えるようになる。Classic と Standard の違いを整理したうえで実際に試した結果が読めるので、ガードレールの設定を見直す材料になる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-guardrails-grounding-standard-tier/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AgentCore Gateway、レート制限をリクエストのヘッダーやボディの値ごとに分けられるように</h3>
+<p>Bedrock AgentCore Gateway のレート制限が、リクエストのヘッダーやボディの値ごとに枠を分けられるようになった。複数の利用者やツールを 1 つのゲートウェイに集約するエージェント基盤では、テナント単位・ツール単位で流量を制御したい場面がすぐ来る。設定方法と実際の挙動を手元で確認できる記事なので、流量制御の設計を詰める前に読んでおきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-gateway-rate-limit-header-body/">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
