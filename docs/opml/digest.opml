@@ -21,5 +21,8 @@
     <outline text="月次トレンド" title="月次トレンド">
       <outline type="rss" text="月次トレンド" title="月次トレンド" xmlUrl="https://ogontaro.github.io/feeds/digest/trend.xml"/>
     </outline>
+    <outline text="月次イベント" title="月次イベント">
+      <outline type="rss" text="月次イベント" title="月次イベント" xmlUrl="https://ogontaro.github.io/feeds/digest/events.xml"/>
+    </outline>
   </body>
 </opml>
