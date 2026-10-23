@@ -8,6 +8,7 @@ on:
       - report
       - release
       - trend
+      - security
       - feed-audit
       - issue-request
       - inoreader-sync

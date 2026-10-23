@@ -97,6 +97,13 @@ async function main() {
 <h2>日次レポート</h2>
 <p class="muted">新着と X タイムラインから Claude が見る価値のある記事だけ(最大 5 本)を選んでコメントを付けたダイジェスト。毎日 07:00 JST。海外記事は原文・Google 翻訳リンク付き。</p>
 ${await cards("report", "日次レポート", REPORT_DOMAINS)}
+<h2>セキュリティアラート</h2>
+<p class="muted">3時間ごとに、新しく公表された Critical CVE・実際に悪用されている(KEV)脆弱性・自宅インフラで使うコンポーネントのアドバイザリを Claude が判定します。緊急度(即時／今週／監視)と推奨アクション付き。</p>
+${
+  existsSync(`${DOCS}/digest/security.xml`)
+    ? `<ul>\n<li><a href="digest/security/">アラート一覧</a></li>\n<li>購読: <a href="digest/security.xml">security.xml</a></li>\n</ul>`
+    : "<p>まだありません</p>"
+}
 <h2>週次リリース</h2>
 <p class="muted">使っているツールの過去1週間の GitHub releases を Claude が整理(破壊的変更を先頭)。毎週月 07:30 JST。</p>
 ${await cards("release", "週次リリース", RELEASE_DOMAINS)}
@@ -113,6 +120,7 @@ ${(await writeLandscapePage()) ? `<p><a href="digest/landscape.html">技術ラ�
     DIGEST_OPML,
     UTF8_BOM +
       opml([
+        ["セキュリティ", [["セキュリティアラート", "digest/security.xml"]]],
         [
           "日次レポート",
           REPORT_DOMAINS.map((d) => [`${DOMAIN_LABEL[d]} 日次レポート`, `digest/report-${d}.xml`]),

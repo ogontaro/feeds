@@ -29,11 +29,13 @@ mise run serve     # docs/ をローカルプレビュー
 | X タイムライン取得 | X ホームタイムライン | 使わない | actions/cache 上の蓄積（レポートの追加入力） | 30 分ごと |
 | リリースレポート | 各ドメインの release フィードの直近 7 日 | 注目リリースを整理 | `digest/release-<domain>.xml` ＋ `digest/release/<domain>/YYYY-MM-DD.html` | 毎週月 07:30 JST |
 | 月次トレンド | 前月の日次レポート・週次リリース＋外部情報源の前月分＋前回のトレンドレポート | 潮流を三角測量で判定し、前月からの変化を書きます | `digest/trend.xml` ＋ `digest/trend/YYYY-MM.html` | 毎月2日 07:45 JST |
+| セキュリティアラート | 直近24h の NVD Critical CVE・GitHub Advisory・CISA KEV・Kubernetes 公式 CVE フィード | 自宅インフラへの該当と緊急度を判定 | `digest/security.xml` ＋ `digest/security/<id>.html` | 3時間ごと |
 | フィード監査 | `source.yaml` の採用実績（`adoption-log.ndjson`）＋ `interests.yaml` | 無効化候補判定＋新規フィード探索 | `source.yaml` への PR（自動マージ） | 毎週日 07:00 JST |
 | Issue 駆動反映 | Issue のタイトル・本文 | 要望を読み取り変更を判断 | `source.yaml`/`interests.yaml` への PR（自動マージ） | Issue 作成時 |
 
 - レポートは claude / kubernetes / aws / gadget / gaming の 5 ドメインです。リリースレポートは devtools を加えた 4 ドメインです
-- 月次トレンドだけはドメイン横断の1本です（業界全体の潮流を追う目的のため）
+- 月次トレンド・セキュリティアラートはドメイン横断の1本です
+  （業界全体の潮流、全ドメインにまたがる脆弱性を追うため）
 - X タイムラインは独立したレポート・カテゴリを持ちません。各ドメインのレポートが追加入力として読み、そのドメインに合うポストだけを記事と混ぜて載せます
 - フィード監査・Issue 駆動反映はドメイン非依存です（`source.yaml`/`interests.yaml` 全体を扱います）
 
@@ -201,6 +203,25 @@ SRE から Platform Engineering / IDP が出てきたような、概念・呼称
   取得件数が少ないソースがあるため、潮流は複数月で判定する前提にしています
 - ドメインを持たないので `adoption-log.ndjson` には記録しません
 
+### セキュリティアラート（`security.yml`, 3時間ごと = cron `17 */3 * * *`）
+
+新しく公表された脆弱性を、自宅インフラの構成に照らして Claude が判定します。ドメイン横断・**アラート単位**です。
+
+1. `src/digest/security-collect.ts`: 直近24時間の NVD Critical CVE、GitHub Advisory Database、
+   CISA KEV（直近7日）、Kubernetes 公式 CVE フィードを集め、EPSS を付けます。
+   `.cache/security-input.md`（AI 用）と `.cache/security-input.json`（レンダー用）に書き出します
+2. 0件ならスキップします。
+3. `claude-code-action`: 入力と `report-criteria/security.md` を読み、通知するものだけを選んで、
+   緊急度（即時対応／今週中／監視）と推奨アクションを `.cache/security.json` に書きます。
+4. `src/digest/security-render.ts`: アラートごとに `docs/digest/security/<id>.html` を書き、
+   `docs/digest/security/index.html` と `docs/digest/security.xml` を再生成します（直近60件）。
+
+- 通知しなかった ID も `security-alerts.ndjson` に残し、次回以降の入力から除外します
+  （KEV に昇格した場合は再通知）。保持期間は90日です
+- 自宅インフラの構成は `report-criteria/security.md` に列挙します。バージョンは持たないため、
+  AI は「影響バージョンを確認する」までを書き、該当を断定しません
+- `report-criteria/security.md` は公開リポジトリに置くため、ホスト名・バージョン・鍵は書きません
+
 ### フィード出典トラッキング（`adoption-log.ndjson`）
 
 `report-render.ts` / `release-render.ts` が、生成した Markdown に実際に引用された記事の
@@ -272,7 +293,7 @@ DeepSeek 公式 API の割引時間帯とは別物で確認できないため、
 ハードコードするより、実際の失敗を検知して切り替える方が確実です（`issue-request.yml` の
 ようにトリガー時刻が読めないワークフローでも同じロジックで対応できます）。
 
-### ワークフロー失敗対応（`report/release/trend/feed-audit/issue-request/
+### ワークフロー失敗対応（`report/release/trend/security/feed-audit/issue-request/
 inoreader-sync/timeline/component-review-reminder.yml` 末尾の `notify-failure` ジョブ、
 `workflow-failure-fix.yml`）
 
@@ -280,7 +301,7 @@ inoreader-sync/timeline/component-review-reminder.yml` 末尾の `notify-failure
 失敗すると `workflow-failure` ラベル付きの Issue を自動作成します（本文は run URL・
 ワークフロー名のみです。public リポジトリのためログ全文は貼りません）。
 
-`report/release/trend/feed-audit/issue-request/inoreader-sync/timeline.yml` の7ワークフローには
+`report/release/trend/security/feed-audit/issue-request/inoreader-sync/timeline.yml` の8ワークフローには
 対で「close resolved failure issues」ステップ（本体ジョブ成功時、同一ワークフロー名の
 `workflow-failure` ラベル付き open Issue を検索してクローズ）があり、一過性の失敗で作られた
 Issue が次回成功時に自動で片付きます（AI 判断を挟まない決定的な gh CLI 操作のみです）。
@@ -335,13 +356,14 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 | `report.yml` | `0 22 * * *` ＋ dispatch | ドメインごとに collect / claude-code-action / render → build → commit |
 | `release.yml` | `30 22 * * 0` ＋ dispatch | ドメインごとに collect / claude-code-action / render → build → commit |
 | `trend.yml` | `45 22 1 * *` ＋ dispatch（`month` 入力で対象月を指定可） | collect / claude-code-action / render → ランドスケープ更新案 / マージ → build → commit |
+| `security.yml` | `17 */3 * * *` ＋ dispatch | collect / claude-code-action / render → build → commit |
 | `feed-audit.yml` | `0 22 * * 6` ＋ dispatch | collect → claude-code-action → validate → PR 作成・自動マージ |
 | `issue-request.yml` | `issues: opened` | claude-code-action → validate → PR 作成・自動マージ |
 | `component-review-reminder.yml` | `0 0 1 * *` ＋ dispatch | 棚卸し Issue を作成 |
 | `inoreader-sync.yml` | `0 21 * * 6` ＋ dispatch | スター取得 → commit |
 | `timeline.yml` | `5,35 * * * *` ＋ dispatch | X タイムライン取得 → actions/cache に蓄積（docs は書きません。`concurrency: x-timeline`） |
 
-- `docs/` を書き込む5ワークフロー（report/release/trend/feed-audit/inoreader-sync）は
+- `docs/` を書き込む6ワークフロー（report/release/trend/security/feed-audit/inoreader-sync）は
   全て `concurrency: { group: docs-write }` で直列化しています。`source.yaml` の同時書き換えを防ぎます。
 - commit ステップは `permissions: contents: write` ＋ `git push "https://x-access-token:${GITHUB_TOKEN}@github.com/..."`。
   `claude-code-action` が git 認証情報を書き換えるため、素の `git push` は認証失敗します。
@@ -357,7 +379,8 @@ Issue は新しいワークフロー実行をトリガーしない（GitHub の�
 - `claude-code-action` はスケジュール実行に human-actor チェックを適用し、cron を最後に編集した
   ユーザーに実行を帰属させます。通らないとそのレポートが止まり、症状は「ワークフロー失敗」だけです。
 - レポートは 1 日あたり **claude-code-action を最大 5 回**（ドメイン数）、月曜は release.yml で
-  追加で最大 4 回（claude / kubernetes / aws / devtools）、毎月2日は trend.yml で 2 回（トレンド・ランドスケープ）です。CI 利用はサブスクの
+  追加で最大 4 回（claude / kubernetes / aws / devtools）、毎月2日は trend.yml で 2 回（トレンド・ランドスケープ）、
+  security.yml が3時間ごとに最大 1 回です。CI 利用はサブスクの
   5 時間ローリング枠を消費します。
 
 ## ディレクトリ構成
@@ -371,16 +394,16 @@ starred-log.ndjson     Inoreader スター記録ログ（追記専用）
 report-criteria/
   report-claude.md  report-kubernetes.md  report-aws.md  report-gadget.md  report-gaming.md  x-posts.md（X ポストの共通の扱い）
   release-claude.md  release-aws.md  release-kubernetes.md  release-devtools.md
-  trend.md（月次トレンドの判定基準）  landscape.md（技術ランドスケープの更新基準）
+  trend.md（月次トレンドの判定基準）  security.md（セキュリティアラートの判定基準）  landscape.md（技術ランドスケープの更新基準）
 src/
   lib/           config / feeds取得 / digest（ページ・RSS 生成の共通処理）/ html / style / labels / types / paths（低レベル共有）
-  digest/        report-collect / report-render / release-collect / release-render / trend-collect / trend-render / landscape-update / x-timeline
+  digest/        report-collect / report-render / release-collect / release-render / trend-collect / trend-render / landscape-update / x-timeline / security-collect / security-render
   site/          build.ts（index.html + opml/ 生成）landscape.ts（技術ランドスケープのページ）
   feed-audit-collect.ts  feed-audit-validate.ts  feed-audit-summarize.ts
   inoreader-starred.ts
 docs/            GitHub Pages 配信対象。ワークフローがコミット
 .github/workflows/
-  report.yml  release.yml  trend.yml
+  report.yml  release.yml  trend.yml  security.yml
   feed-audit.yml  issue-request.yml  component-review-reminder.yml  inoreader-sync.yml  timeline.yml
 ```
 

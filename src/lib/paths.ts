@@ -10,6 +10,8 @@ export const INTERESTS_YAML = join(ROOT, "interests.yaml");
 export const LANDSCAPE_YAML = join(ROOT, "landscape.yaml");
 export const ADOPTION_LOG = join(ROOT, "adoption-log.ndjson");
 export const STARRED_LOG = join(ROOT, "starred-log.ndjson");
+/** セキュリティアラートの処理済みログ。新しい通知だけを判定するための状態を兼ねる。 */
+export const SECURITY_LOG = join(ROOT, "security-alerts.ndjson");
 export const FEED_AUDIT_INPUT_JSON = join(CACHE, "feed-audit-input.json");
 
 export const INDEX_HTML = join(DOCS, "index.html");
@@ -29,6 +31,9 @@ export const TREND_XML = join(DIGEST_DIR, "trend.xml");
 export const TREND_DIR = join(DIGEST_DIR, "trend");
 /** 技術ランドスケープ: landscape.yaml から build.ts が生成する、現在の状態だけの1ページ */
 export const LANDSCAPE_HTML = join(DIGEST_DIR, "landscape.html");
+// セキュリティだけはドメイン横断・アラート単位の1本(新規性と緊急度を3時間ごとに追うため)
+export const SECURITY_XML = join(DIGEST_DIR, "security.xml");
+export const SECURITY_DIR = join(DIGEST_DIR, "security");
 
 export const DIGEST_OPML = join(DOCS, "opml", "digest.opml");
 
@@ -38,6 +43,9 @@ export const releaseInputJson = (d: Domain) => join(CACHE, `release-${d}-input.j
 export const releaseMd = (d: Domain) => join(CACHE, `release-${d}.md`);
 export const TREND_INPUT_MD = join(CACHE, "trend-input.md");
 export const TREND_MD = join(CACHE, "trend.md");
+export const SECURITY_INPUT_JSON = join(CACHE, "security-input.json");
+export const SECURITY_INPUT_MD = join(CACHE, "security-input.md");
+export const SECURITY_OUTPUT_JSON = join(CACHE, "security.json");
 /** AI が書くランドスケープの更新案。landscape-update.ts が検証して landscape.yaml にマージする */
 export const LANDSCAPE_UPDATE_YAML = join(CACHE, "landscape-update.yaml");
 
