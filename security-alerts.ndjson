@@ -1,0 +1,82 @@
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-102764","kev":true,"reported":true,"title":"BeyondTrust Remote Support のなりすまし認証バイパスでアプライアンス上のファイルを操作される","urgency":"week"}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-106931","kev":true,"reported":true,"title":"SiteGuard Server Edition の OS コマンドインジェクションで root 権限のコマンドを実行される","urgency":"week"}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2025-61624","kev":true,"reported":true,"title":"FortiOS / FortiProxy などのパストラバーサルで管理者が任意ファイルを改ざん・削除できる","urgency":"week"}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-96656","kev":true,"reported":true,"title":"Plex Media Server の脆弱性チェーンで任意ファイル書き込みからコード実行をされる","urgency":"immediate"}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-96654","kev":true,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-96655","kev":true,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-96652","kev":true,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-110936","kev":true,"reported":true,"title":"Siemens Software Center の検索パス制御不備でローカル攻撃者にコードを実行される","urgency":"watch"}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-114575","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-114382","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-114383","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-96639","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-110264","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-114139","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-91403","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-112241","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-114219","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-112327","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-114661","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-96355","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-76531","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-76302","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-114220","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-76299","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-83938","kev":false,"reported":true,"title":"Azure Kubernetes Configuration Service の認証欠落でネットワーク経由の権限昇格をされる","urgency":"watch"}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-97785","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-110063","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79851","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79850","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79849","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79846","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79848","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79847","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79844","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-107861","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-110243","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-114625","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79861","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79859","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79855","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79860","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79856","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79854","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79853","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79852","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79857","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79858","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-112832","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79869","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79870","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79871","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79868","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79867","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79866","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79863","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79864","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79862","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79865","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-115375","kev":false,"reported":true,"title":"Incus のパストラバーサルでホスト上の任意ファイルを書き込まれ、ホスト全体を掌握される","urgency":"watch"}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-115377","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-115384","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79872","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2021-48014","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2021-48016","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2022-51026","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79874","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79873","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79876","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-79875","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-109122","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-105014","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2022-51022","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-115353","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-115372","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-111594","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-115324","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-19677","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"GHSA-673q-mjm6-r5xr","kev":false,"reported":true,"title":"Next.js の use cache と Image Optimization API で未認証のリモートコード実行をされる","urgency":"watch"}
+{"date":"2026-10-23T04:25:19.401Z","id":"GHSA-cg2g-xh64-v4q7","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"GHSA-2464-fhr4-w9xw","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-111497","kev":false,"reported":false}
+{"date":"2026-10-23T04:25:19.401Z","id":"CVE-2026-102785","kev":false,"reported":false}

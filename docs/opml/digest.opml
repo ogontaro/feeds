@@ -2,6 +2,9 @@
 <opml version="1.0">
   <head><title>ogontaro / rss</title></head>
   <body>
+    <outline text="セキュリティ" title="セキュリティ">
+      <outline type="rss" text="セキュリティアラート" title="セキュリティアラート" xmlUrl="https://ogontaro.github.io/feeds/digest/security.xml"/>
+    </outline>
     <outline text="日次レポート" title="日次レポート">
       <outline type="rss" text="Claude 日次レポート" title="Claude 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-claude.xml"/>
       <outline type="rss" text="Kubernetes 日次レポート" title="Kubernetes 日次レポート" xmlUrl="https://ogontaro.github.io/feeds/digest/report-kubernetes.xml"/>
