@@ -110,6 +110,9 @@ ${await cards("release", "週次リリース", RELEASE_DOMAINS)}
 <h2>月次トレンド</h2>
 <p class="muted">業界全体の潮流(新しい概念・呼称の出現と定着)を前月のレポートと外部調査から Claude が三角測量で判定し、前月からの変化とあわせてまとめる。毎月2日 07:45 JST。</p>
 ${await digestLinks("digest/trend", "digest/trend.xml", "月次トレンドレポート 過去の一覧")}
+<h2>月次イベント</h2>
+<p class="muted">国内と海外の主要なテックカンファレンスの開催予定（今後2ヶ月）と CFP 締切をまとめる。毎月2日 07:45 JST。</p>
+${await digestLinks("digest/events", "digest/events.xml", "月次イベント 過去の一覧")}
 <h2>技術ランドスケープ</h2>
 <p class="muted">業界の全体像を領域ごとの表にし、自分の興味（interests.yaml で管理）を強調して示す。項目ごとに詳細ページがある。月次トレンドのたびに更新し、各レポートの参考資料にもしている。</p>
 ${(await writeLandscapePage()) ? `<p><a href="digest/landscape.html">技術ランドスケープを見る</a></p>` : "<p>まだありません</p>"}`;
@@ -130,6 +133,7 @@ ${(await writeLandscapePage()) ? `<p><a href="digest/landscape.html">技術ラ�
           RELEASE_DOMAINS.map((d) => [`${DOMAIN_LABEL[d]} リリース`, `digest/release-${d}.xml`]),
         ],
         ["月次トレンド", [["月次トレンド", "digest/trend.xml"]]],
+        ["月次イベント", [["月次イベント", "digest/events.xml"]]],
       ]),
   );
   console.log("site: index.html + opml/digest.opml");

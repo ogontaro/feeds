@@ -34,6 +34,9 @@ export const LANDSCAPE_HTML = join(DIGEST_DIR, "landscape.html");
 // セキュリティだけはドメイン横断・アラート単位の1本(新規性と緊急度を3時間ごとに追うため)
 export const SECURITY_XML = join(DIGEST_DIR, "security.xml");
 export const SECURITY_DIR = join(DIGEST_DIR, "security");
+// 月次イベントもドメイン横断の1本(開催予定とCFP締切をまとめるため)
+export const EVENTS_XML = join(DIGEST_DIR, "events.xml");
+export const EVENTS_DIR = join(DIGEST_DIR, "events");
 
 export const DIGEST_OPML = join(DOCS, "opml", "digest.opml");
 
@@ -43,6 +46,9 @@ export const releaseInputJson = (d: Domain) => join(CACHE, `release-${d}-input.j
 export const releaseMd = (d: Domain) => join(CACHE, `release-${d}.md`);
 export const TREND_INPUT_MD = join(CACHE, "trend-input.md");
 export const TREND_MD = join(CACHE, "trend.md");
+export const EVENTS_INPUT_JSON = join(CACHE, "events-input.json");
+export const EVENTS_INPUT_MD = join(CACHE, "events-input.md");
+export const EVENTS_MD = join(CACHE, "events.md");
 export const SECURITY_INPUT_JSON = join(CACHE, "security-input.json");
 export const SECURITY_INPUT_MD = join(CACHE, "security-input.md");
 export const SECURITY_OUTPUT_JSON = join(CACHE, "security.json");

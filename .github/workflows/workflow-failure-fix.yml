@@ -9,6 +9,7 @@ on:
       - release
       - trend
       - security
+      - events
       - feed-audit
       - issue-request
       - inoreader-sync
