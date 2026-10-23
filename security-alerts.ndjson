@@ -110,3 +110,8 @@
 {"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112853","kev":false,"reported":false}
 {"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-114357","kev":false,"reported":false}
 {"date":"2026-10-23T19:20:34.825Z","id":"GHSA-9v8h-qqgm-4m35","kev":false,"reported":true,"title":"Brotli デコーダの境界外書き込み（\"Node2Shell\"）","urgency":"watch"}
+{"date":"2026-10-23T23:53:29.116Z","id":"CVE-2026-110447","kev":true,"reported":true,"title":"Collabora Online の CODE Server に OS コマンドインジェクション、NextCloud 経由で遠隔コード実行のおそれ","urgency":"week"}
+{"date":"2026-10-23T23:53:29.116Z","id":"CVE-2026-114509","kev":false,"reported":false}
+{"date":"2026-10-23T23:53:29.116Z","id":"CVE-2026-112398","kev":false,"reported":false}
+{"date":"2026-10-23T23:53:29.116Z","id":"CVE-2026-115889","kev":false,"reported":false}
+{"date":"2026-10-23T23:53:29.116Z","id":"GHSA-cxf3-9h37-7rr8","kev":false,"reported":false}

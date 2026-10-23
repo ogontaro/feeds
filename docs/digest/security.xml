@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 23 Oct 2026 19:20:34 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2026 23:53:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Collabora Online の CODE Server に OS コマンドインジェクション、NextCloud 経由で遠隔コード実行のおそれ]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110447.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110447.html#2026-10-23T23:53:29.116Z</guid>
+            <pubDate>Fri, 23 Oct 2026 23:53:29 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Collabora Online の CODE Server に OS コマンドインジェクション、NextCloud 経由で遠隔コード実行のおそれ</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-10-23 追加され、実際の悪用が確認されている。EPSS は 0.012 と低く CVSS も不明だが、KEV 登録のため通知対象とした。自宅インフラの構成に Collabora / NextCloud は含まれないため直接の該当はない。</p>
+<p>NextCloud 上で使われる Collabora Online の Built-in CODE Server に OS コマンドインジェクションの脆弱性があり、遠隔から任意のコードを実行されるおそれがある。CISA の説明では、CODE サーバーが起動していない状態でもこの攻撃が成立するとされている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。NextCloud 上で CODE サーバーを運用している場合は速やかに修正版へ更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-110447">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Arista VeloCloud Orchestrator (on-prem) の SQL インジェクションで特権的な内部機能に到達される]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114625.html</link>
