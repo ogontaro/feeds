@@ -93,3 +93,20 @@
 {"date":"2026-10-23T14:18:12.728Z","id":"CVE-2025-30047","kev":false,"reported":false}
 {"date":"2026-10-23T14:18:12.728Z","id":"CVE-2025-30050","kev":false,"reported":false}
 {"date":"2026-10-23T14:18:12.728Z","id":"CVE-2025-30046","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-114625","kev":true,"reported":true,"title":"Arista VeloCloud Orchestrator (on-prem) の SQL インジェクションで特権的な内部機能に到達される","urgency":"watch"}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-77366","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-77363","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-115812","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112857","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112858","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112851","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112854","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112848","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112856","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112846","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112847","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112859","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112855","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-112853","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"CVE-2026-114357","kev":false,"reported":false}
+{"date":"2026-10-23T19:20:34.825Z","id":"GHSA-9v8h-qqgm-4m35","kev":false,"reported":true,"title":"Brotli デコーダの境界外書き込み（\"Node2Shell\"）","urgency":"watch"}

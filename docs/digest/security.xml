@@ -4,11 +4,39 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 23 Oct 2026 14:18:12 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 23 Oct 2026 19:20:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Arista VeloCloud Orchestrator (on-prem) の SQL インジェクションで特権的な内部機能に到達される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114625.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114625.html#2026-10-23T19:20:34.825Z</guid>
+            <pubDate>Fri, 23 Oct 2026 19:20:34 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Arista VeloCloud Orchestrator (on-prem) の SQL インジェクションで特権的な内部機能に到達される</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-10-23 追加されており、実際の悪用が確認されている（CVSS 9.9、EPSS 0.006）。ただし VeloCloud Orchestrator は自宅 Kubernetes の構成に含まれないため、即時対応ではなく「今週中」とした。KEV 追加のため、該当しなくても通知対象。</p>
+<p>オンプレミス版の Arista VeloCloud Orchestrator に SQL インジェクションの脆弱性があり、リモートの攻撃者が特権的な内部機能へアクセスして VCO ホストに影響を与えられる。悪用に成功すると、オーケストレータとそれが管理するデータの機密性・完全性・可用性が損なわれる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリに従って緩和策を適用する。自宅環境に該当する VCO インスタンスがないか確認し、あれば早急に対処する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-964w-6mm5-rm95">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Brotli デコーダの境界外書き込み（"Node2Shell"）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/GHSA-9v8h-qqgm-4m35.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/GHSA-9v8h-qqgm-4m35.html#2026-10-23T19:20:34.825Z</guid>
+            <pubDate>Fri, 23 Oct 2026 19:20:34 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Brotli デコーダの境界外書き込み（&quot;Node2Shell&quot;）</h3>
+<p><strong>緊急度: 監視</strong> — Brotli は Web サーバ等のデコード処理で広く使われる圧縮ライブラリで、自宅環境でも間接的に使われている可能性がある。CISA KEV には未追加で、CVSS・EPSS も入力にないため悪用の兆候は確認されていないものとして「監視」とした。</p>
+<p>Brotli デコーダに境界外書き込みの脆弱性がある。PyPI の brotli / brotlicffi パッケージもこの問題の影響を受ける。入力には CVSS・EPSS・影響バージョンの情報がなく、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> GitHub Advisory で影響バージョンと修正版を確認し、Brotli デコーダを使うコンポーネントが該当するか調べる。修正版があれば更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-9v8h-qqgm-4m35">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] BeyondTrust Remote Support のなりすまし認証バイパスでアプライアンス上のファイルを操作される]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-102764.html</link>

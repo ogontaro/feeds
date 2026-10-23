@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>セキュリティアラート GHSA-9v8h-qqgm-4m35</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header><a href="../../">ogontaro / rss</a></header>
+<main>
+<h1>セキュリティアラート GHSA-9v8h-qqgm-4m35</h1>
+<article class="report"><section class="item">
+<h3>Brotli デコーダの境界外書き込み（&quot;Node2Shell&quot;）</h3>
+<p><strong>緊急度: 監視</strong> — Brotli は Web サーバ等のデコード処理で広く使われる圧縮ライブラリで、自宅環境でも間接的に使われている可能性がある。CISA KEV には未追加で、CVSS・EPSS も入力にないため悪用の兆候は確認されていないものとして「監視」とした。</p>
+<p>Brotli デコーダに境界外書き込みの脆弱性がある。PyPI の brotli / brotlicffi パッケージもこの問題の影響を受ける。入力には CVSS・EPSS・影響バージョンの情報がなく、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> GitHub Advisory で影響バージョンと修正版を確認し、Brotli デコーダを使うコンポーネントが該当するか調べる。修正版があれば更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-9v8h-qqgm-4m35">元情報</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
