@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 23 Oct 2026 00:40:06 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Oct 2026 00:27:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-10-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-24.html</guid>
+            <pubDate>Sat, 24 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>SteamOS 3.9.5 が全ユーザー向けに配信 — Arch ベースと Plasma 6.7.3 に更新</h3>
+<p>SteamOS 3.9.5 が全ユーザー向けにリリースされた。SteamOS 3.8 安定版からの変更をすべて含むノートで、Arch Linux ベースの更新と、デスクトップモードの Plasma 6.4.3 から 6.7.3 への移行が入る。安定版チャンネルのまま OS の基盤が大きく変わるため、自宅の SteamOS 機を更新するタイミングを決める材料になる。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/1675200/view/694275728822244963">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F1675200%2Fview%2F694275728822244963">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-10-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-23.html</link>

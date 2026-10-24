@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-24</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-24</h1>
+<article class="report"><h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Claude Code に Mods 登場——TypeScript でツール呼び出しを横取りできるプラグイン機構</h3>
+<p>Claude Code v2.1.287 で入った Mods は、プラグインに同梱した JavaScript/TypeScript 関数から、ツール呼び出し・プロンプト送信・UI 描画のイベントを観察・書き換え・横取りできる仕組みです。フックだけでは届かなかった「呼び出し内容そのものの検査と加工」に踏み込めるため、社内ポリシーの強制や監査ログの収集、危険な操作のブロックをプラグインとして配布する道が開けます。既存の hooks との使い分けを押さえておきたい一本です。</p>
+<p class="links"><a href="https://qiita.com/sakutto-panda/items/53b06029b87987642591">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.308〜v2.1.309 の破壊的変更——ultrareview の信頼確認必須化と sed -i の挙動変更</h3>
+<p>日次のアップデートのうち、運用に影響する変更に絞って実機で確認した記事です。<code>claude ultrareview</code> が信頼確認を必須にした点と <code>sed -i</code> の挙動が変わった点は、CI や自動化スクリプトにそのまま波及します。アップデート後に何が壊れうるかを先に知っておくために読む価値があります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261023-cc-updates-v2-1-309/">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Functionize、AI コーディングエージェント向け MCP サーバーを公開</h3>
+<p>テスト自動化ベンダーの Functionize が、AI コーディングエージェント向けの MCP サーバーを発表しました。MCP 経由で既存のテスト基盤をエージェントに接続する動きが具体化しており、自前の MCP サーバーを設計する際の比較対象になります。対応する操作や前提条件は原文で確認しておきたいところです。</p>
+<p class="links"><a href="https://itbrief.co.uk/story/functionize-launches-mcp-server-for-ai-coding-agents">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fitbrief.co.uk%2Fstory%2Ffunctionize-launches-mcp-server-for-ai-coding-agents">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（2 本）</h2>
+<section class="item">
+<h3>アラート対応を AI エージェントにどこまで任せるか——AWS DevOps Agent と Claude Code の線引き</h3>
+<p>アラート対応を AWS DevOps Agent と Claude Code に任せ、どこまで「調べる・直す・決める」を委ねるかの線引きと料金を、登壇内容からまとめた記事です。AI SRE を運用に組み込むときの現実的な境界とコスト感が掴めます。一次対応をエージェントに寄せるかどうかの判断材料になります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/devio2026-nagoya-ai-agent-alert-response/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>ReAct と Plan-Execute を実装して比較——タスク特性ごとの向き不向き</h3>
+<p>エージェントの制御方式として代表的な ReAct と Plan-Execute を TypeScript で実装し、タスクの性質によってどちらが向くかを比較した記事です。フレームワークを導入する前に、自分のユースケースが探索的に進める型か、先に計画を固める型かを見極める材料になります。複数の自動化ジョブを実際に回している立場から書かれている点も具体的です。</p>
+<p class="links"><a href="https://qiita.com/joinclass/items/21ec0a1cb73de7a270e0">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

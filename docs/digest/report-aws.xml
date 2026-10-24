@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 23 Oct 2026 00:36:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Oct 2026 00:26:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-24.html</guid>
+            <pubDate>Sat, 24 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon EMR on EKS、EMR 利用料を 30% 値下げ</h3>
+<p>EKS 上で EMR を動かす際に上乗せされる EMR 課金が、vCPU 時間・GB 時間ともに 30% 下がります。EKS 本体の課金は据え置きで、既存の EMR on EKS ワークロードには新しい価格が自動適用されるため、コスト見積もりの前提をそのまま引き直せます。Karpenter やリソース要求の適正化で EKS 側のコストを詰めているなら、EMR 側の単価も合わせて再計算する好機です。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Femr-eks-reduces-emr-charge-30-percent%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EKS のサービスロールに VPC の DHCP オプションを読む権限が追加</h3>
+<p>AmazonEKSServiceRolePolicy に ec2:DescribeDhcpOptions が追加され、コントロールプレーンがクラスタ VPC の DHCP オプションセットから DNS サーバーとドメイン名を読めるようになりました。クラスタの IAM ロールにこの権限が無くても VPC 側の設定に追従し、DHCP オプションセットを差し替えれば新しい設定が自動で使われます。カスタム DHCP オプションを使う VPC では、コントロールプレーンの DNS 解決の前提が変わりうるので確認しておきたい変更です。</p>
+<p class="links"><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock の Web Search、ドメイン絞り込みとユーザー位置の制御に対応</h3>
+<p>Bedrock 上の Web Search に、グラウンディング元を制御する 2 つの仕組みが加わりました。filters で最大 100 件の allowed_domains に限定するか、最大 100 件の blocked_domains を除外でき、ユーザー位置も指定できます。いずれも既存の OpenAI Responses API リクエストの web_search ツールに直接設定する形なので、Web 検索を根拠に回答させるエージェントで出典の統制を効かせたいときにそのまま使えます。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Fbedrock-web-search-domain-user-location%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Transit Gateway と Cloud WAN、重複 CIDR を接続できる 1:1 NAT に対応</h3>
+<p>Transit Gateway と Cloud WAN のアタッチメント上で、リージョナル Private NAT Gateway と連携したマネージドな 1:1 NAT が使えるようになりました。IP レンジが重複するプライベートネットワーク同士を、どちらかの付け替えも NAT アプライアンスの持ち込みも戻りトラフィック用ルールの記述もなしに接続できます。M&amp;A やマルチアカウント統合で IP 設計が衝突したときの現実的な選択肢として覚えておきたい機能です。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-transit-gateway-cloud-wan-1-1-nat%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bayer Crop Science、Bedrock AgentCore でマルチエージェントの意思決定基盤を構築</h3>
+<p>Bayer Crop Science が Amazon Bedrock AgentCore 上に構築した Agentic Decision Engine の、アーキテクチャと 5 つの設計判断、AWS Unified Operations を使って本番化した経緯が公開されています。育種家・アナリスト・研究者が自然言語で分析基盤に問い合わせるマルチエージェント構成で、PoC から本番運用までの落とし所が具体的に読めます。AgentCore でエージェントを組む際の構成の参考になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-23.html</link>
@@ -796,44 +829,6 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-20.html</guid>
             <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>本日の対象記事はありませんでした。</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-19]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-19.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-19.html</guid>
-            <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 6 本</h2>
-<section class="item">
-<h3>Amazon SageMaker HyperPod Inference Gateway 登場</h3>
-<p>EKS 上で動く推論ワークロードに GPU 使用状況を見て賢くルーティングするアドオンで、モデルサーバやクライアントの改修なしに TTFT を最大 82% 削減できるとのこと。EKS × 生成AI 推論基盤の設計を考えている人には直撃の内容。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-amazon-sagemaker-hyperpod-inference-gateway%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon Bedrock に Kimi K3 が追加</h3>
-<p>Moonshot AI 製のオープンウェイトモデルが Bedrock で利用可能になり、ネイティブ Vision・100万トークンのコンテキスト・明示的なプロンプトキャッシュを備える。オープンウェイト勢の選択肢が Bedrock 上でどう広がっているかを追う上で押さえておきたい一報。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-kimi-k3-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>新しい AgentCore ランタイム、コールドスタートを高速・安定化</h3>
-<p>セッション終了時にメモリを即座に回収し、イメージサイズや同時実行数に関わらず一定のコールドスタート時間を実現する Bedrock AgentCore の新ランタイム。本番運用でエージェントのレイテンシとコストを最適化したいチームには具体的な効き所がある。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>マルチモデルAIエージェントを ECS/Fargate から Bedrock AgentCore へ移行</h3>
-<p>医療分野の3モデル・オーケストレーション＋ベクター検索エージェントを自前運用の ECS/Fargate から AgentCore ランタイムに移した実例で、金融・製造業にも応用可能なフレームワーク非依存パターンとして紹介されている。自前運用からのマイグレーションを検討する際の具体的な設計判断の参考になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmigrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon SageMaker Inference、2026年の主要アップデートまとめ</h3>
-<p>フルマネージドエンドポイントと HyperPod Inference の両方で今年投入された13件のローンチ（推論レコメンデーション、容量認識型インスタンスプール、階層的KVキャッシュ、Prefill/Decode 分離など）を一気に振り返れる回顧記事。SageMaker で推論基盤を組んでいるなら見落としがないか棚卸しに使える。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-sagemaker-inference-2026-year-to-date-launches-in-review%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>コーディングエージェントで Hugging Face モデルを SageMaker AI にデプロイ</h3>
-<p>6つのオープンソースのエージェントスキルを使い、コーディングエージェントにモデルを指定するだけで適切なサービングコンテナ・オートスケーリング・CloudWatch アラーム・検証済みの削除手順までそろったリアルタイムエンドポイントが得られる。エージェント経由のインフラ構築が実運用レベルにどこまで来ているかを見る好例。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents%2F">Google 翻訳で全文を読む</a></p>
-</section>
 ]]></content:encoded>
         </item>
     </channel>

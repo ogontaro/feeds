@@ -4,11 +4,39 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 23 Oct 2026 00:35:06 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Oct 2026 00:24:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-24.html</guid>
+            <pubDate>Sat, 24 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>Kamaji と HAMi で組むマルチテナント GPU Kubernetes</h3>
+<p>チームごとにクラスタを分けるとコントロールプレーンの分だけコストがかかり、1つのクラスタに相乗りさせると分離が弱くなる、という GPU 基盤のトレードオフに正面から取り組んだ CNCF ブログ。ホステッドコントロールプレーンの Kamaji と GPU 共有の HAMi を組み合わせ、シミュレートしたハードウェア上で検証しているため、実 GPU を用意せずに構成を試せる。GPU を複数チームに開放するかどうかを決める前の設計レビューに効く。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/23/multi-tenant-gpu-kubernetes-on-simulated-hardware-with-kamaji-and-hami/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F23%2Fmulti-tenant-gpu-kubernetes-on-simulated-hardware-with-kamaji-and-hami%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>GPU が遊び AI ジョブが待つ状態に、Kubernetes はどう応えるか</h3>
+<p>GPU に空きがあるのに AI ジョブが割り当て待ちになる、という配分の非効率は、AI 推論を同じクラスタに載せるときに必ず突き当たる問題。KubeCon を前にした連載で、Kubernetes 側がこの問題に新しい仕組みで応じようとしている動きを追っている。自前のクラスタで GPU ワークロードを扱うなら、スケジューリングの前提が変わる可能性として押さえておきたい。</p>
+<p class="links"><a href="https://thenewstack.io/kubernetes-agentic-ai-inference/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-agentic-ai-inference%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>llm-d 1.0、AI 推論コストの削減を狙う</h3>
+<p>Kubernetes 上での分散推論を掲げる llm-d が 1.0 に到達し、狙いを推論コストの引き下げに置いている。serving 基盤を自作するか既存スタックを拡張するかの判断材料として、1.0 という節目は評価を始めるタイミングになる。コスト最適化の観点では、GPU の稼働率をどう上げるかという論点とセットで読むとよい。</p>
+<p class="links"><a href="https://www.eenewseurope.com/en/llm-d-1-0-targets-lower-ai-inference-costs/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.eenewseurope.com%2Fen%2Fllm-d-1-0-targets-lower-ai-inference-costs%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry、エコシステム一覧の今後を検討——利用者へ意見募集</h3>
+<p>OpenTelemetry がレジストリや Collector コンポーネント一覧などのエコシステムページの新規追加・更新を凍結し、廃止や変更を検討していると告知して、利用状況のコメントを求めている。Collector のコンポーネント選定でこれらの一覧を参照しているなら、代替の情報源をどこに置くかを今のうちに考えておきたい。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/ecosystem-lists-user-feedback/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fecosystem-lists-user-feedback%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-23.html</link>
@@ -607,14 +635,6 @@
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-20.html</link>
             <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-20.html</guid>
             <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-19]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-19.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-19.html</guid>
-            <pubDate>Sat, 19 Sep 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
 ]]></content:encoded>
         </item>

@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 23 Oct 2026 00:38:55 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Oct 2026 00:26:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-24.html</guid>
+            <pubDate>Sat, 24 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>VRChat、アバター向けネイティブ顔トラッキングをオープンベータで提供開始</h3>
+<p>VRChat がアバター向けに SDK レベルの顔トラッキングを Open Beta クライアントと Avatars SDK ベータで提供開始した。顔の動きを SDK 側で標準的に扱えるようになるため、対応アバターや入力機器を前提にした表現設計が変わる可能性がある。アバター制作者や VRChat 上で活動する開発者は、ベータ段階の仕様を早めに確認しておく価値がある。</p>
+<p class="links"><a href="https://www.uploadvr.com/vrchat-gets-native-face-tracking-support-in-open-beta/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.uploadvr.com%2Fvrchat-gets-native-face-tracking-support-in-open-beta%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-23.html</link>
