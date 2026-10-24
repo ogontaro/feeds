@@ -116,3 +116,8 @@
 {"date":"2026-10-23T23:53:29.116Z","id":"CVE-2026-115889","kev":false,"reported":false}
 {"date":"2026-10-23T23:53:29.116Z","id":"GHSA-cxf3-9h37-7rr8","kev":false,"reported":false}
 {"date":"2026-10-24T04:45:47.287Z","id":"CVE-2026-115931","kev":false,"reported":false}
+{"date":"2026-10-24T11:13:07.697Z","id":"CVE-2026-115806","kev":false,"reported":false}
+{"date":"2026-10-24T11:13:07.697Z","id":"CVE-2026-94075","kev":false,"reported":false}
+{"date":"2026-10-24T11:13:07.697Z","id":"CVE-2026-114196","kev":false,"reported":false}
+{"date":"2026-10-24T11:13:07.697Z","id":"CVE-2026-112866","kev":false,"reported":false}
+{"date":"2026-10-24T11:13:07.697Z","id":"CVE-2026-111402","kev":false,"reported":false}
