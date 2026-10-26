@@ -131,3 +131,16 @@
 {"date":"2026-10-26T13:14:49.060Z","id":"CVE-2026-116233","kev":false,"reported":false}
 {"date":"2026-10-26T13:14:49.060Z","id":"CVE-2026-116234","kev":false,"reported":false}
 {"date":"2026-10-26T13:14:49.060Z","id":"CVE-2026-116235","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-10757","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-65184","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-59107","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-59106","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-107656","kev":false,"reported":true,"title":"Fortinet 製品の認証バイパスで機器に不正アクセスされる","urgency":"watch"}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-107092","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-116214","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-116485","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-112346","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-93328","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-77055","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-115693","kev":false,"reported":false}
+{"date":"2026-10-26T20:35:40.851Z","id":"CVE-2026-110475","kev":false,"reported":false}

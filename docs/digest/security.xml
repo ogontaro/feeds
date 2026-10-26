@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Mon, 26 Oct 2026 13:14:49 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Oct 2026 20:35:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Fortinet 製品の認証バイパスで機器に不正アクセスされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107656.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107656.html#2026-10-26T20:35:40.851Z</guid>
+            <pubDate>Mon, 26 Oct 2026 20:35:40 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Fortinet 製品の認証バイパスで機器に不正アクセスされる</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、CISA KEV 未収載・EPSS 不明で悪用の確認はまだない。自宅インフラの構成に Fortinet 製品は含まれていないが、広く使われるネットワーク機器の認証バイパスであり、基準の「監視」に該当する。</p>
+<p>Fortinet の製品に、別経路・別チャネルを利用して認証を回避される脆弱性がある。認証なしで機器の管理機能に到達でき、設定の改変や情報の取得につながる可能性がある。入力では対象製品名と影響バージョンが明らかになっていない。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで対象製品と影響バージョンを確認し、修正版が公開されていれば更新する。該当製品を外部に公開している場合は、更新までの間アクセスを制限する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-g63q-h893-6372">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Collabora Online の CODE Server に OS コマンドインジェクション、NextCloud 経由で遠隔コード実行のおそれ]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110447.html</link>
