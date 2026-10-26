@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS リリースレポート 2026-10-26</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS リリースレポート 2026-10-26</h1>
+<article class="report"><h2>今週のリリース</h2>
+<section class="item">
+<h3>Karpenter v1.15.1 / v1.14.3 (LTS) / v1.9.3 (LTS)</h3>
+<p><strong>破壊的変更</strong>: 明示的な破壊的変更はありません。ただし容量の見積もり方が2か所で変わります。v1.14.3 は Spot の <code>SpotMaxPriceTooLow</code> を ICE（Insufficient Capacity）として分類し、回収中（reclaiming）の割り込み可能な容量予約を「利用不可」として扱うようにしました。v1.15.1 は、適合する容量予約がすべて埋まっているときに defer せず preference を緩めて別の候補へ流れるようになります。Spot の価格上限や容量予約を使っているクラスタは、在庫待ちの挙動とノードの選ばれ方が変わります。LTS は v1.14 系が 2027年7月、v1.9 系が 2027年2月までサポートされます。</p>
+<p>今週は現行の v1.15.1、LTS の v1.14.3、v1.9.3、そして v1.14.2 の4版。中身があるのは v1.14.3 と v1.15.1 です。v1.14.3 は Spot の価格上限超過を ICE として扱うことで、Spot 在庫が取れないときにオンデマンドや他の候補へ正しくフォールバックできるようになり、回収中の割り込み可能予約を空き容量として数えなくなりました。加えて、未起動のまま残った NodeClaim の記録をクラスタ状態から修復する修正、絞り込まれた NodeClaim 要件に対して <code>minValues</code> を緩める修正、NodePool の項目が消えたときの <code>ReleaseNodeCount</code> の防御が入っています。</p>
+<p>v1.15.1 は現行系のパッチで、容量予約が満杯のときのフォールバック改善と、作成後にラベルが同期された場合に NodeRepair コントローラへ enqueue できるようにする修正が本体です。v1.14.2 は <code>nestedVirtualizationEnabled</code> をキーにした offering キャッシュの修正と脆弱性対応の依存更新、v1.9.3 は Go 1.26.10 への更新と CI の整理だけで、実質は延命パッチです。自宅は Talos で組んでいますが、AWS 側は Terraform で EKS を管理しているので、ノード調達の既定動作が変わるこの2件はクラスタのコストとスケールアウト待ち時間に直結します。ランドスケープに Karpenter の項目はありませんが、「イベント駆動オートスケール」や「リソース要求の適正化」と同じコスト最適化の層をノード側で担うものです。</p>
+<p class="links"><a href="https://github.com/aws/karpenter-provider-aws/releases/tag/v1.15.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Faws%2Fkarpenter-provider-aws%2Freleases%2Ftag%2Fv1.15.1">Google 翻訳で読む</a></p>
+<p>他のバージョン: <a href="https://github.com/aws/karpenter-provider-aws/releases/tag/v1.14.3">v1.14.3 (LTS)</a> / <a href="https://github.com/aws/karpenter-provider-aws/releases/tag/v1.14.2">v1.14.2 (LTS)</a> / <a href="https://github.com/aws/karpenter-provider-aws/releases/tag/v1.9.3">v1.9.3 (LTS)</a></p>
+</section>
+<section class="item">
+<h3>aws-load-balancer-controller v3.6.1〜v3.6.2</h3>
+<p><strong>破壊的変更</strong>: なし。CRD の更新も不要で、コントローラを上げるだけで済みます。ただし v3.6.0 より前から上げる場合は、先に v3.6.0 のリリースノートにある CRD 手順を適用してください。v3.6.2 ではベースイメージの CA バンドルから emSign 系のルート証明書が外れ、信頼するルートが 143 本から 140 本に減りました（実際に信頼していたのは emSign ECC Root CA - G3 / C3 と emSign Root CA - C1 の3本）。コントローラ自身の外向き TLS の信頼判断が変わるので、連携先の証明書が emSign 系に連なる場合は確認が必要です。</p>
+<p>v3.6.1 は Go 1.26.10 と golang.org/x/net v0.60.0 への更新で、コントローラのバイナリに対する脆弱性18件（HIGH 4、MEDIUM 13、LOW 1）を解消しました。HTTP Range ヘッダーや HTTP/2 の SETTINGS フレームを使った DoS、<code>crypto/tls</code> の ECH 関連の DoS などが含まれます。API・CRD・挙動の変更はなく、<code>go.mod</code> の go ディレクティブも 1.26.5 のままなので、モジュール利用者の最低バージョンは変わりません。</p>
+<p>新機能は、リソース単位の reconcile 成否を出す <code>awslbc_controller_reconcile_condition</code> ゲージ（<code>controller</code> / <code>namespace</code> / <code>name</code> ラベル付きで、Ingress・Service・Gateway・TargetGroupBinding・GlobalAccelerator の各 reconciler に配線）と、PodEndpoint に載る <code>NodeReadyTime</code> です。前者は「どのリソースが reconcile に失敗し続けているか」を Prometheus のクエリ1本で引けるので、ランドスケープの「可観測性の統合(OpenTelemetry / LGTM)」で回している監視にそのまま足せます。v3.6.2 は Gateway 子リソースの初期キャッシュ同期時の冗長な enqueue を止める起動時間の改善で、Gateway 配下のリソースが多いクラスタほど効きます（起動後の挙動は不変）。ほかに、自動生成されたバックエンドのセキュリティグループが既に消えている場合に <code>InvalidGroup.NotFound</code> を成功として扱う修正が入っています。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Faws-load-balancer-controller%2Freleases%2Ftag%2Fv3.6.2">Google 翻訳で読む</a></p>
+<p>他のバージョン: <a href="https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.1">v3.6.1</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

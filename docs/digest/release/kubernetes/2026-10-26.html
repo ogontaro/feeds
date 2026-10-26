@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes リリースレポート 2026-10-26</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes リリースレポート 2026-10-26</h1>
+<article class="report"><h2>今週のリリース</h2>
+<p>今週は Go 1.26.10 への追随を通じて、侵害された eMudhra 中間 CA（CVE-2026-111943）の信頼を外すリリースが一斉に出た。TLS 検証が絡む自宅クラスタでは、この一群をまとめて上げるのが最短。</p>
+<section class="item">
+<h3>Argo CD v3.6.0-rc3 / v3.6.0-rc4 / v3.5.6 / v3.4.12 / v3.3.17 / v3.3.18</h3>
+<p><strong>破壊的変更</strong>: なし（3.6 系は RC のため本番投入は不可）<br>stable 系（3.5.6 / 3.4.12 / 3.3.17）は、サーバサイド適用の diff が「他のマネージャに消されたフィールド」を差分として報告し続ける問題の修正が中心。Crossplane や kro のように同じリソースへ書き込むコントローラを併用している場合に効く。加えて SOCKS5 プロキシ経由の SSH リポジトリ取得の復旧、gRPC の SRV（_grpclb._tcp）参照の回避策、sharding で未知クラスタを追加した際の再配分漏れの修正。3.3.18 は eMudhra CA 証明書への security 修正のみで、3.3 系を使っているなら優先度は高い。<br>3.6 系 RC では Dex の TLS 暗号スイート／曲線設定、reposerver の CMP 失敗後に残る古い manifest とゴルーチンリークの修正、OCI タグリストのキャッシュが入った。</p>
+<p class="links"><a href="https://github.com/argoproj/argo-cd/releases/tag/v3.5.6">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fargoproj%2Fargo-cd%2Freleases%2Ftag%2Fv3.5.6">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Cilium 1.20.4 / 1.19.10 / 1.18.16</h3>
+<p><strong>破壊的変更</strong>: なし（ただし CiliumEnvoyConfig が自 namespace の Service しか redirect しなくなり、namespace 未指定の CiliumClusterwideEnvoyConfig は再び <code>default</code> 扱いに戻る。ドキュメント通りの挙動への回帰だが、CEC で他 namespace を参照していた構成は要確認）<br>3 ブランチ同時のアウトオブバンド security リリースで、CVE-2026-111943 対応（Go 1.26.10）と依存の一括更新が目的。1.20.4 はさらに、1.20.3 で Gateway API の BackendTLSPolicy を誤処理して CPU 高騰と転送不能を起こすリグレッションの修正を含む。Gateway API 経由で公開しているなら 1.20.3 は避けたい。<br>起動直後の Pod の DNS SERVFAIL/REFUSED 低減、LBIPAM の共有インデックス更新漏れ、IPv6 ClusterIP の L4 チェックサム修正なども入っている。</p>
+<p class="links"><a href="https://github.com/cilium/cilium/releases/tag/v1.20.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcilium%2Fcilium%2Freleases%2Ftag%2Fv1.20.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>cert-manager v1.21.3</h3>
+<p><strong>破壊的変更</strong>: なし。ただし next private key Secret の扱いが厳格化され、<code>cert-manager.io/next-private-key</code> ラベルと Certificate の所有が必須になる<br>全ユーザーにアップグレードが推奨されている。侵害された eMudhra のルート証明書を distroless ベースイメージから除去し、Go 1.26.10 で該当チェーンを拒否する。<br>実務的に効くのは ACME ARI の更新ループ修正。前の証明書の古い ARI ウィンドウが残ると再発行を繰り返し、CA のレートリミットに当たっていた。あわせて、certificates/status を書けるが Secret を読めない主体が任意の Secret を指定して秘密鍵を <code>spec.secretName</code> へコピーさせられる問題を塞いでいる。<br>Helm chart の <code>http_proxy</code> / <code>https_proxy</code> / <code>no_proxy</code> がクォートされ、<code>*.example.com</code> のような値でも manifest が壊れなくなった。自宅クラスタで no_proxy にワイルドカードを書いている場合はこれが刺さる。</p>
+<p class="links"><a href="https://github.com/cert-manager/cert-manager/releases/tag/v1.21.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcert-manager%2Fcert-manager%2Freleases%2Ftag%2Fv1.21.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Crossplane v2.4.3 / v2.3.7 / v2.2.7 / v1.20.14</h3>
+<p><strong>破壊的変更</strong>: なし<br>途中で切れたパッケージダウンロードが「有効な package.yaml」としてキャッシュされ、オブジェクトの一部しか登録されないまま Healthy=True になり、RBAC も短いリストから描画されてプロバイダが crash-loop する問題を修正。プロバイダ更新時に踏みやすいので、v2 系を使っているなら上げ得。<br>v2.3.7 では、XRD の List に失敗したとき「強制 composition なし」と解釈して claim の compositionRef を通していた点が fail closed に変更された。XR の scale サブリソースに対する crossplane-edit / crossplane-admin の RBAC 追加、Usage の in-use ラベルを毎 reconcile 書き換えていた無駄な API 書き込みの停止も入る。<br>全ブランチで eMudhra 対応と依存 CVE の更新を実施。</p>
+<p class="links"><a href="https://github.com/crossplane/crossplane/releases/tag/v2.4.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcrossplane%2Fcrossplane%2Freleases%2Ftag%2Fv2.4.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Terraform v1.17.0 / v1.16.7</h3>
+<p><strong>破壊的変更</strong>: 明示的な破壊的変更はなし。ただし <code>terraform version -json</code> に <code>format_version</code> が追加され、<code>pow</code> / <code>log</code> が ±Infinity を返す場合にエラーになり、ephemeral リソース更新時の診断が新たに表示されて warning が増えうる<br><code>required_providers</code> で変数と locals が使えるようになり、プロバイダのバージョンやソースを環境ごとに切り替えやすくなった（AWS 側の管理と自宅側で同じ module を使い回すのに向く）。<code>-minimal-refresh</code> は変更予定のあるリソースだけ refresh するため plan が短くなる。<br>Terraform Policy が GA になり、<code>plan</code> / <code>apply</code> / <code>query</code> の <code>-policies</code> が experimental ビルドや <code>-allow-experimental-features</code> なしで使える。1.16.7 は test の panic 修正と Go 1.26.10 への更新のみ。</p>
+<p class="links"><a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhashicorp%2Fterraform%2Freleases%2Ftag%2Fv1.17.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Talos Linux v1.13.12</h3>
+<p><strong>破壊的変更</strong>: なし<br>Linux 6.18.57、containerd 2.2.10、Go 1.26.10（eMudhra 対応）へ更新。Kubernetes コンポーネントは 1.36.3 のまま。<br>DHCP でアドレスが変わったときの扱いの修正、QEMU 10.2+ での GSO offload 無効化、ACPI 電源ボタンの復旧が入る。イミュータブル OS 層の変更なので、ノードのローリング更新として計画的に当てたい。</p>
+<p class="links"><a href="https://github.com/siderolabs/talos/releases/tag/v1.13.12">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsiderolabs%2Ftalos%2Freleases%2Ftag%2Fv1.13.12">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Argo Workflows v4.1.6 / v4.0.15</h3>
+<p><strong>破壊的変更</strong>: なし（v4.0.14 はリリース失敗。4.0 系は 4.0.15 を使う）<br>4.1.6 / 4.0.15 のノート本文は定型のみで個別の変更は載っていない。実質的な内容は 4.0.14 側のチェンジログにあり、動的な名前を持つ templateRef の検証スキップ、event flow ページの一覧制限、アーカイブ済みログのコンテナ名修正、Go 1.26.10 と x/net v0.60.0 への更新が含まれる。4.0.14 は「失敗したので 4.0.15 を使ってください」と明記されているため、4.0 系の更新先は 4.0.15 一択。</p>
+<p class="links"><a href="https://github.com/argoproj/argo-workflows/releases/tag/v4.1.6">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fargoproj%2Fargo-workflows%2Freleases%2Ftag%2Fv4.1.6">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Backstage v1.56.2 / v1.56.1 / v1.56.0 / v1.54.10</h3>
+<p><strong>破壊的変更</strong>: あり（1.56.0）。FilterPredicate は root がオブジェクトのみになり、プリミティブを渡すと catalog backend が「Invalid query」を返す。Atlassian の <code>usernameMatchingUserEntityName</code> サインインリゾルバは削除。バックエンドの instance ID が必須化され、独自実装・モックは <code>instanceId</code> の提供が必要。incremental-ingestion は <code>ref</code> → <code>entity_ref</code> のリネームと unique 制約追加のため、ローリング（ゼロダウンタイム）アップグレードができない<br>1.56.0 では catalog の <code>EntityFilter</code> に <code>getCatalogQuery</code> が入り、<code>$any</code> / <code>$not</code> / <code>$hasPrefix</code> をバックエンドの 1 クエリにまとめられるようになった（<code>getCatalogFilters</code> は deprecated、catalog backend 1.49 以上が前提）。<code>EntityListProvider</code> のテストで <code>getEntities</code> をモックしている場合は <code>streamEntities</code> に置き換える必要がある。<br>1.56.2 は <code>@yarnpkg/core</code> 4.9.2 の破壊で CLI がインストールできなくなる問題を、optional peer 化で回避する修正。1.56.1 / 1.54.10 は catalog ルールの URL ロケーションを正規形でマッチさせる修正など。</p>
+<p class="links"><a href="https://github.com/backstage/backstage/releases/tag/v1.56.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbackstage%2Fbackstage%2Freleases%2Ftag%2Fv1.56.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>external-secrets v2.14.0</h3>
+<p><strong>破壊的変更</strong>: なし<br>コントローラの Status と Event に出るエラーのサニタイズ、nil 代入への多層防御が入った security 寄りのリリース。機能面では GitHub Access Token ジェネレータが App ID / Installation ID を Secret から取得できるようになり、GitHub App の認証情報をまとめて外部管理しやすい。Vault の mount prefix 除去を <code>buildMetadataPath</code> にも適用、ClusterExternalSecret の namespace finalizer の長さ対策、デフォルト cooldown 不足の修正も含む。Helm chart 2.14.0 も同時に出ている。</p>
+<p class="links"><a href="https://github.com/external-secrets/external-secrets/releases/tag/v2.14.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fexternal-secrets%2Fexternal-secrets%2Freleases%2Ftag%2Fv2.14.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>external-dns v0.24.0</h3>
+<p><strong>破壊的変更</strong>: あり（複数）。<code>--namespace</code> が複数値対応になり、<code>Config.Namespace</code> は <code>Namespaces []string</code> に変わる（<code>pkg/apis/externaldns</code> を import している場合に影響）。gateway-httproute では annotation か FQDN テンプレートのホスト名が listener のホスト名フォールバックを抑止するようになり、<code>--policy=sync</code> だと従来作られていたワイルドカード／listener レコードが削除されうる。gateway-tcproute は TCPRoute v1 を watch するため Gateway API CRD 1.6.0 以上が必須。skipper-routegroup は informer 化され RouteGroup CRD が必要。DNSEndpoint / DNSRecord CRD が admission で検証されるようになり、CRD の再適用が要る（違反オブジェクトは修正まで更新不可）<br>scaleway では ALIAS レコードの読み戻しと apex CNAME の ALIAS 化が入り、<code>--registry=noop</code> + <code>--policy=sync</code> では既存 ALIAS が更新・削除されうる。<code>$KUBECONFIG</code> を尊重して <code>--server</code> が in-cluster でも無視されなくなる、同期結果を DNSEndpoint の status に書く、targets のない endpoint でプロバイダが落ちる代わりにスキップする、といった改善も。<code>--dry-run=true</code> での事前確認が推奨されている。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.24.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fexternal-dns%2Freleases%2Ftag%2Fv0.24.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Grafana Alloy v1.21.0 → v1.21.2</h3>
+<p><strong>破壊的変更</strong>: あり（1.21.0）。<code>loki.write</code> で <code>wal { enabled = true }</code> を設定していると <code>--stability.level=experimental</code> なしでは設定が読み込まれない。<code>otelcol.receiver.kafka</code> / <code>otelcol.exporter.kafka</code> の <code>metadata.retry.max_retries</code> が既定 3 → 20 になり、exporter 側にも backoff が適用される。<code>otelcol.connector.signaltometrics</code> の <code>error_mode</code> は既定が propagate → ignore に変わり、失敗した OTTL 式はレコードをスキップしてログだけ残す<br>1.21.1 は faro.receiver の <code>download_from_origins</code> をリダイレクトと sourcemap URL にも適用、kafka exporter の空 consumer group で panic する問題の修正。1.21.2 は設定値の型 string → secret への移行。Helm chart 1.14.3 が Alloy 1.21.2 を同梱する。</p>
+<p class="links"><a href="https://github.com/grafana/alloy/releases/tag/v1.21.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Falloy%2Freleases%2Ftag%2Fv1.21.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Loki v3.7.9 / v3.6.19</h3>
+<p><strong>破壊的変更</strong>: なし<br>3.7.9 は ingester の WAL に同時 Append が走るとレコード順序が壊れて復旧不能な WAL 状態になりうる問題の修正が最重要。あわせて ruler の CreateRuleGroup API と LogQLAnalyzer API のリクエストボディサイズ制限、stream accumulator の空き容量がある間はエントリを保持する logql 修正、containerd v2.2.9 などの security 更新、Go 1.26.10 への更新が入る。3.6.19 は Go 1.26.10 のみ。</p>
+<p class="links"><a href="https://github.com/grafana/loki/releases/tag/v3.7.9">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Floki%2Freleases%2Ftag%2Fv3.7.9">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Mimir 3.2.3 / 3.1.8</h3>
+<p><strong>破壊的変更</strong>: なし<br>Go 1.26.10 と distroless ランタイムイメージの更新で eMudhra の CA 信頼を外し、<code>golang.org/x/net</code> v0.60.0 で HTTP/2 の修正を取る。Go 1.26.9 への更新分で 13 件の CVE も解消している。Helm chart は <code>mimir-distributed 6.3.0-weekly.417</code> が自動リリースされている。</p>
+<p class="links"><a href="https://github.com/grafana/mimir/releases/tag/mimir-3.2.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Fmimir%2Freleases%2Ftag%2Fmimir-3.2.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Istio 1.31.3 / 1.30.7 / 1.29.10 / 1.32.0-beta.0</h3>
+<p><strong>破壊的変更</strong>: 記載なし（ノート本文が「Release Notes」へのリンクのみで、この入力からは変更点を読めない）<br>3 本のパッチリリースと 1.32.0-beta.0。メッシュ内 mTLS と zero-trust の土台なので追随はしたいが、内容は各 tag のリリースノートを直接確認してから当てるのが安全。1.32 系はまだ beta。</p>
+<p class="links"><a href="https://github.com/istio/istio/releases/tag/1.31.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fistio%2Fistio%2Freleases%2Ftag%2F1.31.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>stern v1.35.0</h3>
+<p><strong>破壊的変更</strong>: あり。<code>--timestamps</code> 指定時に <code>.Message</code> へタイムスタンプが前置されなくなり、代わりに <code>.Timestamp</code> 変数が追加された。カスタムテンプレートで <code>--timestamps</code> を使っている場合は <code>.Timestamp</code> を明示しないとタイムスタンプが消える<br><code>--pager</code> フラグが追加され、tty のときだけ pager に出力する（色も保持され、pager を閉じると tail も止まる）。同一ワークロードが作る Pod には未使用色の範囲で別の色が割り当てられ、レプリカのログが混ざっても見分けやすくなった。<code>extractJSONParts</code> はドット記法でネストしたフィールドを取れ、extjson / ppextjson に timestamp と namespace が入る。Kubernetes 1.37 向けの依存更新も実施。</p>
+<p class="links"><a href="https://github.com/stern/stern/releases/tag/v1.35.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstern%2Fstern%2Freleases%2Ftag%2Fv1.35.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>dex v2.46.1</h3>
+<p><strong>破壊的変更</strong>: なし<br>イメージから侵害された eMudhra の中間 CA を外すバックポートのみ。Argo CD 3.6 系は dex 2.46.0 を同梱しているため、Dex を別途運用している場合はこちらも揃えたい。</p>
+<p class="links"><a href="https://github.com/dexidp/dex/releases/tag/v2.46.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fdexidp%2Fdex%2Freleases%2Ftag%2Fv2.46.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>actions-runner-controller (ARC) gha-runner-scale-set 0.15.1</h3>
+<p><strong>破壊的変更</strong>: なし<br>runner を v2.338.1 へ更新し、Go 1.27.3 と依存を追随。ジョブを一度も実行せずに終了した ephemeral runner をサービスから除去する修正、レートリミットされた scale-set リクエストを client の retry に頼らず requeue する修正、scale set のメトリクス登録と公開のガード条件の不整合の修正が入る。experimental chart も同時に更新。</p>
+<p class="links"><a href="https://github.com/actions/actions-runner-controller/releases/tag/gha-runner-scale-set-0.15.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Factions%2Factions-runner-controller%2Freleases%2Ftag%2Fgha-runner-scale-set-0.15.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>SeaweedFS 4.49 → 4.51</h3>
+<p><strong>破壊的変更</strong>: なし（ただし IAM/OIDC の単一使用 web-identity トークンの扱いが変わる。4.49 で入れた jti リプレイキャッシュを 4.51 で撤去し、単一使用トークン自体を廃止した）<br>セキュリティ寄りの修正が続く。S3 は GET/HEAD で保存済みタグと内部属性を返さなくなり、delete marker の GET/HEAD が S3 準拠になり、POST Object の ACL フィールドが PutObjectAcl 権限の背後に移された。IAM は read-only セッションを filer の /etc ツリーから排除し、s3tables の匿名 identity の grant をテーブルカタログ単位に限定。master には <code>-maxWritableVolumes</code> と rack ごとの並列 vacuum 上限が追加された。</p>
+<p class="links"><a href="https://github.com/seaweedfs/seaweedfs/releases/tag/4.51">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fseaweedfs%2Fseaweedfs%2Freleases%2Ftag%2F4.51">Google 翻訳で読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

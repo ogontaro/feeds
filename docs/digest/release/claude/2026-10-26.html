@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude リリースレポート 2026-10-26</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude リリースレポート 2026-10-26</h1>
+<article class="report"><h2>今週のリリース</h2>
+<section class="item">
+<h3>Claude Code releases v2.1.304〜v2.1.310</h3>
+<p><strong>破壊的変更</strong>: 明示的な破壊的変更はありません。ただしアップグレード時の注意が3つ。v2.1.304 は tool search を拒否するゲートウェイ／プロバイダー配下で全リクエストが失敗する回帰を含み、v2.1.305 で修正されています（v2.1.304 に固定しているなら上げてください）。v2.1.305 から <code>allowedMcpServers</code> の挙動が変わり、<code>managed-mcp.json</code> の stdio サーバーのうち <code>env</code> にだけ <code>${VAR}</code> を使うものが許可リストで除外されなくなりました。許可リストから漏れていたサーバーがアップグレード後に読み込まれるので、止めたいものは <code>deniedMcpServers</code> に書く必要があります。v2.1.309 からは、サイズ上限を超えたネストした <code>CLAUDE.md</code> が先頭だけを読み込むようになりました。</p>
+<p>5日間で7版（10/19〜10/23）。今週の中心は <strong>v2.1.309 の権限・サンドボックス修正</strong>です。サンドボックス化された Bash が各コマンドの前にシェルの起動ファイルをサンドボックス外で読んでいた問題、macOS の <code>denyWrite</code> glob がシンボリックリンク経由の実パスに効かない問題、サンドボックス化されたコマンドや auto-accept された編集が <code>--mcp-config</code> で渡したファイルを書き換えられる問題、無効化した MCP サーバーが後続の許可プロンプトで再接続される問題、<code>Edit(path)</code> の拒否ルールがサブシェルを含む Bash リダイレクトを塞げない問題、worktree 分離ガードがロケール接頭辞付きコマンドや zsh の算術コマンドで抜けられる問題などをまとめて塞いでいます。v2.1.310 も、ファイル読み取りの許可プロンプトがシンボリックリンクの行き先を表示しない問題と、Git Bash が無い Windows で引用符だけのフックコマンドがツール呼び出しを通してしまう問題を修正しました。v2.1.305 で追加された <code>sandbox.allowNestedUserNamespaces</code> は、Linux で Chromium や rootless podman を動かすための設定ですが、サンドボックスのファイル保護を抜けられる方向のスイッチでもあるので、有効化は用途を絞って判断したいところです。ランドスケープの「エージェントの権限境界とサンドボックス」がそのまま効いてくる範囲です。</p>
+<p>運用面の目玉は <strong>v2.1.310 の Monitor ツール</strong>（Bedrock / Vertex / Foundry や、テレメトリ・非必須通信を無効にした環境でも利用でき、長時間のフォアグラウンド sleep もそこでブロックされる）と、<strong>v2.1.307 の OpenTelemetry イベント <code>claude_code.safety_event</code></strong>（許可ルール・auto モード・安全チェック・フック・サンドボックスが、ツール呼び出しを止めた／確認した／差し戻したことを1件ずつ記録）です。OpenTelemetry / LGTM で回している監視に、エージェントの拒否・承認の判断をそのまま流せるようになります。v2.1.307 の <code>/claude-api api-version</code>、v2.1.304 の <code>/auto-mode-setup</code>（プロジェクトと直近セッションを読んで auto モードに環境を教える）と <code>/claude-api managed-agents-secure</code>（Managed Agents の設定を Anthropic のセキュリティガイドと比較）も、権限設計を運用に落とす道具です。クラウドセッションと Remote Control は Enterprise のカスタムロールで権限を分けられるようになり、クラウド環境のセットアップスクリプトをファイルから読み込めるようになりました。</p>
+<p>複数エージェントまわりでは、v2.1.309 が split-pane の teammate に leader の <code>--tools</code> と deny ルールを継承させ、v2.1.307 が同時起動した fork サブエージェントに「どれが自分の起動か」を伝えるようにしました。地味に効くのは、巨大なネスト <code>CLAUDE.md</code> を読んだ後に compaction を繰り返す問題、<code>Prompt is too long</code> 後の base64 / SVG のような濃いテキストで次のリクエストも失敗する問題、<code>cleanupPeriodDays</code> を非常に大きくすると貼り付けた画像などの新しいファイルを掃除が消してしまう問題の修正です。MCP は接続が切れた HTTP ツール呼び出しの二重送信を止め、再試行を読み取り専用・冪等なツールだけに限定しました。</p>
+<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.310">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.310">Google 翻訳で読む</a></p>
+<p>他のバージョン: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.309">v2.1.309</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.308">v2.1.308</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.307">v2.1.307</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.306">v2.1.306</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.305">v2.1.305</a> / <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.304">v2.1.304</a></p>
+</section>
+<section class="item">
+<h3>opencode releases v1.19.4 / v2.1.0〜v2.1.4</h3>
+<p><strong>破壊的変更</strong>: 記載なし。v2.1.0〜v2.1.4 はリリースノートが「release: v2.1.x」だけで、変更内容を読み取れません。v1.19.4 は同梱の Bun を 1.4.4 に上げ、Brotli / TLS / HTTP/1.1 / HTTP/2 / HTTP/3 / WebSocket / fetch のセキュリティ修正とルート証明書（NSS 3.131.1）の更新を含みます。CI の AI 呼び出しで opencode を使っているなら、1系は上げる価値があります。</p>
+<p>1系と2系が並行して出ており、今週は v2.1.0 → v2.1.4 の5版と v1.19.4 の1版です。2系は本文が空同然なので、機能追加や修正の有無はリリースノートでは追えません。OpenCode Go の料金・上限は別フィードの docs 更新側で見る必要があります。ランドスケープの「コーディングエージェント」として常用している側にとっての実利は、v1.19.4 の Bun 更新による TLS / HTTP まわりのセキュリティ修正です。</p>
+<p>GitHub Action 側の変更も入っています。<code>github-v1.2.28</code> が <code>actions/cache</code> をコミット SHA に固定してサプライチェーン対策を強め、<code>github-v1.2.27</code> が <code>exchange_github_app_token_with_pat</code> ルートを削除しました。<code>chip-orb-source</code> は UI の orb モーションを iOS シミュレーション由来にする修正で、実運用には影響しません。</p>
+<p class="links"><a href="https://github.com/anomalyco/opencode/releases/tag/v1.19.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanomalyco%2Fopencode%2Freleases%2Ftag%2Fv1.19.4">Google 翻訳で読む</a></p>
+<p>他のバージョン: <a href="https://github.com/anomalyco/opencode/releases/tag/v2.1.4">v2.1.4</a> / <a href="https://github.com/anomalyco/opencode/releases/tag/v2.1.3">v2.1.3</a> / <a href="https://github.com/anomalyco/opencode/releases/tag/v2.1.2">v2.1.2</a> / <a href="https://github.com/anomalyco/opencode/releases/tag/v2.1.1">v2.1.1</a> / <a href="https://github.com/anomalyco/opencode/releases/tag/v2.1.0">v2.1.0</a> / <a href="https://github.com/anomalyco/opencode/releases/tag/github-v1.2.28">github-v1.2.28</a> / <a href="https://github.com/anomalyco/opencode/releases/tag/github-v1.2.27">github-v1.2.27</a></p>
+</section>
+<section class="item">
+<h3>Orca releases v1.4.231〜v1.4.240</h3>
+<p><strong>破壊的変更</strong>: ネイティブチャット（実験的）は Orca 本体と paired / SSH ホストを同時に更新する前提です。v1.4.240 の開発用クリーンアップは、既定30日の cutoff で sibling worktree の ignored / untracked な依存インストールとビルド出力を回収し得るので、手動実行時は sibling のアプリ・エージェント・ビルドを止めてから行ってください。v1.4.238 のリモートへの Claude / Codex アカウント追加は paired server の更新が必要です。v1.4.232 の Auto 権限はエージェント・モデル・ホストに依存し、既存チャットは自分の設定を保持します。</p>
+<p>6日間で10版。エージェントの作業台としての厚みが増しています。v1.4.240 はブラウザ履歴の検索・再オープン・削除（Undo 付き）、Orca の外で行われた Claude のターンの表示、再接続後のメッセージ保持、クラッシュ復旧で送信済みメッセージを未達と誤判定しない修正、<code>orca ports</code> による worktree の開発サーバーポート検出、Lean / Zig のシンタックスハイライト。v1.4.239 はスキルのワンクリック導入と paired / SSH ホストへの配布、ブラウザプロファイルの shared / per-repo / per-workspace 選択、SSH の stale lock からの復旧。v1.4.238 は同一ファイルの未保存編集をワークスペース間で共有、衝突レビュー、マージ・リベース・cherry-pick の「Resolve with AI」を入れています。</p>
+<p>チャット側は v1.4.235 の「Rewind to here」で Claude 会話を分岐でき、会話ごとに model / effort / Fast を記憶し、返信とツール結果をプレビュー上限で切らずに保存します。v1.4.232 では Manual / Auto / Yolo の権限モードをチャットとターミナルで選べ、ネイティブチャットで OpenCode 2 を直接開けます。ランドスケープに Orca という項目はありませんが、Claude Code・Codex・OpenCode を同じ画面で並行に走らせ、権限モードとモデルを会話単位で切り替える用途は「複数エージェントの並行実行と協調」の実践そのものです。v1.4.237 で GitHub の 100,000 stars に到達しており、開発速度は落ちていません。</p>
+<p class="links"><a href="https://github.com/stablyai/orca/releases/tag/v1.4.240">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstablyai%2Forca%2Freleases%2Ftag%2Fv1.4.240">Google 翻訳で読む</a></p>
+<p>他のバージョン: <a href="https://github.com/stablyai/orca/releases/tag/v1.4.239">v1.4.239</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.238">v1.4.238</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.237">v1.4.237</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.236">v1.4.236</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.235">v1.4.235</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.234">v1.4.234</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.233">v1.4.233</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.232">v1.4.232</a> / <a href="https://github.com/stablyai/orca/releases/tag/v1.4.231">v1.4.231</a></p>
+</section>
+<section class="item">
+<h3>Codex CLI releases 0.164.0 / 0.163.0-alpha.11〜0.164.0-alpha.12</h3>
+<p><strong>破壊的変更</strong>: なし（0.163.0 系は alpha）。ただし 0.164.0 で resume が保存済みのスレッド設定を復元するようになり、グローバル既定で上書きしなくなりました（会話ごとの model / effort が残る）。Amazon Bedrock のセットアップウィザードは既定で有効になります。</p>
+<p>0.164.0 の新機能は <code>/presets</code>（再利用するプロンプトとスラッシュコマンドを10個の番号スロットに保存）、<code>/model</code> と <code>/permissions</code> へのインライン引数（モデル・reasoning effort・speed・権限プロファイルを直接指定）、Kitty / Sixel 対応ターミナルでの画像プレビュー、Enterprise MCP の OAuth（secret を要求するクライアントを含む）、リモート Bash と Zsh スナップショットでの資格情報マスク（カスタムプロバイダー由来の資格情報も対象）です。</p>
+<p>修正は、compaction 失敗時に部分要約を履歴に残さない、背景 compaction の失敗で panic しない、Windows の HTTPS / WebSocket で Negotiate / NTLM によるプロキシ認証、複数階層の <code>-c</code> / <code>--config</code> の保持、キューしたプロンプトが権限選択の解決を待つ、macOS の大小文字違いメタデータパスと実行ファイル探索の差し替え可能なシンボリックリンクに対する sandbox 検査の強化など。未使用インストールの整理、放棄された marketplace checkout の掃除、デーモンログの上限によるディスク使用量の削減も入っています。</p>
+<p>ランドスケープに Codex の項目はありませんが、<code>/permissions</code> のインライン指定と sandbox 検査の強化は、Claude Code 側の <code>--tools</code> / deny ルールやサンドボックス設計を比べる材料になります。0.163.0-alpha.11.1〜0.164.0-alpha.12 の alpha はノートがなく、実質は 0.164.0 を見れば十分です。</p>
+<p class="links"><a href="https://github.com/openai/codex/releases/tag/rust-v0.164.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fopenai%2Fcodex%2Freleases%2Ftag%2Frust-v0.164.0">Google 翻訳で読む</a></p>
+<p>他のバージョン: <a href="https://github.com/openai/codex/releases/tag/rust-v0.164.0-alpha.12">0.164.0-alpha.12</a> / <a href="https://github.com/openai/codex/releases/tag/rust-v0.164.0-alpha.11.1">0.164.0-alpha.11.1</a> / <a href="https://github.com/openai/codex/releases/tag/rust-v0.164.0-alpha.11">0.164.0-alpha.11</a> / <a href="https://github.com/openai/codex/releases/tag/rust-v0.164.0-alpha.10">0.164.0-alpha.10</a> / <a href="https://github.com/openai/codex/releases/tag/rust-v0.164.0-alpha.9">0.164.0-alpha.9</a> / <a href="https://github.com/openai/codex/releases/tag/rust-v0.164.0-alpha.8">0.164.0-alpha.8</a> / <a href="https://github.com/openai/codex/releases/tag/rust-v0.163.0-alpha.11.2">0.163.0-alpha.11.2</a> / <a href="https://github.com/openai/codex/releases/tag/rust-v0.163.0-alpha.11.1">0.163.0-alpha.11.1</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

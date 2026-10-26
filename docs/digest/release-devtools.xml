@@ -4,11 +4,91 @@
         <title>開発ツール リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>開発ツール 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 12 Oct 2026 01:44:25 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Oct 2026 00:46:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[開発ツール リリースレポート 2026-10-26]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-10-26.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/devtools/2026-10-26.html</guid>
+            <pubDate>Mon, 26 Oct 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>mise v2026.10.19</h3>
+<p><strong>破壊的変更</strong>: セキュリティ修正の多くが「これまで通っていた操作を止める」方向なので、実質的な破壊的変更があります。<code>lockfile_mode</code> の既定が <code>generate</code> になり、<code>mise install</code> は毎回 <code>mise.lock</code> を現在の要求から作り直します（他プラットフォーム分も固定）。従来どおりに戻すには <code>lockfile_mode = &quot;merge&quot;</code> か <code>MISE_LOCKFILE_MODE=merge</code> を指定します。加えて、<code>mise run --help</code> / <code>mise watch --help</code> の表示、shim の実行、フックからの <code>mise run</code>、MCP 呼び出し、<code>mise set</code> / <code>unset</code> / <code>tasks add</code> の設定保存がプロジェクトの信頼と見なされなくなり、未信頼のプロジェクトでは確認が入ります。</p>
+<p>信頼の範囲が「信頼したファイル」に紐づきました。偽装した git worktree、グローバル設定へのシンボリックリンク、<code>.mise</code> という名前の clone、プロジェクトの <code>.miserc.toml</code> が信頼を借用したりグローバル設定を隠したりできなくなり、paranoid モードでは idiomatic version file・ローカルタスクファイル・プロジェクト名の aqua レジストリが個別に信頼を要求します。commit SHA に固定したリモート git include は、その SHA を厳密にチェックアウトすることが必須になりました。タスクは、それを追加するすべての設定が信頼されている場合にだけ信頼されます。</p>
+<p>検証は fail closed になりました。固定 checksum、Node の署名、SLSA provenance（ビルド元タグを含む）、GitHub attestation が強制され、以前のように 404 やファイル欠落で検証がスキップされることはありません。アーカイブ・アセット名・バージョン・lockfile・HTTP レスポンスは、ディレクトリ外への書き込み、無制限のメモリ・ディスク消費、プロンプトのハングを起こせなくなり、資格情報がインストールパス・lockfile・ログ・リダイレクトに出なくなります。新設定の <code>extract_max_ratio</code>（グローバルのみ）が展開時の膨張率を上限で抑えます。新機能では <code>{{ mise_config_dir }}</code>（dotfiles の variant を <code>conf.d</code> にリンクする用途）と <code>mise lsp</code> のセマンティックハイライト（<code>initializationOptions</code> に <code>{&quot;semanticTokens&quot;: false}</code> で無効化）、<code>github.enterprise_hosts</code>、vfox の <code>slsa_source_repository</code> / <code>slsa_source_tag</code> が入りました。ランドスケープの「開発環境の宣言化」を mise で回している身には、lockfile がプラットフォームをまたいで <code>mise install --locked</code> に通るようになる変更が実利です。</p>
+<p>同日に vfox / mise-util / mise-ui / mise-tls / mise-system / mise-system-packages / mise-sigstore / mise-settings / mise-oci の 2026.10 系タグも出ていますが、リリースノートは版号のみです。</p>
+<p class="links"><a href="https://github.com/jdx/mise/releases/tag/v2026.10.19">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjdx%2Fmise%2Freleases%2Ftag%2Fv2026.10.19">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Docker Engine (moby) v29.9.2</h3>
+<p><strong>破壊的変更</strong>: なし。ただし eMudhra の中間 CA を使っているレジストリは、pull / push の TLS 検証が失敗するようになります。</p>
+<p>Go ランタイムを 1.26.10 に更新し、失効した eMudhra の中間証明書 8 本を含む証明書チェーンを拒否します（CVE-2026-111943）。対象は DV / OV / EV TLS の G3B・G3C と OV コード署名の G3B・G3C で、G3B は eMudhra BV、G3C は eMudhra Inc のもの。鍵が侵害されたためで、影響を受けるレジストリは中間 CA を含まない証明書チェーンに差し替える必要があります。自前のレジストリやミラーを自宅クラスタで動かしている場合は、イメージが引けなくなって初めて気づくことになるので、アップグレード前にチェーンを確認しておくと安全です。</p>
+<p class="links"><a href="https://github.com/moby/moby/releases/tag/docker-v29.9.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmoby%2Fmoby%2Freleases%2Ftag%2Fdocker-v29.9.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Node.js v22.23.4 / v24.22.1 / v26.12.1</h3>
+<p><strong>破壊的変更</strong>: なし（セキュリティリリース）。ただし 26.12.1 で「module: synchronously load most ES modules」がリバートされており、26 系で入っていた同期的な ES モジュール読み込みが元に戻ります。</p>
+<p>3 系統同時のセキュリティリリースです。High は tls の非正規 IP アドレス拒否（CVE-2026-106069 / 106072）、dns の null バイト検証（CVE-2026-105482）、tls の IP 正規化回帰修正（CVE-2026-105483）、brotli の <code>BROTLI_DECODER_ERROR_FORMAT_BLOCK_SWITCH</code> 公開（CVE-2026-111497）。Medium は http エージェントのデータガードとスナップショットをまたぐ crypto の乱数キャッシュ、Low は zlib の ZIP ローカルヘッダ、fs 権限ツリーのワイルドカードノード、<code>realpathSync</code> の権限モデルです（22.23.4 には tls の IP 正規化回帰修正 CVE-2026-105483 は入っていません）。あわせてルート証明書が NSS 3.131.1 になり、ブロック済み公開鍵を含むチェーンを拒否します。LTS の 22 / 24 を使っているなら、mise でバージョンを固定していても早めに上げる価値があります。</p>
+<p class="links"><a href="https://github.com/nodejs/node/releases/tag/v26.12.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fnodejs%2Fnode%2Freleases%2Ftag%2Fv26.12.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>uv 0.13.2〜0.13.5</h3>
+<p><strong>破壊的変更</strong>: なし。ただし 0.13.5 で Python 3.9 / 3.10 向けの uv 入り Docker イメージの公開が止まり、0.13.4 / 0.13.5 は侵害された eMudhra ルートを拒否するため、そのルートに依存するインデックスやレジストリへの接続が失敗します。</p>
+<p>0.13.4 が GHSA-hq85-5cpj-mr62（Web PKI の中間 CA 侵害）に対応し、0.13.5 が managed CPython を python-build-standalone 20261021 に更新しました。CPython 3.15.1 / 3.14.9 / 3.13.17 のセキュリティパッチを含み、pip 26.2.2（ensurepip 同梱）と certifi 2026.10.19 が入ります。アップグレード後に <code>uv python upgrade</code> を実行しないと managed インタプリタは切り替わらず、既存の venv は固定したパッチ版のままなので pip は別途上げる必要があります。3.9 / 3.10 は依然として問題のルートを信頼する pip を同梱するため、移行が推奨されています。</p>
+<p>0.13.2 / 0.13.3 は高速化と堅牢化が中心で、複雑な依存マーカーの解析・simplify・export の指数的な計算の除去、複数環境解決時のピークメモリ削減、<code>--exclude-newer</code> とキャッシュ済みホイールの組み合わせ修正、資格情報が診断や保存メタデータに漏れる問題の修正、GET / HEAD のリトライ、PyPy 3.11.17 / 3.12.15 の追加。wheel-variants（PEP 825 / PEP 850）の選択・ランク付けはまだ preview です。</p>
+<p class="links"><a href="https://github.com/astral-sh/uv/releases/tag/0.13.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fastral-sh%2Fuv%2Freleases%2Ftag%2F0.13.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Deno v2.9.8</h3>
+<p><strong>破壊的変更</strong>: なし。ただし <code>deno compile</code> したバイナリが動的 import でローカルファイルを読む場合、読み取り権限の確認が入ります。</p>
+<p>侵害された eMudhra の CA を信頼しないようになり（#37046）、uv・Node.js・Docker Engine と同じ週の証明書侵害に対応しています。ほかに napi の <code>napi_create_dataview</code> の境界チェックと、例外保留中のコールバック戻り値の無視、npm の package link 名の検証、<code>mock.reset()</code> が <code>mock.method()</code> の実装を復元する修正、coverage 収集時の V8 コードキャッシュのスキップ、hyper 系の idle interval 修正、rand のパッチ版への更新。zsh の補完で素の <code>deno run</code> のスクリプトパスが補完されるようになりました。</p>
+<p class="links"><a href="https://github.com/denoland/deno/releases/tag/v2.9.8">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fdenoland%2Fdeno%2Freleases%2Ftag%2Fv2.9.8">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Devbox 0.18.5</h3>
+<p><strong>破壊的変更</strong>: 明示的な破壊的変更はありません。ただし <code>devbox.lock</code> の各パッケージの <code>plugin_version</code> を <code>shell</code> / <code>run</code> / <code>install</code> が書き換えなくなり、add / rm / update のときだけ更新されるようになります（複数バージョンの devbox が混在するチームで lockfile が往復しなくなる代わりに、既存の値は次に add / rm / update するまで残ります）。</p>
+<p><code>devbox.json</code> に <code>devbox_version</code>（<code>&quot;^0.18.0&quot;</code> のような npm 風の制約）を書いて、プロジェクトが要求する devbox のバージョンを宣言できるようになりました。範囲外のバージョンで実行すると警告し、オブジェクト形式の <code>{&quot;version&quot;: &quot;0.18.5&quot;, &quot;on_mismatch&quot;: &quot;error&quot;}</code> なら失敗します。<code>on_mismatch: &quot;auto&quot;</code> はランチャー経由でその版をダウンロードして再実行し、シェル内のネストした devbox コマンドもその版に固定します（Nix / Homebrew などランチャー無しのインストールではインストール手順付きのエラー）。<code>DEVBOX_VERSION_POLICY=off|warn|error</code> で CI や緊急時に上書きできます。</p>
+<p>修正は幅広く、切れた tarball・接続リセット・curl タイムアウト・HTTP 5xx を最大 3 回リトライ、<code>devbox run</code> が devbox シェル内で <code>-e</code> / <code>--env-file</code> / <code>--pure</code> を尊重、<code>TMPDIR</code> に空白を含む場合のシェル、<code>.devbox/bin/devbox</code> シンボリックリンクがアップグレードに追随、<code>devbox global run</code> のフラグ受け渡し、<code>devbox log</code> が exit 1 しなくなる、<code>update --all-projects</code> が <code>--no-install</code> を尊重、null スクリプトでの panic、<code>--outputs</code> の重複、<code>list --outdated</code> の panic、壊れた <code>print-dev-env</code> キャッシュの再計算など。glibc パッチでは、パッチ済みバイナリに空の RPATH エントリが入ってローダがカレントディレクトリのライブラリを探していた問題が直っており、これはセキュリティ的にも効く修正です。<code>devbox global</code> を常用しているなら、<code>devbox log</code> の修正とグローバル <code>run</code> のフラグ受け渡しがそのまま効きます。</p>
+<p class="links"><a href="https://github.com/jetify-com/devbox/releases/tag/0.18.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjetify-com%2Fdevbox%2Freleases%2Ftag%2F0.18.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>GitHub CLI (gh) v2.102.1〜v2.103.2</h3>
+<p><strong>破壊的変更</strong>: なし。ただし 2.103.0 の有効期限付き OAuth トークン（preview）を有効にすると、<code>gh auth token</code> の出力をキャッシュするスクリプトや拡張は期限切れトークンを持つことになります。必要になるたびに <code>gh auth token</code> を呼び直す必要があり、<code>GH_TOKEN</code> / <code>GITHUB_TOKEN</code> で渡したトークンは更新されません。</p>
+<p>2.103.0 で、短命のアクセストークンとローテーションするリフレッシュトークンを使うサインインを選べるようになりました（<code>gh auth login --expiring</code>、常用するなら <code>gh config set expiring_credentials enabled</code>）。<code>gh auth status</code> は資格情報が更新可能かと有効期限を表示し、status / token は必要時に自動更新します。github.com と GHE.com が対象で、発行しないホストでは通常のトークンにフォールバックします。HTTPS で git を使う場合は git 2.46 以降で <code>gh auth setup-git</code> を実行し、gh を資格情報ヘルパーにするのが推奨です。private preview の <code>gh issue artifact</code>（list / view / create / edit / download / delete、Markdown への画像・動画添付、URL 指定）と、Bubble Tea に置き換わった <code>gh extension browse</code> も入っています。</p>
+<p>2.103.1 はスキル導入時の安全警告の繰り返しを止め、<code>gh auth login</code> で <code>--expiring</code> のヒントを出すようにしました。2.103.2 は <code>--attach</code> の資格情報チェックをアップロード先に委ね、GitHub App のインストールトークンの扱いをサーバーに裁定させます。2.102.1 は Go 1.27.3 と <code>golang.org/x/net</code> の更新のみ。ワークフローは <code>GH_TOKEN</code> 経由なので、有効期限付きトークンへ切り替えても CI の挙動は変わりません。</p>
+<p class="links"><a href="https://github.com/cli/cli/releases/tag/v2.103.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcli%2Fcli%2Freleases%2Ftag%2Fv2.103.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Biome v2.6.2〜v2.6.3（JS API 6.1.0）</h3>
+<p><strong>破壊的変更</strong>: なし。新しいルールはすべて nursery 扱いで、明示的に有効化しない限り lint 結果は変わりません。</p>
+<p>2.6.2 で YAML（<code>.yaml</code> / <code>.yml</code>）のフォーマットに対応し、設定ファイルがローカルファイルや npm パッケージの設定を最大 10 階層まで再帰的に extend できるようになりました（同じパッケージの複数バージョンを解決するとエラー）。<code>biome inspect config</code> が解決後の値と由来を表示し、<code>biome init</code> は Git リポジトリ内で自動的に VCS 連携を有効化（<code>--git</code> でリポジトリ外でも強制）、<code>biome migrate stylelint</code> で Stylelint 設定を取り込めます。Grit の <code>range()</code> パターン、<code>--profile-type-inference</code>、GraphQL 定義のソート、オブジェクト形式プラグインの <code>resolutionKind</code> も追加されています。</p>
+<p>2.6.3 は nursery ルールの追加が中心で、<code>noArraySortForMinMax</code>、<code>noBooleanSortComparator</code>、<code>noEagerArrayMethodsInLoops</code>、<code>noNewRequire</code>、<code>noObsoleteAttributes</code>、<code>noPathConcat</code>、<code>noPlaywrightNthMethods</code>、<code>noSelfNestedLayer</code>、<code>noShortTimeValues</code>、<code>noSvelteInternal</code>、<code>noTanstackQueryRestDestructuring</code>、<code>noUnreadableForOfExpression</code>、<code>noUnsafeReturn</code>、<code>noUselessSplice</code> など。JS API 6.1.0 は GritQL の検索（<code>parsePattern</code> / <code>searchContent</code> / <code>dropPattern</code>）と、バイトオフセットをコードユニットに直す <code>spanInBytesToSpanCodeUnits</code> を公開しました。このリポジトリは <code>mise run lint</code> で Biome を使っているので、YAML 対応と設定の多段 extend は設定の共通化にそのまま使えます。</p>
+<p class="links"><a href="https://github.com/biomejs/biome/releases/tag/%40biomejs%2Fbiome%402.6.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbiomejs%2Fbiome%2Freleases%2Ftag%2F%2540biomejs%252Fbiome%25402.6.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Bun v1.4.4</h3>
+<p><strong>破壊的変更</strong>: リリース本文からは読み取れません。</p>
+<p>GitHub のリリース本文はインストール手順とコントリビューター 39 名の一覧のみで、変更内容は Bun ブログのリリースノートにあります。<code>bun upgrade</code>（または npm の <code>npm install -g bun</code>）で更新できます。Bun を同梱するツールの更新でも間接的に入るため、直接使っていなくても追随することがあります。</p>
+<p class="links"><a href="https://github.com/oven-sh/bun/releases/tag/bun-v1.4.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Foven-sh%2Fbun%2Freleases%2Ftag%2Fbun-v1.4.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Neovim v0.13.0-dev-1946 (nightly)</h3>
+<p><strong>破壊的変更</strong>: なし（開発版ビルド、安定版には未反映）。</p>
+<p><code>v0.13.0-dev-1946+g659164699f</code>（LuaJIT 2.1.1792527110）の nightly。リリース本文はビルド情報とインストール手順のみで、変更点は CHANGELOG と <code>:help news</code> にあります。安定版を使っている限り影響はありません。</p>
+<p class="links"><a href="https://github.com/neovim/neovim/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fneovim%2Fneovim%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Yazi nightly</h3>
+<p><strong>破壊的変更</strong>: なし（nightly ビルド）。</p>
+<p>コミット 40a9142 の nightly。変更点はリポジトリの CHANGELOG（Unreleased）にあります。日常使いで追うなら、タグ付きリリースを待つほうが安全です。</p>
+<p class="links"><a href="https://github.com/sxyazi/yazi/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsxyazi%2Fyazi%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[開発ツール リリースレポート 2026-10-12]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-10-12.html</link>
