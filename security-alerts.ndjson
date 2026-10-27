@@ -180,3 +180,32 @@
 {"date":"2026-10-27T15:26:14.904Z","id":"CVE-2026-117564","kev":false,"reported":false}
 {"date":"2026-10-27T15:26:14.904Z","id":"CVE-2026-48705","kev":false,"reported":false}
 {"date":"2026-10-27T15:26:14.904Z","id":"CVE-2026-115216","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-111497","kev":true,"reported":true,"title":"Google Brotli の戻り値未チェックで隣接メモリを破壊・任意コード実行をされる","urgency":"immediate"}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-48356","kev":true,"reported":true,"title":"Adobe Commerce / Magento の危険なファイル種別の無制限アップロードで任意コード実行をされる","urgency":"immediate"}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-114607","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-105781","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-65145","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-104351","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-104353","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-105489","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-105780","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-116692","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-114595","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-48360","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-116863","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-104350","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-104354","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-105779","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-112352","kev":false,"reported":true,"title":"Sunhillo SureLine の認証バイパスで root 権限のコマンド実行をされる","urgency":"watch"}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-117603","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-108142","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-108015","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-108014","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-106076","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-93865","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-93857","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-93866","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-90465","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-112710","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-112709","kev":false,"reported":false}
+{"date":"2026-10-27T22:22:57.928Z","id":"CVE-2026-103594","kev":false,"reported":false}

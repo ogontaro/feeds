@@ -4,11 +4,53 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Tue, 27 Oct 2026 15:26:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Oct 2026 22:22:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[即時対応] Google Brotli の戻り値未チェックで隣接メモリを破壊・任意コード実行をされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111497.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111497.html#2026-10-27T22:22:57.928Z</guid>
+            <pubDate>Tue, 27 Oct 2026 22:22:57 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Google Brotli の戻り値未チェックで隣接メモリを破壊・任意コード実行をされる</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-27 追加され、実際の悪用が確認されている。EPSS 0.555（要注意の 0.5 以上）。CVSS は入力に無い。Brotli は広く露出する圧縮ライブラリのため、KEV 追加かつ広く露出する製品として即時対応とする。</p>
+<p>Brotli の伸長処理が戻り値を確認しないため、細工した Brotli 圧縮ストリームを送るだけでリモートの未認証攻撃者が隣接するデコーダ状態のメモリを破壊できる。情報漏えい・サービス停止に加え、任意コード実行につながる可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Brotli を組み込んだ製品（Web サーバ・プロキシ等）を使っている場合は修正版へ更新し、KEV の推奨に従って緩和策を適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111497">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[即時対応] Adobe Commerce / Magento の危険なファイル種別の無制限アップロードで任意コード実行をされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-48356.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-48356.html#2026-10-27T22:22:57.928Z</guid>
+            <pubDate>Tue, 27 Oct 2026 22:22:57 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Adobe Commerce / Magento の危険なファイル種別の無制限アップロードで任意コード実行をされる</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-27 追加され、実際の悪用が確認されている。EPSS 0.306（0.1 以上）。CVSS は入力に無い。自宅インフラの構成一覧に Commerce/Magento は無いが、KEV 追加のため監視以上で必ず通知する。</p>
+<p>Adobe Commerce と Magento で危険な種別のファイルを制限なくアップロードでき、実行時のユーザー権限で任意コードが実行される。結果としてアカウントやセッションの乗っ取り、権限昇格につながる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Adobe のアドバイザリで修正版を確認し、Commerce/Magento を更新する。更新まではアップロード機能を外部に公開しない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48356">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Sunhillo SureLine の認証バイパスで root 権限のコマンド実行をされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-112352.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-112352.html#2026-10-27T22:22:57.928Z</guid>
+            <pubDate>Tue, 27 Oct 2026 22:22:57 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Sunhillo SureLine の認証バイパスで root 権限のコマンド実行をされる</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.1 で、攻撃条件は未認証のリモート。EPSS と CISA KEV は入力に無く、悪用の確認も無い。自宅インフラの構成一覧に SureLine は無いが、ネットワーク機器の Critical で攻撃内容が具体的なため監視とする。影響バージョンか確認する。</p>
+<p>SureLine 9.1.5 より前では、ランダムな識別子も完全性保護も無い平文ユーザー名だけのセッション Cookie を偽造でき、有効な Web セッションを持つ任意のユーザーになりすませる。Admin や sftp_user などの既定アカウント名を推測して checkLogin（libwebcmn.so）と networkDiag.cgi のログイン検査を通し、root 権限のコマンド実行まで連鎖させられる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 9.1.5 以降へ更新する。更新までは管理画面を外部に公開しない。ベンダーのアドバイザリで修正版を確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-112352">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[即時対応] PHP の内部リクエスト状態の不整合で未認証の遠隔コード実行を許す]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109619.html</link>
