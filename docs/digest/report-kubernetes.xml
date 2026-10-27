@@ -4,11 +4,44 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 24 Oct 2026 00:24:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Oct 2026 01:23:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-27]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-27.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-27.html</guid>
+            <pubDate>Tue, 27 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>AI エージェントを利用者に含める IDP の作り方</h3>
+<p>Block、Uber、AWS、Azure、Google がエージェント向けにプラットフォームをどう整えているかを整理し、IDP をエージェント時代のプラットフォーム(AEP)へ進めるための 9 つの実践を示している。Backstage を開発者ポータルとして運用している立場では、人間向けのセルフサービスをそのままエージェントに開放してよいのか、権限とガードレールをどの層で切るのかを考える材料になる。</p>
+<p class="links"><a href="https://platformengineering.org/blog/agent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fagent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>エージェントを載せるには隔離・セキュリティ・スケールの3つが要る</h3>
+<p>CNCF のブログが、エージェントを制御された環境で実装するには隔離、セキュリティ、スケールの 3 つが欠かせず、ポリシー適用の仕組みがなければエージェントが期待通りに動くことを保証できないと指摘している。マルチテナントなクラスタでエージェントを動かす前提をどう設計するかを、隔離とポリシーの側から考える出発点になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/26/isolation-security-scale/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F26%2Fisolation-security-scale%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes の Workload Identity をプロトコル層まで降りて理解する</h3>
+<p>Kubernetes の Workload Identity がプロトコル層でどう成り立っているのかを掘り下げた記事。external-secrets やゼロトラストなアクセス制御を組んでいると、ワークロードの認証情報がどう受け渡されるかはブラックボックスになりがちで、権限設計や障害時の切り分けに効く知識になる。</p>
+<p class="links"><a href="https://cloudnativenow.com/contributed-content/how-kubernetes-workload-identity-actually-works-at-the-protocol-layer/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcloudnativenow.com%2Fcontributed-content%2Fhow-kubernetes-workload-identity-actually-works-at-the-protocol-layer%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CVE-2026-111497(Node2Shell)の一次解析</h3>
+<p>Akamai が CVE-2026-111497(通称 Node2Shell)の詳細解析を公開した。見出しだけでは影響範囲が判断できないため、運用中のクラスタで使っているコンポーネントが該当しないか、修正版や緩和策が示されているかを原文で突き合わせておきたい。</p>
+<p class="links"><a href="https://www.akamai.com/blog/security-research/inside-node2shell-closer-look-cve-2026-111497">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.akamai.com%2Fblog%2Fsecurity-research%2Finside-node2shell-closer-look-cve-2026-111497">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>KubeVirt の次の10年</h3>
+<p>Red Hat が 2016 年に始めた KubeVirt は、コンテナと並べて仮想マシンを Kubernetes 上で動かすことを狙ってきたプロジェクトで、その 10 年目の節目に今後の方向性を振り返っている。仮想マシンのワークロードを Kubernetes 側に寄せるかどうかの判断や、CNCF プロジェクトの成熟度を見る材料になる。</p>
+<p class="links"><a href="https://thenewstack.io/next-ten-years-kubevirt/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fnext-ten-years-kubevirt%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-24]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-24.html</link>
@@ -607,35 +640,6 @@
 <p>Merge Train のパイプライン時間を 64% 削減しつつ、テストカバレッジを 90% 増やし、最も flaky なテストも潰したという一チームの実例。CI は全員が毎日待たされるのに、改善の効き目が数値で語られにくい領域なので、「何から手を付けると効くのか」が実測値付きで並んでいる記事は自チームのボトルネック特定にそのまま流用しやすい。プラットフォーム側の人間として優先順位を決める材料になる。</p>
 <p class="links"><a href="https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fcutting-ci-pipeline-time-by-64-what-actually-works-in-production">Google 翻訳で全文を読む</a></p>
 </section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-22]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-22.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-22.html</guid>
-            <pubDate>Tue, 22 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>Kubernetes v1.37: PersistentVolumeClaim の最終使用時刻を追跡できるようになる(ベータ昇格)</h3>
-<p>これまで「この PVC、まだ使われているのか?」を判断するには、Pod のボリューム参照を自前で突き合わせるツールを書くしかなかった。v1.37 で <code>PersistentVolumeClaimUnusedSinceTime</code> がベータに昇格し(デフォルト有効)、PVC protection controller が各 PVC に <code>Unused</code> 条件を付けるようになるため、放置された永続ボリュームの検出が標準機能だけで完結する。クラウドのブロックストレージ課金が効いてくる環境では、コスト最適化の一次スクリーニングとしてそのまま使える。ただし条件が示すのは「現在どの実行中 Pod からも参照されていないか」であり、過去のアクセス頻度ではない点は押さえておきたい — 削除判断の材料にはなるが、それ自体が削除の根拠になるわけではない。</p>
-<p class="links"><a href="https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F21%2Fkubernetes-v1-37-pvc-last-used-time%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-21]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-21.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-21.html</guid>
-            <pubDate>Mon, 21 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-20]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-20.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-20.html</guid>
-            <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
 ]]></content:encoded>
         </item>
     </channel>

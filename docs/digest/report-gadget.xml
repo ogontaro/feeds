@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 24 Oct 2026 00:26:47 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Oct 2026 01:26:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-27]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-27.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-27.html</guid>
+            <pubDate>Tue, 27 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Meta、Quest 販売減を認め、新型 VR ヘッドセットは「大きなブレークスルー」が条件に</h3>
+<p>Meta の四半期決算で Reality Labs の Q3 売上は 4 億 4,300 万ドルに減少し、Quest ヘッドセットの販売不振を AI グラスが部分的に補う構図が示された。同社は今後、VR ヘッドセットを製品化するのは「大きなブレークスルー」が実現した場合に限ると明言しており、これまで通りの新製品投入ペースが変わることを意味する。次に買うデバイス・開発対象を考えるうえで、Meta のハードウェア戦略の転換点を一次情報で押さえられる。</p>
+<p class="links"><a href="https://roadtovr.com/meta-declining-quest-sales-major-breakthroughs/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Froadtovr.com%2Fmeta-declining-quest-sales-major-breakthroughs%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-24]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-24.html</link>

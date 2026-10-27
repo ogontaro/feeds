@@ -4,11 +4,48 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 24 Oct 2026 00:23:27 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Oct 2026 01:17:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-27]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-27.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-27.html</guid>
+            <pubDate>Tue, 27 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>ダウンロードフォルダの Markdown 経由で AI コーディングアシスタントを乗っ取る攻撃</h3>
+<p><code>~/Downloads</code> に置かれたファイルを AI コーディングアシスタントがそのまま読む性質を突いた攻撃で、dev.ua が実例を報じ、X のポストが手口を詳しく解説しています。ポストによれば、Web ページから静かに 13KB の AGENTS.md / CLAUDE.md をダウンロードさせ、Codex では悪性 MCP サーバーを登録させ、Claude Code では設定ファイルからトークンを奪う経路が報告されています。開発者の約半数がダウンロード先でエージェントを起動した経験があるという指摘もあり、作業ディレクトリと権限を分ける運用の必要性が具体的に分かります。</p>
+<p class="links"><a href="https://dev.ua/en/news/shkidlyvyi-fail-u-paptsi-zavantazhennia-namahaietsia-zmusyty-shi-asystenta-vstanovyty-virus-1792997498">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.ua%2Fen%2Fnews%2Fshkidlyvyi-fail-u-paptsi-zavantazhennia-namahaietsia-zmusyty-shi-asystenta-vstanovyty-virus-1792997498">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/Xatz/status/2114647511298453856">@Xatz のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FXatz%2Fstatus%2F2114647511298453856">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>サブエージェントを増やしすぎると当てはまる、Anthropic 公式の失敗パターン</h3>
+<p>サブエージェントが 12 体まで増えた構成を、Anthropic が挙げる失敗パターンに照らして「工程ごと」から「文脈ごと」の分割へ見直した記録です。エージェントを増やすほど並列化できるわけではなく、文脈の境界で切るほうが協調と検証が楽になる、という設計判断の材料になります。複数エージェントの並行実行を試している人ほど、増やす前に読む価値があります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-subagent-review/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>読み取り専用の Supabase MCP だけでは足りない、claude.ai 側コネクタの盲点</h3>
+<p>Claude Code に Supabase MCP を読み取り専用でつないでも、同じアカウントの claude.ai コネクタが別経路として残る点に注意を促す記事です。読み取り専用の接続では削除が拒否される一方、記事ではプロジェクト設定から claude.ai 側のコネクタも止められることを確認しています。MCP の権限を絞るときは、接続元ごとではなく同じデータに触れる経路全体を数える必要があると分かります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-supabase-mcp-read-only-connector/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>セッション途中に直した CLAUDE.md が、自動要約のあと古い内容に戻る問題</h3>
+<p>長時間のセッションで CLAUDE.md を直しても、自動要約を挟むと古い内容が参照される——2.1.310 で起きたこの挙動と、2.1.311 での修正点を整理した記事です。指示ファイルを変更した直後に要約が走る場面は実際にあり、ルールが効かないときの切り分けに使えます。修正版へ上げたうえで、要約後の動作を一度確認しておく価値があります。</p>
+<p class="links"><a href="https://qiita.com/suwa_nobu/items/d3f0491c9727176dea22">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Hob — モデルを手元で動かす、オープンソースのデスクトップ AI エージェント</h3>
+<p>Claude Cowork や ChatGPT のデスクトップアプリと同じようにファイルを扱える、MIT ライセンスのデスクトップアプリです。モデルは Gemma 4 や gpt-oss などのオープンウェイトを手元で実行し、チャットとファイルは端末外に出ず、外部通信は Web 検索（無効化可）と MCP コネクタだけだと説明されています。機密性の高いリポジトリでエージェントを使うときの「クラウドに送らない」構成の比較対象として読めます。</p>
+<p class="links"><a href="https://github.com/FrigadeHQ/hob">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FFrigadeHQ%2Fhob">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-24]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-24.html</link>
@@ -1190,65 +1227,6 @@
 <h3>Claude Code の Plugins は設定したほうがいい</h3>
 <p>Claude Code の Plugin 機能を入れておくべき理由をまとめた記事。エージェントに何をどこまで渡すかをチーム単位で管理する流れが来ているので、個人の設定で済ませているうちに一度読んでおくと、後からの共有・配布の設計が楽になる。</p>
 <p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/22/124945">原文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-22]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-22.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-22.html</guid>
-            <pubDate>Tue, 22 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Claude Codeの Agent view とセッション間通信は使ったほうがいい</h3>
-<p>Claude Code を複数タスクで並行して走らせると、どのセッションが何をしているかが見えなくなり、成果の受け渡しも口頭ベースになりがちです。Agent view とセッション間通信はその2点を仕組みで解消する機能で、この記事は実際に使った上での使いどころと注意点をまとめています。サブエージェントに仕事を分ける設計を考えているなら、任せ方と結果の回収方法の型としてそのまま参考になります。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/21/104258">原文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code v2.1.277: CLAUDE.md が無ければ AGENTS.md を読むように</h3>
-<p>CLAUDE.md を持たないプロジェクトでは、Claude Code が代わりに AGENTS.md を読み込むようになりました。Codex など他のコーディングエージェントと指示ファイルを共有していたり、AGENTS.md を正として運用しているチームにとっては、既存の資産がそのまま効くようになる変更です。読み込ませる内容は /config の「Project instructions」から確認・差し替えできます(Bedrock、Vertex、Foundry ではまだ利用不可)。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.277#item-2632a3e60ae2">原文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code v2.1.278: auto mode の分類器がサーバー側デフォルトに(課金の前提が変わる)</h3>
-<p>auto mode の分類器が、Claude API / Enterprise および Bedrock・Vertex・Foundry・ゲートウェイ経由でデフォルトでサーバー側実行になりました。分類器のオーバーヘッドには課金されないため、auto mode を常用しているチームはコスト見積もりの前提が変わります。課金対象へのフォールバック時には警告が出るほか、/status の <code>Auto mode server</code> 行で自分のセッションがどちらで動いているか分かるので、まずそこを確認しておくのが確実です。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.278#item-88506706c503">原文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code v2.1.277 の信頼性修正 — claude -p のハング、Grep/Glob の誤報告など</h3>
-<p>ヘッドレス実行や Agent SDK を CI・自動化に組み込んでいる人に効く修正がまとまっています。内部エラー後に <code>claude -p</code> や SDK のセッションが結果を返さず無言でハングしていたのが、エラーを報告して終了コード 1 で終わるようになり、Grep/Glob も資源不足で検索を開始できなかったときに「一致なし」と偽らずエラーを返すようになりました。どちらも「失敗を成功と誤認する」種類の不具合で、パイプラインの信頼性に直結します。Write や Edit のエラー処理、古いビルドにログアウトさせられる問題なども直っています。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.277#item-d567c65d9c0a">原文を読む</a></p>
-</section>
-<section class="item">
-<h3>The Claude Delusion — Claude をめぐる言説を批判的に読む</h3>
-<p>Claude(および AI 全般)をめぐる言説を批判的に論じた記事で、HN では 150 件近いコメントが付いています。技術解説ではないので日々の実装に直接効く話ではありませんが、ツールの能力評価とそれを取り巻く期待値・ビジネス前提を自分が混ぜて判断していないかを点検する材料になります。コメント欄の賛否も含めて眺めると、実務で AI に寄せている前提を一度疑うきっかけになります。</p>
-<p class="links"><a href="https://pluralistic.net/2026/09/21/sunsetting/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fpluralistic.net%2F2026%2F09%2F21%2Fsunsetting%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-21]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-21.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-21.html</guid>
-            <pubDate>Mon, 21 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の1本</h2>
-<section class="item">
-<h3>テスト記事</h3>
-<p>テストコメント。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20260919-cc-updates-v2-1-278/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=test">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-20]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-20.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-20.html</guid>
-            <pubDate>Sun, 20 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>Codexを使うなら、権限プロファイルとRulesを押さえておきたい</h3>
-<p>コーディングエージェントを実務に投入するとき、最初に詰まるのが「どこまで自律実行を許すか」の設計です。権限プロファイルと Rules という2つのレイヤーがどう効くのかを押さえておくと、承認ダイアログを消して速度を上げつつ危険な操作だけを止める、という調整ができるようになります。Claude Code の permissions 設定を運用している人にも、エージェントごとの権限制御の比較材料としてそのまま読めます。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/20/120746">原文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
