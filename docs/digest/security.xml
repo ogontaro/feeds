@@ -4,11 +4,53 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Mon, 26 Oct 2026 20:35:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Oct 2026 00:33:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[即時対応] PHP の内部リクエスト状態の不整合で未認証の遠隔コード実行を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109619.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109619.html#2026-10-27T00:33:06.872Z</guid>
+            <pubDate>Tue, 27 Oct 2026 00:33:06 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>PHP の内部リクエスト状態の不整合で未認証の遠隔コード実行を許す</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-26 追加済みで実際の悪用が確認されている。EPSS は 1.000 と入力中の最高値。PHP は広く露出するランタイムで、自宅クラスタのイメージに含まれている可能性がある。</p>
+<p>PHP に、内部リクエスト状態が古いまま残る問題がある。認証なしで遠隔からコードを実行できるとされ、CISA は実際の悪用を確認して KEV に追加した。PHP を使うコンテナイメージやアプリケーションは影響を受ける可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、PHP を使うコンテナイメージを洗い出して更新する。更新までは該当アプリを外部に公開しない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109619">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[即時対応] PHP のメモリ破壊で未認証の遠隔コード実行を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109618.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109618.html#2026-10-27T00:33:06.872Z</guid>
+            <pubDate>Tue, 27 Oct 2026 00:33:06 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>PHP のメモリ破壊で未認証の遠隔コード実行を許す</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-26 追加済みで実際の悪用が確認されている。EPSS は 1.000 と入力中の最高値。PHP は広く露出するランタイムで、自宅クラスタのイメージに含まれている可能性がある。</p>
+<p>PHP に、メモリ不足時の破壊につながる脆弱性がある。認証なしの遠隔コード実行が可能とされ、CISA は実際の悪用を確認して KEV に追加した。PHP を使うコンテナイメージやアプリケーションは影響を受ける可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、PHP を使うコンテナイメージを洗い出して更新する。更新までは該当アプリを外部に公開しない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109618">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Consul-k8s のクロスネームスペース認可バイパス]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110720.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110720.html#2026-10-27T00:33:06.872Z</guid>
+            <pubDate>Tue, 27 Oct 2026 00:33:06 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Consul-k8s のクロスネームスペース認可バイパス</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.9 の Critical だが CISA KEV には未追加で、EPSS も入力に無い。自宅インフラの構成一覧に Consul は無く、該当すると断定できないため「監視」とした。</p>
+<p>Consul-k8s の 0.42.0 以降に、ネームスペースをまたいだ認可バイパスの脆弱性がある。CVSS は 9.9 だが、入力では影響の説明が途中で切れており、悪用条件の詳細は分からない。Consul を Kubernetes 上で使っている場合は影響バージョンを確認する必要がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。Consul をクラスタで使っている場合は、0.42.0 以降かどうかを確認して修正版へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-3rqq-8xjm-v58x">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Fortinet 製品の認証バイパスで機器に不正アクセスされる]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107656.html</link>
