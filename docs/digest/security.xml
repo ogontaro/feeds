@@ -4,11 +4,53 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Wed, 28 Oct 2026 13:09:24 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Oct 2026 20:22:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[即時対応] Linux カーネルの初期化漏れで page-cache のデータを改変され、root 実行に連鎖する]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-46300.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-46300.html#2026-10-28T20:22:06.484Z</guid>
+            <pubDate>Wed, 28 Oct 2026 20:22:06 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Linux カーネルの初期化漏れで page-cache のデータを改変され、root 実行に連鎖する</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-28 追加済みで実際の悪用が確認されている。EPSS 0.102。Linux カーネルは自宅インフラで利用している。</p>
+<p>Linux カーネルに変数の初期化漏れがあり、socket バッファの合体時に共有フラグメントのマーカーが保持されないことで、page-cache に裏打ちされたデータが意図せず改変され得る。ESP 入力処理が共有フラグメントをその場で復号してしまう問題で、CVE-2026-109618 および CVE-2026-109619 と連鎖させることで PHP ウェブシェルの設置や root 権限でのコマンド実行につながる。</p>
+<p><strong>自宅インフラへの該当:</strong> Linux カーネル<br><strong>推奨アクション:</strong> KEV の推奨に従いベンダーの指示する緩和策を適用する。修正版のバージョンは入力に無いため、利用ディストリビューションのアドバイザリで修正版を確認して更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46300">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[即時対応] VMware ESX のログ記録不備で管理者による操作が記録されなくなる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-41709.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-41709.html#2026-10-28T20:22:06.484Z</guid>
+            <pubDate>Wed, 28 Oct 2026 20:22:06 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>VMware ESX のログ記録不備で管理者による操作が記録されなくなる</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-28 追加済み。EPSS 0.003。VMware ESXi は自宅インフラの構成に含まれる。</p>
+<p>Broadcom VMware ESX のログ記録が不十分なため、管理者権限を持つ攻撃者が一部の操作をログに残さず実行できる。操作が記録されないことで、行われた変更をログから確認できなくなる。</p>
+<p><strong>自宅インフラへの該当:</strong> VMware ESXi<br><strong>推奨アクション:</strong> KEV の推奨に従いベンダーの指示する緩和策を適用する。修正版のバージョンは入力に無いため、Broadcom のアドバイザリで修正版を確認して更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41709">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Google Chrome の V8 などに Critical なメモリ破壊・入力検証不備、156.0.8078.73 で修正]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-118316.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-118316.html#2026-10-28T20:22:06.484Z</guid>
+            <pubDate>Wed, 28 Oct 2026 20:22:06 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Google Chrome の V8 などに Critical なメモリ破壊・入力検証不備、156.0.8078.73 で修正</h3>
+<p><strong>緊急度: 監視</strong> — ブラウザは広く使われる製品の Critical（CVSS 9.6）だが、CISA KEV への追加は無く、EPSS も 0.002 と低く悪用の兆候は確認されていない。同一リリースで修正される複数の CVE があるため1件にまとめた。</p>
+<p>Google Chrome 156.0.8078.73 より前のバージョンで、V8、Skia、FileSystem、SVG、Paint、Compositing など複数のコンポーネントにメモリ破壊や入力検証不備の脆弱性がある。いずれも CVSS 9.6 で、遠隔の攻撃者によって悪用される可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 156.0.8078.73 以降に更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-9v66-9hrj-f8g2">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] WordPress の Contact Manager プラグインの任意ファイルアップロードでコードを実行される]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109218.html</link>

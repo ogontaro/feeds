@@ -224,3 +224,26 @@
 {"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-112197","kev":false,"reported":false}
 {"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-14571","kev":false,"reported":false}
 {"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-104383","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-46300","kev":true,"reported":true,"title":"Linux カーネルの初期化漏れで page-cache のデータを改変され、root 実行に連鎖する","urgency":"immediate"}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-41709","kev":true,"reported":true,"title":"VMware ESX のログ記録不備で管理者による操作が記録されなくなる","urgency":"immediate"}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-103688","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118305","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118306","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118340","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118321","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118312","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118309","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118310","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118308","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118342","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118355","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118316","kev":false,"reported":true,"title":"Google Chrome の V8 などに Critical なメモリ破壊・入力検証不備、156.0.8078.73 で修正","urgency":"watch"}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-118332","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-103406","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-103409","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-115968","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-115607","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-111411","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-117574","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-67074","kev":false,"reported":false}
+{"date":"2026-10-28T20:22:06.484Z","id":"CVE-2026-105420","kev":false,"reported":false}
