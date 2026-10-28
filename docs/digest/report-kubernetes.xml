@@ -4,11 +4,39 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 27 Oct 2026 01:23:17 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Oct 2026 01:14:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-28]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-28.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-28.html</guid>
+            <pubDate>Wed, 28 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>CNCF Ingress Nginx の引退で、そのまま使い続けると危うくなる構成</h3>
+<p>CNCF の Ingress Nginx が引退に向かうことで、既存の Ingress マニフェストをそのまま使い続けているクラスタがリスクを抱える、という指摘。Ingress はどのクラスタにも必ず載っている類のコンポーネントなので、引退の告知を「他人事のプロジェクト終了」ではなく自前の移行計画として読み替える必要がある。自宅クラスタでも外部公開の入口は Ingress に依存しているはずで、移行先と移行順をいつ決めるかの判断材料になる。</p>
+<p class="links"><a href="https://www.techtarget.com/news/CNCF-Ingress-Nginx-retirement-could-leave-some-users-at-risk/857205/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.techtarget.com%2Fnews%2FCNCF-Ingress-Nginx-retirement-could-leave-some-users-at-risk%2F857205%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes に Workload Conformance ワーキンググループが発足</h3>
+<p>クラスタの適合性を測る Certified Kubernetes や AI Conformance とは別に、ワークロードが実行時にどう振る舞うべきかを共通標準として定める WG が立ち上がった。アプリ側とクラスタ運用側の双方から意見を募っている段階なので、今のうちに関心を持っておくと、後から「標準に合っていない」と言われる前に設計を寄せられる。マルチクラスタや自前クラスタでワークロードを配る立場ほど、初期の議論を追う価値がある。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/10/27/announcing-workload-conformance-wg/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F27%2Fannouncing-workload-conformance-wg%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry Transformation Language(OTTL)が v1 に到達</h3>
+<p>Collector Contrib v0.164.0 以降、OTTL が traces・metrics・logs のすべてで stable になり、1.x の間の後方互換が約束された。テレメトリーの加工ルールを OTTL で書いている場合、今後は構文や標準関数が壊れない前提で運用に組み込めるということ。Collector の設定を凝った形で持っているほど、アップグレード時の検証コストが下がるので、移行を先送りしていたなら判断の時期になる。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/ottl-v1/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fottl-v1%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>コントロールプレーンの可用性を落とす「見えにくい故障経路」</h3>
+<p>Kubernetes のコントロールプレーンは個々の故障を閉じ込めるよう設計されているが、実際の可用性はクリティカルパス上のコンポーネントの組み合わせに左右される、という整理。単一コンポーネントの冗長化だけを見ていると、障害時に想定外の連鎖が起きる余地が残る。自前でコントロールプレーンを持つ構成では、監視項目と障害訓練のシナリオをどこまで広げるかの判断材料になる。</p>
+<p class="links"><a href="https://thenewstack.io/kubernetes-control-plane-failures/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-control-plane-failures%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-27]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-27.html</link>
@@ -621,24 +649,6 @@
 <h3>脆弱性アラート疲れが WHOOP を圧倒しかけた — それでも人間が最終判断を握る自動化</h3>
 <p>1 日数十万件のアラートという規模で、WHOOP がどうトリアージを自動化しつつ人間の判断を残したかの事例。セキュリティ運用の自動化でよくある失敗は「全部自動でクローズ」に振り切ることだが、ここでは自動化の線引き（どこまで機械に任せ、どこで人を挟むか）が設計として語られている。Platform Engineering として「自動化しすぎない」判断をどう組むかを考える実例になる。</p>
 <p class="links"><a href="https://thenewstack.io/whoop-automated-vulnerability-response-workflow/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fwhoop-automated-vulnerability-response-workflow%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-23]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-23.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-23.html</guid>
-            <pubDate>Wed, 23 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>SIG Apps の活動紹介 — Deployment / StatefulSet / Job を支える縁の下の力</h3>
-<p>Deployment、StatefulSet、DaemonSet、Job、CronJob という、ほぼ全員が毎日お世話になっている API の面倒を見ているのが SIG Apps。普段は意識しないが、アップグレード時やスケール時に挙動が問題になるのはたいていこの層なので、いま何が論点になっているかを把握しておくと後の設計判断が楽になる。ステートレスな Web サービスからステートフル DB、バッチ、AI ワークロードまで対象が広がっている今の状況を知る導線としても読む価値がある。</p>
-<p class="links"><a href="https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F09%2F22%2Fsig-apps-spotlight%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>CI パイプラインの所要時間を 64% 削減 — 本番で実際に効いた施策</h3>
-<p>Merge Train のパイプライン時間を 64% 削減しつつ、テストカバレッジを 90% 増やし、最も flaky なテストも潰したという一チームの実例。CI は全員が毎日待たされるのに、改善の効き目が数値で語られにくい領域なので、「何から手を付けると効くのか」が実測値付きで並んでいる記事は自チームのボトルネック特定にそのまま流用しやすい。プラットフォーム側の人間として優先順位を決める材料になる。</p>
-<p class="links"><a href="https://platformengineering.org/blog/cutting-ci-pipeline-time-by-64-what-actually-works-in-production">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fcutting-ci-pipeline-time-by-64-what-actually-works-in-production">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

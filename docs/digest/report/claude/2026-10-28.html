@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-28</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-28</h1>
+<article class="report"><h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>AGENTS.md 経由の間接プロンプトインジェクションをどう防ぐか</h3>
+<p>ダウンロードした CSV や PDF をそのままエージェントに開かせると、Web から落ちてきた AGENTS.md が初期コンテキストとして読まれ、外部の指示がそのまま実行されうる。記事は 2026 年 10 月 22 日に Forever Security が報告した事案を起点に、エージェントの信頼境界の引き方とローカル環境での多層防御を整理している。AGENTS.md や CLAUDE.md をリポジトリで共通化するほど、置き場所と読み込み範囲の設計が効いてくるので、指示ファイル運用の前提として読む価値がある。</p>
+<p class="links"><a href="https://qiita.com/YushiYamamoto/items/a8c014ce1a3ab755b707">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/Ryurku_ore/status/2114912845825794472">@Ryurku_ore のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Anthropic が Claude 自身で Claude をどう出荷しているか —「脳」と「手」の分離</h3>
+<p>Latent Space が Opus 5.5、Claude Platform、エージェント基盤のエンジニアリングを担当者に聞いた回。モデル本体（脳）とツール実行（手）を分離し、API をスケールさせながら managed agent を安定運用する構成が主題になっている。自前でエージェントを組むときに、判断する層と実行する層をどこで切るかを考える材料になる。</p>
+<p class="links"><a href="https://latent.space/p/opus55/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Flatent.space%2Fp%2Fopus55%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Bito Governor — コンテキストに応じたモデルルーティングでコーディングエージェントのコストを削る</h3>
+<p>Bito が、コンテキストに応じてモデルを振り分ける Governor を発表し、コーディングエージェントのコストを 40〜70% 削減するとしている。何でも単価の高いモデルに投げる運用を、タスクの重さに合わせたルーティングに置き換える発想で、エージェントの利用料が膨らんでいるチームには判断材料になる。ルーティング層を自前で持つか製品に寄せるかを考える出発点としても使える。</p>
+<p class="links"><a href="https://www.unite.ai/bito-governor-context-model-routing-coding-agent-costs/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.unite.ai%2Fbito-governor-context-model-routing-coding-agent-costs%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（2 本）</h2>
+<section class="item">
+<h3>LayerX が大規模 monorepo 向けに Background Agent「haro」を内製した理由</h3>
+<p>並列開発や自社の開発環境との連携といったバクラク側の課題から生まれた背景エージェントについて、開発を担当したエンジニアが設計意図と活用事例を書いている。複数の作業を同時に走らせ、既存の開発環境にどう接続するかという部分は、エージェントをチームの開発フローに組み込むときの具体的な判断材料になる。</p>
+<p class="links"><a href="https://tech.layerx.co.jp/entry/why-we-built-our-background-agent">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/nakabonne/status/2114971244009603318">@nakabonne のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>50 を超える AI スキルを親子エージェントで自律改善する</h3>
+<p>Cursor のルール（スキル）が 50 件を超えたあたりから人手のメンテナンスが回らなくなる問題に対して、親子エージェントでプロンプトを自動チューニングする仕組みを DMM が紹介している。定性・定量の二面評価とチェックリストで改善ループを回す構成は、指示ファイルやスキルをつい増やしてしまう運用の整理にそのまま応用できる。</p>
+<p class="links"><a href="https://developersblog.dmm.com/entry/2026/10/27/110000">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

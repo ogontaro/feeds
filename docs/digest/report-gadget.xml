@@ -4,11 +4,19 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 27 Oct 2026 01:26:36 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 28 Oct 2026 01:19:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-28]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-28.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-28.html</guid>
+            <pubDate>Wed, 28 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-27]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-27.html</link>
