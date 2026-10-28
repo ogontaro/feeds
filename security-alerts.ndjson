@@ -212,3 +212,15 @@
 {"date":"2026-10-28T05:53:03.662Z","id":"CVE-2026-106013","kev":false,"reported":false}
 {"date":"2026-10-28T05:53:03.662Z","id":"CVE-2026-84999","kev":false,"reported":false}
 {"date":"2026-10-28T05:53:03.662Z","id":"CVE-2026-118375","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-114278","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-103780","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-86384","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-86400","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-86397","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-109218","kev":false,"reported":true,"title":"WordPress の Contact Manager プラグインの任意ファイルアップロードでコードを実行される","urgency":"watch"}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-103799","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-103792","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-90717","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-112197","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-14571","kev":false,"reported":false}
+{"date":"2026-10-28T13:09:24.160Z","id":"CVE-2026-104383","kev":false,"reported":false}
