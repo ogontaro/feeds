@@ -253,3 +253,7 @@
 {"date":"2026-10-29T01:02:33.005Z","id":"CVE-2026-118690","kev":false,"reported":false}
 {"date":"2026-10-29T01:02:33.005Z","id":"CVE-2026-118579","kev":false,"reported":false}
 {"date":"2026-10-29T01:02:33.005Z","id":"CVE-2026-118633","kev":false,"reported":false}
+{"date":"2026-10-29T10:08:57.747Z","id":"CVE-2026-109516","kev":false,"reported":false}
+{"date":"2026-10-29T10:08:57.747Z","id":"CVE-2026-42922","kev":false,"reported":false}
+{"date":"2026-10-29T10:08:57.747Z","id":"CVE-2026-114358","kev":false,"reported":false}
+{"date":"2026-10-29T10:08:57.747Z","id":"CVE-2026-66088","kev":false,"reported":false}
