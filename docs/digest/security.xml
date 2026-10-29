@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Thu, 29 Oct 2026 10:08:57 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Oct 2026 18:32:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Yamaha 製無線LANルーター NWR100 の OS コマンドインジェクション]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-97854.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-97854.html#2026-10-29T18:32:48.898Z</guid>
+            <pubDate>Thu, 29 Oct 2026 18:32:48 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Yamaha 製無線LANルーター NWR100 の OS コマンドインジェクション</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV には未追加で、EPSS も不明。CVSS は 9.8 の Critical。自宅インフラの構成リストに該当製品は無いが、悪用の兆候がまだ無いネットワーク機器の Critical として監視対象とした。</p>
+<p>Yamaha 製の無線LANルーター NWR100 に OS コマンドインジェクションの脆弱性がある。入力では概要が途中で省略されており、攻撃条件や影響範囲の詳細は示されていない。悪用が確認されたという記載はない。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Yamaha のアドバイザリで修正版と影響バージョンを確認する。NWR100 を使用していない場合は対応不要。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-8m66-f8m4-wc2j">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[即時対応] Linux カーネルの初期化漏れで page-cache のデータを改変され、root 実行に連鎖する]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-46300.html</link>
