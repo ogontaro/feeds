@@ -4,11 +4,34 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 28 Oct 2026 01:14:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Oct 2026 01:45:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-29]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-29.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-29.html</guid>
+            <pubDate>Thu, 29 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>Volcano v1.16 リリース — NamespaceQueue と fairshare でマルチテナントの割当を内側から設計できるように</h3>
+<p>CNCF のバッチスケジューラ Volcano が v1.16.0 を公開した。管理者が許可したリソースプールの範囲内で、テナントが自分の namespace に階層キューを持てる NamespaceQueue と、過去の消費履歴を踏まえて配分する fairshare プラグインが入っている。クラスタを複数チームで共有するときの「誰にどれだけ渡すか」を、管理者の静的な割当だけでなくテナント側のキュー階層で表現できるようになる点が、マルチテナント基盤の設計判断に効く。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/28/volcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F28%2Fvolcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry Collector の File Log レシーバー、チェックポイントを protobuf 化して保存・読み込みが約5倍高速に</h3>
+<p>Collector Contrib v0.164.0 から、File Log レシーバーが storage extension に書くチェックポイントが常に protobuf 形式になった。ベンチマークでは保存が約5倍、読み込みが5倍以上速くなったと報告されている。ログ収集エージェントを各ノードで動かしている構成では、ポーリングのたびに走るこの書き込みが地味な負荷になるため、Collector のバージョンを上げる際に確認しておきたい変更だ。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/filelog-protobuf-checkpoints/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Ffilelog-protobuf-checkpoints%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>エージェントはもういないのに、そのアクセスキーだけが残る — AI エージェントの認証情報をどう統治するか</h3>
+<p>The New Stack の記事は、資格情報レポートに platform チームの誰も説明できない IAM ユーザーの行が現れる状況から始まる。エージェント用に発行したアクセスキーが、エージェント自体が消えた後も有効なまま残るという、人間の入退社を前提にした棚卸しが通用しない問題を扱っている。AI エージェントを基盤の利用者として扱うなら、キーの所有者・寿命・失効を最初から設計に入れる必要があるという論点は、ゼロトラストと権限境界の運用に直結する。</p>
+<p class="links"><a href="https://thenewstack.io/governing-ai-agent-credentials/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgoverning-ai-agent-credentials%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-28.html</link>
@@ -631,24 +654,6 @@
 <h3>SBOM はなぜサプライチェーン攻撃を止められないのか</h3>
 <p>SBOM があればサプライチェーン攻撃の多くは防げるはずだ、という前提そのものを問い直す内容で、生成して終わりになりがちな SBOM 運用の実効性を考える材料になる。「作ること」と「実際に脆弱性対応へ繋げること」の間にある運用上の障壁を押さえておくと、自組織の SBOM 戦略が絵に描いた餅になっていないかを点検できる。</p>
 <p class="links"><a href="https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-are-sboms-failing-to-stop-supply-chain-attacks">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-24]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-24.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-24.html</guid>
-            <pubDate>Thu, 24 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>今、私はどの帽子をかぶっているのか — オープンソースの中立性という難問</h3>
-<p>CNCF ブログが、ベンダーが給与を払う maintainer の立場と中立性を正面から扱っている。プラットフォーム選定の実務では「この CNCF プロジェクトは特定ベンダーの都合でロードマップが動かないか」を見極める必要があり、その判断材料として読む価値がある。プロジェクト採用時のデューデリジェンスの観点を、きれいごと抜きで言語化してくれる珍しい一本。</p>
-<p class="links"><a href="https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F09%2F23%2Fwhich-hat-am-i-wearing-right-now%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>脆弱性アラート疲れが WHOOP を圧倒しかけた — それでも人間が最終判断を握る自動化</h3>
-<p>1 日数十万件のアラートという規模で、WHOOP がどうトリアージを自動化しつつ人間の判断を残したかの事例。セキュリティ運用の自動化でよくある失敗は「全部自動でクローズ」に振り切ることだが、ここでは自動化の線引き（どこまで機械に任せ、どこで人を挟むか）が設計として語られている。Platform Engineering として「自動化しすぎない」判断をどう組むかを考える実例になる。</p>
-<p class="links"><a href="https://thenewstack.io/whoop-automated-vulnerability-response-workflow/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fwhoop-automated-vulnerability-response-workflow%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

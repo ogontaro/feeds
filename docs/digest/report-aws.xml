@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 28 Oct 2026 01:15:58 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Oct 2026 01:46:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-29]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-29.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-29.html</guid>
+            <pubDate>Thu, 29 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock AgentCore CLI 1.0 が一般提供開始</h3>
+<p>エージェント開発用 CLI が 1.0 になり、起動の高速化とコマンド体系の統一に加えて、プロジェクトを作らずに harness・runtime・memory・identity・gateway・payments を直接扱えるようになった。ターミナル中心でエージェントを組み立てる流れは、MCP サーバーの接続や権限の切り分けを試す入口になるので、実運用に乗せる前に一度触っておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-bedrock-agentcore-cli-version-1-0-available%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock AgentCore でエージェント型 AI 基盤を構築する</h3>
+<p>マルチアカウントで統制されたエージェント基盤を AgentCore で組む構成を、運用モデル、コントロールプレーン、workstream ごとのセル、推論とツールを分けたゲートウェイ、本番前に各エージェントを止める CI/CD 評価パイプラインまで一通り解説し、OSS のリファレンス実装も公開している。エージェントを「利用者」として基盤の権限・ガードレールに組み込む設計を考えるときの叩き台になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-an-agentic-ai-platform-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EKS 上の Ray Train DLC と EFA による分散学習</h3>
+<p>CUDA から EFA までを含む Ray Train の Deep Learning Container をそのまま使い、EFA 対応の g6.12xlarge 2 台・8 GPU で Qwen2.5-1.5B を PyTorch FSDP でファインチューニングする再現可能なサンプル。独自イメージをビルドせずに EKS 上で分散学習を回す手順がそのまま辿れるので、EKS を AI 基盤として使う際の現実的な出発点になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdistributed-training-with-ray-train-dlcs-and-efa-on-eks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EKS Dashboard でクラスタ横断の CA ローテーション状況を可視化</h3>
+<p>EKS Dashboard がリージョン・アカウントをまたいだクラスタの CA ローテーション状況を一覧できるようになり、個別クラスタを開かずに要対応箇所を把握できる。CA のローテーションは計画的に進めないとクラスタの認証に影響するため、複数のクラスタやアカウントを運用しているなら点検の起点として押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-dashboard-fleet-wide-visibility-certificate-authority-ca-rotation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-eks-dashboard-fleet-wide-visibility-certificate-authority-ca-rotation%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Agentic AI Lens のレビューを Claude skill で自動化した事例</h3>
+<p>AWS Well-Architected の Agentic AI Lens がまだコンソールから選べないため、Smarsh は Lens の 150 のベストプラクティスを Claude の skill に落とし込み、対象ワークロードの GitHub リポジトリを読ませて証跡付きのレビュー資料を数日ではなく数時間で作成した。Lens の中身を先に把握したい人にも、Claude Code で定型レビューを自動化する型としても読める。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/automating-agentic-ai-well-architected-reviews-with-the-aws-agentic-ai-lens/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fautomating-agentic-ai-well-architected-reviews-with-the-aws-agentic-ai-lens%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-28.html</link>
@@ -762,34 +795,6 @@
 <h3>Aderant が Amazon Nova でチケットのトリアージを自動化した事例</h3>
 <p>Amazon Bedrock 経由の Nova Lite を使い、コンテキスト収集・分類・ルーティング・ナレッジ付与までを自動化したクラウド運用チームの事例。フロンティアモデルではなく軽量モデルを選び、業務フローに埋め込んでいるところが実務的で、コストと精度のバランスをどう取るかの参考になる。エージェント化の前に一歩ずつ自動化を進める現実的な進め方として読める。</p>
 <p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/aderant-builds-intelligent-ticket-triage-with-amazon-nova/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Faderant-builds-intelligent-ticket-triage-with-amazon-nova%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-24]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-24.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-24.html</guid>
-            <pubDate>Thu, 24 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
-<section class="item">
-<h3>オープンウェイトモデルを Amazon Bedrock で AI コーディングエージェントとして使う</h3>
-<p>Bedrock 上のオープンウェイトモデルを、ターミナル型のコーディングエージェント OpenCode に接続する構成を手順レベルで解説している。データを自アカウント内に置いたままタスクごとにモデルを選び分けられるため、コーディングエージェントのサブスク費用とデータ境界の両方が気になるチームにとって、モデル選択と権限設計を見直す材料になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fuse-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>ポータル巡回から即答へ — HEMA の MCP + Amazon Bedrock 活用事例</h3>
-<p>創業100年のオランダ小売 HEMA が、社内 AI アシスタント HAL を Bedrock AgentCore と MCP で構築した事例。クライアント側に AWS 資格情報を置かず Microsoft Entra ID に認証を寄せる設計は、MCP サーバーを社内展開するときの統制の答え合わせとして読める。「開発者が既に使うツールの中で知識を届ける」という目的設定も、内製エージェントのスコープを決める際の参考になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/from-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffrom-portal-hopping-to-instant-answers-hemas-journey-with-mcp-and-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AWS 上に構築するエージェント型の対話的ビデオインテリジェンス</h3>
-<p>Strands Agents SDK の単一エージェントが、実行時に Bedrock・Rekognition・Transcribe をどう呼び分けるかを自分で判断する構成の解説。動画に対する自然言語の問い合わせという分かりやすい題材で、複数サービスを束ねるオーケストレーションをエージェントに委ねる設計パターンの具体例になっている。どのサービスをいつ呼ぶかの判断をどこまでモデルに任せるか、という実務上の勘所がつかめる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/agentic-conversational-video-intelligence-built-on-aws/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fagentic-conversational-video-intelligence-built-on-aws%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Bedrock の VLM に判定を先に書かせると検出率が落ちる — 出力スキーマのキー順を検証</h3>
-<p>外観検査で前回検出できていた欠陥が消えた原因を追い、出力 JSON のキー順が検出率に効いていることを突き止めた検証記録。モデルもプロンプトも変えずスキーマ設計だけで結果が動くなら、評価のたびに条件を固定する運用が要るという実務上の警告になる。キー順の変更・判定の分離・判断層の比較が系統的に並んでおり、VLM を業務に組み込む前のチェックリストとしてそのまま使える。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-vlm-inspection-verdict-order/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fbedrock-vlm-inspection-verdict-order%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

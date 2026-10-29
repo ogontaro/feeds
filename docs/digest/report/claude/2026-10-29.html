@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-29</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-29</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.312 の主要アップデート — 大規模 CLAUDE.md の上書き修正など39件</h3>
+<p>システムプロンプトや OpenTelemetry、モデル名の認識など、39件の変更を含むリリースです。特に、冒頭だけを読んで巨大な CLAUDE.md や rules、サブディレクトリの @-include ファイルを上書きしてしまう問題と、無効なコマンド名が全コマンドの読み込みを止めて <code>claude -p</code> を無言にする問題は、データ損失や CI 停止につながるため優先して確認したいところです。<code>cd</code> 後にディレクトリ単位のスキルが見つからなくなる修正や、ゲートウェイの <code>oidc.user_id_claim</code> 追加も、チーム運用・認証に関わる変更として押さえておく価値があります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261028-cc-updates-v2-1-312/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>ダウンロードフォルダの AGENTS.md で Claude Code が乗っ取られる攻撃と、その防ぎ方</h3>
+<p>ダウンロードした AGENTS.md（CLAUDE.md）を Claude Code に読ませることで乗っ取られる攻撃手法に対し、設定とフックで防ぐ手順を段階的に解説しています。個人でできる対策から Team プランでの組織一括配置、事後の追跡まで扱っており、指示ファイルを「便利な設定」ではなく「実行される入力」として扱う必要性が分かります。AGENTS.md の共通化を進めるほど、置き場所と読み込み範囲の設計が重要になるという点で、実務に直結します。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-downloads-agents-md-guard/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code / Codex 時代に「AI のための仕組み」を再発明しない</h3>
+<p>Claude Code や Codex を使った開発で、AI 専用の新しい仕組みを作る前に、エンジニアが長年使ってきた手法をまず検討するという実践知をまとめています。筆者自身の失敗と、論文・先行事例との比較を通じて、なぜ車輪の再発明が起きるのかを掘り下げているのが価値です。エージェント向けの指示ファイルやレビュー工程を増やしすぎていると感じたら、立ち止まるきっかけになります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/ai-coding-agent-no-reinvention/">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Anthropic が single-agent-loop-kit を公開 — 多エージェント構成を1本に畳む判断を支援</h3>
+<p>Anthropic が、多エージェント構成をいつ主エージェントのループに畳み込むかを判断するための single-agent-loop-kit を公開しました。評価で現状を採点し、常に一緒に動くサブエージェントを統合、残りを主エージェントのスキルやツールへ畳み込む手順を、同じ評価セットで各段階を比較しながら進めます。ルーター+6 サブエージェントの客服例はオフラインの代替モデルで API キーなしに試せ、有料モデル実行前にはトークン見積もりで確認を挟みますが、公式が「保守しない参照実装」と明言し実モデルでの検証も限定的な点は前提として押さえてください。</p>
+<ul>
+<li><a href="https://x.com/Ryrenz/status/2115339284018266362">@Ryrenz のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FRyrenz%2Fstatus%2F2115339284018266362">Google 翻訳で読む</a></li>
+<li><a href="https://github.com/anthropics/single-agent-loop-kit">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fsingle-agent-loop-kit">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>GitHub Copilot Fusion が GA — モデル自動ルーティングでタスク単価を約半減</h3>
+<p>GitHub Copilot Fusion が一般提供され、タスクごとにモデルを選ぶ代わりに、Copilot が Anthropic / OpenAI のモデルを自動でルーティング・編成するようになりました。Artificial Analysis の Coding Agent Index v2.0 では 1 タスク $5.59 と、Claude Code + Opus 5.5（max）の $11.42 の約半分のコストで、スコア差は 2 ポイントにとどまると報告されています。コーディングエージェントの費用対効果を考える際、モデル単体ではなくルーティング層を含めて比較する材料になります。</p>
+<p class="links"><a href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/github/status/2115482154314682679">@github のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fgithub%2Fstatus%2F2115482154314682679">Google 翻訳で読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

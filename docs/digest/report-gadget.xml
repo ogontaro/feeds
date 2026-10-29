@@ -4,11 +4,26 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 28 Oct 2026 01:19:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Oct 2026 01:48:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-29]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-29.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-29.html</guid>
+            <pubDate>Thu, 29 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の深掘り: Android XR 初の AR グラス「XREAL Aura」</h2>
+<p>XREAL が、Google の Android XR を搭載した初の AR グラス「XREAL Aura」を正式発表し、同日から受注を開始した。価格は 1,099 ドル(期間限定の特別価格で、1,100 ドルと報じる媒体もある)で、6 月から受け付けていた予約分の最初のロットは 11 月中旬に出荷される見込みだ。これまで Android XR は仕様とデモの段階だったが、実際に購入できる端末が登場したことで、プラットフォームの立ち上がりを実機で判断できる段階に入った。有線接続のグラス型という形態は、単体で完結するヘッドセットとは前提が異なるため、何を接続して使うのかを確認せずに買うと期待を外しやすい。価格は Meta の製品を下回る水準とされており、今後の Android XR 端末の価格基準点になりそうだ。購入を検討するなら、11 月の出荷開始前に、対応アプリと接続要件、日本での販売・サポートの有無を各社の記事で突き合わせておきたい。予約済みの場合は、期間限定価格が適用される条件と出荷時期を改めて確認しておくとよい。</p>
+<ul>
+<li><a href="https://roadtovr.com/google-ar-glasses-xreal-aura-release-date-price/">Road to VR を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Froadtovr.com%2Fgoogle-ar-glasses-xreal-aura-release-date-price%2F">Google 翻訳で全文を読む</a></li>
+<li><a href="https://techcrunch.com/2026/10/28/xreal-aura-is-a-new-wired-headset-powered-by-android-xr/">TechCrunch を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Ftechcrunch.com%2F2026%2F10%2F28%2Fxreal-aura-is-a-new-wired-headset-powered-by-android-xr%2F">Google 翻訳で全文を読む</a></li>
+<li><a href="https://mashable.com/tech/xreal-aura-xr-glasses-release-preorder-deals">Mashable を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmashable.com%2Ftech%2Fxreal-aura-xr-glasses-release-preorder-deals">Google 翻訳で全文を読む</a></li>
+<li><a href="https://finance.biggo.com/news/770c2768-b97d-448b-bd2d-3cec9ebe4ee1">BigGo Finance を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Ffinance.biggo.com%2Fnews%2F770c2768-b97d-448b-bd2d-3cec9ebe4ee1">Google 翻訳で全文を読む</a></li>
+</ul>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-28.html</link>

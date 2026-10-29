@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-29</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-29</h1>
+<article class="report"><h2>今日の 3 本</h2>
+<section class="item">
+<h3>Volcano v1.16 リリース — NamespaceQueue と fairshare でマルチテナントの割当を内側から設計できるように</h3>
+<p>CNCF のバッチスケジューラ Volcano が v1.16.0 を公開した。管理者が許可したリソースプールの範囲内で、テナントが自分の namespace に階層キューを持てる NamespaceQueue と、過去の消費履歴を踏まえて配分する fairshare プラグインが入っている。クラスタを複数チームで共有するときの「誰にどれだけ渡すか」を、管理者の静的な割当だけでなくテナント側のキュー階層で表現できるようになる点が、マルチテナント基盤の設計判断に効く。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/28/volcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F28%2Fvolcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry Collector の File Log レシーバー、チェックポイントを protobuf 化して保存・読み込みが約5倍高速に</h3>
+<p>Collector Contrib v0.164.0 から、File Log レシーバーが storage extension に書くチェックポイントが常に protobuf 形式になった。ベンチマークでは保存が約5倍、読み込みが5倍以上速くなったと報告されている。ログ収集エージェントを各ノードで動かしている構成では、ポーリングのたびに走るこの書き込みが地味な負荷になるため、Collector のバージョンを上げる際に確認しておきたい変更だ。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/filelog-protobuf-checkpoints/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Ffilelog-protobuf-checkpoints%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>エージェントはもういないのに、そのアクセスキーだけが残る — AI エージェントの認証情報をどう統治するか</h3>
+<p>The New Stack の記事は、資格情報レポートに platform チームの誰も説明できない IAM ユーザーの行が現れる状況から始まる。エージェント用に発行したアクセスキーが、エージェント自体が消えた後も有効なまま残るという、人間の入退社を前提にした棚卸しが通用しない問題を扱っている。AI エージェントを基盤の利用者として扱うなら、キーの所有者・寿命・失効を最初から設計に入れる必要があるという論点は、ゼロトラストと権限境界の運用に直結する。</p>
+<p class="links"><a href="https://thenewstack.io/governing-ai-agent-credentials/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgoverning-ai-agent-credentials%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

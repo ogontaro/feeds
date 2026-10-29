@@ -4,11 +4,52 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 28 Oct 2026 01:08:16 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 29 Oct 2026 01:40:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-10-29]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-29.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-29.html</guid>
+            <pubDate>Thu, 29 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.312 の主要アップデート — 大規模 CLAUDE.md の上書き修正など39件</h3>
+<p>システムプロンプトや OpenTelemetry、モデル名の認識など、39件の変更を含むリリースです。特に、冒頭だけを読んで巨大な CLAUDE.md や rules、サブディレクトリの @-include ファイルを上書きしてしまう問題と、無効なコマンド名が全コマンドの読み込みを止めて <code>claude -p</code> を無言にする問題は、データ損失や CI 停止につながるため優先して確認したいところです。<code>cd</code> 後にディレクトリ単位のスキルが見つからなくなる修正や、ゲートウェイの <code>oidc.user_id_claim</code> 追加も、チーム運用・認証に関わる変更として押さえておく価値があります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261028-cc-updates-v2-1-312/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>ダウンロードフォルダの AGENTS.md で Claude Code が乗っ取られる攻撃と、その防ぎ方</h3>
+<p>ダウンロードした AGENTS.md（CLAUDE.md）を Claude Code に読ませることで乗っ取られる攻撃手法に対し、設定とフックで防ぐ手順を段階的に解説しています。個人でできる対策から Team プランでの組織一括配置、事後の追跡まで扱っており、指示ファイルを「便利な設定」ではなく「実行される入力」として扱う必要性が分かります。AGENTS.md の共通化を進めるほど、置き場所と読み込み範囲の設計が重要になるという点で、実務に直結します。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-downloads-agents-md-guard/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code / Codex 時代に「AI のための仕組み」を再発明しない</h3>
+<p>Claude Code や Codex を使った開発で、AI 専用の新しい仕組みを作る前に、エンジニアが長年使ってきた手法をまず検討するという実践知をまとめています。筆者自身の失敗と、論文・先行事例との比較を通じて、なぜ車輪の再発明が起きるのかを掘り下げているのが価値です。エージェント向けの指示ファイルやレビュー工程を増やしすぎていると感じたら、立ち止まるきっかけになります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/ai-coding-agent-no-reinvention/">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Anthropic が single-agent-loop-kit を公開 — 多エージェント構成を1本に畳む判断を支援</h3>
+<p>Anthropic が、多エージェント構成をいつ主エージェントのループに畳み込むかを判断するための single-agent-loop-kit を公開しました。評価で現状を採点し、常に一緒に動くサブエージェントを統合、残りを主エージェントのスキルやツールへ畳み込む手順を、同じ評価セットで各段階を比較しながら進めます。ルーター+6 サブエージェントの客服例はオフラインの代替モデルで API キーなしに試せ、有料モデル実行前にはトークン見積もりで確認を挟みますが、公式が「保守しない参照実装」と明言し実モデルでの検証も限定的な点は前提として押さえてください。</p>
+<ul>
+<li><a href="https://x.com/Ryrenz/status/2115339284018266362">@Ryrenz のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FRyrenz%2Fstatus%2F2115339284018266362">Google 翻訳で読む</a></li>
+<li><a href="https://github.com/anthropics/single-agent-loop-kit">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fsingle-agent-loop-kit">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>GitHub Copilot Fusion が GA — モデル自動ルーティングでタスク単価を約半減</h3>
+<p>GitHub Copilot Fusion が一般提供され、タスクごとにモデルを選ぶ代わりに、Copilot が Anthropic / OpenAI のモデルを自動でルーティング・編成するようになりました。Artificial Analysis の Coding Agent Index v2.0 では 1 タスク $5.59 と、Claude Code + Opus 5.5（max）の $11.42 の約半分のコストで、スコア差は 2 ポイントにとどまると報告されています。コーディングエージェントの費用対効果を考える際、モデル単体ではなくルーティング層を含めて比較する材料になります。</p>
+<p class="links"><a href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/github/status/2115482154314682679">@github のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fgithub%2Fstatus%2F2115482154314682679">Google 翻訳で読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-10-28]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-28.html</link>
@@ -1177,54 +1218,6 @@
 <h3>Codex を使うなら、Worktrees と会話の分岐を押さえておきたい</h3>
 <p>コーディングエージェントに並行して作業させるための、worktree による作業ツリーの分離と会話の分岐の使い方がまとまっています。エージェントが同じ作業ツリーを共有すると衝突や巻き戻しが起きるので、この分離の設計は Claude Code 側でも同じように必要になる話です。ツールは違っても、複数タスクを安全に走らせる際の型として読み替えが効きます。</p>
 <p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/24/123105">原文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-24]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-24.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-24.html</guid>
-            <pubDate>Thu, 24 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 8 本</h2>
-<section class="item">
-<h3>Claude Code v2.1.280 の主要アップデート - Fable 5.1 と GPT-6 Astra 超えの最新モデル Opus 5.5 の登場</h3>
-<p>既定モデルが Opus 5.5 に切り替わり、あわせて料金が 20% 下がるという、コスト前提そのものが動くリリース。既定モデルの変更やキーバインドの挙動変更といった破壊的変更が並んでおり、CI やチームのセットアップで確認すべき点のチェックリストとしてそのまま使える。実際に試した結果が添えられているので、移行の可否を自分の環境で判断する材料になる。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20260923-cc-updates-v2-1-280/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2F20260923-cc-updates-v2-1-280%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code は telemetry を有効にしないと AGENTS.md を読まない [修正済み]</h3>
-<p>421 ポイント・236 コメントが集まった、Claude Code の設定ファイル読み込みに関する不具合の報告。AGENTS.md を置いているのに指示が効かない、という症状の原因切り分けに直結する内容で、同種の「設定が読まれていない」系の相談が来たときの観点として覚えておく価値がある。すでに修正済みだが、修正前のどのバージョンを使っているチームは影響範囲を確認しておきたい。</p>
-<p class="links"><a href="https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.szypowi.cz%2Fp%2Fclaude-code-reads-agents.md-only-when-telemetry-is-on%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude の「荷重を支える継ぎ目」</h3>
-<p>Claude を組み込んだシステムのどこが構造上の要になるかを論じた考察記事で、HN で 98 ポイント・41 コメントの議論を呼んでいる。モデルや API の前提が変わったときに壊れやすい箇所を事前に見極める視点は、エージェント設計のレビュー観点として持ち帰れる。コメント欄の反論も含めて読むと、設計上のトレードオフの捉え方が立体的になる。</p>
-<p class="links"><a href="https://madradavid.com/claudes-load-bearing-seams/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmadradavid.com%2Fclaudes-load-bearing-seams%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>どうやって claude.ai を 2 週間で 3 倍高速化したか</h3>
-<p>2 週間で 3 倍という具体的な数字が出ている性能改善の記録で、推測ではなく計測からボトルネックを特定して効果を検証する進め方が読み取れる。自前のサービスや社内ツールの応答速度に悩んでいる場合、同じ順序で当てはめられる。AI 製品特有の待ち時間(ストリーミングやモデル呼び出し)をどう扱ったかという点が実務では一番参考になる。</p>
-<p class="links"><a href="https://claude.dev/blog/how-we-made-claude-ai-faster/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude が CRISPR 様の反復配列を持つ新規酵素系を発見</h3>
-<p>Anthropic の発表で、HN でも 272 ポイント・276 コメントと今日いちばん大きい反応を集めている。モデルを研究プロセスの一部として使う事例の現在地が分かるので、探索的なタスクをエージェントにどこまで任せられるかを考える材料になる。専門外でも、AI に仮説生成と検証のどこを担わせたのかという分担の設計に目を通しておく価値がある。</p>
-<p class="links"><a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fnews%2Fclaude-discovers-novel-enzyme-system">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>[AINews] Claude Opus 5.5 が AINews の新しい既定モデルに - そして全社が料金を 40〜50% 値下げ</h3>
-<p>Opus 5.5 の登場と、業界全体で料金が 40〜50% 下がっている動きをまとめて追える。コーディングエージェントのサブスク料金が同時に動いている局面なので、契約やモデル選定の前提をいつ見直すべきかの判断材料になる。単体のモデル比較ではなく、価格競争の構図として捉えたいときに。</p>
-<p class="links"><a href="https://www.latent.space/p/ainews-claude-opus-55-the-new-default">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fainews-claude-opus-55-the-new-default">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Codex を使うなら、Skills と Plugins を押さえておきたい</h3>
-<p>Codex の拡張機構である Skills と Plugins を実践目線で整理した記事。他社のコーディングエージェントが拡張の単位をどう設計しているかを知ると、Claude Code 側の Skills・MCP をどこで使い分けるかの判断が相対化できる。複数のエージェントを併用しているチームほど、用語と責務の対応を揃えるために読んでおきたい。</p>
-<p class="links"><a href="https://syu-m-5151.hatenablog.com/entry/2026/09/23/123604">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsyu-m-5151.hatenablog.com%2Fentry%2F2026%2F09%2F23%2F123604">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>[Amazon Bedrock] VLM に判定を先に書かせるのを止めて、外観検査の検出率を比べてみました</h3>
-<p>出力スキーマのキー順を変えただけで検出率が変わった、という現象を系統的に検証した記録。構造化出力では「何を先に書かせるか」が結果を左右するという話で、Claude の構造化出力や評価セットの設計にそのまま効く。プロンプトやスキーマを直したのに精度が上下する理由を説明できるようになる。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-vlm-inspection-verdict-order/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fbedrock-vlm-inspection-verdict-order%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
