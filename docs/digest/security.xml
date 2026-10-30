@@ -4,11 +4,67 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 30 Oct 2026 10:10:53 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Oct 2026 18:06:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Ivanti Connect Secure の認証不備でローカル攻撃者が権限を昇格できる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111357.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111357.html#2026-10-30T18:06:40.834Z</guid>
+            <pubDate>Fri, 30 Oct 2026 18:06:40 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Ivanti Connect Secure の認証不備でローカル攻撃者が権限を昇格できる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-10-30 追加され、実際の悪用が確認されている。自宅インフラの構成には該当しないため「今週中」と判定した。CVSS・EPSS は入力に無い。</p>
+<p>Ivanti Connect Secure に重要な機能の認証不備があり、ローカルで認証済みの攻撃者が権限を昇格できる。CVE-2026-104935 および CVE-2026-118527 と組み合わせて悪用できるとされている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Ivanti Connect Secure を運用している場合は KEV の推奨対応に従う。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111357">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Ivanti Connect Secure の識別子生成の問題で任意ファイルを配置される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-118527.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-118527.html#2026-10-30T18:06:40.834Z</guid>
+            <pubDate>Fri, 30 Oct 2026 18:06:40 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Ivanti Connect Secure の識別子生成の問題で任意ファイルを配置される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-10-30 追加され、実際の悪用が確認されている。自宅インフラの構成には該当しないため「今週中」と判定した。CVSS・EPSS は入力に無い。</p>
+<p>Ivanti Connect Secure で予測可能な識別子が生成される問題があり、リモートで認証済みの攻撃者が攻撃者の制御する内容のファイルを既知の場所にアップロードできる。CVE-2026-104935 および CVE-2026-111357 と連鎖させて悪用できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Ivanti Connect Secure を運用している場合は KEV の推奨対応に従う。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118527">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Google Chrome の Skia に入力検証不備、リモートから攻撃可能]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119261.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119261.html#2026-10-30T18:06:40.834Z</guid>
+            <pubDate>Fri, 30 Oct 2026 18:06:40 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Google Chrome の Skia に入力検証不備、リモートから攻撃可能</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加、EPSS 0.002 と低く悪用の兆候はまだ無い。広く使われるブラウザの Critical のため「監視」とした。</p>
+<p>Google Chrome の Skia における入力検証の不備で、リモートの攻撃者が細工したコンテンツを閲覧者に開かせることで影響を与えうる。156.0.8078.79 より前のバージョンが対象。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 156.0.8078.79 以降へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-88vq-7689-gvgx">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Google Chrome のガベージコレクションでメモリ破壊、リモートから攻撃可能]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119263.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119263.html#2026-10-30T18:06:40.834Z</guid>
+            <pubDate>Fri, 30 Oct 2026 18:06:40 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Google Chrome のガベージコレクションでメモリ破壊、リモートから攻撃可能</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加、EPSS 0.002 と低く悪用の兆候はまだ無い。広く使われるブラウザの Critical のため「監視」とした。</p>
+<p>Google Chrome の GarbageCollection におけるメモリ破壊の問題で、リモートの攻撃者が細工したコンテンツを使って影響を与えうる。156.0.8078.79 より前のバージョンが対象。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 156.0.8078.79 以降へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-gr92-r7pw-c3qg">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[即時対応] GitLab CE/EE の整数オーバーフローで未認証の遠隔コード実行を許す脆弱性]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-97229.html</link>
