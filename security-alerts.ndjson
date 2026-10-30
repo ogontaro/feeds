@@ -307,3 +307,10 @@
 {"date":"2026-10-29T18:32:48.898Z","id":"CVE-2026-119128","kev":false,"reported":false}
 {"date":"2026-10-29T18:32:48.898Z","id":"CVE-2026-112256","kev":false,"reported":false}
 {"date":"2026-10-29T18:32:48.898Z","id":"CVE-2026-111732","kev":false,"reported":false}
+{"date":"2026-10-30T01:08:16.794Z","id":"CVE-2026-97229","kev":true,"reported":true,"title":"GitLab CE/EE の整数オーバーフローで未認証の遠隔コード実行を許す脆弱性","urgency":"immediate"}
+{"date":"2026-10-30T01:08:16.794Z","id":"CVE-2026-76418","kev":true,"reported":true,"title":"Cisco Secure Firewall ASA/FTD の NULL ポインタ参照で遠隔から再起動させられる脆弱性","urgency":"week"}
+{"date":"2026-10-30T01:08:16.794Z","id":"CVE-2026-107058","kev":false,"reported":false}
+{"date":"2026-10-30T01:08:16.794Z","id":"CVE-2026-107032","kev":false,"reported":false}
+{"date":"2026-10-30T01:08:16.794Z","id":"CVE-2026-107015","kev":false,"reported":false}
+{"date":"2026-10-30T01:08:16.794Z","id":"CVE-2023-22793","kev":false,"reported":false}
+{"date":"2026-10-30T01:08:16.794Z","id":"CVE-2026-103093","kev":false,"reported":false}
