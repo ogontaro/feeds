@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-10-30</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-10-30</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>エージェント AI の境界問題は、プラットフォーム側の問題として扱う</h3>
+<p>自律エージェントは「ツールが許すこと」しかできないという単純な事実が、そのままリスクの全体になる、という整理。ツールと権限の範囲がエージェントの行動範囲を決める以上、どこまで触らせるかはアプリの実装ではなく基盤の設計判断になる。Backstage のポータルや Crossplane の合成 API をエージェントにも開放するなら、どの操作を誰に許すかを先に決める材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/29/the-boundary-problem-in-agentic-ai-is-a-platform-problem/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F29%2Fthe-boundary-problem-in-agentic-ai-is-a-platform-problem%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes で AI エージェントを隔離する 5 つの層</h3>
+<p>自律的にコードを走らせるエージェントは、人間がレビューしていないコードを必ず実行するという前提から、Kubernetes 上の隔離を 5 つの層に分けて整理している。1 つのサンドボックス設定に寄せるのではなく、層ごとに権限と到達範囲を絞るという考え方は、エージェントに実行を許す前にどこが抜けやすいかを点検するチェックリストになる。自宅クラスタでエージェントを動かす場合でも、実行環境の影響をどこで止めるかを決める材料だ。</p>
+<p class="links"><a href="https://thenewstack.io/ai-agent-sandboxing-kubernetes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fai-agent-sandboxing-kubernetes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes プラットフォームが毎年作り直している「共有できる層」</h3>
+<p>プラットフォームチームがこの 1 年で作ったものとして真っ先に挙がるのが、リソースを作る Kubernetes コントローラだ、という導入から、各社が同じ層を再実装している無駄を指摘する記事。リソース合成を自前のコントローラで抱える代わりに共有できる仕組みに寄せる判断は、保守対象と権限の広がりを抑えることにつながる。kro や Crossplane で合成を組んでいる構成でも、コントローラを足す前にこの層が本当に自前で必要かを問い直す材料になる。</p>
+<p class="links"><a href="https://thenewstack.io/kubernetes-resource-composition-layer/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-resource-composition-layer%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI Conformance がワーキンググループから SIG Architecture のサブプロジェクトになるまで</h3>
+<p>Kubernetes の AI Conformance が、当初のワーキンググループから SIG Architecture 配下のサブプロジェクトへ移るまでの経緯を、担当者へのインタビューで追っている。AI 向けのクラスタや配布物を選ぶときに「何をもって対応とするか」の共通の見方が上流で整っていくシグナルで、独自の運用ルールを固める前に押さえておきたい。今後の適合性の議論を先回りして読むための背景になる。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F29%2Fsig-arch-ai-conformance-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>必要なコンポーネントだけを入れた OpenTelemetry Collector を自分でビルドする</h3>
+<p>配布されている Collector は幅広い用途向けに多くのコンポーネントを含むため、自分の構成で使うものだけを選んでディストリビューションをビルドする利点を解説している。不要な resource detector を落とせばバイナリと依存が小さくなり、更新時に確認すべき範囲も狭まる。Collector を自前で運用しているなら、どのコンポーネントを残すかを決める際の判断材料になる。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/collector-with-less-dependencies/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fcollector-with-less-dependencies%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

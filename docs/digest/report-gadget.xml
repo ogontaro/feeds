@@ -4,11 +4,29 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 29 Oct 2026 01:48:50 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Oct 2026 01:51:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-10-30]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-30.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-30.html</guid>
+            <pubDate>Fri, 30 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Xreal Aura、Google の Android XR 搭載スマートグラスの予約受付を開始</h3>
+<p>Google の Android XR を搭載するスマートグラス「Xreal Aura」の予約受付が始まった。Android XR 端末が実際に購入できる段階に入ったことは、Meta の Ray-Ban 系グラス以外の選択肢を検討するうえで押さえておきたい動きだ。発売時期や価格の詳細は予約ページで確認したい。</p>
+<p class="links"><a href="https://mashable.com/tech/xreal-aura-xr-glasses-release-preorder-deals">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmashable.com%2Ftech%2Fxreal-aura-xr-glasses-release-preorder-deals">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Rokid、Meta Ray-Ban Display に対抗する新型スマートグラス2機種を発表</h3>
+<p>Rokid が新型スマートグラス2機種を発表し、Meta Ray-Ban Display の対抗製品として位置づけられている。スマートグラス市場で競合が具体的な製品を出してきたことで、今後の購入判断の比較対象が増える点が読む価値になる。</p>
+<p class="links"><a href="https://www.androidauthority.com/rokid-unveils-two-new-smart-glasses-3729627/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.androidauthority.com%2Frokid-unveils-two-new-smart-glasses-3729627%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-10-29]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-29.html</link>

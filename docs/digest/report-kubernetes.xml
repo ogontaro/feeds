@@ -4,11 +4,44 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 29 Oct 2026 01:45:27 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Oct 2026 01:48:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-30]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-30.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-30.html</guid>
+            <pubDate>Fri, 30 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>エージェント AI の境界問題は、プラットフォーム側の問題として扱う</h3>
+<p>自律エージェントは「ツールが許すこと」しかできないという単純な事実が、そのままリスクの全体になる、という整理。ツールと権限の範囲がエージェントの行動範囲を決める以上、どこまで触らせるかはアプリの実装ではなく基盤の設計判断になる。Backstage のポータルや Crossplane の合成 API をエージェントにも開放するなら、どの操作を誰に許すかを先に決める材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/10/29/the-boundary-problem-in-agentic-ai-is-a-platform-problem/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F29%2Fthe-boundary-problem-in-agentic-ai-is-a-platform-problem%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes で AI エージェントを隔離する 5 つの層</h3>
+<p>自律的にコードを走らせるエージェントは、人間がレビューしていないコードを必ず実行するという前提から、Kubernetes 上の隔離を 5 つの層に分けて整理している。1 つのサンドボックス設定に寄せるのではなく、層ごとに権限と到達範囲を絞るという考え方は、エージェントに実行を許す前にどこが抜けやすいかを点検するチェックリストになる。自宅クラスタでエージェントを動かす場合でも、実行環境の影響をどこで止めるかを決める材料だ。</p>
+<p class="links"><a href="https://thenewstack.io/ai-agent-sandboxing-kubernetes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fai-agent-sandboxing-kubernetes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes プラットフォームが毎年作り直している「共有できる層」</h3>
+<p>プラットフォームチームがこの 1 年で作ったものとして真っ先に挙がるのが、リソースを作る Kubernetes コントローラだ、という導入から、各社が同じ層を再実装している無駄を指摘する記事。リソース合成を自前のコントローラで抱える代わりに共有できる仕組みに寄せる判断は、保守対象と権限の広がりを抑えることにつながる。kro や Crossplane で合成を組んでいる構成でも、コントローラを足す前にこの層が本当に自前で必要かを問い直す材料になる。</p>
+<p class="links"><a href="https://thenewstack.io/kubernetes-resource-composition-layer/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-resource-composition-layer%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI Conformance がワーキンググループから SIG Architecture のサブプロジェクトになるまで</h3>
+<p>Kubernetes の AI Conformance が、当初のワーキンググループから SIG Architecture 配下のサブプロジェクトへ移るまでの経緯を、担当者へのインタビューで追っている。AI 向けのクラスタや配布物を選ぶときに「何をもって対応とするか」の共通の見方が上流で整っていくシグナルで、独自の運用ルールを固める前に押さえておきたい。今後の適合性の議論を先回りして読むための背景になる。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F29%2Fsig-arch-ai-conformance-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>必要なコンポーネントだけを入れた OpenTelemetry Collector を自分でビルドする</h3>
+<p>配布されている Collector は幅広い用途向けに多くのコンポーネントを含むため、自分の構成で使うものだけを選んでディストリビューションをビルドする利点を解説している。不要な resource detector を落とせばバイナリと依存が小さくなり、更新時に確認すべき範囲も狭まる。Collector を自前で運用しているなら、どのコンポーネントを残すかを決める際の判断材料になる。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/collector-with-less-dependencies/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fcollector-with-less-dependencies%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-29]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-29.html</link>
@@ -636,24 +669,6 @@
 <h3>OpenTelemetry と Prometheus が歩み寄る。まだ足りないものは何か</h3>
 <p>クラウドネイティブの可観測性を事実上二分してきた CNCF の2大プロジェクトが、どこまで噛み合うようになり、どこがまだ埋まっていないのかを KubeCon 前に整理した記事です。メトリクスを Prometheus、計装とトレースを OpenTelemetry という分担で組んでいる構成では、両者の境界のどこで設計判断を迫られるかがそのまま運用コストとパイプラインの重複に跳ね返るため、自チームの可観測性スタックの前提を見直す材料になります。片方に寄せる/併用するの判断を先送りしているなら、判断材料として読む価値があります。</p>
 <p class="links"><a href="https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopentelemetry-prometheus-observability-interoperability%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-25]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-25.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-25.html</guid>
-            <pubDate>Fri, 25 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>開発者とプラットフォームチームはどちらも Kubernetes のセルフサービスを望むが、「誰が所有するか」で対立している</h3>
-<p>セルフサービス基盤の設計は「誰が何を所有するか」の線引きを誤ると、環境が野放しに増えて誰も面倒を見なくなる。開発者側の要求とプラットフォーム側の責任範囲がどこで衝突するのかを、実務の運用課題として整理している点が参考になる。プラットフォームエンジニアリングの内製基盤を設計・見直しする立場なら、責任分界の決め方の材料として読む価値がある。</p>
-<p class="links"><a href="https://thenewstack.io/kubernetes-self-service-platform-teams/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-self-service-platform-teams%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>SBOM はなぜサプライチェーン攻撃を止められないのか</h3>
-<p>SBOM があればサプライチェーン攻撃の多くは防げるはずだ、という前提そのものを問い直す内容で、生成して終わりになりがちな SBOM 運用の実効性を考える材料になる。「作ること」と「実際に脆弱性対応へ繋げること」の間にある運用上の障壁を押さえておくと、自組織の SBOM 戦略が絵に描いた餅になっていないかを点検できる。</p>
-<p class="links"><a href="https://webflow.sysdig.com/blog/why-are-sboms-failing-to-stop-supply-chain-attacks">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwebflow.sysdig.com%2Fblog%2Fwhy-are-sboms-failing-to-stop-supply-chain-attacks">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-30</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-30</h1>
+<article class="report"><h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.314、作業ディレクトリ外への書き込みを全権限モードで拒否する設定を追加</h3>
+<p><code>permissions.blockWritesOutsideWorkingDirectories</code> が追加され、有効にするとすべての権限モードで Write・Edit・NotebookEdit が作業ディレクトリ外のパスを拒否するようになりました。auto モードでも書き込み範囲をディレクトリ単位で縛れるため、サブエージェントや CI にどこまでファイルを触らせるかを設定として表現できます。一方、作業ディレクトリの外へ出力している既存のワークフローは止まる可能性があるので、適用前に書き込み先を洗い出しておきたい変更です。</p>
+<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.314#item-735ea81528a5">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code が各バックグラウンドエージェントのトランスクリプトをモデルへ定期的に送信しているという指摘</h3>
+<p>バックグラウンドエージェントのトランスクリプトを Claude Code が定期的にモデルへ送っている、という指摘が HN で 560 ポイントを集めています。複数のエージェントを並行して走らせる運用では、何がモデルに渡り、それがコストや機密情報の扱いにどう響くかを把握しておく必要があります。話題の大きさに対して一次情報は gist にまとまっているので、内容を確認したうえで自組織での扱いを決めるのがよさそうです。</p>
+<p class="links"><a href="https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgist.github.com%2Fflamerix-ai%2Fc3905705cc4205e5de3011fa2e74efce">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>opencode の Go プランに Teams 向けプランと利用上限が追加</h3>
+<p>opencode の /go に Go Teams プランと利用上限を加えるコミットが入りました。OpenCode Go を CI の AI 呼び出しに使っている場合、チームで席を増やしたときの上限や課金の前提がここで決まるため、差分として早めに押さえておきたいところです。個人利用のままでも、プランごとの上限がどう定義されるかは今後の運用判断の材料になります。</p>
+<p class="links"><a href="https://github.com/anomalyco/opencode/commit/3e8e974613209822cad2f661f112018d6bd16617">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanomalyco%2Fopencode%2Fcommit%2F3e8e974613209822cad2f661f112018d6bd16617">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（2 本）</h2>
+<section class="item">
+<h3>MCP サーバーはエージェントに「次に何をするか」を伝えるべき — AWS の James Ward 氏</h3>
+<p>多くの MCP サーバーは1つのことだけを行い、エージェントがデータを求めるとそれを返すだけだと指摘し、AWS の James Ward 氏が「次に何をすべきか」をサーバー側から伝える設計を論じています。自前の MCP サーバーを作るとき、ツールの戻り値やエラーに次の一手を含めるかどうかは、エージェントが迷わず進めるかに直結します。MCP プラグインを増やしている人は、ツール定義の書き方を見直す材料になります。</p>
+<p class="links"><a href="https://thenewstack.io/aws-mcp-agent-observability/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Faws-mcp-agent-observability%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Stripe の社内エージェント基盤 — 手順ごとのプロンプトと「監視するエージェント」で決済連携を短縮</h3>
+<p>Stripe が社内の AI エージェント構成を公開し、同じ業務が素の Claude Code で 20 日かかっていたところ 4 日で終わるようになったと投稿されています。125 以上の過去の連携を手順ごとの再利用可能なプロンプト（100 本以上）に分解し、1 体が作る間にもう 1 体がトランスクリプトを読んで詰まった箇所を記録、実行後に別のエージェントがプロンプトの修正案を作る仕組みです。決済連携の期間が最大 6 か月から 2〜6 週間に短縮したという数字は、繰り返し作業を「工場」にする際の具体的な部品として参考になります。</p>
+<ul>
+<li><a href="https://x.com/undefinedKi/status/2115891841488867723">@undefinedKi のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FundefinedKi%2Fstatus%2F2115891841488867723">Google 翻訳で読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

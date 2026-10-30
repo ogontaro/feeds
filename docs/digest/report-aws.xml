@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 29 Oct 2026 01:46:32 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Oct 2026 01:49:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-10-30]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-30.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-30.html</guid>
+            <pubDate>Fri, 30 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon EKS と SageMaker HyperPod EKS で NVIDIA Nemotron モデルによるエージェント AI を加速</h3>
+<p>120B パラメータの MoE モデル Nemotron 3.5 Super VL を、EKS・EKS Auto Mode・SageMaker HyperPod EKS 上に NVIDIA Dynamo と vLLM で配備する具体的な手順まで踏み込んでいる。オープンウェイトモデルを自前の推論基盤で動かしたいときに、モデル選定と配備構成を同時に判断できる材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Faccelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EKS でスケーラブルな LLM 推論基盤を作る</h3>
+<p>EKS 上で GPU ノードと推論エンジンを 0 台から動的に増減させる推論基盤の実装例。通常の Web API の常識が LLM でどう変わるかを軸に、スケール・トゥ・ゼロを含む構成を実装ベースで解説しており、待機コストを抑えつつ推論基盤を運用したいときの設計判断に直結する。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/scalable-llm-inference-eks/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>MoEngage、400 を超える API を AgentCore Gateway でエージェントツール化</h3>
+<p>7 リージョンに散らばる約 400 本の REST API を、Amazon Bedrock AgentCore Gateway 経由で権限スコープ付きのエージェントツールに変換した事例。サービスごとに MCP サーバーを立てず、公開エンドポイントも増やさずに、OpenAPI 定義・Cedar ポリシー・VPC Lattice の egress 制御でツールを絞り込んでいる点は、エージェントに渡す権限とコンテキスト量をどう抑えるかの実践例として読む価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Step Functions のワークフローが AI エージェントのツールとして利用可能に</h3>
+<p>既存の Standard / Express ワークフローを、AgentCore Gateway 経由でそのままエージェントのツールとして公開できるようになった。実行するかどうかと入力はエージェントが決め、各ステップは定義どおりに動くため、220 以上のサービスをまたぐ処理を非決定的な推論から切り離したままエージェントに委ねられる。既存の自動化資産をエージェント化する際の第一候補になる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Fstep-functions-workflows-ai-agent-tools%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>BMW グループ、AWS Graviton でコネクテッドカー基盤を高速化</h3>
+<p>コネクテッドカーの基盤を x86 から Graviton へ移行した事例で、Karpenter によるノード管理、マルチアーキテクチャのコンテナビルド、Graviton ベースの CI/CD ランナーまでを一通り扱っている。NGINX ingress の CPU を約 57% 削減し、価格性能比が約 40% 向上したという結果は、Karpenter で ARM ノードを混在させる際の移行順序と落としどころを考える参考になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/how-bmw-group-accelerated-connected-vehicle-workloads-on-aws-graviton/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fhow-bmw-group-accelerated-connected-vehicle-workloads-on-aws-graviton%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-10-29]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-29.html</link>
@@ -762,39 +795,6 @@
 <h3>SageMaker HyperPod と Qumulo で学習計算とデータを別リージョンに置く</h3>
 <p>学習の計算資源をあるリージョンに、データセットを別のリージョンに置くという構成を、Cloud Native Qumulo を挟んで成立させた検証結果です。NeuralCache のウォームアップ後にリモートクラスタが同居構成と同等のスループットに達したという数字は、GPU が取れない／データが動かせないという制約下での設計判断に直接効きます。クロスリージョン構成は転送量とレイテンシの見積もりを誤るとそのままコストに跳ねるので、成立条件が明示されている点が実務的です。</p>
 <p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/multi-region-training-with-amazon-sagemaker-hyperpod-and-qumulo/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmulti-region-training-with-amazon-sagemaker-hyperpod-and-qumulo%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-09-25]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-25.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-09-25.html</guid>
-            <pubDate>Fri, 25 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>エンタープライズ規模のイベント駆動アプリ向け、Amazon EventBridge の拡張カスタムイベントバスを発表</h3>
-<p>組織内の全 AWS アカウントで1つのイベントバスを共有できるようになり、順序保証・Subscriber リソースによる購読の単純化・規模拡大時のコスト改善が入った。これまで「アカウントをまたぐたびにバスとルールが増殖する」ことがマルチアカウント構成の最大の設計負債だったので、その前提が変わる。イベント駆動の全体設計を見直す価値がある。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fintroducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AgentCore Gateway と MCP で作るマルチアカウント構成の AI エージェント</h3>
-<p>各チームのデータをそれぞれの AWS アカウントに置いたまま、中央のプラットフォームアカウントのエージェントから横断的に問い合わせる構成を、Bedrock AgentCore Gateway と MCP で組む実装例。権限境界を崩さずにエージェントへデータを渡す方法が具体的に示されており、エージェント導入時に最初に詰まる「認可をどう切るか」への答えとして参照価値が高い。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon CloudWatch Omni が一般提供開始 — 作った AI エージェントの動きを一箇所で観測する</h3>
-<p>エージェントの挙動をまとめて見られる CloudWatch の新機能が GA になった。エージェントは非決定的で従来のメトリクスでは追いにくく、運用フェーズに入った途端に可観測性が問題になる。実際に触った所感つきで公開されているので、導入前の評価コストを下げられる。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/amazon-cloudwatch-omni-agent-observability/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Famazon-cloudwatch-omni-agent-observability%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>SageMaker AI 上の WhisperX による話者ラベル付き文字起こし</h3>
-<p>Whisper・wav2vec2 による強制アラインメント・話者ダイアライゼーションを1つの GPU イメージにまとめた AWS 製 Deep Learning Container を、SageMaker AI のリアルタイム／非同期エンドポイントに配備する手順。単語単位のタイムスタンプと話者ラベルが同時に取れるため、議事録やコール解析の自前実装を置き換えられる。GPU AMI の固定・スケーリング・コスト管理といった本番運用の勘所まで書かれている。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/speaker-labeled-transcription-with-whisperx-on-sagemaker-ai/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fspeaker-labeled-transcription-with-whisperx-on-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Aderant が Amazon Nova でチケットのトリアージを自動化した事例</h3>
-<p>Amazon Bedrock 経由の Nova Lite を使い、コンテキスト収集・分類・ルーティング・ナレッジ付与までを自動化したクラウド運用チームの事例。フロンティアモデルではなく軽量モデルを選び、業務フローに埋め込んでいるところが実務的で、コストと精度のバランスをどう取るかの参考になる。エージェント化の前に一歩ずつ自動化を進める現実的な進め方として読める。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/aderant-builds-intelligent-ticket-triage-with-amazon-nova/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Faderant-builds-intelligent-ticket-triage-with-amazon-nova%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
