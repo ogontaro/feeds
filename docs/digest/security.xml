@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 30 Oct 2026 18:06:40 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Oct 2026 22:27:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Tailscale の権限設定不備で認可されていない操作を許す可能性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107060.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107060.html#2026-10-30T22:27:49.007Z</guid>
+            <pubDate>Fri, 30 Oct 2026 22:27:49 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Tailscale の権限設定不備で認可されていない操作を許す可能性</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.1 と高いが、EPSS 0.002 で悪用の兆候はなく CISA KEV にも未登録。自宅インフラで使っている Tailscale に関する項目のため、影響バージョンに該当するか確認する価値があると判断し「監視」とした。入力の versionCode 表記から Android アプリ版の可能性がある。</p>
+<p>Tailscale versionCode 297862600 に権限設定の不備があり、認可されていない攻撃者が不正な操作を行えるとされている。入力の概要は途中までしか示されておらず、攻撃条件と影響範囲の全文はアドバイザリで確認する必要がある。</p>
+<p><strong>自宅インフラへの該当:</strong> Tailscale<br><strong>推奨アクション:</strong> アドバイザリ（GHSA-22cw-3xwj-68cg）で影響バージョンと修正版を確認し、該当する場合は更新する。自宅クラスタ側の Tailscale が影響を受けるかも併せて確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-22cw-3xwj-68cg">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Ivanti Connect Secure の認証不備でローカル攻撃者が権限を昇格できる]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111357.html</link>

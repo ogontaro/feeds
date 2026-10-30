@@ -329,3 +329,23 @@
 {"date":"2026-10-30T18:06:40.834Z","id":"CVE-2026-119568","kev":false,"reported":false}
 {"date":"2026-10-30T18:06:40.834Z","id":"CVE-2026-93327","kev":false,"reported":false}
 {"date":"2026-10-30T18:06:40.834Z","id":"CVE-2026-116366","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-107249","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-107034","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-107028","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-107017","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-107060","kev":false,"reported":true,"title":"Tailscale の権限設定不備で認可されていない操作を許す可能性","urgency":"watch"}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-116241","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-78403","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-90888","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-39738","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-119526","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-116386","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-39732","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-116852","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-118697","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-119978","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-116238","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-119717","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-119716","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"GHSA-5xjx-3w67-w9x9","kev":false,"reported":false}
+{"date":"2026-10-30T22:27:49.007Z","id":"CVE-2026-112816","kev":false,"reported":false}
