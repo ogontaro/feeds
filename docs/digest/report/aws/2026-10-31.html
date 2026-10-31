@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-10-31</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-10-31</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock、AWS GovCloud (US) で OpenAI モデルの API 対応とクロスリージョン推論を提供</h3>
+<p>bedrock-runtime で OpenAI の GPT-5.6（Terra / Luna）が使えるようになり、Responses・Converse・Chat Completions の3 API に対応した。GovCloud 内でもクロスリージョン推論が使え、2つの GovCloud リージョン間を自動でルーティングしてスループットと冗長性を引き上げる。GovCloud 限定の展開ではあるが、クロスリージョン推論の適用範囲がどこまで広がっていくかを測る指標として押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Fbedrock-openai-runtime-govcloud%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>コーディングエージェントが作っている最中の Web アプリを Bedrock AgentCore ランタイムでライブプレビュー</h3>
+<p>AgentCore のセッションエンドポイントが、許可したポートへの任意の HTTP メソッド・パス・WebSocket 接続を認証付き URL で転送する。セッション内で Vite の開発サーバーを動かしたままエージェントにファイルを編集させ、ブラウザで更新をその場で確認する構成を実際にデプロイして見せている。エージェントの成果物をセッション終了後にまとめて検収するのではなく、動いている最中に確認するというレビューの形が具体的になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fpreview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock のコストをエンドツーエンドで管理する FinOps／プラットフォームチーム向けプレイブック</h3>
+<p>Bedrock のコストを、支出のオーナーへの帰属、リクエスト単位の可観測性、予算の強制、プラットフォーム既定値の最適化、レビュー cadence の5段階で運用するモデルを示している。モデル呼び出しごとに「誰の費用か」を紐づけるところから始めるため、請求書を見てから慌てるのではなく、使われ方の設計そのものに手を入れられる。コスト最適化を個人の節約ではなくプラットフォームの既定値として組み込みたいときに効く。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmanaging-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Network Firewall のコンテナ関連付けを EKS で試す</h3>
+<p>EKS・ECS で動くコンテナの IP 一覧を Network Firewall のルールから参照できる機能を、EKS の Pod を namespace やラベルで選択して実際に検証している。アプリケーションごとに接続先ドメインを制限するルールを組めるので、egress 制御を Pod の増減に追従させながら運用できる。Kubernetes の NetworkPolicy だけでは書きにくいドメイン単位の制御を、EKS でどう実装するかの具体例になる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/202610-network-firewall-container-association-eks/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Worldwide Express、Bedrock のマルチエージェントで貨物請求の例外処理を自動化</h3>
+<p>LTL（混載）貨物の請求例外処理を、Bedrock 上のマルチエージェント構成で自動化した事例。6か月でアクティブな例外を 75% 削減し、time-to-cash を 4 週間短縮、$10M のフリーキャッシュフローを生んだとしている。定型外の例外処理をルールベースではなくエージェントに寄せたときに何が変わるかを、コストとキャッシュフローの数字で示しており、自社の非定型業務をどこまで自動化できるかの判断材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-worldwide-express-automated-freight-exceptions-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

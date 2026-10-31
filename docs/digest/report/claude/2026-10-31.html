@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-10-31</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-10-31</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code の VS Code 拡張、改ざん版が Cursor マーケットプレイスで配布される</h3>
+<p>Cursor のマーケットプレイス経由で、Anthropic 製ではない改ざん版の Claude Code VS Code 拡張が配布され、最大 5,000 ユーザーに影響した。Cursor はマーケットを一時停止してマルウェアの無効化を進め、復旧後は Claude Code for VS Code 2.1.314 への更新を呼びかけている。正規の拡張を装った配布経路のリスクと、自分の環境が影響を受けていないか確認する手順を知るために読む価値がある。</p>
+<ul>
+<li><a href="https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdoublepulsar.com%2Fanthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2">Google 翻訳で全文を読む</a></li>
+<li><a href="https://cursor.com/blog/claude-code-extension-security-notice">Cursor の公式告知</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcursor.com%2Fblog%2Fclaude-code-extension-security-notice">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/npaka123/status/2116094728412573862">@npaka123 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.311〜v2.1.316 の注目アップデート5選</h3>
+<p>網羅的な変更点一覧ではなく、v2.1.311〜v2.1.316 から実務への影響が大きい5つに絞って「なぜ注目すべきか」を掘り下げている。なかでも Opus 4.8 の fast mode は 2026 年 11 月 30 日に削除され、以後のリクエストはエラーになって標準の Opus 4.8 にもフォールバックしないため、Opus 5.5 への移行時期を決める材料になる。同じリリースには ultrathink を無効化する環境変数やサブエージェントの effort 設定も入っており、自動化の挙動を見直すきっかけにもなる。</p>
+<p class="links"><a href="https://qiita.com/NaokiIshimura/items/d74fc44a0aa8ee403e21">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code の PreToolUse フックで git add -A や reset --hard を機械的に止める</h3>
+<p>CLAUDE.md に「git add -A と reset --hard は使わない」と書いても、文章のお願いは守られないことがある。同じクローンで複数セッションを同時に動かす運用ではそれが事故につながるため、PreToolUse フックで該当コマンドを機械的に拒否する実装と、誤検知を避ける工夫をまとめている。プロンプトではなく実行層で権限境界を引く具体例として読む価値がある。</p>
+<p class="links"><a href="https://qiita.com/takamatt_ai/items/2ed447a87f8d7900cea0">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>Mainplane — サーバー常駐で複数 PC を操作するオープンソースのエージェントハーネス</h3>
+<p>ローカルエージェントはノート PC を閉じると止まり、クラウドエージェントは手元の作業環境に届かない、という隙間を埋める Go 製・MIT のオープンソースハーネス。サーバー上で常駐して Mac / Windows / Linux の複数 PC を操作でき、ブラウザやコンピュータ操作もこなす。compaction を前提としない設計と推論エンジンの組み合わせでトークン効率が変わるという議論もあり、常駐型エージェントや複数マシン運用を考える材料になる。</p>
+<ul>
+<li><a href="https://note.com/npaka/n/ne64b259a449d">記事を読む</a></li>
+<li><a href="https://github.com/mainplane-ai/mainplane">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmainplane-ai%2Fmainplane">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/npaka123/status/2116337254700593278">@npaka123 のポスト</a></li>
+<li><a href="https://x.com/npaka123/status/2116302884027670925">@npaka123 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>TokenEconomizer — コーディングエージェントのトークン消費を最大 30.9% 削減する Microsoft のプラグイン</h3>
+<p>モデルもエージェント本体も差し替えず、同じプロジェクトで踏んだ穴を覚える・長く使っていないツールを外す・エラーで堂々巡りしたら別の進め方を促す、の3つでトークン消費を抑えるオープンソースプラグイン。277 の SWE-Bench タスクを使った検証では5つのモデル構成すべてで平均コストが下がり、4つでは成功率も向上したという。Claude Code / Codex / Copilot CLI / Pi に対応しており、サブスクの消費を抑えたいときの選択肢になる。</p>
+<ul>
+<li><a href="https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.marktechpost.com%2F2026%2F10%2F30%2Fmicrosoft-tokeneconomizer-coding-agent-cost-control%2F">Google 翻訳で全文を読む</a></li>
+<li><a href="https://github.com/microsoft/TokenEconomizer">GitHub リポジトリ</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmicrosoft%2FTokenEconomizer">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/TiagerBao/status/2116025945769599313">@TiagerBao のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FTiagerBao%2Fstatus%2F2116025945769599313">Google 翻訳で読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

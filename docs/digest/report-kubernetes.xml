@@ -4,11 +4,34 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 30 Oct 2026 01:48:15 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 31 Oct 2026 01:33:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-10-31]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-31.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-31.html</guid>
+            <pubDate>Sat, 31 Oct 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>OpenTelemetry eBPF Instrumentation が v1.0.0 に到達</h3>
+<p>コードを変更せずに eBPF とランタイム別の計装でアプリのメトリクスとトレースを取得できる OBI が v1.0.0 に達した。リクエスト率・エラー・レイテンシ・サービス依存関係といった基本指標から始められるので、計装が入っていないサービスが残るクラスタでも、既存の OpenTelemetry 基盤を補う層として現実的に検討できる。v1.0.0 という区切りは、今後の採用判断や社内標準化の基準になるリリースだ。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/obi-v1-release/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fobi-v1-release%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes に workload conformance グループが発足</h3>
+<p>Kubernetes にワークロードの準拠(conformance)を扱うグループが発足した。これまで主に API やノードのレベルで語られてきた準拠の対象がワークロードの挙動まで広がると、AI 推論のような独自ワークロードを載せるときの移植性や、実装間の比較軸に影響してくる。AI チーム向けの意味づけも含めて、推論基盤を設計する際の前提を確認しておきたい。</p>
+<p class="links"><a href="https://thenewstack.io/kubernetes-workload-conformance-ai/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-workload-conformance-ai%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>GPU が忙しくても AI 推論は遅い — Kubernetes 上の推論を可観測性で捉える</h3>
+<p>クラスタが健全に見えても、その上の AI 推論サービスがユーザーを失望させていることがある、という問題提起。GPU の稼働率が高いことは推論が速いことを意味せず、待ち行列や応答時間など別の指標を見ないと遅さは見えてこない。GPU 利用率を主要な健全性シグナルにしているなら、SLO とアラートの設計を見直すきっかけになる。</p>
+<p class="links"><a href="https://thenewstack.io/ai-inference-kubernetes-observability/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fai-inference-kubernetes-observability%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-30]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-30.html</link>
@@ -656,19 +679,6 @@
 <h3>オープンソースアプローチによるベンダーロックインの回避：開発者の視点</h3>
 <p>インフラチームが下す決定は後から覆しにくく、多くはうまくいっても、ときに対価を伴う——という前提でロックインを「調達の問題」ではなく「初期の設計判断の積み重ね」として捉え直している点が読みどころです。マネージドサービスと OSS のどちらを土台に置くかを決める場面で、後戻りコストを見積もるための観点整理として使えます。特定ベンダー固有の話ではなく、プラットフォームエンジニアリングの設計判断にそのまま効く内容です。</p>
 <p class="links"><a href="https://thenewstack.io/avoiding-vendor-lock-in/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Favoiding-vendor-lock-in%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-26]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-26.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-26.html</guid>
-            <pubDate>Sat, 26 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>OpenTelemetry と Prometheus が歩み寄る。まだ足りないものは何か</h3>
-<p>クラウドネイティブの可観測性を事実上二分してきた CNCF の2大プロジェクトが、どこまで噛み合うようになり、どこがまだ埋まっていないのかを KubeCon 前に整理した記事です。メトリクスを Prometheus、計装とトレースを OpenTelemetry という分担で組んでいる構成では、両者の境界のどこで設計判断を迫られるかがそのまま運用コストとパイプラインの重複に跳ね返るため、自チームの可観測性スタックの前提を見直す材料になります。片方に寄せる/併用するの判断を先送りしているなら、判断材料として読む価値があります。</p>
-<p class="links"><a href="https://thenewstack.io/opentelemetry-prometheus-observability-interoperability/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopentelemetry-prometheus-observability-interoperability%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
