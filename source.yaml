@@ -78,10 +78,13 @@ feeds:
     domain: claude
     kind: content
   # AI コーディングツールの新機能・料金変更の週刊まとめ。
+  # 公開アーカイブが検索で見つからず（休止・終了とみられる）、直近8週間の採用実績もゼロのため
+  # 無効化。再開したら enabled を戻す。
   - url: https://buttondown.com/devtoolsradar/rss
     name: AI Devtools Radar
     domain: claude
     kind: content
+    enabled: false
 
   # ----- トレンド（しきい値で事前フィルタ済み）-----
   # しきい値を超えてからフィードに載るため、元記事の pubDate で切る 24h 窓に入る量は少ない。
@@ -159,6 +162,14 @@ feeds:
     domain: claude
     kind: content
     addedAt: "2026-10-11"
+  # コーディングエージェント系の新サービス・料金変更を報じる開発者コミュニティ。2026-10 の
+  # Buildful($10/月)・Qoder Lite($10)・Cursor の料金改定は購読中の公式ブログに出ず、このタグに集まった
+  # （interests.yaml の「AI コーディングエージェントのサブスク料金」）。
+  - url: https://dev.to/feed/tag/claude
+    name: DEV Community — Claude
+    domain: claude
+    kind: content
+    addedAt: "2026-11-01"
 
   # ================= kubernetes / content =================
   - url: https://kubernetes.io/feed.xml
@@ -180,6 +191,13 @@ feeds:
     name: Argo Project
     domain: kubernetes
     kind: content
+  # GitOps の参照実装である Flux の公式ブログ（CNCF Graduated）。2026 も月次で更新中で、
+  # Argo とは別実装の GitOps 設計・運用の話題を補う。
+  - url: https://fluxcd.io/blog/index.xml
+    name: Flux Blog
+    domain: kubernetes
+    kind: content
+    addedAt: "2026-11-01"
   # 2026-04-20 を最後に更新が止まっている（直近8週間は新着ゼロ・採用実績ゼロ。KubeCon EU 2026 の
   # 回顧記事が最終）。プロジェクトのリリースは backstage/backstage の release フィードで別途追っている。
   - url: https://backstage.io/blog/rss.xml
@@ -262,6 +280,13 @@ feeds:
     name: AWS Machine Learning Blog
     domain: aws
     kind: content
+  # 生成AI・オープンウェイトモデルの一次情報（Bedrock のモデル追加・Project Mantle 等）。
+  # ML Blog より AI 全般の告知が早く出る（interests.yaml の「生成AI」「オープンウェイトモデル」）。
+  - url: https://aws.amazon.com/blogs/amazon-ai/feed/
+    name: AWS AI Blog
+    domain: aws
+    kind: content
+    addedAt: "2026-11-01"
   - url: https://dev.classmethod.jp/tags/amazon-bedrock/feed/
     name: Amazon Bedrock | DevelopersIO
     domain: aws
@@ -381,6 +406,13 @@ feeds:
     domain: claude
     kind: release
     addedAt: "2026-10-11"
+  # GitHub 公式の MCP サーバー。新ツール（governance ツール等）の追加を一次情報のリリースで追う
+  # （interests.yaml の「MCPサーバー」「Model Context Protocol」）。
+  - url: https://github.com/github/github-mcp-server/releases.atom
+    name: GitHub MCP Server releases
+    domain: claude
+    kind: release
+    addedAt: "2026-11-01"
 
   # ================= aws / release =================
   - url: https://github.com/aws/karpenter-provider-aws/releases.atom
@@ -648,6 +680,12 @@ feeds:
     domain: devtools
     kind: release
     addedAt: "2026-09-27"
+  # 端末エミュレータ。interests.yaml の「ターミナル」「CLIツール」に当たる（1.4.0 が 2026-10-27）。
+  - url: https://github.com/ghostty-org/ghostty/releases.atom
+    name: Ghostty
+    domain: devtools
+    kind: release
+    addedAt: "2026-11-01"
 
   # Meta のスマートグラス・Quest と XR 業界全体の新製品・価格・発売地域を追う（gadget ドメイン）。
   - url: https://www.uploadvr.com/rss/
@@ -698,6 +736,13 @@ feeds:
     domain: gaming
     kind: content
     addedAt: "2026-10-11"
+  # SteamOS・Steam Frame・Linux ゲーミングの専門媒体。Steam Frame の ARM 版 SteamOS や
+  # Proton の ARM64 対応など、Steam 公式ニュースより速く一次報道する。
+  - url: https://www.gamingonlinux.com/article_rss.php
+    name: GamingOnLinux
+    domain: gaming
+    kind: content
+    addedAt: "2026-11-01"
 
   # GeForce NOW のアプリ・サービス更新だけの RSS は無いため、公式ブログのタグ RSS(対応ゲーム追加が大半)から選定側で拾う。
   - url: https://blogs.nvidia.com/blog/tag/geforce-now/feed/
