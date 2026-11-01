@@ -4,11 +4,24 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 31 Oct 2026 01:33:56 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Nov 2026 01:12:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-01]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-01.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-01.html</guid>
+            <pubDate>Sun, 01 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Kubernetes 開発週報(10/25 週)——WG のコード所有と conformance の位置づけが明確化</h3>
+<p>上流の Kubernetes 開発では、SIG ContribEx がリポジトリ作成ガイドラインと WG ガバナンス文書を更新し、Working Group がコード所有とリポジトリ作成にどう関わるかを整理した。これにより、今後の WG 提案は charter からコードへ進む道筋が具体化される。あわせて SIG Architecture が、新設の WG Workload Conformance を含む今後の conformance 作業と既存の準拠定義との関係を開発者ガイドに追記しており、準拠の対象がワークロードへ広がる流れを早めに押さえておくと、クラスタ上で動かすワークロードの移植性やプラットフォーム標準を決めるときの前提の変化を先回りできる。</p>
+<p class="links"><a href="https://lwkd.info/2026/20261031">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Flwkd.info%2F2026%2F20261031">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-10-31]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-31.html</link>
@@ -666,19 +679,6 @@
 <li><a href="https://x.com/connect24h/status/2104076376181805140">@connect24h のポスト</a></li>
 <li><a href="https://speakerdeck.com/ryotarai/niokeru-ai-jidai-no-kousoku-kiban-arca">リンク先を読む</a></li>
 </ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-27]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-27.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-27.html</guid>
-            <pubDate>Sun, 27 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>オープンソースアプローチによるベンダーロックインの回避：開発者の視点</h3>
-<p>インフラチームが下す決定は後から覆しにくく、多くはうまくいっても、ときに対価を伴う——という前提でロックインを「調達の問題」ではなく「初期の設計判断の積み重ね」として捉え直している点が読みどころです。マネージドサービスと OSS のどちらを土台に置くかを決める場面で、後戻りコストを見積もるための観点整理として使えます。特定ベンダー固有の話ではなく、プラットフォームエンジニアリングの設計判断にそのまま効く内容です。</p>
-<p class="links"><a href="https://thenewstack.io/avoiding-vendor-lock-in/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Favoiding-vendor-lock-in%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
