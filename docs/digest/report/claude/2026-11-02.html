@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-02</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-02</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Cursor のマーケットプレイスで Claude Code 拡張 2.1.312／2.1.313 が改ざんされていた件</h3>
+<p>Cursor の拡張マーケットプレイスで、Claude Code 拡張の 2.1.312 と 2.1.313 が改ざんされた状態で配布されていた（2026-10-29 18:27〜10/30 5:35、日本時間）。記事では Windows 環境の自分の PC で影響を確認する手順をまとめている。Claude Code を Cursor 経由で使っているなら、インストール済みのバージョンと拡張の出所を今すぐ確認したい——モデルや権限設定を固めても、配布経路の侵害は別の入口になる。</p>
+<p class="links"><a href="https://qiita.com/suwa_nobu/items/3cd02fa0f1cec7ea979c">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code に設計・計画・テストを先にさせる「Superpowers」のワークフロー</h3>
+<p>Claude Code に機能を頼むと最初の返答でコードを書き始め、設計やテストが抜けたまま後戻りする、という問題に対する「Superpowers」の導入記事。要件を確認し、承認した設計を計画に落とし、タスクごとにテストとレビューを挟んで実装するという開発手順を skills としてエージェントに与える。README の実際のコマンドと流れが載っており、Spec-Driven Development を Claude Code で回すときの具体例として読める。</p>
+<p class="links"><a href="https://dev.to/dedupedai/make-claude-code-design-plan-and-test-before-it-writes-code-cjg">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdedupedai%2Fmake-claude-code-design-plan-and-test-before-it-writes-code-cjg">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のよくある2つの不満を3つのリポジトリで計測したら、どちらも再現しなかった</h3>
+<p>テスト出力が利用枠を食う、Claude が終わっていないのに done と言う、という Claude Code の2つの不満を、3つの公開リポジトリで実際に計測した記事。生のテスト出力は1回で約1万〜1.8万トークン相当になる一方、失敗と要約だけ残すフィルタで95〜99%削減でき、記録した6セッションでは Claude は生の出力をそのまま読んでおらず、「done」問題も再現しなかったと報告している。プラグインやフックを作る前に、思い込みではなく計測で確かめる姿勢が参考になる。</p>
+<p class="links"><a href="https://dev.to/alrulop/i-measured-two-common-claude-code-complaints-on-three-repos-neither-showed-up-l8">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Falrulop%2Fi-measured-two-common-claude-code-complaints-on-three-repos-neither-showed-up-l8">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>DeepSeek がルーター・ワーカー型のコーディングエージェント dsh-superagent をオープンソース化</h3>
+<p>DeepSeek が、ルーターとワーカーに役割を分けたコーディングエージェント dsh-superagent をオープンソースで公開した。Claude Code の対抗馬として報じられており、複数エージェントの分担と協調をどう設計するかの実装例として読める。ソースが公開されているため、自前の環境でルーター／ワーカー構成の挙動を確かめられるのが大きい。</p>
+<p class="links"><a href="https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.marktechpost.com%2F2026%2F11%2F01%2Fdeepseek-dsh-superagent-router-worker-coding-agent%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI セキュリティレビューの指摘を全件ファクトチェックして分かったこと</h3>
+<p>AI コーディングエージェントをセキュリティレビューに使う Secfoo で、出てきた指摘を1件ずつ「本当に正しいか」検証した記録。実行が完走したか、レポートが立派に見えるかではなく、指摘の真偽を確かめるという視点が、AI セキュリティレビュー導入時の最低ラインになる。Claude Code や Codex、Gemini CLI など既存のエージェントの上に載せるツールなので、自分のワークフローに組み込む前の期待値調整に使える。</p>
+<p class="links"><a href="https://dev.to/amir09/i-fact-checked-every-finding-an-ai-security-reviewer-gave-me-heres-what-held-up-e2k">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Famir09%2Fi-fact-checked-every-finding-an-ai-security-reviewer-gave-me-heres-what-held-up-e2k">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

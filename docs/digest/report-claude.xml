@@ -4,11 +4,46 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 01 Nov 2026 01:07:44 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2026 01:22:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-02]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-02.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-02.html</guid>
+            <pubDate>Mon, 02 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Cursor のマーケットプレイスで Claude Code 拡張 2.1.312／2.1.313 が改ざんされていた件</h3>
+<p>Cursor の拡張マーケットプレイスで、Claude Code 拡張の 2.1.312 と 2.1.313 が改ざんされた状態で配布されていた（2026-10-29 18:27〜10/30 5:35、日本時間）。記事では Windows 環境の自分の PC で影響を確認する手順をまとめている。Claude Code を Cursor 経由で使っているなら、インストール済みのバージョンと拡張の出所を今すぐ確認したい——モデルや権限設定を固めても、配布経路の侵害は別の入口になる。</p>
+<p class="links"><a href="https://qiita.com/suwa_nobu/items/3cd02fa0f1cec7ea979c">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code に設計・計画・テストを先にさせる「Superpowers」のワークフロー</h3>
+<p>Claude Code に機能を頼むと最初の返答でコードを書き始め、設計やテストが抜けたまま後戻りする、という問題に対する「Superpowers」の導入記事。要件を確認し、承認した設計を計画に落とし、タスクごとにテストとレビューを挟んで実装するという開発手順を skills としてエージェントに与える。README の実際のコマンドと流れが載っており、Spec-Driven Development を Claude Code で回すときの具体例として読める。</p>
+<p class="links"><a href="https://dev.to/dedupedai/make-claude-code-design-plan-and-test-before-it-writes-code-cjg">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdedupedai%2Fmake-claude-code-design-plan-and-test-before-it-writes-code-cjg">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のよくある2つの不満を3つのリポジトリで計測したら、どちらも再現しなかった</h3>
+<p>テスト出力が利用枠を食う、Claude が終わっていないのに done と言う、という Claude Code の2つの不満を、3つの公開リポジトリで実際に計測した記事。生のテスト出力は1回で約1万〜1.8万トークン相当になる一方、失敗と要約だけ残すフィルタで95〜99%削減でき、記録した6セッションでは Claude は生の出力をそのまま読んでおらず、「done」問題も再現しなかったと報告している。プラグインやフックを作る前に、思い込みではなく計測で確かめる姿勢が参考になる。</p>
+<p class="links"><a href="https://dev.to/alrulop/i-measured-two-common-claude-code-complaints-on-three-repos-neither-showed-up-l8">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Falrulop%2Fi-measured-two-common-claude-code-complaints-on-three-repos-neither-showed-up-l8">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>DeepSeek がルーター・ワーカー型のコーディングエージェント dsh-superagent をオープンソース化</h3>
+<p>DeepSeek が、ルーターとワーカーに役割を分けたコーディングエージェント dsh-superagent をオープンソースで公開した。Claude Code の対抗馬として報じられており、複数エージェントの分担と協調をどう設計するかの実装例として読める。ソースが公開されているため、自前の環境でルーター／ワーカー構成の挙動を確かめられるのが大きい。</p>
+<p class="links"><a href="https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.marktechpost.com%2F2026%2F11%2F01%2Fdeepseek-dsh-superagent-router-worker-coding-agent%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI セキュリティレビューの指摘を全件ファクトチェックして分かったこと</h3>
+<p>AI コーディングエージェントをセキュリティレビューに使う Secfoo で、出てきた指摘を1件ずつ「本当に正しいか」検証した記録。実行が完走したか、レポートが立派に見えるかではなく、指摘の真偽を確かめるという視点が、AI セキュリティレビュー導入時の最低ラインになる。Claude Code や Codex、Gemini CLI など既存のエージェントの上に載せるツールなので、自分のワークフローに組み込む前の期待値調整に使える。</p>
+<p class="links"><a href="https://dev.to/amir09/i-fact-checked-every-finding-an-ai-security-reviewer-gave-me-heres-what-held-up-e2k">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Famir09%2Fi-fact-checked-every-finding-an-ai-security-reviewer-gave-me-heres-what-held-up-e2k">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-01]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-01.html</link>
@@ -1157,55 +1192,6 @@
 <h3>opencode の欠陥で、悪意のある Web サイトから開発者マシンでのコード実行が可能に</h3>
 <p>コーディングエージェント opencode の欠陥により、悪意のある Web サイトが開発者のマシンでコードを実行できるようになる、という指摘です。コーディングエージェントはローカルのシェルとファイルへの広い権限を持つため、利用しているツールの更新状況を確認するきっかけになります。</p>
 <p class="links"><a href="https://cybersecuritynews.com/opencode-ai-coding-agent-flaw/amp/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fopencode-ai-coding-agent-flaw%2Famp%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-28]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-28.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-28.html</guid>
-            <pubDate>Mon, 28 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
-<section class="item">
-<h3>AIデバッグはなぜ収束しないのか — P2がいつまでも消えない理由</h3>
-<p>Codex などのAIコーディングエージェントで「レビュー → 修正 → 再レビュー」を回すと、優先度 P2 の指摘がいつまでも消えない。この収束しないデバッグループの構造を整理し、再指摘を防ぐプロンプトの書き方まで踏み込んだ記事。エージェントにレビューを任せているチームほど、先に読んでおく価値がある。</p>
-<p class="links"><a href="https://note.com/npaka/n/n557fb948c3cf">記事を読む</a></p>
-<ul>
-<li><a href="https://x.com/catnose99/status/2103664703398666610">@catnose99 のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Claude.ai を2週間で約3倍高速化した事例 — Slack常駐のClaudeに最大150スレッドを並行で任せる</h3>
-<p>Claude.ai の待ち時間を2週間で約3倍短縮した取り組みの記録。Slack に常駐する Claude（Claude Tag、Opus 5.5 相当の社内研究用モデル）へ作業を1チャンネルに集約し、遅い箇所ごとにスレッドを立てて最大150本以上を並行実行、2週間で3,000件以上の変更を入れてユーザーに影響する不具合や切り戻しはゼロだったという。ラボで1回実行すれば結果が決まるKPIを先に用意してデプロイを待たずに最適化を回させ、人間は目標設定・トレードオフ判断・承認に徹する、という長時間エージェント運用の設計が具体的で参考になる。</p>
-<ul>
-<li><a href="https://x.com/npaka123/status/2104140825928298541">@npaka123 のポスト</a></li>
-<li><a href="https://claude.dev/blog/how-we-made-claude-ai-faster/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-we-made-claude-ai-faster%2F">Google 翻訳で全文を読む</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Claude Code の Effort はタスクごとに切り替える — 常に Max ではいけない理由</h3>
-<p>Claude Code の Effort（思考量）を常に High/Max で回すのではなく、タスクごとに切り替えるべきだという整理。Effort を上げると単純に「賢くなる」のではなく、自分で検証したりテストしたり別解を試したりする量が増えるという指摘が要点で、Low=アイデア出し・ラフ作成・軽微な修正、Medium=通常の開発・新機能実装、High=バグ修正・レビュー・検証、Max=難しい問題をほぼ自律的に最後まで解かせる、という対応づけが示されている。仕様をClaudeにインタビューさせる→Low/Mediumで実装→人間が確認→Highで検証、という流れも含め、待ち時間と利用量に直結する日々の使い方の判断材料になる。</p>
-<ul>
-<li><a href="https://x.com/masahirochaen/status/2104330743233343810">@masahirochaen のポスト</a></li>
-</ul>
-</section>
-<h2>新ツール・サブスク（1 本）</h2>
-<section class="item">
-<h3>whiteboard — 図からコードへ辿れる、設計意図の可視化ツール</h3>
-<p>AIがコードを書く前提になると、「設計の意図をどう可視化し、レビューするか」が切実な課題になる。その課題に正面から答えるツールとして紹介されているのが whiteboard で、シーケンス図などの図からコードへ直接ジャンプできる点が特徴。生成されたコードの理解とレビューに時間を取られているチームに向く。</p>
-<ul>
-<li><a href="https://x.com/_syoryu89/status/2104070326401540179">@_syoryu89 のポスト</a></li>
-<li><a href="https://github.com/devdotfast/whiteboard">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fdevdotfast%2Fwhiteboard">Google 翻訳で全文を読む</a></li>
-</ul>
-</section>
-<h2>AI 開発トレンド（1 本）</h2>
-<section class="item">
-<h3>メルカリの高速プロトタイピング基盤「Arca」— Claude Code 入り環境をガードレール付きで配る</h3>
-<p>メルカリが社内の高速プロトタイピング基盤「Arca」の設計を公開している。PdMやデザイナーでもエージェントに指示すればアプリを作れるよう、永続Volume付きの環境・Claude Code等のエージェント・AGENTS.md/Skillsの事前配置・社内標準Stackまでを会社側が用意し、そのうえでGKE Sandbox（gVisor）に閉じ込め、LLMはLiteLLM経由、マシン単位の予算上限まで持たせる。1,029人がアクセスし346人がArcaでアプリを作成、631台のマシンが作られたという実績と、「AIエージェントを使うな」と制限するのではなく壊しても会社まで壊れない遊び場を先に作るという考え方が、導入を検討するチームの参考になる。</p>
-<ul>
-<li><a href="https://x.com/connect24h/status/2104076376181805140">@connect24h のポスト</a></li>
-<li><a href="https://speakerdeck.com/ryotarai/niokeru-ai-jidai-no-kousoku-kiban-arca">リンク先を読む</a></li>
-</ul>
 </section>
 ]]></content:encoded>
         </item>

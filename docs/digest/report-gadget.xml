@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 01 Nov 2026 01:19:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2026 01:35:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-02]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-02.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-02.html</guid>
+            <pubDate>Mon, 02 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Samsung のスマートグラス、12月に発売へ——初期展開にオーストラリアは含まれず</h3>
+<p>サムスンのスマートグラスが12月に発売される予定で、初期の発売対象にオーストラリアは含まれないという。大手メーカーの参入でスマートグラスの選択肢が増える一方、発売地域によって入手時期がずれることになる。購入を検討するなら、自分の地域が初期対象に入るかと実際の投入時期を早めに確認しておきたい。</p>
+<p class="links"><a href="https://www.channelnews.com.au/samsung-smart-glasses-set-for-december-launch-but-australia-misses-initial-release/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.channelnews.com.au%2Fsamsung-smart-glasses-set-for-december-launch-but-australia-misses-initial-release%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-01]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-01.html</link>

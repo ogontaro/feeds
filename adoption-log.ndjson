@@ -472,3 +472,9 @@
 {"date":"2026-11-01","domain":"kubernetes","sourceName":"Last Week in Kubernetes Development"}
 {"date":"2026-11-01","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
 {"date":"2026-11-01","domain":"gadget","sourceName":"Google News — Meta グラス・XR"}
+{"date":"2026-11-02","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-11-02","domain":"claude","sourceName":"DEV Community — Claude"}
+{"date":"2026-11-02","domain":"claude","sourceName":"Google News — コーディングエージェント新サービス・料金"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
+{"date":"2026-11-02","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
+{"date":"2026-11-02","domain":"gadget","sourceName":"Google News — Meta グラス・XR"}
