@@ -4,8 +4,13 @@
 #   quadrant: ai | platform | practice | ops / ring: adopt | trial | assess | hold
 #   summary: その技術が何か(1 文) / reason: この段階に置いた根拠
 #   since・lastCited・trend はスクリプトが計算する(trend: new | up | stable | down)
-updated: 2026-09
-changes: []
+updated: 2026-10
+changes:
+  - "AGENTS.md による指示ファイルの共通化: assess → hold — 月次トレンドが、共通化の利点より AGENTS.md を「実行される入力」とする乗っ取りの危険を指摘"
+  - "AI 時代のコードレビューの再定義: assess → trial — Claude Code のコードレビュー機能の延長で試せ、月次トレンドで運用事例が揃った"
+  - "ハーネスエンジニアリング: 新規 → trial — Claude Code の Mods・フック・サブエージェント設定で試せる"
+  - "エージェント規模に合わせた開発基盤の作り直し: 新規 → assess — 月次トレンドでシグナル止まり"
+  - "意思決定モデル（モデルルーティング）: 新規 → assess — 月次トレンドでシグナル止まり、モデルの自動ルーティングは未使用"
 items:
   - name: コーディングエージェント
     quadrant: ai
@@ -25,28 +30,36 @@ items:
     trend: stable
   - name: AGENTS.md による指示ファイルの共通化
     quadrant: ai
-    ring: assess
+    ring: hold
     summary: リポジトリ直下の AGENTS.md に、ビルド手順や規約などエージェント向けの指示をツール横断で 1 か所にまとめる慣行。
-    reason: Claude Code は CLAUDE.md が無いときの代替として AGENTS.md を読むが中心ツールではない(月次トレンドの「AGENTS.md による指示ファイルの共通化」でシグナル)
+    reason: Claude Code は CLAUDE.md が無いときの代替として AGENTS.md を読むが中心ツールではない（月次トレンドの「エージェントの権限境界とサンドボックス」で、AGENTS.md を実行される入力とする乗っ取りがリスクとして挙がった）
     since: 2026-09
-    lastCited: 2026-09
-    trend: up
+    lastCited: 2026-10
+    trend: down
   - name: エージェントの権限境界とサンドボックス
     quadrant: ai
     ring: trial
     summary: エージェントが実行できる操作や読める範囲を、権限設定や隔離環境で制限して暴走や情報漏洩を防ぐ方式。
-    reason: Claude Code の auto モード既定化とサンドボックス、HolmesGPT の読み取りパス制限(月次トレンドの「エージェントの権限境界とサンドボックス」でトレンド判定)
+    reason: Claude Code の auto モード既定化とサンドボックス、CNCF の境界論（月次トレンドの「エージェントの権限境界とサンドボックス」）
     since: 2026-09
-    lastCited: 2026-09
+    lastCited: 2026-10
     trend: up
   - name: 複数エージェントの並行実行と協調
     quadrant: ai
     ring: trial
     summary: 役割の違うエージェント(サブエージェントなど)を並行に動かし、結果を統合して大きな作業を分担する方式。
-    reason: Claude Code のサブエージェントとセッション fork(月次トレンドの「複数エージェントの並行実行と協調」でトレンド判定)
+    reason: Claude Code のサブエージェント・セッション fork・Projects（月次トレンドの「複数エージェントの並行実行と協調」）
     since: 2026-09
-    lastCited: 2026-09
+    lastCited: 2026-10
     trend: up
+  - name: ハーネスエンジニアリング
+    quadrant: ai
+    ring: trial
+    summary: モデルやプロンプトではなく、権限・ツール・指示・検証といったエージェントの外側の構成を設計し、性能とコストを引き上げる考え方。
+    reason: Claude Code の Mods・フック・サブエージェント設定の延長で試せる（月次トレンドの「ハーネスエンジニアリング」）
+    since: 2026-10
+    lastCited: 2026-10
+    trend: new
   - name: AI SRE
     quadrant: ai
     ring: adopt
@@ -59,10 +72,18 @@ items:
     quadrant: ai
     ring: assess
     summary: 複数の LLM プロバイダーへのリクエストを中継し、認証・コスト管理・ルーティング・ログを一元化するプロキシ層。
-    reason: Claude Code がゲートウェイ向けヘッダーと許可モデル固定に対応したが、ゲートウェイ自体は使っていない(月次トレンドの「LLM ゲートウェイ」でシグナル)
+    reason: Claude Code がゲートウェイ向けヘッダーと許可モデル固定に対応したが、ゲートウェイ自体は使っていない
     since: 2026-09
     lastCited: 2026-09
-    trend: up
+    trend: stable
+  - name: 意思決定モデル（モデルルーティング）
+    quadrant: ai
+    ring: assess
+    summary: エージェントの分岐・ルーティング・再試行の判断を小型モデルに任せ、本体は高性能モデルに考えさせる方式。
+    reason: 月次トレンドの「意思決定モデル（モデルルーティング）」でシグナル（Claude Code は使うがモデルの自動ルーティングは未使用）
+    since: 2026-10
+    lastCited: 2026-10
+    trend: new
   - name: GitOps
     quadrant: platform
     ring: adopt
@@ -83,9 +104,9 @@ items:
     quadrant: platform
     ring: assess
     summary: 人間の開発者だけでなく AI エージェントも利用者と見なし、基盤の API・権限・ガードレールを設計し直す考え方。
-    reason: Backstage の延長にあるが、月次トレンドの「Platform Engineering 2.0(AI エージェントも利用者に含む基盤)」ではシグナル(補強のみ)
+    reason: Backstage の延長だが、月次トレンドの「Agent-first IDP（エージェントを利用者に含むプラットフォーム）」はシグナル止まり
     since: 2026-09
-    lastCited: 2026-09
+    lastCited: 2026-10
     trend: up
   - name: IaC
     quadrant: platform
@@ -135,6 +156,14 @@ items:
     since: 2026-09
     lastCited: null
     trend: stable
+  - name: エージェント規模に合わせた開発基盤の作り直し
+    quadrant: platform
+    ring: assess
+    summary: エージェントが大量にコミット・プッシュする前提で、ソース管理・CI など開発基盤の容量と整合性を作り直す動き。
+    reason: 月次トレンドの「エージェント規模に合わせた開発基盤の作り直し」でシグナル（Anthropic の自社ソース管理移行、GitHub の agent-scale Git 基盤）
+    since: 2026-10
+    lastCited: 2026-10
+    trend: new
   - name: 開発環境の宣言化
     quadrant: practice
     ring: adopt
@@ -153,11 +182,11 @@ items:
     trend: stable
   - name: AI 時代のコードレビューの再定義
     quadrant: practice
-    ring: assess
+    ring: trial
     summary: AI が大量にコードを生成する前提で、レビューの目的・対象・人間の役割を見直す議論。
-    reason: Martin Fowler のサイトの論考のみ(月次トレンドの「AI 時代のコードレビューの再定義」でシグナル)
+    reason: Claude Code のコードレビュー機能（7層レビュー・Quick/Standard/Deep）の延長で試せる（月次トレンドの「AI 時代のコードレビューの再定義」）
     since: 2026-09
-    lastCited: 2026-09
+    lastCited: 2026-10
     trend: up
   - name: 可観測性の統合(OpenTelemetry / LGTM)
     quadrant: ops
@@ -187,10 +216,10 @@ items:
     quadrant: ops
     ring: adopt
     summary: Pod の requests/limits を実使用量に合わせて見直し、無駄な計算資源を減らす取り組み(VPA、Goldilocks)。
-    reason: Goldilocks で VPA の推奨値を見ている(月次トレンドの「計算資源の無駄削減(リソース要求の適正化)」、interests.yaml のコスト最適化)
+    reason: Goldilocks で VPA の推奨値を見ている(interests.yaml のコスト最適化)
     since: 2026-09
     lastCited: 2026-09
-    trend: up
+    trend: stable
   - name: シークレットの外部管理
     quadrant: ops
     ring: adopt

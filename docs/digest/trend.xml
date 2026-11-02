@@ -4,11 +4,117 @@
         <title>月次トレンドレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>業界全体の潮流(新しい概念・呼称の出現と定着)を月次で追うレポート</description>
-        <lastBuildDate>Fri, 02 Oct 2026 01:51:20 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2026 01:55:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>引用元記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[月次トレンドレポート 2026-10]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/trend/2026-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/trend/2026-10.html</guid>
+            <pubDate>Sun, 01 Nov 2026 22:45:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>前月からの変化</h2>
+<ul>
+<li>エージェントの権限境界とサンドボックスは、ツール個別の既定値から「基盤の境界問題」へ広がった。Claude の auto モードが web／デスクトップ／モバイルでも既定になり、CNCF は「エージェントはツールが許すことしかできない」としてプラットフォーム設計の話に引き上げた。</li>
+<li>複数エージェントの並行実行は製品に組み込まれた（Claude Code Projects、dynamic workflows、Orca、Band）一方で、増やしすぎへの反省が出た。Anthropic の single-agent-loop-kit と「12 体を文脈で切り直す」実践が、いつ単一ループに畳むかを論点にした。</li>
+<li>計算資源の無駄削減は、クラスタの requests/limits からモデルのルーティングとトークン効率へ重心が移った。Haiku 5.5 の値下げ、Copilot Fusion、Junie Eco Mode、TokenEconomizer が同じ月に出ている。</li>
+<li>AGENTS.md による指示ファイルの共通化は、共通化の利点より「実行される入力」としての危険が前面に出た。ダウンロードフォルダの AGENTS.md 経由の乗っ取りと、Cursor マーケットで配布された改ざん版 Claude Code 拡張が同じ月に報告された。</li>
+<li>AI 時代のコードレビューは議論から運用へ移り、Anthropic の 7 層レビュー、Code Review の GA、ReviewBench、AI レビューだけで 83% をマージした事例が揃った。</li>
+<li>Platform Engineering 2.0 は「Agent-first IDP（AEP）」として具体化し、Block／Uber／AWS／Azure／Google の 9 実践と AgentCore のリファレンス構成が出た。</li>
+</ul>
+<h2>今月の潮流</h2>
+<section class="item">
+<h3>ハーネスエンジニアリング</h3>
+<p><strong>判定</strong>: トレンド（専門家判定＋実活動データ）<br><strong>系譜</strong>: モデルやプロンプトの選び方を中心にした最適化 → ハーネスエンジニアリング（権限・ツール・指示・検証を含む外側の設計）</p>
+<p>10月に「ハーネス」が、経験則の名前から測れる設計対象になった。Martin Fowler のサイトは、同じ API サービスをハーネスあり／なしで作らせた実験を載せ、フロンティアモデルはどちらでも通る一方、安価な GPT-6 Luna はハーネスなしで 10 回中 3 回、ありで 10 回すべて成功し、1 回あたりのコストは GPT-6 Sol より 33% 安かったと報告している。Thoughtworks も「AI Agent Harness」を論じ、Claude Code は Mods でツール呼び出しや UI を差し替えられるようにし、フックの onFailure: &quot;block&quot; やサブエージェントの圧縮窓など、外側の挙動を設定する項目を増やした。自宅クラスタで Claude Code を回す立場では、モデルを替える前に、権限・ツール・検証のどこを締めるかを決める材料になる。</p>
+<ul>
+<li>Martin Fowler「Are Harnesses Worth the Cost?」— ハーネスあり／なしで同じ API サービスを比較し、安価なモデルの成功率とコストを測った実験: <a href="https://martinfowler.com/articles/are-harnesses-worth-the-cost.html">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmartinfowler.com%2Farticles%2Fare-harnesses-worth-the-cost.html">Google 翻訳で読む</a></li>
+<li>「Agentic Coding とハーネスエンジニアリング」— 自走性能をモデルではなく権限・ツール・指示・検証の設計で引き上げる整理（日本語）: <a href="https://gihyo.jp/article/2026/10/agentic-coding-and-harness-engineering">原文</a></li>
+<li>Claude Code v2.1.287 の Mods — プラグインの TypeScript でツール呼び出しや UI を書き換える: <a href="https://claude-code-log.com/changelog/v2.1.287#item-75288269b65b">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.287%23item-75288269b65b">Google 翻訳で読む</a></li>
+<li>Claude Code v2.1.290〜v2.1.296 — onFailure: &quot;block&quot; とサブエージェントの autoCompactWindow: <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.296">リリースを見る</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.296">Google 翻訳で読む</a></li>
+<li>Thoughtworks「AI Agent Harness」— ハーネスを導入・評価する側の論点: <a href="https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-agent-harness">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.thoughtworks.com%2Finsights%2Fblog%2Fmachine-learning-and-ai%2Fai-agent-harness">Google 翻訳で読む</a></li>
+<li>Stacklok（Kubernetes 作者ら）— エージェントハーネスをクラウド側の隔離環境へ移す取り組み: <a href="https://www.latent.space/p/stacklok">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.latent.space%2Fp%2Fstacklok">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>AI 時代のコードレビューの再定義</h3>
+<p><strong>判定</strong>: トレンド（専門家判定＋実活動データ）<br><strong>系譜</strong>: 人間が全量を読むレビュー → AI が大量に書く前提の多層レビュー</p>
+<p>9月は「レビューは何のためか」を問う論考が中心だったが、10月は運用の設計に移った。Anthropic は Claude Code のコードの約9割を Claude 自身が書く状況で、PR 前検証・並行 AI レビューと投票・セキュリティ層・リスク別承認・マージキュー・段階リリースの7層を公開し、6〜9月にマージ数を2倍以上に増やしながらリバート率を4割以上下げたとしている。Claude Code Review は Team／Enterprise で GA になり、リポジトリごとに Quick／Standard／Deep を選べるようになった。一方で GitHub の ReviewBench は自社評価と独立評価が割れ、OSS のレビュー受信箱には AI 製の粗悪な PR が約4分の1（大規模プロジェクトで31%）を占めるという報告も出て、人間の判断をどこに残すかが実装の論点になった。</p>
+<ul>
+<li>Anthropic「Solving code review at Anthropic」— 7層のレビュー体制と、マージ数2倍・リバート率4割減: <a href="https://claude.dev/blog/solving-code-review-at-anthropic/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fsolving-code-review-at-anthropic%2F">Google 翻訳で読む</a></li>
+<li>Claude Code Review が Team／Enterprise で GA — Quick／Standard／Deep をリポジトリ単位で選べる: <a href="https://x.com/ClaudeDevs/status/2110866210573386065">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2110866210573386065">Google 翻訳で読む</a></li>
+<li>GitHub ReviewBench と独立評価の食い違い — AI レビューの精度を何で測るか: <a href="https://thenewstack.io/github-reviewbench-code-review/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgithub-reviewbench-code-review%2F">Google 翻訳で読む</a></li>
+<li>全 PR の83%を AI レビューだけでマージした事例（日本語）: <a href="https://zenn.dev/kauche/articles/e051583461c181">原文</a></li>
+<li>The Register — AI が OSS のレビュー受信箱に粗悪な PR を流入させている: <a href="https://www.theregister.com/ai-and-ml/2026/10/21/ai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap/5304389">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F10%2F21%2Fai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap%2F5304389">Google 翻訳で読む</a></li>
+<li>Martin Fowler「Maybe We Shouldn&#39;t Be Reviewing All This Code」（9月）— レビューの目的そのものを問い直す: <a href="https://martinfowler.com/rachels-ramblings/code-review.html">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmartinfowler.com%2Frachels-ramblings%2Fcode-review.html">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>エージェント規模に合わせた開発基盤の作り直し</h3>
+<p><strong>判定</strong>: シグナル（実活動データ）<br><strong>系譜</strong>: 人間の開発速度を前提にした Git／CI → エージェントが大量にコミットする前提のソース管理・CI</p>
+<p>10月に、コードを書く側ではなく「受け止める側」の限界が表に出た。Anthropic は 1 日のマージ数が5か月で約2,500件から30,000件超に増え、人間の規模を前提にした開発インフラがボトルネックになったとして、Git を置き換える自社製のソース管理へモノレポを完全移行した。GitHub もリポジトリの99.99999%のコピーを Azure へ移し、per-reference quorum で「agent-scale」の Git 基盤を作ろうとしている。Octoverse はコミットとプッシュが記録的な伸びを示し、GitHub Universe はスタックの全層を作り替える構想を掲げた。自前のリポジトリがどこから詰まるかを測る物差しとして読める。</p>
+<ul>
+<li>Anthropic「Redesigning source control」— 1日3万マージのモノレポを5か月で自社製ソース管理へ: <a href="https://www.anthropic.com/engineering/redesigning-source-control">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fengineering%2Fredesigning-source-control">Google 翻訳で読む</a></li>
+<li>GitHub「The bridge to agent-scale Git infrastructure」— リポジトリの大半を Azure へ移し、参照単位の quorum で読み取りを分散: <a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fengineering%2Farchitecture-optimization%2Fthe-bridge-to-agent-scale-git-infrastructure%2F">Google 翻訳で読む</a></li>
+<li>GitHub Octoverse 2026 — エージェントとともに開発する動きでコミット・プッシュが最高記録: <a href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fnews-insights%2Foctoverse%2Foctoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents%2F">Google 翻訳で読む</a></li>
+<li>GitHub Universe 2026 — ソフトウェアデリバリーの全層を作り替える構想: <a href="https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fnews-insights%2Fcompany-news%2Fgithub-universe-2026-evolving-every-layer-of-the-stack%2F">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>エージェントの権限境界とサンドボックス</h3>
+<p><strong>判定</strong>: トレンド（実活動データ＋専門家判定）<br><strong>系譜</strong>: アプリ側の実装やツールごとの設定で守る → 基盤が提供する境界として設計する</p>
+<p>9月はツールごとの既定値と実装の修正が中心だったが、10月は「境界はプラットフォームの設計問題」という整理に進んだ。Claude Code は v2.1.309 で、サンドボックス化した Bash の起動ファイルが外で走る問題、--mcp-config の設定ファイルを書き換えられる問題、denyWrite の symlink 迂回、Edit(path) の拒否を Bash リダイレクトで抜ける問題をまとめて塞ぎ、v2.1.314 では作業ディレクトリ外への書き込みを全権限モードで拒否する設定を足した。auto モードは Claude の web／デスクトップ／モバイルでも既定になり、危険なコマンドの89%を検出したという比較を出している。CNCF は「エージェントはツールが許すことしかできない」として、どこまで触らせるかはアプリではなく基盤の設計判断だと論じ、Docker の Sandbox Kit 仕様は権限を OCI イメージとして配る。指示ファイル側も攻撃面になり、ダウンロードフォルダの AGENTS.md を読ませて乗っ取る手口と、その防ぎ方が日本語で整理されている。</p>
+<ul>
+<li>Claude Code v2.1.309 — サンドボックスと権限チェックの抜け穴をまとめて修正: <a href="https://claude-code-log.com/changelog/v2.1.309#item-50a7c4fff46f">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.309%23item-50a7c4fff46f">Google 翻訳で読む</a></li>
+<li>Claude Code v2.1.314 — 作業ディレクトリ外への書き込みを全権限モードで拒否する設定: <a href="https://claude-code-log.com/changelog/v2.1.314#item-735ea81528a5">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude-code-log.com%2Fchangelog%2Fv2.1.314%23item-735ea81528a5">Google 翻訳で読む</a></li>
+<li>Claude の auto モードが web／デスクトップ／モバイルでも既定に — 危険なコマンドの検出率89%対手動14%: <a href="https://x.com/claudeai/status/2113360845409583307">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fclaudeai%2Fstatus%2F2113360845409583307">Google 翻訳で読む</a></li>
+<li>CNCF「The boundary problem in agentic AI is a platform problem」— ツールと権限の範囲がエージェントの行動範囲を決める: <a href="https://www.cncf.io/blog/2026/10/29/the-boundary-problem-in-agentic-ai-is-a-platform-problem/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F29%2Fthe-boundary-problem-in-agentic-ai-is-a-platform-problem%2F">Google 翻訳で読む</a></li>
+<li>Docker Sandbox Kit — エージェントの権限を OCI イメージとして配布する仕様: <a href="https://news.lavx.hu/article/docker-sandbox-kit-spec-packaging-ai-agent-permissions-as-oci-images">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fdocker-sandbox-kit-spec-packaging-ai-agent-permissions-as-oci-images">Google 翻訳で読む</a></li>
+<li>ダウンロードフォルダの AGENTS.md で Claude Code が乗っ取られる攻撃と防ぎ方（日本語）: <a href="https://qiita.com/YushiYamamoto/items/a8c014ce1a3ab755b707">原文</a></li>
+<li>Martin Fowler Fragments 2026-09-24（9月）— エージェントを危険な形で接続するリスク: <a href="https://martinfowler.com/fragments/2026-09-24.html">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmartinfowler.com%2Ffragments%2F2026-09-24.html">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>複数エージェントの並行実行と協調</h3>
+<p><strong>判定</strong>: トレンド（実活動データ＋専門家判定）<br><strong>系譜</strong>: 役割ごとにサブエージェントを増やして並列化する → 文脈の境界で分割し、必要なら単一ループへ畳む設計</p>
+<p>9月はセッション fork と協調機構の立ち上がりだったが、10月は「増やす」と「畳む」の両方が製品と実践に出た。Claude Code は Projects で1つの会話の調整役が並列のクラウドセッションへ仕事を振り、リポジトリ・指示・メモリを全スレッドで共有する形を全 Pro／Max に開放し、Managed Agents の dynamic workflows もパブリックベータにした。デスクトップアプリは複数セッションの状況を見渡せるようになり、Band のような複数エージェント用の作業台も出ている。一方で Anthropic は single-agent-loop-kit を公開し、多エージェント構成をいつ主エージェントのループに畳み込むかを評価で判断する手順を示した。12体のサブエージェントを「工程ごと」から「文脈ごと」に切り直した実践もあり、数ではなく文脈の切り方が設計対象になった。</p>
+<ul>
+<li>Claude Code Projects — 調整役が並列クラウドセッションへ振り分け、リポジトリ・指示・メモリを共有: <a href="https://x.com/ClaudeDevs/status/2108621476538781878">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2108621476538781878">Google 翻訳で読む</a></li>
+<li>Anthropic「single-agent-loop-kit」— 多エージェント構成を単一ループへ畳む判断を支援: <a href="https://github.com/anthropics/single-agent-loop-kit">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fsingle-agent-loop-kit">Google 翻訳で読む</a></li>
+<li>サブエージェント12体を「工程ごと」から「文脈ごと」へ見直した記録（日本語）: <a href="https://dev.classmethod.jp/articles/claude-code-subagent-review/">原文</a></li>
+<li>Band — 複数の AI コーディングエージェントを束ねるデスクトップアプリ: <a href="https://siliconangle.com/2026/10/16/band-launches-desktop-app-for-developer-collaboration-and-control-of-multiple-ai-coding-agents/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsiliconangle.com%2F2026%2F10%2F16%2Fband-launches-desktop-app-for-developer-collaboration-and-control-of-multiple-ai-coding-agents%2F">Google 翻訳で読む</a></li>
+<li>Martin Fowler「An Accidental Blackboard」（9月）— エージェントが git 内に協調機構を作った実験: <a href="https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmartinfowler.com%2Farticles%2Fexploring-gen-ai%2Fan-accidental-blackboard.html">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>意思決定モデル（モデルルーティング）</h3>
+<p><strong>判定</strong>: シグナル（実活動データ）<br><strong>系譜</strong>: 1つの高性能モデルに考える・決める・実行するを全部任せる → 考えるモデルと、安く決めるモデルを分ける</p>
+<p>エージェントの分岐・ルーティング・再試行の判断を小型モデルに任せ、本体は高いモデルに考えさせる「意思決定モデル」という呼称が、10月に各社の製品名として並んだ。Jev に続き、AWS はローカルで動く Strands Decider 2B を、Cloudflare は Clef／Clef-flash を投入し、GitHub Copilot Fusion はモデルを自動でルーティングして1タスク $5.59（Claude Code＋Opus 5.5 の約半分）とした。JetBrains の Junie Eco Mode は計画を選択モデルに、実装とテストを安いモデルに渡して平均コストを48〜57%下げ、Bito Governor もコンテキスト依存のルーティングで40〜70%削減をうたう。Haiku 5.5 の値下げと合わせ、コスト設計の単位が「どのモデルか」から「どの層に何を決めさせるか」へ移りつつある。</p>
+<ul>
+<li>The New Stack — Jev に続く AWS Strands Decider と Cloudflare Clef、意思決定モデルの選択肢: <a href="https://thenewstack.io/aws-strands-decider-model/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Faws-strands-decider-model%2F">Google 翻訳で読む</a></li>
+<li>GitHub Copilot Fusion GA — モデル自動ルーティングで1タスク $5.59: <a href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion">Google 翻訳で読む</a></li>
+<li>JetBrains Junie Eco Mode — 計画は選択モデル、実装は低コストモデルで平均コスト48〜57%減: <a href="https://blog.jetbrains.com/junie/2026/10/junie-eco-mode/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.jetbrains.com%2Fjunie%2F2026%2F10%2Fjunie-eco-mode%2F">Google 翻訳で読む</a></li>
+<li>Bito Governor — コンテキスト依存のモデルルーティングでコーディングエージェントのコストを40〜70%削減: <a href="https://www.unite.ai/bito-governor-context-model-routing-coding-agent-costs/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.unite.ai%2Fbito-governor-context-model-routing-coding-agent-costs%2F">Google 翻訳で読む</a></li>
+<li>Claude Haiku 5.5 — 100K トークン以下で $0.10/$0.50、実行コスト平均約75%減: <a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FOct%2F7%2Fclaude-haiku-5-5%2F">Google 翻訳で読む</a></li>
+<li>Thoughtworks「Jev and the rise of decision models」— 意思決定モデルが何を変えるかの整理: <a href="https://www.thoughtworks.com/insights/blog/generative-ai/jev-decision-models-what-need-know-why">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.thoughtworks.com%2Finsights%2Fblog%2Fgenerative-ai%2Fjev-decision-models-what-need-know-why">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Agent-first IDP（エージェントを利用者に含むプラットフォーム）</h3>
+<p><strong>判定</strong>: シグナル（実活動データ）<br><strong>系譜</strong>: 人間の開発者向けの IDP → エージェントも利用者に含む AEP（Agent-first IDP）</p>
+<p>9月は「エージェントも利用者に含める」という見方が事例で立ち上がった段階だったが、10月はプラットフォーム側の実装と運用論が揃った。PlatformEngineering.org は Block／Uber／AWS／Azure／Google の取り組みを整理し、IDP をエージェント向けの基盤（AEP）へ育てる9つの実践を示した。AWS は AgentCore で、マルチアカウントの統制、推論とツールを分けたゲートウェイ、本番前に各エージェントを止める CI/CD 評価パイプラインまで含むリファレンス構成を公開した。エージェントに利用者本人の権限を引き継がせる OBO トークン交換や、400 本の REST API を権限スコープ付きのツールに変換する事例も出て、アイデンティティ・所有権・失効を最初から設計に入れる必要が具体化している。</p>
+<ul>
+<li>PlatformEngineering.org「Agent-first IDP」— Block／Uber／AWS／Azure／Google の9実践: <a href="https://platformengineering.org/blog/agent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fagent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">Google 翻訳で読む</a></li>
+<li>AWS「Building an agentic AI platform on Amazon Bedrock AgentCore」— マルチアカウント統制と CI/CD 評価を含むリファレンス構成: <a href="https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-an-agentic-ai-platform-on-amazon-bedrock-agentcore%2F">Google 翻訳で読む</a></li>
+<li>AgentCore Identity の On-Behalf-Of トークン交換 — エージェントが利用者本人の権限で動く（日本語）: <a href="https://dev.classmethod.jp/articles/agentcore-identity-obo-entra-id/">原文</a></li>
+<li>MoEngage が400本の API を AgentCore Gateway で権限スコープ付きツールに変換: <a href="https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway%2F">Google 翻訳で読む</a></li>
+<li>The New Stack — 本番で動く AI エージェントの「持ち主」は誰か: <a href="https://thenewstack.io/production-ai-agent-ownership/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fproduction-ai-agent-ownership%2F">Google 翻訳で読む</a></li>
+<li>The New Stack — エージェントはもういないのに、そのアクセスキーだけが残る: <a href="https://thenewstack.io/governing-ai-agent-credentials/">原文</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgoverning-ai-agent-credentials%2F">Google 翻訳で読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[月次トレンドレポート 2026-09]]></title>
             <link>https://ogontaro.github.io/feeds/digest/trend/2026-09.html</link>
