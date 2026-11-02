@@ -4,11 +4,64 @@
         <title>開発ツール リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>開発ツール 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 26 Oct 2026 00:46:33 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2026 01:48:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[開発ツール リリースレポート 2026-11-02]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-11-02.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/devtools/2026-11-02.html</guid>
+            <pubDate>Mon, 02 Nov 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>mise v2026.10.25</h3>
+<p><strong>破壊的変更</strong>: <code>mise watch</code> が既定で watchexec に <code>--exit-on-error</code> を渡すようになり、最初に失敗した実行で停止してその終了コードで抜ける（watchexec 2.5.0 以上が必要）。<code>mise tasks add</code> で定義の異なるタスクを <code>--force</code> なしで上書きする操作は 2027.5.0 から警告、2028.5.0 から拒否される予定。<br><code>mise tasks set</code> / <code>rm</code> が加わり、<code>add</code> も <code>mise use</code> と同じ <code>--env</code> / <code>--global</code> / <code>--path</code> と、<code>--env-var</code> / <code>--tools</code> / <code>--usage</code> / <code>--confirm</code> を受けるようになった。<code>set</code> は渡したフィールドだけをコメントごと保持して変更し、<code>rm</code> は TOML のテーブルかファイルタスクのスクリプトを消す。3 コマンドとも <code>--json</code> / <code>--dry-run</code> に対応し、複数ファイルが同じタスクを定義しているときは対象ファイルを列挙して止まるので、エディタなしでタスク定義を書き換えられ、エージェントに触らせる範囲を CLI 側で絞りやすい（ランドスケープの「開発環境の宣言化」「コーディングエージェント」）。<br><code>mise watch --once</code> は変更を1回待ってタスクを実行し、その終了コードで抜ける。開始時には実行せず（<code>--postpone</code> 相当）、<code>--restart</code> / <code>--clear</code> は拒否、Ctrl-C は 130、待機中の SIGTERM は何も実行せず終了する。スクリプトや CI から「変更があったら1回だけ検証」を素直に書ける。<br><code>env_cache_redacted</code>（既定 false）は、<code>redact = true</code> を含む環境を <code>env_cache = true</code> でもキャッシュさせる opt-in。出力時の値はマスクされるが、秘密は activated シェルから起動した全プロセスが継承する鍵で暗号化してディスクに残る。age / sops、<code>cacheable = false</code> のプラグイン結果、redacted な <code>[vars]</code> と default / required は引き続きキャッシュされない。ほかに並行インストール、シンボリックリンクされた設定ディレクトリの lockfile、reshim の遅さ、署名済み macOS アプリバンドルを修正。vfox / mise-util / mise-ui などの内部クレートも同時にリリースされている。</p>
+<p class="links"><a href="https://github.com/jdx/mise/releases/tag/v2026.10.25">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjdx%2Fmise%2Freleases%2Ftag%2Fv2026.10.25">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Devbox 0.19.0</h3>
+<p><strong>破壊的変更</strong>: リリースビルドが bash ランチャーを置き換え、バイナリ自身が実行するバージョンを選ぶ（<code>DEVBOX_USE_VERSION</code>、なければ現行版）。<code>devbox version update</code> はインストーラを再実行せず、インストーラ以外で入れた場合は失敗してパッケージマネージャ経由の更新を促す。Nix / Homebrew ビルドは影響を受けず、既存インストールは「New launcher available」が1日1回出て <code>devbox version update</code> で移行する（書き込み不可の場所だけ sudo）。<br>起動が速くなり、<code>devbox version</code> は約 78ms → 8ms、<code>devbox global shellenv</code> は約 86ms → 16ms。nix のバージョン情報をディスクにキャッシュし、テレメトリはプロジェクトを開き直さず端末 ID をキャッシュして最大30分に1回の送信に、<code>devbox generate direnv --print-envrc</code> は nix チェックとテレメトリを完全に省略する。<code>&quot;on_mismatch&quot;: &quot;auto&quot;</code> は作業前にピン留めされたバージョンへ切り替え、ダウンロード済みなら devbox を二重起動せず直接 exec する。同じプロジェクトでの並行実行時に runx バイナリが ENOENT / EEXIST で失敗する問題も修正。devbox global をプロンプトで読んでいるなら shellenv の短縮がそのまま効く。</p>
+<p class="links"><a href="https://github.com/jetify-com/devbox/releases/tag/0.19.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjetify-com%2Fdevbox%2Freleases%2Ftag%2F0.19.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Node.js 26.13.0 &#39;Lithium&#39; (LTS) / 27.0.0-alpha.0.0.0 / 24.22.2 &#39;Krypton&#39; (LTS)</h3>
+<p><strong>破壊的変更</strong>: 27.0.0-alpha.0.0.0 で V8 が 15.6 になり、<code>--max-old-space-size</code> 未指定時の既定ヒープ上限が物理メモリの半分（256MB〜4GB）に、Buffer / ArrayBuffer のメモリがヒープ上限に算入される。<code>v8.serialize()</code> / <code>structuredClone()</code> / <code>postMessage()</code> の形式も変わり、旧 Node では読めない。OpenSSL 3 以上が必須になり、FIPS プロバイダ同梱ビルドとレガシー OpenSSL 経路は削除された。26.13.0 と 24.22.2 は破壊的変更なし。<br>26.13.0 &#39;Lithium&#39; は 26 系の LTS 移行で、2029年4月末まで更新される。26.12.1 からの変更はメタデータだけで、Linux 公式バイナリは Node 25 以降 libatomic にリンクしているため、ディストリビューションによっては別途インストールが要る。27.0.0-alpha は V8 15.6 の言語機能（<code>Math.sumPrecise()</code>、<code>Iterator.zip()</code> / <code>zipKeyed()</code> / <code>join()</code> / <code>includes()</code>、<code>Intl.Locale.prototype.variants</code>）を既定で有効にし、<code>import defer</code> や Immutable ArrayBuffer などはフラグ付き。ヒープ既定の変更はコンテナのメモリ制限と相性が変わるので、試すなら <code>--max-old-space-size</code> を明示する。24.22.2 &#39;Krypton&#39; は V8 バックポートと、stream の parked write の async context を保つ修正のみ。</p>
+<p class="links"><a href="https://github.com/nodejs/node/releases/tag/v26.13.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fnodejs%2Fnode%2Freleases%2Ftag%2Fv26.13.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>uv 0.13.6</h3>
+<p><strong>破壊的変更</strong>: なし<br><code>uv run --active --script</code> と <code>uv sync --active --script</code> が非仮想環境のディレクトリを削除し得た問題を修正したので、<code>--active --script</code> を使うなら上げる。CPython 3.11.18 / 3.12.16 / 3.13.18 / 3.14.10 / 3.15.2 を追加し、大きな workspace の解決と lock / upgrade のピークメモリを削減、依存なしの PEP 723 スクリプトではキャッシュ済み・稼働中の環境を再利用する。preview では NVIDIA GPU を見て対応する wheel variant を選ぶようになり、<code>uv python upgrade</code> が free-threaded などの非既定 variant を保持する。</p>
+<p class="links"><a href="https://github.com/astral-sh/uv/releases/tag/0.13.6">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fastral-sh%2Fuv%2Freleases%2Ftag%2F0.13.6">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Biome CLI v2.6.4</h3>
+<p><strong>破壊的変更</strong>: なし（追加ルールはすべて nursery で、明示的に有効化しない限り既存の lint 結果は変わらない）<br>nursery ルールがまとめて追加された。<code>console.log()</code> の引数間に二重の空白が入る <code>noConsoleSpaces</code>、<code>Array.prototype.flat()</code> に 1 以外の深さを渡す <code>noMagicArrayFlatDepth</code>、<code>null</code> を <code>undefined</code> に置き換える <code>noNull</code>、<code>push()</code> / <code>unshift()</code> の戻り値を捨てない <code>noReturnArrayPush</code>、無意味な再帰や読みにくい即時実行アロー関数を検出するものなど。Vue 向けが厚く、Vue 3 で削除された <code>$set</code> / <code>$delete</code>、<code>RouterLink</code> の <code>tag</code>、<code>&lt;template scope&gt;</code>、slot への複数引数、props の直接変更を検出する。リポジトリの <code>mise run lint</code> は Biome なので、nursery を有効にすると新規指摘が増える点だけ注意。</p>
+<p class="links"><a href="https://github.com/biomejs/biome/releases/tag/%40biomejs%2Fbiome%402.6.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbiomejs%2Fbiome%2Freleases%2Ftag%2F%2540biomejs%252Fbiome%25402.6.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>GitHub CLI 2.103.3</h3>
+<p><strong>破壊的変更</strong>: なし<br><code>gh auth status</code> が <code>--no-refresh</code> 指定時に期限切れ・期限間近のトークンを説明するようになっただけのパッチ。ワークフローで使っている gh はそのまま上げてよい。</p>
+<p class="links"><a href="https://github.com/cli/cli/releases/tag/v2.103.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcli%2Fcli%2Freleases%2Ftag%2Fv2.103.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Ghostty v1.4.0</h3>
+<p><strong>破壊的変更</strong>: 不明（1.4.0 のリリース本文はバージョン番号だけで、変更点が書かれていない）<br>安定版 1.4.0 が 2026-10-27 に出た。入力のリリースノートには内容がないため、公式サイトの changelog を確認してから上げる。nightly の tip ビルドも更新され続けており、常用はタグ版、検証は tip という住み分けのまま。</p>
+<p class="links"><a href="https://github.com/ghostty-org/ghostty/releases/tag/v1.4.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fghostty-org%2Fghostty%2Freleases%2Ftag%2Fv1.4.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Neovim v0.13.0-dev-1988（nightly）</h3>
+<p><strong>破壊的変更</strong>: 不明（nightly のため）<br><code>v0.13.0-dev-1988+gfacba8d36b</code>、LuaJIT 2.1.1793383622 の開発ビルド。リリース本文に変更点はないので <code>CHANGELOG.md</code> と <code>:help news</code> で確認する。0.13 系の開発中で、常用環境はタグ版のままが無難。</p>
+<p class="links"><a href="https://github.com/neovim/neovim/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fneovim%2Fneovim%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Yazi nightly</h3>
+<p><strong>破壊的変更</strong>: 不明（nightly のため）<br>コミット <code>ed33221</code> の nightly。変更点は <code>CHANGELOG.md</code> の Unreleased を見る。入力に内容は含まれていないため、タグ版のリリースが出てから追う。</p>
+<p class="links"><a href="https://github.com/sxyazi/yazi/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsxyazi%2Fyazi%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[開発ツール リリースレポート 2026-10-26]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-10-26.html</link>

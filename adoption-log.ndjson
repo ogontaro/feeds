@@ -478,3 +478,28 @@
 {"date":"2026-11-02","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
 {"date":"2026-11-02","domain":"aws","sourceName":"Amazon Bedrock | DevelopersIO"}
 {"date":"2026-11-02","domain":"gadget","sourceName":"Google News — Meta グラス・XR"}
+{"date":"2026-11-02","domain":"claude","sourceName":"Claude Code releases"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Backstage"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Terraform"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"cert-manager"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"external-dns"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Grafana"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Grafana Alloy"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Loki"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Longhorn"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"metrics-server"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Mimir"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Pomerium"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Reloader"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Tailscale (operator)"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Istio"}
+{"date":"2026-11-02","domain":"kubernetes","sourceName":"Talos Linux"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"mise"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"Devbox"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"uv"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"Node.js"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"Neovim"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"Yazi"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"GitHub CLI (gh)"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"Biome"}
+{"date":"2026-11-02","domain":"devtools","sourceName":"Ghostty"}

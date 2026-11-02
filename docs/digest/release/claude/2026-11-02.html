@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude リリースレポート 2026-11-02</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude リリースレポート 2026-11-02</h1>
+<article class="report"><h2>今週のリリース</h2>
+<section class="item">
+<h3>Claude Code v2.1.311〜v2.1.316</h3>
+<p><strong>破壊的変更</strong>: Opus 4.8 の fast モードは 2026-10-30 に非推奨、11-30 に削除される。以降 Opus 4.8 への fast リクエストはエラーになり標準モードへフォールバックしないため、速度を維持するには Opus 5.5 への移行が必要。加えて Bedrock / Vertex / Foundry / Mantle で未知のモデル名(カスタムデプロイ名など)を使う場合、Sonnet / Haiku 相当でも短いシステムプロンプトに切り替わる(<code>CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT=0</code> で従来動作)。フックは1セッション最大24並列(タイムアウト待ちは別枠12)に制限された。<br>権限境界の強化として、全パーミッションモードで作業ディレクトリ外への Write / Edit / NotebookEdit を拒否する <code>permissions.blockWritesOutsideWorkingDirectories</code> が追加され、<code>--restricted</code> での外部ファイルアップロードの抜けも修正された。サブエージェントは <code>CLAUDE_CODE_SUBAGENT_EFFORT</code> で既定の effort を指定でき、親サブエージェントのモデル継承がバックグラウンド復帰時に崩れる不具合も直り、並行実行の挙動を揃えやすくなった。<br>Claude apps gateway にはグループで1つの月次予算を共有する <code>pooled_budget</code>、複数ポリシーを重ねる <code>managed.policy_mode: layered</code>、Bedrock guardrail 用の <code>guardrail.input_tagging</code>、Entra ID の <code>oid</code> などで識別する <code>oidc.user_id_claim</code> が入り、組織の統制とコスト管理が厚くなった。VS Code / Claude Desktop にはアイドル時の自動圧縮(200K トークン超)も追加されている。<br>安定性では、終了時にシェルコマンドが残る問題、<code>SHELLOPTS</code> 設定時に bash スクリプトが1コマンドで止まる問題、PreCompact フックの巨大出力で圧縮が失敗する問題(出力は10,000文字で打ち切り)、圧縮レスポンス切断時のリクエストハング、クロス署名ルート証明書による TLS エラーなどを修正。<code>CLAUDE_CODE_DISABLE_ULTRATHINK</code> も追加された。</p>
+<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.316">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.316">Google 翻訳で読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
