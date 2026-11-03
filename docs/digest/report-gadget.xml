@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 02 Nov 2026 01:35:39 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 03:42:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-03]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-03.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-03.html</guid>
+            <pubDate>Tue, 03 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Meta、Quest 2 と Quest Pro のサポート終了へ — 最終 OS アップデートは2027年3月まで</h3>
+<p>Meta が Quest 2 と Quest Pro のサポートを段階的に終了すると発表しました。最終 OS アップデートは 2027年3月まで、新規アプリの提出は 2027年12月で終わります。現行機を買い足すか見送るかの判断にも、Quest 向けアプリの保守計画にも期限が入る発表なので、所有者と開発者の双方が一度は目を通す価値があります。</p>
+<p class="links"><a href="https://www.uploadvr.com/meta-is-winding-down-quest-2-quest-pro-support-next-year/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.uploadvr.com%2Fmeta-is-winding-down-quest-2-quest-pro-support-next-year%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-02]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-02.html</link>

@@ -4,11 +4,48 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 02 Nov 2026 01:22:23 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 03:24:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-03]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-03.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-03.html</guid>
+            <pubDate>Tue, 03 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Messages API にメッセージスレッドがパブリックベータで登場</h3>
+<p>Anthropic が Messages API でメッセージスレッドのパブリックベータを開始した。会話をターン間でサーバー側にキャッシュし、毎回全履歴を再送する代わりに新規メッセージと直前のメッセージ ID だけを送れるため、Claude がより早く応答を始める。長い会話を扱うエージェントの API 設計とコスト見積もりを見直すきっかけになる。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2117332449382510884">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2117332449382510884">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.317: メールアドレス送信前の確認と Agent SDK フックの強制ブロック</h3>
+<p>Web またはシェルツールの呼び出しがアカウントのメールアドレスをネットワークに送信する前に、確認を求めるチェックが入った。あわせて Agent SDK の hook コールバックに <code>onFailure: &#39;block&#39;</code> が加わり、失敗したコールバックがアクションを実行させずに止められるようになった。エージェントに何をどこまで許すかを運用で決めているなら、既定の挙動が変わる点として押さえておきたい。</p>
+<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.317">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>DBX MCP サーバーで Claude Code にデータベースを読み取り専用で調べさせる</h3>
+<p>DBX はデスクトップ・Docker・CLI・Web で使えるデータベースクライアントで、100 以上の DB に対応しながら 25MB に収まる。同梱の MCP サーバー経由なら、許可した接続に限って読み取り専用で実テーブルを Claude Code や Cursor に調べさせられるため、スキーマをチャットに貼るか生の認証情報を渡すかの二択を避けられる。接続権限を絞ったまま DB 調査をエージェントに任せたいときに効く。</p>
+<p class="links"><a href="https://dev.to/dedupedai/let-claude-code-query-your-database-read-only-with-the-dbx-mcp-server-3o32">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdedupedai%2Flet-claude-code-query-your-database-read-only-with-the-dbx-mcp-server-3o32">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>コーディングエージェントの安全判定に 322M モデルを微調整して分かったこと</h3>
+<p>laya-guard はコーディングエージェントとシェルの間に立ち、危険なコマンドを規則で止めつつ、規則で決められないものだけをローカルの 322M モデル Laya に判定させる。常用 50 コマンドのベンチマークではモデル単体が約半数を確認対象にしてしまい、著者は 3 回の微調整（うち 2 回は失敗）を試して何が変わったかを報告している。権限境界を「大きなモデルに全部聞く」以外で設計するときの、小さなモデルの現実的な限界と使いどころが分かる。</p>
+<p class="links"><a href="https://dev.to/scs0209/fine-tuning-a-322m-model-for-coding-agent-safety-what-3-runs-and-2-failures-taught-me-1anc">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fscs0209%2Ffine-tuning-a-322m-model-for-coding-agent-safety-what-3-runs-and-2-failures-taught-me-1anc">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>OpenAI がモノレポ向けに新しい Git バックエンドを自作</h3>
+<p>OpenAI が、増え続ける利用に耐えるためにモノレポ用の新しい Git バックエンドを構築したと明らかにした。エージェントが大量にコミット・プッシュする前提では、既存のソース管理や CI の前提が崩れつつあり、基盤を作り直す動きが大手でも現れている一例として押さえておきたい。自宅クラスタの GitOps や CI の容量・整合性を考える際の比較材料になる。</p>
+<p class="links"><a href="https://thenewstack.io/openai-pando-git-backend/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopenai-pando-git-backend%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-02]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-02.html</link>
@@ -1153,45 +1190,6 @@
 <h3>155項目をAIエージェントに並列で直させる前に決めること。監査プロンプト集 v1.0.0 の設計判断</h3>
 <p>自作の監査プロンプト集 v1.0.0 で 155 項目・12 ファイルの修正を、並列に走らせた AI エージェントに任せたときの設計判断がまとまっている。並列にすれば片付くわけではなく、任せる前に何を決めておく必要があるのかが具体的に書かれているので、複数エージェントを並行で走らせる運用を始める前に読むと手戻りを減らせる。</p>
 <p class="links"><a href="https://qiita.com/ishizakahiroshi/items/d370b3ccc18d8e423f71">記事を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-09-29]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-29.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-09-29.html</guid>
-            <pubDate>Tue, 29 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（2 本）</h2>
-<section class="item">
-<h3>Claude Sonnet 5.5 の登場と Opus 5.5 との使い分け</h3>
-<p>Sonnet 5 と同じ料金のまま 30% 以上速く、同じ作業に必要なトークンも減るため実質の単価は最大 30% 下がる、というのが Sonnet 5.5 の位置づけです。この記事は料金と速度の数字を突き合わせたうえで、範囲がはっきりした日常タスクは Sonnet 5.5、複雑で自由度の高い判断は Opus 5.5 という使い分けを提案しています。日々のパイプラインの既定モデルをどう置き換えるかを決める材料になります。</p>
-<p><a href="https://qiita.com/hisashi-ito/items/e814569771d00675e19d">記事を読む</a></p>
-<p class="links"><a href="https://x.com/ClaudeDevs/status/2104687805876367793">ClaudeDevs のポスト（原文）</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2104687805876367793">Google 翻訳で読む</a></p>
-</section>
-<section class="item">
-<h3>Claude で eval を設計し、eval を指標に改善を回すための指針</h3>
-<p>アプリの評価（eval）の設計を Claude に手伝わせ、その eval を指標に改善を反復する（hillclimb）ための指針が Anthropic から出ています。Claude Code から使える Skill と eval 設計の勘所がまとまっており、「入れた変更が本当に効いたのかをどう測るか」を決めきれないままエージェントに開発させているチームに効きます。</p>
-<p><a href="https://x.com/ClaudeDevs/status/2104676099083190435">ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2104676099083190435">Google 翻訳で読む</a></p>
-<p class="links"><a href="https://claude.dev/blog/automating-eval-design-and-hillclimbing/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fautomating-eval-design-and-hillclimbing%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<h2>新ツール・サブスク（2 本）</h2>
-<section class="item">
-<h3>AI コードレビュー Skill「code-review-skills」の設計と検証方法</h3>
-<p>Codex / Claude Code 向けのコードレビュー Skill を公開した本人による、設計と検証の解説です。スタイルの好みや根拠のない推測による指摘を避け、具体的な根拠と発生条件を示すように設計したうえで、その振る舞いをどう確かめているかまで書かれています。AI レビューの出力をどう信頼できる形に寄せるかを考える参考になります。</p>
-<p><a href="https://qiita.com/akkie76/items/f08ac38fd81aa19ae832">記事を読む</a></p>
-<p class="links"><a href="https://x.com/akkiee76/status/2104409511515893895">akkiee76 のポスト</a></p>
-</section>
-<section class="item">
-<h3>エージェント設定を 1 フォルダに集約する agent-scripts が公開</h3>
-<p>OpenClaw の作者 Peter Steinberger が、自分のエージェント設定一式を OSS として公開しました。1 つの AGENTS.md を <code>~/.claude/CLAUDE.md</code> と <code>~/.codex/AGENTS.md</code> にシンボリックリンクし、69 個の Skill も 1 か所から両方のエージェントへ同期する構成で、ルールを一度直せば全プロジェクトに反映されます。Claude Code と Codex を併用している人が自前の設定を作る際の雛形になります。</p>
-<p><a href="https://x.com/undefinedKi/status/2104656567505211685">undefinedKi のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FundefinedKi%2Fstatus%2F2104656567505211685">Google 翻訳で読む</a></p>
-<p class="links"><a href="https://github.com/steipete/agent-scripts">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsteipete%2Fagent-scripts">Google 翻訳で全文を読む</a></p>
-</section>
-<h2>AI 開発トレンド（1 本）</h2>
-<section class="item">
-<h3>opencode の欠陥で、悪意のある Web サイトから開発者マシンでのコード実行が可能に</h3>
-<p>コーディングエージェント opencode の欠陥により、悪意のある Web サイトが開発者のマシンでコードを実行できるようになる、という指摘です。コーディングエージェントはローカルのシェルとファイルへの広い権限を持つため、利用しているツールの更新状況を確認するきっかけになります。</p>
-<p class="links"><a href="https://cybersecuritynews.com/opencode-ai-coding-agent-flaw/amp/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fopencode-ai-coding-agent-flaw%2Famp%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

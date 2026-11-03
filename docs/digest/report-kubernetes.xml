@@ -4,11 +4,24 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 02 Nov 2026 01:27:54 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 03:31:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-03]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-03.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-03.html</guid>
+            <pubDate>Tue, 03 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Keycloakの可観測性への道のり: プロジェクトメンテナーのためのOpenTelemetry導入ガイド</h3>
+<p>OpenTelemetryのDeveloper Experience SIGが、実際の導入事例を各組織に聞く連載の1本です。今回はCNCFプロジェクトのKeycloakを取り上げ、配布するソフトウェアにOpenTelemetryをネイティブ対応させるまでの道のりを、メンテナー自身の視点で語っています。自分のアプリに計装を足すのとは違い、利用者に配るOSSの側で標準の観測手段をどう用意するかという設計の勘所と、そこで得た実務的な教訓がまとまっており、OpenTelemetryで可観測性を組む際の判断材料になります。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/devex-keycloak/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fdevex-keycloak%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-02]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-02.html</link>
@@ -633,29 +646,6 @@
 <li><a href="https://x.com/watson1978/status/2104814680665682254">@watson1978 のポスト</a></li>
 <li><a href="https://www.clear-code.com/blog/2026/9/29/fluent-package-v6.0.5.html">リンク先を読む</a></li>
 </ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-09-29]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-29.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-09-29.html</guid>
-            <pubDate>Tue, 29 Sep 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
-<section class="item">
-<h3>Kyverno の重大な脆弱性、Kubernetes テナントがクラスタ管理者アクセスを取得できる恐れ</h3>
-<p>Kyverno は CNCF のポリシーエンジンで、マルチテナントクラスタの分離をこれに委ねている構成も少なくありません。テナント側からクラスタ管理者権限に到達しうるという話だけに、ポリシーで守れているつもりの境界が実際に効いているかを点検する材料になります。</p>
-<p class="links"><a href="https://www.systemtek.co.uk/2026/09/critical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.systemtek.co.uk%2F2026%2F09%2Fcritical-kyverno-flaw-could-allow-kubernetes-tenants-to-gain-cluster-administrator-access%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>プラットフォームエンジニアリングチームの作り方</h3>
-<p>内部デベロッパープラットフォームが普及した今、プラットフォームチームの作り方そのものが設計対象になっています。利用者としての開発チームに加えてコーディングエージェントにもサービスを提供する前提で、チームの役割と構成をどう組み直すかという論点は、これからチームを立ち上げる側の判断材料になります。</p>
-<p class="links"><a href="https://platformengineering.org/blog/how-to-build-your-platform-engineering-team">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fhow-to-build-your-platform-engineering-team">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>プラットフォームチームはまずトレーシングから考えるべき</h3>
-<p>自律したチームと AI コーディングエージェントが同じ基盤を使うようになると、問題の切り分けはこれまで以上に難しくなります。メトリクスやログより先にトレーシングへ投資すべきだという主張は、プラットフォームの可観測性に何を優先するかを決める際の判断基準として読めます。</p>
-<p class="links"><a href="https://platformengineering.org/blog/platform-teams-should-think-tracing-first">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fplatform-teams-should-think-tracing-first">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

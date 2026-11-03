@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-03</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-03</h1>
+<article class="report"><h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Messages API にメッセージスレッドがパブリックベータで登場</h3>
+<p>Anthropic が Messages API でメッセージスレッドのパブリックベータを開始した。会話をターン間でサーバー側にキャッシュし、毎回全履歴を再送する代わりに新規メッセージと直前のメッセージ ID だけを送れるため、Claude がより早く応答を始める。長い会話を扱うエージェントの API 設計とコスト見積もりを見直すきっかけになる。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2117332449382510884">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2117332449382510884">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.317: メールアドレス送信前の確認と Agent SDK フックの強制ブロック</h3>
+<p>Web またはシェルツールの呼び出しがアカウントのメールアドレスをネットワークに送信する前に、確認を求めるチェックが入った。あわせて Agent SDK の hook コールバックに <code>onFailure: &#39;block&#39;</code> が加わり、失敗したコールバックがアクションを実行させずに止められるようになった。エージェントに何をどこまで許すかを運用で決めているなら、既定の挙動が変わる点として押さえておきたい。</p>
+<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.317">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>DBX MCP サーバーで Claude Code にデータベースを読み取り専用で調べさせる</h3>
+<p>DBX はデスクトップ・Docker・CLI・Web で使えるデータベースクライアントで、100 以上の DB に対応しながら 25MB に収まる。同梱の MCP サーバー経由なら、許可した接続に限って読み取り専用で実テーブルを Claude Code や Cursor に調べさせられるため、スキーマをチャットに貼るか生の認証情報を渡すかの二択を避けられる。接続権限を絞ったまま DB 調査をエージェントに任せたいときに効く。</p>
+<p class="links"><a href="https://dev.to/dedupedai/let-claude-code-query-your-database-read-only-with-the-dbx-mcp-server-3o32">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdedupedai%2Flet-claude-code-query-your-database-read-only-with-the-dbx-mcp-server-3o32">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>コーディングエージェントの安全判定に 322M モデルを微調整して分かったこと</h3>
+<p>laya-guard はコーディングエージェントとシェルの間に立ち、危険なコマンドを規則で止めつつ、規則で決められないものだけをローカルの 322M モデル Laya に判定させる。常用 50 コマンドのベンチマークではモデル単体が約半数を確認対象にしてしまい、著者は 3 回の微調整（うち 2 回は失敗）を試して何が変わったかを報告している。権限境界を「大きなモデルに全部聞く」以外で設計するときの、小さなモデルの現実的な限界と使いどころが分かる。</p>
+<p class="links"><a href="https://dev.to/scs0209/fine-tuning-a-322m-model-for-coding-agent-safety-what-3-runs-and-2-failures-taught-me-1anc">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fscs0209%2Ffine-tuning-a-322m-model-for-coding-agent-safety-what-3-runs-and-2-failures-taught-me-1anc">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>OpenAI がモノレポ向けに新しい Git バックエンドを自作</h3>
+<p>OpenAI が、増え続ける利用に耐えるためにモノレポ用の新しい Git バックエンドを構築したと明らかにした。エージェントが大量にコミット・プッシュする前提では、既存のソース管理や CI の前提が崩れつつあり、基盤を作り直す動きが大手でも現れている一例として押さえておきたい。自宅クラスタの GitOps や CI の容量・整合性を考える際の比較材料になる。</p>
+<p class="links"><a href="https://thenewstack.io/openai-pando-git-backend/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fopenai-pando-git-backend%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
