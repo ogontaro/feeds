@@ -470,3 +470,9 @@
 {"date":"2026-11-04T01:28:34.571Z","id":"CVE-2026-115732","kev":false,"reported":false}
 {"date":"2026-11-04T01:28:34.571Z","id":"CVE-2026-115731","kev":false,"reported":false}
 {"date":"2026-11-04T01:28:34.571Z","id":"CVE-2026-112917","kev":false,"reported":false}
+{"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-121607","kev":false,"reported":false}
+{"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-121609","kev":false,"reported":false}
+{"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-121615","kev":false,"reported":true,"title":"Linksys E5600 のログイン処理に認証不備、遠隔から認証を回避される","urgency":"watch"}
+{"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-121802","kev":false,"reported":false}
+{"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-114424","kev":false,"reported":false}
+{"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-114425","kev":false,"reported":false}
