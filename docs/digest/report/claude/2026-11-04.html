@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-04</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-04</h1>
+<article class="report"><h2>Claude / Claude Code（2 本）</h2>
+<section class="item">
+<h3>Messages API の message threads で長いエージェントループの待ち時間を削る</h3>
+<p>会話をサーバー側に保持し、2 回目以降は新しいメッセージと前回の応答 ID だけを送る仕組みが、Messages API のパブリックベータで入った。50 万〜100 万トークンのリクエストでは最初のトークンまでの時間が中央値で約 35% 下がり、多くの Claude Code ユーザーでは既定で有効になっている。トークン使用量と料金は変わらないので、コスト削減ではなく長いセッションの待ち時間を縮める改善として、最後のリクエストから 5 分で切れるスレッドの期限を前提にした設計を確認しておきたい。</p>
+<p class="links"><a href="https://dev.to/sueun-dev/claude-message-threads-send-only-new-messages-on-long-agent-loops-4b0g">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fsueun-dev%2Fclaude-message-threads-send-only-new-messages-on-long-agent-loops-4b0g">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2117469450639421493">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code が pkill -f で自分のシェルを巻き込む exit 144 の罠</h3>
+<p><code>pkill -f server.js &amp;&amp; node server.js &amp;</code> のように書くと、pkill が自分自身のコマンドラインにも一致してシェルごと終了し、exit 144（ときに 143）で以降が実行されない。<code>while pgrep -f server.js; do sleep 1; done</code> の待ちループも終わらないままだ。開発サーバーの再起動をエージェントに任せたときに踏みやすい罠で、再現条件と 2 分で入る回避策、上流の issue がまとまっている。</p>
+<p class="links"><a href="https://dev.to/hadiux0295/claude-code-killed-its-own-shell-with-pkill-f-exit-144-why-and-a-2-minute-fix-2n7c">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fhadiux0295%2Fclaude-code-killed-its-own-shell-with-pkill-f-exit-144-why-and-a-2-minute-fix-2n7c">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Claude Task Master — PR 作成から CI 対応・マージまで回す CLI</h3>
+<p>ゴールを渡すと、計画・実装・PR 作成・CI 失敗への対応・レビューコメントの反映・全通過時のマージまでを続ける CLI ツール。Claude Agent SDK 上に作られ、Claude Code のセッションからも Anthropic 互換 API からも動く。自作のループを組む前に、既存ツールでどこまで回せるか、どの工程を人間に残すかを比べる材料になる。</p>
+<p class="links"><a href="https://dev.to/developerzai/automating-end-to-end-pull-request-workflows-with-claude-task-master-35mo">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdeveloperzai%2Fautomating-end-to-end-pull-request-workflows-with-claude-task-master-35mo">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（2 本）</h2>
+<section class="item">
+<h3>ISUCON2026、AI エージェントに解かせたチームが上位を占める</h3>
+<p>コードを 1 行も書かず AI と挑んだ 18 位のチームが、ハーネス設計の知見を公開している。優勝者は 3 か月かけて自作エージェントを 100 回以上走らせて調整し、当日は <code>CONDITIONS.md</code> を読ませる 1 行プロンプトだけで、承認も追加指示もなしに完走したと投稿されている。モデルではなく外側のハーネスを鍛えることが順位に直結した事例で、自前のエージェント運用を見直す材料になる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/isucon2026-suekou/">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/chomado/status/2117643464565543296">@chomado のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>並列エージェント時代の認知・理解・意図の負債</h3>
+<p>複数エージェントを並行で走らせる開発で、人が批判的思考をどう保つかを論じた長文の要約。出力が自然で正しく見えるぶん質問から回答までの思考時間が数秒に縮んで警戒が緩むこと、成果は増えても理解が追いつかない Cognitive / Comprehension / Intent Debt の 3 つを挙げている。レビューの目的をバグ探しから「この変更を出してよいと説明できるか」へ置き直す視点として読める。</p>
+<p class="links"><a href="https://x.com/mylifcc/status/2117534221283606608">@mylifcc のポスト（原文）</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fmylifcc%2Fstatus%2F2117534221283606608">Google 翻訳で読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

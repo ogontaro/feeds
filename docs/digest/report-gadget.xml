@@ -4,11 +4,29 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 03 Nov 2026 03:42:44 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Nov 2026 02:12:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-04]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-04.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-04.html</guid>
+            <pubDate>Wed, 04 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Meta、Quest 2 と Quest Pro の機能更新を 2027 年に終了へ</h3>
+<p>Meta が Quest 2 と Quest Pro の新機能追加を 2027 年に終了すると発表した。Horizon OS 2.13 が最後の機能アップデートとなり、最終 OS リリースは 2027 年 3 月までに全端末へ届く予定で、ゲームや購入済みコンテンツ、マルチプレイはその後も利用できるという。旧端末のサポート終了と、来春に予定される Meta VR Glasses への移行が同時に示された点は、買い替え時期を考えるうえで見逃せない。</p>
+<p class="links"><a href="https://roadtovr.com/meta-quest-2-pro-end-of-life-update/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Froadtovr.com%2Fmeta-quest-2-pro-end-of-life-update%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Xreal Aura、予約受付を開始 — Google の Android XR を搭載するスマートグラス</h3>
+<p>Xreal のスマートグラス「Aura」の予約受付が始まった。Google の Android XR を搭載するモデルで、Android XR 陣営の端末が実際に購入できる段階に入ったことを示す。プラットフォームの立ち上がりを追ううえで確認しておきたい発表だ。</p>
+<p class="links"><a href="https://mashable.com/tech/xreal-aura-xr-glasses-release-preorder-deals">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmashable.com%2Ftech%2Fxreal-aura-xr-glasses-release-preorder-deals">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-03]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-03.html</link>

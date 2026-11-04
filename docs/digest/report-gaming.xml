@@ -4,11 +4,34 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 03 Nov 2026 03:49:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 04 Nov 2026 02:14:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-04]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-04.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-04.html</guid>
+            <pubDate>Wed, 04 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>Steam Frame 向け SteamOS 0.5.7 ベータが公開、SteamVR 2.19.1 を同梱</h3>
+<p>Steam Frame のベータチャンネル向けに SteamOS 0.5.7 が出ました。SteamVR が 2.19.1 に更新され、一部個体で問題になっていたポーズ予測の振動フィルタ改善、スリープ前 30 秒の画面減光、視線追跡をオフにしてもフォビエイテッドシャープニングが独立して効くようになるなど、装着時の見え方に関わる調整が入っています。設定のシステム更新チャンネルからオプトインできるので、Steam Frame の実機挙動を追っているならベータの変化を確認しておく価値があります。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/694276363007298391">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F694276363007298391">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SteamVR Beta 2.19.1、Steam Link のストリーミング画質を改善</h3>
+<p>Steam Frame 向け SteamOS にも同梱された SteamVR 2.19.1 ですが、こちらは PC 側 SteamVR の Steam Link 配信に焦点を当てた記事です。ストリーミングの画質が明確に良くなり、Linux 環境にとっても大きなアップグレードだと評価されています。ヘッドセットへの配信品質は自宅のゲーム環境の組み替え判断に直結するので、Steam Link を使っているなら更新して比べてみる価値があります。</p>
+<p class="links"><a href="https://www.gamingonlinux.com/2026/11/steamvr-beta-2-19-1-is-a-big-upgrade-for-streaming-steam-link-and-linux/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.gamingonlinux.com%2F2026%2F11%2Fsteamvr-beta-2-19-1-is-a-big-upgrade-for-streaming-steam-link-and-linux%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sunshine v2026.1103.235308、Web UI の SPA 化とペアリング修正を含むリリース</h3>
+<p>自宅ゲームストリーミングの配信側として使われる Sunshine の正式リリースです。Web UI がシングルページアプリケーションに作り直され、テストとカバレッジの追加、ペアリング時の重複クライアント証明書の修正、Flatpak でコマンドに接頭辞を付けなくて済む修正などが入っています。ペアリング不具合に当たっている環境では特に、アップデートで解消するか確認する価値があります。</p>
+<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1103.235308">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1103.235308">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-03]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-03.html</link>

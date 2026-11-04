@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-04</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-04</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon EKS Capabilities の Argo CD が Argo CD Notifications に対応</h3>
+<p>EKS のマネージド Argo CD 機能が Argo CD Notifications をサポートし、アプリの同期・失敗・ヘルス変化を Slack、PagerDuty、Opsgenie、SQS、EventBridge など 16 の通知先へ送れるようになった。トリガーとメッセージテンプレートはクラスタ側で定義し、Application にアノテーションを付けて購読するという上流 Argo CD と同じ使い方ができる。Argo CD で GitOps を回しているなら、同期失敗の検知を自前の監視からマネージド側へ寄せられるかどうかを判断する材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-argo-cd-notifications">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-eks-argo-cd-notifications">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock で Kimi K3 のインド国内推論が提供開始</h3>
+<p>Bedrock の Kimi K3 が、ムンバイとハイデラバードの両リージョン内で処理を完結させる in-country 推論に対応した。グローバル推論・地理的クロスリージョン推論との使い分けと、インド系言語の文書を読ませるサンプルコードが示されている。データの居留地要件がある案件で、クロスリージョン推論を選ぶかどうかの判断材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-india-based-inference-for-kimi-k3-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore Gateway で ServiceNow の on-behalf-of トークン交換を行う</h3>
+<p>AgentCore Gateway が Microsoft Entra ID との on-behalf-of トークン交換をネイティブに処理し、AI エージェントが呼び出しユーザーの ID を保ったまま ServiceNow の REST API を叩ける構成を解説している。インターセプター用の Lambda や独自コードを挟まずに済むのが要点。エージェントを「誰の権限で動かすか」と、外部 SaaS へどこまで代理アクセスさせるかを設計するときの具体的な実装例になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fservicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EDB Postgres AI と Bedrock AgentCore でエージェント向けセマンティックレイヤーを構築する</h3>
+<p>業務上の意味・結合パス・アクセス制御を Postgres 側のセマンティックレイヤーに置き、Strands Agents のエージェントから AgentCore 経由で問い合わせる構成を解説している。GRANT と行レベルセキュリティで、エージェントが読める範囲を DB の権限モデルで縛れるのが要点。エージェントに社内データを触らせるとき、統制をアプリ側と DB 側のどちらに置くかを考える参考になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-semantic-layer-for-agentic-ai-with-edb-postgres-ai-and-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Strands Box でエージェントのファイル操作と通信をポリシーで制御する</h3>
+<p>Strands Box を使い、エージェントのファイル書き込みや外部への送信をポリシーで 1 つずつ許可・拒否できるかを実際に確かめた記事。サンドボックスと権限境界を「設定として表現できるか」を検証する内容で、エージェントにどこまで触らせるかの線引きを決める材料になる。Claude Code 側の権限設定と見比べて、ツールごとに境界の粒度がどう違うかを把握しておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/strands-box-agent-sandbox-policy/">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
