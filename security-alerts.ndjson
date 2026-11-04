@@ -476,3 +476,16 @@
 {"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-121802","kev":false,"reported":false}
 {"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-114424","kev":false,"reported":false}
 {"date":"2026-11-04T11:13:51.114Z","id":"CVE-2026-114425","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121131","kev":false,"reported":true,"title":"Google Chrome（モバイル）の use-after-free でメモリ破壊を引き起こされる","urgency":"watch"}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121953","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121952","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-122006","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-65555","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-119481","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121932","kev":false,"reported":true,"title":"Linksys E5350 の管理画面に OS コマンドインジェクション","urgency":"watch"}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121930","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121931","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121939","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121640","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121638","kev":false,"reported":false}
+{"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121639","kev":false,"reported":false}
