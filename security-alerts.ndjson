@@ -510,3 +510,16 @@
 {"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122321","kev":false,"reported":true,"title":"Kyverno の verifyImages で署名検証をすり抜けたイメージが admit される","urgency":"watch"}
 {"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-123025","kev":false,"reported":false}
 {"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122992","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-105769","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-83542","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-82907","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-123198","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-117691","kev":false,"reported":true,"title":"Keycloak の SAML HTTP-Redirect バインディングに Critical な脆弱性","urgency":"week"}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-96677","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-73117","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-73101","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-73100","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-73116","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-73099","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-73098","kev":false,"reported":false}
+{"date":"2026-11-05T20:03:27.910Z","id":"CVE-2026-121489","kev":false,"reported":false}

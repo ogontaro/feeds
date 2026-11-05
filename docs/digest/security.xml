@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Thu, 05 Nov 2026 11:07:43 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 20:03:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Keycloak の SAML HTTP-Redirect バインディングに Critical な脆弱性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-117691.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-117691.html#2026-11-05T20:03:27.910Z</guid>
+            <pubDate>Thu, 05 Nov 2026 20:03:27 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Keycloak の SAML HTTP-Redirect バインディングに Critical な脆弱性</h3>
+<p><strong>緊急度: 今週中</strong> — CVSS 9.1（Critical）で、Keycloak は自宅クラスタで利用しているコンポーネント。CISA KEV には未追加で EPSS も不明のため、悪用はまだ確認されていない。</p>
+<p>Keycloak の SAML HTTP-Redirect バインディング実装に不具合があり、CVSS 9.1 の Critical と評価されている。入力では攻撃条件や影響の詳細が省略されているため、何が起きるかはアドバイザリで確認する必要がある。</p>
+<p><strong>自宅インフラへの該当:</strong> Keycloak<br><strong>推奨アクション:</strong> GHSA-c85j-3hq2-q6wj のアドバイザリで影響バージョンと修正版を確認し、該当する場合は更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-c85j-3hq2-q6wj">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Kyverno の NamespacedMutatingPolicy で他名前空間の Secrets や Deployments を上書きされる]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122303.html</link>
