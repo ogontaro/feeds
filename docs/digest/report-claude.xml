@@ -4,11 +4,56 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 04 Nov 2026 02:01:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 02:05:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-05]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-05.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-05.html</guid>
+            <pubDate>Thu, 05 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>バックグラウンドサブエージェントの使用量最適化、ステータス更新コストが約99%減</h3>
+<p>Claude Code のバックグラウンドサブエージェントは30秒ごとにステータス行を更新するが、そのたびに会話全体を読み返していた。これをやめ、Haiku 5.5 が短いメモから更新を書くようにしたことで、1回の更新コストが約99%減った。oikon48 の試算では、実際のセッションで使用量制限の約5%節約、同じ制限で約6%多くプロンプトを打てるようになるといい、長時間のサブエージェントを並行で走らせる運用ほど効いてくる。</p>
+<ul>
+<li><a href="https://x.com/ClaudeDevs/status/2118063143167693011">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2118063143167693011">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/oikon48/status/2118085071676833886">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>週次上限が実質的な壁に。ChatGPT と Codex も12月から利用枠を共有</h3>
+<p>Claude では、5時間の窓を撤廃した上位プランでも週次上限は残り、実際に作業を止めるのは週次側になっているという整理。OpenAI 側も12月から ChatGPT と Codex が1つの利用枠を分け合うため、設計相談の長いチャットがコーディングエージェントの枠を食う。エージェントの使い方とプラン選びを、時間あたりではなく週あたりの配分で考える材料になる。</p>
+<ul>
+<li><a href="https://dev.to/godnick/the-weekly-limit-is-the-new-wall-a-field-guide-to-claudes-weekly-cap-and-the-shared-chatgpt--on7">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fgodnick%2Fthe-weekly-limit-is-the-new-wall-a-field-guide-to-claudes-weekly-cap-and-the-shared-chatgpt--on7">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.318: <code>--continue</code> の会話消失と権限プロンプトの誤回答を修正</h3>
+<p>2.1.314 のリグレッションで、不正な形式のツール呼び出しのリトライが尽きた後に <code>--continue</code> すると以前の会話が失われることがあり、v2.1.318 で修正された。メッセージ送信直後や遅いプロンプトの表示前に打ったキーが権限プロンプトの回答として扱われる問題も直り、会話の継続と権限確認の両方に効く。<code>$.model.fork</code> に <code>effort</code> オプションが加わり、セッション全体の設定に関係なく副次ジョブを <code>low</code> で走らせられるようになった点も、サブエージェントを多用するなら押さえておきたい。</p>
+<ul>
+<li><a href="https://claude-code-log.com/changelog/v2.1.318">v2.1.318 の変更履歴を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Windows miniPC に Claude Code を3セッション常駐させ、ノートPCから Remote Control で任せる</h3>
+<p>会社から配布された Windows miniPC に Claude Code を3セッション常駐させ、手元のノートPCからは依頼・確認・承認だけを行う運用の記録。調査・開発・資料作成を常駐側に進めさせる構成で、ノートPCを閉じても作業が止まらない。複数セッションの並行運用と、離れた場所からの承認フローをどう組むかの実例として読める。</p>
+<ul>
+<li><a href="https://qiita.com/okadada/items/0d64d24b12214e85ecdc">記事を読む</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>DeepSeek がチームチャットから動くオープンソースのコーディングエージェント「Super-Agent」を公開</h3>
+<p>DeepSeek が、チームチャットから動くコーディングエージェント「Super-Agent」をオープンソースで公開した。普段の会話の流れからエージェントに作業を渡せる点が、ターミナルや IDE を開いて始める既存の使い方との違いになる。どのチャット基盤に対応し、既存のワークフローにどう組み込めるのかを記事で確認したい。</p>
+<ul>
+<li><a href="https://www.technology.org/2026/11/04/deepseek-super-agent-open-source-coding-agent-dsh-superagent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.technology.org%2F2026%2F11%2F04%2Fdeepseek-super-agent-open-source-coding-agent-dsh-superagent%2F">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-04]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-04.html</link>

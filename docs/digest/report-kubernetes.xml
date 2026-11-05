@@ -4,11 +4,32 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 04 Nov 2026 02:05:49 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 02:10:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-05]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-05.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-05.html</guid>
+            <pubDate>Thu, 05 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Kubernetes 上で AI エージェントのシェル実行をどう扱うか — OpenShell ガイド</h3>
+<p>CNCF ブログが、プラットフォームエンジニア向けに OpenShell を Kubernetes で動かすためのガイドを公開しました。AI エージェントは API を呼ぶだけでなく、シェルを実行し、パッケージを導入し、ファイルを読み、ネットワークに接続する。しかも直前にネットから取ってきたテキストに従って動くことがある、という前提から出発しています。エージェントを基盤の利用者に含めるなら権限境界とサンドボックスをどう引くかが設計の中心になるので、その具体例として読む価値があります。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/04/openshell-on-kubernetes-a-guide-for-platform-engineers/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F04%2Fopenshell-on-kubernetes-a-guide-for-platform-engineers%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>コンテナイメージの脆弱性を Debian のポイントリリースで修正してもらう方法</h3>
+<p>コンテナイメージで検出された脆弱性を、Debian のポイントリリース側で修正してもらうための手順をまとめた記事です。ベースイメージ由来の脆弱性を自前のパッチや再ビルドで抱え込まず、ディストリビューションの更新に寄せられるなら、イメージ運用の再現性と追従コストの両方に効きます。スキャン結果をどう消化するかの判断材料になります。</p>
+<ul>
+<li><a href="https://x.com/watson1978/status/2118158292530929972">@watson1978 のポスト</a></li>
+<li><a href="https://htn.to/3eLxeY9cvk">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-04]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-04.html</link>

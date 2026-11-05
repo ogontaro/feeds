@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-05</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-05</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>AgentCore Evaluations に意思決定モデルを組み込む — Jev と Strands Decider でリリース判定を自動化する</h3>
+<p>エージェントの品質をリリース判定のゲートにすると、LLM の審判任せでは判定がぶれやすい。そこで Jev と Strands Decider という意思決定モデルをコードベースの評価器として AgentCore Evaluations に接続し、ゲートに使う前に判定そのものを検証する手順まで示している。エージェントの自動評価を運用に載せたい人にとって、判定を再現可能にする具体的な型になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fuse-decision-models-with-amazon-bedrock-agentcore-evaluations%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>本番 AI エージェントのための4層コンテキストエンジニアリング — Deep Insight の実装コードで学ぶ</h3>
+<p>本番エージェントのボトルネックはモデルではなくコンテキスト管理だという前提で、アーキテクチャ・プロンプト・ファイルベースツール・検証エージェントの4層に分けて設計を整理している。Strands Agents SDK と AgentCore 上で動くオープンソースの Deep Insight の実コードが土台なので、抽象論ではなく自分のエージェント構成に写しやすい。ハーネス側の作り込みで品質とコストを上げる考え方の実例として読める。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffour-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>S3 Tables、Apache Hive から Apache Iceberg へのマネージド移行を提供開始</h3>
+<p>Apache Hive のテーブルを、移行パイプラインを組まずにマネージドで Iceberg へ移せるようになった。移行中も本番ワークロードを止めずに検証・変換・コピーが進むため、Hive のまま抱えていたデータレイクの近代化をテーブルごとの個別プロジェクトに分割せずに済む。Iceberg の ACID トランザクション・スキーマ進化・タイムトラベルを既存資産に効かせたい場合の現実的な入口になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/aws/amazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Famazon-s3-tables-now-offer-managed-migration-of-apache-hive-tables-to-apache-iceberg%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EC2 Capacity Manager でインスタンスタイプと AZ の柔軟性を計画・計測する</h3>
+<p>インスタンスタイプと AZ の分散が実際にどれだけ容量を確保できているかを、起動可否の事前チェックと充足率のメトリクスで測れる。記事は Auto Scaling グループや EC2 Fleet に加えて Karpenter への組み込み方まで示しており、容量不足を「運」から「測定対象」に変えられる。EKS のノード調達を Karpenter に寄せているなら、インスタンスの柔軟性を数字で見直す材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/compute/plan-and-measure-ec2-flexibility-with-amazon-ec2-capacity-manager/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fplan-and-measure-ec2-flexibility-with-amazon-ec2-capacity-manager%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Interconnect – last mile が Equinix とプレビュー提供開始、クロスコネクト不要のプライベート接続</h3>
+<p>Equinix の 282 データセンター網から AWS へ、クロスコネクトの発注やルーター設定なしでプライベート接続を張れるプレビュー。リージョン・帯域・Direct Connect ゲートウェイ・Equinix Fabric のプロジェクト ID を選ぶだけで、オンプレや自社拠点と AWS の間の接続設計が大きく簡略化される。閉域前提のハイブリッド構成を検討しているなら、回線調達のリードタイムを見直すきっかけになる。プレビュー段階である点は前提に置きたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-preview-equinix/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Finterconnect-last-mile-preview-equinix%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 04 Nov 2026 02:12:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 02:17:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-05]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-05.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-05.html</guid>
+            <pubDate>Thu, 05 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Meta、Quest 2 と Quest Pro の新機能提供を2027年に終了へ</h3>
+<p>Meta が Quest 2 と Quest Pro について、2027年に新機能の提供を終えると伝えている。現行ヘッドセットへの機能追加が止まることは、今後のアプリ対応や中古での購入判断に直結する。Reality Labs の製品ライン整理の動きとして、XR ヘッドセットを長く使う前提の人ほど押さえておきたい。</p>
+<p class="links"><a href="https://space4games.com/en/news-en/meta-quest-2-quest-pro-feature-updates-end-2027/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fspace4games.com%2Fen%2Fnews-en%2Fmeta-quest-2-quest-pro-feature-updates-end-2027%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-04]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-04.html</link>
