@@ -489,3 +489,14 @@
 {"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121640","kev":false,"reported":false}
 {"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121638","kev":false,"reported":false}
 {"date":"2026-11-04T19:52:53.138Z","id":"CVE-2026-121639","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2024-27834","kev":true,"reported":true,"title":"Apple の iOS・macOS・Safari などに認証不備、ポインタ認証をバイパスされる","urgency":"week"}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-82418","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-121933","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2025-71457","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-122013","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-54378","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-54384","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-122051","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-122120","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-122220","kev":false,"reported":false}
+{"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-113373","kev":false,"reported":false}

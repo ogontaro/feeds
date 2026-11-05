@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Wed, 04 Nov 2026 19:52:53 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2026 01:30:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Apple の iOS・macOS・Safari などに認証不備、ポインタ認証をバイパスされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2024-27834.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2024-27834.html#2026-11-05T01:30:36.103Z</guid>
+            <pubDate>Thu, 05 Nov 2026 01:30:36 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Apple の iOS・macOS・Safari などに認証不備、ポインタ認証をバイパスされる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-04 追加され、実際の悪用が確認されている。新規 KEV のため自宅インフラに該当しなくても通知対象。ただし CVSS は不明、EPSS は 0.006 と低く、自宅インフラの構成（Kubernetes 関連）に Apple 製品は含まれないため、即時対応ではなく今週中とした。</p>
+<p>iOS、iPadOS、macOS、Safari、tvOS、watchOS に認証の不備がある。任意の読み書きが可能な攻撃者がポインタ認証（PAC）をバイパスでき、当該保護を回避される。CISA KEV には 2026-11-04 に追加され、実際の悪用が確認されている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Apple 端末や Safari を利用している場合は、最新版へ更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-27834">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Google Chrome（モバイル）の use-after-free でメモリ破壊を引き起こされる]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121131.html</link>
