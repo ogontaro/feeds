@@ -500,3 +500,13 @@
 {"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-122120","kev":false,"reported":false}
 {"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-122220","kev":false,"reported":false}
 {"date":"2026-11-05T01:30:36.103Z","id":"CVE-2026-113373","kev":false,"reported":false}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-100109","kev":false,"reported":false}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122303","kev":false,"reported":true,"title":"Kyverno の NamespacedMutatingPolicy で他名前空間の Secrets や Deployments を上書きされる","urgency":"week"}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122304","kev":false,"reported":true,"title":"Kyverno の CleanupPolicy で名前空間の隔離を脱出され、他名前空間の Secrets を読まれる","urgency":"week"}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122310","kev":false,"reported":true,"title":"Kyverno の apiCall urlPath 検証不備でクラスタ管理者権限を取得される","urgency":"week"}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122311","kev":false,"reported":true,"title":"Kyverno の resource.get／post のパス検証不備でクラスタ全体を掌握される","urgency":"week"}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122313","kev":false,"reported":true,"title":"Kyverno の NamespacedMutatingPolicy で他テナントの RoleBinding を書き換えられる","urgency":"week"}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122302","kev":false,"reported":true,"title":"Kyverno の generate ルールで RBAC を超えたリソースをクラスタ全体に作成される","urgency":"week"}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122321","kev":false,"reported":true,"title":"Kyverno の verifyImages で署名検証をすり抜けたイメージが admit される","urgency":"watch"}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-123025","kev":false,"reported":false}
+{"date":"2026-11-05T11:07:43.694Z","id":"CVE-2026-122992","kev":false,"reported":false}
