@@ -528,3 +528,9 @@
 {"date":"2026-11-06T01:38:38.250Z","id":"CVE-2026-111490","kev":false,"reported":false}
 {"date":"2026-11-06T01:38:38.250Z","id":"CVE-2026-111489","kev":false,"reported":false}
 {"date":"2026-11-06T01:38:38.250Z","id":"CVE-2026-116472","kev":false,"reported":true,"title":"ingress-nginx の mirror-target で自身がサービス拒否（DoS）に陥る","urgency":"watch"}
+{"date":"2026-11-06T11:04:30.945Z","id":"CVE-2026-118423","kev":false,"reported":false}
+{"date":"2026-11-06T11:04:30.945Z","id":"CVE-2026-119516","kev":false,"reported":false}
+{"date":"2026-11-06T11:04:30.945Z","id":"CVE-2026-120844","kev":false,"reported":false}
+{"date":"2026-11-06T11:04:30.945Z","id":"CVE-2026-88800","kev":false,"reported":false}
+{"date":"2026-11-06T11:04:30.945Z","id":"CVE-2026-63017","kev":false,"reported":false}
+{"date":"2026-11-06T11:04:30.945Z","id":"CVE-2026-63774","kev":false,"reported":false}
