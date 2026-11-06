@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-11-06</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-11-06</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Google、Agent Substrate と gVisor を CNCF へ寄贈 — 信頼できない AI エージェントの隔離を標準化へ</h3>
+<p>エージェントを大量に走らせる前提が現実になると、ボトルネックはモデルではなく「その実行をどこでどう隔離するか」になる。すでにコンテナ分離の実装として使われてきた gVisor が CNCF に移ることで、ベンダー中立の土台として扱いやすくなる点が大きい。自宅クラスタでエージェントを動かすときのサンドボックス境界を、Pod や namespace の内側でどう引くかを考える材料になる。</p>
+<p class="links"><a href="https://opensource.googleblog.com/2026/11/sandboxing-untrusted-ai-agents-at-scale.html">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopensource.googleblog.com%2F2026%2F11%2Fsandboxing-untrusted-ai-agents-at-scale.html">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>kpt v1.0.0 リリース — 長年の pre-release を経て CNCF プロジェクトが 1.0 に</h3>
+<p>Kubernetes の構成をパッケージとして宣言的に管理するツールチェーンが、ようやく 1.0 に到達した。pre-release のままでは基盤の標準手順に組み込みづらかったが、API 互換を前提にできる版になることで採用判断がしやすくなる。Helm や kustomize とどこを分担させるか、GitOps のリポジトリ構成をどう置くかを整理するきっかけになる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/05/kpt-v1-0-0-is-released/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F05%2Fkpt-v1-0-0-is-released%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CVE-2026-116472: ingress-nginx の mirror-target による自己 DoS</h3>
+<p>クラスタの入口を担う ingress-nginx の脆弱性で、mirror-target の扱いに起因する自己 DoS とされている。Ingress は複数のサービスで共有されがちなので、外部公開しているクラスタでは影響範囲と設定での回避可否を一次情報で確認しておきたい。修正版の有無を追う価値がある。</p>
+<p class="links"><a href="https://github.com/kubernetes/kubernetes/issues/143852">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Fissues%2F143852">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Platform Engineering 2.0 は AI エージェントをどう統治するか</h3>
+<p>内部開発者プラットフォームの利用者に AI エージェントを加え、bounded autonomy・ゼロトラスト・機械の意図のための制御面として基盤を設計し直すという論考。人間向けのセルフサービスとして IDP を作ってきた立場にとっては、権限境界とガードレールの置き方がそのまま設計判断になる。Backstage の先をどう考えるかの材料として読める。</p>
+<p class="links"><a href="https://platformengineering.org/blog/how-platform-engineering-2-0-governs-the-new-digital-workforce-the-ai-agents">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fhow-platform-engineering-2-0-governs-the-new-digital-workforce-the-ai-agents">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenTelemetry JavaScript SDK 3.0 がリリース — API 1.10.0 と破壊的変更</h3>
+<p>JavaScript の計装は SDK 3.0（安定版 v3.0.0 / 実験版 v0.300.0）と API 1.10.0 に更新され、移行ガイドが公開されている。メジャー更新は計装ライブラリ側の追随状況によって上げられるタイミングが変わるので、破壊的変更を先に把握しておくと更新計画を立てやすい。可観測性を OTel に寄せている構成ほど、影響を早めに洗っておきたい。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/otel-js-sdk-3-0/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fotel-js-sdk-3-0%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

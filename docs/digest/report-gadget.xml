@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 05 Nov 2026 02:17:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2026 02:30:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-06]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-06.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-06.html</guid>
+            <pubDate>Fri, 06 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Warby Parker、スマートグラス予約開始日を 11 月 12 日に決定</h3>
+<p>Warby Parker が自社スマートグラスの予約受付を 11 月 12 日に開始すると明らかにした。同社は Google の Android XR 眼鏡のパートナーであり、具体的な日付が出たことで Android XR 端末が発表段階から購入段階へ移る最初の事例のひとつになる。Meta Ray-Ban Display が先行するスマートグラス市場で、Android XR 陣営が実際にどの価格・機能で投入してくるかを見極める材料になる。</p>
+<p class="links"><a href="https://mezha.net/eng/news/mezha-bef3d8885a31ca155b276584_warby_parker_says/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmezha.net%2Feng%2Fnews%2Fmezha-bef3d8885a31ca155b276584_warby_parker_says%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-05.html</link>

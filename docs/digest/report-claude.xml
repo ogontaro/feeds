@@ -4,11 +4,50 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 05 Nov 2026 02:05:12 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2026 02:12:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-06]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-06.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-06.html</guid>
+            <pubDate>Fri, 06 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Claude Code プラグインは入力前に何を実行するか — 公開プラグイン2,688件の調査</h3>
+<p>公開されている Claude Code プラグイン2,688件を実際に開き、インストール前に何が動くかを調べた記事。SessionStart フックや、バージョン番号を付けずに npx/uvx から起動する MCP サーバーは、こちらが1文字も入力する前にコードを実行する。プラグインはユーザー権限で任意コードを動かし得るため、導入前に hooks/hooks.json・.mcp.json・bin/ を見る確認をそのまま習慣にできる。</p>
+<p class="links"><a href="https://dev.to/adrian2016/what-a-claude-code-plugin-runs-before-you-type-we-read-2688-public-plugins-4agn">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fadrian2016%2Fwhat-a-claude-code-plugin-runs-before-you-type-we-read-2688-public-plugins-4agn">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Anthropic のメールアドレス漏えい修正、23通りの検証で8通りがすり抜け</h3>
+<p>Claude Code が利用者のメールアドレスを漏らす問題への Anthropic の修正は171行の正規表現で、報告された形は塞ぐが同種の8形態は素通りする、と実際に23回動かして確かめた記事。原因は Claude Code がサインイン中のアカウントのメールをモデルのコンテキストに渡し、モデルが利用者を特定できてしまうことにある。メモリや CLAUDE.md に方針を書くだけでは防げないという報告もあり、エージェントに何を渡しているかを自分で把握しておきたい。</p>
+<p class="links"><a href="https://dev.to/frankchu/8-leaks-pass-anthropics-23-test-email-fix-2e66">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Ffrankchu%2F8-leaks-pass-anthropics-23-test-email-fix-2e66">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/kojirofukazawa/status/2118169856839397460">@kojirofukazawa のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code のコミット前フックで TruffleHog を走らせ、シークレット入りのコミットを止める</h3>
+<p>Claude Code のようなエージェントは変更からコミットまで自分で進めるため、API キーを直書きしたまま履歴に入れてしまう事故が起きやすい。コミット前に TruffleHog を走らせるフックを入れれば、ファイルを消しても残る Git 履歴への混入を入口で止められる。エージェントにコミット権を渡すなら、先に入れておきたいガードレール。</p>
+<p class="links"><a href="https://qiita.com/CircleCIJapan/items/00c07ba3c040a8d2e84d">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のバックグラウンドサブエージェント、状態更新のコストが約99%減</h3>
+<p>動いているサブエージェントは30秒ごとにステータス行を更新し、そのたびに会話全体を読み直していた。これが Haiku 5.5 の短いメモからステータスを書く方式になり、更新1回あたりのコストが約99%減った。サブエージェント本体のモデルは変わらないため、並行実行を多用して使用量上限に悩む人ほど効果が大きい。</p>
+<ul>
+<li><a href="https://x.com/hokazuya/status/2118141820626706792">@hokazuya のポスト</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Raindrop — プロンプトやモデルの変更でエージェントの何が壊れるかをシミュレーションする</h3>
+<p>エージェントのプロンプトを書き換えたり、モデルを差し替えたり、ツールを足したりしたときに、ほかに何が変わる・壊れるかをシミュレーションで先に検出するツール。プロンプトとモデルの変更は回帰テストが難しく、影響が本番で初めて出がちなので、変更前の検証を仕組みにできるかが焦点になる。エージェントの評価を属人的な試行にしないための選択肢として押さえておきたい。</p>
+<p class="links"><a href="https://thenewstack.io/raindrop-simulations-ai-agents/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fraindrop-simulations-ai-agents%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-05.html</link>
@@ -1176,56 +1215,6 @@
 <h3>GitHub Copilot のコードレビューが API 経由で依頼可能に、effort level も指定できるように</h3>
 <p>Copilot のコードレビューを REST / GraphQL API から依頼でき、レビューの手厚さ（effort level）をリクエスト単位で選べるようになった。既定は Balanced。CI にレビューを組み込む、PR の重要度でレビューの深さを変える、といった運用が組みやすくなる。AI レビューを既存のワークフローにどう差し込むかの具体例として参考になる。</p>
 <p class="links"><a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-10-02-copilot-code-review-api-support-and-new-default-effort-level">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-10-02]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-02.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-02.html</guid>
-            <pubDate>Fri, 02 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（2 本）</h2>
-<section class="item">
-<h3>Claude Code に「Mods」— プラグインで挙動・UI を書き換えられるようになった</h3>
-<p>v2.1.287 で Claude Code を改造できる「Mods」が追加され、プラグインがより深い挙動まで変更できるようになった。数行の TypeScript で動作や UI を差し替えられ、Mods はプラグインとして <code>/plugin</code> で配布・導入できる。同じリリースでは、見落としがちな点をサイドエージェントが指摘する組み込み Mod「You should know」も入った。harness 自体を自分のワークフローに合わせて作り変えられるようになった点が大きく、自作 Mod の実例も出始めている。</p>
-<ul>
-<li><a href="https://claude-code-log.com/changelog/v2.1.287#item-75288269b65b">記事を読む</a></li>
-<li><a href="https://x.com/ClaudeDevs/status/2105721434807083061">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2105721434807083061">Google 翻訳で読む</a></li>
-<li><a href="https://x.com/oikon48/status/2105807552005218477">@oikon48 のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>MCP サーバーは「インストール時」ではなく「実行の瞬間」に止める</h3>
-<p>AI を組み込んだアプリのセキュリティを AI-BOM と SAST の両面から見てきた連載の一本。MCP サーバーは導入時に審査するだけでは足りず、実行のたびに「何をするか」を評価して止める仕組みが要る、という主張をしている。エージェントに何を許すかという権限境界の設計を考えるための、具体的な材料になる。</p>
-<ul>
-<li><a href="https://qiita.com/SokoP/items/e41dca283cb4fbe1b2f8">記事を読む</a></li>
-</ul>
-</section>
-<h2>新ツール・サブスク（1 本）</h2>
-<section class="item">
-<h3>AI エージェント向けスプレッドシート「D2B」— MCP / API / CLI / SDK で接続、無料で始められる</h3>
-<p>AI が操作した Excel・スプレッドシートの変更履歴や差分をバージョン管理し、前の状態に戻したり、複雑なシートを型付きテーブルとして構造化したり、AI の出力をレビュー・検算できるサービス。ChatGPT / Claude / Claude Code / Codex / Copilot などから MCP・API・CLI・SDK 経由で使え、無料で始められて scale-to-zero とされている。エージェントに表計算を触らせる際の「差分が見えない・戻せない」という課題に正面から答えており、既存の AI ワークフローに差し込む余地が大きい。</p>
-<ul>
-<li><a href="https://x.com/y_matsuwitter/status/2105488397683036220">@y_matsuwitter のポスト</a></li>
-<li><a href="https://d2b.dev/developers">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fd2b.dev%2Fdevelopers">Google 翻訳で全文を読む</a></li>
-</ul>
-</section>
-<h2>AI 開発トレンド（2 本）</h2>
-<section class="item">
-<h3>「意思決定モデル」が各社から出揃ってきた — AWS の Strands Decider、Cloudflare の Clef、そして Jev</h3>
-<p>高価なモデルに考えさせ、安価なモデルに決めさせる——Jev が切り開いた「意思決定モデル」に、AWS がローカルで動く Strands Decider 2B を、Cloudflare が Clef / Clef-flash を投入し、選択肢が一気に増えた。エージェントの分岐・ルーティング・再試行の判断を小型モデルに任せてコストを下げる使い方が現実味を帯びる一方、実際にベンチを取ると遅くて使えなかったという声もあり、向き不向きの見極めがこれからの論点になる。</p>
-<ul>
-<li><a href="https://thenewstack.io/aws-strands-decider-model/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Faws-strands-decider-model%2F">Google 翻訳で全文を読む</a></li>
-<li><a href="https://x.com/mizchi/status/2105715922791256212">@mizchi のポスト</a></li>
-<li><a href="https://x.com/elastic/status/2105693854695395548">@elastic のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Felastic%2Fstatus%2F2105693854695395548">Google 翻訳で読む</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>GitHub Copilot が computer use でデスクトップアプリを操作できるように</h3>
-<p>GitHub Copilot の CLI と macOS / Windows の Copilot アプリで computer use がパブリックプレビューになった。Copilot が画面を見てデスクトップアプリを操作できるようになり、エージェントの守備範囲がターミナルやエディタの外へ広がる。ブラウザ操作に続いて「PC 全体を触るエージェント」が現実になりつつあり、権限と安全策をどう設計するかが同時に問われる。</p>
-<ul>
-<li><a href="https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fchangelog%2F2026-10-01-github-copilot-can-now-interact-with-desktop-apps">Google 翻訳で全文を読む</a></li>
-</ul>
 </section>
 ]]></content:encoded>
         </item>

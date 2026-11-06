@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-06</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-06</h1>
+<article class="report"><h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Claude Code プラグインは入力前に何を実行するか — 公開プラグイン2,688件の調査</h3>
+<p>公開されている Claude Code プラグイン2,688件を実際に開き、インストール前に何が動くかを調べた記事。SessionStart フックや、バージョン番号を付けずに npx/uvx から起動する MCP サーバーは、こちらが1文字も入力する前にコードを実行する。プラグインはユーザー権限で任意コードを動かし得るため、導入前に hooks/hooks.json・.mcp.json・bin/ を見る確認をそのまま習慣にできる。</p>
+<p class="links"><a href="https://dev.to/adrian2016/what-a-claude-code-plugin-runs-before-you-type-we-read-2688-public-plugins-4agn">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fadrian2016%2Fwhat-a-claude-code-plugin-runs-before-you-type-we-read-2688-public-plugins-4agn">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Anthropic のメールアドレス漏えい修正、23通りの検証で8通りがすり抜け</h3>
+<p>Claude Code が利用者のメールアドレスを漏らす問題への Anthropic の修正は171行の正規表現で、報告された形は塞ぐが同種の8形態は素通りする、と実際に23回動かして確かめた記事。原因は Claude Code がサインイン中のアカウントのメールをモデルのコンテキストに渡し、モデルが利用者を特定できてしまうことにある。メモリや CLAUDE.md に方針を書くだけでは防げないという報告もあり、エージェントに何を渡しているかを自分で把握しておきたい。</p>
+<p class="links"><a href="https://dev.to/frankchu/8-leaks-pass-anthropics-23-test-email-fix-2e66">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Ffrankchu%2F8-leaks-pass-anthropics-23-test-email-fix-2e66">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/kojirofukazawa/status/2118169856839397460">@kojirofukazawa のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code のコミット前フックで TruffleHog を走らせ、シークレット入りのコミットを止める</h3>
+<p>Claude Code のようなエージェントは変更からコミットまで自分で進めるため、API キーを直書きしたまま履歴に入れてしまう事故が起きやすい。コミット前に TruffleHog を走らせるフックを入れれば、ファイルを消しても残る Git 履歴への混入を入口で止められる。エージェントにコミット権を渡すなら、先に入れておきたいガードレール。</p>
+<p class="links"><a href="https://qiita.com/CircleCIJapan/items/00c07ba3c040a8d2e84d">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のバックグラウンドサブエージェント、状態更新のコストが約99%減</h3>
+<p>動いているサブエージェントは30秒ごとにステータス行を更新し、そのたびに会話全体を読み直していた。これが Haiku 5.5 の短いメモからステータスを書く方式になり、更新1回あたりのコストが約99%減った。サブエージェント本体のモデルは変わらないため、並行実行を多用して使用量上限に悩む人ほど効果が大きい。</p>
+<ul>
+<li><a href="https://x.com/hokazuya/status/2118141820626706792">@hokazuya のポスト</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Raindrop — プロンプトやモデルの変更でエージェントの何が壊れるかをシミュレーションする</h3>
+<p>エージェントのプロンプトを書き換えたり、モデルを差し替えたり、ツールを足したりしたときに、ほかに何が変わる・壊れるかをシミュレーションで先に検出するツール。プロンプトとモデルの変更は回帰テストが難しく、影響が本番で初めて出がちなので、変更前の検証を仕組みにできるかが焦点になる。エージェントの評価を属人的な試行にしないための選択肢として押さえておきたい。</p>
+<p class="links"><a href="https://thenewstack.io/raindrop-simulations-ai-agents/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fraindrop-simulations-ai-agents%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

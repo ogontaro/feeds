@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 05 Nov 2026 02:15:58 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2026 02:27:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-06]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-06.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-06.html</guid>
+            <pubDate>Fri, 06 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock AgentCore の Web Answer が一般提供に</h3>
+<p>検索・取得・要約・引用のパイプラインを自前で組まなくても、1 回の呼び出しで出典付きの回答が返るマネージドツールです。AgentCore Gateway にぶら下げればエージェントのツールとしてそのまま使えるので、エージェントに「根拠のある最新情報で答える」能力を足すときの実装コストが大きく下がります。既存の Web Search の上に作られている点も含め、エージェントのツール構成をどう組むかの判断材料になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fgetting-started-with-web-answer-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>TUI が 100 チーム超の脅威モデリングを Amazon Bedrock でスケールさせた方法</h3>
+<p>100 を超えるプロダクトチームの脅威モデリングを、Bedrock と Bedrock AgentCore 上の AI で回す仕組みをどう作ったかの事例です。脅威モデリングの所要時間を最大 70% 削減しつつ、セキュリティ基準の適用を揃えられたとしています。セキュリティレビューを人手のボトルネックにせず標準化する、というプラットフォーム側の設計として参考になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/how-tui-scales-threat-modeling-for-100-teams-with-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fhow-tui-scales-threat-modeling-for-100-teams-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon SageMaker AI で商品ページの品質を評価する Amazon Marketplace の仕組み</h3>
+<p>商品ページを 1 枚のスナップショットとして描画し、視覚言語モデルと OCR の可読性シグナルを CatBoost で統合して品質を採点、その判断を SHAP で「次に直すべき点」に変換して販売者へ返しています。生成 AI を評価に使うときに問題になりがちな「なぜその判定か」を説明可能な形で出しているのが要点です。コンテンツや出力の品質を大規模に採点するパイプラインを設計するときの型として読めます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon OpenSearch Service の最適化エンジンがエージェントトレースに対応</h3>
+<p>OpenTelemetry のトレースを取り込み、ログと同じ場所でエージェントのセッションを最初から最後まで追えるようになりました。スパンイベントやスパンリンク、プロンプトまでマッピングされるため、どのステップで失敗・遅延したのかをツールをまたいで探さずに済みます。エージェントの挙動を OTel 前提で可観測にしていく流れの中での選択肢として押さえておきたい変更です。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-support-traces">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-opensearch-service-support-traces">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon DynamoDB が S3 からの一括書き込み(bulk put items)に対応</h3>
+<p>S3 にあるデータを既存の DynamoDB テーブルへ書き込むマネージド機能が一般提供になりました。これまで自前のパイプラインとテーブルキャパシティの管理が必要だった取り込みを、既存ワークロードに影響を与えずに実行できるとしています。日次バッチやバックフィルのために Glue や Lambda を組み合わせていた構成は、置き換えられるか検討する価値があります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-dynamodb-now-supports-bulk-put-items/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-dynamodb-now-supports-bulk-put-items%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-05.html</link>
@@ -806,40 +839,6 @@
 <h3>AWS DevOps Agent と OpenSearch をつないだ閉ループのインシデント対応</h3>
 <p>DevOps Agent を MCP 経由で OpenSearch の可観測性データに接続し、深夜に飛んだアラートから自律的に根本原因の調査を回す構成。MCP サーバーの置き場所として、ECS での自己管理・AgentCore・OpenSearch 3.3 以降の内蔵という3つの選択肢を比較しており、アラートのルーティングと FGAC のロール対応まで踏み込んでいる。AI に一次調査を任せる範囲と、そのために可観測性データをどう見せるかを決める際の実務的な指針になる。</p>
 <p class="links"><a href="https://aws.amazon.com/blogs/devops/closed-loop-incident-response-connect-aws-devops-agent-to-opensearch/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fclosed-loop-incident-response-connect-aws-devops-agent-to-opensearch%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-02]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-02.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-02.html</guid>
-            <pubDate>Fri, 02 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>AWS Well-Architected Agent がプレビュー公開</h3>
-<p>AWS Trusted Advisor と Well-Architected Tool の次世代版にあたる AI サービスがプレビューになった。環境を解析し、コスト・セキュリティ・性能・信頼性の改善案をビジネス目標に沿って優先順位付きで提示し、アプリのトポロジやメトリクスと突き合わせたうえで Terraform や CDK のテンプレートまで読む点が新しい。Terraform で AWS を管理しているなら、レビューと点検の入口をどこまで任せられるかの判断材料になる。</p>
-<p><a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Faws%2Fannouncing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview%2F">Google 翻訳で全文を読む</a></p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-well-architected-agent/">原文を読む(AWS What&#39;s New)</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-well-architected-agent%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon EKS が Kubernetes 1.37 に対応</h3>
-<p>EKS で Kubernetes 1.37 が使えるようになった。クラスタのバージョン更新計画の前提が変わるので、Karpenter や各種アドオン、周辺ツールの 1.37 対応状況を先に確認しておきたい。EKS を Terraform や GitOps で管理している場合、対応表の更新タイミングを決める材料になる。</p>
-<p class="links"><a href="https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions-standard.html#kubernetes-1-37">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fkubernetes-versions-standard.html%23kubernetes-1-37">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon Bedrock AgentCore でアンビエントエージェントを構築する</h3>
-<p>チャットのプロンプト待ちではなく、S3 へのアップロードやスケジュール、アラートといったイベントを起点に動く「アンビエントエージェント」を AgentCore 上に組む実装例。SQS・Lambda・DynamoDB を組み合わせ、ask_human ツールとレビュー用のジョブ画面で人間の確認を挟む構成になっており、エージェントを常時動かす運用に置くときの権限境界と承認フローの設計を考える土台になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>NVIDIA NeMo Agent Toolkit と Amazon S3 Vectors でエージェントのメモリを作る</h3>
-<p>EKS 上に展開した NVIDIA NeMo Agent Toolkit のメモリ層として Amazon S3 Vectors を独自プロバイダとして組み込む実装例。ベクトルストアを別サービスとして立てずに S3 上へ永続メモリを持てるので、自前の Kubernetes クラスタでエージェントに記憶を持たせるときのコストと運用の選択肢が増える。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AWS 上の Claude Platform をマルチ環境で使うためのアクセス設計</h3>
-<p>1 つのサブスクリプションから、AWS ワークロードはクロスアカウントの SigV4、開発者はワークスペース単位の API キー、外部環境は OIDC フェデレーション、と環境ごとに認証方式を使い分ける構成の解説。AI サービス専用アカウントに閉じ込めて分離する考え方で、Claude を複数チーム・複数環境へ広げるときの、鍵を配らずに済ませる権限設計の叩き台になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/implementing-multi-environment-access-for-claude-platform-on-aws/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fimplementing-multi-environment-access-for-claude-platform-on-aws%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

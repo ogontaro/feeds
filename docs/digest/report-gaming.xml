@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 05 Nov 2026 02:18:42 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2026 02:35:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-06]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-06.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-06.html</guid>
+            <pubDate>Fri, 06 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>GOG Galaxy、2027年にLinux完全対応へ</h3>
+<p>GOG が初の GOG Showcase で、2027 年に GOG Galaxy を Linux で完全サポートすると明言した。Linux 上では GOG のゲーム自体は動かせても、Galaxy クライアントのライブラリ管理やクラウドセーブをネイティブに使う手段は限られており、SteamOS 系の携帯機や HTPC を中心に組んでいる環境では待望の発表といえる。ただし現時点で示されたのは時期だけで、対応ディストリビューションや機能範囲は不明なため、買い替えの判断材料としては「2027 年に向けた前提が一つ揃った」程度に留めて読むのがよい。</p>
+<p class="links"><a href="https://www.gamingonlinux.com/2026/11/a-new-gog-galaxy-is-coming-in-2027-with-full-linux-support/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.gamingonlinux.com%2F2026%2F11%2Fa-new-gog-galaxy-is-coming-in-2027-with-full-linux-support%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-05]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-05.html</link>
