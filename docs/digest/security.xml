@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Thu, 05 Nov 2026 20:03:27 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2026 01:38:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] ingress-nginx の mirror-target で自身がサービス拒否（DoS）に陥る]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116472.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116472.html#2026-11-06T01:38:38.250Z</guid>
+            <pubDate>Fri, 06 Nov 2026 01:38:38 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>ingress-nginx の mirror-target で自身がサービス拒否（DoS）に陥る</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV には未追加で、EPSS・CVSS とも入力に記載がなく、悪用の兆候も確認されていない。ただし自宅クラスタの ingress を担う ingress-nginx（Kubernetes／nginx）に関わる Kubernetes 公式の報告のため「監視」とする。</p>
+<p>Kubernetes 公式で、ingress-nginx の mirror-target に関する自己 DoS が報告されている。入力には影響バージョン・攻撃条件・深刻度の詳細が含まれていないため、まず影響範囲の確認が必要になる。</p>
+<p><strong>自宅インフラへの該当:</strong> Kubernetes, nginx<br><strong>推奨アクション:</strong> Kubernetes の issue 143852 で影響バージョンと修正の有無を確認し、該当する場合は修正版へ更新する。</p>
+<p class="links"><a href="https://github.com/kubernetes/kubernetes/issues/143852">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Keycloak の SAML HTTP-Redirect バインディングに Critical な脆弱性]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-117691.html</link>
