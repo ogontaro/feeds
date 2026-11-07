@@ -4,11 +4,25 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 06 Nov 2026 02:30:58 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 02:07:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-07]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-07.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-07.html</guid>
+            <pubDate>Sat, 07 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の深掘り: Android XR グラスの予約・発売日</h2>
+<p>Android XR グラスが、発表済みの構想から実際に買える製品へと動き出した。Samsung の &quot;Intelligent Eyewear&quot; と呼ばれる Android XR グラスに予約開始日が設定され、T3 は「あと1週間で予約できる」と伝えている。Android Police も同じ予約開始日を報じており、記事の URL には 11 月 12 日という日付が入っている。さらに Gentle Monster も Android XR グラスを 12 月に投入すると発表しており、同じプラットフォーム上で複数ブランドの製品が時期をずらして並ぶことになる。これまでスマートグラスは Meta の Ray-Ban 系が中心だったが、Android XR 陣営が「予約」という具体的な行動に移ったことで、初めて発売日と入手性で比較できる段階に入る。予約開始と発売が別の日付で進むため、初期ロットの確保や対応アプリの立ち上がりを見ながら判断する余地がある。買うかどうかを決める前に、まずは各社の予約開始日に何が揃うのかを確認しておきたい。</p>
+<ul>
+<li><a href="https://www.androidpolice.com/samsung-android-xr-glasses-pre-order-nov-12/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.androidpolice.com%2Fsamsung-android-xr-glasses-pre-order-nov-12%2F">Google 翻訳で全文を読む</a></li>
+<li><a href="https://www.t3.com/tech/vr/samsungs-intelligent-eyewear-smart-glasses-get-a-pre-order-date-and-you-only-have-to-wait-one-more-week-until-you-can-book-your-android-xr-pair">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.t3.com%2Ftech%2Fvr%2Fsamsungs-intelligent-eyewear-smart-glasses-get-a-pre-order-date-and-you-only-have-to-wait-one-more-week-until-you-can-book-your-android-xr-pair">Google 翻訳で全文を読む</a></li>
+<li><a href="https://ua.news/en/dovkolo-svitu/gentle-monster-ogolosila-grudnevii-zapusk-okuliariv-android-xr-engadget">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fua.news%2Fen%2Fdovkolo-svitu%2Fgentle-monster-ogolosila-grudnevii-zapusk-okuliariv-android-xr-engadget">Google 翻訳で全文を読む</a></li>
+</ul>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-06]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-06.html</link>

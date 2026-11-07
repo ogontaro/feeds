@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-07</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-07</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.317–v2.1.319、実務に効く5つの変更点</h3>
+<p>無人実行や権限の扱いに関わる変更が中心で、CI やクラウドセッションで Claude Code を回している人ほど設定の見直しが必要になる。MCP タスクのバックグラウンド化、権限プロンプトを出さずに拒否する <code>permissions.denyInsteadOfPrompting</code>、feature flag の取得だけを止める環境変数など、運用の前提が変わる点を「なぜ重要か」から解説している。網羅的なリリースノートを読む前の入口として、まずここで当たりを付けるとよい。</p>
+<p class="links"><a href="https://qiita.com/NaokiIshimura/items/4884c18ed0efc432edc9">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>並列 Claude Code セッションのプロンプトキャッシュは worktree をまたがない</h3>
+<p>worktree を分けてエージェントを並列に走らせても、プロンプトキャッシュは「1 つのマシンとディレクトリ」単位でしか共有されない、という公式ドキュメントの一文を出発点にした検証。並列数を増やすほどコストと待ち時間が想定より膨らむため、サブエージェント設計やセッション分割を決める際の判断材料になる。並列実行を「とりあえず増やす」前に読んでおきたい。</p>
+<p class="links"><a href="https://dev.to/gabrielanhaia/do-parallel-claude-code-sessions-share-a-prompt-cache-not-across-worktrees-410c">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fgabrielanhaia%2Fdo-parallel-claude-code-sessions-share-a-prompt-cache-not-across-worktrees-410c">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Anthropic が語るエージェント記憶の「dreaming」</h3>
+<p>長期記憶を「貯める」だけでなく、学んだ内容を整理し、誤りを直し、次回に取り出しやすくする処理をどう設計するか、というエージェント実装の課題に正面から触れている。Anthropic 自身が記憶機能をどの構成要素に分けて考えているかは、自前のエージェントに記憶を持たせる際の設計の叩き台になる。</p>
+<ul>
+<li><a href="https://x.com/AnthropicAI/status/2118814753154064501">@AnthropicAI のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FAnthropicAI%2Fstatus%2F2118814753154064501">Google 翻訳で読む</a></li>
+<li><a href="https://www.anthropic.com/research/components-of-agent-memory">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fresearch%2Fcomponents-of-agent-memory">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Claude Task Master: 計画からマージまでを回す CLI</h3>
+<p>ゴールを与えると計画を立て、実装し、PR を開き、CI 失敗に対応して通ったらマージするところまでを回す CLI で、状態を永続化するため中断しても作業が消えない。計画・作業・PR ライフサイクル・検証の 4 段階に分かれている点は、どこまでをエージェントに任せ、どこで人間が承認するかの線引きを考える材料になる。既存の Claude Code 運用に足す形で試せるのも大きい。</p>
+<p class="links"><a href="https://dev.to/developerzai/automating-end-to-end-development-with-claude-task-master-37jg">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdeveloperzai%2Fautomating-end-to-end-development-with-claude-task-master-37jg">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>gVisor などエージェント基盤 OSS が CNCF へ</h3>
+<p>Anthropic や OpenAI も使うコード実行サンドボックス gVisor が、エージェント基盤の OSS 群とともに CNCF へ寄贈される。エージェントの隔離方式が単一ベンダー主導ではなくコミュニティ主導の標準へ寄っていく流れは、自前の Kubernetes クラスタでエージェントを走らせる際のサンドボックス選定に効いてくる。Kubernetes の次の定番を作れるか、という視点でも読める。</p>
+<p class="links"><a href="https://thenewstack.io/gvisor-cncf-kubernetes-open-source/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgvisor-cncf-kubernetes-open-source%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

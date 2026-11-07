@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-07</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-07</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Moonshot AI の Kimi K3.1 Pro（Highspeed）が Amazon Bedrock で利用可能に</h3>
+<p>Moonshot AI のオープンウェイトモデル Kimi K3.1 Pro（Highspeed）が Bedrock のモデル群に加わった。コーディングや文書処理のようなエージェント用途を想定した、ネイティブにマルチモーダルなモデルで、出力トークン毎秒（OTPS）を高めた高速版とされている。Bedrock 側のセキュリティとガバナンスをそのまま適用したまま、オープンウェイトの選択肢を増やせる点が実務上の意味を持つ。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fmoonshot-ai-kimi-k3-1-pro-on-amazon-bedrock">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code を Bedrock AgentCore 上のリモートセッションで動かす構成</h3>
+<p>Claude Code をリモートエージェントとして Amazon Bedrock AgentCore 上で動かす方法。コーディングのタスクごとに自分の AWS アカウント内で独立したセッションを立て、モデル呼び出しはすべて Bedrock 経由にし、結果はレビューしてマージする GitHub の pull request として返す。エージェントに何をどこまで触らせるかを、サンドボックスと権限境界としてどう組むかの具体的な型になっている。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fextend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker Inference が NVIDIA MIG に対応、1 枚の GPU を区画分割して使えるように</h3>
+<p>SageMaker Inference が NVIDIA Multi-Instance GPU（MIG）に対応し、1 枚の GPU をハードウェア分離された区画に分けて、区画ごとに別のモデルを載せたり、新しいアクセラレータの一部だけを切り出したりできるようになった。API のオプションフィールド 2 つでモデルを区画に割り当てる手順と、旧世代 GPU 1 枚と比較した測定結果が示されている。推論エンドポイントの単価とモデルの詰め込み方を決める際に直接効いてくる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fsagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Okta Cross App Access と Bedrock AgentCore でエージェントのアクセスを統制する（Part 2）</h3>
+<p>ユーザーの代わりに動くエージェントについて「どのエージェントが誰のために動けるか」を統制する 2 回目。Bedrock AgentCore Gateway を単一の入口にして Okta の grant を引き換え、Cedar ポリシーで各ツールをエージェントに紐づけ、2 つ目のエージェントは EKS 上で動かし、許可と拒否の判断を AgentCore Observability から CloudWatch で Okta のログと並べて追跡する。エージェントを基盤の利用者として扱うとき、認可の判断をどこに置くかを考える材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fgovern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EKS のサービスリンクロールに ResourceOptimizer 系のマネージドポリシーが追加</h3>
+<p>EKS のサービスリンクロールが、新たに追加された AmazonEKSResourceOptimizerClusterPolicy と AmazonEKSResourceOptimizerPolicy を、クラスタのアクセスエントリに対して付与・剥奪できるようになった。ResourceOptimizer という名前のマネージドポリシーが先にドキュメントへ現れた形で、EKS 側のリソース最適化機能が入ってくる前提の動きと見られる。アクセスエントリを IaC で管理しているなら、新しいポリシーを既存の権限設計にどう位置づけるかを先に確認しておきたい。</p>
+<p class="links"><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

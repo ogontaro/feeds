@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 06 Nov 2026 02:27:54 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 02:00:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-07]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-07.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-07.html</guid>
+            <pubDate>Sat, 07 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Moonshot AI の Kimi K3.1 Pro（Highspeed）が Amazon Bedrock で利用可能に</h3>
+<p>Moonshot AI のオープンウェイトモデル Kimi K3.1 Pro（Highspeed）が Bedrock のモデル群に加わった。コーディングや文書処理のようなエージェント用途を想定した、ネイティブにマルチモーダルなモデルで、出力トークン毎秒（OTPS）を高めた高速版とされている。Bedrock 側のセキュリティとガバナンスをそのまま適用したまま、オープンウェイトの選択肢を増やせる点が実務上の意味を持つ。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fmoonshot-ai-kimi-k3-1-pro-on-amazon-bedrock">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code を Bedrock AgentCore 上のリモートセッションで動かす構成</h3>
+<p>Claude Code をリモートエージェントとして Amazon Bedrock AgentCore 上で動かす方法。コーディングのタスクごとに自分の AWS アカウント内で独立したセッションを立て、モデル呼び出しはすべて Bedrock 経由にし、結果はレビューしてマージする GitHub の pull request として返す。エージェントに何をどこまで触らせるかを、サンドボックスと権限境界としてどう組むかの具体的な型になっている。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fextend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker Inference が NVIDIA MIG に対応、1 枚の GPU を区画分割して使えるように</h3>
+<p>SageMaker Inference が NVIDIA Multi-Instance GPU（MIG）に対応し、1 枚の GPU をハードウェア分離された区画に分けて、区画ごとに別のモデルを載せたり、新しいアクセラレータの一部だけを切り出したりできるようになった。API のオプションフィールド 2 つでモデルを区画に割り当てる手順と、旧世代 GPU 1 枚と比較した測定結果が示されている。推論エンドポイントの単価とモデルの詰め込み方を決める際に直接効いてくる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fsagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Okta Cross App Access と Bedrock AgentCore でエージェントのアクセスを統制する（Part 2）</h3>
+<p>ユーザーの代わりに動くエージェントについて「どのエージェントが誰のために動けるか」を統制する 2 回目。Bedrock AgentCore Gateway を単一の入口にして Okta の grant を引き換え、Cedar ポリシーで各ツールをエージェントに紐づけ、2 つ目のエージェントは EKS 上で動かし、許可と拒否の判断を AgentCore Observability から CloudWatch で Okta のログと並べて追跡する。エージェントを基盤の利用者として扱うとき、認可の判断をどこに置くかを考える材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fgovern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>EKS のサービスリンクロールに ResourceOptimizer 系のマネージドポリシーが追加</h3>
+<p>EKS のサービスリンクロールが、新たに追加された AmazonEKSResourceOptimizerClusterPolicy と AmazonEKSResourceOptimizerPolicy を、クラスタのアクセスエントリに対して付与・剥奪できるようになった。ResourceOptimizer という名前のマネージドポリシーが先にドキュメントへ現れた形で、EKS 側のリソース最適化機能が入ってくる前提の動きと見られる。アクセスエントリを IaC で管理しているなら、新しいポリシーを既存の権限設計にどう位置づけるかを先に確認しておきたい。</p>
+<p class="links"><a href="https://docs.aws.amazon.com/eks/latest/userguide/security-iam-awsmanpol.html">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdocs.aws.amazon.com%2Feks%2Flatest%2Fuserguide%2Fsecurity-iam-awsmanpol.html">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-06]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-06.html</link>
@@ -807,39 +840,6 @@
             <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-04.html</guid>
             <pubDate>Sun, 04 Oct 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-03]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-03.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-03.html</guid>
-            <pubDate>Sat, 03 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Amazon EKS / Amazon EKS Distro が Kubernetes 1.37 に対応</h3>
-<p>EKS のアップグレード計画を立てる起点になる発表。コンソール、eksctl、IaC ツールのいずれからでも 1.37 の新規クラスタ作成と既存クラスタのアップグレードができる。1.37 で入った変更点のうち、どの機能が昇格しどの API が非推奨になったかを確認してから、アドオンとノードの追従を段取りしたい。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-eks-distro-kubernetes-version-1-37">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AWS MCP Server が6リージョンに拡大、東京でも利用可能に</h3>
-<p>Agent Toolkit for AWS のマネージド MCP サーバーが、東京・シンガポール・シドニー・アイルランド・ロンドン・オレゴンの6リージョンで使えるようになった。エージェントが AWS API を単一のインターフェースから発見・呼び出せるため、サービスごとの連携を自前で作らずに済む。コーディングエージェントに AWS を操作させる構成を組むとき、これまでネックだったデータの所在とレイテンシの制約が小さくなる。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-mcp-server-six-additional-regions">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-mcp-server-six-additional-regions">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Desktop に Amazon Bedrock AgentCore 経由で安全な Web 検索を追加する</h3>
-<p>Bedrock 上の Claude Desktop はモデルの知識カットオフより先を知らない。そこに AgentCore Gateway から Web Search をつなぐ構成を、IAM Identity Center と Cognito による JWT の受信認証まで含めて解説している。MCP ゲートウェイに社外のツールをぶら下げるときの認証と権限の設計例として、そのまま流用できる粒度で書かれている。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fadd-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>SageMaker AI でマルチターン強化学習により検索エージェントをファインチューニングする</h3>
-<p>小さいモデルに自分のツールと環境を覚えさせ、フロンティアモデル並みの信頼性を低レイテンシ・低コストで得る狙いの記事。マルチターン強化学習で検索エージェントを鍛え、検索品質と信頼性がどれだけ伸びたかを実測値で示している。エージェントの推論を汎用の大型モデルに任せ続けるか、専用に小型化するかを判断する材料になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ffine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AWS DevOps Agent と OpenSearch をつないだ閉ループのインシデント対応</h3>
-<p>DevOps Agent を MCP 経由で OpenSearch の可観測性データに接続し、深夜に飛んだアラートから自律的に根本原因の調査を回す構成。MCP サーバーの置き場所として、ECS での自己管理・AgentCore・OpenSearch 3.3 以降の内蔵という3つの選択肢を比較しており、アラートのルーティングと FGAC のロール対応まで踏み込んでいる。AI に一次調査を任せる範囲と、そのために可観測性データをどう見せるかを決める際の実務的な指針になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/devops/closed-loop-incident-response-connect-aws-devops-agent-to-opensearch/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fdevops%2Fclosed-loop-incident-response-connect-aws-devops-agent-to-opensearch%2F">Google 翻訳で全文を読む</a></p>
-</section>
 ]]></content:encoded>
         </item>
     </channel>

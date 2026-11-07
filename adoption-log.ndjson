@@ -551,3 +551,17 @@
 {"date":"2026-11-06","domain":"aws","sourceName":"AWS What's New"}
 {"date":"2026-11-06","domain":"gadget","sourceName":"Google News — Meta グラス・XR"}
 {"date":"2026-11-06","domain":"gaming","sourceName":"GamingOnLinux"}
+{"date":"2026-11-07","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-11-07","domain":"claude","sourceName":"DEV Community — Claude"}
+{"date":"2026-11-07","domain":"claude","sourceName":"The New Stack — AI"}
+{"date":"2026-11-07","domain":"kubernetes","sourceName":"Platform Engineering Blog"}
+{"date":"2026-11-07","domain":"kubernetes","sourceName":"OpenTelemetry Blog"}
+{"date":"2026-11-07","domain":"kubernetes","sourceName":"The New Stack — Kubernetes"}
+{"date":"2026-11-07","domain":"aws","sourceName":"AWS What's New"}
+{"date":"2026-11-07","domain":"aws","sourceName":"Amazon EKS Document History"}
+{"date":"2026-11-07","domain":"aws","sourceName":"AWS Machine Learning Blog"}
+{"date":"2026-11-07","domain":"aws","sourceName":"AWS AI Blog"}
+{"date":"2026-11-07","domain":"gadget","sourceName":"Google News — Meta グラス・XR"}
+{"date":"2026-11-07","domain":"gaming","sourceName":"Steam Frame news"}
+{"date":"2026-11-07","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-11-07","domain":"gaming","sourceName":"GamingOnLinux"}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-11-07</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-11-07</h1>
+<article class="report"><h2>今日の 3 本</h2>
+<section class="item">
+<h3>Kubernetes の再来か——Google が gVisor など AI エージェント基盤の3プロジェクトを CNCF へ寄贈</h3>
+<p>Google が AI エージェント向けの基盤プロジェクト3本を CNCF に寄贈する。gVisor は Anthropic や OpenAI がコード実行のサンドボックスとして使っているもので、隔離の実装が単独ベンダーの管理下から OSS のガバナンスへ移る意味は小さくない。エージェントに任意のコードを走らせる前提で基盤を設計するなら、権限境界をどこで切るかの選択肢として押さえておきたい。</p>
+<p class="links"><a href="https://thenewstack.io/gvisor-cncf-kubernetes-open-source/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgvisor-cncf-kubernetes-open-source%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SHA ピン留めだけでは来歴は保証されない——GitHub Actions のサプライチェーンをどう守るか</h3>
+<p>アクションの参照を SHA で固定しても、そのコミットが本当に意図した著者のものかまでは担保できない。偽装コミットを使って CI/CD のワークフローに侵入する攻撃経路と、プラットフォームチームが取るべき手順を扱っている。何を固定し、何を来歴として検証するかの線引きを決めるときの材料になる。</p>
+<p class="links"><a href="https://platformengineering.org/blog/beyond-sha-pinning-why-immutability-isnt-provenance-in-github-actions">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fbeyond-sha-pinning-why-immutability-isnt-provenance-in-github-actions">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>必要なリソース検出器だけを載せた OpenTelemetry Collector を自作する</h3>
+<p>配布版の Collector は幅広い用途に合わせて作られているため、個々の環境では使わないコンポーネントまでバイナリに含まれる。自前のディストリビューションを組んで resource detector を必要なものだけに絞る手順を、実際に運用している立場から解説している。クラスタへ配るエージェントの依存とサイズを減らしたいとき、イメージをそのまま使う以外の選択肢になる。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/collector-with-less-dependencies/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fcollector-with-less-dependencies%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

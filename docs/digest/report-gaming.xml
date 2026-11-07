@@ -4,11 +4,34 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 06 Nov 2026 02:35:49 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 02:13:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-07]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-07.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-07.html</guid>
+            <pubDate>Sat, 07 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>Steam Frame 向け SteamOS 0.5.8 ベータ、PC ストリーミングで Room View に対応</h3>
+<p>Steam Frame のベータチャンネル向けに SteamOS 0.5.8 が配信された。PC ストリーミングで Room View が使えるようになり、これまでカメラパススルーを有効にすると隠れていたリモートのデスクトップやゲームシアターを、パススルーしたまま重ねて見られるようになったという。OpenXR の複合現実（MR）に対応した PC VR タイトルにも変更が及んでおり、ヘッドセットを付けたまま周囲と PC の画面を同時に扱う使い方を試している人は、ベータチャンネルに切り替えて挙動を確認する価値がある。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/694277107352601013">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F694277107352601013">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sunshine の新リリース、Web UI を SPA 化しペアリングの証明書重複を修正</h3>
+<p>自宅ゲームストリーミングのホスト側として使われる Sunshine が新しいリリースを出した。Web UI がシングルページアプリケーションになり、テストとカバレッジも追加されたほか、ペアリング時に重複したクライアント証明書を置き換える修正、Flatpak でコマンドに接頭辞を付けなくて済むようになる変更が入っている。クライアント側の Moonlight や Apollo と組み合わせて常用しているなら、更新後にペアリングと Web UI の操作を一度確認しておきたい。</p>
+<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1106.201906">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1106.201906">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Epic Games ランチャーの Linux 対応、対象ディストロの方針が明らかに</h3>
+<p>Linux 対応の Epic Games Launcher プレビューが出たことを受け、Epic Games がどのディストリビューションを対象にする予定かを説明した。SteamOS を含む Linux 環境で Epic のタイトルを動かせるかは、自宅のゲーム環境をどう組むかを決める材料になる。まだプレビュー段階なので、実際に導入する前に自分のディストロが対象に入っているかを記事で確認しておきたい。</p>
+<p class="links"><a href="https://www.gamingonlinux.com/2026/11/epic-games-comments-on-planned-linux-distribution-support/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.gamingonlinux.com%2F2026%2F11%2Fepic-games-comments-on-planned-linux-distribution-support%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-06]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-06.html</link>
