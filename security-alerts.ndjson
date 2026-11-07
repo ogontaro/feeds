@@ -552,3 +552,12 @@
 {"date":"2026-11-06T19:30:16.848Z","id":"CVE-2026-123488","kev":false,"reported":false}
 {"date":"2026-11-06T19:30:16.848Z","id":"CVE-2026-114630","kev":false,"reported":false}
 {"date":"2026-11-06T19:30:16.848Z","id":"CVE-2026-123279","kev":false,"reported":false}
+{"date":"2026-11-07T00:59:01.518Z","id":"CVE-2026-19868","kev":true,"reported":true,"title":"SonicWall SonicOS SSLVPN の認証バイパスで SAML 認証と MFA を回避される","urgency":"watch"}
+{"date":"2026-11-07T00:59:01.518Z","id":"CVE-2026-109469","kev":false,"reported":true,"title":"Entra Device Registration の認可バイパスで権限を昇格される","urgency":"watch"}
+{"date":"2026-11-07T00:59:01.518Z","id":"GHSA-47w9-6r3f-938g","kev":false,"reported":false}
+{"date":"2026-11-07T00:59:01.518Z","id":"GHSA-pjff-c2wc-f6jm","kev":false,"reported":false}
+{"date":"2026-11-07T00:59:01.518Z","id":"GHSA-fmc8-p6q7-75cc","kev":false,"reported":false}
+{"date":"2026-11-07T00:59:01.518Z","id":"GHSA-vghh-5rfx-xhq8","kev":false,"reported":false}
+{"date":"2026-11-07T00:59:01.518Z","id":"CVE-2026-59104","kev":false,"reported":false}
+{"date":"2026-11-07T00:59:01.518Z","id":"CVE-2026-119923","kev":false,"reported":false}
+{"date":"2026-11-07T00:59:01.518Z","id":"CVE-2026-124040","kev":false,"reported":false}

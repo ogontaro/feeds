@@ -4,11 +4,39 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 06 Nov 2026 19:30:16 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 00:59:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] SonicWall SonicOS SSLVPN の認証バイパスで SAML 認証と MFA を回避される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-19868.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-19868.html#2026-11-07T00:59:01.518Z</guid>
+            <pubDate>Sat, 07 Nov 2026 00:59:01 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>SonicWall SonicOS SSLVPN の認証バイパスで SAML 認証と MFA を回避される</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-06 追加され、実際の悪用が確認されている。自宅インフラの構成に SonicWall は含まれず該当しないが、KEV 新規追加のため「今週中」として通知する。CVSS・EPSS は入力に無い。</p>
+<p>SonicWall SonicOS の SSLVPN に、単一要素認証の使用に関する脆弱性がある。別の認証方法の有効な資格情報を持つ利用者が SAML 認証制御をバイパスでき、SAML で強制している多要素認証(MFA)も回避される可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーの指示に従って緩和策を適用する。影響バージョンか確認し、修正版はベンダーのアドバイザリで確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19868">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Entra Device Registration の認可バイパスで権限を昇格される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109469.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109469.html#2026-11-07T00:59:01.518Z</guid>
+            <pubDate>Sat, 07 Nov 2026 00:59:01 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Entra Device Registration の認可バイパスで権限を昇格される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 10.0 だが CISA KEV には未追加で、EPSS も入力に無い。自宅インフラの構成に該当製品は無いが、クラウドとして広く使われる製品の Critical で悪用の兆候がまだ無いため「監視」とする。</p>
+<p>Entra のデバイス登録に、利用者が制御できるキーを介した認可バイパスがある。未認証の攻撃者がネットワーク経由で権限を昇格できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109469">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] ingress-nginx の mirror-target で自身がサービス拒否（DoS）に陥る]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116472.html</link>
