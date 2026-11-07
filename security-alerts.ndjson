@@ -615,3 +615,10 @@
 {"date":"2026-11-07T10:28:24.367Z","id":"CVE-2026-123958","kev":false,"reported":false}
 {"date":"2026-11-07T10:28:24.367Z","id":"CVE-2026-123960","kev":false,"reported":false}
 {"date":"2026-11-07T10:28:24.367Z","id":"CVE-2026-123959","kev":false,"reported":false}
+{"date":"2026-11-07T17:47:17.754Z","id":"CVE-2026-104014","kev":false,"reported":false}
+{"date":"2026-11-07T17:47:17.754Z","id":"CVE-2026-119075","kev":false,"reported":false}
+{"date":"2026-11-07T17:47:17.754Z","id":"CVE-2026-123966","kev":false,"reported":false}
+{"date":"2026-11-07T17:47:17.754Z","id":"CVE-2026-118066","kev":false,"reported":false}
+{"date":"2026-11-07T17:47:17.754Z","id":"CVE-2026-122041","kev":false,"reported":false}
+{"date":"2026-11-07T17:47:17.754Z","id":"CVE-2026-120984","kev":false,"reported":true,"title":"Keycloak のクライアント管理で認可バイパス、サーバー上で任意コード実行のおそれ","urgency":"week"}
+{"date":"2026-11-07T17:47:17.754Z","id":"CVE-2026-123961","kev":false,"reported":false}
