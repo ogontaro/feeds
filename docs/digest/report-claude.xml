@@ -4,11 +4,46 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 07 Nov 2026 01:45:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Nov 2026 01:41:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-08]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-08.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-08.html</guid>
+            <pubDate>Sun, 08 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code の「Don&#39;t Ask Again」が公開リポジトリに秘密情報を残す — 1,122 ファイルで確認</h3>
+<p>Apiiro の調査は、「Don&#39;t Ask Again」で許可した内容が <code>.claude/settings</code> 系のファイルに残り、それが公開 GitHub にコミットされることでパスワードなどの資格情報が露出する経路を報告している。別の検証記事が Apiiro と同じスキャナ（Gitleaks 8.30.0 / TruffleHog 3.91.0）で 12 個の偽シークレットを試したところ、プロバイダ形式を持たない裸のパスワード 4 個はどちらも検出できず、スキャナ任せでは防げないことが分かる。秘密情報を外部管理に寄せるのと同じ発想で、エージェントの設定ファイルを秘密の置き場にしない線引きと、コミット前チェックの見直しに使える。</p>
+<p><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fapiiro.com%2Fblog%2Fcoding-agents-leaking-secrets-github-dont-ask-again">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://dev.to/frankchu/4-secrets-in-12-beat-both-scanners-i-planted-them-998">検証記事を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Ffrankchu%2F4-secrets-in-12-beat-both-scanners-i-planted-them-998">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>「指示どおりにやった」と言う Claude が古い仕様に従っていた — メモリとルールの棚卸し</h3>
+<p>Claude Code を長く使うと「昔ほど意図を汲まない」と感じることがあるが、著者は Claude が自分のメモリやルールに保存した古い仕様に従っていた事例を、9 月からの観察として書いている。指示ファイルは書いた時点では正しくても、プロダクトから外した手順は残り続けるため、追記だけでなく削除まで含めた定期点検が必要だと分かる。CLAUDE.md やメモリを育てている人ほど、指示の鮮度をどう保つかを考えさせられる。</p>
+<p class="links"><a href="https://dev.to/murooka_az_dev/claude-said-done-as-instructed-but-wasnt-following-me-it-was-following-old-specs-it-had-saved-2jc4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fmurooka_az_dev%2Fclaude-said-done-as-instructed-but-wasnt-following-me-it-was-following-old-specs-it-had-saved-2jc4">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.318〜v2.1.319 の主要アップデート - denyInsteadOfPrompting 設定と auto mode の挙動変更</h3>
+<p>承認待ちで止めずに拒否してターンを続行する <code>permissions.denyInsteadOfPrompting</code> は、subagent や teammate を回す自動化と相性が良い。一方、telemetry や feature flags がオフのときの auto mode はサーバー側の検証に寄り、検証できない呼び出しは確認または拒否されて組み込み classifier へフォールバックしなくなったため、ゲートウェイ経由で使っている場合は環境変数の確認が要る。MCP タスクのバックグラウンド実行や Bash 権限バイパスの修正も含め、実機で確認した結果がまとまっている。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261108-cc-updates-v2-1-319/">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>複数の Backlog スペースを 1 つの CLI / MCP サーバーで扱う「backlog-bridge」</h3>
+<p>社内と顧客先の Backlog を行き来する受託開発のワークフローを、1 つの CLI と MCP サーバーにまとめたツール。顧客側の課題を読んで社内に起票し、進捗を顧客側へ反映してコメントに返す一連の作業をエージェントに渡せるようにしており、Claude Code / Codex / Cursor のどれからでも同じ MCP 接続を使い回せる点が実務的。複数テナントをまたぐ MCP サーバーを自作するときの、認証とスコープの切り方の参考にもなる。</p>
+<p class="links"><a href="https://qiita.com/mickey-ichi/items/e9e99b6cc4698e571aa5">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェントに仕事を振るカンバンツールを作った — 並行実行の衝突と承認待ちを見える化</h3>
+<p>複数のタスクを同時に頼むと同じ作業ツリーで衝突し、ターミナルのタブが増えるとどれが承認待ちか分からなくなる、という Claude Code / Codex CLI の運用課題をカンバンで整理する試み。エージェントごとの作業の受け渡しと状態をボードに載せる設計は、作業ツリーの分離や承認待ちの可視化をどう組むかを考える材料になる。複数エージェントの並行実行を試している人は、自作ツールの設計メモとして読むとよい。</p>
+<p class="links"><a href="https://qiita.com/kzy83/items/7d089cea18084ca1ba49">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-07]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-07.html</link>
@@ -1160,56 +1195,6 @@
 <li><a href="https://x.com/matsuu/status/2106547641194852440">@matsuu のポスト</a></li>
 <li><a href="https://htn.to/DPB1bEPF2J">記事を読む</a></li>
 <li><a href="https://github.com/egma-ai/jev-code-reviewer">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fegma-ai%2Fjev-code-reviewer">Google 翻訳で全文を読む</a></li>
-</ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-10-04]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-04.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-04.html</guid>
-            <pubDate>Sun, 04 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
-<section class="item">
-<h3>Claude Code mods 入門 — TypeScript で挙動と UI を拡張する</h3>
-<p>2026年10月1日に発表された Claude Code の拡張機構「mods」の入門記事。mods は Claude Code の内部で動く JavaScript / TypeScript の関数で、ツール呼び出しの許可・拒否の判断や UI を差し替えられる。プラグインとして配布され <code>/plugin</code> で導入するため、発表から数日で、トークンを節約するプロンプトキャッシュ制御、過去のプロンプト位置にジャンプする prompt-rail、IME なしで日本語入力する claude-vime、値を Claude に見せずに .env を扱う mod など、コミュニティ製 mod が相次いでいる。Claude Code 自体を自分向けに作り替えられる新しい土台として、仕組みを押さえておきたい。</p>
-<p class="links"><a href="https://qiita.com/kai_kou/items/ad16b47644f9ad0b03c7">記事を読む</a></p>
-<ul>
-<li><a href="https://x.com/dani_avila7/status/2106455605925822967">@dani_avila7 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fdani_avila7%2Fstatus%2F2106455605925822967">Google 翻訳で読む</a></li>
-<li><a href="https://x.com/oikon48/status/2106236340778229873">@oikon48 のポスト</a></li>
-<li><a href="https://x.com/gorilla0513/status/2106340793980252544">@gorilla0513 のポスト</a> / <a href="https://github.com/skanehira/claude-vime">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fskanehira%2Fclaude-vime">Google 翻訳で全文を読む</a></li>
-<li><a href="https://x.com/davekiss/status/2106049220520108244">@davekiss のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fdavekiss%2Fstatus%2F2106049220520108244">Google 翻訳で読む</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Anthropic 公式の組み込みプラグイン「You should know」— 作業報告の落とし穴を先に知らせる</h3>
-<p>Claude の作業報告を別のエージェントが横で読み続け、「再試行を足したが二重請求の恐れがある」級の落とし穴だけを通知してくれる、Anthropic 公式の組み込みプラグインとして紹介されている。通知から「了解 / 本体の会話で相談 / 閉じる」の3択でその場で返せ、<code>/plugin enable cc-plugin-you-should-know@builtin</code> で有効化できる。長い作業を任せるほど、読み飛ばしがちな重要行を先に止めてくれる仕組みで、報告を全部読まない前提の安全策として押さえておきたい。</p>
-<ul>
-<li><a href="https://x.com/ClaudeCode_love/status/2106155768936624372">@ClaudeCode_love のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Claude Code 2.1.289 — 権限ルールと mod 承認の穴、シンボリックリンク経由の Read 拒否漏れを修正</h3>
-<p>changelog から実務に効くものを拾う。v2.1.289 では、複合シェルコマンドの入れ子部分に対する deny / ask ルールが、ユーザー導入 mod の承認によって上書きされてしまう問題が修正された。シンボリックリンク経由だと IDE 上のファイルに Read の拒否ルールが適用されない問題も直っている。あわせて v2.1.288 で <code>/code-review</code> の <code>--max-findings</code> が追加され、<code>bash -c</code> 内の危険な <code>rm</code> の確認漏れも修正された（DevelopersIO の解説）。権限境界やサンドボックスを締めているほど、早めに取り込みたい修正。</p>
-<ul>
-<li><a href="https://claude-code-log.com/changelog/v2.1.289#item-991f255b6b56">変更点: 複合シェルコマンドの入れ子と mod 承認（CCログ超訳）</a></li>
-<li><a href="https://claude-code-log.com/changelog/v2.1.289#item-5b23ed4f619d">変更点: シンボリックリンク経由の Read 拒否ルール（CCログ超訳）</a></li>
-<li><a href="https://dev.classmethod.jp/articles/20261003-cc-updates-v2-1-288/">Claude Code v2.1.288 の主要アップデート（DevelopersIO）</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Opus 5.5 を Claude / Claude Code で使いこなすための実践ガイド</h3>
-<p>Opus 5.5 を Claude と Claude Code で最大限に活かすための使い方指南（claude.dev のブログ）。Hacker News で149ポイント・105コメントと反応が集まっており、モデル更新直後に設定やワークフローを見直すときの参照先になる。日々 Opus 5.5 を回している人ほど、無駄な使い方になっていないか確認する価値がある。</p>
-<p class="links"><a href="https://claude.dev/blog/getting-the-most-out-of-opus-5-5/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fgetting-the-most-out-of-opus-5-5%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<h2>新ツール・サブスク（1 本）</h2>
-<section class="item">
-<h3>Google Antigravity に Claude Opus 5.5 / Sonnet 5.5 が追加</h3>
-<p>Google のコーディングエージェント Antigravity で Anthropic の Opus 5.5 と Sonnet 5.5 が選べるようになった。X では、3.8 Flash で使い勝手が上がったこと、月 2,900 円の課金でも各種 100 ドルプラン並みかそれ以上の制限の緩さがある一方、Opus / Sonnet 5.5 はすぐレート制限に達する、という実利用の感触も共有されている。コーディングエージェントのモデル選択とサブスク料金を見比べる材料になる。</p>
-<p class="links"><a href="https://startupfortune.com/google-antigravity-adds-anthropics-claude-opus-55-and-sonnet-55/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstartupfortune.com%2Fgoogle-antigravity-adds-anthropics-claude-opus-55-and-sonnet-55%2F">Google 翻訳で全文を読む</a></p>
-<ul>
-<li><a href="https://x.com/oikon48/status/2106360546023055741">@oikon48 のポスト</a></li>
-<li><a href="https://x.com/oikon48/status/2106370759505646075">@oikon48 のポスト</a></li>
 </ul>
 </section>
 ]]></content:encoded>

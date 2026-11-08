@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 07 Nov 2026 02:13:32 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Nov 2026 02:02:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-08]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-08.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-08.html</guid>
+            <pubDate>Sun, 08 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Steam Frame 向け SteamOS 0.5.8 Beta と SteamVR Beta 2.19.2 が公開</h3>
+<p>Steam Frame 向けの SteamOS が 0.5.8 Beta に上がり、あわせて SteamVR Beta 2.19.2 も配信された。今回は大きな新機能ではなく、細かな粗削りをならす多数の改善が中心とされており、Steam Frame の実機環境が正式版に向けてどこまで整ってきたかを版ごとに追える一次情報になる。Steam Frame の購入を検討しているなら、仕様の確定とは別に、この種のベータの積み上がり方を見ておくと発売時の完成度を判断しやすい。</p>
+<p class="links"><a href="https://www.gamingonlinux.com/2026/11/steamos-0-5-8-beta-for-steam-frame-and-steamvr-beta-2-19-2-released/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.gamingonlinux.com%2F2026%2F11%2Fsteamos-0-5-8-beta-for-steam-frame-and-steamvr-beta-2-19-2-released%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-07]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-07.html</link>

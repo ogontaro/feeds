@@ -4,11 +4,29 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 07 Nov 2026 01:55:04 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Nov 2026 01:47:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-08]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-08.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-08.html</guid>
+            <pubDate>Sun, 08 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Kubernetes 週次開発まとめ（11/1 週）— SIG 年次レポート、DRA、CRD API 型の整備</h3>
+<p>Kubernetes の開発動向を毎週追う LWKd の 11/1 週版で、SIG ContribEx と WG Device Management が年次レポートを公開し、後者はデバイスプラグインのアーキテクチャと DRA 関連の作業の進捗をまとめている。SIG API Machinery は server-crd サブプロジェクトに apiextensions-api を加え、CRD の API 型を保守対象に含めた。DRA は GPU などのデバイス割り当てを Pod のスケジューリングに統合する仕組みで、CRD の型は Crossplane や Argo のようなコントローラ側の実装に直結するため、自作コントローラやデバイスプラグインを持つ人ほど差分を追っておきたい。</p>
+<p class="links"><a href="https://lwkd.info/2026/20261107">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Flwkd.info%2F2026%2F20261107">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>ソフトウェア工場では、エンジニアはプロセスエンジニアになる</h3>
+<p>「コードを書ける人」が希少資源だった時代に組まれた開発プロセスが、エージェントがコードを書く前提へ移るとどう変わるかを論じた記事。実装の速度が制約でなくなればボトルネックは工程の設計と検証に移り、エンジニアの役割はプロセスエンジニアに近づくという主張で、Platform Engineering 2.0（エージェントも基盤の利用者に含める）と同じ問題意識にある。CI・レビュー・権限のどこをエージェント向けに作り直すかを考える材料になる。</p>
+<p class="links"><a href="https://thenewstack.io/engineers-become-process-engineers/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fengineers-become-process-engineers%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-07]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-07.html</link>
@@ -630,24 +648,6 @@
 <h3>Dell の Container Storage Modules (CSM) に重大な脆弱性、Kubernetes 環境が遠隔からの管理者権限奪取の危険に</h3>
 <p>Kubernetes のストレージを担う Dell の Container Storage Modules (CSM) に、遠隔から管理者権限を奪われうる重大な脆弱性。CVE の分析とパッチ適用の指針が 1 本にまとまっている。ストレージ経路の脆弱性は Pod 単体ではなくノードやクラスタ全体の侵害に直結するため、CSM を導入している構成では該当バージョンの確認とパッチ計画への反映を優先したい。</p>
 <p class="links"><a href="https://www.rescana.com/post/critical-dell-container-storage-modules-csm-vulnerabilities-expose-kubernetes-environments-to-remote-admin-compromise-cv">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.rescana.com%2Fpost%2Fcritical-dell-container-storage-modules-csm-vulnerabilities-expose-kubernetes-environments-to-remote-admin-compromise-cv">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-04]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-04.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-04.html</guid>
-            <pubDate>Sun, 04 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>Istio 1.31、Agentgateway の waypoint 対応とリリース成果物の Google Cloud からの移転</h3>
-<p>CNCF のサービスメッシュ Istio の新リリース。1.31 では agentgateway の waypoint 対応が入り、アンビエント構成で L7 処理を担う waypoint の実装選択が広がるため、メッシュのアーキテクチャを考えるうえで見ておきたい。あわせてリリース成果物の配布先を Google Cloud から移しており、取得元やミラー・検証の手順を持つ運用ではサプライチェーン面の確認が必要になる。</p>
-<p class="links"><a href="https://news.lavx.hu/article/istio-1-31-adds-agentgateway-waypoints-and-moves-release-artifacts-off-google-cloud">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fistio-1-31-adds-agentgateway-waypoints-and-moves-release-artifacts-off-google-cloud">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Dell のコンテナストレージに重大な脆弱性、未認証で管理者権限を奪取される恐れ</h3>
-<p>Dell のコンテナストレージ製品に、未認証の攻撃者が管理者権限を得られる重大な脆弱性が見つかった。Kubernetes の永続ボリューム層は侵害されるとクラスタ全体に波及するため、Dell のストレージを CSI 経由で使っている環境は影響範囲と修正版を早めに確認したい。ストレージ周りの CVE は優先度を上げて追う価値がある。</p>
-<p class="links"><a href="https://cybersecuritynews.com/critical-dell-container-storage-flaws/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fcritical-dell-container-storage-flaws%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
