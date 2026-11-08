@@ -162,6 +162,22 @@ feeds:
     domain: claude
     kind: content
     addedAt: "2026-10-11"
+  # Anthropic 公式の Agent Skills リポジトリ。README は新しいスキルの追加 PR で更新される
+  # （ticker bot のような自動更新はない）ため、path 指定の commits atom で「新しいスキルの追加」
+  # だけを拾う（interests.yaml の「AIエージェントツール」「MCPプラグイン」）。
+  - url: https://github.com/anthropics/skills/commits/main.atom?path=README.md
+    name: Anthropic Skills updates
+    domain: claude
+    kind: content
+    addedAt: "2026-11-08"
+  # コーディングエージェント系の新サービス・料金変更を報じるスタートアップ／プロダクト系媒体。
+  # 既存の The Register / The New Stack では拾えない新規サービスの発表を補う
+  # （interests.yaml の「AI コーディングエージェントのサブスク料金」）。
+  - url: https://techcrunch.com/category/artificial-intelligence/feed/
+    name: TechCrunch — AI
+    domain: claude
+    kind: content
+    addedAt: "2026-11-08"
   # コーディングエージェント系の新サービス・料金変更を報じる開発者コミュニティ。2026-10 の
   # Buildful($10/月)・Qoder Lite($10)・Cursor の料金改定は購読中の公式ブログに出ず、このタグに集まった
   # （interests.yaml の「AI コーディングエージェントのサブスク料金」）。
@@ -331,6 +347,19 @@ feeds:
     domain: aws
     kind: content
     addedAt: "2026-10-11"
+  # SageMaker は interests.yaml の include。DevelopersIO のタグフィードは既存の Bedrock/EKS と
+  # 同じ形式で、日本語の実装記事を補う。
+  - url: https://dev.classmethod.jp/tags/amazon-sagemaker/feed/
+    name: Amazon SageMaker | DevelopersIO
+    domain: aws
+    kind: content
+    addedAt: "2026-11-08"
+  # 公式のセキュリティブログ。EKS・コンテナ・生成AI の権限設計や脆弱性対応の一次情報を補う。
+  - url: https://aws.amazon.com/blogs/security/feed/
+    name: AWS Security Blog
+    domain: aws
+    kind: content
+    addedAt: "2026-11-08"
 
   # ================= devtools / content =================
   # devtools は release のみだったが、開発環境・コンテナ開発の一次情報（Docker Desktop / Engine の
@@ -347,6 +376,13 @@ feeds:
     domain: devtools
     kind: content
     addedAt: "2026-10-11"
+  # IDE・開発ツールベンダーの公式ブログ。開発環境の新機能・バージョンアップの一次情報
+  # （interests.yaml の「開発環境」「バージョンアップ」）。
+  - url: https://blog.jetbrains.com/feed/
+    name: JetBrains Blog
+    domain: devtools
+    kind: content
+    addedAt: "2026-11-08"
 
   # ----- Hacker News（関心キーワード限定。事前フィルタ済み少数ソース）-----
   - url: https://hnrss.org/newest?q=Claude&points=50
@@ -429,6 +465,13 @@ feeds:
     kind: release
 
   # ================= kubernetes / release =================
+  # Kubernetes 本体のリリース。パッチ版の頻度が高く、既存の周辺ツールのリリースでは拾えない
+  # 本体の修正（CVE 修正を含む）を追う。
+  - url: https://github.com/kubernetes/kubernetes/releases.atom
+    name: Kubernetes
+    domain: kubernetes
+    kind: release
+    addedAt: "2026-11-08"
   - url: https://github.com/argoproj/argo-cd/releases.atom
     name: Argo CD
     domain: kubernetes
@@ -743,6 +786,12 @@ feeds:
     domain: gaming
     kind: content
     addedAt: "2026-11-01"
+  # Steam Deck / SteamOS の専門媒体。SteamOS の ARM 版・Steam Frame 関連の報道を補う。
+  - url: https://www.steamdeckhq.com/feed/
+    name: SteamDeckHQ
+    domain: gaming
+    kind: content
+    addedAt: "2026-11-08"
 
   # GeForce NOW のアプリ・サービス更新だけの RSS は無いため、公式ブログのタグ RSS(対応ゲーム追加が大半)から選定側で拾う。
   - url: https://blogs.nvidia.com/blog/tag/geforce-now/feed/
@@ -789,3 +838,10 @@ feeds:
     domain: gaming
     kind: content
     addedAt: "2026-10-04"
+  # SteamOS の互換レイヤー Proton のリリース。SteamOS ARM 版・Windows ゲームの動作改善を追う
+  # （interests.yaml の「SteamOS ARM」「ゲームストリーミング」）。
+  - url: https://github.com/ValveSoftware/Proton/releases.atom
+    name: Proton releases
+    domain: gaming
+    kind: content
+    addedAt: "2026-11-08"
