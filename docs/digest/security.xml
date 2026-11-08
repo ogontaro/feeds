@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Sun, 08 Nov 2026 06:15:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 08 Nov 2026 19:45:18 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Kyverno の認可バイパスで名前空間テナントが cluster-admin に昇格される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124440.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124440.html#2026-11-08T19:45:18.456Z</guid>
+            <pubDate>Sun, 08 Nov 2026 19:45:18 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Kyverno の認可バイパスで名前空間テナントが cluster-admin に昇格される</h3>
+<p><strong>緊急度: 今週中</strong> — CVSS 9.4 で、自宅クラスタで稼働している Kyverno が該当する。CISA KEV には未追加、EPSS も不明のため悪用の確認はまだ無いが、基準の「自宅インフラに該当し CVSS 9.0 以上」に当てはまるため今週中とした。実際に影響バージョンか確認する。</p>
+<p>Kyverno 1.19.1 から 1.19.2 未満の apiCall 名前空間クランプに認可バイパスがある。名前空間テナントが urlPath に不正なパーセントエスケープを付加することで、クロス名前空間およびクラスタスコープの API リクエストを発行できる。攻撃者は admission-controller の ServiceAccount として apiCall を実行する namespaced Policy を作成し、他名前空間のリソース読み取りや mutating webhook の作成を通じて cluster-admin へ昇格できる。</p>
+<p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> 1.19.2 以降へ更新する。更新までは、信頼できないテナントに namespaced Policy の作成権限を与えない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-124440">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Keycloak のクライアント管理で認可バイパス、サーバー上で任意コード実行のおそれ]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120984.html</link>

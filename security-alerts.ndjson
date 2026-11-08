@@ -632,3 +632,20 @@
 {"date":"2026-11-08T06:15:40.203Z","id":"CVE-2026-123549","kev":false,"reported":false}
 {"date":"2026-11-08T06:15:40.203Z","id":"CVE-2026-123550","kev":false,"reported":false}
 {"date":"2026-11-08T06:15:40.203Z","id":"CVE-2026-123614","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-107331","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-15266","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-6715","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-109900","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124440","kev":false,"reported":true,"title":"Kyverno の認可バイパスで名前空間テナントが cluster-admin に昇格される","urgency":"week"}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124469","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124490","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124427","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124445","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124450","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-114464","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-101117","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-17466","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124463","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124438","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124493","kev":false,"reported":false}
+{"date":"2026-11-08T19:45:18.456Z","id":"CVE-2026-124494","kev":false,"reported":false}
