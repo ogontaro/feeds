@@ -658,3 +658,23 @@
 {"date":"2026-11-09T11:46:02.440Z","id":"CVE-2026-124585","kev":false,"reported":false}
 {"date":"2026-11-09T11:46:02.440Z","id":"CVE-2026-113364","kev":false,"reported":false}
 {"date":"2026-11-09T11:46:02.440Z","id":"CVE-2026-113363","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-116779","kev":true,"reported":true,"title":"SignalWire FreeSWITCH のコードインジェクションで設定・認証情報が漏えいする","urgency":"week"}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-123158","kev":true,"reported":true,"title":"OpenSSH の認証バイパスで不正ログインを許す","urgency":"immediate"}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-123218","kev":true,"reported":true,"title":"IBM Aspera Faspex の認可不備で権限昇格を許す","urgency":"week"}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-102895","kev":true,"reported":true,"title":"GPUStack の認証不備で未認証の管理者アクセスを許す","urgency":"week"}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-63470","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-63471","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-63469","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-123751","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-77596","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-115213","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-115770","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-115237","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-115252","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-123270","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-124079","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-119756","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-104989","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-110469","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-110468","kev":false,"reported":false}
+{"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-118462","kev":false,"reported":false}

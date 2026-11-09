@@ -4,11 +4,67 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Mon, 09 Nov 2026 11:46:02 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Nov 2026 22:29:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] SignalWire FreeSWITCH のコードインジェクションで設定・認証情報が漏えいする]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116779.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116779.html#2026-11-09T22:29:44.045Z</guid>
+            <pubDate>Mon, 09 Nov 2026 22:29:44 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>SignalWire FreeSWITCH のコードインジェクションで設定・認証情報が漏えいする</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-09 追加され、実際の悪用が確認されている。EPSS 0.013（percentile 0.706）。自宅インフラでは FreeSWITCH を使用していない。</p>
+<p>SignalWire FreeSWITCH にコードインジェクションの脆弱性があり、設定や認証情報の漏えい、任意の通話制御、コマンド実行につながる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合はベンダーのアドバイザリに従い修正版へ更新する。使用していなければ対応は不要。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116779">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[即時対応] OpenSSH の認証バイパスで不正ログインを許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123158.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123158.html#2026-11-09T22:29:44.045Z</guid>
+            <pubDate>Mon, 09 Nov 2026 22:29:44 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>OpenSSH の認証バイパスで不正ログインを許す</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-11-09 追加され、実際の悪用が確認されている。EPSS 0.010（percentile 0.635）。OpenSSH は自宅インフラで使用している。</p>
+<p>OpenBSD OpenSSH の Linux 版に、ステータスコードや戻り値の扱いが不正になる脆弱性があり、認証を回避される可能性がある。入力の概要では、これ以上の攻撃条件や影響範囲は示されていない。</p>
+<p><strong>自宅インフラへの該当:</strong> OpenSSH<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、早急に更新する。更新までは SSH の公開範囲を絞る。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123158">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] IBM Aspera Faspex の認可不備で権限昇格を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123218.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123218.html#2026-11-09T22:29:44.045Z</guid>
+            <pubDate>Mon, 09 Nov 2026 22:29:44 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>IBM Aspera Faspex の認可不備で権限昇格を許す</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-09 追加済み。EPSS 0.004（percentile 0.341）。自宅インフラには該当しない。</p>
+<p>IBM Aspera Faspex に認可の不備があり、認証済みユーザーが特定のメッセージを作成することで認可を回避し、権限昇格につながる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合はベンダーのアドバイザリに従い修正版へ更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123218">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] GPUStack の認証不備で未認証の管理者アクセスを許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-102895.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-102895.html#2026-11-09T22:29:44.045Z</guid>
+            <pubDate>Mon, 09 Nov 2026 22:29:44 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>GPUStack の認証不備で未認証の管理者アクセスを許す</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-09 追加済みで、CVSS 9.8。EPSS 0.003（percentile 0.265）。GPUStack は自宅インフラの構成に無い。</p>
+<p>GPUStack がループバック送信元や X-GPUStack-Real-IP ヘッダーを信頼してしまうため、未認証の攻撃者が管理者権限を得られる。ユーザーやモデルの変更、管理者 API キーの永続作成、ワーカーやクラウドプロバイダーの秘密情報の漏えい、POST /v2/inference-backends/from-yaml 経由のコード実行につながる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合はベンダーのアドバイザリで修正版を確認して更新する。管理 API を外部に公開しない。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-gj9m-f8ph-pmhr">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Kyverno の認可バイパスで名前空間テナントが cluster-admin に昇格される]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124440.html</link>
