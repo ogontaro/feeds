@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-09</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-09</h1>
+<article class="report"><h2>今日の 2 本</h2>
+<section class="item">
+<h3>Bedrock Managed Knowledge Bases でメタデータ項目を検索対象にする</h3>
+<p>RAG の検索品質を、ベクトル検索の調整ではなくメタデータ設計でコントロールできるようになったという話です。既存のメタデータフィルタリングとの違いが整理されているので、ナレッジベースを運用しているなら、どの項目を検索対象に上げるべきかを判断する材料になります。マネージドでここまでできると、外部のベクトルストアを自分で組む前提が変わってきます。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-managed-kb-searchable-metadata/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AgentCore Gateway のインターセプターでユーザーごとに回答を制御する</h3>
+<p>同じ MCP サーバーを全員に開放したまま、ログインユーザーによって返す情報だけを変える構成を実際に検証した記事です。インバウンド認証とインターセプターの組み合わせで認可を後段に差し込める点は、エージェントの権限境界をどこで切るかを決めるときの具体的な選択肢になります。MCP サーバーを社内や複数利用者向けに立てる前提なら、先に知っておきたい作りです。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-agentcore-gateway-interceptor-per-user-access-control/">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

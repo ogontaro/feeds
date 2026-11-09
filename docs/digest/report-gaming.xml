@@ -4,11 +4,29 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 08 Nov 2026 02:02:55 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Nov 2026 01:51:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-09]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-09.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-09.html</guid>
+            <pubDate>Mon, 09 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>OpenNOW 1.0.4: Qt Quick の新 UI とネイティブ Rust ストリーミングエンジン</h3>
+<p>GeForce NOW を自前のクライアントで使う OpenNOW の正式リリースです。Qt Quick とネイティブの Rust ストリーミングエンジンに移行し、設定画面の余白確保やホーム行の伸縮、画面を閉じたときに入力処理をキャンセルする修正が入りました。GeForce NOW の接続ストア状態の表示も修正されており、ストリーミング環境のクライアントを乗り換えるか判断する材料になります。</p>
+<p class="links"><a href="https://github.com/OpenCloudGaming/OpenNOW/releases/tag/v1.0.4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FOpenCloudGaming%2FOpenNOW%2Freleases%2Ftag%2Fv1.0.4">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sunshine v2026.1109.513: Web UI の SPA 化とペアリングの証明書修正</h3>
+<p>自宅ゲームストリーミングの配信側である Sunshine の正式リリースです。Web UI がシングルページアプリケーションに作り直され、テストとカバレッジも追加されました。Flatpak でコマンドに接頭辞を付ける必要がなくなった点と、重複したクライアント証明書を置き換えるペアリング修正は、実際に動かしている環境に影響する変更です。</p>
+<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1109.513">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1109.513">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-08]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-08.html</link>
@@ -429,24 +447,6 @@
 <h3>Moonlight PC v6.2.0 が正式リリース</h3>
 <p>自宅ゲームストリーミングのクライアント側を担う Moonlight の新しい正式版（nightly や prerelease ではない）が出た。配布物は Windows（インストーラー / ポータブル x64・ARM64）、macOS、Linux の Snap・Flatpak・AppImage、Raspberry Pi 向け、汎用 ARM 32/64bit Debian、実験的な RISC-V Debian、NVIDIA Jetson と Nintendo Switch（Ubuntu L4T）、Steam Link と幅広い。ホスト側に Sunshine や Apollo を立てて自宅環境を組んでいるなら、クライアントを更新するタイミングとして確認しておきたい。</p>
 <p class="links"><a href="https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmoonlight-stream%2Fmoonlight-qt%2Freleases%2Ftag%2Fv6.2.0">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ゲーム環境 日次レポート 2026-10-05]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-05.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-05.html</guid>
-            <pubDate>Mon, 05 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>Moonlight PC v6.2.0 リリース</h3>
-<p>ゲームストリーミングのクライアント側である Moonlight PC の v6.2.0 が出た。Windows のインストーラ／ポータブル版、macOS、Snap・Flatpak・AppImage、Raspberry Pi、実験的な RISC-V パッケージ、NVIDIA Jetson と Nintendo Switch（Ubuntu L4T）、Steam Link デバイス向けの配布物が並ぶ。クライアントの版が上がるだけで接続の安定や画質の体感が変わることはあるので、受け側を更新するかの判断材料として見ておきたい。</p>
-<p class="links"><a href="https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.2.0">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmoonlight-stream%2Fmoonlight-qt%2Freleases%2Ftag%2Fv6.2.0">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Sunshine v2026.1004.122811 リリース</h3>
-<p>ストリーミングのホスト側である Sunshine の定例リリース。Flatpak でコマンドのプレフィックスが不要になり、Web UI がシングルページアプリケーションに作り替えられ、ペアリングで重複したクライアント証明書を置き換える修正も入っている。自宅で配信元を動かしているなら、更新で何が変わるかを確認しておく価値がある。</p>
-<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1004.122811">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1004.122811">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

@@ -4,11 +4,29 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 08 Nov 2026 01:52:13 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Nov 2026 01:45:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-09]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-09.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-09.html</guid>
+            <pubDate>Mon, 09 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Bedrock Managed Knowledge Bases でメタデータ項目を検索対象にする</h3>
+<p>RAG の検索品質を、ベクトル検索の調整ではなくメタデータ設計でコントロールできるようになったという話です。既存のメタデータフィルタリングとの違いが整理されているので、ナレッジベースを運用しているなら、どの項目を検索対象に上げるべきかを判断する材料になります。マネージドでここまでできると、外部のベクトルストアを自分で組む前提が変わってきます。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-managed-kb-searchable-metadata/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AgentCore Gateway のインターセプターでユーザーごとに回答を制御する</h3>
+<p>同じ MCP サーバーを全員に開放したまま、ログインユーザーによって返す情報だけを変える構成を実際に検証した記事です。インバウンド認証とインターセプターの組み合わせで認可を後段に差し込める点は、エージェントの権限境界をどこで切るかを決めるときの具体的な選択肢になります。MCP サーバーを社内や複数利用者向けに立てる前提なら、先に知っておきたい作りです。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-agentcore-gateway-interceptor-per-user-access-control/">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-08]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-08.html</link>
@@ -832,14 +850,6 @@
 <p>Agent Toolkit for AWS 経由で aws-ai-ml スキルが提供され、Kiro・Claude Code・Codex などのエージェントが SageMaker の推論最適化とベンチマークの知識を持ったうえで、SageMaker Python SDK v3 の実行可能なコードを生成できるようになった。配備構成の比較と推奨をエージェントに任せられるため、推論コストとレイテンシの検討を開発フローの中に組み込みやすい。エージェントに「何を知らせておくか」をスキル単位で足していく流れの一例としても参考になる。</p>
 <p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fnew-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent%2F">Google 翻訳で全文を読む</a></p>
 </section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-05]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-05.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-05.html</guid>
-            <pubDate>Mon, 05 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
 ]]></content:encoded>
         </item>
     </channel>

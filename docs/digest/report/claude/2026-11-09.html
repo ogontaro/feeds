@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-09</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-09</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code 2.1.309〜318 まとめ：claude -p のサイレント成功がなくなり、ultrathink は xhigh に</h3>
+<p><code>claude -p</code> が失敗しても exit 0 を返していた問題の修正が複数入った期間のまとめ。cron や CI で無人実行していると、失敗が成功として扱われる事故に直結するため、更新内容と既存ジョブの前提を突き合わせる価値がある。ultrathink の扱いが xhigh に変わるなど、プロンプト側の指定にも影響する変更点が一覧できる。</p>
+<p class="links"><a href="https://qiita.com/sakutto-panda/items/b46486a625bdc78ea4bb">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code で「32000 output token maximum」が出たときの直し方</h3>
+<p>長い出力の途中で 32000 トークン上限の API エラーに当たったとき、continue での継続、CLAUDE_CODE_MAX_OUTPUT_TOKENS の設定、分割指示の順に復旧手順を示している。作業が止まるたびに調べ直す類の知識なので、一度読んで手順を手元に置いておくと立て直しが速い。</p>
+<p class="links"><a href="https://qiita.com/homhom44/items/9d35b8c4aa0461043200">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>コーディング以外の業務向け SKILL.md の書き方：1 ターンで使える成果物にする 4 つのブロック</h3>
+<p>非コーディングの定型業務でも、SKILL.md の 4 つのブロックを埋めれば 1 ターンで使える成果物まで持っていける、という実践的な分解。セッション制限に引っかかる原因をプロジェクトの大きさではなくやり取りの回数に置いている点が、自分のスキル設計を見直すきっかけになる。実際に試した結果付きなので、テンプレートとしてそのまま検証できる。</p>
+<p class="links"><a href="https://dev.to/joekurt/how-to-write-skillmd-files-in-claude-for-non-coding-work-with-a-real-test-2kb1">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fjoekurt%2Fhow-to-write-skillmd-files-in-claude-for-non-coding-work-with-a-real-test-2kb1">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>スマホから任意のマシンの Claude Code を起動する「Claude RC Launcher」</h3>
+<p><code>claude remote-control</code> は対象マシンのターミナルで正しいフォルダに入ってから起動する必要があり、スマホからだと SSH クライアントで小さなキーボードを叩くしかなかった。その手間を、フォルダを選んで起動・停止できる小さな Web サービスに置き換えた自作ツール。外出先から長い Claude Code タスクを再開したい場面に効く。</p>
+<p class="links"><a href="https://dev.to/kbirgerdev/start-claude-code-on-any-machine-from-your-phone-5aam">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fkbirgerdev%2Fstart-claude-code-on-any-machine-from-your-phone-5aam">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>マルチエージェント設計の 15 パターン：GitHub・Google・Siemens の知見を一覧する</h3>
+<p>GitHub、Google、Siemens が公開したマルチエージェント設計の 15 パターンを図解で整理し、エージェントの暴走を防ぐ 6 つの基本原則もまとめている。サブエージェントを組むときに、役割分割や協調の型をゼロから考えるのではなく、既知のパターンに照らして設計を点検できる。日本語で一覧できるので、設計レビューの共通語彙づくりにも使える。</p>
+<p class="links"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2611/08/news001.html">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

@@ -4,11 +4,24 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 08 Nov 2026 01:47:14 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Nov 2026 01:40:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-09]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-09.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-09.html</guid>
+            <pubDate>Mon, 09 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Lima v2.3、Windows で追加依存なしに起動、Linux では VMnet を採用</h3>
+<p>CNCF プロジェクトの Lima が v2.3 をリリースし、Windows 上では Host Compute System 経由で追加の依存なしに VM が起動するようになりました。Linux での VMnet 利用とメニュー式 TUI も加わり、開発機で Linux VM を扱うための下回りが一段と軽くなっています。Talos のような宣言的な OS を含め、手元のコンテナ開発環境をどう再現するかを考える際に、土台となる層の変化として押さえておきたい一本です。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F08%2Flima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-08]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-08.html</link>
@@ -635,19 +648,6 @@
 <h3>Node Swap で Kubernetes ワークロードをスケールさせる</h3>
 <p>ノードで swap を有効にして Kubernetes を動かす機能が General Availability に到達したことを受けた、公式ブログの解説。メモリは CPU より先にノードの限界になる資源で、起動時に大きなメモリを確保したまま次のプロンプトを待って遊んでいる agentic AI 系ワークロードは、その「常駐しているだけのメモリ」でノードに載る Pod 数を頭打ちにする。swap を安全側の逃げ道として設計に組み込めるようになったことで、ノードのサイジングとメモリ要求の見積もり方をどこまで見直せるかが論点になる。</p>
 <p class="links"><a href="https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F05%2Fscaling-kubernetes-workloads-with-node-swap%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-05]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-05.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-05.html</guid>
-            <pubDate>Mon, 05 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>Dell の Container Storage Modules (CSM) に重大な脆弱性、Kubernetes 環境が遠隔からの管理者権限奪取の危険に</h3>
-<p>Kubernetes のストレージを担う Dell の Container Storage Modules (CSM) に、遠隔から管理者権限を奪われうる重大な脆弱性。CVE の分析とパッチ適用の指針が 1 本にまとまっている。ストレージ経路の脆弱性は Pod 単体ではなくノードやクラスタ全体の侵害に直結するため、CSM を導入している構成では該当バージョンの確認とパッチ計画への反映を優先したい。</p>
-<p class="links"><a href="https://www.rescana.com/post/critical-dell-container-storage-modules-csm-vulnerabilities-expose-kubernetes-environments-to-remote-admin-compromise-cv">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.rescana.com%2Fpost%2Fcritical-dell-container-storage-modules-csm-vulnerabilities-expose-kubernetes-environments-to-remote-admin-compromise-cv">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
