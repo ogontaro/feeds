@@ -4,11 +4,69 @@
         <title>開発ツール リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>開発ツール 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 02 Nov 2026 01:48:24 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Nov 2026 02:10:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[開発ツール リリースレポート 2026-11-09]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-11-09.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/devtools/2026-11-09.html</guid>
+            <pubDate>Mon, 09 Nov 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>mise 2026.11.5</h3>
+<p><strong>破壊的変更</strong>: なし<br><code>mise dot</code> サブコマンドが追加され、ディレクトリ内で追跡対象になっている dotfiles を一覧できるようになった。vfox / mise-util / mise-ui / mise-system など分割クレートも同一バージョンで更新されている。設定ファイルの書き換えは不要で、<code>mise up</code> でそのまま上げられる。宣言化した開発環境で「何が管理下か」を確認する用途に効く。</p>
+<p class="links"><a href="https://github.com/jdx/mise/releases/tag/v2026.11.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjdx%2Fmise%2Freleases%2Ftag%2Fv2026.11.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Devbox 0.0.0-edge.2026-11-05</h3>
+<p><strong>破壊的変更</strong>: なし<br>エッジビルドのみの更新で、公開された変更内容の記載はない。安定版を使うなら見送りでよい。</p>
+<p class="links"><a href="https://github.com/jetify-com/devbox/releases/tag/0.0.0-edge.2026-11-05">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjetify-com%2Fdevbox%2Freleases%2Ftag%2F0.0.0-edge.2026-11-05">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>uv 0.13.7</h3>
+<p><strong>破壊的変更</strong>: なし<br>プレビュー機能として <code>uv workspace metadata</code> に <code>--output-version</code> が加わり、出力するスキーマ版を明示できるようになった。<code>uv audit</code> はエイリアスされた OSV レコードを 1 件の脆弱性として報告する。<code>uv init</code> / <code>uv add</code> が追加する workspace メンバーのパスを glob ではなくリテラルとして扱う修正などバグ修正が中心で、既存プロジェクトの移行作業は不要。</p>
+<p class="links"><a href="https://github.com/astral-sh/uv/releases/tag/0.13.7">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fastral-sh%2Fuv%2Freleases%2Ftag%2F0.13.7">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Neovim v0.13.0-dev-2052+gc868e1ab3d（nightly）</h3>
+<p><strong>破壊的変更</strong>: なし<br>nightly ビルドの更新のみで、内容は changelog / <code>:help news</code> 参照。開発版のため常用せず、タグ付きリリースを待つのが無難。</p>
+<p class="links"><a href="https://github.com/neovim/neovim/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fneovim%2Fneovim%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>fzf 0.75.0</h3>
+<p><strong>破壊的変更</strong>: あり（<code>transform-nth</code> / <code>transform-with-nth</code> の出力が <code>|</code> で分割されなくなり、<code>change-nth</code> 系の空値・不正値の扱いも変わった）<br><code>--info-command</code> と <code>{change,transform,bg-transform}-info-command</code> アクションが追加され、キー操作で info 行の表示を切り替えられるようになった。<code>--listen</code> のアクション解析が O(n²) だった問題（約 1 MB のリクエストで約 30 秒ブロック）も修正され、Windows 向け MSI インストーラと winget 配布が追加された。<code>|</code> 区切りの値を transform-nth で回しているキーバインドは動作確認が必要。</p>
+<p class="links"><a href="https://github.com/junegunn/fzf/releases/tag/v0.75.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjunegunn%2Ffzf%2Freleases%2Ftag%2Fv0.75.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Yazi nightly（2026-11-05）</h3>
+<p><strong>破壊的変更</strong>: なし<br>nightly ビルドの更新のみ（コミット 6882e1a）。変更内容は CHANGELOG の Unreleased を参照。タグ付きリリースではないため、常用環境への投入は任意。</p>
+<p class="links"><a href="https://github.com/sxyazi/yazi/releases/tag/nightly">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsxyazi%2Fyazi%2Freleases%2Ftag%2Fnightly">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>lazygit 0.66.3</h3>
+<p><strong>破壊的変更</strong>: なし<br>linked worktree でサブモジュールを削除すると main worktree 側のサブモジュールが壊れる問題を修正。<code>.gitmodules</code> の名前・パスがリポジトリ外を指すサブモジュールを無視する防御も入った。バグ修正のみで、そのまま更新してよい。</p>
+<p class="links"><a href="https://github.com/jesseduffield/lazygit/releases/tag/v0.66.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjesseduffield%2Flazygit%2Freleases%2Ftag%2Fv0.66.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Docker Engine 29.9.3 / 29.10.0-rc.1（+ v2.0.0-beta.29）</h3>
+<p><strong>破壊的変更</strong>: 29.10.0-rc.1 で API バージョンが 1.57 に更新（jobs 拡張はオプトイン）<br>29.9.3 はセキュリティ修正版で、細工した RSA 鍵の解析による過剰 CPU 使用、zstd 展開時の panic、firewalld が iptables をフラッシュした後の Swarm overlay の暗号化・なりすまし防止漏れ、Swarm リーダー交代直後に worker 証明書から manager 証明書を取得できる脆弱性などを修正する。早めに 29.9.3 へ上げたい。29.10.0-rc.1 では one-shot / cron ワークロードをデーモンが直接扱う実験的 jobs 拡張、<code>/etc/docker/containerd.d/</code> による containerd 設定、AlmaLinux / Oracle Linux / Rocky Linux 向けパッケージが加わった。v2.0.0-beta.29 は内容の記載なし。</p>
+<p class="links"><a href="https://github.com/moby/moby/releases/tag/docker-v29.9.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmoby%2Fmoby%2Freleases%2Ftag%2Fdocker-v29.9.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Biome 2.6.5 / 2.6.6</h3>
+<p><strong>破壊的変更</strong>: なし（追加ルールはいずれも nursery で既定オフ）<br>nursery ルールが大量に追加された。<code>noMissingThrow</code>、<code>noObjectLiteralComparison</code>、<code>noChainedComparison</code>、<code>noAwaitInPromiseMethods</code>、<code>noMapSpread</code>、<code>noLateEventControl</code>、<code>noSvelteIgnoredUnsubscribe</code>、<code>noPlaywrightUnsafeReferences</code>、<code>noDynamicDelete</code> など、実行時に不具合になる書き方を拾うものが中心。2.6.6 では <code>noArrayMethodsOnArguments</code>、<code>noNumberArgumentOutOfRange</code>、<code>noSharedBranchCode</code>、<code>usePackageJsonCpu</code> / <code>usePackageJsonEngines</code> も加わった。既定では <code>biome check</code> の結果は変わらないため、効かせたいルールだけ有効化して試す。</p>
+<p class="links"><a href="https://github.com/biomejs/biome/releases/tag/%40biomejs%2Fbiome%402.6.6">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbiomejs%2Fbiome%2Freleases%2Ftag%2F%40biomejs%2Fbiome%402.6.6">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Ghostty vt-1.0.0（+ tip nightly）</h3>
+<p><strong>破壊的変更</strong>: なし<br><code>libghostty-vt</code> が 1.0.0 に到達し、ターミナルエミュレータの VT コアをライブラリとして安定版で使えるようになった。tip（nightly）も更新されているが、常用はタグ付きリリース推奨。自前ツールに VT 解析を組み込む用途では追う価値がある。</p>
+<p class="links"><a href="https://github.com/ghostty-org/ghostty/releases/tag/vt-1.0.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fghostty-org%2Fghostty%2Freleases%2Ftag%2Fvt-1.0.0">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[開発ツール リリースレポート 2026-11-02]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-11-02.html</link>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes リリースレポート 2026-11-09</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes リリースレポート 2026-11-09</h1>
+<article class="report"><h2>今週のリリース</h2>
+<section class="item">
+<h3>Kubernetes v1.38.0-beta.0</h3>
+<p><strong>破壊的変更</strong>: 情報なし（ノートは CHANGELOG と kubernetes-announce への参照のみ。ベータのため互換性保証はない）<br>v1.38 系の最初のベータ。リリースノート本文が CHANGELOG 参照だけなので、この入力から個別の変更点は読み取れない。<br>ベータのため自宅クラスタへの適用は避け、まず CHANGELOG で非推奨・削除項目を確認して評価する。</p>
+<p class="links"><a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-beta.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes%2Fkubernetes%2Freleases%2Ftag%2Fv1.38.0-beta.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Argo CD v3.6.1 / v3.6.0 / v3.5.7 / v3.4.13 / v3.3.19</h3>
+<p><strong>破壊的変更</strong>: v3.3 系が 2026-11-03 で EOL。v3.4.13 / v3.5.7 / v3.6.0 のいずれかへ移行が必要<br>v3.6.0 では ApplicationSet のプログレッシブ同期にメトリクス・条件・再同期を強制するアノテーションが追加され、<br>CloudNativePG の Database/Backup、cert-manager、Kyverno、Prometheus Operator、Velero、Tekton などのヘルスチェックが拡充された。<br>CloudNativePG Cluster の hibernate/rehydrate アクションや Dex の TLS 設定も入る。v3.6.1 と 3.5.7 / 3.4.13 は UI とバグ修正のパッチ。<br>GitOps の同期元なので、まず 3.6 系へ上げて CNPG のヘルスチェック改善を受けるのがよさそう。</p>
+<p class="links"><a href="https://github.com/argoproj/argo-cd/releases/tag/v3.6.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fargoproj%2Fargo-cd%2Freleases%2Ftag%2Fv3.6.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Cilium 1.21.0-pre.4</h3>
+<p><strong>破壊的変更</strong>: BPF マスカレードが既定で有効化、XDP prefilter を非推奨化、<code>--bypass-ip-availability-upon-restore</code> フラグ削除、ノードの InternalIP をマスカレード対象外に変更。pre リリースのため本番適用は不可<br>インターフェースの IPv6 リンクローカルと RA を使う BGP unnumbered ピアリング（<code>autoDiscovery.mode: Unnumbered</code>）、<br>Gateway API のフロントエンドクライアント証明書検証（mTLS）とリスナーの TLS バージョン指定、エージェント側の Multi Pool Resource IPAM が入る。<br>Gateway API Inference Extension 対応や Ingress Service の 80/443 公開切り替えもある。<br>CNI を担うので、BPF マスカレード既定化が自宅クラスタの NAT 挙動に与える影響を確認してから評価する。</p>
+<p class="links"><a href="https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcilium%2Fcilium%2Freleases%2Ftag%2Fv1.21.0-pre.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Loki v4.0.0-rc.3 / v3.6.20</h3>
+<p><strong>破壊的変更</strong>: v4.0.0 は大規模。BoltDB・boltdb-shipper・DynamoDB・Cassandra・BigTable・gRPC の各ストレージバックエンド削除、Go モジュールパスの <code>/v4</code> 化、V2 クエリエンジンの切り離し、SSD ターゲットと <code>/api/prom</code> の削除、<code>frontend.encoding</code> の既定 protobuf 化。rc.3 では S3 ストレージクラスが STANDARD / STANDARD_IA に限定<br>v4.0.0-rc.1〜rc.3 が進行中で、ストレージ設定とスキーマの移行計画なしには上げられない。<br>3.6 系は v3.6.20 が go-jose など HIGH のセキュリティ依存更新を含むため、まずこちらを適用する。<br>LGTM のログ基盤なので、v4 は検証環境で移行手順を踏んでから本番に反映する。</p>
+<p class="links"><a href="https://github.com/grafana/loki/releases/tag/v4.0.0-rc.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Floki%2Freleases%2Ftag%2Fv4.0.0-rc.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Longhorn v1.12.2-rc4 / v1.12.2-rc3</h3>
+<p><strong>破壊的変更</strong>: RC 間のアップグレードは公式に非サポート（「RC/Preview/Sprint とはアップグレードするな」）。GA を待つ<br>v2 データエンジンのデータ整合性修正が中心で、レプリカ再構築中の非アライン同時書き込みによるデータ欠損、<br>高速再構築が変更済みスナップショットを取りこぼして再構築レプリカにデータが欠ける問題、spdk_tgt の double free やアサーション、<br>hugepages の Pod 間取り合い、SystemBackup が停止する問題などが直っている。<br>rc4 では backing image の IPv6/デュアルスタック対応、v2 の CPU 分離、NVMe-TCP の I/O キュー数設定が加わった。<br>データ欠損系の修正が多いので、GA 後に v1.12.2 へ上げる前提で追跡する。</p>
+<p class="links"><a href="https://github.com/longhorn/longhorn/releases/tag/v1.12.2-rc4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Flonghorn%2Flonghorn%2Freleases%2Ftag%2Fv1.12.2-rc4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Velero v1.19.0-rc.1</h3>
+<p><strong>破壊的変更</strong>: ノートに明示的な記載はないが RC のため本番不可。v1.19 のアップグレードガイドを確認すること<br>CSI Changed Block Tracking を使うブロックデータムーバー（velero-block）が入り、増分バックアップで変更ブロックだけを転送できる。<br>既存ボリュームへ直接戻す in-place リストア（全体・増分、クローン後のリストアにも対応）が加わり、復旧時間を短縮できる。<br>ResourcePolicy ConfigMap による名前空間・リソース種別単位の細かいフィルタ、ラベルによる名前空間の自動選択、<br>グローバルなボリュームポリシー、リストア時の既定リソース修飾子も追加された。Go 1.27.3 / kopia 0.23.1。<br>バックアップと DR の要なので、GA 後に in-place リストアと CBT の効果を検証したい。</p>
+<p class="links"><a href="https://github.com/velero-io/velero/releases/tag/v1.19.0-rc.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fvelero-io%2Fvelero%2Freleases%2Ftag%2Fv1.19.0-rc.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Pomerium v0.34.0</h3>
+<p><strong>破壊的変更</strong>: 公式バイナリとコンテナイメージのライセンスが Pomerium Community Edition License に変更（ソースは Apache 2.0 のまま）。アップグレード前に適用条件と商用ライセンスの要否を確認。GitHub IdP の <code>user_id</code> が login から node_id に変わり、user_id で照合するポリシーは更新が必要。<code>token_endpoint_auth_method</code> 未指定の MCP クライアントは既定で client_secret_basic になり、シークレットを送らないと invalid_client<br>外部 JWT アイデンティティプロバイダーに対応し、<code>issuer: kubernetes:///</code> でクラスタ内 JWKS を検証できる。<br>MCP の上流トークン状態表示と Refresh、ルートポータルの改善、プロダクト分析も入る。<br>ゼロトラストの入口なので、ライセンス確認を先に済ませてから v0.34 へ上げるか判断する。</p>
+<p class="links"><a href="https://github.com/pomerium/pomerium/releases/tag/v0.34.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fpomerium%2Fpomerium%2Freleases%2Ftag%2Fv0.34.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Backstage v1.56.3 / v1.57.0-next.1</h3>
+<p><strong>破壊的変更</strong>: TechDocs の Material for MkDocs が 2026-11-05 で終了。v1.56.3 の実験的 Zensical エンジンへ移行しないと TechDocs のビルドが止まる<br>v1.56.3 で <code>@backstage/plugin-techdocs-backend-module-zensical</code>、<code>@techdocs/cli</code> の Zensical 対応、<br><code>@backstage/plugin-techdocs-node</code> の alpha ビルディングブロックが追加された。<br>v1.57.0-next.1 は次期マイナーのプレリリース。IDP のドキュメント基盤なので、TechDocs の移行を今週中に済ませる。</p>
+<p class="links"><a href="https://github.com/backstage/backstage/releases/tag/v1.56.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbackstage%2Fbackstage%2Freleases%2Ftag%2Fv1.56.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>HolmesGPT 0.46.0</h3>
+<p><strong>破壊的変更</strong>: chat API から <code>follow_up_actions</code> を削除。既定のベンチマークモデルから qwen-next-80B-instruct と gpt-5.5 を削除（評価設定のみ）。remediation MCP の exec 引数 allowlist が Helm values で設定できるようになったため、既定値の挙動を確認<br>MCP サーバーごとに <code>allowed_tools</code> で公開するツールを絞れるようになり、エージェントの権限境界を小さくできる。<br>アラートの webhook 送信先、LLM のレート制限・過負荷・503 のバックオフ再試行、ホスト型 AWS MCP で複数アカウントを1ツールセットにまとめる対応、<br>モデルごとの上限と取得元を status に表示する機能も入った。イメージの CVE 修正も含む。<br>AI SRE として使っているので、<code>allowed_tools</code> と exec allowlist で MCP 経由の操作を絞るのに向いている。</p>
+<p class="links"><a href="https://github.com/HolmesGPT/holmesgpt/releases/tag/0.46.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FHolmesGPT%2Fholmesgpt%2Freleases%2Ftag%2F0.46.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Istio 1.32.0-rc.2 / 1.31.4 / 1.30.8</h3>
+<p><strong>破壊的変更</strong>: ノートに記載なし<br>1.32.0-rc.2 は次期マイナーの RC、1.31.4 と 1.30.8 はパッチ。リリースノート本文はリンクのみで、この入力から個別の変更点は確認できない。<br>メッシュを運用しているなら、パッチ側の内容をリンク先で確認して適用を検討する。</p>
+<p class="links"><a href="https://github.com/istio/istio/releases/tag/1.31.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fistio%2Fistio%2Freleases%2Ftag%2F1.31.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Grafana スタック（Alloy v1.22.0-rc.0 / Grafana dbproxy v0.1.0 / Mimir chart 週次）</h3>
+<p><strong>破壊的変更</strong>: なし（Alloy は RC のため本番不可）<br>Alloy v1.22.0-rc.0 は次期マイナーの RC で、変更点は PR #7436 に集約されている。<br>Grafana 本体は <code>pkg/storage/dbproxy</code> v0.1.0 の内部モジュールのみ、Mimir は Helm chart の週次自動リリースのみで、<br>いずれも自宅の可観測性スタックに即時対応が必要な内容ではない。Alloy の RC は検証環境で様子を見る。</p>
+<p class="links"><a href="https://github.com/grafana/alloy/releases/tag/v1.22.0-rc.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Falloy%2Freleases%2Ftag%2Fv1.22.0-rc.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Goldilocks v4.16.3</h3>
+<p><strong>破壊的変更</strong>: なし<br>CVE-2026-111943 を修正したパッチ。VPA の推奨値を見るために動かしているので、イメージを更新する。<br>checksums とコンテナイメージは cosign で署名検証できる。</p>
+<p class="links"><a href="https://github.com/FairwindsOps/goldilocks/releases/tag/v4.16.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FFairwindsOps%2Fgoldilocks%2Freleases%2Ftag%2Fv4.16.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Helmfile v1.8.3</h3>
+<p><strong>破壊的変更</strong>: 記載はないが挙動変化あり。release 単位の設定が <code>helmDefaults</code> より優先されるよう修正され、これまで無視されていた <code>skipSchemaValidation</code> / <code>takeOwnership</code> / <code>syncReleaseLabels</code> / <code>kubeContext</code> / <code>kubeVersion</code> が実際に効くようになる<br>release 単位の設定優先の修正群に加え、diff 出力に <code>secretref+</code> の値が漏れる問題、<br><code>--state-values-set</code> の配列・バックスラッシュ・空入力の扱いが修正された。<br>GitOps/IaC の適用前 diff の安全性が上がるので、まず検証環境で差分の出方を確認してから上げる。</p>
+<p class="links"><a href="https://github.com/helmfile/helmfile/releases/tag/v1.8.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhelmfile%2Fhelmfile%2Freleases%2Ftag%2Fv1.8.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>SeaweedFS 4.53 / 4.52</h3>
+<p><strong>破壊的変更</strong>: S3 の無効なストレージクラスをアップロード前に拒否、レプリカがプライマリの圧縮・メタデータを引き継ぐよう変更など、S3 の挙動変化に注意<br>4.52 で S3 Vectors API とベクトル用ゲートウェイ、4.53 でバケット単位の Block Public Access とベクトルバケットの管理が入った。<br>filer のフォルダアップロード、JSON アップロードの圧縮、読み取り専用マウントからの読み取り専用起動、<br>filer.sync や volume の並行処理の修正も含む。<br>S3 互換ストレージとして使う場合、公開設定とストレージクラスの検証が厳しくなった点を確認する。</p>
+<p class="links"><a href="https://github.com/seaweedfs/seaweedfs/releases/tag/4.53">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fseaweedfs%2Fseaweedfs%2Freleases%2Ftag%2F4.53">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Headlamp headlamp-plugin 0.15.0-alpha.0</h3>
+<p><strong>破壊的変更</strong>: プラグイン作者向け。Storybook 10 / Vitest 5 への移行と TypeScript の bundler モジュール解決への変更で、既存プラグインは upgrade コマンドでの移行が必要<br><code>registerResourceRelationProvider</code>、<code>registerProjectGrouping</code>、<code>registerHomeSidebarEntryFilter</code>、<code>registerClusterEmptyState</code>、<br>既定テーマ指定などの新しいプラグイン API が追加された。Brotli サイドカーの生成や Storybook モックの拡充もある。<br>Headlamp 本体ではなくプラグイン SDK の alpha なので、プラグインを書いていなければ急ぐ必要はない。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/headlamp/releases/tag/headlamp-plugin-0.15.0-alpha.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fheadlamp%2Freleases%2Ftag%2Fheadlamp-plugin-0.15.0-alpha.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Reloader merge-1273</h3>
+<p><strong>破壊的変更</strong>: なし<br>CVE-2026-78661 ほかに対応する golang.org/x/net v0.62.0 への更新。<br>ただしタグが <code>merge-1273</code> とバージョン形式でなく正式リリースではないため、正式版を待つか内容を確認してから適用する。</p>
+<p class="links"><a href="https://github.com/stakater/Reloader/releases/tag/merge-1273">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstakater%2FReloader%2Freleases%2Ftag%2Fmerge-1273">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Tailscale (operator) v1.104.5</h3>
+<p><strong>破壊的変更</strong>: なし<br>リリースノートは Tailscale の changelog へのリンクのみで、この入力から個別の変更点は確認できない。<br>ゼロトラストの経路なので、changelog を確認してから更新する。</p>
+<p class="links"><a href="https://github.com/tailscale/tailscale/releases/tag/v1.104.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Ftailscale%2Ftailscale%2Freleases%2Ftag%2Fv1.104.5">Google 翻訳で読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

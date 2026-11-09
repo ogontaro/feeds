@@ -4,11 +4,44 @@
         <title>Claude リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 02 Nov 2026 01:43:39 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 09 Nov 2026 02:05:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude リリースレポート 2026-11-09]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/claude/2026-11-09.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/claude/2026-11-09.html</guid>
+            <pubDate>Mon, 09 Nov 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Claude Code v2.1.317〜v2.1.319</h3>
+<p><strong>破壊的変更</strong>: auto モードの判定が変わる。テレメトリやフィーチャーフラグが無効な場合、および LLM ゲートウェイ経由の場合、サーバーが確認できない呼び出しは確認プロンプトか拒否になり、内蔵分類器へのフォールバックがなくなる。従来動作は <code>CLAUDE_CODE_AUTO_MODE_SERVER=0</code>、ゲートウェイで <code>CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS</code> を使う場合は <code>CLAUDE_CODE_AUTO_MODE_SERVER=1</code> も必要（Bedrock/Vertex/Foundry は不変）。また <code>claude -p</code> がディスク不足やクォータでトランスクリプトを失ったときの終了コードが 0 から 1 になった。<br>MCP サーバーがツール呼び出しをタスクとして実行したとき、即座にバックグラウンドへ移して完了時に Claude へ結果を返す「MCP タスク」に対応した（<code>CLAUDE_CODE_DISABLE_MCP_TASK_BACKGROUND</code> で従来どおり待機）。MCP を常用していると、長時間のツール呼び出しでターンが止まらなくなる。<br><code>permissions.denyInsteadOfPrompting</code> を追加し、許可プロンプト待ちになる呼び出しを拒否してターンを継続できる。サブエージェントやチームにも効くため、権限境界の設計にそのまま使える。<code>/tasks</code> には「Earlier in this session」行が加わり、終了したサブエージェントを開き直してメッセージを送れる。<br>ゲートウェイ運用向けに <code>/usage</code> の日・週・月支出、管理 API のコストレポート（<code>GET /v1/organizations/analytics/cost</code>）、pooled 予算の優先順位、<code>assume_role</code>、JSON ログを追加。OTel には <code>anthropic.plan</code> / <code>seat_type</code> / <code>provider</code> などが加わった。Web/シェルツールがアカウントのメールアドレスを外部へ送る前の確認、<code>--continue</code> の回帰修正、旧ハンドシェイクの MCP 接続失敗の修正なども含む。</p>
+<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.319">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.319">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>opencode v2.2.6（+ <code>@opencode/pty</code> 0.5.0）</h3>
+<p><strong>破壊的変更</strong>: <code>opencode run</code> が、プロンプトが起動したバックグラウンドのシェルコマンド・サブエージェント・画像ジョブの完了を待つようになり、待ち時間に上限がない。dev サーバーのように終わらないジョブがあると Ctrl+C / SIGTERM まで run が開いたままなので、CI では必ずタイムアウトを設定する。SIGTERM はセッションとバックグラウンドジョブをキャンセルして終了コード 143 で終わる。<br><code>pool: true</code> による MCP 接続の共有を追加し、同じ構成のプロジェクト間で 1 接続を使い回してプロセス数と起動時間を減らせる。<code>opencode run -w</code>（<code>--worktree=&lt;name&gt;</code>）で git worktree 内からセッションを開始でき、<code>--archived</code> を付けるとスクリプトや CI のセッションをインボックスとセッション一覧から外せる。<br>セキュリティ面の変更が多い。ファイル読み出しとメディアはサンドボックス化したダウンロードとして配信し、<code>/api/*</code> へのクロスサイト遷移と許可外オリジンからのリクエストを拒否。webfetch は資格情報を含む URL を拒否し <code>#fragment</code> を権限照合から除外、Code Mode の fetch は全リダイレクトを webfetch ルールと照合する。<code>session_move</code> がプロジェクト外へ出る前に <code>external_directory</code> 権限を要求する。<br>ほかに Code Mode の実験的バイトコード VM（既定オフ）、プロバイダ/モデル別のセッションウォーム（<code>interval: &quot;auto&quot;</code> はキャッシュ TTL 基準）、GUI プラグインのテーマとスロット、Foundry 上の Claude モデル向け Azure Messages 対応。別パッケージ <code>@opencode/pty</code> 0.5.0（protocol 8）も公開された。</p>
+<p class="links"><a href="https://github.com/anomalyco/opencode/releases/tag/v2.2.6">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanomalyco%2Fopencode%2Freleases%2Ftag%2Fv2.2.6">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Codex CLI 0.167.0（0.167〜0.169 の alpha を含む）</h3>
+<p><strong>破壊的変更</strong>: なし。0.167.0 が安定版で、0.168.0 / 0.169.0 系の alpha はノートが「Release 0.169.0-alpha.N」のみのため中身は不明。<br><code>codex agents --no-daemon</code> でエージェントのコマンドセンターを開けるようになり、未読の結果がマークされる。ターミナルのセッションピッカーから接続中のバックエンドを切り替えても下書きが保持される。<br>権限まわりでは、<code>[permissions.network]</code> の管理されたコマンドチェックポイントが毎回の人間承認を要求し、Guardian が記録済みの exec 呼び出しを直接レビューする。MCP の共有接続にはチャット単位のリースが付いた。<br>Google Cloud Vertex AI のセットアップウィザード（ADC または資格情報ファイル）、<code>/experimental</code> からの macOS/Windows システムプロキシ有効化、ローカル画像添付のプレビューに対応。Ctrl+L で表示だけをクリアして Ctrl+T で履歴を残す変更や、失敗応答を考慮した自動コンパクションの修正も入る。</p>
+<p class="links"><a href="https://github.com/openai/codex/releases/tag/rust-v0.167.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fopenai%2Fcodex%2Freleases%2Ftag%2Frust-v0.167.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Orca v1.4.247〜v1.4.254（+ Android 0.0.63/0.0.64）</h3>
+<p><strong>破壊的変更</strong>: v1.4.252 で macOS 13.4 以上が必須になった（従来は 12）。v1.4.251 でネストした worker の既定深さが 1 から 4 に変わり、既存プロファイルも 4 へ移行する（設定で戻せる）。Chat UI のメニューから「Fork Agent Session…」が削除され、端末リガチャはフォント固有のものが GPU レンダラで結合しなくなる場合がある。ブラウザのパスワード保管庫は OS のセキュアストレージが必須。Chat UI は Experimental を卒業した。<br>Git Graph タブが加わり、ローカル/リモートのブランチとタグ、各コミットの詳細と変更ファイルを一覧できる。フォルダワークスペースは Source Control を持ち、Chat UI では <code>/btw</code> が本筋を止めずに fork で横質問をし、<code>/fork</code> が直近の応答から分岐する。<br>スマホは端末側での音声入力（iPhone は iOS 26 以降、Android も対応）と、デスクトップに届かない間の送信キュー、アプリ終了をまたぐ下書き・添付・未保存編集の保持が入った。<br>エージェント運用では worker が自分の worker を起動でき（既定深さ 4）、コーディネータ終了後も worker が残る。Claude/Codex チャットの Plan モード、使用量上限リセット後の自動継続（任意）、Codex のアカウント履歴連携による入力ラグの修正もある。プラグインはカラーテーマ・独自エディタ・ステータス項目・Ghostty/Kitty 設定の取り込みに対応し、Chrome 互換のパスワードマネージャも加わった。</p>
+<p class="links"><a href="https://github.com/stablyai/orca/releases/tag/v1.4.254">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstablyai%2Forca%2Freleases%2Ftag%2Fv1.4.254">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>GitHub MCP Server 2.1.0</h3>
+<p><strong>破壊的変更</strong>: なし<br>アーティファクトの作成・読み取り・更新・削除を行う実験的な MCP ツールを 2 つ追加した。2^63 以上の整数パラメータを拒否する修正と、PR 一覧のマージ状態の修正が入り、残りは依存更新が中心。</p>
+<p class="links"><a href="https://github.com/github/github-mcp-server/releases/tag/v2.1.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgithub%2Fgithub-mcp-server%2Freleases%2Ftag%2Fv2.1.0">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude リリースレポート 2026-11-02]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/claude/2026-11-02.html</link>
