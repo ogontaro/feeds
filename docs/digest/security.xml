@@ -4,11 +4,109 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Tue, 10 Nov 2026 07:29:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Nov 2026 17:08:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Widget: Gtk コンポーネントの解放後使用）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124917.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124917.html#2026-11-10T17:08:24.656Z</guid>
+            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>ブラウザのサンドボックス脱出（Widget: Gtk コンポーネントの解放後使用）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
+<p>Widget: Gtk コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-3wmq-fchg-2599 で確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-3wmq-fchg-2599">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（IPC コンポーネントの解放後使用）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124903.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124903.html#2026-11-10T17:08:24.656Z</guid>
+            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>ブラウザのサンドボックス脱出（IPC コンポーネントの解放後使用）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
+<p>IPC コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-88w5-4mq6-prvg で確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-88w5-4mq6-prvg">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124900.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124900.html#2026-11-10T17:08:24.656Z</guid>
+            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
+<p>DOM: Service Workers コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-4qpg-rxp6-fcj2 で確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-4qpg-rxp6-fcj2">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124864.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124864.html#2026-11-10T17:08:24.656Z</guid>
+            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
+<p>DOM: Service Workers コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-8pc7-5xpr-2rc7 で確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-8pc7-5xpr-2rc7">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Audio/Video: cubeb の解放後使用）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124861.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124861.html#2026-11-10T17:08:24.656Z</guid>
+            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>ブラウザのサンドボックス脱出（Audio/Video: cubeb の解放後使用）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
+<p>Audio/Video: cubeb コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-5wxj-pmj7-6wvf で確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-5wxj-pmj7-6wvf">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Storage: Cache API の境界条件の誤り）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124859.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124859.html#2026-11-10T17:08:24.656Z</guid>
+            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>ブラウザのサンドボックス脱出（Storage: Cache API の境界条件の誤り）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
+<p>Storage: Cache API コンポーネントの境界条件の誤りにより、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-44f3-vm66-76wv で確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-44f3-vm66-76wv">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Graphics: Text の境界条件の誤り）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124853.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124853.html#2026-11-10T17:08:24.656Z</guid>
+            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>ブラウザのサンドボックス脱出（Graphics: Text の境界条件の誤り）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
+<p>Graphics: Text コンポーネントの境界条件の誤りにより、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-f7px-m4vf-5qg5 で確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-f7px-m4vf-5qg5">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] D-Link M60 の MQTT ブローカーにハードコードされた認証情報があり、遠隔から悪用できる]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125086.html</link>
@@ -748,34 +846,6 @@
 <p>Azure Kubernetes Configuration Service に重要機能の認証欠落があり、未認証の攻撃者がネットワーク経由で権限を昇格できる。CVSS は 10.0。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Azure のアドバイザリで修正状況を確認し、該当する構成を使っている場合は適用する。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83938">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Incus のパストラバーサルでホスト上の任意ファイルを書き込まれ、ホスト全体を掌握される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-115375.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-115375.html#2026-10-23T04:25:19.401Z</guid>
-            <pubDate>Fri, 23 Oct 2026 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Incus のパストラバーサルでホスト上の任意ファイルを書き込まれ、ホスト全体を掌握される</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.4。KEV ではなく EPSS も不明だが、自宅で動かしうるセルフホスト型の仮想化基盤でホスト掌握に至るため監視とする。</p>
-<p>インスタンスを作成できるクライアントが、バックアップの index.yaml にある依存カスタムボリューム名の検証不備を突いて、../ を含む名前でホスト上に root 所有のディレクトリと任意の内容を作成できる。同系統の CVE-2026-115377 では、移行元が仕込んだシンボリックリンク経由で root としてホストのファイルを書き込める。いずれもホスト全体の掌握につながる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 7.0.2 以降（7.1 系は 7.5.0 以降）へ更新する。6.x は 6.0.7 以降へ更新する。信頼できないバックアップや移行元を取り込まない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115375">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Next.js の use cache と Image Optimization API で未認証のリモートコード実行をされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/GHSA-673q-mjm6-r5xr.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/GHSA-673q-mjm6-r5xr.html#2026-10-23T04:25:19.401Z</guid>
-            <pubDate>Fri, 23 Oct 2026 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Next.js の use cache と Image Optimization API で未認証のリモートコード実行をされる</h3>
-<p><strong>緊急度: 監視</strong> — CVSS・EPSS は入力に記載がなく、悪用の兆候もない。ただし広く使われるフレームワークの未認証 RCE のため監視とする。</p>
-<p>typed array を返す use cache 関数、および SVG を使う Image Optimization API に、未認証で到達できるリモートコード実行の脆弱性がある（あわせて GHSA-2464-fhr4-w9xw）。Next.js をセルフホストするアプリでは、公開エンドポイント経由で実行される可能性がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版の next を確認して更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-673q-mjm6-r5xr">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

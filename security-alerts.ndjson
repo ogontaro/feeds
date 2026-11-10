@@ -696,3 +696,17 @@
 {"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-109798","kev":false,"reported":false}
 {"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-124600","kev":false,"reported":false}
 {"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-107246","kev":false,"reported":false}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-95860","kev":false,"reported":false}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-60043","kev":false,"reported":false}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-102894","kev":false,"reported":false}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-107846","kev":false,"reported":false}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-124917","kev":false,"reported":true,"title":"ブラウザのサンドボックス脱出（Widget: Gtk コンポーネントの解放後使用）","urgency":"watch"}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-124903","kev":false,"reported":true,"title":"ブラウザのサンドボックス脱出（IPC コンポーネントの解放後使用）","urgency":"watch"}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-124900","kev":false,"reported":true,"title":"ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）","urgency":"watch"}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-124864","kev":false,"reported":true,"title":"ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）","urgency":"watch"}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-124861","kev":false,"reported":true,"title":"ブラウザのサンドボックス脱出（Audio/Video: cubeb の解放後使用）","urgency":"watch"}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-124859","kev":false,"reported":true,"title":"ブラウザのサンドボックス脱出（Storage: Cache API の境界条件の誤り）","urgency":"watch"}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-124853","kev":false,"reported":true,"title":"ブラウザのサンドボックス脱出（Graphics: Text の境界条件の誤り）","urgency":"watch"}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-125757","kev":false,"reported":false}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-112136","kev":false,"reported":false}
+{"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-82509","kev":false,"reported":false}
