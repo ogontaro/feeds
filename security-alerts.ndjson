@@ -678,3 +678,21 @@
 {"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-110469","kev":false,"reported":false}
 {"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-110468","kev":false,"reported":false}
 {"date":"2026-11-09T22:29:44.045Z","id":"CVE-2026-118462","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-120017","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-76964","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-89103","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-89126","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-109795","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-109803","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-76965","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-13312","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-115646","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-115934","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-89119","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-125370","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-125383","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-125384","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-125086","kev":false,"reported":true,"title":"D-Link M60 の MQTT ブローカーにハードコードされた認証情報があり、遠隔から悪用できる","urgency":"watch"}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-109798","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-124600","kev":false,"reported":false}
+{"date":"2026-11-10T07:29:00.838Z","id":"CVE-2026-107246","kev":false,"reported":false}

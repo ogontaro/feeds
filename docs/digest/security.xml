@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Mon, 09 Nov 2026 22:29:44 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Nov 2026 07:29:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] D-Link M60 の MQTT ブローカーにハードコードされた認証情報があり、遠隔から悪用できる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125086.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125086.html#2026-11-10T07:29:00.838Z</guid>
+            <pubDate>Tue, 10 Nov 2026 07:29:00 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>D-Link M60 の MQTT ブローカーにハードコードされた認証情報があり、遠隔から悪用できる</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.3 の Critical だが CISA KEV 未収載で実際の悪用は未確認、EPSS も不明。ネットワーク機器の Critical として「監視」とした。自宅インフラの構成に D-Link 製品は含まれていないため、該当は所有者次第。</p>
+<p>D-Link M60 1.12.B01 の emDaemon MQTT ブローカーで、/etc/emDaemon/mosquitto.conf にハードコードされた認証情報が存在する。攻撃者はこれを遠隔から利用でき、公開されたエクスプロイトが存在して実際に使用される可能性があるとされている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> D-Link M60 を自宅ネットワークで使用している場合は、ベンダーのアドバイザリで修正ファームウェアを確認して適用する。使用していない場合は対応不要。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125086">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] SignalWire FreeSWITCH のコードインジェクションで設定・認証情報が漏えいする]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116779.html</link>
