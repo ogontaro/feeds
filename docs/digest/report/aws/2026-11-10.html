@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-10</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-10</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock で Claude Fable 5.2 が利用可能に、Global 料金は 5.1 比 20% 安</h3>
+<p>Bedrock のモデルカタログに Fable 5.2 が入り、Global 推論プロファイルの料金が入力・出力とも Fable 5.1 より 20% 下がったことを、東京リージョンからの Converse API 呼び出しで実際に確認した記事。値下げそのものより「Global プロファイルを指定すれば東京から叩ける」という手順が具体的に押さえられる点が価値で、モデルルーティングで高性能モデルに逃がす判断のコスト前提が変わります。GovCloud や Claude Platform on AWS を含む公式アナウンスは別途出ていますが、実務でまず見るべきはこの検証記事です。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-claude-fable-5-2/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>EKS の Pod を VM レベルで隔離する AWS Nitro Sandboxes</h3>
+<p>sandbox 化した Pod を軽量 VM 上で動かし、EC2 インスタンス相当の分離を Kubernetes の Pod のまま得る仕組みで、有効化は Pod spec の一行変更。エージェントが生成したコードや信頼できないワークロードを共有クラスタに載せる場面で、Pod の securityContext と別クラスタ運用の間にある空白を埋める選択肢になります。マルチテナンシーとサンドボックス境界の設計に直結するので、EKS を使っていれば一次情報で押さえておきたいところです。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/aws-nitro-sandboxes-hardware-enforced-workload-isolation-on-amazon-eks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Faws-nitro-sandboxes-hardware-enforced-workload-isolation-on-amazon-eks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore の Web Search API が一般提供開始</h3>
+<p>これまで AgentCore Gateway の MCP ツール経由だった Web 検索が、InvokeWebSearch の 1 コールで使えるようになり、作成すべきリソースがなくなったという発表。検索結果は Amazon 運用のインデックスから順位付きで返り、アプリ側で検索基盤を持たなくて済むため、調査系エージェントの構成をかなり薄くできます。MCP サーバーを自前で立てていた構成からの置き換え候補として、レイテンシと運用コストの両面で比較する価値があります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-bedrock-agentcore-web-search-api%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AgentCore Memory のメモリポイズニングを多層の書き込み検証で防ぐ</h3>
+<p>エージェントの長期記憶は次回以降の会話に自動で注入されるため、書き込み経路の整合性がそのまま将来のエージェント挙動を決める、という前提から対策を組み立てたセキュリティ記事。書き込み時の検証を一層ではなく多層に重ねる設計が示されており、記憶を持つエージェントを本番に置くなら「読み取り」より「書き込み」を制御点にするという考え方が持ち帰れます。プロンプトインジェクション対策を入力側だけで考えていた場合に、設計の見直しを促す内容です。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/security/help-defend-against-memory-poisoning-in-amazon-bedrock-agentcore-with-multi-layer-write-validation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fsecurity%2Fhelp-defend-against-memory-poisoning-in-amazon-bedrock-agentcore-with-multi-layer-write-validation%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CloudWatch Logs にアカウントレベルの保持ポリシー</h3>
+<p>アカウント内の全ロググループ、または <code>/aws/lambda</code> のようなプレフィックスで絞ったロググループに、1 つのポリシーで保持期間を適用できるようになりました。ロググループごとに設定がばらつくと、コストが見えにくいまま保管が延びたり、監査で保持根拠を説明できなくなるので、保持の下限をアカウント単位で固定できるのは効きます。IaC でロググループを量産している構成ほど、個別設定の抜け漏れを潰す手段として効いてきます。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-log-retention/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-cloudwatch-log-retention%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

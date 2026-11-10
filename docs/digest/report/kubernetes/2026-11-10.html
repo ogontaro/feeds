@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-11-10</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-11-10</h1>
+<article class="report"><h2>今日の 4 本</h2>
+<section class="item">
+<h3>Argo Rollouts 1.11 のリリース候補が公開</h3>
+<p>プログレッシブデリバリを担う Argo Rollouts の次期マイナー、1.11 のリリース候補。RC が出たということは仕様が固まりつつある合図なので、カナリアや Blue/Green の設定を GitOps で回しているなら、正式版を待つ前にリリースノートと自クラスタでの挙動を確認しておきたい。CRD のアップグレード手順を先に洗い出しておくと、適用当日に慌てずに済む。</p>
+<p class="links"><a href="https://blog.argoproj.io/argo-rollouts-1-11-release-candidate-943cc8de8696?source=rss----21be29067291---4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.argoproj.io%2Fargo-rollouts-1-11-release-candidate-943cc8de8696%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Broadcom の VM API プロジェクトが CNCF Sandbox に参加、KubeVirt と競合</h3>
+<p>Broadcom が仮想マシン管理用の API プロジェクトを CNCF Sandbox に寄贈し、KubeVirt に対抗する位置づけになった。Kubernetes から VM を扱う手段がまだ一つに定まっていないことがはっきりした形で、VM とコンテナを同じ基盤で運用するときに「どの API に寄せるか」という設計判断へ直接効いてくる。</p>
+<p class="links"><a href="https://www.techtarget.com/news/broadcom-donates-vm-api-to-cncf-challenging-kubevirt/874211/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.techtarget.com%2Fnews%2Fbroadcom-donates-vm-api-to-cncf-challenging-kubevirt%2F874211%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CNCF 調査: AI ワークロードの広がりで VM はクラウドネイティブ基盤に留まる</h3>
+<p>Linux Foundation Research が CNCF と Broadcom の支援でまとめた調査で、VM がコンテナと並んでクラウドネイティブ基盤の中心に残っていること、AI ワークロードの普及で分離の重要度が上がっていることを示している。基盤をコンテナだけに寄せる前提を置いているなら、その前提を見直す材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/09/new-research-virtual-machines-remain-central-to-cloud-native-infrastructure-as-ai-workloads-evolve/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F09%2Fnew-research-virtual-machines-remain-central-to-cloud-native-infrastructure-as-ai-workloads-evolve%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Hyperlight: ハイパーバイザ分離のマイクロ VM で信頼できないコードを動かす</h3>
+<p>AI エージェントが数秒前に生成した Python や、顧客がアップロードしたプラグインなど、チームが書いていないコードを動かす場面が増えている。Hyperlight はハイパーバイザで分離したマイクロ VM 上で Linux アプリを動かす仕組みで、コンテナより強い境界をどこに置くかを考えるときの選択肢になる。エージェントに実行権限を渡す設計をしているなら押さえておきたい。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/09/run-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F09%2Frun-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

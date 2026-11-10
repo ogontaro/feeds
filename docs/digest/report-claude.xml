@@ -4,11 +4,49 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 09 Nov 2026 01:33:36 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Nov 2026 04:00:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-10]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-10.html</guid>
+            <pubDate>Tue, 10 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.321、Fable 5.2 を既定モデルに — 権限チェックの修正 12 件</h3>
+<p>Fable 5.2 が既定モデルになり単価が 2 割下がった点はコスト計画に直結しますが、それ以上に見る価値があるのは権限まわりの修正です。<code>cp</code>/<code>mv</code> で deny ルールをすり抜けられた問題、読み取り専用の Bash が確認なしでサンドボックス外に出るケース、MCP OAuth のリダイレクトでリフレッシュトークンが別ホストに渡る問題など、エージェントの権限境界に関わる穴がまとめて塞がれています。自分の許可ルールや保護ファイル設定が影響を受けるか、更新する前に確認しておきたい一本です。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261110-cc-updates-v2-1-321/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>1,000 体のエージェントでフェルマーの最終定理を形式証明 — マルチエージェントを安全に回す設計</h3>
+<p>汎用ツールとネットワークなしのサンドボックスだけで 1,000 体のエージェントを走らせ、28.7 時間で形式証明まで到達した実験の報告です。全シェルコマンドとファイル編集を実行前に分類器が確認し、オフラインの監視も重ねる多層の安全策は、複数エージェントを並行で走らせるときの権限設計の参考になります。出力トークンが 3 分の 1、証明の長さが 7 分の 1 という効率の数字は、並行実行のコスト感をつかむ材料にもなります。</p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2119967291337310619">@oikon48 のポスト</a></li>
+<li><a href="https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fsafely-scaling-multi-agent-teams-with-fable-5-2%2F">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code のコードの 1.6% だけが「AI」— エージェントを支える足場の正体</h3>
+<p>Claude Code の約 51 万行をファイル単位で分類した研究の紹介で、モデル本体にあたる部分は 1.6% に過ぎず、残りの大半が権限チェック・コンテキスト管理・ツールの振り分け・エラー回復だったという指摘です。エージェントの信頼性を決めるのはモデルではなく外側の足場だという見方は、ハーネスに手を入れるときの優先順位をはっきりさせます。数字の細部よりも、「どこを直すと効くのか」の地図として読む価値があります。</p>
+<p class="links"><a href="https://dev.to/lodar/someone-counted-the-ai-in-claude-code-its-16-1na3">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Flodar%2Fsomeone-counted-the-ai-in-claude-code-its-16-1na3">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Google AI Pro のサブスクを Claude Code / Codex / Gemini CLI から使う MCP サーバー</h3>
+<p>Google AI Pro に含まれる Gemini や Deep Research、Jules などを、MCP 経由で Claude Code や Codex、Gemini CLI からそのまま呼べるようにするオープンソースのサーバーです。サブスクを二重に持っているのにツールを行き来するせいで使えていない、という状況を減らすのが狙いで、設定は数分で済むとされています。自前の MCP サーバーを足すときの構成例としても参考になります。</p>
+<p class="links"><a href="https://dev.to/muzaqil555/how-to-use-your-google-ai-pro-subscription-inside-claude-code-and-codex-and-the-gemini-cli-4d8n">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fmuzaqil555%2Fhow-to-use-your-google-ai-pro-subscription-inside-claude-code-and-codex-and-the-gemini-cli-4d8n">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>コーディングエージェントの暴走を防ぐ AGENTS.md 実践ガイド</h3>
+<p>Codex や Copilot、Claude Code、Cursor、OpenCode に共通する失敗（依頼していない抽象化、スコープの拡大）を、AGENTS.md の書き方で抑えるための実践ガイドです。最小変更の徹底・セキュリティ・レビューの信頼性という観点を POS・CRM・需要予測の実例に落としているので、指示ファイルを規約集ではなく検証できる形にしたいときに効きます。AGENTS.md はエージェントに実行される入力でもあるため、他所から丸ごと持ち込むのではなく、自前の検証とセットで育てる前提で読むのが安全です。</p>
+<p class="links"><a href="https://qiita.com/yoshisen/items/deac414706d5450bd960">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-09]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-09.html</link>
@@ -1142,50 +1180,6 @@
 <p class="links"><a href="https://thenewstack.io/github-reviewbench-code-review/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgithub-reviewbench-code-review%2F">Google 翻訳で全文を読む</a></p>
 <ul>
 <li><a href="https://x.com/github/status/2107540144949473754">@github のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fgithub%2Fstatus%2F2107540144949473754">Google 翻訳で読む</a></li>
-</ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-10-06]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-06.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-06.html</guid>
-            <pubDate>Tue, 06 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
-<section class="item">
-<h3>Claude Code v2.1.289——sandbox の auto-allow 時に Bash の deny ルールが適用されない問題を修正</h3>
-<p>27 件の変更のうちセキュリティ修正が 5 件で、目玉は sandbox の auto-allow 時に Bash の deny ルールが効いていなかった問題の修正。記事では環境変数プレフィックス付きのコマンドが実際に deny で止まるかまで試して確かめている。エージェントに何を実行させないかは deny ルールで守っているつもりになりやすい部分なので、自分のバージョンと挙動を確かめておく価値がある。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20261005-cc-updates-v2-1-289/">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code の「ルーティン」で開発フローを自動化する設計</h3>
-<p>AI にコードを書かせられるようになると、ボトルネックは人間が同時にさばける承認待ちの課題のほうに移る。issue の選定条件を明確にし、1 回の実行で 1 issue だけ扱い、複数リポジトリを横断してコンテキストを集める、という切り分けの設計が具体的に書かれている。定期実行や常駐エージェントに仕事を渡すときの「渡し方」を考える材料になる。</p>
-<p class="links"><a href="https://tech-blog.rakus.co.jp/entry/20261005/claude-code-routines">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Cowork はローカル VM をやめてクラウド実行へ</h3>
-<p>Cowork の開発者 Felix Rieseberg の説明によると、旧版はクラウドで推論しつつツール呼び出しを手元に配る Anthropic 提供の VM で実行しており、セッションに明示的に追加したデータだけをマップする設計だった。廃止の理由として、ローカル VM のディスク・バッテリー・性能コストと、ノート PC を閉じると作業が止まることが挙げられている。同時期に Claude Projects のクラウドセッションが、承認したローカルフォルダを読み書きできるようにもなっており、Claude がどこで実行し、どこまでローカルに触るかが動いている。自分の使い方でデータがどこを通るかを確認しておきたい。</p>
-<p class="links"><a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsimonwillison.net%2F2026%2FOct%2F5%2Ffelix-rieseberg%2F">Google 翻訳で全文を読む</a></p>
-<ul>
-<li><a href="https://x.com/oikon48/status/2107242053864403253">oikon48 のポスト</a></li>
-<li><a href="https://x.com/trq212/status/2107229483015258493">trq212 のポスト</a></li>
-</ul>
-</section>
-<h2>新ツール・サブスク（2 本）</h2>
-<section class="item">
-<h3>AI エージェントハーネス「OpenCode 2.0」のクイックスタート</h3>
-<p>opencode は CI の AI 呼び出しにも使っているハーネスで、その 2.0 のクイックスタートが公開された。2.0 で何が変わったのか、まずどこから触ればよいのかを知る入口として読める。常用しているツールの major 更新は、差分の当たりを付けてから上げたい。</p>
-<ul>
-<li><a href="https://x.com/npaka123/status/2106953116155543811">npaka123 のポスト</a></li>
-<li><a href="https://note.com/npaka/n/n2771586c2c20">記事を読む</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>JetBrains のコーディングエージェント「Junie Lite」が CLI でも利用可能に</h3>
-<p>Qwen 3.6 27B を JetBrains がホストするクラウドモデルで、小規模なコード変更や実装タスク向け。JetBrains Air に加えて Junie CLI からも使えるようになり、JetBrains Account があれば今は無料で試せる。有料のコーディングエージェントを契約する前に、無料枠でタスクの切り分けや精度を比べておく候補になる。</p>
-<ul>
-<li><a href="https://x.com/jetbrainsjp/status/2106980527224033782">jetbrainsjp のポスト</a></li>
-<li><a href="https://blog.jetbrains.com/ai/2026/10/air-in-ides-eap/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.jetbrains.com%2Fai%2F2026%2F10%2Fair-in-ides-eap%2F">Google 翻訳で全文を読む</a></li>
 </ul>
 </section>
 ]]></content:encoded>

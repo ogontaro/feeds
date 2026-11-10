@@ -4,11 +4,39 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 09 Nov 2026 01:40:37 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Nov 2026 04:05:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-10]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-10.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-10.html</guid>
+            <pubDate>Tue, 10 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>Argo Rollouts 1.11 のリリース候補が公開</h3>
+<p>プログレッシブデリバリを担う Argo Rollouts の次期マイナー、1.11 のリリース候補。RC が出たということは仕様が固まりつつある合図なので、カナリアや Blue/Green の設定を GitOps で回しているなら、正式版を待つ前にリリースノートと自クラスタでの挙動を確認しておきたい。CRD のアップグレード手順を先に洗い出しておくと、適用当日に慌てずに済む。</p>
+<p class="links"><a href="https://blog.argoproj.io/argo-rollouts-1-11-release-candidate-943cc8de8696?source=rss----21be29067291---4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblog.argoproj.io%2Fargo-rollouts-1-11-release-candidate-943cc8de8696%3Fsource%3Drss----21be29067291---4">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Broadcom の VM API プロジェクトが CNCF Sandbox に参加、KubeVirt と競合</h3>
+<p>Broadcom が仮想マシン管理用の API プロジェクトを CNCF Sandbox に寄贈し、KubeVirt に対抗する位置づけになった。Kubernetes から VM を扱う手段がまだ一つに定まっていないことがはっきりした形で、VM とコンテナを同じ基盤で運用するときに「どの API に寄せるか」という設計判断へ直接効いてくる。</p>
+<p class="links"><a href="https://www.techtarget.com/news/broadcom-donates-vm-api-to-cncf-challenging-kubevirt/874211/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.techtarget.com%2Fnews%2Fbroadcom-donates-vm-api-to-cncf-challenging-kubevirt%2F874211%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CNCF 調査: AI ワークロードの広がりで VM はクラウドネイティブ基盤に留まる</h3>
+<p>Linux Foundation Research が CNCF と Broadcom の支援でまとめた調査で、VM がコンテナと並んでクラウドネイティブ基盤の中心に残っていること、AI ワークロードの普及で分離の重要度が上がっていることを示している。基盤をコンテナだけに寄せる前提を置いているなら、その前提を見直す材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/09/new-research-virtual-machines-remain-central-to-cloud-native-infrastructure-as-ai-workloads-evolve/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F09%2Fnew-research-virtual-machines-remain-central-to-cloud-native-infrastructure-as-ai-workloads-evolve%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Hyperlight: ハイパーバイザ分離のマイクロ VM で信頼できないコードを動かす</h3>
+<p>AI エージェントが数秒前に生成した Python や、顧客がアップロードしたプラグインなど、チームが書いていないコードを動かす場面が増えている。Hyperlight はハイパーバイザで分離したマイクロ VM 上で Linux アプリを動かす仕組みで、コンテナより強い境界をどこに置くかを考えるときの選択肢になる。エージェントに実行権限を渡す設計をしているなら押さえておきたい。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/09/run-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F09%2Frun-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-09]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-09.html</link>
@@ -630,24 +658,6 @@
 <h3>OBI によるゼロコードのトレース・ログ相関</h3>
 <p>OpenTelemetry eBPF Instrumentation(OBI)が、サービスが既に書いているログにトレースコンテキストを後付けできるようになった。SDK の導入もログライブラリの設定もアプリの再ビルドも不要で、障害時に「どのログ行がそのリクエストのものか」を追えるようになる。構造化ログを整えきれていないサービスを抱えているほど効きが大きく、eBPF と OpenTelemetry を既に併用している構成にそのまま乗る。</p>
 <p class="links"><a href="https://opentelemetry.io/blog/2026/obi-trace-log-correlation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fobi-trace-log-correlation%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-06]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-06.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-06.html</guid>
-            <pubDate>Tue, 06 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>Kubelet は inode を監視している。ただし緊急事態になるまで</h3>
-<p>ノードが <code>NodeFilesystemFilesFillingUp</code> でページを上げたのに、ディスク使用率を見ると 83%(103G 使用 / 22G 空き)で「まだ余裕がある」ように見える——という、容量アラートと inode 枯渇の食い違いを追いかける記事。バイト単位の空き容量だけを見ていると inode の枯渇は直前まで見えず、kubelet の inode 監視も「緊急事態」の域に入ってからしか働かない、という監視設計の穴を突いている。自宅クラスタの可観測性をアラート設計まで含めて組んでいるなら、ディスク容量の閾値に何を混ぜるべきかを考える材料になる。</p>
-<p class="links"><a href="https://www.cncf.io/blog/2026/10/05/kubelet-watches-inodes-just-not-until-its-an-emergency/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F05%2Fkubelet-watches-inodes-just-not-until-its-an-emergency%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Node Swap で Kubernetes ワークロードをスケールさせる</h3>
-<p>ノードで swap を有効にして Kubernetes を動かす機能が General Availability に到達したことを受けた、公式ブログの解説。メモリは CPU より先にノードの限界になる資源で、起動時に大きなメモリを確保したまま次のプロンプトを待って遊んでいる agentic AI 系ワークロードは、その「常駐しているだけのメモリ」でノードに載る Pod 数を頭打ちにする。swap を安全側の逃げ道として設計に組み込めるようになったことで、ノードのサイジングとメモリ要求の見積もり方をどこまで見直せるかが論点になる。</p>
-<p class="links"><a href="https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F05%2Fscaling-kubernetes-workloads-with-node-swap%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
