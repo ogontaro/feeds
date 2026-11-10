@@ -4,11 +4,137 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Tue, 10 Nov 2026 17:08:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Nov 2026 23:35:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Barracuda ESG の認証バイパスで、アプライアンスの全体構成を不正に書き換えられる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116606.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116606.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Barracuda ESG の認証バイパスで、アプライアンスの全体構成を不正に書き換えられる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-10 追加。EPSS 0.016、CVSS は入力に無い。自宅インフラには該当しないが、KEV 追加済みのため通知対象とする。</p>
+<p>Barracuda Email Security Gateway (ESG) に代替パスを用いた認証バイパスがあり、認証なしのリモート攻撃者が構成インポート機能を呼び出して細工したバックアップアーカイブを復元させ、アプライアンスのグローバル構成を不正に変更できる。この脆弱性は CVE-2026-111560 と連鎖させることができる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリに従って緩和策を適用する（KEV 推奨対応）。Barracuda ESG を運用していない場合は該当しないことを確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116606">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Barracuda 複数製品の OS コマンドインジェクションで root 権限のコマンド実行を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111560.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111560.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Barracuda 複数製品の OS コマンドインジェクションで root 権限のコマンド実行を許す</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-10 追加。EPSS 0.011、CVSS は入力に無い。自宅インフラには該当しないが、KEV 追加済みのため通知対象とする。</p>
+<p>Barracuda の ESG、Load Balancer、ADC、Message Archiver、WAF Control Center、WAF、WSG に OS コマンドインジェクションがある。認証済み管理者が細工したタイムゾーン値を設定すると、その値が後続処理される際に root 権限で OS コマンドが実行される。CVE-2026-116606 と連鎖可能。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリに従って緩和策を適用する（KEV 推奨対応）。該当製品を運用していない場合は影響を受けない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111560">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Cisco BroadWorks の XXE で、認証なしに機微な構成情報を読み取られる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-20320.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-20320.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Cisco BroadWorks の XXE で、認証なしに機微な構成情報を読み取られる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-10 追加。EPSS 0.004、CVSS は入力に無い。自宅インフラには該当しないが、KEV 追加済みのため通知対象とする。</p>
+<p>Cisco BroadWorks に XML 外部エンティティ参照の不適切な制限（XXE）があり、認証なしのリモート攻撃者が影響を受けるシステム上の機微な構成情報を読み取れる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Cisco のアドバイザリで修正版を確認し、BroadWorks を更新する。運用していない場合は該当しないことを確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20320">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Openwave Webtop Media Transcoder の不適切なリソース転送で想定外の文書処理を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111793.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111793.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Openwave Webtop Media Transcoder の不適切なリソース転送で想定外の文書処理を許す</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-10 追加。EPSS 0.003、CVSS は入力に無い。認証済みユーザー前提で影響も限定的であり、自宅インフラ外のニッチ製品のため監視とする（KEV 追加のため通知対象には含める）。</p>
+<p>Openwave Messaging の Webtop Media Transcoder に、球体間の不適切なリソース転送の脆弱性がある。Webmail の画面を経由せずに操作した認証済みユーザーが、想定外の種類の文書を処理・変換させられる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。該当製品を運用していない場合は影響を受けない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111793">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Microsoft Outlook でユーザー操作の確認が欠け、ネットワーク経由のなりすましを許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124194.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124194.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Microsoft Outlook でユーザー操作の確認が欠け、ネットワーク経由のなりすましを許す</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-10 追加。CVSS・EPSS は入力に無い。自宅インフラ（Talos Linux / Kubernetes）には該当しないが、KEV 追加済みのため通知対象とする。</p>
+<p>Microsoft Office Outlook で、潜在的に危険な操作に対するユーザー操作の確認が欠けている。未認可の攻撃者がネットワーク経由でなりすましを行える。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Microsoft のアドバイザリで修正版を確認し、Office / Outlook を更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-124194">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[即時対応] Chromium の解放後使用で、細工した Web ページからサンドボックス内の任意コード実行を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125350.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125350.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Chromium の解放後使用で、細工した Web ページからサンドボックス内の任意コード実行を許す</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-11-10 追加され、実際の悪用が確認されている。CVSS・EPSS は入力に無い。ブラウザは日常的に外部コンテンツへ露出するため即時対応とする。</p>
+<p>Chromium の XML コンポーネントに解放後使用（use-after-free）があり、細工した Web ページを開かせるとリモートの攻撃者がブラウザのサンドボックス内で任意のコードを実行できる。Google Chrome のほか、Chromium を利用する Microsoft Edge や Opera など複数のブラウザが影響を受ける。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Chrome / Edge / Opera を各ベンダーの最新版へ更新する。更新先バージョンは入力に無いため、ベンダーのアドバイザリで修正版を確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125350">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Google Chrome の FileSystem の認可不備で、リモートから権限を越えた操作をされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125347.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125347.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Google Chrome の FileSystem の認可不備で、リモートから権限を越えた操作をされる</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical。KEV 追加は無く、EPSS も入力に無いため悪用の兆候は確認されていない。ブラウザは広く使われる製品であり、自宅インフラの構成には含まれないため監視とする。</p>
+<p>Google Chrome 157.0.8103.50 より前のバージョンで、FileSystem の認可処理が不適切である。リモートの攻撃者がこの不備を利用して、本来許可されない操作を行える。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 157.0.8103.50 以降へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-m6cp-2pmh-64x6">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Azure Managed Grafana の認可不備で、ネットワーク経由の権限昇格を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114162.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114162.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Azure Managed Grafana の認可不備で、ネットワーク経由の権限昇格を許す</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、対象は Azure のマネージドサービスであり、自宅でセルフホストする Grafana とは別製品と考えられる。KEV 追加も悪用の兆候も無いため監視とする。</p>
+<p>Azure Managed Grafana に認可不備があり、未認可の攻撃者がネットワーク経由で権限を昇格できる。入力では CWE の記載が無く、詳細は限られている。</p>
+<p><strong>自宅インフラへの該当:</strong> Grafana<br><strong>推奨アクション:</strong> Azure Managed Grafana を利用している場合は Microsoft のアドバイザリで修正状況を確認する。セルフホストの Grafana は本項目の対象外と考えられるが、バージョンは入力に無いため必要に応じて確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-v4x9-2rpm-662c">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] React Server Components の未認証リモートコード実行]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126187.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126187.html#2026-11-10T23:35:50.799Z</guid>
+            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>React Server Components の未認証リモートコード実行</h3>
+<p><strong>緊急度: 監視</strong> — GitHub Advisory で公開されたが CVSS・EPSS は入力に無く、悪用の兆候も確認されていない。React は広く使われるライブラリであり、影響を受けるパッケージを自宅クラスタ内のサービスが使っていないか確認する価値があるため監視とする。</p>
+<p>React Server Components に未認証のリモートコード実行がある。影響パッケージとして react-server-dom-parcel、react-server-dom-turbopack、react-server-dom-webpack が挙げられている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 自宅クラスタ内のサービスが react-server-dom-parcel / turbopack / webpack を使用していないか確認し、使用している場合はアドバイザリの修正版へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-xqc2-xf4c-x3h3">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Widget: Gtk コンポーネントの解放後使用）]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124917.html</link>
@@ -720,132 +846,6 @@
 <p>Fortinet の製品に、別経路・別チャネルを利用して認証を回避される脆弱性がある。認証なしで機器の管理機能に到達でき、設定の改変や情報の取得につながる可能性がある。入力では対象製品名と影響バージョンが明らかになっていない。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで対象製品と影響バージョンを確認し、修正版が公開されていれば更新する。該当製品を外部に公開している場合は、更新までの間アクセスを制限する。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-g63q-h893-6372">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Collabora Online の CODE Server に OS コマンドインジェクション、NextCloud 経由で遠隔コード実行のおそれ]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110447.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110447.html#2026-10-23T23:53:29.116Z</guid>
-            <pubDate>Fri, 23 Oct 2026 23:53:29 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Collabora Online の CODE Server に OS コマンドインジェクション、NextCloud 経由で遠隔コード実行のおそれ</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-10-23 追加され、実際の悪用が確認されている。EPSS は 0.012 と低く CVSS も不明だが、KEV 登録のため通知対象とした。自宅インフラの構成に Collabora / NextCloud は含まれないため直接の該当はない。</p>
-<p>NextCloud 上で使われる Collabora Online の Built-in CODE Server に OS コマンドインジェクションの脆弱性があり、遠隔から任意のコードを実行されるおそれがある。CISA の説明では、CODE サーバーが起動していない状態でもこの攻撃が成立するとされている。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。NextCloud 上で CODE サーバーを運用している場合は速やかに修正版へ更新する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-110447">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Arista VeloCloud Orchestrator (on-prem) の SQL インジェクションで特権的な内部機能に到達される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114625.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114625.html#2026-10-23T19:20:34.825Z</guid>
-            <pubDate>Fri, 23 Oct 2026 19:20:34 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Arista VeloCloud Orchestrator (on-prem) の SQL インジェクションで特権的な内部機能に到達される</h3>
-<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-10-23 追加されており、実際の悪用が確認されている（CVSS 9.9、EPSS 0.006）。ただし VeloCloud Orchestrator は自宅 Kubernetes の構成に含まれないため、即時対応ではなく「今週中」とした。KEV 追加のため、該当しなくても通知対象。</p>
-<p>オンプレミス版の Arista VeloCloud Orchestrator に SQL インジェクションの脆弱性があり、リモートの攻撃者が特権的な内部機能へアクセスして VCO ホストに影響を与えられる。悪用に成功すると、オーケストレータとそれが管理するデータの機密性・完全性・可用性が損なわれる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリに従って緩和策を適用する。自宅環境に該当する VCO インスタンスがないか確認し、あれば早急に対処する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-964w-6mm5-rm95">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Brotli デコーダの境界外書き込み（"Node2Shell"）]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/GHSA-9v8h-qqgm-4m35.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/GHSA-9v8h-qqgm-4m35.html#2026-10-23T19:20:34.825Z</guid>
-            <pubDate>Fri, 23 Oct 2026 19:20:34 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Brotli デコーダの境界外書き込み（&quot;Node2Shell&quot;）</h3>
-<p><strong>緊急度: 監視</strong> — Brotli は Web サーバ等のデコード処理で広く使われる圧縮ライブラリで、自宅環境でも間接的に使われている可能性がある。CISA KEV には未追加で、CVSS・EPSS も入力にないため悪用の兆候は確認されていないものとして「監視」とした。</p>
-<p>Brotli デコーダに境界外書き込みの脆弱性がある。PyPI の brotli / brotlicffi パッケージもこの問題の影響を受ける。入力には CVSS・EPSS・影響バージョンの情報がなく、詳細はアドバイザリで確認が必要。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> GitHub Advisory で影響バージョンと修正版を確認し、Brotli デコーダを使うコンポーネントが該当するか調べる。修正版があれば更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-9v8h-qqgm-4m35">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] BeyondTrust Remote Support のなりすまし認証バイパスでアプライアンス上のファイルを操作される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-102764.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-102764.html#2026-10-23T04:25:19.401Z</guid>
-            <pubDate>Fri, 23 Oct 2026 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>BeyondTrust Remote Support のなりすまし認証バイパスでアプライアンス上のファイルを操作される</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV 追加済み（2026-10-16）で悪用が確認されている。EPSS は 0.012。自宅インフラの構成には含まれないが、KEV のため通知する。</p>
-<p>なりすましによる認証バイパスの脆弱性で、リモートの攻撃者がアプライアンス上でファイル操作を行える可能性がある。CISA KEV に 2026-10-16 に追加され、実際の悪用が確認されている。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、緩和策を適用する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102764">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] SiteGuard Server Edition の OS コマンドインジェクションで root 権限のコマンドを実行される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-106931.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-106931.html#2026-10-23T04:25:19.401Z</guid>
-            <pubDate>Fri, 23 Oct 2026 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>SiteGuard Server Edition の OS コマンドインジェクションで root 権限のコマンドを実行される</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV 追加済み（2026-10-20）で悪用が確認されている。EPSS は 0.012。自宅インフラには該当しないが、KEV のため通知する。</p>
-<p>SiteGuard Server Edition の OS コマンドインジェクションにより、攻撃者が root または SYSTEM 権限で任意の OS コマンドを実行できる。CISA KEV に 2026-10-20 に追加されている。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、速やかに適用する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-106931">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] FortiOS / FortiProxy などのパストラバーサルで管理者が任意ファイルを改ざん・削除できる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2025-61624.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2025-61624.html#2026-10-23T04:25:19.401Z</guid>
-            <pubDate>Fri, 23 Oct 2026 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>FortiOS / FortiProxy などのパストラバーサルで管理者が任意ファイルを改ざん・削除できる</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV 追加済み（2026-10-16）。EPSS は 0.011。自宅インフラの構成には該当しないが、KEV のため通知する。</p>
-<p>FortiOS、FortiPAM、FortiProxy、FortiSwitchManager のパストラバーサルにより、管理者プロファイルと読み書き権限を持つ攻撃者が特定の CLI コマンド経由で任意のファイルを書き込み・削除できる。CISA KEV に 2026-10-16 に追加された。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認して適用する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-61624">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[即時対応] Plex Media Server の脆弱性チェーンで任意ファイル書き込みからコード実行をされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-96656.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-96656.html#2026-10-23T04:25:19.401Z</guid>
-            <pubDate>Fri, 23 Oct 2026 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Plex Media Server の脆弱性チェーンで任意ファイル書き込みからコード実行をされる</h3>
-<p><strong>緊急度: 即時対応</strong> — CISA KEV 追加済み（2026-10-20）で悪用が確認されている。EPSS は 0.008（連鎖する他の CVE は 0.005）。Plex Media Server は自宅で動かす利用者が多く、リモートアクセスで外部に露出しうるため即時対応とする。</p>
-<p>Plex Media Server では、管理者ユーザーが任意のファイルを書き込み、読み込み時に実行させられる（CVE-2026-96656）。これは SSRF やエンコード済み URI スキームの不適切な処理（CVE-2026-96652 / CVE-2026-96654 / CVE-2026-96655）と連鎖させられる。CISA KEV に 2026-10-20 に追加され、悪用が確認されている。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認して更新する。更新までは外部からのリモートアクセスを制限する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96656">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Siemens Software Center の検索パス制御不備でローカル攻撃者にコードを実行される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110936.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-110936.html#2026-10-23T04:25:19.401Z</guid>
-            <pubDate>Fri, 23 Oct 2026 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Siemens Software Center の検索パス制御不備でローカル攻撃者にコードを実行される</h3>
-<p><strong>緊急度: 監視</strong> — CISA KEV 追加済み（2026-10-20）だが、ローカルアクセスが必要なデスクトップアプリで自宅インフラには該当しない。EPSS 0.002。KEV のため監視として通知する。</p>
-<p>Siemens Software Center が検索するディレクトリに細工した DLL を置くことで、認証済みのローカル攻撃者がアプリケーションの権限で任意のコードを実行できる。CISA KEV に 2026-10-20 に追加された。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認して適用する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-110936">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Azure Kubernetes Configuration Service の認証欠落でネットワーク経由の権限昇格をされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-83938.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-83938.html#2026-10-23T04:25:19.401Z</guid>
-            <pubDate>Fri, 23 Oct 2026 04:25:19 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Azure Kubernetes Configuration Service の認証欠落でネットワーク経由の権限昇格をされる</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 10.0 だが、自宅で運用する Kubernetes ではなく Azure のマネージドサービスが対象で、KEV 追加や悪用の兆候もないため監視とする。</p>
-<p>Azure Kubernetes Configuration Service に重要機能の認証欠落があり、未認証の攻撃者がネットワーク経由で権限を昇格できる。CVSS は 10.0。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Azure のアドバイザリで修正状況を確認し、該当する構成を使っている場合は適用する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83938">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

@@ -710,3 +710,72 @@
 {"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-125757","kev":false,"reported":false}
 {"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-112136","kev":false,"reported":false}
 {"date":"2026-11-10T17:08:24.656Z","id":"CVE-2026-82509","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-116606","kev":true,"reported":true,"title":"Barracuda ESG の認証バイパスで、アプライアンスの全体構成を不正に書き換えられる","urgency":"week"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-111560","kev":true,"reported":true,"title":"Barracuda 複数製品の OS コマンドインジェクションで root 権限のコマンド実行を許す","urgency":"week"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-20320","kev":true,"reported":true,"title":"Cisco BroadWorks の XXE で、認証なしに機微な構成情報を読み取られる","urgency":"week"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-111793","kev":true,"reported":true,"title":"Openwave Webtop Media Transcoder の不適切なリソース転送で想定外の文書処理を許す","urgency":"watch"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-124194","kev":true,"reported":true,"title":"Microsoft Outlook でユーザー操作の確認が欠け、ネットワーク経由のなりすましを許す","urgency":"week"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-125350","kev":true,"reported":true,"title":"Chromium の解放後使用で、細工した Web ページからサンドボックス内の任意コード実行を許す","urgency":"immediate"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-125120","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121351","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121352","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121353","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121356","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121889","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-120002","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-113579","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-113580","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-114371","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-119017","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121354","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121887","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121892","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121894","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121896","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121898","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121906","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121908","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-109467","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-114160","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-89324","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121289","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-96157","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-96078","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-96067","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-95901","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-95882","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-88243","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-88234","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-88218","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-85844","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-66801","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-119990","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-119958","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-116945","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-116928","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-112967","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121653","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-120779","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121349","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121904","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121529","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-125347","kev":false,"reported":true,"title":"Google Chrome の FileSystem の認可不備で、リモートから権限を越えた操作をされる","urgency":"watch"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-108186","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121902","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121683","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121355","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-118740","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-114162","kev":false,"reported":true,"title":"Azure Managed Grafana の認可不備で、ネットワーク経由の権限昇格を許す","urgency":"watch"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-80095","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-118383","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-95962","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-109454","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-102166","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121370","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-121295","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-120808","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-125758","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-126187","kev":false,"reported":true,"title":"React Server Components の未認証リモートコード実行","urgency":"watch"}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-61887","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-61473","kev":false,"reported":false}
+{"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-44685","kev":false,"reported":false}
