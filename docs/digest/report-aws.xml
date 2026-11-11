@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 10 Nov 2026 04:10:48 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 02:25:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-11.html</guid>
+            <pubDate>Wed, 11 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock で Moonshot AI の Kimi K3.1 Pro が提供開始</h3>
+<p>Bedrock のモデル選択肢がまた広がりました。OpenAI 互換の Chat Completions／Responses と Converse API の両方から呼べ、明示的なプロンプトキャッシュでコストを抑えられる点が実装時の判断材料になります。OpenCode でコーディングアシスタントとして使う例まで書かれており、Claude 以外のモデルを試す入口として読む価値があります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-kimi-k3-1-pro-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Nitro Sandboxes: EKS Pod・ECS タスク・EC2 ワークロードごとにハードウェア分離を提供</h3>
+<p>各コンテナや EKS Pod に、ハードウェア分離された VM の境界を与える新しい EC2 の構成要素です。Nitro System の強い分離・オペレーターアクセスの排除・暗号学的な証明をほぼネイティブの性能でコンテナに持ち込めるため、マルチテナントや信頼できないワークロードを EKS に載せる際の設計が変わります。ノード単位ではなく Pod 単位で境界を引ける点が要点です。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/compute/nitro-sandboxes-hardware-isolation-for-every-eks-pod-ecs-task-and-ec2-workload/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fnitro-sandboxes-hardware-isolation-for-every-eks-pod-ecs-task-and-ec2-workload%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock の bedrock-runtime エンドポイントで OpenAI の Daybreak モデルが利用可能に</h3>
+<p>OpenAI のサイバーセキュリティ特化モデル Daybreak Blue（GPT-5.6 Sol）と Daybreak Red（GPT-5.6 Cyber）が、bedrock-runtime から呼べるようになりました。脆弱性の発見・検知エンジニアリング・インシデント対応といった防御側のワークフローと、許可された脆弱性研究・再現・緩和策開発という攻撃側の用途が分かれており、セキュリティ業務にエージェントを組み込む際のモデル選定に直結します。利用は対象顧客に限られる点は事前に確認が必要です。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-daybreak-on-amazon-bedrock-runtime/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fopenai-gpt-daybreak-on-amazon-bedrock-runtime%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>エージェント評価のプレイブック: Bedrock AgentCore Evaluations の組み込み・DeepEval・AutoEval</h3>
+<p>「タスクを完了したか」「話題から逸れていないか」「データを漏らしていないか」といった観点ごとに、どの評価器をどのレベルで使うかを整理した記事です。エージェントを本番に置くときに問題になるのは精度の平均値ではなく、どの失敗をどの層で捕まえるかという設計なので、評価基盤をこれから組む場合の判断軸として使えます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/the-agent-evaluation-playbook-built-in-deepeval-and-autoeval-on-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-agent-evaluation-playbook-built-in-deepeval-and-autoeval-on-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock のトークノミクス・データレイク: 呼び出しログを集約してコストを可視化</h3>
+<p>複数アカウントで Bedrock を使うと請求額しか見えず、どの呼び出しがコストを押し上げているか分からないという問題に対し、各アカウントの呼び出しログを 1 つのクエリ可能なテーブルに集約する構成を示しています。プロンプト・トークン数・モデル選択・呼び出し単位のコストを横断で見られるため、モデルルーティングやプロンプトキャッシュの効果を測る土台になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-bedrock-tokenomics-data-lake%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-10]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-10.html</link>
@@ -816,39 +849,6 @@
 <h3>AWS Config が 77 のリソースタイプを追加で記録対象に</h3>
 <p>EC2、S3 Files、Q Business など、AWS Config が 77 のリソースタイプを新たにサポートした。全リソースタイプの記録を有効にしていれば自動で追跡対象に入るので、コンプライアンス判定やドリフト検知の穴が減る。IaC で構成を管理していても、Config のカバレッジは「検知できる範囲」を直接決めるため、記録対象の棚卸しと合わせて確認しておきたい。</p>
 <p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-config-new-resource-types">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-config-new-resource-types">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-07]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-07.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-07.html</guid>
-            <pubDate>Wed, 07 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Bedrock AgentCore と OpenClaw で、会話をまたいで文脈を蓄える AI アシスタントを作る</h3>
-<p>Amazon Bedrock AgentCore のランタイムで OpenClaw を動かし、AgentCore のメモリで「使い捨てのチャット」をメタデータフィルタで引ける構造化知識に変える実装例。会話ごとに記憶を失う既製アシスタントの弱点を、エージェント側の記憶設計で埋める話で、何をどう保存しどう検索するかという判断が具体的に読める。エージェントに記憶を持たせる構成は自作エージェントにそのまま流用できる論点。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-a-context-aware-ai-assistant-on-agentcore-and-openclaw/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-a-context-aware-ai-assistant-on-agentcore-and-openclaw%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Bedrock AgentCore と Nova Sonic で作る音声トラベルコンシェルジュ</h3>
-<p>リアルタイム音声の Nova Sonic とマネージドなナレッジベースを AgentCore に載せ、航空アプリの座席変更や遅延確認を音声で受ける構成の実装例。エージェントは MCP ツール経由でバックエンドに触り、書き込みの前に必ず確認を挟む作りになっている。音声エージェントを業務システムに繋ぐときの確認フローと権限の切り方は、作り始める前に押さえておきたい部分。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-a-voice-travel-concierge-with-amazon-bedrock-agentcore-managed-knowledge-base-and-nova-sonic/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-a-voice-travel-concierge-with-amazon-bedrock-agentcore-managed-knowledge-base-and-nova-sonic%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>NGINX Ingress から ALB へ移行するとき、oauth2-proxy の OIDC 認証が静かに壊れる</h3>
-<p>NGINX Ingress Controller の retire に伴い、OpenID Connect 認証を Application Load Balancer 側へ移すと認証が黙って壊れるポイントを扱った記事。oauth2-proxy をリバースプロキシモードで残す案と、ALB ネイティブの OIDC を使う案の 2 通りが示されている。EKS 上のイングレスと認証を移行するときの設計判断に直結する。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/containers/migrating-from-nginx-ingress-to-alb-handling-oauth2-proxy/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fmigrating-from-nginx-ingress-to-alb-handling-oauth2-proxy%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>SageMaker HyperPod の運用とガバナンスのベストプラクティス</h3>
-<p>SageMaker Unified Studio から HyperPod を運用しつつ、クラスタのガバナンスを保つための設計指針。組織・プロジェクト・クラスタ・ワークロードという層ごとに、インフラの境界設計、アクセス統制、共有キャパシティの割り当てをどう考えるかが整理されている。内製の ML 基盤をプラットフォームとして提供する立場で、そのまま参照できる内容。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/best-practices-for-amazon-sagemaker-hyperpod-administration-and-governance/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbest-practices-for-amazon-sagemaker-hyperpod-administration-and-governance%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Lambda SnapStart がコンテナイメージ関数に対応、起動時間がサブ秒に</h3>
-<p>SnapStart が zip 形式だけでなくコンテナイメージの関数でも使えるようになり、起動時間を数秒からサブ秒まで縮められるようになった。コンテナで動かしている関数でもコールドスタートを消せる選択肢が増え、レイテンシに敏感なワークロードの構成を見直せる。有効化の手順と、新規・既存関数に適用するときの勘所がまとまっている。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/compute/get-started-with-aws-lambda-snapstart-for-container-images/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fget-started-with-aws-lambda-snapstart-for-container-images%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

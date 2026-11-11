@@ -4,11 +4,44 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 10 Nov 2026 04:05:52 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 02:16:16 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-11]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-11.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-11.html</guid>
+            <pubDate>Wed, 11 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>KubeVirt が CNCF を卒業、Kubernetes 上の VM 運用が10年の節目に</h3>
+<p>KubeVirt が CNCF の卒業プロジェクトになった。仮想マシンを Kubernetes のワークロードとして同じ API で扱えるため、既存の VM 資産とコンテナ基盤の運用を一本化したいプラットフォームには効く。10年をかけてガバナンスとエコシステムが成熟したことを示す節目で、VM 移行の判断材料として押さえたい。</p>
+<p class="links"><a href="https://cloudnativenow.com/kubecon-cloudnativecon-north-america-2026/cncf-graduates-kubevirt-as-project-marks-10-years-of-running-vms-on-kubernetes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcloudnativenow.com%2Fkubecon-cloudnativecon-north-america-2026%2Fcncf-graduates-kubevirt-as-project-marks-10-years-of-running-vms-on-kubernetes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CloudNativePG が CNCF インキュベーティングプロジェクトに</h3>
+<p>PostgreSQL の高可用クラスタを Operator で管理する CloudNativePG が、CNCF のインキュベーティングプロジェクトに承認された。ステートフルな DB を Kubernetes に寄せる選択肢として、今後のガバナンスやロードマップの前提が固まる。CloudNativePG を運用しているなら、採用継続の判断材料として読む価値がある。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/10/cloudnativepg-becomes-a-cncf-incubating-project/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F10%2Fcloudnativepg-becomes-a-cncf-incubating-project%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Open Cluster Management が CNCF インキュベーティングプロジェクトに</h3>
+<p>Open Cluster Management が CNCF のインキュベーティングプロジェクトになった。複数の Kubernetes クラスタをクラウド・オンプレミスにまたがって管理するためのプロジェクトで、マルチクラスタ運用をプラットフォーム側でどう抽象化するかの参考になる。クラスタが増える前提の設計を考えるなら、採用候補として名前と位置づけを押さえておきたい。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/10/open-cluster-management-ocm-becomes-a-cncf-incubating-project/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F10%2Fopen-cluster-management-ocm-becomes-a-cncf-incubating-project%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Istio、従来型アプリと AI エージェントをまたぐ全ワークロードに対象を拡大</h3>
+<p>Istio が、従来型のクラウドネイティブアプリと AI エージェントが混在する環境まで対象を広げ、全ワークロードで一貫したセキュリティ・可視性・制御を提供するとしている。エージェントをサービスメッシュに載せるかどうかは、通信の可視性と運用負荷のトレードオフで決まるため、適用範囲の拡大は設計判断に直結する。追加の運用負荷を抑えるという点も、メッシュ運用コストの評価に効く。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/10/istio-enables-global-availability-for-all-workloads-traditional-agentic-and-beyond/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F10%2Fistio-enables-global-availability-for-all-workloads-traditional-agentic-and-beyond%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Jaeger、AI 支援のトラブルシューティングと GenAI 可観測性をプレビュー</h3>
+<p>Jaeger に、自然言語によるトラブルシューティング、MCP ネイティブのツール、GenAI を意識したトレース可視化という実験的機能が加わる。AI アプリの分散トレースは従来のリクエスト追跡だけでは読み解きにくく、OpenTelemetry の運用に AI 支援をどう組み込むかの具体例になる。実験段階の機能だが、可観測性スタックの次の形を先に掴む価値がある。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/10/jaeger-previews-ai-assisted-troubleshooting-and-genai-observability-for-opentelemetry-traces-at-kubecon/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F10%2Fjaeger-previews-ai-assisted-troubleshooting-and-genai-observability-for-opentelemetry-traces-at-kubecon%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-10]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-10.html</link>
@@ -625,39 +658,6 @@
 <h3>Meshery が CNCF の Incubating プロジェクトに</h3>
 <p>CNCF の Technical Oversight Committee が Meshery を incubating プロジェクトとして承認した。Meshery は複数のクラウドネイティブ環境を 1 つの管理プレーンから扱うツールで、航空宇宙・通信・ネットワーク・エンタープライズソフトウェアまで利用が広がっていると説明されている。incubating 昇格はガバナンスと採用の節目で、プラットフォーム層の選択肢として参照される機会が増える。</p>
 <p class="links"><a href="https://www.cncf.io/blog/2026/10/07/meshery-becomes-a-cncf-incubating-project/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F07%2Fmeshery-becomes-a-cncf-incubating-project%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-07]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-07.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-07.html</guid>
-            <pubDate>Wed, 07 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Kubernetes における cgroup v2 への移行:いま知っておくべきこと</h3>
-<p>ノードのリソース管理の土台が入れ替わりつつある。Kubernetes v1.31 で cgroup v1 の管理はメンテナンスモードに入り、v2 は v1.25 から stable になっている。v2 は単一の統合階層を持つため、ノード設計やリソース配分の前提が変わる。自宅クラスタの OS と Kubernetes バージョンの対応を確かめ、移行計画を立てる起点にしたい公式ブログの一次情報。</p>
-<p class="links"><a href="https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F10%2F06%2Fkubernetes-cgroups-v2-shift%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Harbor Webhook の SSRF 脆弱性:任意のユーザーがサーバーのクラウド資格情報に到達できる</h3>
-<p>CNCF のコンテナレジストリ Harbor の Webhook に SSRF があり、任意のユーザーがサーバーのクラウド資格情報に到達できるという指摘。レジストリはイメージ供給の要になるため、ここが踏み台になると被害がクラスタ全体に及ぶ。レジストリを外部に晒す構成や、そこに与えているクラウド側の権限の設計を見直す材料になる。</p>
-<p class="links"><a href="https://www.ox.security/blog/harbor-ssrf-vulnerability-cloud-credentials/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.ox.security%2Fblog%2Fharbor-ssrf-vulnerability-cloud-credentials%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>コピーが侵害を意味するとき:kubectl cp が Windows で RCE を可能にする仕組み</h3>
-<p>日常的に使う kubectl cp が、Windows 上ではリモートコード実行につながるという指摘。クラスタ本体ではなく操作端末側の話なので見落とされやすいが、開発端末から本番クラスタを触る構成では影響が直接及ぶ。Windows から kubectl を使うメンバーがいるなら、該当条件と回避策を先に確認しておきたい。</p>
-<p class="links"><a href="https://securityboulevard.com/2026/10/when-copy-means-compromise-how-kubectl-cp-enables-rce-on-windows/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsecurityboulevard.com%2F2026%2F10%2Fwhen-copy-means-compromise-how-kubectl-cp-enables-rce-on-windows%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>OpenTelemetry、Kubernetes attributes processor を v1.0.0 に昇格</h3>
-<p>Kubernetes の属性をテレメトリに付与する processor が v1.0.0 になり、stable として扱えるようになった。テレメトリに載せる Kubernetes 側の情報の扱いが固まることで、Collector の設定を stable 前提で組めるようになる。OpenTelemetry で可観測性を統合している構成では、Collector の構成を見直す判断材料になる。</p>
-<p class="links"><a href="https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.infoq.com%2Fnews%2F2026%2F10%2Fopentelemetry-kubernetes-observ%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>OBI によるゼロコードのトレース・ログ相関</h3>
-<p>OpenTelemetry eBPF Instrumentation(OBI)が、サービスが既に書いているログにトレースコンテキストを後付けできるようになった。SDK の導入もログライブラリの設定もアプリの再ビルドも不要で、障害時に「どのログ行がそのリクエストのものか」を追えるようになる。構造化ログを整えきれていないサービスを抱えているほど効きが大きく、eBPF と OpenTelemetry を既に併用している構成にそのまま乗る。</p>
-<p class="links"><a href="https://opentelemetry.io/blog/2026/obi-trace-log-correlation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fobi-trace-log-correlation%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

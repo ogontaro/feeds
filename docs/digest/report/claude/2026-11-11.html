@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-11</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-11</h1>
+<article class="report"><h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>自作MCPを社内全員のClaudeで使いたい！カスタムコネクタで接続してみた</h3>
+<p>社内FAQをMCPサーバーにして、Claudeのカスタムコネクタからmcp-remoteなしで認証付きで引く構成を、Bedrock AgentCore GatewayとCognitoで組んだ実例です。個人のCLI設定で終わりがちなMCPを、組織の全員が同じ経路で使える形まで持っていく際の、認証・ゲートウェイ・クライアント設定の設計判断が具体的に追えます。MCPサーバーを社内展開したいときの最初の地図として読めます。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-custom-connector-mcp-agentcore/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>テストは全部緑だった ― AIが書いたコードのレビューで、実際に効いたこと</h3>
+<p>テストもlintもbuildも通っているのに壊れている、というケースを実際に踏んだ2つの事例から、AIが書いたコードのレビューで何が見落とされやすいかを整理しています。実装をClaude CodeやCodexに任せるほど「全部緑」は安全の証明ではなくなるので、人間がどこを疑うべきかの判断基準として使えます。</p>
+<p class="links"><a href="https://qiita.com/nagilabo/items/e2404f3dc1fc6c9814a1">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>DownloadsのAGENTS.mdでAIが不正なnpmパッケージを入れかけた事例と設定の点検</h3>
+<p>コーディングエージェントがDownloadsに置かれたAGENTS.mdを読み、悪意あるnpmパッケージをインストールしようとした事例と、実行前に止まった経緯を扱っています。リポジトリの外にある指示ファイルが実行される入力になるというAGENTS.mdの弱点が、現実の攻撃として現れた点が重いです。自分の環境の指示ファイル探索範囲とパッケージ導入の権限設定を点検するきっかけになります。</p>
+<p class="links"><a href="https://qiita.com/Kai_GenAI/items/13dd3f05baeab24b1066">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Codeのエージェント可観測性をDocker Compose・Grafanaで組み立てる</h3>
+<p>Claude Codeが出力するOpenTelemetryのメトリクスとログイベントを使い、サブエージェントやツール呼び出し単位でトークン消費とコストを可視化するダッシュボードを組んでいます。月次の請求額では見えない「どのセッションの、どのモデルが高いか」を追えるようになるので、自宅のGrafanaスタックにそのまま持ち込める観測設計として読めます。</p>
+<p class="links"><a href="https://dev.to/jubinsoni/claude-code-agent-observability-with-docker-compose-grafana-and-microsoft-fabric-build-an-agent-3cjl">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fjubinsoni%2Fclaude-code-agent-observability-with-docker-compose-grafana-and-microsoft-fabric-build-an-agent-3cjl">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Herdr、コーディングエージェントを見張る公式モバイルアプリ</h3>
+<p>複数のコーディングエージェントを回すHerdrに、iPhone・iPad・Android向けの公式モバイルアプリが出ました。手元のスマートフォンからエージェントのセッションを開いて応答できるため、デスクを離れている間も並行作業を止めずに済ませたいときに効きます。使った人の感想では操作感は良好な一方、既存のHerdrサーバーに接続できるようにしてほしいという声も出ており、導入前の前提は確認しておきたいところです。</p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2120007037463777444">@oikon48 のポスト</a></li>
+<li><a href="https://apps.apple.com/jp/app/herdr/id6828898364?l=en-US">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fapps.apple.com%2Fjp%2Fapp%2Fherdr%2Fid6828898364%3Fl%3Den-US">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

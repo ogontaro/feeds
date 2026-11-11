@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-11</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-11</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock で Moonshot AI の Kimi K3.1 Pro が提供開始</h3>
+<p>Bedrock のモデル選択肢がまた広がりました。OpenAI 互換の Chat Completions／Responses と Converse API の両方から呼べ、明示的なプロンプトキャッシュでコストを抑えられる点が実装時の判断材料になります。OpenCode でコーディングアシスタントとして使う例まで書かれており、Claude 以外のモデルを試す入口として読む価値があります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-kimi-k3-1-pro-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Nitro Sandboxes: EKS Pod・ECS タスク・EC2 ワークロードごとにハードウェア分離を提供</h3>
+<p>各コンテナや EKS Pod に、ハードウェア分離された VM の境界を与える新しい EC2 の構成要素です。Nitro System の強い分離・オペレーターアクセスの排除・暗号学的な証明をほぼネイティブの性能でコンテナに持ち込めるため、マルチテナントや信頼できないワークロードを EKS に載せる際の設計が変わります。ノード単位ではなく Pod 単位で境界を引ける点が要点です。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/compute/nitro-sandboxes-hardware-isolation-for-every-eks-pod-ecs-task-and-ec2-workload/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fnitro-sandboxes-hardware-isolation-for-every-eks-pod-ecs-task-and-ec2-workload%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock の bedrock-runtime エンドポイントで OpenAI の Daybreak モデルが利用可能に</h3>
+<p>OpenAI のサイバーセキュリティ特化モデル Daybreak Blue（GPT-5.6 Sol）と Daybreak Red（GPT-5.6 Cyber）が、bedrock-runtime から呼べるようになりました。脆弱性の発見・検知エンジニアリング・インシデント対応といった防御側のワークフローと、許可された脆弱性研究・再現・緩和策開発という攻撃側の用途が分かれており、セキュリティ業務にエージェントを組み込む際のモデル選定に直結します。利用は対象顧客に限られる点は事前に確認が必要です。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-daybreak-on-amazon-bedrock-runtime/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fopenai-gpt-daybreak-on-amazon-bedrock-runtime%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>エージェント評価のプレイブック: Bedrock AgentCore Evaluations の組み込み・DeepEval・AutoEval</h3>
+<p>「タスクを完了したか」「話題から逸れていないか」「データを漏らしていないか」といった観点ごとに、どの評価器をどのレベルで使うかを整理した記事です。エージェントを本番に置くときに問題になるのは精度の平均値ではなく、どの失敗をどの層で捕まえるかという設計なので、評価基盤をこれから組む場合の判断軸として使えます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/the-agent-evaluation-playbook-built-in-deepeval-and-autoeval-on-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fthe-agent-evaluation-playbook-built-in-deepeval-and-autoeval-on-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock のトークノミクス・データレイク: 呼び出しログを集約してコストを可視化</h3>
+<p>複数アカウントで Bedrock を使うと請求額しか見えず、どの呼び出しがコストを押し上げているか分からないという問題に対し、各アカウントの呼び出しログを 1 つのクエリ可能なテーブルに集約する構成を示しています。プロンプト・トークン数・モデル選択・呼び出し単位のコストを横断で見られるため、モデルルーティングやプロンプトキャッシュの効果を測る土台になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-bedrock-tokenomics-data-lake%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
