@@ -786,3 +786,17 @@
 {"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-126539","kev":false,"reported":false}
 {"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-125881","kev":false,"reported":false}
 {"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-125883","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-78287","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-123710","kev":false,"reported":true,"title":"Red Hat Quay の署名鍵ローテーション不備で、私有イメージの読み書きとタグ差し替えを許す","urgency":"watch"}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-123695","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-121497","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-115734","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-115735","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-126537","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-85632","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-115733","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-126325","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-121374","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-118965","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-120495","kev":false,"reported":false}
+{"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-112174","kev":false,"reported":false}
