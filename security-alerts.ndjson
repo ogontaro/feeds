@@ -779,3 +779,10 @@
 {"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-61887","kev":false,"reported":false}
 {"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-61473","kev":false,"reported":false}
 {"date":"2026-11-10T23:35:50.799Z","id":"CVE-2026-44685","kev":false,"reported":false}
+{"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-126261","kev":false,"reported":true,"title":"FortiManager の認可不備で、本来は許可されない操作を実行される","urgency":"watch"}
+{"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-125297","kev":false,"reported":false}
+{"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-125298","kev":false,"reported":false}
+{"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-126542","kev":false,"reported":false}
+{"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-126539","kev":false,"reported":false}
+{"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-125881","kev":false,"reported":false}
+{"date":"2026-11-11T06:41:36.562Z","id":"CVE-2026-125883","kev":false,"reported":false}

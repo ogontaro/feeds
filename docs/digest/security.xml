@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Tue, 10 Nov 2026 23:35:50 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 06:41:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] FortiManager の認可不備で、本来は許可されない操作を実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126261.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126261.html#2026-11-11T06:41:36.562Z</guid>
+            <pubDate>Wed, 11 Nov 2026 06:41:36 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>FortiManager の認可不備で、本来は許可されない操作を実行される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、CISA KEV には未追加で EPSS も不明のため実際の悪用は確認されていない。FortiManager は広く使われるネットワーク管理製品であり、自宅インフラの構成には含まれないため「監視」とする。</p>
+<p>Fortinet FortiManager 8.0.0 および 7.6.0 系に、不適切な認可（improper authorization）の脆弱性がある。認可の検証が不十分なため、本来は許可されない操作を実行できる可能性がある。入力の概要はここまでで、攻撃条件や影響の詳細は示されていない。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、FortiManager を更新する。FortiManager を運用していない場合は該当しない。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-952j-p3c7-fpqx">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Barracuda ESG の認証バイパスで、アプライアンスの全体構成を不正に書き換えられる]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116606.html</link>
@@ -832,20 +846,6 @@
 <p>Consul-k8s の 0.42.0 以降に、ネームスペースをまたいだ認可バイパスの脆弱性がある。CVSS は 9.9 だが、入力では影響の説明が途中で切れており、悪用条件の詳細は分からない。Consul を Kubernetes 上で使っている場合は影響バージョンを確認する必要がある。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。Consul をクラスタで使っている場合は、0.42.0 以降かどうかを確認して修正版へ更新する。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-3rqq-8xjm-v58x">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Fortinet 製品の認証バイパスで機器に不正アクセスされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107656.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107656.html#2026-10-26T20:35:40.851Z</guid>
-            <pubDate>Mon, 26 Oct 2026 20:35:40 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Fortinet 製品の認証バイパスで機器に不正アクセスされる</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、CISA KEV 未収載・EPSS 不明で悪用の確認はまだない。自宅インフラの構成に Fortinet 製品は含まれていないが、広く使われるネットワーク機器の認証バイパスであり、基準の「監視」に該当する。</p>
-<p>Fortinet の製品に、別経路・別チャネルを利用して認証を回避される脆弱性がある。認証なしで機器の管理機能に到達でき、設定の改変や情報の取得につながる可能性がある。入力では対象製品名と影響バージョンが明らかになっていない。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで対象製品と影響バージョンを確認し、修正版が公開されていれば更新する。該当製品を外部に公開している場合は、更新までの間アクセスを制限する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-g63q-h893-6372">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
