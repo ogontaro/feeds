@@ -823,3 +823,10 @@
 {"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126806","kev":false,"reported":false}
 {"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126800","kev":false,"reported":false}
 {"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126777","kev":false,"reported":false}
+{"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-12591","kev":false,"reported":false}
+{"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-76954","kev":false,"reported":true,"title":"Synology DSM の認証 API に SQL インジェクション、遠隔から任意ファイルの読み書きを許す","urgency":"watch"}
+{"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-12507","kev":false,"reported":false}
+{"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-126785","kev":false,"reported":false}
+{"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-90908","kev":false,"reported":false}
+{"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-110003","kev":false,"reported":false}
+{"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-8333","kev":false,"reported":false}

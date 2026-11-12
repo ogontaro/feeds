@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Thu, 12 Nov 2026 00:50:41 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 11:27:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Synology DSM の認証 API に SQL インジェクション、遠隔から任意ファイルの読み書きを許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-76954.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-76954.html#2026-11-12T11:27:53.817Z</guid>
+            <pubDate>Thu, 12 Nov 2026 11:27:53 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Synology DSM の認証 API に SQL インジェクション、遠隔から任意ファイルの読み書きを許す</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが CISA KEV には未追加で、悪用の確認はまだ無い。EPSS は不明。NAS は自宅でも広く使われる製品だが、自宅インフラの構成リストに Synology DSM は無く、入力からは使用の有無を判断できないため「監視」とした。</p>
+<p>Synology DiskStation Manager (DSM) の Auth API に SQL インジェクションの脆弱性がある。リモートの攻撃者が任意のファイルを読み書きでき、サービス妨害攻撃も行える。影響するのは 7.2.1-69057-13、7.2.2-72806-10、7.3.2-86009-5、7.4.1-90080-1 より前の各系列。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> DSM を使っている場合は 7.2.1-69057-13 / 7.2.2-72806-10 / 7.3.2-86009-5 / 7.4.1-90080-1 以降の該当系列へ更新する。使っていない場合は対応不要。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76954">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] FortiOS の重要機能に認証なしで到達できる脆弱性]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126259.html</link>
@@ -832,20 +846,6 @@
 <p>Adobe Commerce と Magento で危険な種別のファイルを制限なくアップロードでき、実行時のユーザー権限で任意コードが実行される。結果としてアカウントやセッションの乗っ取り、権限昇格につながる。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Adobe のアドバイザリで修正版を確認し、Commerce/Magento を更新する。更新まではアップロード機能を外部に公開しない。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48356">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Sunhillo SureLine の認証バイパスで root 権限のコマンド実行をされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-112352.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-112352.html#2026-10-27T22:22:57.928Z</guid>
-            <pubDate>Tue, 27 Oct 2026 22:22:57 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Sunhillo SureLine の認証バイパスで root 権限のコマンド実行をされる</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.1 で、攻撃条件は未認証のリモート。EPSS と CISA KEV は入力に無く、悪用の確認も無い。自宅インフラの構成一覧に SureLine は無いが、ネットワーク機器の Critical で攻撃内容が具体的なため監視とする。影響バージョンか確認する。</p>
-<p>SureLine 9.1.5 より前では、ランダムな識別子も完全性保護も無い平文ユーザー名だけのセッション Cookie を偽造でき、有効な Web セッションを持つ任意のユーザーになりすませる。Admin や sftp_user などの既定アカウント名を推測して checkLogin（libwebcmn.so）と networkDiag.cgi のログイン検査を通し、root 権限のコマンド実行まで連鎖させられる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 9.1.5 以降へ更新する。更新までは管理画面を外部に公開しない。ベンダーのアドバイザリで修正版を確認する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-112352">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
