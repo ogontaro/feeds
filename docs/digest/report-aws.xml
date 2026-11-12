@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 11 Nov 2026 02:25:56 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 03:02:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-12.html</guid>
+            <pubDate>Thu, 12 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon EKS Auto Mode が Pod 単位のセキュリティグループに対応</h3>
+<p>Auto Mode のノードでも Pod ごとに EC2 セキュリティグループを割り当てられるようになり、アプリごとにノードプールを分けずにネットワークを分離できる。RDS や ElastiCache への到達範囲を Pod 単位で絞れるので、マルチテナントや本番・検証が混在するクラスタの設計にそのまま効く。Terraform で EKS を管理しているなら、ノードプール分割の前提を見直すきっかけになる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-security-groups-for-pods/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-eks-auto-mode-security-groups-for-pods%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>[アップデート] Amazon EKS Auto Mode で Kubernetes Gateway API が使えるようになりました</h3>
+<p>Auto Mode のクラスタ設定で Gateway API を有効にすると、AWS Load Balancer Controller を自分で入れなくても Gateway / HTTPRoute から ALB が作られる。重み付けルーティングや ACM 証明書の自動検出を実際に試した結果までまとまっており、Ingress 周りのアドオン運用をどこまで減らせるか判断する材料になる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/eks-auto-mode-kubernetes-gateway-api/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock AgentCore に Web Search API が登場</h3>
+<p>署名付き API コール1回で Web 検索ができ、ゲートウェイもリソース作成も要らない。エージェントループやデータパイプラインに検索を組み込むとき、検索基盤を自前で持たずに済む選択肢になる。エージェントのグラウンディングをどう確保するかを考える材料として読む価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-the-web-search-api-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>DeepSeek-V4-Pro / V4-Flash / V4.1-Flash が Amazon SageMaker JumpStart で利用可能に</h3>
+<p>MIT ライセンスのオープンウェイト MoE モデル3種が JumpStart に追加された。推論・コーディング・エージェント用途でフロンティア級とされる性能を、トークンあたり少数のパラメータ活性で出すのが特徴。オープンウェイトモデルを検証に使い、コストと性能の当たりを取るときの比較対象が増える。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/01/deepseek-v4-pro-v4-flash-v4.1-flash-on-sagemaker-jumpstart/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F01%2Fdeepseek-v4-pro-v4-flash-v4.1-flash-on-sagemaker-jumpstart%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock で OpenAI Codex を動かす</h3>
+<p>Codex を Bedrock バックエンドで全社展開する際の、アクセス経路・ガバナンス・コストの論点をプラットフォーム・セキュリティ・財務の担当者向けに整理している。コーディングエージェントの導入を、個人のツール選びではなく組織の統制の話として詰めるときの叩き台になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/openai-codex-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fopenai-codex-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-11]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-11.html</link>
@@ -815,40 +848,6 @@
 <h3>Network Firewall のコンテナ属性フィルタがワイルドカードに対応、EKS/ECS のルールをまとめられる</h3>
 <p>EKS と ECS 向けのコンテナ属性ベースの検査フィルタで、ワイルドカードマッチが使えるようになった。<code>app=payments-*</code> のようなパターンで複数のコンテナワークロードを1つのルールにまとめられるため、ワークロードが増えるたびにコンテナの関連付けを個別に足していく運用が要らなくなる。名前を規約で揃えているクラスタほど効く変更なので、EKS の外向き通信をフィルタで絞っているならルールの整理と合わせて見直したい。</p>
 <p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-network-firewall-container-attributes-wildcard">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-network-firewall-container-attributes-wildcard">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-08]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-08.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-08.html</guid>
-            <pubDate>Thu, 08 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Claude Haiku 5.5 が Amazon Bedrock と Claude Platform on AWS で利用可能に</h3>
-<p>Claude 5.5 系で最速・最安の小型モデルが Bedrock と Claude Platform on AWS に登場し、AWS GovCloud (US) でも同日から提供されている。Haiku 4.5 比で実行コストが約75%減り、最大コンテキストは 200K から 1M トークンに拡張、Haiku として初めて effort の調整もできるようになった。これまでコストを理由に Sonnet 側へ寄せていたサブエージェントの並列実行や大量のツール呼び出しを Haiku に逃がせるようになるので、エージェントを組むときのモデル分担とコストの前提が変わる。</p>
-<p><a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-claude-haiku-5-5-on-aws%2F">Google 翻訳で全文を読む</a></p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-claude-haiku-5-5/">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>Amazon Quick と Bedrock Knowledge Bases で、RAG の権限チェックをクエリ時に寄せる</h3>
-<p>SharePoint、Google Drive、Confluence のように権限体系が異なるソースをまたいで RAG を組むと、権限情報を事前に取り込む方式はすぐ実態とずれる。この記事は、クエリのたびに権威となるソースへ問い合わせて文書単位の権限を検証する方式を、Amazon Quick と Bedrock Knowledge Bases の構成として説明している。社内文書を扱うエージェントを設計するとき、アクセス制御をどこに置くかを決める材料になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Frethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AWS DevOps Agent の調査結果を、検証済みの修正案として自動化する</h3>
-<p>DevOps Agent は調査と報告まではするが、リソースを勝手に変えないよう observe-and-report に留められている。この記事は Lambda Durable Functions と EventBridge、Bedrock を組み合わせ、調査サマリを事前検証済みの修正案に変換して、オンコールが1アクションで承認できる形にする手順を示す。一次対応まで AI に担わせつつ人間の承認を残す、権限境界の引き方の実例として読める。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/automate-remediation-post-aws-devops-agent-investigation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fautomate-remediation-post-aws-devops-agent-investigation%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Cornerstone OnDemand が Bedrock と Strands Agents で DB 診断を 78% 削減</h3>
-<p>Strands Agents と Amazon Bedrock でデータベース運用のマルチエージェント「Orion AI」を作り、3人のチームで診断時間を45分から10分へ短縮した事例。半年間でどういう設計判断を積んだかまで書かれているので、数値だけでなく進め方も持ち帰れる。運用の一次切り分けをエージェントに寄せるときの、規模感と現実的な作り方の参考になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AWS Config が 77 のリソースタイプを追加で記録対象に</h3>
-<p>EC2、S3 Files、Q Business など、AWS Config が 77 のリソースタイプを新たにサポートした。全リソースタイプの記録を有効にしていれば自動で追跡対象に入るので、コンプライアンス判定やドリフト検知の穴が減る。IaC で構成を管理していても、Config のカバレッジは「検知できる範囲」を直接決めるため、記録対象の棚卸しと合わせて確認しておきたい。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-config-new-resource-types">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-config-new-resource-types">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-12</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-12</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code Skills の使い分け: インラインとフォーク（サブエージェント）</h3>
+<p>同じ Skill でも、メイン会話の履歴を共有して続けるインラインと、<code>context: fork</code> で独立したコンテキスト・ツール境界を持つサブエージェントに切り出すフォークでは、向く作業がはっきり違う。継続的な対話が要る知識作業と、長く自己完結した作業を要約して返したい場面をどう分けるかは、Skills を増やすほど迷うところで、その判断の物差しになる。サブエージェントの並行実行を試しているなら、どの Skill を fork すべきかを見直すきっかけにもなる。</p>
+<p class="links"><a href="https://dev.to/_94be737e156beb4d74df2/claude-code-skills-deep-dive-6-from-inline-to-forked-subagents-bhk">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2F_94be737e156beb4d74df2%2Fclaude-code-skills-deep-dive-6-from-inline-to-forked-subagents-bhk">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.321: Fable 5.2 の既定モデル化と権限チェックの修正</h3>
+<p>Fable 5.2 が新しい既定モデルになり、100万トークンのコンテキストと $8/$40（キャッシュ読み取り $0.20/Mtok）という条件は、日常のコスト設計に直接効く。同じリリースには、<code>cp</code>/<code>mv</code> でディレクトリに置いたファイルに deny ルールが効かない、読み取り専用 Bash が確認なしでサンドボックス外に出る、MCP OAuth のリダイレクトでリフレッシュトークンが別ホストに渡る、といった権限・秘密情報の抜けの修正も含まれる。deny ルールやサンドボックスでエージェントの権限境界を運用しているなら、更新内容を確認しておきたい。</p>
+<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.321#item-a2f942ea09a7">記事を読む</a></p>
+</section>
+<section class="item">
+<h3><code>--effort</code> を打ち間違えても Claude Code は止まらない、という実測</h3>
+<p>cron などで Claude Code を自動実行していると、フラグの綴り違いがエラーにならず「設定したつもり」のまま走るのは厄介だ。著者が実際に打ち間違えて処理が止まらないことを確認しており、自動化スクリプトで引数をどう検証するかを考える材料になる。</p>
+<p class="links"><a href="https://qiita.com/phibi-soon/items/127572cab26cc8a004ec">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>App Store / Google Play のレビューを Claude から直接読む MCP サーバー</h3>
+<p>モデルの学習データではなく「今週のレビュー」を根拠に答えさせるため、両ストアを読む MCP サーバーを自作した話。5つのツールに分け、生テキストではなく圧縮した要約をモデルに渡す設計は、コンテキストを消費せずに外部データを扱う MCP サーバーを書くときの参考になる。</p>
+<p class="links"><a href="https://dev.to/rasareka/i-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Frasareka%2Fi-gave-claude-live-app-store-and-google-play-reviews-with-one-mcp-server-46jl">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Pomerado: 任意の Web サイトをエージェント向け MCP に変える</h3>
+<p>API を持たない航空会社・銀行・通販・行政ポータルを、決定的で自己修復する API（MCP）に数分で変えるという Launch HN。ブラウザ操作に頼らずエージェントの行動範囲を広げる発想で、社内のレガシーポータルをエージェントに触らせたいときの選択肢になる。セルフサービスで試せるので、自前で MCP を書くコストと比べてみたい。</p>
+<p class="links"><a href="https://news.ycombinator.com/item?id=50455811">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D50455811">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

@@ -4,11 +4,29 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 11 Nov 2026 02:37:40 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 03:12:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-12]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-12.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-12.html</guid>
+            <pubDate>Thu, 12 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>OpenNOW v1.0.5</h3>
+<p>Qt Quick と Rust 製のネイティブストリーミングエンジンへ移行した正式リリースで、UI と描画基盤そのものが入れ替わる。画面遷移や全画面切り替えを素早く繰り返したときに起きていたフォーカス・入力由来のエラーが修正され、設定画面の余白やストア/ライブラリのレイアウトも広がった。GeForce NOW 側が情報を省略したときの接続ストア状態の表示も直っており、常用しているなら更新して挙動を確かめる価値がある。</p>
+<p class="links"><a href="https://github.com/OpenCloudGaming/OpenNOW/releases/tag/v1.0.5">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FOpenCloudGaming%2FOpenNOW%2Freleases%2Ftag%2Fv1.0.5">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sunshine v2026.1112.13541</h3>
+<p>依存更新が多い回だが、flatpak でコマンドに接頭辞を付けなくてよくなる修正と、ペアリング時に重複したクライアント証明書を置き換える修正が入っており、どちらも運用中のトラブルに直結する。Web UI を単一ページアプリケーションへ作り直すリファクタも含まれるので、設定画面の操作感が変わっていないか確認しておきたい。</p>
+<p class="links"><a href="https://github.com/SunshineStream/Sunshine/releases/tag/v2026.1112.13541">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FSunshineStream%2FSunshine%2Freleases%2Ftag%2Fv2026.1112.13541">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-11]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-11.html</link>
@@ -424,24 +442,6 @@
 <h3>Sunshine の Web UI をシングルページアプリに刷新、ペアリングの証明書重複も修正</h3>
 <p>自宅ゲームストリーミングのホスト側として使われる Sunshine が新しいビルドを公開し、Web UI がシングルページアプリケーションに作り替えられ、テストとカバレッジも追加された。ペアリング時にクライアント証明書が重複する不具合の修正や、flatpak でコマンドの接頭辞が不要になる変更も入っている。接続がうまく通らない環境では解消が期待できる一方、管理画面の操作が変わる可能性があるので、更新前に変更点を確認しておきたい。</p>
 <p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1008.155609">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1008.155609">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ゲーム環境 日次レポート 2026-10-08]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-08.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-08.html</guid>
-            <pubDate>Thu, 08 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>Steam Frame 向け SteamOS 0.4.5 ベータ、VR ストリーミングの色再現を修正</h3>
-<p>Steam Frame のベータチャンネル向けに SteamOS 0.4.5 が配信された。VR ストリーミング中の色の再現（ヘッドセット側のクロマ回帰）が修正され、0.4 系で入った消費電力・バッテリー持続の改善（ストリーミング中とローカル実行の両方で最大12%、条件により差がある）も積み上がった状態になっている。ベータは設定の「システム &gt; システムアップデートチャンネル」から選べるので、発売前に自分の環境で試すかどうかを決める材料になる。</p>
-<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/675134162359812111">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F675134162359812111">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Sunshine v2026.1007.173111 リリース、Web UI の作り替えとペアリング修正</h3>
-<p>ストリーミングのホスト側である Sunshine の新しいリリース。Flatpak でコマンドのプレフィックスが不要になり、Web UI はシングルページアプリケーションへ作り替えられてテストとカバレッジが追加され、ペアリングで重複したクライアント証明書を置き換える修正も入っている。自宅で配信元を動かしているなら、上げたときに設定画面まわりの操作がどう変わるかを先に確認しておく価値がある。</p>
-<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1007.173111">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1007.173111">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
