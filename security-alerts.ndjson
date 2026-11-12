@@ -800,3 +800,26 @@
 {"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-118965","kev":false,"reported":false}
 {"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-120495","kev":false,"reported":false}
 {"date":"2026-11-11T17:16:51.342Z","id":"CVE-2026-112174","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-110697","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126262","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126259","kev":false,"reported":true,"title":"FortiOS の重要機能に認証なしで到達できる脆弱性","urgency":"watch"}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126263","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126170","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126147","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126148","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126254","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126164","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126768","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126797","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126812","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126253","kev":false,"reported":true,"title":"FortiOS の認証バイパスで保護された機能を回避される","urgency":"watch"}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126251","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126229","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126157","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126155","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126156","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126150","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126257","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126806","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126800","kev":false,"reported":false}
+{"date":"2026-11-12T00:50:41.786Z","id":"CVE-2026-126777","kev":false,"reported":false}

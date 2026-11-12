@@ -4,11 +4,39 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Wed, 11 Nov 2026 17:16:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 00:50:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] FortiOS の重要機能に認証なしで到達できる脆弱性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126259.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126259.html#2026-11-12T00:50:41.786Z</guid>
+            <pubDate>Thu, 12 Nov 2026 00:50:41 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>FortiOS の重要機能に認証なしで到達できる脆弱性</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical。CISA KEV への追加は無く、悪用の確認も無い。EPSS は不明。ネットワーク機器として広く使われる FortiOS の Critical のため監視とする。自宅インフラの構成に FortiOS は含まれない。</p>
+<p>Fortinet FortiOS の重要機能に認証が欠けている脆弱性。認証を持たない攻撃者が当該機能に到達できる可能性がある。影響を受けるのは FortiOS 8.0.0 および 7.x 系とされる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。FortiOS を使っている場合は影響バージョンか確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-f2f6-qwmc-g833">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] FortiOS の認証バイパスで保護された機能を回避される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126253.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126253.html#2026-11-12T00:50:41.786Z</guid>
+            <pubDate>Thu, 12 Nov 2026 00:50:41 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>FortiOS の認証バイパスで保護された機能を回避される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.3 の Critical。CISA KEV への追加は無く、悪用の確認も無い。EPSS は不明。広く使われるネットワーク機器 FortiOS の Critical のため監視とする。自宅インフラの構成に FortiOS は含まれない。</p>
+<p>Fortinet FortiOS 8.0.0 から 8.0.1 に認証バイパスの脆弱性がある。認証を回避して、本来は認証が必要な機能に到達される可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。FortiOS を使っている場合は影響バージョンか確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-j3f4-wmxp-qvcr">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Red Hat Quay の署名鍵ローテーション不備で、私有イメージの読み書きとタグ差し替えを許す]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123710.html</link>
@@ -818,34 +846,6 @@
 <p>SureLine 9.1.5 より前では、ランダムな識別子も完全性保護も無い平文ユーザー名だけのセッション Cookie を偽造でき、有効な Web セッションを持つ任意のユーザーになりすませる。Admin や sftp_user などの既定アカウント名を推測して checkLogin（libwebcmn.so）と networkDiag.cgi のログイン検査を通し、root 権限のコマンド実行まで連鎖させられる。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 9.1.5 以降へ更新する。更新までは管理画面を外部に公開しない。ベンダーのアドバイザリで修正版を確認する。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-112352">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[即時対応] PHP の内部リクエスト状態の不整合で未認証の遠隔コード実行を許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109619.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109619.html#2026-10-27T00:33:06.872Z</guid>
-            <pubDate>Tue, 27 Oct 2026 00:33:06 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>PHP の内部リクエスト状態の不整合で未認証の遠隔コード実行を許す</h3>
-<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-26 追加済みで実際の悪用が確認されている。EPSS は 1.000 と入力中の最高値。PHP は広く露出するランタイムで、自宅クラスタのイメージに含まれている可能性がある。</p>
-<p>PHP に、内部リクエスト状態が古いまま残る問題がある。認証なしで遠隔からコードを実行できるとされ、CISA は実際の悪用を確認して KEV に追加した。PHP を使うコンテナイメージやアプリケーションは影響を受ける可能性がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、PHP を使うコンテナイメージを洗い出して更新する。更新までは該当アプリを外部に公開しない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109619">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[即時対応] PHP のメモリ破壊で未認証の遠隔コード実行を許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109618.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109618.html#2026-10-27T00:33:06.872Z</guid>
-            <pubDate>Tue, 27 Oct 2026 00:33:06 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>PHP のメモリ破壊で未認証の遠隔コード実行を許す</h3>
-<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-26 追加済みで実際の悪用が確認されている。EPSS は 1.000 と入力中の最高値。PHP は広く露出するランタイムで、自宅クラスタのイメージに含まれている可能性がある。</p>
-<p>PHP に、メモリ不足時の破壊につながる脆弱性がある。認証なしの遠隔コード実行が可能とされ、CISA は実際の悪用を確認して KEV に追加した。PHP を使うコンテナイメージやアプリケーションは影響を受ける可能性がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、PHP を使うコンテナイメージを洗い出して更新する。更新までは該当アプリを外部に公開しない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109618">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
