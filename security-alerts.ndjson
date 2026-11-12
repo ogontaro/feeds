@@ -830,3 +830,21 @@
 {"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-90908","kev":false,"reported":false}
 {"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-110003","kev":false,"reported":false}
 {"date":"2026-11-12T11:27:53.817Z","id":"CVE-2026-8333","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-127016","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-126859","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-126912","kev":false,"reported":true,"title":"Google Chrome に Skia のバッファオーバーフローなど複数の Critical 脆弱性","urgency":"watch"}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-126885","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-126872","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-126909","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-126846","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-126842","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-124814","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-110959","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-124815","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-19422","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-127131","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-127111","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-127063","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-117551","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-120869","kev":false,"reported":false}
+{"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-127046","kev":false,"reported":false}

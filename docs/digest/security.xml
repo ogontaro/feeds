@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Thu, 12 Nov 2026 11:27:53 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 20:04:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Google Chrome に Skia のバッファオーバーフローなど複数の Critical 脆弱性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126912.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126912.html#2026-11-12T20:04:25.208Z</guid>
+            <pubDate>Thu, 12 Nov 2026 20:04:25 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Google Chrome に Skia のバッファオーバーフローなど複数の Critical 脆弱性</h3>
+<p><strong>緊急度: 監視</strong> — 広く使われるブラウザの Critical な脆弱性のため「監視」とする。CISA KEV には未追加で、EPSS は 0.003 と低く、悪用の兆候は確認されていない。Chrome は自宅インフラの構成には含まれない。</p>
+<p>Google Chrome 157.0.8103.78 より前の版に、Skia のバッファオーバーフローや ServiceWorker の解放後使用（use after free）など複数の脆弱性が報告されている。いずれもリモートの攻撃者に悪用されうるとされ、CVSS は 9.6。入力では概要が途中で切れており、具体的な攻撃条件や影響の詳細は示されていない。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Chrome を 157.0.8103.78 以降へ更新する。同版には他の Critical な修正も含まれるため、まとめて適用する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-vx9f-gh92-x72m">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Synology DSM の認証 API に SQL インジェクション、遠隔から任意ファイルの読み書きを許す]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-76954.html</link>
@@ -832,20 +846,6 @@
 <p>Brotli の伸長処理が戻り値を確認しないため、細工した Brotli 圧縮ストリームを送るだけでリモートの未認証攻撃者が隣接するデコーダ状態のメモリを破壊できる。情報漏えい・サービス停止に加え、任意コード実行につながる可能性がある。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Brotli を組み込んだ製品（Web サーバ・プロキシ等）を使っている場合は修正版へ更新し、KEV の推奨に従って緩和策を適用する。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111497">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[即時対応] Adobe Commerce / Magento の危険なファイル種別の無制限アップロードで任意コード実行をされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-48356.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-48356.html#2026-10-27T22:22:57.928Z</guid>
-            <pubDate>Tue, 27 Oct 2026 22:22:57 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Adobe Commerce / Magento の危険なファイル種別の無制限アップロードで任意コード実行をされる</h3>
-<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-27 追加され、実際の悪用が確認されている。EPSS 0.306（0.1 以上）。CVSS は入力に無い。自宅インフラの構成一覧に Commerce/Magento は無いが、KEV 追加のため監視以上で必ず通知する。</p>
-<p>Adobe Commerce と Magento で危険な種別のファイルを制限なくアップロードでき、実行時のユーザー権限で任意コードが実行される。結果としてアカウントやセッションの乗っ取り、権限昇格につながる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Adobe のアドバイザリで修正版を確認し、Commerce/Magento を更新する。更新まではアップロード機能を外部に公開しない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48356">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
