@@ -848,3 +848,15 @@
 {"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-117551","kev":false,"reported":false}
 {"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-120869","kev":false,"reported":false}
 {"date":"2026-11-12T20:04:25.208Z","id":"CVE-2026-127046","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-100397","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-107360","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124002","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124004","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124010","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-127275","kev":false,"reported":true,"title":"Linksys EA8100 の JNAP API で認証が欠落し、遠隔から設定を変更される","urgency":"watch"}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124014","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124012","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124007","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124005","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124006","kev":false,"reported":false}
+{"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-120868","kev":false,"reported":false}

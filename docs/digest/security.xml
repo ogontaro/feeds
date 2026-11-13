@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Thu, 12 Nov 2026 20:04:25 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 01:55:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Linksys EA8100 の JNAP API で認証が欠落し、遠隔から設定を変更される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-127275.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-127275.html#2026-11-13T01:55:13.681Z</guid>
+            <pubDate>Fri, 13 Nov 2026 01:55:13 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Linksys EA8100 の JNAP API で認証が欠落し、遠隔から設定を変更される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.3 の Critical で、家庭用として広く使われるネットワーク機器（ルーター）の脆弱性のため「監視」に該当。CISA KEV には未登録、EPSS は不明で、悪用が実際に確認された旨の記載はない。ただし公開済みの攻撃コードがあると明記されており、修正版の情報も無い。</p>
+<p>Linksys EA8100 1.0.3.216940 の ui_server.lua にあり、JNAP API の SetRemoteSetting / SetUnsecuredWiFiWarning が isEnabled / enabled 引数を適切に扱わないため認証が欠落する。リモートから到達できる攻撃者がこの欠落を突いて設定を変更できる。攻撃コードは公開済みで、ベンダーは開示前の連絡に応答していない。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している機種が EA8100 か確認する。修正ファームウェアの提供状況をベンダーに確認し、提供があれば更新する。修正版が無い間は、WAN 側から管理画面・JNAP API に到達できないようにする。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-127275">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Google Chrome に Skia のバッファオーバーフローなど複数の Critical 脆弱性]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126912.html</link>
@@ -832,20 +846,6 @@
 <p>Contact Manager プラグインの全バージョンに任意ファイルアップロードの脆弱性がある。任意のファイルをアップロードさせられ、アップロード先でファイルが実行される構成では任意コード実行につながるおそれがある。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、Contact Manager プラグインを更新する。使用していない場合はプラグインを無効化・削除する。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-gfc3-vp5h-pp8w">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[即時対応] Google Brotli の戻り値未チェックで隣接メモリを破壊・任意コード実行をされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111497.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111497.html#2026-10-27T22:22:57.928Z</guid>
-            <pubDate>Tue, 27 Oct 2026 22:22:57 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Google Brotli の戻り値未チェックで隣接メモリを破壊・任意コード実行をされる</h3>
-<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-27 追加され、実際の悪用が確認されている。EPSS 0.555（要注意の 0.5 以上）。CVSS は入力に無い。Brotli は広く露出する圧縮ライブラリのため、KEV 追加かつ広く露出する製品として即時対応とする。</p>
-<p>Brotli の伸長処理が戻り値を確認しないため、細工した Brotli 圧縮ストリームを送るだけでリモートの未認証攻撃者が隣接するデコーダ状態のメモリを破壊できる。情報漏えい・サービス停止に加え、任意コード実行につながる可能性がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Brotli を組み込んだ製品（Web サーバ・プロキシ等）を使っている場合は修正版へ更新し、KEV の推奨に従って緩和策を適用する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111497">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
