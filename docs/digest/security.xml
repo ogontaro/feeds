@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 13 Nov 2026 01:55:13 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 11:12:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Linksys EA8100 の SMB サービスで設定を外部から操作され、初期化が不適切になる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-127277.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-127277.html#2026-11-13T11:12:26.799Z</guid>
+            <pubDate>Fri, 13 Nov 2026 11:12:26 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Linksys EA8100 の SMB サービスで設定を外部から操作され、初期化が不適切になる</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.3 の Critical で、広く使われるネットワーク機器（家庭用ルーター）の脆弱性のため「監視」に該当。CISA KEV 未登録、EPSS は不明で、悪用の確認はまだない。自宅インフラの構成リストに対象機種の記載は無く、該当するかは不明。</p>
+<p>Linksys EA8100 1.0.3.216940 の SMB サービス（etc/init.d/service_smbd.sh）で、ANON_ACCESS 引数の操作により初期化が不適切に行われる。攻撃はリモートから開始でき、実証コードが公開されている。ベンダーには早期に連絡されたが応答がない。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 自宅のルーターが EA8100 か確認する。該当する場合、ベンダーの修正ファームウェア提供状況を確認し、修正が無い間は SMB サービスを無効化して外部公開しない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-127277">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Linksys EA8100 の JNAP API で認証が欠落し、遠隔から設定を変更される]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-127275.html</link>
@@ -832,20 +846,6 @@
 <p>Google Chrome 156.0.8078.73 より前のバージョンで、V8、Skia、FileSystem、SVG、Paint、Compositing など複数のコンポーネントにメモリ破壊や入力検証不備の脆弱性がある。いずれも CVSS 9.6 で、遠隔の攻撃者によって悪用される可能性がある。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 156.0.8078.73 以降に更新する。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-9v66-9hrj-f8g2">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] WordPress の Contact Manager プラグインの任意ファイルアップロードでコードを実行される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109218.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109218.html#2026-10-28T13:09:24.160Z</guid>
-            <pubDate>Wed, 28 Oct 2026 13:09:24 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>WordPress の Contact Manager プラグインの任意ファイルアップロードでコードを実行される</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical。CISA KEV への追加は無く、EPSS も入力に無いため悪用の確認はまだ無い。自宅インフラの構成一覧に WordPress は無いが、広く使われる製品の Critical で攻撃内容が具体的なため監視とする。影響バージョンか確認する。</p>
-<p>Contact Manager プラグインの全バージョンに任意ファイルアップロードの脆弱性がある。任意のファイルをアップロードさせられ、アップロード先でファイルが実行される構成では任意コード実行につながるおそれがある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、Contact Manager プラグインを更新する。使用していない場合はプラグインを無効化・削除する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-gfc3-vp5h-pp8w">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

@@ -860,3 +860,22 @@
 {"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124005","kev":false,"reported":false}
 {"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-124006","kev":false,"reported":false}
 {"date":"2026-11-13T01:55:13.681Z","id":"CVE-2026-120868","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-119077","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-125055","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-126378","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-126380","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-127073","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-127080","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-128049","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-127277","kev":false,"reported":true,"title":"Linksys EA8100 の SMB サービスで設定を外部から操作され、初期化が不適切になる","urgency":"watch"}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-126315","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-126473","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-128027","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-120864","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-111334","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-107415","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-107412","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-107410","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-107407","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-107408","kev":false,"reported":false}
+{"date":"2026-11-13T11:12:26.799Z","id":"CVE-2026-107409","kev":false,"reported":false}
