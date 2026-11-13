@@ -4,11 +4,45 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 12 Nov 2026 02:50:34 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 02:33:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-13]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-13.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-13.html</guid>
+            <pubDate>Fri, 13 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.322〜v2.1.323 の主要アップデート — Code Mode の追加と Bash 権限チェック・サンドボックスの修正</h3>
+<p>v2.1.323 は 294 件の変更を含む大型アップデートで、ツール呼び出しを JavaScript で書く実験的な Code Mode が加わった。Bash の権限チェックとサンドボックスの不具合がまとめて修正されており、エージェントに何を許すかの設計を見直す材料になる。未知モデルの想定コンテキストの 1M 化など破壊的変更も 20 件あるので、更新前に内容を確認しておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261113-cc-updates-v2-1-323/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Opus 5.5 と Fable 5.2、結局どっちを使う？違いと使い分けを整理</h3>
+<p>2026年11月9日に出た Fable 5.2 と、9月22日に出た Opus 5.5 の違いを、公式ドキュメント・公式発表・第三者のベンチマーク集計から整理した比較。日々のコーディングでどちらを既定にするかを決める材料になる。モデルが増えるたびに同じ迷いが起きるので、比較の観点を押さえておく価値がある。</p>
+<p class="links"><a href="https://qiita.com/kazutoyamaura/items/c6c77ee9f989d0bd5e4f">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code Skills 詳解(7): 起動から安全な実行まで</h3>
+<p>Skills の安全性を、起動できる人・使えるツール・承認を飛ばせる呼び出し・コマンドが実際に届く範囲の 4 層に分けて整理している。allowed-tools は恒久的な許可リストではなく一時的な事前承認で、disallowed-tools も OS のサンドボックスではない、という区別が実務では効く。高リスクの Skills には指示・権限・フック・サンドボックス・人の確認を組み合わせるべきだという結論は、そのまま権限設計のチェックリストになる。</p>
+<p class="links"><a href="https://dev.to/_94be737e156beb4d74df2/claude-code-skills-deep-dive-7-from-invocation-to-safe-execution-4pii">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2F_94be737e156beb4d74df2%2Fclaude-code-skills-deep-dive-7-from-invocation-to-safe-execution-4pii">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のプロンプトキャッシュで週次上限を伸ばす方法</h3>
+<p>自分の 10,000 リクエストを測った記録で、キャッシュが切れたあとの最初の 1 回は温まっているときの 12〜80 倍のコストがかかると報告している。100k トークン未満のセッションではコールドリロードが約 2 割、600k を超えると 60〜66% を占めるという内訳は、長いセッションを続けるかの判断に効く。記事が挙げる 3 つのルールのうち、休憩前の compact と新しいセッションの開始はすぐに試せる。</p>
+<p class="links"><a href="https://dev.to/dinesh_rajendran_46fc29b4/the-hidden-cost-of-a-cold-session-why-your-claude-code-bill-spikes-after-lunch-4n8c">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdinesh_rajendran_46fc29b4%2Fthe-hidden-cost-of-a-cold-session-why-your-claude-code-bill-spikes-after-lunch-4n8c">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>cc-sdd v3 で何が変わったか — 仕様駆動開発が「自律実装」までつながった</h3>
+<p>仕様駆動開発ツール cc-sdd の v3 で、仕様から「自律実装」までがつながったという変更点の解説。仕様を先に書き、それをエージェントへの入力と検証基準にする進め方について、ツール側がどこまで担うようになったかが分かる。Spec-Driven Development を試すかどうかの判断材料になる。</p>
+<p class="links"><a href="https://sreake.com/blog/what-has-changed-in-cc-sdd-v3/">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-12]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-12.html</link>
@@ -1115,53 +1149,6 @@
 <h3>「予約機能を作って」は通らない — Claude Code には「やらないこと」と判断基準を渡す</h3>
 <p>Laravel の雛形をほぼ Claude Code に書かせた中で、予約モジュールだけは粗すぎる指示でも細かすぎる指示でも失敗し、うまくいったのは「やらないことと判断基準を渡す」形だったという記録。実装すべきことを列挙する代わりに、触らせない範囲とトレードオフの決め方を先に渡す、という指示の粒度を自分の CLAUDE.md に当てて測れる。同じ失敗を何度も繰り返している自覚があるなら、先に読む価値がある。</p>
 <p class="links"><a href="https://qiita.com/mugenweb/items/295640153db6bc84db2c">記事を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-10-09]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-09.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-09.html</guid>
-            <pubDate>Fri, 09 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
-<section class="item">
-<h3>Claude Platform の料金改定 — Sonnet 5.5 のキャッシュ読み取りが半額、Max / Team には毎月の API クレジット</h3>
-<p>Sonnet 5.5 のキャッシュ読み取りが $0.10 / 100万トークンに半減し、エージェント的な回し方でおおむね2割安くなるとのこと（入力 $2 / 出力 $10、Claude Code の利用上限は据え置き）。あわせて Max 5x に月 $100、Max 20x に月 $200、Team は pooled で最大 $500 の Claude Platform API クレジットが毎月付与される。Claude Code の枠とは別に、自作ハーネスや MCP サーバーから API を直接叩いている分の原価が今月から変わるので、自分の使い方でどちらに効くかを先に確認しておきたい。</p>
-<ul>
-<li><a href="https://x.com/ClaudeDevs/status/2108287358374482381">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2108287358374482381">Google 翻訳で読む</a></li>
-<li><a href="https://x.com/oikon48/status/2108072865325339108">@oikon48 のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Claude Managed Agents で定期実行の自動化エージェントを組む手順が公開</h3>
-<p>Slack や GitHub をスケジュールで読み、資格情報とメモリを持ったまま更新を投稿するエージェントを、Claude Code のコマンドから立ち上げるやり方が公式ブログで示されている。cron と自前スクリプトで継ぎ接ぎする代わりに、定期実行エージェントの権限と記憶をどう設計するかの実例として読める。新しく Max / Team に付く API クレジットをそのまま充てられる点も、試すときの敷居を下げる。</p>
-<ul>
-<li><a href="https://x.com/ClaudeDevs/status/2108320296323477683">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2108320296323477683">Google 翻訳で読む</a></li>
-<li><a href="https://claude.dev/blog/building-effective-agent-automations/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fbuilding-effective-agent-automations%2F">Google 翻訳で全文を読む</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Claude Code の Explore を Haiku にしておく設定が、2.1.293 で Haiku 5.5 を指すようになり費用が34〜43%減</h3>
-<p><code>.claude/agents/Explore.md</code> に <code>model: haiku</code> と書くだけの設定が、Claude Code 2.1.293 への更新を機に Haiku 5.5 を引くようになり、実測で費用が34〜43%下がったという記録。サブエージェントのモデルを1段落とすだけでどれだけ効くのか、そしてその指定がどこまで継承されるのかを、自分の設定に当てて確かめる価値がある。API 課金なら autocompact の窓を 100k に固定して安い側の帯に留める tips も併せて効く。</p>
-<ul>
-<li><a href="https://qiita.com/suwa_nobu/items/837c03e66ba03ee636ea">記事を読む</a></li>
-<li><a href="https://x.com/oikon48/status/2108039100267942145">@oikon48 のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>新人が初日に迷うことは、AIも毎回迷う — 暗黙のルールを全部言葉にした実践</h3>
-<p>「AI に毎回同じ説明をしている」「前に注意したことをまたやられる」「任せる範囲を広げたいが危険な操作が不安」という、CLAUDE.md や AGENTS.md を書いている誰もが覚えのある場面を、暗黙のルールの明文化で潰しにいった記録。何を書いておけば任せる範囲を広げられるのか、指示ファイルに落とすべき粒度の実例として読める。</p>
-<ul>
-<li><a href="https://qiita.com/tzp/items/1a264aa185440e79899e">記事を読む</a></li>
-</ul>
-</section>
-<h2>新ツール・サブスク（1 本）</h2>
-<section class="item">
-<h3>APM（Agent Package Manager）で Claude Code と Codex のスキル・エージェント設定を一元管理</h3>
-<p>Microsoft の Agent Package Manager を使い、Claude Code と Codex のスキルやエージェント設定を <code>apm.yml</code> に寄せて自動展開する手順の検証記事。ロックファイルで環境を再現し、audit で改ざんを検知する挙動まで確認しているので、ハーネスが2つ3つに増えたときに「設定はどのリポジトリの何を正とするか」を決める材料になる。</p>
-<ul>
-<li><a href="https://dev.classmethod.jp/articles/apm-claude-code-codex-skill-management/">記事を読む</a></li>
-</ul>
 </section>
 ]]></content:encoded>
         </item>

@@ -4,11 +4,39 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 12 Nov 2026 02:56:40 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 02:38:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-13]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-13.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-13.html</guid>
+            <pubDate>Fri, 13 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>KubeVirt が CNCF の卒業プロジェクトに — VM と AI を同じ Kubernetes 基盤へ</h3>
+<p>KubeVirt が CNCF の卒業(graduated)段階に到達したことが、KubeCon NA に合わせて報じられている。Kubernetes 上で仮想マシンを第一級のワークロードとして動かせるため、VM 前提の既存資産とコンテナの新規 workload を 1 つのクラスタに載せる設計判断が現実味を帯びる。卒業は API と運用の安定性がある程度保証されたというシグナルなので、VM 移行を検討する際の土台として押さえておきたい。</p>
+<p class="links"><a href="https://siliconangle.com/2026/11/12/kubevirt-graduates-from-cncf-kubernetes-unites-vms-ai-kubeconna/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsiliconangle.com%2F2026%2F11%2F12%2Fkubevirt-graduates-from-cncf-kubernetes-unites-vms-ai-kubeconna%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI トレーニングのためのギャングスケジューリングとトポロジー考慮の配置</h3>
+<p>Kubernetes の標準スケジューラは Pod を 1 つずつ独立に配置するため、分散トレーニングのように「全 Pod が同時に、条件を満たすハードウェアへ」揃う必要がある workload では詰まる。この記事はギャングスケジューリングとトポロジーを意識した配置を、なぜ必要かから整理している。大規模な推論・学習を Kubernetes に載せる前提が少しずつ現実になる中で、スケジューリングの限界をどこで補うかの判断材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F12%2Fgang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>GenAI フレームワークの計装をエージェント群に任せる — OpenTelemetry と Weaver で検証する</h3>
+<p>生成 AI フレームワークに OpenTelemetry を仕込む作業は、拡張ポイントを探し、操作を GenAI のセマンティック規約に対応づけ、フレームワークの更新に追随し続ける必要があり、その都度コストがかかる。この記事は、その調査・計画・実装をエージェントのチームに任せ、結果を OpenTelemetry Weaver で規約に照らして検証する試みを報告している。計装の維持をどこまで自動化できるかは可観測性の運用コストに直結するので、エージェントに何を任せ、何を機械的に検証させるかの型として読める。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/agent-harness-genai-instrumentation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fagent-harness-genai-instrumentation%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>llm-d 1.0、Kubernetes 上での本番 AI 推論を狙う</h3>
+<p>Kubernetes 上で大規模な LLM 推論を運用するための llm-d が 1.0 に到達した。1.0 は「実験的な構成」から本番運用を意識した区切りになるので、推論基盤を Kubernetes に寄せるかどうかの比較対象として見ておく価値がある。モデル配信とスケーリングを同じクラスタの運用に乗せられるかは、リソース要求の適正化やイベント駆動のスケールと直結する論点になる。</p>
+<p class="links"><a href="https://itbrief.asia/story/llm-d-1-0-aims-to-ease-production-ai-inference-at-scale">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fitbrief.asia%2Fstory%2Fllm-d-1-0-aims-to-ease-production-ai-inference-at-scale">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-12]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-12.html</link>
@@ -625,39 +653,6 @@
 <h3>AI コーディングツールが SBOM 統制を追い越していく、EU CRA の適用を前に</h3>
 <p>AI コーディングツールがコードと依存を大量に生み出すことで、SBOM（ソフトウェア部品表）による統制が追いつかなくなっている、という話を EU の Cyber Resilience Act の適用が近づく文脈で扱っている。生成されたコードの由来や依存をどう記録し、どこで機械的に止めるかは、AI 支援開発を前提にしたチームの実務課題になる。セキュリティと開発フローの両方に効くので、プラットフォーム側で何を強制するかを決める材料になる。</p>
 <p class="links"><a href="https://www.techtarget.com/it-infrastructure/news/366651862/AI-coding-tools-run-riot-over-SBOM-controls-as-EU-CRA-looms">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.techtarget.com%2Fit-infrastructure%2Fnews%2F366651862%2FAI-coding-tools-run-riot-over-SBOM-controls-as-EU-CRA-looms">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-09]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-09.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-09.html</guid>
-            <pubDate>Fri, 09 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
-<section class="item">
-<h3>AI エージェントに root を渡さない——「次のシステム状態」を提案させる</h3>
-<p>CNCF のブログが、自律システムにマシンを運用させてよい条件を問い直し、root 権限を渡す代わりに「次に望むシステム状態」を提案させ、適用は既存のパイプラインに任せる設計を説いている。エージェントの出力を実行そのものではなく差分の提案として扱えば、権限の境界をレビューできる場所に置いたまま自動化を進められる。宣言的に状態を適用する Kubernetes や GitOps の流れと噛み合わせやすく、エージェントを基盤の利用者として設計し直す動きの具体例になる。</p>
-<p class="links"><a href="https://www.cncf.io/blog/2026/10/08/dont-give-ai-agents-root-make-them-propose-the-next-system-state/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F08%2Fdont-give-ai-agents-root-make-them-propose-the-next-system-state%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>AI エージェントが作ったリソースの持ち主は誰か</h3>
-<p>エージェントがクラウド上に VPC やサブネット、DB、ロードバランサーなどを次々と作り、その一部が使われないまま残っていく——という状況で、所有権と寿命を誰が持つのかを扱った記事。作らせた時点で持ち主と片付けの責任を決めておかないと、意図しないリソースが静かに積み上がる。エージェントを基盤の一利用者として扱う設計と、放置リソースによるコスト増の両方に効く論点で、Platform Engineering の延長線上にある。</p>
-<p class="links"><a href="https://thenewstack.io/ai-agent-cloud-ownership/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fai-agent-cloud-ownership%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>OTel-Native by Design——どの可観測性スタックにも出力できる製品設計</h3>
-<p>セルフホスト製品や SaaS を作る側に向けて、ログ・トレース・メトリクスを任意の OpenTelemetry 互換バックエンドへ出せるようにしておくべきだ、という設計論。内蔵ダッシュボードや特定ベンダーへの出力だけに閉じ込めると、利用側は自分の観測基盤に集約できず、導入のたびに運用が分断される。集約先を自分で選べるかどうかは、ツールを選ぶときの実務的な判断材料になる。</p>
-<p class="links"><a href="https://opentelemetry.io/blog/2026/otel-native-by-design/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fotel-native-by-design%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>一次基盤とは別の場所にバックアップを置く——IDCF クラウド障害から</h3>
-<p>IDCF クラウドへのランサムウェア攻撃が報じられ、国内組織の不正アクセス・情報漏洩事案も相次いでいる。注目したいのは Movable Type クラウド版が、IDCF クラウドとは異なる IaaS 基盤（Google Cloud）に 7 世代のデイリーバックアップを保管していたという説明で、一次系と同じ場所にしかバックアップを置かない構成の危うさがよく分かる。バックアップ（Velero など）の保管先が一次系と別の障害ドメインになっているかを点検する価値がある。</p>
-<ul>
-<li><a href="https://x.com/ockeghem/status/2108038368953282721">@ockeghem のポスト</a></li>
-<li><a href="https://x.com/ockeghem/status/2108042580529418697">@ockeghem のポスト</a></li>
-<li><a href="https://x.com/jyoshise/status/2107826404369072271">@jyoshise のポスト</a></li>
-<li><a href="https://security.macnica.co.jp/blog/2026/10/web-incidents2026.html">リンク先を読む</a></li>
-</ul>
 </section>
 ]]></content:encoded>
         </item>

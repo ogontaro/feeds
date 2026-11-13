@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-13</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-13</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>AgentCore ランタイムの次世代版 — ハードウェア分離セッションと使用量ベース課金</h3>
+<p>エージェントが数時間にわたり複数ステップの処理をユーザーの代理で実行するようになり、実行環境の隔離と課金の粒度が運用上の制約になってきている。次世代の AgentCore ランタイムはセッションをハードウェアレベルで分離し、起動の高速化・割り当てリソースの増加・使用量ベース課金・データにまで及ぶ分離を打ち出している。自作のサンドボックスでエージェントを動かしているなら、隔離の境界をどこに置き、実行時間に対してどう課金されるかの比較材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Frun-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SGLang-Neuron が公開 — Trainium 上で SGLang のインターフェースのままモデルを配信</h3>
+<p>SGLang-Neuron が AWS Deep Learning Container として公開され、使い慣れた SGLang のインターフェースのまま Trainium 上でモデルの配信と強化学習のロールアウト生成ができるようになった。ネイティブ PyTorch 上で動くため、SGLang 前提で組んだ構成を大きく変えずに GPU 以外の推論基盤を試せる。オープンウェイトモデルの自前配信をどこに載せるかを比べる際、実装の作り直しを伴わない選択肢として押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Cognito が OAuth 2.0 トークン交換(RFC 8693)に対応</h3>
+<p>ユーザーの代理で動くサービスや AI エージェントが、元のトークンをそのまま転送したり独自のトークン発行基盤を維持したりせず、下流サービス向けに絞り込んだトークンへ交換できるようになった。呼び出し先ごとに権限の範囲を狭められるので、エージェントに何を持たせるか、どこで権限を落とすかの設計に直接効く。標準仕様に沿うぶん自前実装を減らせるため、代理実行の権限設計を見直す材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fcognito-token-exchange%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock の支出を IAM プリンシパル単位で可視化し、上限をかけられるようにする</h3>
+<p>IAM プリンシパルのタグで支出を帰属させ、CUR 2.0 や Cost Explorer で報告し、AWS Budgets のアクションでしきい値超過時に Deny ポリシーを適用する構成を、アプリ側のコードなしで共通ケースまで賄えるのが要点。エージェントやチームごとに使える額の上限を引きたいときに、そのまま流用できる。モデル単価ではなく「誰がいくら使ったか」で統制する型として読んでおく価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ftokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock と LiteLLM でセルフサービスな LLM ゲートウェイを組む</h3>
+<p>Bedrock の基盤モデルを OpenAI 互換 API の背後に置き、AWS Fargate 上で動かす構成が紹介されている。開発者には 1 つの API キーで即座に開放しつつ、プラットフォーム側はユーザー単位のコスト管理・クォータ分離・可観測性を保てるのが狙いで、モデルへのアクセスを各利用者やエージェントに配る前段の作り方として具体的だ。ゲートウェイ層を自前で持つかどうかの判断に使える。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-a-self-service-llm-gateway-with-amazon-bedrock-and-litellm/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-a-self-service-llm-gateway-with-amazon-bedrock-and-litellm%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

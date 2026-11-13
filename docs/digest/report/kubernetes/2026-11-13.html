@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-11-13</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-11-13</h1>
+<article class="report"><h2>今日の 4 本</h2>
+<section class="item">
+<h3>KubeVirt が CNCF の卒業プロジェクトに — VM と AI を同じ Kubernetes 基盤へ</h3>
+<p>KubeVirt が CNCF の卒業(graduated)段階に到達したことが、KubeCon NA に合わせて報じられている。Kubernetes 上で仮想マシンを第一級のワークロードとして動かせるため、VM 前提の既存資産とコンテナの新規 workload を 1 つのクラスタに載せる設計判断が現実味を帯びる。卒業は API と運用の安定性がある程度保証されたというシグナルなので、VM 移行を検討する際の土台として押さえておきたい。</p>
+<p class="links"><a href="https://siliconangle.com/2026/11/12/kubevirt-graduates-from-cncf-kubernetes-unites-vms-ai-kubeconna/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsiliconangle.com%2F2026%2F11%2F12%2Fkubevirt-graduates-from-cncf-kubernetes-unites-vms-ai-kubeconna%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI トレーニングのためのギャングスケジューリングとトポロジー考慮の配置</h3>
+<p>Kubernetes の標準スケジューラは Pod を 1 つずつ独立に配置するため、分散トレーニングのように「全 Pod が同時に、条件を満たすハードウェアへ」揃う必要がある workload では詰まる。この記事はギャングスケジューリングとトポロジーを意識した配置を、なぜ必要かから整理している。大規模な推論・学習を Kubernetes に載せる前提が少しずつ現実になる中で、スケジューリングの限界をどこで補うかの判断材料になる。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F12%2Fgang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>GenAI フレームワークの計装をエージェント群に任せる — OpenTelemetry と Weaver で検証する</h3>
+<p>生成 AI フレームワークに OpenTelemetry を仕込む作業は、拡張ポイントを探し、操作を GenAI のセマンティック規約に対応づけ、フレームワークの更新に追随し続ける必要があり、その都度コストがかかる。この記事は、その調査・計画・実装をエージェントのチームに任せ、結果を OpenTelemetry Weaver で規約に照らして検証する試みを報告している。計装の維持をどこまで自動化できるかは可観測性の運用コストに直結するので、エージェントに何を任せ、何を機械的に検証させるかの型として読める。</p>
+<p class="links"><a href="https://opentelemetry.io/blog/2026/agent-harness-genai-instrumentation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fagent-harness-genai-instrumentation%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>llm-d 1.0、Kubernetes 上での本番 AI 推論を狙う</h3>
+<p>Kubernetes 上で大規模な LLM 推論を運用するための llm-d が 1.0 に到達した。1.0 は「実験的な構成」から本番運用を意識した区切りになるので、推論基盤を Kubernetes に寄せるかどうかの比較対象として見ておく価値がある。モデル配信とスケーリングを同じクラスタの運用に乗せられるかは、リソース要求の適正化やイベント駆動のスケールと直結する論点になる。</p>
+<p class="links"><a href="https://itbrief.asia/story/llm-d-1-0-aims-to-ease-production-ai-inference-at-scale">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fitbrief.asia%2Fstory%2Fllm-d-1-0-aims-to-ease-production-ai-inference-at-scale">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

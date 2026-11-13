@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 12 Nov 2026 03:02:46 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 02:44:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-13]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-13.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-13.html</guid>
+            <pubDate>Fri, 13 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>AgentCore ランタイムの次世代版 — ハードウェア分離セッションと使用量ベース課金</h3>
+<p>エージェントが数時間にわたり複数ステップの処理をユーザーの代理で実行するようになり、実行環境の隔離と課金の粒度が運用上の制約になってきている。次世代の AgentCore ランタイムはセッションをハードウェアレベルで分離し、起動の高速化・割り当てリソースの増加・使用量ベース課金・データにまで及ぶ分離を打ち出している。自作のサンドボックスでエージェントを動かしているなら、隔離の境界をどこに置き、実行時間に対してどう課金されるかの比較材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Frun-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SGLang-Neuron が公開 — Trainium 上で SGLang のインターフェースのままモデルを配信</h3>
+<p>SGLang-Neuron が AWS Deep Learning Container として公開され、使い慣れた SGLang のインターフェースのまま Trainium 上でモデルの配信と強化学習のロールアウト生成ができるようになった。ネイティブ PyTorch 上で動くため、SGLang 前提で組んだ構成を大きく変えずに GPU 以外の推論基盤を試せる。オープンウェイトモデルの自前配信をどこに載せるかを比べる際、実装の作り直しを伴わない選択肢として押さえておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fdeploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Cognito が OAuth 2.0 トークン交換(RFC 8693)に対応</h3>
+<p>ユーザーの代理で動くサービスや AI エージェントが、元のトークンをそのまま転送したり独自のトークン発行基盤を維持したりせず、下流サービス向けに絞り込んだトークンへ交換できるようになった。呼び出し先ごとに権限の範囲を狭められるので、エージェントに何を持たせるか、どこで権限を落とすかの設計に直接効く。標準仕様に沿うぶん自前実装を減らせるため、代理実行の権限設計を見直す材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fcognito-token-exchange%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock の支出を IAM プリンシパル単位で可視化し、上限をかけられるようにする</h3>
+<p>IAM プリンシパルのタグで支出を帰属させ、CUR 2.0 や Cost Explorer で報告し、AWS Budgets のアクションでしきい値超過時に Deny ポリシーを適用する構成を、アプリ側のコードなしで共通ケースまで賄えるのが要点。エージェントやチームごとに使える額の上限を引きたいときに、そのまま流用できる。モデル単価ではなく「誰がいくら使ったか」で統制する型として読んでおく価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ftokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock と LiteLLM でセルフサービスな LLM ゲートウェイを組む</h3>
+<p>Bedrock の基盤モデルを OpenAI 互換 API の背後に置き、AWS Fargate 上で動かす構成が紹介されている。開発者には 1 つの API キーで即座に開放しつつ、プラットフォーム側はユーザー単位のコスト管理・クォータ分離・可観測性を保てるのが狙いで、モデルへのアクセスを各利用者やエージェントに配る前段の作り方として具体的だ。ゲートウェイ層を自前で持つかどうかの判断に使える。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/building-a-self-service-llm-gateway-with-amazon-bedrock-and-litellm/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuilding-a-self-service-llm-gateway-with-amazon-bedrock-and-litellm%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-12]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-12.html</link>
@@ -815,39 +848,6 @@
 <h3>Claude Sonnet 5.5 と Claude Opus 5.5 が AWS GovCloud (US) の Kiro で利用可能に</h3>
 <p>AWS のエージェント型 IDE / CLI である Kiro で、Claude Sonnet 5.5 と Claude Opus 5.5 が GovCloud (US) リージョンでも使えるようになった。Opus 5.5 はリクエストごとに推論の深さを適応的に決め、Kiro の社内ベンチマークでは Opus 5 比でツール呼び出しが約4割減・トークンが約半分とされ、長時間走るエージェント型コーディングのコストと速度に効く。Claude モデルの提供リージョンが広がる動きとして押さえておきたい。</p>
 <p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/06/kiro-claude-5-5-aws-govcloud-us/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F06%2Fkiro-claude-5-5-aws-govcloud-us%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-09]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-09.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-09.html</guid>
-            <pubDate>Fri, 09 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Bedrock で OpenAI の GPT-6.1 Sol が「Ultrafast モード」に対応</h3>
-<p>Amazon Bedrock 上の GPT-6.1 Sol に、速度を優先する Ultrafast モードが追加された。リアルタイムのコーディング支援や対話的なエージェント、顧客向けの応答など、レイテンシが効く用途を想定した位置づけだと説明されている。モデル選定のときに「どのモデルか」だけでなく「どのモードで呼ぶか」が増えるので、レイテンシ要件の厳しいエージェントを Bedrock に寄せているなら、まず自分のワークロードで試して比較しておきたい。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-sol-ultrafast-amazon/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Fopenai-gpt-sol-ultrafast-amazon%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Bedrock AgentCore の支払い機能で、エージェントにリクエスト単位の従量課金を持たせる</h3>
-<p>AgentCore payments は、エージェントがサービスへ都度支払う仕組みを、上限額の強制まで含めてマネージドに提供する。Incarna のエージェントが BlockRun へ推論1リクエストごとに x402 で支払う事例では、x402 対応にかかる工数が数ヶ月から数日に縮んだという。エージェントに外部サービスを使わせる設計は、権限だけでなく「いくらまで使わせるか」を基盤側で止められるかが要になるので、その統制の置き方の実例として読める。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fpay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Cost Explorer / Budgets / Dashboards が Bedrock のコストをモデル単位で分解できるように</h3>
-<p>Bedrock のコストを、モデル・モデルプロバイダー・推論タイプ・機能という新しい属性でグルーピング／フィルタできるようになり、Cost Explorer と Dashboards では分析、Budgets では予算の絞り込みに使える。どのモデルやワークロードが Bedrock の支出を押し上げているかが直接見えるようになるので、コスト最適化の対象を勘ではなく数字で選べる。推論タイプ別に見られる点は、オンデマンドとバッチの使い分けを見直す材料にもなる。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-bedrock-attributes-in-cost-explorer/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-bedrock-attributes-in-cost-explorer%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>SageMaker HyperPod の GPU クラスタを、チーム間で分離と公平性を保って共有する構成</h3>
-<p>1つの HyperPod EKS クラスタを複数チームで共有するためのリファレンス構成で、認証は IAM Identity Center、分離はチームごとの SageMaker Domain と Kubernetes namespace、公平性は HyperPod Task Governance、コストは namespace 単位で配分してチャージバックする。GPU を遊ばせず、かつ「誰が使ったか」を説明できる形にするときの分担の切り方が一通り揃っているので、マルチテナントで計算資源を配る設計の下敷きにできる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fshare-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Network Firewall のコンテナ属性フィルタがワイルドカードに対応、EKS/ECS のルールをまとめられる</h3>
-<p>EKS と ECS 向けのコンテナ属性ベースの検査フィルタで、ワイルドカードマッチが使えるようになった。<code>app=payments-*</code> のようなパターンで複数のコンテナワークロードを1つのルールにまとめられるため、ワークロードが増えるたびにコンテナの関連付けを個別に足していく運用が要らなくなる。名前を規約で揃えているクラスタほど効く変更なので、EKS の外向き通信をフィルタで絞っているならルールの整理と合わせて見直したい。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-network-firewall-container-attributes-wildcard">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-network-firewall-container-attributes-wildcard">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

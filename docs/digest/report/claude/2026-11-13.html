@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-13</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-13</h1>
+<article class="report"><h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.322〜v2.1.323 の主要アップデート — Code Mode の追加と Bash 権限チェック・サンドボックスの修正</h3>
+<p>v2.1.323 は 294 件の変更を含む大型アップデートで、ツール呼び出しを JavaScript で書く実験的な Code Mode が加わった。Bash の権限チェックとサンドボックスの不具合がまとめて修正されており、エージェントに何を許すかの設計を見直す材料になる。未知モデルの想定コンテキストの 1M 化など破壊的変更も 20 件あるので、更新前に内容を確認しておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261113-cc-updates-v2-1-323/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Opus 5.5 と Fable 5.2、結局どっちを使う？違いと使い分けを整理</h3>
+<p>2026年11月9日に出た Fable 5.2 と、9月22日に出た Opus 5.5 の違いを、公式ドキュメント・公式発表・第三者のベンチマーク集計から整理した比較。日々のコーディングでどちらを既定にするかを決める材料になる。モデルが増えるたびに同じ迷いが起きるので、比較の観点を押さえておく価値がある。</p>
+<p class="links"><a href="https://qiita.com/kazutoyamaura/items/c6c77ee9f989d0bd5e4f">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code Skills 詳解(7): 起動から安全な実行まで</h3>
+<p>Skills の安全性を、起動できる人・使えるツール・承認を飛ばせる呼び出し・コマンドが実際に届く範囲の 4 層に分けて整理している。allowed-tools は恒久的な許可リストではなく一時的な事前承認で、disallowed-tools も OS のサンドボックスではない、という区別が実務では効く。高リスクの Skills には指示・権限・フック・サンドボックス・人の確認を組み合わせるべきだという結論は、そのまま権限設計のチェックリストになる。</p>
+<p class="links"><a href="https://dev.to/_94be737e156beb4d74df2/claude-code-skills-deep-dive-7-from-invocation-to-safe-execution-4pii">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2F_94be737e156beb4d74df2%2Fclaude-code-skills-deep-dive-7-from-invocation-to-safe-execution-4pii">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のプロンプトキャッシュで週次上限を伸ばす方法</h3>
+<p>自分の 10,000 リクエストを測った記録で、キャッシュが切れたあとの最初の 1 回は温まっているときの 12〜80 倍のコストがかかると報告している。100k トークン未満のセッションではコールドリロードが約 2 割、600k を超えると 60〜66% を占めるという内訳は、長いセッションを続けるかの判断に効く。記事が挙げる 3 つのルールのうち、休憩前の compact と新しいセッションの開始はすぐに試せる。</p>
+<p class="links"><a href="https://dev.to/dinesh_rajendran_46fc29b4/the-hidden-cost-of-a-cold-session-why-your-claude-code-bill-spikes-after-lunch-4n8c">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdinesh_rajendran_46fc29b4%2Fthe-hidden-cost-of-a-cold-session-why-your-claude-code-bill-spikes-after-lunch-4n8c">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>cc-sdd v3 で何が変わったか — 仕様駆動開発が「自律実装」までつながった</h3>
+<p>仕様駆動開発ツール cc-sdd の v3 で、仕様から「自律実装」までがつながったという変更点の解説。仕様を先に書き、それをエージェントへの入力と検証基準にする進め方について、ツール側がどこまで担うようになったかが分かる。Spec-Driven Development を試すかどうかの判断材料になる。</p>
+<p class="links"><a href="https://sreake.com/blog/what-has-changed-in-cc-sdd-v3/">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

@@ -4,11 +4,29 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 12 Nov 2026 03:12:56 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 02:55:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-13]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-13.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-13.html</guid>
+            <pubDate>Fri, 13 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>SteamOS 3.9.6 ベータ公開 — VRR 併用時のフレームレートリミッターのフレームタイミングを改善</h3>
+<p>ベータ/プレビューチャンネル向けに 3.9.6 が公開された。安定版 3.8 以降の変更をまとめたノートで、今回の追加分としてはセキュリティと安定性の更新に加え、VRR を使っているときにフレームレートリミッターを併用した場合のフレームタイミング改善が挙げられている。VRR とリミッターの併用は滑らかさと消費電力を両立させる定番の設定なので、ベータチャンネルを試しているなら体感が変わったか確かめておきたい。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/1675200/view/687522235410285093">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F1675200%2Fview%2F687522235410285093">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Steam Deck クライアント更新 — Steam Achievement Sets と Remote Play の HDR 対応</h3>
+<p>Steam Deck のクライアント更新で Steam Achievement Sets と Remote Play の HDR 対応が入った。据え置き PC のゲームを Deck へストリーミングする構成では HDR が通るかどうかで見え方が変わるため、自宅のストリーミング環境を組み直す判断材料になる。更新後に表示や設定がどう変わったかも含めて確認しておきたい。</p>
+<p class="links"><a href="https://steamdeckhq.com/news/steam-deck-client-update-steam-achievement-sets/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fsteamdeckhq.com%2Fnews%2Fsteam-deck-client-update-steam-achievement-sets%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-12]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-12.html</link>
@@ -424,24 +442,6 @@
 <li><a href="https://komodostation.com/product/steam-frame">リンク先を読む</a></li>
 <li><a href="https://komodostation.com/product/steam-machine_jpy/">リンク先を読む</a></li>
 </ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ゲーム環境 日次レポート 2026-10-09]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-09.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-09.html</guid>
-            <pubDate>Fri, 09 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>SteamOS 0.4 が Steam Frame 向けに配信 — 電力効率が最大 12% 改善、装着検知の感度設定も追加</h3>
-<p>Steam Frame 向けの SteamOS が 0.4 に上がり、ストリーミング再生中とローカル再生中の消費電力・バッテリー持続が最大 12% 改善された（フレームレートと内容によって効果は変動する）。あわせて VR 設定の「起動 / 終了」に Presence Sensor の感度設定が追加され、「高感度」を選べばメガネ用スペーサーを使う場合などでも表示を消さずに保てる。ヘッドセットを装着したまま使う時間の長さと、装着検知で表示が落ちる使い勝手の両方を詰めている段階だと分かり、Steam Frame を実際に常用できるかを見積もる材料になる。</p>
-<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/675134162359812787">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F675134162359812787">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Sunshine の Web UI をシングルページアプリに刷新、ペアリングの証明書重複も修正</h3>
-<p>自宅ゲームストリーミングのホスト側として使われる Sunshine が新しいビルドを公開し、Web UI がシングルページアプリケーションに作り替えられ、テストとカバレッジも追加された。ペアリング時にクライアント証明書が重複する不具合の修正や、flatpak でコマンドの接頭辞が不要になる変更も入っている。接続がうまく通らない環境では解消が期待できる一方、管理画面の操作が変わる可能性があるので、更新前に変更点を確認しておきたい。</p>
-<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1008.155609">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1008.155609">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
