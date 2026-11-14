@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-14</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-14</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.321〜v2.1.325、実務に効く5つの変更点</h3>
+<p>v2.1.321〜v2.1.325 の変更から、実務への影響が大きい5つを選んで「なぜ重要か」を掘り下げている。同じ範囲には実験的な Code Mode や新しい既定モデル Claude Fable 5.2 の追加も含まれ、既定のまま使い続けると挙動が変わる箇所がある。網羅的な changelog ではなく、日々の使い方を変える変更を先に押さえたいときに向く。</p>
+<p class="links"><a href="https://qiita.com/NaokiIshimura/items/497afd9a11879d369d19">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>空の変数が rm -rf / と rsync --delete を生んだ——エージェントの破壊的コマンド事故3件</h3>
+<p>今秋 Claude Code の issue tracker に上がった3件の事故を並べ、エージェントが値を出力しないまま破壊的コマンドを組み立て、空文字やドライブ直下を指したまま実行した経緯を追っている。承認や OS サンドボックスだけでは防ぎきれない「意味の取り違え」が起きる実例で、削除系コマンドの扱いと権限境界の設計を見直す材料になる。自宅ラボのように復旧コストが大きい環境ほど先に読む価値がある。</p>
+<p class="links"><a href="https://dev.to/dooly6276/an-empty-variable-turned-rm-rf-and-rsync-delete-into-delete-coding-agents-did-it-three-48lo">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdooly6276%2Fan-empty-variable-turned-rm-rf-and-rsync-delete-into-delete-coding-agents-did-it-three-48lo">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code の Mods で添付画像を最適化し、コンテキストを50〜69%削減</h3>
+<p>Claude Code の Mods 機能を使い、プロンプトに添付する画像の余白削除と縮小を行う実装を解説している。画像を渡すワークフローでトークン消費とコンテキスト圧迫をまとめて減らせるのが要点で、モデルやプロンプトではなく外側の構成で効率を上げる発想の好例。スクリーンショットを多用する人ほど効果が測りやすい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-code-mods-image-optimization/">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Meta のコーディングエージェント Muse Code、導入前に確認したい6点</h3>
+<p>承認と OS サンドボックスが最初から有効な一方、サブスクリプションでは Contributor モード（学習への利用）が既定でオンになっているなど、公式ドキュメントを読まないと気づきにくい既定値がある。新しいエージェントを試す前に、どのデータがどこへ渡るかを確認する観点を整理できる。月額サブスク型のコーディングエージェントを比較検討しているなら最初に読むべき記事。</p>
+<p class="links"><a href="https://qiita.com/sakutto-panda/items/a149a8264339f2aa3ab2">記事を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>Anthropic のエージェント評価フレームワーク——配備前にエージェントをどうテストするか</h3>
+<p>Anthropic の Engineering Blog のガイドを基に、コーディング・会話・調査・computer-use の各エージェントへ適用できる9ステップの評価プログラムを紹介している。デモを数回見ただけでは品質は判断できないという前提から、再現可能なテスト、スコアリング、継続的な監視をどう組むかに踏み込む。自作エージェントの受け入れ基準を持てていないなら、その型としてそのまま使える。</p>
+<p class="links"><a href="https://dev.to/alifar/anthropics-ai-agent-evaluation-framework-explains-how-to-test-agents-before-deployment-3ea4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Falifar%2Fanthropics-ai-agent-evaluation-framework-explains-how-to-test-agents-before-deployment-3ea4">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

@@ -4,11 +4,34 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 13 Nov 2026 02:55:53 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Nov 2026 02:26:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-14]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-14.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-14.html</guid>
+            <pubDate>Sat, 14 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>SteamOS 0.5.9 ベータ（Steam Frame 向け）、PC ストリーミングにクロマキー対応</h3>
+<p>Steam Frame のベータチャンネルに SteamOS 0.5.9 が配信された。PC ストリーミングのカメラパススルーにクロマキーが入り、Room View を VR コンテンツに重ねて表示できるようになった。PC 側の Camera 設定に Protect Content / Key Content の切り替えが追加されており、デスクトップ PC から Steam Frame へ配信する構成を組む人は設定項目の変化を先に把握しておきたい。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/687522235410285323">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F687522235410285323">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SteamOS 3.10.0 プレビュー公開、3.9 安定版からの変更点をまとめた最初の 3.10 系</h3>
+<p>Steam Deck の Preview チャンネルに、SteamOS 3.10 系としては最初のプレビューが出た。3.9 安定版からの変更点の概要がまとめられているが、すべてを網羅するものではないと注記されている。3.10 系で何が変わるのかを一次情報で押さえておきたい人は、Preview チャンネルに切り替える前に目を通しておきたい。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/1675200/view/687522235410285333">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F1675200%2Fview%2F687522235410285333">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sunshine の新ビルド、Web UI をシングルページアプリケーションに刷新</h3>
+<p>Sunshine の最新ビルドで、Web UI がシングルページアプリケーションとして作り直された。ペアリング時に重複したクライアント証明書を置き換える修正や、flatpak でコマンドに @ を付けずに済むようにする修正も入っている。ホスト側の設定画面の作りが変わるため、ブラウザから設定を触っている自宅ストリーミング環境では更新後の挙動を確認しておきたい。</p>
+<p class="links"><a href="https://github.com/SunshineStream/Sunshine/releases/tag/v2026.1113.231225">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FSunshineStream%2FSunshine%2Freleases%2Ftag%2Fv2026.1113.231225">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-13]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-13.html</link>
@@ -425,23 +448,6 @@
 <h3>Sunshine v2026.1010.172628 リリース、Web UI の作り替えとペアリング修正</h3>
 <p>自宅ゲームストリーミングのホスト側として使われる Sunshine の新しいビルド。同日に 14:11 と 17:26 の 2 本が出ているが変更履歴の記載は同じで、後者が新しい分を含む。flatpak でコマンドの接頭辞が不要になる変更、Web UI のシングルページアプリケーション化とテスト・カバレッジ追加、ペアリング時に重複したクライアント証明書を置き換える修正が入っており、配信元を上げる前に管理画面まわりの操作が変わる可能性と、ペアリングが通らない不具合の解消を確認しておく価値がある。</p>
 <p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1010.172628">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1010.172628">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ゲーム環境 日次レポート 2026-10-10]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-10.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-10.html</guid>
-            <pubDate>Sat, 10 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>Steam Frame と Steam Machine、10月13日午前10時に国内再入荷</h3>
-<p>KOMODO STATION が、Steam Frame 256GB / 1TB と Steam Machine 512GB（Steam Controller 同梱版を含む）を、10月13日（火）午前10時から日本国内発送で再販売すると告知した。Steam Frame は国内で入手できる機会が限られており、購入を検討しているなら日時と対象構成を押さえておく価値がある。</p>
-<ul>
-<li><a href="https://x.com/KOMODO_Games_JP/status/2108392995804590081">@KOMODO_Games_JP のポスト</a></li>
-<li><a href="https://komodostation.com/product/steam-frame">リンク先を読む</a></li>
-<li><a href="https://komodostation.com/product/steam-machine_jpy/">リンク先を読む</a></li>
-</ul>
 </section>
 ]]></content:encoded>
         </item>
