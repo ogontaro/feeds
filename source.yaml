@@ -122,11 +122,14 @@ feeds:
     name: はてなブックマーク — Codex (50users+)
     domain: claude
     kind: content
-  # ローカルLLM関連の日本語コミュニティの話題を拾う。
+  # 内容がローカルLLMの実行・量子化・GPU 周辺に寄っており、claude ドメインの選定基準
+  # （Claude / Anthropic・コーディングエージェント・MCP）に該当しない。直近8週間の採用実績も
+  # ゼロのため無効化（Claude Code / AIエージェント / AIコーディング / Codex の各検索は継続）。
   - url: https://b.hatena.ne.jp/q/%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%ABLLM?mode=rss&users=50&sort=recent
     name: はてなブックマーク — ローカルLLM (50users+)
     domain: claude
     kind: content
+    enabled: false
   # 競合コーディングエージェント(GitHub Copilot)の新機能・料金変更を追う。
   - url: https://github.blog/changelog/label/copilot/feed/
     name: GitHub Changelog — Copilot
