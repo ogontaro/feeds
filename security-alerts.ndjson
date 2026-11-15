@@ -939,3 +939,9 @@
 {"date":"2026-11-15T06:45:59.598Z","id":"CVE-2026-129353","kev":false,"reported":false}
 {"date":"2026-11-15T06:45:59.598Z","id":"CVE-2026-129354","kev":false,"reported":false}
 {"date":"2026-11-15T06:45:59.598Z","id":"CVE-2026-129352","kev":false,"reported":false}
+{"date":"2026-11-15T16:28:01.536Z","id":"CVE-2026-129444","kev":false,"reported":false}
+{"date":"2026-11-15T16:28:01.536Z","id":"CVE-2026-129349","kev":false,"reported":false}
+{"date":"2026-11-15T16:28:01.536Z","id":"CVE-2026-125795","kev":false,"reported":false}
+{"date":"2026-11-15T16:28:01.536Z","id":"CVE-2026-125769","kev":false,"reported":false}
+{"date":"2026-11-15T16:28:01.536Z","id":"CVE-2026-122662","kev":false,"reported":false}
+{"date":"2026-11-15T16:28:01.536Z","id":"CVE-2026-129483","kev":false,"reported":true,"title":"Cyrus SASL 2.1.28 までの SRP サーバーで認証バイパス","urgency":"watch"}
