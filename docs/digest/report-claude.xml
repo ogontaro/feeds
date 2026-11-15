@@ -4,11 +4,49 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 14 Nov 2026 02:02:10 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Nov 2026 02:16:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-15]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-15.html</guid>
+            <pubDate>Sun, 15 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.324〜v2.1.325 の主要アップデート — サンドボックス内 Bash の権限フロー変更と Code Mode</h3>
+<p>サンドボックス内の Bash が既定で通常の権限フローに従うようになった点は、エージェントの権限境界を設計する側にとって影響が大きい。従来動作に戻す設定も示されており、自宅やチームの実行環境で挙動が変わっていないか確認しておきたい。あわせて実験的機能「Code Mode」を同じタスクで検証し、モデルへのリクエストが3回から2回に減った結果も報告されている。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261114-cc-updates-v2-1-325/">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/nyatinte/status/2121577812138266721">@nyatinte のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>CLAUDE.md のルールは「強制する仕組み」があって初めて効く</h3>
+<p>1人と複数の Claude Code セッションでプロダクトを運用してきた経験から、36KB まで膨らんだルートの CLAUDE.md を分析した記事。効いたルールは必ず失敗の物語を伴い、言葉だけのルールは機能しなかったという指摘は、AGENTS.md で指示を共通化するときの判断材料になる。ルールを書くことと、それを守らせる仕組みを用意することを分けて考えさせられる。</p>
+<p class="links"><a href="https://dev.to/james_boone/claudemd-rules-only-work-when-something-enforces-them-4mcb">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fjames_boone%2Fclaudemd-rules-only-work-when-something-enforces-them-4mcb">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>バックスラッシュは何個届くか、bash と Python の16経路で測った</h3>
+<p>AI エージェントに bash のヒアドキュメント経由で Python のパッチを流させると、バックスラッシュが減って書き換え先のファイルが壊れることがある。どの経路で何個残るかを16通り実測しており、エージェントにパッチを書かせるワークフローを見直す直接の手掛かりになる。パッチが壊れたときに疑う場所を先に知っておける点が実用的だ。</p>
+<p class="links"><a href="https://qiita.com/ai_jarvis/items/ca6cc5510a5a3a173235">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>ccretro — 先月の提案を実行したかを確認する Claude Code の月次振り返りツール</h3>
+<p><code>/insights</code> は毎回提案の一覧を出すだけで、前回の提案に手を付けたかを教えてくれない。ccretro は期間とその前の期間を比較するローカル Web ページで、前回の提案を覚えておいて実行状況を確認し、提案を実際の設定に落とすスキルも備える。トランスクリプトが既定30日で消えるため四半期単位の振り返りができない、という制約への現実的な対処になっている。</p>
+<p class="links"><a href="https://dev.to/kanywst/ccretro-a-monthly-claude-code-retro-that-checks-last-months-suggestions-27gd">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fkanywst%2Fccretro-a-monthly-claude-code-retro-that-checks-last-months-suggestions-27gd">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI コーディングエージェントを専用の Mac で動かす理由と、その作り方</h3>
+<p>エージェントは「オフライン対応を入れて、テストを書いて、ビルドを通して」のような長いタスクで力を発揮するが、メインのノート PC で動かすとスリープで止まり、自分の実マシン上で何を触るか分からない不安が残る。専用機に逃がす構成と設定手順がまとまっており、エージェントの実行環境をサンドボックス的に分離したいときの叩き台になる。</p>
+<p class="links"><a href="https://dev.to/anna_skokova_9ca00a251bad/why-i-run-ai-coding-agents-on-a-separate-mac-and-how-to-set-one-up-44d4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fanna_skokova_9ca00a251bad%2Fwhy-i-run-ai-coding-agents-on-a-separate-mac-and-how-to-set-one-up-44d4">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-14]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-14.html</link>
@@ -1108,40 +1146,6 @@
 <li><a href="https://x.com/github/status/2109364666237350135">@github のポスト</a></li>
 <li><a href="https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fapplication-security%2Fai-powered-fuzzing-with-the-github-security-lab-taskflow-agent%2F">Google 翻訳で全文を読む</a></li>
 </ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-10-11]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-11.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-11.html</guid>
-            <pubDate>Sun, 11 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
-<section class="item">
-<h3>Claude Code に任せる範囲と止める仕組みの設計 — 計画モード・SessionStart フック・/loop・課金前確認の使い分け</h3>
-<p>「全部任せると怖い」「全部確認すると遅い」の間をどう取るかを、計画モード・SessionStart フック・/loop・課金前確認という道具の使い分けとして整理した記事。日本株のスクリーニング端末を Claude Code で組む実例がベースで、作り込んだ「ハーネスの仕様書」が 3 時間で古くなって捨てた、という失敗も書かれている。指示を増やす方向ではなく、止め方と引き際を先に設計するという順序は、エージェントに何を許すかを決めるときの型としてそのまま使える。</p>
-<p class="links"><a href="https://qiita.com/charge0315/items/fcec85cc5250e39bab97">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>本を Claude Code に読ませて自分のリポジトリに再現する — 読む順路・検証済み SHA・改訂の追随</h3>
-<p>外部のまとまった知識をエージェントに読ませ、自分のリポジトリの形に落とし込むときの進め方。読む順路を決めてから渡し、検証済みの SHA で出典の版を固定し、原本が改訂されたら追随する、という手順が書かれている。出典の版を固定して再現性を確保する考え方は、社内文書や仕様書をエージェントに渡す場面にそのまま流用できる。</p>
-<p class="links"><a href="https://qiita.com/kai_kou/items/b0969ef956969c328d08">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>並列で投げた 2 つの Bash コマンドの片方で cd が無視され、96 本すべてを「id: が無い」と誤判定した話</h3>
-<p>記事の事前チェックで <code>grep -L &quot;^id:&quot;</code> を走らせたところ対象 96 本すべてが「id: が見つからない」と出たが、実際には並列で投げた 2 つの Bash コマンドのうち片方の cd が無視されており、その直後の判定が誤っていた、という実例。並列のツール呼び出しでは、こちらが前提にしている状態がそのまま成り立つとは限らない。エージェントの返した結果をそのまま結論にしない、という原則を具体的な失敗で確認できる。</p>
-<p class="links"><a href="https://qiita.com/Hideki_Tamae/items/ad9c876e96b83d7c9bce">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code の GitHub 連携が認証切れするときの切り分けメモ</h3>
-<p>GitHub Issues に実際に報告されている症状のうち、複数人が同じところで踏んでいるものを選び、手元でコマンドを叩いて確認できた範囲だけをまとめた切り分けメモ。認証切れは原因の当たりを付けるまでに時間を持っていかれがちなので、症状から最短で切り分ける手順を持っておく価値がある。日々 GitHub 連携でセッションを回しているなら、一度目を通して手元に置いておきたい。</p>
-<p class="links"><a href="https://qiita.com/homhom44/items/d866772fde1183485dd9">記事を読む</a></p>
-</section>
-<h2>新ツール・サブスク（1 本）</h2>
-<section class="item">
-<h3>Devin の利用料を ChatGPT の個人サブスクで支払えるように</h3>
-<p>ChatGPT の個人向けサブスクリプションを持っていれば、その枠で Devin の GPT 利用分を支払えるようになった、と報じられている。コーディングエージェントの課金がモデル提供元のサブスクと統合されていく動きで、複数のエージェントを使い分けるときのコスト設計や、どのプランに寄せるかという判断の前提が変わりつつある。契約を見直す前に押さえておきたい変化。</p>
-<p class="links"><a href="https://startupfortune.com/openai-lets-chatgpt-subscribers-pay-for-devin-usage-with-their-existing-plan/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstartupfortune.com%2Fopenai-lets-chatgpt-subscribers-pay-for-devin-usage-with-their-existing-plan%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

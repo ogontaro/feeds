@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-15</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-15</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.324〜v2.1.325 の主要アップデート — サンドボックス内 Bash の権限フロー変更と Code Mode</h3>
+<p>サンドボックス内の Bash が既定で通常の権限フローに従うようになった点は、エージェントの権限境界を設計する側にとって影響が大きい。従来動作に戻す設定も示されており、自宅やチームの実行環境で挙動が変わっていないか確認しておきたい。あわせて実験的機能「Code Mode」を同じタスクで検証し、モデルへのリクエストが3回から2回に減った結果も報告されている。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261114-cc-updates-v2-1-325/">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/nyatinte/status/2121577812138266721">@nyatinte のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>CLAUDE.md のルールは「強制する仕組み」があって初めて効く</h3>
+<p>1人と複数の Claude Code セッションでプロダクトを運用してきた経験から、36KB まで膨らんだルートの CLAUDE.md を分析した記事。効いたルールは必ず失敗の物語を伴い、言葉だけのルールは機能しなかったという指摘は、AGENTS.md で指示を共通化するときの判断材料になる。ルールを書くことと、それを守らせる仕組みを用意することを分けて考えさせられる。</p>
+<p class="links"><a href="https://dev.to/james_boone/claudemd-rules-only-work-when-something-enforces-them-4mcb">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fjames_boone%2Fclaudemd-rules-only-work-when-something-enforces-them-4mcb">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>バックスラッシュは何個届くか、bash と Python の16経路で測った</h3>
+<p>AI エージェントに bash のヒアドキュメント経由で Python のパッチを流させると、バックスラッシュが減って書き換え先のファイルが壊れることがある。どの経路で何個残るかを16通り実測しており、エージェントにパッチを書かせるワークフローを見直す直接の手掛かりになる。パッチが壊れたときに疑う場所を先に知っておける点が実用的だ。</p>
+<p class="links"><a href="https://qiita.com/ai_jarvis/items/ca6cc5510a5a3a173235">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>ccretro — 先月の提案を実行したかを確認する Claude Code の月次振り返りツール</h3>
+<p><code>/insights</code> は毎回提案の一覧を出すだけで、前回の提案に手を付けたかを教えてくれない。ccretro は期間とその前の期間を比較するローカル Web ページで、前回の提案を覚えておいて実行状況を確認し、提案を実際の設定に落とすスキルも備える。トランスクリプトが既定30日で消えるため四半期単位の振り返りができない、という制約への現実的な対処になっている。</p>
+<p class="links"><a href="https://dev.to/kanywst/ccretro-a-monthly-claude-code-retro-that-checks-last-months-suggestions-27gd">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fkanywst%2Fccretro-a-monthly-claude-code-retro-that-checks-last-months-suggestions-27gd">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI コーディングエージェントを専用の Mac で動かす理由と、その作り方</h3>
+<p>エージェントは「オフライン対応を入れて、テストを書いて、ビルドを通して」のような長いタスクで力を発揮するが、メインのノート PC で動かすとスリープで止まり、自分の実マシン上で何を触るか分からない不安が残る。専用機に逃がす構成と設定手順がまとまっており、エージェントの実行環境をサンドボックス的に分離したいときの叩き台になる。</p>
+<p class="links"><a href="https://dev.to/anna_skokova_9ca00a251bad/why-i-run-ai-coding-agents-on-a-separate-mac-and-how-to-set-one-up-44d4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fanna_skokova_9ca00a251bad%2Fwhy-i-run-ai-coding-agents-on-a-separate-mac-and-how-to-set-one-up-44d4">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

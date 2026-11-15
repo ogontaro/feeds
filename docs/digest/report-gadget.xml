@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 14 Nov 2026 02:17:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Nov 2026 02:30:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-15]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-15.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-15.html</guid>
+            <pubDate>Sun, 15 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Google、Android XR スマートグラスは顔を Gemini に見せず、リアルタイム顔認識も禁止へ</h3>
+<p>Android Police と PhoneArena が同じ方針を報じている。カメラ付きグラスで最大の懸念になる周囲の人のプライバシーについて、プラットフォーム側が先に線を引いた形で、発売後にどのアプリが何を作れるかを左右する。購入判断の材料としても、街で見かける側の安心材料としても押さえておく価値がある。</p>
+<p class="links"><a href="https://www.androidpolice.com/android-xr-smart-glasses-will-hide-faces-from-gemini-ban-real-time-facial-recognition/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.androidpolice.com%2Fandroid-xr-smart-glasses-will-hide-faces-from-gemini-ban-real-time-facial-recognition%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-14]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-14.html</link>
@@ -373,14 +386,6 @@
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-12.html</link>
             <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-12.html</guid>
             <pubDate>Mon, 12 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ガジェット 日次レポート 2026-10-11]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-11.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-11.html</guid>
-            <pubDate>Sun, 11 Oct 2026 22:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
 ]]></content:encoded>
         </item>
