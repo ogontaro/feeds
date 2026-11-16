@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 15 Nov 2026 02:33:11 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 01:59:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-16.html</guid>
+            <pubDate>Mon, 16 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Sunshine v2026.1115.211404 — Web UI の SPA 化とペアリング不具合の修正</h3>
+<p>自宅のゲーム PC を配信元にするときに使う Sunshine の新ビルド。Flatpak 版でコマンドに接頭辞を付けなくてよくなり、ペアリング時に重複したクライアント証明書が残る問題も修正されるので、Linux ホストをそのまま配信元にしている構成ほど更新の実利がある。Web UI はシングルページアプリケーションへ作り替えられてテストとカバレッジが追加されており、管理画面まわりの操作感が変わる点は上げる前に確認しておきたい。同日 19:34 の v2026.1115.163045 と変更履歴が同一のため、新しいこちらの1本にまとめた。</p>
+<p class="links"><a href="https://github.com/SunshineStream/Sunshine/releases/tag/v2026.1115.211404">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FSunshineStream%2FSunshine%2Freleases%2Ftag%2Fv2026.1115.211404">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-15]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-15.html</link>
@@ -450,19 +463,6 @@
 <h3>Sunshine v2026.1012.235952 — Flatpak のコマンド接頭辞が不要に、Web UI はシングルページアプリ化</h3>
 <p>自宅ゲームストリーミングの配信側を担う Sunshine の定例リリース。Flatpak 版でコマンドの接頭辞指定が不要になる修正と、ペアリング時に重複したクライアント証明書が置き換えられない問題の修正が入るため、Flatpak で Sunshine を動かしている環境ほど更新の実利がある。Web UI はシングルページアプリケーションに作り替えられてテストとカバレッジが追加され、Boost は CPM 管理で 1.92 に上がっており、管理画面まわりの挙動が変わる点を確認しておきたい。同日にほぼ同じ内容のリリース（v2026.1012.203943）も出ているため、新しいこちらの1本にまとめた。</p>
 <p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1012.235952">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1012.235952">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ゲーム環境 日次レポート 2026-10-12]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-12.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-12.html</guid>
-            <pubDate>Mon, 12 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>Sunshine v2026.1011.160319 リリース — Web UI がシングルページアプリ化</h3>
-<p>自宅ゲームストリーミングの配信側を担う Sunshine の定例リリース。Web UI がシングルページアプリケーションに作り替えられ、テストとカバレッジが追加されたため、常用している人は管理画面の挙動が変わる点を確認しておきたい。あわせて Flatpak 版でコマンドの接頭辞指定が不要になる修正、ペアリング時の重複クライアント証明書の修正、Boost 1.92 への更新が入っており、Flatpak で運用している環境ほど更新の実利がある。</p>
-<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1011.160319">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1011.160319">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

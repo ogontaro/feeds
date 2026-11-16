@@ -4,11 +4,19 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 15 Nov 2026 02:27:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 01:48:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-16.html</guid>
+            <pubDate>Mon, 16 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-15]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-15.html</link>
@@ -836,14 +844,6 @@
 <p>NVIDIA RTX PRO 4500 Blackwell Server Edition を積んだ G7 インスタンスが、欧州（フランクフルト）と欧州（ストックホルム）で使えるようになりました。G6 比で AI 推論が最大 4.6 倍、グラフィックスが最大 2.1 倍とされ、GPU を使うデータ分析でも速くなります。EU 側に推論基盤を置く必要がある場合に、どのリージョンでどの GPU を選ぶかという判断材料になります。</p>
 <p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-g7-european-regions/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-g7-european-regions%2F">Google 翻訳で全文を読む</a></p>
 </section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-12]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-12.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-12.html</guid>
-            <pubDate>Mon, 12 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
 ]]></content:encoded>
         </item>
     </channel>

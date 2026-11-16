@@ -4,11 +4,49 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 15 Nov 2026 02:16:14 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 01:38:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-16.html</guid>
+            <pubDate>Mon, 16 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code の Code Mode、ツール結果を読む小さなプログラムを Claude 自身が書く</h3>
+<p>Code Mode を有効にすると、Claude はツールの実行結果をそのままコンテキストに積む代わりに、結果を読んで要点だけ返す小さなプログラムを書くようになる。著者のリサーチ作業ではトークンが 63% 減り、完了も 29% 速かったという。ツールが大量の結果を返す大きな作業ほど効くので、セットアップ手順とプロンプトを押さえておきたい。</p>
+<p class="links"><a href="https://dev.to/shreyshah/claude-code-has-a-code-mode-now-31mm">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fshreyshah%2Fclaude-code-has-a-code-mode-now-31mm">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/nyatinte/status/2121577812138266721">@nyatinte のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code の settings.json 権限ルール、効かない書き方とその直し方</h3>
+<p>allow / ask / deny の権限ルールは単純に見えて、typo したモード、<code>Write(...)</code> ルール、先頭の <code>/</code> をファイルシステムのルートと誤解した指定、広い deny の下に置いた allow などは、パーサーに受理されても何も効かない。記事はチェッカー用のコマンドを実際に走らせて、どの書き方が無言で無効になるかを検証している。権限設定でエージェントの操作範囲を担保したいなら、先に知っておきたい落とし穴。</p>
+<p class="links"><a href="https://dev.to/cryptomoneymakr/claude-code-settingsjson-permissions-allowdeny-rules-that-dont-break-your-workflow-1hoa">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fcryptomoneymakr%2Fclaude-code-settingsjson-permissions-allowdeny-rules-that-dont-break-your-workflow-1hoa">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェントに「目と手」を与えるスキルの設計と実装</h3>
+<p>サーバの環境構築を Claude Code で自動化する連載の第 3 回で、エージェントに対象を見る手段と実行する手段をスキルとして与える設計・実装を扱う。実際の環境構築という題材だけに、何をエージェントに渡し、どこまで実行させるかをスキル単位で切り出す具体例として読める。</p>
+<p class="links"><a href="https://qiita.com/dsol_y_matsuda/items/a7db4c91a7f2568c4493">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>2 つ目のバグのコピーをプログラムで見つける Claude Code プラグイン「Ockham」</h3>
+<p>同じ比較が <code>src/loyalty/redeem.js</code> と <code>src/emails/points.js</code> の両方にあるのに、エージェントは片方だけ直して「修正済み」と報告した。ツールなしでは 5 回中 0 回だった 2 つ目の修正が、編集の時点で注意書きを 1 つ出すだけで 15 回中 15 回になった、という計測が出発点になっている。作者はこの検出を Claude Code のプラグイン Ockham として作っており、プロンプトの言い回しではなくハーネス側に仕組みを足す発想と、その効果の測り方が参考になる。</p>
+<p class="links"><a href="https://dev.to/crbro/a-prompt-cant-see-the-second-copy-of-a-bug-a-program-can-1okj">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fcrbro%2Fa-prompt-cant-see-the-second-copy-of-a-bug-a-program-can-1okj">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI エージェントを部下として並列に回すための指示書チェック項目</h3>
+<p>「業務SEのための仕様駆動開発」の最終回。AI を使っても自分の仕事が思ったほど減らないという実感を出発点に、複数のエージェントを並列に動かす前提で指示書をどう点検するかをまとめている。並列実行は前提がずれると手戻りが増えるため、着手前のチェックリストとしてそのまま使える。</p>
+<p class="links"><a href="https://qiita.com/sha44444/items/48cf2d6b82b16a99dd79">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-15]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-15.html</link>
@@ -1106,45 +1144,6 @@
 <ul>
 <li><a href="https://x.com/connect24h/status/2109473744947429441">@connect24h のポスト</a></li>
 <li><a href="https://speakerdeck.com/yutobara/gekkan-100-mannin-no-sabisu-sasshin-de-gijutsu-sentei-o-hono-ni-furikita-hanashi-e49c651f-8130-48bb-b6ef-eac3cc9f358a">リンク先を読む</a></li>
-</ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-10-12]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-12.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-12.html</guid>
-            <pubDate>Mon, 12 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
-<section class="item">
-<h3>Claude Code のサブエージェントを 17 個、無人で回すための設計 — 責務分割とツール権限の絞り方</h3>
-<p>社内の部門をそのままサブエージェントにした 17 個の構成を launchd で無人運用している事例で、責務の切り方とツール権限の絞り方が具体的に踏み込んで書かれている。landscape の「複数エージェントの並行実行と協調」「エージェントの権限境界とサンドボックス」に直結する内容で、サブエージェントに何を任せ、どこまでツールを許すかを決めるときの判断材料になる。</p>
-<p class="links"><a href="https://qiita.com/joinclass/items/78fb590dcbaca1ebf767">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code v2.1.296 — サブエージェントの autoCompactWindow、Read の allow_large など</h3>
-<p>サブエージェント側がメイン会話より早いタイミングでオートコンパクトできる <code>autoCompactWindow</code>、動的ワークフローが起動するエージェントを 1 モデルに固定する <code>CLAUDE_CODE_WORKFLOW_SUBAGENT_MODEL</code>、サイズ制限を超えて 1 回で読める Read の <code>allow_large</code> が入った。管理設定の <code>PreToolUse</code> / <code>PostToolUse</code> フックまわりも直っており、権限フックでツール呼び出しを止めたときにターンごと終わってしまう問題が解消されている。長く回すエージェント構成ほど効いてくる変更なので、まとめて追っておく価値がある。</p>
-<p class="links"><a href="https://claude-code-log.com/changelog/v2.1.296">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code 側に Projects が来た — チャットとまたいで 1 セッションで続ける</h3>
-<p>チャット側にあった Projects が Claude Code 側にも入り、既存の Projects がアップグレードされる形でチャットと Claude Code をまたいで使えるようになった、という報告。タスクごとにセッションを分けずに 1 つの Project で会話を続けられ、人間と実装役のエージェントの間にコーディネーター役が介在して、人間側の癖や実装側で起きた事象をコンテキストとして保持する、という運用像が述べられている。エージェントに何を覚えさせるかの設計を考えているなら、前提が変わりうる変更。</p>
-<ul>
-<li><a href="https://x.com/shimabu_it/status/2108782974552408410">@shimabu_it のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Claude の Chat と Cowork が同じメモリを共有するようになった</h3>
-<p>Chat で覚えさせた内容がトピックとして保存され、設定画面から書き換え・削除でき、その値が Cowork 側でも使われるまでの流れを Claude Desktop で確認した記事。どういう条件でメモリが共有されるのかまで整理されているので、Claude の複数の面で永続コンテキストをどう持たせるか、いま何が共有されて何が共有されないのかを把握しておきたいときに手早く確認できる。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/claude-unified-memory-chat-cowork-topics/">記事を読む</a></p>
-</section>
-<h2>新ツール・サブスク（1 本）</h2>
-<section class="item">
-<h3>GitHub Security Lab の Fuzzing Taskflow — ファジングのループをエージェントに渡す</h3>
-<p>C/C++ のリポジトリを渡すと、エントリポイントの特定、ビルドの解析、ハーネスの作成、AFL++ の実行、カバレッジの読み取り、ユニークなバグごとの脆弱性レポート作成までをエージェントが回す、というツールの紹介。継続的ファジングは「ハーネスを書いてカバレッジを見てクラッシュをトリアージする人」が要ることがボトルネックだったので、その人手のループをエージェントに置き換える、という解く課題がはっきりしている。AI エージェントに実際のコードを書かせて検証まで回す型の一例として読める。</p>
-<ul>
-<li><a href="https://x.com/github/status/2109364666237350135">@github のポスト</a></li>
-<li><a href="https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.blog%2Fsecurity%2Fapplication-security%2Fai-powered-fuzzing-with-the-github-security-lab-taskflow-agent%2F">Google 翻訳で全文を読む</a></li>
 </ul>
 </section>
 ]]></content:encoded>

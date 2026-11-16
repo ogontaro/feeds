@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-16</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-16</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code の Code Mode、ツール結果を読む小さなプログラムを Claude 自身が書く</h3>
+<p>Code Mode を有効にすると、Claude はツールの実行結果をそのままコンテキストに積む代わりに、結果を読んで要点だけ返す小さなプログラムを書くようになる。著者のリサーチ作業ではトークンが 63% 減り、完了も 29% 速かったという。ツールが大量の結果を返す大きな作業ほど効くので、セットアップ手順とプロンプトを押さえておきたい。</p>
+<p class="links"><a href="https://dev.to/shreyshah/claude-code-has-a-code-mode-now-31mm">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fshreyshah%2Fclaude-code-has-a-code-mode-now-31mm">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/nyatinte/status/2121577812138266721">@nyatinte のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude Code の settings.json 権限ルール、効かない書き方とその直し方</h3>
+<p>allow / ask / deny の権限ルールは単純に見えて、typo したモード、<code>Write(...)</code> ルール、先頭の <code>/</code> をファイルシステムのルートと誤解した指定、広い deny の下に置いた allow などは、パーサーに受理されても何も効かない。記事はチェッカー用のコマンドを実際に走らせて、どの書き方が無言で無効になるかを検証している。権限設定でエージェントの操作範囲を担保したいなら、先に知っておきたい落とし穴。</p>
+<p class="links"><a href="https://dev.to/cryptomoneymakr/claude-code-settingsjson-permissions-allowdeny-rules-that-dont-break-your-workflow-1hoa">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fcryptomoneymakr%2Fclaude-code-settingsjson-permissions-allowdeny-rules-that-dont-break-your-workflow-1hoa">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェントに「目と手」を与えるスキルの設計と実装</h3>
+<p>サーバの環境構築を Claude Code で自動化する連載の第 3 回で、エージェントに対象を見る手段と実行する手段をスキルとして与える設計・実装を扱う。実際の環境構築という題材だけに、何をエージェントに渡し、どこまで実行させるかをスキル単位で切り出す具体例として読める。</p>
+<p class="links"><a href="https://qiita.com/dsol_y_matsuda/items/a7db4c91a7f2568c4493">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>2 つ目のバグのコピーをプログラムで見つける Claude Code プラグイン「Ockham」</h3>
+<p>同じ比較が <code>src/loyalty/redeem.js</code> と <code>src/emails/points.js</code> の両方にあるのに、エージェントは片方だけ直して「修正済み」と報告した。ツールなしでは 5 回中 0 回だった 2 つ目の修正が、編集の時点で注意書きを 1 つ出すだけで 15 回中 15 回になった、という計測が出発点になっている。作者はこの検出を Claude Code のプラグイン Ockham として作っており、プロンプトの言い回しではなくハーネス側に仕組みを足す発想と、その効果の測り方が参考になる。</p>
+<p class="links"><a href="https://dev.to/crbro/a-prompt-cant-see-the-second-copy-of-a-bug-a-program-can-1okj">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fcrbro%2Fa-prompt-cant-see-the-second-copy-of-a-bug-a-program-can-1okj">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI エージェントを部下として並列に回すための指示書チェック項目</h3>
+<p>「業務SEのための仕様駆動開発」の最終回。AI を使っても自分の仕事が思ったほど減らないという実感を出発点に、複数のエージェントを並列に動かす前提で指示書をどう点検するかをまとめている。並列実行は前提がずれると手戻りが増えるため、着手前のチェックリストとしてそのまま使える。</p>
+<p class="links"><a href="https://qiita.com/sha44444/items/48cf2d6b82b16a99dd79">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
