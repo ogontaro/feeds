@@ -4,11 +4,29 @@
         <title>AWS リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 26 Oct 2026 00:40:21 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 02:22:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS リリースレポート 2026-11-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/aws/2026-11-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/aws/2026-11-16.html</guid>
+            <pubDate>Mon, 16 Nov 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Karpenter v1.15.2</h3>
+<p><strong>破壊的変更</strong>: なし(API・設定の変更なし)。ただしコントローラがクラッシュループする既知の問題あり<br>DRA(動的リソース割り当て)のインスタンスタイプメタデータだけを更新したリリースで、<code>settings.awsFeatureGates.draNVIDIAGPU</code> / <code>draEFA</code>(または <code>settings.enableDRA</code>)を有効にしていなければ挙動は変わらない。g7/g7e の NVIDIA GPU DRA メタデータを追加し、EFA DRA の対象を 29 から 302 インスタンスタイプへ拡大(追加分は <code>dra.net/pciDevice</code> / <code>pciVendor</code> / <code>rdma</code> のみを設定するため、<code>pciSubsystem</code> や <code>numaNode</code>、<code>pcieRoot</code> で選択する claim には一致しない)。既知の問題として、AMI エイリアスに <code>@</code> が 2 つ含まれる EC2NodeClass(例 <code>al2023@latest@foo</code>)が検証を通ってしまいコントローラをクラッシュループさせ、全 NodePool のプロビジョニングが停止する(該当 EC2NodeClass を削除すれば復旧、#9800 / 修正 #9801)。GPU・EFA を使わない構成ならアップグレードの実利は薄いが、EKS のノード調達を Karpenter に任せているなら AMI エイリアスの書き方だけは先に確認しておきたい。ソースからビルドする場合は Go 1.26.11 以上が必要。</p>
+<p class="links"><a href="https://github.com/aws/karpenter-provider-aws/releases/tag/v1.15.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Faws%2Fkarpenter-provider-aws%2Freleases%2Ftag%2Fv1.15.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>aws-load-balancer-controller v3.6.3</h3>
+<p><strong>破壊的変更</strong>: なし(CRD 更新不要、コントローラのアップグレードのみで完結)。v3.6.0 より前から上げる場合は v3.6.0 の CRD 手順を先に適用する<br>Go 1.27.4 と golang.org/x/net v0.62.0 への更新、EKS-D minimal ベースイメージ(2026-11-10 版)への再ビルドによるセキュリティ修正が主で、動作や設定の変更はない。Helm chart に Service webhook の <code>matchConditions</code> 対応が入り、<code>object.spec.type == &#39;LoadBalancer&#39;</code> のような条件で webhook の対象を絞れるようになったため、webhook が落ちていても他の Service は作成でき、クラスタブートストラップ時の循環依存も解消できる(有効化は values 側での設定が必要)。ほかに、ノードが Ready→NotReady→Ready と揺れた際にターゲット登録の遅延が pod の経過時間として観測されていた問題の修正と、セキュリティグループの ingress authorize/revoke 失敗が error レベルでログに出るようになった改善(従来は CloudTrail でしか追えず、共有バックエンド SG の失敗で複数の TargetGroupBinding の reconcile が止まる原因を特定しづらかった)が含まれる。NLB/ALB を Ingress から作っている構成ではセキュリティ修正目的で追随する価値がある。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Faws-load-balancer-controller%2Freleases%2Ftag%2Fv3.6.3">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS リリースレポート 2026-10-26]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/aws/2026-10-26.html</link>

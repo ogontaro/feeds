@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes リリースレポート 2026-11-16</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes リリースレポート 2026-11-16</h1>
+<article class="report"><h2>今週のリリース</h2>
+<section class="item">
+<h3>Longhorn v1.12.2(ほか v1.13.1-rc1 などの開発タグ)</h3>
+<p><strong>破壊的変更</strong>: v1.12.0 以前に作った V2 のレガシー linked-clone ボリュームは非推奨となり、detach と削除以外の操作ができなくなる(同じソースから作り直せばデータコピー不要)。また V2 Data Engine の v1.12.2 → v1.13.0 のライブアップグレードは非対応で、アップグレード前に V2 ボリュームを全 detach する必要がある。<br>自宅クラスタの永続ストレージ基盤だけに、V1 のレプリカ再構築中に 4KiB 未満の同時書き込み(512 バイト書きの DB トランザクションログ等)が互いを上書きして ACK 済みデータを失うバグの修正が入った。該当ワークロードがある V1 ボリュームは早めの更新が強く推奨される。V2 はスナップショット削除の中断でメタデータ不整合からデータ破損に至る問題があり、定期バックアップの設定が推奨される。</p>
+<p class="links"><a href="https://github.com/longhorn/longhorn/releases/tag/v1.12.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Flonghorn%2Flonghorn%2Freleases%2Ftag%2Fv1.12.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Grafana 13.3.1 / 13.2.6 / 13.1.10 / 13.0.13 / 12.4.15</h3>
+<p><strong>破壊的変更</strong>: なし<br>各系列にまとめてセキュリティ修正が入った。13.3.1 は CVE-2026-102589 / 107509 / 110992 / 111024 / 13721 / 14242 の 6 件、12.4.15 はさらに CVE-2026-106472 / 106475 / 111000 / 81843 / 82014 を含む 9 件を修正する。2026 年のタイムゾーン変更に合わせた moment-timezone / easy-tz の更新と、Provisioning の同一ホスト URL 変更対応も含む。可観測性スタックの入口なので、運用中の系列に合わせて早めに上げたい。</p>
+<p class="links"><a href="https://github.com/grafana/grafana/releases/tag/v13.3.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Fgrafana%2Freleases%2Ftag%2Fv13.3.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>kro v0.10.0</h3>
+<p><strong>破壊的変更</strong>: RGD on Graph(KREP-024)で合成エンジンが Graph ベースに統一され、内部の評価順序や patch ノードの扱いが変わる。readyWhen を patch ノードに書くと拒否され、CRD スキーマ変更は fail closed になる。既存 RGD はアップグレード前に検証しておきたい。<br>Kubernetes API によるリソース合成を担うツールの節目のリリースで、Graph API のドキュメント整備と KREP-009 のバージョニング対応が入った。新しいリソース種別を kro の再起動なしで扱えるようになり、collection メンバー更新の一時的な API 拒否をリトライする。watch の cache-sync タイムアウトが設定可能になり、サイクル検出も部分グラフ探索で高速化した。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/kro/releases/tag/v0.10.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fkro%2Freleases%2Ftag%2Fv0.10.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Talos Linux v1.14.6 / v1.15.0-beta.0</h3>
+<p><strong>破壊的変更</strong>: v1.15.0-beta.0 で containerd 設定の生成が version 4 になり、CRICustomizationConfig や system extension で渡している設定のうち version 4 で移動したキーは黙って無視される(例: <code>[metrics] address</code> は <code>[plugins.&quot;io.containerd.server.v1.metrics&quot;] address</code> へ)。カスタム CRI 設定があるノードは移行が必要。<br>v1.14.6 はパッチで、Kubernetes CA ローテーション時にコントロールプレーンの静的 Pod を待つ修正、etcd 暗号化設定で aescbc プロバイダを使う修正、GoBGP 4.10 / Flannel 0.28.10 / Linux 6.18.63 への更新を含む。v1.15.0-beta.0 ではリンクと宛先 IP で受信パケットを絞る NetworkLinkIngressConfig、BGP の TCP MD5 認証、起動パーティション検出待ちが追加された。イミュータブル OS の更新は計画的に。</p>
+<p class="links"><a href="https://github.com/siderolabs/talos/releases/tag/v1.14.6">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fsiderolabs%2Ftalos%2Freleases%2Ftag%2Fv1.14.6">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Grafana Alloy v1.22.0</h3>
+<p><strong>破壊的変更</strong>: loki.enrich / prometheus.enrich から target_match_label・logs_match_label・metrics_match_label が削除され、target_to_log_match / target_to_metric_match が必須になった。また otelcol.connector の不正な設定がこれまで黙って受理されていたが、エラーになる場合がある。<br>OTel Engine に k8seventreceiver が加わり、Kubernetes イベントを直接取り込めるようになった。OTel Collector v0.164.1 へ更新され、exceptions connector、Kafka receiver の max_prefetch / max_in_flight、prometheus.operator の scrape class 対応が入る。Helm chart に distroless オプションが追加され、loki.enrich / prometheus.enrich は public preview に昇格した。LGTM スタックの収集層なので、enrich 系を使っているなら設定の書き換えが要る。</p>
+<p class="links"><a href="https://github.com/grafana/alloy/releases/tag/v1.22.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Falloy%2Freleases%2Ftag%2Fv1.22.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Mimir 3.2.5 / 3.1.10 / 2.17.12</h3>
+<p><strong>破壊的変更</strong>: Alertmanager の SNS receiver がデフォルトで明示的な認証情報(access key / secret key)を要求するようになり、use_aws_http_client を設定した receiver は拒否される。テナント設定は API 受信時だけでなくストレージからの読み込み時にも検証される。既存テナントは <code>-alertmanager.tenants-exempt-from-config-validation-for-existing-config</code> で除外できる。<br>SNS receiver に独自 URL を設定して Alertmanager の AWS 認証情報を受け取れてしまう問題への対処で、設定によってはアップグレード後に Alertmanager が起動しない可能性があるため事前確認が必要。2.17.12 では Go を更新して複数の高 severity CVE を修正し、設定がローカルファイルを読めてしまう CVE-2026-81938 も塞いだ。ingester の head compaction 性能改善と OOO クエリ関連の修正も含む。</p>
+<p class="links"><a href="https://github.com/grafana/mimir/releases/tag/mimir-3.2.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Fmimir%2Freleases%2Ftag%2Fmimir-3.2.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>external-secrets v2.15.0(Helm chart 2.15.0)</h3>
+<p><strong>破壊的変更</strong>: なし<br>Webhook Provider のレスポンスサイズに上限を設けるセキュリティ修正が入り、テンプレート関数も一部サイズ制限された。使用中のリモートキーを削除してしまう問題、ClusterSecretStore 無効時に namespace を誤判定する問題、ソース Secret 不在時に NoSecretError を返さない問題が修正されている。Azure Key Vault の soft-delete 済みシークレットの復旧、PushSecret での ClusterSecretStore 無効化オプション、HTTP プロキシ保持の修正も含む。シークレット同期の土台なので追随したい。</p>
+<p class="links"><a href="https://github.com/external-secrets/external-secrets/releases/tag/v2.15.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fexternal-secrets%2Fexternal-secrets%2Freleases%2Ftag%2Fv2.15.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>KEDA v2.21.1</h3>
+<p><strong>破壊的変更</strong>: なし<br>ScaledObject が所有する HPA だけを管理するようになり、他の手段で作られた HPA を KEDA が上書き・削除しなくなった。イベント駆動オートスケールの安全側の修正として重要。InfluxDB scaler がクエリ結果のエラーを空結果として隠さず表面化するようになり、MySQL scaler は初回 ping 失敗時に sql.DB を閉じる。ArangoDB の connectionLimit 遵守、Splunk Observability の metricType 尊重、Kubernetes 1.36 を維持した依存更新も含む。</p>
+<p class="links"><a href="https://github.com/kedacore/keda/releases/tag/v2.21.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkedacore%2Fkeda%2Freleases%2Ftag%2Fv2.21.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Loki v3.7.10 / v3.6.21</h3>
+<p><strong>破壊的変更</strong>: なし<br>v3.6.21 は golang.org/x/crypto を v0.59.0 に上げるセキュリティ修正のみ。v3.7.10 はサーバーの TLS 曲線設定を変更可能にする機能が入り、残りは依存更新が中心。LGTM スタックのログ基盤として、3.6 系はセキュリティ更新のため上げておきたい。</p>
+<p class="links"><a href="https://github.com/grafana/loki/releases/tag/v3.7.10">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Floki%2Freleases%2Ftag%2Fv3.7.10">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Backstage v1.56.5 / v1.55.4</h3>
+<p><strong>破壊的変更</strong>: なし<br>scaffolder の権限ポリシーで、アクション入力値のマッチングが数値と文字列の両方で正しく効くよう修正された。GitLab discovery は push イベントの payload ではなく GitLab API から取得したプロジェクト情報を元に catalog location と refresh key を決めるようになり、プロジェクト外に解決されるコミット済みパスは無視される。TechDocs は mkdocs.yml の markdown_extensions を既知の拡張名に制限し、それ以外は警告付きで除去する(追加が必要なら <code>techdocs.generator.mkdocs.dangerouslyAllowAdditionalExtensions</code>)。</p>
+<p class="links"><a href="https://github.com/backstage/backstage/releases/tag/v1.56.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbackstage%2Fbackstage%2Freleases%2Ftag%2Fv1.56.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Istio 1.32.0</h3>
+<p><strong>破壊的変更</strong>: リリースノート本文がリンクのみのため本文からは未確認。1.32 系のアップグレードノートを確認のこと。<br>サービスメッシュのマイナーリリース。具体的な変更点はリリースノートを参照する必要がある。</p>
+<p class="links"><a href="https://github.com/istio/istio/releases/tag/1.32.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fistio%2Fistio%2Freleases%2Ftag%2F1.32.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Helm v4.3.2</h3>
+<p><strong>破壊的変更</strong>: なし<br>パッチリリース。registry クライアントが Helm 側で設定可能な transport を常に返すよう修正され、golang.org/x/net v0.62.0 と klauspost/compress v1.20.3 への更新が入る。Helm 3 系のマイナーリリースは終了(EOL)しているので、4 系への移行計画も合わせて確認したい。</p>
+<p class="links"><a href="https://github.com/helm/helm/releases/tag/v4.3.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv4.3.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Helmfile v1.8.4</h3>
+<p><strong>破壊的変更</strong>: なし<br>release の依存関係が Chart.yaml の condition を設定できるようになり、version 省略時のデフォルト解決も修正された。<code>--state-values-set</code> は後続の代入が別型の値を置き換えられるようになり、範囲外のリストインデックスは拒否される。未デプロイの release でも upgrade を試みるようになった点は挙動変更として意識しておきたい。</p>
+<p class="links"><a href="https://github.com/helmfile/helmfile/releases/tag/v1.8.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhelmfile%2Fhelmfile%2Freleases%2Ftag%2Fv1.8.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Terraform v1.17.2</h3>
+<p><strong>破壊的変更</strong>: なし<br><code>destroy=false</code> の managed resource を参照するとサイクルになるバグと、init 時に unavailable provider の schema 警告が繰り返し出るバグを修正。HCP Terraform の大規模 query から設定を生成する際の性能とアロケーションも改善した。AWS 側の IaC を回しているなら追随しておきたいパッチ。</p>
+<p class="links"><a href="https://github.com/hashicorp/terraform/releases/tag/v1.17.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhashicorp%2Fterraform%2Freleases%2Ftag%2Fv1.17.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Reloader v1.4.24(Helm chart 2.2.20)</h3>
+<p><strong>破壊的変更</strong>: なし<br>golang.org/x/net を v0.62.0 に上げて CVE-2026-78661 / CVE-2026-97045 に対処。pause-period の書き込みに失敗した際の resume リトライ、webhook URL の非 2xx 応答を失敗として扱う修正、Helm chart の NetworkPolicy egress 設定の可変化が入る。</p>
+<p class="links"><a href="https://github.com/stakater/Reloader/releases/tag/v1.4.24">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstakater%2FReloader%2Freleases%2Ftag%2Fv1.4.24">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Pomerium v0.34.1</h3>
+<p><strong>破壊的変更</strong>: なし<br>Pomerium Zero で 400 エラーを terminal として扱わないよう修正し、空の SSH route 設定も直った。ListenerMux を unix に限定し、Go 1.27.4 へ更新。ゼロトラストアクセスの入口としてパッチを当てておきたい。</p>
+<p class="links"><a href="https://github.com/pomerium/pomerium/releases/tag/v0.34.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fpomerium%2Fpomerium%2Freleases%2Ftag%2Fv0.34.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Tailscale (operator) v1.104.7 / v1.104.6</h3>
+<p><strong>破壊的変更</strong>: リリースノートが changelog へのリンクのみのため本文からは未確認。<br>1.104 系のパッチリリース。変更内容は Tailscale の changelog を参照。</p>
+<p class="links"><a href="https://github.com/tailscale/tailscale/releases/tag/v1.104.7">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Ftailscale%2Ftailscale%2Freleases%2Ftag%2Fv1.104.7">Google 翻訳で読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

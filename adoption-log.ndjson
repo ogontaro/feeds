@@ -686,3 +686,35 @@
 {"date":"2026-11-16","domain":"claude","sourceName":"DEV Community — Claude"}
 {"date":"2026-11-16","domain":"claude","sourceName":"Qiita — Claude Code"}
 {"date":"2026-11-16","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-11-16","domain":"claude","sourceName":"Claude Code releases"}
+{"date":"2026-11-16","domain":"claude","sourceName":"opencode releases"}
+{"date":"2026-11-16","domain":"claude","sourceName":"Orca releases"}
+{"date":"2026-11-16","domain":"claude","sourceName":"Codex CLI releases"}
+{"date":"2026-11-16","domain":"aws","sourceName":"Karpenter (aws)"}
+{"date":"2026-11-16","domain":"aws","sourceName":"aws-load-balancer-controller"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"kro"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Backstage"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Terraform"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"external-secrets"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Grafana"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Grafana Alloy"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"KEDA"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Loki"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Longhorn"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Mimir"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Pomerium"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Reloader"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Tailscale (operator)"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Helm"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Helmfile"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Istio"}
+{"date":"2026-11-16","domain":"kubernetes","sourceName":"Talos Linux"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"mise"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"Tilt"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"Devbox"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"uv"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"Node.js"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"Zellij"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"Neovim"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"Yazi"}
+{"date":"2026-11-16","domain":"devtools","sourceName":"Docker Engine (moby)"}

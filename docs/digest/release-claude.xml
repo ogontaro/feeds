@@ -4,11 +4,39 @@
         <title>Claude リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 09 Nov 2026 02:05:04 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 02:22:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude リリースレポート 2026-11-16]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/claude/2026-11-16.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/claude/2026-11-16.html</guid>
+            <pubDate>Mon, 16 Nov 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Claude Code v2.1.321–v2.1.325</h3>
+<p><strong>破壊的変更</strong>: なし。ただし v2.1.321 で Fable 5.2（<code>claude-fable-5-2</code>、1M コンテキスト、$8/$40 per Mtok・キャッシュ読み出し $0.20）が既定の Fable モデルになり、モデル ID と単価が変わる。v2.1.323 からは <code>plugin.json</code> の <code>engines[&quot;claude-code&quot;]</code> 範囲外のプラグインがインストール・更新・読み込みの対象外になる。<br>実験的な <strong>Code Mode</strong>（Claude がツール呼び出しを JavaScript で書く）がオプトインで追加され、組織単位で無効化もできる。プラグイン側が対応バージョン範囲を宣言できるようになり、ハーネス（権限・ツール・指示の外側の構成）を配布物として管理する流れが進んだ。<br>権限境界まわりの修正が多く、MCP OAuth のリダイレクトで refresh token が別ホストへ送られる問題、読み取り専用 Bash がプロンプトなしにサンドボックス外で走る問題、<code>cp</code>/<code>mv</code> 先ディレクトリへの deny ルールが効かない問題を修正。サブエージェントが独自モデル時に main セッションのモデルでファイル読み取りサイズを見積もる問題も直り、並行実行の精度が上がっている。<br>ほかに Vertex（global/us/eu）の fast mode 対応、第三者ゲートウェイ・Foundry で毎ターン context length エラーになる問題の修正、zstd 圧縮レスポンスのデコードに関するセキュリティ修正を含む。</p>
+<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.325">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.325">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>opencode v2.2.7–v2.3.0</h3>
+<p><strong>破壊的変更</strong>: v2.2.7 で <code>@opencode/ai</code> の <code>ImageResponse.image</code> が削除（<code>response.images[0]</code> へ移行）。プラグイン読み込みを待たない SDK エンドポイントが増え、<code>*.updated</code> イベントで再取得する前提になった。v2.3.0 でサブエージェントは常にバックグラウンド実行・即時返却に変わり、TUI の transcript 既定が <code>low</code>（ツール呼び出しと思考を1行に集約）になる。<br>v2.3.0 の目玉はサブエージェントのバックグラウンド化で、複数を並行に走らせながら親セッションで作業を続けられる。アイドル時に親へ報告し、子のバックグラウンド処理が残っている場合は「まだ実行中」と伝えて部分結果を完了扱いしない。<br>MCP イベントの実験的対応、shell コマンドのサーバーハンドオフ越しの継続、mTLS 用クライアント証明書、ローカルモデル探索（Ollama / LM Studio / vLLM）のタイムアウト延長なども入った。MCP OAuth の refresh token ローテーションで複数クライアントが同時更新してもログアウトしない修正は、MCP を常用する環境で効く。<br>Codex と同様に Code Mode の構造化結果が整理され、ファイル・skill ツールの戻り値が単純化された。<code>process-daemon</code> v0.5.1 / v0.5.2 はビルドと依存更新のみ。</p>
+<p class="links"><a href="https://github.com/anomalyco/opencode/releases/tag/v2.3.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanomalyco%2Fopencode%2Freleases%2Ftag%2Fv2.3.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Orca 1.4.255–1.4.259 / Android 0.0.65</h3>
+<p><strong>破壊的変更</strong>: Android アプリが新アプリ <code>dev.orca.app</code> に移行した。旧 <code>com.stably.orca.mobile</code> は今回が最終更新で、セキュリティ修正を含め今後一切更新されない。新アプリは別パッケージなので上書き更新できず、一度インストールして再ペアリングする必要がある。<br>1.4.259 で <strong>Workspace Cleanup</strong> がオプトインで追加された。ルールは既定でオフだが、有効化すると削除プレビュー確認後に条件一致のワークスペースが数秒で消えるため、プロジェクト単位のルールを設定する前にプレビューを確認したい。<br>機能面ではサブエージェントを1体ずつ専用ビューで追えるようになり、Kimi Code を Chat から利用可能。1.4.258 で GitHub Copilot Chat、1.4.257 でブラウザの未送信フィードバックの復元と音声入力の無音待ち設定、1.4.255 で Session History 検索の高速化とスマホの Agents タブが入った。<br>1.4.256 の音声入力はオンデバイスモデルの再ダウンロードが必要になる場合がある。スマホ側の改善は対応するアプリ更新が前提。</p>
+<p class="links"><a href="https://github.com/stablyai/orca/releases/tag/v1.4.259">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstablyai%2Forca%2Freleases%2Ftag%2Fv1.4.259">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Codex CLI 0.169.0</h3>
+<p><strong>破壊的変更</strong>: <code>codex exec</code> / <code>codex review</code> は信頼していないディレクトリで、<code>--sandbox workspace-write</code> を付けてもプロジェクト設定と MCP サーバーを無効のまま維持するようになった。プロジェクトを信頼するには <code>--trust</code> の明示が必要。<br>0.169.0 ではオプトインのターミナルワークスペースが複数のサイドチャットタブに対応し、再起動後もローカルのサイドチャットを復元する。過去タスクを名前・プロンプト・作業ディレクトリで検索でき、フルスクリーン表示では完了した作業を折りたためる。<br>カスタムモデルプロバイダーを TUI から追加・編集でき、SSH 越しやブラウザなしでもデバイスコードでゲートウェイ認証できる。macOS / Linux のオプトイン Cloud 接続では画像送信・モデル選択・会話のアーカイブがターミナルから可能。<code>Ctrl+S</code> でアップロード無効時も診断 ZIP をローカル保存できる。<br>0.170.0 / 0.171.0 の alpha はリリースノート未記載のため、バグ修正と依存更新のみ。</p>
+<p class="links"><a href="https://github.com/openai/codex/releases/tag/rust-v0.169.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fopenai%2Fcodex%2Freleases%2Ftag%2Frust-v0.169.0">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude リリースレポート 2026-11-09]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/claude/2026-11-09.html</link>
