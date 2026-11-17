@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Tue, 17 Nov 2026 03:59:29 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Nov 2026 16:12:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] OpenFunction の権限昇格で namespace テナントからノード権限を取得される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-130587.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-130587.html#2026-11-17T16:12:28.970Z</guid>
+            <pubDate>Tue, 17 Nov 2026 16:12:28 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>OpenFunction の権限昇格で namespace テナントからノード権限を取得される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.4 の Critical だが、CISA KEV への追加は無く EPSS も不明で、悪用の確認はまだ無い。OpenFunction は自宅インフラの構成には含まれておらず、利用しているかは入力から判断できないため「監視」とする。Kubernetes 上でテナント分離を前提に運用している場合は該当しうる。</p>
+<p>OpenFunction 1.2.0 以前では、Function / Serving リソースの PodSpec テンプレートが制限されていないため、当該 namespace のテナント権限しか持たない攻撃者が privileged・hostNetwork・hostPID・hostPath を指定した Pod を作成できる。ノードのルートファイルシステムをマウントして、ワーカーノードの権限まで昇格できる。</p>
+<p><strong>自宅インフラへの該当:</strong> Kubernetes<br><strong>推奨アクション:</strong> OpenFunction を使用している場合は、ベンダーのアドバイザリで 1.2.0 より新しい修正版を確認して更新する。あわせて Function / Serving の作成権限を持つ利用者を確認し、特権 Pod や hostPath を許可しないポリシーが効いているか点検する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-130587">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Zyxel ルーターの未認証の権限昇格・任意コマンド実行につながる領域外書き込み]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-79614.html</link>
@@ -832,20 +846,6 @@
 <p>CI/CD の設定に細工した正規表現を仕込むことで、未認証の攻撃者が GitLab サーバ上で任意のコードを実行できる。正規表現の検証が不十分なことが原因で、整数オーバーフロー／ラップアラウンドが発生する。認証なしで到達できるため、外部に公開したインスタンスでは特に危険。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、適用する。GitLab を運用していない場合も、CI/CD の正規表現を受け付ける構成や外部公開したインスタンスが無いか確認する。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-97229">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Cisco Secure Firewall ASA/FTD の NULL ポインタ参照で遠隔から再起動させられる脆弱性]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-76418.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-76418.html#2026-10-30T01:08:16.794Z</guid>
-            <pubDate>Fri, 30 Oct 2026 01:08:16 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Cisco Secure Firewall ASA/FTD の NULL ポインタ参照で遠隔から再起動させられる脆弱性</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-10-29 追加され、悪用が確認されている。EPSS 0.006（percentile 0.473）と悪用確率は低いが、KEV を根拠とする。自宅インフラに該当する Cisco Secure Firewall ASA/FTD は無いため、KEV だが該当しない製品として「今週中」とする。</p>
-<p>未認証の遠隔攻撃者が細工した入力により、Cisco Secure Firewall ASA/FTD のデバイスを予期せず再起動させ、サービス停止（DoS）に追い込める。戻り値の未チェックによる NULL ポインタ参照が原因。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。機器を外部に公開している場合は、修正版の適用まで暫定緩和策を検討する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76418">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

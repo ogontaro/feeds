@@ -971,3 +971,11 @@
 {"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130371","kev":false,"reported":false}
 {"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130369","kev":false,"reported":false}
 {"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130366","kev":false,"reported":false}
+{"date":"2026-11-17T16:12:28.970Z","id":"CVE-2026-120387","kev":false,"reported":false}
+{"date":"2026-11-17T16:12:28.970Z","id":"CVE-2026-129448","kev":false,"reported":false}
+{"date":"2026-11-17T16:12:28.970Z","id":"CVE-2026-130587","kev":false,"reported":true,"title":"OpenFunction の権限昇格で namespace テナントからノード権限を取得される","urgency":"watch"}
+{"date":"2026-11-17T16:12:28.970Z","id":"CVE-2026-130583","kev":false,"reported":false}
+{"date":"2026-11-17T16:12:28.970Z","id":"CVE-2026-130603","kev":false,"reported":false}
+{"date":"2026-11-17T16:12:28.970Z","id":"CVE-2026-129286","kev":false,"reported":false}
+{"date":"2026-11-17T16:12:28.970Z","id":"CVE-2026-129280","kev":false,"reported":false}
+{"date":"2026-11-17T16:12:28.970Z","id":"CVE-2026-129272","kev":false,"reported":false}
