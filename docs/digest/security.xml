@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Mon, 16 Nov 2026 19:42:13 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Nov 2026 03:59:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Zyxel ルーターの未認証の権限昇格・任意コマンド実行につながる領域外書き込み]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-79614.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-79614.html#2026-11-17T03:59:29.866Z</guid>
+            <pubDate>Tue, 17 Nov 2026 03:59:29 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Zyxel ルーターの未認証の権限昇格・任意コマンド実行につながる領域外書き込み</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical でネットワーク機器に該当するが、CISA KEV には未追加、EPSS も不明で悪用の兆候は確認されていないため「監視」とした。固定の自宅インフラ構成に該当製品の記載はなく、利用中の機種・ファームウェアが影響範囲かは未確認。</p>
+<p>Zyxel DX3301-T0 / EX3301-T0 のファームウェア 5.50(ABVY.8.3)C0 までに、libclinkc.so の領域外書き込みの脆弱性がある。細工した HTTP リクエストを送る未認証の攻撃者が権限を昇格し、任意のコマンドを実行できる可能性がある。これらの機器では WAN 側からのアクセスが既定で無効になっている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のルーターが DX3301-T0 / EX3301-T0 で、ファームウェアが 5.50(ABVY.8.3)C0 以前か確認する。該当する場合はベンダーのアドバイザリで修正版ファームウェアを確認する。WAN 側を外部公開している場合は優先して確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-79614">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Cyrus SASL 2.1.28 までの SRP サーバーで認証バイパス]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-129483.html</link>
@@ -832,20 +846,6 @@
 <p>未認証の遠隔攻撃者が細工した入力により、Cisco Secure Firewall ASA/FTD のデバイスを予期せず再起動させ、サービス停止（DoS）に追い込める。戻り値の未チェックによる NULL ポインタ参照が原因。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。機器を外部に公開している場合は、修正版の適用まで暫定緩和策を検討する。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76418">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Yamaha 製無線LANルーター NWR100 の OS コマンドインジェクション]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-97854.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-97854.html#2026-10-29T18:32:48.898Z</guid>
-            <pubDate>Thu, 29 Oct 2026 18:32:48 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Yamaha 製無線LANルーター NWR100 の OS コマンドインジェクション</h3>
-<p><strong>緊急度: 監視</strong> — CISA KEV には未追加で、EPSS も不明。CVSS は 9.8 の Critical。自宅インフラの構成リストに該当製品は無いが、悪用の兆候がまだ無いネットワーク機器の Critical として監視対象とした。</p>
-<p>Yamaha 製の無線LANルーター NWR100 に OS コマンドインジェクションの脆弱性がある。入力では概要が途中で省略されており、攻撃条件や影響範囲の詳細は示されていない。悪用が確認されたという記載はない。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Yamaha のアドバイザリで修正版と影響バージョンを確認する。NWR100 を使用していない場合は対応不要。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-8m66-f8m4-wc2j">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

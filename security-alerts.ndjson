@@ -961,3 +961,13 @@
 {"date":"2026-11-16T19:42:13.954Z","id":"CVE-2026-129955","kev":false,"reported":false}
 {"date":"2026-11-16T19:42:13.954Z","id":"CVE-2026-129550","kev":false,"reported":false}
 {"date":"2026-11-16T19:42:13.954Z","id":"CVE-2026-111559","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-79614","kev":false,"reported":true,"title":"Zyxel ルーターの未認証の権限昇格・任意コマンド実行につながる領域外書き込み","urgency":"watch"}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130070","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130071","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130327","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130320","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130072","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130380","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130371","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130369","kev":false,"reported":false}
+{"date":"2026-11-17T03:59:29.866Z","id":"CVE-2026-130366","kev":false,"reported":false}
