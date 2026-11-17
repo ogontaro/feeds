@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-17</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-17</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Salesforce が Amazon EKS 上で大規模に Kubernetes ワークロードを適正化している方法</h3>
+<p>1,400 以上のクラスタを抱えるマルチテナント EKS 基盤で、Vertical Pod Autoscaler と Horizontal Pod Autoscaler を組み合わせた多次元のオートスケール戦略により、500 万ドル超のインフラ削減を達成した事例。VPA の推奨値を Goldilocks で眺めるだけの運用から一歩進めて、requests/limits の適正化を「効く施策」として位置づける判断材料になる。規模は違っても、リソース要求の見直しをどこまで攻めるかの基準として読める。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/how-salesforce-efficiently-right-sizes-kubernetes-workloads-at-scale-on-amazon-eks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fhow-salesforce-efficiently-right-sizes-kubernetes-workloads-at-scale-on-amazon-eks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock Managed Knowledge Base の Agentic Retrieve で記憶を持つ AI エージェントを構築する</h3>
+<p>Bedrock Managed Knowledge Base と AgentCore memory が会話の保存・事実の抽出・長期記憶を担い、それを 1 回の AgenticRetrieveStream 呼び出しにまとめる構成の解説。マルチユーザーのアシスタントで、各ユーザーが読める文書だけを見せ、記憶もユーザーごとに閉じる作り方が示されている。エージェントに記憶を持たせるときの権限境界とデータの分離をどう設計するかの具体例として読む価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/build-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fbuild-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Duco が Amazon Bedrock AgentCore で金融データ自動化を作り直した事例</h3>
+<p>大手銀行向けのデータ自動化基盤 Duco が、エージェント基盤を Amazon Bedrock と AgentCore に移し、テナントごとの厳格な分離・マルチモデル戦略・MCP のスキル構成でコンテキスト消費を 90% 削減、構築時間を 10 倍短縮、オンボーディング費用を 70% 削減したと報告している。既存 API を MCP ツール化してスキルとして切り出す設計は、自前のエージェントに社内システムを繋ぐときの構成にそのまま流用できる。規制産業でマルチテナンシーをどう守るかという観点でも参考になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-duco-transforms-financial-data-automation-with-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-duco-transforms-financial-data-automation-with-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>マルチエージェント設計パターンとアンチパターンの分類、製造業からの教訓</h3>
+<p>マルチエージェントの協調を「モデルの問題」ではなく分散システムの問題として捉え、実務で検証済みのパターンとアンチパターン、そもそも複数エージェントにすべきかの判断枠組みを整理した記事。エージェントを並行に走らせる構成は増えているが、増やす前に何を分割し何を共有するかを決める材料が乏しかった。設計レビューのチェックリストとして使える。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/taxonomy-of-multi-agent-design-patterns-anti-patterns-and-lessons-from-manufacturing/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ftaxonomy-of-multi-agent-design-patterns-anti-patterns-and-lessons-from-manufacturing%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon S3 Vectors がベクトル検索と全文検索を組み合わせたハイブリッド検索に対応</h3>
+<p>S3 Vectors で、ベクトル類似検索と全文検索を 1 つのクエリ内で組み合わせ、意味の近さと語の一致の両方を反映した単一のランキングを返せるようになった。RAG やエージェントの記憶の検索品質を、別の検索基盤を足さずに上げられる点が実務に効く。既存の S3 Vectors API のままでサブ秒のレイテンシを維持するとあり、移行の手間も小さい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/s3-vectors-hybrid-search/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fs3-vectors-hybrid-search%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

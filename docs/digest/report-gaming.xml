@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 16 Nov 2026 01:59:23 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Nov 2026 04:47:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-17]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-17.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-17.html</guid>
+            <pubDate>Tue, 17 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>SteamOS 3.10.1 Preview が Steam Deck の Preview チャンネルに配信</h3>
+<p>SteamOS 3.10 系の Preview ビルドが Steam Deck 向けに配信された。設定 &gt; システム &gt; システムアップデートチャンネルで Preview を選ぶと受け取れるが、検証中の機能を含む初期ビルドで、予期しない不具合や安定性の問題が起こり得るため、問題があれば SteamOS の Issue トラッカーへの報告が求められている。安定版 3.9 からの変更点がこのノートにすべて載るわけではないので、3.10 系への移行を考えているなら一次情報として目を通しておきたい。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/1675200/view/687522235410285838">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F1675200%2Fview%2F687522235410285838">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-16]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-16.html</link>
@@ -450,19 +463,6 @@
 <h3>Steam クライアントのベータ更新 — Android へのストリーミングの極端な低ビットレートを修正</h3>
 <p>Steam クライアントの Preview/Beta チャンネル向け更新で、Remote Play の不具合修正が中心になっている。一部環境で音声が割れる回帰と、Android 端末へのストリーミングのビットレートが極端に低くなる問題が修正されており、携帯機や Android 端末に配信している環境では該当の症状が改善される見込みなので、安定版に来る前に内容を押さえておく価値がある。DLC のホバー表示が一部の箇所で効かない問題も直っている。</p>
 <p class="links"><a href="https://store.steampowered.com/news/app/1675200/view/675134162359815494">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F1675200%2Fview%2F675134162359815494">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ゲーム環境 日次レポート 2026-10-13]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-13.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-13.html</guid>
-            <pubDate>Tue, 13 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>Sunshine v2026.1012.235952 — Flatpak のコマンド接頭辞が不要に、Web UI はシングルページアプリ化</h3>
-<p>自宅ゲームストリーミングの配信側を担う Sunshine の定例リリース。Flatpak 版でコマンドの接頭辞指定が不要になる修正と、ペアリング時に重複したクライアント証明書が置き換えられない問題の修正が入るため、Flatpak で Sunshine を動かしている環境ほど更新の実利がある。Web UI はシングルページアプリケーションに作り替えられてテストとカバレッジが追加され、Boost は CPM 管理で 1.92 に上がっており、管理画面まわりの挙動が変わる点を確認しておきたい。同日にほぼ同じ内容のリリース（v2026.1012.203943）も出ているため、新しいこちらの1本にまとめた。</p>
-<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1012.235952">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1012.235952">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
