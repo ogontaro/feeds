@@ -4,11 +4,29 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 17 Nov 2026 04:38:37 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 03:48:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-18]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-18.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-18.html</guid>
+            <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Samsung と Google の Android XR スマートグラスが登場</h3>
+<p>Android XR がヘッドセットから眼鏡型へ広がることを示す発表で、XR 端末が日常的にかけられる形に近づくかを判断する最初の材料になる。発表の見出しよりも、価格・発売地域・対応アプリの3点が購入判断を分けるので、そこを一次情報で確認したい。</p>
+<p class="links"><a href="https://www.wired.me/story/google-and-samsungs-android-xr-smart-glasses-are-finally-here">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.wired.me%2Fstory%2Fgoogle-and-samsungs-android-xr-smart-glasses-are-finally-here">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Meta、VR グラス発売を前にサードパーティー製ゲームへ 1.2 億ドルを拠出</h3>
+<p>Reality Labs がウェアラブルと AI に軸足を移したとされる中でも、Quest 向けの外部ゲーム投資を止めていないことを示す数字。VR グラス発売を控えたタイミングの予算コミットは、発売後のコンテンツ供給と開発者支援の勢いを読む材料になる。</p>
+<p class="links"><a href="https://roadtovr.com/meta-commits-120m-vr-glasses-games/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Froadtovr.com%2Fmeta-commits-120m-vr-glasses-games%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-17]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-17.html</link>
@@ -373,19 +391,6 @@
 <h3>Android XR のスマートグラスが 11 月に発売へ</h3>
 <p>Android XR のスマートグラスが 11 月に発売されると報じられた。プラットフォームとしての Android XR に載る端末が実際に買える時期が示されたことになり、Meta のグラスを前提に組み立てていた比較がここで更新される。日本でいつ展開されるかも含めて、続報を追う価値がある。</p>
 <p class="links"><a href="https://www.droid-life.com/2026/10/14/android-xr-smart-glasses-launch-in-november/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.droid-life.com%2F2026%2F10%2F14%2Fandroid-xr-smart-glasses-launch-in-november%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ガジェット 日次レポート 2026-10-14]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-14.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-10-14.html</guid>
-            <pubDate>Wed, 14 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>Meta、カメラを載せない初の音声特化スマートグラス「Ray-Ban Meta Audio」を発表</h3>
-<p>Meta が、撮影用カメラを備えない音声特化型のスマートグラス「Ray-Ban Meta Audio」を初の音声グラスとして発表した。同じ日に複数メディアが実機のファーストインプレッションを出しており、カメラを外した構成の評価は「カメラなしが正解」から「根本的な課題は解決していない」まで分かれている。Meta のグラス製品が撮影デバイスだけでなく音声デバイスにもラインを広げた節目であり、ラインナップの軸がどこに移るかを判断する起点として読む価値がある。</p>
-<p class="links"><a href="https://www.meta.com/blog/ray-ban-meta-audio-our-first-audio-glasses-are-here/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.meta.com%2Fblog%2Fray-ban-meta-audio-our-first-audio-glasses-are-here%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

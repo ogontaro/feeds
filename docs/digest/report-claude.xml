@@ -4,11 +4,50 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 17 Nov 2026 04:24:16 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 03:29:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-18]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-18.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-18.html</guid>
+            <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.327 の主要アップデート — MCP 設定の標準入力対応と権限チェックの厳格化</h3>
+<p>MCP サーバーを登録するとき、トークンをコマンドラインに残さず標準入力から渡せるようになったのは、秘密情報の扱いを見直す実務的な改善です。さらに <code>/status</code> が壊れた設定ファイルや無視されている権限設定を一覧するようになり、「設定したつもりが効いていない」という Claude Code で起きがちな落とし穴に気づきやすくなります。バージョンを上げる前に、自チームの MCP 設定と権限の実効性を確認しておきたい一本です。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261118-cc-updates-v2-1-327/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code チームは「検証」をどう考えているか</h3>
+<p>エージェントが書いたコードをどこまで、どう検証するかは、導入後に必ず突き当たる設計課題です。Claude Code を作っているチーム自身が検証をどう位置づけているかが語られており、テスト・レビュー・確認の自動化を組むときの前提を揃えられます。HN でも大きく議論されているので、チーム内で方針を話すときの共通の参照点になります。</p>
+<p class="links"><a href="https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.dev%2Fblog%2Fhow-the-claude-code-team-thinks-about-verification%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>コーディングエージェントは「特権的な自動化」— Claude Code のワークステーション基準</h3>
+<p>コーディングエージェントは開発者の権限でシェルを実行し、コードを編集し、外部ツールを呼び出します。本番から遠い開発機ほど統制が緩みがちですが、本番への経路はそこに残っています。規制業種で Claude Code を Windows/WSL2・Linux・ホスト型 CI で使う前提のベースラインとして、権限境界とサンドボックスの設計を点検する材料になります。</p>
+<p class="links"><a href="https://dev.to/deixei/your-coding-agent-is-privileged-automation-a-workstation-baseline-for-claude-code-ddf">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdeixei%2Fyour-coding-agent-is-privileged-automation-a-workstation-baseline-for-claude-code-ddf">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Google Colab の API と MCP エンドポイント — エージェントから Python 実行環境を用意する</h3>
+<p>Google が Colab に新しい API と MCP エンドポイントを追加し、AI エージェントからランタイムの用意と Python のヘッドレス実行を設定だけで行えるようになりました。ノートブック環境をエージェントの実行基盤にしたいとき、自前でサンドボックスを組む手間を減らせます。npaka による日本語の概要記事で、機能・使い方・Colab CLI との違いがまとまっており、導入判断の入口になります。</p>
+<ul>
+<li><a href="https://x.com/npaka123/status/2122838806244299101">@npaka123 のポスト</a></li>
+<li><a href="https://note.com/npaka/n/ne69e426d97e9">リンク先を読む</a></li>
+<li><a href="https://medium.com/google-colab/the-google-colab-api-and-mcp-endpoint-for-developers-and-agents-65cfef497056">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fmedium.com%2Fgoogle-colab%2Fthe-google-colab-api-and-mcp-endpoint-for-developers-and-agents-65cfef497056">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>毎月6,000 AI Agentsを捌くためにキーボードを捨てた話</h3>
+<p>git worktree と orca workspace を組み合わせ、Claude と Codex を中心に月 6,000 セッション規模でエージェントを動かす運用に移行した実践談です。複数エージェントを並行して走らせるとき、作業ディレクトリやセッションをどう分け、人間がどこで介入するかという現実的な設計判断が詰まっています。エージェント前提で開発環境を作り直す際の具体的な出発点になります。</p>
+<p class="links"><a href="https://zenn.dev/andoshin11/articles/ba68b39ef9a8ce">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-17]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-17.html</link>
@@ -1090,50 +1129,6 @@
 <ul>
 <li><a href="https://devblogs.microsoft.com/azure-sdk/dynamic-workflows-azure-functions-hosted-skills/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdevblogs.microsoft.com%2Fazure-sdk%2Fdynamic-workflows-azure-functions-hosted-skills%2F">Google 翻訳で全文を読む</a></li>
 <li><a href="https://x.com/chomado/status/2110500253946593560">@chomado のポスト</a></li>
-</ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-10-14]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-14.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-14.html</guid>
-            <pubDate>Wed, 14 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
-<section class="item">
-<h3>Anthropic が Git を離れて自社製のソース管理へ、5 か月でモノレポを完全移行</h3>
-<p>Claude を使った開発で 1 日のマージ数が 5 か月で約 2,500 件から 30,000 件超に増え、人間の規模を前提に組まれた開発インフラそのものがボトルネックになったため、Anthropic が Git を置き換える自社製のソース管理システムを作り、モノレポを完全に移行した経緯がまとまっている（移行先は X 上では「Scion」と呼ばれている）。エージェントが大量にコードを書く前提では、レビュー・マージ・CI の作りがそのまま限界になるという実例で、同じ壁に当たり始めた組織が開発基盤を作り直すときの設計判断の材料になる。</p>
-<p class="links"><a href="https://www.anthropic.com/engineering/redesigning-source-control">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fengineering%2Fredesigning-source-control">Google 翻訳で全文を読む</a></p>
-<ul>
-<li><a href="https://x.com/AnthropicAI/status/2110047081414987957">AnthropicAI のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FAnthropicAI%2Fstatus%2F2110047081414987957">Google 翻訳で読む</a></li>
-<li><a href="https://x.com/oikon48/status/2110059564129538477">oikon48 のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Claude Code の守りのフックは、壊れると黙って通る — 2.1.295 の onFailure: 「block」</h3>
-<p>Claude Code のフックは、コマンドが起動できないなど「そもそも動かない」場合に処理を止めず、黙って通してしまう挙動だったという指摘。2.1.295（2026-10-08）で追加された onFailure: 「block」を使うと、command フックと HTTP フックが起動できないときに止められる。危険なコマンドを拒否する守りのフックを置いているなら、守っているつもりで素通りしている箇所がないか確かめる価値がある。</p>
-<p class="links"><a href="https://qiita.com/suwa_nobu/items/afde8d73a48eb7badb71">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>Claude Code v2.1.296 のサブエージェント設定入門、追加された 3 設定の効き方</h3>
-<p>2026 年 10 月 9 日公開の v2.1.296 で加わったサブエージェント関連の 3 つの設定を、コンテキストの膨張・モデルコスト・過負荷エラー（529）に悩む人向けに整理した記事。サブエージェントを並行で走らせていると、どこで何が膨らんでいるのかが見えにくいので、既定の挙動をどこで絞るかを決める材料になる。</p>
-<p class="links"><a href="https://qiita.com/kai_kou/items/314e244a33163709220d">記事を読む</a></p>
-</section>
-<h2>新ツール・サブスク（2 本）</h2>
-<section class="item">
-<h3>Cursor が X Subscription に統合、Claude などサードパーティモデルは API 課金へ</h3>
-<p>X Premium・Grok・Cursor のプランが X Subscription に統合され、Cursor の有料プランは Grok 系と同じ使用量プールを共有する形になった。あわせて Cursor 内のサードパーティモデルは新しいプランでは API 課金に移り、Claude を使うには追加のコストがかかる。コーディングエージェントの月額の体系が組み替わる動きなので、自分の使い方だとどのプランがいくらになるのかを確かめておきたい。</p>
-<p class="links"><a href="https://thenewstack.io/x-subscription-cursor-pricing/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fx-subscription-cursor-pricing%2F">Google 翻訳で全文を読む</a></p>
-<ul>
-<li><a href="https://x.com/oikon48/status/2109821373770293289">oikon48 のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>opencode 2.0 が公開</h3>
-<p>CI の AI 呼び出しにも使っている opencode のメジャーアップデート 2.0 が発表され、リリースノートが公開された。日常のワークフローに直接効いてくる更新なので、変更点と移行の要否を確認しておきたい。</p>
-<ul>
-<li><a href="https://x.com/npaka123/status/2109744100790648995">npaka123 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fnpaka123%2Fstatus%2F2109744100790648995">Google 翻訳で読む</a></li>
-<li><a href="https://anoma.ly/notes/opencode-2-0/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fanoma.ly%2Fnotes%2Fopencode-2-0%2F">Google 翻訳で全文を読む</a></li>
 </ul>
 </section>
 ]]></content:encoded>

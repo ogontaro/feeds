@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-18</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-18</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Bedrock で OpenAI GPT-6.2 Astra / Sol が一般提供に</h3>
+<p>Bedrock に OpenAI の新モデルが入ったことで、SigV4 の一時認証情報という既存の呼び出し経路を変えずにモデルだけ差し替えられる。Converse・InvokeModel・OpenAI 互換 API・OpenAI SDK のどれからでも呼べるため、マルチモデル前提の設計では移植コストの見積もりが小さくなる。OpenAI の公式価格では Astra が GPT-6 Astra より入出力で2割、キャッシュ入力で6割安いとされ、コスト最適化の選択肢としても押さえておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/openai-gpt-6-2-astra-sol-bedrock/">記事を読む</a></p>
+<ul>
+<li><a href="https://x.com/oikon48/status/2122859524398977447">oikon48 のポスト</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-6-2-astra-sol">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopenai.com%2Findex%2Fintroducing-gpt-6-2-astra-sol">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>SageMaker HyperPod Inference で NVIDIA Dynamo がマネージド提供に</h3>
+<p>大規模モデルを複数ノードに配るときに自前で組んでいたオーケストレーション層(マルチノード・分離サービング・KV を意識したルーティング・障害時の自動復旧)が、マネージドで賄えるようになった。推論基盤を自作するかマネージドに寄せるかの判断で、運用コストと引き換えに失う制御を具体的に比較する材料になる。EKS 上に推論スタックを積んでいる構成の比較対象として読む価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/managed-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmanaged-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker AI のリアルタイムエンドポイントが KV キャッシュ認識ルーティングに対応</h3>
+<p>プロンプトのキャッシュが最も長く一致するインスタンスへリクエストを振る方式で、記事の主題は既存の prefix-aware ルーティングとどう使い分けるかにある。共通の長いプレフィックスを持つエージェント用途では TTFT とコストに直結するので、エンドポイント設計の選択肢として押さえておきたい。単一モデルと inference component の両方で有効化・検証の手順まで書かれている。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore Observability でツール呼び出しを追跡できるか検証</h3>
+<p>エージェントの不具合は「誰が、どのツールを、どの引数で呼んだか」が見えないと追えない。ログ・トレース・CloudTrail という3つの記録方法を比較し、リクエスト ID で突き合わせる手順まで検証しているのが実務的だ。エージェントの実行を可観測性の側に引き寄せる最初の一歩として、AI SRE の下地づくりに直結する。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-observability-claude-gateway-tracking/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>API Gateway の REST API が JWT オーソライザーに対応</h3>
+<p>REST API で JWT を検証するには Lambda オーソライザーを自作するのが定石だったが、API Gateway 自身が OIDC 準拠の IdP のトークンを検証できるようになった。メソッド単位のスコープを与え、Cognito ユーザープールを2つ目の issuer として足す構成まで踏み込んでおり、認証の責務をゲートウェイに寄せるかアプリに残すかの設計判断が変わる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/compute/securing-rest-apis-with-jwt-authorizers-in-amazon-api-gateway/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcompute%2Fsecuring-rest-apis-with-jwt-authorizers-in-amazon-api-gateway%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

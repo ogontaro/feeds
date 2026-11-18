@@ -4,11 +4,41 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 17 Nov 2026 04:29:53 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 03:37:45 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-18]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-18.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-18.html</guid>
+            <pubDate>Wed, 18 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>マルチテナント推論基盤をどう組むか — LINEヤフーの Agent Router</h3>
+<p>CloudNative Days Winter 2026 のキーノート「LLMを「動かす」から「みんなで使う」へ — Agent Routerで作るマルチテナント推論基盤」の資料が公開されている。セッションでは、モデルの改廃が外的要因でもサービスに影響しうることを前提に、なぜセルフホストするのか、なぜマルチテナントにするのかという設計判断が論点になっていた。LLM を社内の共有基盤として提供するときのテナント分離とゲートウェイの置き方は、開発者ポータルを入口にしたプラットフォーム設計と地続きで、推論基盤を後付けではなく基盤の一部として考える材料になる。</p>
+<ul>
+<li><a href="https://x.com/amsy810/status/2122870329454583835">amsy810 のポスト</a></li>
+<li><a href="https://x.com/amsy810/status/2122871442450882903">amsy810 のポスト</a></li>
+<li><a href="https://speakerdeck.com/everpeace/building-multi-tenant-inference-platform-with-agentrouter">リンク先を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>OpenTelemetry の収集パイプラインが性能のボトルネックになるとき</h3>
+<p>可観測性パイプラインは「何を集めるか」に目が行きがちだが、テレメトリを集める処理そのもののコストは見落としやすい。Cloud Native Days Austria 2026 の講演をもとに、OTel の性能オーバーヘッドをどう捉え、どこで詰まるのかを扱っている。Alloy で収集して Loki・Mimir に送る構成では、collector の配置やサンプリングの判断がそのままノードのリソースとコストに跳ね返るので、パイプラインを太らせる前に一読しておきたい。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F17%2Fis-your-opentelemetry-pipeline-becoming-a-performance-bottleneck%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes Scheduling の最前線 — キーノート資料が公開</h3>
+<p>スケジューラはノードを増やす前に「何を単位に詰めるか」を決める場所で、スケーリングとコスト最適化の効き所になる。CloudNative Days Winter 2026 の Kensei Nakada 氏によるキーノート「Kubernetes Schedulingの最前線から見る景色」の資料が公開されており、投稿では Workload 単位のスケジューリングの議論にも触れられている。Kubernetes 本体のスケジューリングがどこへ向かっているかを一次資料で追える。</p>
+<ul>
+<li><a href="https://x.com/amsy810/status/2122875915621593461">amsy810 のポスト</a></li>
+<li><a href="https://sanposhiho.showcase.cloudnativedays.jp/">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-17]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-17.html</link>
@@ -631,34 +661,6 @@
 <h3>Kubernetes は健全なのにリクエストが止まるとき、どこを見るか</h3>
 <p>Grafana や Kubernetes のダッシュボードが健全に見えるのに、リクエストが止まる・遅れる——この「ファントム・スローダウン」で、どこを見ればよいかを扱った記事。クラスタ内の指標が正常でも原因は別の層にあることが多く、切り分けの順序を整理できる点が実務に効く。可観測性を OpenTelemetry / LGTM で組んでいる構成では、いま収集しているシグナルのどこが抜けているかを見直すきっかけになる。</p>
 <p class="links"><a href="https://thenewstack.io/kubernetes-hidden-latency-telemetry/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-hidden-latency-telemetry%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-14]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-14.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-14.html</guid>
-            <pubDate>Wed, 14 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
-<section class="item">
-<h3>OpenTelemetry の hostmetrics、プロセスメトリクスが最初のリリース候補に</h3>
-<p>OpenTelemetry Collector Contrib v0.160.0 で、hostmetrics レシーバの process スクレイパにリリース候補（RC）版のプロセスメトリクスを出力する仕組みが入りました。安定版 v1 の直前という段階なので、仕様が固まる前に実環境で試して壊れる箇所を返してほしい、という呼びかけになっています。プロセス単位のメトリクスは、どのワークロードが実際にどれだけ計算資源を食っているかを見る材料になるので、可観測性を OpenTelemetry 側に寄せているなら、リソース要求の適正化を見直すときの判断材料として先に触っておく価値があります。</p>
-<p class="links"><a href="https://opentelemetry.io/blog/2026/hostmetrics-process-scraper-rc/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fhostmetrics-process-scraper-rc%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>エージェントがやった仕事を、監査ログが「誰の依頼か」で説明できない</h3>
-<p>MCP に関連するアクセスポリシーを顧客・見込み先の環境でレビューしたところ、2 割超がそのままでは許容できない状態だった、という報告です。主題は、エージェントが実際に手を動かした操作について、監査ログをたどっても「誰がそれを依頼したのか」まで戻れないという点で、人とエージェントで認証情報を共有してしまう運用の危うさが浮かび上がります。AI エージェントも基盤の利用者として権限とログを設計し直す、という流れの具体的な裏付けになるので、エージェントにどこまでクラスタを触らせるかを決めるときの材料になります。</p>
-<p class="links"><a href="https://thenewstack.io/ai-agent-credentials-identity-provider/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fai-agent-credentials-identity-provider%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>NVIDIA が Run:ai をオープンソース化、Kubernetes の AI スケジューラが公開へ</h3>
-<p>NVIDIA が Run:ai をオープンソース化し、DSX AI Factory プラットフォームの一部として公開すると発表しました。同じ日に Lambda が Kubernetes サービス向けスケジューラとしての提供準備を、Crusoe が自社環境での実行をそれぞれ発信しており、GPU ワークロードの割り当てをどう設計するかという論点が一気に表に出てきています。GPU を載せたクラスタを持っているなら、配分の仕組みを自作するか OSS のスケジューラに寄せるかを考える起点になる話題です。</p>
-<p class="links"><a href="https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdeveloper.nvidia.com%2Fblog%2Fnvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>GitLab CI/CD の正規表現コンパイラに重大な RCE（CVE-2026-97229）</h3>
-<p>GitLab の CI/CD にある正規表現コンパイラに、任意のコード実行につながる重大な脆弱性（CVE-2026-97229）が見つかり、管理者に早急な適用が求められています。CI/CD の実行基盤はクラスタに入る変更の経路そのものなので、ここが踏み抜かれると「どのパイプラインが何を出したか」という前提が崩れます。GitLab を自前で運用しているなら、該当バージョンの確認を今日の作業の先頭に置いておく価値があります。</p>
-<p class="links"><a href="https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.helpnetsecurity.com%2F2026%2F10%2F13%2Fgitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

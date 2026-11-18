@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-11-18</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-11-18</h1>
+<article class="report"><h2>今日の 3 本</h2>
+<section class="item">
+<h3>マルチテナント推論基盤をどう組むか — LINEヤフーの Agent Router</h3>
+<p>CloudNative Days Winter 2026 のキーノート「LLMを「動かす」から「みんなで使う」へ — Agent Routerで作るマルチテナント推論基盤」の資料が公開されている。セッションでは、モデルの改廃が外的要因でもサービスに影響しうることを前提に、なぜセルフホストするのか、なぜマルチテナントにするのかという設計判断が論点になっていた。LLM を社内の共有基盤として提供するときのテナント分離とゲートウェイの置き方は、開発者ポータルを入口にしたプラットフォーム設計と地続きで、推論基盤を後付けではなく基盤の一部として考える材料になる。</p>
+<ul>
+<li><a href="https://x.com/amsy810/status/2122870329454583835">amsy810 のポスト</a></li>
+<li><a href="https://x.com/amsy810/status/2122871442450882903">amsy810 のポスト</a></li>
+<li><a href="https://speakerdeck.com/everpeace/building-multi-tenant-inference-platform-with-agentrouter">リンク先を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>OpenTelemetry の収集パイプラインが性能のボトルネックになるとき</h3>
+<p>可観測性パイプラインは「何を集めるか」に目が行きがちだが、テレメトリを集める処理そのもののコストは見落としやすい。Cloud Native Days Austria 2026 の講演をもとに、OTel の性能オーバーヘッドをどう捉え、どこで詰まるのかを扱っている。Alloy で収集して Loki・Mimir に送る構成では、collector の配置やサンプリングの判断がそのままノードのリソースとコストに跳ね返るので、パイプラインを太らせる前に一読しておきたい。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F17%2Fis-your-opentelemetry-pipeline-becoming-a-performance-bottleneck%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes Scheduling の最前線 — キーノート資料が公開</h3>
+<p>スケジューラはノードを増やす前に「何を単位に詰めるか」を決める場所で、スケーリングとコスト最適化の効き所になる。CloudNative Days Winter 2026 の Kensei Nakada 氏によるキーノート「Kubernetes Schedulingの最前線から見る景色」の資料が公開されており、投稿では Workload 単位のスケジューリングの議論にも触れられている。Kubernetes 本体のスケジューリングがどこへ向かっているかを一次資料で追える。</p>
+<ul>
+<li><a href="https://x.com/amsy810/status/2122875915621593461">amsy810 のポスト</a></li>
+<li><a href="https://sanposhiho.showcase.cloudnativedays.jp/">リンク先を読む</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
