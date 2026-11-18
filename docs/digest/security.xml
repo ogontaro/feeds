@@ -4,11 +4,151 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Wed, 18 Nov 2026 11:53:43 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 20:43:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] LiteLLM の未保護の代替チャネルで遠隔から任意コードを実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-40217.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-40217.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>LiteLLM の未保護の代替チャネルで遠隔から任意コードを実行される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-18 追加され、実際の悪用が確認されている。EPSS 0.170、CVSS は入力に無い。自宅インフラの構成に LiteLLM は含まれておらず該当しないが、KEV 新規追加のため通知する。</p>
+<p>BerriAI LiteLLM には未保護の代替チャネル（unprotected alternate channel）の問題があり、/guardrails/test_custom_code の URI に到達できる遠隔の攻撃者が、バイトコードの書き換えを通じて任意のコードを実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、LiteLLM を更新する。運用していない場合は導入を見送る。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40217">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] REDCap のコードインジェクションで認証なしにサーバー上の任意コードを実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-90817.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-90817.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>REDCap のコードインジェクションで認証なしにサーバー上の任意コードを実行される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-18 追加され、実際の悪用が確認されている。EPSS 0.037、CVSS は入力に無い。自宅インフラには該当しないが、KEV 新規追加のため通知する。</p>
+<p>Research Electronic Data Capture (REDCap) にコードインジェクションの脆弱性があり、公開アンケートのコンテキストから意図しないコントローラルートに到達し、データ取り込み処理で細工したファイルパスやストリームパラメータを渡すことで、認証なしの攻撃者がサーバー上で任意のコードを実行できる。悪用には有効な公開アンケートハッシュの知識が必要とされる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。REDCap を運用していない場合は対応不要。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-90817">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Synology BeeStation OS のシステムプラグインデーモンで遠隔から任意コードを実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2024-10441.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2024-10441.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Synology BeeStation OS のシステムプラグインデーモンで遠隔から任意コードを実行される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-18 追加され、実際の悪用が確認されている。EPSS 0.013、CVSS は入力に無い。自宅インフラの構成に Synology 製品は含まれておらず該当しないが、KEV 新規追加のため通知する。</p>
+<p>Synology DSM のうち BeeStation OS (BSM) のシステムプラグインデーモンに、出力のエンコード／エスケープ不備がある。遠隔の攻撃者が unspecified vectors 経由で任意のコードを実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。BeeStation を運用している場合は BSM を更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-10441">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Apache Axis の安全でないリフレクションで認証なしに任意コードを実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-90436.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-90436.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Apache Axis の安全でないリフレクションで認証なしに任意コードを実行される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-18 追加され、実際の悪用が確認されている。EPSS 0.011、CVSS は入力に無い。自宅インフラには該当しないが、KEV 新規追加のため通知する。</p>
+<p>Apache Axis に安全でないリフレクションの脆弱性があり、細工した SOAP フォールトメッセージを送ることで、アプリケーションのクラスパス上に適当なクラスがある場合に Axis へ攻撃者指定のクラスを読み込ませてインスタンス化させ、認証なしの遠隔攻撃者が任意のコードを実行できる。影響製品は EoL／EoS の可能性があるとされる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。EoL／EoS の場合はサポート中のバージョンへ移行する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-90436">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Chromium 系ブラウザの CanvasWebGL で境界条件の誤りにより権限昇格]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-130020.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-130020.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Chromium 系ブラウザの CanvasWebGL で境界条件の誤りにより権限昇格</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical。ブラウザは広く使われる製品だが、CISA KEV への追加はなく EPSS 0.002 と悪用の兆候はまだ無いため監視とする。</p>
+<p>Graphics: CanvasWebGL コンポーネントの境界条件の誤りにより、権限昇格が可能となる脆弱性。入力では攻撃条件の詳細までは示されていない。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Chromium 系ブラウザを最新版に更新する。修正版はベンダーのアドバイザリで確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-g59q-pwmh-8wr5">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] HTTP/2 のクライアント接続とプロキシを使う nginx の構成に影響する脆弱性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123633.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123633.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>HTTP/2 のクライアント接続とプロキシを使う nginx の構成に影響する脆弱性</h3>
+<p><strong>緊急度: 監視</strong> — 自宅インフラで nginx を使用している。CVSS 8.1 で CISA KEV への追加はなく、悪用の兆候は確認されていない。影響バージョンかは入力から判断できないため監視として扱う。</p>
+<p>NGINX Plus / NGINX Open Source で、クライアント接続とプロキシに HTTP/2 を使う構成に影響する。入力では概要が途中で切れており、影響の詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> nginx<br><strong>推奨アクション:</strong> nginx のバージョンを確認し、影響バージョンであればベンダーのアドバイザリに従って修正版へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-7xxj-p8w5-434q">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] HTTP/2 を使う nginx の構成に影響する脆弱性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123007.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123007.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>HTTP/2 を使う nginx の構成に影響する脆弱性</h3>
+<p><strong>緊急度: 監視</strong> — 自宅インフラで nginx を使用している。CVSS 8.1 で CISA KEV への追加はなく、悪用の兆候は確認されていない。影響バージョンかは入力から判断できないため監視として扱う。</p>
+<p>HTTP/2 を使用する NGINX Plus / NGINX Open Source の構成に影響する。入力では概要が途中で切れているため、詳細な影響はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> nginx<br><strong>推奨アクション:</strong> nginx のバージョンを確認し、影響バージョンであればベンダーのアドバイザリに従って修正版へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-m4q8-cf44-f42r">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] HTTP/3 を使う nginx の構成に影響する脆弱性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121810.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121810.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>HTTP/3 を使う nginx の構成に影響する脆弱性</h3>
+<p><strong>緊急度: 監視</strong> — 自宅インフラで nginx を使用している。CVSS 8.1 で CISA KEV への追加はなく、悪用の兆候は確認されていない。影響バージョンかは入力から判断できないため監視として扱う。</p>
+<p>HTTP/3 を使用する NGINX Plus / NGINX Open Source の構成に影響する。入力では概要が途中で切れているため、詳細な影響はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> nginx<br><strong>推奨アクション:</strong> nginx のバージョンを確認し、影響バージョンであればベンダーのアドバイザリに従って修正版へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-fxx2-rrmx-x4v2">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] プロキシとして構成した nginx に影響する脆弱性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123634.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123634.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>プロキシとして構成した nginx に影響する脆弱性</h3>
+<p><strong>緊急度: 監視</strong> — 自宅インフラで nginx を使用している。CVSS 8.1 で CISA KEV への追加はなく、悪用の兆候は確認されていない。影響バージョンかは入力から判断できないため監視として扱う。</p>
+<p>NGINX Plus / NGINX Open Source をプロキシとして構成している場合に発生する。入力の概要が途中で切れているため、プロキシ先の条件を含む詳細はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> nginx<br><strong>推奨アクション:</strong> nginx のバージョンを確認し、影響バージョンであればベンダーのアドバイザリに従って修正版へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-qxf8-26hv-4jh5">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] メールプロキシとして構成した nginx に影響する脆弱性]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-113425.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-113425.html#2026-11-18T20:43:33.896Z</guid>
+            <pubDate>Wed, 18 Nov 2026 20:43:33 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>メールプロキシとして構成した nginx に影響する脆弱性</h3>
+<p><strong>緊急度: 監視</strong> — 自宅インフラで nginx を使用している。CVSS 8.1 で CISA KEV への追加はなく、悪用の兆候は確認されていない。影響バージョンかは入力から判断できないため監視として扱う。</p>
+<p>NGINX Plus / NGINX Open Source をメールプロキシとして構成している場合に、想定外のトラフィックが原因となる。入力では概要が途中で切れているため、詳細な影響はアドバイザリで確認が必要。</p>
+<p><strong>自宅インフラへの該当:</strong> nginx<br><strong>推奨アクション:</strong> nginx のバージョンを確認し、影響バージョンであればベンダーのアドバイザリに従って修正版へ更新する。メールプロキシを使っていない場合は影響しない可能性が高い。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-rmpv-v5m5-rr27">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Puppet Enterprise のレポート処理にデシリアライズ脆弱性、Puppet Server 上で任意コード実行]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-115731.html</link>
@@ -706,146 +846,6 @@
 <p>iOS、iPadOS、macOS、Safari、tvOS、watchOS に認証の不備がある。任意の読み書きが可能な攻撃者がポインタ認証（PAC）をバイパスでき、当該保護を回避される。CISA KEV には 2026-11-04 に追加され、実際の悪用が確認されている。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Apple 端末や Safari を利用している場合は、最新版へ更新する。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-27834">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Google Chrome（モバイル）の use-after-free でメモリ破壊を引き起こされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121131.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121131.html#2026-11-04T19:52:53.138Z</guid>
-            <pubDate>Wed, 04 Nov 2026 19:52:53 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Google Chrome（モバイル）の use-after-free でメモリ破壊を引き起こされる</h3>
-<p><strong>緊急度: 監視</strong> — ブラウザという広く使われる製品の Critical（CVSS 9.6）だが、CISA KEV には未登録で、EPSS は 0.003 と悪用の兆候が低いため監視とする。</p>
-<p>モバイル版 Google Chrome の 157.0.8103.38 より前のバージョンに use-after-free の脆弱性がある。リモートの攻撃者がこの脆弱性を悪用し、メモリ破壊を引き起こす可能性がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 157.0.8103.38 以降へ更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-m9r8-p5f2-r6xg">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Linksys E5350 の管理画面に OS コマンドインジェクション]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121932.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121932.html#2026-11-04T19:52:53.138Z</guid>
-            <pubDate>Wed, 04 Nov 2026 19:52:53 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Linksys E5350 の管理画面に OS コマンドインジェクション</h3>
-<p><strong>緊急度: 監視</strong> — ネットワーク機器の Critical（CVSS 9.3）で公開されたエクスプロイトがあるが、CISA KEV には未登録、EPSS は不明、自宅インフラの構成に該当製品の記載がないため監視とする。</p>
-<p>Linksys E5350 1.0.00.037 の /wizard/apply.cgi で、ping_ip/traceroute_ip の引数に細工した値を渡すと OS コマンドを実行される。リモートから実行でき、エクスプロイトは公開済みで、ベンダーは連絡に応答していない。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合は Linksys のアドバイザリで修正版を確認する。修正版が無い場合は管理画面を外部に公開しない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-121932">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Linksys E5600 のログイン処理に認証不備、遠隔から認証を回避される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121615.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121615.html#2026-11-04T11:13:51.114Z</guid>
-            <pubDate>Wed, 04 Nov 2026 11:13:51 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Linksys E5600 のログイン処理に認証不備、遠隔から認証を回避される</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.3 の Critical だが CISA KEV には未追加で、EPSS も不明。自宅インフラの構成に該当する製品は無いが、家庭向けネットワーク機器でエクスプロイトが公開されているため監視対象とする。</p>
-<p>/cgi-bin/mesh_login.cgi のログイン処理に認証不備があり、遠隔から細工したリクエストで認証を回避される可能性がある。エクスプロイトは公開済みで、悪用されるおそれがある。影響するのはメーカーがサポートを終了した製品のみ。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版の有無を確認する。E5600 はサポート終了製品のため修正が無い場合は新しい機器への置き換えを検討し、それまでは管理画面を外部ネットワークに公開しない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-121615">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] WordPress の更新処理に競合状態、認証なしでサーバー上のコードを実行されるおそれ]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119977.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119977.html#2026-11-04T01:28:34.571Z</guid>
-            <pubDate>Wed, 04 Nov 2026 01:28:34 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>WordPress の更新処理に競合状態、認証なしでサーバー上のコードを実行されるおそれ</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-03 追加され、実際の悪用が確認されている。EPSS は 0.006 と低く、CVSS は入力に無い。自宅インフラの構成に WordPress は含まれないため「今週中」と判定した。</p>
-<p>WordPress Core のフルパッケージ更新時に使われる、Web から到達可能な予測可能なステージングパスが原因で、time-of-check time-of-use（TOCTOU）の競合状態が生じる。認証されていない攻撃者がアップグレード中の時間帯にサーバー上でコードを実行できる可能性がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> KEV の推奨対応に従い、ベンダーの指示に沿って緩和策を適用する。WordPress を運用している場合は修正版への更新を優先する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119977">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Android 版 Google Chrome の WebGL に境界外書き込み、156.0.8078.47 で修正]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120931.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120931.html#2026-11-04T01:28:34.571Z</guid>
-            <pubDate>Wed, 04 Nov 2026 01:28:34 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Android 版 Google Chrome の WebGL に境界外書き込み、156.0.8078.47 で修正</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが、CISA KEV 未登録で EPSS も入力に無く、悪用の兆候は確認されていない。広く使われるブラウザの Critical のため「監視」とした。</p>
-<p>Android 版 Chrome 156.0.8078.47 より前の WebGL に境界外書き込みの脆弱性があり、リモートの攻撃者が影響を受ける可能性がある。入力の概要は途中までしか示されておらず、詳細はアドバイザリで確認する必要がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Android 版 Chrome を 156.0.8078.47 以降へ更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-33qj-632f-3294">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Google Chrome の Critical 脆弱性、157.0.8103.38 で修正]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121189.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-121189.html#2026-11-04T01:28:34.571Z</guid>
-            <pubDate>Wed, 04 Nov 2026 01:28:34 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Google Chrome の Critical 脆弱性、157.0.8103.38 で修正</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが、CISA KEV 未登録で EPSS も入力に無く、悪用の兆候は確認されていない。広く使われるブラウザの Critical であり、同一修正版に複数の Critical が含まれるため「監視」とした。</p>
-<p>Chrome 157.0.8103.38 より前のバージョンで、Browser の use after free など複数のメモリ破壊系 Critical 脆弱性が修正された。リモートの攻撃者がこれらを悪用できるとされているが、入力の概要は途中までしか示されておらず、攻撃条件と影響の全文はアドバイザリで確認する必要がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Chrome を 157.0.8103.38 以降へ更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-v2jv-752f-jcxj">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Tailscale の権限設定不備で認可されていない操作を許す可能性]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107060.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-107060.html#2026-10-30T22:27:49.007Z</guid>
-            <pubDate>Fri, 30 Oct 2026 22:27:49 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Tailscale の権限設定不備で認可されていない操作を許す可能性</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.1 と高いが、EPSS 0.002 で悪用の兆候はなく CISA KEV にも未登録。自宅インフラで使っている Tailscale に関する項目のため、影響バージョンに該当するか確認する価値があると判断し「監視」とした。入力の versionCode 表記から Android アプリ版の可能性がある。</p>
-<p>Tailscale versionCode 297862600 に権限設定の不備があり、認可されていない攻撃者が不正な操作を行えるとされている。入力の概要は途中までしか示されておらず、攻撃条件と影響範囲の全文はアドバイザリで確認する必要がある。</p>
-<p><strong>自宅インフラへの該当:</strong> Tailscale<br><strong>推奨アクション:</strong> アドバイザリ（GHSA-22cw-3xwj-68cg）で影響バージョンと修正版を確認し、該当する場合は更新する。自宅クラスタ側の Tailscale が影響を受けるかも併せて確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-22cw-3xwj-68cg">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Ivanti Connect Secure の認証不備でローカル攻撃者が権限を昇格できる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111357.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111357.html#2026-10-30T18:06:40.834Z</guid>
-            <pubDate>Fri, 30 Oct 2026 18:06:40 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Ivanti Connect Secure の認証不備でローカル攻撃者が権限を昇格できる</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-10-30 追加され、実際の悪用が確認されている。自宅インフラの構成には該当しないため「今週中」と判定した。CVSS・EPSS は入力に無い。</p>
-<p>Ivanti Connect Secure に重要な機能の認証不備があり、ローカルで認証済みの攻撃者が権限を昇格できる。CVE-2026-104935 および CVE-2026-118527 と組み合わせて悪用できるとされている。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Ivanti Connect Secure を運用している場合は KEV の推奨対応に従う。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111357">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Ivanti Connect Secure の識別子生成の問題で任意ファイルを配置される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-118527.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-118527.html#2026-10-30T18:06:40.834Z</guid>
-            <pubDate>Fri, 30 Oct 2026 18:06:40 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Ivanti Connect Secure の識別子生成の問題で任意ファイルを配置される</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-10-30 追加され、実際の悪用が確認されている。自宅インフラの構成には該当しないため「今週中」と判定した。CVSS・EPSS は入力に無い。</p>
-<p>Ivanti Connect Secure で予測可能な識別子が生成される問題があり、リモートで認証済みの攻撃者が攻撃者の制御する内容のファイルを既知の場所にアップロードできる。CVE-2026-104935 および CVE-2026-111357 と連鎖させて悪用できる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Ivanti Connect Secure を運用している場合は KEV の推奨対応に従う。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118527">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Google Chrome の Skia に入力検証不備、リモートから攻撃可能]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119261.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119261.html#2026-10-30T18:06:40.834Z</guid>
-            <pubDate>Fri, 30 Oct 2026 18:06:40 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Google Chrome の Skia に入力検証不備、リモートから攻撃可能</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加、EPSS 0.002 と低く悪用の兆候はまだ無い。広く使われるブラウザの Critical のため「監視」とした。</p>
-<p>Google Chrome の Skia における入力検証の不備で、リモートの攻撃者が細工したコンテンツを閲覧者に開かせることで影響を与えうる。156.0.8078.79 より前のバージョンが対象。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 156.0.8078.79 以降へ更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-88vq-7689-gvgx">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

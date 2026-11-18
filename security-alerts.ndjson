@@ -1067,3 +1067,83 @@
 {"date":"2026-11-18T11:53:43.780Z","id":"CVE-2026-114205","kev":false,"reported":false}
 {"date":"2026-11-18T11:53:43.780Z","id":"CVE-2026-114202","kev":false,"reported":false}
 {"date":"2026-11-18T11:53:43.780Z","id":"CVE-2026-114204","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-40217","kev":true,"reported":true,"title":"LiteLLM の未保護の代替チャネルで遠隔から任意コードを実行される","urgency":"week"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-90817","kev":true,"reported":true,"title":"REDCap のコードインジェクションで認証なしにサーバー上の任意コードを実行される","urgency":"week"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2024-10441","kev":true,"reported":true,"title":"Synology BeeStation OS のシステムプラグインデーモンで遠隔から任意コードを実行される","urgency":"week"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-90436","kev":true,"reported":true,"title":"Apache Axis の安全でないリフレクションで認証なしに任意コードを実行される","urgency":"week"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-129892","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130020","kev":false,"reported":true,"title":"Chromium 系ブラウザの CanvasWebGL で境界条件の誤りにより権限昇格","urgency":"watch"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130778","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-95787","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-132234","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-132231","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-132233","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-132232","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-110009","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-126755","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-126752","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-124990","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-121805","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-120722","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-123637","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-120292","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-120285","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-116953","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-116443","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-116449","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2023-54422","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2023-54419","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2022-51027","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2021-48023","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2021-48025","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2019-25782","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130001","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-116448","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-116446","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-110811","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130735","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130674","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-116441","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130712","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130682","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130680","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130679","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130759","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130773","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130780","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130784","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130786","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130675","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130733","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2012-20007","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2018-25443","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130754","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130756","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130783","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130706","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130650","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-111508","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130678","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130681","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130730","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130716","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130648","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130771","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130779","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130683","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-123633","kev":false,"reported":true,"title":"HTTP/2 のクライアント接続とプロキシを使う nginx の構成に影響する脆弱性","urgency":"watch"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-123007","kev":false,"reported":true,"title":"HTTP/2 を使う nginx の構成に影響する脆弱性","urgency":"watch"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-120718","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-121810","kev":false,"reported":true,"title":"HTTP/3 を使う nginx の構成に影響する脆弱性","urgency":"watch"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-123634","kev":false,"reported":true,"title":"プロキシとして構成した nginx に影響する脆弱性","urgency":"watch"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-113425","kev":false,"reported":true,"title":"メールプロキシとして構成した nginx に影響する脆弱性","urgency":"watch"}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2016-20105","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-130747","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-132209","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-132208","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-129961","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-127143","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-109857","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2026-19707","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2025-59906","kev":false,"reported":false}
+{"date":"2026-11-18T20:43:33.896Z","id":"CVE-2025-59907","kev":false,"reported":false}
