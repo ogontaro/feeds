@@ -4,11 +4,39 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Tue, 17 Nov 2026 16:12:28 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 01:02:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Puppet Enterprise のレポート処理にデシリアライズ脆弱性、Puppet Server 上で任意コード実行]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-115731.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-115731.html#2026-11-18T01:02:13.931Z</guid>
+            <pubDate>Wed, 18 Nov 2026 01:02:13 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Puppet Enterprise のレポート処理にデシリアライズ脆弱性、Puppet Server 上で任意コード実行</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-17 追加され、実際の悪用が確認されている。EPSS は 0.004 と低く、自宅インフラの構成リストに Puppet Enterprise は含まれないため「今週中」と判定した。KEV 追加のため通知対象には含める。</p>
+<p>Puppet Enterprise のレポート処理コードが信頼できないデータをデシリアライズする問題。CA 署名済みのエージェント証明書を持つクライアントが、細工した rich-data 型を含むレポートを PUT リクエストで送ると、Puppet Server 上でサービスユーザーの権限により任意コードを実行できる。CA が強い検証なしに署名要求を自動承認する構成では、証明書を持たないネットワーク上の攻撃者も正規の証明書を取得して悪用できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認して更新する。KEV の推奨に従い、CISA の BOD 26-04 および Forensics Triage Requirements のガイダンスに沿って対応する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-115731">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Google Chrome の Tint に境界外書き込み（158.0.8127.36 で修正）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-131077.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-131077.html#2026-11-18T01:02:13.931Z</guid>
+            <pubDate>Wed, 18 Nov 2026 01:02:13 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Google Chrome の Tint に境界外書き込み（158.0.8127.36 で修正）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが、CISA KEV への追加も高い EPSS も無く、入力に悪用の兆候は無い。ブラウザは広く使われる製品であるため「監視」とした。</p>
+<p>Google Chrome の Tint における境界外書き込みの脆弱性。158.0.8127.36 より前のバージョンが対象で、リモートの攻撃者がメモリ破壊を引き起こせる可能性がある。同じ 158.0.8127.36 では、ANGLE・GPU・WebGL などにも複数の Critical なメモリ破壊（境界外読み書き、use after free 等）が修正されている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Chrome を 158.0.8127.36 以降へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-mw27-mqc6-5xhj">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] OpenFunction の権限昇格で namespace テナントからノード権限を取得される]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-130587.html</link>
@@ -818,34 +846,6 @@
 <p>Google Chrome の Skia における入力検証の不備で、リモートの攻撃者が細工したコンテンツを閲覧者に開かせることで影響を与えうる。156.0.8078.79 より前のバージョンが対象。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 156.0.8078.79 以降へ更新する。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-88vq-7689-gvgx">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Google Chrome のガベージコレクションでメモリ破壊、リモートから攻撃可能]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119263.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-119263.html#2026-10-30T18:06:40.834Z</guid>
-            <pubDate>Fri, 30 Oct 2026 18:06:40 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Google Chrome のガベージコレクションでメモリ破壊、リモートから攻撃可能</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加、EPSS 0.002 と低く悪用の兆候はまだ無い。広く使われるブラウザの Critical のため「監視」とした。</p>
-<p>Google Chrome の GarbageCollection におけるメモリ破壊の問題で、リモートの攻撃者が細工したコンテンツを使って影響を与えうる。156.0.8078.79 より前のバージョンが対象。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 156.0.8078.79 以降へ更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-gr92-r7pw-c3qg">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[即時対応] GitLab CE/EE の整数オーバーフローで未認証の遠隔コード実行を許す脆弱性]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-97229.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-97229.html#2026-10-30T01:08:16.794Z</guid>
-            <pubDate>Fri, 30 Oct 2026 01:08:16 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>GitLab CE/EE の整数オーバーフローで未認証の遠隔コード実行を許す脆弱性</h3>
-<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-10-29 追加され、実際の悪用が確認されている。EPSS 0.184（percentile 0.972）と今後30日の悪用確率も高い側。自宅インフラの一覧に GitLab は無い（コードホスティングは Gerrit）が、自己ホスト型で外部公開されやすい製品であり、KEV 追加かつ広く露出する製品として即時対応とする。</p>
-<p>CI/CD の設定に細工した正規表現を仕込むことで、未認証の攻撃者が GitLab サーバ上で任意のコードを実行できる。正規表現の検証が不十分なことが原因で、整数オーバーフロー／ラップアラウンドが発生する。認証なしで到達できるため、外部に公開したインスタンスでは特に危険。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、適用する。GitLab を運用していない場合も、CI/CD の正規表現を受け付ける構成や外部公開したインスタンスが無いか確認する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-97229">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
