@@ -1168,3 +1168,27 @@
 {"date":"2026-11-19T11:51:04.691Z","id":"CVE-2026-132807","kev":false,"reported":false}
 {"date":"2026-11-19T11:51:04.691Z","id":"CVE-2026-110461","kev":false,"reported":false}
 {"date":"2026-11-19T11:51:04.691Z","id":"CVE-2026-131914","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-63412","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-63413","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-63411","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-76807","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-133323","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-131253","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-123890","kev":false,"reported":true,"title":"VMware vCenter の VMware Directory Service に認証バイパス","urgency":"watch"}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-116439","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-116440","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-132891","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-131287","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-133189","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-76536","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-131202","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-76535","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-111509","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-133303","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-123058","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-133310","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-133185","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-129411","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-129410","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-129402","kev":false,"reported":false}
+{"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-129396","kev":false,"reported":false}

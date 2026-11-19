@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Thu, 19 Nov 2026 11:51:04 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 20:46:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] VMware vCenter の VMware Directory Service に認証バイパス]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123890.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123890.html#2026-11-19T20:46:26.872Z</guid>
+            <pubDate>Thu, 19 Nov 2026 20:46:26 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>VMware vCenter の VMware Directory Service に認証バイパス</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、CISA KEV への追加も EPSS の高い値も入力に無く、悪用の兆候は確認されていない。自宅インフラでは VMware ESXi を使用しているが、vCenter の利用は入力からは分からないため「監視」とした。</p>
+<p>VMware vCenter の VMware Directory Service に認証バイパスの脆弱性がある。認証を経ていない利用者が Directory Service の機能に到達できる可能性がある。影響の詳細と対象バージョンはアドバイザリで確認する必要がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。vCenter を使用している場合は修正版を適用し、管理インターフェースを外部に公開しない。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-hxhc-xqhg-6gr5">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] LiteLLM の未保護の代替チャネルで遠隔から任意コードを実行される]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-40217.html</link>
@@ -832,20 +846,6 @@
 <p>Kyverno 1.18.0 以降 1.19.2 未満で、verifyImages の検証結果キャッシュが検証済みダイジェストではなくイメージ参照文字列（タグなど）をキーにしているため、キャッシュヒット時に署名とアテステーションの検証が省略される。ワークロードを投入できてレジストリのタグを動かせる攻撃者が、署名済みイメージでキャッシュを温めてからタグを付け替えると、Kyverno に未検証のワークロードを admit させ、mutateDigest で未検証のダイジェストを固定させられる。</p>
 <p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、タグを可変にしたイメージ参照で verifyImages のキャッシュに依存しない。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122321">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Apple の iOS・macOS・Safari などに認証不備、ポインタ認証をバイパスされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2024-27834.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2024-27834.html#2026-11-05T01:30:36.103Z</guid>
-            <pubDate>Thu, 05 Nov 2026 01:30:36 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Apple の iOS・macOS・Safari などに認証不備、ポインタ認証をバイパスされる</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-04 追加され、実際の悪用が確認されている。新規 KEV のため自宅インフラに該当しなくても通知対象。ただし CVSS は不明、EPSS は 0.006 と低く、自宅インフラの構成（Kubernetes 関連）に Apple 製品は含まれないため、即時対応ではなく今週中とした。</p>
-<p>iOS、iPadOS、macOS、Safari、tvOS、watchOS に認証の不備がある。任意の読み書きが可能な攻撃者がポインタ認証（PAC）をバイパスでき、当該保護を回避される。CISA KEV には 2026-11-04 に追加され、実際の悪用が確認されている。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。Apple 端末や Safari を利用している場合は、最新版へ更新する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-27834">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
