@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-19</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-19</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>EKS Auto Mode で GitHub Actions のセルフホストランナーを動かす</h3>
+<p>Actions Runner Controller と EKS Auto Mode、Spot Instances、Graviton を組み合わせ、CI/CD の需要に合わせてランナーをスケールさせ、アイドル時はゼロまで落とす構成の解説。自前ランナーのノード運用とアイドル課金を同時に削る話で、Karpenter ベースの Auto Mode に CI を載せるときの設計判断の材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/running-github-actions-runners-with-amazon-eks-auto-mode/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Frunning-github-actions-runners-with-amazon-eks-auto-mode%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Salesforce に学ぶ、SageMaker AI のクロスリージョン推論ルーティング</h3>
+<p>SageMaker AI にクロスリージョン推論ルーティングが登場し、リージョンが容量不足になったときに他リージョン・他アカウントのエンドポイントへリクエストを逃がせるようになった。Salesforce の実装ではデータレジデンシーを守りながらリージョンをまたいで容量を足し、各リクエストがどこで処理されたかを追跡している。自前でルーティング・ヘルスチェック・リトライを組んでいたチームほど、設計を置き換える価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-salesforce-is-advancing-global-scale-model-serving-with-cross-region-inference-routing-in-amazon-sagemaker-ai/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-salesforce-is-advancing-global-scale-model-serving-with-cross-region-inference-routing-in-amazon-sagemaker-ai%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Airbnb の「タスク単価」で見る、Bedrock 上のコーディングエージェント運用</h3>
+<p>Airbnb は実際のエンジニアリングタスクでの評価と Bedrock の可観測性を組み合わせ、コーディングエージェントに使うモデルをタスクあたりのコストで選んでいる。評価結果と本番の消費がずれる理由、レイテンシ監視、クォータ、コストの帰属まで踏み込んでおり、エージェントのモデル選定と予算管理を設計するときの実例として読める。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/how-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fhow-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore のエージェントを障害注入で鍛える</h3>
+<p>ツールが失敗したり壊れたデータを返したとき、エージェントが安全側に倒れるのか、それとも自信満々に答えを捏造するのかを、AWS Fault Injection Service でツール単位の障害を注入して確かめる手法。Strands エージェントを例に、安全な失敗と静かな失敗を見分けるところまで可観測性を設計しており、エージェントの権限境界や本番投入前の評価を考える人に直結する。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/resilience-testing-your-agents-on-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fresilience-testing-your-agents-on-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon OpenSearch Memory が一般提供、エージェントに長期記憶を持たせる</h3>
+<p>エージェントとのやり取りを検索可能なイベントとして保存し、セッションをまたいで関連する文脈を引き出すサーバーレス機能が GA になった。会話履歴を毎回まるごとモデルに流し直す代わりに記憶を引く構成は、コーディングエージェントのハーネス設計やコンテキスト管理のコストに効いてくる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-memory-generally-available/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-opensearch-memory-generally-available%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

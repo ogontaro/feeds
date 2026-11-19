@@ -4,11 +4,43 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 18 Nov 2026 03:37:45 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 03:09:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-19]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-19.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-19.html</guid>
+            <pubDate>Thu, 19 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
+<section class="item">
+<h3>nginx に未認証 RCE「NGINX2Shell」、HTTP/2 を使う 1.31.8 が対象</h3>
+<p>現行 mainline の nginx 1.31.8 に、認証なしでリモートからコード実行が可能な HTTP/2 の脆弱性が見つかり、CVE-2026-123007 を筆頭に計5件の脆弱性がまとめて報告されている。Ingress やリバースプロキシとして nginx を前段に置く Kubernetes 構成は影響範囲が広く、公開直後に国の注意喚起も出ている。HTTP/2 応答と <code>Server: nginx</code> ヘッダーの組み合わせで対象を絞り込めるので、まず自クラスタの ingress を洗っておきたい。</p>
+<p class="links"><a href="https://www.ox.security/blog/nginx2root-five-critical-nginx-flaws-expose-web-servers-to-remote-code-execution/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.ox.security%2Fblog%2Fnginx2root-five-critical-nginx-flaws-expose-web-servers-to-remote-code-execution%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/y_matsuwitter/status/2123086823467753560">@y_matsuwitter のポスト（国家サイバー統括室の注意喚起）</a></li>
+<li><a href="https://x.com/mizchi/status/2123097085633536158">@mizchi のポスト（検出方法）</a></li>
+<li><a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">リンク先を読む（Wiz の解説）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.wiz.io%2Fblog%2Fnginx-http2-rce-vulnerabilities">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Kyverno の admission 制御、コストの約86%は CEL 評価の外にあった</h3>
+<p>Kyverno の CEL ベースの admission をプロファイリングしたところ、大半が CEL の式評価で消費されているという当初の見立ては外れ、コストの約86%はその外側にあったという CNCF ブログの記事。ポリシーを増やす前に、どこを計測して何を削るべきかという判断材料になる。admission のレイテンシに悩むクラスタ運用者や、Kyverno を大規模に運用するプラットフォーム担当に向く。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F18%2Foptimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェント向けゲートウェイ、agentgateway と AgentRouter の2強という見方</h3>
+<p>CloudNative Days Winter 2026 では、agentgateway の認可課題と、Agent Router を使ったマルチテナント推論基盤のセッションが並んだ。@amsy810 は AgentRouter（旧 Envoy AI Gateway）と agentgateway がともに AAIF に入り「ツートップ」になったと指摘しており、AI 推論を共有基盤で提供するならどちらを土台にするかの判断が要る。推論向けの要件は Web 向けリバースプロキシとは異なるため、ゲートウェイの設計は後回しにしないほうがよい。</p>
+<ul>
+<li><a href="https://speakerdeck.com/everpeace/building-multi-tenant-inference-platform-with-agentrouter">Agent Router の資料（Speaker Deck）</a></li>
+<li><a href="https://cloudnativedays.jp/sessions/3276">agentgateway のセッション</a></li>
+<li><a href="https://x.com/amsy810/status/2122874518121357558">@amsy810 のポスト</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-18]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-18.html</link>
@@ -648,19 +680,6 @@
 <li><a href="https://x.com/kahirokunn/status/2110634663320653843">@kahirokunn のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fkahirokunn%2Fstatus%2F2110634663320653843">Google 翻訳で読む</a></li>
 <li><a href="https://github.com/kubernetes-sigs/cluster-inventory-api/releases/tag/v0.2.0">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fcluster-inventory-api%2Freleases%2Ftag%2Fv0.2.0">Google 翻訳で全文を読む</a></li>
 </ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-15]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-15.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-15.html</guid>
-            <pubDate>Thu, 15 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
-<section class="item">
-<h3>Kubernetes は健全なのにリクエストが止まるとき、どこを見るか</h3>
-<p>Grafana や Kubernetes のダッシュボードが健全に見えるのに、リクエストが止まる・遅れる——この「ファントム・スローダウン」で、どこを見ればよいかを扱った記事。クラスタ内の指標が正常でも原因は別の層にあることが多く、切り分けの順序を整理できる点が実務に効く。可観測性を OpenTelemetry / LGTM で組んでいる構成では、いま収集しているシグナルのどこが抜けているかを見直すきっかけになる。</p>
-<p class="links"><a href="https://thenewstack.io/kubernetes-hidden-latency-telemetry/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-hidden-latency-telemetry%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

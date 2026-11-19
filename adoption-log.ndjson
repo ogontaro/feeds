@@ -742,3 +742,15 @@
 {"date":"2026-11-18","domain":"gadget","sourceName":"Google News — Meta グラス・XR"}
 {"date":"2026-11-18","domain":"gaming","sourceName":"SteamDeckHQ"}
 {"date":"2026-11-18","domain":"gaming","sourceName":"Sunshine releases"}
+{"date":"2026-11-19","domain":"claude","sourceName":"DEV Community — Claude"}
+{"date":"2026-11-19","domain":"claude","sourceName":"Qiita — Claude Code"}
+{"date":"2026-11-19","domain":"kubernetes","sourceName":"Google News — Kubernetes"}
+{"date":"2026-11-19","domain":"kubernetes","sourceName":"CNCF Blog"}
+{"date":"2026-11-19","domain":"aws","sourceName":"AWS Machine Learning Blog"}
+{"date":"2026-11-19","domain":"aws","sourceName":"AWS AI Blog"}
+{"date":"2026-11-19","domain":"aws","sourceName":"AWS What's New"}
+{"date":"2026-11-19","domain":"aws","sourceName":"AWS Architecture Blog"}
+{"date":"2026-11-19","domain":"aws","sourceName":"AWS Containers Blog"}
+{"date":"2026-11-19","domain":"gaming","sourceName":"SteamDeckHQ"}
+{"date":"2026-11-19","domain":"gaming","sourceName":"GamingOnLinux"}
+{"date":"2026-11-19","domain":"gaming","sourceName":"Sunshine releases"}

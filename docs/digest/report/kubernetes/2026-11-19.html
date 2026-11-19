@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-11-19</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-11-19</h1>
+<article class="report"><h2>今日の 3 本</h2>
+<section class="item">
+<h3>nginx に未認証 RCE「NGINX2Shell」、HTTP/2 を使う 1.31.8 が対象</h3>
+<p>現行 mainline の nginx 1.31.8 に、認証なしでリモートからコード実行が可能な HTTP/2 の脆弱性が見つかり、CVE-2026-123007 を筆頭に計5件の脆弱性がまとめて報告されている。Ingress やリバースプロキシとして nginx を前段に置く Kubernetes 構成は影響範囲が広く、公開直後に国の注意喚起も出ている。HTTP/2 応答と <code>Server: nginx</code> ヘッダーの組み合わせで対象を絞り込めるので、まず自クラスタの ingress を洗っておきたい。</p>
+<p class="links"><a href="https://www.ox.security/blog/nginx2root-five-critical-nginx-flaws-expose-web-servers-to-remote-code-execution/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.ox.security%2Fblog%2Fnginx2root-five-critical-nginx-flaws-expose-web-servers-to-remote-code-execution%2F">Google 翻訳で全文を読む</a></p>
+<ul>
+<li><a href="https://x.com/y_matsuwitter/status/2123086823467753560">@y_matsuwitter のポスト（国家サイバー統括室の注意喚起）</a></li>
+<li><a href="https://x.com/mizchi/status/2123097085633536158">@mizchi のポスト（検出方法）</a></li>
+<li><a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">リンク先を読む（Wiz の解説）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.wiz.io%2Fblog%2Fnginx-http2-rce-vulnerabilities">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Kyverno の admission 制御、コストの約86%は CEL 評価の外にあった</h3>
+<p>Kyverno の CEL ベースの admission をプロファイリングしたところ、大半が CEL の式評価で消費されているという当初の見立ては外れ、コストの約86%はその外側にあったという CNCF ブログの記事。ポリシーを増やす前に、どこを計測して何を削るべきかという判断材料になる。admission のレイテンシに悩むクラスタ運用者や、Kyverno を大規模に運用するプラットフォーム担当に向く。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F18%2Foptimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェント向けゲートウェイ、agentgateway と AgentRouter の2強という見方</h3>
+<p>CloudNative Days Winter 2026 では、agentgateway の認可課題と、Agent Router を使ったマルチテナント推論基盤のセッションが並んだ。@amsy810 は AgentRouter（旧 Envoy AI Gateway）と agentgateway がともに AAIF に入り「ツートップ」になったと指摘しており、AI 推論を共有基盤で提供するならどちらを土台にするかの判断が要る。推論向けの要件は Web 向けリバースプロキシとは異なるため、ゲートウェイの設計は後回しにしないほうがよい。</p>
+<ul>
+<li><a href="https://speakerdeck.com/everpeace/building-multi-tenant-inference-platform-with-agentrouter">Agent Router の資料（Speaker Deck）</a></li>
+<li><a href="https://cloudnativedays.jp/sessions/3276">agentgateway のセッション</a></li>
+<li><a href="https://x.com/amsy810/status/2122874518121357558">@amsy810 のポスト</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

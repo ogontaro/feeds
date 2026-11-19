@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-19</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-19</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code に実験的な「Code Mode」— ツール呼び出しを JavaScript のプログラムに変える</h3>
+<p>Claude Code に、ツールを 1 つずつ呼び出す代わりに JavaScript を書いて複数のツールをプログラムとして束ねる、実験的な Code Mode が入りました。<code>CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1</code> で有効化でき、長いコマンドの実行中にも応答できます。MCP サーバーをどう設計するか、ツール呼び出しの粒度をどこに置くかを考え直す材料になりますが、実験的機能なので業務で当てにする前に挙動を確かめてください。</p>
+<ul>
+<li><a href="https://x.com/melvynx/status/2122962158384456154">@melvynx のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fmelvynx%2Fstatus%2F2122962158384456154">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/oikon48/status/2123082772592103524">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>worktree だけでは足りない — 並列 Claude Code エージェントの git 分離</h3>
+<p>並列コーディングエージェントの定番指導は「1 タスク 1 ブランチ 1 worktree」ですが、worktree が分けるのはファイルだけで、ブランチとコミットの格納先はリポジトリで共有されたままです。Claude Code のサンドボックスはどのエージェントにもそこへの書き込みを許すため、あるエージェントが別のエージェントの未 push の作業を消せてしまいます。並列実行の設計やサンドボックスの権限を見直すきっかけになります。</p>
+<p class="links"><a href="https://dev.to/tillerlydev/parallel-claude-code-agents-need-more-than-a-worktree-4ian">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Ftillerlydev%2Fparallel-claude-code-agents-need-more-than-a-worktree-4ian">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のコンテキストはどう組み立てられるか — エージェントループ深掘り(1)</h3>
+<p>Claude Code のエージェントループが、システムプロンプト・ツール定義・会話履歴・キャッシュをどう組み合わせてコンテキストを組み立てるかを追う連載の初回です。何がコンテキストを消費し、何がキャッシュに乗るのかが分かると、CLAUDE.md やスキルの置き方、コストの見積もりが変わります。内部のラッパーやトークン配分は変わりうるという但し書き付きの概念的な解説なので、その前提で読むのがよいです。</p>
+<p class="links"><a href="https://dev.to/_94be737e156beb4d74df2/claude-code-context-deep-dive-1-how-the-agent-loop-assembles-context-4iid">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2F_94be737e156beb4d74df2%2Fclaude-code-context-deep-dive-1-how-the-agent-loop-assembles-context-4iid">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>AgentDrive — Conductor のセッションを別のコーディングエージェントで再開する</h3>
+<p>Conductor は Claude Code と Codex を並列ワークスペースで動かしますが、セッションが持つ計画・行き止まり・変更理由の履歴は、そのセッションを走らせたエージェントしか読めません。AgentDrive はその履歴を同期し、Claude Code で始めたタスクを Codex・Cursor・OpenCode・Antigravity で引き継げるようにする CLI です。エージェントを乗り換えるたびに文脈を説明し直す無駄を減らせます。</p>
+<p class="links"><a href="https://dev.to/agentdrive-sh/resume-your-conductor-sessions-in-any-agent-3l68">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fagentdrive-sh%2Fresume-your-conductor-sessions-in-any-agent-3l68">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>AI コーディングのコストと成果を観測する — Preflight で始める AI トークノミクス</h3>
+<p>AI コーディングのコストは測っていても、成果を定量的に説明できる人は少ない——という問題意識から、AI コーディング環境のさまざまな情報を観測する Preflight を紹介する記事です。支払った額と実際に出た価値を並べて見られるようにする発想は、AI コーディングをチームの運用に組み込むときの説明材料になります。</p>
+<p class="links"><a href="https://qiita.com/kobadain/items/7ff26c584cd9b83f7a5a">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
