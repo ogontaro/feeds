@@ -4,11 +4,39 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Thu, 19 Nov 2026 20:46:26 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 02:25:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Etherpad の認証前の任意ファイル読み取りでサーバー上のファイルを窃取される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114516.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114516.html#2026-11-20T02:25:50.745Z</guid>
+            <pubDate>Fri, 20 Nov 2026 02:25:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Etherpad の認証前の任意ファイル読み取りでサーバー上のファイルを窃取される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、CISA KEV への追加は無く EPSS も入力に無いため、悪用の兆候はまだ確認されていない。自宅インフラの構成リストに Etherpad は含まれないが、広くセルフホストされる製品の Critical であるため「監視」とする。</p>
+<p>Etherpad（ep_etherpad-lite）に、認証前の攻撃者が任意のファイルを読み取れる脆弱性がある。ログインしていない状態でサーバー上のファイルに到達できる可能性があり、設定ファイルなどに含まれる情報が漏えいしうる。影響するバージョンは入力に含まれていない。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。Etherpad を自宅クラスタで運用している場合は修正版へ更新し、更新までは管理画面を外部に公開しない。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-mc8w-wjhw-45x5">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] NLTK の java() のサンドボックス回避で任意のコードを実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-128138.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-128138.html#2026-11-20T02:25:50.745Z</guid>
+            <pubDate>Fri, 20 Nov 2026 02:25:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>NLTK の java() のサンドボックス回避で任意のコードを実行される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、CISA KEV への追加は無く EPSS も入力に無いため、悪用の兆候はまだ確認されていない。NLTK は広く使われる Python ライブラリで、自宅クラスタのコンテナイメージに含まれうるため「監視」とする。該当の有無は入力からは判断できない。</p>
+<p>NLTK の java() コマンドに渡す起動トークンの検証が不十分で、意図された JVM/JAR のサンドボックスを回避できる。アプリケーションが外部からの入力を java() の引数に渡している場合、サンドボックス外で任意のコードを実行される可能性がある。既存の修正が不完全だったとして追加の回避手法が報告されている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、NLTK を更新する。自宅クラスタのイメージに NLTK が含まれていないか、外部入力を java() に渡していないかを確認する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-x8q7-6c7m-52gw">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] VMware vCenter の VMware Directory Service に認証バイパス]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123890.html</link>
@@ -818,34 +846,6 @@
 <p>Kyverno 1.17.0 以降 1.19.2 未満で、NamespacedMutatingPolicy の targetMatchConstraints.expression による CEL 出力に名前空間のチェックが無いため、名前空間スコープのテナントが他名前空間のリソースを変更できる。他テナントの RoleBinding などのリテラルターゲットを出力すると、クラスタ全体で動くバックグラウンドコントローラが攻撃者のサブジェクトを追加したり、Roles、NetworkPolicies、ConfigMaps を改変したりする。</p>
 <p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、信頼できない利用者に NamespacedMutatingPolicy の作成権限を与えない。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122313">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Kyverno の generate ルールで RBAC を超えたリソースをクラスタ全体に作成される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122302.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122302.html#2026-11-05T11:07:43.694Z</guid>
-            <pubDate>Thu, 05 Nov 2026 11:07:43 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Kyverno の generate ルールで RBAC を超えたリソースをクラスタ全体に作成される</h3>
-<p><strong>緊急度: 今週中</strong> — 自宅クラスタで Kyverno を使用している。CVSS 9.3 で 9.0 以上、悪用はまだ確認されていない（CISA KEV なし、EPSS 不明）。稼働中のバージョンが影響範囲か確認する。</p>
-<p>Kyverno 1.19.2 未満で、generate ルールの admission チェックが作成者の権限ではなくコントローラの権限を検証するため、名前空間管理者が自分の RBAC を超えたリソースを作成できる。他名前空間やクラスタスコープの kind を対象にした generate ルール付きの名前空間 Policy を作成すると、バックグラウンドコントローラにリソースをクラスタ全体で作成・複製させる。</p>
-<p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、信頼できない利用者に generate ルール付き Policy の作成権限を与えない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122302">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Kyverno の verifyImages で署名検証をすり抜けたイメージが admit される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122321.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122321.html#2026-11-05T11:07:43.694Z</guid>
-            <pubDate>Thu, 05 Nov 2026 11:07:43 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Kyverno の verifyImages で署名検証をすり抜けたイメージが admit される</h3>
-<p><strong>緊急度: 監視</strong> — 自宅クラスタで Kyverno を使用している。CVSS 8.5 で「今週中」の基準（9.0 以上）には届かないが、イメージ署名の検証を回避される実害が説明できる（CISA KEV なし、EPSS 不明）。稼働中のバージョンが影響範囲か確認する。</p>
-<p>Kyverno 1.18.0 以降 1.19.2 未満で、verifyImages の検証結果キャッシュが検証済みダイジェストではなくイメージ参照文字列（タグなど）をキーにしているため、キャッシュヒット時に署名とアテステーションの検証が省略される。ワークロードを投入できてレジストリのタグを動かせる攻撃者が、署名済みイメージでキャッシュを温めてからタグを付け替えると、Kyverno に未検証のワークロードを admit させ、mutateDigest で未検証のダイジェストを固定させられる。</p>
-<p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、タグを可変にしたイメージ参照で verifyImages のキャッシュに依存しない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122321">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

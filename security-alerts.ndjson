@@ -1192,3 +1192,20 @@
 {"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-129410","kev":false,"reported":false}
 {"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-129402","kev":false,"reported":false}
 {"date":"2026-11-19T20:46:26.872Z","id":"CVE-2026-129396","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-63344","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-63346","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-63345","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-77312","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-84236","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-114516","kev":false,"reported":true,"title":"Etherpad の認証前の任意ファイル読み取りでサーバー上のファイルを窃取される","urgency":"watch"}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-128138","kev":false,"reported":true,"title":"NLTK の java() のサンドボックス回避で任意のコードを実行される","urgency":"watch"}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-87977","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-77369","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-77367","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-82339","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-126088","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-129938","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-77359","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-84322","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-86130","kev":false,"reported":false}
+{"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-86094","kev":false,"reported":false}
