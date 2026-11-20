@@ -4,11 +4,45 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 19 Nov 2026 03:16:27 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 03:11:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-20]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-20.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-20.html</guid>
+            <pubDate>Fri, 20 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Karpenter v1.15：GPUを意識したプロビジョニングと、賢くなったノード修復</h3>
+<p>Dynamic Resource Allocation 経由で NVIDIA GPU と EFA を扱うハードウェア認識のプロビジョニング、ボリューム上限を考慮したスケジューリング、Nitro Enclaves 対応が入った。ノード修復は自発的な disruption として扱われるようになり、再起動ベースの復旧、terminate-first、Pod 削除コストの管理、kubelet 設定での CEL 式といった挙動の変更も含む。バージョンを上げる前に、特にノード修復と disruption まわりの既定値の変化を確認しておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/karpenter-v1-15-gpu-aware-provisioning-smarter-node-repair-and-more/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fkarpenter-v1-15-gpu-aware-provisioning-smarter-node-repair-and-more%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kimi Code CLI が Amazon Bedrock にネイティブ対応</h3>
+<p>Kimi Code CLI v2.7.0 に Bedrock プロバイダーが入り、Kimi K3.1 Pro などのモデルを、別途 API キーを配らずに AWS の資格情報チェーン（名前付きプロファイルや SSO）で呼べるようになった。コーディングエージェントを Bedrock 経由に寄せると、鍵の配布と利用の統制を AWS 側にまとめられる。プロバイダーの設定から最初のリクエストまでの手順が載っている。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fuse-kimi-code-cli-with-models-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore harness が Strands ベースに：既定値・組み込みツール・ライフサイクルフック</h3>
+<p>AgentCore harness がオープンソースの Strands harness 上で動くようになり、推奨モデル、タスク指向の既定値、自動プロンプトキャッシュ、能動的なコンテキスト管理、新しい組み込みツールが付いた。加えてライフサイクルフックで、エージェントループの決まった地点に決定的な allow／deny チェックを挟める。ハーネスを自前で組まずに既定へ乗る話と、権限境界をどこで設計するかという話が同時に進んでいる点が読みどころ。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェントが AWS Marketplace の x402 製品を AgentCore payments で購入できるように</h3>
+<p>AgentCore payments が AWS Marketplace に対応し、エージェントが x402 対応の製品・API・データ・コンテンツを見つけて、リクエスト単位で米ドル建てで購入できるようになった。料金は開発者の AWS 請求に載り、ステーブルコインのウォレットも API キーも要らない。記事は、ツールを見つけて従量課金し、出典付きで答えるリサーチエージェントの実装をたどっており、エージェントに支払いを許すときの前提がどこまで整ったのかを測れる。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fenable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments%2F">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/marketplace-agentic-payments-agentcore/">AWS What&#39;s New の発表</a></p>
+</section>
+<section class="item">
+<h3>AI コーディングエージェントを Amazon EC2 Mac で：Cognition が Devin を macOS 向けにスケールさせる方法</h3>
+<p>Cognition は Devin のセッションごとに、EC2 Mac のベアメタルホスト上へ新しい macOS VM を用意し、iOS／macOS アプリのビルド・実行・テストをさせている。ディスクスナップショット、ユーザー空間のネットワークゲートウェイ、準備済みのゲストイメージ、アクセシビリティ経由の操作という構成で、エージェントの実行環境をどう使い捨てにしつつ立ち上げを速くするかが具体的に書かれている。実行環境の隔離とコストの設計を考える材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/ai-coding-agents-on-amazon-ec2-mac-how-cognition-scales-devin-for-macos/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fai-coding-agents-on-amazon-ec2-mac-how-cognition-scales-devin-for-macos%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-19]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-19.html</link>
@@ -807,42 +841,6 @@
 <h3>AWS Transform が Azure→AWS のコード変換に対応 — .NET 移行をエージェントが担う</h3>
 <p>AWS Transform の .NET モダナイゼーションエージェントが、Azure SDK を使ったコードを AWS SDK 相当へ変換する機能が一般提供になった。Azure Functions + Cosmos DB を Lambda + DynamoDB に置き換える、というようにサービス単位で対応付ける。Azure 上の .NET アプリの移行を検討しているなら、人手で書き換える範囲をどこまで機械的に寄せられるかの当たりを付けられる。</p>
 <p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-transform-azure-to-aws-code-conversion%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-16]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-16.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-16.html</guid>
-            <pubDate>Fri, 16 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Meta のオープンウェイトモデル Muse Spark Open が SageMaker JumpStart に追加、自アカウントのエンドポイントに配備できる</h3>
-<p>コーディングとエージェント用途に振った Meta のオープンウェイトモデル(816B 総 / 42B アクティブの MoE、1M トークンのコンテキスト、テキスト・画像・動画・音声のネイティブ入力)が SageMaker JumpStart に加わり、SageMaker Studio か SageMaker Python SDK から自アカウントの SageMaker AI エンドポイントにデプロイして推論を実行できるようになった。閉じた API に寄せずに重みを自前のアカウント内に置いて長時間動くコーディングエージェントを回す、という選択肢が AWS 上で取れるようになるのが実務上の意味で、Bedrock 側でホストされるモデルとの使い分けを考える材料になる。重みは独自の Muse Model License(限定的な商用条件)で提供され、API 事業者から課金する条項への批判も出ているため、採用前に条件の確認が要る。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fmetas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart%2F">Google 翻訳で全文を読む</a></p>
-<ul>
-<li><a href="https://x.com/npaka123/status/2110830640455385490">@npaka123 のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fnpaka123%2Fstatus%2F2110830640455385490">Google 翻訳で読む</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>AWS の「Trust in Depth」— エージェントに自律性を渡しながら制御を残す 5 層の考え方</h3>
-<p>エージェントにもっと仕事を任せたいが、毎回正しく動くとは信じきれないという企業の悩みに対して、AWS が scope / know / bound / observe / prove の 5 層で設計方針を示した。検証できる範囲だけを自律実行させ、人間の判断が要る決定は人間に残すという考え方で、個別機能の話ではなく権限と検証の枠組みとして読める。Bedrock AgentCore などでエージェントを本番に出すときの、権限境界とサンドボックスのチェックリストとしてそのまま使える。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Ftrust-in-depth-giving-agents-more-autonomy-without-losing-control%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Lambda Durable Execution SDK for Go が GA、承認ゲート付きの長時間ワークフローをコードで書ける</h3>
-<p>Lambda の durable functions を Go で書くための SDK が GA になった。進捗の記録を自前で実装せずに、多段のインフラ自動化やデプロイのロールアウト、AI モデル呼び出しの途中で人間の承認を待つといった処理を、Go のコードとしてそのまま表現できる。ステップの状態管理を別のワークフローサービスに寄せていた構成の選択肢が増えるので、長時間動く処理の置き場所を見直す契機になる。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-go-sdk-support/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Faws-lambda-durable-go-sdk-support%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>DynamoDB Streams が時刻を指定した読み取り開始に対応</h3>
-<p>AT_TIMESTAMP のシャードイテレータにより、指定した時刻以降の最初のレコードからストリームを読み始められるようになった。これまでは保持期間内の最古のレコードか、購読を始めた後の新着しか選べず、障害後の再処理やバックフィルは 24 時間ぶんを最初から流し直すしかなかった。保持ウィンドウ内での復旧手順と、下流の処理を冪等にしておく前提の置き方が変わるアップデートなので、ストリームを起点にした構成を持つなら押さえておきたい。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dynamodb-streams-timestamp-processing">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F10%2Famazon-dynamodb-streams-timestamp-processing">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Bedrock AgentCore Identity の On-Behalf-Of(OBO)トークン交換を実際に試す</h3>
-<p>エージェントが利用者本人の権限を引き継いで外部サービス(Entra ID 連携)にアクセスするための OBO トークン交換を、実際に手を動かして確かめた記録。エージェントに強い固定の資格情報を渡すのではなく、呼び出し元ユーザーの権限で動かすという設計は、社内システムにエージェントを入れるときの権限境界の作り方そのものなので、押さえておきたい。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-identity-obo-entra-id/">記事を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

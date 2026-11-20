@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-20</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-20</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>コーディングエージェントの運用で読んだ8本：クォータ、拡張スタック、実行環境、MCPの増えすぎ、ハード予算上限ほか</h3>
+<p>モデルの賢さより先に詰まる「運用」の論点——クォータがどこで減るか、拡張は何から足すか、エージェントの実行環境をどこに置くか、MCPが増えすぎたときの整理、暴走時の請求を止める上限——を8本の記事横断で整理している。日常的にエージェントを回している読者が、次にどこへ手を入れるかを決める材料になる。</p>
+<p class="links"><a href="https://qiita.com/redreamality/items/72e6c41ba0a0f3b263cf">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AIが書いたコード、レビューで一番困るのは「誰が自分を待っているか分からない」こと</h3>
+<p>Claude Code・Codex・Cursor・Gemini を並走させる開発で実際に困ったのは生成速度ではなく、どのタスクが何を待っているのかが見えなくなることだった、という指摘。複数エージェントの並行実行とレビューをどう噛み合わせるかを考える出発点として読める。</p>
+<p class="links"><a href="https://qiita.com/BoxBox_JP/items/9e42fb2aeb52f82316d6">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>暴走するエージェントループを起こさないMCPサーバーの作り方</h3>
+<p>stdio の MCP サーバーでは、ツール内の未捕捉例外や stdout への print() が JSON-RPC のフレーミングを壊し、エージェント側の無限リトライを招く。エラーをツール内で捕まえて構造化した文字列で返す設計を、コード例つきで示しており、自作 MCP サーバーの事故を先に潰せる。</p>
+<p class="links"><a href="https://dev.to/autolabsystem/building-fail-safe-mcp-model-context-protocol-servers-without-runaway-agent-loops-4pap">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fautolabsystem%2Fbuilding-fail-safe-mcp-model-context-protocol-servers-without-runaway-agent-loops-4pap">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Vercelの「ヘッドレスSlack」：Claude CodeとCodexのエージェントを協調させるメッセージボード</h3>
+<p>エージェント同士が効率よく協調するには、人間のチャットのような伝達とタスク分担の場が要る——という問題意識で作られた Vercel の新しいメッセージボード。Claude Code と Codex を同じ盤面で動かす具体例になっており、複数エージェント運用の次の形を試す入口になる。</p>
+<p class="links"><a href="https://thenewstack.io/vercel-board-agent-swarms/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fvercel-board-agent-swarms%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>健全なコードベースはAIエージェントのトークン消費を40〜45%削減できる</h3>
+<p>Adam Tornhill が GOTO Copenhagen の講演と InfoQ のインタビューで、健全なコードベースが AI ツールの性能を上げ、トークン消費を40〜45%減らし、タスク完了を2〜3倍速くしうると述べた。リファクタリングと自動的なセーフガードを、エージェントのコストと速度への投資として捉え直す材料になる。</p>
+<p class="links"><a href="https://dev.to/guiadeti/codigo-saudavel-pode-reduzir-em-40-a-45-os-tokens-de-agentes-de-ia-23no">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fguiadeti%2Fcodigo-saudavel-pode-reduzir-em-40-a-45-os-tokens-de-agentes-de-ia-23no">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

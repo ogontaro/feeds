@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-20</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-20</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Karpenter v1.15：GPUを意識したプロビジョニングと、賢くなったノード修復</h3>
+<p>Dynamic Resource Allocation 経由で NVIDIA GPU と EFA を扱うハードウェア認識のプロビジョニング、ボリューム上限を考慮したスケジューリング、Nitro Enclaves 対応が入った。ノード修復は自発的な disruption として扱われるようになり、再起動ベースの復旧、terminate-first、Pod 削除コストの管理、kubelet 設定での CEL 式といった挙動の変更も含む。バージョンを上げる前に、特にノード修復と disruption まわりの既定値の変化を確認しておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/containers/karpenter-v1-15-gpu-aware-provisioning-smarter-node-repair-and-more/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fkarpenter-v1-15-gpu-aware-provisioning-smarter-node-repair-and-more%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kimi Code CLI が Amazon Bedrock にネイティブ対応</h3>
+<p>Kimi Code CLI v2.7.0 に Bedrock プロバイダーが入り、Kimi K3.1 Pro などのモデルを、別途 API キーを配らずに AWS の資格情報チェーン（名前付きプロファイルや SSO）で呼べるようになった。コーディングエージェントを Bedrock 経由に寄せると、鍵の配布と利用の統制を AWS 側にまとめられる。プロバイダーの設定から最初のリクエストまでの手順が載っている。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/use-kimi-code-cli-with-models-on-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fuse-kimi-code-cli-with-models-on-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore harness が Strands ベースに：既定値・組み込みツール・ライフサイクルフック</h3>
+<p>AgentCore harness がオープンソースの Strands harness 上で動くようになり、推奨モデル、タスク指向の既定値、自動プロンプトキャッシュ、能動的なコンテキスト管理、新しい組み込みツールが付いた。加えてライフサイクルフックで、エージェントループの決まった地点に決定的な allow／deny チェックを挟める。ハーネスを自前で組まずに既定へ乗る話と、権限境界をどこで設計するかという話が同時に進んでいる点が読みどころ。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Famazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェントが AWS Marketplace の x402 製品を AgentCore payments で購入できるように</h3>
+<p>AgentCore payments が AWS Marketplace に対応し、エージェントが x402 対応の製品・API・データ・コンテンツを見つけて、リクエスト単位で米ドル建てで購入できるようになった。料金は開発者の AWS 請求に載り、ステーブルコインのウォレットも API キーも要らない。記事は、ツールを見つけて従量課金し、出典付きで答えるリサーチエージェントの実装をたどっており、エージェントに支払いを許すときの前提がどこまで整ったのかを測れる。</p>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fenable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments%2F">Google 翻訳で全文を読む</a></p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/marketplace-agentic-payments-agentcore/">AWS What&#39;s New の発表</a></p>
+</section>
+<section class="item">
+<h3>AI コーディングエージェントを Amazon EC2 Mac で：Cognition が Devin を macOS 向けにスケールさせる方法</h3>
+<p>Cognition は Devin のセッションごとに、EC2 Mac のベアメタルホスト上へ新しい macOS VM を用意し、iOS／macOS アプリのビルド・実行・テストをさせている。ディスクスナップショット、ユーザー空間のネットワークゲートウェイ、準備済みのゲストイメージ、アクセシビリティ経由の操作という構成で、エージェントの実行環境をどう使い捨てにしつつ立ち上げを速くするかが具体的に書かれている。実行環境の隔離とコストの設計を考える材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/architecture/ai-coding-agents-on-amazon-ec2-mac-how-cognition-scales-devin-for-macos/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fai-coding-agents-on-amazon-ec2-mac-how-cognition-scales-devin-for-macos%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

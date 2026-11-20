@@ -4,11 +4,39 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 19 Nov 2026 03:26:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 03:24:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-20]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-20.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-20.html</guid>
+            <pubDate>Fri, 20 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>Steam Frame 向け SteamOS 0.5.10 ベータ公開、ストリーミング画質と表示シャープネス調整を追加</h3>
+<p>Steam Frame のベータチャンネル向けに SteamOS 0.5.10 が公開された。ストリーミングのデコード性能が改善されて既定のストリーミング解像度を高く取れるようになり、全体的な表示シャープネスの設定（既定は ON）も加わっている。PC からのストリーミング画質を詰めたい人は、設定 &gt; システム &gt; システムアップデートチャンネルからベータに切り替えて試す価値がある。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/694278269818634528">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F694278269818634528">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Steam Frame の単体動作確認済みタイトルが 300 本を突破</h3>
+<p>Steam Frame が単体で動く Standalone Verified のタイトルが 300 本を超えた。PC を介さずヘッドセットだけで遊べる範囲が実用に近づいているかを測る材料になる。購入を検討しているなら、遊びたいタイトルが単体対応しているかをこの数字と照らして確認しておきたい。</p>
+<p class="links"><a href="https://www.gamingonlinux.com/2026/11/steam-frame-hits-over-300-standalone-verified-games/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.gamingonlinux.com%2F2026%2F11%2Fsteam-frame-hits-over-300-standalone-verified-games%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Steam Machine の 512GB が即時購入可能に、2TB はウェイトリストを閉鎖</h3>
+<p>Valve が Steam Machine の購入方法を見直し、512GB モデルは在庫がある間は待機列に並ばずそのまま買えるようになった。一方、2TB モデルは部品調達の問題でウェイトリストが閉じられている。リビングの SteamOS 環境を今季そろえるかどうかは、容量を取るか待ち時間を避けるかの選択になる。</p>
+<p class="links"><a href="https://www.gamingonlinux.com/2026/11/while-stock-lasts-you-can-now-just-buy-a-512gb-steam-machine/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.gamingonlinux.com%2F2026%2F11%2Fwhile-stock-lasts-you-can-now-just-buy-a-512gb-steam-machine%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>GeForce NOW がブラックフライデー施策、6 か月プランの初回が 30% オフ</h3>
+<p>GeForce NOW がブラックフライデーに合わせて 6 か月メンバーシップを期間限定で復活させ、Performance / Ultimate とも最初の 6 か月分を 30% オフで提供する。長期で使う前提なら、この機会に 6 か月プランへ切り替えるのが最も安い。割引が効くのは最初の 6 か月分だけなので、ティアを上げるかどうかはその前提で判断したい。</p>
+<p class="links"><a href="https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2026/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2Fgeforce-now-thursday-black-friday-2026%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-19]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-19.html</link>
@@ -445,34 +473,6 @@
 <h3>OpenNOW の Decky プラグイン 0.1.0 公開、Steam のゲームモードから直接使えるように</h3>
 <p>OpenNOW を Decky Loader 経由で入れるプラグインが 0.1.0 として公開された。Decky の Developer タブから URL を指定してインストールする形で、Steam のゲームモードから OpenNOW を扱えるようにするもの。ゲームモードに統合されるかどうかは Steam Deck をストリーミング端末として使うときの手数に直結するので、デスクトップモードへ切り替える手間を減らしたい人には効く。</p>
 <p class="links"><a href="https://github.com/OpenCloudGaming/OpenNOW/releases/tag/decky-v0.1.0">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FOpenCloudGaming%2FOpenNOW%2Freleases%2Ftag%2Fdecky-v0.1.0">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ゲーム環境 日次レポート 2026-10-16]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-16.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-16.html</guid>
-            <pubDate>Fri, 16 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
-<section class="item">
-<h3>SteamOS 0.5.6 ベータ(Steam Frame 向け):mDNS の汚染解消と .apk の「Steam に追加」対応</h3>
-<p>Steam Frame 向け SteamOS のベータが 0.5.6 に上がった。avahi-daemon が mDNS を公開することで frame-XXXX.local の対応付けが汚染され、シャットダウンが遅れることがある問題が止められ、性能オーバーレイのバッテリー／メモリ表示も改善している。デスクトップモードの右クリック「Steam に追加」で .apk を扱えるようになった点は、Steam 以外のアプリを持ち込む導線が広がる変更で、Steam Frame の使い方を考えるうえで見ておきたい。</p>
-<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/687519694976975601">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F687519694976975601">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Steam Frame の Steam クライアント更新:ワイヤレスアダプターのペアリング改善</h3>
-<p>Steam Frame の Steam クライアントが全ユーザー向けに配信され、Steam Frame Wireless Adapter のペアリング信頼性と、ペアリング後の初回接続の進捗表示が改善した。設定で無効にしているのに起動時に Wi-Fi 省電力が有効になる不具合や、Windows でのアダプターの信頼性も直っている。無線でつなぐ構成ほど効いてくる更新なので、繋がりにくさを感じていたなら真っ先に当てたい。</p>
-<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/687519694976975615">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F687519694976975615">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>GeForce NOW に DLSS 4.5 の画質コントロールが追加</h3>
-<p>GeForce NOW に NVIDIA DLSS 4.5 のコントロールが入り、会員が対応ゲームの見え方と動きをクラウド側で選べるようになった。最新ハードを持っていなくても恩恵を受けられるのがクラウドの利点で、画質とフレームレートのバランスを詰めたい人ほど影響が大きい。同日の発表の残りは Enshrouded の 1.0 移行など個別タイトル寄りの内容なので、サービス面のこの変更だけを拾っておけばよい。</p>
-<p class="links"><a href="https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fblogs.nvidia.com%2Fblog%2Fgeforce-now-thursday-enshrouded-update%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Sunshine v2026.1015.174736(Web UI の SPA 化・ペアリング不具合の修正)</h3>
-<p>自宅のゲーム PC から Moonlight 側へ配信する側で使う Sunshine の新ビルド。Web UI のシングルページアプリケーション化とテスト追加という内部刷新に加え、ペアリング時に重複したクライアント証明書が残る問題の修正と、Flatpak 版でコマンドに接頭辞を付けなくてよくなった点が実運用に効く。10/15 に 2 つのビルドが出ているが内容は同一なので、新しい方だけを挙げる。</p>
-<p class="links"><a href="https://github.com/LizardByte/Sunshine/releases/tag/v2026.1015.174736">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FLizardByte%2FSunshine%2Freleases%2Ftag%2Fv2026.1015.174736">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

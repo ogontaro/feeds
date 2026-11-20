@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-11-20</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-11-20</h1>
+<article class="report"><h2>今日の 4 本</h2>
+<section class="item">
+<h3>クラスタの下のOSこそ「誰も所有していない層」— ノードドリフトとイミュータブルOS</h3>
+<p>プラットフォームチームはクラスタ上のリソースは標準化しても、その下のOSは誰の担当でもなくなりがちで、ノードごとの構成ドリフトがオンコール作業を生み続ける。その構造と、API で管理するイミュータブルOSが何を解消するかを論じた記事。Talos Linux のようにOSを宣言的に管理している場合でも、ノード更新とドリフト検知の設計を見直す材料になる。</p>
+<p class="links"><a href="https://platformengineering.org/blog/the-layer-of-your-platform-nobody-owns">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fthe-layer-of-your-platform-nobody-owns">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>NGINX でコード実行から root 奪取に至る経路 — Field Effect の調査</h3>
+<p>NGINX にコード実行から root 奪取まで到達しうる経路があるとして、その攻撃経路を扱った調査。NGINX を ingress やリバースプロキシとして前段に置くクラスタは多く、前提条件・影響範囲・修正版の有無を自分の構成に照らして確認しておきたい。</p>
+<p class="links"><a href="https://fieldeffect.com/blog/nginx2root">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Ffieldeffect.com%2Fblog%2Fnginx2root">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>agentgateway と、MCP・A2A をまたぐ認可設計</h3>
+<p>CloudNative Days 2026 のキーノート「Agentic AIの本番適用で見えてくる認可の課題とagentgateway」のアーカイブが公開され、同じ題材を扱う AAIF のブログ（A2A と MCP をまたぐセキュアな認可の設計）も同時に公開された。エージェントをプラットフォームの利用者に含めるとき、認可の境界をどこに置くかを考える材料になる。</p>
+<ul>
+<li><a href="https://x.com/amsy810/status/2123607071723815168">@amsy810 のポスト</a></li>
+<li><a href="https://event.cloudnativedays.jp/cndw2026/talks/3276">キーノートのアーカイブを見る</a></li>
+<li><a href="https://aaif.io/blog/designing-secure-authorization-across-a2a-and-mcp">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faaif.io%2Fblog%2Fdesigning-secure-authorization-across-a2a-and-mcp">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>AI エージェントは可観測性の「パワーユーザー」になる — groundcover CEO の見立て</h3>
+<p>エージェントは数分でパッチを書けるが、そのパッチが API エンドポイントを遅くしていないかは別に確かめる必要がある。groundcover の CEO が、エージェントを可観測性の主要な利用者と見なし、変更の影響をどう検証するかを語っている。AI に変更を任せる範囲を広げるほど、観測データをエージェントが読める形で揃える必要があるという論点は、AI SRE や可観測性の統合を進めるうえで効いてくる。</p>
+<p class="links"><a href="https://thenewstack.io/groundcover-coding-agents-observability/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fgroundcover-coding-agents-observability%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
