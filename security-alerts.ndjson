@@ -1209,3 +1209,10 @@
 {"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-84322","kev":false,"reported":false}
 {"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-86130","kev":false,"reported":false}
 {"date":"2026-11-20T02:25:50.745Z","id":"CVE-2026-86094","kev":false,"reported":false}
+{"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-129056","kev":false,"reported":false}
+{"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-133493","kev":false,"reported":true,"title":"D-Link DIR-600L の GENA ハンドラで OS コマンドインジェクション","urgency":"watch"}
+{"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-120681","kev":false,"reported":false}
+{"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-65094","kev":false,"reported":false}
+{"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-133528","kev":false,"reported":false}
+{"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-133500","kev":false,"reported":false}
+{"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-133501","kev":false,"reported":false}

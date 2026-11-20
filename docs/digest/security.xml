@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 20 Nov 2026 02:25:50 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 11:52:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] D-Link DIR-600L の GENA ハンドラで OS コマンドインジェクション]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133493.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133493.html#2026-11-20T11:52:31.002Z</guid>
+            <pubDate>Fri, 20 Nov 2026 11:52:31 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>D-Link DIR-600L の GENA ハンドラで OS コマンドインジェクション</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.3 の Critical でリモートからコマンド実行が可能。CISA KEV には未収載、EPSS は不明で実際の悪用は未確認のため「監視」とする。ルーターは自宅クラスタの前面に位置し、侵害されると内部への足がかりになり得る。</p>
+<p>D-Link DIR-600L 2.17b02 の gena.cgi（GENA ハンドラ）で、入力の扱いに起因する OS コマンドインジェクションの脆弱性。攻撃はリモートから実行でき、公開されたエクスプロイトが存在するため悪用される可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中の機種が DIR-600L（2.17b02）か確認する。該当する場合はベンダーのアドバイザリで修正版を確認し、修正版が無ければ買い替えや管理画面の外部公開停止を検討する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133493">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Etherpad の認証前の任意ファイル読み取りでサーバー上のファイルを窃取される]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114516.html</link>
@@ -832,20 +846,6 @@
 <p>Kyverno 1.16.0 以降 1.19.2 未満で、resource.get() と resource.post() の resource 引数にあるパスセグメントが検証されないため、名前空間スコープの CEL ポリシーが名前空間の外へ出られる。NamespacedValidatingPolicy を作成できるテナントが .. セグメントを挿入すると、admission コントローラの ServiceAccount で任意のクラスタオブジェクトを読み書きされ、クラスタの掌握につながる。</p>
 <p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、信頼できない利用者に NamespacedValidatingPolicy の作成権限を与えない。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122311">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Kyverno の NamespacedMutatingPolicy で他テナントの RoleBinding を書き換えられる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122313.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122313.html#2026-11-05T11:07:43.694Z</guid>
-            <pubDate>Thu, 05 Nov 2026 11:07:43 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Kyverno の NamespacedMutatingPolicy で他テナントの RoleBinding を書き換えられる</h3>
-<p><strong>緊急度: 今週中</strong> — 自宅クラスタで Kyverno を使用している。CVSS 9.4 で 9.0 以上、悪用はまだ確認されていない（CISA KEV なし、EPSS 不明）。稼働中のバージョンが影響範囲か確認する。</p>
-<p>Kyverno 1.17.0 以降 1.19.2 未満で、NamespacedMutatingPolicy の targetMatchConstraints.expression による CEL 出力に名前空間のチェックが無いため、名前空間スコープのテナントが他名前空間のリソースを変更できる。他テナントの RoleBinding などのリテラルターゲットを出力すると、クラスタ全体で動くバックグラウンドコントローラが攻撃者のサブジェクトを追加したり、Roles、NetworkPolicies、ConfigMaps を改変したりする。</p>
-<p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、信頼できない利用者に NamespacedMutatingPolicy の作成権限を与えない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122313">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
