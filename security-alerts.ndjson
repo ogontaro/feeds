@@ -1216,3 +1216,28 @@
 {"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-133528","kev":false,"reported":false}
 {"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-133500","kev":false,"reported":false}
 {"date":"2026-11-20T11:52:31.002Z","id":"CVE-2026-133501","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-129448","kev":true,"reported":true,"title":"Apache Roller の XML-RPC で認証前のデシリアライズにより任意コードを実行される","urgency":"week"}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-123890","kev":true,"reported":true,"title":"VMware vCenter の VMware Directory Service の認証バイパスで不正アクセスされる","urgency":"immediate"}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-76466","kev":true,"reported":true,"title":"Cisco Expressway Series のハードコードされた認証情報で root 権限のコマンド実行をされる","urgency":"week"}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2025-42884","kev":true,"reported":true,"title":"SAP NetWeaver Enterprise Portal の JNDI 注入でサーバー情報を窃取・改ざんされる","urgency":"week"}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-104099","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-133325","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-14914","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-80188","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-129039","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-129073","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-129043","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-133680","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-133872","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-115407","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-132660","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-132658","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-126054","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-132659","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-127027","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-101340","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-127057","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-129713","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-124772","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-133648","kev":false,"reported":false}
+{"date":"2026-11-20T20:32:21.572Z","id":"CVE-2026-124770","kev":false,"reported":false}

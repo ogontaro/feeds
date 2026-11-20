@@ -4,11 +4,67 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 20 Nov 2026 11:52:31 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2026 20:32:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[即時対応] VMware vCenter の VMware Directory Service の認証バイパスで不正アクセスされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123890.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123890.html#2026-11-20T20:32:21.572Z</guid>
+            <pubDate>Fri, 20 Nov 2026 20:32:21 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>VMware vCenter の VMware Directory Service の認証バイパスで不正アクセスされる</h3>
+<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-11-20 追加され、実際の悪用が確認されている。CVSS 9.8、EPSS 0.008 と数値は低いが KEV を優先した。自宅インフラの構成には VMware ESXi があり、vCenter は広く使われる仮想化管理製品のため「即時対応」とした（vCenter 自体の利用は入力からは確認できない）。</p>
+<p>Broadcom VMware vCenter の VMware Directory Service に、代替パス／チャネルを使った認証バイパスの脆弱性がある。vCenter にネットワークから到達できる未認証の攻撃者が認証を回避し、システムへの不正アクセスを得られる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認し、vCenter を使用している場合は直ちに適用する。更新までは vCenter の管理インターフェースを外部や信頼できないネットワークに公開しない。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-hxhc-xqhg-6gr5">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Apache Roller の XML-RPC で認証前のデシリアライズにより任意コードを実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-129448.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-129448.html#2026-11-20T20:32:21.572Z</guid>
+            <pubDate>Fri, 20 Nov 2026 20:32:21 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Apache Roller の XML-RPC で認証前のデシリアライズにより任意コードを実行される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-20 追加され、実際の悪用が確認されている。EPSS 0.012、CVSS は入力に無い。自宅インフラの構成に Apache Roller は含まれず該当しないが、KEV 新規追加のため「今週中」として通知する。</p>
+<p>Apache Roller の XML-RPC エンドポイントが、認証前にベンダー拡張型をデシリアライズする。認証なしのリモート攻撃者がこの処理を悪用し、任意のコードを実行できる。CVE-2026-82384 と同じ根本の脆弱性で、影響するバージョン範囲がより広い。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。Apache Roller を運用している場合は修正版へ更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-129448">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Cisco Expressway Series のハードコードされた認証情報で root 権限のコマンド実行をされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-76466.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-76466.html#2026-11-20T20:32:21.572Z</guid>
+            <pubDate>Fri, 20 Nov 2026 20:32:21 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Cisco Expressway Series のハードコードされた認証情報で root 権限のコマンド実行をされる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-20 追加され、実際の悪用が確認されている。EPSS 0.004、CVSS は入力に無い。自宅インフラの構成に Cisco Expressway は含まれず該当しないが、KEV 新規追加のため「今週中」として通知する。</p>
+<p>Cisco Expressway Series に、ハードコードされた認証情報の脆弱性がある。永続 Cookie とネットワークアクセスを持つ未認証のリモート攻撃者が、データベースサービス経由でクラスタ化された機器上で root としてコマンドを実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。Cisco Expressway Series を運用している場合は修正版へ更新する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76466">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] SAP NetWeaver Enterprise Portal の JNDI 注入でサーバー情報を窃取・改ざんされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2025-42884.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2025-42884.html#2026-11-20T20:32:21.572Z</guid>
+            <pubDate>Fri, 20 Nov 2026 20:32:21 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>SAP NetWeaver Enterprise Portal の JNDI 注入でサーバー情報を窃取・改ざんされる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-20 追加され、実際の悪用が確認されている。EPSS 0.003、CVSS は入力に無い。自宅インフラの構成に SAP NetWeaver は含まれず該当しないが、KEV 新規追加のため「今週中」として通知する。</p>
+<p>SAP NetWeaver Enterprise Portal のデータクエリ処理で、特殊要素の中和が不適切な脆弱性がある。未認証の攻撃者が、JNDI ルックアップで使われる JNDI 環境プロパティや URL を注入し、サーバー情報の開示や改ざんを行える。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。SAP NetWeaver Enterprise Portal を運用している場合は修正版を適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-42884">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] D-Link DIR-600L の GENA ハンドラで OS コマンドインジェクション]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133493.html</link>
@@ -48,20 +104,6 @@
 <p>NLTK の java() コマンドに渡す起動トークンの検証が不十分で、意図された JVM/JAR のサンドボックスを回避できる。アプリケーションが外部からの入力を java() の引数に渡している場合、サンドボックス外で任意のコードを実行される可能性がある。既存の修正が不完全だったとして追加の回避手法が報告されている。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、NLTK を更新する。自宅クラスタのイメージに NLTK が含まれていないか、外部入力を java() に渡していないかを確認する。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-x8q7-6c7m-52gw">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] VMware vCenter の VMware Directory Service に認証バイパス]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123890.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123890.html#2026-11-19T20:46:26.872Z</guid>
-            <pubDate>Thu, 19 Nov 2026 20:46:26 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>VMware vCenter の VMware Directory Service に認証バイパス</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、CISA KEV への追加も EPSS の高い値も入力に無く、悪用の兆候は確認されていない。自宅インフラでは VMware ESXi を使用しているが、vCenter の利用は入力からは分からないため「監視」とした。</p>
-<p>VMware vCenter の VMware Directory Service に認証バイパスの脆弱性がある。認証を経ていない利用者が Directory Service の機能に到達できる可能性がある。影響の詳細と対象バージョンはアドバイザリで確認する必要がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。vCenter を使用している場合は修正版を適用し、管理インターフェースを外部に公開しない。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-hxhc-xqhg-6gr5">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
@@ -804,48 +846,6 @@
 <p>Kyverno 1.17.0 以降 1.19.2 未満で、名前空間テナントが NamespacedMutatingPolicy の mutate-existing な targetMatchConstraints.expression を悪用し、他名前空間のリソースを上書きできる。CEL のマップリテラルで攻撃者が選んだ metadata.namespace を持つターゲットを偽装すると、特権的なバックグラウンドコントローラが Secrets、Deployments、ポリシーをクラスタ全体で上書きしてしまう。</p>
 <p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、信頼できない利用者に NamespacedMutatingPolicy の作成権限を与えない。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122303">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Kyverno の CleanupPolicy で名前空間の隔離を脱出され、他名前空間の Secrets を読まれる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122304.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122304.html#2026-11-05T11:07:43.694Z</guid>
-            <pubDate>Thu, 05 Nov 2026 11:07:43 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Kyverno の CleanupPolicy で名前空間の隔離を脱出され、他名前空間の Secrets を読まれる</h3>
-<p><strong>緊急度: 今週中</strong> — 自宅クラスタで Kyverno を使用している。CVSS 9.4 で 9.0 以上、悪用はまだ確認されていない（CISA KEV なし、EPSS 不明）。稼働中のバージョンが影響範囲か確認する。</p>
-<p>Kyverno 1.17.0 以降 1.19.2 未満で、cleanup コントローラが nil のポリシーでコンテキストローダーを構築するため、名前空間管理者が名前空間の隔離を脱出できる。apiCall や globalReference のコンテキストエントリを持つ名前空間スコープの CleanupPolicy を作成されると、cleanup コントローラの ServiceAccount で他名前空間の Secrets を読まれ、ValidatingWebhookConfiguration を変更される。</p>
-<p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、信頼できない利用者に CleanupPolicy の作成権限を与えない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122304">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Kyverno の apiCall urlPath 検証不備でクラスタ管理者権限を取得される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122310.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122310.html#2026-11-05T11:07:43.694Z</guid>
-            <pubDate>Thu, 05 Nov 2026 11:07:43 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Kyverno の apiCall urlPath 検証不備でクラスタ管理者権限を取得される</h3>
-<p><strong>緊急度: 今週中</strong> — 自宅クラスタで Kyverno を使用している。CVSS 9.4 で 9.0 以上、悪用はまだ確認されていない（CISA KEV なし、EPSS 不明）。稼働中のバージョンが影響範囲か確認する。</p>
-<p>Kyverno 1.19.1 以降 1.19.2 未満で、Policy の context.apiCall urlPath をサニタイズ後に検証する一方、実行時は生のパスを使うため、Kubernetes クライアントがフラグメントやクエリを破棄して検証をすり抜ける。Policy を作成できる名前空間スコープの利用者が # や ? の後ろに ../ を隠すと、Kyverno の ServiceAccount でクラスタスコープのエンドポイントに到達し、クラスタ管理者権限を取得できる。</p>
-<p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、信頼できない利用者に Policy の作成権限を与えない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122310">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Kyverno の resource.get／post のパス検証不備でクラスタ全体を掌握される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122311.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-122311.html#2026-11-05T11:07:43.694Z</guid>
-            <pubDate>Thu, 05 Nov 2026 11:07:43 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Kyverno の resource.get／post のパス検証不備でクラスタ全体を掌握される</h3>
-<p><strong>緊急度: 今週中</strong> — 自宅クラスタで Kyverno を使用している。CVSS 9.4 で 9.0 以上、悪用はまだ確認されていない（CISA KEV なし、EPSS 不明）。稼働中のバージョンが影響範囲か確認する。</p>
-<p>Kyverno 1.16.0 以降 1.19.2 未満で、resource.get() と resource.post() の resource 引数にあるパスセグメントが検証されないため、名前空間スコープの CEL ポリシーが名前空間の外へ出られる。NamespacedValidatingPolicy を作成できるテナントが .. セグメントを挿入すると、admission コントローラの ServiceAccount で任意のクラスタオブジェクトを読み書きされ、クラスタの掌握につながる。</p>
-<p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> Kyverno 1.19.2 以降へ更新する。更新までは、信頼できない利用者に NamespacedValidatingPolicy の作成権限を与えない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-122311">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
