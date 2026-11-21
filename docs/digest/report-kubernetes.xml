@@ -4,11 +4,39 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 20 Nov 2026 03:04:01 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Nov 2026 03:10:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-21]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-21.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-21.html</guid>
+            <pubDate>Sat, 21 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>Argo CD のセルフヒールがマイグレーション用フックを飛ばした事例</h3>
+<p>「同期は成功と表示されたのにマイグレーションが走らなかった」という相談から始まる CNCF ブログの分析。sync window が閉じたタイミングと self-heal の挙動が、フックの実行順や実行有無にどう影響するかを追っている。Argo CD でクラスタを同期している運用では同じ穴を踏みやすいので、フックの失敗が「成功」に見える条件を押さえておく価値がある。</p>
+<p class="links"><a href="https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F11%2F20%2Fwhen-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Kubernetes 週次まとめ: v1.38 系リリースに SLSA 来歴署名</h3>
+<p>Last Week in Kubernetes Development の 11 月 15 日週。v1.38.0-beta.0 以降のリリースに署名付き SLSA provenance が付き、下流がビルド過程を暗号学的に検証できるようになった点が実務に効く。SIG Release の体制変更や SIG Multicluster の co-chair 追加など、ガバナンス側の動きもまとめて追える。</p>
+<p class="links"><a href="https://lwkd.info/2026/20261120">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Flwkd.info%2F2026%2F20261120">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>誰も所有していない層: クラスタの下の OS とノードドリフト</h3>
+<p>プラットフォームチームがクラスタ内は標準化しても、その下の OS は誰の担当でもなくなりがちだという指摘。設定が少しずつずれるノードドリフトがオンコール作業を生む構図と、イミュータブルで API 管理する OS がそれをどう減らすかを説明している。Talos Linux でクラスタを組む立場では、日々のノード更新運用の設計に直結する。</p>
+<p class="links"><a href="https://platformengineering.org/blog/the-layer-of-your-platform-nobody-owns">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fthe-layer-of-your-platform-nobody-owns">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>規模に飲まれる前に: プロダクト思考でプラットフォームチームを立て直す</h3>
+<p>運用とスケールの間で止まるプラットフォームチームに、需要の把握・スコープの制御・価値の証明という3段階のレシピを当てる記事。IDP をプロダクトとして提供する進め方の言語化として、優先順位づけや利用者への説明に使える。</p>
+<p class="links"><a href="https://platformengineering.org/blog/overwhelmed-by-scale-how-product-thinking-fixes-platform-teams">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Foverwhelmed-by-scale-how-product-thinking-fixes-platform-teams">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-20]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-20.html</link>
@@ -663,24 +691,6 @@
 <h3>分散推論 OSS「llm-d」が 1.0 に到達、推論コスト 11.5 倍削減を IBM Research が確認</h3>
 <p>Kubernetes 上で分散推論を組み立てる OSS の llm-d が 1.0 に到達し、IBM Research が 11.5 倍の推論コスト削減を確認したと報じられている。GPU を抱えるクラスタのコスト最適化を考えるうえで、推論基盤の選択肢として押さえておきたい。ただしベンチマークの条件は記事で確認が必要で、自前のワークロードにそのまま当てはまるとは限らない。</p>
 <p class="links"><a href="https://www.techtimes.com/articles/329305/20261021/open-source-llm-d-10-hits-production-ibm-research-confirms-115x-ai-inference-cost-drop.htm">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.techtimes.com%2Farticles%2F329305%2F20261021%2Fopen-source-llm-d-10-hits-production-ibm-research-confirms-115x-ai-inference-cost-drop.htm">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-17]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-17.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-17.html</guid>
-            <pubDate>Sat, 17 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
-<section class="item">
-<h3>Agent-first IDP — 大手とクラウド各社はエージェント向けに基盤をどう作り替えているか</h3>
-<p>Block、Uber、AWS、Azure、Google が、AI エージェントを基盤の利用者に加える前提でプラットフォームをどう作り替えているかと、IDP をエージェント向けの基盤（AEP）へ育てるための 9 つの実践をまとめた記事。Backstage でポータルを出し GitOps でクラスタを同期している立場からは、人間の開発者向けに組んだセルフサービスと権限の設計を、エージェントが叩く前提でどこから作り直すかという問いとして読める。個別の製品紹介ではなく実践の形で並んでいるので、自チームの IDP の次の一歩を決める材料になる。</p>
-<p class="links"><a href="https://platformengineering.org/blog/agent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fagent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>1 つの依頼が約 20 のリクエストになる — Kubernetes はエージェントにどう応えるか</h3>
-<p>エージェントに 1 つ頼むと、その裏で 20 前後のリクエストが発生する。この増え方を前提に、KubeCon 前の動向を追う連載が Kubernetes 側の変化を扱っている。エージェントを動かす側と、エージェントに運用させる側の両方が同じクラスタに載る構成では、リクエスト量・資源の持ち方・スケジューリングの前提がこれまでと変わる。HolmesGPT を AI SRE として自宅クラスタで使っているなら、自分が踏み込もうとしている領域が上流でどう扱われ始めているかを先に押さえておく価値がある。</p>
-<p class="links"><a href="https://thenewstack.io/kagent-kubernetes-ai-agents/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkagent-kubernetes-ai-agents%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

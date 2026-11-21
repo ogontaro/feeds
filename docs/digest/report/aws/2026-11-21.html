@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-21</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-21</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>SageMaker HyperPod Global Inference Gateway：1つのエンドポイントでリージョンとクラスタをまたぐ</h3>
+<p>HyperPod の推論リクエストを、単一のマネージドエンドポイントで同一リージョン内・複数リージョンにまたがるクラスタへ振り分けられるようになった。最も余力のあるクラスタを選び、障害時は自動でフェイルオーバーし、SigV4 と IAM による認証を PrivateLink 経由で行う。ルーティング層やヘルスチェック、リトライを自前で組んでクロスリージョン推論を実現していたチームほど、設計を置き換えられるか検討する価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock の Web Search が5言語と国指定に対応、日本語でのグラウンディングが可能に</h3>
+<p>Amazon Bedrock AgentCore と Amazon Bedrock の Web Search が、スペイン語・フランス語・ドイツ語・イタリア語・日本語と非米国英語に対応し、これらの言語のエージェントはローカル言語のソースを参照した結果を得られるようになった。ISO 3166-1 alpha-2 の国コードを渡す任意フィールドも加わり、特定国のソースへ結果を寄せられる。日本語で応答するエージェントの出典の質に直結する変更で、根拠付き回答の設計に効く。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/web-search-amazon-bedrock/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fweb-search-amazon-bedrock%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>STS GetScopedCredentials：既存セッションの権限をサブエージェント単位で絞る</h3>
+<p>起動元セッションの権限をそのまま継承させるのではなく、既存の一時資格情報から、そのエージェントやサブエージェントのタスクに必要な権限だけを持つ資格情報を作れる新しい AWS STS の API。エージェントの権限境界を実行時に狭められる点が要点で、過剰な権限を持ったエージェントの暴走や情報漏洩の面を減らせる。マルチエージェント構成のガードレールを IAM 側で設計する材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/security/scope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fsecurity%2Fscope-down-permissions-of-existing-sessions-using-aws-sts-getscopedcredentials%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>SageMaker HyperPod の可観測性強化：EKS と Slurm の GPU 学習障害を切り分ける</h3>
+<p>GPU・ネットワーク・ホストの各層をまたいで、学習ワークロードの診断とプロファイリングをまとめて見られるようになった。EKS と Slurm の両オーケストレータに対応し、GPU 起因の学習失敗を追う手間が減る。EKS 上で GPU ワークロードを回し、障害時にノード・ネットワーク・ホストのどこを見るかで迷う場面が多いチームに向く。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-enhanced-observability-in-amazon-sagemaker-hyperpod-to-diagnose-gpu-training-issues/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-enhanced-observability-in-amazon-sagemaker-hyperpod-to-diagnose-gpu-training-issues%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Network Firewall に「自動インターネットファイアウォール」、VPC の IGW で一括制御（パブリックプレビュー）</h3>
+<p>環境内すべての VPC のインターネットゲートウェイに、NAT 機能を備えた Network Firewall をまとめて適用し、境界のセキュリティルールを一元定義できるモードのパブリックプレビューが始まった。VPC ごとにファイアウォールや NAT ゲートウェイを並べていた構成を、IGW 側へ寄せられる可能性がある。まずは検証環境で、既存の egress 設計のどこまで置き換えられるかを見ておきたい。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-automated-internet/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fnetwork-firewall-automated-internet%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
