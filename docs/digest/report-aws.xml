@@ -4,11 +4,39 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 21 Nov 2026 03:17:18 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 02:10:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-22]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-22.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-22.html</guid>
+            <pubDate>Sun, 22 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
+<section class="item">
+<h3>Amazon Bedrock AgentCore Identity のディスカバリー URL が OAuth 2.0 の認可サーバーメタデータに対応</h3>
+<p>AgentCore Identity のディスカバリー機能が RFC 8414(OAuth 2.0 認可サーバーメタデータ)に対応した。外部 IdP をエージェントの認証に組み込むとき、認可・トークンのエンドポイントをメタデータから自動で取得できるため、手書きの設定を減らせる。MCP サーバーや社内 SaaS にエージェントを繋ぐ構成を組むなら、認証まわりの実装がどう変わるか確認しておきたい。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-identity-oauth2-discovery/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Bedrock AgentCore Identity がプライベート認証局(CA)に対応</h3>
+<p>AgentCore Identity がプライベート CA の証明書を扱えるようになった。自前 PKI で発行した証明書を使う閉域寄りのエージェント構成でも、AWS 側のマネージドな ID 基盤をそのまま使える。社内 CA の運用ルールがある組織ほど効いてくる変更で、前段の OAuth メタデータ対応と合わせてエージェント認証の土台が固まってきている。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-agentcore-identity-private-ca/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Windows の Claude Desktop を aws login の認証情報で Amazon Bedrock につなぐ手順</h3>
+<p>Windows の Claude Desktop から、aws login で取得した認証情報を使って Amazon Bedrock のモデルを呼ぶための設定手順をまとめた記事。長期のアクセスキーをデスクトップに置かずに、AWS アカウント側の Bedrock を Claude のクライアントから使える。Claude Code と同じアカウント・同じ認証の流儀でデスクトップの Claude も使いたいときに、そのまま真似できる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/claude-desktop-windows-bedrock-aws-login/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Quick がプラグインでエージェント・スキル・コネクタ・フローをまとめて配布可能に</h3>
+<p>AWS Quick で、エージェント・スキル・コネクタ・フローを 1 つのプラグインとして束ね、まとめて導入できるようになった。業務に必要な構成を人が一つずつ繋ぐのではなく、役割や用途の単位で配る考え方で、Claude Code のプラグインや MCP サーバーを束ねる動きと方向が近い。開発者向けツールではないが、エージェント構成を「配布する単位」として扱い始めた例として見ておく価値がある。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-plugins-bundle-agents-skills-connectors-flows/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Faws-quick-plugins-bundle-agents-skills-connectors-flows%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-21]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-21.html</link>

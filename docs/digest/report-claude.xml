@@ -4,11 +4,50 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 21 Nov 2026 03:05:13 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 02:00:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-22]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-22.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-22.html</guid>
+            <pubDate>Sun, 22 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude Code v2.1.330 の主要アップデート——組み込みチャート mod「easel」の追加と deniedMcpServers の挙動変更</h3>
+<p>142 件の変更のうち、権限まわりでは deniedMcpServers と rm の承認対象が変わっており、MCP サーバーの許可・拒否の設計に直結する。あわせてコンパクト直後や WebFetch のフリーズが修正され、/loop が最大 30 日まで使えるようになった。日々の運用前提が変わる箇所だけを短時間で押さえられる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261121-cc-updates-v2-1-330/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code・Codex・Cursor のメモリ、7 ツール比較（2026 年 11 月）</h3>
+<p>コーディングエージェントに記憶をどう持たせるかを、Claude と ChatGPT に 8 つの質問を投げて比べた記事。16 の回答で最も多く挙げられたのは Basic Memory（9 回）、Mem0（7）、Cognee（6）、Supermemory（6）、claude-mem（4）だった。著者自身が候補の一つ hippo の開発者なのでその点は割り引いて読む必要があるが、セッションをまたぐ記憶の MCP サーバー選びの出発点になる。</p>
+<p class="links"><a href="https://dev.to/kitfunso/memory-for-claude-code-codex-and-cursor-7-tools-compared-november-2026-50d4">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fkitfunso%2Fmemory-for-claude-code-codex-and-cursor-7-tools-compared-november-2026-50d4">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code を PM に据え、並列ペインで 3 日間——macOS 向け Markdown エディタ「Kalamos」を作った記録</h3>
+<p>左に Claude Code を PM、右に複数のペインを並べて並行にコードを書かせる進め方で、複雑な題材のプロダクトを 3 日で形にした Herdr の実践記録。単発の生成ではなく、役割分担と並列化を実際の開発にどう落とすかが具体的に書かれている。複数エージェントの並行実行を自分のワークフローに移植する際の参考になる。</p>
+<p class="links"><a href="https://dev.to/gde/herdr-hands-on-building-kalamos-a-typora-style-macos-markdown-editor-in-3-days-with-claude-code-9bn">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fgde%2Fherdr-hands-on-building-kalamos-a-typora-style-macos-markdown-editor-in-3-days-with-claude-code-9bn">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>Orca Bots——イベントを契機に Claude Code / Codex を並列で走らせる運用基盤</h3>
+<p>CI 失敗や Slack メンション、Gmail 受信、スケジュールを契機にエージェントを自律起動し、独立した Git worktree で複数の Claude Code / Codex を並列に動かせる。既存のサブスク、MCP、Skills、認証・開発環境をそのまま使え、作業中のエディタやターミナル、Git の状態を人間が引き継げる点が特徴。ただし公式のセキュリティ文書ではチャットの既定権限が「Full access」で、その設定を引き継いだ Bot も同じ権限になるため、権限境界を決めてから試したい。</p>
+<ul>
+<li><a href="https://x.com/connect24h/status/2123930261796823190">@connect24h のポスト</a></li>
+<li><a href="https://x.com/SotaNakamura_/status/2124160607326974135">@SotaNakamura_ のポスト</a></li>
+<li><a href="https://orca.dev/bots">Orca Bots の紹介ページを読む</a></li>
+<li><a href="https://zenn.dev/kg_motors_mibot/articles/orca-bot-intro">Zenn の紹介記事を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>andon——エージェントが実装・レビュー・マージまで流す「一人用ソフトウェア工場」</h3>
+<p>台帳（ledger）の課題を AI コーディングエージェントが拾い、実装・レビュー・マージまで進め、人間は本人にしかできない判断のときだけ呼ばれる、という設計の一人用ソフトウェア工場。どこまでをエージェントに任せ、どこに人間の承認を残すかという権限境界の切り方が、GitHub で公開された実装として読める。自分のエージェント運用に組み込む前提で、工程の分け方と受け渡しを確認したい。</p>
+<p class="links"><a href="https://github.com/mitaku/andon">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmitaku%2Fandon">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-21]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-21.html</link>

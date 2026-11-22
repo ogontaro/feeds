@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 21 Nov 2026 03:29:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 02:19:09 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-22]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-22.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-22.html</guid>
+            <pubDate>Sun, 22 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Sunshine v2026.1121.231041 — ペアリングの重複証明書と Flatpak の修正</h3>
+<p>自宅ゲームストリーミングの配信側である Sunshine の正式リリース。ペアリング時に重複したクライアント証明書を置き換える修正と、Flatpak 版でコマンドに接頭辞を付けなくて済む修正が入っており、配信ホストの接続が不安定だった環境や Flatpak で動かしている構成ほど更新の実利がある。Web UI のシングルページアプリケーション化も含めて管理画面の挙動が変わるため、上げる前に内容を確認しておきたい。同日 21:25 の v2026.1121.212520 と変更履歴が同一のため、新しいこちらの1本にまとめた。</p>
+<p class="links"><a href="https://github.com/SunshineStream/Sunshine/releases/tag/v2026.1121.231041">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FSunshineStream%2FSunshine%2Freleases%2Ftag%2Fv2026.1121.231041">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-21]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-21.html</link>

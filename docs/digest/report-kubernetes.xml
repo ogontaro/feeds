@@ -4,11 +4,24 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sat, 21 Nov 2026 03:10:42 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 02:05:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-22]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-22.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-22.html</guid>
+            <pubDate>Sun, 22 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Kubernetes 1.37 へのアップグレードを kind で90分リハーサルする12ステップ</h3>
+<p>kind と kubectl だけで、1.37 へのバージョンアップ手順を90分・12ステップで一度通してみるリハーサル形式の実践記事。本番に手を入れる前に手順の順序と引っかかりを潰しておけるので、戻しづらい自宅クラスタほど、アップグレード前の型としてそのまま使える。GitOps で宣言的に管理していても、コントロールプレーン側の更新手順は別に握っておく必要があり、その練習台を安く用意する方法として読む価値がある。</p>
+<p class="links"><a href="https://shattered.io/kubernetes-version-upgrade-1-37-rehearsal-kind-kubectl-12-steps/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fshattered.io%2Fkubernetes-version-upgrade-1-37-rehearsal-kind-kubectl-12-steps%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-21]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-21.html</link>
