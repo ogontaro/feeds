@@ -4,11 +4,32 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 22 Nov 2026 02:10:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 02:33:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-23.html</guid>
+            <pubDate>Mon, 23 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Amazon Bedrock の Nova Sonic 新バージョン「Nova 2.5 Sonic」を触って確かめた記事</h3>
+<p>音声対話向けモデル Nova Sonic の新しいバージョンが、告知に気づかないうちに Bedrock で使えるようになっていたことを DevelopersIO の記事が報告し、実際に動かして確かめている。音声エージェントを載せるかどうかを決める前に、まず手元で試して挙動の変化を把握しておきたい。新バージョンの提供開始は見落としやすいので、採用中の音声系ワークロードがあるなら確認の起点になる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/playing-with-amazon-nova-sonic/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS が既存コードから AI エージェント向けの仕様書を起こす「Reverse Spec Flow」を公開</h3>
+<p>コードベースから AI エージェントに渡す仕様書を生成する仕組みで、Kiro が広げた仕様駆動開発の流れを AWS 側が後押しする形になる。ポストでは Reversa より正確で、仕様のバグや不整合を洗い出せると評価されている。仕様を書いてから実装する進め方を、既存リポジトリへ後から持ち込むときの足がかりとして試す価値がある。</p>
+<ul>
+<li><a href="https://x.com/madmax99993/status/2124405117084651727">@madmax99993 のポスト</a></li>
+<li><a href="https://aws.amazon.com/jp/blogs/news/aidm-introducing-reverse-spec-flow/">リンク先を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-22]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-22.html</link>

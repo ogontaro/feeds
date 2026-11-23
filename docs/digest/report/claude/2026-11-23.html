@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 日次レポート 2026-11-23</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude 日次レポート 2026-11-23</h1>
+<article class="report"><h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Issue にラベルを付けて AI に仕事を渡す仕組み agent-dispatch を作った</h3>
+<p>Issue にラベルを付けるだけで、AI が仕様を書き、実装し、PR を作ってレビューまで進める仕組みの設計記録です。人間とエージェントの受け渡しを「ラベル」という最小のインターフェースに落とし込んだ点が実装的で、自分のリポジトリに持ち帰れる粒度になっています。LT で省いた判断理由とコードの該当箇所まで補っており、エージェントに仕事を渡す単位と、レビューで人間がどこに立つべきかを考える材料になります。</p>
+<p class="links"><a href="https://qiita.com/shotayagami/items/1fce6273b665bd7258e8">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code の mods を入れる前に調べたこと（備忘録）</h3>
+<p>2026-10-01 に導入された Claude Code の mods（TypeScript の小さな関数で動きや画面を変える仕組み）について、入れる前に何を確認すべきかを整理した記事です。モデルやプロンプトではなく外側の構成を設計する流れの入口で、どこまで mod に触らせるかという権限まわりの判断に直結します。導入前のチェックリストとしてそのまま使えます。</p>
+<p class="links"><a href="https://qiita.com/ussu_ussu_ussu/items/d2416096c85ab0d4a13a">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code の deny ルールは、捨てリポジトリで試してから信じる</h3>
+<p>deny ルールは書くだけでは足りず、「破ろうとしたときに本当に止まるか」を試していないと単なる願望になる、という指摘が刺さる記事です。ルールはコマンド文字列にマッチする仕様なので、迂回しうる書き方を捨てリポジトリで確認する手順を示しています。権限境界を「設定したつもり」で終わらせないための、すぐ実践できる進め方です。</p>
+<p class="links"><a href="https://dev.to/madsalt_tech/test-your-claude-code-deny-rules-in-a-scratch-repo-before-you-trust-them-2bon">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fmadsalt_tech%2Ftest-your-claude-code-deny-rules-in-a-scratch-repo-before-you-trust-them-2bon">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Apple Silicon Mac 向けローカル型コーディングエージェント「LocalCode」が公開</h3>
+<p>Apple Silicon Mac 上で動くローカル型コーディングエージェントの公開が報じられました。クラウドに出さずにエージェントを動かせる構成は、自宅環境での選択肢として押さえておきたいところです。一次情報はまだ薄いので、対応モデル・権限の持ち方・料金は発表元で確かめてから触るのがよさそうです。</p>
+<p class="links"><a href="https://news.lavx.hu/article/mjwsolo-publishes-localcode-a-local-coding-agent-for-apple-silicon-macs">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.lavx.hu%2Farticle%2Fmjwsolo-publishes-localcode-a-local-coding-agent-for-apple-silicon-macs">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>150 行の Python で Agent Harness を自作して仕組みを理解する</h3>
+<p>ツール実行・簡易ガードレール・可観測性・コンテキスト保護に絞り、150 行程度の Python で Harness を自作する記事です。モデルを差し替えても動く外側の作りを自分で書くと、Claude Code が内部で何をしているかの見取り図になります。フレームワークを入れる前に、Harness のどの部品が効いているのかを確かめたい人向けです。</p>
+<p class="links"><a href="https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962">記事を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

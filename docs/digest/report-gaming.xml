@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Sun, 22 Nov 2026 02:19:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 02:43:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-23.html</guid>
+            <pubDate>Mon, 23 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>CachyOS 2026年11月リリース、Easy Anti-Cheat Linux v2 に対応</h3>
+<p>Epic Games の Epic Games Launcher Preview の Linux 対応と Easy Anti-Cheat Linux v2 の登場に合わせ、CachyOS がその動作に必要な対応を取り込んだ。EAC はこれまで Linux／Steam Deck で対戦系タイトルを動かす際の主要な障壁だったため、ディストリビューション側が対応を出したことは、自宅のゲーミング環境を Linux 前提で組み直すかの判断材料になる。ARM やストリーミングの話ではないが、Proton 互換の実効範囲が広がる方向の変化として押さえておきたい。</p>
+<p class="links"><a href="https://www.gamingonlinux.com/2026/11/cachyos-november-2026-release-brings-support-for-easy-anti-cheat-linux-v2/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.gamingonlinux.com%2F2026%2F11%2Fcachyos-november-2026-release-brings-support-for-easy-anti-cheat-linux-v2%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-22]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-22.html</link>
