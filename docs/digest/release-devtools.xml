@@ -4,11 +4,59 @@
         <title>開発ツール リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>開発ツール 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 16 Nov 2026 02:30:43 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 03:06:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[開発ツール リリースレポート 2026-11-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-11-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/devtools/2026-11-23.html</guid>
+            <pubDate>Mon, 23 Nov 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>mise 2026.11.12</h3>
+<p><strong>破壊的変更</strong>: なし<br><code>mise audit</code> が追加され、設定中のツールのバージョンを OSV.dev のアドバイザリと突き合わせて一覧表示する。脆弱性があれば終了コード 1 を返すので CI のゲートにそのまま使え、<code>--json</code> で機械可読な出力も得られる。<code>mise upgrade --vulnerable</code> は既知の脆弱性があるツールだけを更新し、<code>--bump</code> を付けない限り設定レンジ内に留まる。<br><code>mise prune --system</code> が root 所有のシステムインストール領域の不要バージョンを sudo 経由で削除する。<code>mise upgrade</code> もアップグレード後にシステムインストールの旧版を <code>upgrade.prune_after</code> の猶予後に掃除するようになり、これまで無限に溜まっていた旧バージョンが残らなくなった。<br>ツール単位の <code>bump = false</code> で <code>mise upgrade --bump</code> / <code>mise outdated --bump</code> の対象から外せる。topgrade のように <code>mise upgrade</code> を代行するツールが <code>mise.toml</code> のエントリを書き換えてしまうのを防げるので、自宅の mise 管理ツールはこれで固定するとよい。ほかにドットファイルグループの <code>root</code> 省略時の既定値変更、<code>mise reshim --system</code> の修正など。</p>
+<p class="links"><a href="https://github.com/jdx/mise/releases/tag/v2026.11.12">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjdx%2Fmise%2Freleases%2Ftag%2Fv2026.11.12">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Docker Engine 29.10.0</h3>
+<p><strong>破壊的変更</strong>: <code>insecure-registries</code> を明示した構成では、ループバックアドレス(127.0.0.0/8、::1/128)が自動的に insecure 扱いされなくなった。<code>daemon.json</code> に <code>insecure-registries</code> を書いている場合、HTTP や自己署名証明書のローカルレジストリ(localhost:5000 など)への push/pull が失敗しうるので、必要なアドレスを明示的に追加するか TLS を設定する。<code>&quot;insecure-registries&quot;: []</code> は既定の insecure レジストリをすべて無効化する。<br>Engine API の仕様書が OpenAPI 3.2 に移行し、Swagger 2.0 は当面生成物として併設されるが、今後の API バージョンでは per-version の Swagger 2.0 コピーは出なくなる。ツール側が古い仕様ファイルを読んでいる場合は要更新。<br>実験的拡張として、デーモンが直接管理するワンショット/ cron ジョブ(<code>--enable-extension org.mobyproject.jobs.v0</code>)が追加され、<code>/etc/docker/containerd.d/</code> で組み込み containerd を設定ファイルでカスタマイズできるようになった。ローカル開発クラスタで「cron のためだけに別スケジューラを立てる」必要がなくなる可能性がある。AlmaLinux / Oracle Linux / Rocky Linux 向けパッケージも追加。<code>v2.0.0-beta.31</code>(ベータ)も同時期に出ているが、内容の記載はなし。</p>
+<p class="links"><a href="https://github.com/moby/moby/releases/tag/docker-v29.10.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fmoby%2Fmoby%2Freleases%2Ftag%2Fdocker-v29.10.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Devbox 0.22.0</h3>
+<p><strong>破壊的変更</strong>: 隠しコマンド <code>devbox log</code>(shell-ready / time-to-interactive のテレメトリ)が削除され、代替はない。2024 年半ば以降発火していなかった <code>.envrc</code> の古い警告と <code>DEVBOX_NO_ENVRC_UPDATE</code> も削除された。<br>性能改善が中心で、lockfile に無いパッケージの並列解決、<code>nix path-info</code> のバッチ化と nixpkgs のプリフェッチ 1 回化、<code>devbox update</code> の並列化(変更のあったパッケージだけ再計算)、環境計算時の runx / script / state-hash の重複処理の削減により、install・update・shell 起動が速くなった。<br><code>NIX_SSL_CERT_FILE</code> / <code>SSL_CERT_FILE</code> を自分で設定している場合(社内プロキシ環境など)、<code>nss-cacert</code> を引くパッケージの追加時に上書きされなくなった。0.21.0 で壊れていた Devbox Docker イメージのビルドも修正。<code>devbox global</code> の shell 起動が速くなるので、常用していれば上げる価値がある。</p>
+<p class="links"><a href="https://github.com/jetify-com/devbox/releases/tag/0.22.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fjetify-com%2Fdevbox%2Freleases%2Ftag%2F0.22.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>uv 0.13.9</h3>
+<p><strong>破壊的変更</strong>: なし(ソースからビルドする場合のみ、最低 Rust バージョンが 1.98 に上がる)<br>プレビュー機能として PEP 832 の <code>.venv</code> リダイレクトファイルをプロジェクト環境でサポート。<code>.venv</code> を実体へのポインタにできるため、ビルドキャッシュやエージェント用サンドボックスで仮想環境を共有しやすくなる。HTTP/2 の keep-alive プレビュー機能(<code>http2-keep-alive</code>)は応答の無いコネクションを閉じる。<br>環境マーカーの繰り返し条件をくくり出すことで lockfile が小さくなり、読み込みも高速化。インデックスが別パッケージ名で広告した wheel を拒否する修正、<code>uv lock --locked</code> が等価だが表記の違うプラットフォームマーカーを拒否していた問題の修正、アポストロフィを含むマーカー値の引用の修正が入っている。</p>
+<p class="links"><a href="https://github.com/astral-sh/uv/releases/tag/0.13.9">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fastral-sh%2Fuv%2Freleases%2Ftag%2F0.13.9">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>GitHub CLI 2.105.0</h3>
+<p><strong>破壊的変更</strong>: なし<br><code>gh event</code> コマンド群(プレビュー)が追加され、PR のレビュー投稿やチェックスイート完了などのイベントを GitHub Event Streams 経由で待ち受けられるようになった。<code>gh event listen --resource &lt;PR URL&gt; --event com.github.pull_request.review.submitted.v1</code> のように指定すると、ポーリングせずに最初のイベントで終了する(<code>--count</code> で複数、<code>--follow</code> で継続)。イベントは CloudEvent JSON で出力され、<code>--jq</code> でそのまま絞り込める。<br>エージェントに「PR のレビューが付くまで待つ」を指示するとき、これまで <code>gh pr view</code> を回すしかなかったのがイベント購読に置き換わる。<code>gh pr</code> / <code>gh api</code> 利用時に <code>gh event listen</code> を提案する仕組みも入っており、コーディングエージェントの待ち合わせ手段として素直に adoption しやすい。Event Streams 自体はプレビューでウェイトリスト制。</p>
+<p class="links"><a href="https://github.com/cli/cli/releases/tag/v2.105.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcli%2Fcli%2Freleases%2Ftag%2Fv2.105.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Node.js 27.0.0-alpha.0.1.0 / 0.1.1 (Alpha)</h3>
+<p><strong>破壊的変更</strong>: なし(alpha のため常用環境への移行対象外)<br><code>child_process</code> に <code>subprocess.timedOut</code> が追加され、タイムアウトで落ちたのかを終了後に判別できる。<code>crypto</code> は CSR 対応の X.509 証明書生成と、検査用のゲッター群・明示的なガードが入った。<code>dns.lookup()</code> の同一同時リクエストが 1 回にまとめられ、SEA の VFS モジュールにコンパイルキャッシュを生成、worker でストリームを起動スナップショットに先読みする変更も入っている。0.1.1 は darwin の tarball で <code>bin/node</code> を notarize する修正と依存更新のみ。</p>
+<p class="links"><a href="https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.1.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fnodejs%2Fnode%2Freleases%2Ftag%2Fv27.0.0-alpha.0.1.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Bun v1.4.5</h3>
+<p><strong>破壊的変更</strong>: なし<br>バグ修正と依存更新が中心。詳細は Bun ブログのリリースノートを参照(リポジトリ側のノートには記載なし)。</p>
+<p class="links"><a href="https://github.com/oven-sh/bun/releases/tag/bun-v1.4.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Foven-sh%2Fbun%2Freleases%2Ftag%2Fbun-v1.4.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>ナイトリービルド(Neovim / Yazi / Ghostty)</h3>
+<p><strong>破壊的変更</strong>: なし<br>いずれも nightly / tip の自動ビルドで、個別の変更点はノートに記載されていない。常用するならタグ付きリリースを使う。</p>
+<p class="links"><a href="https://github.com/neovim/neovim/releases/tag/nightly">Neovim nightly</a> <a href="https://github.com/sxyazi/yazi/releases/tag/nightly">Yazi nightly</a> <a href="https://github.com/ghostty-org/ghostty/releases/tag/tip">Ghostty tip</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[開発ツール リリースレポート 2026-11-16]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/devtools/2026-11-16.html</link>

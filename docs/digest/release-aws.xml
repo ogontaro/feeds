@@ -4,11 +4,31 @@
         <title>AWS リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 16 Nov 2026 02:22:53 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 03:01:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS リリースレポート 2026-11-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/aws/2026-11-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/aws/2026-11-23.html</guid>
+            <pubDate>Mon, 23 Nov 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Karpenter (aws) v1.15.3 / v1.14.4 (LTS) / v1.9.4 (LTS)</h3>
+<p><strong>破壊的変更</strong>: あり。<code>EC2NodeClass</code> の selector term で空の <code>tags</code> マップ・<code>name</code>・<code>ssmParameter</code> が無視されるようになった。該当する空値をアップグレード前に削除する必要がある。全 term が空の <code>EC2NodeClass</code> は <code>NotReady</code> になり、既存ノードも自動では置き換わらない(修正後に手動で置き換える)。一部だけ空の場合は選択対象が狭まり、新たな選択範囲外のノードは drifted として置き換えられる。owner 付きで値が空の AMI term は何も選択しなくなるため、owner の全 AMI を選ぶには <code>name: &quot;*&quot;</code> を併記する。CRD のアップグレードは不要。</p>
+<p>3 系統すべてに同一の修正(#9964)がバックポートされた。空フィルタの selector term をスキップするバグ修正が中身で、機能追加はない。LTS は v1.14 系が 2027 年 7 月、v1.9 系が 2027 年 2 月までサポートされる。自宅クラスタで Karpenter の <code>EC2NodeClass</code> に空の selector を書いていないか、アップグレード前に確認しておきたい。</p>
+<p class="links"><a href="https://github.com/aws/karpenter-provider-aws/releases/tag/v1.15.3">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Faws%2Fkarpenter-provider-aws%2Freleases%2Ftag%2Fv1.15.3">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>terraform-aws-eks v21.30.0 〜 v21.30.2</h3>
+<p><strong>破壊的変更</strong>: なし</p>
+<p><code>placement.group_id</code> をノードグループの起動テンプレートで指定できるようになった(v21.30.0)。Bottlerocket の NVIDIA FIPS AMI タイプを user data と SSM パラメータのマップに追加(v21.30.1)。クラスタ参照を <code>local.create</code> でガードし、<code>ami_type</code> の null チェックを整理するバグ修正(v21.30.2)。既存構成への影響はなく、そのままバージョンを上げられる。Terraform で EKS を管理しているなら追随しておきたい。</p>
+<p class="links"><a href="https://github.com/terraform-aws-modules/terraform-aws-eks/releases/tag/v21.30.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fterraform-aws-modules%2Fterraform-aws-eks%2Freleases%2Ftag%2Fv21.30.2">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS リリースレポート 2026-11-16]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/aws/2026-11-16.html</link>

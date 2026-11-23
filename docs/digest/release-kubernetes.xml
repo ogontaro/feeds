@@ -4,11 +4,89 @@
         <title>Kubernetes リリースレポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系ツールの週次リリースまとめ（Claude が注目リリースを選定）</description>
-        <lastBuildDate>Mon, 16 Nov 2026 02:27:47 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 03:05:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各リリースノートの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes リリースレポート 2026-11-23]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-11-23.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-11-23.html</guid>
+            <pubDate>Mon, 23 Nov 2026 22:30:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今週のリリース</h2>
+<section class="item">
+<h3>Argo CD v3.4.14 / v3.5.8 / v3.6.2</h3>
+<p><strong>破壊的変更</strong>: なし（各系列のパッチリリース）<br>3 系列が同日に出た。すべてに CVE-2026-77299（dlclark/regexp2）の修正が入るため、動いている系列に合わせて早めに上げたい。AppProject の destination deny（<code>!name</code> / <code>!server</code>）が一致しているのに拒否してしまう問題も修正。gitops-engine がクラスタごとにデコード済み OpenAPI ドキュメントを保持し続けるメモリ増と、圧縮マニフェストキャッシュの過剰確保も解消され、1 つの Argo CD で多数クラスタを見るほど効く。3.6.2 では <code>manifest-generate-paths</code> に変更がないときサーバーサイド diff キャッシュを維持する修正も入る。</p>
+<p class="links"><a href="https://github.com/argoproj/argo-cd/releases/tag/v3.6.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fargoproj%2Fargo-cd%2Freleases%2Ftag%2Fv3.6.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Cilium 1.18.17 / 1.19.11 / 1.20.5</h3>
+<p><strong>破壊的変更</strong>: なし<br>最優先は egress ポリシーで <code>toServices</code> と <code>toPorts</code> を組み合わせた際、参照先 Service が存在しない／セレクタ付きでバックエンドが無い場合に、任意の宛先の該当ポートが通ってしまうバグの修正。ポリシー回避につながるので早めの適用が望ましい。加えて <code>--encryption-strict-egress-cidr</code> にホストビットがあると平文通信が通る問題、NodePort/HostPort の送信元ポート再利用時に Pod 宛通信がタイムアウトする問題、L7 リダイレクト ID をパーサ種別で分離して同一ポートの http と tls を別リスナーにする変更、Hubble フローの URL クエリのマスク漏れ修正が入る。1.20.5 のみ ID アロケータの容量・使用率メトリクスも追加。</p>
+<p class="links"><a href="https://github.com/cilium/cilium/releases/tag/v1.20.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcilium%2Fcilium%2Freleases%2Ftag%2Fv1.20.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Backstage v1.54.11 / v1.54.12 / v1.55.5 / v1.56.6 / v1.57.0 / v1.57.1</h3>
+<p><strong>破壊的変更</strong>: v1.57.0 でフロントエンドシステムが 1.0 になり、ルーター非依存ナビゲーションへ移行。<code>RouterBlueprint</code> と <code>convertLegacyAppOptions({ components: { Router } })</code> が廃止、<code>@backstage/frontend-plugin-api/alpha</code> が削除、<code>IconComponent</code> が <code>IconElement</code> に置き換わる。<br>目玉はフロントエンドシステム 1.0。ページごとに React Router v6/v7・TanStack Router を選べ、<code>useAppNavigate</code> などのフレームワーク API でルーター非依存に遷移できる。既存アプリは移行ガイドに沿った対応が必要。1.57.1 は 1.56 系のパッケージ版数が 1.57 より上に出てしまい caret 範囲が古い方を解決する問題の修正で、<code>versions:bump</code> で追随する（コード変更なし）。セキュリティ面では kubernetes-backend が呼び出し元の <code>Authorization</code> / <code>Cookie</code> ヘッダを対象クラスタへ転送しなくなった点、scaffolder の <code>targetPath</code> と <code>filesToDelete</code> で絶対パスや <code>..</code> を拒否する点が入っており、Backstage 経由でクラスタを触る構成では上げ得。</p>
+<p class="links"><a href="https://github.com/backstage/backstage/releases/tag/v1.57.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fbackstage%2Fbackstage%2Freleases%2Ftag%2Fv1.57.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Crossplane v2.5.0-rc.1 / v2.6.0-rc.0</h3>
+<p><strong>破壊的変更</strong>: v2.5 で <code>status.crossplane</code> が Crossplane の予約領域になる。XRD が独自フィールドをそこに置いている場合は別の status フィールドへ移す必要がある（レガシー XR は影響なし）。いずれも RC で本番投入は不可。<br>v2.5.0-rc.1 で関数による削除制御（alpha、<code>Foreground</code> / <code>Pipeline</code> で順序付き teardown と削除フック）が入り、長年の要望だった #5092 に対応。Composition のパイプラインステップから関数を OCI ダイジェストで直接参照でき、CompositionRevision ごとに関数版が固定されるため段階的なロールアウトが可能になった。未使用 CompositionRevision の GC も alpha で追加。クラスタ内全 CRD の OpenAPI スキーマをキャッシュしないようにしてヒープが約 338→190MiB に減っており、少ないリソースの自宅クラスタでは効く。v2.6.0-rc.0 は次系列の RC。</p>
+<p class="links"><a href="https://github.com/crossplane/crossplane/releases/tag/v2.5.0-rc.1">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcrossplane%2Fcrossplane%2Freleases%2Ftag%2Fv2.5.0-rc.1">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>CloudNativePG v1.30.2</h3>
+<p><strong>破壊的変更</strong>: PostgreSQL 14 がサポート対象外に（2026-11-12 でコミュニティの修正が終了）。operator が leases の delete 権限を要求するため、RBAC を手で管理している場合は追加が必要。<br>デフォルトイメージが PostgreSQL 18.7-system-trixie になり複数の CVE が修正されるが、適用されるのはイメージ未指定の新規クラスタのみ。既存クラスタは <code>imageName</code> か ImageCatalog で 18.7 / 17.12 / 16.16 / 15.20 のいずれかへ明示的に上げる。SSE-C（<code>s3Credentials.sseCustomerKey</code>）対応、WAL アーカイブからの復元が続いてストリーミングに移れないスタンバイの救済、サイドカープラグイン有効化時に再作成されない Pod がクラッシュループする問題の修正も入る。</p>
+<p class="links"><a href="https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fcloudnative-pg%2Fcloudnative-pg%2Freleases%2Ftag%2Fv1.30.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Velero v1.19.0-rc.2</h3>
+<p><strong>破壊的変更</strong>: RC のため本番投入は不可。1.19 のアップグレードガイドを先に読むこと。<br>ブロックデータムーバー（velero-block）が CSI Changed Block Tracking API と組み合わさり、対応ドライバでは増分バックアップ／レストアで変更ブロックだけを転送する（ファイルシステム走査が不要）。ボリュームデータのインプレース復元（フル／増分、clone-and-restore 併用可）、ResourcePolicy ConfigMap による名前空間・リソース種別単位の細かいフィルタ、名前空間ラベルでの選択、グローバルボリュームポリシーが入る。自宅クラスタのバックアップを Velero で回しているなら、転送量と復旧時間の短縮が効く。</p>
+<p class="links"><a href="https://github.com/velero-io/velero/releases/tag/v1.19.0-rc.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fvelero-io%2Fvelero%2Freleases%2Ftag%2Fv1.19.0-rc.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>HolmesGPT 0.47.0 / 0.47.1-alpha</h3>
+<p><strong>破壊的変更</strong>: なし<br>Kubernetes MCP アドオンを Holmes Pod 内でマウントした kubeconfig により実行するようになり、そこでは bash を無効化する構成になった。<code>kubernetes/logs</code> が既定で他クラスタにも公開されるようになり、Pod 障害の結論を出す前にアラート履歴を確認するようになった。YAML ツールの Jinja テンプレートは <code>SandboxedEnvironment</code> に変わり <code>_</code> 始まりの属性が読めなくなり、ヘッダーのシェルメタ文字検査は実際にテンプレートが読んだ値だけに適用される（既定の <code>Accept: */*</code> で kubectl を含むツールが全滅していた問題の修正）。AI SRE として自宅クラスタの一次調査に使っているなら、ツール定義の検証まわりが安全側に倒れた形。</p>
+<p class="links"><a href="https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FHolmesGPT%2Fholmesgpt%2Freleases%2Ftag%2F0.47.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Loki v3.6.22 / v4.0.0-rc.4 / Helm chart 7.7.0</h3>
+<p><strong>破壊的変更</strong>: 4.0 で未使用の <code>max_chunks_per_query</code> リミットが削除される。<br>4.0.0-rc.4 は RC で、v4 のデフォルト／YAML 設定のバックポート、Logs Drilldown の系列上限到達時の挙動、<code>golang.org/x/net</code> などのセキュリティ更新が中心。安定運用なら 3.6.22（downstreamer の goroutine リーク修正と <code>otel/sdk/log</code> の MEDIUM セキュリティ更新）を取り込むのが無難。Helm chart 7.7.0 も出ている。</p>
+<p class="links"><a href="https://github.com/grafana/loki/releases/tag/v4.0.0-rc.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Floki%2Freleases%2Ftag%2Fv4.0.0-rc.4">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Mimir 3.1.11 / 3.2.6</h3>
+<p><strong>破壊的変更</strong>: なし<br>CVE 修正のみ（Go 1.26.11、<code>klauspost/compress</code> v1.20.2、OpenTelemetry v1.47.0）。内容はバグ修正と依存更新。</p>
+<p class="links"><a href="https://github.com/grafana/mimir/releases/tag/mimir-3.2.6">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgrafana%2Fmimir%2Freleases%2Ftag%2Fmimir-3.2.6">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>external-dns Helm chart 1.24.0</h3>
+<p><strong>破壊的変更</strong>: なし<br>DNSEndpoint / DNSRecord CRD に admission validation が付き、webhook プロバイダの securityContext が restricted Pod Security Standard を満たす既定（特権昇格なし・capability なし・読み取り専用 rootfs）になった。<code>fqdnTemplates</code>（FQDN テンプレートでレコード生成）、<code>eventsEmit</code>、<code>hostUsers</code>（user namespace で Pod を動かす）の新しい値が追加。同梱イメージは ExternalDNS v0.24.0。</p>
+<p class="links"><a href="https://github.com/kubernetes-sigs/external-dns/releases/tag/external-dns-helm-chart-1.24.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fkubernetes-sigs%2Fexternal-dns%2Freleases%2Ftag%2Fexternal-dns-helm-chart-1.24.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>SeaweedFS 4.54 / 4.55</h3>
+<p><strong>破壊的変更</strong>: なし<br>4.54 で S3 Vectors とベクターエンジン（S3 Tables / Iceberg 連携、Lance セッションの再利用、Helm でのベクター管理）、S3 ライフサイクルのチェックポイント永続化とフェイルオーバが入る。s3api の署名検証・バケットポリシー条件評価・バージョン付きバケットの条件付き DeleteObject など、認可まわりの修正が多い。4.55 は filer / mount / volume の不具合修正と、Helm で volume の DNS 探索と ingress トラフィックを分離する修正が中心。S3 互換ストレージとして自宅で使うなら、署名・ポリシー系の修正が効く。</p>
+<p class="links"><a href="https://github.com/seaweedfs/seaweedfs/releases/tag/4.55">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fseaweedfs%2Fseaweedfs%2Freleases%2Ftag%2F4.55">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Reloader v1.4.25 / v2.0.0-beta.3</h3>
+<p><strong>破壊的変更</strong>: なし<br>バグ修正と依存更新。v2 系は beta で、<code>golang.org/x/net</code> v0.62.0 への追随が入っている。</p>
+<p class="links"><a href="https://github.com/stakater/Reloader/releases/tag/v1.4.25">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstakater%2FReloader%2Freleases%2Ftag%2Fv1.4.25">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Helmfile v1.8.5</h3>
+<p><strong>破壊的変更</strong>: なし<br>values ファイルの非文字列マップキーを文字列化する修正と、同梱 Helm の v4.3.2 への追随。内容はバグ修正と依存更新。</p>
+<p class="links"><a href="https://github.com/helmfile/helmfile/releases/tag/v1.8.5">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fhelmfile%2Fhelmfile%2Freleases%2Ftag%2Fv1.8.5">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Goldilocks v4.16.4</h3>
+<p><strong>破壊的変更</strong>: なし<br>バグ修正と依存更新（checksums.txt とイメージは cosign で署名）。</p>
+<p class="links"><a href="https://github.com/FairwindsOps/goldilocks/releases/tag/v4.16.4">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FFairwindsOps%2Fgoldilocks%2Freleases%2Ftag%2Fv4.16.4">Google 翻訳で読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes リリースレポート 2026-11-16]]></title>
             <link>https://ogontaro.github.io/feeds/digest/release/kubernetes/2026-11-16.html</link>

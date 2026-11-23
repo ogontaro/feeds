@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude リリースレポート 2026-11-23</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Claude リリースレポート 2026-11-23</h1>
+<article class="report"><h2>今週のリリース</h2>
+<section class="item">
+<h3>Claude Code v2.1.326–v2.1.330</h3>
+<p><strong>破壊的変更</strong>: なし。ただし v2.1.328 で Amazon Bedrock・Google Cloud の Agent Platform・Microsoft Foundry・Claude apps gateway 上の Opus 4.6 / Sonnet 4.6 に auto モードが追加され、権限モードを指定しない対話セッションは auto で開始する。第三者ゲートウェイ経由で権限境界を前提にしている場合は既定の変化を確認したい。同じ v2.1.328 で zsh の <code>=cmd</code> がコマンドのパスに展開されなくなり、v2.1.326 からは設定ファイルの 64 段より深いネスト値が警告付きで捨てられる。<br>v2.1.330 で Anthropic の Enterprise Admin Console 管理組織へのサインインに対応し、組織の設定とクラウドプロバイダー／ゲートウェイが適用される。組み込み mod の <strong>easel</strong> が Pro / Max（対応環境では Team / Enterprise）の macOS・Linux で有効になり、MCP のメトリクス結果の下などに自動でグラフを描く（<code>/config</code> で自動描画をオフにできる）。v2.1.326〜327 では Code Mode と agent teams の併用、<code>claude mcp add-json -</code> による stdin からのトークン入力（セッション内では不可）、<code>/status</code> での壊れた agent / skill / command ファイルや一致しない hook matcher の一覧表示が入った。<br>修正は並行実行と長時間セッションに効くものが中心。別の Claude Code セッションが作業中の worktree を ExitWorktree が削除する問題、複数プロセスが同時に設定を保存すると変更が消える問題、MCP ツールの input schema が原因でセッションファイルが数 MB 膨らみターンが失敗する問題、長時間会話の compact 直後に数分フリーズする問題、WebFetch がセッションごと固まる問題、<code>~/.claude.json</code> が既定値に戻る問題、Code Mode の暴走ループがメモリを食い尽くす問題を修正した。<br>hooks の宣言場所を trust dialog に出す変更や <code>/tasks</code> への <code>/loop</code> wakeup・fork の表示も入り、権限・ツール・指示を配布物として管理する流れがさらに進んでいる。</p>
+<p class="links"><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.330">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanthropics%2Fclaude-code%2Freleases%2Ftag%2Fv2.1.330">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>opencode v2.3.1–v2.3.2 / v1.19.6 / process-daemon v0.6.0</h3>
+<p><strong>破壊的変更</strong>: v2.3.1 で foreground の <code>timeout: 0</code> が「コマンド終了まで待つ」から既定の 120 秒に変わり、<code>shell_timeout_background</code> と <code>experimental.background_compaction</code> は廃止（設定は読み込まれるが無視される）。v1.19.6 は OpenCode 1 から 2.0 へのアップグレードを案内し、<strong>OpenCode 1 向けのプラグインは更新が必要</strong>。2.0 本体はバックグラウンドでダウンロードされ、再起動時・終了時・後で、を選んでインストールする方式で、セッション・プロジェクト・設定は保持される。<br>v2.3.2 の目玉は <strong>GPT-6.2 のプロンプトキャッシュ修正</strong>。Responses の <code>instructions</code> フィールドに送っていた system prompt が毎ステップ非キャッシュ入力として再課金されていたのを、先頭の developer メッセージとして送ることで 2 ステップ目以降キャッシュさせる。GitHub Copilot の <code>gpt-6.2-sol</code> では 1 ステップあたりの非キャッシュ入力が約 14,000 トークンから 3 トークンに減り、<code>/responses/compact</code> 経由の圧縮も同じキャッシュ済みプレフィックスを読む。<br>v2.3.1 ではタイムアウトしたシェルコマンドが kill されずバックグラウンドに移って完走するようになり、長時間のビルドやテストに向く。バックグラウンド compaction が既定オン（<code>compaction.background: false</code> で無効。使われなかった要約もトークンを消費する）、ChatGPT サインインで GPT 6.2 Sol / Astra を選択可能、AGENTS.md が無いディレクトリでは CLAUDE.md を読む挙動が復活（<code>OPENCODE_DISABLE_CLAUDE_CODE</code> で抑止）、実験的 schedules が automations に改名された。<br>v1.19.6 は画像が多いセッションで履歴が 25 MiB を超えると古い画像をプレースホルダーに置き換える。process-daemon v0.6.0 は <code>@opencode/pty</code> 0.6.0（protocol 9）の公開のみ。</p>
+<p class="links"><a href="https://github.com/anomalyco/opencode/releases/tag/v2.3.2">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fanomalyco%2Fopencode%2Freleases%2Ftag%2Fv2.3.2">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Codex CLI 0.170.0–0.171.0</h3>
+<p><strong>破壊的変更</strong>: 0.171.0 で <strong>TUI ワークスペースが既定で有効</strong>になり、検索可能なドキュメントプレビュー・画像プレビュー・サブエージェントの transcript がメイン会話の横に出る。0.170.0 の同名 MCP サーバーを環境別に使う機能は実験的扱い。<br>0.171.0 ではモデルカタログに GPT-6.2 Sol / Astra が追加され Sol が既定選択になった。undo / redo のショートカットを設定でき、添付ファイルや大きな貼り付けも復元される。<code>codex exec --remote &lt;ADDR&gt;</code> で既存の app server 上の非対話セッションを開始・再開でき、<code>/rc</code>・<code>/remote</code> でリモート制御とデバイスペアリングを TUI から扱える。<code>/statusline</code> で MCP ステータスラインの選択・作成も可能。<br>0.170.0 は TUI のリアルタイム音声通話に WebRTC ネゴシエーション、OpenTelemetry HTTP エクスポーターの認証ヘッダー自動更新、環境をまたぐ同名 MCP サーバーの実験的対応を追加。MCP OAuth の資格情報競合、Cloud 会話の自動再接続、Windows のファイル置換とサンドボックス権限保持を修正した。<br>セッション切り替え・再開時の下書きと予約済みフォローアップの保持、作業ディレクトリ変更時の権限プロファイル維持も入り、並行作業の取りこぼしが減っている。0.171.0-alpha.13 / 13.1、0.172.0-alpha.1 / 2、0.173.0-alpha.1〜4 はリリースノート未記載のためバグ修正と依存更新のみ。</p>
+<p class="links"><a href="https://github.com/openai/codex/releases/tag/rust-v0.171.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fopenai%2Fcodex%2Freleases%2Ftag%2Frust-v0.171.0">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>Orca 1.4.263–1.4.271 / Android 0.0.68</h3>
+<p><strong>破壊的変更</strong>: なし。ただし <strong>Orca Bots はベータ</strong>で、デスクトップを更新してもスマホ側の機能は入らず、対応するモバイルビルドが必要。1.4.271 の既知の問題として、アプリ再起動後や使用量上限エラー後にボットが作業を途中で止めることがあり、次版で修正予定と明記されている。<br>今週の中心は Orca Bots の対応エージェント拡大。1.4.268 で Cursor・GitHub Copilot・Hermes、1.4.269 で Kiro・Kimi Code・Auggie・Gemini CLI・Kilo Code・MiMo Code・Droid・Goose、1.4.271 で Qwen Code が加わり、ペアリングした複数コンピュータのボットを 1 つのグループに混在させられるようになった。グループ rooms では応答中の <code>@name</code> が次のターンをそのメンバーに渡す。<br>スマホからエージェントを運用する機能も一気に増えた。1.4.271 で自動化の編集、Slack / Linear / GitHub / Google / Composio の接続、リンクでの共有、OpenClaw / Hermes からのインポート、メモリとスキルの管理。1.4.269 でエージェントへの回答・ツール承認・アクセス要求のレビューができる。<br>1.4.266 で Antigravity のサインインに Gemini API キー / Google Agent Platform（ADC）を選べるようになり、ホストにエージェントが無い場合は Orca が自前のコピーを導入する。1.4.265 で自動更新（既定オフ）、1.4.263 で Hermes を Chat で再開・ブラウザ拡張のサイドパネル・Linear の CLI 接続が入った。1.4.268〜269 ではアニメーションや資格情報読み取りの最適化、アイドル時 Mac の CPU 削減などの軽量化も進んでいる。<br>Android 0.0.68 は新規タブで Chat / CLI を選べる開始画面、エージェント履歴のフィルタと全文検索、未読ベル、返信の引用。ペアリング先ホストも更新しないと一部機能は出ない。</p>
+<p class="links"><a href="https://github.com/stablyai/orca/releases/tag/v1.4.271">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fstablyai%2Forca%2Freleases%2Ftag%2Fv1.4.271">Google 翻訳で読む</a></p>
+</section>
+<section class="item">
+<h3>GitHub MCP Server 2.2.0</h3>
+<p><strong>破壊的変更</strong>: サーバーの instructions をやめ、フィルタ済みの <strong>MCP skills</strong> を返す方式に変わった（&quot;The one with Skills&quot;）。サーバー指示の文面に依存したクライアント設定やプロンプトがある場合は見直しが要る。<br>secret scanning アラートのツールに任意のシークレット隠蔽を追加し、公開エージェント自動化ツールを新設。空の補完結果を非 nil で返す修正と、validation error の capacity オーバーフロー修正も入った。<br>MCP サーバーを自作・運用する立場では、ツール説明を skills として必要な分だけ配る設計の先例になる。文脈を圧迫しがちな巨大な instructions を避けたいときに参考になる。</p>
+<p class="links"><a href="https://github.com/github/github-mcp-server/releases/tag/v2.2.0">リリースを見る</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fgithub%2Fgithub-mcp-server%2Freleases%2Ftag%2Fv2.2.0">Google 翻訳で読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
