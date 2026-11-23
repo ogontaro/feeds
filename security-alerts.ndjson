@@ -1262,3 +1262,7 @@
 {"date":"2026-11-23T01:49:07.694Z","id":"CVE-2026-134815","kev":false,"reported":false}
 {"date":"2026-11-23T01:49:07.694Z","id":"CVE-2026-134838","kev":false,"reported":false}
 {"date":"2026-11-23T01:49:07.694Z","id":"CVE-2026-134624","kev":false,"reported":false}
+{"date":"2026-11-23T13:05:10.109Z","id":"CVE-2026-134882","kev":false,"reported":false}
+{"date":"2026-11-23T13:05:10.109Z","id":"CVE-2026-120382","kev":false,"reported":true,"title":"Synology DSM の OAuth API で任意ファイルの読み書きとサービス停止をさせられる","urgency":"watch"}
+{"date":"2026-11-23T13:05:10.109Z","id":"CVE-2026-115899","kev":false,"reported":false}
+{"date":"2026-11-23T13:05:10.109Z","id":"CVE-2026-121613","kev":false,"reported":false}

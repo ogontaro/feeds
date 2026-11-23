@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Mon, 23 Nov 2026 01:49:07 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 13:05:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Synology DSM の OAuth API で任意ファイルの読み書きとサービス停止をさせられる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120382.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120382.html#2026-11-23T13:05:10.109Z</guid>
+            <pubDate>Mon, 23 Nov 2026 13:05:10 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Synology DSM の OAuth API で任意ファイルの読み書きとサービス停止をさせられる</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、CISA KEV には未追加で悪用の兆候は入力に無い。EPSS は不明。NAS 用 OS として広く使われる製品の Critical のため監視とする。自宅クラスタでの DSM の利用は入力からは確認できない。</p>
+<p>Synology DiskStation Manager (DSM) の OAuth API で、コマンド引数の区切り文字が適切に処理されていない。リモートの攻撃者がこれを突くことで、任意のファイルの読み書きとサービス拒否攻撃が可能になる。修正版より前の各ブランチが影響を受ける。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 各ブランチの修正版(7.1.1-42962-10、7.2.1-69057-14、7.2.2-72806-11、7.3.2-86009-6、7.4.1-90080-2 以降)へ更新する。更新までは DSM の OAuth API を外部に公開しない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120382">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] D-Link DIR-600L の GENA 処理にスタックバッファオーバーフロー、公開エクスプロイトあり]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133993.html</link>
@@ -832,20 +846,6 @@
 <p>Kubernetes 公式で、ingress-nginx の mirror-target に関する自己 DoS が報告されている。入力には影響バージョン・攻撃条件・深刻度の詳細が含まれていないため、まず影響範囲の確認が必要になる。</p>
 <p><strong>自宅インフラへの該当:</strong> Kubernetes, nginx<br><strong>推奨アクション:</strong> Kubernetes の issue 143852 で影響バージョンと修正の有無を確認し、該当する場合は修正版へ更新する。</p>
 <p class="links"><a href="https://github.com/kubernetes/kubernetes/issues/143852">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Keycloak の SAML HTTP-Redirect バインディングに Critical な脆弱性]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-117691.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-117691.html#2026-11-05T20:03:27.910Z</guid>
-            <pubDate>Thu, 05 Nov 2026 20:03:27 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Keycloak の SAML HTTP-Redirect バインディングに Critical な脆弱性</h3>
-<p><strong>緊急度: 今週中</strong> — CVSS 9.1（Critical）で、Keycloak は自宅クラスタで利用しているコンポーネント。CISA KEV には未追加で EPSS も不明のため、悪用はまだ確認されていない。</p>
-<p>Keycloak の SAML HTTP-Redirect バインディング実装に不具合があり、CVSS 9.1 の Critical と評価されている。入力では攻撃条件や影響の詳細が省略されているため、何が起きるかはアドバイザリで確認する必要がある。</p>
-<p><strong>自宅インフラへの該当:</strong> Keycloak<br><strong>推奨アクション:</strong> GHSA-c85j-3hq2-q6wj のアドバイザリで影響バージョンと修正版を確認し、該当する場合は更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-c85j-3hq2-q6wj">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
