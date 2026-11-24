@@ -1266,3 +1266,27 @@
 {"date":"2026-11-23T13:05:10.109Z","id":"CVE-2026-120382","kev":false,"reported":true,"title":"Synology DSM の OAuth API で任意ファイルの読み書きとサービス停止をさせられる","urgency":"watch"}
 {"date":"2026-11-23T13:05:10.109Z","id":"CVE-2026-115899","kev":false,"reported":false}
 {"date":"2026-11-23T13:05:10.109Z","id":"CVE-2026-121613","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-133968","kev":true,"reported":true,"title":"MONAI Label のパストラバーサルで任意ファイル書き込み、遠隔コード実行のおそれ","urgency":"watch"}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-134624","kev":true,"reported":true,"title":"N-able MailAssure(SpamExperts)の SSRF で内部ホストへ到達される","urgency":"watch"}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-62841","kev":false,"reported":true,"title":"Azure Event Grid の認証不備で権限を昇格される","urgency":"watch"}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-50691","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-70193","kev":false,"reported":true,"title":"SharePoint のパストラバーサルで遠隔コード実行される","urgency":"watch"}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-103782","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-133469","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-109480","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-118285","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-70305","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-103788","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135208","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-109490","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-113824","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-118286","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-69899","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-93700","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135161","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135211","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135174","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135171","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-101864","kev":false,"reported":false}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135300","kev":false,"reported":true,"title":"Pomerium の MCP 連携で認証バイパス","urgency":"watch"}
+{"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135163","kev":false,"reported":false}

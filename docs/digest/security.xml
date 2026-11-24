@@ -4,11 +4,81 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Mon, 23 Nov 2026 13:05:10 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 02:17:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] MONAI Label のパストラバーサルで任意ファイル書き込み、遠隔コード実行のおそれ]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133968.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133968.html#2026-11-24T02:17:50.993Z</guid>
+            <pubDate>Tue, 24 Nov 2026 02:17:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>MONAI Label のパストラバーサルで任意ファイル書き込み、遠隔コード実行のおそれ</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-23 追加され、実際の悪用が確認されている。EPSS は 0.037。MONAI Label は自宅インフラの構成には含まれないため「今週中」とした。</p>
+<p>Project MONAI の MONAI Label にパストラバーサルの脆弱性があり、認証なしの遠隔攻撃者が想定されたデータストアディレクトリの外へ任意のファイルを書き込める。その結果として遠隔コード実行に至る可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> CISA KEV の推奨対応に従い、ベンダーの指示に沿って緩和策を適用する。修正版はベンダーのアドバイザリで確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133968">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] N-able MailAssure(SpamExperts)の SSRF で内部ホストへ到達される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-134624.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-134624.html#2026-11-24T02:17:50.993Z</guid>
+            <pubDate>Tue, 24 Nov 2026 02:17:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>N-able MailAssure(SpamExperts)の SSRF で内部ホストへ到達される</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-23 追加され、実際の悪用が確認されている。EPSS は 0.004。自宅インフラの構成には含まれないため「今週中」とした。</p>
+<p>MailAssure の LDAP 同期接続チェックに SSRF の脆弱性があり、認証済みの API ユーザーが任意の内部ホスト・ポートへ接続して到達性を判定し、細工したデータを内部サービスへ送信できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> CISA KEV の推奨対応に従い、ベンダーの指示に沿って緩和策を適用する。修正版はベンダーのアドバイザリで確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-134624">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Azure Event Grid の認証不備で権限を昇格される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-62841.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-62841.html#2026-11-24T02:17:50.993Z</guid>
+            <pubDate>Tue, 24 Nov 2026 02:17:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Azure Event Grid の認証不備で権限を昇格される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 10.0 だが CISA KEV には未追加で EPSS も不明、悪用の兆候は示されていない。Azure は広く使われるクラウドのため「監視」とする。自宅インフラに Azure は含まれない。</p>
+<p>Azure Event Grid の認証処理に不備があり、認証されていない攻撃者がネットワーク経由で権限を昇格できる。CVSS は 10.0。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正状況と回避策を確認する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-62841">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] SharePoint のパストラバーサルで遠隔コード実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-70193.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-70193.html#2026-11-24T02:17:50.993Z</guid>
+            <pubDate>Tue, 24 Nov 2026 02:17:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>SharePoint のパストラバーサルで遠隔コード実行される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.9 だが CISA KEV には未追加で EPSS も不明、悪用の兆候は示されていない。SharePoint は広く使われる製品のため「監視」とする。</p>
+<p>Microsoft Office SharePoint にパストラバーサルの脆弱性があり、認証済みの攻撃者がネットワーク経由でコードを実行できる。CVSS は 9.9。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-70193">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Pomerium の MCP 連携で認証バイパス]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-135300.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-135300.html#2026-11-24T02:17:50.993Z</guid>
+            <pubDate>Tue, 24 Nov 2026 02:17:50 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Pomerium の MCP 連携で認証バイパス</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 7.4 で CISA KEV 未追加・EPSS 不明のため緊急度は上がらないが、Pomerium は自宅クラスタで稼働するコンポーネントのため「監視」として載せる。</p>
+<p>Pomerium の 0.30.0 以降 0.34.0 未満に、MCP 連携における認証バイパスの脆弱性がある。認証を回避して保護対象へ到達される可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> Pomerium<br><strong>推奨アクション:</strong> 稼働中のバージョンが 0.30.0 以上 0.34.0 未満か確認し、該当すれば 0.34.0 以降へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-2hj6-2qpj-pqj2">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Synology DSM の OAuth API で任意ファイルの読み書きとサービス停止をさせられる]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120382.html</link>
@@ -776,76 +846,6 @@
 <p>GPUStack がループバック送信元や X-GPUStack-Real-IP ヘッダーを信頼してしまうため、未認証の攻撃者が管理者権限を得られる。ユーザーやモデルの変更、管理者 API キーの永続作成、ワーカーやクラウドプロバイダーの秘密情報の漏えい、POST /v2/inference-backends/from-yaml 経由のコード実行につながる。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合はベンダーのアドバイザリで修正版を確認して更新する。管理 API を外部に公開しない。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-gj9m-f8ph-pmhr">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Kyverno の認可バイパスで名前空間テナントが cluster-admin に昇格される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124440.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124440.html#2026-11-08T19:45:18.456Z</guid>
-            <pubDate>Sun, 08 Nov 2026 19:45:18 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Kyverno の認可バイパスで名前空間テナントが cluster-admin に昇格される</h3>
-<p><strong>緊急度: 今週中</strong> — CVSS 9.4 で、自宅クラスタで稼働している Kyverno が該当する。CISA KEV には未追加、EPSS も不明のため悪用の確認はまだ無いが、基準の「自宅インフラに該当し CVSS 9.0 以上」に当てはまるため今週中とした。実際に影響バージョンか確認する。</p>
-<p>Kyverno 1.19.1 から 1.19.2 未満の apiCall 名前空間クランプに認可バイパスがある。名前空間テナントが urlPath に不正なパーセントエスケープを付加することで、クロス名前空間およびクラスタスコープの API リクエストを発行できる。攻撃者は admission-controller の ServiceAccount として apiCall を実行する namespaced Policy を作成し、他名前空間のリソース読み取りや mutating webhook の作成を通じて cluster-admin へ昇格できる。</p>
-<p><strong>自宅インフラへの該当:</strong> Kyverno<br><strong>推奨アクション:</strong> 1.19.2 以降へ更新する。更新までは、信頼できないテナントに namespaced Policy の作成権限を与えない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-124440">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Keycloak のクライアント管理で認可バイパス、サーバー上で任意コード実行のおそれ]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120984.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120984.html#2026-11-07T17:47:17.754Z</guid>
-            <pubDate>Sat, 07 Nov 2026 17:47:17 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Keycloak のクライアント管理で認可バイパス、サーバー上で任意コード実行のおそれ</h3>
-<p><strong>緊急度: 今週中</strong> — CVSS 9.1 の Critical で、自宅インフラで稼働する Keycloak に該当するため「今週中」と判定した。CISA KEV には未登録、EPSS は入力になく、悪用はまだ確認されていない。</p>
-<p>認可サービスを有効にしてクライアントを作成・インポートする際、セットアップ中に使う内部セッション属性が適切にクリアされない。クライアント管理権限を持つ認証済みの攻撃者がこれを利用してセキュリティ制御を回避し、悪意ある JavaScript ポリシーをアップロードできる。アップロードされたポリシーは認可リクエスト時にサーバー側で実行され、任意コード実行によりシステム全体が侵害される可能性がある。</p>
-<p><strong>自宅インフラへの該当:</strong> Keycloak<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、影響バージョンであれば速やかに更新する。更新までの間は、クライアント管理権限を付与するアカウントを必要最小限に絞る。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120984">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] SonicWall SonicOS SSLVPN の認証バイパスで SAML 認証と MFA を回避される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-19868.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-19868.html#2026-11-07T00:59:01.518Z</guid>
-            <pubDate>Sat, 07 Nov 2026 00:59:01 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>SonicWall SonicOS SSLVPN の認証バイパスで SAML 認証と MFA を回避される</h3>
-<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-06 追加され、実際の悪用が確認されている。自宅インフラの構成に SonicWall は含まれず該当しないが、KEV 新規追加のため「今週中」として通知する。CVSS・EPSS は入力に無い。</p>
-<p>SonicWall SonicOS の SSLVPN に、単一要素認証の使用に関する脆弱性がある。別の認証方法の有効な資格情報を持つ利用者が SAML 認証制御をバイパスでき、SAML で強制している多要素認証(MFA)も回避される可能性がある。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーの指示に従って緩和策を適用する。影響バージョンか確認し、修正版はベンダーのアドバイザリで確認する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19868">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Entra Device Registration の認可バイパスで権限を昇格される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109469.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-109469.html#2026-11-07T00:59:01.518Z</guid>
-            <pubDate>Sat, 07 Nov 2026 00:59:01 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Entra Device Registration の認可バイパスで権限を昇格される</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 10.0 だが CISA KEV には未追加で、EPSS も入力に無い。自宅インフラの構成に該当製品は無いが、クラウドとして広く使われる製品の Critical で悪用の兆候がまだ無いため「監視」とする。</p>
-<p>Entra のデバイス登録に、利用者が制御できるキーを介した認可バイパスがある。未認証の攻撃者がネットワーク経由で権限を昇格できる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版と影響バージョンを確認する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109469">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] ingress-nginx の mirror-target で自身がサービス拒否（DoS）に陥る]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116472.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116472.html#2026-11-06T01:38:38.250Z</guid>
-            <pubDate>Fri, 06 Nov 2026 01:38:38 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>ingress-nginx の mirror-target で自身がサービス拒否（DoS）に陥る</h3>
-<p><strong>緊急度: 監視</strong> — CISA KEV には未追加で、EPSS・CVSS とも入力に記載がなく、悪用の兆候も確認されていない。ただし自宅クラスタの ingress を担う ingress-nginx（Kubernetes／nginx）に関わる Kubernetes 公式の報告のため「監視」とする。</p>
-<p>Kubernetes 公式で、ingress-nginx の mirror-target に関する自己 DoS が報告されている。入力には影響バージョン・攻撃条件・深刻度の詳細が含まれていないため、まず影響範囲の確認が必要になる。</p>
-<p><strong>自宅インフラへの該当:</strong> Kubernetes, nginx<br><strong>推奨アクション:</strong> Kubernetes の issue 143852 で影響バージョンと修正の有無を確認し、該当する場合は修正版へ更新する。</p>
-<p class="links"><a href="https://github.com/kubernetes/kubernetes/issues/143852">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
