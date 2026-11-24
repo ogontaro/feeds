@@ -4,11 +4,24 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 23 Nov 2026 02:43:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 06:17:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-24.html</guid>
+            <pubDate>Tue, 24 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Sunshine v2026.1123.40502 — 変更履歴は先行ビルドと重複、目新しいのは依存更新のみ</h3>
+<p>自宅ゲームストリーミングの配信側 Sunshine の新しい正式リリース。変更履歴に並ぶのは Web UI のシングルページアプリケーション化、ペアリング時の重複クライアント証明書の置き換え、Flatpak 版でコマンドの接頭辞を不要にする修正で、いずれも 11/21・11/22 のビルドで報じた項目と重なる。目新しいのは Boost を CPM 管理に移して 1.92 へ上げる依存更新程度なので、既に最新へ上げている環境では急ぐ理由はなく、このビルドは見送ってよいという判断材料になる。</p>
+<p class="links"><a href="https://github.com/SunshineStream/Sunshine/releases/tag/v2026.1123.40502">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FSunshineStream%2FSunshine%2Freleases%2Ftag%2Fv2026.1123.40502">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-23.html</link>

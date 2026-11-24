@@ -4,11 +4,29 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 23 Nov 2026 02:28:35 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 05:57:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-24.html</guid>
+            <pubDate>Tue, 24 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Kubernetes v1.38 スニークピーク — Pod 単位リソースの安定版化と kubectl 環境変数の削除</h3>
+<p>v1.38 で予定されている変更のうち、アップグレード前に知っておくべきものを公式がまとめた記事。Pod 単位の CPU・メモリ指定が安定版になり、Pod の退避をアプリ側が事前に準備できる EvictionRequest API が alpha で入る一方、kubectl の WebSocket 関連環境変数の削除や kubelet の旧 cgroupDriver 設定の既定無効化など、スクリプトやノード設定の点検を迫る変更も並ぶ。リリース前に自宅クラスタの CI とノード構成の前提を洗い直すチェックリストとして読む価値がある。</p>
+<p class="links"><a href="https://kubernetes.io/blog/2026/11/23/kubernetes-v1-38-sneak-peek/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fkubernetes.io%2Fblog%2F2026%2F11%2F23%2Fkubernetes-v1-38-sneak-peek%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI SRE エージェントはプラットフォームエンジニアリングをどう変えるか</h3>
+<p>AI SRE エージェントがドメインをまたぐ文脈を使って MTTR を下げ、インシデント対応をどこまで自動化できるかを整理した記事で、Ciroos を実際に試した評価も含む。機能紹介だけでなく、運用に組み込んだときに何が起きるかを見たいときに役立つ。HolmesGPT を自宅クラスタで使っている立場からは、エージェントにどこまでの権限と文脈を渡すかを考える材料になる。</p>
+<p class="links"><a href="https://platformengineering.org/blog/what-are-ai-sre-agents-agentic-engineering-platforms">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhat-are-ai-sre-agents-agentic-engineering-platforms">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-23.html</link>

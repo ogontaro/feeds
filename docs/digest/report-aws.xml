@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 23 Nov 2026 02:33:43 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 06:03:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-24.html</guid>
+            <pubDate>Tue, 24 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Bedrock Trusted Access API が公開、Anthropic の Enterprise Frontier Safeguards と Enterprise Data Controls に対応</h3>
+<p>モデルプロバイダー側のプログラムを 1 か所で発見・申請・登録できる API がパブリックプレビューで登場し、第 1 弾として Anthropic の Enterprise Frontier Safeguards（EFS）と Enterprise Data Controls（EDC）が提供されます。Claude Fable モデル利用時のデータの扱いを契約・設定として統制できるため、Bedrock 上で Claude を本番投入する際の調達とデータ管理の手続きが大きく変わります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS WAF が LLM・MCP・A2A エンドポイントの自動検出と保護を GA、Bedrock Guardrails と連携</h3>
+<p>API Gateway、ALB、CloudFront の背後にある LLM 推論・MCP サーバー・A2A サーバーを AWS Organization 横断で自動検出し、WAF と Bedrock Guardrails で保護する機能が一般提供になりました。検出は新しい API Gateway API Portal から行い、トラフィックログとサービス設定から AI エンドポイントを判別します。エージェント用エンドポイントが増える中で、公開済みの AI 面を棚卸しして守る手段として実務に直結します。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/waf-ai-endpoint-discovery-protection/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fwaf-ai-endpoint-discovery-protection%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Bedrock AgentCore Gateway のレート制限を JWT のユーザー単位でかけられるか検証</h3>
+<p>AgentCore Gateway のレート制限を、JWT の username クレームごとに分割できるかを実際に試した検証記事です。上限を超えた呼び出しが確実に止まるか、1 人の過剰利用が他の利用者に波及しないかなど 5 つの観点を確認しています。複数の利用者やエージェントで 1 つのゲートウェイを共有する構成を考えるとき、制限の粒度を決める材料になります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-gateway-rate-limit-per-user/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>EKS Auto Mode 上に GitLab CE をデプロイしてみた</h3>
+<p>EKS Auto Mode のクラスタを Terraform で構築し、Helm で GitLab CE を導入して ALB 経由のアクセスまで確認する一連の手順です。ノード管理を Auto Mode に任せたうえで、自前のステートフルなツールを載せるとどこで詰まるかが実装例つきで追えます。IaC で EKS を管理する構成の延長として、社内ツールの移行先を検討する際の参考になります。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/gitlab-eks-terraform/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>IAM ロールの背後にいるユーザー／ワークロードの ID を引き継ぐ trusted identity propagation</h3>
+<p>AWS のリクエストごとに、IAM ロールを引き受けたユーザーまたはワークロード（アプリケーションや自動化フローなどの非人間の呼び出し元）の ID を引き継ぎ、認可と監査をその ID 単位で行えるようにする仕組みです。エージェントや自動化ワークロードが同じロールを共有する構成では、ロール単位の監査ログだけでは「誰がやったか」が追えません。権限設計と監査の粒度を見直すきっかけになります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/security/know-the-identity-behind-the-role-authorize-and-audit-with-trusted-identity-propagation/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fsecurity%2Fknow-the-identity-behind-the-role-authorize-and-audit-with-trusted-identity-propagation%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-23.html</link>

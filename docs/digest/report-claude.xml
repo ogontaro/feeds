@@ -4,11 +4,51 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Mon, 23 Nov 2026 02:23:57 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 05:50:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-24]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-24.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-24.html</guid>
+            <pubDate>Tue, 24 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Anthropic、PRのレビュー・修正・承認まで担う「Claude Ship」をベータ公開</h3>
+<p>Claude Code でコードを書く速度に、PR をレビューして出す側が追いつかないというボトルネックに対して、Anthropic が Claude Ship をベータ公開した。Claude が PR をレビューし、修正に取りかかり、チームのポリシーが許す範囲で承認する。AI が大量にコードを書く前提で、レビューの役割をどこまでエージェントに渡すかを考える材料になる。Team/Enterprise 向けのベータ。</p>
+<ul>
+<li><a href="https://thenewstack.io/anthropic-claude-ship-approvals/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fanthropic-claude-ship-approvals%2F">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/ClaudeDevs/status/2124959436640858475">@ClaudeDevs のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FClaudeDevs%2Fstatus%2F2124959436640858475">Google 翻訳で読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claudeのコネクタとスキルが「プラグイン」に統合、1万件以上を公開</h3>
+<p>Claude のコネクタ(ツール接続)とスキル(手順の教示)が「プラグイン」という1つの形式にまとまり、Free/Pro/Max/Ultra で使えるようになった。公開されているプラグインは1万件以上で、MCP サーバーやスキルをどう配布・管理するかの単位が変わる。Team/Enterprise は今後対応予定。</p>
+<ul>
+<li><a href="https://x.com/claudeai/status/2124970294523945328">@claudeai のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2Fclaudeai%2Fstatus%2F2124970294523945328">Google 翻訳で読む</a></li>
+<li><a href="https://claude.ai/plugins">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.ai%2Fplugins">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>Claude CodeのエージェントチームをWindowsで試した結果——サブエージェントの約1.7倍のコスト、<code>claude -p</code>では形成されず</h3>
+<p>実験的な Claude Code のエージェントチームを Windows 11 で有効にし、同じ小タスクを2人のチームメイトと2つのサブエージェントで走らせて比較した記事。チームはサブエージェントの約1.7倍のコストがかかり、非対話の <code>claude -p</code> では形成されなかったという。複数エージェントの並行実行をコスト込みでどう使うかを判断する材料になる。</p>
+<p class="links"><a href="https://dev.to/its-tahir/i-ran-claude-code-agent-teams-on-windows-17x-the-cost-of-subagents-and-they-never-form-in-claude-5me">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fits-tahir%2Fi-ran-claude-code-agent-teams-on-windows-17x-the-cost-of-subagents-and-they-never-form-in-claude-5me">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（2 本）</h2>
+<section class="item">
+<h3>Claude CodeとCodexの利用上限をMacのメニューバーに表示する「AI Usage Menu」</h3>
+<p>Claude Code と Codex のプランの利用上限を、Mac のメニューバーと Dock アイコンに常時表示する無料・オープンソースのアプリ。セッション/週次の残量とリセット時刻、消費ペースが見えるので、長いリファクタの途中で急に上限へ当たるのを避けやすい。トークンをアプリに渡さずに監視できる点も、日常的に使うツールとして確認したい。</p>
+<p class="links"><a href="https://dev.to/aiusagemenu/track-claude-code-and-codex-limits-in-your-mac-menu-bar-without-handing-over-your-tokens-35i6">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Faiusagemenu%2Ftrack-claude-code-and-codex-limits-in-your-mac-menu-bar-without-handing-over-your-tokens-35i6">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>GLM-5.4とClaude Fable 5.2のコーディング性能・料金比較</h3>
+<p>Claude Fable 5.2 は入力100万トークンあたり8ドル・出力40ドル、GLM-5.4 は月額18ドルからの GLM Coding Plan 経由のみ、という課金形態の違いを軸に、両モデルのコーディング性能と1セッションあたりのコストを比べている。難しいタスクや API 経由の処理は Fable、大量の日常的なエージェント作業は GLM-5.4 という使い分けが示されており、サブスクのコスト配分を考える参考になる。</p>
+<p class="links"><a href="https://dev.to/aakira/glm-54toclaude-fable-52nokodeinguxing-neng-bi-jiao-dotirawoshi-ubekika-2391">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-23]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-23.html</link>
