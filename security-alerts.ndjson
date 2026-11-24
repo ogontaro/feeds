@@ -1290,3 +1290,18 @@
 {"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-101864","kev":false,"reported":false}
 {"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135300","kev":false,"reported":true,"title":"Pomerium の MCP 連携で認証バイパス","urgency":"watch"}
 {"date":"2026-11-24T02:17:50.993Z","id":"CVE-2026-135163","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-59415","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-18530","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-135202","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-119582","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-134401","kev":false,"reported":true,"title":"Google Chrome の入力検証不備、リモートから攻撃可能","urgency":"watch"}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-117593","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-135693","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-135743","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-135736","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-135686","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-128798","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-128797","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-9790","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-128791","kev":false,"reported":false}
+{"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-114203","kev":false,"reported":false}

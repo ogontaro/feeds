@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Tue, 24 Nov 2026 02:17:51 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 14:02:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Google Chrome の入力検証不備、リモートから攻撃可能]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-134401.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-134401.html#2026-11-24T14:02:26.914Z</guid>
+            <pubDate>Tue, 24 Nov 2026 14:02:26 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Google Chrome の入力検証不備、リモートから攻撃可能</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV への追加はなく、悪用の兆候も確認されていない。EPSS は不明。ブラウザは広く使われる製品で、Critical のため監視とする。自宅インフラの構成には該当しない。</p>
+<p>Google Chrome の 158.0.8127.88 より前のバージョンで、Variations コンポーネントに入力検証の不備がある。リモートから攻撃可能な脆弱性で、CVSS は 9.6（Critical）。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Chrome を 158.0.8127.88 以降に更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-vcxr-fgjm-43ff">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] MONAI Label のパストラバーサルで任意ファイル書き込み、遠隔コード実行のおそれ]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133968.html</link>
@@ -832,20 +846,6 @@
 <p>IBM Aspera Faspex に認可の不備があり、認証済みユーザーが特定のメッセージを作成することで認可を回避し、権限昇格につながる。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合はベンダーのアドバイザリに従い修正版へ更新する。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123218">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] GPUStack の認証不備で未認証の管理者アクセスを許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-102895.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-102895.html#2026-11-09T22:29:44.045Z</guid>
-            <pubDate>Mon, 09 Nov 2026 22:29:44 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>GPUStack の認証不備で未認証の管理者アクセスを許す</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-09 追加済みで、CVSS 9.8。EPSS 0.003（percentile 0.265）。GPUStack は自宅インフラの構成に無い。</p>
-<p>GPUStack がループバック送信元や X-GPUStack-Real-IP ヘッダーを信頼してしまうため、未認証の攻撃者が管理者権限を得られる。ユーザーやモデルの変更、管理者 API キーの永続作成、ワーカーやクラウドプロバイダーの秘密情報の漏えい、POST /v2/inference-backends/from-yaml 経由のコード実行につながる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合はベンダーのアドバイザリで修正版を確認して更新する。管理 API を外部に公開しない。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-gj9m-f8ph-pmhr">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
