@@ -1305,3 +1305,86 @@
 {"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-9790","kev":false,"reported":false}
 {"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-128791","kev":false,"reported":false}
 {"date":"2026-11-24T14:02:26.914Z","id":"CVE-2026-114203","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-131914","kev":true,"reported":true,"title":"EOL の Idunno AntiCsrf に認証不要の任意コード実行","urgency":"watch"}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-132224","kev":true,"reported":true,"title":"Optimizely Web Experimentation の状態データ制御不備で顧客サイトに攻撃者製 JS が配信される","urgency":"watch"}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-132165","kev":true,"reported":true,"title":"Drupal Core の認証不要 RCE で既存サイトを乗っ取られる","urgency":"week"}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-59726","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-95427","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-95442","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-95421","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-95439","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-95425","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-95420","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-109484","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123342","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123723","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123986","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123987","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-132877","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123266","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-125676","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-125675","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123722","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123215","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-112732","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136441","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136434","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-65175","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-65135","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-125717","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123721","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135597","kev":false,"reported":true,"title":"Firefox のサンドボックスエスケープが多数修正（161 で修正）","urgency":"watch"}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135596","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135582","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135578","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135571","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135547","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135529","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135530","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135525","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135521","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135520","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135519","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135513","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135510","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135509","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135508","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135506","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135501","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136184","kev":false,"reported":true,"title":"compose-farm の未認証 Web UI を悪用され、管理下の全ホストでコマンド実行","urgency":"watch"}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-125716","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135792","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135797","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136404","kev":false,"reported":true,"title":"n2n supernode の未認証バッファオーバーフローでコード実行","urgency":"watch"}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136411","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123167","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-82315","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-82316","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-125718","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-82321","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-111546","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-82319","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-82320","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-82322","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123172","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123168","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136410","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-125723","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136522","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135788","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135790","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135791","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135794","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135796","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136132","kev":false,"reported":true,"title":"Pangolin の認証バイパスで保護パスに到達される","urgency":"watch"}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-135789","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136412","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-65320","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136126","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-136165","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-86155","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-129393","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-127297","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-126045","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-123214","kev":false,"reported":false}
+{"date":"2026-11-24T23:59:03.758Z","id":"CVE-2026-130411","kev":false,"reported":false}

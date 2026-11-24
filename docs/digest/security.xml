@@ -4,11 +4,109 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Tue, 24 Nov 2026 14:02:26 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2026 23:59:03 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] EOL の Idunno AntiCsrf に認証不要の任意コード実行]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-131914.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-131914.html#2026-11-24T23:59:03.758Z</guid>
+            <pubDate>Tue, 24 Nov 2026 23:59:03 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>EOL の Idunno AntiCsrf に認証不要の任意コード実行</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-24 追加。ただし EPSS は 0.006（percentile 0.502）と低く、EOL のニッチ製品で自宅インフラにも該当しないため「監視」とする。KEV のため掲載する。</p>
+<p>Idunno AntiCsrf に、信頼できないデータのデシリアライズ（オブジェクトインジェクション）の脆弱性がある。認証なしのリモート攻撃者が任意コードを実行できる。製品は EOL／EoS の可能性があり、ベンダーは使用中止とサポート版への移行を勧めている。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合は直ちに使用を中止し、サポートされている実装へ移行する。使用していなければ対応は不要。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-131914">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Optimizely Web Experimentation の状態データ制御不備で顧客サイトに攻撃者製 JS が配信される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-132224.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-132224.html#2026-11-24T23:59:03.758Z</guid>
+            <pubDate>Tue, 24 Nov 2026 23:59:03 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Optimizely Web Experimentation の状態データ制御不備で顧客サイトに攻撃者製 JS が配信される</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-24 追加。ただし EPSS は 0.004（percentile 0.358）と低く、自宅インフラの構成にも該当しないため「監視」とする。KEV のため掲載する。</p>
+<p>Optimizely Web Experimentation のアカウント登録フローに、重要状態データの外部制御の不備がある。攻撃者が既存顧客ユーザーになりすまして Project JavaScript を改変すると、Optimizely 配信アセット経由で攻撃者製 JavaScript が顧客サイトの訪問者に実行される。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Optimizely Web Experimentation を利用している場合は、ベンダーの案内に従って修正を適用し、Project JavaScript の改変有無を確認する。利用していなければ対応は不要。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132224">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Drupal Core の認証不要 RCE で既存サイトを乗っ取られる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-132165.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-132165.html#2026-11-24T23:59:03.758Z</guid>
+            <pubDate>Tue, 24 Nov 2026 23:59:03 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Drupal Core の認証不要 RCE で既存サイトを乗っ取られる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-24 追加され、実際の悪用対象になっている。CVSS・EPSS は入力に無い。自宅インフラの構成に Drupal は含まれないため「KEV だが該当しない」に当たる今週中とし、使用有無の確認を求める。</p>
+<p>Drupal Core に、安全側に失敗しない不備がある。認証なしの攻撃者が install.php を使ってサイトの再インストールを試み、既存サイトの乗っ取りや任意コード実行につながる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Drupal を稼働させている場合は、ベンダーのアドバイザリで修正版を確認して適用する。公開しているサイトでは install.php への到達制限も併せて検討する。使用していなければ対応は不要。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132165">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Firefox のサンドボックスエスケープが多数修正（161 で修正）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-135597.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-135597.html#2026-11-24T23:59:03.758Z</guid>
+            <pubDate>Tue, 24 Nov 2026 23:59:03 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Firefox のサンドボックスエスケープが多数修正（161 で修正）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical が 18 件まとまって公表されている。悪用の確認（KEV）や EPSS は入力に無いが、ブラウザは広く使われる製品のため「監視」として更新を促す。</p>
+<p>Firefox の DOM・Graphics: WebRender・Networking など複数コンポーネントに、use-after-free や境界条件の誤りによるサンドボックスエスケープが報告されている。入力には同種の Critical（CVSS 9.6）が 18 件並び、いずれも Firefox 161 で修正済み。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Firefox 161 以降へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-fpx6-frf8-5gv3">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] compose-farm の未認証 Web UI を悪用され、管理下の全ホストでコマンド実行]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-136184.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-136184.html#2026-11-24T23:59:03.758Z</guid>
+            <pubDate>Tue, 24 Nov 2026 23:59:03 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>compose-farm の未認証 Web UI を悪用され、管理下の全ホストでコマンド実行</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.4。悪用の確認（KEV）や EPSS は入力に無い。自宅インフラの構成に compose-farm は含まれないが、Docker Compose の運用に直結するため「監視」として掲載する。</p>
+<p>compose-farm 0.19.0 から 1.22.0 未満の未認証 Web UI は Origin 検証を行わないため、クロスサイト WebSocket ハイジャックと CSRF が成立する。利用者が悪意あるサイトを訪れると /ws/shell/{host} や /ws/exec を開かされ、未クォートのサービスパラメータや PUT /api/console/file と組み合わせて、管理下の全ホストでコマンドを実行される。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 1.22.0 以降へ更新する。更新までは Web UI を外部に公開せず、管理用ブラウザから不要なサイトを開かない。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136184">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] n2n supernode の未認証バッファオーバーフローでコード実行]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-136404.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-136404.html#2026-11-24T23:59:03.758Z</guid>
+            <pubDate>Tue, 24 Nov 2026 23:59:03 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>n2n supernode の未認証バッファオーバーフローでコード実行</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.3 で、認証なしのリモート攻撃が可能とされる。KEV・EPSS は入力に無く、自宅インフラの構成に n2n は含まれないため「監視」とし、supernode を運用している場合の確認を求める。</p>
+<p>ntop n2n supernode 3.0 から 3.1.1 の REGISTER_SUPER_NAK 処理が、16 ビットの auth token_size を検証せずスタックバッファオーバーフローを起こす。コミュニティに edge を登録できる攻撃者が、スタックカナリアやポインタを漏洩させ、リターンアドレスを上書きしてコード実行や supernode の停止を狙える。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 3.1.1 より新しい修正版をベンダーのアドバイザリで確認して適用する。修正版が出るまでは supernode を停止するか、信頼できるネットワークからのみ到達させる。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136404">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] Pangolin の認証バイパスで保護パスに到達される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-136132.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-136132.html#2026-11-24T23:59:03.758Z</guid>
+            <pubDate>Tue, 24 Nov 2026 23:59:03 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Pangolin の認証バイパスで保護パスに到達される</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 8.6。悪用の確認（KEV）や EPSS は入力に無い。自宅インフラの構成に Pangolin は含まれないが、自前の公開用リバースプロキシ／トンネルを運用している場合は該当し得るため「監視」とする。</p>
+<p>Pangolin 1.21.0 未満の isPathAllowed() に認証バイパスの脆弱性がある。本来は認証を要求するパスへ、認証なしで到達できる可能性がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Pangolin を 1.21.0 以降へ更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-vg9w-pr99-7q53">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] Google Chrome の入力検証不備、リモートから攻撃可能]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-134401.html</link>
@@ -748,104 +846,6 @@
 <p>DOM: Service Workers コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-8pc7-5xpr-2rc7 で確認する。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-8pc7-5xpr-2rc7">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Audio/Video: cubeb の解放後使用）]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124861.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124861.html#2026-11-10T17:08:24.656Z</guid>
-            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>ブラウザのサンドボックス脱出（Audio/Video: cubeb の解放後使用）</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
-<p>Audio/Video: cubeb コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-5wxj-pmj7-6wvf で確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-5wxj-pmj7-6wvf">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Storage: Cache API の境界条件の誤り）]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124859.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124859.html#2026-11-10T17:08:24.656Z</guid>
-            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>ブラウザのサンドボックス脱出（Storage: Cache API の境界条件の誤り）</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
-<p>Storage: Cache API コンポーネントの境界条件の誤りにより、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-44f3-vm66-76wv で確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-44f3-vm66-76wv">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Graphics: Text の境界条件の誤り）]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124853.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124853.html#2026-11-10T17:08:24.656Z</guid>
-            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>ブラウザのサンドボックス脱出（Graphics: Text の境界条件の誤り）</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
-<p>Graphics: Text コンポーネントの境界条件の誤りにより、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-f7px-m4vf-5qg5 で確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-f7px-m4vf-5qg5">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] D-Link M60 の MQTT ブローカーにハードコードされた認証情報があり、遠隔から悪用できる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125086.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125086.html#2026-11-10T07:29:00.838Z</guid>
-            <pubDate>Tue, 10 Nov 2026 07:29:00 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>D-Link M60 の MQTT ブローカーにハードコードされた認証情報があり、遠隔から悪用できる</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.3 の Critical だが CISA KEV 未収載で実際の悪用は未確認、EPSS も不明。ネットワーク機器の Critical として「監視」とした。自宅インフラの構成に D-Link 製品は含まれていないため、該当は所有者次第。</p>
-<p>D-Link M60 1.12.B01 の emDaemon MQTT ブローカーで、/etc/emDaemon/mosquitto.conf にハードコードされた認証情報が存在する。攻撃者はこれを遠隔から利用でき、公開されたエクスプロイトが存在して実際に使用される可能性があるとされている。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> D-Link M60 を自宅ネットワークで使用している場合は、ベンダーのアドバイザリで修正ファームウェアを確認して適用する。使用していない場合は対応不要。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125086">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] SignalWire FreeSWITCH のコードインジェクションで設定・認証情報が漏えいする]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116779.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116779.html#2026-11-09T22:29:44.045Z</guid>
-            <pubDate>Mon, 09 Nov 2026 22:29:44 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>SignalWire FreeSWITCH のコードインジェクションで設定・認証情報が漏えいする</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-09 追加され、実際の悪用が確認されている。EPSS 0.013（percentile 0.706）。自宅インフラでは FreeSWITCH を使用していない。</p>
-<p>SignalWire FreeSWITCH にコードインジェクションの脆弱性があり、設定や認証情報の漏えい、任意の通話制御、コマンド実行につながる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合はベンダーのアドバイザリに従い修正版へ更新する。使用していなければ対応は不要。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116779">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[即時対応] OpenSSH の認証バイパスで不正ログインを許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123158.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123158.html#2026-11-09T22:29:44.045Z</guid>
-            <pubDate>Mon, 09 Nov 2026 22:29:44 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>OpenSSH の認証バイパスで不正ログインを許す</h3>
-<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-11-09 追加され、実際の悪用が確認されている。EPSS 0.010（percentile 0.635）。OpenSSH は自宅インフラで使用している。</p>
-<p>OpenBSD OpenSSH の Linux 版に、ステータスコードや戻り値の扱いが不正になる脆弱性があり、認証を回避される可能性がある。入力の概要では、これ以上の攻撃条件や影響範囲は示されていない。</p>
-<p><strong>自宅インフラへの該当:</strong> OpenSSH<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、早急に更新する。更新までは SSH の公開範囲を絞る。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123158">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] IBM Aspera Faspex の認可不備で権限昇格を許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123218.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-123218.html#2026-11-09T22:29:44.045Z</guid>
-            <pubDate>Mon, 09 Nov 2026 22:29:44 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>IBM Aspera Faspex の認可不備で権限昇格を許す</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-09 追加済み。EPSS 0.004（percentile 0.341）。自宅インフラには該当しない。</p>
-<p>IBM Aspera Faspex に認可の不備があり、認証済みユーザーが特定のメッセージを作成することで認可を回避し、権限昇格につながる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している場合はベンダーのアドバイザリに従い修正版へ更新する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123218">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>
