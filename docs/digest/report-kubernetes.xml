@@ -4,11 +4,29 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 24 Nov 2026 05:57:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 04:59:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-25]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-25.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-25.html</guid>
+            <pubDate>Wed, 25 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>URL パーサーの解釈差が Kyverno の namespace 分離を破った事例</h3>
+<p>Kyverno による namespace 分離が、URL の解釈差（パーサー・ダイバーシファル）を突かれて破られたという Akamai の研究。マルチテナントの境界をポリシーエンジンに委ねる構成では、同じ入力がコンポーネントごとに違う意味へ解釈されると防御そのものが成立しない、という設計側の問題として読める。Kyverno を使っていなくても、ポリシーでテナント境界を作る設計全般に効く話なので、隔離の前提をどこに置いているかを点検する材料になる。</p>
+<p class="links"><a href="https://www.akamai.com/content/akamai/en/blog/security-research/2026/nov/url-parser-differential-broke-kyvernos-namespace-isolation">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.akamai.com%2Fcontent%2Fakamai%2Fen%2Fblog%2Fsecurity-research%2F2026%2Fnov%2Furl-parser-differential-broke-kyvernos-namespace-isolation">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AI エージェントに SSH 鍵を渡さない——委任 ID でインフラの権限を絞る</h3>
+<p>開発者が AI エージェントに「Kubernetes の Pod が落ちる理由を調べさせると、エージェントにはログを読む権限が要る」という場面から、エージェントへ恒久的な鍵や広い権限を渡す危険を扱う記事。Teleport の委任 ID（delegated identity）による解決を軸に、人間の権限を短命に引き継がせる設計を論じている。エージェントを基盤の利用者に含めるなら認証・認可の境界をどう引くかが論点になり、手元のクラスタでエージェントに kubectl を渡す場面が増えている今、権限の粒度を決める参考になる。</p>
+<p class="links"><a href="https://thenewstack.io/teleport-agent-delegated-identity/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fteleport-agent-delegated-identity%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-24]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-24.html</link>

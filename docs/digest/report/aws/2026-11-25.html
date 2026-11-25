@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-25</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-25</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Amazon Bedrock Trusted Access API と Claude 向け Enterprise Frontier Safeguards／Enterprise Data Controls が公開プレビューに</h3>
+<p>Bedrock 上でモデル提供元のプログラムを探し、申請し、登録する手続きが 1 つの API にまとまり、第 1 弾として Anthropic の EFS と EDC がプレビュー提供されます。Claude Fable 系を本番で使うときのデータ統制とセーフガードの合意を、都度の個別調整ではなく手続きとして扱えるようになる点が実務上のポイントです。フロンティアモデルの社内導入を審査に通すための説明材料として読む価値があります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2Fintroducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>OpenAI Daybreak Red（GPT-5.6 Cyber）が Bedrock の bedrock-runtime で GovCloud (US) から利用可能に</h3>
+<p>サイバーセキュリティ向けの特化モデルが、Bedrock の bedrock-runtime エンドポイント経由で GovCloud (US) に拡大しました。拒否しきい値を下げる代わりに本人確認・監視・アクセス制御を強める設計で、汎用モデルでは断られがちな脆弱性調査や再現、緩和策の開発を対象にしています。Bedrock がモデルごとに安全側の設定を変えて提供する形が具体的に見える事例で、規制環境での生成 AI 利用の設計を考える材料になります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/gpt-daybreak-red-runtime-govcloud/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Fgpt-daybreak-red-runtime-govcloud%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>AWS Network Firewall の次世代ポリシー——アプリ単位の許可と脅威検査を同時に</h3>
+<p>アプリケーションに必要な通信だけを許可しつつ、許可した接続を既知の脅威について検査する、という 2 つを 1 つのポリシーモデルで扱えるようになりました。同日には、IP ではなく VPC・サブネット・セキュリティグループ・TGW アタッチメントで一致させる context-aware ルールと、IGW で集中ルールを適用し NAT も内蔵する自動インターネットファイアウォールモード（プレビュー）も発表されており、ファイアウォールの書き方がまとめて変わる節目です。IP 管理を前提にした既存のルール設計を見直すきっかけになります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/security/introducing-aws-network-firewall-next-generation-policy/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fsecurity%2Fintroducing-aws-network-firewall-next-generation-policy%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code v2.1.331、Code Mode が Amazon Bedrock と Claude Platform on AWS に対応</h3>
+<p>ターミナルセッションの Code Mode が Bedrock 経由で動くようになり、東京リージョンの Bedrock で実行して CloudWatch で呼び出しを確認するまでの手順がまとまっています。135 件の変更の要点も整理されており、社内の Bedrock 統制下で Claude Code を使いたい場合の現実的な構成を知るのに向いています。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/20261124-cc-updates-v2-1-331/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Amazon Cognito のトークン交換で AI エージェントに利用者本人の権限を委譲する</h3>
+<p>OAuth 2.0 のトークン交換を使い、利用者が同意したスコープの範囲で AI エージェントに代理アクセスさせる構成を解説しています。エージェントに固定の強い権限を渡すのではなく、利用者本人の権限とスコープに縛る設計で、エージェントの権限境界をどう引くかを考える材料になります。自前のエージェント基盤に ID と認可を組み込むときの参照実装として読めます。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/security/delegate-user-access-to-ai-agents-with-amazon-cognito-token-exchange/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fsecurity%2Fdelegate-user-access-to-ai-agents-with-amazon-cognito-token-exchange%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

@@ -4,11 +4,24 @@
         <title>ガジェット 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ガジェット 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 24 Nov 2026 06:08:44 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 05:08:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ガジェット 日次レポート 2026-11-25]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-25.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-25.html</guid>
+            <pubDate>Wed, 25 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 1 本</h2>
+<section class="item">
+<h3>Quest の Virtual Display にカメラ・マイク転送、有線 USB、入力転送が追加</h3>
+<p>Meta と Microsoft が Quest の Virtual Display を更新し、ヘッドセット側のカメラ・マイクを PC アプリへ転送できるようになった。あわせて有線 USB 経由のストリーミングと入力の双方向転送にも対応している。PC 画面を Quest に映すだけの機能だったものが、会議や録音を含む PC 作業の入出力をヘッドセット側で扱える方向に踏み出した点が、この機能を日常的に使っている人には見逃せない。</p>
+<p class="links"><a href="https://www.uploadvr.com/quests-virtual-display-gets-camera-microphone-usb-input-upgrades/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.uploadvr.com%2Fquests-virtual-display-gets-camera-microphone-usb-input-upgrades%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ガジェット 日次レポート 2026-11-24]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gadget/2026-11-24.html</link>

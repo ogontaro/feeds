@@ -4,11 +4,53 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Tue, 24 Nov 2026 05:50:34 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 04:54:31 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-25]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-25.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-25.html</guid>
+            <pubDate>Wed, 25 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
+<section class="item">
+<h3>Claude のアーティファクトが Mac/Windows のデスクトップアプリに——「Install as app」ベータ開始</h3>
+<p>Anthropic が 11/24 に、Claude のアーティファクトを Mac/Windows の独立したデスクトップアプリとしてインストールできる「Install as app」のベータ提供を開始した。Dock のアイコン、独自ウィンドウ、通知、メニューバー項目を持ち、パッケージングも署名もコードもなしに、チャットで作った道具をそのまま手元のアプリにできる。ちょっとした内製ツールのために Electron などで作り直すかどうか、判断が変わる。</p>
+<p class="links"><a href="https://dev.to/paullovelace/claude-artifacts-can-now-become-real-desktop-apps-on-mac-and-windows-2jn5">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fpaullovelace%2Fclaude-artifacts-can-now-become-real-desktop-apps-on-mac-and-windows-2jn5">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>MCP 2周年、Claude に「Skills over MCP」と長時間タスク対応</h3>
+<p>MCP の2周年に合わせて、Claude が Skills over MCP と長時間タスク（Tasks）に対応した。MCP サーバーがツールと一緒に Skills を配布でき、サーバー側の更新に追随するため、自前サーバーで手順まで配る設計が現実になる。Pro/Max/Ultra は既定で有効、Team は管理者の有効化後、Enterprise は近日対応で、MCP を「ツール接続」から「エージェントの作業手順の配布」へ広げる転換点として押さえたい。</p>
+<ul>
+<li><a href="https://thenewstack.io/mcp-skills-tasks-claude/">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fmcp-skills-tasks-claude%2F">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/oikon48/status/2125409875144704083">oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>タスクと意思決定ログを LLM の外に置き、Claude 障害時も Codex へ引き継ぐ</h3>
+<p>タスク・メモリー・意思決定ログを Beads に保管し、Claude Code と Codex の両方から同じ状態を読ませる運用。Claude の障害時に、Codex へ進捗の整理を頼むだけで作業を引き継げたという。特定の LLM に記憶を依存させない置き方は、モデルやツールを乗り換える前提のエージェント設計として参考になる。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/beads-handoff-claude-code-to-codex/">記事を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>Versine——会話で送金・請求できる MCP サーバー（Launch HN）</h3>
+<p>財布の残高の前に立つ MCP で、エージェントが passkey による承認を挟みながら送金や請求を行える。決済のように取り返しがつかない操作をエージェントに持たせるとき、人間の承認をどの工程に残すかという権限境界の設計例として読める。MCP サーバーに危険な操作を載せるときの切り方の参考になる。</p>
+<p class="links"><a href="https://news.ycombinator.com/item?id=50634426">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fnews.ycombinator.com%2Fitem%3Fid%3D50634426">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>AI 開発トレンド（1 本）</h2>
+<section class="item">
+<h3>T3 Code、API キーを平文保存——同じ OS ユーザーの AI エージェントから読める状態だったと指摘</h3>
+<p>オープンソースの AI コーディングツール T3 Code について、API キーやトークンを OS キーチェーンではなく平文の .bin ファイルで保存しており、同じ OS ユーザーで動く AI エージェント CLI から読める状態だったという指摘が出ている。ソースを確認した利用者は、テレメトリ側で認証ファイルを読む処理があることも指摘し、該当コードを示している。エージェントと同じマシンで動く開発ツールが認証情報をどこに置くかは、自分で確認しないと見落とすという実例になる。</p>
+<ul>
+<li><a href="https://x.com/taiyop/status/2125341723874521277">taiyop のポスト</a></li>
+<li><a href="https://x.com/AM09_21/status/2125198997283537247">AM09_21 のポスト</a></li>
+<li><a href="https://github.com/pingdotgg/t3code/blob/2cc8e73014d4059752efe717aea960dd5fac8368/apps/server/src/telemetry/Identify.ts#L253-L271">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2Fpingdotgg%2Ft3code%2Fblob%2F2cc8e73014d4059752efe717aea960dd5fac8368%2Fapps%2Fserver%2Fsrc%2Ftelemetry%2FIdentify.ts%23L253-L271">Google 翻訳で全文を読む</a></li>
+</ul>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-24]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-24.html</link>
