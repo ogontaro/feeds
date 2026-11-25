@@ -4,11 +4,25 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Wed, 25 Nov 2026 08:47:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Nov 2026 19:24:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Juniper Session Smart Conductor / Router の OS コマンドインジェクションで root 権限の任意コマンド実行を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-103406.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-103406.html#2026-11-25T19:24:11.612Z</guid>
+            <pubDate>Wed, 25 Nov 2026 19:24:11 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Juniper Session Smart Conductor / Router の OS コマンドインジェクションで root 権限の任意コマンド実行を許す</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加され、実際の悪用が確認されている。CVSS・EPSS は入力に無い。自宅インフラの構成に該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>HPE Juniper Session Smart Conductor と Session Smart Router に OS コマンドインジェクションの脆弱性がある。細工された salt minion ID を介して、リモートの攻撃者が root 権限で任意のコマンドを実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。該当機器を管理している場合は、外部から管理インターフェースに到達できないようにする。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-103406">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] EOL の Idunno AntiCsrf に認証不要の任意コード実行]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-131914.html</link>
@@ -832,20 +846,6 @@
 <p>DOM: Service Workers コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-4qpg-rxp6-fcj2 で確認する。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-4qpg-rxp6-fcj2">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124864.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124864.html#2026-11-10T17:08:24.656Z</guid>
-            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
-<p>DOM: Service Workers コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-8pc7-5xpr-2rc7 で確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-8pc7-5xpr-2rc7">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

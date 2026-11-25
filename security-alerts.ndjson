@@ -1401,3 +1401,17 @@
 {"date":"2026-11-25T08:47:39.662Z","id":"CVE-2026-132694","kev":false,"reported":false}
 {"date":"2026-11-25T08:47:39.662Z","id":"CVE-2026-132697","kev":false,"reported":false}
 {"date":"2026-11-25T08:47:39.662Z","id":"CVE-2026-132669","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-103406","kev":true,"reported":true,"title":"Juniper Session Smart Conductor / Router の OS コマンドインジェクションで root 権限の任意コマンド実行を許す","urgency":"week"}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-136835","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-125812","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-134880","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-82489","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-64670","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-82442","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-114346","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-97180","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-129968","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-135888","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-78114","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-133335","kev":false,"reported":false}
+{"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-136706","kev":false,"reported":false}
