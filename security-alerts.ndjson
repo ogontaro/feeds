@@ -1436,3 +1436,28 @@
 {"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-136822","kev":false,"reported":false}
 {"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-137086","kev":false,"reported":false}
 {"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-77230","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-123903","kev":false,"reported":true,"title":"VMware vCenter の VMware Directory Service の認証バイパス","urgency":"watch"}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-133336","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-123910","kev":false,"reported":true,"title":"VMware ESX の I/O フィルターサービスの境界外書き込みでメモリを破壊される","urgency":"week"}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-123911","kev":false,"reported":true,"title":"VMware ESX の I/O フィルターサービスの解放後使用でメモリを不正に操作される","urgency":"week"}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-123912","kev":false,"reported":true,"title":"VMware ESXi の XHCI USB の境界外書き込みでメモリを破壊される","urgency":"week"}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-126984","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137498","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-104998","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-134481","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-131767","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137544","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137567","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137499","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137536","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137550","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-133951","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-134173","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-135641","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-136240","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137494","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137481","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-137584","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-130637","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-124843","kev":false,"reported":false}
+{"date":"2026-11-26T17:03:25.088Z","id":"CVE-2026-124840","kev":false,"reported":false}
