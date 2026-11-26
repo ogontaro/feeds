@@ -4,11 +4,179 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Wed, 25 Nov 2026 19:24:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 03:39:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[今週中] Mitel MiCollab の AWV に OS コマンドインジェクション、未認証で任意コマンドを実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133323.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133323.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Mitel MiCollab の AWV に OS コマンドインジェクション、未認証で任意コマンドを実行される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.025、CVSS は入力に無い。自宅インフラに該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>Mitel MiCollab の Audio, Web and Video Conferencing（AWV）コンポーネントに、OS コマンドインジェクションの脆弱性がある。認証されていない攻撃者が、任意のシステムコマンドを実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。AWV を外部に公開している場合は、管理インターフェースへの到達を制限する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133323">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Danfoss AK-SM 800A の入力検証不備で遠隔から任意コマンドを実行される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2023-25915.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2023-25915.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Danfoss AK-SM 800A の入力検証不備で遠隔から任意コマンドを実行される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.014、CVSS は入力に無い。自宅インフラに該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>Danfoss AK-SM 800A シリーズに、入力検証の不備がある。リモートの攻撃者が、影響を受けるシステム上で任意のコマンドを実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。当該機器を管理している場合は、外部から到達できないようにする。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25915">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Vates Xen Orchestra の認証バイパスで管理者権限の操作をされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133469.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133469.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Vates Xen Orchestra の認証バイパスで管理者権限の操作をされる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.011、CVSS は入力に無い。自宅インフラに該当する製品は無い（仮想化基盤は VMware ESXi を想定）が、KEV 新規追加のため通知する。</p>
+<p>Vates Xen Orchestra に、入力の型検証の不備がある。空の JSON オブジェクトを含む細工された認証トークンにより、未認証の攻撃者が認証をバイパスし、管理者権限で操作を実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。Xen Orchestra の管理画面を外部に公開している場合は到達を制限する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133469">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Danfoss AK-SM 800A のパストラバーサルでサーバー上のファイルを読まれる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2023-25914.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2023-25914.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Danfoss AK-SM 800A のパストラバーサルでサーバー上のファイルを読まれる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.011、CVSS は入力に無い。自宅インフラに該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>Danfoss AK-SM 800A シリーズに、パストラバーサルの脆弱性がある。攻撃者が XML インターフェース経由で、サーバーの基盤ファイルにアクセスして読み出せる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25914">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Mitel MiCollab の XML インジェクションで未認証の任意コマンド実行を許す]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133303.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133303.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Mitel MiCollab の XML インジェクションで未認証の任意コマンド実行を許す</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.005、CVSS は入力に無い。自宅インフラに該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>Mitel MiCollab の AWV コンポーネントに、XML インジェクションの脆弱性がある。事前に仕込んだ悪意あるコンテンツを使って、認証されていない攻撃者が任意のコマンドを実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133303">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Danfoss AK-SM 800A の認証不備で内部 IP・ユーザー名を含むレポートを生成される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2025-41450.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2025-41450.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Danfoss AK-SM 800A の認証不備で内部 IP・ユーザー名を含むレポートを生成される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.005、CVSS は入力に無い。自宅インフラに該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>Danfoss AK-SM 800A シリーズに、認証の不備がある。攻撃者が Web レポートを生成し、内部 IP アドレス・ユーザー名・店舗名などの機微情報を露出させられる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41450">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Mitel MiCollab の認証制御バイパスで未認証の操作をされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133324.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133324.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Mitel MiCollab の認証制御バイパスで未認証の操作をされる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.004、CVSS は入力に無い。自宅インフラに該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>Mitel MiCollab の AWV コンポーネントに、安全側に失敗しない（not failing securely）問題がある。認証されていない攻撃者が認証制御をバイパスし、許可されていない操作を実行できる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133324">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Mitel MiCollab の認証の弱さで機微情報を取得される]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133311.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133311.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Mitel MiCollab の認証の弱さで機微情報を取得される</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.004、CVSS は入力に無い。自宅インフラに該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>Mitel MiCollab の AWV コンポーネントに、認証が弱い問題がある。システムが生成する特定のランダム識別子や事前に仕込んだコンテンツを用いて、認証されていない攻撃者が機微情報にアクセスできる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133311">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[今週中] Mitel MiCollab で危険な種類のファイルを未認証でアップロードされる]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133275.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133275.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Mitel MiCollab で危険な種類のファイルを未認証でアップロードされる</h3>
+<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-25 追加。EPSS 0.003、CVSS は入力に無い。自宅インフラに該当する製品は無いが、KEV 新規追加のため通知する。</p>
+<p>Mitel MiCollab の AWV コンポーネントに、ファイル種別の検証不備がある。認証されていない攻撃者が、任意のファイルをアップロードできる。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、CISA KEV の推奨に従って緩和策を適用する。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133275">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] HPE Networking の Web 管理インターフェースに認証バイパス（CVSS 9.8）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133971.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133971.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>HPE Networking の Web 管理インターフェースに認証バイパス（CVSS 9.8）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical。EPSS は入力に無く、CISA KEV への追加も無い。ネットワーク機器の管理インターフェースとして広く使われる製品のため監視とする。自宅インフラの構成に該当製品は無い。</p>
+<p>HPE Networking 製品の Web 管理インターフェースに、認証バイパスの脆弱性がある（CVSS 9.8）。入力ではアドバイザリ本文が途中までしか取得できておらず、影響する製品とバージョンは GitHub Advisory で確認する必要がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> GitHub Advisory（GHSA-52gc-235f-mr49）で影響製品・修正版を確認し、該当する機器があれば更新する。更新までは管理インターフェースを外部に公開しない。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-52gc-235f-mr49">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] HPE Networking の Web 管理インターフェースにコマンドインジェクション（CVSS 9.8）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133973.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133973.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>HPE Networking の Web 管理インターフェースにコマンドインジェクション（CVSS 9.8）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical。EPSS は入力に無く、CISA KEV への追加も無い。ネットワーク機器の管理インターフェースとして広く使われる製品のため監視とする。自宅インフラの構成に該当製品は無い。</p>
+<p>HPE Networking 製品の Web ベース管理インターフェースに、コマンドインジェクションの脆弱性がある（CVSS 9.8）。入力ではアドバイザリ本文が途中までしか取得できておらず、影響する製品とバージョンは GitHub Advisory で確認する必要がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> GitHub Advisory（GHSA-fg38-qc74-cfhj）で影響製品・修正版を確認し、該当する機器があれば更新する。更新までは管理インターフェースを外部に公開しない。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-fg38-qc74-cfhj">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] HPE Networking でネットワークアクセスを持つ攻撃者に防御をバイパスされる（CVSS 9.8）]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133972.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-133972.html#2026-11-26T03:39:46.600Z</guid>
+            <pubDate>Thu, 26 Nov 2026 03:39:46 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>HPE Networking でネットワークアクセスを持つ攻撃者に防御をバイパスされる（CVSS 9.8）</h3>
+<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical。EPSS は入力に無く、CISA KEV への追加も無い。ネットワーク機器として広く使われる製品のため監視とする。自宅インフラの構成に該当製品は無い。</p>
+<p>HPE Networking 製品のシステム機能に、ネットワークアクセスを持つ攻撃者が防御をバイパスできる脆弱性がある（CVSS 9.8）。入力ではアドバイザリ本文が途中までしか取得できておらず、影響する製品とバージョンは GitHub Advisory で確認する必要がある。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> GitHub Advisory（GHSA-5xxr-mwh2-rxrh）で影響製品・修正版を確認し、該当する機器があれば更新する。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-5xxr-mwh2-rxrh">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[今週中] Juniper Session Smart Conductor / Router の OS コマンドインジェクションで root 権限の任意コマンド実行を許す]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-103406.html</link>
@@ -678,174 +846,6 @@
 <p>Fortinet FortiManager 8.0.0 および 7.6.0 系に、不適切な認可（improper authorization）の脆弱性がある。認可の検証が不十分なため、本来は許可されない操作を実行できる可能性がある。入力の概要はここまでで、攻撃条件や影響の詳細は示されていない。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認し、FortiManager を更新する。FortiManager を運用していない場合は該当しない。</p>
 <p class="links"><a href="https://github.com/advisories/GHSA-952j-p3c7-fpqx">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Barracuda ESG の認証バイパスで、アプライアンスの全体構成を不正に書き換えられる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116606.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-116606.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Barracuda ESG の認証バイパスで、アプライアンスの全体構成を不正に書き換えられる</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-10 追加。EPSS 0.016、CVSS は入力に無い。自宅インフラには該当しないが、KEV 追加済みのため通知対象とする。</p>
-<p>Barracuda Email Security Gateway (ESG) に代替パスを用いた認証バイパスがあり、認証なしのリモート攻撃者が構成インポート機能を呼び出して細工したバックアップアーカイブを復元させ、アプライアンスのグローバル構成を不正に変更できる。この脆弱性は CVE-2026-111560 と連鎖させることができる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリに従って緩和策を適用する（KEV 推奨対応）。Barracuda ESG を運用していない場合は該当しないことを確認する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116606">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Barracuda 複数製品の OS コマンドインジェクションで root 権限のコマンド実行を許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111560.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111560.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Barracuda 複数製品の OS コマンドインジェクションで root 権限のコマンド実行を許す</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-10 追加。EPSS 0.011、CVSS は入力に無い。自宅インフラには該当しないが、KEV 追加済みのため通知対象とする。</p>
-<p>Barracuda の ESG、Load Balancer、ADC、Message Archiver、WAF Control Center、WAF、WSG に OS コマンドインジェクションがある。認証済み管理者が細工したタイムゾーン値を設定すると、その値が後続処理される際に root 権限で OS コマンドが実行される。CVE-2026-116606 と連鎖可能。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリに従って緩和策を適用する（KEV 推奨対応）。該当製品を運用していない場合は影響を受けない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111560">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Cisco BroadWorks の XXE で、認証なしに機微な構成情報を読み取られる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-20320.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-20320.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Cisco BroadWorks の XXE で、認証なしに機微な構成情報を読み取られる</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-10 追加。EPSS 0.004、CVSS は入力に無い。自宅インフラには該当しないが、KEV 追加済みのため通知対象とする。</p>
-<p>Cisco BroadWorks に XML 外部エンティティ参照の不適切な制限（XXE）があり、認証なしのリモート攻撃者が影響を受けるシステム上の機微な構成情報を読み取れる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Cisco のアドバイザリで修正版を確認し、BroadWorks を更新する。運用していない場合は該当しないことを確認する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20320">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Openwave Webtop Media Transcoder の不適切なリソース転送で想定外の文書処理を許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111793.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-111793.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Openwave Webtop Media Transcoder の不適切なリソース転送で想定外の文書処理を許す</h3>
-<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-10 追加。EPSS 0.003、CVSS は入力に無い。認証済みユーザー前提で影響も限定的であり、自宅インフラ外のニッチ製品のため監視とする（KEV 追加のため通知対象には含める）。</p>
-<p>Openwave Messaging の Webtop Media Transcoder に、球体間の不適切なリソース転送の脆弱性がある。Webmail の画面を経由せずに操作した認証済みユーザーが、想定外の種類の文書を処理・変換させられる。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認する。該当製品を運用していない場合は影響を受けない。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111793">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[今週中] Microsoft Outlook でユーザー操作の確認が欠け、ネットワーク経由のなりすましを許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124194.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124194.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Microsoft Outlook でユーザー操作の確認が欠け、ネットワーク経由のなりすましを許す</h3>
-<p><strong>緊急度: 今週中</strong> — CISA KEV に 2026-11-10 追加。CVSS・EPSS は入力に無い。自宅インフラ（Talos Linux / Kubernetes）には該当しないが、KEV 追加済みのため通知対象とする。</p>
-<p>Microsoft Office Outlook で、潜在的に危険な操作に対するユーザー操作の確認が欠けている。未認可の攻撃者がネットワーク経由でなりすましを行える。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Microsoft のアドバイザリで修正版を確認し、Office / Outlook を更新する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-124194">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[即時対応] Chromium の解放後使用で、細工した Web ページからサンドボックス内の任意コード実行を許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125350.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125350.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Chromium の解放後使用で、細工した Web ページからサンドボックス内の任意コード実行を許す</h3>
-<p><strong>緊急度: 即時対応</strong> — CISA KEV に 2026-11-10 追加され、実際の悪用が確認されている。CVSS・EPSS は入力に無い。ブラウザは日常的に外部コンテンツへ露出するため即時対応とする。</p>
-<p>Chromium の XML コンポーネントに解放後使用（use-after-free）があり、細工した Web ページを開かせるとリモートの攻撃者がブラウザのサンドボックス内で任意のコードを実行できる。Google Chrome のほか、Chromium を利用する Microsoft Edge や Opera など複数のブラウザが影響を受ける。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Chrome / Edge / Opera を各ベンダーの最新版へ更新する。更新先バージョンは入力に無いため、ベンダーのアドバイザリで修正版を確認する。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125350">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Google Chrome の FileSystem の認可不備で、リモートから権限を越えた操作をされる]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125347.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-125347.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Google Chrome の FileSystem の認可不備で、リモートから権限を越えた操作をされる</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical。KEV 追加は無く、EPSS も入力に無いため悪用の兆候は確認されていない。ブラウザは広く使われる製品であり、自宅インフラの構成には含まれないため監視とする。</p>
-<p>Google Chrome 157.0.8103.50 より前のバージョンで、FileSystem の認可処理が不適切である。リモートの攻撃者がこの不備を利用して、本来許可されない操作を行える。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Google Chrome を 157.0.8103.50 以降へ更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-m6cp-2pmh-64x6">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Azure Managed Grafana の認可不備で、ネットワーク経由の権限昇格を許す]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114162.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-114162.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Azure Managed Grafana の認可不備で、ネットワーク経由の権限昇格を許す</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.8 の Critical だが、対象は Azure のマネージドサービスであり、自宅でセルフホストする Grafana とは別製品と考えられる。KEV 追加も悪用の兆候も無いため監視とする。</p>
-<p>Azure Managed Grafana に認可不備があり、未認可の攻撃者がネットワーク経由で権限を昇格できる。入力では CWE の記載が無く、詳細は限られている。</p>
-<p><strong>自宅インフラへの該当:</strong> Grafana<br><strong>推奨アクション:</strong> Azure Managed Grafana を利用している場合は Microsoft のアドバイザリで修正状況を確認する。セルフホストの Grafana は本項目の対象外と考えられるが、バージョンは入力に無いため必要に応じて確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-v4x9-2rpm-662c">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] React Server Components の未認証リモートコード実行]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126187.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126187.html#2026-11-10T23:35:50.799Z</guid>
-            <pubDate>Tue, 10 Nov 2026 23:35:50 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>React Server Components の未認証リモートコード実行</h3>
-<p><strong>緊急度: 監視</strong> — GitHub Advisory で公開されたが CVSS・EPSS は入力に無く、悪用の兆候も確認されていない。React は広く使われるライブラリであり、影響を受けるパッケージを自宅クラスタ内のサービスが使っていないか確認する価値があるため監視とする。</p>
-<p>React Server Components に未認証のリモートコード実行がある。影響パッケージとして react-server-dom-parcel、react-server-dom-turbopack、react-server-dom-webpack が挙げられている。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 自宅クラスタ内のサービスが react-server-dom-parcel / turbopack / webpack を使用していないか確認し、使用している場合はアドバイザリの修正版へ更新する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-xqc2-xf4c-x3h3">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（Widget: Gtk コンポーネントの解放後使用）]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124917.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124917.html#2026-11-10T17:08:24.656Z</guid>
-            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>ブラウザのサンドボックス脱出（Widget: Gtk コンポーネントの解放後使用）</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
-<p>Widget: Gtk コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-3wmq-fchg-2599 で確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-3wmq-fchg-2599">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（IPC コンポーネントの解放後使用）]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124903.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124903.html#2026-11-10T17:08:24.656Z</guid>
-            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>ブラウザのサンドボックス脱出（IPC コンポーネントの解放後使用）</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
-<p>IPC コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-88w5-4mq6-prvg で確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-88w5-4mq6-prvg">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124900.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-124900.html#2026-11-10T17:08:24.656Z</guid>
-            <pubDate>Tue, 10 Nov 2026 17:08:24 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>ブラウザのサンドボックス脱出（DOM: Service Workers の解放後使用）</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.6 の Critical だが CISA KEV には未追加で EPSS も不明。広く使われるブラウザの Critical で悪用の兆候がまだ無いため「監視」。同日公開された同種のサンドボックス脱出アドバイザリ群の1件。</p>
-<p>DOM: Service Workers コンポーネントに解放後使用（use-after-free）の問題があり、ブラウザのサンドボックスを脱出される。入力には攻撃条件や影響バージョンの記載がないため、詳細はアドバイザリで確認が必要。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用中のブラウザを最新版へ更新する。修正版のバージョンはアドバイザリ GHSA-4qpg-rxp6-fcj2 で確認する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-4qpg-rxp6-fcj2">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

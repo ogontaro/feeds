@@ -1415,3 +1415,24 @@
 {"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-78114","kev":false,"reported":false}
 {"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-133335","kev":false,"reported":false}
 {"date":"2026-11-25T19:24:11.612Z","id":"CVE-2026-136706","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133323","kev":true,"reported":true,"title":"Mitel MiCollab の AWV に OS コマンドインジェクション、未認証で任意コマンドを実行される","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2023-25915","kev":true,"reported":true,"title":"Danfoss AK-SM 800A の入力検証不備で遠隔から任意コマンドを実行される","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133469","kev":true,"reported":true,"title":"Vates Xen Orchestra の認証バイパスで管理者権限の操作をされる","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2023-25914","kev":true,"reported":true,"title":"Danfoss AK-SM 800A のパストラバーサルでサーバー上のファイルを読まれる","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133303","kev":true,"reported":true,"title":"Mitel MiCollab の XML インジェクションで未認証の任意コマンド実行を許す","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2025-41450","kev":true,"reported":true,"title":"Danfoss AK-SM 800A の認証不備で内部 IP・ユーザー名を含むレポートを生成される","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133324","kev":true,"reported":true,"title":"Mitel MiCollab の認証制御バイパスで未認証の操作をされる","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133311","kev":true,"reported":true,"title":"Mitel MiCollab の認証の弱さで機微情報を取得される","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133275","kev":true,"reported":true,"title":"Mitel MiCollab で危険な種類のファイルを未認証でアップロードされる","urgency":"week"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133971","kev":false,"reported":true,"title":"HPE Networking の Web 管理インターフェースに認証バイパス（CVSS 9.8）","urgency":"watch"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133973","kev":false,"reported":true,"title":"HPE Networking の Web 管理インターフェースにコマンドインジェクション（CVSS 9.8）","urgency":"watch"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-133972","kev":false,"reported":true,"title":"HPE Networking でネットワークアクセスを持つ攻撃者に防御をバイパスされる（CVSS 9.8）","urgency":"watch"}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-137090","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-136823","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-137043","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-69179","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-69178","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-136821","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-136822","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-137086","kev":false,"reported":false}
+{"date":"2026-11-26T03:39:46.600Z","id":"CVE-2026-77230","kev":false,"reported":false}
