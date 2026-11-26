@@ -4,11 +4,44 @@
         <title>AWS 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>AWS 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 25 Nov 2026 05:04:58 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 04:12:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[AWS 日次レポート 2026-11-26]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-26.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-26.html</guid>
+            <pubDate>Thu, 26 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
+<section class="item">
+<h3>Bedrock AgentCore Memory の記憶がユーザーごとに分離されるかを検証した記事</h3>
+<p>AgentCore Memory の短期記憶と長期記憶の違いを整理したうえで、Gateway のインターセプターで呼び出し元を決める構成にして、他ユーザーの記憶を読めたり消せたりしないかを実際に試しています。マルチテナントのエージェントを作るときに最初に突き当たる「記憶の境界は誰が保証するのか」という論点を、設計と検証の両面から確認できるのが価値です。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-gateway-memory-per-user/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Lambda durable functions で MicroVM を編成できる開発プレビュー</h3>
+<p>durable functions の新しい拡張として、MicroVM 上での作業実行とライフサイクル管理を durable な操作として扱えるようになりました。信頼できないコードやエージェントが生成したコードを分離サンドボックスで走らせる用途が想定されており、エージェント実行の隔離層をどこに置くかを考える材料になります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Flambda-durable-microvm%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Enterprise-Managed Authorization で AI エージェントの AWS アクセスを IdP 側で統制</h3>
+<p>AWS Sign-In が ID-JAG を使った Enterprise-Managed Authorization に対応し、Okta などの既存 IdP から AI エージェントに AWS MCP Server へのアクセスを許可できるようになりました。エージェントごとに IAM 資格情報を配るのではなく、企業の ID 基盤で「どのアプリに何を許すか」を一元管理できる方向性は、エージェントを正規の利用者として扱う基盤設計の参照点になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/security/secure-agentic-access-to-aws-with-enterprise-managed-authorization/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fsecurity%2Fsecure-agentic-access-to-aws-with-enterprise-managed-authorization%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Elastic Load Balancing for Envoy が GA</h3>
+<p>Envoy をセルフ運用しているプラットフォームチームが負っていたアップグレード・セキュリティパッチ・AZ 間のキャパシティ管理を、ELB 側が引き受ける新しいロードバランサ種別が一般提供になりました。プロキシは Nitro System でハードウェア分離された専用 EC2 上で動くため、Envoy のゼロデイがホストに波及しにくいという説明もあり、Envoy ベースの ingress/edge をマネージドに寄せる判断の比較対象になります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/elastic-load-balancing-for-envoy-generally-available">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Felastic-load-balancing-for-envoy-generally-available">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CloudWatch Omni のアラートが PagerDuty のインシデントを自動起票</h3>
+<p>CloudWatch Omni のアラートから PagerDuty のインシデントを直接作れるようになり、手作業の通知ステップを挟まずに既存のインシデント管理フローへ流せるようになりました。AI エージェント・アプリ・インフラをまとめて見る可観測性の入口と、一次対応の自動化をつなぐ配線として、監視スタックの統合を進めるときの検討点になります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-cloudwatch-omni-pagerduty%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[AWS 日次レポート 2026-11-25]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-11-25.html</link>
@@ -920,39 +953,6 @@
 <h3>AgentCore Gateway、レート制限をリクエストのヘッダーやボディの値ごとに分けられるように</h3>
 <p>Bedrock AgentCore Gateway のレート制限が、リクエストのヘッダーやボディの値ごとに枠を分けられるようになった。複数の利用者やツールを 1 つのゲートウェイに集約するエージェント基盤では、テナント単位・ツール単位で流量を制御したい場面がすぐ来る。設定方法と実際の挙動を手元で確認できる記事なので、流量制御の設計を詰める前に読んでおきたい。</p>
 <p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-gateway-rate-limit-header-body/">記事を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[AWS 日次レポート 2026-10-22]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-22.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/aws/2026-10-22.html</guid>
-            <pubDate>Thu, 22 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 5 本</h2>
-<section class="item">
-<h3>Amazon EKS 上の AI エージェント向け可観測性パターン</h3>
-<p>エージェントのエンドポイントが HTTP 200 を返していても、なぜ誤ったツールを選んだのか、どこでトークンを使い切ったのか、なぜループしたのかは従来の監視では見えない。この記事は OpenTelemetry を使った分散型・集中型の 2 パターンを、Bifrost・Amazon Bedrock・Langfuse で実際に組み立てて比較している。OpenTelemetry と LGTM スタックで自宅クラスタの可観測性をまとめている立場からは、エージェント特有のスパン設計とシンクの置き方をそのまま流用できるかを見極める材料になる。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/containers/observability-patterns-for-ai-agents-on-amazon-eks/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fcontainers%2Fobservability-patterns-for-ai-agents-on-amazon-eks%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>[アップデート] Amazon Bedrock Guardrailsのコンテキストグラウンディングチェックに Standard ティアが追加されたので試してみた</h3>
-<p>Bedrock Guardrails のコンテキストグラウンディングチェックに、日本語対応の Standard ティアが加わった。Classic と Standard の違いを整理したうえで、実際に試した結果がまとめられている。RAG の回答が参照文書に基づいているかを日本語で検査したいときに、どちらのティアを選ぶべきかの判断材料として読める。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/bedrock-guardrails-grounding-standard-tier/">記事を読む</a></p>
-</section>
-<section class="item">
-<h3>Reflection のオープンウェイトモデル Beam が SageMaker JumpStart と AWS Trainium で利用可能に</h3>
-<p>米国 Reflection の初のオープンウェイトモデル Beam が、SageMaker JumpStart のモデルハブと AWS Trainium で使えるようになった。推論・コーディング・エージェント系のベンチマークで同クラスのオープンウェイトの最前線にあるとされ、重みの検査・改変やファインチューニングも前提にしている。モデルを呼ぶだけでなく自社ドメインに合わせて手を入れたい場合の選択肢として、まず素性を押さえておきたい。</p>
-<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/01/reflection-beam-on-sagemaker-jumpstart-and-aws-trainium/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F01%2Freflection-beam-on-sagemaker-jumpstart-and-aws-trainium%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>マルチエージェントシステムの本番運用における 5 つの課題と Deep Insight の解き方</h3>
-<p>マルチエージェントのプロトタイプは数日で作れても本番で壁に当たる、という前提で、オーケストレーション・エージェントごとのモデル選択・安定運用・安全なコード実行・監視という 5 つの課題を定義し、AWS 上のオープンソースのマルチエージェントシステム Deep Insight がそれぞれどう解いているかを示す。複数エージェントの並行実行と協調を実運用に持ち込むときに、どこが先に詰まるのかを整理する枠組みとして使える。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fmachine-learning%2F5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>Step Functions と Amazon Bedrock AgentCore による医療コーディングの自動化</h3>
-<p>決定的なオーケストレーションと、範囲を限定したエージェント推論を組み合わせる設計の事例。安全ブロックリスト、完全一致、そして判断が必要な用語だけを AI エージェントに回すという順で、安い処理から順にエスカレーションし、すべての振り分け判断を監査できるようにしている。エージェントに何を任せ、何を任せないかをコストと監査性の両面から線引きする際の、具体的なパターンとして読める。</p>
-<p class="links"><a href="https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Farchitecture%2Fautomate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

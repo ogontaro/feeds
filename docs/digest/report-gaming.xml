@@ -4,11 +4,29 @@
         <title>ゲーム環境 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>ゲーム環境 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 25 Nov 2026 05:14:57 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 04:21:27 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[ゲーム環境 日次レポート 2026-11-26]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-26.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-26.html</guid>
+            <pubDate>Thu, 26 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Steam Frame 向け SteamOS 0.5.11 ベータ、正式版リリースの候補に</h3>
+<p>Steam Frame のベータチャンネル向けに SteamOS 0.5.11 が配信された。まだ試験中の新機能を含む一方で、正式版リリースの候補となるビルドだと案内されている点が重要で、Steam Frame 側の OS が安定版にどこまで近づいているかを判断する材料になる。導入は設定の「システム &gt; システムアップデートチャンネル」から選べ、不具合はアナウンスへの返信ではなく Steam Frame の Bug Report フォーラムへ報告する運用になっている。</p>
+<p class="links"><a href="https://store.steampowered.com/news/app/4165890/view/694278269818635351">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F4165890%2Fview%2F694278269818635351">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Sunshine v2026.1126.5025、Web UI をシングルページアプリケーションに刷新</h3>
+<p>自宅ゲームストリーミングのホスト側として使われる Sunshine の正式リリース。Flatpak でコマンドに接頭辞を付ける必要がなくなったほか、Web UI がシングルページアプリケーションに作り直され、テストとカバレッジの追加、ペアリング時に重複したクライアント証明書を置き換える修正も入っている。Web UI の構成が変わるリリースなので、更新後に設定画面やペアリングの挙動が従来どおりかを確認しておきたい。</p>
+<p class="links"><a href="https://github.com/SunshineStream/Sunshine/releases/tag/v2026.1126.5025">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fgithub.com%2FSunshineStream%2FSunshine%2Freleases%2Ftag%2Fv2026.1126.5025">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[ゲーム環境 日次レポート 2026-11-25]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-11-25.html</link>
@@ -533,14 +551,6 @@
 <p>SteamOS のベータ／プレビューチャンネルに 3.9.4 が入り、安定版 3.8 以降の変更点がまとめて読める形で出た。今回追加された分では、Steam Machine でファームウェア更新がまれに適用に失敗する問題と、タイムゾーン変更に関する不具合が修正されている。Valve の新ハードを前提にした調整がベータで進んでいることが分かるので、Steam Machine を自宅環境の候補に入れているなら版の進み方を追っておく価値がある。</p>
 <p class="links"><a href="https://store.steampowered.com/news/app/1675200/view/694275728822242439">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fstore.steampowered.com%2Fnews%2Fapp%2F1675200%2Fview%2F694275728822242439">Google 翻訳で全文を読む</a></p>
 </section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ゲーム環境 日次レポート 2026-10-22]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-22.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/gaming/2026-10-22.html</guid>
-            <pubDate>Thu, 22 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<p>本日の対象記事はありませんでした</p>
 ]]></content:encoded>
         </item>
     </channel>

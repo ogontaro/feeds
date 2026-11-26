@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-26</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-26</h1>
+<article class="report"><h2>今日の 5 本</h2>
+<section class="item">
+<h3>Bedrock AgentCore Memory の記憶がユーザーごとに分離されるかを検証した記事</h3>
+<p>AgentCore Memory の短期記憶と長期記憶の違いを整理したうえで、Gateway のインターセプターで呼び出し元を決める構成にして、他ユーザーの記憶を読めたり消せたりしないかを実際に試しています。マルチテナントのエージェントを作るときに最初に突き当たる「記憶の境界は誰が保証するのか」という論点を、設計と検証の両面から確認できるのが価値です。</p>
+<p class="links"><a href="https://dev.classmethod.jp/articles/agentcore-gateway-memory-per-user/">記事を読む</a></p>
+</section>
+<section class="item">
+<h3>Lambda durable functions で MicroVM を編成できる開発プレビュー</h3>
+<p>durable functions の新しい拡張として、MicroVM 上での作業実行とライフサイクル管理を durable な操作として扱えるようになりました。信頼できないコードやエージェントが生成したコードを分離サンドボックスで走らせる用途が想定されており、エージェント実行の隔離層をどこに置くかを考える材料になります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Flambda-durable-microvm%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Enterprise-Managed Authorization で AI エージェントの AWS アクセスを IdP 側で統制</h3>
+<p>AWS Sign-In が ID-JAG を使った Enterprise-Managed Authorization に対応し、Okta などの既存 IdP から AI エージェントに AWS MCP Server へのアクセスを許可できるようになりました。エージェントごとに IAM 資格情報を配るのではなく、企業の ID 基盤で「どのアプリに何を許すか」を一元管理できる方向性は、エージェントを正規の利用者として扱う基盤設計の参照点になります。</p>
+<p class="links"><a href="https://aws.amazon.com/blogs/security/secure-agentic-access-to-aws-with-enterprise-managed-authorization/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fblogs%2Fsecurity%2Fsecure-agentic-access-to-aws-with-enterprise-managed-authorization%2F">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Elastic Load Balancing for Envoy が GA</h3>
+<p>Envoy をセルフ運用しているプラットフォームチームが負っていたアップグレード・セキュリティパッチ・AZ 間のキャパシティ管理を、ELB 側が引き受ける新しいロードバランサ種別が一般提供になりました。プロキシは Nitro System でハードウェア分離された専用 EC2 上で動くため、Envoy のゼロデイがホストに波及しにくいという説明もあり、Envoy ベースの ingress/edge をマネージドに寄せる判断の比較対象になります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/elastic-load-balancing-for-envoy-generally-available">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Felastic-load-balancing-for-envoy-generally-available">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CloudWatch Omni のアラートが PagerDuty のインシデントを自動起票</h3>
+<p>CloudWatch Omni のアラートから PagerDuty のインシデントを直接作れるようになり、手作業の通知ステップを挟まずに既存のインシデント管理フローへ流せるようになりました。AI エージェント・アプリ・インフラをまとめて見る可観測性の入口と、一次対応の自動化をつなぐ配線として、監視スタックの統合を進めるときの検討点になります。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-cloudwatch-omni-pagerduty%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

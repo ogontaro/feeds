@@ -4,11 +4,49 @@
         <title>Claude 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Claude 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Wed, 25 Nov 2026 04:54:31 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 04:02:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Claude 日次レポート 2026-11-26]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-26.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-26.html</guid>
+            <pubDate>Thu, 26 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Claude / Claude Code（4 本）</h2>
+<section class="item">
+<h3>Anthropic、Messages API を Python から Rust へ移行——旧実装を正解にしてエージェント群で差分を潰す</h3>
+<p>移行の話そのものより、動いている Python 版を正解データとして新しい Rust 版を突き合わせ、差分の追跡と修正を Claude エージェントのチームに任せた検証の進め方が実務の参考になる。大規模な書き換えで「何をもって正しいとするか」を先に決め、検証作業をエージェントに委ねる設計例として読める。Inner/Outer/Memory ループの組み方も参照されている。</p>
+<ul>
+<li><a href="https://www.anthropic.com/research/migrating-api-to-rust">原文を読む</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.anthropic.com%2Fresearch%2Fmigrating-api-to-rust">Google 翻訳で全文を読む</a></li>
+<li><a href="https://x.com/AnthropicAI/status/2125627317263466739">@AnthropicAI のポスト（原文）</a> / <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fx.com%2FAnthropicAI%2Fstatus%2F2125627317263466739">Google 翻訳で読む</a></li>
+<li><a href="https://x.com/oikon48/status/2125629153500348866">@oikon48 のポスト</a></li>
+</ul>
+</section>
+<section class="item">
+<h3>/sandbox を有効にしてもコマンドが止まらない——先に公式の適用範囲を確認する</h3>
+<p>「サンドボックスを有効にしたのに制限されない」の多くは適用範囲の誤解で、対象は Bash・PowerShell・Monitor とその子プロセスだけで、Read/Edit/Write/WebFetch/WebSearch や hooks・ローカル MCP・LSP は権限ルールのみでサンドボックスの外にある。さらに依存が足りない環境ではサンドボックスなしのままコマンドが走るため、/sandbox パネルの Mode・Overrides・Dependencies を見る手順を知っておくと、権限設計の前提を誤らずに済む。</p>
+<p class="links"><a href="https://dev.to/quickrouter/kai-liao-sandboxming-ling-que-xiang-mei-xian-zhi-xian-he-dui-guan-fang-bian-jie-2n4e">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fquickrouter%2Fkai-liao-sandboxming-ling-que-xiang-mei-xian-zhi-xian-he-dui-guan-fang-bian-jie-2n4e">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Code のハーネスが育ち、自作の20コマンド・45エージェントは不要になった</h3>
+<p>自作プラグインとオーケストレーターを Claude Code の上に重ねる構成を、作者自身が手放した話。理由は自作側の不出来ではなく、Claude Code 本体のハーネスがこの数か月で大きく良くなったことで、両方とも動くのに使わなくなったという。自前の仕組みを積み増す前に標準機能で足りるかを見る、という判断基準を持てる。</p>
+<p class="links"><a href="https://dev.to/jpster/claude-codes-harness-made-my-ai-workflow-obsolete-and-most-others-too-5g5d">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fjpster%2Fclaude-codes-harness-made-my-ai-workflow-obsolete-and-most-others-too-5g5d">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>Claude Sonnet 4.5、11月30日で提供終了——claude-sonnet-5-5 への移行を実リクエストで検証</h3>
+<p>期限は4日後で、モデル名を固定している CI やバッチは今週中の差し替えが要る。日付付きの claude-sonnet-4-5-20250929 だけでなく claude-sonnet-4-5 も対象で、推奨の移行先は claude-sonnet-5-5。実際に投げた結果つきで手順が示されているので、移行後の出力差の確認にそのまま使える。</p>
+<p class="links"><a href="https://dev.to/dedemap123sys/claude-sonnet-45-retires-nov-30-a-tested-migration-to-claude-sonnet-5-5-1o5f">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fdev.to%2Fdedemap123sys%2Fclaude-sonnet-45-retires-nov-30-a-tested-migration-to-claude-sonnet-5-5-1o5f">Google 翻訳で全文を読む</a></p>
+</section>
+<h2>新ツール・サブスク（1 本）</h2>
+<section class="item">
+<h3>複数の Claude Code をフックで見張り、離席中は LINE に知らせる自作ツール「cc-monitor」</h3>
+<p>3つ5つとセッションを並べると「どれが自分の返事待ちか」「許可待ちで止まっていないか」を見失う、という並行実行で誰でも踏む問題への自作ツール。フックで全セッションの状態を拾い、離席中は LINE に流す構成なので、常駐の監視を自分で作るときの最小形として読める。並行して走らせる本数が増えるほど効いてくる。</p>
+<p class="links"><a href="https://qiita.com/kataru_kotonoha/items/32c07a5b9b5e8dadef12">記事を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Claude 日次レポート 2026-11-25]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-11-25.html</link>
@@ -1226,44 +1264,6 @@
 <li><a href="https://x.com/y_matsuwitter/status/2113186344302202948">@y_matsuwitter のポスト</a></li>
 <li><a href="https://tech.layerx.co.jp/entry/why-we-built-our-background-agent">リンク先を読む</a></li>
 </ul>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Claude 日次レポート 2026-10-22]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-22.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/claude/2026-10-22.html</guid>
-            <pubDate>Thu, 22 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Claude / Claude Code（3 本）</h2>
-<section class="item">
-<h3>Claude Duet がリサーチプレビュー公開——自分から動く常時稼働エージェント</h3>
-<p>Anthropic が、Claude が必要なことに自分から気づいて動く常時稼働型エージェントアプリ「Claude Duet」のリサーチプレビューを開始した。依頼した作業を離席中も進め、利用者の代わりに行動する前には確認を取る。Opus 5.5 ベースで 6,000 のコネクタに対応し、現在は米国 Pro/Max 向けのウェイトリスト提供だが、エージェントの権限境界と「能動型」の UX をどう設計するかを考える材料になる。</p>
-<p class="links"><a href="https://claude.com/product/claude-duet">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fclaude.com%2Fproduct%2Fclaude-duet">Google 翻訳で全文を読む</a></p>
-<ul>
-<li><a href="https://x.com/oikon48/status/2113056902150291793">oikon48 のポスト</a></li>
-</ul>
-</section>
-<section class="item">
-<h3>Claude Code v2.1.307——safety_event による安全機構の可観測化と API バージョン移行</h3>
-<p>Claude Code v2.1.307 では、パーミッションルール・オートモード・セーフティチェック・フック・サンドボックスがツール呼び出しを停止・確認要求・差し戻しした際に、<code>claude_code.safety_event</code> を OpenTelemetry イベントとして送出するようになった。あわせて <code>/claude-api api-version</code> で Claude API のコードを API バージョン <code>2026-10-21</code> へ移行できる。HTTP MCP ツール呼び出しの二重送信を修正し、再試行を読み取り専用または冪等なツールに限定する変更もあり、エージェント運用の可観測性と安全性を高めたい人に直結する。</p>
-<p class="links"><a href="https://dev.classmethod.jp/articles/20261022-cc-updates-v2-1-307/">記事を読む</a> <a href="https://claude-code-log.com/changelog/v2.1.307">変更履歴を読む</a></p>
-</section>
-<section class="item">
-<h3>スマホから2行で Claude Code の窓2つを動かし、6分で報告2件を得た自作ツール</h3>
-<p>iPhone から2行打つと、窓口の AI がほかの Claude Code の窓2つへ仕事を振り、6分24秒で報告が2件返ってきたという試行の記録。窓を並べる自作ツールの作り方と、そこでのつまずきがまとめられている。公式の Remote Control だけでは足りない部分をどう補うか、複数エージェントの並行実行を実運用に組み込む際の具体例として読める。</p>
-<p class="links"><a href="https://qiita.com/Ciel_lab/items/8807f0a5556e2efdfbe5">記事を読む</a></p>
-</section>
-<h2>新ツール・サブスク（1 本）</h2>
-<section class="item">
-<h3>Claude Code プラグイン「Superpowers」を個人開発で使い、業務利用の条件を考える</h3>
-<p>Claude Code 向けのプラグイン「Superpowers」を個人開発で使った感想と、業務利用を考えるうえでの考察をまとめた記事。AI エージェントによる開発のためのフレームワークが何を担うのかを押さえたうえで、チームに持ち込む前に何を検討すべきかが分かる。エージェント向けツールの導入判断の材料として読む価値がある。</p>
-<p class="links"><a href="https://qiita.com/ha8960/items/4b54ab7528fce5111e1a">記事を読む</a></p>
-</section>
-<h2>AI 開発トレンド（1 本）</h2>
-<section class="item">
-<h3>AI がコーディング時間を短縮する一方で、OSS のレビュー受信箱を「粗悪な PR」が埋めている</h3>
-<p>The Register の記事が、AI によるコーディング高速化の副作用として、OSS のレビュー受信箱に「slop」と呼ぶ粗悪な PR が流入している状況を伝えている。メンテナの見積もりでは受信 PR の約4分の1、大規模プロジェクトでは 31% に達するという。AI が当たり前にコードを出す前提で、レビューの目的と人間の役割をどこに置くかを考える材料になる。</p>
-<p class="links"><a href="https://www.theregister.com/ai-and-ml/2026/10/21/ai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap/5304389">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F10%2F21%2Fai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap%2F5304389">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
