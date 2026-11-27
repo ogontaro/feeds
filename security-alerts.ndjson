@@ -1465,3 +1465,11 @@
 {"date":"2026-11-27T01:47:35.815Z","id":"CVE-2026-137547","kev":false,"reported":false}
 {"date":"2026-11-27T01:47:35.815Z","id":"CVE-2026-137465","kev":false,"reported":false}
 {"date":"2026-11-27T01:47:35.815Z","id":"CVE-2026-137463","kev":false,"reported":false}
+{"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-137724","kev":false,"reported":false}
+{"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-137721","kev":false,"reported":false}
+{"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-106125","kev":false,"reported":false}
+{"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-115867","kev":false,"reported":false}
+{"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-59103","kev":false,"reported":false}
+{"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-137738","kev":false,"reported":true,"title":"RealVNC Server の UDP ベース接続を悪用される脆弱性（7.19.1 で修正）","urgency":"watch"}
+{"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-137723","kev":false,"reported":false}
+{"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-137706","kev":false,"reported":false}
