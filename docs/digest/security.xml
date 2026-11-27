@@ -4,11 +4,39 @@
         <title>セキュリティアラート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>3時間ごとの Critical CVE・悪用確認済み(KEV)・自宅インフラ関連アドバイザリの判定。緊急度と推奨アクション付き。</description>
-        <lastBuildDate>Fri, 27 Nov 2026 12:42:55 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Nov 2026 23:32:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各アドバイザリの著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[[監視] Drupal コアの露出したインストーラ経由で未認証のサイト乗っ取りが可能]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-136716.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-136716.html#2026-11-27T23:32:08.801Z</guid>
+            <pubDate>Fri, 27 Nov 2026 23:32:08 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>Drupal コアの露出したインストーラ経由で未認証のサイト乗っ取りが可能</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-27 追加され、実際の悪用が確認されている。CVSS 9.8、EPSS 0.012。自宅インフラの構成に Drupal は含まれないが、KEV 新規追加のため通知対象とした。</p>
+<p>Drupal コアには異常・例外的な状態のチェック不備があり、影響を受ける不安定または未完了なインストール状態のサイトでは、露出したインストーラを通じて未認証のリモート攻撃者がサイトを乗っ取れる。通常稼働中のサイトが常に該当するわけではないが、インストーラに外部から到達できる状態は危険。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認して更新する。更新まではインストーラを外部に公開しない。</p>
+<p class="links"><a href="https://github.com/advisories/GHSA-qqvx-wc6h-6prm">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[[監視] GeoServer の XML インジェクションで未認証のリモートコード実行に連鎖]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120705.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-120705.html#2026-11-27T23:32:08.801Z</guid>
+            <pubDate>Fri, 27 Nov 2026 23:32:08 GMT</pubDate>
+            <content:encoded><![CDATA[<section class="item">
+<h3>GeoServer の XML インジェクションで未認証のリモートコード実行に連鎖</h3>
+<p><strong>緊急度: 監視</strong> — CISA KEV に 2026-11-27 追加済み。CVSS・EPSS は入力に無い。GeoServer は自宅インフラの構成に含まれないが、KEV 新規追加のため通知対象とした。</p>
+<p>OSGeo GeoServer の WFS 2.0 GetFeatureById ストアドクエリで、ID パラメータに細工したリクエストにより、未認証のリモート攻撃者が GeoServer プロセスからアクセス可能なローカルのテキストファイルを読ませたり、攻撃者の指定した HTTP/HTTPS URL を取得させたりできる。CVE-2026-129244・CVE-2026-129243・CVE-2026-129245・CVE-2026-129242 と組み合わせると、影響を受けるインスタンス上で未認証のリモートコード実行に至る。</p>
+<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> ベンダーのアドバイザリで修正版を確認して更新する。WFS を外部に公開している場合は、更新まで公開を止める。</p>
+<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120705">元情報</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[[監視] RealVNC Server の UDP ベース接続を悪用される脆弱性（7.19.1 で修正）]]></title>
             <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-137738.html</link>
@@ -818,34 +846,6 @@
 <p>Linksys EA8100 1.0.3.216940 の SMB サービス（etc/init.d/service_smbd.sh）で、ANON_ACCESS 引数の操作により初期化が不適切に行われる。攻撃はリモートから開始でき、実証コードが公開されている。ベンダーには早期に連絡されたが応答がない。</p>
 <p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 自宅のルーターが EA8100 か確認する。該当する場合、ベンダーの修正ファームウェア提供状況を確認し、修正が無い間は SMB サービスを無効化して外部公開しない。</p>
 <p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-127277">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Linksys EA8100 の JNAP API で認証が欠落し、遠隔から設定を変更される]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-127275.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-127275.html#2026-11-13T01:55:13.681Z</guid>
-            <pubDate>Fri, 13 Nov 2026 01:55:13 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Linksys EA8100 の JNAP API で認証が欠落し、遠隔から設定を変更される</h3>
-<p><strong>緊急度: 監視</strong> — CVSS 9.3 の Critical で、家庭用として広く使われるネットワーク機器（ルーター）の脆弱性のため「監視」に該当。CISA KEV には未登録、EPSS は不明で、悪用が実際に確認された旨の記載はない。ただし公開済みの攻撃コードがあると明記されており、修正版の情報も無い。</p>
-<p>Linksys EA8100 1.0.3.216940 の ui_server.lua にあり、JNAP API の SetRemoteSetting / SetUnsecuredWiFiWarning が isEnabled / enabled 引数を適切に扱わないため認証が欠落する。リモートから到達できる攻撃者がこの欠落を突いて設定を変更できる。攻撃コードは公開済みで、ベンダーは開示前の連絡に応答していない。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> 使用している機種が EA8100 か確認する。修正ファームウェアの提供状況をベンダーに確認し、提供があれば更新する。修正版が無い間は、WAN 側から管理画面・JNAP API に到達できないようにする。</p>
-<p class="links"><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-127275">元情報</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[[監視] Google Chrome に Skia のバッファオーバーフローなど複数の Critical 脆弱性]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126912.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/security/CVE-2026-126912.html#2026-11-12T20:04:25.208Z</guid>
-            <pubDate>Thu, 12 Nov 2026 20:04:25 GMT</pubDate>
-            <content:encoded><![CDATA[<section class="item">
-<h3>Google Chrome に Skia のバッファオーバーフローなど複数の Critical 脆弱性</h3>
-<p><strong>緊急度: 監視</strong> — 広く使われるブラウザの Critical な脆弱性のため「監視」とする。CISA KEV には未追加で、EPSS は 0.003 と低く、悪用の兆候は確認されていない。Chrome は自宅インフラの構成には含まれない。</p>
-<p>Google Chrome 157.0.8103.78 より前の版に、Skia のバッファオーバーフローや ServiceWorker の解放後使用（use after free）など複数の脆弱性が報告されている。いずれもリモートの攻撃者に悪用されうるとされ、CVSS は 9.6。入力では概要が途中で切れており、具体的な攻撃条件や影響の詳細は示されていない。</p>
-<p><strong>自宅インフラへの該当:</strong> 該当なし（広く使われる製品）<br><strong>推奨アクション:</strong> Chrome を 157.0.8103.78 以降へ更新する。同版には他の Critical な修正も含まれるため、まとめて適用する。</p>
-<p class="links"><a href="https://github.com/advisories/GHSA-vx9f-gh92-x72m">元情報</a></p>
 </section>
 ]]></content:encoded>
         </item>

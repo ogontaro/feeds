@@ -1473,3 +1473,20 @@
 {"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-137738","kev":false,"reported":true,"title":"RealVNC Server の UDP ベース接続を悪用される脆弱性（7.19.1 で修正）","urgency":"watch"}
 {"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-137723","kev":false,"reported":false}
 {"date":"2026-11-27T12:42:55.390Z","id":"CVE-2026-137706","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-136716","kev":true,"reported":true,"title":"Drupal コアの露出したインストーラ経由で未認証のサイト乗っ取りが可能","urgency":"watch"}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-120705","kev":true,"reported":true,"title":"GeoServer の XML インジェクションで未認証のリモートコード実行に連鎖","urgency":"watch"}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-129243","kev":true,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-134963","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-136115","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-134994","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-135933","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-137964","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-138004","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-136113","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-135009","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-135930","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-138003","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-124981","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-110739","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-85258","kev":false,"reported":false}
+{"date":"2026-11-27T23:32:08.801Z","id":"CVE-2026-106169","kev":false,"reported":false}
