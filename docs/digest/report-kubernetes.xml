@@ -4,11 +4,29 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Thu, 26 Nov 2026 04:07:04 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Nov 2026 04:07:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-27]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-27.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-27.html</guid>
+            <pubDate>Fri, 27 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>バックエンド開発者の 19% しか Kubernetes を使っていない理由</h3>
+<p>93% の開発者が何らかのプラットフォームか標準化された DevOps の上で働く一方、Kubernetes を直接使うバックエンド開発者は 19% にとどまるという指摘。Backstage で IDP を運用する立場では、「クラスタを配ること」と「開発者に使ってもらうこと」の間のギャップをどう埋めるかを考える材料になる。プラットフォームチームが何を抽象化し、何を開発者に見せるべきかの設計判断に効く。</p>
+<p class="links"><a href="https://platformengineering.org/blog/why-only-19-percent-of-backend-developers-say-they-use-kubernetes">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fplatformengineering.org%2Fblog%2Fwhy-only-19-percent-of-backend-developers-say-they-use-kubernetes">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>NFS の脆弱性で Linux ファイルサーバーが root 奪取の危険に</h3>
+<p>Linux カーネルの NFS 実装の脆弱性により、ファイルサーバーが root 権限を奪取されうるという報告。NAS を永続ボリュームとして Kubernetes に接続している構成では、クラスタの外にあるストレージが侵入の起点になり得るため、影響範囲と対処の確認に値する。NFS 系のストレージをクラスタから使っているなら優先して当たりたい。</p>
+<p class="links"><a href="https://cybernews.com/security/nfs2root-linux-kernel-vulnerability-exposes-nas-kubernetes/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybernews.com%2Fsecurity%2Fnfs2root-linux-kernel-vulnerability-exposes-nas-kubernetes%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-26]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-26.html</link>
@@ -711,29 +729,6 @@
 <h3>OpenTelemetry、エコシステム一覧の今後を検討——利用者へ意見募集</h3>
 <p>OpenTelemetry がレジストリや Collector コンポーネント一覧などのエコシステムページの新規追加・更新を凍結し、廃止や変更を検討していると告知して、利用状況のコメントを求めている。Collector のコンポーネント選定でこれらの一覧を参照しているなら、代替の情報源をどこに置くかを今のうちに考えておきたい。</p>
 <p class="links"><a href="https://opentelemetry.io/blog/2026/ecosystem-lists-user-feedback/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fecosystem-lists-user-feedback%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-23]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-23.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-23.html</guid>
-            <pubDate>Fri, 23 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 3 本</h2>
-<section class="item">
-<h3>OpenTelemetry、セキュリティ修正のためのバージョニング方針を改定</h3>
-<p>Stable な SDK と Contrib コンポーネントが、公開 API の互換性を守ったまま、マイナー/パッチリリースで挙動を変えるセキュリティ修正を入れられるよう方針が変わった。自宅クラスタの可観測性を OTel で組んでいるなら、今後は「互換性維持のため入らない修正」ではなく「入る修正」を前提に、アップグレード時の差分確認を組み込んでおきたい。Collector や SDK のバージョン追随をどう運用するかを考える材料になる。</p>
-<p class="links"><a href="https://opentelemetry.io/blog/2026/security-versioning-policy/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fsecurity-versioning-policy%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>OpenTelemetry Collector で AI エージェントのテレメトリーを絞り込む</h3>
-<p>AI コーディングエージェントのテレメトリーは量が膨らみやすく、保存コストと読み解きやすさの両面で扱いにくい。Collector のフィルタと加工で必要なシグナルだけを残す方法は、同じ Collector を LGTM スタックに流している構成にそのまま応用できる。可観測性のコスト最適化を進めたい人に実践的な一本。</p>
-<p class="links"><a href="https://www.cncf.io/blog/2026/10/22/filtering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F22%2Ffiltering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>本番で動く AI エージェントの「持ち主」は誰か</h3>
-<p>AI エージェントが本番で失敗したとき、誰がオンコールに就き、どの SLO で守るのかという責任分界が決まっていない、という問題を扱う。エージェントを基盤の利用者として扱う流れの中で、アラート・権限・エスカレーションの設計はプラットフォーム側の仕事になる。Backstage や AI SRE の運用に引き寄せて、導入前に決めておく論点を洗い出すのに使える。</p>
-<p class="links"><a href="https://thenewstack.io/production-ai-agent-ownership/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fproduction-ai-agent-ownership%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>
