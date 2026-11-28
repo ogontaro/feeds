@@ -4,11 +4,29 @@
         <title>Kubernetes 日次レポート — ogontaro/feeds</title>
         <link>https://ogontaro.github.io/feeds/</link>
         <description>Kubernetes 系の新着から重要な記事を Claude が選定した日次レポート</description>
-        <lastBuildDate>Fri, 27 Nov 2026 04:07:41 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 03:52:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ja</language>
         <copyright>各記事の著作権は原著者に帰属します。</copyright>
+        <item>
+            <title><![CDATA[Kubernetes 日次レポート 2026-11-28]]></title>
+            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-28.html</link>
+            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-28.html</guid>
+            <pubDate>Sat, 28 Nov 2026 22:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>今日の 2 本</h2>
+<section class="item">
+<h3>Traefik の認証ミドルウェアバイパスなど4件の脆弱性（CVE-2026-137481）、更新を</h3>
+<p>Traefik は Kubernetes の Ingress やエッジルーターとして広く使われており、認証ミドルウェアのバイパスは入口で肩代わりしている認証を丸ごと素通りさせうる種類の欠陥です。ForwardAuth や BasicAuth を Ingress 側に寄せている構成ほど影響が直撃するので、自クラスタの Traefik のバージョンと、どのミドルウェアに認証を任せているかをまず突き合わせたいところです。認証バイパス以外に3件の不具合も同時に報じられており、まとめて更新可否を判断する材料になります。</p>
+<p class="links"><a href="https://www.rescana.com/post/traefik-cve-2026-137481-auth-middleware-bypass-and-three-more-flaws-update-now">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.rescana.com%2Fpost%2Ftraefik-cve-2026-137481-auth-middleware-bypass-and-three-more-flaws-update-now">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>12年前から存在した Linux の NFS 脆弱性「NFS2ROOT」、パスワードなしでサーバの root を奪取</h3>
+<p>NFS サーバを動かす Linux ホストで、リモートからパスワードなしに root 権限を取得されうる脆弱性です。NFS は永続ボリュームのバックエンドとしても一般的なので、クラスタのノードや NAS 側で NFS を公開している構成は、影響を受けるカーネルかどうかを確認しておきたいところです。修正版カーネルへの更新に加えて、NFS の公開範囲がそもそも必要な相手に限定されているかを見直す機会になります。</p>
+<p class="links"><a href="https://cybersecuritynews.com/nfs2root-linux-vulnerability/amp/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fnfs2root-linux-vulnerability%2Famp%2F">Google 翻訳で全文を読む</a></p>
+</section>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Kubernetes 日次レポート 2026-11-27]]></title>
             <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-11-27.html</link>
@@ -701,34 +719,6 @@
 <h3>KubeVirt の次の10年</h3>
 <p>Red Hat が 2016 年に始めた KubeVirt は、コンテナと並べて仮想マシンを Kubernetes 上で動かすことを狙ってきたプロジェクトで、その 10 年目の節目に今後の方向性を振り返っている。仮想マシンのワークロードを Kubernetes 側に寄せるかどうかの判断や、CNCF プロジェクトの成熟度を見る材料になる。</p>
 <p class="links"><a href="https://thenewstack.io/next-ten-years-kubevirt/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fnext-ten-years-kubevirt%2F">Google 翻訳で全文を読む</a></p>
-</section>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Kubernetes 日次レポート 2026-10-24]]></title>
-            <link>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-24.html</link>
-            <guid>https://ogontaro.github.io/feeds/digest/report/kubernetes/2026-10-24.html</guid>
-            <pubDate>Sat, 24 Oct 2026 22:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>今日の 4 本</h2>
-<section class="item">
-<h3>Kamaji と HAMi で組むマルチテナント GPU Kubernetes</h3>
-<p>チームごとにクラスタを分けるとコントロールプレーンの分だけコストがかかり、1つのクラスタに相乗りさせると分離が弱くなる、という GPU 基盤のトレードオフに正面から取り組んだ CNCF ブログ。ホステッドコントロールプレーンの Kamaji と GPU 共有の HAMi を組み合わせ、シミュレートしたハードウェア上で検証しているため、実 GPU を用意せずに構成を試せる。GPU を複数チームに開放するかどうかを決める前の設計レビューに効く。</p>
-<p class="links"><a href="https://www.cncf.io/blog/2026/10/23/multi-tenant-gpu-kubernetes-on-simulated-hardware-with-kamaji-and-hami/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.cncf.io%2Fblog%2F2026%2F10%2F23%2Fmulti-tenant-gpu-kubernetes-on-simulated-hardware-with-kamaji-and-hami%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>GPU が遊び AI ジョブが待つ状態に、Kubernetes はどう応えるか</h3>
-<p>GPU に空きがあるのに AI ジョブが割り当て待ちになる、という配分の非効率は、AI 推論を同じクラスタに載せるときに必ず突き当たる問題。KubeCon を前にした連載で、Kubernetes 側がこの問題に新しい仕組みで応じようとしている動きを追っている。自前のクラスタで GPU ワークロードを扱うなら、スケジューリングの前提が変わる可能性として押さえておきたい。</p>
-<p class="links"><a href="https://thenewstack.io/kubernetes-agentic-ai-inference/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fthenewstack.io%2Fkubernetes-agentic-ai-inference%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>llm-d 1.0、AI 推論コストの削減を狙う</h3>
-<p>Kubernetes 上での分散推論を掲げる llm-d が 1.0 に到達し、狙いを推論コストの引き下げに置いている。serving 基盤を自作するか既存スタックを拡張するかの判断材料として、1.0 という節目は評価を始めるタイミングになる。コスト最適化の観点では、GPU の稼働率をどう上げるかという論点とセットで読むとよい。</p>
-<p class="links"><a href="https://www.eenewseurope.com/en/llm-d-1-0-targets-lower-ai-inference-costs/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.eenewseurope.com%2Fen%2Fllm-d-1-0-targets-lower-ai-inference-costs%2F">Google 翻訳で全文を読む</a></p>
-</section>
-<section class="item">
-<h3>OpenTelemetry、エコシステム一覧の今後を検討——利用者へ意見募集</h3>
-<p>OpenTelemetry がレジストリや Collector コンポーネント一覧などのエコシステムページの新規追加・更新を凍結し、廃止や変更を検討していると告知して、利用状況のコメントを求めている。Collector のコンポーネント選定でこれらの一覧を参照しているなら、代替の情報源をどこに置くかを今のうちに考えておきたい。</p>
-<p class="links"><a href="https://opentelemetry.io/blog/2026/ecosystem-lists-user-feedback/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fopentelemetry.io%2Fblog%2F2026%2Fecosystem-lists-user-feedback%2F">Google 翻訳で全文を読む</a></p>
 </section>
 ]]></content:encoded>
         </item>

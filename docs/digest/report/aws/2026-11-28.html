@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWS 日次レポート 2026-11-28</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>AWS 日次レポート 2026-11-28</h1>
+<article class="report"><h2>今日の 2 本</h2>
+<section class="item">
+<h3>Amazon Neptune Graph Sessions が登場、アイドル時にゼロへスケールするエージェント向けグラフ</h3>
+<p>GraphRAG や AI エージェントのように「ユーザー・タスクごとに 1 つのグラフ」を持たせたい用途を狙った、アイドル時にメモリと CPU をゼロへ落とすコンピュートモードが GA になった。プロビジョンドグラフの 16 m-NCU 最低課金を避けて 4 s-NCU(セッション容量単位)から始められるため、多数のエージェントを並行して動かす構成のコスト設計が変わる。エージェントごとにナレッジグラフを分ける設計を検討しているなら、費用対効果の見積もり直しに効く。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-neptune-graph-sessions-generally-available">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-neptune-graph-sessions-generally-available">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>CloudWatch が AWS サービスメトリクスの OpenTelemetry 基本エンリッチメントを追加コストなしで提供</h3>
+<p>AWS サービスが CloudWatch に出すメトリクスを、PromQL で引ける OpenTelemetry のデータポイントへ変換する機能が無料で使えるようになった。ARN・クラウドプロバイダー・リージョン・アカウント ID といったリソース属性が付くので、CloudWatch 側のメトリクスを OTel ベースの可観測性スタックへ寄せるときに、変換層を自前で作り込む手間が減る。メトリクス基盤を OpenTelemetry に統一しつつあるなら、取り込み経路の見直し材料になる。</p>
+<p class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-opentelemetry-enrichment/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Faws.amazon.com%2Fabout-aws%2Fwhats-new%2F2026%2F11%2Famazon-cloudwatch-opentelemetry-enrichment%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>

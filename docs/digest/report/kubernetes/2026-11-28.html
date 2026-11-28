@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubernetes 日次レポート 2026-11-28</title>
+<link rel="stylesheet" href="../../../assets/style.css">
+</head>
+<body>
+<header><a href="../../../">ogontaro / rss</a></header>
+<main>
+<h1>Kubernetes 日次レポート 2026-11-28</h1>
+<article class="report"><h2>今日の 2 本</h2>
+<section class="item">
+<h3>Traefik の認証ミドルウェアバイパスなど4件の脆弱性（CVE-2026-137481）、更新を</h3>
+<p>Traefik は Kubernetes の Ingress やエッジルーターとして広く使われており、認証ミドルウェアのバイパスは入口で肩代わりしている認証を丸ごと素通りさせうる種類の欠陥です。ForwardAuth や BasicAuth を Ingress 側に寄せている構成ほど影響が直撃するので、自クラスタの Traefik のバージョンと、どのミドルウェアに認証を任せているかをまず突き合わせたいところです。認証バイパス以外に3件の不具合も同時に報じられており、まとめて更新可否を判断する材料になります。</p>
+<p class="links"><a href="https://www.rescana.com/post/traefik-cve-2026-137481-auth-middleware-bypass-and-three-more-flaws-update-now">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fwww.rescana.com%2Fpost%2Ftraefik-cve-2026-137481-auth-middleware-bypass-and-three-more-flaws-update-now">Google 翻訳で全文を読む</a></p>
+</section>
+<section class="item">
+<h3>12年前から存在した Linux の NFS 脆弱性「NFS2ROOT」、パスワードなしでサーバの root を奪取</h3>
+<p>NFS サーバを動かす Linux ホストで、リモートからパスワードなしに root 権限を取得されうる脆弱性です。NFS は永続ボリュームのバックエンドとしても一般的なので、クラスタのノードや NAS 側で NFS を公開している構成は、影響を受けるカーネルかどうかを確認しておきたいところです。修正版カーネルへの更新に加えて、NFS の公開範囲がそもそも必要な相手に限定されているかを見直す機会になります。</p>
+<p class="links"><a href="https://cybersecuritynews.com/nfs2root-linux-vulnerability/amp/">原文を読む</a> <a href="https://translate.google.com/translate?sl=auto&tl=ja&u=https%3A%2F%2Fcybersecuritynews.com%2Fnfs2root-linux-vulnerability%2Famp%2F">Google 翻訳で全文を読む</a></p>
+</section>
+</article>
+</main>
+<footer>概要・コメントは AI が生成しています。記事本文の著作権は各原著者に帰属します。</footer>
+</body>
+</html>
